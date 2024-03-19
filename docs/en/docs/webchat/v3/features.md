@@ -111,7 +111,7 @@ With Quick Replies, you can guide users through conversations by offering exampl
   <img class="image-center" src="{{config.site_url}}webchat/images/v3/quick-replies.png" width="100%" />
 </figure>
 
-### Customizable Adaptive Cards
+### Adaptive Cards
 
 Customizable Adaptive Cards are a valuable feature in the chat interface, especially for gathering user information. These interactive elements can be customized to collect specific details or preferences from users in a structured and user-friendly manner. Their adaptability ensures seamless integration with the chat's design, maintaining brand consistency while enhancing the user experience.
 

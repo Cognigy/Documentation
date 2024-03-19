@@ -35,7 +35,8 @@ Fork the [Cognigy Webchat GitHub](https://github.com/Cognigy/WebchatWidget) repo
 
 ### User-Friendly Interface and UI Customization
 
-Customizable themes, layouts, and responsive design provided by Webchat guarantee a smooth user experience across various devices.
+Customizable layouts and responsive design
+provided by Webchat guarantee a smooth user experience across various devices.
 Businesses can tailor Webchat to match their branding, enhancing brand identity and user engagement.
 
 ### Functional Extensibility

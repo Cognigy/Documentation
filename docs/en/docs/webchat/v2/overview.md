@@ -16,14 +16,15 @@ Benefits of Webchat v2:
 - **Easy Embedding**. JavaScript embedding allows you to integrate Webchat into your website effortlessly.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}webchat/images/webchat-v2.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}webchat/images/v2/webchat-v2.png" width="100%" />
   <figcaption>Cognigy Webchat v2</figcaption>
 </figure>
 
 ## How to Start with Webchat v2?
 
-Familiarize yourself with the Webchat v2 Documentation. Start by reading the documentation provided for Webchat v2.
-These articles provide you with a fundamental understanding of its features, functionality, and how to integrate it into your project:
+Start by reading the documentation provided for Webchat v2.
+These articles give you a fundamental understanding of its features,
+configuration, and how to integrate it into your project:
 
 1. [Key Features](features.md). Explore the Webchat v2 features.
 2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v2.

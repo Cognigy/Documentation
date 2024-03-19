@@ -11,7 +11,7 @@ hidden: false
 
 _Webchat v3_ is a new version of Cognigy Webchat, compatible with 4.72 of Cognigy.AI or later versions.
 
-Webchat v3 is in the preview stage, this means it's still undergoing testing and development and may not have all features finalized or fully stable. However, it provides you with a glimpse of the upcoming improvements and functionalities.
+During the Preview stage, Webchat v3 is still undergoing development and testing, so not all features may be finalized or fully stable. However, you can get a preview of the upcoming improvements and functionalities.
 
 Benefits of Webchat v3:
 
@@ -29,8 +29,9 @@ If you're using Webchat v2 and looking to transition to Webchat v3, refer to the
 
 ## How to Start with Webchat v3?
 
-Familiarize yourself with the Webchat v3 Documentation. Start by reading the documentation provided for Webchat v3.
-These articles provide you with a fundamental understanding of its features, functionality, and how to integrate it into your project:
+Start by reading the documentation provided for Webchat v3.
+These articles give you a fundamental understanding of its features,
+configuration, and how to integrate it into your project:
 
 1. [Key Features](features.md). Explore the Webchat v3 features.
 2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v3.

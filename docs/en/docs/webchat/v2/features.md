@@ -9,62 +9,63 @@ hidden: false
 
 Cognigy Webchat v2 offers several key features aimed at enhancing user interaction and navigation within conversations.
 
-## Quick Replies
 
-Using Quick Replies, you can help your users advancing in a conversation by providing example phrases that would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
+## Chat UI
+
+When you use message Nodes such as [Say](../../ai/nodes/basic/say.md), [Question](../../ai/nodes/basic/question.md), or [Optional Question](../../ai/nodes/basic/optional-question.md) Nodes, the following output types can be used within these nodes to display different message formats in the chat.
+
+### Quick Replies
+
+With Quick Replies, you can guide users through conversations by offering example phrases for replies. When users click a Quick Reply, they'll send a pre-configured message defined by you, facilitating smoother interactions.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/quick-replies.png" width="100%" />
 </figure>
 
-## Gallery
+### Gallery
 
-If you want to showcase structured content interactively, you can use the Gallery-Template to present one (or more) items with an image, a title, a subtitle as well as optional buttons with links or pre-configured messages.
+To present structured content interactively, utilize the Gallery. It allows you to showcase one or more items with an image, a title, a subtitle, and optional buttons containing links or pre-configured messages.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/gallery.png" width="100%" />
 </figure>
 
-## List
+### List
 
-Using the List Template, you can present 2–4 list options to a user.
-This is preferably used over a Gallery Template in case the user has to see all options at a glance.
+The List feature enables you to present 2-4 list options to users, 
+ideal for scenarios where users need to view all options at once. It's a preferred alternative to the Gallery for such cases.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/list.png" width="100%" />
 </figure>
 
-## Attachment
+### Audio
 
-Sometimes it is necessary to send certain media files to users. To do this, you can use the Attachment Template.
-
-### Audio Attachment
-
-This can be used to send audio files. The user will see a web player and is able to play the file at once.
+The Audio feature enables you to send of audio files. Users will see a web player and can play the file instantly.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/audio.png" width="100%" />
 </figure>
 
-### Image Attachment
+### Image
 
-This can be used to send image files. The user will see the image in a fixed aspect ratio.
+The Image feature enables you to send of image files. Users will view the image in a fixed aspect ratio.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/image.png" width="100%" />
 </figure>
 
-### Video Attachment
+### Video
 
-This can be used to send video files. The user will see a web player and is able to play the file at once.
+The Video feature enables you to send of video files. Users will see a web player and can play the file instantly.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/video.png" width="100%" />
 </figure>
 
-## Button Template
+### Text with Buttons
 
-If you need to provide navigation options for users, but do not need the rich structuring of the Gallery Template, you can use the Button Template to send just Text and Buttons.
+If you require navigation options for users without the need for rich structuring, as the Gallery, you can utilize the Text with Buttons.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/button-template.png" width="100%" />
@@ -72,20 +73,19 @@ If you need to provide navigation options for users, but do not need the rich st
 
 ## Date Picker
 
-Anytime your Bot asks for a date input via the Webchat widget,
-it will let users select that Date through an interactive Date Picker.
-
-At first, it will present the user a button that indicates the selection of a date.
+Whenever your virtual agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/date-picker-selection-date.png" width="100%" />
 </figure>
 
-When clicked, it will open a full-screen overlay for the Webchat widget. The user can now pick a date based on constraints you defined in the bot.
+After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the virtual agent.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/date-picker.png" width="100%" />
 </figure>
+
+To use a Date Picker, add the [Date Picker](../../ai/nodes/data/datepicker.md) Node within your Flow.
 
 ## Persistent Menu
 
@@ -94,3 +94,5 @@ If your bot contains a broad and deep set of features, it may be helpful for use
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/persistent-menu.png" width="100%" />
 </figure>
+
+To configure the Persistent Menu, use the [Persistent Menu](configuration.md#persistent-menu) settings.
