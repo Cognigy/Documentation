@@ -314,9 +314,9 @@ _**Voice Gateway**_
 For more information, read the [Voice Gateway](endpoints/cognigy-vg.md) documentation.
 
 ## W
-_**Webchat Widget**_
+_**Webchat**_
 : A Cognigy tool designed to integrate Conversational AI into websites seamlessly. It empowers Cognigy customers to host chatbots directly on their web pages, facilitating interactive engagement with visitors. This integration allows visitors to access assistance and obtain information without navigating away from the site.
-For more information, read the [Webchat Features](endpoints/webchat/webchat-features.md) and [Webchat](endpoints/webchat/webchat.md) documentation.
+For more information, read the [Webchat](../webchat/overview.md) documentation.
 
 ## X
 

@@ -34,7 +34,7 @@ The following channels are supported by xApps:
 - [Socket](../endpoints/socketio.md)
 - [Sunshine Conversation](../endpoints/sunshine-conversations.md)
 - [WhatsApp](../endpoints/whatsapp.md)
-- [Webchat Widget](../endpoints/webchat/webchat.md)
+- [Webchat Widget](../../webchat/overview.md)
 - [Webhook](../endpoints/webhook.md)
 - [REST Endpoint](../endpoints/rest.md)
 

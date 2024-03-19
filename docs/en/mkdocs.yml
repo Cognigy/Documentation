@@ -382,7 +382,7 @@ nav:
       - ai/endpoints/transformers/inject-transformer.md
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md
+      - webchat/overview.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
     - ai/endpoints/overview.md
@@ -490,16 +490,29 @@ nav:
   - insights/glossary.md
   - Release Notes:
     - insights/release-notes/release-notes.md
-- Webchat Widget:
+- Webchat:
   - Overview:
-    - ai/endpoints/webchat/webchat.md
-  - ai/endpoints/webchat/supported-browsers.md
-  - ai/endpoints/webchat/deploy-webchat-endpoint.md
-  - ai/endpoints/webchat/webchat-features.md
-  - ai/endpoints/webchat/triggering-webchat-plugins.md
-  - ai/endpoints/webchat/integrated-demo-page.md
-  - Release Notes:
-    - ai/endpoints/webchat/release-notes.md
+    - webchat/overview.md
+  - Getting Started:
+    - webchat/getting-started.md
+  - Webchat v3 (Preview):
+    - Overview:
+       - webchat/v3/overview.md
+    - webchat/v3/supported-browsers.md
+    - webchat/v3/features.md
+    - webchat/v3/configuration.md
+    - webchat/v3/embedding.md
+  - Webchat v2:
+    - Overview:
+      - webchat/v2/overview.md
+    - webchat/v2/supported-browsers.md
+    - webchat/v2/features.md
+    - webchat/v2/configuration.md
+    - webchat/v2/embedding.md
+  - webchat/migration.md
+  - webchat/plugins.md
+  - webchat/demo.md
+  - webchat/release-notes.md
 - AI Copilot:
   - Overview:
     - ai-copilot/overview.md

@@ -22,7 +22,7 @@ You can customize a rating widget in the Webchat Endpoint by doing the following
 1. Open the Cognigy.AI interface.
 2. Go to **Deploy > Endpoints** and select your configured Webchat Endpoint.
 3. Open the **Conversation Rating Settings** field.
-4. Configure the Rating settings as described in the [Deploy Webchat Endpoint](../../endpoints/webchat/deploy-webchat-endpoint.md#conversation-rating-settings) documentation.
+4. Configure the Rating settings as described in the [Deploy Webchat Endpoint](../../../webchat/v2/configuration.md#conversation-rating-settings) documentation.
 5. Click **Save**.
 
 <figure>
