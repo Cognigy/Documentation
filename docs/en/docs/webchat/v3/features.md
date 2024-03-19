@@ -35,7 +35,7 @@ options to upload a Background Image for visual appeal, and settings to apply a 
 These elements work together to create an inviting and branded entry point for user interactions, ensuring a seamless and appealing start to the chat experience.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}webchat/images/v3/home-screen.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}webchat/images/v3/home-page.png" width="100%" />
 </figure>
 
 To configure the Home screen, refer to the [Home Screen](configuration.md#home-screen) settings.
