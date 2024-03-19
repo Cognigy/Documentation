@@ -104,7 +104,7 @@ Example:
 actions. output('' , {
  _plugin: {
    type: "inline-image",
-   url: "https : //placekitten. com/256/256"
+   url: "https://placekitten.com/256/256"
   }
 })
 ```
