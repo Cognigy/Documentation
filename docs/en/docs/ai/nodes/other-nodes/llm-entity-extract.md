@@ -45,7 +45,7 @@ Select a model or use the default one.
 | Example Input    | Text          | Examples of text inputs. For example, `My ID is AB54EE, is that ok?`, `That would be ah bee see double 4 three`, `I guess it's 49 A B 8 K`. |
 | Extracted Entity | CognigyScript | Examples of extracted entities. For example, `AB54EE`, `ABC443`, `49AB8K`.                                                                  |                                                                  |
 
-Alternatively, you can add input examples in **Use JSON Editor** code field. For example:
+Alternatively, you can add input examples in the **Use JSON Editor** code field. For example:
 
 ```json
 {

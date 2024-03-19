@@ -99,7 +99,7 @@ You can configure the Node to either use the default model defined in the Settin
 | Extracted Entity      | CognigyScript | Examples of extracted entities. For example, `AB54EE`, `ABC443`, `49AB8K`.                                                                     |                                                                  |
 | Additional Validation | CognigyScript | User input must meet this extra validation criteria, in addition to the built-in field validation, for example, Email, to be considered valid. |
 
-Alternatively, you can add input examples in **Use JSON Editor** code field. For example:
+Alternatively, you can add input examples in the **Use JSON Editor** code field. For example:
 
 ```json
 {
