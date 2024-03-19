@@ -59,7 +59,7 @@ To configure the Previous Conversations screen, refer to the [Previous Conversat
 
 ## Teaser Message
 
-The Teaser Message feature enhances user engagement by displaying pre-defined messages beside the Webchat icon, aimed at sparking interest and encouraging chat initiation. These messages can also be displayed within the chat windows, reinforcing the initial engagement invitation. This feature helps create a seamless and engaging user experience from the first interaction.
+The Teaser Message feature enhances user engagement by displaying pre-defined messages beside the Webchat icon, aimed at sparking interest and encouraging chat initiation. This feature helps create a seamless and engaging user experience from the first interaction.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v3/teaser-message.png" width="100%" />
