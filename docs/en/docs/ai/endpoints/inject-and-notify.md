@@ -97,5 +97,5 @@ The following list shows all endpoints both APIs are compatible with:
 - [Voice Gateway]({{config.site_url}}ai/endpoints/cognigy-vg/)
 	- Inject/Notify is only supported for Voice Gateway when the Async Mode is enabled
 - [WhatsApp]({{config.site_url}}ai/endpoints/whatsapp/)
-- [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
+- [Webchat](../../webchat/overview.md)
 - [Webhook]({{config.site_url}}ai/endpoints/webhook/)

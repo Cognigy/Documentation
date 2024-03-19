@@ -84,7 +84,7 @@ You can debug a Flow when you have already set up an Endpoint for this Flow.
 To use and test this mode, follow these steps:
 
 1. Go to **Test > Logs**.
-2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../../webchat/demo.md).
 3. Copy `userId`.
 4. Go to the Flow editor, and open the Interaction panel.
 5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
