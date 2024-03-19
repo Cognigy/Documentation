@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-slug: "Overview"
+slug: "cognigy-webchat-overview"
 description: "Cognigy Webchat is a graphical chat component you can seamlessly embed into your website. It allows visitors to interact with a Conversational AI system powered by Cognigy.AI."
 hidden: false
 ---

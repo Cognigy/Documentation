@@ -1,7 +1,7 @@
 ---
 title: "Key Features"
 slug: "key-features"
-description: ""
+description: "The Webchat 3 key features offer comprehensive customization options, including branding elements, accessibility features, and tailored starting behaviors, ensuring a personalized and efficient user experience. Additionally, it introduces enhancements such as Quick Replies, Conversation Ratings, and Privacy Notices to elevate engagement and user feedback mechanisms, while features such as adaptive cards and media attachments enrich interactions by presenting structured content and media files seamlessly within the chat interface."
 hidden: false
 ---
 
@@ -14,8 +14,8 @@ The Webchat 3 key features offer comprehensive customization options, including 
 ## Customization  
 
 Customization includes a comprehensive suite of features 
-that bolster your brand’s presence and enhance user accessibility. 
-Customize the chat interface with your brand’s title and logo, 
+that bolster your brand's presence and enhance user accessibility. 
+Customize the chat interface with your brand's title and logo, 
 alongside distinct avatars for both virtual and human agents, 
 and adjust the color scheme across various elements. 
 Accessibility is prioritized with Text-to-Speech and Speech-to-Text functionalities. 

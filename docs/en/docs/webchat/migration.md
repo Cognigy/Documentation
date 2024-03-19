@@ -1,6 +1,6 @@
 ---
 title: "Migration from v2 to v3"
-slug: "migration-to v3"
+slug: "migration-to-v3"
 description: "Upgrade from Cognigy Webchat v2 to v3. Discover the improvements with our comprehensive comparison table highlighting key changes between chat versions. Use a step-by-step guide to seamlessly transition to the latest version."
 hidden: false
 ---
