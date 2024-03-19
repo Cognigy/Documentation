@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: Next Action Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.71-blue.svg)](../../../release-notes/4.71.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
