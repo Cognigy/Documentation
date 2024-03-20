@@ -28,8 +28,10 @@ This Node helps guide a conversation flow and ensures that the system responds e
 | Text            | CognigyScript | Enter the text you want to display in the next action widget.                                                                                                                                                  |
 | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                           |
 
+### Enable Copy to Clipboard Button
 
-
+{! _includes/ai/nodes/forwarder.md !}
+  
 ### Search Settings
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -55,8 +57,6 @@ This Node helps guide a conversation flow and ensures that the system responds e
 
 This Node helps the human agent by providing guidance and predefined instructions based on the user's question. 
 For instance, if a user asks about the latest release version, the agent can give them both the answer and links to important updates in that release.
-
-{! _includes/ai/nodes/forwarder.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/next-action-tile-example.png" width="80%"/>
