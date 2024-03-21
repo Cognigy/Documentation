@@ -48,18 +48,29 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI:
 
 1. Go to **Deploy > Endpoints**.
 2. Open the Endpoint where you want to enable Handover to Genesys Cloud.
-3. Scroll down to **Handover Settings** and select ** Genesys Cloud Guest Chat** from the list.
+3. Scroll down to **Handover Settings** and select **Genesys Cloud Guest Chat** from the list.
 4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in Cognigy Help Center. 
 
 ## AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents.
+
+By default, two versions of the application are provided: 
+
+- [Standalone](#standalone)
+- [Embedded](#embedded)
+
+### Standalone
+
+AI Copilot will be available as a standalone application via the following link:
 
 {! _includes/ai-copilot/url-pattern.md !}
 
-### Embedded AI Copilot
+### Embedded 
 
-For Embedded AI Copilot for Genesys, follow these steps:
+By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
+
+#### Create a Script 
 
 1. Go to Endpoint Settings > Copilot.
 2. Copy the Copilot Embedding URL by clicking on it.
@@ -74,8 +85,28 @@ For Embedded AI Copilot for Genesys, follow these steps:
 11. _(Optional)_ In the Layout section, change the size of Width and Height by clicking the **Stretch** button.
 12. In the upper-left corner of the script page, click **Script > Properties**.
 13. In the **Script Properties** section, activate the **Inbound** and **Message** features.
-14. In the upper-left corner of the script page, click **Script > Save**. 
-15. Go back to the Admin tab add select **Architect**.
+14. In the upper-left corner of the script page, click **Script > Save**, then **Publish**. 
+
+#### Create an Inbound Chat Flow
+
+Create an Inbound Chat flow in Genesys and add your script to it. To do that, follow these steps:
+
+1. Open the Genesys Cloud interface.
+2. Go to **Admin > Architect**.
+3. Click or hover over the **Flows** menu and select **Inbound Chat**.
+4. Click **Add**. The **Create Flow** dialog box opens.
+5. In the **Name** field, specify a unique name for the inbound chat flow.
+6. Click the **Divisions** list and select the division in which to place the flow.
+7. Click **Create Flow**. The flow's configuration page opens.
+8. To configure a flow, click **Edit**.
+9. Go to **Toolbox**.
+10. Drag the **Send Response** action and drop it onto the messaging flow editor.
+11. In the **Message Body** of the **Send Response** action, specify `Connected`. 
+12. Below the **Send Response** action, place the [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action.
+13. Form the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
+14. Below the **Set Screen Pop** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system. 
+15. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction. 
+16. In the upper-left corner, click **Save**, then **Publish**.
 
 ## More Information
 
