@@ -189,12 +189,12 @@ By default, you can use the embedded version of the AI Copilot workspace, but it
 
 #### Create a Script
 
-1. Go to Endpoint Settings > Copilot.
+1. Go to Endpoint **Settings > Copilot**.
 2. Copy the Copilot Embedding URL by clicking on it.
 3. Go to Genesys Cloud.
-4. Open the Admin tab.
-5. Under Contact Center, click Scripts.
-6. Click Create.
+4. Open the **Admin** tab.
+5. Under **Contact Center**, click **Scripts**.
+6. Click **Create**.
 7. Type a name for the script.
 8. Select the **Blank Script** template and click **+ Create**.
 9. On the script page, go to the **Add Components** tab.
@@ -207,8 +207,8 @@ By default, you can use the embedded version of the AI Copilot workspace, but it
     14.2 In the **Description** field, enter `Cognigy variable`.
     14.3 Enable the **Input** toggle.
     14.4 Click **Apply**.
-15. In the upper-left corner of the script page, click **Script > Properties**. 
-16. In the **Script Properties** section, activate the **Inbound** and **Message** features. 
+15. In the upper-left corner of the script page, click **Script > Properties**.
+16. In the **Script Properties** section, activate the **Inbound** and **Message** features.
 17. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
 
 #### Add the Script to the Inbound Message Flow
@@ -218,11 +218,11 @@ To add the Script to the Inbound Message Flow, follow these steps:
 1. Open the Genesys Cloud interface.
 2. Go to **Admin > Architect**.
 3. Click or hover over the **Flows** menu and select **Inbound Message**.
-4. From the flow list, select a flow that you created before. 
+4. From the flow list, select a flow that you created before.
 5. To configure a flow, click **Edit**.
-6. In the flow editor, place **Set Screen Pop** action above the **Transfer to ACD** action. 
+6. In the flow editor, place **Set Screen Pop** action above the **Transfer to ACD** action.
 7. Form the **Message Script** list of the **Set Screen Pop** action, select the script created before.
-8. In the **Inputs** action, add `userId` in the **userId** field. 
+8. In the **Inputs** action, add `userId` in the **userId** field.
 9. In the upper-left corner, click **Save**, then **Publish**.
 
 ## More Information

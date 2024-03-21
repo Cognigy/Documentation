@@ -70,22 +70,22 @@ AI Copilot will be available as a standalone application via the following link:
 
 By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
 
-#### Create a Script 
+#### Create a Script
 
-1. Go to Endpoint Settings > Copilot.
+1. Go to **Endpoint Settings > Copilot**.
 2. Copy the Copilot Embedding URL by clicking on it.
 3. Go to Genesys Cloud.
 4. Open the Admin tab.
-5. Under Contact Center, click Scripts.
-6. Click Create. 
-7. Type a name for the script. 
-8. Select the **Blank Script** template and click **+ Create**. 
-9. On the script page, go to the **Add Components** tab. 
+5. Under **Contact Center**, click **Scripts**.
+6. Click **Create**.
+7. Type a name for the script.
+8. Select the **Blank Script** template and click **+ Create**.
+9. On the script page, go to the **Add Components** tab.
 10. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
 11. _(Optional)_ In the Layout section, change the size of Width and Height by clicking the **Stretch** button.
 12. In the upper-left corner of the script page, click **Script > Properties**.
 13. In the **Script Properties** section, activate the **Inbound** and **Message** features.
-14. In the upper-left corner of the script page, click **Script > Save**, then **Publish**. 
+14. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
 
 #### Create an Inbound Chat Flow
 
@@ -101,11 +101,11 @@ Create an Inbound Chat flow in Genesys and add your script to it. To do that, fo
 8. To configure a flow, click **Edit**.
 9. Go to **Toolbox**.
 10. Drag the **Send Response** action and drop it onto the messaging flow editor.
-11. In the **Message Body** of the **Send Response** action, specify `Connected`. 
+11. In the **Message Body** of the **Send Response** action, specify `Connected`.
 12. Below the **Send Response** action, place the [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action.
-13. Form the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
-14. Below the **Set Screen Pop** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system. 
-15. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction. 
+13. From the **Message Script** list of the **Set Screen Pop** action, select the script created before.
+14. Below the **Set Screen Pop** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system.
+15. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction.
 16. In the upper-left corner, click **Save**, then **Publish**.
 
 ## More Information
