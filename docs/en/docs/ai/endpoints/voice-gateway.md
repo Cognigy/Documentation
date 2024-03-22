@@ -162,10 +162,10 @@ The Call Failover section is intended to handle runtime errors that occur on the
 You can use any [handover provider](../handover-providers/overview.md) within the Voice Gateway integration.
 The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
 
-Using speech-to-text technology, the voice agent sends the conversation script to the human agent. 
-After receiving the script, the human agent can respond using text only. 
-The voice agent then converts the human agent's message to speech using text-to-speech technology. 
-The end user receives a voice message from the voice agent.
+Using speech-to-text technology, the voice agent sends the conversation script from the end user to the human agent. 
+Once the script is received, the human agent can respond using text. 
+After that, the voice agent converts the human agent's message to speech using text-to-speech technology. 
+Finally, the converted message is sent to the end user.
 
 In addition to activating the Handover Settings,
 you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
@@ -173,13 +173,12 @@ This Node transfers the conversation from the voice agent to the human agent.
 
 ### Multilingual Support
 
-This technology also supports translation into other languages. 
-For instance, if a user speaks German, the voice agent responds in German. 
-However, when the call is transferred to the contact center, 
-the dialogue is translated into English. 
-The human agent responds in English, 
-and the response is then translated back into German using text-to-speech technology for the end user. 
-This approach enables effective communication regardless of language barriers.
+Within the Handover Settings, you can use translation into other languages.
+
+For example, if a user communicates in German, the voice agent responds accordingly. 
+However, after transferring the call to the contact center, the dialogue is translated into English. 
+The human agent responds in English, and the response is then translated back into German for the end user using text-to-speech technology. 
+This method ensures seamless communication despite language differences.
 
 Note that depending on the language and provider selected, 
 translations may experience delays while they reach the contact center. 
