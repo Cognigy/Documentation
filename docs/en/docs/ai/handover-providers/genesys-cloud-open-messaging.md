@@ -93,7 +93,7 @@ To create an Inbound Message flow, follow these steps:
     - `myLanguage`
     - `mySkills`
     - `userId`
-14. *(Optional)* To send this data to the human agent within a conversation, below the **Get Participant Data** action, add the second **Send Response** action. In the message body, specify variables in a [message sequence with the String Builder](https://help.mypurecloud.com/articles/set-up-a-message-sequence-with-the-string-builder/). 
+14. *(Optional)* for debugging purposes, you can send this data to the human agent within a conversation. To do that, below the **Get Participant Data** action, add the second **Send Response** action. In the message body, specify variables in a [message sequence with the String Builder](https://help.mypurecloud.com/articles/set-up-a-message-sequence-with-the-string-builder/). 
 15. Below the **Send Response** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system. 
 16. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction. 
 17. In the upper-left corner, click **Save**, then **Publish**.
@@ -235,8 +235,8 @@ To add the Script to the Inbound Message Flow, follow these steps:
 3. Click or hover over the **Flows** menu and select **Inbound Message**.
 4. From the flow list, select a flow that you created before.
 5. To configure a flow, click **Edit**.
-6. In the flow editor, ensure that both the  **Get Participant Data** action and the second **Send Response** action are added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
-7. Below the **Get Participant Data** and **Send Response** actions, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
+6. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+7. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
 8. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
 9. In the **Inputs** action, add `userId` in the **userId** field. 
 10. In the upper-left corner, click **Save**, then **Publish**.
