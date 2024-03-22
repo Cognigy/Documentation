@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys Cloud Guest Chat
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
@@ -15,6 +15,10 @@ hidden: false
 ## Description
 
 <div class="divider"></div>
+
+!!! warning
+    The Genesys Cloud Guest Chat handover is at risk of deprecation in the near future. If you are a new user looking to connect to Genesys, create a new [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover.
+    For existing users, we strongly advise trying out the new handover and transitioning to it.
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
