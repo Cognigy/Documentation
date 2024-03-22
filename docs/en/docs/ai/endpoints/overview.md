@@ -24,7 +24,7 @@ The following Endpoints are specific to the Cognigy.AI platform:
 | Cognigy Endpoint                             | Description                                                                                                    |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [Cognigy Voice Copilot](voice-copilot.md)    | Used for integration between call centers and AI Copilot for voice use cases.                                  |
-| [Cognigy Voice Gateway](cognigy-vg.md)       | Lets you connect to SIP interfaces, which means that your virtual agent can be connected to the phone network. |
+| [Cognigy Voice Gateway](voice-gateway.md)       | Lets you connect to SIP interfaces, which means that your virtual agent can be connected to the phone network. |
 | [Cognigy Webchat](../../webchat/overview.md) | An open-source web-based chat widget that can be embedded on any website.                                      |
 
 ### Generic Endpoints

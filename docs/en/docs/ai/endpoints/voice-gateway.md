@@ -1,14 +1,12 @@
 ---
 title: "Cognigy Voice Gateway" 
-slug: "cognigy-vg" 
+slug: "voice-gateway" 
 hidden: false 
 ---
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
-
-## Overview
+[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
@@ -16,11 +14,30 @@ hidden: false
 
 Within our Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using our VoiceGateway, enabling customers to speak with your Agent instead of just writing to it.
 
-## Voice Gateway Specific Nodes
+## Generic Endpoint Settings
+
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+
+- [Endpoints Overview](overview.md)
+- [Data Protection & Analytics](data-protection-and-analytics.md)
+- [Transformer Functions](transformers/transformers.md)
+- [NLU Connectors](../resources/build/nlu-connectors.md)
+- [Session Management](session-management.md)
+- [Real Time Translation Settings](real-time-translation-settings.md)
+
+!!! note "Contact Center & Phone number linking"
+    To route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
+
+!!! warning "Rebranding of Voice Gateway with AudioCodes"
+    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+
+## Specific Endpoint Settings
+
+### Voice Gateway Specific Nodes
 
 Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../nodes/voice/voice-gateway/overview.md) for more information.
 
-## Call Meta Data
+### Call Meta Data
 
 Voice Gateway identifies information about the caller and adds it to the Cognigy [Input Object](../tools/interaction-panel/input.md)  as `input.data.numberMetaData`.
 
@@ -67,7 +84,7 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields as well.
 
-## Generic Settings
+### Generic Settings
 
 These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
 
@@ -76,7 +93,7 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 | Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
 | Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
 
-### Prosody Settings
+#### Prosody Settings
 
 | Parameter     | Type   | Description                                                                                     |
 |---------------|--------|-------------------------------------------------------------------------------------------------|
@@ -84,11 +101,11 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 | Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.              |
 | Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                        |
 
-#### Adapting Values for Your Chosen Speech Provider
+##### Adapting Values for Your Chosen Speech Provider
 
 As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google, the final output speed is directly added to the settings.
 
-## Call Events
+### Call Events
 
 Allows activating call events for a Flow.
 Select a call event from the [Voice Gateway Events](../../voicegateway/references/events/overview.md) list.
@@ -96,7 +113,7 @@ This event that will trigger the action.
 
 If you have configured the same call event in both the Endpoint and the [Lookup](../nodes/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
 
-### Call Event Settings
+#### Call Event Settings
 
 !!! note
     As with all other Endpoint settings, you cannot test the Call Events settings in the Endpoint within the Interaction Panel.
@@ -108,7 +125,7 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 | Data Payload | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
 | Execute Flow | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-## Call Failover
+### Call Failover
 
 The Call Failover section is intended to handle runtime errors that occur on the Cognigy.AI side during the execution of a Flow.
 
@@ -140,19 +157,35 @@ The Call Failover section is intended to handle runtime errors that occur on the
 | Referred By                 | String        | This parameter is optional.<br><br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.                                                                                | Refer         |
 | Custom Transfer SIP Headers | Toggle        | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | All           |
 
-## Generic Endpoint Settings
+## Handover Settings
 
-Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+You can use any [handover provider](../handover-providers/overview.md) within the Voice Gateway integration.
+The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
 
-- [Endpoints Overview](overview.md)
-- [Data Protection & Analytics](data-protection-and-analytics.md)
-- [Transformer Functions](transformers/transformers.md)
-- [NLU Connectors](../resources/build/nlu-connectors.md)
-- [Session Management](session-management.md)
-- [Real Time Translation Settings](real-time-translation-settings.md)
+Using speech-to-text technology, the voice agent sends the conversation script to the human agent. 
+After receiving the script, the human agent can respond using text only. 
+The voice agent then converts the human agent's message to speech using text-to-speech technology. 
+The end user receives a voice message from the voice agent.
 
-!!! note "Contact Center & Phone number linking"
-    In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
+In addition to activating the Handover Settings,
+you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
+This Node transfers the conversation from the voice agent to the human agent.
 
-!!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+### Multilingual Support
+
+This technology also supports translation into other languages. 
+For instance, if a user speaks German, the voice agent responds in German. 
+However, when the call is transferred to the contact center, 
+the dialogue is translated into English. 
+The human agent responds in English, 
+and the response is then translated back into German using text-to-speech technology for the end user. 
+This approach enables effective communication regardless of language barriers.
+
+Note that depending on the language and provider selected, 
+translations may experience delays while they reach the contact center. 
+If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side. 
+Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly. 
+This approach will ensure that the end user is aware that their message may not be delivered.
+You can achieve this by adjusting timeout settings and error handling policies.
+
+

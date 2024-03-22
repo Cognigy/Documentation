@@ -384,7 +384,7 @@ nav:
     - Cognigy Webchat:
       - webchat/overview.md
     - Voice Gateway:
-      - ai/endpoints/cognigy-vg.md
+      - ai/endpoints/voice-gateway.md
     - ai/endpoints/overview.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
