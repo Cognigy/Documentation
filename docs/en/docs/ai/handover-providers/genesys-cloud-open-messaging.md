@@ -84,8 +84,10 @@ To create an Inbound Message flow, follow these steps:
 8. To configure a flow, click **Edit**.
 9. Go to **Toolbox**.
 10. Drag the **Send Response** action and drop it onto the messaging flow editor.
-11. In the **Message Body** of the **Send Response** action, specify `Connected`.
-12. *(Optional)* Below the **Send Response** action, add [Get Participant Data](https://help.mypurecloud.com/articles/get-participant-data-action/) action.
+11. In the **Message Body** of the **Send Response** action, specify `Connected`. 
+12. The steps 12–14 are optional.
+    Follow them if you want to add a [new embedded version of AI Copilot](#embedded) within your handover.<br>
+    *(Optional)* Below the **Send Response** action, add [Get Participant Data](https://help.mypurecloud.com/articles/get-participant-data-action/) action.
 13. *(Optional)* In the **Get Participant Data** editor, add the following variables:
     - `queueId`
     - `myLanguage`
@@ -233,10 +235,11 @@ To add the Script to the Inbound Message Flow, follow these steps:
 3. Click or hover over the **Flows** menu and select **Inbound Message**.
 4. From the flow list, select a flow that you created before.
 5. To configure a flow, click **Edit**.
-6. In the flow editor, place **Set Screen Pop** action above the **Transfer to ACD** action.
-7. Form the **Message Script** list of the **Set Screen Pop** action, select the script created before.
-8. In the **Inputs** action, add `userId` in the **userId** field.
-9. In the upper-left corner, click **Save**, then **Publish**.
+6. In the flow editor, ensure that both the  **Get Participant Data** action and the second **Send Response** action are added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+7. Below the **Get Participant Data** and **Send Response** actions, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
+8. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
+9. In the **Inputs** action, add `userId` in the **userId** field. 
+10. In the upper-left corner, click **Save**, then **Publish**.
 
 ## More Information
 
