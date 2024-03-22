@@ -55,7 +55,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI:
 
 Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents.
 
-By default, two versions of the application are provided: 
+By default, two versions of the application are provided:
 
 - [Standalone](#standalone)
 - [Embedded](#embedded)
@@ -75,14 +75,14 @@ By default, you can use the embedded version of the AI Copilot workspace, but it
 1. Go to **Endpoint Settings > Copilot**.
 2. Copy the Copilot Embedding URL by clicking on it.
 3. Go to Genesys Cloud.
-4. Open the Admin tab.
+4. Open the **Admin** tab.
 5. Under **Contact Center**, click **Scripts**.
 6. Click **Create**.
 7. Type a name for the script.
 8. Select the **Blank Script** template and click **+ Create**.
 9. On the script page, go to the **Add Components** tab.
 10. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
-11. _(Optional)_ In the Layout section, change the size of Width and Height by clicking the **Stretch** button.
+11. In the **Layout** section, change the size of Width and Height by clicking the **Stretch** button.
 12. In the upper-left corner of the script page, click **Script > Properties**.
 13. In the **Script Properties** section, activate the **Inbound** and **Message** features.
 14. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.

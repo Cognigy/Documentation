@@ -91,7 +91,7 @@ To create an Inbound Message flow, follow these steps:
     - `myLanguage`
     - `mySkills`
     - `userId`
-14. *(Optional)* To send this data to the recipient, below the **Get Participant Data**, add the second **Send Response** action. In the message body, specify variables in a [message sequence with the String Builder](https://help.mypurecloud.com/articles/set-up-a-message-sequence-with-the-string-builder/). 
+14. *(Optional)* To send this data to the human agent within a conversation, below the **Get Participant Data** action, add the second **Send Response** action. In the message body, specify variables in a [message sequence with the String Builder](https://help.mypurecloud.com/articles/set-up-a-message-sequence-with-the-string-builder/). 
 15. Below the **Send Response** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system. 
 16. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction. 
 17. In the upper-left corner, click **Save**, then **Publish**.
@@ -106,12 +106,11 @@ To set up Message Routing, follow these steps:
 
 1. Open the Genesys Cloud interface.
 2. Go to **Admin > Routing > Message Routing**.
-3. In the upper-right corner, click **+**.
-4. On the **Message Route** tab, navigate to the **Select Flow** list.
+3. In the upper-right corner, click **+ Attach New Addresses to a Flow**.
+4. On the **Attach New Addresses** page, navigate to the **Select Flow** list.
 5. From the **Select Flow** list, choose the Inbound Message Flow you created.
-6. In the **Addresses** section, click **+**.
-7. From the **Select Address** list, choose the Open Messaging platform you created and click **Add**.
-8. Click **Save**.
+6. From the **Select Addresses** section, choose the Open Messaging platform you created and click **Attach Address**. 
+7. Click **Save**.
 
 Your Message Routing configuration will appear in the message routing list.
 
@@ -179,15 +178,29 @@ To test connection, click **Open Demo Web Chat**.
 
 ## AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents.
+
+By default, two versions of the application are provided:
+
+- [Standalone](#standalone)
+- [Embedded](#embedded)
+
+### Standalone
+
+AI Copilot will be available as a standalone application via the following link:
 
 {! _includes/ai-copilot/url-pattern.md !}
 
-### Embedded AI Copilot
+### Embedded
 
 By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
 
+- [Create a script](#create-a-script)
+- [Add the script to the Inbound Message flow](#add-the-script-to-the-inbound-message-flow)
+
 #### Create a Script
+
+To create a script, follow these steps:
 
 1. Go to Endpoint **Settings > Copilot**.
 2. Copy the Copilot Embedding URL by clicking on it.
@@ -199,14 +212,14 @@ By default, you can use the embedded version of the AI Copilot workspace, but it
 8. Select the **Blank Script** template and click **+ Create**.
 9. On the script page, go to the **Add Components** tab.
 10. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
-11. _(Optional)_ In the Layout section, change the size of Width and Height by clicking the **Stretch** button.
+11. In the **Layout** section, change the size of Width and Height by clicking the **Stretch** button.
 12. In the upper-right corner, go to the **Variables** tab.
-13. On the **Variables** tab, go to the Basic Types section and click **String**.
-14. Create a new variable:
-    14.1 In the **Name** field, enter `userId`.
-    14.2 In the **Description** field, enter `Cognigy variable`.
-    14.3 Enable the **Input** toggle.
-    14.4 Click **Apply**.
+13. On the **Variables** tab, go to the **Basic Types** section and click **String**.
+14. Create a new variable:<br>
+    14.1 In the **Name** field, enter `userId`.<br>
+    14.2 In the **Description** field, enter `Cognigy variable`.<br>
+    14.3 Enable the **Input** toggle.<br>
+    14.4 Click **Apply**.<br>
 15. In the upper-left corner of the script page, click **Script > Properties**.
 16. In the **Script Properties** section, activate the **Inbound** and **Message** features.
 17. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
