@@ -171,6 +171,17 @@ In addition to activating the Handover Settings,
 you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
 This Node transfers the conversation from the voice agent to the human agent.
 
+In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
+
+**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Transcribes user's speech into text using _speech-to-text_ technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
+**Human Agent:** Receives a conversation script containing user's query.<br>
+**Human Agent:** Types response on interface. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using _text-to-speech_ technology.<br>
+**End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
+
 ### Multilingual Support
 
 Within the Handover Settings, you can use translation into other languages.
@@ -187,17 +198,16 @@ Plan for such scenarios within your Flow and configure the voice agent's behavio
 This approach will ensure that the end user is aware that their message may not be delivered.
 You can achieve this by adjusting timeout settings and error handling policies.
 
-### Examples
+In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies. The end user and human agent speak different languages, but this doesn't hinder their understanding, as the voice agent translates their speech into the required language for each party.
 
-#### Default 
-
-In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
-
-**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hallo, ich brauche Hilfe bei meiner Rechnungsanfrage`.<br>
+**Voice Agent:** Determines the language and answers using the same language. Example: `Danke für die Informationen. Ich werde Sie an einen menschlichen Agenten weiterleiten, der Ihnen weiterhelfen kann`.<br>
 **Voice Agent:** Transcribes user's speech into text using _speech-to-text_ technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
-**Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
-**Human Agent:** Receives a conversation script containing user's query.<br>
-**Human Agent:** Types response on interface. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**Voice Agent:** Determines the need for human assistance and initiates the handover to the human agent via the handover provider.<br>
+**Human Agent:** Receives conversation script containing user's query.<br>
+**Human Agent:** Types response on interface. Example: `I've found the issue. It seems there was an error in the billing statement. I'll correct it for you`.<br>
 **Voice Agent:** Receives human agent's typed response. Converts the text message into speech using _text-to-speech_ technology.<br>
-**End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
-**End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
+**End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
+**End User/Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
+
+To set up such a Flow, you need to use the Set Translation Node and configure the Look up Node.
