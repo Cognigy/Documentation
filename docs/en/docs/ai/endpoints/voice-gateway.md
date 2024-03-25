@@ -187,4 +187,17 @@ Plan for such scenarios within your Flow and configure the voice agent's behavio
 This approach will ensure that the end user is aware that their message may not be delivered.
 You can achieve this by adjusting timeout settings and error handling policies.
 
+### Examples
 
+#### Default 
+
+In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
+
+**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Transcribes user's speech into text using _speech-to-text_ technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
+**Human Agent:** Receives a conversation script containing user's query.<br>
+**Human Agent:** Types response on interface. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using _text-to-speech_ technology.<br>
+**End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
