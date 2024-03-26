@@ -24,7 +24,7 @@ ignore_macros: true
 
 There are 2 migration scenarios considered here:
    
-- **Migration inside the existing cluster.** Cognigy.AI Helm chart in the `cognigy-ai` namespace and MongoDB Helm Chart in the `mongodb` namespace are installed alongside the existing Kustomize installation. We strongly recommend this scenario as this process significantly simplifies the migration of the existing storage.
+- **Migration inside the existing cluster.** Cognigy.AI Helm Chart in the `cognigy-ai` namespace and MongoDB Helm Chart in the `mongodb` namespace are installed alongside the existing Kustomize installation. We strongly recommend this scenario as this process significantly simplifies the migration of the existing storage.
 - **Migration to a new cluster.** Cognigy.AI and MongoDB Helm Charts are installed in a new cluster. This scenario is more complex than the first one. You will either need to ensure that underlying storage for existing PVCs can be reattached to the new cluster or restore the data from snapshots in the new cluster.
 
 Before starting migration, do the following steps: 

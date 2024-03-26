@@ -54,7 +54,7 @@ You can filter records using the following filters:
 | [Slot](../../nlu/nlu-overview/ml-intents.md#slots-and-lexicons) | None <br> Lexicon Slots <br> System Slots                                                                                                                       | Lists all user messages depending on selected slot type.              |
 
 
-The **Filter Preset** drop-down menu allows you to preset filter options with one mouseclick.
+The **Filter Preset** drop-down menu allows you to preset filter options with one mouse click.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/a68ad17-Filter_Preset.svg" width="100%" />

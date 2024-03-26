@@ -49,7 +49,7 @@ An external NLU service that has been connected via the NLU connectors feature c
 
 ### Deploying with an External NLU
 ---
-An external NLU service that has been linked via an [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature can be used to deploy to any [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/) that communicates with a deployment channel. This allows different conversational channels to use different NLU's when connected to the same agent in Cognigy.AI.
+An external NLU service that has been linked via an [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature can be used to deploy to any [Endpoint](../../endpoints/overview.md) that communicates with a deployment channel. This allows different conversational channels to use different NLU's when connected to the same agent in Cognigy.AI.
 
 To change the NLU for a given endpoint, open the ***Endpoints*** menu found under the ***Deploy*** sub-menu in the resources panel. Select the endpoint that you wish to adjust by clicking on it to open the endpoint settings menu. Navigate to the **Natural Language Understanding** section of the endpoint settings and access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
 

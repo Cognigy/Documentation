@@ -127,7 +127,7 @@ You control and manage the data available in the OData Endpoint via the agent se
 
 - If you enable *Mask Sensitive Analytics* the *inputText* and *inputData* fields will be masked.
 
-Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
+Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/nodes/nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
 
 ## Cognigy.AI OData Collections
 
@@ -140,6 +140,7 @@ This section details the data types that exist within the OData Collections that
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
+  * [LiveAgentEscalations](#liveagentescalations)
 
 ### Fields
 
@@ -151,7 +152,7 @@ See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more inform
 
 **Description**
 
-Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
+Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/nodes/other-nodes/overwrite-analytics/).
 
 **Example Query**
 
@@ -270,7 +271,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Steps
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-nodes-and-intents)
 
 **Description**
 
@@ -439,6 +440,15 @@ When retrieving this collection, the endpoint will return the following fields:
 | localeReferenceId | Identifier for the specific locale reference              | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
 | snapshotId        | Identifier of the snapshot                                | String   | 63ff0cc47a466cab278fd19b                                         |
 | endpsnapshotName  | Name of the snapshot                                      | String   | Prod-Snapshot 26.7.23                                            |
+
+### Entity Relationship Diagram
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/tools/images/insights-odata-entities.drawio.svg" width="100%" /> 
+    <figcaption>
+        This scheme describes the relationships between the collection entities
+    </figcaption>
+</figure>
 
 ## Integrations
 

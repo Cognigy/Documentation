@@ -470,7 +470,7 @@ Additional conditions:
 - 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills
 - Deactivated: Auto Assign Conversations to a Busy Agent.
 
-Result: The first incoming conversation will be assigned to Agent 1, the second coversation will be assigned randomly except Agent 1.
+Result: The first incoming conversation will be assigned to Agent 1, the second conversation will be assigned randomly except Agent 1.
 
 **Example 2**
 

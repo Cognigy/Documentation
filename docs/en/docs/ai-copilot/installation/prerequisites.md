@@ -6,6 +6,8 @@ hidden: false
 
 # Prerequisites
 
+{! _includes/ai-copilot/installation-note.md !}
+
 Before installing and running AI Copilot, you need to have Cognigy.AI installed and a dedicated `agent-assist` namespace created in your Kubernetes cluster. Helm, a package manager for Kubernetes, is also required to streamline the deployment of the necessary resources.
 
 - [Kubernetes](https://kubernetes.io/) 1.16+

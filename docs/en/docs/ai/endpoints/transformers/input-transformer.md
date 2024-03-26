@@ -31,7 +31,7 @@ The `handleInput` function gets a configuration object as an argument. This obje
 ## Return Values of the Transformer
 <div class="divider"></div>
 ## Regular Transformer Usage
-The `Input Transformer` can  return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different compared to a request from Facebook Messenger. It is, therefore, necessary to read the documentation from the specific channel to know how the request body is formatted. 
+The `Input Transformer` can  return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different compared to a request from Facebook (Meta) Messenger. It is, therefore, necessary to read the documentation from the specific channel to know how the request body is formatted. 
 
 Example:
 

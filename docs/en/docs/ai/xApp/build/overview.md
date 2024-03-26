@@ -25,4 +25,4 @@ When building an xApp, it's important to mitigate the risk of an XSS attack. Che
 ## More Information
 
 - [xApps](overview.md)
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../../nodes/xApp/overview.md)

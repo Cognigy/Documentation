@@ -1,5 +1,5 @@
 ---
- title: "Workplace by Facebook" 
+ title: "Workplace by Facebook (Meta)" 
  slug: "workplace-by-fb" 
  hidden: false 
 ---

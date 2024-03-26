@@ -40,7 +40,7 @@ Clicking on the secondary button located in the bottom-left corner of the Intera
     Prior to version 4.25.0, **Input Mode** select was a part of Interaction Panel settings tab.
 
 #### Chat
-When **Chat** is selected as the input mode, the **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
+When **Chat** is selected as the input mode, the **virtual agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
 It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings](input.md). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript](../cognigy-script.md) under `{{ " {{input.data}}" }}`
 
@@ -84,7 +84,7 @@ You can debug a Flow when you have already set up an Endpoint for this Flow.
 To use and test this mode, follow these steps:
 
 1. Go to **Test > Logs**.
-2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../../webchat/demo.md).
 3. Copy `userId`.
 4. Go to the Flow editor, and open the Interaction panel.
 5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
@@ -101,7 +101,7 @@ Now you can view and track the user's real-time conversation from your Interacti
 </figure>
 
 #### Playbook
-When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the **Play** button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the virtual agent. Select a Playbook that you wish to execute, and click the **Play** button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="100%" />
@@ -133,7 +133,7 @@ State can be used to narrow the set of **Intents** that can be triggered, by act
 
 ### Context object
 
-The **Context** can be seen as the short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
+The **Context** can be seen as the short-term memory of the **virtual agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
 
 !!! note "Context object"
     Head over to [Context](context.md) for more information. 
@@ -163,7 +163,7 @@ This section lets you configure the chat outputs in the Interaction Panel.
 </figure>
 
 #### Text to Speech
-If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
+If enabled, the virtual agent will speak to you through the browser's Text to Speech functionality.
 
 #### Expert Mode
 

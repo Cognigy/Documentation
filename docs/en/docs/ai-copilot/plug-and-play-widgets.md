@@ -14,10 +14,11 @@ These widgets are seamlessly integrated with other AI Copilot Widgets and requir
 
 You can build these widgets by using the following Nodes:
 
-- [Copilot:Identity Tile](../ai/flow-nodes/ai-copilot/identity-tile.md)
-- [Copilot: Next Action Tile](../ai/flow-nodes/ai-copilot/next-action-tile.md)
-- [Copilot: Sentiment Tile](../ai/flow-nodes/ai-copilot/sentiment-tile.md)
-- [Copilot: Transcript Tile](../ai/flow-nodes/ai-copilot/transcript-tile.md)
+- [Copilot: Identity Tile](../ai/nodes/ai-copilot/identity-tile.md)
+- [Copilot: Next Action Tile](../ai/nodes/ai-copilot/next-action-tile.md)
+- [Copilot: Sentiment Tile](../ai/nodes/ai-copilot/sentiment-tile.md)
+- [Copilot: Transcript Tile](../ai/nodes/ai-copilot/transcript-tile.md)
+- [Copilot: Knowledge Tile](../ai/nodes/ai-copilot/knowledge-tile.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai-copilot/images/plug-and-play-widgets.png" width="80%"/>
@@ -27,4 +28,4 @@ You can build these widgets by using the following Nodes:
 ## More Information
 
 - [AI Copilot](overview.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)

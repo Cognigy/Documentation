@@ -1,0 +1,2 @@
+!!! Tipp "Wechseln eines Gebietsschemas während einer Konversation"
+    Sie können das Gebietsschema eines Flows während einer Konversation ändern, indem Sie den Knoten [Gebietsschema wechseln](https://docs.cognigy.com/ai/flow-nodes/logic/switch-locale/?h=locale) verwenden.

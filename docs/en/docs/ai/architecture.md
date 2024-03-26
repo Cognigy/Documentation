@@ -31,7 +31,7 @@ which is called a container orchestrator. [Kubernetes](https://kubernetes.io/) i
 - assigning containers to one of the available servers in the Kubernetes cluster respecting their individual hardware requirements and matching these against the available hardware on a server
 - observing whether containers need to be restarted in case they crash
 - updating containers to a newer version when a software update (for example, new version of Cognigy.AI) has been shipped
-- testing whether containerized processes still react by sending readiness- and livess-probes
+- testing whether containerized processes still react by sending readiness- and liveness-probes
 - scaling microservices according to load-indicators such as CPU load, memory profile or custom metrics by starting additional copies of services
 
 ## Runtime & IDE
@@ -46,7 +46,7 @@ While Cognigy Insights is actually also part of Cognigy.AI, it plays a smaller r
 
 ### IDE - building your Virtual Agents
 
-A place that allows you to create Virtual Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration of your Virtual Agent, a so-called [Snapshot](../ai/resources/deploy/snapshots.md) must be created in order to deploy your Virtual Agent into production. A Snapshot is an immutable copy of your Virtual Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface to the second group of functionality: The Cognigy.AI Runtime.
+A place that allows you to create virtual agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration of your virtual agent, a so-called [Snapshot](../ai/resources/deploy/snapshots.md) must be created in order to deploy your virtual agent into production. A Snapshot is an immutable copy of your virtual agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface to the second group of functionality: The Cognigy.AI Runtime.
 
 The following table shows the most relevant microservices forming the IDE:
 
@@ -75,7 +75,7 @@ The following table describes the responsibilities of key runtime microservices:
 | service-nlp-matcher                             | Detects [Lexicon Slots]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) in user utterances using [Lexicons]({{config.site_url}}ai/resources/build/lexicons/).                                                                                                    |
 | service-nlp-classifier-score                               | Implement intent recognition based on [Intent models]({{config.site_url}}ai/nlu/nlu-overview/overview/) our customers can train within our platform. There are variants for different languages (German, English, Korean, Japanese, Generic, XX).                      |
 | service-nlp-embedding                           | Runs our pre-trained word-embedding models which are part of our NLU system and drive [Intent models]({{config.site_url}}ai/nlu/nlu-overview/overview/) our customers can create as part of our platform. Language dependent embedding services are available. |
-| service-http & execution                        | Sends HTTP-Requests to external 3rd party systems when [HTTP Request Flow Node]({{config.site_url}}ai/flow-nodes/services/http-request/) is used and executes Flow Nodes of our customers as part of [Extensions]({{config.site_url}}ai/resources/manage/extensions/). |
+| service-http & execution                        | Sends HTTP-Requests to external 3rd party systems when [HTTP Request Flow Node]({{config.site_url}}ai/nodes/services/http-request/) is used and executes Flow Nodes of our customers as part of [Extensions]({{config.site_url}}ai/resources/manage/extensions/). |
 | service-profiles                                | Manages [Contact Profiles]({{config.site_url}}ai/resources/manage/contact-profiles/) and offers the ability to access them via Cognigy Script.     |
 | service-function-scheduler & function-execution | Schedules and executes the source-code of our customers in [Cognigy Functions]({{config.site_url}}ai/resources/build/functions/).                                                                                                                                      |
 | service-handover       | Implements an interface for 3rd party [handover providers]({{config.site_url}}ai/handover-providers/overview/) like Ring Central Engage. Forwards end-users message to those external providers while conversations are in "handover".                                                                                         |

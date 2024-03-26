@@ -40,9 +40,9 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 <div class="divider"></div>
 
-Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) and can therefore easily be accessed with [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject/)  to get more information about /inject and /notify.
+Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object](../tools/interaction-panel/input.md) and can therefore easily be accessed with [CognigyScript](../tools/cognigy-script.md) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject/) to get more information about /inject and /notify.
 
-You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/http-request/) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
+You can use the [HTTP Request-Node](../nodes/service/http-request.md) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 
 
 <figure>
@@ -87,7 +87,7 @@ Our inject- and notify-APIs don't support all channels we are compatible with. T
 
 The following list shows all endpoints both APIs are compatible with:
 
-- [Facebook Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/)
+- [Facebook (Meta) Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/)
 - [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/)
 - [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/)
 - [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/)
@@ -97,5 +97,5 @@ The following list shows all endpoints both APIs are compatible with:
 - [Voice Gateway]({{config.site_url}}ai/endpoints/cognigy-vg/)
 	- Inject/Notify is only supported for Voice Gateway when the Async Mode is enabled
 - [WhatsApp]({{config.site_url}}ai/endpoints/whatsapp/)
-- [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
+- [Webchat](../../webchat/overview.md)
 - [Webhook]({{config.site_url}}ai/endpoints/webhook/)

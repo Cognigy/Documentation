@@ -1,8 +1,8 @@
 ---
- title: "Email Templates" 
- slug: "email-templates" 
- hidden: false 
- ignore_macros: true
+title: "Email Templates" 
+slug: "email-templates" 
+hidden: false 
+ignore_macros: true
 ---
 
 # Email Templates

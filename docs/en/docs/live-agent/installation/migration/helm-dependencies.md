@@ -242,7 +242,7 @@ exit
 
 Once done, `jobs` command should give no output.
 
-### Step 3. Delete current release and check PVC reclaim policy
+### Step 3. Delete the current release and check PVC reclaim policy
 
 When the PostgreSQL and Redis versions have changed, the PVCs become incompatible with the new versions. To recover compatibility, delete the current release and the PVCs, then check the Live Agent PVC reclaim policy.
 
@@ -272,7 +272,9 @@ kubectl delete pvc -n live-agent <redis-replica>
 
 ### Step 4. Delete or modify existing database secrets
 
-The existing secrets need to be deleted or modified with the new keys. The system automatically generates new secrets in a new release if existing secrets are not specified in the values file.
+The existing secrets need to be deleted or modified with the new keys.
+The system automatically generates new secrets in a new release
+if existing secrets are not specified in the `values.yaml` file.
 
 === "Delete the secrets (recommended)"
 
@@ -299,7 +301,7 @@ The existing secrets need to be deleted or modified with the new keys. The syste
 
 ### Step 5. Install the chart version 4.44.0
 
-To restore the previous backup, install the new release without the migrations job running or the deployments accessing the DB as it is empty. Set the migrations job to false in the custom-values.yaml file and decrease the replica count to 0 for both the app and worker:
+To restore the previous backup, install the new release without the migration job running or the deployments accessing the DB as it is empty. Set the migrations job to false in the custom-values.yaml file and decrease the replica count to 0 for both the app and worker:
 
 ```yaml
 # custom-values.yaml
@@ -366,7 +368,7 @@ PGPASSWORD=postgres psql --host cognigy-live-agent-postgresql -U postgres -d pos
 
 ### Step 7. Change custom-values.yaml
 
-Enable the migrations job and increase the replica count to the desired number for the app and worker in the custom-values.yaml file.
+Enable the migration job and increase the replica count to the desired number for the app and worker in the custom-values.yaml file.
 
 ```yaml
 # custom-values.yaml

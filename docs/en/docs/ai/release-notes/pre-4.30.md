@@ -80,7 +80,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 ### Improvements
 
 - Improved by adding 'Automatically move Flow Editor' setting to interaction Panel
-- Improved by enabling Live Agents to send a message to the Virtual Agent on behalf of the user
+- Improved by enabling Live Agents to send a message to the virtual agent on behalf of the user
 - Improved by adding a setting for handover assist to the say node default tab
 - Improved by sending a helper email to those user who fail to log in due missing the organisationId in URL
 - Improved by adding a "test mode" to REST Endpoints
@@ -515,7 +515,7 @@ This release allows users to set the Intent hierarchy level in Lookup Nodes of t
 ### Features
 #### Flow Node Search
 This release adds the ability to search through Flows in the Flow Editor. Customers can already
-search through a couple of properties within their Flow-Nodes - more properties will be
+search through a couple of properties within their nodes - more properties will be
 added in the future
 
 #### Users in multiple Organizations
@@ -1078,7 +1078,7 @@ We have now added the ability to escalate questions by creating handovers to rea
 ### Bugfixes
 - Fixed OpenAPI documentation for connections
 - Fixed performance issue in Task-Manager menu when many tasks are present
-- Fixed a bug where Default Replies and Flow-Nodes could not be saved when they contain a '$'-sign in Microsoft adaptive cards
+- Fixed a bug where Default Replies and nodes could not be saved when they contain a '$'-sign in Microsoft adaptive cards
 - Fixed a bug where changing Flow-Node descriptions would not work even if the user would have the appropriate role
 - Fixed a bug where our handover functionality would not work when custom-channel names would be used for e.g. the Webchat
 - Fixed a bug in the Flow-List context menu
@@ -1089,7 +1089,7 @@ We have now added the ability to escalate questions by creating handovers to rea
 - Fixed a bug where not all Lexicons would be displayed in the "attach Lexicon" section within the Flow Editor (NLU)
 - Fixed a bug where certain numbers would get parsed as a money-slot instead of a number, Cognigy NLU
 - Fixed a bug where our NLU system would not detect a money slot when mixed with a date slot in the same sentence
-- Fixed a bug in the Flow-Editor where long previews on Flow-Nodes would not use ellipsis
+- Fixed a bug in the Flow-Editor where long previews on nodes would not use ellipsis
 - Fixed a bug where wrong data would be displayed on various Cognigy.AI analytics dashboards
 - Fixed a bug where our Datepicker would miss non-us English locale options
 - Fixed a bug where loading deleted resources in our UI would lead to a stack of error notifications
@@ -1179,12 +1179,12 @@ We have added the ability to copy the Agent ID to the context menu on the Index 
 - Fixed an API compatibility issue in our Sunshine Conversations V2 endpoint
 - Fixed a stability issue in the microservices that executes Cognigy Extensions
 - Fixed a bug where the NLUConnector selection in our Interaction Panel would not properly persist
-- Fixed a bug regarding user feedback when deleting a Virtual Agent
+- Fixed a bug regarding user feedback when deleting a virtual agent
 - Fixed a bug regarding Optional Questions and their order when multiple will be used
 - Fixed a bug while importing Intents through a file upload
 - Fixed a stability issue when deleting Extensions where certain artifacts would not get deleted properly
 - Fixed a bug related to date parsing
-- Fixed a bug where the permissions derived from the "project admin" role would not be sufficient for most operations in Virtual Agents
+- Fixed a bug where the permissions derived from the "project admin" role would not be sufficient for most operations in virtual agents
 - Fixed a stability issue in our NLU microservices regarding their health checks
 - Fixed a bug in our VoiceGateway integration where certain calls would get dropped
 - Fixed a bug where certain emails could not be used as answers in Question Nodes
@@ -1210,8 +1210,8 @@ We have added the ability to select well-known SMTP providers in our "send email
 #### Think Node enhancements
 We have added the ability to "think" Intents within our Think Flow-Node. This option will exist next to the already existent "text" option. It helps developers to more easily trigger an Intent directly.
 
-#### Analytics Steps for Flow-Nodes and Intents
-One of our larger missions for 2021 is various analytics enhancements. Adding analytics steps is one of the first building blocks on this journey. It allows our customers to define analytics labels for Flow-Nodes and Intents. All of our Question-Nodes will automatically get those analytics labels assigned. The labels can be used to understand when customers drop off within a conversation. We have also enhanced our OData interface to expose those data points.
+#### Analytics Steps for nodes and Intents
+One of our larger missions for 2021 is various analytics enhancements. Adding analytics steps is one of the first building blocks on this journey. It allows our customers to define analytics labels for nodes and Intents. All of our Question-Nodes will automatically get those analytics labels assigned. The labels can be used to understand when customers drop off within a conversation. We have also enhanced our OData interface to expose those data points.
 
 #### Contact Profile Explorer enhancements
 We have added the ability to filter inactive Contact Profiles in the Contact Profile Explorer. This will help our customers to more easily search through their Contact Profiles while focusing only on the active ones.
@@ -1276,7 +1276,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - fixed a bug where our Intent-Feedback report would not work for non-primary Locales
 - fixed a bug where enabling/disabling Intents would not trigger the "training required" indicator in our user interface
 - fixed a bug where Webhook-Endpoints would not properly work
-- fixed a bug where Flow-Nodes could be appended to the End-Node using our copy&paste functionality
+- fixed a bug where nodes could be appended to the End-Node using our copy&paste functionality
 - fixed a bug where Intent-Training would not succeed for larger training-sets as an internal mechanism would time out
 
 ## 4.1.4
@@ -1474,7 +1474,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Fixed a bug in our SSML-Editor related to an incorrect 'prosody' closing tag
 - Fixed a bug where the callback URL configuration would be missing in our Webhook-Endpoint
 - Fixed misleading error message when updating Lexicon Keyphrases in the Lexicon Editor
-- Fixed a bug where comments would not be shown hon hexagonal Flow-Nodes (e.g. our If-Node)
+- Fixed a bug where comments would not be shown hon hexagonal nodes (e.g. our If-Node)
 - Fixed a bug that would crash the Logs page
 - Fixed a bug where the voice property in our Twilio-Endpoint would not get properly persisted
 - Fixed a memory leak in our OData interface which leads to performance and stability issues
@@ -1552,7 +1552,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 ### Bugfixes
 - Fix a bug which leads to inconsistencies in the task-managers list of running tasks
 - Fix a bug where the "license has expired" notification on login would not get displayed
-- Fix a bug which leads to our Flow-Nodes look weird while they got dragged in the Flow-Editor on Chrome
+- Fix a bug which leads to our nodes look weird while they got dragged in the Flow-Editor on Chrome
 - Fix cc/cp autocomplete in Code-Node editor
 - Fix condition for "get started text" field for the Webchat endpoint
 - Fix problem where the Dialogflow console could no longer be used to talk to a Dialogflow Cognigy Endpoint

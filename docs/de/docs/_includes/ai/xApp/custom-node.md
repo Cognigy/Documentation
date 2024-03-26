@@ -1,0 +1,1 @@
+Als Alternative für weitere Anpassungen können Sie [Ihren eigenen Node erstellen]({{config.site_url}}ai/xApp/build-an-xApp/#build-a-custom-xapp-node), indem Sie eine Erweiterung implementieren und hochladen.

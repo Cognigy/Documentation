@@ -4,7 +4,10 @@ slug: "attachments"
 description: "Live Agent Attachments are files or documents that are sent or received during a conversation between a human agent and a user."
 hidden: false 
 ---
+
 # Attachments
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
 
 _Attachments_ are files or documents that are sent or received during a conversation between a human agent and a user.
 
@@ -12,7 +15,7 @@ These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, 
 
 Attachments can provide additional information or media, for example, an invoice or a photo related to the issue a customer is facing.
 
-##  Upload an Attachment
+## Upload an Attachment as an Agent
 
 To upload a file in a conversation within Live Agent, follow these steps:
 
@@ -26,11 +29,13 @@ To upload a file in a conversation within Live Agent, follow these steps:
 
 The file will be sent to the user and will appear in the chat. The user can download this attachment.
 
-## Request an Attachment
+## Upload an Attachment as an End User
 
-When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
+End users can send attachments to human agents by using the **Add attachments** icon in the chat if you set up a [Storage File](../../ai/endpoints/file-storage.md) provider in the Endpoint Settings.
 
-Other Endpoint channels do not support the attachment request functionality. Users can still upload a file using their built in app file upload features.
+## Request an Attachment with the Plugin
+
+If you are using a [Webchat](../../webchat/overview.md) Endpoint with Live Agent, in addition to the standard Attach file feature, human agents can request an attachment from a user. To enable this functionality, you need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files.
 
 To request an attachment in a conversation within Live Agent, follow these steps:
 
@@ -44,12 +49,19 @@ To request an attachment in a conversation within Live Agent, follow these steps
 
 When the file has been uploaded, you can view and download this file directly from the chat.
 
-!!! note
-    If you use [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/), you will also need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files. 
+## View Attachments
+
+To view all reviewed and sent attachments, follow these steps:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. Go to **Attachments**.
+
+You will see the list of all attachments that were sent by end users and human agents.
 
 ## Download an Attachment
 
-To download an attachment within Live Agent, this can be done either in a conversation or the **Attachments** page.
+To download an attachment within Live Agent, you can do this either in a conversation or on the **Attachments** page.
 
 === "Attachment Page"
 
@@ -121,4 +133,4 @@ To investigate a conversation or Inbox where an attachment was uploaded, follow 
 
 ## More Information
 
-- [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)
+- [Conversation Workflow](../conversation/overview.md)

@@ -9,7 +9,7 @@ The **Session Management** section exists on some Endpoints. Here you can set th
 
 The following Endpoints support session expiration:
 
-- Facebook Messenger
+- Facebook (Meta) Messenger
 - Line
 - Slack
 - TwilioSMS

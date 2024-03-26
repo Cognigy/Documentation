@@ -1,12 +1,12 @@
 ---
 title: "Agents" 
 slug: "agents"
-description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members."
+description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and other resources. You can collaborate on a given Agent with multiple team members."
 hidden: false 
 ---
 # Agents
 
-_Agents_ are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members.
+_Agents_ are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../../endpoints/overview.md), and other resources. You can collaborate on a given Agent with multiple team members.
 
 Within an Agent as a project, you can create virtual agents. A virtual agent is a bot that is designed to automatically handle interactions. A virtual agent is typically designed to tackle one use case, and it can handle multiple user intents.
 Virtual agents can deploy on a wide range of channels. 
@@ -56,9 +56,9 @@ For on-premises installations, the **Live Agent** section in the **Create Agent*
 If the Live Agent Account is already configured for your organization, you can create an Agent with a Live Agent Flow by following these steps:
 
 1. Create a [Live Agent Inbox](../../../live-agent/settings/inboxes.md) by activating **Create Cognigy Live Agent Inbox**.
-2. Configure [Live Agent Assist](../../../live-agent/assistants/overview.md) in the **Agent Assist** section by selecting one of the following options:
-    - **Disable Agent Assist** — this option doesn't require any additional resources. Agent Assist functionalities will be turned off.
-    - **Enable Agent Assist** — this option creates an Agent Assist Flow. This Flow includes a Say Node, which allows the system to communicate messages. This Agent Assist Flow will be assigned as the one you use for Agent Assist interactions.
+2. Configure [AI Copilot](../../../live-agent/assistants/overview.md) in the **Copilot** section by selecting one of the following options:
+    - **Disable AI Copilot** — this option doesn't require any additional resources. AI Copilot functionalities will be turned off.
+    - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
    
     <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="80%" style="margin-bottom: 5px">
 
@@ -149,7 +149,7 @@ The User Menu provides access to a set of views.
   <figcaption>User menu</figcaption>
 </figure>
 
-Head over to [User Menu](../../tools/user-menu/user-menu.md) for more information.
+Head over to the [User Menu](../../tools/user-menu/user-menu.md) documentation for more information.
 
 ### Interaction Panel
 
@@ -159,4 +159,4 @@ The Interaction Panel can be used to interact with your virtual agent at any tim
  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_Interaction_Panel.png" style="margin-bottom: 5px">
  </div>
 
-Head over to [Interaction Panel](../../tools/interaction-panel/interaction-panel.md) for more information.
+Head over to the [Interaction Panel](../../tools/interaction-panel/interaction-panel.md) documentation for more information.

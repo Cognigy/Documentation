@@ -55,17 +55,17 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Inboxes
 
-| Actions                                    | Agent | Supervisor | Administrator  |
-|--------------------------------------------|-------|------------|----------------|
-| Create an Inbox                            |  -    | -          | +              |
-| Edit an Inbox                              |  -    | -          | +              |
-| Delete an Inbox                            |  -    | -          | +              |
-| Create Assist Bot                          |  -    | -          | +              |
-| Edit Assist Bot                            |  -    | -          | +              |
-| Delete Assist Bot                          |  -    | -          | +              |
-| Add Agents to the Inbox                    |  -    | -          | +              |
-| Remove Agents from the Inbox               |  -    | -          | +              |
-| Configure Conversation Assignment Settings |  -    | -          | +              |
+| Actions                                    | Agent | Supervisor | Administrator |
+|--------------------------------------------|-------|------------|---------------|
+| Create an Inbox                            | -     | -          | +             |
+| Edit an Inbox                              | -     | -          | +             |
+| Delete an Inbox                            | -     | -          | +             |
+| Create AI Copilot Bot                      | -     | -          | +             |
+| Edit AI Copilot Bot                        | -     | -          | +             |
+| Delete AI Copilot Bot                      | -     | -          | +             |
+| Add Agents to the Inbox                    | -     | -          | +             |
+| Remove Agents from the Inbox               | -     | -          | +             |
+| Configure Conversation Assignment Settings | -     | -          | +             |
 
 ### Conversations
 
@@ -95,7 +95,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Delete Attachments                             | -     | -          | +             |
 | Download Attachments                           | -     | -          | +             |
 
-[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../webchat/v2/configuration.md).
 
 ### Audit Logs
 
@@ -157,13 +157,13 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Assistants
 
-| Actions                        | Agent | Supervisor | Administrator |
-|--------------------------------|-------|------------|---------------|
-| **LA AI Copilott**             |       |            |               |
-| Activate AI Copilot Workspace  | +     | +          | +             |
-| **Assist Bot**                 |       |            |               |
-| Edit Assist Bot Settings       | +     | +          | +             |
-| Reset Session                  | +     | +          | +             |
+| Actions                       | Agent | Supervisor | Administrator |
+|-------------------------------|-------|------------|---------------|
+| **AI Copilot**                |       |            |               |
+| Activate AI Copilot Workspace | +     | +          | +             |
+| **AI Copilot Bot**            |       |            |               |
+| Edit AI Copilot Bot Settings  | +     | +          | +             |
+| Reset Session                 | +     | +          | +             |
 
 ### Account and Profile Settings
 
@@ -192,5 +192,5 @@ To see the roles applied to the Agent, the specific Agent must log in once to ha
 
 ## More Information
 
-- [Conversation Workflow](./conversation/conversation-workflow.md)
+- [Conversation Workflow](./conversation/overview.md)
 - [Account Settings](./settings/account-settings.md)

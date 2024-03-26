@@ -1,0 +1,2 @@
+!!! Warnung "Entfernung von Google Actions Endpoint"
+    Aufgrund der Einstellung von [Google Conversational Actions](https://developers.google.com/assistant/ca-sunset) am 13. Juni 2023 wird unser [Google Actions Endpoint](https://docs.cognigy.com/ai/endpoints/google-actions/) in naher Zukunft entfernt. Folglich ist der Endpunkt nicht mehr verfügbar.

@@ -1,0 +1,2 @@
+!!! Tipp "Kompatibilitätsmatrix"
+    Wir haben eine [Versionskompatibilitätsmatrix](#infrastructure) für die Cognigy-Produkte entwickelt. Diese Matrix beschreibt die Kompatibilität von Cognigy-Produktversionen mit Cognigy-Infrastrukturkomponenten wie Kubernetes, MongoDB und Redis.

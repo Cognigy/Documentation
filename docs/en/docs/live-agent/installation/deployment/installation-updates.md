@@ -7,7 +7,11 @@
 
 For upgrading the Live Agent installation, once there is a new release, there are two ways:
 
->**Note:** Learn more about making upgrades and rollbacks at the [official Helm Docs](https://helm.sh/docs/intro/using_helm/#helm-upgrade-and-helm-rollback-upgrading-a-release-and-recovering-on-failure)
+- [Pulling and upgrading at the same time](#pulling-and-upgrading-at-the-same-time)
+- [Pulling and modifying the `values.yaml` file](#pulling-and-modifying-the-valuesyaml-file)
+
+!!! note
+    Learn more about making upgrades and rollbacks at the [official Helm Docs](https://helm.sh/docs/intro/using_helm/#helm-upgrade-and-helm-rollback-upgrading-a-release-and-recovering-on-failure).
 
 ## Pulling and upgrading at the same time
 

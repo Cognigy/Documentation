@@ -1,7 +1,7 @@
 ---
- title: "Quotas and Limitations" 
- slug: "limitations" 
- hidden: false 
+title: "Quotas and Limitations" 
+slug: "limitations" 
+hidden: false 
 ---
 
 # Quotas and Limitations

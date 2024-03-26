@@ -19,7 +19,7 @@ The example below shows two responses that access the user's last message. Both 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/deb1830-TokenExample.PNG" width="100%" />
 </figure>
 
-Tokens can be added to a dialog message from any text field displaying the **AI** symbol. Simply click the **AI** symbol to expand the tokens menu which displays a searchable list of available tokens. The tokens are sorted into categories based on the location of the data which they access i.e. [Input]({{config.site_url}}ai/tools/interaction-panel/input/), [Context]({{config.site_url}}ai/tools/interaction-panel/context/), [Profile]({{config.site_url}}ai/flow-nodes/profile/profile/) or Custom.
+Tokens can be added to a dialog message from any text field displaying the **AI** symbol. Simply click the **AI** symbol to expand the tokens menu which displays a searchable list of available tokens. The tokens are sorted into categories based on the location of the data which they access i.e. [Input]({{config.site_url}}ai/tools/interaction-panel/input/), [Context]({{config.site_url}}ai/tools/interaction-panel/context/), [Profile]({{config.site_url}}ai/nodes/profile/profile/) or Custom.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/f00f6f8-createTokenNode.PNG" width="100%" />

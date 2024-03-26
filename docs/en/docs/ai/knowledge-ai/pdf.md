@@ -17,7 +17,7 @@ When you use a PDF file as a knowledge source, the following chunk splitting str
 This strategy extracts content from PDF in an improved way, for example, regarding tables found in the PDF.
 It splits the extracted content into chunks based on a fixed token length, which returns the best results based on our research.
 
-We recommended using this strategy in combination with **Top K** set to `5` in the [Search Extract Output](../../ai/flow-nodes/other-nodes/search-extract-output.md) Node.
+We recommended using this strategy in combination with **Top K** set to `5` in the [Search Extract Output](../nodes/other-nodes/search-extract-output.md) Node.
 
 ## Alternative Chunk Strategy
 
@@ -144,5 +144,6 @@ Note that in the first chunk, a title was omitted by the system because the titl
 
 ## More Information
 
-- [Knowledge AI](overview.md)
+- [Knowledge AI Overview](overview.md)
 - [Cognigy Text Format](ctxt.md)
+- [Web Page](../knowledge-ai/web-page.md)

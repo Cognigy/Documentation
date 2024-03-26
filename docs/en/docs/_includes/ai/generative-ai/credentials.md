@@ -11,10 +11,10 @@
         8.1 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
             - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-            - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
+            - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Copy the desired resource name from the **Name** column.<br>
         8.2 Click **Create**.<br>
         8.3 Fill in the remaining fields:<br>
-            - **Deployment Name** — add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).<br>
+            - **Deployment Name** — add a [deployment name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Select a resource from the **Name** column. On the resource page, go to **Resource Management > Model deployments**. On the **Model deployments** page, click **Manage Deployments**. On the **Deployments** page, copy the desired deployment name from the **Deployment name** column.<br>
             - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `2023-03-15-preview`. <br>
             - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
 
@@ -24,7 +24,7 @@
             - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
         8.2 Click **Create**.<br>
         8.3 Fill in the remaining field:<br>
-            - **Custom Model** - specify the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
+            - **Custom Model** — specify the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
 
     === "Anthropic"
         8.1 Fill in the following fields:<br>
@@ -51,10 +51,11 @@
     === "Aleph Alpha"
         8.1 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
-            - **Token*** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>
+            - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>
         8.2 Click **Create**.<br>
         8.3 Fill in the remaining field:<br>
-            - **Custom Model** - specify a particular model you want to use, for example, `luminous-base`. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about the provider's models, refer to the [Aleph Alpha documentation](https://docs.aleph-alpha.com/docs/introduction/model-card).<br>  
+            - **Custom Model** — specify a particular model you want to use, for example, `luminous-base`. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about the provider's models, refer to the [Aleph Alpha documentation](https://docs.aleph-alpha.com/docs/introduction/model-card).<br>
+            - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.
 
 9. To apply changes, click **Save**.
 10. To check if the connection was set up, click **Test**.

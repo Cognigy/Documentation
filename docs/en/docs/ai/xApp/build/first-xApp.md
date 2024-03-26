@@ -200,6 +200,6 @@ You can download a Cognigy Package with the [xApp Flow example](https://docs.cog
 ## More Information
 
 - [Ready-made examples of xApps](https://github.com/Cognigy/xApps/tree/main)
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../../nodes/xApp/overview.md)
 - [Build an xApp](overview.md)
 - [xApps](../overview.md)

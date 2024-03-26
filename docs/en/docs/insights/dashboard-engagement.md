@@ -27,7 +27,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
-Indicates the total number of [completed goals](../ai/flow-nodes/profile/complete-goal.md). 
+Indicates the total number of [completed goals](../ai/nodes/analytics/complete-goal.md). 
 
 Source table:
 
@@ -125,7 +125,7 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Indicates the number of times a human Agent was contacted. Multiple handovers may occur during a session.
+Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
 
 Source table:
 
@@ -221,7 +221,7 @@ Result:
 
 ### Handovers in Time
 
-Indicates the number of times a human Agent was contacted. Multiple escalations may occur during a session.
+Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
 

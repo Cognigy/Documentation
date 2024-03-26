@@ -6,7 +6,6 @@
 # Inject Transformer
 
 ## Description
-
 The `Inject Transformer` makes it possible to hook into the [Inject API]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
 
 The `Inject Transformer` is triggered when the `Inject Transformer API` is called. The custom request body from the external service can thereby be parsed to return the necessary values for the Inject API, namely the  user ID and session ID as well as text and/or data, which will be sent to the user as a notification.
@@ -36,7 +35,7 @@ The `handleInject`  function gets a configuration object as an argument. An over
 
 <div class="divider"></div>
 
-The `Inject Transformer` has to return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different to a request from Facebook Messenger. It is therefore necessary to read the documentation from the specific channel to know how the request body is formatted. 
+The `Inject Transformer` has to return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different to a request from Facebook (Meta) Messenger. It is therefore necessary to read the documentation from the specific channel to know how the request body is formatted. 
 
 If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
 

@@ -1,0 +1,2 @@
+!!! Warnung "Ende der OpenSSL V1 Unterstützung"
+    Cognigy hat den Support für OpenSSL Version 1 eingestellt, da es das Ende seiner Lebensdauer erreicht hat. Diese Änderung resultiert aus unserem jüngsten Upgrade auf Node.js Version 18, die OpenSSL Version 1 nicht mehr unterstützt.

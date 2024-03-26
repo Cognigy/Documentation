@@ -74,7 +74,7 @@ To start using Salesforce as a handover provider with Cognigy.AI, follow these s
 
 ### Configure Handover Settings
 
-In the Salesforce settings of the [Handover to Agent](../tools/agent-handover.md) Node,
+In the Salesforce settings of the [Handover to Agent](../nodes/service/handover-to-agent.md) Node,
 configure the following settings:
 
 - **Send Transcript as a first message** — the setting allows Salesforce to receive conversation transcript as a first message. It is turned off by default.
@@ -195,3 +195,7 @@ For more information about the Pre-Chat Entities and Pre-Chat Details fields and
 read the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail). 
 
 To check the handover, go to the installation that your server administrator has deployed.
+
+### Integrate Copilot into Salesforce Service Cloud
+
+To integrate Copilot directly into Salesforce, see our article on [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations).

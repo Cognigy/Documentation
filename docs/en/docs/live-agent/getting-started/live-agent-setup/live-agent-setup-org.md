@@ -42,5 +42,3 @@ Live Agent Account is already set up for the Organisation.
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-successfully-configured.png" width="100%"/>
 </figure>
-
-

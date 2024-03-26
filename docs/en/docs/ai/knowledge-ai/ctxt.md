@@ -132,7 +132,7 @@ For instance, if your chunk discusses the xApp Architecture topic,
 you could include metadata with links to related documentation URLs,
 images of architecture diagrams, or additional detailed information that may interest a limited number of users.
 Reusing such information can be beneficial
-when you use the **Search only** type in the [Search Extract Output](../flow-nodes/other-nodes/search-extract-output.md) Node.
+when you use the **Search only** type in the [Search Extract Output](../nodes/other-nodes/search-extract-output.md) Node.
 
 A metadata unit is structured as a key-value pair enclosed in backticks. 
 For example:
@@ -174,4 +174,6 @@ The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files vi
 ## More Information
 
 - [Knowledge AI Overview](overview.md)
-- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
+- [Search Extract Output Node](../nodes/other-nodes/search-extract-output.md)
+- [Web Page](../knowledge-ai/web-page.md)
+- [PDF](pdf.md)

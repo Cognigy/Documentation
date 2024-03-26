@@ -1,8 +1,9 @@
 ---
- title: "Prerequisites" 
- slug: "prerequisites" 
- hidden: false 
+title: "Prerequisites" 
+slug: "prerequisites" 
+hidden: false 
 ---
+
 # Prerequisites
 
 ## Kubernetes cluster and Helm
@@ -54,9 +55,13 @@ The server running PostgreSQL should have at least 5-10 GB of storage available,
 
 ### Redis
 
-Redis stores the background task queue and various cached Live Agent configurations. Therefore, the storage requirements for Redis are minimal. You can start with 1GB and scale up as required.
+Redis stores the background task queue and various cached Live Agent configurations.
+Therefore, the storage requirements for Redis are minimal.
+You can start with 1 GB and scale up as required.
 
 ### Sidekiq
 
-Sidekiq processes background jobs via a multithreaded process. This process starts with the entire Rails stack. On a very active server, the Sidekiq process can use 1GB+ of memory.
+Sidekiq processes background jobs via a multithreaded process.
+This process starts with the entire Rails stack.
+On a very active server, the Sidekiq process can use 1+ GB of memory.
 

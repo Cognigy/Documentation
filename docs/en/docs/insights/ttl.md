@@ -21,13 +21,13 @@ In the table below, you can view the data included in TTL.
 |---------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics           | This indicates the duration between the creation of all Analytics data and its removal from the database.         | [Overview](dashboard-overview.md): <br>- Number of Inputs <br>- Top Intents  <br>- Understood Messages  <br>- Understood / Misunderstood Messages<br> [Engagement](dashboard-engagement.md): <br>- Avg. Session Length<br> - Max. Session Length <br> [NLU Performance](dashboard-nlu-performance.md): <br> - Avg Intent Score <br> - Average Execution Time <br> - Intents by Score Range <br> - Max Intent Score <br> - Understood Messages <br> - Understood / Misunderstood Messages <br> - Top Intents <br> - Top Intent Scores <br> | 
 | Conversations       | This indicates the duration between the creation of chat history analytics and its removal from the database.     | [Transcript Explorer](transcript-explorer.md), [Message Explorer](message-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Sessions            | This indicates the duration between the creation of Insights session analytics and its removal from the database. | [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Sessions Count<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Performance](dashboard-nlu-performance.md):<br>- Top Slots                        | 
+| Sessions            | This indicates the duration between the creation of Insights session analytics and its removal from the database. | [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Total Sessions<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Performance](dashboard-nlu-performance.md):<br>- Top Slots                        | 
 | Step Events         | This indicates the duration between the creation of Step data and its removal from the database.                  | [Step Explorer](step-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | LiveAgentEscalation | This indicates the duration between the creation of Live Agent data and its removal from the database.            | [Live Agent](dashboard-live-agent.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | VoiceGatewayEvents  | This indicates the duration between the creation of Voice Gateway data and its removal from the database.         | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
-## Activating Data Expiration
+## Activate Data Expiration
 
 Cognigy keeps data indefinitely by default. To change this behavior, an expiration date must be set up.
 
@@ -45,8 +45,17 @@ For example:
 > 
 > Sessions created before 13:00 will remain unchanged.
 
-## Changing Data Expiration
+## Change Data Expiration
 
-You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
+You can change the duration of data expiration via the [Management UI](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
+
+### Customize Data Expiration for Multiple Organizations
+
+In Cognigy, when managing multiple organizations,
+you can customize Data Expiration settings for each organization independently through the Management UI.
+The default Data Expiration is set in the environment variable in the `values.yaml` file.
+Importantly,
+specifying Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. 
+This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.

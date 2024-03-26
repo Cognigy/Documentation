@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79" width="48" height="48">
+	<title>LA-blue-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #0b3694 } 
+	</style>
+	<g id="Präsentation">
+		<g id="abbrev-overview">
+			<path id="Combined-Shape-Copy-30" class="shp0" d="M8.9 16L8.9 52.4L27.9 52.4L24.1 62L8.9 62.1L8.9 62.1L8.1 62.1L0.1 62.1L0.1 62.1L0 62.1L0 16.1L8.9 16.1L8.9 16ZM59.5 16L79 62L69.2 62L54.6 27.6L40 62L30.2 62L49.7 16L59.5 16Z" />
+		</g>
+	</g>
+</svg>

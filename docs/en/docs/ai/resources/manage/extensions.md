@@ -161,7 +161,7 @@ Enabling the feature will not change anything automatically. Once the feature wa
 
 All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
 
-You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted and update them, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
+You can make your uploaded Extensions trusted. It could be preinstalled Extension or a custom one. To allow users to make Extensions trusted and update them, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
 
 To mark an Extensions as trusted, follow these steps:
 

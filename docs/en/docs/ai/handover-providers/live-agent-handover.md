@@ -17,7 +17,7 @@ Tight integration with Cognigy.AI that goes far beyond the integration we have w
     
 - Configuration of the handover with just a few clicks
 
-- Agent Assist: Support of human agents by virtual agents
+- AI Copilot: Support of human agents by virtual agents
     
 - Enhance the capabilities of the virtual agent, based on outputs of human agents
 

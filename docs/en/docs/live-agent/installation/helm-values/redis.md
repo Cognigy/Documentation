@@ -1,7 +1,7 @@
 ---
- title: "Redis" 
- slug: "redis" 
- hidden: false 
+title: "Redis" 
+slug: "redis" 
+hidden: false 
 ---
 
 # Redis
