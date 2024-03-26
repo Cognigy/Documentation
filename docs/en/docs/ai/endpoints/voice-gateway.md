@@ -238,7 +238,7 @@ In this example, an end user seeks billing assistance and interacts with actors 
 **Voice Agent:** Determines the language and answers using the same language. Example: `Danke für die Informationen. Ich werde Sie an einen menschlichen Agenten weiterleiten, der Ihnen weiterhelfen kann`.<br>
 **Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
 **Voice Agent:** Determines the need for human assistance and initiates the handover to the human agent via the handover provider.<br>
-**Human Agent:** Receives conversation script containing user's query.<br>
+**Human Agent:** Receives a conversation script containing user's query.<br>
 **Human Agent:** Types response on interface. Example: `I've found the issue. It seems there was an error in the billing statement. I'll correct it for you`.<br>
 **Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
 **End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
