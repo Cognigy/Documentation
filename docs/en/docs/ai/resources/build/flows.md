@@ -1,31 +1,35 @@
 ---
- title: "Flows" 
- slug: "flows" 
- hidden: false 
+title: "Flows" 
+slug: "flows" 
+hidden: false 
 ---
+
 # Flows 
 
-**Flows** are an important concept within Cognigy.AI. They provide a visual representation of a potential dialog based on a **Flow** in a user-friendly interface. Agent projects in Cognigy.AI are realized by creating Flows.   
-Flows consist of a composition of individual Nodes with different functionalities, ranging from generating output to collecting back-end information, executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in via an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
+_Flows_ are conversational processes that represent interactions between users and virtual agents. They outline the various paths that a conversation can take and define the logic behind the responses given by the virtual agent.
+Flows allow users to customize and design the behavior of their virtual agents, enabling them to create tailored and dynamic conversational experiences.
 
-The workspace of an Agent, in which a Flow can be created and configured, provides Agent related and project related elements:
+The Flow interface contains the following elements:
 
-## Agent related operating elements
+- [Agent-related elements](#agent-related-elements)
+- [Flow-related elements](#flow-related-elements)
+
+## Agent-Related Elements
 
 - [Agent Management](#agent-management)
 - [Agent Toolbar](#agent-toolbar)
 
 ### Agent Management
 
+In the upper-left corner of the Flow interface, you will find Agent-specific details, including the currently selected Agent, Flow project, and Locale.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/agent-controls.png" width="80%" />
 </figure>
 
-In the top left corner of the Flow configuration page you will find the Agent specific indications as currently selected Agent, currently selected Flow project, and currently selected Locale. 
-
-- To open the [Agent's dashboard](../../../ai/resources/agents/agents.md#agent-dashboard), click the icon on the left side  next to the displayed Agent Flow project. The dashboard gives you specific information regarding your projects, involved project members, and an analytic chart. 
-- To switch to another available Agent, click on the current displayed Agent name and select the Agent you want to switch to in a drop-down list. 
-- To change the [Locale](#locale-settings), click on the current displayed location name on the right side next to the Flow project and select the location you want to switch to.
+- To open the [Agent's dashboard](../../../ai/resources/agents/agents.md#agent-dashboard), click the icon located on the left side next to the displayed Agent Flow project. The dashboard provides specific information regarding your projects, the project members involved, and an analytic chart.
+- To switch to another Flow, click the displayed Flow name, and select the desired Flow from the list.
+- To change the [Locale](#locale-settings), click the displayed Locale on the right side next to the Flow list, and select the desired Locale you want to switch to.
 
 For more information, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
 
@@ -35,22 +39,23 @@ For more information, read the [Agent](../../../ai/resources/agents/agents.md#to
   <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar.png" width="80%" />
 </figure>
 
-Agent's desktops have a toolbar at the top right of each view, providing quick access to agent-specific resources:
+In the upper-right corner of the Flow interface, you will find the Agent Toolbar.
+It provides quick access to agent-specific resources:
 
-  - [Help Center Search](https://support.cognigy.com/hc/en-us)
-  - [Journeys](../../../ai/resources/agents/journeys.md)
-  - [Search](../../../ai/resources/agents/agents.md#search)
-  - [Tasks](../../../ai/resources/agents/tasks.md)
-  - [User Menu](../../../ai/tools/user-menu/user-menu.md)
-  - [Interaction Panel](../../../ai/tools/interaction-panel/interaction-panel.md)    
+- [Help Center Search](https://support.cognigy.com/hc/en-us)
+- [Journeys](../../../ai/resources/agents/journeys.md)
+- [Search](../../../ai/resources/agents/agents.md#search)
+- [Tasks](../../../ai/resources/agents/tasks.md)
+- [User Menu](../../../ai/tools/user-menu/user-menu.md)
+- [Interaction Panel](../../../ai/tools/interaction-panel/interaction-panel.md)    
 
-The toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. The **Interaction Panel** is quite important as it enables, among other things, the testing of flow functionality during development - see section [Execute a Flow](#execute-a-flow).
-The Toolbar provides also tooltips to enhance navigation when hovering over an item.
+The toolbar in the application includes elements such as the User Menu and Interaction Panel that are always available.
+The Interaction Panel enables various functions, including testing Flow functionality during development
+(refer to section [Execute a Flow](#execute-a-flow)).
 
 For detailed information to each item, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
 
-
-## Flow related operating elements
+## Flow-Related Elements
 
 - [Flow Chart](#flow-chart)
 - [Flow Nodes](#flow-nodes)
@@ -60,12 +65,13 @@ For detailed information to each item, read the [Agent](../../../ai/resources/ag
 
 ### Flow Chart
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100.png" width="100%" />
-</figure>
+The _Flow Chart_, also known as the _Flow Editor_, is a graphic representation of a conversation in the Flow interface. It consists of Nodes that are linked by edges. Nodes are used to represent various actions or decision points while the edges indicate the conversation's path between them.
 
-A Flow is represented visually by a Flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can add Flow Nodes that offer the required functionality for your project. 
-Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path, so that you can understand logical system decisions at any step and follow the path. 
+Flows are executed from the **Start** Node to the **End** Node in a conversation, using a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path, allowing users to understand logical system decisions at each step and to follow the path.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-Editor.png" width="100%" />
+</figure>
 
 #### Entry Points
 
@@ -193,7 +199,7 @@ The different Nodes are assigned to the following categories:
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
 </figure>
 
-For more information, read the [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) documentation.
+For more information, read the [Flow Nodes](../../../ai/nodes/overview.md) documentation.
 
 #### Add a Node to your Flow 
 
@@ -205,7 +211,7 @@ To add a Node to your Flow, do the following:
 4. Select tabs **By Function** > **Basic**. 
 5. Click **Say** in the selection list. A Say Node will be added at the location you clicked the + icon in your Flow.
 6. Configure your added Node as required for your project. Detailed information to Nodes and how to configure them, read the  
-[Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) documentation.
+[Flow Nodes](../../../ai/nodes/overview.md) documentation.
 
 ### NLU 
 
@@ -306,6 +312,6 @@ Cognigy.AI provides easy switching between different Flows as follows:
 
 ## More information
 
-- [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md)
+- [Flow Nodes](../../../ai/nodes/overview.md)
 - [Interaction Panel](../../../ai/tools/interaction-panel/interaction-panel.md)
 - [Agent](../../../ai/resources/agents/agents.md#top-toolbar)
