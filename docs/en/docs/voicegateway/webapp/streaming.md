@@ -6,6 +6,9 @@ hidden: false
 
 # Streaming
 
+!!! danger "Unavailable Feature"
+    Starting from release 4.72, this feature is unavailable. We are working on enhancing its quality, and we will inform you once the feature becomes available.
+
 In the context of Text-to-Speech (TTS), _streaming_ technology enables instant speech responses from voice agents, creating a more seamless and natural conversational experience for users.
 
 ## Traditional TTS vs. Streaming TTS
