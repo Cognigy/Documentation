@@ -148,7 +148,7 @@ To manage Flows in different use cases for your Agent, do the following:
     - **Export as Package** - export a Flow as a package to reuse it in another agent or environment.      
     - **Clone** - create a copy of your Flow. A new Flow is indicated by a red dot and an increasing clone number.
 
-#### Add a Node to your Flow
+##### Nodes
 
 Nodes can be used to add interactivity to a Flow. They can be added by clicking on the **+** icon visible in the Flow chart between the Nodes. 
 Depending on the function, Cognigy.AI provides many types of Nodes, ranging from basic to advanced.
