@@ -12,7 +12,8 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using our VoiceGateway, enabling customers to speak with your Agent instead of just writing to it.
+Within the Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using Cognigy Voice Gateway. 
+This feature enables customers to speak with your virtual agents instead of writing to them.
 
 ## Generic Endpoint Settings
 
@@ -179,11 +180,11 @@ This Node transfers the conversation from the voice agent to the human agent.
 In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
 
 **End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
-**Voice Agent:** Transcribes user's speech into text using _speech-to-text_ technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
 **Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
 **Human Agent:** Receives a conversation script containing user's query.<br>
 **Human Agent:** Types response on interface. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
-**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using _text-to-speech_ technology.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
 **End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
 **End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
 
@@ -206,11 +207,28 @@ You can achieve this by adjusting timeout settings and error handling policies.
 
 #### Configuration
 
-To activate the Handover Settings,
-you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
-This Node transfers the conversation from the voice agent to the human agent.
+To set up a multilingual Flow for the handover use case, follow these steps:
 
-To set up such a multilingual voice agent, you need to use the [Set Translation](../nodes/other-nodes/set-translation.md) Node and configure the [Look up](../nodes/logic/lookup.md) Node.
+1. In your voice Flow, navigate to the [Set Session Config](../nodes/voice/voice-gateway/parameter-details.md) Node.
+2. In the Node editor, go to the **Recognizer STT** section and activate the **Recognize Language** toggle.
+3. From the **Alternative Language** list, select the additional languages, for example, `German` and `Italian`.
+4. Click **Save Node**. 
+5. Below the Set Session Config Node, add a [Lookup](../nodes/logic/lookup.md) Node. 
+6. In the parent Lookup Node, select **CognigyScript** from the **Type** list and specify `input.data.payload.speech.language_code` in the **Operator** field. 
+7. Click **Save Node**. 
+8. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`. 
+9. Click **Save Node**. 
+10. Below each case Node, add a [Set Translation](../nodes/other-nodes/set-translation.md) Node. 
+11. In the Set Translation Node, activate the **Translation Enabled** toggle. 
+12. In the **User Input Language** field, specify the language of the user input, for example, `de`. 
+13. In the **Flow Language** field, specify the language to translate to, for example, `en`. 
+14. Create a second Set Translation Node and repeat the steps for another language, for example Italian. 
+15. Click **Save Node**. 
+16. At the end of the Flow, place the [Handover to Agent](../nodes/service/handover-to-agent.md) Node.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-gateway-handover.png" width="100%" />
+</figure>
 
 #### Example
 
@@ -218,11 +236,11 @@ In this example, an end user seeks billing assistance and interacts with actors 
 
 **End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hallo, ich brauche Hilfe bei meiner Rechnungsanfrage`.<br>
 **Voice Agent:** Determines the language and answers using the same language. Example: `Danke für die Informationen. Ich werde Sie an einen menschlichen Agenten weiterleiten, der Ihnen weiterhelfen kann`.<br>
-**Voice Agent:** Transcribes user's speech into text using _speech-to-text_ technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
 **Voice Agent:** Determines the need for human assistance and initiates the handover to the human agent via the handover provider.<br>
 **Human Agent:** Receives conversation script containing user's query.<br>
 **Human Agent:** Types response on interface. Example: `I've found the issue. It seems there was an error in the billing statement. I'll correct it for you`.<br>
-**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using _text-to-speech_ technology.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
 **End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
 **End User/Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
 
