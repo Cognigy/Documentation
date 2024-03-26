@@ -162,34 +162,19 @@ The Call Failover section is intended to handle runtime errors that occur on the
 You can use any [handover provider](../handover-providers/overview.md) within the Voice Gateway integration.
 The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
 
+In contrast to chatting, communication between actors during a voice call occurs using speech recognition technologies (text-to-speech and speech-to-text).
 Using speech-to-text technology, the voice agent sends the conversation script from the end user to the human agent. 
 Once the script is received, the human agent can respond using text. 
 After that, the voice agent converts the human agent's message to speech using text-to-speech technology. 
 Finally, the converted message is sent to the end user.
 
-In addition to activating the Handover Settings,
+### Configuration
+
+To activate the Handover Settings,
 you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
 This Node transfers the conversation from the voice agent to the human agent.
 
-### Multilingual Support
-
-Within the Handover Settings, you can use translation into other languages.
-
-For example, if a user communicates in German, the voice agent responds accordingly. 
-However, after transferring the call to the contact center, the dialogue is translated into English. 
-The human agent responds in English, and the response is then translated back into German for the end user using text-to-speech technology. 
-This method ensures seamless communication despite language differences.
-
-Note that depending on the language and provider selected, 
-translations may experience delays while they reach the contact center. 
-If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side. 
-Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly. 
-This approach will ensure that the end user is aware that their message may not be delivered.
-You can achieve this by adjusting timeout settings and error handling policies.
-
-### Examples
-
-#### Default 
+### Example
 
 In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
 
@@ -202,7 +187,32 @@ In this example, an end user seeks billing assistance and interacts with actors 
 **End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
 **End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
 
-#### Multilingual
+### Multilingual Support
+
+Within the Handover Settings, you can use translation into other languages.
+Use the translation feature in the Handover Settings to overcome language barriers between end users and support staff. This feature is particularly useful in situations where there are no support staff proficient in the end user's language, and urgent issue resolution is necessary.
+
+For example, if a user communicates in German, the voice agent responds accordingly. 
+However, after transferring the call to the contact center, the dialogue is translated into English.
+The human agent responds in English, and the response is translated into German for the end user via text-to-speech technology.
+This method ensures seamless communication despite language differences.
+
+Note that depending on the language and provider selected, 
+translations may experience delays while they reach the contact center. 
+If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side. 
+Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly. 
+This approach will ensure that the end user is aware that their message may not be delivered.
+You can achieve this by adjusting timeout settings and error handling policies.
+
+#### Configuration
+
+To activate the Handover Settings,
+you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
+This Node transfers the conversation from the voice agent to the human agent.
+
+To set up such a multilingual voice agent, you need to use the [Set Translation](../nodes/other-nodes/set-translation.md) Node and configure the [Look up](../nodes/logic/lookup.md) Node.
+
+#### Example
 
 In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies. The end user and human agent speak different languages, but this doesn't hinder their understanding, as the voice agent translates their speech into the required language for each party.
 
@@ -216,4 +226,3 @@ In this example, an end user seeks billing assistance and interacts with actors 
 **End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
 **End User/Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
 
-To set up such a Flow, you need to use the [Set Translation](../nodes/other-nodes/set-translation.md) Node and configure the Look up Node.
