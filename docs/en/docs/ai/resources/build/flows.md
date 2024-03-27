@@ -78,7 +78,6 @@ For detailed information to each item, read the [Agent](../../../ai/resources/ag
 ### Flow-Related Elements
 
 - [Flow Chart](#flow-chart)
-- [Flow Nodes](#flow-nodes)
 - [NLU](#nlu)
 - [Settings](#settings)
 - [Localization](#locale-settings)
@@ -181,7 +180,7 @@ For more information, read the [NLU](../../../ai/nlu/nlu-overview/overview.md) d
 
 #### Intents
 
-Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
+_Intent Mapping_ is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 Intents can be created right within the Intents section of the NLU tab and can be fed with training data in the form of example sentences.
 
 For more information, read the [Machine learning Intents](../../../ai/nlu/nlu-overview/ml-intents.md) documentation.
@@ -189,60 +188,61 @@ To learn how to use Intents, see also [Cognigy Sessions:Cognigy NLU](https://sup
 
 #### Attached Flows
 
-Whenever a Flow with Intents is attached to another Flow, the Intents in that [Attached Flow](../../../ai/nlu/nlu-overview/overview/#attached-flows.md) will be considered when training the NLU model. That is a practical way of combining different Intent collections into a bigger model.
+When a Flow with Intents is attached to another Flow, 
+the Intents within that _[Attached Flow](../../../ai/nlu/nlu-overview/overview.md#attached-flows)_ will be considered during the training of the NLU model. 
+This feature provides a practical means of combining different collections of Intents into a larger model.
 
 #### Attached Lexicons
 
 Lexicons need to be attached to a Flow in order for a Flow to be able to detect its Keyphrases. Make sure to retrain the model whenever you attach or detach resources.
-More information, read the [Attached Lexicons](../../../ai/nlu/nlu-overview/overview/#attached-lexicons.md) documentation.
+
+For more information, read the [Attached Lexicons](../../../ai/nlu/nlu-overview/overview.md#attached-lexicons) documentation.
 
 #### States
 
-**States** can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
-Only Intents added to the **Whitelist** of the current State of the conversation can be detected. Conversely, Intents added to the **Blacklist** of the current State will not be recognized.
+_States_ can be used to block certain Intents. This can help with edge-cases or very large Intent collections. Only Intents added to the **Whitelist** of the current State of the conversation can be detected. Conversely, Intents added to the **Blacklist** of the current State will not be recognized.
 
-For more information, how states work, read the [State](../../../ai/tools/interaction-panel/state.md) documentation.
+For more information on how states work, read the [State](../../../ai/tools/interaction-panel/state.md) documentation.
 
 #### Slot Fillers
 
-[Slot Fillers](../../../ai/nlu/nlu-overview/overview/#slot-fillers.md) allow for advanced Slot filling. Slot Fillers automatically copy found [Slots](../../../ai/nlu/slot-mapping/slot-mapping.md) to the [Context](../../../ai/tools/interaction-panel/context.md) object, meaning that they can be filled using a number of subsequent user utterances. 
+_[Slot Fillers](../../../ai/nlu/nlu-overview/overview.md#slot-fillers)_ allow for advanced Slot filling. Slot Fillers automatically copy found [Slots](../../../ai/nlu/slot-mapping/slot-mapping.md) to the [Context](../../../ai/tools/interaction-panel/context.md) object, meaning that they can be filled using a number of subsequent user utterances.
 
 ### Settings
 
-Every Flow of an Agent can be configured with its own Settings.
+Each Agent's Flow can be customized with its own settings:
 
-   - [Flow Configuration](#flow-configuration)
-   - [Default Context](#default-context)
-   - [Locale Settings](#locale-settings)
+- [Flow Configuration](#flow-configuration)
+- [Default Context](#default-context)
+- [Locale Settings](#locale-settings)
 
 #### Flow Configuration
 
-Following Flow Settings are available to configure:
+The following Flow Settings are available to configure:
 
-   - The [General Flow Logic](../../../ai/resources/manage/settings.md#general-flow-logic)
-   - The [Intent Mapper](../../../ai/resources/manage/settings.md#intent-mapper) - see also [Flows NLU](../../../ai/nlu/nlu-overview/overview.md) 
-   - The [Thresholds](../../../ai/nlu/nlu-overview/ml-intents.md#thresholds) for NLU recognition
-   - The [Lexicon Slots](../../../ai/resources/build/lexicons.md)
-   - The [System Slots](../../../ai/nlu/slot-mapping/slot-mapping.md)
-
-More information about the Flow configuration settings you can find here: [Flow Settings](../../../ai/resources/manage/settings.md#general-flow-logic).
+- [General Flow Logic](../../../ai/resources/manage/settings.md#general-flow-logic--flow-settings)
+- [Intent Mapper](../../../ai/resources/manage/settings.md#intent-mapper) (See also [Flows NLU](../../../ai/nlu/nlu-overview/overview.md))
+- [Thresholds for NLU recognition](../../../ai/nlu/nlu-overview/ml-intents.md#thresholds)
+- [Lexicon Slots](../../../ai/resources/build/lexicons.md)
+- [System Slots](../../../ai/nlu/slot-mapping/slot-mapping.md)
 
 #### Default Context
 
-The Context is a JSON object which stores persistent information. **Default Context** can be used as a starting point for the Flow's Context object. The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. 
+The Context is a JSON object that stores persistent information. 
+The _Default Context_ serves as a starting point for the Flow's Context object, 
+representing its initial state when the session begins. 
+This allows customization to initialize variables that will be accessed and modified throughout the conversation.
 
-For more information, read the [Context](../../../ai/tools/interaction-panel/context.md) and [Cognigy Script](../../../ai/tools/cognigy-script.md) documentation.
+For further details, refer to the [Context](../../../ai/tools/interaction-panel/context.md) and [Cognigy Script](../../../ai/tools/cognigy-script.md) documentation.
 
 #### Locale Settings
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
 Cognigy.AI provides the localization feature for easy customization and content reuse.
 
 You can add a Locale to your Agent and to your Flow Nodes as well:
 
-  - Add a new Locale to an Agent. How to add a new Locale to an Agent, read the [Add a Locale to an Agent](../../../ai/resources/manage/localization.md#add-a-locale-to-an-agent) documentation.
-  - Add a Locale to a Node. When you created a new Locale for your Agent you need to localize your Flow for the new Locale also. How to localize a Node manually, you can read in the [Add a Locale to a Node](../../../ai/resources/manage/localization.md#add-a-locale-to-a-node) documentation.
+- Add a new Locale to an Agent. How to add a new Locale to an Agent, read the [Add a Locale to an Agent](../../../ai/resources/manage/localization.md#add-a-locale-to-an-agent) documentation.
+- Add a Locale to a Node. When you created a new Locale for your Agent you need to localize your Flow for the new Locale also. How to localize a Node manually, you can read in the [Add a Locale to a Node](../../../ai/resources/manage/localization.md#add-a-locale-to-a-node) documentation.
 
 The **Locale Settings** tab is disabled for fallback Locale and enabled for alternative Locales. Activate this setting to inherit the [Intent](../../../ai/nlu/nlu-overview/ml-intents.md) model from [fallback](../../../ai/resources/manage/localization.md) Locale. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator](../../../ai/nlu/nlu-overview/ml-intents.md) on the Intents page and error badge on NLU tab are hidden, also the [Build Model](../../../ai/nlu/nlu-overview/ml-intents.md) button in Settings, Chart and NLU is disabled.
 
@@ -250,7 +250,6 @@ With the localization view of your Flow, you can configure multiple Locales. If 
 
 While you can add additional Locales for content localization later on, note that once the primary Locale is selected, it cannot be modified.
 For more information, read the [Localization](../../../ai/resources/manage/localization.md) documentation.
-
 
 ### Switch to different Flows
 
