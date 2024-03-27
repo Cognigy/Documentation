@@ -218,13 +218,14 @@ To set up a multilingual Flow for the handover use case, follow these steps:
 7. Click **Save Node**. 
 8. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`. 
 9. Click **Save Node**. 
-10. Below each case Node, add a [Set Translation](../nodes/other-nodes/set-translation.md) Node. 
-11. In the Set Translation Node, activate the **Translation Enabled** toggle. 
-12. In the **User Input Language** field, specify the language of the user input, for example, `de`. 
-13. In the **Flow Language** field, specify the language to translate to, for example, `en`. 
-14. Create a second Set Translation Node and repeat the steps for another language, for example Italian. 
-15. Click **Save Node**. 
-16. At the end of the Flow, place the [Handover to Agent](../nodes/service/handover-to-agent.md) Node.
+10. Below each case Node, add the second [Set Session Config](../nodes/voice/voice-gateway/parameter-details.md) Nodes.
+11. Configure the TTS and STT settings for each of the Set Session Config Nodes. This means that one Node should have German language selected, while the other should have Italian. These Nodes will manage the voice agent's communication in the end user's language. 
+12. Below each Set Session Config Node, add the [Set Translation](../nodes/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language. 
+13. In the Set Translation Node, activate the **Translation Enabled** toggle. 
+14. In the **User Input Language** field, specify the language of the user input, for example, `de`, `it`. 
+15. In the **Flow Language** field, specify the language to translate to, for example, `en`. 
+16. Save your changes. 
+17. At the end of the Flow, place the [Handover to Agent](../nodes/service/handover-to-agent.md) Node.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-gateway-handover.png" width="100%" />
