@@ -18,7 +18,7 @@ The Endpoint splits audio streams into user and agent input.
 When the transcription is sent to this Endpoint, Cognigy will receive two variables:
 `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
 
-This endpoint Voice Copilot works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
+The Voice Copilot Endpoint works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
 
 ## Prerequisites
  
