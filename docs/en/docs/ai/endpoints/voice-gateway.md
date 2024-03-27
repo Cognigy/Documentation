@@ -177,7 +177,7 @@ This Node transfers the conversation from the voice agent to the human agent.
 
 ### Example
 
-In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies.
+In this example, an end user seeks billing assistance and interacts with agents in a customer service system via text-to-speech and speech-to-text technologies.
 
 **End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
 **Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
