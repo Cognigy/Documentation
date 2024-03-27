@@ -18,6 +18,8 @@ The table below lists the LLMs supported by Cognigy.
 
 {! _includes/release-notes/text-davinci-003-sunset.md !}
 
+{! _includes/ai/deprecated-azure-models.md !}
+
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & LLM-powered Answer Extraction    | Generate Node Output | Knowledge Search | Sentiment Analysis |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|----------------------------------------------------|----------------------|------------------|--------------------|
 | **Microsoft Azure OpenAI**                                                                                                |                            |                     |                    |                 |                       |                                                    |                      |                  |                    |
