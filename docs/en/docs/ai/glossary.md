@@ -311,7 +311,7 @@ _**Virtual Agents**_
 
 _**Voice Gateway**_
 : A Cognigy product that connects Cognigy.AI with phone lines and contact center solutions, enabling you to link your Agent to your Contact Center or other phone numbers. This allows customers to speak with your Agent instead of just writing to it.
-For more information, read the [Voice Gateway](endpoints/cognigy-vg.md) documentation.
+For more information, read the [Voice Gateway](endpoints/voice-gateway.md) documentation.
 
 ## W
 _**Webchat**_

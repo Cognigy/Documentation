@@ -39,7 +39,7 @@ For voice-specific actions, you can use the [Voice Gateway Flow Nodes]({{config.
 
 ## Create a Voice Gateway Endpoint
 
-To do voice-based experiences with your virtual agent, create your [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in Cognigy.AI. To do that:
+To do voice-based experiences with your virtual agent, create your [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/voice-gateway/) in Cognigy.AI. To do that:
 
 1. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
 2. On the **Endpoints** page, click **+ New Endpoint**. 

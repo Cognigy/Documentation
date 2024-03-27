@@ -23,7 +23,7 @@ The LLM Entity Extract Node is suitable for both chat and voice use cases. In a 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 You can configure the Node to either use the default model defined in the Settings or choose a specific configured LLM.
 
-To output the result, below the LLM Entity Extract Node, add a [Say Node](../basic/say.md). In the **Text** field of the Say Node, use a key specified in the [Storage Options](#storage-options), for example, `{{ "{{input.extractedEntity }}" }}`.
+To output the result, below the LLM Entity Extract Node, add a [Say Node](../basic/say.md). In the **Text** field of the Say Node, use a key specified in the [Storage Options](#storage-options), for example, `{{ "{{input.extractedEntity}}" }}`.
 
 ## Settings
 
