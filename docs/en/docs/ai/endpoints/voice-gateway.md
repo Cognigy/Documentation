@@ -38,52 +38,28 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../nodes/voice/voice-gateway/overview.md) for more information.
 
+### SIP Headers
+
+The SIP headers, including any custom headers, are available within the [Input](../tools/interaction-panel/input.md) object. 
+You can find them in `input.data` or `input.data.sip.headers`.
+
 ### Call Meta Data
 
-Voice Gateway identifies information about the caller and adds it to the Cognigy [Input Object](../tools/interaction-panel/input.md)  as `input.data.numberMetaData`.
+Voice Gateway identifies information about the caller and adds it to the [Input](../tools/interaction-panel/input.md) object as `input.data.numberMetaData`.
 
-| Parameter          | Type    | Description                                                              | Example            |
-|--------------------|---------|--------------------------------------------------------------------------|--------------------|
-| headers            | JSON    | The SIP Headers of the call on INVITE, including Custom Headers          | See example below  |
-| number             | string  | The phone number of the caller, including country code                   | +4921154591991     |
-| country            | string  | The 2-character country code                                             | DE                 |
-| countryCallingCode | string  | The calling code of the country                                          | 49                 |
-| nationalNumber     | string  | The national number without the country code and without a leading zero. | 21154591991        |
-| valid              | boolean | Whether the number is valid                                              | true               |
-| valid              | string  | The type of number. See below.                                           | FIXED_LINE         |
-| uri                | string  | The URI for the number                                                   | tel:+4921154591991 |
-
-`numberMetaData.type` can be any of:
-
-- PREMIUM_RATE
-- TOLL_FREE
-- SHARED_COST
-- VOIP
-- PERSONAL_NUMBER
-- PAGER
-- UAN
-- VOICEMAIL
-- FIXED_LINE_OR_MOBILE
-- FIXED_LINE
-- MOBILE
-
-```json
-{
-  "from": "<caller-phone-number>",
-  "to": "<sip-destination>",
-  "call-id": "<id-value>",
-  "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
-  "X-Custom-Headers": "<custom-headers-value>",
-  "X-Originating-Carrier": "<carrier-name>",
-  "X-Voip-Carrier-Sid": "<id-value>",
-  "X-Twilio-AccountSid": "<id-value>",
-  "X-Twilio-CallSid": "<id-value>",
-  "other-properties": "..."
-}
-```
+| Parameter          | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Example            |
+|--------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| number             | string  | The phone number of the caller, including country code. The phone number has E.164 format.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | +4921154591991     |
+| country            | string  | The 2-character country code.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | DE                 |
+| countryCallingCode | string  | The country calling code associated with the phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 49                 |
+| nationalNumber     | string  | The national number part of the phone number. It excludes the country code and any leading zero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 21154591991        |
+| ext                | string  | The extension number, if present. It consists of a numerical sequence, such as 123 or 568, utilized in PBX systems for streamlined internal phone communications within organizations. Users can dial these numbers for internal calls without needing to dial the full external phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 123                |
+| valid              | boolean | The validity of the phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | true               |
+| type               | String  | The phone number's classification. Can be any of: <br>- `PREMIUM_RATE` — a number associated with premium rate services, incurring higher charges. <br>- `TOLL_FREE` — a toll-free number where the recipient pays for the call. <br>- `SHARED_COST` — a number where call costs are shared between the caller and the recipient. <br>- `VOIP` — a number associated with Voice over Internet Protocol (VoIP) services. <br>- `PERSONAL_NUMBER` — a non-geographic number typically associated with individuals. <br>- `PAGER` — a number associated with a pager device for receiving short messages. <br>- `UAN` — a universal Access Number for nationwide business services. <br>- `VOICEMAIL` — a number used for accessing voicemail services. <br>- `FIXED_LINE_OR_MOBILE` — a fixed-line or mobile number. <br>- `FIXED_LINE` — a traditional landline phone number. <br>- `MOBILE` — a number associated with a mobile/cellular device. | FIXED_LINE         |
+| uri                | string  | The URI associated with the phone number, if applicable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | tel:+4921154591991 |
 
 !!! note "NumberMetaData in Tokens"
-    All of the above are available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields as well.
+    The data in `input.data.numberMetaData` is available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields.
 
 ### Generic Settings
 
