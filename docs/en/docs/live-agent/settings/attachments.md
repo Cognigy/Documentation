@@ -35,7 +35,7 @@ End users can send attachments to human agents by using the **Add attachments** 
 
 ## Request an Attachment with the Plugin
 
-If you are using a [Webchat](../../ai/endpoints/webchat/webchat.md) Endpoint with Live Agent, in addition to the standard Attach file feature, human agents can request an attachment from a user. To enable this functionality, you need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files.
+If you are using a [Webchat](../../webchat/overview.md) Endpoint with Live Agent, in addition to the standard Attach file feature, human agents can request an attachment from a user. To enable this functionality, you need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files.
 
 To request an attachment in a conversation within Live Agent, follow these steps:
 

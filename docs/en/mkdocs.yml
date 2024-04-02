@@ -55,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.72:
+    -  release-notes/4.72.md
   - 4.71:
     - release-notes/4.71.md
   - release-notes/4.70.md
@@ -305,6 +307,7 @@ nav:
     - Other Nodes:
       - ai/nodes/other-nodes/overview.md
       - ai/nodes/other-nodes/knowledge-search.md
+      - ai/nodes/other-nodes/llm-entity-extract.md
       - ai/nodes/other-nodes/log-message.md
       - ai/nodes/other-nodes/search-extract-output.md
       - ai/nodes/other-nodes/set-translation.md
@@ -379,9 +382,9 @@ nav:
       - ai/endpoints/transformers/inject-transformer.md
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md
+      - webchat/overview.md
     - Voice Gateway:
-      - ai/endpoints/cognigy-vg.md
+      - ai/endpoints/voice-gateway.md
     - ai/endpoints/overview.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
@@ -487,16 +490,29 @@ nav:
   - insights/glossary.md
   - Release Notes:
     - insights/release-notes/release-notes.md
-- Webchat Widget:
+- Webchat:
   - Overview:
-    - ai/endpoints/webchat/webchat.md
-  - ai/endpoints/webchat/supported-browsers.md
-  - ai/endpoints/webchat/deploy-webchat-endpoint.md
-  - ai/endpoints/webchat/webchat-features.md
-  - ai/endpoints/webchat/triggering-webchat-plugins.md
-  - ai/endpoints/webchat/integrated-demo-page.md
-  - Release Notes:
-    - ai/endpoints/webchat/release-notes.md
+    - webchat/overview.md
+  - Getting Started:
+    - webchat/getting-started.md
+  - Webchat v3 (Preview):
+    - Overview:
+       - webchat/v3/overview.md
+    - webchat/v3/supported-browsers.md
+    - webchat/v3/features.md
+    - webchat/v3/configuration.md
+    - webchat/v3/embedding.md
+  - Webchat v2:
+    - Overview:
+      - webchat/v2/overview.md
+    - webchat/v2/supported-browsers.md
+    - webchat/v2/features.md
+    - webchat/v2/configuration.md
+    - webchat/v2/embedding.md
+  - webchat/migration.md
+  - webchat/plugins.md
+  - webchat/demo.md
+  - webchat/release-notes.md
 - AI Copilot:
   - Overview:
     - ai-copilot/overview.md

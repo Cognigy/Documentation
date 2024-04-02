@@ -85,7 +85,7 @@ To build a Flow using the Check Agent Availability Node, follow these steps:
 12. In the **Say** Node editor, in the **Text** field, specify the following text: `All of our agents are currently assisting other customers. Please try again later`. 
 13. Click **Save Node**.
 
-To test your Flow, use [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md).
+To test your Flow, use [Demo Webchat](../../../webchat/demo.md).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/services/check-agent-availability-flow.png" width="100%" />

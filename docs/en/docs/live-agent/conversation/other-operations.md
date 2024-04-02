@@ -7,6 +7,8 @@ hidden: false
 
 # Other Operations
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../release-notes/4.72.md)
+
 In Live Agent, you can mute or unmute, send transcripts via email, clear chat history, and enable agent masking. These actions make managing conversations more efficient, organized, and user-friendly.
 
 ## Mute a Conversation
@@ -68,3 +70,12 @@ Activating the **Enable Agent masking** setting masks all agent's personal infor
 Only the agent can see the original name, so there's no way for anyone else in your organization or the end user to link the masked name to a real human agent.
 
 For more information, read the [Account Settings](../settings/account-settings.md) documentation.
+
+## Expand or Collapse the Chat Area
+
+To change the size of the conversation chat area, select one of the following options:
+
+- To expand the chat area, click ![expand](../images/icons/expand.svg) in the upper-left corner of the chat screen.
+- To collapse the chat area, click ![collapse](../images/icons/collapse.svg) in the upper-left corner of the chat screen.
+
+This feature can be particularly useful if you want to utilize the [AI Copilot](../assistants/ai-copilot.md) workspace within your conversation.
