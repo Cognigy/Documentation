@@ -140,7 +140,18 @@ After the HTTP request has been successfully executed you can access the respons
 ### Execution & Caching
 #### Execute Requests asynchronously
 
-When enabled, the HTTP Request Node will execute the request asynchronously, meaning that it will not wait for a response before continuing flow execution
+When you enable the **Execute Requests asynchronously** option, the HTTP Request Node will execute the request without waiting for a response. 
+This means that the execution of the Flow will continue without any delay.
+
+##### Timeout
+
+The timeout for canceling the request (in milliseconds).
+The default value is `8000`.
+This setting overrides the [global parameter value](#limitations) for your Node.
+
+##### Retry attempts
+
+The number of retry attempts in case of an error.
 
 #### Cache Results
 
