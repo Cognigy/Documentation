@@ -148,16 +148,16 @@ You can use models from any LLM provider supported by Cognigy, including those n
 However, you can only replace one model with another within the same provider.
 
 Let's consider an example with the Anthropic provider:
-how to force the LLM node to use the model version `claude-3-opus-20240229`,
-despite the LLM resource defaulting to the `claude-v1-100k` model:
+how to force the LLM Prompt Node to use the model version `claude-3-sonnet-20240229`,
+despite the LLM resource defaulting to the `claude-3-opus-20240229` model:
 
-1. [Create an Anthropic LLM resource](../../resources/build/llm.md#add-a-model) for Claude-1, for example, `claude-v1-100k`.
+1. [Create an Anthropic LLM resource](../../resources/build/llm.md#add-a-model) for Claude-1, for example, `claude-3-opus-20240229`.
 2. Create a Flow and add an LLM Prompt Node to it.
-3. In the LLM Prompt Node, select the model `claude-v1-100k` from the **Large Language Model** list.
-4. Override the model selection. In the **Custom Model Options** field, specify the custom model options as follows: `{ "model": "claude-3-opus-20240229" }`.
+3. In the LLM Prompt Node, select the model `claude-3-opus-20240229` from the **Large Language Model** list.
+4. Override the model selection. In the **Custom Model Options** field, specify the custom model options as follows: `{ "model": "claude-3-sonnet-20240229" }`.
 5. Click **Save Node**.
 
-The LLM Prompt Node now utilizes the `claude-v1-100k` model.
+The LLM Prompt Node now utilizes the `claude-3-sonnet-20240229` model.
 
 Below, you'll find documentation for supported models:
 
