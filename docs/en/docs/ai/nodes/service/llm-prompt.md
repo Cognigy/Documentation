@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73-blue.svg)](../../../release-notes/4.73.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/llm-prompt.png" width="80%" />
@@ -134,32 +134,37 @@ When using the Interaction Panel, you can trigger two types of debug logs. These
 
 These settings are helpful if you need to use parameters that are not included in the LLM Prompt Node or if you need to overwrite existing ones.
 
-| Parameter              | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|------------------------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Custom Model Options   | JSON | Additional parameters for the LLM model. You can specify individual parameters as well as entire functions. These parameters customize the behavior of the model, such as adjusting temperature, top_k, or presence_penalty. Note that if you use a parameter already set in the Node, for example, temperature, it will be overwritten. To view the full list of available parameters for your model, refer to the LLM provider's API documentation. For example, [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) or [Azure OpenAI](https://learn.microsoft.com/en-us/javascript/api/@azure/openai/getchatcompletionsoptions?view=azure-node-preview#@azure-openai-getchatcompletionsoptions-toolchoice).<br><br> **Examples:** `{ "logprobs": true }`, `{ "temperature": 0.7 }`,  or `{ "model": "claude-3-opus-20240229" }` (see [Forcing Model Versions](#forcing-model-versions)). |
-| Custom Request Options | JSON | Additional parameters for the LLM request. These parameters customize the request itself, such as setting parameters related to timeout, retries, or headers. For more information, refer to the LLM provider's API documentation. <br><br> **Examples:** `{ "timeout": 5000 }`, `{ "headers": { "Authorization": "Bearer <token>" } }`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Parameter              | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|------------------------|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Custom Model Options   | JSON | Additional parameters for the LLM model. You can specify individual parameters as well as entire functions. These parameters customize the behavior of the model, such as adjusting temperature, top_k, or presence_penalty. Note that if you use a parameter already set in the Node, for example, temperature, it will be overwritten. To view the full list of available parameters for your model, refer to the LLM provider's API documentation. For example, [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) or [Azure OpenAI](https://learn.microsoft.com/en-us/javascript/api/@azure/openai/getchatcompletionsoptions?view=azure-node-preview#@azure-openai-getchatcompletionsoptions-toolchoice).<br><br> **Examples:** <br>- `{ "logprobs": true }` <br> - `{ "temperature": 0.7 }` <br> - `{ "model": "claude-3-opus-20240229" }` (see [Forcing Model Versions](#forcing-model-versions)) |
+| Custom Request Options | JSON | Additional parameters for the LLM request. These parameters customize the request itself, such as setting parameters related to timeout, retries, or headers. For more information, refer to the LLM provider's API documentation. <br><br> **Examples:** <br>- `{ "timeout": 5000 }`<br> - `{ "headers": { "Authorization": "Bearer <token>" } }`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 #### Forcing Model Versions
 
 You can force the LLM Prompt Node to use a specific model version by including it in the Custom Model Options.
 This means that the LLM Prompt Node will use the specified version of the language model instead of the default or any other available versions. This allows for more control over the behavior of the LLM Prompt Node, ensuring it utilizes the desired model version for generating prompts or responses.
 
-**Example for using Claude 3 Opus**:
+You can use models from any LLM provider supported by Cognigy, including those not yet directly integrated.
+However, you can only replace one model with another within the same provider.
 
-1. Create an Anthropic LLM Resource for Claude-1, for example, `claude-v1-100k`.
-2. Create an LLM Node.
-3. Fill the Custom Model Options with `{ "model": "claude-3-opus-20240229" }`
+Let's consider an example with the Anthropic provider:
+how to force the LLM node to use the model version `claude-3-opus-20240229`,
+despite the LLM resource defaulting to the `claude-v1-100k` model:
 
-This will force the LLM Node to use the `claude-3-opus-20240229` model, even though the LLM Resource itself for example defaults to `claude-v1-100k`.
+1. [Create an Anthropic LLM resource](../../resources/build/llm.md#add-a-model) for Claude-1, for example, `claude-v1-100k`.
+2. Create a Flow and add an LLM Prompt Node to it.
+3. In the LLM Prompt Node, select the model `claude-v1-100k` from the **Large Language Model** list.
+4. Override the model selection. In the **Custom Model Options** field, specify the custom model options as follows: `{ "model": "claude-3-opus-20240229" }`.
+5. Click **Save Node**.
 
-The same works for any other supported LLM provider.
-For example, you could use the `gpt-4-1106-vision-preview` model on an OpenAI LLM Resource.
+The LLM Prompt Node now utilizes the `claude-v1-100k` model.
 
-See below for documentation of supported models:
-- [Anthropic Models](https://docs.anthropic.com/claude/docs/models-overview)
-- [OpenAI Models](https://platform.openai.com/docs/models)
+Below, you'll find documentation for supported models:
+
 - [Aleph Alpha Models](https://docs.aleph-alpha.com/docs/introduction/model-card/)
-
+- [Anthropic Models](https://docs.anthropic.com/claude/docs/models-overview)
+- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
+- [OpenAI Models](https://platform.openai.com/docs/models)
 
 ## More Information
 
