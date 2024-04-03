@@ -22,8 +22,7 @@ Using a Web Page as a knowledge source has a current set of restrictions:
 
 ## How to Ingest a Web Page
 
-Before using a web page as a source, you need to create a [Knowledge Store](overview.md#knowledge-store) in your Agent.
-Check if at least one Knowledge Store is created in the Agent:
+Before using a web page as a source, check if at least one [Knowledge Store](overview.md#knowledge-store) is created in your Agent:
 
 === "There are no Knowledge Stores"
      1. Open the Cognigy.AI interface.
