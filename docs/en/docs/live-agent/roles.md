@@ -34,12 +34,13 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Agents
 
-| Actions                         | Agent | Supervisor | Administrator |
-|---------------------------------|-------|------------|---------------|
-| Create an Agent [^1]            |  -    | -          | +             |
-| Edit an Agent [^1]              |  -    | -          | +             |
-| Delete an Agent[^1]             |  -    | -          | +             |
-| Assign an Agent                 |  +    | +          | +             |
+| Actions              | Agent | Supervisor | Administrator |
+|----------------------|-------|------------|---------------|
+| Create an Agent [^1] | -     | -          | +             |
+| Edit an Agent [^1]   | -     | -          | +             |
+| Delete an Agent[^1]  | -     | -          | +             |
+| View Agents          | -     | -          | +             |
+| Assign an Agent      | +     | +          | +             |
 
 [^1]: This permission is granted on the Cognigy.AI side.
 
@@ -48,6 +49,8 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Actions                             | Agent | Supervisor | Administrator |
 |-------------------------------------|-------|------------|---------------|
 | Create a team                       | -     | -          | +             |
+| View teams                          | +     | +          | +             |
+| View agents                         | -     | -          | +             |
 | Assign a team within a conversation | +     | +          | +             |
 | Edit a team                         | -     | -          | +             |
 | Delete a team                       | -     | -          | +             |
@@ -169,8 +172,8 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 | Actions                               | Agent | Supervisor | Administrator  |
 |---------------------------------------|-------|------------|----------------|
-| Configure Account Settings            |   -   |     -      | +              |
-| Configure Profile Settings            |   +   |     +      | +              |
+| Configure Account Settings            |   -   | -          | +              |
+| Configure Profile Settings            |   +   | +          | +              |
 
 ## Assign Roles
 
