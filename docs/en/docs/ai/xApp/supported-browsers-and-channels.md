@@ -24,7 +24,7 @@ The following browsers are supported by xApps:
 
 The following channels are supported by xApps:
 
-- [Voice Gateway](../endpoints/cognigy-vg.md)
+- [Voice Gateway](../endpoints/voice-gateway.md)
 - [Audiocodes](../endpoints/audiocodes.md)[^*]
 - [Facebook (Meta) Messenger](../endpoints/facebook-messenger.md)
 - [LINE Messenger](../endpoints/line-messenger.md)

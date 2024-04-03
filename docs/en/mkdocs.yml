@@ -55,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.73:
+    -  release-notes/4.73.md
   - 4.72:
     -  release-notes/4.72.md
   - 4.71:
@@ -384,7 +386,7 @@ nav:
     - Cognigy Webchat:
       - webchat/overview.md
     - Voice Gateway:
-      - ai/endpoints/cognigy-vg.md
+      - ai/endpoints/voice-gateway.md
     - ai/endpoints/overview.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md

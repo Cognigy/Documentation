@@ -13,7 +13,7 @@ In this tutorial, you will learn how to build an xApp that can compliment a prim
 - Access to a [voice provider](../../tools/voice-preview.md), for example, Microsoft Azure Speech Services.
 - [Twilio API Key](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
 - Twilio Extension preinstalled from [Cognigy Marketplace](../../resources/manage/extensions.md).
-- [Voice Gateway Endpoint](../../endpoints/cognigy-vg.md) configured in Cognigy.
+- [Voice Gateway Endpoint](../../endpoints/voice-gateway.md) configured in Cognigy.
 
 ## Configure a Basic xApp Flow
 

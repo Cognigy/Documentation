@@ -9,14 +9,14 @@ hidden: false
 
 {! _includes/webchat/preview.md !}
 
-Recommended browsers for Cognigy Webchat v3:
+Cognigy Webchat v3 is compatible with the browsers listed below:
 
 | Browser        | Versions                                          |
 |----------------|---------------------------------------------------|
-| Google Chrome  | The newest version and two previous versions.     |
-| Firefox        | The newest version and two previous versions.     |
-| Microsoft Edge | The newest version and two previous versions.     |
-| Safari         | The newest version and two previous versions.[^*] |
+| Google Chrome  | The latest version and one previous version.      |
+| Firefox        | The latest version and one previous version.      |
+| Microsoft Edge | The latest version and one previous version.      |
+| Safari         | The latest version and one previous version. [^*] |
 
 [^*]: Cognigy only supports Websockets on Safari, which means that the fallback to long-polling is not allowed.
 
