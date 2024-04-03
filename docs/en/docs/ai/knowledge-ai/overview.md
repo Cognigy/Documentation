@@ -33,7 +33,7 @@ For the Knowledge AI case, you need the `text-embedding-ada-002` model. However,
 You can create a preconfigured knowledge store. To do this, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Knowledge**. The knowledge wizard will be opened.
+2. In the left-side menu, select **Knowledge**. The Knowledge AI wizard will be opened.
 3. Continue following the wizard instructions.
 4. Specify a unique name and select an embedding model.
 
