@@ -1,0 +1,2 @@
+!!! warning "Retirement of Azure OpenAI Models"
+    Several API versions of Microsoft Azure OpenAI models will be retired on [April 2, 2024](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#retiring-soon). Ensure that you do not use these versions. If you are using them, switch to the latest API versions before the retirement date.

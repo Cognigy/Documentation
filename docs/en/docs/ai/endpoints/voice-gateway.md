@@ -1,73 +1,67 @@
 ---
 title: "Cognigy Voice Gateway" 
-slug: "cognigy-vg" 
+slug: "voice-gateway" 
 hidden: false 
 ---
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
-
-## Overview
+[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using our VoiceGateway, enabling customers to speak with your Agent instead of just writing to it.
+Within the Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using Cognigy Voice Gateway. 
+This feature enables customers to speak with your virtual agents instead of writing to them.
 
-## Voice Gateway Specific Nodes
+## Generic Endpoint Settings
+
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+
+- [Endpoints Overview](overview.md)
+- [Data Protection & Analytics](data-protection-and-analytics.md)
+- [Transformer Functions](transformers/transformers.md)
+- [NLU Connectors](../resources/build/nlu-connectors.md)
+- [Session Management](session-management.md)
+- [Real Time Translation Settings](real-time-translation-settings.md)
+
+!!! note "Contact Center & Phone number linking"
+    To route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
+
+!!! warning "Rebranding of Voice Gateway with AudioCodes"
+    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+
+## Specific Endpoint Settings
+
+### Voice Gateway Specific Nodes
 
 Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../nodes/voice/voice-gateway/overview.md) for more information.
 
-## Call Meta Data
+### SIP Headers
 
-Voice Gateway identifies information about the caller and adds it to the Cognigy [Input Object](../tools/interaction-panel/input.md)  as `input.data.numberMetaData`.
+The SIP headers, including any custom headers, are available within the [Input](../tools/interaction-panel/input.md) object. 
+You can find them in `input.data` or `input.data.sip.headers`.
 
-| Parameter          | Type    | Description                                                              | Example            |
-|--------------------|---------|--------------------------------------------------------------------------|--------------------|
-| headers            | JSON    | The SIP Headers of the call on INVITE, including Custom Headers          | See example below  |
-| number             | string  | The phone number of the caller, including country code                   | +4921154591991     |
-| country            | string  | The 2-character country code                                             | DE                 |
-| countryCallingCode | string  | The calling code of the country                                          | 49                 |
-| nationalNumber     | string  | The national number without the country code and without a leading zero. | 21154591991        |
-| valid              | boolean | Whether the number is valid                                              | true               |
-| valid              | string  | The type of number. See below.                                           | FIXED_LINE         |
-| uri                | string  | The URI for the number                                                   | tel:+4921154591991 |
+### Call Meta Data
 
-`numberMetaData.type` can be any of:
+Voice Gateway identifies information about the caller and adds it to the [Input](../tools/interaction-panel/input.md) object as `input.data.numberMetaData`.
 
-- PREMIUM_RATE
-- TOLL_FREE
-- SHARED_COST
-- VOIP
-- PERSONAL_NUMBER
-- PAGER
-- UAN
-- VOICEMAIL
-- FIXED_LINE_OR_MOBILE
-- FIXED_LINE
-- MOBILE
-
-```json
-{
-  "from": "<caller-phone-number>",
-  "to": "<sip-destination>",
-  "call-id": "<id-value>",
-  "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
-  "X-Custom-Headers": "<custom-headers-value>",
-  "X-Originating-Carrier": "<carrier-name>",
-  "X-Voip-Carrier-Sid": "<id-value>",
-  "X-Twilio-AccountSid": "<id-value>",
-  "X-Twilio-CallSid": "<id-value>",
-  "other-properties": "..."
-}
-```
+| Parameter          | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Example            |
+|--------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| number             | string  | The phone number of the caller, including country code. The phone number has E.164 format.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | +4921154591991     |
+| country            | string  | The 2-character country code.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | DE                 |
+| countryCallingCode | string  | The country calling code associated with the phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 49                 |
+| nationalNumber     | string  | The national number part of the phone number. It excludes the country code and any leading zero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 21154591991        |
+| ext                | string  | The extension number, if present. It consists of a numerical sequence, such as 123 or 568, utilized in PBX systems for streamlined internal phone communications within organizations. Users can dial these numbers for internal calls without needing to dial the full external phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 123                |
+| valid              | boolean | The validity of the phone number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | true               |
+| type               | String  | The phone number's classification. Can be any of: <br>- `PREMIUM_RATE` — a number associated with premium rate services, incurring higher charges. <br>- `TOLL_FREE` — a toll-free number where the recipient pays for the call. <br>- `SHARED_COST` — a number where call costs are shared between the caller and the recipient. <br>- `VOIP` — a number associated with Voice over Internet Protocol (VoIP) services. <br>- `PERSONAL_NUMBER` — a non-geographic number typically associated with individuals. <br>- `PAGER` — a number associated with a pager device for receiving short messages. <br>- `UAN` — a universal Access Number for nationwide business services. <br>- `VOICEMAIL` — a number used for accessing voicemail services. <br>- `FIXED_LINE_OR_MOBILE` — a fixed-line or mobile number. <br>- `FIXED_LINE` — a traditional landline phone number. <br>- `MOBILE` — a number associated with a mobile/cellular device. | FIXED_LINE         |
+| uri                | string  | The URI associated with the phone number, if applicable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | tel:+4921154591991 |
 
 !!! note "NumberMetaData in Tokens"
-    All of the above are available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields as well.
+    The data in `input.data.numberMetaData` is available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields.
 
-## Generic Settings
+### Generic Settings
 
 These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
 
@@ -76,7 +70,7 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 | Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
 | Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
 
-### Prosody Settings
+#### Prosody Settings
 
 | Parameter     | Type   | Description                                                                                     |
 |---------------|--------|-------------------------------------------------------------------------------------------------|
@@ -84,11 +78,11 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 | Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.              |
 | Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                        |
 
-#### Adapting Values for Your Chosen Speech Provider
+##### Adapting Values for Your Chosen Speech Provider
 
 As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google, the final output speed is directly added to the settings.
 
-## Call Events
+### Call Events
 
 Allows activating call events for a Flow.
 Select a call event from the [Voice Gateway Events](../../voicegateway/references/events/overview.md) list.
@@ -96,7 +90,7 @@ This event that will trigger the action.
 
 If you have configured the same call event in both the Endpoint and the [Lookup](../nodes/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
 
-### Call Event Settings
+#### Call Event Settings
 
 !!! note
     As with all other Endpoint settings, you cannot test the Call Events settings in the Endpoint within the Interaction Panel.
@@ -108,7 +102,7 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 | Data Payload | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
 | Execute Flow | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-## Call Failover
+### Call Failover
 
 The Call Failover section is intended to handle runtime errors that occur on the Cognigy.AI side during the execution of a Flow.
 
@@ -140,19 +134,90 @@ The Call Failover section is intended to handle runtime errors that occur on the
 | Referred By                 | String        | This parameter is optional.<br><br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.                                                                                | Refer         |
 | Custom Transfer SIP Headers | Toggle        | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | All           |
 
-## Generic Endpoint Settings
+## Handover Settings
 
-Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+You can use any [handover provider](../handover-providers/overview.md) within the Voice Gateway integration.
+The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
 
-- [Endpoints Overview](overview.md)
-- [Data Protection & Analytics](data-protection-and-analytics.md)
-- [Transformer Functions](transformers/transformers.md)
-- [NLU Connectors](../resources/build/nlu-connectors.md)
-- [Session Management](session-management.md)
-- [Real Time Translation Settings](real-time-translation-settings.md)
+In contrast to chatting, communication between actors during a voice call occurs using speech recognition technologies (text-to-speech and speech-to-text).
+Using speech-to-text technology, the voice agent sends the conversation script from the end user to the human agent. 
+Once the script is received, the human agent can respond using text. 
+After that, the voice agent converts the human agent's message to speech using text-to-speech technology. 
+Finally, the converted message is sent to the end user.
 
-!!! note "Contact Center & Phone number linking"
-    In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
+### Configuration
 
-!!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+To activate the Handover Settings,
+you need to add a [Handover to Agent](../nodes/service/handover-to-agent.md) Node in your voice Flow.
+This Node transfers the conversation from the voice agent to the human agent.
+
+### Example
+
+In this example, an end user seeks billing assistance and interacts with agents in a customer service system via text-to-speech and speech-to-text technologies.
+
+**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
+**Human Agent:** Receives a conversation script containing user's query.<br>
+**Human Agent:** Types response on interface. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
+**End User:** Hears human agent's response spoken by voice agent. Example: `Hello, thank you for reaching out. Let me check your billing details`.<br>
+**End User / Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
+
+### Multilingual Support
+
+Within the Handover Settings, you can use translation into other languages.
+Use the translation feature in the Handover Settings to overcome language barriers between end users and support staff. This feature is particularly useful in situations where there are no support staff proficient in the end user's language, and urgent issue resolution is necessary.
+
+For example, if a user communicates in German, the voice agent responds accordingly. 
+However, after transferring the call to the contact center, the dialogue is translated into English.
+The human agent responds in English, and the response is translated into German for the end user via text-to-speech technology.
+This method ensures seamless communication despite language differences.
+
+Note that depending on the language and provider selected, 
+translations may experience delays while they reach the contact center. 
+If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side. 
+Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly. 
+This approach will ensure that the end user is aware that their message may not be delivered.
+You can achieve this by adjusting timeout settings and error handling policies.
+
+#### Configuration
+
+To set up a multilingual Flow for the handover use case, follow these steps:
+
+1. In your voice Flow, navigate to the [Set Session Config](../nodes/voice/voice-gateway/parameter-details.md) Node.
+2. In the Node editor, go to the **Recognizer STT** section and activate the **Recognize Language** toggle.
+3. From the **Alternative Language** list, select the additional languages, for example, `German` and `Italian`.
+4. Click **Save Node**. 
+5. Below the Set Session Config Node, add a [Lookup](../nodes/logic/lookup.md) Node. 
+6. In the parent Lookup Node, select **CognigyScript** from the **Type** list and specify `input.data.payload.speech.language_code` in the **Operator** field. 
+7. Click **Save Node**. 
+8. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`. 
+9. Click **Save Node**. 
+10. Below each case Node, add the second [Set Session Config](../nodes/voice/voice-gateway/parameter-details.md) Nodes.
+11. Configure the TTS and STT settings for each of the Set Session Config Nodes. This means that one Node should have German language selected, while the other should have Italian. These Nodes will manage the voice agent's communication in the end user's language. 
+12. Below each Set Session Config Node, add the [Set Translation](../nodes/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language. 
+13. In the Set Translation Node, activate the **Translation Enabled** toggle. 
+14. In the **User Input Language** field, specify the language of the user input, for example, `de`, `it`. 
+15. In the **Flow Language** field, specify the language to translate to, for example, `en`. 
+16. Save your changes. 
+17. At the end of the Flow, place the [Handover to Agent](../nodes/service/handover-to-agent.md) Node.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-gateway-handover.png" width="100%" />
+</figure>
+
+#### Example
+
+In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies. The end user and human agent speak different languages, but this doesn't hinder their understanding, as the voice agent translates their speech into the required language for each party.
+
+**End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hallo, ich brauche Hilfe bei meiner Rechnungsanfrage`.<br>
+**Voice Agent:** Determines the language and answers using the same language. Example: `Danke für die Informationen. Ich werde Sie an einen menschlichen Agenten weiterleiten, der Ihnen weiterhelfen kann`.<br>
+**Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
+**Voice Agent:** Determines the need for human assistance and initiates the handover to the human agent via the handover provider.<br>
+**Human Agent:** Receives a conversation script containing user's query.<br>
+**Human Agent:** Types response on interface. Example: `I've found the issue. It seems there was an error in the billing statement. I'll correct it for you`.<br>
+**Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
+**End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
+**End User/Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
+

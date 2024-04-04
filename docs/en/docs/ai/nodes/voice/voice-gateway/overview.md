@@ -1,6 +1,6 @@
 ---
 title: "Voice Gateway Nodes" 
-slug: "cognigy-vg" 
+slug: "voice-gateway" 
 hidden: true 
 ---
 

@@ -12,14 +12,17 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
 
-This Endpoint is intended for voice use cases to receive the transcription of the audio stream and execute the Copilot flow. The Endpoint splits audio streams into user and agent input. When the transcription is sent to this Endpoint, Cognigy will receive two variables: `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
+This Endpoint is intended for voice use cases
+to receive the transcription of the audio stream and execute the AI Copilot Flow.
+The Endpoint splits audio streams into user and agent input.
+When the transcription is sent to this Endpoint, Cognigy will receive two variables:
+`user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
 
-This endpoint Voice Copilot works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
+The Voice Copilot Endpoint works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
 
 ## Prerequisites
-
-- You need to have an account in [Genesys Cloud](https://apps.mypurecloud.de/).
-- Activate this Endpoint on the Cognigy side:
+ 
+Activate this Endpoint on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
     - If you have an on-premise installation, specify the following feature flag: `FEATURE_ENABLE_AGENT_ASSIST_VOICE: true`.
 
@@ -40,7 +43,7 @@ Find out about the generic endpoint settings available with this endpoint on the
    3.1 Select the **Voice Copilot** Endpoint type. <br>
    3.2 Add a unique name.<br>
    3.3 Select a relevant Flow from the list.<br>
-4. In the **Configuration Information** section, copy the Endpoint URL and save it for later usage in Genesys.
+4. In the **Configuration Information** section, copy the Endpoint URL. Save it for later usage in the Transfer Node for the scenario [Cognigy.AI in Front](#cognigyai-in-front).
 5. Activate the **Enable Endpoint** setting. 
 6. Click **Save**.
 
@@ -61,7 +64,7 @@ If Cognigy.AI in Front, you need to configure the Transfer Node:
 
 When the contact center is in front, you do not have to configure the Transfer Node.
 
-SIPREC is an open SIP based protocol for call recording in contact centers. Session Border Controllers (SBC) are used to integrate SIPREC with the contact center. 
+SIPREC is an open SIP-based protocol for call recording in contact centers. Session Border Controllers (SBC) are used to integrate SIPREC with the contact center. 
 
 When a call is transferred to a human agent, audio from the SIPREC call is transcribed by Voice Gateway and sent to the Voice Copilot Endpoint for processing. The system replaces the traditional Cognigy session ID and user ID with a specific ID from the Contact Center. For instance, the original Cognigy session ID and user ID can be replaced with Agent ID and Conversation ID respectively.
 

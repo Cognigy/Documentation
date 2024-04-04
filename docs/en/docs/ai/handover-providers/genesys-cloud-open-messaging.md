@@ -6,13 +6,13 @@ hidden: false
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
 </figure>
 
-<div class="divider"></div><div class="divider"></div>
+<div class="divider"></div>
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
@@ -45,9 +45,9 @@ To create a platform config for Genesys Cloud Open Messaging, follow these steps
 5. In the left-side menu, select **Platforms**.
 6. On the **Platforms** page, click **+ Create new Integration > Open Messaging**.
 7. On the **Open Messaging** page, fill in the following fields:
-   - **Name** — enter a name for your integration. Copy and save this name. You need to specify this name in the **Deployment name** field on the Cognigy side.
-   - **Outbound Notification Webhook URL** — enter `https://endpoint-<your-environment>/handover/genesysCloudOM`. For example, `https://endpoint-app.cognigy.ai/handover/genesysCloudOM`, where environment is `app.cognigy.ai`.
-   - **Outbound Notification Webhook Signature Secret Token** — enter the secret into the X-Hub-Signature-256 header generation for webhook requests sent to the outbound notification webhook URL. For the secret, you can choose any arbitrary but sufficiently random string that you want. The external service should use the secret and signature to validate the message originating from Genesys Cloud. This validation is optional but recommended. For more information about validation, see [Validate webhook notifications in the Genesys Cloud Developer Center](https://developer.genesys.cloud/commdigital/digital/openmessaging/validate). Copy and save this token for future usage on the Cognigy side. Note that if you did not copy and save this token at once, after saving the platform configuration, you will need to recreate this token.
+    - **Name** — enter a name for your integration. Copy and save this name. You need to specify this name in the **Deployment name** field on the Cognigy side.
+    - **Outbound Notification Webhook URL** — enter `https://endpoint-<your-environment>/handover/genesysCloudOM`. For example, `https://endpoint-app.cognigy.ai/handover/genesysCloudOM`, where environment is `app.cognigy.ai`.
+    - **Outbound Notification Webhook Signature Secret Token** — enter the secret into the X-Hub-Signature-256 header generation for webhook requests sent to the outbound notification webhook URL. For the secret, you can choose any arbitrary but sufficiently random string that you want. The external service should use the secret and signature to validate the message originating from Genesys Cloud. This validation is optional but recommended. For more information about validation, see [Validate webhook notifications in the Genesys Cloud Developer Center](https://developer.genesys.cloud/commdigital/digital/openmessaging/validate). Copy and save this token for future usage on the Cognigy side. Note that if you did not copy and save this token at once, after saving the platform configuration, you will need to recreate this token.
 8. Click **Save**.
 9. From the **Platform Config** list, select the config that you created on the **Platform Configs** page.
 10. From the **Supported Content Profile** list, select `default`.
@@ -63,8 +63,8 @@ To create a Queue, follow these steps:
 2. Go to **Admin > Contact Center > Queues**.
 3. On the **Queues** page, click **Create Queue**.
 4. In the left-side **Create Queue** window, fill in the following fields:
-   - **Name** — enter a unique name of the queue. Save and copy this name for later use.
-   - **Division** — select `Home`.
+    - **Name** — enter a unique name of the queue. Save and copy this name for later use.
+    - **Division** — select `Home`.
 5. Click **Save**. Your queue will appear in the queue list.
 6. Open the queue settings by selecting this queue from the list.
 7. Copy the Queue ID from the page URL. To do this, navigate to the page URL and find the ID between `/queues/` and `/general`. For example, in the URL, `https://apps.mypurecloud.de/directory/#/admin/organization/queues/d59d0280-6664-4896-ad42-1a2715b7178e/general`, the ID `d59d0280-6664-4896-ad42-1a2715b7178e` should be copied.
@@ -84,10 +84,19 @@ To create an Inbound Message flow, follow these steps:
 8. To configure a flow, click **Edit**.
 9. Go to **Toolbox**.
 10. Drag the **Send Response** action and drop it onto the messaging flow editor.
-11. In the **Message Body** of the **Send Response** action, specify `Connected`.
-12. Below the **Send Response** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system.
-13. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction.
-14. In the upper-left corner, click **Save**, then **Publish**.
+11. In the **Message Body** of the **Send Response** action, specify `Connected`. 
+12. The steps 12–14 are optional.
+    Follow them if you want to add a [new embedded version of AI Copilot](#embedded) within your handover.<br>
+    *(Optional)* Below the **Send Response** action, add [Get Participant Data](https://help.mypurecloud.com/articles/get-participant-data-action/) action.
+13. *(Optional)* In the **Get Participant Data** editor, add the following variables:
+    - `queueId`
+    - `myLanguage`
+    - `mySkills`
+    - `userId`
+14. *(Optional)* for debugging purposes, you can send this data to the human agent within a conversation. To do that, below the **Get Participant Data** action, add the second **Send Response** action. In the message body, specify variables in a [message sequence with the String Builder](https://help.mypurecloud.com/articles/set-up-a-message-sequence-with-the-string-builder/). 
+15. Below the **Send Response** action, place the [Transfer to ACD](https://help.mypurecloud.com/articles/transfer-acd-action/) action to transfer an interaction to a queueing system. 
+16. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction. 
+17. In the upper-left corner, click **Save**, then **Publish**.
 
 After creating your inbound message flow, you will see this flow in the architect list.
 
@@ -99,12 +108,11 @@ To set up Message Routing, follow these steps:
 
 1. Open the Genesys Cloud interface.
 2. Go to **Admin > Routing > Message Routing**.
-3. In the upper-right corner, click **+**.
-4. On the **Message Route** tab, navigate to the **Select Flow** list.
+3. In the upper-right corner, click **+ Attach New Addresses to a Flow**.
+4. On the **Attach New Addresses** page, navigate to the **Select Flow** list.
 5. From the **Select Flow** list, choose the Inbound Message Flow you created.
-6. In the **Addresses** section, click **+**.
-7. From the **Select Address** list, choose the Open Messaging platform you created and click **Add**.
-8. Click **Save**.
+6. From the **Select Addresses** section, choose the Open Messaging platform you created and click **Attach Address**. 
+7. Click **Save**.
 
 Your Message Routing configuration will appear in the message routing list.
 
@@ -117,12 +125,12 @@ To configure credentials, follow these steps:
 3. Click **+ Add Client**.
 4. On the **Client Details** tab, provide a unique name in the **App Name** field.
 5. On the **Roles** tab, activate the corresponding role for the client. The role must contain at least a minimum scope of the following permissions:
-   - `messaging:integration:view` (Messaging > Integration > View)
-   - `conversations:message:receive` (Conversation > Message > Receive)
-   - `conversations:message:create` (Conversation > Message > Create)
-   - `conversation:webmessaging:view` (Conversation > Webmessaging > View)
-   - `conversation:message:view` (Conversation > Message > View)
-   - `analytics:conversationDetail:view` (Analytics > Conversation Detail > View)
+    - `messaging:integration:view` (Messaging > Integration > View)
+    - `conversations:message:receive` (Conversation > Message > Receive)
+    - `conversations:message:create` (Conversation > Message > Create)
+    - `conversation:webmessaging:view` (Conversation > Webmessaging > View)
+    - `conversation:message:view` (Conversation > Message > View)
+    - `analytics:conversationDetail:view` (Analytics > Conversation Detail > View)
 6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
 7. Click **Save**.
 8. Copy the Client ID and Client Secret and save them for future use.
@@ -143,12 +151,12 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 4. In the **Configuration Information** section, copy the Config URL and save it for future use.
 5. Scroll down to **Handover Settings** and select **Genesys Cloud Open Messaging** from the list.
 6. Fill in the following fields:
-   - **Host** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting `apps.` or `login.` part. For more on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
-   - **Deployment Name** — specify the Open Messaging platform name that you created [on the Genesys side](#create-a-platform).
-   - **Queue** — enter the Queue ID that you copied when you created a queue [on the Genesys side](#create-a-queue).
-   - **Webhook Secret** — specify the Outbound Notification Webhook Signature Secret Token that you created [on the Genesys side](#create-a-platform).
-   - **Client ID** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
-   - **Client Secret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials).
+    - **Host** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting `apps.` or `login.` part. For more on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
+    - **Deployment Name** — specify the Open Messaging platform name that you created [on the Genesys side](#create-a-platform).
+    - **Queue** — enter the Queue ID that you copied when you created a queue [on the Genesys side](#create-a-queue).
+    - **Webhook Secret** — specify the Outbound Notification Webhook Signature Secret Token that you created [on the Genesys side](#create-a-platform).
+    - **Client ID** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
+    - **Client Secret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials).
 7. Activate the **Send Profile information** setting if you want to send user information, such as the first and last name, to the human agent.
 8. Click **Save**.
 
@@ -172,9 +180,66 @@ To test connection, click **Open Demo Web Chat**.
 
 ## AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents.
+
+By default, two versions of the application are provided:
+
+- [Standalone](#standalone)
+- [Embedded](#embedded)
+
+### Standalone
+
+AI Copilot will be available as a standalone application via the following link:
 
 {! _includes/ai-copilot/url-pattern.md !}
+
+### Embedded
+
+By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
+
+- [Create a script](#create-a-script)
+- [Add the script to the Inbound Message flow](#add-the-script-to-the-inbound-message-flow)
+
+#### Create a Script
+
+To create a script, follow these steps:
+
+1. Go to Endpoint **Settings > Copilot**.
+2. Copy the Copilot Embedding URL by clicking on it.
+3. Go to Genesys Cloud.
+4. Open the **Admin** tab.
+5. Under **Contact Center**, click **Scripts**.
+6. Click **Create**.
+7. Type a name for the script.
+8. Select the **Blank Script** template and click **+ Create**.
+9. On the script page, go to the **Add Components** tab.
+10. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
+11. In the **Layout** section, change the size of Width and Height by clicking the **Stretch** button.
+12. In the upper-right corner, go to the **Variables** tab.
+13. On the **Variables** tab, go to the **Basic Types** section and click **String**.
+14. Create a new variable:<br>
+    14.1 In the **Name** field, enter `userId`.<br>
+    14.2 In the **Description** field, enter `Cognigy variable`.<br>
+    14.3 Enable the **Input** toggle.<br>
+    14.4 Click **Apply**.<br>
+15. In the upper-left corner of the script page, click **Script > Properties**.
+16. In the **Script Properties** section, activate the **Inbound** and **Message** features.
+17. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
+
+#### Add the Script to the Inbound Message Flow
+
+To add the Script to the Inbound Message Flow, follow these steps:
+
+1. Open the Genesys Cloud interface.
+2. Go to **Admin > Architect**.
+3. Click or hover over the **Flows** menu and select **Inbound Message**.
+4. From the flow list, select a flow that you created before.
+5. To configure a flow, click **Edit**.
+6. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+7. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
+8. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
+9. In the **Inputs** action, add `userId` in the **userId** field. 
+10. In the upper-left corner, click **Save**, then **Publish**.
 
 ## More Information
 

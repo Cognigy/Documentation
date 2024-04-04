@@ -10,8 +10,8 @@ _Nodes_ are fundamental building blocks that are used to construct Flows and def
 
 Node Categories:
 
-- [Basic Nodes](#basic-nodes)
-- [Logic Nodes](#logic-nodes)
+- [Basic](#basic-nodes)
+- [Logic](#logic-nodes)
 - [Voice](#voice-nodes)
 - [Analytics](#analytics-nodes)
 - [Service](#service-nodes)

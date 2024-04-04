@@ -21,7 +21,7 @@ Enable the collection of Analytics data for this endpoint.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
-This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint
+This setting applies only to the [Voice Gateway](voice-gateway.md) Endpoint
 and can be activated if the [Collect Analytics](#collect-analytics) toggle is turned on.
 
 When the setting is enabled, all information from the [Voice Gateway event](../../voicegateway/references/events/overview.md) payloads will be stored in the Analytics database and available via OData or the Transcript Explorer in Insights.

@@ -55,6 +55,12 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.73:
+    -  release-notes/4.73.md
+  - 4.72:
+    -  release-notes/4.72.md
+  - 4.71:
+    - release-notes/4.71.md
   - release-notes/4.70.md
   - 4.69:
     - release-notes/4.69.md
@@ -242,16 +248,17 @@ nav:
 
     - Analytics:
       - ai/nodes/analytics/overview.md
-      - ai/nodes/analytics/update-profile.md
+      - ai/nodes/analytics/activate-profile.md
+      - ai/nodes/analytics/blind-mode.md
+      - ai/nodes/analytics/complete-goal.md
       - ai/nodes/analytics/deactivate-profile.md
       - ai/nodes/analytics/delete-profile.md
-      - ai/nodes/analytics/activate-profile.md
       - ai/nodes/analytics/merge-profile.md
-      - ai/nodes/analytics/complete-goal.md
-      - ai/nodes/analytics/blind-mode.md
       - ai/nodes/analytics/overwrite-analytics.md
       - ai/nodes/analytics/request-rating.md
       - ai/nodes/analytics/set-rating.md
+      - ai/nodes/analytics/update-profile.md
+
     - Service:
       - ai/nodes/service/overview.md
       - ai/nodes/service/check-agent-availability.md
@@ -302,6 +309,7 @@ nav:
     - Other Nodes:
       - ai/nodes/other-nodes/overview.md
       - ai/nodes/other-nodes/knowledge-search.md
+      - ai/nodes/other-nodes/llm-entity-extract.md
       - ai/nodes/other-nodes/log-message.md
       - ai/nodes/other-nodes/search-extract-output.md
       - ai/nodes/other-nodes/set-translation.md
@@ -376,9 +384,9 @@ nav:
       - ai/endpoints/transformers/inject-transformer.md
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md
+      - webchat/overview.md
     - Voice Gateway:
-      - ai/endpoints/cognigy-vg.md
+      - ai/endpoints/voice-gateway.md
     - ai/endpoints/overview.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
@@ -485,16 +493,29 @@ nav:
   - insights/glossary.md
   - Release Notes:
     - insights/release-notes/release-notes.md
-- Webchat Widget:
+- Webchat:
   - Overview:
-    - ai/endpoints/webchat/webchat.md
-  - ai/endpoints/webchat/supported-browsers.md
-  - ai/endpoints/webchat/deploy-webchat-endpoint.md
-  - ai/endpoints/webchat/webchat-features.md
-  - ai/endpoints/webchat/triggering-webchat-plugins.md
-  - ai/endpoints/webchat/integrated-demo-page.md
-  - Release Notes:
-    - ai/endpoints/webchat/release-notes.md
+    - webchat/overview.md
+  - Getting Started:
+    - webchat/getting-started.md
+  - Webchat v3 (Preview):
+    - Overview:
+       - webchat/v3/overview.md
+    - webchat/v3/supported-browsers.md
+    - webchat/v3/features.md
+    - webchat/v3/configuration.md
+    - webchat/v3/embedding.md
+  - Webchat v2:
+    - Overview:
+      - webchat/v2/overview.md
+    - webchat/v2/supported-browsers.md
+    - webchat/v2/features.md
+    - webchat/v2/configuration.md
+    - webchat/v2/embedding.md
+  - webchat/migration.md
+  - webchat/plugins.md
+  - webchat/demo.md
+  - webchat/release-notes.md
 - AI Copilot:
   - Overview:
     - ai-copilot/overview.md
@@ -609,6 +630,8 @@ nav:
     - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
+  - Technical Capabilities:
+    - voicegateway/technical-capabilities.md
   - Installation & Configuration:
     - voicegateway/installation/overview.md
     - Browser Requirements:
@@ -633,6 +656,8 @@ nav:
       - voicegateway/webapp/carriers.md
     - Speech Services:
       - voicegateway/webapp/speech-services.md
+      - Streaming:
+          - voicegateway/webapp/streaming.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
     - Outbound Call Routing:
@@ -640,6 +665,8 @@ nav:
   - Creating Outbound Calls:
     - voicegateway/creating-outbound-calls.md
   - References:
+    - SIP Response Codes:
+      - voicegateway/references/sip-response-codes.md
     - Voice Gateway Events:
       - voicegateway/references/events/overview.md
       - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md

@@ -19,7 +19,7 @@ You can build these widgets by using the following Nodes:
 - [Copilot: Sentiment Tile](../ai/nodes/ai-copilot/sentiment-tile.md)
 - [Copilot: Transcript Tile](../ai/nodes/ai-copilot/transcript-tile.md)
 - [Copilot: Knowledge Tile](../ai/nodes/ai-copilot/knowledge-tile.md)
-- 
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai-copilot/images/plug-and-play-widgets.png" width="80%"/>
   <figcaption> Plug-and-Play Widgets in AI Copilot</figcaption>

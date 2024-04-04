@@ -22,7 +22,7 @@ Within your agent, from the left toolbar click **Manage** --> **Settings** to ac
 
 ### Yes/No logic
 
-Add a specific [Yes/No logic](../../nlu/nlu-overview/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../nlu/nlu-overview/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../nodes/overview.md#question) .
+Add a specific [Yes/No logic](../../nlu/nlu-overview/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../nlu/nlu-overview/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../nodes/overview.md#question).
 
 ### Additional confirmation words
 
@@ -60,14 +60,23 @@ Set the timezone that your virtual agent will operate in.
 ## Intent Mapper
 <div class="divider"></div>
 
-### Enable Case Sensitive Intent Mapping
+### Enable Case-Sensitive Intent Mapping
 
-When enabled, case sensitivity and punctuation will be taken into account by the intent mapper. Disable this setting to ignore casing and punctuation in ML intent mapping.
+When this setting is turned on, Intent Mapper considers case sensitivity and punctuation.
+Turn off the setting to ignore casing and punctuation in the Intent mapping process.
 
-!!! danger "English Support"
-    Despite configurable in the agent's settings, this feature is not implemented for the regular English locales, i.e. US, Indian, UK, Canadian, and Australian English. However, you may use this feature using the "Universal" locale which also supports general English.
+Whenever you change this setting for the Agent, it will affect all the Flows within it.
+To ensure that the Flows work correctly, you need to train them again.
+To do this, navigate to the left-side menu of the Agent and select **Build > Flows**.
+On the **Flows** page, click **Train all Flows**.
+If the **Train all Flows** button is not enabled for your environment,
+specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+
+!!! warning "English Locale Limitations"
+    The Enable Case-Sensitive Intent Mapping feature is not implemented for English locales such as `US`, `Indian`, `UK`, `Canadian`, and `Australian`. However, you can use this feature with the `Universal` locale, which also supports general English.
 
 ### Attached Flow Intent Mapping Priority
+
 - Jointly Map Main and Attached Flow: treats Main and Attached Flow Intents as if they were a single intent collection and finds the best matching intent and executes the corresponding Flow.
 - Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow the Attached Flow is mapped.
 - Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow the Main Flow is mapped.
@@ -88,7 +97,7 @@ Determines whether slots in NLU example sentences should be parsed implicitly or
 
 ### Forget question threshold
 
-Number of contact responses after which a user's answer to a question is no longer registered.
+The Number of contact responses after which a user's answer to a question is no longer registered.
 
 ### Confidence threshold
 
@@ -100,7 +109,7 @@ Score from which on an Intent is considered confirmed or marked for reconfirmati
 
 !!! danger "Adjust the Reconfirmation Threshold"
     The confidence threshold has **no effect unless the intent uses confirmation sentences**.
-    The Reconfirmation Threshold is your lower confidence bound - you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
+    The Reconfirmation Threshold is your lower confidence bound — you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
 
 ## Analytics
 <div class="divider"></div>
