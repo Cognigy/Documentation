@@ -1,7 +1,7 @@
 ---
 title: "Text Extraction with Azure AI Document Intelligence"
 slug: "text-extraction-with-azure-ai"
-description: "Text Extraction with Azure AI Document Intelligence is powered by Azure AI Document Intelligence and creates semantic chunks, resulting in more accurate answers, as compared to fixed-length chunking that is used by default."
+description: "Text Extraction with Azure AI Document Intelligence creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking."
 hidden: false
 ---
 
