@@ -32,17 +32,21 @@ The report can be filtered by year and month using the date filter dropdown list
 
 This feature will delete all the data from your organization.
 
+### Before Deleting an Organization
+
 !!! danger
     There is no way to undo the deletion action. Once you initiate the process, all your data will be permanently deleted.
 
 Before the organization deletion, you need to set up:
 
-- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL`.
-- The Cognigy.AI [Management UI](organisation-details.md) properly installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL`.
+- A valid system administrator emails are set in the environment variable `SYS_ADMINISTRATOR_EMAIL` of the `values.yaml` file. For example: `SYS_ADMINISTRATOR_EMAIL: "admin1@domain.com,admin2@domain.com"`. Your administrators will receive a notification at these email addresses regarding the organization deletion request. By following the link provided in the email, the administrators can proceed with the organization deletion.
+- The Cognigy.AI [Management UI](organisation-details.md) is installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL` of the `values.yaml` file. For example: `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL: http://management-ui`.
+
+### Deletion Process for an Organization
 
 This process contains the following steps:
 
-1. A user with an admin role (system administrator) will request to delete the organization from the **Organisation Details** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
+1. A user with the `admin` role (system administrator) will request to delete the organization from the **Organisation Details** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
     <figure>
       <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-confirm_org_deletion.png" width="100%" />
