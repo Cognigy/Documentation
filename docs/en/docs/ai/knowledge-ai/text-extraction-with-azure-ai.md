@@ -56,7 +56,7 @@ The following environment variables must be specified in the `values.yaml` file 
 ## How to Use
 
 This strategy is applied when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
-`.preset_ca` is the preset to apply the New Chunk Strategy, and `.pdf` is the file extension.
+`.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
 ### Metadata
 
