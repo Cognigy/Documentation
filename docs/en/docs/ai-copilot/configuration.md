@@ -48,7 +48,7 @@ The Transcript Tile feature is intended specifically for [chat use cases](chat.m
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace                            | If the option is enabled, you can view the session messages on the Transcript Tile. To display this tile, you must include the `transcript` tile ID it in your AI Copilot Config via API. |
 | Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer | If the option is enabled, the human agent can send messages to the end user from the Transcript Tile.                                                                                     |
-| Enable redaction of Transcript Tile messages                                                       | If the option is enabled, any sensitive information in the messages of the Transcript Tile will be masked.                                                                                |
+| Enable redaction of Transcript Tile messages                                                       | If the option is enabled, a credit card number in the messages of the Transcript Tile will be masked and replaced with the placeholder `CREDIT_CARD_NUMBER`.                              |
 
 ## More Information
 
