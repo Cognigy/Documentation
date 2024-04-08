@@ -19,7 +19,7 @@ To create a Flow, follow these steps:
 4. On the **Flows** page, click **+ New Flow**.
 5. In the New Flow window, fill in the following fields:
     - **Name** — create a meaningful name for your Flow, for example, `Customer Support`.
-    - **Description** — create a meaningful description for your Flow, for example, `Automates the processing of incoming orders and updates inventory accordingly`.
+    - **Description** — this parameter is optional. Create a meaningful description for your Flow, for example, `Automates the processing of incoming orders and updates inventory accordingly`.
 6. Click **Create**.
 
 You've created a simple Flow with the Start and End Nodes. Now you need to add [Nodes](#nodes) to it to build the conversation.
