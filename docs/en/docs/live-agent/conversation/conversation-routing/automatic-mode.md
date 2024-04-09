@@ -82,7 +82,7 @@ Live Agent provides an auto-reassignment system for conversations. This system f
 
 The auto-reassignment system operates in real-time, triggered by specific agent-related events. These events include:
 
-- When a human agent changes their availability to `Offline`, `Away`, or `Busy`.
+- When a human agent changes their availability to `Offline` or `Away`.
 - When a human agent logs out.
 
 When one of these events are triggered, the conversations assigned to the human agent are automatically reassigned to other available human agents. If no human agents are currently online, the conversations are marked as unassigned.
