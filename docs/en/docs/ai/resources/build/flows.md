@@ -276,7 +276,7 @@ to inherit the [Intent](../../nlu/nlu-overview/ml-intents.md) model from the [fa
 The **Inherit Intent model from fallback Locale** toggle is deactivated by default. 
 Once the setting is activated, the [training indicator](../../nlu/nlu-overview/ml-intents.md) on the Intents page and the error badge on the NLU tab are hidden, and the [Build Model](../../nlu/nlu-overview/ml-intents.md) button in Settings, Chart, and NLU is disabled.
 
-With the localization view of your Flow, you can configure multiple Locales. If one Locale doesn't have content configured, the system automatically falls back to another configured Locale. 
+With the localization view of your Flow, you can configure multiple Locales. If one Locale doesn't have content configured, the system automatically switches to another locale that is set as a fallback.
 The default fallback Locale is **en-US**.
 
 While you can add additional Locales for content localization later, 
