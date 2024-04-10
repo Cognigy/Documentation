@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: Identity Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73-blue.svg)](../../../release-notes/4.73.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/identity-tile.png" width="80%"/>
