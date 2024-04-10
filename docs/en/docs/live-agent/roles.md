@@ -50,7 +50,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 |-------------------------------------|-------|------------|---------------|
 | Create a team                       | -     | -          | +             |
 | View teams                          | +     | +          | +             |
-| View agents                         | -     | -          | +             |
+| View Agents                         | -     | -          | +             |
 | Assign a team within a conversation | +     | +          | +             |
 | Edit a team                         | -     | -          | +             |
 | Delete a team                       | -     | -          | +             |
