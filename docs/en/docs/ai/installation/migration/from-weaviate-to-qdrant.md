@@ -10,7 +10,8 @@ hidden: false
 This guide is intended for Cognigy on-premises customers who are using the [Knowledge AI features](https://docs.cognigy.com/ai/knowledge-ai/overview/).
 
 !!! warning
-    The migration process requires a downtime of approximately 60 – 90 minutes, depending on the number of stored knowledge chunks and the number of projects or agents configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    The migration process requires a downtime of approximately 60 – 90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. 
+    However, this downtime applies to Knowledge AI features only; all other features will remain available.
 
 ## Introduction
 
@@ -69,13 +70,14 @@ where:
 
 #### Example
 
-Let's consider a scenario where the `text-embedding-ada-002` model is used to compute the embedding vectors. Then, to store 100,000 chunks in just one project, the amount of memory we need is calculated as follows:
+Let's consider a scenario where the `text-embedding-ada-002` model is used to compute the embedding vectors.
+Then, to store 100,000 Chunks in just one project, the amount of memory we need is calculated as follows:
 
 ```text
 memory_size = (100000 * 1536 * 0.000004 * 1.5) + (1 * 10) = 931.6 MB`
 ```
 
-Similarly, for 1 million chunks with `text-embedding-ada-002` vectors in one project,
+Similarly, for 1 million Chunks with `text-embedding-ada-002` vectors in one project,
 
 ```text
 memory_size = (1000000 * 1536 * 0.000004 * 1.5) + (1 * 10) = 9226 MB = 9.226 GB
@@ -252,26 +254,23 @@ Refer to the [Delete Data from Qdrant](#delete-data-from-qdrant) section for det
     kubectl apply –n cognigy-ai –f job-populate-qdrant
     ```
     A pod will be created to correspond with the applied job.
-   The logs for this pod will continue
-   reporting the number of Knowledge Sources copied compared to the total number of sources to be copied.
+    The logs for this pod will continue reporting the number of Knowledge Sources copied compared to the total number of sources to be copied.
 
-3. Once the job is complete, copy the pod logs for your records. At the end of the logs, a brief report is included that highlights any sources and chunks that could not be copied. For more information about the report interpretation, referer to the [Migration Report Overview](#migration-report-overview) section.
+3. Once the job is complete, copy the pod logs for your records. At the end of the logs, a brief report is included that highlights any Sources and Chunks that could not be copied. For more information about the report interpretation, referer to the [Migration Report Overview](#migration-report-overview) section.
 
-If you have any concerns at this step, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/) and include these logs in your ticket
+If you have any concerns at this step, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/) and include these logs in your ticket.
 
-!!! note
-    Towards the end of the job logs, you will notice two error messages: `Broker connection closed: undefined` and `Error while connecting to RabbitMQ. Shutting down`. Ignore both of them.
+Towards the end of the job logs, you will notice two error messages: `Broker connection closed: undefined` and `Error while connecting to RabbitMQ. Shutting down`. Ignore both of them.
 
-!!! note
-    If you have completed a test migration, the process is already finished. You can record the duration of the migration job and schedule the necessary downtime for the proper migration later. Additionally, you can review the logs from the job to see a list of sources and chunks that will not be included in the migration.
+If you have completed a test migration, the process is already finished. You can record the duration of the migration job and schedule the necessary downtime for the proper migration later. Additionally, you can review the logs from the job to see a list of Sources and Chunks that will not be included in the migration.
 
 ### Migration Report Overview
 
-
-The migration job logs, generated in the previous step, contain a report at the end. This report lists, for each organization and project, the number of knowledge sources and chunks ignored during migration.
+The migration job logs, generated in the previous step, contain a report at the end.
+This report lists, for each organization and project,
+the number of Knowledge Sources and Chunks ignored during migration.
 
 The following example helps in interpreting the report:
-
 
 ```json
 {
@@ -288,13 +287,13 @@ The following example helps in interpreting the report:
 }
 ```
 
-The example above depicts a migration where in the first project, two entire sources were ignored; none of the chunks in these sources were ingested into Qdrant. 
+The example above depicts a migration where in the first project, two entire sources were ignored; none of the Chunks in these sources were ingested into Qdrant. 
 Note that only those Knowledge Sources are ignored entirely that are already corrupt and therefore cannot be used. 
 This action should not cause any issues for production virtual agents.
 
-In the second project, the number corresponding to `missingEmbedding` refers to the number of chunks ignored because they did not yet have corresponding embedding vectors stored. 
-This error is similar to the one described previously, except that in this case, the ignored chunks may be from more than one source. 
-Also, these chunks are already corrupt, and ignoring them should not disrupt the existing virtual agents.
+In the second project, the number corresponding to `missingEmbedding` refers to the number of Chunks ignored because they did not yet have corresponding embedding vectors stored. 
+This error is similar to the one described previously, except that in this case, the ignored Chunks may be from more than one source. 
+Also, these Chunks are already corrupt, and ignoring them should not disrupt the existing virtual agents.
 
 ### Delete Data from Qdrant
 
