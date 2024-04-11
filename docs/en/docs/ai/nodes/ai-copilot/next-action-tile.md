@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: Next Action Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../release-notes/4.72.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73-blue.svg)](../../../release-notes/4.73.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
@@ -28,7 +28,14 @@ This Node helps guide a conversation flow and ensures that the system responds e
 | Text            | CognigyScript | Enter the text you want to display in the next action widget.                                                                                                                                                  |
 | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                           |
 
-### Enable Copy to Clipboard Button
+### UI Preferences
+
+| Parameter        | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Font size        | Select | The font size of the widget title in the AI Copilot workspace. The following sizes are available:<br>- **xl** (Extra Small) — the smallest size available.<br>- **sm base** (Small Base) — baseline size for other sizes.<br>- **lg** (Large) — the standard large size, typically larger than the medium or small sizes.<br>- **xl** (Extra Large) — the standard large size.<br>- **2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl** (Larger Sizes) — progressively larger sizes, with `xl` representing extra large and the numbers indicating gradations of that size. |
+| Action font size | Select | The font size of the action paragraph. The sizes available for the Font size parameter are also applicable here.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+#### Enable Copy to Clipboard Button
 
 {! _includes/ai/nodes/forwarder.md !}
   

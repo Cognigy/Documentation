@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: Identity Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73-blue.svg)](../../../release-notes/4.73.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/identity-tile.png" width="80%"/>
@@ -26,6 +26,17 @@ This Node is designed to display and process customer-specific information direc
 | Image Shape   | Select        | The shape or format of the image (round or square).                                                                                               |
 | Image URL     | URL           | The URL where the image is hosted or located.                                                                                                     |
 | Customer Data | CognigyScript | Additional customer-specific data for analysis in a key-value format. For example, the key is `Email` and the value is `{{"{{profile.email}}"}}`. |
+
+### UI Preferences
+
+The table presents parameters for font and image size for the tile in the AI Copilot workspace interface.
+
+| Parameter                 | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|---------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Font size                 | Select | The font size of the widget title in the AI Copilot workspace. The following sizes are available:<br>- **xl** (Extra Small) — the smallest size available.<br>- **sm base** (Small Base) — baseline size for other sizes.<br>- **lg** (Large) — the standard large size, typically larger than the medium or small sizes.<br>- **xl** (Extra Large) — the standard large size.<br>- **2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl** (Larger Sizes) — progressively larger sizes, with `xl` representing extra large and the numbers indicating gradations of that size. |
+| Profile font size         | Select | The font size of the profile name in the widget. The sizes available for the Font size parameter are also applicable here.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Key-value pairs font size | Select | The font size for the customer data presented in key-value pair properties. The sizes available for the Font size parameter are also applicable here.                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Profile image size        | Select | The size of the profile image in the widget. Most of the sizes available for the Font size parameter are also applicable here. Note that the maximum size for profile image is 2xl.                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## Use Case 
 
