@@ -10,7 +10,7 @@ hidden: false
 This guide is intended for Cognigy on-premises customers who are using the [Knowledge AI features](https://docs.cognigy.com/ai/knowledge-ai/overview/).
 
 !!! warning
-    The migration process requires a downtime of approximately 60 – 90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. 
+    The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. 
     However, this downtime applies to Knowledge AI features only; all other features will remain available.
 
 ## Introduction
@@ -116,43 +116,44 @@ Perform the preliminary steps and proceed to enable Qdrant.
 To enable Qdrant, follow these steps:
 
 1. In the `cognigy-ai-values.yaml` file, add the following sections at the root level:
-     ```yaml
-     # Enable Qdrant. Add a `resources` section if needed.
-     qdrant:
-       enabled: true
-       metrics:
+
+    ```yaml
+    # Enable Qdrant. Add a ‘resources’ section if needed.
+    qdrant:
+      enabled: true
+      metrics:
         serviceMonitor:
-        enabled: true
+          enabled: true
     
-     # Enable the storage class for Qdrant
-     # Set the following for AWS
-     storageClass:
-       aws:
+    # Enable the storage class for qdrant
+    # Set the following for AWS
+    storageClass:
+      aws:
         ebs:
-        qdrant:
+          qdrant:
             enabled: true
     
-     # Or, set the following for Azure
-       storageClass:
-         azure:
-           disk:
-             qdrant:
-               enabled: true
+      # Or, set the following for Azure
+      storageClass:
+        azure:
+          disk:
+            qdrant:
+              enabled: true
     
-     # Scale down Weaviate (not for test migration), so that no new Knowledge AI data can be ingested while Qdrant is being populated.
-     weaviate:
-       replicas: "0"
-     ```
+    # Scale down weaviate (not for test migration), so that no new Knowledge AI data can be ingested while qdrant is being populated.
+    weaviate:
+      replicas: "0"
+    ```
 
 2. Deploy the Cognigy.AI Helm chart with the above changes:
 
-     ```bash
-     helm registry login cognigy.azurecr.io \
-     --username &lt;your-username> \
-     --password &lt;your-password>
+    ```bash
+    helm registry login cognigy.azurecr.io \
+    --username <your-username> \
+    --password <your-password>
     
-     helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version 4.73.0 --values cognigy-ai-values.yaml
-     ```
+    helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version 4.73.0 --values cognigy-ai-values.yaml
+    ```
 
 3. The `qdrant-0`, `qdrant-1`, and `qdrant-2` pods should start in tandem. The following command can be used to list the Qdrant pods:
 
@@ -180,87 +181,87 @@ To populate Qdrant with Existing Knowledge AI Data, follow these steps:
 
 1. Copy the following job description to a file named `job-populate-qdrant.yaml`. If you are using an image registry other than Cognigy's, replace `cognigy-registry-token` under `imagePullSecrets` with the correct value.
     
-     ```yaml
-     apiVersion: batch/v1
-     kind: Job
-     metadata:
-       name: job-populate-qdrant
-       namespace: cognigy-ai
-     spec:
-       backoffLimit: 0 # No retries
-       activeDeadlineSeconds: 3600 # 60 minutes
-       ttlSecondsAfterFinished: 3600 # 60 minutes
-       template:
+    ```yaml
+    apiVersion: batch/v1
+    kind: Job
+    metadata:
+      name: job-populate-qdrant
+      namespace: cognigy-ai
+    spec:
+      backoffLimit: 0 # No retries
+      activeDeadlineSeconds: 3600 # 60 minutes
+      ttlSecondsAfterFinished: 3600 # 60 minutes
+      template:
         spec:
-        restartPolicy: Never
-        containers:
+          restartPolicy: Never
+          containers:
             - name: job-populate-qdrant
-            image: cognigy.azurecr.io/job-sync-knowledge-data:release-5dd849b-1710242738
-            resources:
+              image: cognigy.azurecr.io/job-sync-knowledge-data:release-5dd849b-1710242738
+              resources:
                 requests:
-                cpu: '0.3'
-                memory: 300M
+                  cpu: '0.3'
+                  memory: 300M
                 limits:
-                cpu: '0.5'
-                memory: 800M
-            env:
+                  cpu: '0.5'
+                  memory: 800M
+              env:
                 - name: REDIS_ENABLE_RECONNECT
-                value: "true"
+                  value: "true"
                 - name: RABBITMQ_ENABLE_RECONNECT
-                value: "true"
+                  value: "true"
                 - name: KAI_VECTOR_DB
-                value: "qdrant"
+                  value: "qdrant"
                 - name: SYNC_KAI_CHUNKS_BATCH_SIZE
-                value: "1000"
+                  value: "1000"
                 - name: IMPORT_TASK_ARGUMENTS
-                value: "eyJhY3Rpb24iOiJyZXN0b3JlVmVjdG9yREIiLCJvcmdhbmlzYXRpb25JZHMiOltdLCJwcm9qZWN0SWRzIjpbXSwic3RvcmVJZHMiOltdLCJ0YXNrSWQiOiIiLCJ0cmFjZUlkIjoidGVzdCIsInVwZGF0ZUJhdGNoU2l6ZSI6NDB9"
-            envFrom:
+                  value: "eyJhY3Rpb24iOiJyZXN0b3JlVmVjdG9yREIiLCJvcmdhbmlzYXRpb25JZHMiOltdLCJwcm9qZWN0SWRzIjpbXSwic3RvcmVJZHMiOltdLCJ0YXNrSWQiOiIiLCJ0cmFjZUlkIjoidGVzdCIsInVwZGF0ZUJhdGNoU2l6ZSI6NDB9"
+              envFrom:
                 - configMapRef:
                     name: cognigy-env
-            volumeMounts:
+              volumeMounts:
                 - name: mongodb-connection-string
-                mountPath: /var/run/secrets/mongodbConnectionString
-                subPath: mongodbConnectionString
+                  mountPath: /var/run/secrets/mongodbConnectionString
+                  subPath: mongodbConnectionString
                 - name: rabbitmq-connection-string
-                mountPath: /var/run/secrets/rabbitmqConnectionString
-                subPath: rabbitmqConnectionString
+                  mountPath: /var/run/secrets/rabbitmqConnectionString
+                  subPath: rabbitmqConnectionString
                 - name: redis-password
-                mountPath: /var/run/secrets/redis-password.conf
-                subPath: redis-password.conf
+                  mountPath: /var/run/secrets/redis-password.conf
+                  subPath: redis-password.conf
                 - name: qdrant-api-key
-                mountPath: /var/run/secrets/qdrant-api-key
-                subPath: qdrant-api-key
+                  mountPath: /var/run/secrets/qdrant-api-key
+                  subPath: qdrant-api-key
                 - name: vector-db-config
-                mountPath: /vector-db-config/qdrant/collection/config.json
-                subPath: qdrant-collection-config
-        volumes:
+                  mountPath: /vector-db-config/qdrant/collection/config.json
+                  subPath: qdrant-collection-config
+          volumes:
             - name: mongodb-connection-string
-            secret:
+              secret:
                 secretName: cognigy-service-resources
                 items:
-                - key: connection-string
+                  - key: connection-string
                     path: mongodbConnectionString
             - name: rabbitmq-connection-string
-            secret:
+              secret:
                 secretName: cognigy-rabbitmq
                 items:
-                - key: connection-string
+                  - key: connection-string
                     path: rabbitmqConnectionString
             - name: redis-password
-            secret:
+              secret:
                 secretName: cognigy-redis-password
             - name: qdrant-api-key
-            secret:
+              secret:
                 secretName: qdrant-apikey
                 items:
-                - key: api-key
+                  - key: api-key
                     path: qdrant-api-key
             - name: vector-db-config
-            configMap:
+              configMap:
                 name: vector-db-config
-        imagePullSecrets:
+          imagePullSecrets:
             - name: cognigy-registry-token
-     ```
+    ```
 
 2. Apply the job in the cluster:
 
@@ -315,7 +316,7 @@ Also, these Chunks are already corrupt, and ignoring them should not disrupt the
 
 Deleting all data from the Qdrant database may be necessary in the following cases:
 
-- You ran a test migration which populated Qdrant. Since the migration job only works with an empty Qdrant database, you need to remove all data from Qdrant before starting a proper migration.
+- You ran a test migration that populated Qdrant. Since the migration job only works with an empty Qdrant database, you need to remove all data from Qdrant before starting a proper migration.
 - As part of a proper migration, you finished running the migration job but have not yet started Step 3. Due to a potential issue with the migration job, you would like to run it again before starting Step 3.
 
 In both cases, you can empty the Qdrant database by deleting the Persistent Volume Claims (PVCs) and the Persistent Volumes (PVs) for Qdrant as follows:
@@ -325,63 +326,69 @@ In both cases, you can empty the Qdrant database by deleting the Persistent Volu
     ```bash
     for pvc in {0..2}; do kubectl delete pvc -n cognigy-ai qdrant-storage-qdrant-$pvc; done
     ```
+
 2. Use the following command to delete each Quadrant PV, replacing `Quadrant PV` with the name of each specific PV in the command:
 
     ```bash
-    kubectl delete pv &lt;pv-name>
+    kubectl delete pv <pv-name>
     ```
 
 ### Step 3. Instruct Knowledge AI Components to Use Qdrant instead of Weaviate
 
-Before you begin, ensure that Qdrant has been successfully populated before proceeding with the steps below.
+Before proceeding with the steps below, ensure that Qdrant has been successfully populated.
 
 To instruct Knowledge AI components to use Qdrant instead of Weaviate, follow these steps:
 
 1. In the `cognigy-ai-values.yaml` file, add or update the following sections:
 
-     ```yaml
-     # Make sure KAI_VECTOR_DB is set to "qdrant". WEAVIATE_SCHEMA_REPLICATION_FACTOR is no longer needed.
-     serviceSearchOrchestrator:
-       extraEnvVars:
+    ```yaml
+    # Make sure KAI_VECTOR_DB is set to "qdrant". WEAVIATE_SCHEMA_REPLICATION_FACTOR is no longer needed.
+    serviceSearchOrchestrator:
+      extraEnvVars:
         - name: KAI_VECTOR_DB
-        value: "qdrant"
+          value: "qdrant"
     
-     # Make sure KAI_VECTOR_DB is set to "qdrant", and the batch size is set to 100.
-     taskIngestKnowledgeChunks:
-       extraEnvVars:
+    # Make sure KAI_VECTOR_DB is set to "qdrant", and the batch size is set to 100.
+    taskIngestKnowledgeChunks:
+      extraEnvVars:
         - name: TASK_INGEST_KNOWLEDGE_CHUNKS_BATCH_SIZE
-        value: "100"
+          value: "100"
         - name: KAI_VECTOR_DB
-        value: "qdrant"
+          value: "qdrant"
     
-     # Disable the CronJob and make sure KAI_VECTOR_DB is set to "qdrant".
-     jobSyncKnowledgeData:
-       enabled: false
-       extraEnvVars:
+    # Disable the CronJob and make sure KAI_VECTOR_DB is set to "qdrant".
+    jobSyncKnowledgeData:
+      enabled: false
+      extraEnvVars:
         - name: KAI_VECTOR_DB
-        value: "qdrant"
-     ```
+          value: "qdrant"
+    ```
 
 2. Deploy the Cognigy.AI Helm chart with the above changes:
 
-     ```bash
-     helm registry login cognigy.azurecr.io \
-     --username &lt;your-username> \
-     --password &lt;your-password>
+    ```bash
+    helm registry login cognigy.azurecr.io \
+    --username <your-username> \
+    --password <your-password>
     
-     helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version 4.73.0 --values cognigy-ai-values.yaml
-     ```
+    helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version 4.73.0 --values cognigy-ai-values.yaml
+    ```
 
 After completing the Helm upgrade, all Knowledge AI features should be available again, with Qdrant serving as the vector database.
 
 ### Step 4. Test Knowledge AI
 
-If you created a new small Knowledge AI project as described in Step 0, you can use it to test search, ingestion, and other Knowledge AI data manipulation operations on existing data. 
+If you created a new small Knowledge AI project
+as described in the [(Optional)
+Create a Test Knowledge AI Project](#-optional--create-a-test-knowledge-ai-project) section,
+you can use it to test search, ingestion, and other Knowledge AI data manipulation operations on existing data. 
 Otherwise, you can use any of your existing projects containing Knowledge AI data for testing these operations.
 
-Additionally, we recommend creating a new Agent (project) with Knowledge AI enabled to test all Knowledge AI operations.
+Additionally, we recommend creating a new project with Knowledge AI enabled to test all Knowledge AI operations.
 
 ## Post-Migration Steps
+
+Complete the post-migration steps.
 
 ### Delete the Weaviate PVC and PV
 
@@ -396,7 +403,7 @@ After successful migration and testing of Knowledge AI features with Qdrant as t
 2. Delete the Weaviate PV using the name of the Weaviate PV in your system:
 
     ```bash
-    kubectl delete pv &lt;pv-name>
+    kubectl delete pv <pv-name>
     ```
 
 The Weaviate PVC and PV are deleted.
