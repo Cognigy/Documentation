@@ -24,19 +24,19 @@
 
     === "OpenAI"
         7.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-            - **Model Type** — select **Chat** for models that correspond to the `https://api.openai.com/v1/chat/completions` API Edpoint, or Completion type for those that correspond to the `https://api.openai.com/v1/completions` API Endpoint. For more information, refer to the [OpenAI Text Generation Models](https://platform.openai.com/docs/guides/text-generation) documentation. <br>
+            - **Model Type** — select **Chat** for models that support the `https://api.openai.com/v1/chat/completions` API Edpoint, or **Completion** for those that support the `https://api.openai.com/v1/completions` API Endpoint. For more information, refer to the [OpenAI Text Generation Models](https://platform.openai.com/docs/guides/text-generation) documentation.<br>
             - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Azure OpenAI Service models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br>
         7.2 Click **Save**.<br>
         7.3 On the LLM Editor page, go to the **Generative AI Connection** field.<br>
         7.4 On the right side of the field, click **+**.<br>
-        8.5 Fill in the following fields:<br>
+        7.5 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
             - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
         7.6 Click **Create**.<br>
 
     === "Anthropic"
         7.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-            - **Model Type** — select **Chat** for models that support the Messages API, and select **Completion** for models that support the Completions API. For mor information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation.<br>
+            - **Model Type** — select **Chat** for models that support the Messages API, or select **Completion** for models that support the Completions API. For mor information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation.<br>
             - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Anthropic](https://docs.anthropic.com/claude/docs/models-overview) documentation.<br>
         7.2 Click **Save**.<br>
         7.3 Fill in the following fields:<br>
