@@ -1,6 +1,6 @@
 ---
 title: "Intent Recognition with External Embedding Model"
-slug: "third-party-nlu"
+slug: "external-intent-recognition"
 hidden: false
 ---
 
