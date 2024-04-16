@@ -29,13 +29,17 @@ To set up a third-party NLU model, follow these steps:
 1. Open the Cognigy.AI interface. 
 2. In the left-side menu, select an Agent where you want to use a third-party NLU model. 
 3. In the left-side menu of the Agent, navigate to **Manage > Settings**.
-4. Go to the NLU Settings section.
-5. From the **Embedding Model Provider** list, select a model that you added on the Prerequisites step.
+4. Go to the **NLU Settings** section.
+5. From the **Embedding Model Provider** list, select a model that you added as part of the [Prerequisites](#prerequisites).
 6. Confirm changes.
 
 ## Train Flows
 
 Changing the NLU embedding model requires all Flows in the agent to be retrained.
+Select the number of flows that need training:
+
+- [Train a Flow](#train-a-flow)
+- [Train multiple Flows](#train-multiple-flows)
 
 ### Train a Flow
 
