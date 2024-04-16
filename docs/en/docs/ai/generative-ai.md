@@ -45,7 +45,7 @@ To set up the connection between Cognigy.AI and the Generative AI Provider, do t
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
-You can check if the connection works by creating a new generative AI Flow.
+You can check if the connection works by creating a new Generative AI Flow.
 
 ## Design-Time Generative AI Features
 
@@ -116,7 +116,7 @@ To use Generative AI technology for creating Intent example sentences, do the fo
 5. Activate the **Generate Example Sentences** setting.
 6. Set the number of generative sentences.
 7. Generate new sentences by clicking **Create**.
-8. Click **Build Model**, to learn the existing sentence.
+8. Click **Build Model**.
 
 If you want to add more examples automatically, use the **Generate Sentences** button. New sentences will be marked in light blue. The system generates specific numbers of sentences. Save changes and build your model again.
 
@@ -149,7 +149,7 @@ The [LLM Prompt Node](nodes/service/llm-prompt.md) enables you to run a prompt a
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
 
-The [GPT Conversation Node](nodes/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determinig the next best action and outputing relevant messages to the customer.
+The [GPT Conversation Node](nodes/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
 ### Rephrasing Virtual Agent Outputs
 
@@ -173,11 +173,13 @@ Check in the interactive panel if your Flow works as expected.
 
 ### LLM-powered Question Reprompts
 
-The [Question Node](nodes/basic/question.md#reprompt-message) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
+The [Question Node](nodes/basic/question.md#reprompt-methods) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
 
 ### Search Extract Output Node
 
-The [Search Extract Output Node](nodes/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](../ai/knowledge-ai/overview.md) to execute a search within a Knowledge Store, extracts a relevant answer via a generative AI model, and creates an output.
+The [Search Extract Output Node](nodes/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](../ai/knowledge-ai/overview.md)
+to execute a search within a Knowledge Store,
+extracts a relevant answer via a Generative AI model, and creates an output.
 
 ## FAQ
 
