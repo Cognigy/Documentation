@@ -34,38 +34,41 @@ In den folgenden Tabellen sind die Berechtigungen für einzelne Rollen von Agent
 
 ### Agenten
 
-| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
-|---------------------------------|-------|------------|---------------|
-| Erstellen eines Agenten [^1] |  -    | -          | +             |
-| Bearbeiten eines Agenten [^1] |  -    | -          | +             |
-| Löschen eines Agenten[^1] |  -    | -          | +             |
-| Zuweisen eines Agenten |  +    | +          | +             |
+| Aktionen                      | Bearbeiter | Betreuer | Sachbearbeiter |
+|-------------------------------|-------|----------|---------------|
+| Erstellen eines Agenten [^1]  |  -    | -        | +             |
+| Bearbeiten eines Agenten [^1] |  -    | -        | +             |
+| Löschen eines Agenten[^1]     |  -    | -        | +             |
+| Anzeigen aller Agenten        | -     | -        | +             |
+| Zuweisen eines Agenten        |  +    | +        | +             |
 
 [^1]: Diese Berechtigung wird auf der Cognigy.AI Seite erteilt.
 
-### Mannschaften
+### Teams
 
-| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
-|-------------------------------------|-------|------------|---------------|
-| Erstellen Sie ein Team | -     | -          | +             |
-| Zuweisen eines Teams innerhalb einer Konversation | +     | +          | +             |
-| Bearbeiten eines Teams | -     | -          | +             |
-| Löschen eines Teams | -     | -          | +             |
-| Automatische Zuweisung für ein Team zulassen | -     | -          | +             |
+| Aktionen                                          | Bearbeiter | Betreuer | Sachbearbeiter |
+|---------------------------------------------------|------------|----------|---------------|
+| Erstellen eines Teams                             | -          | -        | +             |
+| Anzeigen aller Teams                              | +          | +        | +             |
+| Anzeigen aller Agenten innerhalb eines Teams      | -          | -        | +             |
+| Zuweisen eines Teams innerhalb einer Konversation | +          | +        | +             |
+| Bearbeiten eines Teams                            | -          | -        | +             |
+| Löschen eines Teams                               | -          | -        | +             |
+| Automatische Zuweisung für ein Team zulassen      | -          | -        | +             |
 
 ### Posteingänge
 
 | Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
-|--------------------------------------------|-------|------------|----------------|
-| Erstellen eines Posteingangs |  -    | -          | +              |
-| Bearbeiten eines Posteingangs |  -    | -          | +              |
-| Löschen eines Posteingangs |  -    | -          | +              |
-| Assist-Bot erstellen |  -    | -          | +              |
-| Assist-Bot bearbeiten |  -    | -          | +              |
-| Assist-Bot löschen |  -    | -          | +              |
-| Hinzufügen von Agenten zum Posteingang |  -    | -          | +              |
-| Entfernen von Agenten aus dem Posteingang |  -    | -          | +              |
-| Konfigurieren von Einstellungen für die Konversationszuweisung |  -    | -          | +              |
+|--------------------------------------------|-------|----------|----------------|
+| Erstellen eines Posteingangs |  -    | -        | +              |
+| Bearbeiten eines Posteingangs |  -    | -        | +              |
+| Löschen eines Posteingangs |  -    | -        | +              |
+| Assist-Bot erstellen |  -    | -        | +              |
+| Assist-Bot bearbeiten |  -    | -        | +              |
+| Assist-Bot löschen |  -    | -        | +              |
+| Hinzufügen von Agenten zum Posteingang |  -    | -        | +              |
+| Entfernen von Agenten aus dem Posteingang |  -    | -        | +              |
+| Konfigurieren von Einstellungen für die Konversationszuweisung |  -    | -        | +              |
 
 ### Unterhaltungen
 
@@ -168,9 +171,9 @@ In den folgenden Tabellen sind die Berechtigungen für einzelne Rollen von Agent
 ### Konto- und Profileinstellungen
 
 | Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
-|---------------------------------------|-------|------------|----------------|
-| Kontoeinstellungen konfigurieren |   -   |     -      | +              |
-| Konfigurieren von Profileinstellungen |   +   |     +      | +              |
+|---------------------------------------|-------|----------|----------------|
+| Kontoeinstellungen konfigurieren |   -   | +        | +              |
+| Konfigurieren von Profileinstellungen |   +   | +        | +              |
 
 ## Rollen zuweisen
 
