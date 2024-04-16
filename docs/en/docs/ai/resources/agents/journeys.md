@@ -5,6 +5,8 @@
 ---
 # Journeys
 
+{! _includes/release-notes/cognigy-journeys-removal.md !}
+
 Journeys are on-screen tutorials that are part of the [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.198278191.165125103.1598697726-1816044957.1598697726) and provide step-by-step instructions, directly within the Cognigy.AI user interface.
 
 The Journey overlay is activated by clicking on the button in the Top Toolbar:

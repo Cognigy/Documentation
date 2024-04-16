@@ -105,6 +105,8 @@ The Help Center Search feature allows you to search for potential answers within
 
 ### Journeys
 
+{! _includes/release-notes/cognigy-journeys-removal.md !}
+
 Journeys are on-screen tutorials that are a part of the [Cognigy Help Center](https://support.cognigy.com/hc/en-us) and offer step-by-step instructions directly within the Cognigy.AI user interface.
 
 <div class="right-image">
