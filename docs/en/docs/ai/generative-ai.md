@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.74-blue.svg)](../release-notes/4.74.md)
 
 {! _includes/ai/terms-of-use.md !}
 
