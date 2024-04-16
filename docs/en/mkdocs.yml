@@ -327,7 +327,7 @@ nav:
       - ai/nlu/nlu-overview/trigger-intent.md
       - ai/nlu/nlu-overview/intent-upload-download.md
       - ai/nlu/nlu-overview/reject-intents.md
-    - multilingual-nlu-intent-recognition.md
+    - ai/nlu/multilingual-nlu-intent-recognition.md
     - Slot Mapping:
       - ai/nlu/slot-mapping/slot-mapping.md
       - ai/nlu/slot-mapping/any-slots.md
