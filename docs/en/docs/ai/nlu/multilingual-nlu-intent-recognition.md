@@ -57,9 +57,7 @@ If you have more one Flow in your Agent, follow these steps:
 Once the model building process is complete, the intent recognition capability of the Flow will be improved, allowing for more accurate understanding of user inputs.
 
 
+## More Information
 
-
-
-
-
-
+- [LLMs](../resources/build/llm.md)
+- [Intent Overview](nlu-overview/overview.md)
