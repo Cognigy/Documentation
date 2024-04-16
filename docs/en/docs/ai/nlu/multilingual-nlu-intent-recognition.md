@@ -24,7 +24,7 @@ These external models provide superior performance, precisely tailored to the sp
 
 ## Set Up a Third-Party NLU model
 
-To set Up a Third-Party NLU model, follow these steps:
+To set up a third-party NLU model, follow these steps:
 
 1. Open the Cognigy.AI interface. 
 2. In the left-side menu, select an Agent where you want to use a third-party NLU model. 
