@@ -21,7 +21,7 @@ Due to limitations in Weaviate's internal implementation, it is not possible to 
 
 ## Terminology
 
-- This guide uses the file name ‘cognigy-ai-values.yaml’ to refer to the Helm values file containing your customizations for the Cognigy.AI Helm chart. Replace this with the file name used in your environment.
+- This guide uses the file name `cognigy-ai-values.yaml` to refer to the Helm values file containing your customizations for the Cognigy.AI Helm chart. Replace this with the file name used in your environment.
 - This guide assumes that Cognigy.AI is deployed in the `cognigy-ai` namespace. If you have deployed Cognigy.AI in any other namespace, adjust the namespace parameters in all the commands accordingly.
 
 ## Prerequisites
@@ -29,7 +29,7 @@ Due to limitations in Weaviate's internal implementation, it is not possible to 
 - Cognigy.AI v4.66 is deployed.
     - The Cognigy.AI upgrade from v4.65 to v4.66 will not affect the Weaviate version, and it must be completed before attempting to upgrade Weaviate.
 - Kubernetes v1.21 – 1.27.
-- The ‘kubectl’ utility is installed locally on a Linux or macOS client host. Note that this guide does not support Windows client hosts.
+- The `kubectl` utility is installed locally on a Linux or macOS client host. Note that this guide does not support Windows client hosts.
 - Helm Chart v3.9.0 – 3.12.3 is installed on the client host.
 - Kubernetes cluster meets general Cognigy.AI [prerequisites](../prerequisites.md#whitelisting-of-domains), including hardware resources.
 
