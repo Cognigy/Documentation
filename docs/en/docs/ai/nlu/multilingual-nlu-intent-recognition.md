@@ -20,7 +20,7 @@ These external models provide superior performance, precisely tailored to the sp
 
 - This feature requires training all existing Flows. To try it out, create a new Agent.
 - Create a [Flow](../resources/build/flows.md) and include [Intents](nlu-overview/overview.md) within it.
-- Add the [`text-embedding-3-large`](../resources/build/llm.md#add-a-model) model provided by Azure OpenAI or OpenAI. Note that when using an external embedding model provider, Cognigy transmits user inputs to the selected service. Ensure that your data processing policy reflects this practice.
+- Add the [`text-embedding-3-large`](../resources/build/llm.md#add-a-model) model provided by Azure OpenAI or OpenAI. Note that if you use an external embedding model provider, Cognigy will send user inputs to the selected service. Ensure that your data processing policy reflects this practice.
 
 ## Set Up a Third-Party NLU model
 
