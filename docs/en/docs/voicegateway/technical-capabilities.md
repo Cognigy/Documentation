@@ -30,7 +30,6 @@ The following protocols are supported:
 | DTMF                                                           | The use of RTP payloads to carry DMTF events, as specified in [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).                         |
 | SIP Digest Authentication                                      | SIP Digest Authentication challenges and authenticates SIP devices, as specified in [RFC 8760](https://datatracker.ietf.org/doc/html/rfc8760).   |
 | SIPREC                                                         | Acting as a SIPREC client or server to accomplish call recording, as specified in [RFC 7866](https://datatracker.ietf.org/doc/html/rfc7866).     |
-| WebRTC clients                                                 | Receiving calls from WebRTC clients, such as web browsers or native mobile apps.                                                                 |
 | DTMF - SIP INFO                                                | Receiving DTMF via SIP INFO, as specified in [RFC 2976](https://www.rfc-editor.org/rfc/rfc2976).                                                 |
 | SIP OPTIONS                                                    | OPTIONS pings to allow remote SIP gateways and Session Border Controllers (SBCs) to test the health of the Voice Gateway SBCs.                   |
 | Session timers                                                 | SIP session timers, as specified in [RFC 4028](https://datatracker.ietf.org/doc/html/rfc4028).                                                   |
