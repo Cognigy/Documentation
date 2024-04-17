@@ -1,0 +1,2 @@
+!!! warning "Migration from Weaviate to Quadrant"
+    In version 4.75, we will remove Weaviate as a vector database. If you have a Cognigy on-premises installation and are utilizing the [Knowledge AI features](https://docs.cognigy.com/ai/knowledge-ai/overview/), switch to Qdrant before upgrading to version 4.75.0. For a smooth migration, follow the [provided guide](https://docs.cognigy.com/ai/installation/migration/from-weaviate-to-qdrant/).
