@@ -37,8 +37,10 @@ To set up a third-party NLU model, follow these steps:
 
 ## Train Flows
 
-Changing the NLU embedding model requires all Flows in the Agent to be retrained.
-Select the number of flows that need training:
+Changing the NLU embedding model requires all Flows in the Agent to be retrained. 
+Otherwise, intent recognition will fail because the new embeddings won't match the old ones used for training.
+
+Select the number of Flows that need training:
 
 - [Train a Flow](#train-a-flow)
 - [Train multiple Flows](#train-multiple-flows)
