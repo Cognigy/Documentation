@@ -35,7 +35,9 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 
 You can use HTTP requests to interact with third-party systems.
 
-````JavaScript
+### GET Request
+
+```JavaScript
 const response = await api.httpRequest({
     method: "get",
     url: "https://example.com/api/v2",
@@ -43,8 +45,35 @@ const response = await api.httpRequest({
         "Accept": "application/json"
     }
 });
-````
+```
 
+### POST Request
+
+```JavaScript
+export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+
+    /**
+     * The API can be used in your Function code
+     * in order to perform actions with third-party systems as well
+     * as the current system via its RESTful API.
+     * 
+     * This is a POST request to the Cognigy API.
+     * For this demo, we use a function call to dynamically create a Flow.
+     */
+    const response = await api.httpRequest({
+        method: "post",
+        url: "https://api-app.cognigy.ai/new/v2.0/flows?api_key=<your-api-key>",
+        headers: {
+            "Accept": "application/json"
+        },
+        data: {
+            "name": "A new flow",
+            "description": "A brief description",
+            "projectId": "<your-project-id>"
+        }
+    });
+}
+```
 ## Interacting with Flows
 
 You can use Functions to interact with Flows using the [Inject & Notify](../../endpoints/inject-and-notify.md) APIs.
