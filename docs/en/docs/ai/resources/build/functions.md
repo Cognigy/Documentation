@@ -69,7 +69,7 @@ export default async ({ parameters, api }: IFunctionExecutionArguments) => {
         data: {
             "name": "A new flow",
             "description": "A brief description",
-            "projectId": "661e54330cda275355a4c6dc"
+            "projectId": "<your-project-id>"
         }
     });
 }
