@@ -87,15 +87,15 @@ Our inject- and notify-APIs don't support all channels we are compatible with. T
 
 The following list shows all endpoints both APIs are compatible with:
 
-- [Facebook (Meta) Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/)
-- [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/)
-- [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/)
-- [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/)
-- [Slack]({{config.site_url}}ai/endpoints/slack/)
-- [Socket]({{config.site_url}}ai/endpoints/socketio/)
-- [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations/)
-- [Voice Gateway]({{config.site_url}}ai/endpoints/voice-gateway/)
-	- Inject/Notify is only supported for Voice Gateway when the Async Mode is enabled
-- [WhatsApp]({{config.site_url}}ai/endpoints/whatsapp/)
+- [Facebook (Meta) Messenger](facebook-messenger.md)
+- [LINE Messenger](line-messenger.md)
+- [Azure Bot Services](azure-bot-services.md)
+- [RingCentral Engage](ringcentral-engage.md)
+- [Slack](slack.md)
+- [Socket](socketio.md)
+- [Sunshine Conversations](sunshine-conversations.md)
+- [Voice Gateway](voice-gateway.md)
+- [AudioCodes](audiocodes.md) (Inject/Notify is only supported for Voice Gateway when the Async Mode is enabled)
+- [WhatsApp](whatsapp.md)
 - [Webchat](../../webchat/overview.md)
-- [Webhook]({{config.site_url}}ai/endpoints/webhook/)
+- [Webhook](webhook.md)
