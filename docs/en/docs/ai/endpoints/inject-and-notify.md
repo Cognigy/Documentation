@@ -21,7 +21,7 @@ For this use case Cognigy.AI provides the Notify and Inject-API.
 Our inject API can be used to send an arbitrary pair of **text** and **data** into our system. The input will then get forwarded into the flow. The correct flow is determined by the endpoint which itself is identified using the given **URLToken**. Inject should be used if you want to send complex information to the bot user. You can e.g. build a flow that generates a nice **list** or **gallery element** based on a certain input. You send a simple message into your flow, e.g. "makeGallery" and the flow sends the composed gallery through the correct endpoint to the bot user. Notify can't be utilized for this.
 
 <figure>
-  <img class="image-center" src="Flowimages/1cfe64c-inject.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/1cfe64c-inject.png" width="100%" />
   <figcaption>Schema which shows the data-flow during an inject call.</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Our inject API can be used to send an arbitrary pair of **text** and **data** in
 Notify, in contrast to inject, can only be used to send a simple **text** and/or **data** message directly to the user. The message will not get forwarded into a flow and hence you don't have further controlled about what the user actually gets.
 
 <figure>
-  <img class="image-center" src="Flowimages/45c4df1-notify.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/45c4df1-notify.png" width="100%" />
   <figcaption>Schema which shows the data-flow during a notify call.</figcaption>
 </figure>
 
@@ -40,13 +40,13 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 <div class="divider"></div>
 
-Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object](../tools/interaction-panel/input.md) and can therefore easily be accessed with [CognigyScript](../tools/cognigy-script.md) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject.md) to get more information about /inject and /notify.
+Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object](../tools/interaction-panel/input.md) and can therefore easily be accessed with [CognigyScript](../tools/cognigy-script.md) and the JSON syntax. Take a look at our [API Reference](https:/api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject.md) to get more information about /inject and /notify.
 
 You can use the [HTTP Request-Node](../nodes/service/http-request.md) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 
 
 <figure>
-  <img class="image-center" src="Flowimages/bc2f034-httprequest.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bc2f034-httprequest.jpg" width="100%" />
   <figcaption>Using an HTTP-Request node to trigger a long-running process in an external system</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ You can use the [HTTP Request-Node](../nodes/service/http-request.md) to trigger
 
 If you do not have control of the payload that the external service sends to the Inject or Notify API, then it can be controlled by using the [Notify Transformer](Flowtransformers/notify-transformer.md) or [Inject Transformer](Flowtransformers/inject-transformer.md). This allows you to transform the request and extract the necessary fields from the request body as described above before the actual Notify / Inject API is called.
 
-The API URL for the Notify and Inject APIs are different if the Transformer should be executed. For these APIs, the request should not be sent to the API service, but instead to the Endpoint service, meaning that you need to use the base Endpoint URL for your system (e.g. https://endpoint-demo.cognigy.ai). The API URLs are the following:
+The API URL for the Notify and Inject APIs are different if the Transformer should be executed. For these APIs, the request should not be sent to the API service, but instead to the Endpoint service, meaning that you need to use the base Endpoint URL for your system (e.g. https:/endpoint-demo.cognigy.ai). The API URLs are the following:
 
 Notify: {endpoint-url}/notify/{URLToken}
 
