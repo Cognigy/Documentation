@@ -22,8 +22,12 @@ The full syntax is as follows. Note the pipe ***|*** separated text is optional,
     The Trigger Intent feature always leads to an Intent score of 1.
 
 ## Usage
-<div class="divider"></div>
-You use the Trigger Intent feature by sending a text input into your Flow that starts with `cIntent:`. Whatever follows will be your found Intent. If you want your intent to be named `myIntent` you'd send the text input `cIntent:myIntent` (do not leave any space). Here's an example:
+
+To use the Trigger Intent feature, send a text into your Flow starting with `cIntent:`. 
+Whatever follows will be your identified Intent.
+For instance, if you want your intent to be named `my Intent`, you'd send the text input `cIntent:my Intent`. Ensure no space is left behind the colon; however, including a space within the intent name is allowed.
+
+Here's an example:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/f2ba2e4-Screenshot_from_2019-09-12_15-33-12.png" width="100%" />
