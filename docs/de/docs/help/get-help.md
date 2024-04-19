@@ -22,26 +22,6 @@ Wenn Sie auf dieses Menü klicken, öffnet sich das Hilfe-Widget, und Sie könne
   <figcaption>Hilfe-Widget</figcaption>
 </figure>
 
-## Hilfe-Center
-
-Jeder Artikel im Hilfe-Widget stammt aus dem Cognigy Help Center, das Sie über den Link "Originalartikel anzeigen" erreichen können.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}help/images/9b61424-viewarticle.JPG" width="100%" />
-</figure>
-
-Alternativ können Sie das Help Center jederzeit erreichen, indem Sie dem unten stehenden Link folgen.<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon">📘</span>
-    <div class="callout-heading">
-      <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us" target="_blank">Cognigy.AI Hilfe-Center</a>
-      </div>
-      <div class="callout-subtext">Cognigy HelpCenter      </div>
-   </div>
-</blockquote>## Cognigy Community
-
-Teil des Cognigy Help Centers ist die Cognigy Community, in der Cognigy-Enthusiasten Fragen stellen und Ideen austauschen können.
-
 ## Einreichen eines Support-Tickets
 
 Falls Sie einen Fehler gefunden haben oder technische Hilfe benötigen, können Sie ein Support-Ticket einreichen. Sie können dies auf drei Arten tun:

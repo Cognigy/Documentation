@@ -56,7 +56,7 @@ Sehen Sie sich unsere Cognigy Sessions-Episode über Erweiterungen an, um einen 
       <div class="callout-subtext">Verweis auf das Cognigy-Repository auf GitHub      </div>
    </div>
 </blockquote>!!! Tipp "Extension Development Suite"
-    [Cognigy Hammer] (https://github.com/tgbv/cognigy-hammer/), erstellt von der [Cognigy-Gemeinschaft](.. /.. /.. /help/community.md) ist eine Entwicklungssuite für Erweiterungen, die für Cognigy.AI entwickelt wurde. Es bietet verschiedene Tools und Funktionen, die bei der Entwicklung von Cognigy Extensions helfen. Beachten Sie, dass Cognigy Hammer kein Produkt von Cognigy ist und nicht für den Unternehmenssupport qualifiziert ist.
+    [Cognigy Hammer] (https://github.com/tgbv/cognigy-hammer/), erstellt von der Cognigy-Gemeinschaft ist eine Entwicklungssuite für Erweiterungen, die für Cognigy.AI entwickelt wurde. Es bietet verschiedene Tools und Funktionen, die bei der Entwicklung von Cognigy Extensions helfen. Beachten Sie, dass Cognigy Hammer kein Produkt von Cognigy ist und nicht für den Unternehmenssupport qualifiziert ist.
 
 ### Behandeln von Zeitüberschreitungen in einer Erweiterung
 Erweiterungen haben eine Standardzeitüberschreitung von 20 Sekunden, d. h., wenn die Zeit, die für den Abschluss der Erweiterung benötigt wird, mehr als 20 Sekunden beträgt, wird die Erweiterung beendet und ein Fehler an den Flow zurückgegeben. Die Flow-Ausführung wird fortgesetzt, und der Fehler kann unter "input.extensionError.message" aufgerufen werden.

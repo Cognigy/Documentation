@@ -116,16 +116,6 @@
     </div>
   </a>
 
-  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/community/topics">
-    <div class="card">
-      <img class="card-2-image" src="{{config.site_url}}assets/img/something-003.svg">
-      <div class="item-2-container">
-        <h3><b>Community</b></h3>
-        <p>Ask questions and share your ideas with the community!</p>
-      </div>
-    </div>
-  </a>
-
   <a class="card-link-2" href="https://www.cognigy.com/blog">
     <div class="card">
       <img class="card-2-image" style="padding: 10px" src="{{config.site_url}}/assets/img/product-blog.svg">

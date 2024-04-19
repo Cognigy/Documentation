@@ -61,4 +61,4 @@ Webchat offers easy deployment options and integrates smoothly with existing web
 
 ### Support
 
-Various support options, including [community forums](https://support.cognigy.com/hc/en-us/community/topics) and [direct support channels](../help/get-help.md), ensure users receive timely assistance and guidance whenever needed.
+Various support options, including [direct support channels](../help/get-help.md), ensure users receive timely assistance and guidance whenever needed.
