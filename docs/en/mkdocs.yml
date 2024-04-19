@@ -713,7 +713,6 @@ nav:
   - ai/resources/manage/extensions.md
 - Help & Contact:
   - help/get-help.md
-  - help/community.md
 markdown_extensions:
 - toc:
     permalink: true

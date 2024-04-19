@@ -51,10 +51,6 @@ Alternatively, you can always reach the Help Center by following the link below.
    </div>
 </blockquote>
 
-## Cognigy Community
-
-Part of the Cognigy Help Center is the Cognigy Community, where Cognigy enthusiasts can ask questions and share ideas.
-
 ## Filing a Support Ticket
 
 In case you've found a bug or need technical assistance, you can file a support ticket. You can do this in three ways:
