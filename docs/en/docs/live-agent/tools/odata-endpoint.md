@@ -216,7 +216,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | account_id               | Account ID                                                                  | Number  | 1                                         |
 | created_at               | Inbox Creation Date                                                         | Date    | 2021-12-11 12:41:26.745                   |
 | updated_at               | Inbox Updated Date                                                          | Date    | 2021-12-11 12:41:26.745                   |
-| channel_type             | Communication Channel, i.e. API, Webchat, Facebook (Meta)                 | String  | "Channel:Webchat"                       |
+| channel_type             | Communication Channel, i.e. API, Webchat, Facebook (Meta)                   | String  | "Channel:Webchat"                         |
 | enable_auto_assignment   | Feature That Allows The Agent To Auto Assign Conversations                  | Boolean | true                                      |
 | greeting_enabled         | Feature That Allows An Automatic Greeting To Be Sent                        | Boolean | false                                     |
 | greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                               |
@@ -270,22 +270,24 @@ The Reporting Event model represents actions or occurrences tracked in the syste
 
 When retrieving this data model, the Endpoint will return the following fields:
 
-| Field Name       | Description                                       | Type   | Example                                                                                                                |
-| ---------------- | ------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
-| id               | Unique Reporting Event ID                         | Number | 4                                                                                                                      |
-| event_start_time | Start time of the event                           | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
-| event_end_time   | End time of the event                             | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
-| name             | Name of the event                                 | String | "message_created", "conversation_resolved", "first_reply_created", "assignee_changed", "conversation_inbox_changed" |
-| value            | Value associated with the event, such as timestamp | Number | 1                                                                                                                      |
-| created_at       | Timestamp when the event was created              | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
-| updated_at       | Timestamp when the event was last updated         | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
-| account_id       | ID of the account associated with the event       | Number | 2                                                                                                                      |
-| conversation_id  | ID of the conversation associated with the event  | Number | 1                                                                                                                      |
-| inbox_id         | ID of the inbox associated with the event         | Number | 1                                                                                                                      |
-| user_id          | ID of the user associated with the event          | Number | 3                                                                                                                      |
+| Field Name       | Description                                        | Type   | Example                                                                                                             |
+| ---------------- | -------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| id               | Unique Reporting Event ID                          | Number | 4                                                                                                                   |
+| event_start_time | Start time of the event                            | Date   | "2023-01-08T18:34:43.162Z"                                                                                          |
+| event_end_time   | End time of the event                              | Date   | "2023-01-08T18:34:43.162Z"                                                                                          |
+| name             | Name of the event                                  | String | "message_created", "conversation_resolved", "first_reply_created", "assignee_changed", "conversation_inbox_changed" |
+| value            | Value associated with the event, such as timestamp | Number | 1                                                                                                                   |
+| created_at       | Timestamp when the event was created               | Date   | "2023-01-08T18:34:43.213Z"                                                                                          |
+| updated_at       | Timestamp when the event was last updated          | Date   | "2023-01-08T18:34:43.213Z"                                                                                          |
+| account_id       | ID of the account associated with the event        | Number | 2                                                                                                                   |
+| conversation_id  | ID of the conversation associated with the event   | Number | 1                                                                                                                   |
+| inbox_id         | ID of the inbox associated with the event          | Number | 1                                                                                                                   |
+| user_id          | ID of the user associated with the event           | Number | 3                                                                                                                   |
 
-!!! note
-    To avoid potential query timeouts due to large data volumes, use the `$top` query option to limit the number of returned records.### User
+**Note:**
+Due to the potentially large quantity of data that can be returned, it's recommended to use the `$top` query option to limit the number of records returned and prevent potential query timeouts.
+
+### User
 
 **Description:**
 
