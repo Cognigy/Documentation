@@ -40,4 +40,4 @@ stages:
               command: "buildAndPush"
               repository: $(imageName)
               containerRegistry: $(containerRegistryReference)
-              tags: $(Build.BuildId)
+              tags: main-$(Build.BuildId)
