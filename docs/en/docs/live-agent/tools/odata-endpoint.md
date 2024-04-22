@@ -275,7 +275,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | id               | Unique Reporting Event ID                         | Number | 4                                                                                                                      |
 | event_start_time | Start time of the event                           | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
 | event_end_time   | End time of the event                             | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
-| name             | Name of the event                                 | String | "message_created"", "conversation_resolved", "first_reply_created", "assignee_changed", "conversation_inbox_changed "" |
+| name             | Name of the event                                 | String | "message_created", "conversation_resolved", "first_reply_created", "assignee_changed", "conversation_inbox_changed" |
 | value            | Value associated with the event such as timestamp | Number | 1                                                                                                                      |
 | created_at       | Timestamp when the event was created              | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
 | updated_at       | Timestamp when the event was last updated         | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
@@ -284,11 +284,8 @@ When retrieving this data model, the Endpoint will return the following fields:
 | inbox_id         | ID of the inbox associated with the event         | Number | 1                                                                                                                      |
 | user_id          | ID of the user associated with the event          | Number | 3                                                                                                                      |
 
-**Note:**
-
-Due to the potentially large quantity of data that can be returned, it's recommended to use the `$top` query option to limit the number of records returned and prevent potential query timeouts.
-
-### User
+!!! note
+    To avoid potential query timeouts due to large data volumes, use the `$top` query option to limit the number of returned records.### User
 
 **Description:**
 
