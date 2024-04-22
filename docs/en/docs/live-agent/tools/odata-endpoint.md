@@ -260,7 +260,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 
 **Description:**
 
-The Reporting Event model represents an occurrence or action within the system that is tracked for reporting and analytics purposes.
+The Reporting Event model represents actions or occurrences tracked in the system for reporting and analytics purposes.
 
 **Example Query:**
 
