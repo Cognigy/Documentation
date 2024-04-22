@@ -276,7 +276,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | event_start_time | Start time of the event                           | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
 | event_end_time   | End time of the event                             | Date   | "2023-01-08T18:34:43.162Z"                                                                                             |
 | name             | Name of the event                                 | String | "message_created", "conversation_resolved", "first_reply_created", "assignee_changed", "conversation_inbox_changed" |
-| value            | Value associated with the event such as timestamp | Number | 1                                                                                                                      |
+| value            | Value associated with the event, such as timestamp | Number | 1                                                                                                                      |
 | created_at       | Timestamp when the event was created              | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
 | updated_at       | Timestamp when the event was last updated         | Date   | "2023-01-08T18:34:43.213Z"                                                                                             |
 | account_id       | ID of the account associated with the event       | Number | 2                                                                                                                      |
