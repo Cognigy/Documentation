@@ -43,16 +43,16 @@ The **Clear TTS Cache** button resets the cached audio for TTS. This forces the 
 ### Call recording configuration
 
 Call recordings can be enabled at an account or application level for debugging purposes.
+To enable this feature and store your calls, you must provide credentials for a bucket vendor. After a call is recorded,
+an admin can listen to and review recordings on the [Recent calls](recent-calls.md#call-recordings) page.
 
-This is a separate recording functionality, and cannot be controlled by Cognigy.AI within a Flow.
-
-You must provide a Bucket Vendor and additional details and credentials in order to enable this feature and store your recorded calls.
-
-After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
+Note that this feature records the entire call and cannot be managed within a Cognigy.AI Flow.
+If you want to control call recording in your Flow, use a [Call Recording](../../ai/nodes/voice/voice-gateway/call-recording.md) Node.
+This Node enables you to store and record calls; you can start, stop, and pause recordings at any point.
 
 #### Account level recording
 
-When enabled at the account level, calls from all applications within an account will be recorded.
+When the Call recording feature is enabled at the account level, calls from all applications within an account will be recorded.
 
 To enable recording calls at an account level, follow these steps:
 
