@@ -81,7 +81,7 @@ To enable recording calls at an account level, follow these steps:
         - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
 
 7. Click **Test** to verify your connection. 
-8. Click the **Record all calls for this account** option if you do not want to record calls not only for a specific application.
+8. Activate the **Record all calls for this account** option if you want to record calls for all applications within this account.
 9. Click **Save**.
 
 All calls from all applications on this account will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
