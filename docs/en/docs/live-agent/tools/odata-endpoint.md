@@ -48,12 +48,12 @@ The authentication can also be done using a query param such as follows:
 ```
 
 !!! note "OData Domain Name"
-The OData endpoint is available on a different domain to your Cognigy User Interface domain. For example, [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
+    The OData endpoint is available on a different domain to your Cognigy User Interface domain. For example, [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
 
-For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premise installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premise installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 !!! note "Excel/Power BI"
-When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication` and pass the Live Agent access token as a query parameter `&apikey=<Live Agent access-token>`
+    When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication` and pass the Live Agent access token as a query parameter `&apikey=<Live Agent access-token>`
 
 ## Endpoint Version
 
@@ -91,13 +91,13 @@ The Endpoint supports the following OData Query Language operators:
 ### Example Queries
 
 `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation(1)?$select=inbox_id,account_id&apikey=<access-token>`
-Return the columns inbox_id and account_id for the Conversation with id=1
+Return the columns inbox_id and account_id for the Conversation with id=1.
 
 `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id&apikey=<access-token>`
-Return the columns id and account_id for all Conversations.
+Return the columns' ID and account_id for all Conversations.
 
 `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2021-11-23T00:00:00'&apikey=<access-token>`
-Return the columns id and account_id for all the Conversations filtered by the created_at column being lower or equal to '2021-11-23T00:00:00'
+Return the columns' ID and account_id for all the Conversations filtered by the created_at column being lower or equal to '2021-11-23T00:00:00'
 
 ## Reference Documentation
 
@@ -138,7 +138,7 @@ In the Messages table, you can find all messages from all Inboxes and Conversati
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name          | Description                                                                                                                                                                                | Type    | Example                                      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------------------------------------------- |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------|
 | id                  | Unique Message ID                                                                                                                                                                          | Number  | 1                                            |
 | content             | The Message Sent                                                                                                                                                                           | String  | Welcome to Live Agent                        |
 | account_id          | Account ID                                                                                                                                                                                 | Number  | 1                                            |
@@ -171,7 +171,7 @@ A Conversation is the communication channel opened between an Agent and a client
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name            | Description                                                           | Type   | Example                                |
-| --------------------- | --------------------------------------------------------------------- | ------ | -------------------------------------- |
+|-----------------------|-----------------------------------------------------------------------|--------|----------------------------------------|
 | id                    | Unique Conversation ID                                                | Number | 1                                      |
 | account_id            | Account ID (where the conversation belongs)                           | Number | 1                                      |
 | inbox_id              | Inbox ID (where the conversation belongs)                             | Number | 1                                      |
@@ -209,14 +209,14 @@ The Inbox is where all Conversations from a specific set of Agents will be place
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name               | Description                                                                 | Type    | Example                                   |
-| ------------------------ | --------------------------------------------------------------------------- | ------- | ----------------------------------------- |
+|--------------------------|-----------------------------------------------------------------------------|---------|-------------------------------------------|
 | id                       | Unique Record ID                                                            | Number  | 1                                         |
 | channel_id               | Channel ID                                                                  | Number  | 1                                         |
 | name                     | Inbox Name                                                                  | String  | Welcome to Live Agent                     |
 | account_id               | Account ID                                                                  | Number  | 1                                         |
 | created_at               | Inbox Creation Date                                                         | Date    | 2021-12-11 12:41:26.745                   |
 | updated_at               | Inbox Updated Date                                                          | Date    | 2021-12-11 12:41:26.745                   |
-| channel_type             | Communication Channel, for example, API, Webchat, Facebook (Meta)                   | String  | "Channel:Webchat"                         |
+| channel_type             | Communication Channel, for example, API, Webchat, Facebook (Meta)           | String  | "Channel:Webchat"                         |
 | enable_auto_assignment   | Feature That Allows The Agent To Auto Assign Conversations                  | Boolean | true                                      |
 | greeting_enabled         | Feature That Allows An Automatic Greeting To Be Sent                        | Boolean | false                                     |
 | greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                               |
@@ -246,7 +246,7 @@ Labels are being used to mark, identify or group different Conversations.
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name      | Description                                 | Type    | Example                     |
-| --------------- | ------------------------------------------- | ------- | --------------------------- |
+|-----------------|---------------------------------------------|---------|-----------------------------|
 | id              | Unique Label ID                             | Number  | 1                           |
 | title           | Label Title                                 | String  | "label-complain"            |
 | description     | Label Description                           | String  | "labels used for complains" |
@@ -271,7 +271,7 @@ The Reporting Event model represents actions or occurrences tracked in the syste
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name       | Description                                        | Type   | Example                                                                                                             |
-| ---------------- | -------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+|------------------|----------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
 | id               | Unique Reporting Event ID                          | Number | 4                                                                                                                   |
 | event_start_time | Start time of the event                            | Date   | "2023-01-08T18:34:43.162Z"                                                                                          |
 | event_end_time   | End time of the event                              | Date   | "2023-01-08T18:34:43.162Z"                                                                                          |
@@ -284,8 +284,8 @@ When retrieving this data model, the Endpoint will return the following fields:
 | inbox_id         | ID of the inbox associated with the event          | Number | 1                                                                                                                   |
 | user_id          | ID of the user associated with the event           | Number | 3                                                                                                                   |
 
-**Note:**
-Due to the potentially large quantity of data that can be returned, it's recommended to use the `$top` query option to limit the number of records returned and prevent potential query timeouts.
+!!! note
+    To avoid potential query timeouts due to large data volumes, use the `$top` query option to limit the number of returned records.### User
 
 ### User
 
@@ -302,7 +302,7 @@ This data model holds information regarding the Live Agent users, such as an Age
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name             | Description                              | Type   | Example                                                                                                                   |
-| ---------------------- | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+|------------------------|------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------|
 | id                     | Unique Record ID                         | Number | 1                                                                                                                         |
 | provider               | e.g Email                                | String | "email"                                                                                                                   |
 | uid                    | Provided Unique Identifier               | String | "some-email@cognigy.com"                                                                                                  |
@@ -346,7 +346,7 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
 ### Tableau
 
 !!! danger "Incompatible OData Version"
-Cognigy.AI supports OData version 4.0, which implies that certain versions of Tableau are not compatible.
+    Cognigy.AI supports OData version 4.0, which implies that certain versions of Tableau are not compatible.
 
 Find instructions on how to connect an OData Feed in the [Tableau documentation](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
 
