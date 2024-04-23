@@ -20,7 +20,7 @@ The Voice Gateway Call Recording Node controls the voice recording capabilities 
 
 The Call Recording Node uses a Voice Gateway API to act as a [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) client to record the audio using the SIPREC protocol. The recorded audio is sent to a Session Recording Server (SRS) for storage. You can use any SRS for storing audio records.
 
-Note that this Node controls a specific Flow. If you want to enable call recording for all flows and record entire calls, configure the [Call Recording](../../../../voicegateway/webapp/accounts.md#call-recording-configuration) setting on the Voice Gateway Self-Service Portals.
+Note that this Node controls a specific Flow. If you want to enable call recording for all Flows and record entire calls, configure the [Call Recording](../../../../voicegateway/webapp/accounts.md#call-recording-configuration) setting on the Voice Gateway Self-Service Portals.
 
 ## Settings
 
