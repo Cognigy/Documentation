@@ -32,7 +32,7 @@ After creating an application, you can edit or delete it.
 | Speech synthesis vendor                                 | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
 | Speech recognizer vendor                                | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
 | Use a fallback speech vendor if primary fails           | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
-| Perform a fallback transfer if webhook connection fails | [Redirect a call](#call-foewarding) if the connection to Cognigy.AI is unavailable for any reason.                                                                                                          | Account, Service Provider, Admin |
+| Perform a fallback transfer if webhook connection fails | [Redirect a call](#call-forwarding) if the connection to Cognigy.AI is unavailable for any reason.                                                                                                          | Account, Service Provider, Admin |
 
 ## Add Additional TTS and STT Vendor
 
@@ -45,12 +45,12 @@ To add extra vendor, follow these steps:
 5. Choose the vendor type you want to add (STT or TTS) or add both at once:
     - TTS:
         - **Speech synthesis vendor** — select a TTS vendor from the list.
-        - **Label** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials. 
+        - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials. 
         - **Language** — select a primary language.
         - **Voice** — select a primary voice for the virtual agent.
     - STT:
         - **Speech recognizer vendor** — select an STT vendor from the list.
-        - **Label** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials.
+        - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials.
         - **Language** — select a primary language. 
 6. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
 7. Click **Save**.
@@ -60,12 +60,15 @@ The changes will be applied.
 ## Call recording configuration
 
 Call recordings can be enabled at an account or application level for debugging purposes.
+To enable this feature and store your calls, you must provide credentials for a bucket vendor. After a call is recorded,
+an admin can listen to and review recordings on the [Recent calls](recent-calls.md#call-recordings) page.
 
-This is a separate recording functionality, and cannot be controlled by Cognigy.AI within a Flow.
+Note that this feature records the entire call and cannot be managed within a Cognigy.AI Flow.
+If you want to control call recording in your Flow, use a [Call Recording](../../ai/nodes/voice/voice-gateway/call-recording.md) Node.
+This Node enables you to store and record calls; you can start, stop, and pause recordings at any point.
 
-You must provide a Bucket Vendor and additional details and credentials in order to enable this feature and store your recorded calls.
-
-After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
+After a call is recorded,
+an admin can listen to and review recordings on the [Recent calls](recent-calls.md#call-recordings) page.
 
 ### Application level recording
 
@@ -100,7 +103,7 @@ To enable recording calls at an application level, follow these steps:
 7. Click **Test** to verify your connection. 
 8. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
 9. Click the application to edit. 
-10. Scroll down to the **Call recording configuration** section, click  the checkbox for **Record all calls**
+10. Scroll down to the **Call recording configuration** section, activate the **Record all calls** setting.
 11. Click **Save**.
 
 All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
