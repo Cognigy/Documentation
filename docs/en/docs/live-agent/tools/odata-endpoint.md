@@ -216,7 +216,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | account_id               | Account ID                                                                  | Number  | 1                                         |
 | created_at               | Inbox Creation Date                                                         | Date    | 2021-12-11 12:41:26.745                   |
 | updated_at               | Inbox Updated Date                                                          | Date    | 2021-12-11 12:41:26.745                   |
-| channel_type             | Communication Channel, i.e. API, Webchat, Facebook (Meta)                   | String  | "Channel:Webchat"                         |
+| channel_type             | Communication Channel, for example, API, Webchat, Facebook (Meta)                   | String  | "Channel:Webchat"                         |
 | enable_auto_assignment   | Feature That Allows The Agent To Auto Assign Conversations                  | Boolean | true                                      |
 | greeting_enabled         | Feature That Allows An Automatic Greeting To Be Sent                        | Boolean | false                                     |
 | greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                               |
