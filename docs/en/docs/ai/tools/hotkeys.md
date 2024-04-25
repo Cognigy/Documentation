@@ -39,9 +39,9 @@ The hotkeys listed in the table are applicable to the Interaction Panel.
 
 The hotkeys listed in the table are applicable to the example sentences within Intents.
 
-Note that not all hotkeys are enabled by default. Some require additional settings to be activated within the Cognigy.AI interface.
+Note that not all hotkeys are enabled by default. Some require additional settings to be activated within the Cognigy.AI interface. 
 
 | Hotkey                  | Description                                                                                                                                                                                                                       |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
- | ++tab++                 | Navigate between sentences within Intent examples and view tooltips for each sentence. <br> To enable these actions, activate the **Use extended keyboard accessibility features** setting in **My Profile**.                     |
+| ++tab++                 | Navigate between sentences within Intent examples and view tooltips for each sentence. <br> To enable these actions, activate the **Use extended keyboard accessibility features** setting in **My Profile**.                     |
 | ++tab++, then ++enter++ | Navigate between sentences within Intent examples, view tooltips for each sentence, and delete a sentence. <br> To enable these actions, activate the **Use extended keyboard accessibility features** setting in **My Profile**. |
