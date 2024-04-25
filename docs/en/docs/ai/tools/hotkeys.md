@@ -6,13 +6,11 @@
 
 # Hotkeys
 
-In addition to full **Drag and Drop** flow editor functionality, Cognigy.AI supports the following hotkey commands.
+The following table contains the universal hotkeys for the Cognigy.AI interface.
 
 ## Flow Editor
 
-<div class="divider"></div>
-
-The following hotkeys are valid for the Flow Editor.
+The hotkeys listed in the table are applicable to the Flow editor.
 
 | Hotkey                                           | Description                          |
 |--------------------------------------------------|--------------------------------------|
@@ -30,13 +28,21 @@ The following hotkeys are valid for the Flow Editor.
 
 ## Interaction Panel
 
-<div class="divider"></div>
-
-The hotkeys displayed in the table below are valid for the Interaction Panel.
+The hotkeys listed in the table are applicable to the Interaction Panel.
 
 | Hotkey                     | Description            |
 |----------------------------|------------------------|
 | ++ctrl+b++  <br> ++cmd+b++ | Clear the Chat         |
 | ++ctrl+shift+f++           | Toggle the Expert mode |
 
+## Intents
 
+The hotkeys listed in the table are applicable to the example sentences within Intents.
+
+Note that not all hotkeys are enabled by default. Some require additional settings to be activated within the Cognigy.AI interface.
+
+| Hotkey                  | Description                                                                                                                                                                                                                       |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ++tab++                 | Navigate between sentences within Intent examples.                                                                                                                                                                                |
+| ++tab++                 | Navigate between sentences within Intent examples and view tooltips for each sentence. <br> To enable these actions, activate the **Use extended keyboard accessibility features** setting in **My Profile**.                     |
+| ++tab++, then ++enter++ | Navigate between sentences within Intent examples, view tooltips for each sentence, and delete a sentence. <br> To enable these actions, activate the **Use extended keyboard accessibility features** setting in **My Profile**. |
