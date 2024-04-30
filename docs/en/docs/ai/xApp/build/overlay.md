@@ -17,5 +17,3 @@ To configure this behavior for pages with HTML and Adaptive Cards, use the follo
 
 - [xApp: Show HTML](../../nodes/xApp/set-html-xApp-state.md)
 - [xApp: Show Adaptive Card](../../nodes/xApp/set-html-xApp-state.md)
-
-
