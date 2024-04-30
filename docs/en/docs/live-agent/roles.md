@@ -65,7 +65,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Create an Inbox                            | -     | -          | +             |
 | Edit an Inbox                              | -     | -          | +             |
 | Delete an Inbox                            | -     | -          | +             |
-| Assign Inboxes to Conversations [^4]       | +     | +          | +             |
+| Move Conversations from one Inbox to another [^4]       | +     | +          | +             |
 | Create AI Copilot Bot                      | -     | -          | +             |
 | Edit AI Copilot Bot                        | -     | -          | +             |
 | Delete AI Copilot Bot                      | -     | -          | +             |
