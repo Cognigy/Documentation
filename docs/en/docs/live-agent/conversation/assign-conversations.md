@@ -69,7 +69,7 @@ To assign a label to a conversation within Live Agent, do the following:
 
 The label will be added to the conversation.
 
-## Assign Inboxes
+## Change Inboxes
 
 When a conversation is initiated, it is automatically assigned to the inbox defined in the Cognigy.AI Flow. However, you can change the inbox for an existing conversation if needed.
 
