@@ -434,6 +434,7 @@ nav:
       - ai/xApp/build/xApp-with-multi-channels.md
       - ai/xApp/build/standalone-xApp.md
       - ai/xApp/build/custom-xApp-node.md
+      - ai/xApp/build/overlay.md
     - xApp Security:
       - ai/xApp/security/secure-xApp-from-xss.md
     - ai/xApp/architecture.md

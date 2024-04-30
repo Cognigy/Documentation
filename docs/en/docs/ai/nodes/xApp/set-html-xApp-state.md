@@ -6,6 +6,8 @@
 
 # xApp: Show HTML
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../release-notes/4.75.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/xApp/set-html-xApp-state.png" width="80%" />
 </figure>
@@ -37,13 +39,14 @@ To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.
 To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
 You can store the input result in the Context and use the data in the other Nodes.
 
+{! _includes/ai/xApp/overlay.md !}
+
 ### xApp Page SDK
 
 When hosted within Cognigy, the xApp Page (or any generic HTML xApp) can load the xApp Page SDK using a fixed URL:
  `<script src=”/sdk/app-page-sdk.js”></script>`.
 Loading this file will expose the xApp Page SDK as a global instance called `SDK`.
 To access its methods, call `SDK.someExampleMethod()` in your code after loading the SDK file. Note that the SDK code is not loaded asynchronously.
-
 
 | Function                                    | Usage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
