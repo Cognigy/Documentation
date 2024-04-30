@@ -6,6 +6,8 @@ hidden: false
 
 # Roles
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../release-notes/4.75.md)
+
 In Live Agents, human agents can have three distinct user roles:
 
 - [Agent](#agents)
@@ -63,12 +65,15 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Create an Inbox                            | -     | -          | +             |
 | Edit an Inbox                              | -     | -          | +             |
 | Delete an Inbox                            | -     | -          | +             |
+| Assign Inboxes to Conversations [^4]       | +     | +          | +             |
 | Create AI Copilot Bot                      | -     | -          | +             |
 | Edit AI Copilot Bot                        | -     | -          | +             |
 | Delete AI Copilot Bot                      | -     | -          | +             |
 | Add Agents to the Inbox                    | -     | -          | +             |
 | Remove Agents from the Inbox               | -     | -          | +             |
 | Configure Conversation Assignment Settings | -     | -          | +             |
+
+[^4]: Users with the `Agent` role can assign conversations to the inboxes they have access to.
 
 ### Conversations
 

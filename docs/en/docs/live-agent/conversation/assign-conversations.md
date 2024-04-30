@@ -7,6 +7,8 @@ hidden: false
 
 # Conversation Assignment
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../release-notes/4.75.md)
+
 Within Live Agent, you can assign agents, teams, priority, labels, and change inboxes.  
 
 <figure>
@@ -67,7 +69,7 @@ To assign a label to a conversation within Live Agent, do the following:
 
 The label will be added to the conversation.
 
-## Change Inboxes
+## Assign Inboxes
 
 When a conversation is initiated, it is automatically assigned to the inbox defined in the Cognigy.AI Flow. However, you can change the inbox for an existing conversation if needed.
 
