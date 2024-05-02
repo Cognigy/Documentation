@@ -25,11 +25,10 @@ Cognigy includes Genesys Cloud as an additional handover provider, allowing Cogn
 The Genesys Cloud Guest Chat handover is based on [Genesys Guest Chat APIs](https://developer.genesys.cloud/commdigital/digital/webchat/guestchat). These APIs contain functionality to create a new chat conversation, retrieve previous chat history, send messages, set the typing indicator, and leave the chat. Receiving messages, membership changes, and other real-time events are available via a WebSocket connection.
 
 ## Setup
-<div class="divider"></div>
 
 ### Prerequisites
 
-- You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
+- You need to have an account in [Genesys Cloud](https://login.mypurecloud.com).
 
 ### Configure Handover Settings
 
