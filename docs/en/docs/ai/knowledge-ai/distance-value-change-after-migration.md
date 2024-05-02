@@ -28,9 +28,3 @@ you can modify your existing Flows to follow these instructions:
 Wherever you use `distance`, replace it with `1 - distance`. This change will map the value from the new cosine similarity value to the older distance value.
 
 If you are using `distance` for the first time in Cognigy.AI v4.74.0 or later, use the value from the `[-1, 1]` range directly, rather than interpreting it as distance.
-
-
-
-
-
-
