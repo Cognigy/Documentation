@@ -448,6 +448,7 @@ nav:
     - ai/knowledge-ai/pdf.md
     - ai/knowledge-ai/web-page.md
     - ai/knowledge-ai/text-extraction-with-azure-ai.md
+    - ai/knowledge-ai/distance-value-change-after-migration.md
   - ai/generative-ai.md
   - ai/architecture.md
   - Installation & Configuration:

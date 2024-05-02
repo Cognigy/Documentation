@@ -411,26 +411,11 @@ The Weaviate PVC and PV are deleted.
 
 ### Change in the `distance` Value after Migrating from Weaviate to Qdrant
 
-And one or more of your flows are configured to use the `distance` value (returned as part of the ‘topK’ result object from the ‘Search Extract Output’ flow node).
+This migration alters the `distance` value behavior. 
+Weaviate's `[0, 2]` range signifies similarity (0) to dissimilarity (2), while Qdrant's `[-1, 1]` range denotes dissimilarity (-1) to similarity (1). 
+Thus, the interpretation of the value changes.
+Decision-making based on distance in the Flow will be ineffective after the migration.
 
-#### Background
+If one or more of your Flows are configured to use the `distance` value,
+which returns as part of the `topK` result object from the Search Extract Output Node, follow [these recommendations](../../knowledge-ai/distance-value-change-after-migration.md).
 
-With Cognigy.AI release 4.74.0, all Cognigy-hosted environments have been updated to use Qdrant as the vector database for Knowledge AI instead of Weaviate. This migration has one side-effect, i.e., the `distance` value returned as part of the ‘topK’ result object from the ‘Search Extract Output’ flow node can be different.
-
-The reason is that Weaviate calculates this value to be in the `[0, 2]` range, where 0 means maximum similarity between the query and retrieved chunk, while 2 means maximum dissimilarity between the query and the retrieved chunk. On the other hand, Qdrant calculates this value to be in the [-1, 1] range, where –1 means maximum dissimilarity between the query and the retrieved chunk, while 1 means maximum similarity between the query and the retrieved chunk. Therefore, not only does the value lie in a different range, the interpretation of the exact value is also different. In fact, the new value should be seen more as similarity rather than distance.
-
-Therefore, if the `distance` value is used to make decisions in the flow, it will no longer work after the migration.
-
-##### How to correctly use the distance value?
-
-If you already have one or more flows that rely on the `distance` value to be in the `[0, 2]` range, i.e., you have been using the `distance` value prior to Cognigy.AI release 4.74.0, you can update your existing flows to do the following:
-
-Wherever you use `distance`, replace it with `1 - distance`.
-
-This simple change will map the value from the new cosine similarity value to the older distance value.
-
-If you are using `distance` in your flow for the first time with Cognigy.AI v4.74.0+, directly use the value from the `[-1, 1]` range as explained above, rather than reinterpreting it as distance.
-
-##### Caution regarding the use of distance
-
-The precise value of `distance` heavily depends on the embedding model used for ingestion and search. The value can be significantly different for the same query-chunk pair with different embedding models. Therefore, we recommend exercising caution when using the `distance` value for decision-making in a flow. 
