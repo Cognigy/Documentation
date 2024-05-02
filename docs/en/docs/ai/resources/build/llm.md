@@ -112,9 +112,8 @@ The model will be deleted from the list.
 
 ## Retry Mechanism
 
-If Cognigy encounters any issues while trying to connect with LLM providers, such as insufficient funds,
-rate-limiting rejection, or other technical errors, these problems are classified as connection issues. 
-In such cases, Cognigy will automatically try to reconnect up to three times using a retry mechanism. 
+If Cognigy encounters issues to establish connection with LLM providers,
+Cognigy will automatically try to reconnect up to three times using a retry mechanism.  
 This retry mechanism is designed to improve the reliability and stability of the system  
 when using certain Cognigy Nodes and features. 
 By attempting to reconnect multiple times, it increases the chances of successful communication, 
