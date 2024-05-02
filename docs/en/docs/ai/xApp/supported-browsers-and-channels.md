@@ -34,12 +34,14 @@ The following channels are supported by xApps:
 - [Socket](../endpoints/socketio.md)
 - [Sunshine Conversation](../endpoints/sunshine-conversations.md)
 - [WhatsApp](../endpoints/whatsapp.md)
-- [Webchat Widget](../../webchat/overview.md)
+- [Webchat v2](../../webchat/v2/overview.md)
+- [Webchat v3](../../webchat/v3/overview.md)[^**]
 - [Webhook](../endpoints/webhook.md)
 - [REST Endpoint](../endpoints/rest.md)
 
 
 [^*]: For this channel, Async Mode needs to be activated in the Endpoint settings.
+[^**]: Webchat v3 is the only channel that supports xApp pages embedded within the channel interface. For more information, read the [xApp Overlay](build/overlay.md) article.
 
 ## More Information
 

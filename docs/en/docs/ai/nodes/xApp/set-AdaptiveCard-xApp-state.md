@@ -6,6 +6,8 @@
 
 # xApp: Show Adaptive Card
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../release-notes/4.75.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/xApp/set-AdaptiveCard-xApp-state.png" width="80%" />
 </figure>
@@ -33,6 +35,10 @@ To override the background and interaction element colors, use CSS color codes.
 
 To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
 You can store the input result in the Context and use the data in the other Nodes.
+
+
+{! _includes/ai/xApp/overlay.md !}
+
 
 ## More Information
 
