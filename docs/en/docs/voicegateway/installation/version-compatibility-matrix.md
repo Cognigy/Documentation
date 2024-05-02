@@ -44,6 +44,7 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.72                                | 1.23-1.27  | 14.9       | 7.0[^*] | 8.0   | 2.10    | 1.8      | 1.54   | 3.9 or higher |
 | 4.73                                | 1.23-1.27  | 14.9       | 7.0[^*] | 8.0   | 2.10    | 1.8      | 1.54   | 3.9 or higher |
 | 4.74                                | 1.23-1.28  | 14.9       | 7.0[^*] | 8.0   | 2.10    | 1.8      | 1.54   | 3.9 or higher |
+| 4.75                                | 1.23-1.28  | 14.9       | 7.2[^*] | 8.0   | 2.10    | 1.8      | 1.54   | 3.9 or higher |
 
 [^*]: Both stand-alone and High Availability (HA) with Sentinel deployments.
 
