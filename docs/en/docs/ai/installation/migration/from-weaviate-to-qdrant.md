@@ -10,8 +10,8 @@ hidden: false
 This guide is intended for Cognigy on-premises customers who are using the [Knowledge AI features](https://docs.cognigy.com/ai/knowledge-ai/overview/).
 
 !!! warning
-    The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. 
-    However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    - The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    - The migration process alters distance value: Weaviate's `[0, 2]` signifies similarity, Qdrant's `[-1, 1]` denotes dissimilarity. Decision-making in Flow will be ineffective post-migration if distance is used.
 
 ## Introduction
 
@@ -328,7 +328,7 @@ In both cases, you can empty the Qdrant database by deleting the Persistent Volu
     for pvc in {0..2}; do kubectl delete pvc -n cognigy-ai qdrant-storage-qdrant-$pvc; done
     ```
 
-2. Use the following command to delete each Quadrant PV, replacing `Quadrant PV` with the name of each specific PV in the command:
+2. Use the following command to delete each Qdrant PV, replacing `Qdrant PV` with the name of each specific PV in the command:
 
     ```bash
     kubectl delete pv <pv-name>
