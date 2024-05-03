@@ -8,9 +8,12 @@
 
 The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
 
-It supports the cloud SST/TTS from the providers Google, Microsoft and Amazon AWS.
+It supports the cloud STT/TTS from the providers Google, Microsoft and Amazon AWS.
 
 Once in the Voice Preview panel, you will be able to introduce raw text or SSML syntax. You can also choose the language and the voice to use. Bear in mind that the SSML syntax that you introduce will have to be supported by the Voice Preview provider you chose.
+
+!!! note "Access STT and TTS Providers"
+    If your environment has network connection restrictions or requires strict security rules, make sure both Speech-to-Text (STT) and Text-to-Speech (TTS) providers are accessible. Add the IP address ranges of your STT and TTS providers to the firewall's whitelist. By doing so, the Cognigy.AI server can interact smoothly with both providers, guaranteeing the expected functionality of the Voice Preview feature.
 
 ### Set up a Voice Preview provider
 
