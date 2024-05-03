@@ -10,8 +10,8 @@ hidden: false
 This guide is intended for Cognigy on-premises customers who are using the [Knowledge AI features](https://docs.cognigy.com/ai/knowledge-ai/overview/).
 
 !!! warning
-    The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. 
-    However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    - The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    - The migration process alters the `distance` value. Decision-making in Flow will be ineffective post-migration if distance is used.
 
 ## Introduction
 
@@ -328,7 +328,7 @@ In both cases, you can empty the Qdrant database by deleting the Persistent Volu
     for pvc in {0..2}; do kubectl delete pvc -n cognigy-ai qdrant-storage-qdrant-$pvc; done
     ```
 
-2. Use the following command to delete each Quadrant PV, replacing `Quadrant PV` with the name of each specific PV in the command:
+2. Use the following command to delete each Qdrant PV, replacing `Qdrant PV` with the name of each specific PV in the command:
 
     ```bash
     kubectl delete pv <pv-name>
@@ -408,3 +408,14 @@ After successful migration and testing of Knowledge AI features with Qdrant as t
     ```
 
 The Weaviate PVC and PV are deleted.
+
+### Change in the `distance` Value after Migrating from Weaviate to Qdrant
+
+This migration alters the `distance` value behavior. 
+Weaviate's `[0, 2]` range signifies similarity (0) to dissimilarity (2), while Qdrant's `[-1, 1]` range denotes dissimilarity (-1) to similarity (1). 
+Thus, the interpretation of the value changes.
+Decision-making based on distance in the Flow will be ineffective after the migration.
+
+If one or more of your Flows are configured to use the `distance` value,
+which returns as part of the `topK` result object from the Search Extract Output Node, follow [these recommendations](../../knowledge-ai/distance-value-change-after-migration.md).
+
