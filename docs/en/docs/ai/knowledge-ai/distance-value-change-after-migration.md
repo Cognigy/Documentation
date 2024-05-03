@@ -7,7 +7,7 @@ hidden: false
 # Migration from Weaviate to Qdrant: Distance Value Change
 
 With Cognigy.AI release 4.74.0, all Cognigy-hosted environments have been updated to use Qdrant as the vector database for Knowledge AI instead of Weaviate.
-This migration alters the behavior of the `distance` value, which returns as part of the `topK` result object from the Search Extract Output Node.
+This migration alters the behavior of the `distance` value, which is returned as part of the `topK` result object from the Search Extract Output Node.
 
 Weaviate and Qdrant are two different tools that calculate similarity values in different ways. While Weaviate calculates similarity values in the range of `[0, 2]`,
 where 0 represents maximum similarity and 2 represents maximum dissimilarity, 
@@ -16,8 +16,9 @@ where -1 represents maximum dissimilarity and 1 represents maximum similarity. D
 the same value may indicate different meanings in Weaviate and Qdrant. 
 Note that the new value should be considered as a measure of similarity rather than distance. Therefore, if the `distance` value is used to make decisions in the Flow, it will no longer work after the migration.
 
-The precise value of `distance` heavily depends on the embedding model used for ingestion and search.
-The value can be significantly different for the same query-chunk pair with different embedding models. We recommend exercising caution when using the `distance` value for decision-making in a Flow.
+!!! warning
+    The precise value of `distance` heavily depends on the embedding model used for ingestion and search.
+    The value can be significantly different for the same query-chunk pair with different embedding models. We recommend exercising caution when using the `distance` value for decision-making in a Flow.
 
 ## Adapting Distance Values: Pre and Post 4.74.0 Release
 
