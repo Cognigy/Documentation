@@ -114,8 +114,7 @@ The model will be deleted from the list.
 
 If Cognigy encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code, 
 Cognigy will automatically attempt to reconnect up to three times using a retry mechanism.
-This retry mechanism is designed to improve the reliability and stability of the system  
-when using certain Cognigy Nodes and features. 
+This retry mechanism is designed to improve the reliability and stability of the system when using certain Cognigy Nodes and features. 
 By attempting to reconnect multiple times, it increases the chances of successful communication, 
 reduces disruptions and ensures smoother operations within the system.
 
