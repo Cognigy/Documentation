@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.74-blue.svg)](../../../release-notes/4.74.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../release-notes/4.75.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
@@ -109,6 +109,36 @@ To delete a model, follow these steps:
 4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
 
 The model will be deleted from the list.
+
+## Retry Mechanism
+
+If Cognigy encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code, 
+Cognigy will automatically attempt to reconnect up to three times using a retry mechanism.
+This retry mechanism is designed to improve the reliability and stability of the system  
+when using certain Cognigy Nodes and features. 
+By attempting to reconnect multiple times, it increases the chances of successful communication, 
+reduces disruptions and ensures smoother operations within the system.
+
+The following Nodes and features are affected by the retry mechanism:
+
+- [LLM Prompt](../../nodes/service/llm-prompt.md)
+- [LLM Entity Extract](../../nodes/other-nodes/llm-entity-extract.md)
+- [GPT Conversation](../../nodes/service/gpt-conversation.md)
+- [Search Extract Output](../../nodes/other-nodes/search-extract-output.md)
+- Question Node Slot Mapping (in case of using [external NLU embedding](../../nlu/external-nlu-intent-recognition.md))
+- [Question Node LLM Reprompting](../../nodes/basic/question.md#llm-prompt)
+- [Sentiment Analysis](../../nodes/ai-copilot/sentiment-tile.md)
+
+The retry mechanism can be customized through the environment variables for the on-premises installations. 
+By adjusting these environment variables, system administrators can fine-tune the retry behavior 
+to suit specific performance requirements and network conditions.
+
+| Environment Variable                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Default Value |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| GENERATIVE_AI_RETRY_OPTIONS_NUMBER_OF_RETRIES | Determines the number of retries after the first attempt before failing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 2             |
+| GENERATIVE_AI_RETRY_OPTIONS_MIN_TIMEOUT       | Determines the timeout between retries to avoid rate limiting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 50ms          |
+| GENERATIVE_AI_RETRY_OPTIONS_MAX_TIMEOUT       | Determines the maximum timeout between retries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 50ms          |
+| GENERATIVE_AI_RETRY_OPTIONS_FACTOR            | Determines how long a retry timeout will last. The timeout duration will increase with each subsequent retry attempt. If the factor is greater than 1, the timeout duration will increase exponentially. This means that with each subsequent attempt, the waiting time will not just increase by a constant amount, but rather by multiples. For example, if the initial timeout is 1 second and the factor is set to 2, then the second timeout will be 2 seconds, the third will be 4 seconds, the fourth will be 8 seconds, and so on. | 1             |
 
 ## More Information
 
