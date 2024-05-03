@@ -11,7 +11,7 @@ This guide is intended for Cognigy on-premises customers who are using the [Know
 
 !!! warning
     - The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
-    - The migration process alters the `distance` value. Decision-making in Flow will be ineffective post-migration if distance is used.
+    - The migration process alters the `distance` value. Decision-making in Flow will be ineffective post-migration if distance is used. For more information, read the [Change in the `distance` value](#change-in-the-distance-value-after-migrating-from-weaviate-to-qdrant) section.
 
 ## Introduction
 
