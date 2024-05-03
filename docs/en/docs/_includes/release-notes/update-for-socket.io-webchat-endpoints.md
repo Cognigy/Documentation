@@ -1,2 +1,2 @@
-!!! warning "Update Required for Endpoints: Socket.IO and Webchat"
+!!! danger "Update Required for Endpoints: Socket.IO and Webchat"
     Starting from Cognigy.AI v4.75.0, clients using the Socket.IO and Webchat Endpoints must include `userId`, `sessionId`, and `URLToken` in the connection parameters. This functionality is automatically handled in `@cognigy/socket-client`, beginning with v4.5.3, and in WebchatWidget v2.36.0. Ensure that you upgrade if you are using earlier versions.
