@@ -5,7 +5,10 @@
 ---
 # Any Slots
 
-***Any Slots*** are catch-all placeholder slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder slot exactly it will populate a [Cognigy Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.
+!!! warning "Upcoming Feature Removal"
+    The Any Slots feature will be removed in version 4.83. Instead, utilize the [LLM Entity Extraction](../../nodes/other-nodes/llm-entity-extract.md) Node to identify Slots in the user input via LLMs.
+
+*Any Slots* are catch-all placeholder slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder slot exactly it will populate a [Cognigy Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.
 
 To add an Any Slot, simply annotate a single word in your example sentence and select the "Any-Slot" type. Then enter the desired slot name.
 

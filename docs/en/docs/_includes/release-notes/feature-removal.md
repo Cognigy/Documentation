@@ -1,0 +1,3 @@
+!!! warning "Upcoming Feature Removals"
+    - The [Cognigy Journeys](https://docs.cognigy.com/ai/resources/agents/journeys/) feature will be removed in version 4.77.
+    - The [Any Slots](https://docs.cognigy.com/ai/nlu/slot-mapping/any-slots/) feature will be removed in version 4.83. Instead, utilize the [LLM Entity Extraction](https://docs.cognigy.com/ai/nodes/other-nodes/llm-entity-extract/) Node to identify Slots in the user input via LLMs.
