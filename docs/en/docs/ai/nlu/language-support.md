@@ -44,7 +44,7 @@ For 28 of the most common languages, Cognigy.AI provides prebuilt entities that 
 The process of installing languages varies depending on the type of environment you are using:
 
 - **Shared SaaS**. You already have access to a preinstalled list of supported languages.
-- **Dedicated SaaS**. Request an extension of the initial list of supported languages by contacting [Cognigy technical support](../../help/get-help.md).
+- **Dedicated SaaS**. Extend the initial list of supported languages by contacting [Cognigy technical support](../../help/get-help.md).
 - **On-premises**. Refer to the installation [guide](../installation/migration/from-nlu-v1-to-v2-migration.md#choose-which-languages-to-deploy) for instructions on adding languages to your environment.
 
 ## Universal Language
