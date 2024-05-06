@@ -72,8 +72,8 @@
         6.3 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
             - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/introduction/model-card/).<br>
-        6.3 Click **Create**.<br>
-        6.4 Fill in the remaining field:<br>
+        6.4 Click **Create**.<br>
+        6.5 Fill in the remaining field:<br>
             - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.
 
 7. To apply changes, click **Save**.
