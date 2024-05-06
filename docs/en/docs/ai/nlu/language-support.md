@@ -5,9 +5,6 @@
 ---
 # Language Support
 
-## Overview of Supported Languages
-<div class="divider"></div>
-
 Cognigy.AI's on-board NLU is pre-trained with curated data from over 100 languages to support intent recognition and keyphrase detection. Any other natural (or artificial) language is supported based on language-agnostic NLU algorithms.
  
 For 28 of the most common languages, Cognigy.AI provides prebuilt entities that allow automatic processing of inputs like dates, currencies and others specific to a language that is defined in the Flow.
@@ -42,6 +39,13 @@ For 28 of the most common languages, Cognigy.AI provides prebuilt entities that 
 * Turkish
 * Vietnamese
 
+## Language Support in Different Environments
+
+The process of installing languages varies depending on the type of environment you are using:
+
+- **Shared SaaS**. On `trial`, `app`, and `au-02`, you already have access to a preinstalled list of supported languages. However, if you're on `app-us` and `app-uk` and want to add a language other than English or German, contact [Cognigy technical support](../../help/get-help.md).
+- **Dedicated SaaS**. To extend the initial list of supported languages, contact [Cognigy technical support](../../help/get-help.md).
+- **On-premises**. To add languages to your environment, refer to the installation [guide](../installation/migration/from-nlu-v1-to-v2-migration.md#choose-which-languages-to-deploy).
 
 ## Universal Language
 <div class="divider"></div>
