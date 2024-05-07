@@ -103,7 +103,7 @@ The changes will be applied.
 
 ## Configure Agent Access to all Inbox Conversations
 
-By default, your agents can see all messages within an Inbox.Note that this setting does not apply to agents with the `Andministrator` or `Supervisor` roles.
+By default, your agents can see all messages within an Inbox.
 
 To change this behavior for agents with the `Agent` role, do the following:
 
