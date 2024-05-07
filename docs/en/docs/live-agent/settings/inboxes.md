@@ -13,7 +13,6 @@ You can have an unlimited number of Inboxes in your Live Agent account, and you 
 Within the Inbox setting, you can customize the appearance of the Inbox, add and remove agents,
 configure message visibility for them, set up conversation routing, and add assistant bots.
 
-
 ## Create an Inbox
 
 To create an Inbox in Live Agent, do the following:
@@ -104,14 +103,17 @@ The changes will be applied.
 
 ## Configure Agent Access to all Inbox Conversations
 
-By default, your agents can see all messages within an Inbox. To change this behavior, do the following:
+By default, your agents can see all messages within an Inbox.
+
+To change this behavior for agents with the `Agent` role, do the following:
 
 1. Open the Live Agent interface.
 2. Go to **Settings > Inboxes**.
 3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
 4. In the **Conversation Assignment** section, disable the **Allow Agents to see all conversations in this inbox** setting.
 
-The changes will be applied.
+The changes will be applied. Note that this setting will not affect agents with the `Administrator` or `Supervisor` roles.
+They will still be able to see all messages within the Inbox.
 
 ## Remove Agents from an Inbox
 
