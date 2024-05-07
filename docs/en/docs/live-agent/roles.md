@@ -60,18 +60,18 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Inboxes
 
-| Actions                                    | Agent | Supervisor | Administrator |
-|--------------------------------------------|-------|------------|---------------|
-| Create an Inbox                            | -     | -          | +             |
-| Edit an Inbox                              | -     | -          | +             |
-| Delete an Inbox                            | -     | -          | +             |
-| Move Conversations from one Inbox to another [^4]       | +     | +          | +             |
-| Create AI Copilot Bot                      | -     | -          | +             |
-| Edit AI Copilot Bot                        | -     | -          | +             |
-| Delete AI Copilot Bot                      | -     | -          | +             |
-| Add Agents to the Inbox                    | -     | -          | +             |
-| Remove Agents from the Inbox               | -     | -          | +             |
-| Configure Conversation Assignment Settings | -     | -          | +             |
+| Actions                                           | Agent | Supervisor | Administrator |
+|---------------------------------------------------|-------|------------|---------------|
+| Create an Inbox                                   | -     | -          | +             |
+| Edit an Inbox                                     | -     | -          | +             |
+| Delete an Inbox                                   | -     | -          | +             |
+| Move Conversations from one Inbox to another [^4] | +     | +          | +             |
+| Create AI Copilot Bot                             | -     | -          | +             |
+| Edit AI Copilot Bot                               | -     | -          | +             |
+| Delete AI Copilot Bot                             | -     | -          | +             |
+| Add Agents to the Inbox                           | -     | -          | +             |
+| Remove Agents from the Inbox                      | -     | -          | +             |
+| Configure Conversation Assignment Settings        | -     | -          | +             |
 
 [^4]: Users with the `Agent` role can assign conversations to the inboxes they have access to.
 
@@ -197,6 +197,15 @@ To create an Agent with certain access rights, do the following steps:
 4. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
 
 To see the roles applied to the Agent, the specific Agent must log in once to have the roles applied.
+
+## Troubleshooting
+
+### Assigned Roles are not Applied
+
+If a human agent already has a specific role in Live Agent, assigned roles may not be applied.
+For example, if you want to assign a user with `Administrator` rights the role of `Supervisor`,
+the new role will only take effect once the user logs out of Cognigy.AI and Live Agent.
+After logging out and logging back in, the new roles should be applied successfully.
 
 ## More Information
 
