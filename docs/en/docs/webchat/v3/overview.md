@@ -19,6 +19,7 @@ Benefits of Webchat v3:
 - **Customization Options**. With Webchat v3, you can customize the appearance and behavior of the chat widget to align with your brand identity and user preferences.
 - **Advanced Functionality**. The latest version of Webchat provides advanced functionalities such as rich media support, chat history, and real-time typing indicators, enhancing the overall user experience.
 - **Modern Design Out of the Box**. With Webchat v3, you no longer need to spend time extensively configuring styles; most settings are within the Endpoint configuration, allowing you to adjust styles in a user-friendly interface.
+- **Legal Compliance**. Webchat v3 is fully aligned with WCAG 2.1 Level AA guidelines, guaranteeing enhanced readability, seamless navigation, and interactive functionality within the interface.
 
 If you're using Webchat v2 and looking to transition to Webchat v3, refer to the [migration guide](../migration.md).
 
