@@ -342,6 +342,7 @@ nav:
       - ai/nlu/external-nlu/external-nlu.md
       - ai/nlu/external-nlu/nlu-transformers.md
       - ai/nlu/external-nlu/no-nlu.md
+      - ai/nlu/external-nlu/intent-reranking.md
     - ai/nlu/language-support.md
     - ai/nlu/nlu-warnings.md
   - Tools:
