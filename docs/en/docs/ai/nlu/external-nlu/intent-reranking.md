@@ -53,27 +53,38 @@ To add descriptions to Intents, follow these steps:
 To add an LLM Prompt Node with the relevant prompt, follow these steps:
 
 1. In the Flow editor, add an LLM Prompt Node.
-2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** filed and enter a prompt that retrieves Intent names and descriptions from the Input object and defines the format of the output.
-   For example:
+2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** field and enter the following prompt for re-ranking:
 
     ```text
-    Given this user input: {{"{{input.text}}"}} and the following intent names and descriptions: 
-    
-    1. {{"{{ input.nlu.intentMapperResults.scores[0].name }}"}} - {{"{{ input.nlu.intentMapperResults.scores[0].description }}"}}
-    
-    2. {{"{{ input.nlu.intentMapperResults.scores[1].name }}"}} - {{"{{ input.nlu.intentMapperResults.scores[1].description }}"}}
-    
-    3. {{"{{ input.nlu.intentMapperResults.scores[2].name }}"}} - {{"{{ input.nlu.intentMapperResults.scores[2].description }}"}}
-    
-    4. {{"{{ input.nlu.intentMapperResults.scores[3].name }}"}} - {{"{{ input.nlu.intentMapperResults.scores[3].description }}"}}
-    
-    5. {{"{{ input.nlu.intentMapperResults.scores[4].name }}"}} - {{"{{ input.nlu.intentMapperResults.scores[4].description }}"}}
-    
-    Identify the correct intent name and output only this name.
+    Your are an expert in intent recognition. Given a list of intents, their descriptions, and a query, you need to choose the right intent for the query.
+
+    Given the following intents and descriptions:
+   
+    Intent 1: {{"{{ input.nlu.intentMapperResults.scores[0].name }}"}}
+    Description 1: {{"{{ input.nlu.intentMapperResults.scores[0].description }}"}}
+   
+    Intent 2: {{"{{ input.nlu.intentMapperResults.scores[1].name }}"}}
+    Description 2: {{"{{ input.nlu.intentMapperResults.scores[1].description }}"}}
+   
+    Intent 3: {{"{{ input.nlu.intentMapperResults.scores[2].name }}"}}
+    Description 3: {{"{{ input.nlu.intentMapperResults.scores[2].description }}"}}
+   
+    Intent 4: {{"{{ input.nlu.intentMapperResults.scores[3].name }}"}}
+    Description 4: {{"{{ input.nlu.intentMapperResults.scores[3].description }}"}}
+   
+    Intent 5: {{"{{ input.nlu.intentMapperResults.scores[4].name }}"}}
+    Description 5: {{"{{ input.nlu.intentMapperResults.scores[4].description }}"}}
+   
+    And the following query: {{"{{input.text}}"}}
+   
+    Choose the correct intent for the query. Output the intent using the JSON format as follows: {"intent": intent_name}
     ```
 
-3. _(Optional)_ If you want the model to return the similar result for the subsequent requests, specify a number in the **Seed** parameter. For example, `123`.
-4. Click **Save Node**.
+3. Navigate to the **Advanced** section and configure the recommended parameters as follows:<br>
+    3.1 From the **Sampling Method** list, select **Temperature** and set the temperature to `0`.<br>
+    3.2 From the **Response Format** list, select **JSON output**.
+4. _(Optional)_ If you want the model to return the similar result for the subsequent requests, specify a number in the **Seed** parameter. For example, `123`.
+5. Click **Save Node**.
 
 Now you can test your Flow via the Interaction Panel.
 
@@ -154,7 +165,7 @@ After applying the Cognigy NLU Intent mapping and external LLM reranking, the co
 
 ```json
 {
-    "promptResult": "Veggie Pizza"
+   "promptResult": "Based on the user query \"I'd like something low-calorie, but here's the catch—I don't eat any animal products, and I'm allergic to milk-based ingredients.\", the correct intent for this query is \"Veggie Pizza\".\n\nOutput:\n{\"intent\": \"Veggie Pizza\"}",
 }
 ```
 
