@@ -177,6 +177,7 @@ nav:
       - ai/resources/manage/members.md
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
+      - ai/resources/manage/user-and-session-identification.md
   - Nodes:
     - ai/nodes/overview.md
     - ai/nodes/node-usage.md
