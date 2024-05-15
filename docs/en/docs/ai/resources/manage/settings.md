@@ -62,8 +62,8 @@ Set the timezone that your virtual agent will operate in.
 
 ### Enable Case-Sensitive Intent Mapping
 
-When this setting is turned on, Intent Mapper considers case sensitivity and punctuation.
-Turn off the setting to ignore casing and punctuation in the Intent mapping process.
+When this setting is turned on, Intent Mapper considers case sensitivity.
+Turn off the setting to ignore casing in the Intent mapping process.
 
 Whenever you change this setting for the Agent, it will affect all the Flows within it.
 To ensure that the Flows work correctly, you need to train them again.
