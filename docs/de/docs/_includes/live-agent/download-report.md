@@ -1,1 +1,0 @@
-Um einen Bericht als CSV-Datei herunterzuladen, klicken Sie in der oberen rechten Ecke der Berichtsseite auf **Bericht herunterladen**.

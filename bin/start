@@ -1,9 +1,0 @@
-#!/bin/sh
-
-DIR="$( cd "$( dirname "$0" )" && pwd )"
-
-pip3 install -r requirements.txt
-
-cd "$DIR"; cd "../docs/en"
-
-mkdocs serve
