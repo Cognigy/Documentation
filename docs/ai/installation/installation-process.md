@@ -16,7 +16,7 @@ To install Cognigy.AI perform following steps:
 Once both Helm releases are successfully installed, you can open a web-browser and visit the URL which you have set in `serviceUi.host` parameter Cognigy.AI Helm release. You should be able to see the login screen of Cognigy.AI frontend application:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-login-screen.png" width="90%" />
+  <img class="image-center" src="../../../../_assets/ai/installation/cognigy-ai-login-screen.png" width="90%" />
   <figcaption>Login screen of Cognigy.AI v4</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ If `service-security` was restarted several times, to reset init user credential
 Once you obtained the initial user credentials, visit the web interface of Cognigy.AI, but replace the URL ending `/login` with `/license`. This will open our license activation screen which looks quite similar to the login-form but with an additional license-key field:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-license-key.png" width="90%" />
+  <img class="image-center" src="../../../../_assets/ai/installation/cognigy-ai-license-key.png" width="90%" />
   <figcaption>Activating Cognigy.AI Product License</figcaption>
 </figure>
 
