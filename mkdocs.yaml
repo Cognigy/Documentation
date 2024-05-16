@@ -726,6 +726,10 @@ markdown_extensions:
 extra_css:
   - _assets/style.css
 
+extra_javascript:
+  - _assets/cognigy.js
+  - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
+
 plugins:
   - glightbox
   - search
