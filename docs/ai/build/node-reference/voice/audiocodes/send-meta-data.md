@@ -6,7 +6,7 @@
 # Send Meta Data
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/audiocodes/send-metadata.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/send-metadata.png" width="80%" />
   <figcaption>AudioCodes Meta Data</figcaption>
 </figure>
 

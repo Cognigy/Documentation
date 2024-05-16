@@ -32,7 +32,7 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
 
     ---
 
-    Craft human-like, experienced assistants. Leverage existing knowledge bases to enhance your agents' expertise
+    Craft human-like, experienced agents. Leverage existing knowledge bases to enhance your agents' expertise
 
     [:octicons-arrow-right-24: Natural Language Understanding (NLU)](ai/empower/nlu/overview.md)<br>
     [:octicons-arrow-right-24: Large Language Models (LLMs)](ai/empower/llms.md)<br>

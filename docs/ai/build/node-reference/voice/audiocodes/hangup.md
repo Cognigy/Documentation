@@ -7,7 +7,7 @@ hidden: false
 # Hang Up
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/audiocodes/hang-up.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/hang-up.png" width="80%" />
   <figcaption>AudioCodes Hang Up</figcaption>
 </figure>
 

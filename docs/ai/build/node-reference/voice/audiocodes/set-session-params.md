@@ -7,7 +7,7 @@ hidden: false
 # Set Session Params
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/audiocodes/set-session-parameters.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/set-session-parameters.png" width="80%" />
   <figcaption>AudioCodes Set Session Parameters</figcaption>
 </figure>
 

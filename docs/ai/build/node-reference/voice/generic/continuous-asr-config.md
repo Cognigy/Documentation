@@ -7,7 +7,7 @@
 # Continuous ASR - Config
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/generic-voice/continuous-asr-config.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/continuous-asr-config.png" width="80%" />
   <figcaption>Generic Continuous ASR - Config Node</figcaption>
 </figure>
 

@@ -7,7 +7,7 @@
 # Send Metadata
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/vg/send-metadata.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/send-metadata.png" width="80%" />
   <figcaption>Voice Gateway Send Metadata Node</figcaption>
 </figure>
 

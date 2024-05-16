@@ -7,7 +7,7 @@
 # Play URL
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/generic-voice/play-url.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/play-url.png" width="80%" />
   <figcaption>Generic Play URL Node</figcaption>
 </figure>
 
