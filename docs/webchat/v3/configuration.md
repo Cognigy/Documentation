@@ -1,0 +1,354 @@
+---
+title: "Endpoint Configuration"
+slug: "configuration"
+description: "To prepare the Cognigy virtual agent for your website, you need to deploy it by creating a Webchat v3 Endpoint and customize the agent to fit your needs using the Webchat v3 Endpoint settings."
+hidden: false
+---
+
+# Webchat v3: Endpoint Configuration
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73(preview)-purple.svg)](../../release-notes/4.73.md)
+
+{! _includes/webchat/preview.md !}
+
+To prepare the virtual agent for your website, you need to deploy it by [creating a Webchat v3 Endpoint](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
+
+## Create a Webchat v3 Endpoint
+
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+4. On the **Endpoints** page, click **+ New Endpoint**.
+5. In the **New Endpoint** section, do the following:<br>
+   3.1 Select the **Webchat (v3)** Endpoint type.<br>
+   3.2 Add a unique name.<br>
+   3.3 Select a relevant Flow from the list.<br>
+6. Click **Save**.
+7. On the **Endpoint Editor** page, 
+
+## Configure General Settings
+
+The following general settings are available within this Endpoint:
+
+- [Endpoints Overview](../../ai/deploy/endpoints/overview.md)
+- [Data Protection & Analytics](../../ai/deploy/endpoints/data-protection-and-analytics.md)
+- [Transformer Functions](../../ai/deploy/endpoints/transformers/transformers.md)
+- [NLU Connectors](../../ai/empower/nlu/external/nlu-connectors.md)
+- [Session Management](../../ai/deploy/endpoints/session-management.md)
+- [Handover Settings](../../ai/deploy/endpoints/handover-settings.md)
+- [Real Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)
+- [AI Copilot](../../ai-copilot/overview.md)
+- [File Storage](../../ai/deploy/endpoints/file-storage.md)
+
+!!! tip "Supports Inject & Notify"
+    You can use the [Inject & Notify](../../ai/deploy/endpoints/inject-and-notify.md) feature with this Endpoint.
+
+## Configure Specific Settings
+
+Customize your webchat to meet your specific needs. 
+You can adjust colors and add features such as file uploads to enhance the effectiveness of your virtual agent. 
+Any updates you make will be instantly and seamlessly reflected when you load or reload your website with Webchat linked to the Endpoint.
+
+### Webchat Layout
+
+The Webchat Layout settings offer parameters for changing the Webchat Layout,
+including options to customize the title and logo of the Webchat interface.
+Additionally,
+settings outline a forthcoming feature allowing separate logos and names for messages from virtual and human agents.
+
+| Parameter                                                      | Description                                                                                                                                                                                                    |
+|----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                                                           | Customize the Webchat title at the top of the chat interface, which by default, corresponds to the name of your Agent.                                                                                         |
+| Logo URL                                                       | Customize the Webchat logo at the top of the chat interface. To do that, insert the URL of your desired image. Recommended formats: JPG, JPEG, SVG, PNG, GIF with a size of 28px x 28px.                       |
+| Use different logo and name for Virtual & Human Agent Messages | By default, the specified name and logo are applied to messages written by human and virtual agents. By activating this toggle, you can specify separate logos and names for virtual and human agent messages. |
+| AI Agent Avatar Name                                           | Customize the name displayed above each message sent by the virtual agent. If no input is provided, the Webchat name specified in the **Name** parameter will be displayed.                                    |
+| AI Agent Avatar Logo URL                                       | Customize the logo displayed above each message sent by the virtual agent. If no input is provided, the logo specified in the **Logo URL** parameter will be displayed.                                        |
+| Human Agent Avatar Name                                        | Customize the name displayed above each message sent by human agents. If no input is provided, the Webchat name specified in the **Name** parameter will be displayed.                                         |
+| Human Agent Avatar Logo URL                                    | Customize the logo displayed above each message sent by human agents. If no input is provided, the logo specified in the **Logo URL** parameter will be displayed.                                             |
+
+#### Colors
+
+The Colors settings offer parameters for customizing the Webchat v3 interface, including primary and secondary colors.
+Additionally, settings outline forthcoming features: background color adjustments for chat interface,
+virtual agent messages, user messages, and text links.
+
+| Parameter                 | Description                                                  |
+|---------------------------|--------------------------------------------------------------|
+| Primary Color             | The primary color for the Webchat interface.                 |
+| Secondary Color           | The secondary color for the Webchat interface.               |
+| Chat Interface Background | The background color for the chat interface.                 |
+| AI Agent Message          | The background color for the agent messages.                 |
+| User Message Background   | The background color for the user messages.                  |
+| Text Link                 | Color in which text links within messages will be displayed. |
+
+#### Advanced Layout Settings
+
+The Advanced Layout settings offer parameters for managing the chat interface, focusing on input behavior, HTML styling, and JavaScript usage.
+
+| Parameter                              | Description                                                                                                                                                                                                                                                                                                                                                       |
+|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Maximum Number of Input Rows           | This parameter determines the maximum limit of lines that can be entered into the Reply field. If the text exceeds this limit, a vertical scrollbar will automatically appear for easy navigation through the input text.                                                                                                                                         |                                                                                                                                                             |
+| Enable Input Collation                 | This parameter combines typed inputs from the Reply field into a single message after a one-second delay without new text input. Immediate feedback or rapid responses are sent right away, prompting the transmission of any grouped messages immediately afterward.                                                                                             |
+| Input Collation Timeout                | This parameter enables you to specify the time delay before the virtual agent groups together typed inputs. If users don't type anything new within this time frame, their previous inputs are consolidated into a single message. This approach ensures a complete message context, especially when users type slowly or send multiple related messages at once. |
+| Dynamic Image Aspect Ratio             | This parameter ensures that images displayed in gallery, attachment, or list output types maintain their original proportions. They fill the display area width without cropping or distortion.                                                                                                                                                                   |
+| Disable Input Autocomplete             | This parameter switches off the ability of the system to automatically suggest and complete words or phrases for all users.                                                                                                                                                                                                                                       |
+| Enable generic HTML                    | This parameter applies basic styling to HTML content within standard text messages. When this feature is activated, the system applies a general style format to HTML codes, enhancing the appearance of your text messages.                                                                                                                                      |
+| Allow JavaScript in HTML Message       | This parameter enables include JavaScript functionalities, such as `onclick` or `onload` attributes, in your HTML messages. By default, these elements are removed before displaying the message to minimize the risk of harmful content. Note, when this setting is activated, these elements will not be removed.                                               |
+| Allow JavaScript in Button/Action URLs | This parameter enables JavaScript functionalities within button or action URLs in your interface. Typically, JavaScript URLs starting with 'javascript:' are removed for security reasons. However, activating this setting preserves such URLs, allowing the embedded JavaScript code to execute when users interact with the button or element.                 |
+
+### Webchat Behavior
+
+The Webchat Behavior settings enhance communication by enabling typing indicators, customizing input text, enabling Speech-To-Text, Text-To-Speech features, adjusting message delay, ensuring focus after interaction, and alerting users to internet connection status.
+
+| Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Typing Indicators           | This parameter shows when the virtual agent is typing a response, helping users understand when to expect replies. When the parameter is turned on, a typing symbol appears, signaling that the virtual agent is processing your request and will respond soon.                                                                                                       |
+| Input Placeholder Text             | This parameter enables you to customize the placeholder text in the Reply field, indicating where users can type their messages to interact with the virtual agent. By default, it is set to `Type something…`                                                                                                                                                        |
+| Enable speech-to-text              | This parameter adds a microphone button to the Webchat interface. Users can convert speech into written text, providing a hands-free and easy way to communicate with the virtual agent. This feature is particularly beneficial for users who prefer speaking or may have difficulty typing their responses.                                                         |
+| Enable text-to-speech              | This parameter adds a Text-To-Speech (TTS) feature that converts text messages into spoken voice output. This feature is particularly useful for users who prefer or require auditory feedback. Configurations for this TTS feature can be further adjusted in the Chat Options section.                                                                              |
+| Message Delay                      | This parameter defines the duration Webchat waits before sending the virtual agent's response to your messages. By default, it's set to 500 milliseconds, promoting a more natural conversational flow and mitigating the impression of an immediate automated response.                                                                                              |
+| Focus Input after Postback         | This parameter ensures that after a Postback button or quick reply button is clicked, Webchat immediately redirects focus back to the Reply field.                                                                                                                                                                                                                    |
+| Enable Connection Status Indicator | This parameter displays a warning message if the user's internet connection is lost during a conversation with the virtual agent. This ensures users are aware of any potential interruptions or delays in the chat conversation. The warning automatically disappears once the internet connection is re-established, indicating that the chat can proceed normally. |
+
+#### Start Behavior
+
+The Start Behavior settings offer features for initiating conversations that include starting with a text field, button click, or automatic message, with customization options available.
+
+| Parameter      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Start Behavior | This parameter defines the initial action when initiating a new conversation with the virtual agent. You can select one of the following modes:<br>- **Start with a Text Field** — the conversation begins when an end user sends a message.<br>- **Start with a Button** — the conversation begins when an end user clicks the button that you configured.<br>- **Auto Send a Message to the Bot** — the conversation begins when the automated message that you configured is sent to the virtual agent. |
+| Text Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This parameter customizes the first message that starts the conversation with the virtual agent. It helps set the context and tone of the interaction, ensuring a purposeful and engaging start aligned with your objectives.                                                                                                                                                                       |
+| Data Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This parameter sends the additional data to your Flow.                                                                                                                                                                                                                                                                                                                                              |
+| Display Text   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This parameter presents a message as if it were entered by the user when the chat initiates. This simulation of a user input bubble creates an immediate and engaging interaction.                                                                                                                                                                                                                  |
+| Button Title   | This parameter is applicable to **Start with a Button** mode. This parameter customizes the text displayed on the Start Button, serving as the interactive prompt for users to begin their conversation with the virtual agent.                                                                                                                                                                                                                                                                            |
+
+#### Attachment Upload  
+
+The Attachment Upload settings offer features to upload files in Webchat, customize the upload area text, and choose where files are stored, such as AWS, Azure, or Google Cloud, along with the necessary connection credentials.
+
+| Parameter                | Description                                                                                                                                                                                         |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Allow Attachment Upload  | This parameter displays an attachment icon in the Webchat interface, allowing users to share files such as documents or images directly with agents in the chat.                                    |
+| Attachment Dropzone Text | This parameter allows customization of the text displayed on the file upload dropzone, instructing users to drag and drop the files they wish to upload. By default, it is set to `Drop to attach`. |
+| File Storage Provider    | This parameter appears when Allow Attachment Upload is activated. It allows you to select the platform where uploaded files will be stored, offering three options: AWS, Azure, or Google Cloud.    |
+| Connection               | This parameter allows you to specify credentials for the selected storage provider.                                                                                                                 |
+
+#### Business Hours
+
+The Business Hours settings help manage business hours in Webchat. They enable you to restrict Webchat availability by specifying behavior outside business hours, customize messages, set the time zone, and define operational days.
+
+| Parameter                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Business Hours            | This parameter restricts the availability of the Webchat widget to specified business hours, ensuring live chat support during those times. Outside of business hours, options include hiding, disabling, or displaying a message informing users. This feature assists companies in effectively managing customer support and aligning with operational timings.                                                                                                                                                                                                                                                                              |
+| Business Hours Mode              | This parameter defines the behavior when the virtual agent is accessed outside of business hours. Choose one of the following modes:<br>- **Inform users about calling out of business hours** — users will receive a message in the Webchat interface informing them that they are contacting the virtual agent outside of business hours.<br>- **Hide the Webchat Widget** — the Webchat widget will be completely hidden from users outside of business hours.<br>- **Disable the Webchat Widget** — the Webchat widget will be visible but disabled, preventing users from interacting with the virtual agent until business hours resume. |
+| Business Hours Information Text  | The parameter is applicable to the following modes: **Inform users about calling out of business hours** and **Disable the Webchat Widget**. This parameter determines the text that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Business Hours Information Title | The parameter is applicable to **Inform users about calling out of business hours** mode. This parameter determines the title that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Timezone                         | The parameter indicates the time zone used to calculate the office hours offset.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Start Time                       | The parameter indicates the beginning of the virtual agent's availability each day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| End Time                         | The parameter indicates the end of the virtual agent's availability each day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Day of the Week                  | The parameter indicates the operational days for the virtual agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+#### Unread Messages   
+
+The Unread Messages settings help users stay informed about unread messages in Webchat. They include features such as displaying message counts, previews, and notification sounds for timely responses.
+
+| Parameter                             | Description                                                                                                                                                                                                                                                                      |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Unread Message Title Indicator | This parameter displays the number of unread messages in the browser tab title every 1000 milliseconds, ensuring users stay updated and preventing any missed communication from the virtual agent, especially during multitasking with multiple tabs open.                      |
+| Enable Unread Message Badge           | This parameter displays the count of unread messages. This approach ensures users are aware of any new messages or responses from the virtual agent that they have yet to view, promoting timely and responsive interactions.                                                    |
+| Enable Unread Message Preview         | This parameter displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as it allows users to get an idea of the most recent communication without having to open and read through the entire conversation. |
+| Enable Unread Message Sound           | This parameter triggers a notification sound every time a user receives a new unread message.                                                                                                                                                                                    |
+
+### Home Screen
+
+The Home Screen settings enable personalization of welcome messages, backgrounds, and button texts, creating a user-friendly and brand-aligned initial chat interface.
+
+| Parameter                      | Description                                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Home Screen             | This parameter ensures that the home screen is displayed every time the Webchat widget is launched, creating a welcoming initial interface for users to begin their interaction. If the parameter is not activated, users will be shown the privacy note page (if activated) or the standard chat interface.                                                                                            |
+| Welcome Text                   | This parameter appears if **Enable Home Screen** is activated. This parameter lets you customize the greeting message shown upon launching the Webchat widget, providing users with an inviting entry point to the conversation. By default, the message is `Welcome! How can we help?`                                                                                                                 |
+| Background Image               | This parameter enables you to upload an image displayed as the background of the Webchat interface. If both a background image and color are configured, the image will be shown in the foreground. For optimal results, the recommended image size is `460px x 608px`.                                                                                                                                 |
+| Background Color/Gradient      | This parameter allows customization of the Home Screen background color or gradient in the Webchat interface. It accepts CSS color codes or gradient values, providing flexibility to align the chat interface's look with your brand's color schemes. By default, no color or gradient is set. Example hex code: `#05309e`. Example gradient: `linear-gradient(to left, rgba(1,1,1), rgba(5,48,158))`. |
+| Start Conversation Button Text | This parameter enables you to modify the text displayed on the Start Conversation button, providing the option to align it with your brand's voice or make the call-to-action more compelling. Personalizing this text can significantly enhance the user experience by making it feel more engaging and tailored. The default text is `Start conversation`.                                            |
+
+#### Conversation Starters
+
+The Conversation Starters settings offer pre-defined messages to prompt interactions with virtual agents, 
+enhancing user engagement and streamlining conversation flow. 
+You can customize messages, choose interaction types (Postback Value or URL), and add up to five starters.
+
+| Parameter                    | Description                                                                                                                                                                                                                                                                         |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Conversation Starters | This parameter enables pre-defined messages to be displayed on the home screen. Users can select a Starter to initiate a conversation with the virtual agent, enhancing user experience by providing insights into the agent's capabilities and facilitating smoother conversation. |
+| Title                        | This parameter lets you personalize the text of the conversation starter, adding customization and setting the tone for the conversation with the virtual agent.                                                                                                                    |
+| Type                         | This parameter determines the type of Conversation Starter, which can be set to either Postback Value or URL, offering different methods of interaction.                                                                                                                            |
+| Postback Value               | This parameter defines a specific message that is automatically sent to the Flow when a Conversation Starter is clicked, initiating a pre-defined conversation flow.                                                                                                                |
+| URL                          | This parameter lets you specify a URL to direct the user to when selecting a Conversation Starter, guiding users to relevant webpages or resources.                                                                                                                                 |
+| Add                          | This parameter allows you to add up to a maximum of 5 Conversation Starters to the list.                                                                                                                                                                                            |
+
+#### Previous Conversations
+
+The Previous Conversations settings enable users
+to access past interactions with the virtual agent within the last 30 days through a dedicated button on the home screen.
+You can customize the button text and header of the conversation screen to enhance usability and personalization.
+
+| Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Previous Conversations      | This parameter displays a Previous Conversations button on the home screen, allowing users to access past conversations with the virtual agent within the last 30 days using the same browser.<br><br>By default, previous conversations are stored in the local storage of the user's browser until the user clears this history or until they expire. To view local storage data on the website with your Webchat, use developer tools of your browser. For example, in the Google Chrome browser, open **Developer Tools**, navigate to **Application > Storage**, and expand **Local Storage**. Click a domain to view its key-value pairs. To preview the chat history below the table, select a pair.<br><br>You can change the default behavior by setting the parameter `useSessionStorage` to `true` [in the embedding code](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration). This way, previous conversations will be stored in the session storage until the user closes or reopens a browser tab. To view session storage data on the website with your Webchat, use developer tools of your browser. For example, in the Google Chrome browser, open **Developer Tools**, navigate to **Application > Storage**, and expand **Session Storage**. Click a domain to view its key-value pairs. To preview the chat history below the table, select a pair.<br>Note that for [Demo Webchat](../demo.md), data will always be stored in the session storage of the user's browser. |
+| Previous Conversations Button Text | This parameter lets you customize the text on the Previous Conversations button, which appears only if the feature is enabled. The default label is `Previous conversations`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Previous Conversation Title        | This parameter lets you customize the header of the Previous Conversations screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+### Teaser Message
+
+The Teaser Message settings include personalized teaser messages, the display of conversation starters, and the ability to define specific actions upon user interaction, such as sending messages or directing users to URLs.
+
+| Parameter                    | Description                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Teaser Message Text          | This parameter lets you customize a message displayed beside the Webchat icon. It aims to encourage user engagement by providing a preview of the interactive service. For example, you can use it for a question, a greeting, or an informative statement to spark users' interest in starting a conversation.                                       |
+| Show Teaser Message in Chat  | This parameter displays teaser messages directly within the chat window.                                                                                                                                                                                                                                                                              |
+| Enable Conversation Starters | This parameter enables pre-defined messages to appear on the home screen, allowing users to select a starter to initiate a conversation with the virtual agent. This feature enhances the user experience by providing examples of interaction and insights into the agent's capabilities, facilitating a smoother and more guided conversation flow. |
+| Title                        | This parameter enables you to personalize the text of the conversation starter, providing an introductory message for your conversation.                                                                                                                                                                                                              |
+| Type                         | This parameter sets the type of Conversation Starter, which can be either Postback Value or URL.                                                                                                                                                                                                                                                      |
+| Postback Value               | This parameter defines the specific value or message that will be automatically sent to the Flow when the user clicks on a Conversation Starter. This predetermined response initiates a pre-defined conversation pathway within the virtual agent.                                                                                                   |
+| URL                          | This parameter enables you to specify the particular URL that users will be directed to when they select a Conversation Starter. This feature can guide users to relevant webpages or resources, enhancing their experience by providing immediate access to needed information.                                                                      |
+| Add                          | This parameter enables you to include more Conversation Starters in your list, with a maximum limit of 5 Conversation Starters.                                                                                                                                                                                                                       |
+
+### Chat Options
+
+The Chat Options include enabling chat features, such as quick replies and conversation rating, as well as adding a footer section for additional information or navigation links.
+
+#### Enable Chat Options
+
+The Enable Chat Options settings offer features such as Quick Replies, Conversation Rating, and Footer,
+enhancing user interaction.
+You can customize the title of the Chat Options screen to personalize user experience.
+
+| Parameter           | Description                                                                                                                                                                                                                                   |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Chat Options | This parameter activates additional interactive features like Quick Replies, Conversation Rating, and Footer within the chat interface, broadening users' communication and feedback options for a richer interaction with the virtual agent. |
+| Title               | This parameter lets you customize the title of the Chat Options screen. By default, the title is `Chat options`.                                                                                                                              |
+
+#### Quick Replies
+
+The Quick Replies settings improve chat interactions with pre-defined response options that users can customize, manage, and use to direct users to URLs or trigger specific responses, enhancing the overall conversational experience.
+
+| Parameter                   | Description                                                                                                                                                                                                                                                                                                                      |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Quick Replies        | This parameter lets you display pre-defined quick response options at the top of the Chat Options screen. These quick replies simplify the chat process by providing ready-made responses that are sent to the Flow.                                                                                                             |
+| Quick Replies Section Title | This parameter lets you specify a title for the section of the chat interface where quick replies are offered. The default title is `People are also interested in`.                                                                                                                                                             |
+| Title                       | This parameter lets you personalize the text of the quick reply. You can tailor the quick responses to address frequently asked question or further information you might want to provide.                                                                                                                                       |
+| Type                        | This parameter determines the type of a Quick Reply, which can be set to either Postback Value or URL.                                                                                                                                                                                                                           |
+| Postback Value              | This parameter determines the specific value or message that will be automatically sent to the Flow when the user clicks on a Quick Reply. This predefined response initiates a particular conversation flow with the virtual agent, facilitating a direct, guided, and efficient user interaction based on the selected prompt. |
+| URL                         | This parameter defines the specific URL that users will be directed to when selecting a Quick Reply. It can guide users to relevant webpages or resources, enhancing their experience by providing immediate access to needed information.                                                                                       |
+| Add                         | This parameter enables you to include more Quick Replies in your list, with a maximum limit of 5 Quick Replies.                                                                                                                                                                                                                  |
+| TTS toggle label            | This parameter appears if the **Show text-to-speech** toggle is activated. It enables you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to **Enable text-to-speech**.                                                                                       |
+
+#### Conversation Rating
+
+The Conversation Rating settings offer a chat rating widget where users can rate their experience and provide feedback.
+You can customize text prompts and confirmation messages ensuring a user-friendly feedback process.
+
+| Parameter                          | Description                                                                                                                                                                                                                                                                        |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Rating Functionality        | This parameter activates the conversation rating mechanism in the chat options page, allowing users to rate and provide feedback on their chat experience. By enabling this feature, you can gather direct user feedback to continually improve the virtual agent's effectiveness. |
+| Rating Title Text                  | This parameter defines the text that would invite users to rate their chat experience. The default text is `Please rate your chat experience`.                                                                                                                                     |
+| Rating Comment Placeholder Text    | This parameter permits customization of the placeholder text that appears in the comment field where users can leave feedback about their chat experience. The default text is `Type something here`.                                                                              |
+| Rating Submit Button Text          | This parameter sets the text that appears on the button users click to submit their chat ratings and feedback. The default text is `Send feedback`.                                                                                                                                |
+| Rating Submitted Event Banner Text | This parameter enables you to customize the text that appears in a banner once a user has successfully submitted their rating and feedback. The default message is `Your feedback was submitted`.                                                                                  |
+
+#### Footer
+
+The Footer settings offer a customizable footer section to the chat interface.
+You can set a custom title for the footer, specify a URL for redirection upon clicking,
+and add up to 2 title-URL pairs for additional content.
+
+| Parameter     | Description                                                                                                                                                                                          |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Footer | This parameter adds a footer section to the Chat Options page. The footer can be used for various purposes such as legal statements, additional navigation links, or company information.            |
+| Title         | This parameter sets a custom title for the footer section of the chat interface. The default title is `Imprint`.                                                                                     |
+| URL           | This parameter specifies the URL or web page users will be redirected to when clicking the footer. It can direct users to additional resources or specific pages relevant to the footer information. |
+| Add           | This parameter lets you include a new Title and URL pair to the footer. You can add up to a maximum of 2 pairs for convenience, ensuring the footer remains uncluttered.                             |
+
+### Privacy Notice
+
+The Privacy Notice settings add privacy notices to the chat interface.
+It includes options to enable a custom Privacy Notice, set its title and text, customize the Submit button, define the link title and URL for the Privacy Policy. 
+These features ensure users are informed about data handling practices and consent to them, fostering trust and compliance with privacy regulations.
+
+| Parameter                 | Description                                                                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Privacy Notice            | This parameter prompts users to agree to a custom Privacy Notice before initiating a conversation with the virtual agent. It ensures that users are fully informed about how their data will be used during the chat. Acceptance of the privacy policy is required to enter the chat, ensuring compliance and user trust. If the user declines the privacy policy, the chat will not start, and no charges will apply. |
+| Enable Privacy Notice     | This parameter enables the display of a privacy notice at the beginning of each chat session, ensuring that users are informed about data handling practices and their consent is obtained.                                                                                                                                                                                                                            |
+| Privacy Notice Title      | This parameter changes the heading that appears at the top of the privacy notice screen. By default, it is set to `Privacy Notice`.                                                                                                                                                                                                                                                                                    |
+| Privacy Notice Text       | This parameter sets the message that users will see on the privacy notice prompt. The default text is Please accept our privacy policy to start your chat. You can customize this message to provide more detailed information about your data collection, usage practices, and users' rights, ensuring clarity and building trust from the outset of the chat interaction.                                            |
+| Submit Button             | This parameter changes the text displayed on the button users click to accept the Privacy Notice. By default, the button is labeled `Submit`.                                                                                                                                                                                                                                                                          |
+| Privacy Policy Link Title | This parameter enables you to specify the text that will be displayed as the title for the Privacy Policy link. It allows you to tailor the label of the link to better match the tone and context of your brand.                                                                                                                                                                                                      |
+| Privacy Policy Link URL   | This parameter sets the specific URL that directs users to your Privacy Policies.                                                                                                                                                                                                                                                                                                                                      |
+
+## Advanced Settings
+
+The Advanced settings offer customization features like adding watermarks and activating maintenance mode for transparent communication during updates. Webchat Custom Settings further enhance customization by allowing specific UI adjustments and feature integrations through JSON formatting.
+
+#### Watermark
+
+The Watermark settings
+users to personalize their chat interface with a watermark that suits their branding or platform,
+enhancing recognition and customization options.
+
+| Parameter      | Description                                                                                                                                                                                                                                                                                               |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Watermark      | This parameter lets you select the type of watermark that appears at the bottom of the chat interface, acting as a subtle brand or platform identifier. You have the ability to choose between **Default**, **Custom**, and **None**. If Default is selected, the Cognigy.AI Watermark will be displayed. |
+| Watermark Text | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your own text. The default text is `Powered by Cognigy.AI`.                                                                                                                            |
+
+#### Maintenance
+
+The Maintenance settings offer activating maintenance mode in a chat service, including notification, disabling, or hiding options. It allows for the customization of maintenance-related messages displayed to users.
+
+| Parameter                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Maintenance            | This parameter activates maintenance mode for the chat endpoint, allowing updates, feature testing, or backend work without impacting the user experience.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Maintenance Mode              | This parameter determines the behavior of the maintenance mode:<br> - **Inform Users About Maintenance Mode** — keeps the chat visible, displaying a custom message about the maintenance. Best for transparency with users, maintaining engagement without full service.<br>**Disable the Webchat Widget** — removes the chat interface from the site or app during maintenance. Best for major updates where functionality could be impacted, avoiding user confusion.<br>**Hide the Webchat Widget** — temporarily hides the chat widget, allowing for quick accessibility post-maintenance without a page reload. Best for short or frequent maintenance periods for a quick return to functionality. |
+| Maintenance Information Text  | This parameter is applicable to modes: **Inform users about maintenance mode** and **Disable the Webchat Widget**.<br>  It determines the text displayed to users during Maintenance mode, allowing for a customizable message to inform users about the maintenance activity or any other relevant information.                                                                                                                                                                                                                                                                                                                                                                                          |
+| Maintenance Information Title | This parameter is applicable to **Inform users about maintenance mode**.<br> It determines the title displayed to users during Maintenance mode, used to briefly describe the nature of the maintenance or provide a succinct message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+### Webchat Custom Settings
+
+The Webchat Custom settings offer advanced options 
+to change the appearance and behavior of your webchat beyond the standard settings. 
+These settings are specified using JSON format. Ensure the JSON is correctly formatted to prevent any potential crashes of the Webchat widget.
+
+The Webchat Custom settings are used:
+
+- To overwrite existing UI values.
+- To add values from embedding files not present in the GUI.
+- To specify parameters for your custom Webchat version in the Endpoint settings.
+- To utilize features from a newer Cognigy.AI version when using an older one.
+
+JSON example:
+
+```JSON
+{
+   "colors": {
+      "primaryColor": "red",
+      "backgroundColor": "red"
+   }
+}
+```
+
+### Webchat Plugins
+
+Add a link to the Webchat plugin.
+Note that you can add multiple plugins.
+For more information on how to create and trigger plugins, refer to [Webchat Plugins](../plugins.md).
+
+### Demo Webchat Settings
+
+Demo Webchat lets test integrations with different providers and preview Webchat's appearance before deployment. 
+It's a valuable tool for ensuring your Webchat functions as expected before launch.
+For more information on how to use this feature, refer to [Demo Webchat](../demo.md).
+
+## More Information
+
+- [Webchat v3: Overview](overview.md)
+- [Webchat v3: Features](features.md)
+- [Webchat v3: Embedding](embedding.md)

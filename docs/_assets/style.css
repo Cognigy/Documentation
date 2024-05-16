@@ -1,0 +1,73 @@
+/* image */
+.image-center {
+	margin: auto;
+}
+
+
+.md-grid {
+    max-width: 76rem;
+}
+
+.md-typeset .emojione, .md-typeset .gemoji, .md-typeset .twemoji {
+    --md-icon-size: 0.85rem;
+    display: inline-flex;
+    height: var(--md-icon-size);
+    vertical-align: text-top;
+}
+
+@media screen and (min-width: 60em) {
+    .md-search__input {
+        color: inherit;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .md-search__suggest {
+        font-size: .65rem;
+    }
+}
+
+.md-sidebar__scrollwrap:focus-within, .md-sidebar__scrollwrap:hover {
+    scrollbar-color: #9e9e9e #0000;
+}
+
+[dir=ltr] .md-source__icon+.md-source__repository {
+    font-size: 0.6rem;
+}
+
+.md-tabs__link {
+    font-size: .65rem;
+    margin-top: .7rem;
+}
+
+.md-typeset {
+    font-size: 0.7rem;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    font-size: .6rem;
+}
+
+.md-icon svg {
+    padding-top: 0.2rem;
+    display: block;
+    height: 1.15rem;
+    width: 1.15rem;
+}
+
+.md-nav {
+    font-size: .6rem;
+}
+
+.md-footer {
+    background: linear-gradient(to right, #33BED2, #A166FF, #025AFB); /* Adjust colors*/
+}
+
+.md-copyright {
+    font-size: .6rem;
+}
+
+.md-social__link svg {
+    max-height: .7rem;
+}
