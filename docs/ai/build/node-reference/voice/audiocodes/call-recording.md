@@ -6,7 +6,7 @@
 # Call Recording
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/audiocodes/call-recording.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/call-recording.png" width="80%" />
   <figcaption>AudioCodes Call Recording</figcaption>
 </figure>
 

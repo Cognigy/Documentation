@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../../../release-notes/4.61.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/vg/mute-speech-input.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/mute-speech-input.png" width="80%" />
   <figcaption>Voice Gateway Mute Speech Input</figcaption>
 </figure>
 

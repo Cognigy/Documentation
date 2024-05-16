@@ -37,7 +37,7 @@ Greyed-out Nodes indicate that they have not been localized yet.
 {! _includes/ai/localization/switch-a-locale.md !}
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/compare-localization-in-flows.jpg" width="100%" />
+  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/compare-localization-in-flows.jpg" width="70%" />
 </figure>
 
 Now you need to localize each Node separately.

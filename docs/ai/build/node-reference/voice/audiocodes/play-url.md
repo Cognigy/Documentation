@@ -6,7 +6,7 @@
 # Play URL
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/audiocodes/play-url.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/play-url.png" width="80%" />
   <figcaption>AudioCodes Play URL</figcaption>
 </figure>
 

@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/vg/call-recording.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/call-recording.png" width="80%" />
   <figcaption>Voice Gateway Call Recording</figcaption>
 </figure>
 
