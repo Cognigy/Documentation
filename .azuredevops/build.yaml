@@ -1,4 +1,4 @@
-name: documentation-new
+name: documentation
 
 trigger:
   batch: "true"
@@ -12,7 +12,7 @@ resources:
 variables:
   DOCKER_BUILDKIT: 1
   containerRegistryReference: "Azure Container Registry"
-  imageName: "documentation-new"
+  imageName: "documentation"
 
 pool:
   vmImage: ubuntu-20.04
