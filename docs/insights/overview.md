@@ -6,15 +6,10 @@ hidden: false
 
 # Cognigy Insights 
 
-Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
+**Cognigy Insights** replaces our previous static analytics dashboard and provides you with the tools you need to improve the customer experience your AI agents provide.
+Insights features a range of key metrics, helping you to understand the usage and the performance of your bots.
 
-Cognigy.AI has integrated analytics reporting functionalities, as well as an OData,
-interface our customers can rely on to retrieve their raw analytics data.
-Our integrated analytics dashboard provides a range of key metrics
-to understand the usage and the performance of your bots.
-We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots —
-hence we have created a new product
-called **Cognigy Insights**, which entirely replaces the static analytics dashboard with a whole set of new tools.
+Cognigy.AI offers both integrated analytics dashboards, as well as an OData access, allowing you to build your own dashboards, by retrieving your raw analytics data.
 
 As of release v4.10, Cognigy provides a completely new designed Analytics solution for Insights.
 
@@ -24,14 +19,11 @@ As of release v4.10, Cognigy provides a completely new designed Analytics soluti
 
 ## Dashboards
 
-Cognigy Insights is a new application that replaces the old and static analytics dashboard. Insights keeps track of the data of your customers while they interact with your virtual agents and makes that data available on a variety of new dashboards and new tools.
+Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with all of Cognigy's products.
+It features a variety of different dashboards and explorers to highlight different data types, which allow you to keep track of your customer's behaviour and the success of your AI agents. All of the collected data is also accessible through OData.
 
-Insights is a new application that co-exists side-by-side with Cognigy.AI and is tightly integrated into the Cognigy.AI product experience.
-
-With Cognigy.AI 4.10.0, we improved our capabilities to create metrics to have custom metrics for each service.
-
-- Start with creating a new Agent or selecting an existing Agent in your Cognigy.AI.
-- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click **Insights**. We have used this option prior to guiding users to our [Analytics](../ai/analyze/collecting-data.md) application.
+You can access Cognigy Insights, by opening the sidebar menu in Cognigy.AI and click on **Insights**, previously this had led to our [Analytics](../ai/analyze/collecting-data.md) application.
+In order to view the data correlating to a specific agent, you can select one from the dropdown menu in the upper left area.
 
 !!! note
     When you are in an agent-specific route in Cognigy.AI (Agent is selected), you should see Insights in the user menu pop-up. You can navigate to Insights of that Agent when you click on the menu item.
@@ -43,14 +35,20 @@ When switching from Cognigy.AI to Cognigy Insights, you will be redirected to th
   <figcaption>Overview dashboard</figcaption>
 </figure>
 
-You will find all sorts of different report types that visualize key metrics of your currently selected virtual agent. 
+Cognigy Insights features a variety of different dashboards and explorers, which visualize key metrics of your currently selected virtual agent. 
 
-Cognigy provides three categories of dashboards available via the Insight sideboard menu:
+We provide the following Dashboards:
 
 - [Overview](dashboards/overview.md)
 - [Engagement](dashboards/engagement.md)
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
+
+And additionally a set of Explorers:
+
+- [Message Explorer](explorers/message.md)
+- [Step Explorer](explorers/step.md)
+- [Transcript Explorer](explorers/transcript.md)
 
 ## Local Filters
 
