@@ -3,7 +3,7 @@ site_description: Documentation for Cognigy software products
 site_author: Cognigy GmbH
 copyright: Copyright &copy; 2024 <a href="https://www.cognigy.com/">Cognigy</a> GmbH
 
-site_url: https://docs-internal.cognigy.ai
+site_url: https://docs.cognigy.com/
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
 nav:
@@ -728,6 +728,8 @@ extra_css:
 
 extra_javascript:
   - _assets/cognigy.js
+  - _assets/js/custom.js
+  - _assets/js/mathjax.js
   - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
