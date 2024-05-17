@@ -50,13 +50,17 @@ And additionally a set of Explorers:
 - [Step Explorer](explorers/step.md)
 - [Transcript Explorer](explorers/transcript.md)
 
-## Local Filters
+## Filters
 
-The local filters are specific to an application and will be described in the corresponding section.
+Cognigy Insights features global and local filters. The filter bar only displays a small portion of the available filters openly. In order to access all filters, you have to click on **additional filters**. This list includes both global and local filters. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
-## Global filter
+**Global Filters**
 
-The global filters will be visible no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
+Global filters apply across the entirety of Cognigy Insights. Once you set them up, they persist throughout your session, even if you change from one dashboard to another.
+
+**Local Filters**
+
+Local filters are specific filters, which are only available for one or a few different dashboards. When you switch from one board to another, they will be temporarily disabled, but not removed from your selection.
 
 ## User menu
 
@@ -64,9 +68,10 @@ You can find the [user menu](../ai/administer/user-menu/overview.md) in the uppe
 
 ## Main menu
 
-Using the sidebar menu of Insights, you can select all the available data analytical applications to analyze the Agents' performance to improve the Agent for better understanding and improved user experience.
-The currently selected application is highlighted in a primary color and will be displayed next to the agent at the top as well.
-You can always go back to Cognigy.AI and your virtual Agent also by clicking the Cognigy.AI entry in the sidebar. 
+The sidebar menu of Insights, features all available dashboards and explorers and allows you to quickly switch between different analytics views to analyze your AI Agent's performance.
+
+You can always recognize the currently selected option as the one highlighted in a light blue-grey color in the menu bar, but also by the header displayed in the upper part of your screen.
+The sidebar also allows you to switch back to Cognigy.AI by clicking on the **Cognigy.AI** entry.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/insights-menu.png" width="100%" />
