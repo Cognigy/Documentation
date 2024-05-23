@@ -7,7 +7,7 @@ hidden: false
 
 # Insights Glossary
 
-Insights terms listed in alphabetical order. All the terms are given in the glossary for informational purposes.
+This glossary includes all terms related to our Insights tool listed in alphabetical order.
 
 ## A
 
