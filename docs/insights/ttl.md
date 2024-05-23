@@ -7,9 +7,9 @@
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
 
-*Data Expiration* (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
+The *Data Expiration* (TTL, time-to-live) displays the timespan until the Insights data expires. 
 
-To know when the data will be expired, click ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
+Click ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page to see when the data will expire. To view the value in minutes, hover the cursor over the current value.
 
 When Cognigy products are used daily, the data expiration values will remain unchanged, as the countdown starts from the last data update.
 
