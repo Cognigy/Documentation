@@ -74,7 +74,7 @@ There are several filters available to filter sessions. The filter bar, featurin
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Filters](#additional-filters)
+- [Local Filters](#local-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner. 
 
@@ -82,11 +82,11 @@ To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insig
 
 For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
-### Additional Filters
+### Local Filters
 
-You can use additional filters to refine your research.
+Local filters are unique to a specific explorer / dashboard. You can use them to refine your research.
 
-To open the **Additional Filters** selection,
+To open the **Local Filters** selection,
 click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page.
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
