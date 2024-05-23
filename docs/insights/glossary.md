@@ -53,6 +53,11 @@ _**Escalation**_
 _**Explorer**_
 : Analytical tools integrated into Cognigy Insights are designed to evaluate and display conversational data. The primary purpose of an Explorer is to assist you in understanding customer reactions (messages) during a conversation with your virtual agent, ultimately improving your service.
 
+## E
+
+_**Filter Bar**_
+: A bar displayed at the top of each Insights dashboard / explorer. It includes all **global filters** and **local filters**, most of which can be accessed by clicking on the "more filters"-button.
+
 ## G
 
 _**Global Filter**_
