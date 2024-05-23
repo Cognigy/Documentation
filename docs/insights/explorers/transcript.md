@@ -13,7 +13,7 @@ The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps yo
 provide better customer service, and enhance the overall user experience.
 It allows you to analyze transcripts of conversations between end users and agents in detail.
 The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
-For example, you can search for keywords such as booking, canceling, or messaging to find relevant messages quickly.
+For example, you can search for keywords such as booking, cancelling, or messaging to find relevant messages quickly.
 
 To open the Transcript Explorer, use one of the following options:
 
@@ -45,15 +45,15 @@ The list of sessions has the following parameters:
 
 | Title        | Description                                                                                                                                                                                                              |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Session ID   | The unique identifier assigned to each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
-| Contact ID   | The unique identifier for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.              |
+| Session ID   | The unique ID for each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
+| Contact ID   | The unique ID for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.              |
 | Messages     | The total number of messages within the specific session.                                                                                                                                                                |
 | Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                                |
 | Last Message | The date and time when the last message was received within the session.                                                                                                                                                 |
 
 ### Sort Sessions
 
-To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover the cursor over a column title and select the sorting option you prefer:
+Sessions can be sorted by their `Session ID`, `Messages`, or `Last Message` parameters. To select a sorting parameter, hover over a column title and select the option you prefer:
 
 - Click the up arrow ![arrow-up-black](../../_assets/icons/arrow-up-black.svg) to sort in ascending order.
 - Click the down arrow ![arrow-down-black](../../_assets/icons/arrow-down-black.svg) to sort in descending order.
@@ -69,7 +69,7 @@ The Transcript Explorer immediately updates the list of sessions according to th
 
 ## Filter Sessions
 
-By default, the Transcript Explorer shows the **Global Filters** section at the top of the page.
+There are several filters available to filter sessions. The filter bar, featuring **global** and **local filters** is visible right at the top of the page. A portion of the **global** and **local filters** are not immediately visible in the filter bar, instead you have to click on more filters to view and select them. 
 
 You can filter sessions by using the following options:
 
@@ -80,14 +80,14 @@ To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insig
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation.
+For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
 ### Additional Filters
 
 You can use additional filters to refine your research.
 
 To open the **Additional Filters** selection,
-click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
+click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page.
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 ## View Session Transcript
 
 Session transcripts are logged conversations between end users and agents. 
-The Transcript Explorer enables you to view session transcripts to analyze them for specific details. 
+The Transcript Explorer enables you to view session transcripts to analyze them, in order to better understand the interactions between the end users and agents.
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
 <figure>
@@ -116,16 +116,14 @@ To view a session transcript, select a session from the list on the **Transcript
 
 ### Session Transcript
 
-A session transcript shows all the individual messages
-exchanged between the end user and the agent during a conversation.
-When you select a session, the corresponding transcript will be displayed on the right side of the page.
+Session transcripts display all individual messages between the end user and agent during their conversation. By selecting a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
 #### Expert mode
 
 Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../../ai/test/interaction-panel/overview.md#expert-mode) documentation.
 
-This mode provides additional information for conversation messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads, xApp session details, and switching to a Flow related to this session.
+The Expert mode provides you with additional context about the conversation's messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads and xApp session details. It also allows you to switch to a Flow related to this session.
 
 To activate Expert mode, do the following:
 
