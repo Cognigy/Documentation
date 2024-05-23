@@ -76,7 +76,7 @@ You can filter sessions by using the following options:
 - [Global Filters](#global-filters)
 - [Local Filters](#local-filters)
 
-To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner. 
+To hide the **Filter Bar**, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner. 
 
 ### Global Filters
 
