@@ -31,7 +31,7 @@ _**Dashboard**_
 : A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
 
 _**Data Expiration**_
-: Data Expiration (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. For more information, read the [Data Expiration](ttl.md) documentation.
+: Data Expiration (TTL, time-to-live) displays the timespan until the expiration of the Insights data. For more information, read the [Data Expiration](ttl.md) documentation.
 
 _**Download Report**_
 : Each widget on the Insights dashboards provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
@@ -67,7 +67,7 @@ _**Live Agent Handovers**_
 : An Indicator chart that displays the number of handovers. Handovers occur when a virtual agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
 
 _**Local Filter**_
-: The Local Filter options are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
+: The Local Filters are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
 
 ## M
 
