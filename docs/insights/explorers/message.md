@@ -64,7 +64,7 @@ To go back to the filtered top messages again, click ![X-icon](../../_assets/ico
 
 The Message Explorer interface has a search field that allows you to look for specific messages.
 Your search will be filtered according to the settings you have configured.
-Once you have set your global and additional filter settings,
+Once you have set your global and local filters,
 you can enter keywords in the **![magnifying glass](../../_assets/icons/magnifying-glass.svg) Search** field at the top of the page
 to find messages that match your search criteria.
 You will then get a list of all messages that match your search.
@@ -78,25 +78,25 @@ The Message Explorer immediately updates the list of sessions according to the s
 
 ## Filter Messages
 
-By default, the Message Explorer shows the **Global Filters** section at the top of the page.
+By default, the Message Explorer shows the **Filter Bar** section at the top of the page.
 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Filters](#additional-filters)
+- [Local Filters](#local-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner.
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation.
+For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
-### Additional Filters
+### Local Filters
 
-You can use additional filters to refine your research.
+You can use Local Filters to refine your research.
 
-To open the **Additional Filters** selection,
-click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Message Explorer** page.
+To open the **Local Filters** selection,
+click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Filter Bar** section at the top of the **Message Explorer** page.
 
 | Additional  Filter | Description                                                                                                                                                                                                            |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
