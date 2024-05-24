@@ -21,6 +21,9 @@ Note that the Cognigy OData Endpoint only supports `GET` requests and does not s
    </div>
 </blockquote>
 
+!!! warning "Disclaimer"
+    The OData is not shown in real time.
+
 ## Usage and Authentication
 
 
