@@ -32,13 +32,13 @@ void
 
 ### actions.completeGoal || api.completeGoal
 
-Adds a defined goal to the **completedGoals** array in the **Input Object**.
+Completes the goal in **Insights.**
 
 **Parameters**
 
 | Parameter | Type   | Description                                                          |
 |-----------|--------|----------------------------------------------------------------------|
-| key       | string | The name of the goal that will be added to the completedGoals array. |
+| key       | string | The name of the goal that will be completed in Insights.             |
 
 **Returns**
 
