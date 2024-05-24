@@ -6,7 +6,7 @@ hidden: false
 
 # Step Explorer
 
-The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your virtual agent for better understanding, potentially increasing orders, bookings, or reducing support requests.
+The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your virtual agent. And potentially increas understanding, orders, and bookings, or reduce support requests.
 
 To open the Step Explorer, use one of the following options:
 
@@ -16,7 +16,7 @@ To open the Step Explorer, use one of the following options:
     3. Within the Agent interface, navigate to Insights using one of the following options:
         - In the left-side **Agent** menu, select **Insights**.
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
-        The Cognigy Insights Overview dashboard will be displayed by default.
+        The Cognigy Insights Overview dashboard will be displayed.
     4. In the left-side menu, select **Step Explorer**.
 
 === "Via Insights"
@@ -33,16 +33,16 @@ Each column on the Step Explorer page represents a Node or Intent [annotated](#b
 
 ## Before you Begin
 
-Differing from the Transcript Explorer and Message Explorer tools,
-the Step Explorer requires you to prepare data on the Cognigy.AI side to start gathering it.
-To do so, decide what you want to gather: Node data, Intent data, or both.
+The Step Explorer requires you to set configurations on the Cognigy.AI side in order to start gathering the data, unlike the Transcript Explorer and Message Explorer.
+
+To start collecting data for the Step Explorer, first decide what excactly you want to gather: Node data, Intent data, or both.
 
 ### Annotate Nodes
 
-To gather data on Nodes, you need to annotate them.
-This means providing descriptions of the actions to understand how the Node works and analyze its performance.
+In order to gather data on Nodes and analyze their performance, you need to add a title to the analytics step. You can optionally also leave a comment to provide context about how the Node works.
+We call this action annotating nodes.
 
-Node annotation helps you analyze customer reactions at specific stages of their interaction with a virtual agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment and make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
+Node annotation helps you analyze customer reactions at specific stages of their interaction with a virtual agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
 
 To annotate a Node, follow the steps below:
 
@@ -58,8 +58,8 @@ To annotate a Node, follow the steps below:
 
 ### Annotate Intents
 
-To gather data on Intents, you need to annotate them.
-This involves providing descriptions of the actions to understand how the Intent works and analyze its performance.
+In order to gather data on Intents and analyze their performance, you need to add a title to their analytics step. You can optionally also leave a comment to provide context about how the Intent works.
+We call this action annotating intents.
 
 Intent annotation helps you analyze customer behaviors and preferences within specific steps, such as behaviors and preferences regarding their ordering patterns. This analysis enables you to understand which products or categories are more popular among customers and provides insights into their purchasing habits and trends.
 
@@ -78,28 +78,35 @@ To annotate an Intent, follow these steps:
 ### Test your Flow
 
 To view the results on the Step Explorer page, test your virtual agent via the Interaction panel or the Demo Webchat.
+If you'd like to test your flow through the Interaction Panel, make sure to enable Interaction Panel / Playbook data in the *Filter Bar*
+
+To do so:
+
+1. Open the Cognigy Insights interface
+2. Clock on the **Endpoint** field in the **Filter Bar**
+3. Enable Interaction Panel / Playbook data
 
 ## Filter Steps
 
-By default, the Step Explorer shows the **Global Filters** section at the top of the page.
+By default, the Step Explorer shows the **Filter Bar** section at the top of the page.
 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Filters](#additional-filters)
+- [Local Filters](#local-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner.
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation.
+For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
-### Additional Filters
+### Local Filters
 
-You can use additional filters to refine your research.
+You can use local filters to refine your research.
 
-To open the **Additional Filters** selection,
-click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
+To open the **Local Filters** selection,
+click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Filter Bar** section at the top of the **Transcript Explorer** page.
 
 | Filter         | Description                                                                                                                                                                               |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
