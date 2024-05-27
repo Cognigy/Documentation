@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The Overview dashboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
+The Overview dashboard gives you a quick summary of important information about how customers are interacting with your AI Agent.
 
 The summary of key metrics is represented in the following charts:
 
@@ -26,7 +26,7 @@ Charts display data based on the global filter settings.
 
 ## Indicators
 
-### Active Contacts 
+### Active Contacts
 
 Indicates the total number of currently active user sessions in the last 15 minutes. This widget updates in a regular interval of 30 seconds.
 
@@ -260,7 +260,7 @@ Result:
 
 ### Unique Contacts
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Indicates the number of unique contacts (`userid`) during a given timespan. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
