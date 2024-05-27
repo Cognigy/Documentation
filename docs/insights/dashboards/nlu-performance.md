@@ -8,17 +8,17 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The NLU Performance dashboard provides valuable insights into the performance of your virtual agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
+The NLU Performance dashboard provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
-More information regarding NLU and Intents you can find in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
+You can find more information about our NLU and Intents in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
 
-The NLU Performance data of your Agent is visualized in the following charts:
+The NLU Performance data of your AI Agent is visualized in the following charts:
 
 - [Indicators](#indicators) 
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Charts display data based on the [global filter](../global-filters.md) settings. 
+These charts display data based on the [global filter](../global-filters.md) and local filter settings. 
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/dashboards/nlu/NLU_dashboard.png" width="100%" />
@@ -31,26 +31,25 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Understood Messages
 
-Indicates the percentage of understood messages occurred during conversations.
-A calculation example with data visualization in a bar chart
-you will find in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
+This indicates the percentage of how many messages were understood during conversations.
+You can find a calculation example with data visualization in a bar chart in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
 
-Indicates the average execution time on a timescale.
+This indicates the average execution time across a specific timespan.
 
 Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
-A calculation example with data visualization in a line chart you can find in the [Average Execution Time](#average-execution-time-1) chart. 
+You can find a calculation example with data visualization in a line chart in the [Average Execution Time](#average-execution-time-1) chart. 
 
 ### Avg Intent Score
 
-Indicates the average Intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
+This indicates the average Intent score in relation to the set timespan. The intent scores reference the quality of your Agent, as they display how well Intents matched in conversations.
 For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
 
-To find the average intent score, Insights sums up all the intent scores and divides by the total number of records.
+To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
 
 Source table:
 
@@ -245,7 +244,7 @@ Result:
 
 ### Average Execution Time
 
-Indicates the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
+Indicates the average execution time of a Flow process over a specific timespan. The chart indicates the average time it took to execute the Flow in ms. The time span itself can be adjusted using the global filter settings.
 
 Formula:
                              
