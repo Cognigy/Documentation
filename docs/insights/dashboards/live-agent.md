@@ -39,7 +39,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Live Agent Handovers
 
-Indicates the number of handovers. The handover occurs when a virtual agent transfers the conversation to a human agent. Multiple handovers may occur during a session.
+This overview shows the number of handovers. A handover occurs when an AI Agent transfers the conversation to a human agent, this can happen multiple times during a session.
 
 Source table:
 
@@ -58,7 +58,8 @@ Result: `7`
 
 ### Handover Rate
 
-Indicates the percentage of all sessions escalated to Cognigy Live Agent at least once, calculated as the ratio of Live Agent Escalations divided by total sessions. A lower value is better.
+The handover rate shows the percentage of all sessions escalated to Cognigy Live Agent at least once, calculated as the ratio of Live Agent Escalations divided by total sessions. 
+A lower value is considered to be better.
 
 If multiple handovers occur during a session, Cognigy counts them as one escalation.
 
@@ -80,7 +81,7 @@ Result: `60%`
 
 ### Avg. First Response Time
 
-Indicates the average time it takes for a human agent to send the first response to a user.
+This indicates the average time it takes for a human agent to send the first response to a user.
 
 Source table:
 
@@ -103,7 +104,7 @@ Result: `1 min 10 sec`
 
 ### Avg. Resolution Time
 
-Indicates the average difference between when a user request is escalated to a human agent and when the human agent resolves the conversation.
+This displays the average time needed to resolve a conversation, after a user has escalated it to a human agent.
 
 Source table:
 
@@ -144,7 +145,7 @@ Indicates the number of conversations that were temporarily suspended until a ti
 
 ### Handover End Reason
 
-Indicates the timescale of the following conversation statuses:
+Indicates the following conversation statutes on a timescale:
 
 - Abandoned — a conversation is closed because the user left a conversation.
 - Resolved — a conversation is closed because the user's problem was resolved.
@@ -203,7 +204,8 @@ Result:
 
 ### Live Agent Performance Times
 
-Indicates the timeline of the average first response and the average resolution time. This metric is calculated based on the number of sessions and helps evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
+This displays the average time until the human agent responds for the first time, as well as the average resolution time on a timescale. 
+This metric is calculated based on the number of sessions and helps evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
 The Resolution Time metric refers to the average time of a customer's interaction with a human agent, with a human agent, from the start of the handover sequence until the end of the session.
