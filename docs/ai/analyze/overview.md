@@ -26,6 +26,8 @@ Cognigy.AI provides an [OData Analytics Endpoint](odata.md) that enables adminis
 
 ## Dashbot and Chatbase
 
+{! _includes/release-notes/chatbase-removal.md !}
+
 Any Cognigy.AI endpoint can be natively connected to third-party analytics vendors [Dashbot or Chatbase](../deploy/endpoints/data-protection-and-analytics.md#available-external-analytics-services-).
 
 
