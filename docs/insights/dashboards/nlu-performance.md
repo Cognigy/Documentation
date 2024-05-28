@@ -18,7 +18,7 @@ The NLU Performance data of your AI Agent is visualized in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-These charts display data based on the [global filter](../global-filters.md) and local filter settings. 
+These charts display all data based on the [global filter](../global-filters.md) and local filter settings. 
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/dashboards/nlu/NLU_dashboard.png" width="100%" />
@@ -32,7 +32,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 ### Understood Messages
 
 This indicates the percentage of how many messages were understood during conversations.
-You can find a calculation example with data visualization in a bar chart in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
+You can find a calculation example with data visualization in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
 
@@ -42,7 +42,7 @@ Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
-You can find a calculation example with data visualization in a line chart in the [Average Execution Time](#average-execution-time-1) chart. 
+You can find a calculation example with data visualization in the [Average Execution Time](#average-execution-time-1) line chart. 
 
 ### Avg Intent Score
 
@@ -97,7 +97,7 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Indicates the number of understood messages and misunderstood messages in percentages over a period of time displayed in a bar chart.
 
 A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/analytics-data.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md).
 A message is not counted as understood
@@ -107,7 +107,7 @@ without configuring [LA AI Copilot](../../live-agent/assistants/la-ai-copilot.md
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
+which will take you to the application in Cognigy.AI for improving your Flow and Intents. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
 
 Source table:
 
@@ -143,7 +143,7 @@ Result:
 
 ### Top Intents
 
-Indicates the top-rated number of Intents used displayed in a horizontal bar chart, with a maximum of 6 Intents shown in the summary view and 25 in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
+This displays the top-rated number of Intents in a horizontal bar chart. A maximum of 6 Intents are shown in the summary view, while 25 are shown in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
 
 Source table: 
 
@@ -185,7 +185,7 @@ Result:
 
 ### Intents by Score Range
 
-The scoring range of found Intents displayed in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
+This chart shows the scoring range of found intents in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
 Clicking on the three-dots menu item,
 you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Flow.
 For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
@@ -244,7 +244,7 @@ Result:
 
 ### Average Execution Time
 
-Indicates the average execution time of a Flow process over a specific timespan. The chart indicates the average time it took to execute the Flow in ms. The time span itself can be adjusted using the global filter settings.
+Indicates the average execution time of a Flow process over a specific timespan. The chart indicates the average time it took to execute the Flow in milliseconds. The time span itself can be adjusted using the global filter settings.
 
 Formula:
                              
