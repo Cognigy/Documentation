@@ -114,8 +114,7 @@ In the [Data Protection & Analytics](data-protection-and-analytics.md) section, 
 
 #### Chatbase
 
-!!! danger "Support of Chatbase tool is ended"
-    Chatbase is an outdated analytics tool and is not supported any longer.
+{! _includes/release-notes/chatbase-removal.md !}
 
 Cognigy.AI can be connected directly to Google's **Chatbase** analytics platform. When enabled, your Chatbase bot's API key needs to be entered. All relevant data that enters the Endpoint is forwarded to Chatbase.
 
