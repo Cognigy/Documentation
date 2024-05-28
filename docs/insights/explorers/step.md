@@ -6,7 +6,7 @@ hidden: false
 
 # Step Explorer
 
-The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your virtual agent. And potentially increas understanding, orders, and bookings, or reduce support requests.
+The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your AI Agent. And potentially increas understanding, orders, and bookings, or reduce support requests.
 
 To open the Step Explorer, use one of the following options:
 
@@ -42,7 +42,7 @@ To start collecting data for the Step Explorer, first decide what excactly you w
 In order to gather data on Nodes and analyze their performance, you need to add a title to the analytics step. You can optionally also leave a comment to provide context about how the Node works.
 We call this action annotating nodes.
 
-Node annotation helps you analyze customer reactions at specific stages of their interaction with a virtual agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
+Node annotation helps you analyze customer reactions at specific stages of their interaction with a AI Agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
 
 To annotate a Node, follow the steps below:
 
@@ -77,7 +77,7 @@ To annotate an Intent, follow these steps:
 
 ### Test your Flow
 
-To view the results on the Step Explorer page, test your virtual agent via the Interaction panel or the Demo Webchat.
+To view the results on the Step Explorer page, test your AI Agent via the Interaction panel or the Demo Webchat.
 If you'd like to test your flow through the Interaction Panel, make sure to enable Interaction Panel / Playbook data in the *Filter Bar*
 
 To do so:
