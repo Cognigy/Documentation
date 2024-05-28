@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.73(preview)-purple.svg)](../../release-notes/4.73.md)
 
-{! _includes/webchat/preview.md !}
+{! _includes/webchat/beta.md !}
 
 To prepare the virtual agent for your website, you need to deploy it by [creating a Webchat v3 Endpoint](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
 

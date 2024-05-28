@@ -6,6 +6,8 @@ hidden: false
 
 # Webchat v2
 
+{! _includes/webchat/deprecation-webchat-v2.md !}
+
 _Webchat v2_ is a stable version of Cognigy Webchat, which is compatible with any version of Cognigy.AI.
 
 Benefits of Webchat v2:

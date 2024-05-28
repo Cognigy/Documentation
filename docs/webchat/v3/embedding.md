@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Embedding
 
-{! _includes/webchat/preview.md !}
+{! _includes/webchat/beta.md !}
 
 Embedding Webchat v3 into your website allows you to provide a conversational interface powered by virtual agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 

@@ -7,6 +7,8 @@ hidden: false
 
 # Webchat v2: Endpoint Configuration
 
+{! _includes/webchat/deprecation-webchat-v2.md !}
+
 To prepare the virtual agent for your website, you need to deploy it by [creating a Webchat v2 Endpoint](#create-a-webchat-v2-endpoint) and customize the agent to fit your needs using the [Webchat v2 Endpoint settings](#configure-specific-settings).
 
 ## Create a Webchat v2 Endpoint
