@@ -78,18 +78,6 @@ The Help Center Search feature allows you to search for potential answers within
   <figcaption>List of available Help Center articles</figcaption>
 </figure>
 
-### Journeys
-
-{! _includes/release-notes/cognigy-journeys-removal.md !}
-
-Journeys are on-screen tutorials that are a part of the [Cognigy Help Center](https://support.cognigy.com/hc/en-us) and offer step-by-step instructions directly within the Cognigy.AI user interface.
-
-<figure>
- <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_journeys.png">
-</figure>
-
-Head over to [Journeys](#journeys) for more information.
-
 ### Search
 
 The Search interface can be utilized to search for resources within the Project.

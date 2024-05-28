@@ -65,7 +65,6 @@ In the upper-right corner of the Flow interface, you will find the Project Toolb
 It provides quick access to Project-specific resources:
 
 - [Help Center Search](https://support.cognigy.com/hc/en-us)
-- [Journeys](projects.md#journeys)
 - [Search](projects.md#search)
 - [Tasks](projects.md#tasks)
 - [User Menu](../administer/user-menu/overview.md)

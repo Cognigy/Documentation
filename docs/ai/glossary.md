@@ -159,12 +159,6 @@ _**Interaction Panel**_
 : User interface for interacting with a virtual agent, directly from the Cognigy.AI platform. It can be accessed by clicking on the "Chat" button at the top right of the interface.
 For more information, read the [Interaction Panel](test/interaction-panel/overview.md) documentation.
 
-## J
-
-_**Journeys**_
-: On-screen tutorials that are part of Cognigy's Help Center that provide step-by-step instructions directly within the Cognigy.AI user interface.
-For more information, read the [Journeys](build/projects.md#journeys) documentation.
-
 ## K
 
 _**Keyphrase**_

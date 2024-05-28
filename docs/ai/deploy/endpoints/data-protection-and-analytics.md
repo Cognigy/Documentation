@@ -91,7 +91,11 @@ Defines whether we should store conversation histories in contact profiles for e
 You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.
 
 ### Available External Analytics Services:
+
 ##### Chatbase
+
+{! _includes/release-notes/chatbase-removal.md !}
+
 We have an integration with Chatbase. To get more information about Chatbase, follow [this](http://www.chatbase.com) link.
 
 ##### Dashbot
