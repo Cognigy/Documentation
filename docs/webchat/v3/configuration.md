@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.73(preview)-purple.svg)](../../release-notes/4.73.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.73(beta)-purple.svg)](../../release-notes/4.73.md)
 
 {! _includes/webchat/beta.md !}
 

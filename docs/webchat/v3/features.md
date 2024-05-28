@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../release-notes/4.75.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75(beta)-purple.svg)](../../release-notes/4.75.md)
 
 {! _includes/webchat/beta.md !}
 
