@@ -7,7 +7,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-The Engagement Dashboard is focused on customer interactions in conversations. Engagement performance of your Agent is visualized in the following charts:
+The Engagement Dashboard highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
 
 - [Indicators](#indicators) 
 - [Heat maps](#heat-maps)
@@ -27,7 +27,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
-Indicates the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
+Goals reaches displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
 
 Source table:
 
@@ -45,10 +45,9 @@ Result: `11`
 
 ### Avg. Session length
 
-Indicates how long the average session lasted.
+This indicates how long the average session lasted.
 
-Session length is the time difference between the timestamp of the first user input and the last user input.
-
+The session length is defined as the time difference between the timestamp of the first user input and the last user input.
 The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
 
 Source table:
@@ -63,7 +62,7 @@ Source table:
  | 2022/01/05 06:10 00 | 2022/01/05 06:20 00 | session-def |
 ```
 
-Calculation:
+How we calculate this:
 
 1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
 2. `Length of all sessions / total number of sessions`.
@@ -77,7 +76,7 @@ Result: `00:19:24`
 
 ### Positive Ratings
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+This indicates the total number of Positive Ratings the end user has given.
 
 Source table:
 
@@ -97,7 +96,7 @@ Result: `3`
 
 ### Containment Rate
 
-Indicates the ratio of sessions without any handover to all sessions.
+The containment rate is calculated by the ratio of sessions without any handover to all sessions.
 
 Source table:
 
@@ -113,7 +112,7 @@ Source table:
 | TOTAL       |     6     |        3          |    5     |
 ```  
 
-Formula:
+Our Formula:
 
 1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
    
@@ -125,7 +124,7 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
+Our handover heatmap displays the number of times a human agent was contacted throughout the day. It is possible for multiple handovers to occur during a session.
 
 Source table:
 
@@ -157,7 +156,7 @@ Result:
 
 ### Top Goals
 
-Indicates the top-rated number of goals reached. 
+Our top goals view displays the most achieved goals.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -221,9 +220,8 @@ Result:
 
 ### Handovers in Time
 
-Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
-
-Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
+The handovers in time graph displays the number of times a human agent was contacted. It is possible for multiple escalations to occur during a session.
+It displays the amount of times a Live Agent was called in relation to a timespan selected through our filter bar.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -272,7 +270,7 @@ Result:
 
 ### Unique Contacts
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+This shows the number of unique contacts (`userid`) in relation to the selected timespan. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
