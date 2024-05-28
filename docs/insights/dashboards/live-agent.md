@@ -11,12 +11,12 @@
 !!! note
     The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
-The Live Agent dashboard displays Live Agent metrics for a specific virtual agent.
+The Live Agent dashboard displays Live Agent metrics for a specific AI Agent.
 
 Using this dashboard, you can:
 
 - Keep track of how quickly human agents respond and resolve customer inquiries.
-- Monitor the total number of handovers for the virtual agent.
+- Monitor the total number of handovers for the AI Agent.
 - Summarize conversation statuses.
 - Evaluate conversation types based on assigned label.
 
