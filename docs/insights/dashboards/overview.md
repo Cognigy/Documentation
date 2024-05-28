@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The Overview dashboard gives you a quick summary of important information about how customers are interacting with your AI Agent.
+The Overview dashboard gives you a quick summary of how customers are interacting with your AI Agent.
 
 The summary of key metrics is represented in the following charts:
 
@@ -17,7 +17,7 @@ The summary of key metrics is represented in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Charts display data based on the global filter settings.
+All charts display data based on the global filter settings you've selected.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/dashboards/overview/overview_dashboard.png" width="100%" />
@@ -177,7 +177,7 @@ Result:
 
 ### Understood / Misunderstood Messages
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Indicates number of understood messages and misunderstood messages in percentages over a period of time, displayed in a bar chart.
 
 A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/overview.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md). 
 A message is not counted as understood
@@ -210,7 +210,7 @@ Result:
 
 ### Number of Inputs
 
-Indicates the time-related number of inputs displayed in a bar chart.
+Indicates the number of inputs displayed over a period of time in a bar chart.
 
 Source table:
 
@@ -236,7 +236,7 @@ Result:
 
 ### Sessions
 
-Indicates the number of sessions on a timescale
+Indicates the number of sessions on a timescale.
 
 Source table:
 
