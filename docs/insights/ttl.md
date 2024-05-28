@@ -9,7 +9,7 @@
 
 The *Data Expiration* (TTL, time-to-live) displays the timespan until the Insights data expires. 
 
-Click ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page to see when the data will expire. To view the value in minutes, hover the cursor over the current value.
+Click the ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page to see when the data will expire. To view the value in minutes, hover the cursor over the current value.
 
 When you use Cognigy products daily, the data expiration values won't change because the countdown resets with each data update.
 
@@ -35,7 +35,7 @@ To activate the Data Expiration feature, set limits via the [management-ui](../a
 
 If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
 
-The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Data obtained before setting the expiration value remains unaffected.
+The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Any Datasets obtained before setting the expiration value will remain unaffected from this change.
 
 For example:
 
@@ -47,7 +47,7 @@ For example:
 
 ## Change Data Expiration
 
-You can change the duration of data expiration via the [Management UI](../ai/administer/access/management-ui.md#expiration-values--ttl--for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
+You can change the duration of the data expiration via the [Management UI](../ai/administer/access/management-ui.md#expiration-values--ttl--for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
 
