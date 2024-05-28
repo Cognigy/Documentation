@@ -6,7 +6,7 @@ hidden: false
 
 # Message Explorer
 
-The Message Explorer is an analytics tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the [Transcript Explorer](transcript.md), which provides more session-related details and user profile data.
+The Message Explorer is an analytics tool in Cognigy Insights that helps you search for specific customer or AI Agent messages within a conversation. It shows messages the user has sent before and after the selected one to provide further context. It complements the [Transcript Explorer](transcript.md), which provides more session-related details and user profile data.
 
 The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It can answer questions such as "What triggers specific types of responses?" and "How often do customers react similarly?"
 
@@ -29,12 +29,12 @@ The Message Explorer interface will be displayed.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/explorers/message/message-explorer.png" width="100%" />
-  <figcaption>Message Explorer displays user and virtual agent messages</figcaption>
+  <figcaption>Message Explorer displays user and AI Agent messages</figcaption>
 </figure>
 
 ## Messages
 
-When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected Agent and display all messages for the selected time span. These messages include user messages, virtual agent messages, and agent messages, and are titled **Top Messages**.
+When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span. These messages include user messages, AI Agent messages, and agent messages, and are titled **Top Messages**.
 
 The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 30 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
@@ -101,7 +101,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 | Additional  Filter | Description                                                                                                                                                                                                            |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                      |
-| Source             | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
+| Source             | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
 | Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                               |
 | Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                  |
 
