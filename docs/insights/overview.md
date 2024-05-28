@@ -35,7 +35,7 @@ When switching from Cognigy.AI to Cognigy Insights, you will be redirected to th
   <figcaption>Overview dashboard</figcaption>
 </figure>
 
-Cognigy Insights features a variety of different dashboards and explorers, which visualize key metrics of your currently selected virtual agent. 
+Cognigy Insights features a variety of different dashboards and explorers, which visualize key metrics of your currently selected AI Agent. 
 
 We provide the following Dashboards:
 
