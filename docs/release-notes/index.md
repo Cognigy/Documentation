@@ -10,7 +10,8 @@ Cognigy release notes provide information on the features, improvements, and bug
 You'll find the corresponding release notes after opening one of the versions below.
 
 - **4.7x**:
-    - [4.76 (latest)](4.76.md)
+    - [4.77 (latest)](4.77.md)
+    - [4.76](4.76.md)
     - [4.75](4.75.md)
     - [4.74](4.74.md)
     - [4.73](4.73.md)
