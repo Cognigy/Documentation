@@ -1,11 +1,12 @@
 ---
- title: "Analytics data" 
- slug: "analytics-data" 
- hidden: false 
+title: "Analytics data" 
+slug: "analytics-data" 
+hidden: false 
 ---
-# Analytics data
 
-Within a [Code Node](overview.md) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
+# Analytics Data
+
+Within a [Code Node](overview.md), you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
 
 You can access the analytics data in a code node by using the key `analyticsdata`. For example:
 
@@ -13,7 +14,7 @@ You can access the analytics data in a code node by using the key `analyticsdata
 analyticsdata.intent = "test";
 ``` 
 
-## Analytics fields
+## Analytics Fields
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)
 
@@ -41,9 +42,20 @@ The following fields can be overwritten in a Code Node:
 | custom9        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
 | custom10       | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
 
-## Working with the custom fields
+## Custom Fields
 
-The custom fields are used to store any custom data into analytics. This can be any string value that has a maximum length of 512 characters. If you want to store more complex data, you can store a string field object as the value:
+Custom fields let you add extra data to your Analytics reports. 
+This feature helps you analyze your data more deeply and get insights beyond the standard metrics. By customizing your data, you can make better decisions that fit your specific business needs and goals.
+
+### Limitations
+
+- The maximum length of a custom field is 1024 characters.
+
+### Store Complex Custom Data
+
+For more complex data, you can use a string field object. 
+
+In this example, `custom1` stores a simple string value, while `custom2` uses a JSON representation of the `customData` object to store more complex information.
 
 ```javascript
 const customData = {
@@ -52,11 +64,11 @@ const customData = {
 
 analyticsdata.custom1 = "userFocusGroup: focusGroup1";
 analyticsdata.custom2 = JSON.stringify(customData);
-``` 
+```
 
-!!! warning "Max length of custom fields"
-    You can store a maximum of 512 characters as the value for each custom field.
+## Analytics Data Lifespan
 
-## Analytics data life span
-
-The analyticsdata object is generated for each Flow Execution. This means that any data you store in the analyticsdata object (for example, a custom field) will only be stored in analytics for this Flow Execution. On the next Flow Execution, there will be a new analyticsdata object with a new intent etc.
+The analyticsdata object is generated for each Flow Execution.
+This means that any data you store in the analyticsdata object
+(for example, a custom field) will only be stored in analytics for this Flow Execution.
+On the next Flow Execution, there will be a new analyticsdata object with a new Intent.
