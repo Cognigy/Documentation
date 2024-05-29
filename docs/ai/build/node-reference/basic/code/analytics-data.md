@@ -6,7 +6,7 @@ hidden: false
 
 # Analytics Data
 
-Within a [Code Node](overview.md) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
+Within a [Code Node](overview.md), you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
 
 You can access the analytics data in a code node by using the key `analyticsdata`. For example:
 
