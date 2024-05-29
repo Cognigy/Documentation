@@ -7,8 +7,7 @@ hidden: false
 
 # Migration From v2 to v3
 
-The page includes a comparative table outlining the key changes between chat versions to assist you in making migration decisions. 
-Also, there is a step-by-step guide for moving to the new version. When making your decision, keep in mind that Webchat v3 is in the preview stage, which may affect its stability and feature completeness compared to stable versions.
+The page includes a comparative table outlining the key changes between chat versions to assist you in migration to Webchat v3.
 
 ## Feature Comparison
 
@@ -30,6 +29,7 @@ Features that are not available for any of the versions are marked as N/A (Not a
 | Privacy Notice screen  | N/A                                                                                                                                                                      | Added the option to include a privacy notice screen containing notice text, title, submit button, and references to the privacy policy document.                                             |
 | Home screen            | N/A                                                                                                                                                                      | Introduced a new Home screen, allowing customization of the welcome message, background color, and image, along with options to add conversation starters and enable previous conversations. |
 | Chat History screen    | N/A; there is a simplified alternative, the Persistent History in the [embedding code](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). | Enabled access to view conversations on the new screen via navigation from the home screen.                                                                                                  |
+| xApp Overlay           | N/A                                                                                                                                                                      | Enabled opening xApp pages directly within the Webchat v3 interface.                                                                                                                         |
 
 ## How to Migrate
 

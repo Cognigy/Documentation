@@ -7,8 +7,9 @@ hidden: false
 
 # Webchat v2: Key Features
 
-Cognigy Webchat v2 offers several key features aimed at enhancing user interaction and navigation within conversations.
+{! _includes/webchat/deprecation-webchat-v2.md !}
 
+Cognigy Webchat v2 offers several key features aimed at enhancing user interaction and navigation within conversations.
 
 ## Chat UI
 
