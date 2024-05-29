@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Models (LLMs)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../release-notes/4.75.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
@@ -17,10 +17,6 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 The table below lists the LLMs supported by Cognigy out of the box.
 Alternatively, you can specify another model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name. For more information about adding a custom model for a selected LLM provider, refer to the [Add a Model](#add-a-model) section.
-
-{! _includes/release-notes/text-davinci-003-sunset.md !}
-
-{! _includes/ai/deprecated-azure-models.md !}
 
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & LLM-powered Answer Extraction | Generate Node Output | Knowledge Search | Sentiment Analysis | NLU Embedding Model |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-------------------------------------------------|----------------------|------------------|--------------------|---------------------|
@@ -35,7 +31,6 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                               | +                    | -                | +                  | -                   |
 | gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
-| text-davinci-003 ([Deprecated](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings))              | +                          | +                   | +                  | +               | +                     | +                                               | +                    | -                | -                  | -                   |
 | text-embedding-3-large                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | -                | -                  | +                   |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | +                | -                  | -                   |
 | **Anthropic**                                                                                                             |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
@@ -44,8 +39,10 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | claude-3-sonnet                                                                                                           | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | claude-v1-100k ([Deprecated](https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models))         | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | claude-instant-v1 ([Deprecated](https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models))      | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
-| **Google**                                                                                                                |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
+| **Google Vertex AI**                                                                                                      |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
 | text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
+| **Google Gemini**                                                                                                         |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
+| gemini-1.0-pro                                                                                                            | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
 | luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | luminous-embedding-128[^*]                                                                                                | -                          | -                   | -                  | -               | -                     | -                                               | -                    | +                | -                  | -                   |
@@ -67,7 +64,7 @@ To add a model to Cognigy.AI, follow these steps:
 To create a copy of the existing model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Clone** from the list.
 
 The model will contain the same settings as the initial one.
@@ -79,19 +76,19 @@ Setting a default model ensures a smooth transition when a specific model is rem
 To set a model as the default, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Make Default** from the list.
 
 The setting will be applied for the selected model.
 
-## Export a Model as Package
+## Export a Model as a Package
 
 To reuse a model in other agents, you can package the model.
 
 To package a model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Create a package**.
 4. Once the package has created, a new [task](../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
 
@@ -104,7 +101,7 @@ Note that a [default model](#set-a-model-as-default) cannot be deleted. Before d
 To delete a model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Delete**.
 4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
 

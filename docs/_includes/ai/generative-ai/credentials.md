@@ -44,14 +44,14 @@
             - **apiKey** — add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic.<br>
         6.4 Click **Create**.<br>
 
-    === "Google"
+    === "Google Vertex AI"
         6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
             - **Model Type** — select the **Completion** type. <br>
-            - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versioning) documentation. Note that only the `text-bison` models are supported by Cognigy.<br>
+            - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versioning) documentation. Note that, within this connection, Cognigy supports only the `text-bison` models.<br>
         6.2 Click **Save**.<br>
         6.3 Fill in the **Connection name** field by specifying a unique name for your connection.<br>
-        6.4 To upload the JSON file with a key for your model, you need to obtain this key. Go to the Google Vertex AI console.<br>
-        6.5 Click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Ensure that the Vertex AI API is enabled.<br>
+        6.4 To upload the JSON file with a key for your model, you need to obtain this key. Go to the Google Cloud console and find Vertex AI via the search bar.<br>
+        6.5 On the **Vertex AI** page, click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Ensure that the Vertex AI API is enabled.<br>
         6.6 In the left-side menu, go to the **IAM & Admin > Service Accounts**.<br>
         6.7 Select **Actions** and click **Manage Keys**.<br>
         6.8 On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
@@ -62,7 +62,23 @@
             - **Location** — add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.<br>
             - **API Endpoint** — add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model. For example, `us-central1-aiplatform.googleapis.com`. Note that the endpoint should be specified without `https://` or `http://`. <br>
             - **Publisher** — add an owner's name of the model. If not specified, `Google` will be used by default.
-               This parameter is optional.<br>
+               This parameter is optional.
+
+    === "Google Gemini"
+        6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
+            - **Model Type** — select the **Chat** type. <br>
+            - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Google Gemini](https://ai.google.dev/gemini-api/docs/models/gemini) documentation. Note that, within this connection, Cognigy supports only the `gemini` models.<br>
+        6.2 Click **Save**.<br>
+        6.3 Fill in the **Connection name** field by specifying a unique name for your connection.<br>
+        6.4 To upload the JSON file with a key for your model, you need to obtain this key. If you have previously used a key for the Google Vertex AI connection, you can also use this key for Google Gemini; proceed to step 6.10 to add the key. If you're setting up the connection for the first time, go to the Google Cloud console and find Vertex AI via the search bar.<br>
+        6.5 On the **Vertex AI** page, click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Ensure that the Vertex AI API is enabled.<br>
+        6.6 In the left-side menu, go to the **IAM & Admin > Service Accounts**.<br>
+        6.7 Select **Actions** and click **Manage Keys**.<br>
+        6.8 On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
+        6.9 In the appeared window, select the **JSON** key type and click **Create**. The file will be downloaded.<br>
+        6.10 In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
+        6.11 Click **Create**.<br>
+        6.12 In the **Location** field, add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.
 
     === "Aleph Alpha"
         6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>

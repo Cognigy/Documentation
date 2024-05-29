@@ -24,8 +24,6 @@ Before using this feature, create an account in one of the LLM Providers:
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-{! _includes/ai/deprecated-azure-models.md !}
-
 For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
 
 ## Create a Knowledge Store
