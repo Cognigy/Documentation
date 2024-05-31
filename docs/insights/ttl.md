@@ -7,9 +7,9 @@
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
 
-The *Data Expiration* (TTL, time-to-live) displays the timespan until the Insights data expires. 
+The *Data Expiration* (TTL, time-to-live) displays the time span until the Insights data expires. 
 
-Click the ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page to see when the data will expire. To view the value in minutes, hover the cursor over the current value.
+To see, when the data will expire, click the ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
 
 When you use Cognigy products daily, the data expiration values won't change because the countdown resets with each data update.
 
@@ -56,6 +56,6 @@ When you adjust the data expiration value, it will only apply to new data obtain
 If you manage multiple organizations, you can customize the Data Expiration settings for each organization independently through the Management UI.
 The default Data Expiration is set in the environment variable in the `values.yaml` file.
 
-**Please Note:**
+**Note:**
 Specifying the Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. 
 This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
