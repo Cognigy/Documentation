@@ -15,7 +15,7 @@ Insights can present time-based data, accounting to a user's time zone.
 
 By default, Insights uses the time zone of your device. You can override this in **My Profile**. 
 
-This is especially beneficial, when you travel a lot, and your device time zone is updated based on your location, or when you have multinational Agents with users all over the globe.
+This is especially beneficial, when you travel a lot, and your device time zone is updated based on your location, or when you have multinational AI Agents with users all over the globe.
 
 To change your time zone preferences:
 
