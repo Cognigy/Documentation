@@ -112,7 +112,7 @@ Source table:
 | TOTAL       |     6     |        3          |    5     |
 ```  
 
-Our Formula:
+Formula:
 
 1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
    
@@ -124,7 +124,7 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Our handover heatmap displays the number of times a human agent was contacted throughout the day. It is possible for multiple handovers to occur during a session.
+The handover heatmap displays the number of times a human agent was contacted throughout the day. It is possible for multiple handovers to occur during a session.
 
 Source table:
 
@@ -220,7 +220,7 @@ Result:
 
 ### Handovers in Time
 
-The handovers in time graph displays the number of times a human agent was contacted. It is possible for multiple escalations to occur during a session.
+The handovers in time charts displays how often a human agent was contacted. It is possible for multiple escalations to occur during a session.
 It displays the amount of times a Live Agent was called in relation to a timespan selected through our filter bar.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
