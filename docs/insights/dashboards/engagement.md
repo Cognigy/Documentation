@@ -62,7 +62,7 @@ Source table:
  | 2022/01/05 06:10 00 | 2022/01/05 06:20 00 | session-def |
 ```
 
-How we calculate this:
+Calculation:
 
 1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
 2. `Length of all sessions / total number of sessions`.
