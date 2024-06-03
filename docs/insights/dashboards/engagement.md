@@ -23,11 +23,11 @@ The Engagement Dashboard highlights customer interactions in conversations and v
 
 ## Indicators
 
-The Indicator charts presents real-time data that refreshes every 30 seconds.
+The Indicator charts displays real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
-This displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
+This chart displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
 
 Source table:
 
@@ -45,7 +45,7 @@ Result: `11`
 
 ### Avg. Session length
 
-This indicates how long the average session lasted.
+Displays how long the average session lasted.
 
 The session length is defined as the time difference between the timestamp of the first user input and the last user input.
 The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
@@ -76,7 +76,7 @@ Result: `00:19:24`
 
 ### Positive Ratings
 
-This indicates the total number of Positive Ratings the end user has given.
+Displays the total number of Positive Ratings the end user has given.
 
 Source table:
 
@@ -156,7 +156,7 @@ Result:
 
 ### Top Goals
 
-Our top goals view displays the most achieved goals.
+The top goals view displays the most achieved goals.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -250,7 +250,7 @@ Result:
 
 ### Positive Ratings over Time
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Displays the total number of Positive Ratings given as feedback by the end user.
 
 Source table:
 
@@ -270,7 +270,7 @@ Result:
 
 ### Unique Contacts
 
-This shows the number of unique contacts (`userid`) in relation to the selected timespan. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Displays the number of unique contacts (`userid`) in relation to the selected timespan. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
