@@ -124,7 +124,8 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-The handover heatmap displays the number of times a human agent was contacted throughout the day. It is possible for multiple handovers to occur during a session.
+The handover heatmap displays the number of times a human agent was contacted throughout the day. Multiple handovers can occur within a single session.
+
 
 Source table:
 
