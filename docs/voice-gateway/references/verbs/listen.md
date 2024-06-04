@@ -39,6 +39,10 @@ The full set of configuration parameters:
 | Parameters      | Description                                                                                                                                                                                                                                                        | Required |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | actionHook      | A webhook to receive an HTTP POST when the listen operation ends. The information will include the duration of the audio stream, and also a `digits` property if the recording was terminated by a DTMF key.                                                       | Yes      |
+| bidirectionalAudio.enabled | If this parameter is `true`, it enables bidirectional audio. The default value is `true`.                                                                                                                                                               | No       |
+| bidirectionalAudio.sampleRate| Required for audio streaming.                                                                                                                                                                                                                         | No       |
+| bidirectionalAudio.streaming | If this parameter is `true`, it enables audio streaming from your application to Jambonz (and the remote caller). The default value is `false`.                                                                                                       | No       |
+| disableBidirectionalAudio | If this parameter is `true`, it disables bidirectional audio.                                                                                                                                                                                            | No       |
 | finishOnKey     | The set of digits that can end the listen action.                                                                                                                                                                                                                  | No       |
 | maxLength       | The maximum length of the listened audio stream in seconds.                                                                                                                                                                                                        | No       |
 | metadata        | Arbitrary data to add to the JSON payload sent to the remote server when the WebSocket connection is first established.                                                                                                                                            | No       |
@@ -86,7 +90,7 @@ The far-end WebSocket server supplies bidirectional audio by sending a JSON text
 }
 ```
 
-In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 kHz.
+In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 Hz.
 
 Alternatively, a `wave` file format can be supplied by using type `wav` (or `wave`), and in this case, no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
 
