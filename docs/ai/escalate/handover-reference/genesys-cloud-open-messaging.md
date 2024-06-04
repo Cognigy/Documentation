@@ -99,28 +99,6 @@ After creating your inbound message flow, you will see this flow in the architec
 
 To learn more about designing the flow, see [Configure Inbound Message Flow](https://help.mypurecloud.com/articles/inbound-message-flows/) settings.
 
-#### Genesys Status / Bot Messages
-
-Status or Bot Messages configured within Genesys will be sent to the Cognigy Flow. To have this option enabled, please contact our Support Team.
-
-To display those messages, follow these steps:
-
-1. Configure your handover flow as usual and set a **Lookup** node after the **Handover to Agent** node.
-2. For the status within the **Lookup** node choose **Handover Status**.
-3. For the child **case** node choose `genericHandoverUpdate`.
-4. Now add your **Say** node to this branch to display the messages to the customer. As the Status/Bot
-messages will be sent to your node as input, you can use Cognigy Script to display them. Add
-`{{ "{{ input.data.request.text }}" }}` to your say node.
-5. After the **Say** node add a **Go To** node to continue the flow at the beginning of the **Lookup** node, to
-display all incoming Status/Bot messages.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
-</figure>
-
-
-If you use **Copilot**, you need to configure the same within your **Copilot** flow. Ensure to set the structure *above*
-before the actual **Copilot** nodes.
 
 #### Set up Message Routing
 
@@ -198,6 +176,40 @@ In [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) 
 
 To test connection, click **Open Demo Web Chat**.
 
+#### Genesys Status and Bot Messages
+
+Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed at the Endpoint. To have this feature flag enabled, contact Cognigy Support.
+
+To display Genesys Status and Bot messages, follow these steps:
+
+1. In your chosen Handover Flow, set a **Lookup** node below the **Handover to Agent** node. Set **Lookup** node as your Entrypoint.
+2. For the **Type** field within the **Lookup** node, select **Handover Status**.
+3. For the child **Case** node, select `genericHandoverUpdate`.
+4. Add your **Say** node to this branch to display the messages to the end user. As the Status/Bot
+messages will be sent to your node as input, you can use **CognigyScript** to display them. Add
+`{{ "{{ input.data.request.text }}" }}` to your say node.
+5. In the Handover Settings of the **Say** node, choose **User Only** as the Handover Output Destination.
+
+<figure>
+  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/say-node-setup.png" width="50%" />
+</figure>
+
+6. To display *all* incoming Genesys Status or Bot messages, add a **Go To** node below the **Say** node.
+7. In Select Node, choose **Lookup** and in Advanced choose **Go To Node and Wait for Input** from Execution Mode.
+
+<figure>
+  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-goto-setup.png" width="50%" />
+</figure>
+
+Your Genesys flow should look like this:
+
+<figure>
+  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
+</figure>
+
+
+If you use **AI Copilot**, you need to configure the Genesys Status and Bot Messages feature within your **AI Copilot** flow. Ensure to set the structure *above* the actual **AI Copilot** nodes.
+
 ## AI Copilot Workspace
 
 Within Genesys integration, you can use [AI Copilot Workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
@@ -265,4 +277,3 @@ To add the Script to the Inbound Message Flow, follow these steps:
 
 - [Genesys Cloud Guest Chat](genesys-cloud-guest-chat.md)
 
-[def]: ./../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.pn
