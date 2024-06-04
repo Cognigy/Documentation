@@ -689,6 +689,8 @@ theme:
     - toc.follow
     - search.suggest
     - navigation.tabs
+    - navigation.tabs.sticky
+    - content.tabs.link
 
     # render navigation bar at the top of the page
     - navigation.tracking
@@ -701,6 +703,10 @@ theme:
     - navigation.instant.progress
 
 markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: Anchor to this section
+      slugify: !!python/name:pymdownx.slugs.uslugify ''
   - abbr
   - attr_list
   - def_list
@@ -729,8 +735,8 @@ extra_css:
 
 extra_javascript:
   - _assets/cognigy.js
-  - _assets/js/custom.js
-  - _assets/js/mathjax.js
+  - _assets/custom.js
+  - _assets/mathjax.js
   - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
