@@ -236,7 +236,7 @@ Result:
 
 ### Sessions
 
-Indicates the number of sessions on a timescale.
+Displays the number of sessions on a timescale.
 
 Source table:
 
