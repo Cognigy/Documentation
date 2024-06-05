@@ -73,7 +73,7 @@ To use the **Endpoints** filter, proceed as follows:
 5. _(Optional)_ Activate the **Negate** option and select Endpoints you don't want to include in your analysis. All Endpoints except the selected ones will be included in your data charts.
 6. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field. 
-8. Click **Apply** to confirm and activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+8. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Snapshots
 
