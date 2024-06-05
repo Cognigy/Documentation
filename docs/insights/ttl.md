@@ -56,6 +56,5 @@ When you adjust the data expiration value, it will only apply to new data obtain
 If you manage multiple organizations, you can customize the Data Expiration settings for each organization independently through the Management UI.
 The default Data Expiration is set in the environment variable in the `values.yaml` file.
 
-**Note:**
-Specifying the Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. 
-This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
+!!! note 
+    Specifying the Data Expiration for a specific organization in the management ui overrides the environment setting for that organization. This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
