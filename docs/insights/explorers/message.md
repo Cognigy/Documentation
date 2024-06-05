@@ -89,7 +89,7 @@ To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insig
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
+For more information, read the [Global Filter](../global-filters.md) documentation. Some additional filters become available when you click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
 ### Local Filters
 
