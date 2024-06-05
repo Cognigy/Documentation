@@ -21,10 +21,13 @@ When the transcription is sent to this Endpoint, Cognigy will receive two variab
 The Voice Copilot Endpoint works with any [handover provider](../../escalate/handover-reference/overview.md) supported by Cognigy.
 
 ## Prerequisites
+
+For version 4.65 and later, this Endpoint is enabled by default.
  
-Activate this Endpoint on the Cognigy side:
-    - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premise installation, specify the following feature flag: `FEATURE_ENABLE_AGENT_ASSIST_VOICE: true`.
+For version 4.64 and earlier, enable this Endpoint on the Cognigy.AI side:
+ 
+- If you have a shared or dedicated SaaS installation, contact Cognigy technical support. 
+- If you have an on-premises installation, specify the following feature flag: `FEATURE_ENABLE_AGENT_ASSIST_VOICE: true`.
 
 ## Generic Endpoint Settings
 
