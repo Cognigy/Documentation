@@ -13,7 +13,7 @@ The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps yo
 provide better customer service, and enhance the overall user experience.
 It allows you to analyze transcripts of conversations between end users and agents in detail.
 The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
-For example, you can search for keywords such as booking, cancelling, or messaging to find relevant messages quickly.
+For example, you can search for keywords such as booking, canceling, or messaging to find relevant messages quickly.
 
 To open the Transcript Explorer, use one of the following options:
 
