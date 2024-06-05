@@ -97,7 +97,7 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
-Indicates the number of understood messages and misunderstood messages in percentages over a period of time displayed in a bar chart.
+Displays the percentage of messages understood and misunderstood by the system over a selected time frame.
 
 A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/analytics-data.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md).
 A message is not counted as understood
