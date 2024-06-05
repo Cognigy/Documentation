@@ -43,8 +43,7 @@ If you have changed a time frame, click **Apply** to confirm and activate this f
 
 ### Select a Custom Time Period
 
-You can select hours for the chosen time frame. This might be helpful if you need to narrow the results down to a specific time period.
-
+You can select specific hours within the chosen time frame to narrow down your results to a more precise time period.
 To define a custom time frame, proceed as follows:
 
 1. Open the Insights interface.
