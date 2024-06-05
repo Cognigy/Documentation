@@ -177,7 +177,7 @@ Result:
 
 ### Understood / Misunderstood Messages
 
-Indicates number of understood messages and misunderstood messages in percentages over a period of time, displayed in a bar chart.
+Displays the number of understood messages and misunderstood messages in percentages over a period of time.
 
 A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/overview.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md). 
 A message is not counted as understood
