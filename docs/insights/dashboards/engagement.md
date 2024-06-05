@@ -96,7 +96,7 @@ Result: `3`
 
 ### Containment Rate
 
-The containment rate is calculated by the ratio of sessions without any handover to all sessions.
+Displays containment rate. The containment rate is calculated by the ratio of sessions without any handover to all sessions.
 
 Source table:
 
