@@ -77,7 +77,7 @@ To use the **Endpoints** filter, proceed as follows:
 
 ## Snapshots
 
-Snapshots save the current form of your AI Agent and include Flows, Lexicons, Connections, Functions, and more. They serve as an immutable form of an AI Agent in Cognigy.AI.
+Snapshots save the current form of your AI Agent and include Flows, Lexicons, Connections, Functions, and more. The Snapshots serve as an immutable form of an AI Agent in Cognigy.AI.
 For more information, read the [Snapshots](../ai/deploy/snapshots.md) documentation.
 
 To use the **Snapshot** filter, proceed as follows:
