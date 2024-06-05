@@ -41,7 +41,7 @@ For example:
 
 > You set a 1-minute expiration value at 13:00 for Sessions in the management-ui service.
 > 
-> All Sessions created after 13:00 will automatically terminate after 1 minute due to the 1-minute expiration date set in management-ui.
+> All Sessions created after 13:00 will automatically expire after 1 minute due to the 1-minute expiration date set in management-ui.
 > 
 > Sessions created before 13:00 will remain unchanged.
 
