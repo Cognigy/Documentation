@@ -143,8 +143,7 @@ Result:
 
 ### Top Intents
 
-This displays the top-rated number of Intents in a horizontal bar chart. A maximum of 6 Intents are shown in the summary view, while 25 are shown in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
-
+Displays the top-rated number of Intents. The summary view shows a maximum of 6 Intents, while the detailed view displays up to 25. Matching an Intent triggers its recording in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
 Source table: 
 
 ```txt
