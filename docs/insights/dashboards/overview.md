@@ -210,7 +210,7 @@ Result:
 
 ### Number of Inputs
 
-Indicates the number of inputs displayed over a period of time in a bar chart.
+Displays the number of inputs displayed over a period of time.
 
 Source table:
 
