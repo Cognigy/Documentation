@@ -36,8 +36,7 @@ You can find a calculation example with data visualization in the [Understood/Mi
 
 ### Average Execution Time
 
-This indicates the average execution time across a specific timespan.
-
+Displays the average execution time across a specific timespan.
 Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
