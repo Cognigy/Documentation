@@ -47,7 +47,7 @@ Node annotation helps you analyze customer reactions at specific stages of their
 To annotate a Node, follow the steps below:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an AI Agent.
+2. In the left-side menu, select a Project.
 3. Navigate to **Build > Flows**.
 4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or using an existing one.
 5. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or using an existing one.
