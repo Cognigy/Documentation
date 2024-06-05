@@ -6,7 +6,7 @@ hidden: false
 
 # Step Explorer
 
-The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your AI Agent. And potentially increas understanding, orders, and bookings, or reduce support requests.
+The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your AI Agent, potentially increasing understanding, orders, bookings, or reducing support requests.
 
 To open the Step Explorer, use one of the following options:
 
