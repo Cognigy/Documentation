@@ -94,7 +94,7 @@ To use the **Snapshot** filter, proceed as follows:
 
 ## Locales
 
-The **Locales** filter allows you to filter the data to include or exclude one or more languages / locales.
+The **Locales** filter allows you to filter the data to include or exclude one or more languages or locales.
 For more information, read the [Localization](../ai/build/translation-and-localization/localization.md) documentation.
 
 To use the **Locales** filter, proceed as follows:
