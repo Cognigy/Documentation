@@ -221,8 +221,7 @@ Result:
 
 ### Handovers in Time
 
-The handovers in time chart displays how often a human agent was contacted. It is possible for multiple escalations to occur during a session.
-Displays the number of times a Live Agent was called in relation to a timespan selected through our filter bar.
+Displays the number of times a human agent was contacted within the filtered time frame. Multiple handovers can occur within a single session.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
