@@ -205,7 +205,7 @@ Result:
 ### Live Agent Performance Times
 
 This displays the average time until the human agent's first response, as well as the average resolution time on a timescale. 
-This metric is calculated based on the number of sessions and helps evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
+This metric is calculated based on the number of sessions and helps evaluate human agent effectiveness by comparing response and resolution times.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
 The Resolution Time metric refers to the average time of a customer's interaction with a human agent, with a human agent, from the start of the handover sequence until the end of the session.
