@@ -80,7 +80,7 @@ To hide the **Filter Bar**, click ![insight-filter-black](../../_assets/icons/in
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation. Some **global filters** will become accessible by clicking on **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
+For more information, read the [Global Filter](../global-filters.md) documentation.
 
 ### Local Filters
 
