@@ -58,9 +58,7 @@ Result: `7`
 
 ### Handover Rate
 
-The handover rate shows the percentage of all sessions escalated to Cognigy Live Agent at least once, calculated as the ratio of Live Agent Escalations divided by total sessions. 
-A lower value is considered to be better.
-
+Displays the percentage of sessions needing human assistance. The handover rate is calculated as the ratio of Live Agent Escalations divided by total sessions. A lower value indicates fewer sessions needing human assistance.
 If multiple handovers occur during a session, Cognigy counts them as one escalation.
 
 Source table:
