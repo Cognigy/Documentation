@@ -21,12 +21,9 @@ As of release v4.10, Cognigy provides a completely new designed Analytics soluti
 
 Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with all of Cognigy's products.
 Insights features a variety of dashboards and explorers to highlight different data types, enabling you to track your customers' behavior and the success of your AI Agents. Additionally, all collected data is accessible through OData.
-You can access Cognigy Insights, by opening the sidebar menu in Cognigy.AI and click on **Insights**, previously this had led to our [Analytics](../ai/analyze/collecting-data.md) application.
-In order to view the data correlating to a specific agent, you can select one from the dropdown menu in the upper left area.
+Insights operates within individual Cognigy.AI Projects. This allows you to analyze data specific to each Project and switch between Projects seamlessly. However, comparing data across Projects simultaneously is not supported.
 
-!!! note
-    When you are in an agent-specific route in Cognigy.AI (Agent is selected), you should see Insights in the user menu pop-up. You can navigate to Insights of that Agent when you click on the menu item.
-
+Access Cognigy Insights by opening the left-side menu in a Cognigy.AI Project and selecting **Insights**. To switch Projects within Insights, use the dropdown menu in the upper-left corner.
 When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Dashboard** section, starting on the Overview dashboard.
 
 <figure>
