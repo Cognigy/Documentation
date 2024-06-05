@@ -80,7 +80,6 @@ To annotate an Intent, follow these steps:
 To view the results on the Step Explorer page, test your AI Agent via the Interaction Panel or Demo Webchat.
 To view the Interaction Panel and Playbook data for your AI Agent, follow these steps:
 
-To do so:
 
 1. Open the Cognigy Insights interface
 2. Clock on the **Endpoint** field in the **Filter Bar**
