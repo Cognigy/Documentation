@@ -37,7 +37,7 @@ When switching from Cognigy.AI to Cognigy Insights, you will be redirected to th
 
 Cognigy Insights features a variety of different dashboards and explorers, which visualize key metrics of your currently selected AI Agent. 
 
-We provide the following Dashboards:
+Insights provides the following Dashboards:
 
 - [Overview](dashboards/overview.md)
 - [Engagement](dashboards/engagement.md)
