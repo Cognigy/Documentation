@@ -58,6 +58,15 @@ such as [Set Session Config](../../ai/build/node-reference/voice/voice-gateway/s
 [Say](../../ai/build/node-reference/basic/say.md#voice-gateway), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
 or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generic/session-speech-parameters-config.md).
 
+## On-Premise Speech Service
+
+Voice Gateway supports on-premise configuration of **Microsoft Azure**, **Deepgram** and **Nuance** Speech Services.
+
+To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
+
+To connect to your speech services on premises, you need to provide custom URI Container for **Deepgram** or **Nuance**. 
+For **Microsoft Azure**, you need Azure Docker container URLs, including a subscription key (if required).
+
 ## More Information
 
 - [TTS and STT Vendors](../references/tts-and-stt-vendors.md)
