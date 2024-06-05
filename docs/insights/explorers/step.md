@@ -35,7 +35,7 @@ Each column on the Step Explorer page represents a Node or Intent [annotated](#b
 
 The Step Explorer requires you to set configurations on the Cognigy.AI side in order to start gathering the data, unlike the Transcript Explorer and Message Explorer.
 
-To start collecting data for the Step Explorer, first decide what excactly you want to gather: Node data, Intent data, or both.
+Before collecting data with the Step Explorer, determine the data you need: Node data, Intent data, or a combination of both.
 
 ### Annotate Nodes
 
