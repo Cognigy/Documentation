@@ -145,7 +145,7 @@ Indicates the number of conversations that were temporarily suspended until a ti
 
 ### Handover End Reason
 
-Indicates the following conversation statutes on a timescale:
+Displays the following conversation statuses on a timescale:
 
 - Abandoned — a conversation is closed because the user left a conversation.
 - Resolved — a conversation is closed because the user's problem was resolved.
