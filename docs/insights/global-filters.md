@@ -100,7 +100,7 @@ For more information, read the [Localization](../ai/build/translation-and-locali
 To use the **Locales** filter, proceed as follows:
 
 1. Open the Insights interface.
-2. At the top of the Insights page, you will see the **Filter Bar**, click on **more filters**.
+2. At the top of the Insights page, go to the filter bar and click **more filters**.
 3. Under **Locales**, open the list by clicking on it.
 4. Use the **Type to search** field to find a specific Locale or select Locales from the list.
 5. _(Optional)_ Activate the **Negate** option to select the Locales you don't want to include in your analysis. All Locales except the selected ones will be considered for analysis.
