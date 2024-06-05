@@ -48,7 +48,7 @@ You can select hours for the chosen time frame. This might be helpful if you nee
 To define a custom time frame, proceed as follows:
 
 1. Open the Insights interface.
-2. At the top of the Insights page, you will see the **Filter Bar**.
+2. At the top of the Insights page, go to the filter bar.
 3. In the **Time Span** filter, select **Custom Period**. 
 4. Activate the **Select time** option to include hours in your selection. 
 5. Click **Start Date** to open a date picker calendar. 
