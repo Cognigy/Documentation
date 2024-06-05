@@ -244,7 +244,7 @@ Result:
 
 ### Average Execution Time
 
-Indicates the average execution time of a Flow process over a specific timespan. The chart indicates the average time it took to execute the Flow in milliseconds. The time span itself can be adjusted using the global filter settings.
+Displays the average time in milliseconds it takes to execute a Flow process over a selected time frame.
 
 Formula:
                              
