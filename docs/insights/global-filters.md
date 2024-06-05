@@ -59,7 +59,7 @@ To define a custom time frame, proceed as follows:
 
 ## Endpoints
 
-Endpoints serve as a connector. They allow seamless interactions between Cognigy AI Agents and external systems or platforms. Examples of Endpoints include Webchat, Voice Gateway, and Microsoft Teams.
+Endpoints serve as connectors. They allow seamless interactions between Cognigy AI Agents and external systems or platforms. Examples of Endpoints include Webchat, Voice Gateway, and Microsoft Teams.
 For more information, read the [Endpoints](../ai/deploy/endpoints/overview.md) documentation.
 
 You can select one or more Endpoints to be analyzed.
