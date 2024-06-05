@@ -6,8 +6,7 @@ hidden: false
 
 # Time Zone
 
-Insights can present time-based data, accounting to a user's time zone. 
-
+Insights can present time-based data according to a user's time zone.
 !!! note 
     In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
 
