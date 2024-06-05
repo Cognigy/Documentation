@@ -39,7 +39,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Live Agent Handovers
 
-This overview shows the number of handovers. A handover occurs when an AI Agent transfers the conversation to a human agent, this can happen multiple times during a session.
+This overview shows the number of handovers. A handover occurs when an AI Agent transfers the conversation to a human agent. Multiple handovers can occur within a single session.
 
 Source table:
 
