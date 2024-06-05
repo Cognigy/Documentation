@@ -18,7 +18,7 @@ Cognigy.AI offers both integrated analytics dashboards, as well as an OData acce
 
 ## Dashboards
 
-Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with all of Cognigy's products.
+Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with some of Cognigy's products as well.
 Insights features a variety of dashboards and explorers to highlight different data types, enabling you to track your customers' behavior and the success of your AI Agents. Additionally, all collected data is accessible through OData.
 Insights operates within individual Cognigy.AI Projects. This allows you to analyze data specific to each Project and switch between Projects seamlessly. However, comparing data across Projects simultaneously is not supported.
 
