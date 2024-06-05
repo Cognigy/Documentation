@@ -123,7 +123,15 @@ You can use the scroll bar to navigate through the messages in the **Session Tra
 
 Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../../ai/test/interaction-panel/overview.md#expert-mode) documentation.
 
-The Expert mode provides you with additional context about the conversation's messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads and xApp session details. It also allows you to switch to a Flow related to this session.
+The Expert mode offers additional context for conversation messages, including:
+
+- Triggered Intent and its score
+- Filled Slots
+- User connection and disconnection events
+- Voice event payloads
+- xApp session details
+
+Additionally, you can switch to a Flow related to the current session.
 
 To activate Expert mode, do the following:
 
