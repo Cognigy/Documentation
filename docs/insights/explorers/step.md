@@ -78,7 +78,7 @@ To annotate an Intent, follow these steps:
 ### Test your Flow
 
 To view the results on the Step Explorer page, test your AI Agent via the Interaction Panel or Demo Webchat.
-If you'd like to test your flow through the Interaction Panel, make sure to enable Interaction Panel / Playbook data in the *Filter Bar*
+To view the Interaction Panel and Playbook data for your AI Agent, follow these steps:
 
 To do so:
 
