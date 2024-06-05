@@ -185,7 +185,7 @@ Result:
 
 ### Intents by Score Range
 
-This chart shows the scoring range of found intents in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
+Displays the scoring range of matched Intents. Each score range is displayed as a bar with minimum, maximum, and average values.
 Clicking on the three-dots menu item,
 you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Flow.
 For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
