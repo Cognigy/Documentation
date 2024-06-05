@@ -11,7 +11,6 @@ Insights features a range of key metrics, helping you to understand the usage an
 
 Cognigy.AI offers both integrated analytics dashboards, as well as an OData access, allowing you to build your own dashboards, by retrieving your raw analytics data.
 
-As of release v4.10, Cognigy provides a completely new designed Analytics solution for Insights.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/overview.png" width="100%" />
