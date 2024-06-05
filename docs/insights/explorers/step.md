@@ -81,9 +81,9 @@ To view the results on the Step Explorer page, test your AI Agent via the Intera
 To view the Interaction Panel and Playbook data for your AI Agent, follow these steps:
 
 
-1. Open the Cognigy Insights interface
-2. Clock on the **Endpoint** field in the **Filter Bar**
-3. Enable Interaction Panel / Playbook data
+1. On the **Step Explorer** page, go to the filter bar.
+2. Select **Endpoint > Interaction Panel / Playbook data**.
+3. Click **Apply**.
 
 ## Filter Steps
 
