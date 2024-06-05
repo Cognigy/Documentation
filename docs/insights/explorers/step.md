@@ -59,7 +59,7 @@ To annotate a Node, follow the steps below:
 ### Annotate Intents
 
 In order to gather data on Intents and analyze their performance, you need to add a title to their analytics step. You can optionally also leave a comment to provide context about how the Intent works.
-We call this action annotating intents.
+This process of adding a title and comment is called annotating Intents.
 
 Intent annotation helps you analyze customer behaviors and preferences within specific steps, such as behaviors and preferences regarding their ordering patterns. This analysis enables you to understand which products or categories are more popular among customers and provides insights into their purchasing habits and trends.
 
