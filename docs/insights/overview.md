@@ -68,10 +68,11 @@ You can find the [user menu](../ai/administer/user-menu/overview.md) in the uppe
 
 ## Main menu
 
-The sidebar menu of Insights, features all available dashboards and explorers and allows you to quickly switch between different analytics views to analyze your AI Agent's performance.
+The Insights left-side menu displays all available dashboards and explorers. This menu allows you to easily switch between different dashboards and explorers to analyze your AI Agent's performance.
 
-You can always recognize the currently selected option as the one highlighted in a light blue-grey color in the menu bar, but also by the header displayed in the upper part of your screen.
-The sidebar also allows you to switch back to Cognigy.AI by clicking on the **Cognigy.AI** entry.
+You can always identify the currently selected view in two ways: it's highlighted in light blue-gray in the menu bar and displayed in the header at the top of your screen.
+
+The left-side menu also allows you to switch back to Cognigy.AI by clicking **Cognigy.AI**.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/insights-menu.png" width="100%" />
