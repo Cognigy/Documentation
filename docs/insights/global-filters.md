@@ -25,7 +25,7 @@ The following global filters are available:
 
 ## Time Span
 
-In order to focus on a specific time span, you can either set a preset time frame or choose specific dates using a date picker.
+To focus on a specific time span, you can either set a preset time frame or select specific dates using a date picker.
 
 Available preset time frames include:
 
