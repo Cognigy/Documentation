@@ -90,7 +90,7 @@ To use the **Snapshot** filter, proceed as follows:
 6.  *(Optional)* Activate the **None** option to obtain analysis data of all available endpoint data, except for Snapshot data.
 7. *(Optional)* To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 8. *(Optional)* To reset the search results, click **x** in the **Type to search** field.
-9. Click **Apply** to confirm and activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+9. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Locales
 
