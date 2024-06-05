@@ -104,8 +104,7 @@ Result: `1 min 10 sec`
 
 ### Avg. Resolution Time
 
-This displays the average time needed to resolve a conversation, after a user has escalated it to a human agent.
-
+Displays the average time it takes a human agent to resolve a conversation after escalation.
 Source table:
 
 ```txt
