@@ -31,7 +31,7 @@ _**Dashboard**_
 : A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
 
 _**Data Expiration**_
-: Data Expiration (TTL, time-to-live) displays the timespan until the expiration of the Insights data. For more information, read the [Data Expiration](ttl.md) documentation.
+: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](ttl.md) documentation.
 
 _**Download Report**_
 : Each widget on the Insights dashboards provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
