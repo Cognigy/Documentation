@@ -81,7 +81,7 @@ Result: `60%`
 
 ### Avg. First Response Time
 
-This indicates the average time it takes for a human agent to send the first response to a user.
+Displays the average time it takes for a human agent to send the first response to an end user.
 
 Source table:
 
