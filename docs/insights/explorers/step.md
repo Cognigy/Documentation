@@ -40,7 +40,7 @@ To start collecting data for the Step Explorer, first decide what excactly you w
 ### Annotate Nodes
 
 To gather data on Nodes and analyze their performance, add a title to the analytics step.  Optionally, you can also leave a comment to provide context about the Node's function.
-We call this action annotating nodes.
+This process of adding a title and comment is called annotating Nodes.
 
 Node annotation helps you analyze customer reactions at specific stages of their interaction with a AI Agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
 
