@@ -34,7 +34,7 @@ The Message Explorer interface will be displayed.
 
 ## Messages
 
-When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span. These messages include user messages, AI Agent messages, and agent messages, and are titled **Top Messages**.
+When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span. These messages, including user messages and responses from your AI Agent and human agents, are titled **Top Messages**.
 
 The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 30 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
