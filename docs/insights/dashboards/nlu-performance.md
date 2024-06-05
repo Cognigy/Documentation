@@ -31,7 +31,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Understood Messages
 
-This indicates the percentage of how many messages were understood during conversations.
+Displays the percentage of messages understood during conversations.
 You can find a calculation example with data visualization in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
