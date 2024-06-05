@@ -20,8 +20,7 @@ As of release v4.10, Cognigy provides a completely new designed Analytics soluti
 ## Dashboards
 
 Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with all of Cognigy's products.
-It features a variety of different dashboards and explorers to highlight different data types, which allow you to keep track of your customer's behaviour and the success of your AI agents. All of the collected data is also accessible through OData.
-
+Insights features a variety of dashboards and explorers to highlight different data types, enabling you to track your customers' behavior and the success of your AI Agents. Additionally, all collected data is accessible through OData.
 You can access Cognigy Insights, by opening the sidebar menu in Cognigy.AI and click on **Insights**, previously this had led to our [Analytics](../ai/analyze/collecting-data.md) application.
 In order to view the data correlating to a specific agent, you can select one from the dropdown menu in the upper left area.
 
