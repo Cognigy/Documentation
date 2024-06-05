@@ -66,7 +66,7 @@ Intent annotation helps you analyze customer behaviors and preferences within sp
 To annotate an Intent, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an AI Agent.
+2. In the left-side menu, select a Project.
 3. Navigate to **Build > Flows**.
 4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
 5. In the upper-right corner of the Flow editor, select the **NLU** tab.
