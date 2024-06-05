@@ -46,7 +46,7 @@ You can find a calculation example with data visualization in the [Average Execu
 
 ### Avg Intent Score
 
-This indicates the average Intent score in relation to the set timespan. The intent scores reference the quality of your Agent, as they display how well Intents matched in conversations.
+Displays the average Intent score for the selected time frame. Higher Intent scores indicate better AI Agent performance in matching user queries.
 For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
 
 To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
