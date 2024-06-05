@@ -157,7 +157,7 @@ Result:
 
 ### Top Goals
 
-The top goals view displays the most achieved goals.
+Displays the number of completed goals.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
