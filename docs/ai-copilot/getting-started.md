@@ -116,8 +116,8 @@ To create your Endpoint, follow these steps:
 7. Go to **Handover Settings**.
 8. Choose your **Copilot Type**:
 
-   - **Workspace**, if you want to use it in a workspace environment.
-   - **LA AI Copilot** (previously Whisper), if you wish to see Copilot suggestions directly in chat.
+- **Workspace**, if you want to use it in a workspace environment.
+- **LA AI Copilot** (previously Whisper), if you wish to see Copilot suggestions directly in chat.
 
 9. In **Copilot Flow**, select the AI Copilot Flow that you created in the first steps.
 10. _(Optional)_ In **Copilot Config**, select the configuration, which you created via API.
