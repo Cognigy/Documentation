@@ -113,11 +113,16 @@ To create your Endpoint, follow these steps:
 4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
-7. Go to **Handover Settings**. 
-8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **Copilot Config**, select the config, which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
-11. Click **Save**.
+7. Go to **Handover Settings**.
+8. Choose your **Copilot Type**:
+
+   - **Workspace**, if you want to use it in a workspace environment.
+   - **LA AI Copilot** (previously Whisper), if you wish to see Copilot suggestions directly in chat.
+
+9. In **Copilot Flow**, select the AI Copilot Flow that you created in the first steps.
+10. _(Optional)_ In **Copilot Config**, select the configuration, which you created via API.
+11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
+12. Click **Save**.
 
 ## Configure an AI Copilot Flow
 
@@ -151,5 +156,9 @@ The widgets will populate their content once the customer starts the conversatio
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
+- [LA AI Copilot](../live-agent/assistants/la-ai-copilot.md)
 
 
+
+
+[def]: /../../../live-agent/assistants/la-ai-copilot.md
