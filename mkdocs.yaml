@@ -205,6 +205,7 @@ nav:
       - ai/empower/generative-ai.md
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
+        - ai/empower/knowledge-ai/activate.md
         - ai/empower/knowledge-ai/ctxt.md
         - ai/empower/knowledge-ai/pdf.md
         - ai/empower/knowledge-ai/web-page.md

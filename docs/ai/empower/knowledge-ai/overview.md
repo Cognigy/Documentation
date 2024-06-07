@@ -19,12 +19,15 @@ Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, s
 
 ## Prerequisites
 
-Before using this feature, create an account in one of the LLM Providers:
+Before using this feature, follow these steps:
 
-- [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+1. [Apply for a license and allocate quotas](activate.md).
+2. Create an account in one of the LLM Providers:
 
-For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
+    - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
+    - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+
+    For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
 
 ## Create a Knowledge Store
 
@@ -213,9 +216,9 @@ The table below presents limitations. These limitations are subject to future ch
 
 ## FAQ
 
-**Q1**: Will Knowledge AI be free of charge?
+**Q1**: Is Knowledge AI free of charge?
 
-**A1**: No, we will provide pricing information in the near future.
+**A1**: Knowledge AI is not free of charge and requires a [separate license](activate.md#apply-for-a-license).
 
 **Q2**: I encountered a `Request failed with status code 429` error while attempting to upload a file. How can I solve this issue?
 

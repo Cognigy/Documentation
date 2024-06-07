@@ -1,26 +1,42 @@
 ---
-title: "Organization Details" 
-slug: "organization-details" 
+title: "Admin Center" 
+slug: "admin-center" 
 hidden: false 
 ---
 
-# Organization Details
+# Admin Center
 
-The **Organization Details** page includes an analytics overview section labeled **Billable Conversations**,
+The **Admin Center** page includes an analytics overview section labeled **Billable Conversations**,
 offering platform administrators a comprehensive report on the volume of conversations
 that have taken place among all agents in the organization.
 
-To access the **Organization Details** page, 
-click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Organisation Details**.
+To access the **Admin Center** page, 
+click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Admin Center**.
 
 ## Billable Conversations
 
-The chart shows a number of [billable conversations](../billing.md).
+The chart shows a number of [billable conversations](../billing.md) for the organization.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/billable-conversations.png" width="100%" />
-  <figcaption>The Billable Conversations report</figcaption>
+  <img class="image-center" src="../../../../_assets/ai/administer/access/billable-conversations.png" width="70%" />
 </figure>
+
+## Knowledge AI
+
+Within each organization, if the Knowledge AI feature is used,
+you can view its metrics to monitor the number of Knowledge Queries and Knowledge Chunks.
+
+Knowledge Chunks and Knowledge Queries are billable units.
+Tracking the usage of these units helps manage costs effectively
+and make informed decisions about resource allocation.
+
+<figure>
+  <img class="image-center" src="../../../../_assets/ai/administer/access/knowledge-ai.png" width="100%" />
+</figure>
+
+{! _includes/ai/administer/access/knowledge-ai-metrics.md !}
+
+For more information on how to activate Knowledge AI for your organization, read the [Knowledge AI](../../empower/knowledge-ai/activate.md) documentation.
 
 ## Report Filtering
 
@@ -44,7 +60,7 @@ Before the organization deletion, you need to set up:
 
 This process contains the following steps:
 
-1. A user with the `admin` role (system administrator) will request to delete the organization from the **Organisation Details** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
+1. A user with the `admin` role (system administrator) will request to delete the organization from the **Admin Center** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
     <figure>
       <img class="image-center" src="../../../../_assets/ai/administer/access/delete-organisation-confirm_org_deletion.png" width="100%" />
