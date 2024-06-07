@@ -54,19 +54,19 @@ To set a quota using the management-ui API, follow these steps:
          Send the request with a JSON body. In the JSON body, specify a unique name for the new organization and the maximum number of knowledge chunks in the `quotaMaxKnowledgeChunks` parameter.
 
          ```bash
-          POST /management/v2.0/organisations
-          Content-Type: application/json
+         POST /management/v2.0/organisations
+         Content-Type: application/json
     
-          {
-            "name": "My Organization",
-            "quotaMaxKnowledgeChunks": 1000
-          }
-          ```
-          If the response is successful, the server returns a 200 status code with the `organisation id` and applied quota.
+         {
+           "name": "My Organization",
+           "quotaMaxKnowledgeChunks": 1000
+         }
+         ```
+         If the response is successful, the server returns a 200 status code with the `organisation id` and applied quota.
 
     === "Existing Organization"
          To set the quota for the existing organization, use the API [PATCH /management/v2.0/organisations/{organisationId}](https://api-trial.cognigy.ai/openapi#patch-/management/v2.0/organisations/-organisationId-) request. 
-         Send the request with the `organisationId` parameter in the path and a JSON body. In the JSON body, specify the maximum number of chunks using the `quotaMaxKnowledgeChunks` parameter. You can find an organisationId in the management UI on the Organisations page in the ID column next to the organization name.
+         Send the request with the `organisationId` parameter in the path and a JSON body. In the JSON body, specify the maximum number of chunks using the `quotaMaxKnowledgeChunks` parameter. You can find `organisationId` in the management-ui on the **Organisations** page in the **ID** column next to the organization name.
         
          ```bash
          PATCH /management/v2.0/organisations/{organisationId}
