@@ -56,7 +56,7 @@ _**Explorer**_
 ## F
 
 _**Filter Bar**_
-: A bar displayed at the top of each Insights dashboard / explorer. It includes all **global filters** and **local filters**, most of which can be accessed by clicking on the "more filters"-button.
+: A bar displayed at the top of each Insights dashboard or explorer. The filter bar includes all [global filters](#g) and [local filters](#l), accessible by clicking the **more filters** button.
 
 ## G
 
