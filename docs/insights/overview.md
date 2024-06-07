@@ -64,7 +64,7 @@ And additionally a set of Explorers:
 
 ## Filters
 
-Cognigy Insights features global and local filters. The **Filter Bar** only displays a small portion of the available filters openly. In order to access all filters, you have to click on **more filters**. This list includes both global and local filters. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
+Cognigy Insights offers global and local filters. The filter bar shows only a selection of global filters. To access all filters, including both global and local ones, click **more filters**. Any filter changes you make will be applied to all data visualizations throughout the platform.
 
 **Global Filters**
 
