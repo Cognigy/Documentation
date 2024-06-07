@@ -69,8 +69,7 @@ The Transcript Explorer immediately updates the list of sessions according to th
 
 ## Filter Sessions
 
-There are several filters available to filter sessions. The filter bar, featuring **global** and **local filters** is visible right at the top of the page. A portion of the **global** and **local filters** are not immediately visible in the filter bar, instead you have to click on more filters to view and select them. 
-
+There are several filters available to filter sessions. The filter bar, featuring global and local filters, is visible at the top of the page. Some filters are not immediately visible and require clicking **more filter** to be viewed and selected. 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
