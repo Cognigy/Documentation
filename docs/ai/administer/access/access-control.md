@@ -112,4 +112,4 @@ When you assign an Agent to an existing user, this user will receive a notificat
 ## More Information
 
 - [Members](../access/members.md)
-- [Admin Center](../access/organization-details.md)
+- [Admin Center](../access/admin-center.md)
