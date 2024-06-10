@@ -101,7 +101,7 @@ To activate the Knowledge AI feature for an on-premises environment, configure t
     cognigyEnv:
       FEATURE_ENABLE_KNOWLEDGE_SEARCH_WHITELIST: "org1,org2,org3"
     ```
-    If the feature should be enabled for all organizations, the value can be set to "*".
+    If the feature should be enabled for all organizations, the value can be set to `"*"`.
 
 ## View Metrics
 
