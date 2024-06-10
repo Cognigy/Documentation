@@ -307,7 +307,7 @@ nav:
         - ai/administer/hotkeys.md
       - Access Management:
         - Organizations and Users:
-          - ai/administer/access/organization-details.md
+          - ai/administer/access/admin-center.md
           - ai/administer/access/access-control.md
         - Project and Members:
           - ai/administer/access/project-settings.md
