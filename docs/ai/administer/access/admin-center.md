@@ -22,14 +22,14 @@ click **User Menu** in the upper-right corner of any Cognigy.AI page and then se
 
 The chart shows a number of [billable conversations](../billing.md) for the organization.
 
+<figure>
+  <img class="image-center" src="../../../../_assets/ai/administer/access/billable-conversations.png" width="100%" />
+</figure>
+
 The Billable Conversations metrics include the following:
 
 1. The number of billable conversations created within the selected time frame.
 2. The total number of billable conversations created.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/billable-conversations.png" width="100%" />
-</figure>
 
 ## Knowledge AI
 
