@@ -6,18 +6,19 @@ hidden: false
 
 # Time Zone
 
-Insights supports presenting time-based data with an account to the user's time zone. 
+Insights can present time-based data according to a user's time zone.
 
 !!! note 
     In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
 
 ## Changing the preferred Time Zone
 
-By default, Insights uses time zone preferences of your device. You can override this in **My Profile**. 
+Insights uses your device's time zone by default, but you can change this preference in **My Profile** on the Cognigy.AI side.
+This flexibility is useful in two scenarios:
 
-This comes handy if you travel a lot, and your device time zone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
-
-To change time zone preferences:
+- When you travel frequently and your device's time zone updates automatically based on your location.
+- When you manage multinational AI Agents with users located across the globe.
+To change your time zone preferences:
 
 1. Click on the user icon in the top-right corner.
 2. Select **My Profile**.
