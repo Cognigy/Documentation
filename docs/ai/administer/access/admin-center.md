@@ -9,11 +9,11 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.78-blue.svg)](../../../release-notes/4.78.md)
 
-The **Admin Center** allows Cognigy.AI users with `admin` rights
+The *Admin Center* allows Cognigy.AI users with `admin` rights
 to view analytics for billable conversations and Knowledge AI. 
 The Admin Center provides platform administrators with a comprehensive report on the volume of consumed resources across all Projects in the organization.
 
-On the **Admin Center* page, admins can activate Live Agent and Voice Gateway products, as well as delete organizations.
+On the **Admin Center** page, administrators can activate Live Agent and Voice Gateway products, as well as delete organizations.
 
 To access the **Admin Center** page, 
 click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Admin Center**.
