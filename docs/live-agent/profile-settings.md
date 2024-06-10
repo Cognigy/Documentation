@@ -55,7 +55,7 @@ If an administrator has already preset the **AI Copilot Workspace** setting in t
 this setting will take precedence over the user profile settings.
 In this case, a user is not able to change the **AI Copilot Workspace** settings.
 
-For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI Copilot](assistants/la-ai-copilot.md) documentation.
+For more information, read the [AI Copilot](assistants/ai-copilot.md) and [AI Copilot Whisper](assistants/ai-copilot-whisper.md) documentation.
 
 ## Hotkey to send messages
 

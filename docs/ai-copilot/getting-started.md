@@ -117,7 +117,7 @@ To create your Endpoint, follow these steps:
 8. Choose your **Copilot Type**:
 
 - **Workspace**, if you want to use it in a workspace environment.
-- **LA AI Copilot** (previously Whisper), if you wish to see Copilot suggestions directly in chat.
+- **AI Copilot Whisper**, if you wish to see Copilot suggestions directly in chat.
 
 9. In **Copilot Flow**, select the AI Copilot Flow that you created in the first steps.
 10. _(Optional)_ In **Copilot Config**, select the configuration, which you created via API.
@@ -156,9 +156,9 @@ The widgets will populate their content once the customer starts the conversatio
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
-- [LA AI Copilot](../live-agent/assistants/la-ai-copilot.md)
+- [AI Copilot Whisper](../live-agent/assistants/ai-copilot-whisper.md)
 
 
 
 
-[def]: /../../../live-agent/assistants/la-ai-copilot.md
+[def]: /../../../live-agent/assistants/ai-copilot-whisper.md
