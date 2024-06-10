@@ -59,22 +59,3 @@ The default Data Expiration is set in the environment variable in the `values.ya
 Importantly,
 specifying Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. 
 This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
-
-
-Cognigy.AI provides two data analysis solutions catering to different preferences:
-
-- **Cognigy OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports.
-- **Cognigy Insights**. Offers user-friendly pre-built dashboards and tools for quick data analysis and visualization without requiring extensive technical expertise.
-
-The comparison of the OData Endpoint and Insights is outlined in the table.
-
-| Feature             | Cognigy OData Endpoint                                                                                   | Cognigy Insights                                                                     |
-|---------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Purpose             | Provides access to raw data                                                                              | Analyzes and visualizes raw data                                                     |
-| Data Type           | Raw data (structured format)                                                                             | Processed data (visualizations, reports)                                             |
-| Functionality       | Allows retrieval of data using GET requests                                                              | Offers data exploration, metric tracking, performance analysis, data export in CSV   |
-| User Interface      | API                                                                                                      | User-friendly interface with dashboards and reports                                  |
-| Output              | Data in a structured format (for example, JSON, XML)                                                     | Insights, trends, visualizations                                                     |
-| Use Case            | Integrate data with external BI tools <br> Build custom dashboards and reports for complex data analysis | Get quick insights through pre-built dashboards, explorers, and reports              |
-| Technical Expertise | API knowledge required                                                                                   | Less technical knowledge required                                                    |
-| Customization       | Highly customizable                                                                                      | Limited customization                                                                |
