@@ -7,7 +7,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-The Engagement Dashboard highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
+The _Engagement Dashboard_ highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
 
 - [Indicators](#indicators) 
 - [Heat maps](#heat-maps)
@@ -159,7 +159,7 @@ Result:
 
 Displays the number of completed goals.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 
@@ -223,7 +223,7 @@ Result:
 
 Displays the number of times a human agent was contacted within the filtered time frame. Multiple handovers can occur within a single session.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 

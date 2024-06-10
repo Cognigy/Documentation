@@ -12,6 +12,7 @@ The *Data Expiration* (TTL, time-to-live) displays the time span until the Insig
 To see, when the data will expire, click ![clock](../_assets/insights/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
 
 When you use Cognigy products daily, the data expiration values won't change because each new data update resets the countdown to expiration.
+
 ## Data Expiration Table
 
 In the table below, you can view the data included in TTL.

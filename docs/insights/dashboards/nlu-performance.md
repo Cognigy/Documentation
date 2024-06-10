@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The NLU Performance dashboard provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
+The _NLU Performance Dashboard_ provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
 You can find more information about our NLU and Intents in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
 
@@ -37,6 +37,7 @@ You can find a calculation example with data visualization in the [Understood/Mi
 ### Average Execution Time
 
 Displays the average execution time across a specific timespan.
+
 Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
@@ -104,7 +105,7 @@ if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/buil
 or sent during an active handover
 without configuring [LA AI Copilot](../../live-agent/assistants/la-ai-copilot.md) Flow.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
 which will take you to the application in Cognigy.AI for improving your Flow and Intents. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
 

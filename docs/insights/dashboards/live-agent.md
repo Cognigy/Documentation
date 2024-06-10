@@ -9,9 +9,9 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.62(Beta)-purple.svg)](../../release-notes/4.62.md)
 
 !!! note
-    The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
+    The Live Agent Dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
-The Live Agent dashboard displays Live Agent metrics for a specific AI Agent.
+The _Live Agent Dashboard_ displays Live Agent metrics for a specific AI Agent.
 
 Using this dashboard, you can:
 

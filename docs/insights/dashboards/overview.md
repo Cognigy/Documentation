@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The Overview dashboard gives you a quick summary of how customers are interacting with your AI Agent.
+The _Overview Dashboard_ gives you a quick summary of how customers are interacting with your AI Agent.
 
 The summary of key metrics is represented in the following charts:
 
@@ -134,7 +134,7 @@ Result:
 
 Indicates the top-rated number of goals reached.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 
@@ -185,7 +185,7 @@ if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.
 or sent during an active handover
 without configuring [LA AI Copilot](https://docs.cognigy.com/ai/escalate/handover-reference/la-agent-assist-overview/) Flow. 
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
 which will take you to the application in Cognigy.AI for improving your Flow.
 

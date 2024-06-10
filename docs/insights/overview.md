@@ -6,12 +6,16 @@ hidden: false
 
 # Cognigy Insights 
 
-**Cognigy Insights** replaces our previous static analytics dashboard and provides you with the tools you need to improve the customer experience your AI agents provide.
+*Cognigy Insights* replaces our previous static analytics dashboard and provides you with the tools you need to improve the customer experience your AI agents provide.
 Insights features a range of key metrics, helping you to understand the usage and the performance of your bots.
+
+<figure>
+  <img class="image-center" src="../../../_assets/insights/overview.png" width="100%" />
+</figure>
 
 Cognigy.AI provides two data analysis solutions catering to different preferences:
 
-- **Cognigy OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports.
+- **Cognigy OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports. For more information about the OData Endpoint, read the [Cognigy.AI: OData Analytics Endpoint](../ai/analyze/odata.md) documentation.
 - **Cognigy Insights**. Offers user-friendly pre-built dashboards and tools for quick data analysis and visualization without requiring extensive technical expertise.
 
 The comparison of the OData Endpoint and Insights is outlined in the table.
@@ -26,12 +30,6 @@ The comparison of the OData Endpoint and Insights is outlined in the table.
 | Use Case            | Integrate data with external BI tools <br> Build custom dashboards and reports for complex data analysis | Get quick insights through pre-built dashboards, explorers, and reports              |
 | Technical Expertise | API knowledge required                                                                                   | Less technical knowledge required                                                    |
 | Customization       | Highly customizable                                                                                      | Limited customization                                                                |
-
-
-
-<figure>
-  <img class="image-center" src="../../../_assets/insights/overview.png" width="100%" />
-</figure>
 
 ## Dashboards
 
@@ -56,7 +54,7 @@ Insights provides the following Dashboards:
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
 
-And additionally a set of Explorers:
+And additionally, a set of Explorers:
 
 - [Message Explorer](explorers/message.md)
 - [Step Explorer](explorers/step.md)

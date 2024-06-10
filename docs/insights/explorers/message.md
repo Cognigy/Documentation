@@ -34,7 +34,9 @@ The Message Explorer interface will be displayed.
 
 ## Messages
 
-When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span. These messages, including user messages and responses from your AI Agent and human agents, are titled **Top Messages**.
+When you first open the Message Explorer with default filter settings,
+it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span.
+These messages are titled **Top Messages**, including user messages and responses from your AI Agent and human agents.
 
 The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 30 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
@@ -98,12 +100,12 @@ You can use Local Filters to refine your research.
 To open the **Local Filters** selection,
 click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Filter Bar** section at the top of the **Message Explorer** page.
 
-| Additional  Filter | Description                                                                                                                                                                                                            |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                      |
+| Additional  Filter | Description                                                                                                                                                                                                  |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                            |
 | Source             | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
-| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                               |
-| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                  |
+| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                     |
+| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                        |
 
 {! _includes/insights/exclude-filters.md !}
 

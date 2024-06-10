@@ -20,10 +20,10 @@ _**Chart**_
 : A visual tool that displays data in a graphical format, making it easier to understand trends and patterns. Insights dashboards use various chart types such as bars, lines, and rings to present information effectively.
 
 _**Cognigy Insights**_
-: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI AI Agents. It provides dynamic tools and key metrics across different dashboards to analyze customer interactions and improve AI Agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
+: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI Agents. It provides dynamic tools and key metrics across different dashboards to analyze customer interactions and improve AI Agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
 
 _**Conversation**_
-: A billable unit of interaction between a user and a AI Agent or a human agent. For more information about billed conversations, read the [Cognigy Billing](../ai/administer/billing.md) documentation.
+: A billable unit of interaction between a user and an AI Agent or a human agent. For more information about billed conversations, read the [Cognigy Billing](../ai/administer/billing.md) documentation.
 
 ## D
 
@@ -48,7 +48,7 @@ _**Engagement**_
 : A dashboard in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Dashboard](dashboards/engagement.md) documentation.
 
 _**Escalation**_
-: See [Live Agent Handovers](#L).
+: See [Live Agent Handovers](#l).
 
 _**Explorer**_
 : Analytical tools integrated into Cognigy Insights are designed to evaluate and display conversational data. The primary purpose of an Explorer is to assist you in understanding customer reactions (messages) during a conversation with your AI Agent, ultimately improving your service.
@@ -69,7 +69,7 @@ _**Live Agent**_
 : A dashboard in Cognigy Insights that presents Live Agent metrics for a specific AI Agent. For more information, read the [Live Agent](dashboards/live-agent.md) documentation.
 
 _**Live Agent Handovers**_
-: An Indicator chart that displays the number of handovers. Handovers occur when a AI Agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
+: An Indicator chart that displays the number of handovers. Handovers occur when an AI Agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
 
 _**Local Filter**_
 : The Local Filters are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.

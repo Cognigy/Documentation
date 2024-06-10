@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
-Global Filters enable you to focus your dashboards and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all dashboards and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
+_Global Filters_ enable you to focus your dashboards and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all dashboards and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/global-filters.png" width="100%" />

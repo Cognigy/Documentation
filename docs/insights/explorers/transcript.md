@@ -43,13 +43,13 @@ By default, the Transcript Explorer displays a filtered list of sessions for the
 
 The list of sessions has the following parameters:
 
-| Title        | Description                                                                                                                                                                                                              |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title        | Description                                                                                                                                                                                              |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Session ID   | The unique ID for each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
-| Contact ID   | The unique ID for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.              |
-| Messages     | The total number of messages within the specific session.                                                                                                                                                                |
-| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                                |
-| Last Message | The date and time when the last message was received within the session.                                                                                                                                                 |
+| Contact ID   | The unique ID for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.      |
+| Messages     | The total number of messages within the specific session.                                                                                                                                                |
+| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                |
+| Last Message | The date and time when the last message was received within the session.                                                                                                                                 |
 
 ### Sort Sessions
 
@@ -91,7 +91,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
-| Source              | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                |
+| Source              | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                          |
 | Goals               | Select from predefined goals to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
@@ -190,17 +190,17 @@ The transcript details include the following sections:
 
 #### Session Details
 
-| Session Details             | Description                                                                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Session ID                  | The unique identifier assigned to each session.                                                                             |
-| First Message               | The date and time when the first message was sent.                                                                          |
-| Last Message                | The date and time when the last message was sent.                                                                           |
-| User Message Count          | The total number of messages sent by the user.                                                                              |
-| AI Agent Message Count      | The total number of messages sent by the AI Agent.                                                                     |
-| Agent Message Count         | The total number of messages sent by the human agent.                                                                       |
-| Flow Name                   | The name of the conversation Flow in your Agent.                                                                            |
-| Rating                      | The feedback received from the user in the conversation, displayed as a thumbs-up (5 to 10) or thumbs-down (0 to 4) rating. |
-| Comment                     | Any additional comments provided by the user along with their feedback.                                                     |
+| Session Details        | Description                                                                                                                 |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Session ID             | The unique identifier assigned to each session.                                                                             |
+| First Message          | The date and time when the first message was sent.                                                                          |
+| Last Message           | The date and time when the last message was sent.                                                                           |
+| User Message Count     | The total number of messages sent by the user.                                                                              |
+| AI Agent Message Count | The total number of messages sent by the AI Agent.                                                                          |
+| Agent Message Count    | The total number of messages sent by the human agent.                                                                       |
+| Flow Name              | The name of the conversation Flow in your Agent.                                                                            |
+| Rating                 | The feedback received from the user in the conversation, displayed as a thumbs-up (5 to 10) or thumbs-down (0 to 4) rating. |
+| Comment                | Any additional comments provided by the user along with their feedback.                                                     |
 
 #### Contact Profile Details
 
