@@ -173,6 +173,17 @@ If you require navigation options for users without the need for rich structurin
   <img class="image-center" src="../../../_assets/webchat/v3/text-with-buttons.png" width="100%" />
 </figure>
 
+## Controlling the Chat Window
+
+The Chat screen provides buttons for minimizing or closing the chat window:
+
+- **Minimize** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again.
+- **Close** — this button ends a conversation and closes the window. The conversation will appear on the [Previous Conversations](#previous-conversations) screen.
+
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/minimize-and-close-window.png" width="100%" />
+</figure>
+
 ## Attachment Upload
 
 To send certain media files to users, use the Attachment Upload feature.
