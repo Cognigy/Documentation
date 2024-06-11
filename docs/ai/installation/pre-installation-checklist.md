@@ -24,7 +24,7 @@ Before proceeding with your on-prem installation with or without installation su
 
 8. Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup if possible.
 
-9. Cognigy.AI licence key is available.
+9. Cognigy.AI license key is available.
 
 10. Cognigy Container image registry credentials are known.
 

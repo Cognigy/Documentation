@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.75(beta)-purple.svg)](../../release-notes/4.75.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.78(beta)-purple.svg)](../../release-notes/4.78.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -99,6 +99,8 @@ To configure the conversation rating, refer to the [Conversation Rating](configu
 
 The Privacy Notice feature ensures user trust and compliance by prompting consent to a privacy notice before chatting with the virtual agent. It includes customization of the title, detailed message, and submit button text, as well as a direct link to the full Privacy Policy, transparently informing users about data handling practices and securing their informed consent.
 
+{! _includes/webchat/privacy-notice-acceptance.md !}
+
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/privacy-notice.png" width="100%" />
 </figure>
@@ -171,6 +173,17 @@ If you require navigation options for users without the need for rich structurin
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/text-with-buttons.png" width="100%" />
+</figure>
+
+## Controlling the Chat Window
+
+The Chat screen provides buttons for minimizing or closing the chat window:
+
+- **Minimize** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again.
+- **Close** — this button ends a conversation and closes the window. The conversation will appear on the [Previous Conversations](#previous-conversations) screen.
+
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/minimize-and-close-window.png" width="100%" />
 </figure>
 
 ## Attachment Upload

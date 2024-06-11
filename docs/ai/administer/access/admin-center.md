@@ -1,26 +1,52 @@
 ---
-title: "Organization Details" 
-slug: "organization-details" 
+title: "Admin Center" 
+slug: "admin-center"
+description: "The Admin Center in Cognigy.AI enables users with admin rights to view detailed analytics for billable conversations and Knowledge AI. The Admin Center offers platform administrators a comprehensive report on resource consumption across all organizational projects."
 hidden: false 
 ---
 
-# Organization Details
+# Admin Center
 
-The **Organization Details** page includes an analytics overview section labeled **Billable Conversations**,
-offering platform administrators a comprehensive report on the volume of conversations
-that have taken place among all agents in the organization.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.78-blue.svg)](../../../release-notes/4.78.md)
 
-To access the **Organization Details** page, 
-click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Organisation Details**.
+The *Admin Center* allows Cognigy.AI users with `admin` rights
+to view analytics for billable conversations and Knowledge AI. 
+The Admin Center provides platform administrators with a comprehensive report on the volume of consumed resources across all Projects in the organization.
+
+On the **Admin Center** page, administrators can activate Live Agent and Voice Gateway products, as well as delete organizations.
+
+To access the **Admin Center** page, 
+click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Admin Center**.
 
 ## Billable Conversations
 
-The chart shows a number of [billable conversations](../billing.md).
+The chart shows a number of [billable conversations](../billing.md) for the organization.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/billable-conversations.png" width="100%" />
-  <figcaption>The Billable Conversations report</figcaption>
 </figure>
+
+The Billable Conversations metrics include the following:
+
+1. The number of billable conversations created within the selected time frame.
+2. The total number of billable conversations created.
+
+## Knowledge AI
+
+Within each organization, if the Knowledge AI feature is used,
+you can view its metrics to monitor the number of Knowledge Queries and Knowledge Chunks.
+
+Knowledge Chunks and Knowledge Queries are billable units.
+Tracking the usage of these units helps manage costs effectively
+and make informed decisions about resource allocation.
+
+<figure>
+  <img class="image-center" src="../../../../_assets/ai/administer/access/knowledge-ai.png" width="100%" />
+</figure>
+
+{! _includes/ai/administer/access/knowledge-ai-metrics.md !}
+
+For more information on how to activate Knowledge AI for your organization, read the [Knowledge AI](../../empower/knowledge-ai/activate.md) documentation.
 
 ## Report Filtering
 
@@ -38,13 +64,13 @@ This feature will delete all the data from your organization.
 Before the organization deletion, you need to set up:
 
 - A valid system administrator emails are set in the environment variable `SYS_ADMINISTRATOR_EMAIL` of the `values.yaml` file. For example: `SYS_ADMINISTRATOR_EMAIL: "admin1@domain.com,admin2@domain.com"`. Your administrators will receive a notification at these email addresses regarding the organization deletion request. By following the link provided in the email, the administrators can proceed with the organization deletion.
-- The Cognigy.AI [Management UI](../access/organization-details.md) is installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL` of the `values.yaml` file. For example: `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL: http://management-ui`.
+- The Cognigy.AI [Management UI](../access/management-ui.md) is installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL` of the `values.yaml` file. For example: `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL: http://management-ui`.
 
 ### Deletion Process for an Organization
 
 This process contains the following steps:
 
-1. A user with the `admin` role (system administrator) will request to delete the organization from the **Organisation Details** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
+1. A user with the `admin` role (system administrator) will request to delete the organization from the **Admin Center** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
     <figure>
       <img class="image-center" src="../../../../_assets/ai/administer/access/delete-organisation-confirm_org_deletion.png" width="100%" />

@@ -19,12 +19,15 @@ Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, s
 
 ## Prerequisites
 
-Before using this feature, create an account in one of the LLM Providers:
+Before using this feature, follow these steps:
 
-- [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+1. [Apply for a license and allocate quotas](activate.md).
+2. Create an account in one of the LLM Providers:
 
-For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
+    - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
+    - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+
+    For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
 
 ## Create a Knowledge Store
 
@@ -194,28 +197,28 @@ To learn more about the Search Extract Output Node, refer to the [related articl
 
 The table below presents limitations. These limitations are subject to future changes by Cognigy.
 
-| Description                                                                                                                     | Current Limit |
-|---------------------------------------------------------------------------------------------------------------------------------|---------------|
-| Maximum number of Knowledge Stores per project                                                                                  | 10            |
-| Maximum number of Knowledge Sources per Store                                                                                   | 10            |
-| Maximum file upload size for creating a Knowledge Source                                                                        | 10 MB         |
-| Maximum number of source tags per Knowledge Source                                                                              | 10            |
-| Maximum number of source tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5             |
-| Maximum number of Chunks per Knowledge Source                                                                                   | 1000          |
-| Maximum number of Source metadata pairs                                                                                         | 20            |
-| Maximum number of Chunk metadata pairs                                                                                          | 20            |
-| Maximum number of characters for text per Chunk                                                                                 | 2000          |
-| Maximum number of characters for metadata per Chunk                                                                             | 1000          |
-| Maximum number of characters for metadata per Source                                                                            | 1000          |
+| Description                                                                                                                     | Limit | Cognigy.AI Versions                    |
+|---------------------------------------------------------------------------------------------------------------------------------|-------|----------------------------------------|
+| Maximum number of Knowledge Stores per Project                                                                                  | 10    | Applicable to version 4.77 and earlier |
+| Maximum number of Knowledge Sources per Store                                                                                   | 10    | Applicable to version 4.77 and earlier |
+| Maximum file upload size for creating a Knowledge Source                                                                        | 10 MB | All                                    |
+| Maximum number of source tags per Knowledge Source                                                                              | 10    | All                                    |
+| Maximum number of source tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5     | All                                    |
+| Maximum number of Chunks per Knowledge Source                                                                                   | 1000  | All                                    |
+| Maximum number of Source metadata pairs                                                                                         | 20    | All                                    |
+| Maximum number of Chunk metadata pairs                                                                                          | 20    | All                                    |
+| Maximum number of characters for text per Chunk                                                                                 | 2000  | All                                    |
+| Maximum number of characters for metadata per Chunk                                                                             | 1000  | All                                    |
+| Maximum number of characters for metadata per Source                                                                            | 1000  | All                                    |
 
 !!! note
     Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../../deploy/snapshots.md). Instead, you can use [Packages](../../build/packages.md) to import or export Knowledge Stores.   
 
 ## FAQ
 
-**Q1**: Will Knowledge AI be free of charge?
+**Q1**: Is Knowledge AI free of charge?
 
-**A1**: No, we will provide pricing information in the near future.
+**A1**: Knowledge AI is not free of charge and requires a [separate license](activate.md#apply-for-a-license).
 
 **Q2**: I encountered a `Request failed with status code 429` error while attempting to upload a file. How can I solve this issue?
 
