@@ -25,18 +25,19 @@ Here you can search for contact profiles in the top right search box and sort th
 
 The Profile Schema contains the following default schema values:
 
-| Property Name   | Description                                                                                                    |
-|-----------------|----------------------------------------------------------------------------------------------------------------|
-| Contact IDs     | Unique identifiers assigned to each contact or user.                                                           |
-| First Name      | The given name of the contact.                                                                                 |
-| Last Name       | The surname or family name of the contact.                                                                     |
-| Accepted GDPR   | Indicates whether the contact has consented to the General Data Protection Regulation (GDPR) compliance terms. |
-| Goals Completed | Refers to tasks completed within a Flow.                                                                       |
-| Email           | The email address associated with the contact.                                                                 |
-| Gender          | The gender identity of the contact, if provided.                                                               |
-| Age             | The age of the contact, represented in years.                                                                  |
-| Birthday        | The date of birth of the contact.                                                                              |
-| Location        | The geographical location or address information associated with the contact.                                  |
+| Property Name           | Description                                                                                                                                                                                                                                                    |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contact IDs             | Unique identifiers assigned to each contact or user.                                                                                                                                                                                                           |
+| First Name              | The given name of the contact.                                                                                                                                                                                                                                 |
+| Last Name               | The surname or family name of the contact.                                                                                                                                                                                                                     |
+| Accepted Privacy Policy | Indicates whether the contact has agreed to the privacy policy terms and specifies the time when the agreement was made. This property is applicable to Webchat v3 when an end user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
+| Accepted GDPR           | Indicates whether the contact has consented to the General Data Protection Regulation (GDPR) compliance terms.                                                                                                                                                 |
+| Goals Completed         | Refers to tasks completed within a Flow.                                                                                                                                                                                                                       |
+| Email                   | The email address associated with the contact.                                                                                                                                                                                                                 |
+| Gender                  | The gender identity of the contact, if provided.                                                                                                                                                                                                               |
+| Age                     | The age of the contact, represented in years.                                                                                                                                                                                                                  |
+| Birthday                | The date of birth of the contact.                                                                                                                                                                                                                              |
+| Location                | The geographical location or address information associated with the contact.                                                                                                                                                                                  |
 
 It is also possible to add customized schema properties to handle organization-specific data.
 

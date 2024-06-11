@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.73(beta)-purple.svg)](../../release-notes/4.73.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.78(beta)-purple.svg)](../../release-notes/4.78.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -274,6 +274,8 @@ and add up to 2 title-URL pairs for additional content.
 The Privacy Notice settings add privacy notices to the chat interface.
 It includes options to enable a custom Privacy Notice, set its title and text, customize the Submit button, define the link title and URL for the Privacy Policy. 
 These features ensure users are informed about data handling practices and consent to them, fostering trust and compliance with privacy regulations.
+
+{! _includes/webchat/privacy-notice-acceptance.md !}
 
 | Parameter                 | Description                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
