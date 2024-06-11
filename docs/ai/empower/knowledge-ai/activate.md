@@ -23,7 +23,8 @@ This license allows you to use the feature for your organization and also places
 If the quota is exceeded, you will not be able to create new Knowledge AI resources or edit existing ones.
 
 A user with `admin` rights needs to add the license to your installation.
-If you are using a shared SaaS environment with version 4.78 or later, contact [Cognigy technical support](../../../help/get-help.md) to add the license.
+If you are using a shared SaaS environment with version 4.78 or later,
+contact [Cognigy technical support](../../../help/get-help.md) to add a quota for your organization.
 
 ## Allocate Quotas
 
@@ -82,26 +83,7 @@ To set a quota using the management-ui API, follow these steps:
 
 ## Activate Feature Flags
 
-Activating Knowledge AI depends on your environment:
-
-- If you are using Trial, shared SaaS, or dedicated SaaS environments, contact [Cognigy technical support](../../../help/get-help.md).
-- If you are using an on-premises environment, configure the Cognigy.AI `values.yaml`.
-
-### On-Premises
-
-To activate the Knowledge AI feature for an on-premises environment, configure the Cognigy.AI `values.yaml` as follows:
-
-1. Add the following section at the root level:
-    ```yaml
-    knowledgeSearch:
-      enabled: true
-    ```
-2. In the `cognigyEnv` config map, set the `FEATURE_ENABLE_KNOWLEDGE_SEARCH_WHITELIST` environment variable to a comma-separated list of organization IDs. This variable enables Knowledge AI for the specified organizations:
-    ```yaml
-    cognigyEnv:
-      FEATURE_ENABLE_KNOWLEDGE_SEARCH_WHITELIST: "org1,org2,org3"
-    ```
-    If the feature should be enabled for all organizations, the value can be set to `"*"`.
+To activate the Knowledge AI feature flag, contact [Cognigy technical support](../../../help/get-help.md).
 
 ## View Metrics
 
