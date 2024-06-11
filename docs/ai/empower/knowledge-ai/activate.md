@@ -23,7 +23,7 @@ This license allows you to use the feature for your organization and also places
 If the quota is exceeded, you will not be able to create new Knowledge AI resources or edit existing ones.
 
 A user with `admin` rights needs to add the license to your installation.
-If you are using a shared SaaS environment, contact [Cognigy technical support](../../../help/get-help.md) to add the license.
+If you are using a shared SaaS environment with version 4.78 or later, contact [Cognigy technical support](../../../help/get-help.md) to add the license.
 
 ## Allocate Quotas
 
