@@ -178,7 +178,7 @@ To test connection, click **Open Demo Web Chat**.
 
 #### Genesys Status and Bot Messages
 
-Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint. To have this feature flag enabled, contact Cognigy Support.
+Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint. In the Queue flow in Genesys, this feature allows to display the queue position to the user. To enable this optional feature for on-premises installations, use the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
 
 To display Genesys Status and Bot messages, follow these steps:
 
@@ -194,14 +194,14 @@ messages will be sent to your Node as input, you can use **CognigyScript** to di
   <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/say-node-setup.png" width="50%" />
 </figure>
 
-6. To display *all* incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
+6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
 7. In Select Node, choose **Lookup** and in Advanced choose **Go To Node and Wait for Input** from Execution Mode.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-goto-setup.png" width="50%" />
 </figure>
 
-Your Genesys flow should look like this:
+The Genesys flow should look like this:
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
