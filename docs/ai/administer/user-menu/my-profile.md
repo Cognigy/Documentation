@@ -22,10 +22,6 @@ The **Global Roles** section allows for the assignment of global roles that **ap
 
 This section shows a list of previous login-sessions and their location (if available). This can be used for auditing purposes.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/history.jpg" width="100%" />
-</figure>
-
 ## API Keys
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
