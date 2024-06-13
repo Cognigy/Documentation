@@ -6,76 +6,112 @@ hidden: false
 
 # Interaction Panel
 
-The Interaction Panel can be used to interact with your virtual agent.
-It can be accessed by clicking on the chat button at the top right of the interface when inside any Project. 
+The **Interaction Panel** is a helpful user interface to interact with your virtual agent. You can test and analyze the behavior of your virtual agent in order to improve communication and service skills of your Agent. <br>
+To open the Interaction Panel click ![chat-menu](../../../assets/icons/chat-menu.svg) in the toolbar at the top right of the Cognigy.AI interface. 
+You can open the Interaction Panel on any page in Cognigy.AI.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction.jpg" width="100%" />
-</figure>
+## Project related Settings
+
+The Interaction Panel can be configured with a number of settings.
+
+Before using the Interaction Panel for test purposes, you should check and configure the following options:
+
+- [Snapshot](#snapshot)
+- [Locale](#locale)
+- [Flow selection](#flow-select)
+
+### Snapshot
+
+Snapshots are immutable forms of your virtual agent, including the required resources. Using **Snapshots** you can test your Agent configuration in your Interaction Panel as follows:
+
+1. Click ![expand 2](../../../assets/icons/expand_2.svg) to open a list of the available Snapshots.
+2. Select the Snapshot you want to test. 
+
+For more information, read the [Snapshots](../../resources/deploy/snapshots.md) documentation.
+
+### Locale
+
+When you have created several locales in your Flow, you can select here a preferred language as follows: 
+
+1. Click ![expand 2](../../../assets/icons/expand_2.svg) to open a list of the available locales.
+2. Select the Locale you want to use. 
+
+Then, in a **Test** conversation, the bot will reply in the language you previously prepared in the [locale settings](../../resources/build/flows.md#locale-settings) of your Flow.
+
+### Flow Select 
+
+When you have created more than one Flow you can select the Flow you want to test as follows: 
+
+1. Click ![expand 2](../../../assets/icons/expand_2.svg) to open a list of the available Flows.
+2. Select the Flow you want to test. 
 
 ## Test
 
-!!! note
-    **Chat** tab was renamed to **Test** from version 4.25.0.
+The [Test](../../resources/test/test.md) feature enables you to test your Agent using different channels. 
 
 ### Channel-Specific output
 
 The Interaction Panel will preview channel-specific output in case this has been configured in output nodes like the Say-Node.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-channel-selection.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-channel-selection.png" width="80%" />
 </figure>
 
 !!! tip "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the [Interaction Panel settings](#chat-output).
+    It is possible to only show specific output for a selected set of channels. This can be configured under the [Interaction Panel settings](interaction-panel/#chat-output).
 
 ### Input Modes
-Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-input-modes.png" width="100%" />
-</figure>
+Using the Interaction Panel you can select three input modes, clicking on the corresponding tabs at the bottom of the interface: 
 
-!!! note
-    Prior to version 4.25.0, **Input Mode** select was a part of the Interaction Panel settings tab.
+- [Chat](#chat)
+- [Voice Call](#voice-call)
+- [Live Follow](#live-follow)
 
 #### Chat
-When **Chat** is selected as the input mode,
-the **virtual agent** can be triggered by typing into the input field and hitting the enter key
-(or pressing the Send button).
-Alternatively,
-the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings](input.md). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript](../../build/cognigy-script.md) under `{{ " {{input.data}}" }}`
+When **Chat** is selected as the input mode, the **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button ![record-audio](../../../assets/icons/record-audio.svg) can be pressed after which your device's microphone is started and voice input is registered. 
+
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings](input.md). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript](../cognigy-script.md) under `{{ " {{input.data}}" }}`
+
+When **Chat** mode is selected you can select following options after clicking the ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) at the top right side of the interface, next to the Flow select field:
+
+   - Reset Session - will clean up the chat history in the Interaction Panel. 
+   - Create Playbook - for more information, read the [Playbooks](../../resources/test/playbooks.md) documentation.
+   - Create Playbook with Assertions - for more information, read the [Playbook with Assertions](../../resources/test/playbooks.md#assertion) documentation.
 
 #### Voice Call
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/index.md)
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
 
-!!! note "Feature availability"
+!!! info "Feature availability"
     - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
     - If you use an On-Premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
 
-When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice agent would sound like.
+When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
 
-Before starting a voice call, you need to configure an **Audio Provider** on the Project Settings page. 
+Before starting a voice call, you need to configure an **Audio Provider** in the [Voice Preview Settings](../../tools/voice-preview.md) of your Agent. 
+
+1. In your Flow, go to **Manage > Settings**.
+2. Open the **Voice Preview Settings** section.
+3. In the **Speech Provider** section, select the required Speech Provider you want to work with.
+4. In the **Speech Connection** section, select the speech connection type the Provider offers. 
+5. Click **Test Connection** to be sure that the speech connection is established. 
+
+Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [Voice Call](interaction-panel.md#voice-call) section in the Interaction Panel **Settings**. 
+
+After configuring the Audio Provider, language and voice, you can start the call by clicking the **Start Call** button.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/agent-settings-audio-provider-settings.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-start-voice-call.png" width="60%" />
 </figure>
 
-Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [Voice Call](#voice-call) section of the Settings tab in the Interaction Panel. 
+When the call is ongoing, you will be able to see how long the call is currently active with the help of the call timer below the **End Call** button. In addition,  DTMF (Dual Tone Multi-Frequency) tones can also be inserted during the call using the **Dialpad**. You will also be able to see the conversation and follow the test voice call. When no voice input comes in from the user, a timeout will be reached and the voice call is terminated.
 
-After configuring the Audio Provider, language and voice, you can start the call by simply clicking the **Start Call** button.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-start-voice-call.png" width="60%" />
-</figure>
-
-When the call is ongoing, you will be able to see how long the call is currently active with the help of the call timer below the **End Call** button. In addition, DTMF tones can also be inserted during the call using the **Dialpad**. You will also be able to see the conversation and follow the test voice call.
+To see and analyze the payload of a recognized voice input, you can click ![expand](../../../assets/icons/expand.svg) indicated on the message fields.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-end-voice-call.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-end-voice-call.png" width="100%" />
 </figure>
 
 #### Live Follow
@@ -86,12 +122,12 @@ You can debug a Flow when you have already set up an Endpoint for this Flow.
 To use and test this mode, follow these steps:
 
 1. Go to **Test > Logs**.
-2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go to the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../../webchat/demo.md).
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint, for example Webchat,Teams, or Slack. Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read the [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description) documentation.
 3. Copy `userId`.
-4. Go to the Flow editor, and open the Interaction panel.
-5. At the bottom of the Interaction panel, click ![live-follow](../../../_assets/icons/live-follow.svg).
+4. Go to the Flow editor, and open the Interaction Panel.
+5. At the bottom of the Interaction Panel, click ![live-follow](../../../assets/icons/live-follow.svg).
 6. Paste `userId` into the **User ID** field.
-7. To start live following, click ![start-live-following](../../../_assets/icons/start-live-following.svg).
+7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
 
 Now you can view and track the user's real-time conversation from your Interaction Panel. To terminate live following, click **Stop Live Following**.
 
@@ -99,140 +135,175 @@ Now you can view and track the user's real-time conversation from your Interacti
     Human agent messages are not shown in the Live Follow mode.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-follow-user.gif" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="80%" />
 </figure>
 
 #### Playbook
-When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the virtual agent. Select a Playbook that you wish to execute, and click the **Play** button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+
+When **Playbook** input mode is selected, a select field appears, providing the list of Playbooks available in the Virtual Agent.
+
+1. Click ![expand 2](../../../assets/icons/expand_2.svg) in the Playbook select field at the bottom.
+2. Select a Playbook that you want to execute, and click the **Play** button.
+
+During execution, you can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+For more information regarding assertions, read the [Playbooks](../../resources/test/playbooks.md#assertion).
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-playbook.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="80%" />
 </figure>
 
-
 !!! tip "Tip: Configuring Playbook Execution"
-	You can further configure the Playbook execution under the [Interaction Panel Playbook settings](#playbooks).
+	You can further configure the Playbook execution under the [Interaction Panel Playbook settings](interaction-panel.md#playbooks).
 
 ## Info
 
-The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
+The Info tab menu provides four sub-functions:
+
+- Input - [Input Object](#input-object)
+- State - [State](#state)
+- Context - [Context](#context-object)
+- Profile - [Profile](#profile-object)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-info.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-info.png" width="100%" />
 </figure>
 
 ### Input object
-The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
 
-!!! note "Input object"
-    Head over to [Input](input.md) for more information.
+The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
+For more information, read the [Input](input.md) documentation. 
+Cognigy objects have a different life span depending on their type. For more information , read the [Cognigy Objects Life Span](../../tools/cognigy-script.md#cognigy-objects-life-span) documentation.
 
 ### State
-State can be used to narrow the set of **Intents** that can be triggered by actively excluding certain Intents from a certain state. 
 
-!!! note "State"
-    Head over to [State](state.md) to learn more. 
+State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
+
+For more information, read the [State](state.md) documentation.
 
 ### Context object
 
-The **Context** can be seen as the short-term memory of the **virtual agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
+The **Context** is like a short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
 
-!!! note "Context object"
-    Head over to [Context](context.md) for more information. 
+For more information, read the [Context](context.md) documentation.
 
 ### Profile object
-The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
-!!! note "Profile object"
-    Head over to [Profile](profile.md) for more information.
- 
+The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example, the user's favorite color.
+
+For more information, read the [Profile](profile.md) documentation.
+
 ## Settings
 
-The Interaction Panel can be configured with a number of settings across different sections.
+To configure relevant settings for the Interaction Panel, click tab **Settings**. The following table gives you an overview of available settings. 
 
-### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connector 3rd-party NLU engines by navigating to the [NLU Connectors](../../empower/nlu/external/nlu-connectors.md) page. 
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-setting-chat-input.png" width="100%" />
-</figure>
-
-### Chat Output
-This section lets you configure the chat outputs in the Interaction Panel.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-setting-chat-output.png" width="100%" />
-</figure>
-
-#### Text to Speech
-If enabled, the virtual agent will speak to you through the browser's Text to Speech functionality.
-
-#### Expert Mode
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
-
-If enabled, the Interaction Panel will display additional information about the Flow execution:
-
-- Triggered [Intents](../../empower/nlu/intents/ml-intents.md) and their score.
-- Triggered [Yes/No Intents](../../empower/nlu/intents/yes-no-intents.md) and their score.
-- The name of the Flow that was triggered. 
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-expert-mode.png" width="80%" />
-</figure>
-
-#### Channel Select
-We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
-
-### Voice Call
-
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/index.md)
-
-This section allows you to choose the language and voice for testing the voice calls from the Interaction Panel.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-voice-settings.png" width="100%" />
-</figure>
-
-### Playbooks
-This section lets you configure the Playbook executions in the Interaction Panel.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-setting-playbook.png" width="100%" />
-</figure>
-
-#### Repeat
-Turning this feature on will repeat executing the selected Playbook over and over again.
-
-#### Delay
-Time (in milliseconds) to wait between each Playbook Step execution.
+| Interaction Panel Settings                       | Description                                               |
+|--------------------------------------------------|-----------------------------------------------------------|
+| **General**                                      |                                                           |
+| NLU Connector                                    | Selection list, default is the "Cognigy" NLU engine.      |
+| Text to Speech                                   | Reads out messages from the system.                       |
+| Expert mode                                      | Displays additional information about the Flow.           |
+| Channel selection                                | Selection list for Endpoint providers.                    |
+| **Chat**                                         |                                                           |
+| Show data input                                  | Data display.                                             |
+| **Voice Call**                                   |                                                           |
+| Language                                         | Drop-down list with available languages.                  |
+| Voice                                            | Drop-down list with available female and male speakers.   |
+| **Playbooks**                                    |                                                           |
+| Repeat                                           | Re-runs a Playbook after it finished executing.           |
+| Delay                                            | Waits between Playbooks Steps - default setting is 200ms. |
+| **Advanced**                                     |                                                           |
+| Auto-move Flow Editor                            | Automatically switches and moves the Flow Editor based on the last executed Node.|
+| Auto-switch Target Flow Selection                | Switches the target Flow automatically when another Flow is being opened in the Editor.<br> The target Flow will not auto-switch if there is an active session. |
 
 ### General
 
+The Interaction Panel can be configured with a number of settings across different sections.
+
+#### Chat Input
+
+This section allows you to enable 3rd-party NLU engines for use in your Interaction Panel. 
+to install a new NLU engine in Cognigy.AI, go to **Build > NLU Connectors** and click **+ New NLU Connector**.
+
+For more information how to manage NLU connectors, read the [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) documentation.
+
+#### Chat Output
+
+In this section you can configure the chat outputs in your Interaction Panel.
+
+- [Text to Speech](#text-to-speech) - When active, messages from the system are read out.
+- [Expert mode](#expert-mode) - When active, additional information about the Flow execution is displayed.
+- [Channel Select](#channel-select) - Drop-down menu to select the channels to display.
+
+##### Text to Speech
+
+If enabled, the virtual agent will speak to you using the browser's Text to Speech functionality.
+
+##### Expert Mode
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+
+If enabled, the Interaction Panel will display additional information about the Flow execution as:
+
+- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and their [score](../../nlu/nlu-overview/intent-analyzer.md).
+- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and their [score](../../nlu/nlu-overview/intent-analyzer.md).
+- The name of the Flow that was triggered. 
+
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-setting-general.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
 </figure>
+
+##### Channel Select
+
+You can filter the messages in the Interaction Panel by a specific channel, for example selecting the **Webchat** or **VoiceGateway** channel.
+By default, outputs from all channels will be displayed, indicated by the **Show all** setting.
+
+### Chat
+
+This section allows you to activate **Show data input** to enable the **Data Input** field for Chat input mode in Interaction Panel.
+When activated, an additional input field will appear below the standard text input field and enables you to enter JSON data.  
+
+Example:
+A valid JSON input data here could be, for example, `{"firstName": "Max", "lastName": "Müller"}`, which can be sent with or without a text message.
+
+### Voice Call
+
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
+
+This section allows you to choose the language and voice for testing the voice calls from Interaction Panel.
+
+You can select two options for **Voice Call**:
+
+- **Language**: You can select many languages in a drop-down menu. 
+The **Custom** option allows for choosing a TTS language, which is not in the dropdown list. It defines the language of the virtual agent output. The format to use depends on the TTS Vendor, for example, de-DE, fr-FR, en-US.
+ 
+- **Voice**: You can select a female or male speaker voice. 
+The **Custom** option allows for choosing a TTS voice, which is not in the drop-down list. This setting can be the case for region-specific voices. The format to use depends on the TTS Vendor, for example, de-DE-ConradNeural.
+
+### Playbooks
+
+This section enables you to configure the Playbook executions in the Interaction Panel using two settings:
+
+- **Repeat**: Enabling this feature will repeat executing the selected Playbook again and again until you stop the execution manually. This function is helpful when testing, for example, consistency in a use case with a Playbook that requires an automatic repeat of execution.     
+- **Delay**: Time in milliseconds, to wait between each Playbook Step execution. Default setting is 200ms.
+
+### Advanced
 
 #### Auto-move Flow Editor
 
-If turned on, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically, and the node will be centered.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-follow-flow-node.gif" width="100%" />
-</figure>
-
-!!! note
-    Turning this setting on will automatically turn off and disable the **Auto-switch Target Flow Selection** setting.
+If activated, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically and the node will be centered.
+Default setting is **enabled**.
 
 #### Auto-switch Target Flow Selection
 
-When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
+When **Auto-switch Target Flow Selection** is enabled, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
+Default setting is **disabled**.
 
-### Input
+Example: 
+A project includes two Flows, Flow A and Flow B. The process starts according Flow A and will reach a certain step which leads to a Flow B to go on processing.
+Flow B is immediately displayed in the editor when active and the Interaction Panel automatically switches to the Flow B as soon as it is opened in the Flow Editor. 
 
-Under this section,
-you can turn on **Show data input** toggle to enable the **Data Input** field for Chat input mode in the Interaction Panel.
+## More Information
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-setting-input.png" width="100%" />
-</figure>
+- [Cognigy Script and Objects Life Span](../../tools/cognigy-script.md#cognigy-objects-life-span)
+- [Testing your Virtual Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
+- [Voice Gateway Parameter Details](../../flow-nodes/vg/parameter-details.md)
