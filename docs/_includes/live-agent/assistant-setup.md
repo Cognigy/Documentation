@@ -17,5 +17,5 @@ Assistant's messages are only shown based on customer inputs received during an 
 To provide helpful information to your agents, create Intents and use Lookup Nodes with Say Nodes based on customer inputs.
 
 <figure>
-  <img class="image-center" src="https://docs.cognigy.com/ai/handover-providers/images/la-agent-assist-flow-example.png" width="100%" />
+  <img class="image-center" src="https://docs.cognigy.com/_assets/ai/escalate/handover-reference/la-agent-assist-flow-example.png" width="100%" />
 </figure>
