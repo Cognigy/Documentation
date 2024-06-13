@@ -39,6 +39,9 @@ To set up a third-party NLU model, follow these steps:
 
 Changing the NLU embedding model requires all Flows in the Agent to be retrained. 
 Otherwise, intent recognition will fail because the new embeddings won't match the old ones used for training.
+Note that disabled Intents are not included in the training process.
+
+During Flow training, only enabled intents are considered. Intents marked as disabled will be skipped.
 
 Select the number of Flows that need training:
 
@@ -47,9 +50,9 @@ Select the number of Flows that need training:
 
 ### Train a Flow
 
-If you have only one Flow in your Agent, follow these steps:
+If you have only one Flow in your Project, follow these steps:
 
-1. In the left-side menu of the Agent, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, navigate to **Build > Flows**.
 2. On the **Flows** page, select the Flow that you want to train.
 3. In the upper-right corner, select **NLU**.
 4. On the **Intents** tab, click **Build Model**.
@@ -58,14 +61,15 @@ Once the model building process is complete, the intent recognition capability o
 
 ### Train Multiple Flows
 
-If you have more one Flow in your Agent, follow these steps:
+If you have more one Flow in your Project, follow these steps:
 
-1. In the left-side menu of the Agent, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, navigate to **Build > Flows**.
 2. On the **Flows** page, check if the **Train all Flows** button exists. If the **Train all Flows** button is not enabled for your environment, specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 3. Click **Train all Flows**. 
 
 Once the model building process is complete, the intent recognition capability of the Flow will be improved, allowing for more accurate understanding of user inputs.
 
+Note that during the training process, the order of Flows is not predefined. Flows are retrieved from the database sequentially, following their default storage order.
 
 ## More Information
 
