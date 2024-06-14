@@ -58,7 +58,7 @@ such as [Set Session Config](../../ai/build/node-reference/voice/voice-gateway/s
 [Say](../../ai/build/node-reference/basic/say.md#voice-gateway), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
 or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generic/session-speech-parameters-config.md).
 
-## On-Premise Speech Services
+## On-Premises Speech Services
 
 Voice Gateway supports on-premise configuration of **Microsoft Azure**, **Deepgram** and **Nuance** Speech Services.
 
