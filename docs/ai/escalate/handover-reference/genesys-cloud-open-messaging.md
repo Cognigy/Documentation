@@ -178,28 +178,19 @@ To test connection, click **Open Demo Web Chat**.
 
 #### Genesys Status and Bot Messages
 
-Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint. In the Queue flow in Genesys, this feature allows to display the queue position to the user. To enable this optional feature for on-premises installations, use the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
+_(Optional)_ Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint. For example, in the Queue flow in Genesys, this feature allows to display the queue position to the user while they are waiting for the available human agent. If you wish to display Queue Position messages to the users, be sure to configure a Queue Message Flow in Genesys first.
+
+To enable this feature, use the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
 
 To display Genesys Status and Bot messages, follow these steps:
 
 1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
 2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
 3. For the child **Case** Node, select `genericHandoverUpdate`.
-4. Add your **Say** Node to this branch to display the messages to the end user. As the Status/Bot
-messages will be sent to your Node as input, you can use **CognigyScript** to display them. Add
-`{{ "{{ input.data.request.text }}" }}` to your say Node.
+4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select Text as output type, and in the Text field type this **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
 5. In the Handover Settings of the **Say** Node, select **User Only** as the Handover Output Destination.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/say-node-setup.png" width="50%" />
-</figure>
-
 6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
-7. In Select Node, choose **Lookup** and in Advanced choose **Go To Node and Wait for Input** from Execution Mode.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-goto-setup.png" width="50%" />
-</figure>
+7. Open the **Go To** Node and in the Select Node dropdown menu, choose **Lookup**. Scroll down and in Advanced options select **Go To Node and Wait for Input** from Execution Mode.
 
 The Genesys flow should look like this:
 
@@ -208,7 +199,7 @@ The Genesys flow should look like this:
 </figure>
 
 
-If you use **AI Copilot**, you need to configure the Genesys Status and Bot Messages feature within your **AI Copilot** flow. Ensure to set the structure *above* the actual **AI Copilot** Nodes.
+If you use AI Copilot, follow steps 1-7 to configure the Genesys Status and Bot Messages feature within your AI Copilot flow. Ensure to set the structure above the actual AI Copilot Nodes.
 
 ## AI Copilot Workspace
 
