@@ -296,7 +296,7 @@ Default setting is **enabled**.
 #### Auto-switch Target Flow Selection
 
 When **Auto-switch Target Flow Selection** is enabled, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
-Default setting is **disabled**.
+By default, the setting is disabled.
 
 Example: 
 A project includes two Flows, Flow A and Flow B. The process starts according to Flow A and will reach a certain step, at which point Flow B begins processing.
