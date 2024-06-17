@@ -91,11 +91,8 @@ In **Voice Call** mode, the Interaction Panel lets you initiate a test call to h
 
 Before starting a voice call, you need to configure a voice provider in the [Voice Preview Settings](../../test/voice-preview.md) of your Project. 
 
-1. In your Flow, go to **Manage > Settings**.
-2. Open the **Voice Preview Settings** section.
-3. In the **Speech Provider** section, select the required Speech Provider you want to work with.
-4. In the **Speech Connection** section, select the speech connection type the Provider offers. 
-5. Click **Test Connection** to be sure that the speech connection is established. 
+{! _includes/ai/voice-providers.md !}
+
 
 Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. On the **Settings** tab, in the Voice Call section, you can select your preferred language and voice for your test call. 
 After configuring the Audio Provider, language and voice, you can start the call by clicking the **Start Call** button.
