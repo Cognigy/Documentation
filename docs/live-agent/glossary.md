@@ -34,7 +34,7 @@ _**AI Copilot Bot**_
 For more information, read the [AI Copilot Bot](assistants/ai-copilot-bot.md) documentation.
 
 _**AI Copilot Whisper**_
-:  This tool displays AI-powered suggested replies and next action suggestions directly in the chat box. When a user sends a message, a suggested reply will appear in a centered frame inside the chat. The Agent can ignore it, or click on the reply arrow icon to send. For more information, read the [AI Copilot Whisper](./assistants/ai-copilot-whisper.md) documentation.
+:  A tool that displays AI-powered suggested replies and next-action suggestions directly in the chat box. When a user sends a message, a suggested reply will appear in a centered frame inside the chat. A human agent can ignore it or click the reply arrow icon to send. For more information, read the [AI Copilot Whisper](./assistants/ai-copilot-whisper.md) documentation.
 
 _**API Access Token**_
 :  A data structure that contains authentication and authorization information to use an application. It can be used if you are building an API-based integration and its actions are limited by the user role. For more information, read the [Profile Settings](profile-settings.md) documentation.
