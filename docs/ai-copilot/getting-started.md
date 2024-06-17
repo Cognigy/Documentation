@@ -116,7 +116,7 @@ To create your Endpoint, follow these steps:
 7. Go to **Handover Settings** and select your Handover Provider.
 8. Go to **Copilot** and select your preferred **Copilot Flow**, which will be executed as a substitute during the Handover.
 9. From the **Copilot Config** list, select the configuration you created via API. If you select **None**, the default AI Copilot config will be applied. You can override the default config in the Copilot: Set Config Node within your AI Copilot Flow.
-10. _(Optional)_ Add a transcript tile to display the conversation with the customer, by enabling the toggle in the AI Copilot Settings.
+10. _(Optional)_ Add a transcript tile to display the conversation with the customer, by enabling the toggle "Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace" in the AI Copilot Settings.
 11. Click **Save**.
 
 ## Configure an AI Copilot Flow
