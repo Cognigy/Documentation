@@ -113,9 +113,9 @@ To create your Endpoint, follow these steps:
 4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
-7. Go to **Handover Settings**.
-8. Under **Copilot**, select your preferred **Copilot Flow**, which will be executed as a substitute during the Handover.
-9. _(Optional)_ In **Copilot Config**, select the configuration, which you created via API. If you select **None**, Copilot will operate on its default settings.
+7. Go to **Handover Settings** and select your Handover Provider.
+8. Go to **Copilot** and select your preferred **Copilot Flow**, which will be executed as a substitute during the Handover.
+9. From the **Copilot Config** list, select the configuration you created via API. If you select **None**, the default AI Copilot config will be applied. You can override the default config in the Copilot: Set Config within your AI Copilot Flow.
 10. _(Optional)_ Add a transcript tile to display the conversation with the customer, by enabling the toggle in the AI Copilot Settings.
 11. Click **Save**.
 
