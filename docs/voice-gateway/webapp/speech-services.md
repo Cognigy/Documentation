@@ -64,8 +64,20 @@ Voice Gateway supports on-premise configuration of **Microsoft Azure**, **Deepgr
 
 To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
 
-- For **Deepgram** or **Nuance**, you need to provide a custom URI Container. 
-- For **Microsoft Azure**, you need Azure Docker container URLs, including a subscription key (if required).
+=== "Deepgram"
+    - Select **Use on-prem Deepgram container**.
+    - Provide a **Container URI** for TTS.
+    - Select **Use TLS**, if required.
+
+=== "Nuance"
+    - Select **Use on-prem TTS** to provide the URI for your TTS.
+    - Select **Use on-prem STT** to provide the URI for your STT.
+  
+=== "Microsoft Azure"
+    - Select **Use Azure Docker container (on-prem)**.
+    - Provide a **Container URL for TTS**.
+    - Provide a **Container URL for STT**.
+    - Provide a **Subscription key**, if required.
 
 ## More Information
 
