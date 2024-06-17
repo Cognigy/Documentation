@@ -6,7 +6,7 @@ hidden: false
 
 # Message Explorer
 
-The Message Explorer is an analytics tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the [Transcript Explorer](transcript.md), which provides more session-related details and user profile data.
+The Message Explorer is an analytics tool in Cognigy Insights that helps you search for specific customer or AI Agent messages within a conversation. It shows messages the user has sent before and after the selected one to provide further context. It complements the [Transcript Explorer](transcript.md), which provides more session-related details and user profile data.
 
 The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It can answer questions such as "What triggers specific types of responses?" and "How often do customers react similarly?"
 
@@ -14,7 +14,7 @@ To open the Message Explorer interface, use one of the following options:
 
 === "Via Cognigy.AI"
     1. Open the Cognigy.AI interface.
-    2. In the left-side menu, select an Agent.
+    2. In the left-side menu, select a Project.
     3. Within the Agent interface, navigate to Insights using one of the following options:
         - In the left-side **Agent** menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.
@@ -29,12 +29,14 @@ The Message Explorer interface will be displayed.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/explorers/message/message-explorer.png" width="100%" />
-  <figcaption>Message Explorer displays user and virtual agent messages</figcaption>
+  <figcaption>Message Explorer displays user and AI Agent messages</figcaption>
 </figure>
 
 ## Messages
 
-When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected Agent and display all messages for the selected time span. These messages include user messages, virtual agent messages, and agent messages, and are titled **Top Messages**.
+When you first open the Message Explorer with default filter settings,
+it will scan all sessions of the currently selected AI Agent and display all messages for the selected time span.
+These messages are titled **Top Messages**, including user messages and responses from your AI Agent and human agents.
 
 The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 30 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
@@ -64,7 +66,7 @@ To go back to the filtered top messages again, click ![X-icon](../../_assets/ico
 
 The Message Explorer interface has a search field that allows you to look for specific messages.
 Your search will be filtered according to the settings you have configured.
-Once you have set your global and additional filter settings,
+Once you have set your global and local filters,
 you can enter keywords in the **![magnifying glass](../../_assets/icons/magnifying-glass.svg) Search** field at the top of the page
 to find messages that match your search criteria.
 You will then get a list of all messages that match your search.
@@ -78,32 +80,32 @@ The Message Explorer immediately updates the list of sessions according to the s
 
 ## Filter Messages
 
-By default, the Message Explorer shows the **Global Filters** section at the top of the page.
+By default, the Message Explorer shows the **Filter Bar** section at the top of the page.
 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Filters](#additional-filters)
+- [Local Filters](#local-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../../_assets/icons/insight-filter-black.svg) in the upper-right corner.
 
 ### Global Filters
 
-For more information, read the [Global Filter](../global-filters.md) documentation.
+For more information, read the [Global Filter](../global-filters.md) documentation. Some additional filters become available when you click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page. 
 
-### Additional Filters
+### Local Filters
 
-You can use additional filters to refine your research.
+You can use Local Filters to refine your research.
 
-To open the **Additional Filters** selection,
-click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Message Explorer** page.
+To open the **Local Filters** selection,
+click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the **Filter Bar** section at the top of the **Message Explorer** page.
 
-| Additional  Filter | Description                                                                                                                                                                                                            |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                      |
-| Source             | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
-| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                               |
-| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                  |
+| Additional  Filter | Description                                                                                                                                                                                                  |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                            |
+| Source             | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
+| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                     |
+| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                        |
 
 {! _includes/insights/exclude-filters.md !}
 

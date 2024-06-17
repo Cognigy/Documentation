@@ -7,7 +7,7 @@ hidden: false
 
 # Insights Glossary
 
-Insights terms listed in alphabetical order. All the terms are given in the glossary for informational purposes.
+This glossary includes all terms related to our Insights tool listed in alphabetical order.
 
 ## A
 
@@ -20,10 +20,10 @@ _**Chart**_
 : A visual tool that displays data in a graphical format, making it easier to understand trends and patterns. Insights dashboards use various chart types such as bars, lines, and rings to present information effectively.
 
 _**Cognigy Insights**_
-: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI virtual agents. It provides dynamic tools and key metrics across different dashboards to analyze customer interactions and improve virtual agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
+: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI Agents. It provides dynamic tools and key metrics across different dashboards to analyze customer interactions and improve AI Agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
 
 _**Conversation**_
-: A billable unit of interaction between a user and a virtual agent or a human agent. For more information about billed conversations, read the [Cognigy Billing](../ai/administer/billing.md) documentation.
+: A billable unit of interaction between a user and an AI Agent or a human agent. For more information about billed conversations, read the [Cognigy Billing](../ai/administer/billing.md) documentation.
 
 ## D
 
@@ -31,7 +31,7 @@ _**Dashboard**_
 : A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
 
 _**Data Expiration**_
-: Data Expiration (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. For more information, read the [Data Expiration](ttl.md) documentation.
+: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](ttl.md) documentation.
 
 _**Download Report**_
 : Each widget on the Insights dashboards provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
@@ -48,10 +48,15 @@ _**Engagement**_
 : A dashboard in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Dashboard](dashboards/engagement.md) documentation.
 
 _**Escalation**_
-: See [Live Agent Handovers](#L).
+: See [Live Agent Handovers](#l).
 
 _**Explorer**_
-: Analytical tools integrated into Cognigy Insights are designed to evaluate and display conversational data. The primary purpose of an Explorer is to assist you in understanding customer reactions (messages) during a conversation with your virtual agent, ultimately improving your service.
+: Analytical tools integrated into Cognigy Insights are designed to evaluate and display conversational data. The primary purpose of an Explorer is to assist you in understanding customer reactions (messages) during a conversation with your AI Agent, ultimately improving your service.
+
+## F
+
+_**Filter Bar**_
+: A bar displayed at the top of each Insights dashboard or explorer. The filter bar includes all [global filters](#g) and [local filters](#l), accessible by clicking the **more filters** button.
 
 ## G
 
@@ -61,18 +66,18 @@ _**Global Filter**_
 ## L
 
 _**Live Agent**_
-: A dashboard in Cognigy Insights that presents Live Agent metrics for a specific virtual agent. For more information, read the [Live Agent](dashboards/live-agent.md) documentation.
+: A dashboard in Cognigy Insights that presents Live Agent metrics for a specific AI Agent. For more information, read the [Live Agent](dashboards/live-agent.md) documentation.
 
 _**Live Agent Handovers**_
-: An Indicator chart that displays the number of handovers. Handovers occur when a virtual agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
+: An Indicator chart that displays the number of handovers. Handovers occur when an AI Agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
 
 _**Local Filter**_
-: The Local Filter options are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
+: The Local Filters are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
 
 ## M
 
 _**Message Explorer**_
-: An analytical tool designed for efficiently searching specific customer or virtual agent messages within the context of an ongoing conversation. It provides a comprehensive view by revealing the messages preceding and following a selected one. For more information, read the [Message Explorer](explorers/message.md) documentation.
+: An analytical tool designed for efficiently searching specific customer or AI Agent messages within the context of an ongoing conversation. It provides a comprehensive view by revealing the messages preceding and following a selected one. For more information, read the [Message Explorer](explorers/message.md) documentation.
 
 _**Message Rating**_
 : A configurable Global Filter setting that allows users to refine their data analysis based on the sentiment of user feedback within a session.
@@ -83,7 +88,7 @@ _**Message Research**_
 ## N
 
 _**NLU Performance**_
-: A dashboard in Cognigy Insights that provides a comprehensive view of your virtual agent's natural language understanding (NLU) capabilities. It enables you to monitor and enhance message comprehension, intent recognition, and execution efficiency. For more information, read the [NLU Performance](dashboards/nlu-performance.md) documentation.
+: A dashboard in Cognigy Insights that provides a comprehensive view of your AI Agent's natural language understanding (NLU) capabilities. It enables you to monitor and enhance message comprehension, intent recognition, and execution efficiency. For more information, read the [NLU Performance](dashboards/nlu-performance.md) documentation.
 
 ## O
 
@@ -93,13 +98,13 @@ _**Overview**_
 ## S
 
 _**Session**_
-: A unit of interaction between a user and a Cognigy virtual or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. The session can contain an unlimited number of user inputs.
+: A unit of interaction between a user and a Cognigy AI Agent or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. The session can contain an unlimited number of user inputs.
 
 _**Snapshots**_
 : An exported Agent that contains necessary resources. A Snapshot is an unchangeable, real-time copy of all relevant Agent resources. For more information, read the [Global Filters: Snapshots](global-filters.md#snapshots) documentation.
 
 _**Step Explorer**_
-: An analytical tool hat helps you understand how customers navigate conversations, showing key moments and patterns like reactions and drop-offs to enhance your virtual agent's performance. For more information, read the [Step Explorer](explorers/step.md) documentation.
+: An analytical tool hat helps you understand how customers navigate conversations, showing key moments and patterns like reactions and drop-offs to enhance your AI Agent's performance. For more information, read the [Step Explorer](explorers/step.md) documentation.
 
 _**Steps**_
 : Conversational steps that can be displayed on the Step Explorer page. To include them, set up annotations in the Analytics Steps section of the Node settings. For example, configure `Welcome New Caller`. Then, choose the starting step for Step Explorer processing. For more information, read the [Step Explorer](explorers/step.md) and the [Annotations](explorers/step.md#annotate-nodes) documentation.

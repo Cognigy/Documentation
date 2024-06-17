@@ -205,6 +205,7 @@ nav:
       - ai/empower/generative-ai.md
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
+        - ai/empower/knowledge-ai/activate.md
         - ai/empower/knowledge-ai/ctxt.md
         - ai/empower/knowledge-ai/pdf.md
         - ai/empower/knowledge-ai/web-page.md
@@ -306,7 +307,7 @@ nav:
         - ai/administer/hotkeys.md
       - Access Management:
         - Organizations and Users:
-          - ai/administer/access/organization-details.md
+          - ai/administer/access/admin-center.md
           - ai/administer/access/access-control.md
         - Project and Members:
           - ai/administer/access/project-settings.md
@@ -616,6 +617,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.78.md
     - release-notes/4.77.md
     - release-notes/4.76.md
     - release-notes/4.75.md

@@ -31,7 +31,7 @@ It also allows for editing user profiles, carriers, and speech services that bel
 
 Users with the Account role can be authorized in the Voice Gateway Self-Service Portal via their Cognigy.AI user credentials.
 To activate this option, you need to activate the **Set up Voice Gateway**
-button in the **User menu > Organization Details** of the Cognigy.AI UI. Go to **User Menu > Access Control** and add a `voice-gatewayUser` role for selected users.
+button in the **User menu > Admin Center** of the Cognigy.AI UI. Go to **User Menu > Access Control** and add a `voice-gatewayUser` role for selected users.
 
 ### Service Provider
 

@@ -8,17 +8,17 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The NLU Performance dashboard provides valuable insights into the performance of your virtual agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
+The _NLU Performance Dashboard_ provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
-More information regarding NLU and Intents you can find in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
+You can find more information about our NLU and Intents in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
 
-The NLU Performance data of your Agent is visualized in the following charts:
+The NLU Performance data of your AI Agent is visualized in the following charts:
 
 - [Indicators](#indicators) 
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Charts display data based on the [global filter](../global-filters.md) settings. 
+These charts display all data based on the [global filter](../global-filters.md) and local filter settings. 
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/dashboards/nlu/NLU_dashboard.png" width="100%" />
@@ -31,26 +31,25 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Understood Messages
 
-Indicates the percentage of understood messages occurred during conversations.
-A calculation example with data visualization in a bar chart
-you will find in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
+Displays the percentage of messages understood during conversations.
+You can find a calculation example with data visualization in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
 
-Indicates the average execution time on a timescale.
+Displays the average execution time across a specific timespan.
 
 Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
-A calculation example with data visualization in a line chart you can find in the [Average Execution Time](#average-execution-time-1) chart. 
+You can find a calculation example with data visualization in the [Average Execution Time](#average-execution-time-1) line chart. 
 
 ### Avg Intent Score
 
-Indicates the average Intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
+Displays the average Intent score for the selected time frame. Higher Intent scores indicate better AI Agent performance in matching user queries.
 For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
 
-To find the average intent score, Insights sums up all the intent scores and divides by the total number of records.
+To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
 
 Source table:
 
@@ -98,7 +97,7 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Displays the percentage of messages understood and misunderstood by the system over a selected time frame.
 
 A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/analytics-data.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md).
 A message is not counted as understood
@@ -106,9 +105,9 @@ if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/buil
 or sent during an active handover
 without configuring [AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) Flow.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
+which will take you to the application in Cognigy.AI for improving your Flow and Intents. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
 
 Source table:
 
@@ -144,8 +143,7 @@ Result:
 
 ### Top Intents
 
-Indicates the top-rated number of Intents used displayed in a horizontal bar chart, with a maximum of 6 Intents shown in the summary view and 25 in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
-
+Displays the top-rated number of Intents. The summary view shows a maximum of 6 Intents, while the detailed view displays up to 25. Matching an Intent triggers its recording in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
 Source table: 
 
 ```txt
@@ -186,7 +184,7 @@ Result:
 
 ### Intents by Score Range
 
-The scoring range of found Intents displayed in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
+Displays the scoring range of matched Intents. Each score range is displayed as a bar with minimum, maximum, and average values.
 Clicking on the three-dots menu item,
 you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Flow.
 For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
@@ -245,7 +243,7 @@ Result:
 
 ### Average Execution Time
 
-Indicates the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
+Displays the average time in milliseconds it takes to execute a Flow process over a selected time frame.
 
 Formula:
                              

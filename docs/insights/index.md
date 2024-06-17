@@ -9,7 +9,7 @@ Insights helps businesses to better understand their users, optimize their chatb
 
     ---
 
-    To take your chat and voice agents to the next level, explore the capabilities of Cognigy Insights
+    To analyze your AI agents and take your chat and voice agents to the next level, explore the capabilities of Cognigy Insights
 
     [:octicons-arrow-right-24: Overview](overview.md)<br>
     [:octicons-arrow-right-24: Glossary]()

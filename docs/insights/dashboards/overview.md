@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-The Overview dashboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
+The _Overview Dashboard_ gives you a quick summary of how customers are interacting with your AI Agent.
 
 The summary of key metrics is represented in the following charts:
 
@@ -17,7 +17,7 @@ The summary of key metrics is represented in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Charts display data based on the global filter settings.
+All charts display data based on the global filter settings you've selected.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/dashboards/overview/overview_dashboard.png" width="100%" />
@@ -26,7 +26,7 @@ Charts display data based on the global filter settings.
 
 ## Indicators
 
-### Active Contacts 
+### Active Contacts
 
 Indicates the total number of currently active user sessions in the last 15 minutes. This widget updates in a regular interval of 30 seconds.
 
@@ -134,7 +134,7 @@ Result:
 
 Indicates the top-rated number of goals reached.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 
@@ -177,7 +177,7 @@ Result:
 
 ### Understood / Misunderstood Messages
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Displays the number of understood messages and misunderstood messages in percentages over a period of time.
 
 A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/overview.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md). 
 A message is not counted as understood
@@ -185,7 +185,7 @@ if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.
 or sent during an active handover
 without configuring [AI Copilot Whisper](https://docs.cognigy.com/live-agent/assistants/la-ai-copilot/) Flow. 
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
 which will take you to the application in Cognigy.AI for improving your Flow.
 
@@ -210,7 +210,7 @@ Result:
 
 ### Number of Inputs
 
-Indicates the time-related number of inputs displayed in a bar chart.
+Displays the number of inputs displayed over a period of time.
 
 Source table:
 
@@ -236,7 +236,7 @@ Result:
 
 ### Sessions
 
-Indicates the number of sessions on a timescale
+Displays the number of sessions on a timescale.
 
 Source table:
 
@@ -260,7 +260,7 @@ Result:
 
 ### Unique Contacts
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Displays the number of unique users (`userid`) over a selected time frame. If a user has multiple sessions in a single day, they are counted as one unique contact for that day.
 
 Source table:
 

@@ -7,7 +7,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-The Engagement Dashboard is focused on customer interactions in conversations. Engagement performance of your Agent is visualized in the following charts:
+The _Engagement Dashboard_ highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
 
 - [Indicators](#indicators) 
 - [Heat maps](#heat-maps)
@@ -23,11 +23,11 @@ The Engagement Dashboard is focused on customer interactions in conversations. E
 
 ## Indicators
 
-The Indicator charts presents real-time data that refreshes every 30 seconds.
+The Indicator charts displays real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
-Indicates the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
+This chart displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
 
 Source table:
 
@@ -45,10 +45,9 @@ Result: `11`
 
 ### Avg. Session length
 
-Indicates how long the average session lasted.
+Displays how long the average session lasted.
 
-Session length is the time difference between the timestamp of the first user input and the last user input.
-
+The session length is defined as the time difference between the timestamp of the first user input and the last user input.
 The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
 
 Source table:
@@ -77,7 +76,7 @@ Result: `00:19:24`
 
 ### Positive Ratings
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Displays the total number of Positive Ratings the end user has given.
 
 Source table:
 
@@ -97,7 +96,7 @@ Result: `3`
 
 ### Containment Rate
 
-Indicates the ratio of sessions without any handover to all sessions.
+Displays containment rate. The containment rate is calculated by the ratio of sessions without any handover to all sessions.
 
 Source table:
 
@@ -125,7 +124,8 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
+Displays the number of times a human agent is contacted during the day. Multiple handovers can occur within a single session.
+
 
 Source table:
 
@@ -157,9 +157,9 @@ Result:
 
 ### Top Goals
 
-Indicates the top-rated number of goals reached. 
+Displays the number of completed goals.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 
@@ -221,11 +221,9 @@ Result:
 
 ### Handovers in Time
 
-Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
+Displays the number of times a human agent was contacted within the filtered time frame. Multiple handovers can occur within a single session.
 
-Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
-
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
 which leads you to the Step Explorer in Insights.
 
@@ -252,7 +250,7 @@ Result:
 
 ### Positive Ratings over Time
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Displays the total number of Positive Ratings given as feedback by the end user.
 
 Source table:
 
@@ -272,7 +270,7 @@ Result:
 
 ### Unique Contacts
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Displays the number of unique contacts (`userid`) in relation to the selected timespan. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 

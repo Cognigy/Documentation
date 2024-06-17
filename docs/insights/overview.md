@@ -6,36 +6,38 @@ hidden: false
 
 # Cognigy Insights 
 
-Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
-
-Cognigy.AI has integrated analytics reporting functionalities, as well as an OData,
-interface our customers can rely on to retrieve their raw analytics data.
-Our integrated analytics dashboard provides a range of key metrics
-to understand the usage and the performance of your bots.
-We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots —
-hence we have created a new product
-called **Cognigy Insights**, which entirely replaces the static analytics dashboard with a whole set of new tools.
-
-As of release v4.10, Cognigy provides a completely new designed Analytics solution for Insights.
+*Cognigy Insights* replaces our previous static analytics dashboard and provides you with the tools you need to improve the customer experience your AI agents provide.
+Insights features a range of key metrics, helping you to understand the usage and the performance of your bots.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/overview.png" width="100%" />
 </figure>
 
+Cognigy.AI provides two data analysis solutions catering to different preferences:
+
+- **Cognigy OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports. For more information about the OData Endpoint, read the [Cognigy.AI: OData Analytics Endpoint](../ai/analyze/odata.md) documentation.
+- **Cognigy Insights**. Offers user-friendly pre-built dashboards and tools for quick data analysis and visualization without requiring extensive technical expertise.
+
+The comparison of the OData Endpoint and Insights is outlined in the table.
+
+| Feature             | Cognigy OData Endpoint                                                                                   | Cognigy Insights                                                                     |
+|---------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Purpose             | Provides access to raw data                                                                              | Analyzes and visualizes raw data                                                     |
+| Data Type           | Raw data (structured format)                                                                             | Processed data (visualizations, reports)                                             |
+| Functionality       | Allows retrieval of data using GET requests                                                              | Offers data exploration, metric tracking, performance analysis, data export in CSV   |
+| User Interface      | API                                                                                                      | User-friendly interface with dashboards and reports                                  |
+| Output              | Data in a structured format (for example, JSON, XML)                                                     | Insights, trends, visualizations                                                     |
+| Use Case            | Integrate data with external BI tools <br> Build custom dashboards and reports for complex data analysis | Get quick insights through pre-built dashboards, explorers, and reports              |
+| Technical Expertise | API knowledge required                                                                                   | Less technical knowledge required                                                    |
+| Customization       | Highly customizable                                                                                      | Limited customization                                                                |
+
 ## Dashboards
 
-Cognigy Insights is a new application that replaces the old and static analytics dashboard. Insights keeps track of the data of your customers while they interact with your virtual agents and makes that data available on a variety of new dashboards and new tools.
+Cognigy Insights co-exists side-by-side with Cognigy.AI and is tightly integrated with some of Cognigy's products as well.
+Insights features a variety of dashboards and explorers to highlight different data types, enabling you to track your customers' behavior and the success of your AI Agents. Additionally, all collected data is accessible through OData.
+Insights operates within individual Cognigy.AI Projects. This allows you to analyze data specific to each Project and switch between Projects seamlessly. However, comparing data across Projects simultaneously is not supported.
 
-Insights is a new application that co-exists side-by-side with Cognigy.AI and is tightly integrated into the Cognigy.AI product experience.
-
-With Cognigy.AI 4.10.0, we improved our capabilities to create metrics to have custom metrics for each service.
-
-- Start with creating a new Agent or selecting an existing Agent in your Cognigy.AI.
-- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click **Insights**. We have used this option prior to guiding users to our [Analytics](../ai/analyze/collecting-data.md) application.
-
-!!! note
-    When you are in an agent-specific route in Cognigy.AI (Agent is selected), you should see Insights in the user menu pop-up. You can navigate to Insights of that Agent when you click on the menu item.
-
+Access Cognigy Insights by opening the left-side menu in a Cognigy.AI Project and selecting **Insights**. To switch Projects within Insights, use the dropdown menu in the upper-left corner.
 When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Dashboard** section, starting on the Overview dashboard.
 
 <figure>
@@ -43,22 +45,32 @@ When switching from Cognigy.AI to Cognigy Insights, you will be redirected to th
   <figcaption>Overview dashboard</figcaption>
 </figure>
 
-You will find all sorts of different report types that visualize key metrics of your currently selected virtual agent. 
+Cognigy Insights features a variety of different dashboards and explorers, which visualize key metrics of your currently selected AI Agent. 
 
-Cognigy provides three categories of dashboards available via the Insight sideboard menu:
+Insights provides the following Dashboards:
 
 - [Overview](dashboards/overview.md)
 - [Engagement](dashboards/engagement.md)
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
 
-## Local Filters
+And additionally, a set of Explorers:
 
-The local filters are specific to an application and will be described in the corresponding section.
+- [Message Explorer](explorers/message.md)
+- [Step Explorer](explorers/step.md)
+- [Transcript Explorer](explorers/transcript.md)
 
-## Global filter
+## Filters
 
-The global filters will be visible no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
+Cognigy Insights offers global and local filters. The filter bar shows only a selection of global filters. To access all filters, including both global and local ones, click **more filters**. Any filter changes you make will be applied to all data visualizations throughout the platform.
+
+**Global Filters**
+
+Global filters apply across the entirety of Cognigy Insights. Once you set them up, they persist throughout your session, even if you change from one dashboard to another.
+
+**Local Filters**
+
+Local filters are specific filters, which are only available for one or a few different dashboards. When you switch from one board to another, they will be temporarily disabled, but not removed from your selection.
 
 ## User menu
 
@@ -66,9 +78,11 @@ You can find the [user menu](../ai/administer/user-menu/overview.md) in the uppe
 
 ## Main menu
 
-Using the sidebar menu of Insights, you can select all the available data analytical applications to analyze the Agents' performance to improve the Agent for better understanding and improved user experience.
-The currently selected application is highlighted in a primary color and will be displayed next to the agent at the top as well.
-You can always go back to Cognigy.AI and your virtual Agent also by clicking the Cognigy.AI entry in the sidebar. 
+The Insights left-side menu displays all available dashboards and explorers. This menu allows you to easily switch between different dashboards and explorers to analyze your AI Agent's performance.
+
+You can always identify the currently selected view in two ways: it's highlighted in light blue-gray in the menu bar and displayed in the header at the top of your screen.
+
+The left-side menu also allows you to switch back to Cognigy.AI by clicking **Cognigy.AI**.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/insights-menu.png" width="100%" />

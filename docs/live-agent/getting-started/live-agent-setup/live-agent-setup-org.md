@@ -10,7 +10,7 @@ To set up the Live Agent Account for your organization, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the upper-right corner, click the **User Menu**.
-3. Select the **Organisation Details** from the menu. 
+3. Select the **Admin Center** from the menu. 
 4. Click **Set up Live Agent**.
 
 <figure>

@@ -50,7 +50,7 @@ You don't have permissions to create an Inbox for Live Agent.
   <img class="image-center" src="../../../../_assets/live-agent/getting-started/project-wide-live-agent-setting-no-permissions.png" width="100%"/>
 </figure>
 
-If you have both **Theming** enabled and the Cognigy Live Agent feature disabled, The **Live Agent Settings** section on both the **Organisation Details** and **Agent Settings** pages will not be displayed.
+If you have both **Theming** enabled and the Cognigy Live Agent feature disabled, The **Live Agent Settings** section on both the **Admin Center** and **Agent Settings** pages will not be displayed.
 
 ## What's Next?
 
