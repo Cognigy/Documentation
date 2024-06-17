@@ -183,7 +183,7 @@ A message is counted as understood if it has triggered an intent, a slot is matc
 A message is not counted as understood
 if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/nodes/other-nodes/overwrite-analytics/)
 or sent during an active handover
-without configuring [AI Copilot Whisper](https://docs.cognigy.com/ai/escalate/handover-reference/la-agent-assist-overview/) Flow. 
+without configuring [AI Copilot Whisper]() Flow. 
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,

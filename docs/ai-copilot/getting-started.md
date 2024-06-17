@@ -152,8 +152,3 @@ The widgets will populate their content once the customer starts the conversatio
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
 - [AI Copilot Whisper](../live-agent/assistants/ai-copilot-whisper.md)
-
-
-
-
-[def]: /../../../live-agent/assistants/ai-copilot-whisper.md

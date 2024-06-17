@@ -2,7 +2,6 @@
 title: "AI Copilot Whisper"
 slug: "la-ai-copilot"
 hidden: false
-tags: ["LA AI Copilot", "Whisper", "Copilot Whisper"]
 ---
 # AI Copilot Whisper 
 
