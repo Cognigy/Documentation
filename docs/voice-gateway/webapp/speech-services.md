@@ -79,6 +79,8 @@ To configure the connection, go to **Speech**, choose your preferred vendor and 
     - Provide a **Container URL for STT**.
     - Provide a **Subscription key**, if required.
 
+If you wish to select a hosted service in Microsoft Azure instead, select **Use hosted Azure service** box and insert the API key.
+
 ## More Information
 
 - [TTS and STT Vendors](../references/tts-and-stt-vendors.md)
