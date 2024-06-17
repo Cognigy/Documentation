@@ -1,6 +1,6 @@
 ---
 title: "AI Copilot Whisper"
-slug: "la-ai-copilot"
+slug: "ai-copilot-whisper"
 hidden: false
 tags: ["LA AI Copilot", "Whisper", "Copilot Whisper"]
 ---
