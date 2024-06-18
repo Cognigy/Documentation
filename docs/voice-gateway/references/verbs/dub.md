@@ -10,6 +10,8 @@ The `dub` verb adds an additional audio track into the conversation. The track w
 
 Additionally, the volume (gain) of the inserted audio may be adjusted up or down. The default value is 0 dB.
 
+With this verb can add up to no more than 2 audio tracks to be played at once.
+
 ```json
  {
     "verb": "dub",

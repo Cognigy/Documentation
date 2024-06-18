@@ -103,7 +103,7 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 
 ### Atmosphere Sounds
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.78.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
 
 Atmosphere Sounds allow the user to play a custom mp3 track in the background of the conversation.
 
