@@ -28,6 +28,9 @@ _**Alerts**_
 _**Applications**_
 : Connectors that allow the Endpoint to be routed to the Voice Gateway. For more information, read the [Applications](webapp/applications.md) and [Create Voice Gateway Endpoint](getting-started.md#create-a-voice-gateway-endpoint) documentation.
 
+_**Atmosphere Sounds**__
+: A parameter within the Session Config Node, which allows the user to configure a background track to be played during the conversation. Atmosphere Sounds track can be played, silenced or stopped at any time during the Voice Gateway conversation, and its volume can also be adjusted. For more information, read the [Voice Gateway Parameter Details](../ai/build/node-reference/voice/voice-gateway/parameter-details.md) documentation.
+
 ## C
 
 _**Carriers**_

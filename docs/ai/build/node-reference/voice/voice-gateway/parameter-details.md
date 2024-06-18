@@ -101,6 +101,19 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 | Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                       |
 | Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow. |
 
+### Atmosphere Sounds
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.78.md)
+
+Atmosphere Sounds allow the user to play a custom mp3 track in the background of the conversation.
+
+| Parameter | Type     | Description                                                       |
+|-----------|----------|-------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence or remove the track.           |
+| URL       | Text     | Accepts direct URL links to mp3 tracks.                           |
+| Loop      | Toggle   | When switched on, it loops the audio track.                       |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -100 to +100 dB. |
+
 ### Advanced
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../../../../release-notes/4.48.md)
