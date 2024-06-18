@@ -8,7 +8,7 @@ hidden: false
 
 The *Interaction Panel* offers a robust testing environment for your AI Agents. It enables you to test and analyze the behavior of your AI Agents, allowing you to easily modify and improve their communication and service skills.
 
-The Interaction Panel offers provides the following features:
+The Interaction Panel provides the following features:
 
 - **Three Testing Modes**. Chat, voice, and live modes allow for comprehensive testing across different scenarios to simulate real-world interactions and assess agent behavior across various channels.
 - **Memory Inspection and Extraction**. View and extract data stored within the AI agent's memory to analyze its behavior and identify potential areas for improvement.
