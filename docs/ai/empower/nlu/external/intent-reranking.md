@@ -55,7 +55,7 @@ To add descriptions to Intents, follow these steps:
 To add an LLM Prompt Node with the relevant prompt, follow these steps:
 
 1. In the Flow editor, add an LLM Prompt Node.
-2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** field and enter the following prompt for re-ranking:
+2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** field and enter the following prompt for reranking:
 
     ```text
     Your are an expert in intent recognition. Given a list of intents, their descriptions, and a query, you need to choose the right intent for the query.
