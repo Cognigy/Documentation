@@ -112,7 +112,7 @@ Atmosphere Sounds allow the user to play a custom mp3 track in the background of
 | Action    | Dropdown | Selects an action to play, silence or remove the track.           |
 | URL       | Text     | Accepts direct URL links to mp3 tracks.                           |
 | Loop      | Toggle   | When switched on, it loops the audio track.                       |
-| Volume    | Slider   | Adjusts the volume of the track. Can be set from -100 to +100 dB. |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.   |
 
 ### Advanced
 
