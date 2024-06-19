@@ -35,16 +35,40 @@ To open the Interaction Panel, follow these steps:
 4. On the **Flows** page, select the Flow that contains the AI Agent you want to test. 
 5. In the toolbar at the top right of the Cognigy.AI interface, click ![chat-menu](../../../_assets/icons/chat-menu.svg).
 
-In the Cognigy.AI interface, the Interaction Panel is accessible from any Project page,
-allowing you to test and debug your AI Agents.
+In the Cognigy.AI interface, the Interaction Panel is always accessible within any Project, offering a quick and convenient way to test and debug your AI Agents.
 
 ## Project-Related Settings
 
-Before using the Interaction Panel for test purposes, you can configure the following options:
+If you open the Interaction Panel directly from a Flow, the Flow itself,
+any relevant Snapshot (a specific version of your AI Agent),
+and Locale (language settings) will be preselected based on your Flow settings. 
+However, you can still modify these options as needed.
 
-- [Snapshot](#snapshot)
-- [Locale](#locale)
-- [Flow](#flow-select)
+When you access the Interaction Panel from any other Project page, you'll need to configure the following options for testing:
+
+- [Flow](#flow-select) — select the specific Flow you want to test with the AI Agent.
+- [Locale](#locale) — define the language your AI Agent should use during the test interaction.
+- [Snapshot](#snapshot) — this setting is optional. If applicable, you can select a specific version of your AI Agent for testing.
+
+### Flow Select
+
+When you have created more than one Flow, you can select the Flow you want to test as follows:
+
+1. Click ![expand-locale-list](../../../_assets/icons/expand_2.svg) to open a list of the available Flows.
+2. Select the Flow you want to test.
+
+### Locale
+
+[Locales](../../build/translation-and-localization/localization.md) are fundamental components for multilingual AI Agents communication.
+They enable AI Agents to interact with end users in their native languages,
+considering cultural nuances and creating a smooth user experience.
+
+When you create more than one locale, you can select a preferred language as follows:
+
+1. Click ![expand 2](../../../_assets/icons/expand_2.svg) to open a list of the available locales.
+2. Select the Locale you want to use.
+
+When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows.md#locale-settings) of your Flow.
 
 ### Snapshot
 
@@ -56,25 +80,6 @@ Using Snapshots, you can test your AI Agent configuration in the Interaction Pan
 
 For more information, refer to [Snapshots](../../deploy/snapshots.md).
 
-### Locale
-
-[Locales](../../build/translation-and-localization/localization.md) are fundamental components for multilingual AI Agents communication.
-They enable AI Agents to interact with end users in their native languages, 
-considering cultural nuances and creating a smooth user experience.
-
-When you create more than one locale, you can select a preferred language as follows: 
-
-1. Click ![expand 2](../../../_assets/icons/expand_2.svg) to open a list of the available locales.
-2. Select the Locale you want to use. 
-
-When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows.md#locale-settings) of your Flow.
-
-### Flow Select 
-
-When you have created more than one Flow, you can select the Flow you want to test as follows: 
-
-1. Click ![expand-locale-list](../../../_assets/icons/expand_2.svg) to open a list of the available Flows.
-2. Select the Flow you want to test. 
 
 ## Test
 
@@ -128,7 +133,7 @@ Before starting a voice call, you need to configure a voice provider in the [Voi
 
 {! _includes/ai/voice-providers.md !}
 
-Based on the selected **Audio Provider**, the list of supported STT and TTS languages and voices will change. On the **Settings** tab, in the Voice Call section, you can select your preferred language and voice for your test call. 
+Based on the selected **Audio Provider**, the list of supported STT and TTS languages and voices will change. On the **Settings** tab, in the **Voice Call** section, you can select your preferred language and voice for your test call. 
 After configuring the Audio Provider, language and voice, you can start the call by clicking the **Start Call** button.
 
 <figure>
@@ -137,7 +142,7 @@ After configuring the Audio Provider, language and voice, you can start the call
 
 During a call, you can do the following:
 
-- **Monitor call duration**. The call timer displayed next to the End Call button shows you how long your call has been active.
+- **Monitor call duration**. The call timer displayed next to the **End Call** button shows you how long your call has been active.
 - **Send DTMF tones**. Use the **Dialpad** to send touch-tone (DTMF) signals during the call. These tones you hear when you click buttons on the **Dialpad** for entering codes or navigating menus within the call.
 - **Follow the conversation**. View the real-time conversation transcript in the Interaction Panel to track the call.
 - **Automatically end a call on timeout**. If you don't provide any voice input for a set period (timeout), the call will automatically end to prevent unnecessary connection time.
@@ -186,52 +191,53 @@ To run a Playbook within the **Playbook** mode, follow these steps:
 
 During execution, you can see if Playbook Step assertions passed or failed.
 Hovering your cursor over them reveals more details in a tooltip.
-For more information, read [Assertions](../../test/playbooks.md#assertion).
+For more information, refer to [Assertions](../../test/playbooks.md#assertion).
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-playbook.png" width="100%" />
 </figure>
 
-You can further configure the Playbook execution in the [Interaction Panel Playbook settings](#playbooks).
+You can further configure the Playbook execution in the [Playbook settings](#playbooks).
 
 ## Info
 
-The **Info** tab menu provides the following :
+The **Info** tab menu includes the following sections:
 
-- [Input](#input-object)
-- [State](#state)
+- [Input](#input)
 - [Context](#context)
 - [Profile](#profile)
+- [State](#state)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-info.png" width="100%" />
 </figure>
 
-### Input Object
-
-The **Input** object is updated with every user interaction
-and holds a lot of relevant information about the user's input,
-such as the Intents that were found, the channel that the message was sent through and other relevant meta-data.
-For more information, refer to [Input](input.md). 
-Cognigy objects have a different life span depending on their type.
+Cognigy.AI objects have a different life span depending on their type.
 For more information,
 refer to [Cognigy Objects Life Span](../../build/cognigy-script.md#life-span-of-cognigy-objects).
 
-### State
+### Input
 
-**State** can be used to narrow the set of Intents that can be triggered by actively excluding certain Intents from a specific state. 
-
-For more information, refer to [State](state.md).
+The **Input** object is updated with every user interaction
+and holds a lot of relevant information about the user's input,
+such as the Intents that were found, the channel that the message was sent through and other relevant metadata.
+For more information, refer to [Input](input.md).
 
 ### Context
 
-**Context** serves as the AI Agent's short-term memory, storing session-specific information, such as selected products or the user's current location. Additionally, the Context holds API responses relevant to the particular session.
+The **Context** object serves as the AI Agent's short-term memory, storing session-specific information, such as selected products or the user's current location. Additionally, the Context holds API responses relevant to the particular session.
 For more information, refer to [Context](context.md).
 
 ### Profile
 
-**Profile** serves as the long-term memory of the system, storing user data such as names and emails and including user-specific information such as favorite colors.
+The **Profile** object serves as the long-term memory of the system, storing user data such as names and emails and including user-specific information such as favorite colors.
 For more information, refer to [Profile](profile.md).
+
+### State
+
+**State** can be used to narrow the set of Intents that can be triggered by actively excluding certain Intents from a specific state.
+
+For more information, refer to [State](state.md).
 
 ## Settings
 
@@ -240,20 +246,20 @@ To configure the relevant settings for the Interaction Panel, click the tab **Se
 | Setting                           | Description                                                                                                                                                    |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **General**                       |                                                                                                                                                                |
-| NLU Connector                     | A selection list. The default is the Cognigy NLU engine.                                                                                                       |
+| NLU Connector                     | Provides a selection list. The default is the Cognigy NLU engine.                                                                                              |
 | Text to Speech                    | Reads out messages from the system.                                                                                                                            |
 | Expert Mode                       | Displays additional information about the Flow.                                                                                                                |
-| Channel Selection                 | A selection list for Endpoint providers.                                                                                                                       |
+| Channel Selection                 | Provides a selection list for Endpoint providers.                                                                                                              |
 | **Chat**                          |                                                                                                                                                                |
 | Show Data Input                   | Displays data input.                                                                                                                                           |
 | **Voice Call**                    |                                                                                                                                                                |
-| Language                          | A drop-down list with available languages.                                                                                                                     |
-| Voice                             | A drop-down list with available female and male speakers.                                                                                                      |
+| Language                          | Provides a drop-down list with available languages.                                                                                                            |
+| Voice                             | Provides a drop-down list with available female and male speakers.                                                                                             |
 | **Playbooks**                     |                                                                                                                                                                |
 | Repeat                            | Reruns a Playbook after it finishes executing.                                                                                                                 |
 | Delay                             | Waits between Playbook steps. The default setting is 200ms.                                                                                                    |
 | **Advanced**                      |                                                                                                                                                                |
-| Auto-Move Flow Editor             | Automatically switches and moves the Flow editor based on the last executed Node.                                                                              |
+| Auto-Move Flow Editor             | Switches and moves the Flow editor automatically based on the last executed Node.                                                                              |
 | Auto-Switch Target Flow Selection | Switches the target Flow automatically when another Flow is opened in the Editor. The target Flow will not switch automatically if there is an active session. |
 
 ### General
@@ -262,22 +268,22 @@ The Interaction Panel can be configured with a number of settings across differe
 
 #### Chat Input
 
-The **Chat Input** section allows you to enable third-party NLU engines for use in your Interaction Panel. 
+The **Chat Input** setting lets you enable third-party NLU engines for use in the Interaction Panel. 
 To install a new NLU engine in Cognigy.AI, go to **Build > NLU Connectors** and click **+ New NLU Connector**.
 
 For more information on how to manage NLU connectors, refer to [NLU Connectors](../../empower/nlu/external/nlu-connectors.md).
 
 #### Chat Output
 
-In this section, you can configure the chat outputs in the Interaction Panel:
+The **Chat Output** setting lets you customize how information is displayed in the Interaction Panel:
 
 - [Text to Speech](#text-to-speech) — activate this setting to have system messages read aloud.
 - [Expert mode](#expert-mode) — activate this mode to view more details about the Flow execution.
-- [Channel Select](#channel-select) — select the channels you want to display from the dropdown menu.
+- [Channel Select](#channel-select) — select the channels you want to display from the list.
 
 ##### Text-to-Speech
 
-When the setting is enabled, an AI Agent will vocalize its responses using your browser's built-in Text-to-Speech (TTS) functionality.
+When the **Text-to-Speech** setting is enabled, an AI Agent will vocalize its responses using your browser's built-in Text-to-Speech (TTS) functionality.
 
 ##### Expert Mode
 
@@ -302,7 +308,7 @@ By default, outputs from all channels will be displayed, indicated by the **Show
 
 ### Chat
 
-The Chat section lets you activate **Show data input** to enable the **Data Input** field for chat messages in the Interaction Panel.
+The **Chat** section lets you activate **Show data input** to enable the **Data Input** field for chat messages in the Interaction Panel.
 When the setting is active, an additional input field appears below the standard text input field, allowing you to enter JSON data.  
 
 Example:
@@ -313,27 +319,32 @@ Valid JSON input data could be `{"firstName": "Max", "lastName": "Müller"}`, wh
 
 [![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/index.md)
 
-Within the **Voice Call** section, you can select the language and voice to test voice calls from the Interaction Panel.
+The **Voice Call** section lets select the language and voice to test voice calls from the Interaction Panel.
 
 Configure the following options:
 
-- **Language**. Select from multiple languages in a drop-down menu. The **Custom** option allows you to use a TTS language, which isn't in the dropdown list. It defines the language of the AI Agent's output. The format to use depends on the TTS Vendor, for example, de-DE, fr-FR, en-US.
-- **Voice**. Select a female or male speaker's voice. The **Custom** option allows for choosing a TTS voice, which is not in the drop-down list. This setting can be the case for region-specific voices. The format to use depends on the TTS Vendor, for example, de-DE-ConradNeural.
+- **Language**. Select from multiple languages in a drop-down menu. The **Custom** option lets you use a TTS language, which isn't in the list. It defines the language of the AI Agent's output. The format depends on the TTS Vendor, for example, de-DE, fr-FR, en-US.
+- **Voice**. Select a female or male speaker's voice. This setting applies to region-specific voices as well. The format depends on the TTS Vendor, for example, de-DE-ConradNeural.
 
 ### Playbooks
 
-This section enables you to configure the Playbook executions in the Interaction Panel using two settings:
+This **Playbooks** section lets you to configure the Playbook executions in the Interaction Panel using two settings:
 
 - **Repeat**. Run the Playbook repeatedly (until you stop it). This feature is helpful for testing use cases that need consistent behavior over many interactions.
-- **Delay**. Time in milliseconds to wait between each Playbook Step execution. The default setting is 200 ms.
+- **Delay**. The waiting time between each Playbook Step execution. A delay of 200 milliseconds (ms) is the default value.
 
 ### Advanced
+
+The Interaction Panel offers two advanced settings to improve Flow editing:
+
+- [Auto-move Flow Editor](#auto-move-flow-editor)
+- [Auto-switch Target Flow Selection](#auto-switch-target-flow-selection)
 
 #### Auto-Move Flow Editor
 
 When the **Auto-move Flow Editor** setting is enabled, the Flow editor will automatically:
 
-- Center and focus on the last executed Node in the current Flow based on user or agent's outputs.
+- Center and focus on the last executed Node in the current Flow based on user or AI Agent's outputs.
 - Open and center the Node if it belongs to a different Flow.
 
 The setting is enabled by default.
@@ -341,8 +352,8 @@ The setting is enabled by default.
 #### Auto-Switch Target Flow Selection
 
 When the **Auto-switch Target Flow Selection** setting is enabled,
-the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow editor. 
-By default, the setting is disabled.
+the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow editor.
+The setting is disabled by default.
 
 Example: 
 
