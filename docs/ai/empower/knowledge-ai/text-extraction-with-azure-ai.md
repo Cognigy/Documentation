@@ -42,7 +42,7 @@ This feature is available in the following environments:
 
 #### Prerequisites
 
-- Cognigy.AI 4.71 is deployed. (Note: If you are below Cognigy.AI 4.79, you will have to upload files with a `.preset_ca` suffix in the file name to use Azure AI Document Intelligence, e.g. `myPDF.preset_ca.pdf`)
+- Cognigy.AI 4.71 is deployed. (Note: If you are below Cognigy.AI 4.79, you will have to upload files with a suffix in the file name. See "How to Use" section below.)
 
 #### Environment Variables
 
@@ -62,7 +62,7 @@ If Azure AI Document Intelligence is configured in your environment, it will aut
 If you don't want to use Azure AI Document Intelligence for File Extraction, go to your Agent's Knowledge AI Settings and set the File Extractor option to "Basic (local parser)".
 
 #### Cognigy.AI versions 4.71-4.79:
-This strategy is applied when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
+Azure AI Document Intelligence is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
 ### Cognigy.AI Additional Data Privacy Terms
