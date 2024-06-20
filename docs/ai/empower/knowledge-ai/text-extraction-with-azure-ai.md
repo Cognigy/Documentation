@@ -61,7 +61,7 @@ If Azure AI Document Intelligence is configured in your environment, it will aut
 
 If you don't want to use Azure AI Document Intelligence for File Extraction, go to your Agent's Knowledge AI Settings and set the File Extractor option to "Basic (local parser)".
 
-#### Cognigy.AI versions 4.71-4.79:
+#### Cognigy.AI versions 4.71-4.78:
 Azure AI Document Intelligence is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
