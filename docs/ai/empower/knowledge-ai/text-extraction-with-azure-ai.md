@@ -13,10 +13,10 @@ hidden: false
 
 _Text Extraction with [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/)_ creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
 
-When you upload a file with the `.preset_ca` suffix as a Knowledge Source,
-Cognigy automatically sends a request to the Azure AI Document Intelligence platform.
+If Azure AI Document Intelligence is available in your environment, Cognigy automatically sends a request to the Azure AI Document Intelligence platform.
 This request prompts the platform to extract text from the file. Once the platform finishes processing the file, Cognigy retrieves the preprocessed result.
 This result is then converted to Markdown format and segmented into chunks for easier handling.
+
 
 The chunk strategy powered by Azure AI Document Intelligence has the following advantages:
 
@@ -26,7 +26,7 @@ The chunk strategy powered by Azure AI Document Intelligence has the following a
 
 ## Supported Formats
 
-Only files in `PDF` and `DOCX` are supported. 
+Only files in `PDF`, `DOCX` and `PPTX` formats are supported. 
 
 ## Availability
 
@@ -42,7 +42,7 @@ This feature is available in the following environments:
 
 #### Prerequisites
 
-- Cognigy.AI 4.71 is deployed.
+- Cognigy.AI 4.71 is deployed. (Note: If you are below Cognigy.AI 4.79, you will have to upload files with a `.preset_ca` suffix in the file name to use Azure AI Document Intelligence, e.g. `myPDF.preset_ca.pdf`)
 
 #### Environment Variables
 
@@ -56,8 +56,17 @@ The following environment variables must be specified in the `values.yaml` file 
 
 ## How to Use
 
+#### Cognigy.AI v4.79+
+If Azure AI Document Intelligence is configured in your environment, it will automatically be used for File Extraction. You can recognize this by looking at the Tag behind "File" in the Type Select field when creating a new Knowledge Source. If the Tag reads "Advanced", you will be using Azure AI Document Intelligence for File Extraction.
+
+If you don't want to use Azure AI Document Intelligence for File Extraction, go to your Agent's Knowledge AI Settings and set the File Extractor option to "Basic (local parser)".
+
+#### Cognigy.AI versions 4.71-4.79:
 This strategy is applied when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
+
+### Cognigy.AI Additional Data Privacy Terms
+By using Azure AI Document Intelligence for File Extraction, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
 ### Metadata
 
