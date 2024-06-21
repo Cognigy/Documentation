@@ -42,7 +42,7 @@ To create a platform config for Genesys Cloud Open Messaging, follow these steps
 5. In the left-side menu, select **Platforms**.
 6. On the **Platforms** page, click **+ Create new Integration > Open Messaging**.
 7. On the **Open Messaging** page, fill in the following fields:
-    - **Name** — enter a name for your integration. Copy and save this name. You need to specify this name in the **Deployment name** field on the Cognigy side. The **Deployment name** must not contain empty spaces.
+    - **Name** — enter a name without spaces for your integration. Copy and save this name. You need to specify this name in the **Deployment name** field on the Cognigy side.
     - **Outbound Notification Webhook URL** — enter `https://endpoint-<your-environment>/handover/genesysCloudOM`. For example, `https://endpoint-app.cognigy.ai/handover/genesysCloudOM`, where environment is `app.cognigy.ai`.
     - **Outbound Notification Webhook Signature Secret Token** — enter the secret into the X-Hub-Signature-256 header generation for webhook requests sent to the outbound notification webhook URL. For the secret, you can choose any arbitrary but sufficiently random string that you want. The external service should use the secret and signature to validate the message originating from Genesys Cloud. This validation is optional but recommended. For more information about validation, see [Validate webhook notifications in the Genesys Cloud Developer Center](https://developer.genesys.cloud/commdigital/digital/openmessaging/validate). Copy and save this token for future usage on the Cognigy side. Note that if you did not copy and save this token at once, after saving the platform configuration, you will need to recreate this token.
 8. Click **Save**.
