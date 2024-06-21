@@ -60,7 +60,7 @@ or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generi
 
 ## On-Premises Speech Services
 
-Voice Gateway supports on-premise configuration of **Microsoft Azure**, **Deepgram** and **Nuance** Speech Services.
+Voice Gateway supports on-premises configuration of **Microsoft Azure**, **Deepgram**, and **Nuance** Speech Services.
 
 To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
 

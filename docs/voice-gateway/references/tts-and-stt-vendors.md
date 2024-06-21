@@ -11,7 +11,7 @@ hidden: false
 
 The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) providers supported by Cognigy Voice Gateway, as well as which of these providers support on-premises installation.
 
-| Provider   | TTS | STT | On-prem |
+| Provider   | TTS | STT | On-Premises |
 |------------|-----|-----|---------|
 | AWS        | +   | +   | -       |
 | Deepgram   | +   | +   | +       |
