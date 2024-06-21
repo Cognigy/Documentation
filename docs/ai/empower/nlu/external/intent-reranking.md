@@ -89,8 +89,8 @@ To retrieve this Intent for further use, follow these steps:
 3. Click **Save Node**.
 4. Below the Code Node, add a Lookup Node.
 5. In the Lookup Node editor, configure the following fields:<br>
-   5.1 From the **Type** list, select **CognigyScript**.<br>
-   5.2 In the **Operator** field, specify `input.intent`. 
+   5.1 From the **Type** list, select **Intent**.<br>
+   5.2 Set the **Intent Level** field to **Default**, matching Intents at the most detailed hierarchy level.
 6. Click **Save Node**.
 7. Add child Case Nodes of the Lookup Node, specifying the Intent name in the **Value** field for each Node.
 
