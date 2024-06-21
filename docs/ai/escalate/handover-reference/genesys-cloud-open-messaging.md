@@ -190,7 +190,7 @@ To display Genesys Status and Bot messages, follow these steps:
 4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select **Text** from the **Output Type** list, and in the **Text** field enter the following **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
 5. In the Handover Settings of the **Say** Node, select **User Only** as the Handover Output Destination.
 6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
-7. Open the **Go To** Node and in the Select Node dropdown menu, choose **Lookup**. Scroll down and in Advanced options select **Go To Node and Wait for Input** from Execution Mode.
+7. Open the **Go To** Nod. From the **Select Node** list, choose **Lookup**. Scroll down to the **Advanced** section. From the **Execution Mode** list,  select **Go to Node and wait for Input**.
 
 The Genesys flow should look like this:
 
