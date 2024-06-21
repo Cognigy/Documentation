@@ -176,7 +176,7 @@ In [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) 
 
 To test connection, click **Open Demo Web Chat**.
 
-#### Genesys Status and Bot Messages
+#### (Optional) Genesys Status and Bot Messages
 
 _(Optional)_ Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint. For example, in the Queue flow in Genesys, this feature allows to display the queue position to the user while they are waiting for the available human agent. If you wish to display Queue Position messages to the users, be sure to configure a Queue Message Flow in Genesys first.
 
@@ -187,7 +187,7 @@ To display Genesys Status and Bot messages, follow these steps:
 1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
 2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
 3. For the child **Case** Node, select `genericHandoverUpdate`.
-4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select Text as output type, and in the Text field type this **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
+4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select **Text** from the **Output Type** list, and in the **Text** field enter the following **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
 5. In the Handover Settings of the **Say** Node, select **User Only** as the Handover Output Destination.
 6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
 7. Open the **Go To** Node and in the Select Node dropdown menu, choose **Lookup**. Scroll down and in Advanced options select **Go To Node and Wait for Input** from Execution Mode.
