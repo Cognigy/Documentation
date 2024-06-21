@@ -9,9 +9,7 @@ hidden: false
 _Snapshots_ are immutable forms of your virtual agent, including the following resources:
 
 * Flows
-* Trained NLU models:
-    * Internal (Cognigy NLU)
-    * External ([`text-embedding-3-model`](../empower/nlu/external/external-nlu-intent-recognition.md))
+* Trained NLU Intent models
 * Lexicons
 * Connections
 * NLU Connectors
