@@ -203,7 +203,7 @@ The **Main Flow** on Cognigy.AI should look like this:
 </figure>
 
 
-If you use AI Copilot, follow steps 1-7 to configure the Genesys Status and Bot Messages feature within your AI Copilot flow. Ensure to set the structure above the actual AI Copilot Nodes.
+If you use AI Copilot, configure the **Lookup Node** and the **Go To Node** for the the Genesys Status and Bot Messages feature within your AI Copilot flow. Ensure to set the structure above the actual AI Copilot Nodes.
 
 ## AI Copilot Workspace
 
