@@ -1,6 +1,7 @@
 ---
 title: "LLM-Based Intent Reranking"
 slug: "external-nlu"
+description: "LLM-based intent reranking uses a Large Language Model (LLM) to reorder identified intents based on user input, improving the accuracy of intent classification provided by Cognigy NLU."
 hidden: false
 ---
 
@@ -55,40 +56,45 @@ To add descriptions to Intents, follow these steps:
 To add an LLM Prompt Node with the relevant prompt, follow these steps:
 
 1. In the Flow editor, add an LLM Prompt Node.
-2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** field and enter the following prompt for re-ranking:
+2. In the LLM Prompt Node, go to the **Instruction (System Message/Prompt)** field and enter the following prompt for reranking:
 
-    ```text
-    Your are an expert in intent recognition. Given a list of intents, their descriptions, and a query, you need to choose the right intent for the query.
-
-    Given the following intents and descriptions:
-   
-    Intent 1: {{"{{ input.nlu.intentMapperResults.scores[0].name }}"}}
-    Description 1: {{"{{ input.nlu.intentMapperResults.scores[0].description }}"}}
-   
-    Intent 2: {{"{{ input.nlu.intentMapperResults.scores[1].name }}"}}
-    Description 2: {{"{{ input.nlu.intentMapperResults.scores[1].description }}"}}
-   
-    Intent 3: {{"{{ input.nlu.intentMapperResults.scores[2].name }}"}}
-    Description 3: {{"{{ input.nlu.intentMapperResults.scores[2].description }}"}}
-   
-    Intent 4: {{"{{ input.nlu.intentMapperResults.scores[3].name }}"}}
-    Description 4: {{"{{ input.nlu.intentMapperResults.scores[3].description }}"}}
-   
-    Intent 5: {{"{{ input.nlu.intentMapperResults.scores[4].name }}"}}
-    Description 5: {{"{{ input.nlu.intentMapperResults.scores[4].description }}"}}
-   
-    And the following query: {{"{{input.text}}"}}
-   
-    Choose the correct intent for the query. Output the intent using the JSON format as follows: {"intent": intent_name}
-    ```
+      {% raw %}
+      ```text
+      Your are an expert in intent recognition. Given a list of intents, their descriptions, and a query, you need to choose the right intent for the query.
+       
+      Given the following intents and descriptions: 
+       
+      {{input.nlu.intentMapperResults.scores.slice(0,5).map((item, index) => `Intent ${index +1}: ${item.name}\nDescription ${index + 1}: ${item.description}\n`).join("\n\n")}}
+       
+      And the following query: {{input.text}}
+       
+      Choose the correct intent for the query. Output the intent using the JSON format as follows: {"intent": intent_name}
+      ```
+      {% endraw %}
 
 3. Navigate to the **Advanced** section and configure the recommended parameters as follows:<br>
    3.1 From the **Sampling Method** list, select **Temperature** and set the temperature to `0`.<br>
-   3.2 From the **Response Format** list, select **JSON output**.
+   3.2 From the **Response Format** list, select **JSON Object**.
 4. _(Optional)_ If you want the model to return the similar result for the subsequent requests, specify a number in the **Seed** parameter. For example, `123`.
 5. Click **Save Node**.
 
-Now you can test your Flow via the Interaction Panel.
+### Retrieve and Reuse Results
+
+By default, the correct intent will be stored in the `input.promptResult.intent` object.
+
+To retrieve this Intent for further use, follow these steps:
+
+1. Below the LLM Prompt Node, add a Code Node.
+2. In the **Code** field of the Code Node, specify `input.intent = input.promptResult.intent`.
+3. Click **Save Node**.
+4. Below the Code Node, add a Lookup Node.
+5. In the Lookup Node editor, configure the following fields:<br>
+   5.1 From the **Type** list, select **CognigyScript**.<br>
+   5.2 In the **Operator** field, specify `input.intent`. 
+6. Click **Save Node**.
+7. Add child Case Nodes of the Lookup Node, specifying the Intent name in the **Value** field for each Node.
+
+Under each Case Node, you can place other Nodes, such as Say or Question, which will offer guides to the end user based on the selected Intent.
 
 ## Example
 
@@ -167,7 +173,9 @@ After applying the Cognigy NLU Intent mapping and external LLM reranking, the co
 
 ```json
 {
-   "promptResult": "Based on the user query \"I'd like something low-calorie, but here's the catch—I don't eat any animal products, and I'm allergic to milk-based ingredients.\", the correct intent for this query is \"Veggie Pizza\".\n\nOutput:\n{\"intent\": \"Veggie Pizza\"}",
+   "promptResult": {
+      "intent": "Veggie Pizza"
+   }
 }
 ```
 
