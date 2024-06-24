@@ -24,13 +24,9 @@ The feedback is given on three levels:
 - Individual Intent 
 - Individual Example Sentence
 
-This saves time from a testing perspective as a simple glance at the intent training menu is all
-that is required to assess the quality of the model,
-rather than manually talking to the virtual agent to judge the quality of understanding.
-We recommend digesting the feedback top-down.
-Is your overall model green?
-A quick scan of intents might alert you to issues.
-A check on individual sentences gives you concrete insight to edit, add or move example sentences and improve your NLU.
+A simple glance at the intent training menu is all you need to assess the quality of the model, rather than manually talking to the AI Agent to judge its understanding. We recommend reviewing the feedback in order of priority, starting from the top.
+A high-accuracy score (indicated by a green color) suggests the model is suitable for initial user testing.
+A quick review of the intents can reveal potential problems. Checking individual sentences provides specific insights for editing, adding, or moving examples to improve your NLU.
 
 !!! warning "Train the NLU"
     After modifying example sentences, retrain the NLU to ensure the latest scoring analysis reflects your changes.
@@ -45,7 +41,7 @@ The overall intent model score provides a total score on the quality of the NLU 
 
 A green accuracy score indicates the model is ready for testing by users and consistent.
 
-Any yellow or red traffic light in the overall model should be a cause of concern and indicates important intent design issues. Lower intent model scores can be improved by finding low scoring intents and adjusting example sentences that also score poorly. This is made easy by the traffic light color feedback system that allows designers to scan the page for red or yellow items where improvement is required.
+Any yellow or red traffic light in the overall model indicates important intent design issues. To improve lower scoring intents, identify those with low scores and adjust their poorly scoring example sentences. The traffic light color feedback system makes this easy, allowing designers to quickly scan the page for red or yellow areas that need attention.
 
 ### Individual Intent
 
