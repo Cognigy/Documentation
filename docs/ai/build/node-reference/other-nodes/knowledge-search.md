@@ -15,8 +15,8 @@ hidden: false
 
 ## Description
 
-!!! danger "Deprecation of the Knowledge Search Node"
-    The Node is deprecated. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node that includes the same functionality as this one.
+!!! danger "Removal of the Knowledge Search Node"
+    The Knowledge Search Node was removed from Cognigy.AI in version 4.61. If you use this Node, it will still work, but you won't be able to create new Knowledge Search Nodes. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node, as it offers the same functionality and additional features.
 
 This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
 
