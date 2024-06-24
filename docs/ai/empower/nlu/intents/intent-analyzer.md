@@ -96,7 +96,9 @@ The **Intent Analyzer** uses a traffic light color system to provide users with 
 
 You can test NLU scores via the Interaction Panel by activating the [Expert Mode](../../../test/interaction-panel/overview.md#expert-mode) feature and exploring the detailed results in the `input.nlu.intentMapperResults.scores` object.
 
-For more complex testing, you can use an API request to test NLU scores without creating an unnecessary load on the server.
+For more complex testing,
+you can use the API [POST /v2.0/projects/{projectId}/nlu/scores](https://api-trial.cognigy.ai/openapi#post-/v2.0/projects/-projectId-/nlu/scores) request
+to test NLU scores without creating an unnecessary load on the server.
 
 **Request**
 
@@ -105,8 +107,8 @@ Post /v2.0/projects/{projectId}/nlu/scores
 Content-Type: application/json
 
 {
-  "flowReferenceId": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
-  "localeReferenceId": "c119bb2b-af87-42c9-abf0-49dae3ed0a28",
+  "flowReferenceId": "<flow-reference-id>",
+  "localeReferenceId": "<locale-reference-id>",
   "sentence": "Can you help me with this issue?"
 }
 ```
