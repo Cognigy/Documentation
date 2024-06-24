@@ -1,8 +1,9 @@
 ---
- title: "Intent Analyzer" 
- slug: "intent-analyzer" 
- hidden: false 
+title: "Intent Analyzer" 
+slug: "intent-analyzer" 
+hidden: false 
 ---
+
 # Intent Analyzer
 
 Writing a quality set of example sentences is key to building intelligent virtual agents. Cognigy.AI includes an in-tool evaluation feature that provides creators with immediate feedback on the quality of each example sentence and intent as it fits into the current version of their unique NLU training model.
@@ -23,10 +24,16 @@ The feedback is given on three levels:
 - Individual Intent 
 - Individual Example Sentence
 
-This saves time from a testing perspective as a simple glance at the intent training menu is all that is required to assess the quality of the model, rather than manually talking to the virtual agent to judge the quality of understanding. We recommend to digest the feedback top-down. Is your overall model green? A quick scan of intents might alert you to issues. A check on individual sentences gives you concrete insight to edit, add or move example sentences and improve your NLU.
+This saves time from a testing perspective as a simple glance at the intent training menu is all
+that is required to assess the quality of the model,
+rather than manually talking to the virtual agent to judge the quality of understanding.
+We recommend digesting the feedback top-down.
+Is your overall model green?
+A quick scan of intents might alert you to issues.
+A check on individual sentences gives you concrete insight to edit, add or move example sentences and improve your NLU.
 
-!!! warning "Train the NLU for Feedback"
-    Ensure the NLU is trained each time changes have been made to example sentences to provide the latest scoring analysis.
+!!! warning "Train the NLU"
+    After modifying example sentences, retrain the NLU to ensure the latest scoring analysis reflects your changes.
 
 ### Overall Intent Model
 
@@ -38,7 +45,7 @@ The overall intent model score provides a total score on the quality of the NLU 
 
 A green accuracy score indicates the model is ready for testing by users and consistent.
 
-Any yellow or red traffic light at the overall model should be a cause of concern and points to important intent design issues. Lower intent model scores can be improved by finding low scoring intents and adjusting example sentences that also score poorly. This is made easy by the traffic light color feedback system that allows designers to scan the page for red or yellow items where improvement is required.
+Any yellow or red traffic light in the overall model should be a cause of concern and indicates important intent design issues. Lower intent model scores can be improved by finding low scoring intents and adjusting example sentences that also score poorly. This is made easy by the traffic light color feedback system that allows designers to scan the page for red or yellow items where improvement is required.
 
 ### Individual Intent
 
@@ -54,7 +61,7 @@ Each intent trained to the NLU is assigned a score that provides virtual agent d
 To improve the score and reduce overlap, adjustments must be made to the example sentences contained within the intent.
 
 !!! warning "Trends in individual intents may not reflect overall model quality"
-    When a model performs well it does not mean that it cannot be further improved still on the intent level. Red or yellow intents indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor overall model which is separately and accurately assessed in the overall model score - the whole is greater than the sum of its parts!
+    When a model performs well, it does not mean that it cannot be further improved still on the intent level. Red or yellow intents indicate opportunities for improvement. Low scores in specific areas, such as these opportunities, don't necessarily indicate a weak overall model. The overall model score provides an accurate assessment of its performance, reflecting the "whole is greater than the sum of its parts" principle.
 
 ### Individual Example Sentence
 
@@ -75,9 +82,6 @@ In conjunction with the traffic light color, these two pieces of information all
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/good-score.png" width="100%" />
 </figure>
 
-!!! warning "Trends in individual sentences may not reflect overall intent quality"
-    When an intent performs well, it does not mean that it cannot be further improved still on the sentence level. Red or yellow example sentences indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor intent quality which is separately and accurately assessed in the intent score - the whole is greater than the sum of its parts!
-
 ## Scoring System
 
 The **Intent Analyzer** uses a traffic light color system to provide users with three-stage scoring feedback. The color coding is explained in the table below:
@@ -88,4 +92,61 @@ The **Intent Analyzer** uses a traffic light color system to provide users with 
 | Yellow | 0.8 > Score ≥ 0.6 |
 | Red    | 0.6 > Score       |
 
+## Testing NLU Scores 
 
+You can test NLU scores via the Interaction Panel by activating the [Expert Mode](../../../test/interaction-panel/overview.md#expert-mode) feature and exploring the detailed results in the `input.nlu.intentMapperResults.scores` object.
+
+For more complex testing, you can use an API request to test NLU scores without creating an unnecessary load on the server.
+
+**Request**
+
+```json
+Post /v2.0/projects/{projectId}/nlu/scores
+Content-Type: application/json
+
+{
+  "flowReferenceId": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
+  "localeReferenceId": "c119bb2b-af87-42c9-abf0-49dae3ed0a28",
+  "sentence": "Can you help me with this issue?"
+}
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": "129fdbd3-54d4-4704-a019-b579a7901641",
+    "name": "Flight Booking",
+    "score": 0.9333265866488035,
+    "negated": false,
+    "confirmationSentence": null,
+    "confirmationSentences": null,
+    "disambiguationSentence": null,
+    "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
+    "description": ""
+  },
+  {
+    "id": "0c22d2d8-edda-4e12-8d8f-6f5177771fc5",
+    "name": "Payments",
+    "score": 0.5039746888040336,
+    "negated": false,
+    "confirmationSentence": null,
+    "confirmationSentences": null,
+    "disambiguationSentence": null,
+    "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
+    "description": ""
+  },
+  {
+    "id": "11a33c75-d074-4408-b437-5c00071d6c46",
+    "name": "FAQ",
+    "score": 0.0669071045766796,
+    "negated": false,
+    "confirmationSentence": null,
+    "confirmationSentences": null,
+    "disambiguationSentence": null,
+    "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
+    "description": ""
+  }
+]
+```
