@@ -46,6 +46,26 @@ If the Live Agent Account is already configured for your organization, you can c
 
 Complete the agent setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
 
+## Copy the Project ID
+
+Project IDs can be helpful if you want to create, edit, delete Projects via API requests.
+
+You can copy the Project ID one of the following methods:
+
+=== "From the UI" 
+
+    1. Go to the Cognigy.AI interface.
+    2. In the left-side menu, find the project you need and hover your cursor over it.
+    3. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+    4. Select **Copy Project ID**. The ID will be copied to the clipboard.
+
+=== "From the URL" 
+
+    1. Go to the Cognigy.AI interface.
+    2. In the left-side menu, select the project you need.
+    3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
+    4. Save the copied Project ID for the later use.
+
 ## Project Dashboard
 
 The Project Dashboard serves as an overview page for your Project. It displays relevant information about your agent, including Analytics, Project Members, Recently Changed resources, and additional information about Cognigy.AI itself.
