@@ -30,10 +30,12 @@ The chunk strategy powered by Azure AI Document Intelligence has the following a
 
 ## Supported Formats
 
-| Cognigy.AI versions | Formats                   |
-|---------------------|---------------------------|
-| 4.79 or later       | `PDF`, `DOCX`, and `PPTX` |
-| 4.71-4.78           | `PDF` and `DOCX`          |
+| Cognigy.AI versions | Formats                                  |
+|---------------------|------------------------------------------|
+| 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*] |
+| 4.71-4.78           | `.pdf` and `.docx`                       |
+
+[^*]: `.txt` files are not supported for text extraction by Azure Document Intelligence, but Cognigy's internal parser can handle them.
 
 ## Availability
 
@@ -73,7 +75,7 @@ To use this feature, follow these steps:
 2. Open the existing Knowledge Store or create a new one.
 3. On the Knowledge Store page, click **+ New Knowledge Sources** in the upper-left corner.
 4. In the **New Knowledge Sources** window, select **File (advanced)**. The lable `advanced` means that you will be using Azure AI Document Intelligence for text extraction. 
-5. Drag and drop a `PDF`, `DOCX`, or `PPTX` file, or click **Browse Files** to select a file from your computer.
+5. Drag and drop a `.pdf`, `.docx`, or `.pptx` file, or click **Browse Files** to select a file from your computer.
 6. Click **Create**. Note that by clicking **Create** you accept the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
 #### Deactivate the Feature
