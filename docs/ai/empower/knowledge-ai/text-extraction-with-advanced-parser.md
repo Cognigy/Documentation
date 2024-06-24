@@ -1,27 +1,29 @@
 ---
-title: "Text Extraction with Azure AI Document Intelligence"
-slug: "text-extraction-with-azure-ai"
-description: "Text Extraction with Azure AI Document Intelligence creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking."
+title: "Text Extraction with the Advanced Parser"
+slug: "text-extraction-with-advanced-parser"
+description: "Text Extraction with the Advanced Parser creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking."
 hidden: false
 ---
 
-# Text Extraction with Azure AI Document Intelligence
+# Text Extraction with the Advanced Parser
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../release-notes/4.79.md)
 
 !!! note
     - This feature is currently in Preview. We encourage you to try it out and provide us with feedback.
-	- By using Azure AI Document Intelligence in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
-    - Azure AI Document Intelligence stores data and results on Azure Storage for 24 hours from the time you submit an analyze request. To learn more about data, privacy, and security for Document Intelligence, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/legal/cognitive-services/document-intelligence/data-privacy-security) documentation.
+	- By using the Advanced Parser in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
-_Text Extraction with [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/)_ creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
+_Text Extraction with the Advanced Parser_ is a Cognigy.AI solution that is used to create semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
 
-When this feature is enabled and you upload a file as a Knowledge Source, Cognigy automatically sends a request to the Azure AI Document Intelligence platform.
-This request prompts the platform to extract text from the file. Once the platform finishes processing the file, Cognigy retrieves the preprocessed result.
-This result is then converted to Markdown format and segmented into chunks for easier handling.
+When this feature is enabled and you upload a file as a Knowledge Source,
+the Advanced Parser automatically processes this request to extract text from the file.
+Once the Advanced Parser finishes processing the file,
+the result is converted to Markdown format and segmented into chunks for easier handling.
 
-The chunk strategy powered by Azure AI Document Intelligence has the following advantages:
+The chunk strategy powered by the Advanced Parser has the following advantages:
 
-- **Improved quality of responses**. Breaking down the text into blocks of meaning allows the virtual agent to more accurately understand the context and find the necessary information to formulate a higher-quality response.
-- **Effective use of Markdown**. The extracted text is presented in Markdown format in the Chunk editor. Markdown allows the virtual agent to recognize headers, tables, images, links, and differentiate them from a regular text. This approach adds an additional level of context, helping the virtual agent better understand the structure and organization of information in the text.
+- **Improved quality of responses**. Breaking down the text into blocks of meaning allows the AI Agent to more accurately understand the context and find the necessary information to formulate a higher-quality response.
+- **Effective use of Markdown**. The extracted text is presented in Markdown format in the Chunk editor. Markdown allows the AI Agent to recognize headers, tables, images, links, and differentiate them from a regular text. This approach adds an additional level of context, helping the AI Agent better understand the structure and organization of information in the text.
 - **Improved ability to reference the source**. Adding the page number of the source file to the metadata for each chunk can help track an information source in lengthy documents.
 
 ## Prerequisites
@@ -35,7 +37,7 @@ The chunk strategy powered by Azure AI Document Intelligence has the following a
 | 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*] |
 | 4.71-4.78           | `.pdf` and `.docx`                       |
 
-[^*]: `.txt` files are not supported for text extraction by Azure Document Intelligence, but Cognigy's internal parser can handle them.
+[^*]: `.txt` files are not supported for text extraction by the Advanced Parser, but the Basic Parser can handle them.
 
 ## Availability
 
@@ -66,7 +68,7 @@ The feature usage varies depending on which version you are using:
 
 ### Cognigy.AI 4.79 or Later
 
-If the Text Extraction with Azure AI Document Intelligence feature is enabled in your environment,
+If the Advanced Parser is enabled in your environment,
 this feature will automatically handle text extraction.
 
 To use this feature, follow these steps:
@@ -74,13 +76,13 @@ To use this feature, follow these steps:
 1. In your Project, navigate to **Build > Knowledge**.
 2. Open the existing Knowledge Store or create a new one.
 3. On the Knowledge Store page, click **+ New Knowledge Sources** in the upper-left corner.
-4. In the **New Knowledge Sources** window, select **File (advanced)**. The lable `advanced` means that you will be using Azure AI Document Intelligence for text extraction. 
+4. In the **New Knowledge Sources** window, select **File (advanced)**. The lable `advanced` means that you will be using the Advanced Parser for text extraction. 
 5. Drag and drop a `.pdf`, `.docx`, or `.pptx` file, or click **Browse Files** to select a file from your computer.
 6. Click **Create**. Note that by clicking **Create** you accept the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
 #### Deactivate the Feature
 
-If you don't want to use Azure AI Document Intelligence for text extraction, follow these steps:
+If you don't want to use the Advanced Parser for text extraction, follow these steps:
 
 1. In your Project, navigate to **Manage > Settings**.
 2. Go to the **Knowledge AI Settings** section.
@@ -89,13 +91,14 @@ If you don't want to use Azure AI Document Intelligence for text extraction, fol
 
 ### Cognigy.AI 4.71-4.78
 
-Azure AI Document Intelligence is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
+The Advanced Parser is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
 ## Metadata
 
 In the Chunk Editor, each chunk has a metadata object that indicates the number of the source page where this information was located.
-The presence of page numbers in the metadata means that the text extraction feature works correctly. However, if there are no page numbers, it suggests an error, such as failing to access Azure AI Document Intelligence.
+The presence of page numbers in the metadata means that the text extraction feature works correctly.
+However, the absence of page numbers suggests an error in file processing by the Advanced Parser.
 
 In the example below, the metadata object indicates that the chunk's text starts on source file page 1 and ends on page 2.
 
