@@ -44,7 +44,7 @@ _Cognigy Live Agent_ is a contact center solution that is designed to work exclu
     Use virtual assistants to support your human agents, enabling them to respond to user queries more accurately and efficiently
 
     [:octicons-arrow-right-24: Overview](assistants/overview.md)<br>
-    [:octicons-arrow-right-24: Live Agent AI Copilot](assistants/ai-copilot-whisper.md)<br>
+    [:octicons-arrow-right-24: AI Copilot Whisper](assistants/ai-copilot-whisper.md)<br>
     [:octicons-arrow-right-24: AI Copilot](assistants/ai-copilot.md)<br>
     [:octicons-arrow-right-24: AI Copilot Bot](assistants/ai-copilot-bot.md)
 
