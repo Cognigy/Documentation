@@ -79,7 +79,7 @@ To configure the connection, go to **Speech**, choose your preferred vendor and 
     - Provide a **Container URL for STT**.
     - Provide a **Subscription key**, if required.
 
-If you wish to select a hosted service in Microsoft Azure instead, select **Use hosted Azure service** box and insert the API key.
+If you want to use a cloud-based service in Microsoft Azure instead of on-premises, activate the **Use hosted Azure service** setting and enter the API key.
 
 ## More Information
 
