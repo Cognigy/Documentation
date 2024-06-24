@@ -86,10 +86,11 @@ Reference IDs can be helpful if you want to edit Locales via API.
 
 To copy the Reference ID of a Locale, do the following:
 
-1. Open Cognigy.AI and select a Project you want to edit.
-2. In the left-side menu, navigate to **Manage > Localization**.
-3. On the **Localization** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Locale you want to copy the reference ID.
-4. Select **Copy Reference ID**. The ID will be copied to the clipboard.
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select the Project you need. 
+3. In the left-side menu of your Project, navigate to **Manage > Localization**. 
+4. On the **Localization** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Locale you want to copy the reference ID. 
+5. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## More Information
 

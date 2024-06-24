@@ -34,10 +34,11 @@ Reference IDs can be helpful if you want to edit Flows via API.
 
 To copy the Reference ID of a Flow, do the following:
 
-1. Open Cognigy.AI and select a Project.
-2. In the left-side menu, navigate to **Build > Flows**.
-3. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID.
-4. Select **Copy Reference ID**. The ID will be copied to the clipboard.
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select the Project you need. 
+3. In the left-side menu of your Project, navigate to **Build > Flows**. 
+4. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
+5. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Flow Interface
 

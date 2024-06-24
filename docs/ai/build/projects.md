@@ -50,7 +50,7 @@ Complete the agent setup with the Live Agent feature by following the steps as y
 
 Project IDs can be helpful if you want to create, edit, delete Projects via API requests.
 
-You can copy the Project ID one of the following methods:
+You can copy the Project ID using one of the following methods:
 
 === "From the UI" 
 
