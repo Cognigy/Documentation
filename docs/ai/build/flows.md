@@ -34,7 +34,7 @@ Reference IDs can be helpful if you want to edit Flows via API.
 
 To copy the Reference ID of a Flow, do the following:
 
-1. Open the Cognigy.AI interface.
+1. Open the Cognigy.AI interface. 
 2. In the left-side menu, select the Project you need. 
 3. In the left-side menu of your Project, navigate to **Build > Flows**. 
 4. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
@@ -190,7 +190,7 @@ Using the **Interaction Panel**, you can chat at any time with your virtual agen
 
 To start a chat with your virtual agent and test the Flow functionality, follow these steps:
 
-1. Open your Project project in Cognigy.AI.
+1. Open your Project in Cognigy.AI.
 2. Select a Flow you want to test.
 3. In the upper-right corner, click ![chat](../../_assets/icons/chat.svg) to open the **Interaction Panel**. The Interaction Panel will open on the right side of the Flow creation page.
 4. Click the **TEST** tab to open the conversation window of the Interaction Panel.
