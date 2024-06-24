@@ -104,7 +104,7 @@ to test NLU scores without creating an unnecessary load on the server.
 
 Let's assume the user asks the AI agent: `Could you help me with the issue?`
 Add this question as the value for the parameter `sentence`. 
-Specify the [Project ID](../../../build/projects.md#copy-the-project-id), [reference ID of your Flow](../), and reference ID of the AI Agent's locale you want to test.
+Specify the [Project ID](../../../build/projects.md#copy-the-project-id), [Flow Reference ID](../../../build/flows.md#copy-the-flow-reference-id), and [Locale Reference ID](../../../build/translation-and-localization/localization.md#copy-the-local-reference-id) of the AI Agent you want to test.
 
 **Request**
 

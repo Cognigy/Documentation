@@ -80,6 +80,17 @@ To localize all Intents within your Flow, follow these steps:
 5. Click **Build model**. 
 6. Click **Save**.
 
+## Copy the Local Reference ID
+
+Reference IDs can be helpful if you want to edit Locales via API.
+
+To copy the Reference ID of a Locale, do the following:
+
+1. Open Cognigy.AI and select a Project you want to edit.
+2. In the left-side menu, navigate to **Manage > Localization**.
+3. On the **Localization** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Locale you want to copy the reference ID.
+4. Select **Copy Reference ID**. The ID will be copied to the clipboard.
+
 ## More Information
 
 - [Automatic Translation](auto-translation.md)
