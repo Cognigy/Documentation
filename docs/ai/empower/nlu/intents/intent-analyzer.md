@@ -100,6 +100,11 @@ For more complex testing,
 you can use the API [POST /v2.0/projects/{projectId}/nlu/scores](https://api-trial.cognigy.ai/openapi#post-/v2.0/projects/-projectId-/nlu/scores) request
 to test NLU scores without creating an unnecessary load on the server.
 
+### Example
+
+Let's assume the user asks the AI agent: `Could you help me with the issue?`
+Add this question as the value for the parameter `sentence`. Specify the project ID, reference ID of your Flow, and reference ID of the locale of the AI Agent you want to test.
+
 **Request**
 
 ```json
@@ -112,6 +117,8 @@ Content-Type: application/json
   "sentence": "Can you help me with this issue?"
 }
 ```
+
+The response will return a collection of objects that includes matching NLU intents and scores for the given sentence.
 
 **Response**
 
@@ -126,7 +133,7 @@ Content-Type: application/json
     "confirmationSentences": null,
     "disambiguationSentence": null,
     "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
-    "description": ""
+    "description": "Handles queries related to booking flights, including availability, pricing, and reservations"
   },
   {
     "id": "0c22d2d8-edda-4e12-8d8f-6f5177771fc5",
@@ -137,7 +144,7 @@ Content-Type: application/json
     "confirmationSentences": null,
     "disambiguationSentence": null,
     "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
-    "description": ""
+    "description": "Manages questions and actions related to payment processes, methods, and issues"
   },
   {
     "id": "11a33c75-d074-4408-b437-5c00071d6c46",
@@ -148,7 +155,7 @@ Content-Type: application/json
     "confirmationSentences": null,
     "disambiguationSentence": null,
     "flow": "0d59e1c7-17e4-4737-aafa-4b27b48e6885",
-    "description": ""
+    "description": "Provides answers to frequently asked questions regarding various topics or services"
   }
 ]
 ```
