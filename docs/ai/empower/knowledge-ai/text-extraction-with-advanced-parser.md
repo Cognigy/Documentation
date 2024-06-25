@@ -36,7 +36,7 @@ The chunk strategy powered by the Advanced Parser has the following advantages:
 | 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*] |
 | 4.71-4.78           | `.pdf` and `.docx`                       |
 
-[^*]: `.txt` files are not supported for text extraction by the Advanced Parser, but the Basic Parser can handle them.
+[^*]: `.txt` files are internally handled by the Basic Parser.
 
 ## Availability
 
