@@ -19,7 +19,7 @@ Virtual agents can deploy on a wide range of channels.
 3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
 4. Select the primary language for your Project.
 5. Select a color that will be associated with your Project.
-6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create an Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
+6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
 7. Click **Next: Select Solution Accelerator**.
 8. Select **Blank** or any pre-build solution accelerators that can help you build a specific virtual agent for you.
 9. Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.
@@ -45,6 +45,26 @@ If the Live Agent Account is already configured for your organization, you can c
     - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
 
 Complete the agent setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
+
+## Copy the Project ID
+
+Project IDs can be helpful if you want to create, edit, or delete Projects via API requests.
+
+You can copy the Project ID using one of the following methods:
+
+=== "From the UI" 
+
+    1. Go to the Cognigy.AI interface.
+    2. In the left-side menu, find the Project you need and hover your cursor over it.
+    3. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+    4. Select **Copy Project ID**. The ID will be copied to the clipboard.
+
+=== "From the URL" 
+
+    1. Go to the Cognigy.AI interface.
+    2. In the left-side menu, select the Project you need.
+    3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
+    4. Save the copied Project ID later use.
 
 ## Project Dashboard
 
