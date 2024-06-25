@@ -105,14 +105,14 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
 
-Atmosphere Sounds allow the user to play a custom mp3 track in the background of the conversation.
+Atmosphere Sounds allow the user to play a custom mp3 track in the background of the conversation. It can be used to make the conversation more natural, for example by adding background office sounds, such as keyboard clicking.
 
-| Parameter | Type     | Description                                                       |
-|-----------|----------|-------------------------------------------------------------------|
-| Action    | Dropdown | Selects an action to play, silence or remove the track.           |
-| URL       | Text     | Accepts direct URL links to mp3 tracks.                           |
-| Loop      | Toggle   | When switched on, it loops the audio track.                       |
-| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.   |
+| Parameter | Type     | Description                                                                                                                                                                                                         |
+|-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background <br> - **silence** - mutes the track <br> - **remove** - removes the track from the background completely |
+| URL       | Text     | Accepts direct URL links to mp3 tracks.                                                                                                                                                                             |
+| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                         |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                     |
 
 ### Advanced
 
