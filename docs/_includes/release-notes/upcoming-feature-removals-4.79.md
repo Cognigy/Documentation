@@ -1,5 +1,3 @@
-!!! danger "Cognigy Journeys removed from Cognigy.AI"
-    - The Cognigy Journeys feature is removed from the Cognigy.AI UI and API.
 
 !!! warning "Upcoming Feature Removals"
     - The Chatbase analytics integration will be removed in version 4.80. The Chatbase platform has not been supported since 2021.
