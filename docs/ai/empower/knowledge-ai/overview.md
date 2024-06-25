@@ -117,6 +117,7 @@ The following types of content are supported:
 - `.txt`
 - `.pdf`
 - `.docx`
+- `.pptx`
 - `web page`
 
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.

@@ -23,6 +23,7 @@ using the `text-embedding-3-model` hosted by OpenAI and Azure OpenAI, replacing 
 ## Prerequisites
 
 - Add the [`text-embedding-3-large`](../../llms.md#add-a-model) model provided by Azure OpenAI or OpenAI. Note that if you use an external embedding model provider, Cognigy will send user inputs to the selected service. Ensure that your data processing policy reflects this practice.
+- Consider that using the `text-embedding-3-model` external NLU model increases [Snapshot](../../../deploy/snapshots.md) size, leading to longer download and upload times.
 
 ## Set Up a Third-Party NLU model
 
