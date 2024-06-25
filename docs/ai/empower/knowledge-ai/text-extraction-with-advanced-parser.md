@@ -10,8 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../release-notes/4.79.md)
 
 !!! note
-    - This feature is currently in Preview. We encourage you to try it out and provide us with feedback.
-	- By using the Advanced Parser in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
+	By using the Advanced Parser in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
 _Text Extraction with the Advanced Parser_ is a Cognigy.AI solution that is used to create semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
 
