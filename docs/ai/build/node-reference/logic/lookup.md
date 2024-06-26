@@ -90,6 +90,12 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
 !!! note "What is Mode?"
     The **Mode** provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
+### Advanced
+
+| Parameter       | Type   | Description                                                                                                                                                                                                                          |
+|-----------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Strict Mode | Toggle | By default, this parameter is inactive. In Strict Mode, comparisons require values to be of identical types. Consequently, the number `5` and the string "5" will not equate in Strict Mode; whereas, without this Mode, they would. |
+
 ### Handover Status
 
 By changing the lookup type to **Handover Status**,
@@ -134,3 +140,4 @@ By changing the lookup type to **Call Event Status**, the Flow will select a cas
 In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
 More information about these events you can find in the [Voice Gateway Events](../../../../voice-gateway/references/events/overview.md) reference.
+
