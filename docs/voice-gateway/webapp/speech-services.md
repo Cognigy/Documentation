@@ -13,7 +13,7 @@ hidden: false
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-You can create more than one speech service using speech vendors. By default, the speech service is created as a cloud-based service, but you can also choose to have it installed on-premises. You will find an explanation on how to do that below.
+You can create more than one speech service using speech vendors.
 
 If you need to create multiple speech services from the same vendor, use the **Label** field to create a unique speech service.
 
@@ -26,6 +26,64 @@ After creating a speech service, you can edit or delete it.
   <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-speech-services.png"  width="60%" />
   <figcaption>Speech Services</figcaption>
 </figure>
+
+## Cloud-Based Speech Services
+
+You can use speech services in the form of Cloud-Based Speech Services. Voice Gateway supports Amazon Polly, Deepgram, Elevenlabs, Google Speech Services, Microsoft Azure Speech Services, Nuance and Soniox as cloud-based solutions. 
+
+To configure the connection:
+
+1. Go to **Speech**.
+2. Click on **Add Speech Service** and choose your preferred vendor.
+3. Select the account you want to use it with, and add a unique identifier under **Label**.
+4. Select **Speech-To-Text**, **Text-To-Speech** or both, depending on your use case.
+5. Follow according to your selected vendor:
+
+=== "Amazon Polly"
+    1. Select your **Credential Type**
+    2. Insert the **Access Key ID**
+    3. Insert **Secret Access Key**
+    4. Select a **Region**
+=== "Deepgram"
+    1. Insert your **API Key**
+=== "Elevenlabs"
+    1. Insert your **API Key**
+    2. Select your language **Model**
+    3. (Optional) Edit the Json code for additional options in the **Extra Options**
+=== "Google Speech Services"
+    1. Insert your **Service Key**
+=== "Microsoft Azure"
+    1. Select **Use hosted Azure Service**
+    2. Select **Region**
+    3. Insert your **API Key**
+    4. (Optional) Use a custom voice for TTS by providing a **Custom Voice Deployment ID**
+    5. (Optional) Use a custom speech model for STT by providing a **Custom Speech Endpoint ID**
+=== "Nuance"
+    1. Insert **Client ID**
+    2. Insert **Secret**
+=== "Soniox"
+    1. Insert your **API Key**
+
+## On-Premises Speech Services
+
+Voice Gateway supports on-premises configuration of **Microsoft Azure**, **Deepgram**, and **Nuance** Speech Services.
+
+To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
+
+=== "Deepgram"
+    1. Select **Use on-prem Deepgram container**.
+    2. Provide a **Container URI** for TTS.
+    3. Select **Use TLS**, if required.
+
+=== "Nuance"
+    1. Select **Use on-prem TTS** to provide the URI for your TTS.
+    2. Select **Use on-prem STT** to provide the URI for your STT.
+  
+=== "Microsoft Azure"
+    1. Select **Use Azure Docker container (on-prem)**.
+    2. Provide a **Container URL for TTS**.
+    3. Provide a **Container URL for STT**.
+    4. Provide a **Subscription key**, if required.
 
 ## Add a Custom Speech Vendor
 
@@ -57,30 +115,6 @@ you need to specify the provider name in the **Custom** parameter of the relevan
 such as [Set Session Config](../../ai/build/node-reference/voice/voice-gateway/set-session-config.md),
 [Say](../../ai/build/node-reference/basic/say.md#voice-gateway), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
 or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generic/session-speech-parameters-config.md).
-
-
-## On-Premises Speech Services
-
-Voice Gateway supports on-premises configuration of **Microsoft Azure**, **Deepgram**, and **Nuance** Speech Services.
-
-To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
-
-=== "Deepgram"
-    1. Select **Use on-prem Deepgram container**.
-    2. Provide a **Container URI** for TTS.
-    3. Select **Use TLS**, if required.
-
-=== "Nuance"
-    1. Select **Use on-prem TTS** to provide the URI for your TTS.
-    2. Select **Use on-prem STT** to provide the URI for your STT.
-  
-=== "Microsoft Azure"
-    1. Select **Use Azure Docker container (on-prem)**.
-    2. Provide a **Container URL for TTS**.
-    3. Provide a **Container URL for STT**.
-    4. Provide a **Subscription key**, if required.
-
-If you want to use a cloud-based service in Microsoft Azure instead of on-premises, activate the **Use hosted Azure service** setting and enter the API key.
 
 ## More Information
 
