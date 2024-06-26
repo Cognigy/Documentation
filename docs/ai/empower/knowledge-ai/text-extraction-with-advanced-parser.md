@@ -22,6 +22,7 @@ the result is converted to Markdown format and segmented into chunks for easier 
 The chunk strategy powered by the Advanced Parser has the following advantages:
 
 - **Improved quality of responses**. Breaking down the text into blocks of meaning allows the AI Agent to more accurately understand the context and find the necessary information to formulate a higher-quality response.
+- **Recognition of a wide range of text elements.** The Advanced Parser recognizes not only plain text but also text in images using [OCR (Optical character recognition)](https://en.wikipedia.org/wiki/Optical_character_recognition), along with structural elements such as tables, figures, selection marks, titles, and footers, converting them into Markdown.
 - **Effective use of Markdown**. The extracted text is presented in Markdown format in the Chunk editor. Markdown allows the AI Agent to recognize headers, tables, images, links, and differentiate them from a regular text. This approach adds an additional level of context, helping the AI Agent better understand the structure and organization of information in the text.
 - **Improved ability to reference the source**. Adding the page number of the source file to the metadata for each chunk can help track an information source in lengthy documents.
 
