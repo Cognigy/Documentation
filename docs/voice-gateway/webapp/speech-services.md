@@ -13,7 +13,7 @@ hidden: false
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-You can create more than one speech service using speech vendors.
+You can create more than one speech service using speech vendors. By default, the speech service is created as a cloud-based service, but you can also choose to have it installed on-premises. You will find an explanation on how to do that below.
 
 If you need to create multiple speech services from the same vendor, use the **Label** field to create a unique speech service.
 
@@ -57,6 +57,7 @@ you need to specify the provider name in the **Custom** parameter of the relevan
 such as [Set Session Config](../../ai/build/node-reference/voice/voice-gateway/set-session-config.md),
 [Say](../../ai/build/node-reference/basic/say.md#voice-gateway), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
 or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generic/session-speech-parameters-config.md).
+
 
 ## On-Premises Speech Services
 
