@@ -105,12 +105,15 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
 
-Atmosphere Sounds allow the user to play a custom MP3 track in the background of the conversation. It can be used to make the conversation more natural, for example by adding background office sounds, such as keyboard clicking.
+This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
+Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
+
+The track is playing during the conversation with the AI Agent, and when the Transfer type Dial is performed and the human agent's phone is ringing. It stops once the human agent accepts the call.
 
 | Parameter | Type     | Description                                                                                                                                                                                                         |
 |-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background <br> - **silence** - mutes the track <br> - **remove** - removes the track from the background completely |
-| URL       | Text     | Accepts direct URL links to MP3 tracks.                                                                                                                                                                             |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example `https://abc.xyz/music.mp3`.                                                                                                                                                                             |
 | Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                         |
 | Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                     |
 
