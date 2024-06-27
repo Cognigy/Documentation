@@ -52,9 +52,9 @@ To configure the connection:
     3. Insert **Secret Access Key**.
     4. Select a **Region**.
 === "Deepgram"
-    1. Insert your **API Key**.
+    1. Enter an API key in the **API Key** field.
 === "Elevenlabs"
-    1. Insert your **API Key**.
+    1. Enter an API key in the **API Key** field.
     2. Select your language **Model**.
     3._(Optional)_ Edit the Json code for additional options in the **Extra Options**.
 === "Google Speech Services"
@@ -62,7 +62,7 @@ To configure the connection:
 === "Microsoft Azure"
     1. Select **Use hosted Azure Service**.
     2. Select **Region**.
-    3. Insert your **API Key**.
+    3. Enter an API key in the **API Key** field.
     4. _(Optional)_ Use a custom voice for TTS by providing a **Custom Voice Deployment ID**.
     5. _(Optional)_ Use a custom speech model for STT by providing a **Custom Speech Endpoint ID**.
 === "Nuance"
