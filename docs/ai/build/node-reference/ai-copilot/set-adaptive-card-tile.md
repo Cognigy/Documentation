@@ -33,12 +33,12 @@ Alternatively, you can use Generative AI to create a new adaptive card or improv
 
 ## Settings 
 
-| Parameter            | Type          | Description                                                       |
-|----------------------|---------------|-------------------------------------------------------------------|
-| Tile ID              | CognigyScript | The ID that you created in the AI Copilot configuration.          |
-| Generate Node Output | Text          | Generates and modifies the Adaptive Card according to user input. |
-| Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.         |
-| JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.            |
+| Parameter            | Type          | Description                                                                                    |
+|----------------------|---------------|------------------------------------------------------------------------------------------------|
+| Tile ID              | CognigyScript | The ID that you created in the AI Copilot configuration.                                       |
+| Generate Node Output | Text          | A prompt or instruction for generating the Adaptive Card. To apply the prompt, click Generate. |
+| Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.                                      |
+| JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.                                         |
 
 
 ## More Information
