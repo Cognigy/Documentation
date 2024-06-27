@@ -1,47 +1,44 @@
 ---
 title: "OData"
 slug: "odata-analytics-endpoint"
+description":
 hidden: false
 ---
+
 # Cognigy.AI: OData Analytics Endpoint
 
-Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using `GET` requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
 
 Note that the Cognigy OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 
-<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon">▶️</span>
-    <div class="callout-heading">
-      <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Technical video "Analytics &amp; OData"</a>
-      </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
-   </div>
-</blockquote>
+Watch this video to get a quick overview of what OData Analytics Endpoint is, how it works,
+and in which scenarios you can use it.
 
-!!! warning "Disclaimer"
-    The OData is not shown in real time.
+<div style="text-align:center;">
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/D18JNjUPvN4?si=UJYuFYZzEovHg83Z&amp;start=1857" title="Cognigy Sessions: Cognigy Insights & OData" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-## Usage and Authentication
+## Non-Real-Time Data
 
+The data retrieved through the OData endpoint is not updated in real time and may not reflect current conditions or changes.
 
+## Authentication
 
 You can connect to the OData Endpoint using your [API Key](../administer/user-menu/my-profile.md#api-keys) in the OData URL on your server.
 
-An OData URL consists of the service root, API version, collection, and API key parameter:
+An OData URL consists of the service root, API version, collection, and API key parameter: `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
 
-`https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
+### OData Domain Name
 
-!!! note "OData Domain Name"
-    The OData Endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+The OData Endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=your-api-key`
+(where `your-api-key` must be replaced with your respective API Key).
 
+For on-premises installations replace the `odata-trial.cognigy.ai` domain name with the domain name
+configured for your local installation.
 
-    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
-
-!!! note "Excel/Power BI"
-    When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
+!!! note "Authentication for Microsoft Excel and Power BI"
+    When using PowerBI or Excel, you might be asked to authenticate, select `anonymous authentication`.
 
 ## Endpoint Version
 
@@ -78,15 +75,14 @@ An OData URL consists of the service root, API version, collection, and API key 
 
 The Endpoint supports the following OData Query Language operators:
 
-- $filter
-- $skip
-- $top
-- $orderby
-- $count
-- $select
+- `$filter`
+- `$skip`
+- `$top`
+- `$orderby`
+- `$select`
+- `$count`[^*]
 
-!!! warning "$count and Excel or PowerBI"
-    Microsoft Excel and PowerBI do not support for the $count query. Use Postman or other options.
+[^*]: Microsoft Excel and Power BI do not support for the `$count` query. Use Postman or other options. To perform this query, consider using tools such as Postman or other applications that support advanced API querying.
 
 ## Example Requests
 
@@ -112,17 +108,14 @@ The Endpoint supports the following OData Query Language operators:
     | Returns all Inputs records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
     | Returns all Inputs records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
 
-## Reference documentation
-
 For a full reference, refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
 
 ## Data Protection & Analytics
 
 You control and manage the data available in the OData Endpoint via the agent settings menu. See [Data Protection & Analytics](../deploy/endpoints/data-protection-and-analytics.md) for more details:
 
-- If you disable *Collect Analytics*, no analytics data will be logged or available in OData.
-
-- If you enable *Mask Sensitive Analytics*, the *inputText* and *inputData* fields will be masked.
+- If you disable the **Collect Analytics** setting, no analytics data will be logged or available in OData.
+- If you enable the **Mask Sensitive Analytics** setting, the `inputText` and `inputData` fields will be masked.
 
 Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode](../build/node-reference/analytics/blind-mode.md) nodes that will disable or mask analytics data available in OData according to your node settings.
 
@@ -453,38 +446,26 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId        | Identifier of the snapshot                                                   | String   | 63ff0cc47a466cab278fd19b                                         |
 | endpsnapshotName  | Name of the snapshot                                                         | String   | Prod-Snapshot 26.7.23                                            |
 
-### Entity Relationship Diagram
+### Entity Relationship Diagram (ERD) for Collections
+
+This scheme describes the relationships between the collection entities.
 
 <figure>
     <img class="image-center" src="../../../_assets/ai/analyze/insights-odata-entities.drawio.svg" width="100%" /> 
     <figcaption>
-        This scheme describes the relationships between the collection entities
+        Entity Relationship Diagram
     </figcaption>
 </figure>
 
-## Integrations
+## Integration with Data Visualisation Tools
 
+The table outlines visualization tools that are compatible with the OData Endpoint,
+along with recommendations and limitations for integration.
 
-
-### Excel
-
-When connecting from Microsoft Excel 2016, you must use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`. This will connect to our OData v4 feed.
-
-### PowerBI
-
-Follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
-
-### Tableau
-
-!!! danger "Incompatible OData Version"
-    At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
-
-The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
-
-### OData Consumer Ecosystem
-
-For a full list of available OData Consumer options, [follow the link to Consumers on OData.org](https://www.odata.org/ecosystem/#consumers).
-
-### Client Libraries in .NET, Java, JavaScript, C++ and other platforms
-
-For a full list of available OData Libraries, [see the latest directory of available libraries on OData.org](https://www.odata.org/libraries/).
+| Visualization Tool                                                  | Description                                                                                                                                     | Limitation                                                                                                                                                                   |
+|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microsoft Excel                                                     |                                                                                                                                                 | When connecting from Microsoft Excel 2016, use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`. |
+| Microsoft Power BI                                                  |                                                                                                                                                 | Follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).                                                    |
+| Tableau                                                             | The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).      | Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.                                                                      |
+| OData Consumer Ecosystem                                            | For a full list of available OData Consumer options, [follow the link to Consumers on OData.org](https://www.odata.org/ecosystem/#consumers).   |
+| Client Libraries in .NET, Java, JavaScript, C++ and other platforms | For a full list of available OData Libraries, [see the latest directory of available libraries on OData.org](https://www.odata.org/libraries/). |
