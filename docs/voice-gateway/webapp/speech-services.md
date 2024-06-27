@@ -11,6 +11,11 @@ hidden: false
 
 *Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. The full list of supported vendors is available in the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
+Voice Gateway Supports the following speech vendors:
+
+- Cloud-based
+- On-premises
+
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
 You can create more than one speech service using speech vendors.
@@ -33,36 +38,38 @@ You can use speech services in the form of Cloud-Based Speech Services. Voice Ga
 
 To configure the connection:
 
-1. Go to **Speech**.
-2. Click on **Add Speech Service** and choose your preferred vendor.
-3. Select the account you want to use it with, and add a unique identifier under **Label**.
-4. Select **Speech-To-Text**, **Text-To-Speech** or both, depending on your use case.
-5. Follow according to your selected vendor:
+1. Open the Voice Gateway interface.
+2. In the left-side menu, select **Speech**.
+3. Click **Add Speech Service** and select your preferred vendor.
+4. Select the account you want to use it with. 
+5. _(Optional)_ If you need to create multiple speech services from the same vendor, use the **Label** field to create a unique speech service.
+5. Select **Speech-To-Text**, **Text-To-Speech** or both, depending on your use case.
+6. Follow according to your selected vendor:
 
 === "Amazon Polly"
-    1. Select your **Credential Type**
-    2. Insert the **Access Key ID**
-    3. Insert **Secret Access Key**
-    4. Select a **Region**
+    1. Select your **Credential Type**.
+    2. Insert the **Access Key ID**.
+    3. Insert **Secret Access Key**.
+    4. Select a **Region**.
 === "Deepgram"
-    1. Insert your **API Key**
+    1. Insert your **API Key**.
 === "Elevenlabs"
-    1. Insert your **API Key**
-    2. Select your language **Model**
-    3. (Optional) Edit the Json code for additional options in the **Extra Options**
+    1. Insert your **API Key**.
+    2. Select your language **Model**.
+    3._(Optional)_ Edit the Json code for additional options in the **Extra Options**.
 === "Google Speech Services"
-    1. Insert your **Service Key**
+    1. Insert your **Service Key**.
 === "Microsoft Azure"
-    1. Select **Use hosted Azure Service**
-    2. Select **Region**
-    3. Insert your **API Key**
-    4. (Optional) Use a custom voice for TTS by providing a **Custom Voice Deployment ID**
-    5. (Optional) Use a custom speech model for STT by providing a **Custom Speech Endpoint ID**
+    1. Select **Use hosted Azure Service**.
+    2. Select **Region**.
+    3. Insert your **API Key**.
+    4. _(Optional)_ Use a custom voice for TTS by providing a **Custom Voice Deployment ID**.
+    5. _(Optional)_ Use a custom speech model for STT by providing a **Custom Speech Endpoint ID**.
 === "Nuance"
-    1. Insert **Client ID**
-    2. Insert **Secret**
+    1. Insert **Client ID**.
+    2. Insert **Secret**.
 === "Soniox"
-    1. Insert your **API Key**
+    1. Insert your **API Key**.
 
 ## On-Premises Speech Services
 
