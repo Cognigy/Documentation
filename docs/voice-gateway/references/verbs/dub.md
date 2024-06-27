@@ -6,7 +6,7 @@ hidden: false
 
 # Dub
 
-The `dub` verb adds an additional audio track into the conversation. The source of the audio is an MP3 file linked directly from an http(s) URL. During the conversation, the track will be playing in the background as a second sound layer, independently from other verbs like `play` or `say`. One common usage is to apply it as background sound to simulate an office environment, for example keyboard clicking, making the interaction between the agent and the user more humanlike.
+The `dub` verb adds an additional audio track to the conversation. The audio source is an MP3 file linked directly from an http(s) URL. During the conversation, this track plays in the background as a second layer of sound, independently of other verbs such as `play` or `say`. One common usage is to apply it as background noise to simulate an office environment, for example, keyboard clicking, making the interaction between the AI Agent and the user more human-like.
 
 
 ```json
