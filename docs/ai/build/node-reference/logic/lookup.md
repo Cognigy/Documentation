@@ -90,12 +90,6 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
 !!! note "What is Mode?"
     The **Mode** provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
-### Advanced
-
-| Parameter       | Type   | Description                                                                                                                                                                                                                          |
-|-----------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use Strict Mode | Toggle | By default, this parameter is inactive. In Strict Mode, comparisons require values to be of identical types. Consequently, the number `5` and the string "5" will not equate in Strict Mode; whereas, without this Mode, they would. |
-
 ### Handover Status
 
 By changing the lookup type to **Handover Status**,
@@ -137,7 +131,25 @@ To learn more, read the [CognigyScript](../../cognigy-script.md) page.
 
 By changing the lookup type to **Call Event Status**, the Flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
 
-In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
+In the Case Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
 More information about these events you can find in the [Voice Gateway Events](../../../../voice-gateway/references/events/overview.md) reference.
 
+## Strict Mode
+
+{% raw %}
+
+By default, the Strict Mode setting is inactive, which lets the Lookup Node accept values of any data type from the Input, Context, or Profile objects.
+For instance, if you use CognigyScript to retrieve a value in integer format (for example, `2024`), it will be considered equal to the string format (for example, `"2024"`)
+in the **Value** field of the Case Node.
+
+In Strict Mode, value types must be identical.
+For example, the integer `2024` and the string `"2024"` will not be considered equal.
+This mode is useful when strict type matching is necessary to ensure data is processed correctly.
+
+When Strict Mode is enabled, the value retrieved from the Input, Context, or Profile objects must match the type of the value specified in the Case Node.
+To achieve this result, in the **Value** field of the Case Node, convert the string to the required format using JavaScript.
+For example, to convert the string `"2024"` to the integer `2024`, use `{{ Number("2024") }}` or CognigyScript to retrieve the value: `{{ Number(input.currentTime.year) }}`.
+The same approach applies for boolean: to convert the string `"true"` to a boolean, use `{{ Boolean("true") }}` or CognigyScript `{{ Boolean(input.understood) }}`.
+
+{% endraw %}
