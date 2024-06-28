@@ -186,7 +186,7 @@ If you wish to display Queue Position messages to the users, be sure to configur
 
 To enable this feature, use the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
 
-To display Genesys Status and Bot messages, follow these steps:
+To display Genesys Status and Bot messages, follow these steps within your Cognigy Flow:
 
 1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
 2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
