@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. 
+*Speech Services* give your virtual agent a voice. By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple instances of one speech vendor, to freely switch between different voices.
 
 Voice Gateway supports the following speech vendor configurations:
 
@@ -22,8 +22,9 @@ Voice Gateway supports the following speech vendor configurations:
 | Microsoft     | +           | +           |
 | Nuance        | +           | +           |
 | Soniox        | +           | -           |
+| Custom        | +           | +           |
 
-For the full list of supported vendors and their Speech-To-Text and Text-To-Speech capabilities, see the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
+For the list of supported vendors and their Speech-To-Text and Text-To-Speech capabilities, see the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
