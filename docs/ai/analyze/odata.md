@@ -37,7 +37,7 @@ The OData Endpoint is located on a different domain than your Cognigy User Inter
 
 ### Authentication
 
-To connect to the OData Endpoint, you need to have either `odata` or `admin` [global role](https://docs.cognigy.com/ai/administer/access/access-control/#global-roles)
+To connect to the OData Endpoint, you need to have either `odata` or `admin` [global role](../../ai/administer/access/access-control.md#global-roles)
 and an API Key.
 
 OData Endpoint URL format:
@@ -47,11 +47,16 @@ OData Endpoint URL format:
 - `odata domain` - the base domain or endpoint of the OData service. It is the root URL where the OData service is hosted.
 - `api-version` - the version of the API you are interacting with. Cognigy.AI supports v2.3.
 - `collection` - a specific collection within the OData service you want to access. A collection is similar to a database table or a set of entities.
-- `your-api-key` - an API key that provides authentication and authorization for accessing the API.
+- `your-api-key` - an API key that provides authentication and authorization for accessing the API. You'll need to obtain this from your [Cognigy profile](../../ai/administer/user-menu/my-profile.md#create-api-keys).
 
-For example, the OData Endpoint URL for the Analytics Inputs Collection on the trial server is:
+OData Endpoint URL example:
 
-`https://odata-trial.cognigy.ai/v2.3/Inputs?apikey=your-api-key`
+`https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=123abc`, where
+
+- `odata-trial.cognigy.ai` - the Cognigy OData base domain.
+- `v2.3` - the API version of the Cognigy OData Endpoint.
+- `Analytics` - a specific collection of data you're trying to access within Cognigy.AI.
+- `123abc` - your unique API key.
 
 #### Authentication for Microsoft Excel and Power BI
 
