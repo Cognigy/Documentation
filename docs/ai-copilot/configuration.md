@@ -11,7 +11,7 @@ The AI Copilot configuration refers to the size and position of the widgets in y
 You can configure your workspace in the following ways:
 
 1. In the Endpoint settings, select `None` from Copilot Config dropdown menu. This will enable a default grid, which you can edit using the Copilot: Set Grid Node.
-2. Alternatively, The AI Copilot configurations can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and serve as a default if configured within the Endpoint settings.
+2. Alternatively, The AI Copilot configurations can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and serve as a default if selected from the Copilot Config within the Endpoint settings.
 
 ## AI Copilot Grid
 
