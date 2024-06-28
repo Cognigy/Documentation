@@ -96,6 +96,8 @@ By changing the lookup type to **Handover Status**,
 the Flow will select a case that matches the value of `input.handover.status`.
 The case values must manually be written for a type of lookup.
 
+You can now receive **Status** and queue update messages from **Genesys Cloud** using the **Handover Status** Node. To learn how to do that, go to [Genesys Status and Bot Messages](../../../escalate/handover-reference/genesys-cloud-open-messaging.md). If you wish to use RingCentral Engage instead, go to [RingCentral Engage](../../../escalate/handover-reference/ring-central-engage.md) for more information.
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
