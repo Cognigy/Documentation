@@ -9,12 +9,21 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. The full list of supported vendors is available in the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
+*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. 
 
-Voice Gateway Supports the following speech vendors:
+Voice Gateway supports the following speech vendor configurations:
 
-- Cloud-based
-- On-premises
+| Speech vendor | Cloud-based | On-premises | 
+|---------------|-------------|-------------|
+| Amazon Polly  | +           | -           |      
+| Deepgram      | +           | +           |
+| ElevenLabs    | +           | -           |
+| Google        | +           | -           |
+| Microsoft     | +           | +           |
+| Nuance        | +           | +           |
+| Soniox        | +           | -           |
+
+For the full list of supported vendors and their Speech-To-Text and Text-To-Speech capabilities, see the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
@@ -34,9 +43,7 @@ After creating a speech service, you can edit or delete it.
 
 ## Cloud-Based Speech Services
 
-You can use speech services in the form of Cloud-Based Speech Services. Voice Gateway supports Amazon Polly, Deepgram, Elevenlabs, Google Speech Services, Microsoft Azure Speech Services, Nuance and Soniox as cloud-based solutions. 
-
-To configure the connection:
+To configure the connection for a cloud-based speech service:
 
 1. Open the Voice Gateway interface.
 2. In the left-side menu, select **Speech**.
@@ -73,9 +80,7 @@ To configure the connection:
 
 ## On-Premises Speech Services
 
-Voice Gateway supports on-premises configuration of **Microsoft Azure**, **Deepgram**, and **Nuance** Speech Services.
-
-To configure the connection, go to **Speech**, choose your preferred vendor and scroll down to find the appropriate setting.
+To configure the connection, go to **Speech**, select your preferred vendor and scroll down to find the appropriate setting.
 
 === "Deepgram"
     1. Select **Use on-prem Deepgram container**.
