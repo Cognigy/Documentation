@@ -39,12 +39,10 @@ To get your API key, follow these steps:
 
 ### Create an AI Copilot Config
 
-
-
 !!! Note
     AI Copilot Config comes with a default pre-defined grid. You can also edit and preview it directly from the Flow, by using the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md).
 
-To create your AI Copilot Config Grid, follow these steps:
+To create your custom AI Copilot Config Grid, follow these steps:
 
 1. Create an AI Copilot configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
