@@ -55,29 +55,29 @@ To configure the connection for a cloud-based speech service:
 6. Follow according to your selected vendor:
 
 === "Amazon Polly"
-    1. Select your **Credential Type**.
-    2. Insert the **Access Key ID**.
-    3. Insert **Secret Access Key**.
-    4. Select a **Region**.
+    1. Select your Credential Type.
+    2. Enter the Access Key in the **Access Key ID** field.
+    3. Enter the Secret Access Key in the **Secret Access Key** field.
+    4. Select a region from the dropdown **Region** list.
 === "Deepgram"
     1. Enter an API key in the **API Key** field.
 === "Elevenlabs"
     1. Enter an API key in the **API Key** field.
-    2. Select your language **Model**.
-    3._(Optional)_ Edit the Json code for additional options in the **Extra Options**.
+    2. Select your language model from the **Model** list. 
+    3. _(Optional)_ Edit the Json code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"
-    1. Insert your **Service Key**.
+    1. Upload your Service Key to the **Service Key** field.
 === "Microsoft Azure"
     1. Select **Use hosted Azure Service**.
-    2. Select **Region**.
+    2. Select a region from the dropdown **Region** list.
     3. Enter an API key in the **API Key** field.
-    4. _(Optional)_ Use a custom voice for TTS by providing a **Custom Voice Deployment ID**.
-    5. _(Optional)_ Use a custom speech model for STT by providing a **Custom Speech Endpoint ID**.
+    4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom Voice Deployment ID** field.
+    5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom Speech Endpoint ID** field.
 === "Nuance"
-    1. Insert **Client ID**.
-    2. Insert **Secret**.
+    1. Enter the client ID in the **Client ID** field.
+    2. Enter the secret key in the **Secret** field.
 === "Soniox"
-    1. Insert your **API Key**.
+    1. Enter an API key in the **API Key** field.
 
 ## On-Premises Speech Services
 
@@ -85,18 +85,18 @@ To configure the connection, go to **Speech**, select your preferred vendor and 
 
 === "Deepgram"
     1. Select **Use on-prem Deepgram container**.
-    2. Provide a **Container URI** for TTS.
+    2. Enter the container URI for TTS in the **Container URI** field.
     3. Select **Use TLS**, if required.
 
 === "Nuance"
-    1. Select **Use on-prem TTS** to provide the URI for your TTS.
-    2. Select **Use on-prem STT** to provide the URI for your STT.
+    1. Select **Use on-prem TTS** and enter the IP port in the **TTS URI** field.
+    2. Select **Use on-prem STT** to enter the IP port in the **STT URI** field.
   
 === "Microsoft Azure"
     1. Select **Use Azure Docker container (on-prem)**.
-    2. Provide a **Container URL for TTS**.
-    3. Provide a **Container URL for STT**.
-    4. Provide a **Subscription key**, if required.
+    2. Enter the container URL for TTS in the **Container URL for TTS** field.
+    3. Enter the container URL for STT in the **Container URL for STT** field.
+    4. Enter an API key in the **Subscription key** field, if required.
 
 ## Add a Custom Speech Vendor
 
