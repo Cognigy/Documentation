@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-*Speech Services* give your virtual agent a voice. By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple instances of one speech vendor, to freely switch between different voices.
+*Speech Services* give your virtual agent a voice. By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple configurations of one speech vendor, to quickly switch between different setups.
 
 Voice Gateway supports the following speech vendor configurations:
 
