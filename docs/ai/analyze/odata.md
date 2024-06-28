@@ -1,7 +1,7 @@
 ---
 title: "OData"
 slug: "odata-analytics-endpoint"
-description":
+description: "Cognigy.AI provides an OData v4 analytics Endpoint for retrieving raw data via GET requests. It supports enterprise analytics needs, enabling detailed queries for spreadsheets and dashboard creation with preferred data visualization tools."
 hidden: false
 ---
 
