@@ -14,35 +14,49 @@ Note that the Cognigy OData Endpoint only supports `GET` requests and does not s
 Watch this video to get a quick overview of what OData Analytics Endpoint is, how it works,
 and in which scenarios you can use it.
 
+## About OData
+
 <div style="text-align:center;">
   <iframe width="701" height="438" src="https://www.youtube.com/embed/D18JNjUPvN4?si=UJYuFYZzEovHg83Z&amp;start=1857" title="Cognigy Sessions: Cognigy Insights & OData" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Supported Versions
 
-The OData Analytics Endpoint is supported on OData protocol version 4.
+The Cognigy OData Analytics Endpoint supports OData protocol version 4.
 
 ## Non-Real-Time Data
 
 The data retrieved through the OData endpoint is not updated in real time and may not reflect current conditions or changes.
 
-## Authentication
+## OData Endpoint Access
 
-You can connect to the OData Endpoint using your [API Key](../administer/user-menu/my-profile.md#api-keys) in the OData URL on your server.
+The OData Endpoint is located on a different domain than your Cognigy User Interface domain:
 
-An OData URL consists of the service root, API version, collection, and API key parameter: `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
+- Trial. Use [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+- SaaS and On-premises. Replace `odata-trial.cognigy.ai` with your installation's domain name.
 
-### OData Domain Name
+### Authentication
 
-The OData Endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
-For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=your-api-key`
-(where `your-api-key` must be replaced with your respective API Key).
+To connect to the OData Endpoint, you need to have either `odata` or `admin` [global role](https://docs.cognigy.com/ai/administer/access/access-control/#global-roles)
+and an API Key.
 
-For on-premises installations replace the `odata-trial.cognigy.ai` domain name with the domain name
-configured for your local installation.
+OData Endpoint URL format:
 
-!!! note "Authentication for Microsoft Excel and Power BI"
-    When using Microsoft Excel and Power BI, you might be asked to authenticate, select `anonymous authentication`.
+`https://<odata domain>/<api-version>/<collection>?apikey=<your-api-key>`, where
+
+- `odata domain` - the base domain or endpoint of the OData service. It is the root URL where the OData service is hosted.
+- `api-version` - the version of the API you are interacting with. Cognigy.AI supports v2.3.
+- `collection` - a specific collection within the OData service you want to access. A collection is similar to a database table or a set of entities.
+- `your-api-key` - an API key that provides authentication and authorization for accessing the API.
+
+For example, the OData Endpoint URL for the Analytics Inputs Collection on the trial server is:
+
+`https://odata-trial.cognigy.ai/v2.3/Inputs?apikey=your-api-key`
+
+#### Authentication for Microsoft Excel and Power BI
+
+When using Microsoft Excel and Power BI, you might be prompted to authenticate.
+In this case, select **Anonymous Authentication**.
 
 ## Endpoint Version
 
@@ -95,7 +109,7 @@ The Endpoint supports the following OData Query Language operators:
     | Request Description                                                                                 | OData 2.3 Request                                                                                                                                          |
     | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Returns total count of Anayltics records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.3/Analytics/$count?apikey=YOURAPIKEY`                                                                                   |
-    | Returns all Analytics records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`                                                                                          |
+    | Returns all Analytics records for the given API Key                                                  | `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`                                                                                          |
     | Returns the first 10 Analytics records                                                              | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$top=10&apikey=YOURAPIKEY`                                                                                 |
     | Returns the top 5 Analytics records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
     | Returns all Analytics records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
@@ -105,8 +119,8 @@ The Endpoint supports the following OData Query Language operators:
 
     | Request Description                                                                              | OData 2.2 Request                                                                                                                                       |
     | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Returns total count of Inputs records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`                                                                                   |
-    | Returns all Inputs records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`                                                                                          |
+    | Returns total count of Inputs records (Not Supported in Excel or Power BI)                        | `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`                                                                                   |
+    | Returns all Inputs records for the given API Key                                                  | `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`                                                                                          |
     | Returns the first 10 Inputs records                                                              | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`                                                                                 |
     | Returns the top 5 Inputs records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
     | Returns all Inputs records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
