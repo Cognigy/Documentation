@@ -6,7 +6,7 @@ hidden: false
 
 # AI Copilot Configuration
 
-The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid. 
+The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid.
 
 The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid, you can choose the best placement for specific types of widgets.
 
@@ -16,7 +16,7 @@ The AI Copilot configurations can be created, modified, and deleted using the [A
 
 The AI Copilot workspace is based on a fully customizable grid layout where widgets can be added to display different information. 
 
-The grid gives you the possibility to configure the number of columns, rows, as well as the gaps between them. 
+The grid gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
 
 You can set up and edit the grid in the following ways:
 
