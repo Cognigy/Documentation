@@ -18,6 +18,10 @@ and in which scenarios you can use it.
   <iframe width="701" height="438" src="https://www.youtube.com/embed/D18JNjUPvN4?si=UJYuFYZzEovHg83Z&amp;start=1857" title="Cognigy Sessions: Cognigy Insights & OData" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+## Supported Versions
+
+The OData Analytics Endpoint is supported on OData protocol version 4.
+
 ## Non-Real-Time Data
 
 The data retrieved through the OData endpoint is not updated in real time and may not reflect current conditions or changes.
@@ -38,7 +42,7 @@ For on-premises installations replace the `odata-trial.cognigy.ai` domain name w
 configured for your local installation.
 
 !!! note "Authentication for Microsoft Excel and Power BI"
-    When using PowerBI or Excel, you might be asked to authenticate, select `anonymous authentication`.
+    When using Microsoft Excel and Power BI, you might be asked to authenticate, select `anonymous authentication`.
 
 ## Endpoint Version
 
@@ -457,15 +461,16 @@ This scheme describes the relationships between the collection entities.
     </figcaption>
 </figure>
 
-## Integration with Data Visualisation Tools
+## Integrations
 
-The table outlines visualization tools that are compatible with the OData Endpoint,
-along with recommendations and limitations for integration.
+The Cognigy OData Endpoint can be integrated with all tools that are compatible with the OData v4 protocol.
+The table outlines popular integration tools, including data visualization tools, recommended for integration.
 
-| Visualization Tool                                                  | Description                                                                                                                                     | Limitation                                                                                                                                                                   |
-|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Excel                                                     |                                                                                                                                                 | When connecting from Microsoft Excel 2016, use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`. |
-| Microsoft Power BI                                                  |                                                                                                                                                 | Follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).                                                    |
-| Tableau                                                             | The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).      | Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.                                                                      |
-| OData Consumer Ecosystem                                            | For a full list of available OData Consumer options, [follow the link to Consumers on OData.org](https://www.odata.org/ecosystem/#consumers).   |
-| Client Libraries in .NET, Java, JavaScript, C++ and other platforms | For a full list of available OData Libraries, [see the latest directory of available libraries on OData.org](https://www.odata.org/libraries/). |
+| Tool                                                                | Description                                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microsoft Excel                                                     | Microsoft Excel is a spreadsheet application widely used for data analysis and reporting. When connecting from Microsoft Excel 2016, use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`.                                     |
+| Microsoft Power BI                                                  | Microsoft Power BI is a business analytics service that provides interactive visualizations and business intelligence capabilities. For for integrating with the Cognigy OData Endpoint, refer to the [Microsoft Power BI](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata) documentation. |
+| OData Consumer Ecosystem                                            | The OData Consumer Ecosystem encompasses a variety of tools and applications that support the consumption of OData services. For a full list of available OData Consumer options, refer to the [OData](https://www.odata.org/ecosystem/#consumers) documentation.                                          |
+| Client Libraries in .NET, Java, JavaScript, C++ and other platforms | Client libraries are available in multiple programming languages and platforms, providing developers with OData protocol implementations. For a full list of available libraries, refer to the [OData](https://www.odata.org/libraries/) documentation.                                                    |
+
+If you want to use another tool not listed in the table, verify its compatibility with the OData endpoint on the [OData website](https://www.odata.org/) and in the tool's documentation before integrating. For example, the data visualization tool Tableau cannot be used for integration because it [does not support the OData v4 protocol](https://help.tableau.com/current/pro/desktop/en-us/examples_odata.htm) on which the OData endpoint is based.
