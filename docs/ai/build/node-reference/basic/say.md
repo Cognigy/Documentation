@@ -276,12 +276,19 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
       ```
 #### Create an Adaptive Card with Generative AI
 
+You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../../empower/generative-ai.md#prerequisites).
+
+To use this feature, follow these steps:
+
+1. Select the **Adaptive Card** output type.
+2. On the right side of the **Output type** list, click ![the Gen AI Icon](../../../../_assets/icons/beta.svg).
+
 {! _includes/ai/nodes/adaptive-card-genai.md !}
 
 To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../_assets/icons/recycle-bin.svg).
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="100%" />
 </figure>
 
 ??? info "Generative AI Adaptive Card JSON example"
