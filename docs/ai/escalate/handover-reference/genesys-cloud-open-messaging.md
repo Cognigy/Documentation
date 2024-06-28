@@ -199,7 +199,7 @@ To display Genesys Status and Bot messages, follow these steps within your Cogni
 The **Main Flow** on Cognigy.AI should look like this:
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
+  <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
 </figure>
 
 
