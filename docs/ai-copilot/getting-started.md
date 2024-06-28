@@ -24,13 +24,6 @@ To get started with the service:
 
 Check that you have two Flows: the Main Flow and the AI Copilot Flow.
 
-## Configure the AI Copilot Config
-
-With the AI Copilot Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the AI Copilot Workspace as efficient as possible.​
-
-1. [Get your API Key from your Profile](#get-an-api-key)
-2. [Create your AI Copilot Config](#configure-the-ai-copilot-config)
-
 ### Get an API Key
 
 To get your API key, follow these steps:
@@ -45,6 +38,8 @@ To get your API key, follow these steps:
 6. Click **Set** near both fields. 
 
 ### Create an AI Copilot Config
+
+
 
 !!! Note
     AI Copilot Config comes with a default pre-defined grid. You can also edit and preview it directly from the Flow, by using the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md).

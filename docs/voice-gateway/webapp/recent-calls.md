@@ -78,7 +78,7 @@ When you click on highlighted STT and DTMF events, a new window will open, prese
 - **Confidence** — the confidence score associated with the transcription result. For example, `0.9760742`.
 - **Language Code** — the language code for the transcript. For example, `en-US (American English)`.
 - **Transcript** — the actual text generated from the speech. For example, `Today is Wednesday evening, ten-thirty PM`.
-- **Latency** —  the time delay in processing the speech and providing the transcription result. Voice Gateway is waiting for a response from the transcript server.
+- **Latency** — the time delay in processing the speech and providing the transcription result. Voice Gateway is waiting for a response from the transcript server.
 
 You can delete a call recording by clicking ![delete](../../_assets/voice-gateway/delete.svg). Note that this action will delete your file both from Voice Gateway and remote storage, for example, Amazon S3.
 
