@@ -38,7 +38,7 @@ You can control data available through the OData endpoint at both the [Endpoint]
     - If you enable the **Mask Sensitive Analytics** setting, the `inputText` and `inputData` fields will be masked.
 - **Node**. Add a [Blind Mode](../build/node-reference/analytics/blind-mode.md) Node to your Flow. This Node disables or masks analytics data available in the OData Endpoint.
 
-## Supported OData Endpoint Versions
+## Supported Versions
 
 | Cognigy.AI version | Cognigy.AI OData Endpoint version |
 |--------------------|-----------------------------------|
@@ -97,7 +97,7 @@ The OData Analytics Endpoint supports the following [OData system query options]
 ### Examples
 
 The tables contain examples of requests using System Query Options.
-Select the OData endpoint version [compatible with your Cognigy.AI version](#supported-odata-endpoint-versions).
+Select the OData endpoint version [compatible with your Cognigy.AI version](#supported-versions).
 
 === "OData 2.3"
 
@@ -167,7 +167,7 @@ by using the [Overwrite Analytics Node](../build/node-reference/analytics/overwr
 
 **Requests**
 
-Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-odata-endpoint-versions).
+Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-versions).
 
 === "OData 2.3"
 
@@ -246,7 +246,7 @@ Each interaction is logged as a single record.
 
 **Requests**
 
-Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-odata-endpoint-versions).
+Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-versions).
 
 === "OData 2.3"
 
@@ -296,7 +296,7 @@ Each step is logged as a single record.
 
 **Requests**
 
-Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-odata-endpoint-versions).
+Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-versions).
 
 === "OData 2.3"
 
@@ -337,7 +337,7 @@ Each step is logged as a single record.
 
 **Requests**
 
-Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-odata-endpoint-versions).
+Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-versions).
 
 === "OData 2.3"
 
@@ -386,7 +386,7 @@ Each session is logged as a single record.
 
 **Requests**
 
-Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-odata-endpoint-versions).
+Select one of the requests to extract data from the collection. Note that the API version in the request must match [your version of Cognigy.AI](#supported-versions).
 
 === "OData 2.3"
 
