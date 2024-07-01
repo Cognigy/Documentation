@@ -24,8 +24,17 @@ To get started with the service:
 
 Check that you have two Flows: the Main Flow and the AI Copilot Flow.
 
-### Get an API Key
+## Configure an AI Copilot Flow
 
+1. To configure your first workspace, go to the AI Copilot Flow.
+2. Add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
+2. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md).
+3. Add the content, which will be displayed within the AI Copilot Workspace.
+4. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
+
+## Configure the API Connection
+
+To configure your connection between the Flow and AI Copilot, you need an API key and the Project ID. 
 To get your API key, follow these steps:
 
 1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
@@ -36,11 +45,47 @@ To get your API key, follow these steps:
     - API Key (X-API-Key)
     - API Key (api_key)
 6. Click **Set** near both fields. 
+7. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
+8. In the Json field, add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
+9. Check your connection by clicking **Try**.
+
+When the request is created and connection is established correctly, you will see the response code `201`.
+
+## Create an Endpoint
+
+To create your Endpoint, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, select **Deploy > Endpoint**.
+3. Click **+New Endpoint**. 
+4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
+5. In the **Endpoint type** list, select your desired Endpoint. 
+6. Click **Save**. 
+7. Go to **Handover Settings**. 
+8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
+9. In **Copilot Config**, select the config, which you recently created via API.
+10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
+11. Click **Save**.
+
+## Explore the AI Copilot Workspace
+
+To observe the AI Copilot workspace, start a conversation with your virtual agent.
+
+At one point, you will be handed over to a human agent. 
+
+If you are using the `standalone` version of AI Copilot, you will receive the link to your AI Copilot Workspace at this point.
+
+When a customer is handed over, not only is the conversation history with the bot and the current intent forwarded to the human agent, but also a specific link to access the AI Copilot Workspace.
+
+In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agents Desktop.
+
+Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
+
+The widgets will populate their content once the customer starts the conversation.
 
 ### Create a custom AI Copilot Grid Configuration
 
-!!! Note
-    AI Copilot Config comes with a default pre-defined grid. You can also edit and preview it directly from the Flow, by using the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md).
+AI Copilot comes with a pre-built default grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. If you want to modify the default grid configuration, you can do that from within the API.
 
 To create your custom AI Copilot Config Grid with the API, follow these steps:
 
@@ -99,44 +144,6 @@ To create your custom AI Copilot Config Grid with the API, follow these steps:
 
 When the request is created, you will see the response code `201`.
 
-## Create an Endpoint
-
-To create your Endpoint, follow these steps:
-
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, select **Deploy > Endpoint**.
-3. Click **+New Endpoint**. 
-4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
-5. In the **Endpoint type** list, select your desired Endpoint. 
-6. Click **Save**. 
-7. Go to **Handover Settings**. 
-8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **Copilot Config**, select the config, which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
-11. Click **Save**.
-
-## Configure an AI Copilot Flow
-
-1. To configure your first workspace, go into to the AI Copilot Flow.
-2. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md). 
-3. Add the content, which will be displayed within the AI Copilot Workspace.
-4. Ensure that the tile ID in the Nodes matches the tile ID chosen in the AI Copilot configuration; this defines the size and placement of the widgets within the Workspace.
-
-## Explore an AI Copilot workspace
-
-To observe the AI Copilot workspace, start a conversation with your virtual agent.
-
-At one point, you will be handed over to a human agent. 
-
-If you are using the `standalone` version of AI Copilot, you will receive the link to your AI Copilot Workspace at this point.
-
-When a customer is handed over, not only is the conversation history with the bot and the current intent forwarded to the human agent, but also a specific link to access the AI Copilot Workspace.
-
-In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agents Desktop.
-
-Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
-
-The widgets will populate their content once the customer starts the conversation.
 
 ## More Information
 
