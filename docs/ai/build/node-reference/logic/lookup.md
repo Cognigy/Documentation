@@ -150,6 +150,5 @@ This mode is useful when strict type matching is necessary to ensure data is pro
 When Strict Mode is enabled, the value retrieved from the Input, Context, or Profile objects must match the type of the value specified in the Case Node.
 To achieve this result, in the **Value** field of the Case Node, convert the string to the required format using JavaScript.
 For example, to convert the string `"2024"` to the integer `2024`, use `{{ Number("2024") }}` or CognigyScript to retrieve the value: `{{ Number(input.currentTime.year) }}`.
-The same approach applies for boolean: to convert the string `"true"` to a boolean, use `{{ Boolean("true") }}` or CognigyScript `{{ Boolean(input.understood) }}`.
 
 {% endraw %}
