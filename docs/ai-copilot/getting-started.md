@@ -6,7 +6,7 @@ hidden: false
 
 # Getting started with AI Copilot
 
-In this getting started guide, you will learn how to configure your AI Copilot Workspace.
+In this getting started guide, you will learn how to configure your AI Copilot Workspace. AI Copilot comes with a pre-built, default setup and grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. Alternatively you can also manually configure your flow from within the API.
 
 {! _includes/ai-copilot/before-you-begin.md !}
 
@@ -59,7 +59,7 @@ The widgets will populate their content once the customer starts the conversatio
 
 ## _(Optional)_ Manually configure the API Connection
 
-AI Copilot comes with a pre-built, default setup and grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
+If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
 
 To do so, you need an API key and the Project ID:
 
