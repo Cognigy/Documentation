@@ -160,6 +160,8 @@ Each collection can be filtered by its fields, which are often retrieved directl
 
 ### Analytics
 
+The Analytics collection offers a log of comprehensive details such as organizational information,
+project identifiers, Flow specifics, and essential performance metrics.
 When a chat or voice AI Agent session happens in Cognigy.AI, it creates an Analytics record for the interaction. 
 Each interaction is logged as a single record. The information is saved only after the entire session is finished.
 You can change this data
