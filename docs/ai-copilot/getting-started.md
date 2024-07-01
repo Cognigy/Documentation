@@ -16,40 +16,13 @@ To get started with the service:
 
 1. Go to the Cognigy.AI interface.
 2. Create a [virtual agent](../ai/build/projects.md) or use an existing one.
-3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
-4. Save the copied Agent ID for the later use.
-5. Go to the left-side menu and click **Build > Flows**.
-6. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent 
-7. Create the additional flow for AI Copilot.
-
-Check that you have two Flows: the Main Flow and the AI Copilot Flow.
-
-## Configure an AI Copilot Flow
-
-1. To configure your first workspace, go to the AI Copilot Flow.
-2. Add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
-2. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md).
-3. Add the content, which will be displayed within the AI Copilot Workspace.
-4. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
-
-## Configure the API Connection
-
-To configure your connection between the Flow and AI Copilot, you need an API key and the Project ID. 
-To get your API key, follow these steps:
-
-1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
-2. In the **API Keys** section, click **+**.
-3. Add an API key name and click **Confirm**. The API key will appear in the list.
-4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
-5. Paste the API Key to the following fields:
-    - API Key (X-API-Key)
-    - API Key (api_key)
-6. Click **Set** near both fields. 
-7. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
-8. In the Json field, add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
-9. Check your connection by clicking **Try**.
-
-When the request is created and connection is established correctly, you will see the response code `201`.
+3. Go to the left-side menu and click **Build > Flows**.
+4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or a transfer to a human agent.
+5. Create a second Flow for AI Copilot.
+6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
+7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md).
+8. Add the content, which will be displayed within the AI Copilot Workspace.
+9. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
 
 ## Create an Endpoint
 
@@ -57,15 +30,16 @@ To create your Endpoint, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
-3. Click **+New Endpoint**. 
-4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
-5. In the **Endpoint type** list, select your desired Endpoint. 
+3. Click **+New Endpoint**. _(Optional)_ You may also use a previously established Endpoint with a Handover to Agent Flow. In that case, skip to point 8.
+4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent.
+5. In the **Endpoint type** list, select your desired Endpoint.
 6. Click **Save**. 
-7. Go to **Handover Settings**. 
-8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **Copilot Config**, select the config, which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
-11. Click **Save**.
+7. Go to **Handover Settings** and select your handover platform.
+8. Go to **Copilot** and select Workspace as your **Copilot Type**.
+9. In **Copilot Flow**, select the previously created AI Copilot Flow.
+10. _(Optional)_ In **Copilot Config**, select the configuration, which you recently created via API.
+11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
+12. Click **Save**.
 
 ## Explore the AI Copilot Workspace
 
@@ -83,13 +57,33 @@ Once the human agent engages with the conversation, the grid will show an empty 
 
 The widgets will populate their content once the customer starts the conversation.
 
-### Create a custom AI Copilot Grid Configuration
+## _(Optional)_ Manually configure the API Connection
 
-AI Copilot comes with a pre-built default grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. If you want to modify the default grid configuration, you can do that from within the API.
+AI Copilot comes with a pre-built, default setup and grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
+
+To do so, you need an API key and the Project ID:
+
+1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
+2. In the **API Keys** section, click **+**.
+3. Add an API key name and click **Confirm**. The API key will appear in the list.
+4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
+5. Paste the API Key to the following fields:
+    - API Key (X-API-Key)
+    - API Key (api_key)
+6. Click **Set** near both fields.
+7. Go to your Project in Cognigy.AI.
+8. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`. 
+9. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
+10. Add the Project ID in the Json projectId field.
+9. Check your connection by clicking **Try**.
+
+When the request is created and connection is established correctly, you will see the response code `201`.
+
+### _(Optional)_ Create a Custom Default Grid from the API
 
 To create your custom AI Copilot Config Grid with the API, follow these steps:
 
-1. Create an AI Copilot configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
+1. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
 3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
 4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
@@ -143,7 +137,6 @@ To create your custom AI Copilot Config Grid with the API, follow these steps:
 5. Create the request by clicking **Try**.
 
 When the request is created, you will see the response code `201`.
-
 
 ## More Information
 
