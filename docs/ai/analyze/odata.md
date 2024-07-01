@@ -317,7 +317,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | Field Name        | Description                                                                      | Type   | Example                          |
 |-------------------|----------------------------------------------------------------------------------|--------|----------------------------------|
 | _id               | The unique ID of the record.                                                     | String | 5a91d194fde28b0011ce2423         |
-| label             | The analytics step label defined for the entity (Node or Intent) in Cognigy.AI.	 | String | Question (2)                     |
+| label             | The analytics step label defined for the entity (Node or Intent) in Cognigy.AI.  | String | Question (2)                     |
 | type              | The type of entity.                                                              | String | `node` or `intent`               |
 | entityReferenceId | The unique ID for the entity (Node ID or Flow ID).                               | String | 5a91d194fde28b0011ce2423         |
 | flowReferenceId   | The ID of the Flow.                                                              | String | 5a91d194fde28b0011ce2423         |
