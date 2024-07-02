@@ -107,7 +107,8 @@ Select the OData endpoint version [compatible with your Cognigy.AI version](#sup
     | Returns all Analytics records for the given API Key.                                                     | `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=<your-api-key>`                                                                                          |
     | Returns the first 10 Analytics records.                                                                  | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$top=10&apikey=<your-api-key>`                                                                                 |
     | Returns the top 5 Analytics records where `executionTime` is less than 50ms, ordered by `executionTime`. | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=<your-api-key>`                               |
-    | Returns all Analytics records  for a specific Cognigy.AI Project filtered by `projectId`                 | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=<your-api-key>`                                                        |
+    | Returns all Analytics records for a specific Cognigy.AI Project filtered by `projectId`                  | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq '<project-id>'&apikey=<your-api-key>`                                                     |
+    | Returns the Session IDs for a specific Cognigy.AI Project filtered by `projectId`.                       | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq '<project-id>'&$select=projectId,sessionId&apikey=<your-api-key>`                         |
     | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021.            | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=<your-api-key>` |
 
 === "OData 2.2 and earlier"
@@ -118,7 +119,7 @@ Select the OData endpoint version [compatible with your Cognigy.AI version](#sup
     | Returns all Inputs records for the given API Key.                                                     | `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=<your-api-key>`                                                                                          |
     | Returns the first 10 Inputs records.                                                                  | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=<your-api-key>`                                                                                 |
     | Returns the top 5 Inputs records where `executionTime` is less than 50ms, ordered by `executionTime`. | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=<your-api-key>`                               |
-    | Returns all Inputs records for a specific Cognigy.AI Project filtered by `projectId`.                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=<your-api-key>`                                                        |
+    | Returns all Inputs records for a specific Cognigy.AI Project filtered by `projectId`.                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq '<project-id>'&apikey=<your-api-key>`                                                        |
     | Returns all Inputs records between two dates, for example, 1st Jan 2021 and 1st July 2021.            | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=<your-api-key>` |
 
 For a full reference,
