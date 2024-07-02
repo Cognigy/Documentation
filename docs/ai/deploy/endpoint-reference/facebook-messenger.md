@@ -123,7 +123,7 @@ Each user on Facebook has a unique ID, a PSID, for each Facebook page they talk 
 Here you can configure whether typing indicators should be used and how many milliseconds of delay there should be between each message.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/940f0ef-facebookMessageSettings.PNG" width="100%" />
+  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/facebook-messenger-settings.png" width="100%" />
 </figure>
 
 !!! note "Help Center"

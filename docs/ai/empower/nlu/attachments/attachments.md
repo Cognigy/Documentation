@@ -10,7 +10,7 @@ Agent Flows and Lexicons can be shared across multiple flows throughout the agen
 The **Attachments Menu** is found in the **NLU** tab inside the Flow Editor.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/empower/nlu/b585fa6-attachments.PNG" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/empower/nlu/attachments.png" width="80%" />
 </figure>
 
 The **Attachments** feature means that duplication of intent and lexicon libraries is not required as multiple flows can be designed to reference single libraries.

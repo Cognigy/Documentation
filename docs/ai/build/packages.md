@@ -36,7 +36,7 @@ Export one resource as a Package using one of the following options:
      1. Go to the Cognigy.AI interface.
      2. In the left-side menu, select a section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
      3. On the **Resource** page, select a specific resource from the list.
-     4. On the right side of the resource, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Export as Package**. This action will trigger the **Create Package** task in the Task Manager.
+     4. On the right side of the resource, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**. This action will trigger the **Create Package** task in the Task Manager.
      5. Check the status of the **Create Package** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
      6. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
 

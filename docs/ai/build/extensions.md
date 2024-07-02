@@ -46,7 +46,7 @@ Extensions have a default timeout of 20 seconds, meaning if the time it takes fo
 You can install a custom Extension from the Extension Marketplace by using the **Upload Extension** button or by dragging and dropping.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/build/extensions/Installing-Custom-Extensions.PNG" width="100%" />
+  <img class="image-center" src="../../../_assets/ai/build/extensions/Installing-Custom-Extensions.png" width="100%" />
   <figcaption>Installing a custom Extension</figcaption>
 </figure>
 

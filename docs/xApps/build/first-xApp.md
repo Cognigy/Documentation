@@ -195,7 +195,7 @@ Once you built your first xApp, you can test your xApp via the Interaction Panel
       <img class="image-center" src="../../../_assets/xApps/build/first-xApp/check-input-result.png" width="100%">
     </figure>
 
-You can download a Cognigy Package with the [xApp Flow example](https://docs.cognigy.com/_assets/xApps/build-xApps/first-xApp/Flow-xApp-Demo.zip).
+You can download a Cognigy Package with the [xApp Flow example](https://docs.cognigy.com/_assets/xApps/build/first-xApp/Flow-xApp-Demo.zip).
 
 ## More Information
 

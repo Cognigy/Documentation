@@ -134,7 +134,7 @@ For more information, read the [Handover Providers](escalate/handover-reference/
 _**Inbox**_
 : Incoming conversations are routed to an inbox in the Live Agent.
 By default, there is one inbox per Project.
-For more information, read the [Inbox](https://docs.cognigy.com/live-agent/inboxes.md) documentation.
+For more information, read the [Inbox](../live-agent/settings/inboxes.md) documentation.
 
 _**Input (Object)**_
 : A short-term JSON data object generated each time a message is sent to Cognigy.AI.
