@@ -37,8 +37,6 @@ To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kub
 ### Helm Package Manager
 Cognigy products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
 
-!!! warning "Kustomize deprecation"
-    Support for [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation ended as of December 31, 2022.
 
 !!! warning "Helm versions"
     For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
