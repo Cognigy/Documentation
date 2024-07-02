@@ -209,7 +209,7 @@ nav:
         - ai/empower/knowledge-ai/ctxt.md
         - ai/empower/knowledge-ai/pdf.md
         - ai/empower/knowledge-ai/web-page.md
-        - ai/empower/knowledge-ai/text-extraction-with-azure-ai.md
+        - ai/empower/knowledge-ai/text-extraction-with-advanced-parser.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:
@@ -617,6 +617,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.79.md
     - release-notes/4.78.md
     - release-notes/4.77.md
     - release-notes/4.76.md

@@ -96,6 +96,8 @@ By changing the lookup type to **Handover Status**,
 the Flow will select a case that matches the value of `input.handover.status`.
 The case values must manually be written for a type of lookup.
 
+You can now receive **Status** and queue update messages from **Genesys Cloud** using the **Handover Status** Node. To learn how to do that, go to [Genesys Status and Bot Messages](../../../escalate/handover-reference/genesys-cloud-open-messaging.md). If you wish to use RingCentral Engage instead, go to [RingCentral Engage](../../../escalate/handover-reference/ring-central-engage.md) for more information.
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
@@ -131,6 +133,24 @@ To learn more, read the [CognigyScript](../../cognigy-script.md) page.
 
 By changing the lookup type to **Call Event Status**, the Flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
 
-In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
+In the Case Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
 More information about these events you can find in the [Voice Gateway Events](../../../../voice-gateway/references/events/overview.md) reference.
+
+## Strict Mode
+
+{% raw %}
+
+By default, the Strict Mode setting is inactive, which lets the Lookup Node accept values of any data type from the Input, Context, or Profile objects.
+For instance, if you use CognigyScript to retrieve a value in integer format (for example, `2024`), it will be considered equal to the string format (for example, `"2024"`)
+in the **Value** field of the Case Node.
+
+In Strict Mode, value types must be identical.
+For example, the integer `2024` and the string `"2024"` will not be considered equal.
+This mode is useful when strict type matching is necessary to ensure data is processed correctly.
+
+When Strict Mode is enabled, the value retrieved from the Input, Context, or Profile objects must match the type of the value specified in the Case Node.
+To achieve this result, in the **Value** field of the Case Node, convert the string to the required format using JavaScript.
+For example, to convert the string `"2024"` to the integer `2024`, use `{{ Number("2024") }}` or CognigyScript to retrieve the value: `{{ Number(input.currentTime.year) }}`.
+
+{% endraw %}
