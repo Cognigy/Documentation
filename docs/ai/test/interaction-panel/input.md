@@ -17,13 +17,6 @@ The input object is passed to the Project's [Flow](../../../ai/build/flows.md) t
 !!! note "Intent Default Replies override flow logic"
     If an intent is configured with a default reply, this will override the agent's flow logic and automatically be delivered as the response.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-input.jpg" width="100%" />
-  <figcaption>Inspect the current Input object from the INFO tab of the Interaction Panel
-
-</figcaption>
-</figure>
-
 ## Properties
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)

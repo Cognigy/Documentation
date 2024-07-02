@@ -38,11 +38,10 @@ To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kub
 Cognigy products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
 
 !!! warning "Kustomize deprecation"
-    [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
+    Support for [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation ended as of December 31, 2022.
 
 !!! warning "Helm versions"
     For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
-
 
 ### Cognigy License
 Cognigy.AI product requires a license key which you will receive once a license agreement is signed. The key is necessary to install the product.

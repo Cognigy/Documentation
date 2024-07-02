@@ -21,7 +21,7 @@ Each chart presents real-time data that refreshes every 30 seconds.
 All data displayed in the charts relate to the [global filter](../global-filters.md) settings.
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/calls-overview.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/calls-overview.png" width="100%" />
   <figcaption>Calls dashboard</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/call-ended-by.png" width="80%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/call-ended-by.png" width="80%" />
 </figure>
 
 ### Top Intents
@@ -95,7 +95,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/top-intents.png" width="80%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/top-intents.png" width="80%" />
 </figure>
 
 ### Total call duration
@@ -116,7 +116,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/total-call-duration.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/total-call-duration.png" width="100%" />
 </figure>
   
 ## Line charts
@@ -151,7 +151,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/call-directions.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/call-directions.png" width="100%" />
 </figure>
 
 
@@ -186,7 +186,7 @@ Result:
 ```
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/abandon-rate.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/abandon-rate.png" width="100%" />
 </figure>
 
 ### TTS response time
@@ -207,7 +207,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/tts-response-time.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/tts-response-time.png" width="100%" />
 </figure>
 
 ### Percentage (%) of transferred calls
@@ -242,7 +242,7 @@ Result:
 ```
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/transferred-calls.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/transferred-calls.png" width="100%" />
 </figure>
 
 ### Average concurrent session
@@ -268,7 +268,7 @@ Example:
 Result: `0.117`
 
 <figure>
-  <img class="image-center" src="/../../../_assets/insights//calls/average-concurrent-session.png" width="100%" />
+  <img class="image-center" src="/../../../_assets/insights/calls/average-concurrent-session.png" width="100%" />
 </figure>
 
 
