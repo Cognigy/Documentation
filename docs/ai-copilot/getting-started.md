@@ -113,12 +113,12 @@ To create your Endpoint, follow these steps:
 4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
-7. Go to **Handover Settings** and select your Handover Provider.
+7. Go to the **Handover Settings** section and select your Handover Provider.
 8. Go to **Copilot** and select the **Copilot Flow**, which will be executed once the Handover To Agent has taken place.
 9. From the **Copilot Config** list, select the configuration you created via API. If you select **None**, the default AI Copilot config will be applied. You can override the default config in the Copilot: Set Config Node within your AI Copilot Flow.
 10. _(Optional)_ Add a Transcript Tile to display the conversation with the customer, by enabling the toggle "Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace" in the AI Copilot Settings. This toggle in turn enables additional settings:
-   - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer - Enables the agent to send messages from the Transcript Tile.
-   - Enable redaction of Transcript Tile messages - allows to redact, for example, sensitive information from the transcript.
+    - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer - enables the human agent to send messages from the Transcript Tile.
+    - Enable redaction of Transcript Tile messages - lets you hide sensitive data from the Transcript Tile.
 11. Click **Save**.
 
 ## Configure an AI Copilot Flow
