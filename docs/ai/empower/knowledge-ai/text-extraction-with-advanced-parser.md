@@ -45,8 +45,6 @@ This feature is available in the following environments:
 
 - Trial.
 - Dedicated and shared SaaS.
-  Only for a limited number of customers.
-  If you want to use this feature, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 - [On-premises](#on-premises). To use this feature, set up Azure AI Document Intelligence connection and provide an API key.
 
 ### On-Premises
