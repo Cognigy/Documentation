@@ -67,3 +67,17 @@ For example, if a call is transferred to a user and AMD detects a machine, you w
 | Custom Transfer SIP Headers | Toggle | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | All           |
 | Transfer SIP Headers        | JSON   | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute.                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | All           |
 | Referred By                 | String | This parameter is optional.<br><br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`. | Refer         |
+
+### Troubleshooting
+
+#### Possible 403 Error After Dial Transfer
+
+In case you receive a 403 error log message after using a Transfer Node with Dial, check the related [PCAP](../../../../../voice-gateway/webapp/recent-calls.md) file in the Voice Gateway Self-Service Portal first. There you should get more information about the reason for the 403 error.
+
+Some SBCs like Twilio may reject calls from unknown numbers. In this case, it might be necessary to configure the P-Asserted-Identity header for the Transfer. To do this, turn on the Custom Transfer SIP Headers toggle in the Advaned settings of the Transfer Node, and enter the following in the JSON field:
+
+   ```json
+    {
+    "P-Asserted-Identity": "<sip:phonenumber@host>"
+    }
+   ```

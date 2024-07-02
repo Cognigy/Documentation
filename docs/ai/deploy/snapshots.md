@@ -8,7 +8,8 @@ hidden: false
 
 _Snapshots_ are immutable forms of your virtual agent, including the following resources:
 
-* Flows (including any trained NLU models)
+* Flows
+* Trained NLU Intent models
 * Lexicons
 * Connections
 * NLU Connectors
@@ -44,6 +45,7 @@ The following resources are not included in the Snapshot:
 - The maximum number of Snapshots per Agent is 10. This limit can be modified in a dedicated product installation. It can be adjusted via the following environment variable in the `cognigy-env` config-map: `MAX_AMOUNT_SNAPSHOTS_IN_AGENT`.
 - The maximum size of a packaged Snapshot is 256 MB. If you have reached this limit, you must first delete older Snapshots before creating new ones. With a dedicated installation, you can increase the maximum number of Snapshots using an environment variable in the `cognigy-env` config-map: `SNAPSHOT_MAX_FILE_SIZE`.
 - The lifetime of a downloadable Snapshot until you have to re-create the download is 1 day.
+- The [`text-embedding-3-model`](../empower/nlu/external/external-nlu-intent-recognition.md) external NLU model increases Snapshot size, leading to longer download and upload times.
 
 ## Snapshot File Format
 

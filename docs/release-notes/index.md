@@ -9,8 +9,13 @@ hidden: false
 Cognigy release notes provide information on the features, improvements, and bugfixes in each release.
 You'll find the corresponding release notes after opening one of the versions below.
 
+!!! note "Security Updates for Cognigy's Products"
+    In every release, we fix security vulnerabilities to ensure our products remain reliable and secure. 
+    We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
+
 - **4.7x**:
-    - [4.78 (latest)](4.78.md)
+    - [4.79 (latest)](4.79.md)
+    - [4.78](4.78.md)
     - [4.77](4.77.md)
     - [4.76](4.76.md)
     - [4.75](4.75.md)

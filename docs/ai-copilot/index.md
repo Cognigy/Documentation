@@ -22,7 +22,7 @@ _Cognigy AI Copilot_ offers a variety of advanced features that empower agents t
     widgets
 
     [:octicons-arrow-right-24: AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)<br>
-    [:octicons-arrow-right-24: Plug-and-Play Widgets](../ai/build/node-reference/xApp/overview.md)
+    [:octicons-arrow-right-24: Plug-and-Play Widgets](plug-and-play-widgets.md)
 
 -   :briefcase:{ .lg .middle } __Select a Use Case__
 
