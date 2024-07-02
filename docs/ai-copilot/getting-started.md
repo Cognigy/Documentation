@@ -6,7 +6,8 @@ hidden: false
 
 # Getting started with AI Copilot
 
-In this getting started guide, you will learn how to configure your AI Copilot Workspace. AI Copilot comes with a pre-built, default setup and grid configuration, which you can edit directly from the Flow. This allows for more flexibility between different grid setups. Alternatively you can also manually configure your flow from within the API.
+In this getting started guide, you will learn how to configure your first AI Copilot workspace. 
+The AI Copilot workspace comes with a pre-built grid configuration, which you can edit directly from the Flow for more flexibility with different layouts. Alternatively, you can also manually configure your AI Copilot workspace using the API Post request.
 
 {! _includes/ai-copilot/before-you-begin.md !}
 
@@ -15,9 +16,9 @@ In this getting started guide, you will learn how to configure your AI Copilot W
 To get started with the service:
 
 1. Go to the Cognigy.AI interface.
-2. Create a [virtual agent](../ai/build/projects.md) or use an existing one.
-3. Go to the left-side menu and click **Build > Flows**.
-4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or a transfer to a human agent.
+2. Create a [Project](../ai/build/projects.md) or use an existing one.
+3. In the left-side menu of your Project, select **Build > Flows**.
+4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent.
 5. Create a second Flow for AI Copilot.
 6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
 7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md).
@@ -30,20 +31,17 @@ To create your Endpoint, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
-3. Click **+New Endpoint**. _(Optional)_ You may also use a previously established Endpoint with a Handover to Agent Flow. In that case, skip to point 8.
-4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent.
-5. In the **Endpoint type** list, select your desired Endpoint.
-6. Click **Save**. 
-7. Go to **Handover Settings** and select your handover platform.
-8. Go to **Copilot** and select Workspace as your **Copilot Type**.
-9. In **Copilot Flow**, select the previously created AI Copilot Flow.
-10. _(Optional)_ In **Copilot Config**, select the configuration, which you recently created via API.
+3. Create a new Endpoint or use an existing one.
+7. On the **Endpoint Settings** page, go to the **Handover Settings** section and select your handover platform.
+8. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
+9. From the **Copilot Flow** list, select the previously created AI Copilot Flow.
+10. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
 11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
 12. Click **Save**.
 
 ## Explore the AI Copilot Workspace
 
-To observe the AI Copilot workspace, start a conversation with your virtual agent.
+To observe the AI Copilot workspace, start a conversation with your AI Agent.
 
 At one point, you will be handed over to a human agent. 
 
