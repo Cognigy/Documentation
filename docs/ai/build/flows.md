@@ -144,7 +144,7 @@ To manage the Flow Editor parameters, such as zoom and navigation, go to the con
 | **- 100% +**                                                  | Zoom out (-) or zoom in (+) the chart in the Flow Editor. |
 | ![flow-centralize](../../_assets/icons/flow-centralize.svg)   | Centers the chart.                                        |
 | ![magnifying-glass](../../_assets/icons/magnifying-glass.svg) | Search for Nodes in the Flow.                             | 
-| ![photo-camera](../../_assets/icons/photo-camera.svg)         | Export the Flow to an Image File (PNG).                   | 
+| ![photo-camera](../../_assets/icons/photo-camera.svg)         | Save the Flow as an Image File (PNG).                   | 
 | ![voice-preview](../../_assets/icons/voice-preview.svg)       | Testing voice outputs without executing the entire Flow.   |
 | ![arrow-back](../../_assets/icons/arrow-back.svg)             | Undo the last step by going backward in history.          |
 | ![arrow-forward](../../_assets/icons/arrow-forward.svg)       | Redo the last steps by going forward in history.          |
