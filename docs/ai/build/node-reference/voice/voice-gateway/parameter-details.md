@@ -108,7 +108,7 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
 
-The track is playing during the conversation with the AI Agent, and when the Transfer type Dial is performed and the human agent's phone is ringing. It stops once the human agent accepts the call.
+The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
 | Parameter | Type     | Description                                                                                                                                                                                                         |
 |-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
