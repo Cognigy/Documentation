@@ -13,16 +13,8 @@ hidden: false
 
 Voice Gateway supports the following speech vendor configurations:
 
-| Speech vendor | Cloud-based | On-premises | 
-|---------------|-------------|-------------|
-| Amazon Polly  | +           | -           |      
-| Deepgram      | +           | +           |
-| ElevenLabs    | +           | -           |
-| Google        | +           | -           |
-| Microsoft     | +           | +           |
-| Nuance        | +           | +           |
-| Soniox        | +           | -           |
-| Custom        | +           | +           |
+- [Cloud-based](#cloud-based-speech-services)
+- [On-premises](#on-premises-speech-services)
 
 For the list of supported vendors and their Speech-To-Text and Text-To-Speech capabilities, see the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
@@ -58,13 +50,13 @@ To configure the connection for a cloud-based speech service:
     1. Select your Credential Type.
     2. Enter the Access Key in the **Access Key ID** field.
     3. Enter the Secret Access Key in the **Secret Access Key** field.
-    4. Select a region from the dropdown **Region** list.
+    4. Select a region from the **Region** list.
 === "Deepgram"
     1. Enter an API key in the **API Key** field.
 === "Elevenlabs"
     1. Enter an API key in the **API Key** field.
     2. Select your language model from the **Model** list. 
-    3. _(Optional)_ Edit the Json code for additional options by selecting the **Extra Options**.
+    3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"
     1. Upload your Service Key to the **Service Key** field.
 === "Microsoft Azure"

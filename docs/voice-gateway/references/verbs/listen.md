@@ -6,7 +6,7 @@ hidden: false
 
 # Listen
 
-The `listen` verb sends real-time audio streams to your application over a WebSocket connection for processing.
+The `listen` verb sends real-time audio streams to your external server over a WebSocket connection for processing.
 The [Call Recording](../../webapp/recent-calls.md#call-recordings) feature relies on this verb.
 
 This table outlines the properties related to the audio streams sent by the `listen` verb:
@@ -40,8 +40,8 @@ The full set of configuration parameters:
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | actionHook      | A webhook to receive an HTTP POST when the listen operation ends. The information will include the duration of the audio stream, and also a `digits` property if the recording was terminated by a DTMF key.                                                       | Yes      |
 | bidirectionalAudio.enabled | If this parameter is `true`, it enables bidirectional audio. The default value is `true`.                                                                                                                                                               | No       |
-| bidirectionalAudio.sampleRate| Is a required value for audio streaming. Your application should send binary frames of linear-16 pcm raw data with the specified sample rate over the websocket connection.                                                                           | No       |
-| bidirectionalAudio.streaming | If this parameter is `true`, it enables audio streaming from your application to Voice Gateway and to the remote caller. The default value is `false`.                                                                                                | No       |
+| bidirectionalAudio.sampleRate| Is required when streaming is enabled. This parameter specifies the sampling rate of the audio in Hz that is sent over the WebSocket connection back to the call.| No       |
+| bidirectionalAudio.streaming | Breaks the raw audio into segments (chunks) and sends them over the WebSocket connection back to the call. The audio is expected to be in linear [PCM](https://en.wikipedia.org/wiki/Pulse-code_modulation) format (uncompressed raw audio format without headers). The default value is `false`. This parameter works if  `bidirectionalAudio.enabled` is activated. | No       |
 | disableBidirectionalAudio |  This parameter is deprecated. If set to `true`, it will disable bidirectional audio, which is equivalent to setting `bidirectionalAudio.enabled = false`. The default calue is `false`.                                                                 | No       |
 | finishOnKey     | The set of digits that can end the listen action.                                                                                                                                                                                                                  | No       |
 | maxLength       | The maximum length of the listened audio stream in seconds.                                                                                                                                                                                                        | No       |
