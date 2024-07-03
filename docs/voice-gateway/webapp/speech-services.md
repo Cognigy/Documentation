@@ -47,28 +47,30 @@ To configure the connection for a cloud-based speech service:
 6. Follow according to your selected vendor:
 
 === "Amazon Polly"
-    1. Enter the Access Key in the **Access Key ID** field.
-    2. Enter the Secret Access Key in the **Secret Access Key** field.
+    1. Enter the Access Key in the **Access key ID** field.
+    2. Enter the Secret Access Key in the **Secret access key** field.
     3. Select a region from the **Region** list.
 === "Deepgram"
-    1. Enter an API key in the **API Key** field.
+    1. Enter an API key in the **API key** field.
 === "Elevenlabs"
-    1. Enter an API key in the **API Key** field.
+    1. Enter an API key in the **API key** field.
     2. Select your language model from the **Model** list. 
     3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"
-    1. Upload your Service Key to the **Service Key** field.
+    1. Upload your Service Key to the **Service key** field.
 === "Microsoft Azure"
-    1. Select **Use hosted Azure Service**.
+    1. Select **Use hosted Azure service**.
     2. Select a region from the dropdown **Region** list.
-    3. Enter an API key in the **API Key** field.
-    4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom Voice Deployment ID** field.
-    5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom Speech Endpoint ID** field.
+    3. Enter an API key in the **API key** field.
+    4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
+    5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom speech endpoint ID** field.
 === "Nuance"
     1. Enter the client ID in the **Client ID** field.
     2. Enter the secret key in the **Secret** field.
 === "Soniox"
-    1. Enter an API key in the **API Key** field.
+    1. Enter an API key in the **API key** field.
+
+7. Click **Save**.
 
 ## On-Premises Speech Services
 
@@ -88,6 +90,8 @@ To configure the connection, go to **Speech**, select your preferred vendor and 
     2. Enter the container URL for TTS in the **Container URL for TTS** field.
     3. Enter the container URL for STT in the **Container URL for STT** field.
     4. Enter an API key in the **Subscription key** field, if required.
+
+Save your changes by clicking **Save**.
 
 ## Add a Custom Speech Vendor
 
