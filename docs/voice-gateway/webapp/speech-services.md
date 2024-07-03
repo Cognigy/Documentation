@@ -47,10 +47,9 @@ To configure the connection for a cloud-based speech service:
 6. Follow according to your selected vendor:
 
 === "Amazon Polly"
-    1. Select your Credential Type.
-    2. Enter the Access Key in the **Access Key ID** field.
-    3. Enter the Secret Access Key in the **Secret Access Key** field.
-    4. Select a region from the **Region** list.
+    1. Enter the Access Key in the **Access Key ID** field.
+    2. Enter the Secret Access Key in the **Secret Access Key** field.
+    3. Select a region from the **Region** list.
 === "Deepgram"
     1. Enter an API key in the **API Key** field.
 === "Elevenlabs"
