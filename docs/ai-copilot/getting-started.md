@@ -44,18 +44,17 @@ To create your Endpoint, follow these steps:
 By now, your Copilot grid and connection should be set up and ready for testing.
 
 To observe the AI Copilot workspace, start a conversation with your AI Agent at the Endpoint.
-
 In another tab, open your Agent Workspace, for example the Live Agent, and follow the Flow until the Handover to Agent Node triggers the Handover.
 
 If you are using the `standalone` version of AI Copilot, you will receive a link to your AI Copilot Workspace.
 
-When a customer is handed over, the conversation history with the AI Agent and the current intent is forwarded to the human agent, together with a specific link to access the AI Copilot Workspace.
+After the handover, the conversation history with the AI Agent and the current intent are forwarded to the human agent, together with a specific link to access the AI Copilot Workspace.
 
 In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agent's Desktop.
 
 Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 
-The widgets will populate their content once the customer starts the conversation.
+The widgets will populate with content once the customer starts the conversation.
 
 ## More Information
 
