@@ -21,7 +21,7 @@ To get started with the service:
 4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent.
 5. Create a second Flow for AI Copilot.
 6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
-7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md).
+7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md). This can be, for example, a [Profile Node](../ai/build/node-reference/ai-copilot/identity-tile.md) with your user's most important information, an AI-powered [Sentiment Node](../ai/build/node-reference/ai-copilot/sentiment-tile.md) displaying the user's current attitude, or a [Transcript Node](../ai/build/node-reference/ai-copilot/transcript-tile.md) with the transcribed content of the conversation.
 8. Add the content, which will be displayed within the AI Copilot Workspace.
 9. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
 
@@ -36,7 +36,7 @@ To create your Endpoint, follow these steps:
 8. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
 9. From the **Copilot Flow** list, select the previously created AI Copilot Flow.
 10. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
-11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
+11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings. Make sure to add a Transcript Node in your Copilot Grid if you wish to see the transcript.
 12. Click **Save**.
 
 ## Explore the AI Copilot Workspace
