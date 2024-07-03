@@ -115,11 +115,21 @@ The track plays during the conversation with the AI agent, continues when the ca
 | Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely. |
 | URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                        |
 | Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                              |
-| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                                                                                                                                                                        |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                          |
 
 ### Silence Overlay
 
-Silence Overlay enables you to play an MP3 file in the background of an active call with an AI Agent while a prolonged silence occurs. It can, for example, simulate a human agent typing the user details on a keyboard and mouse-clicking. With Silence Overlay, the user is subtly notified that the AI Agent is currently working behind the scenes, as collecting the results of their query takes some time.
+Silence Overlay enables the user to play an MP3 file in the background of a call with an AI Agent while a prolonged silence occurs. It can, for example, simulate a human agent typing the user details on a keyboard and mouse-clicking. With Silence Overlay, the customer is subtly notified that the AI Agent is currently working behind the scenes, as collecting the results of their query may take some time.
+
+When enabled in Set Session Config Node, it starts playing automatically once the AI Agent takes longer to respond, then stops the moment the AI Agent responds again. You can adjust the number of seconds before the MP3 track starts playing to give it a more natural pace.
+
+If you enabled [Call Recording](../../../../../voice-gateway/webapp/recent-calls.md#call-recordings) in Voice Gateway>Recent Calls, the Silence Overlay track is recorded together with the AI Agent's track and can be played back in the audio file.
+
+| Parameter                              | Type     | Description                                                                                                                                                                                                                                                 |
+|----------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action                                 | Dropdown | Selects an action to play or remove the track: <br> - **play** - plays the track in the background when prolonged silence occurs. <br> - **remove** - removes the track completely. Next time a prolonged silence occurs, the Silence Overlay will not play.|
+| URL                                    | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                           |
+| Delay for starting the Silence Overlay | Number   | Defines the number of seconds to wait before the MP3 track starts playing. It simulates more humanlike responses, as naturally there is a gap between the agent speaking and typing the answers.                                                            |
 
 ### Advanced
 
