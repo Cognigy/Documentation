@@ -61,7 +61,7 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 ### Barge In
 
-Barge In enables the interruption of the virtual agent.
+Barge In enables the interruption of the virtual agent. When coupled with a Handover Node, Barge In will retain its setting even when working with an external handover provider or a Text-To-Speech engine. This way, customers can't use Barge In to skip, for example, important legal information such as the GDPR rules.
 
 | Parameter              | Type   | Description                                                                                                 |
 |------------------------|--------|-------------------------------------------------------------------------------------------------------------|
