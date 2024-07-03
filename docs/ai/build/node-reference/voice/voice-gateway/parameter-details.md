@@ -101,6 +101,22 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 | Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                       |
 | Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow. |
 
+### Atmosphere Sounds
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
+
+This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
+Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
+
+The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
+
+| Parameter | Type     | Description                                                                                                                                                                                                              |
+|-----------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely. |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                        |
+| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                              |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                                                                                                                                                                        |
+
 ### Advanced
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../../../../release-notes/4.48.md)

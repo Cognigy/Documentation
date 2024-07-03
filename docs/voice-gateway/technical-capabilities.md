@@ -67,6 +67,7 @@ The following audio codecs are supported:
 - Receiving re-INVITE with no Session Description Protocol (SDP).
 - Answering machine detection.
 - Configurable music on hold.
+- Configurable Atmosphere Sounds playing in the background of the conversation.
 
 ### Call Management
 
