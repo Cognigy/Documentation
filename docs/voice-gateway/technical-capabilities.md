@@ -68,6 +68,7 @@ The following audio codecs are supported:
 - Answering machine detection.
 - Configurable music on hold.
 - Configurable Atmosphere Sounds playing in the background of the conversation.
+- Configurable Silence Overlay playing when a prolonged silence occurs during the call.
 
 ### Call Management
 
