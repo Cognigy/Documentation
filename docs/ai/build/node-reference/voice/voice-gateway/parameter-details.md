@@ -119,9 +119,9 @@ The track plays during the conversation with the AI agent, continues when the ca
 
 ### Silence Overlay
 
-Silence Overlay enables the user to play an MP3 file in the background of a call with an AI Agent while a prolonged silence occurs. It can, for example, simulate a human agent typing the user details on a keyboard and mouse-clicking. With Silence Overlay, the customer is subtly notified that the AI Agent is currently working behind the scenes, as collecting the results of their query may take some time.
+Silence Overlay enables the user to play an MP3 file in the background of a call with an AI Agent while a prolonged silence occurs due to AI Agent's background activity. By playing the track, the customer is subtly notified that the AI Agent is currently working behind the scenes, as collecting the results of their query may take some time. The Silence Overlay track can, for example, simulate a human agent typing the user details on a keyboard and mouse-clicking.
 
-When enabled in Set Session Config Node, it starts playing automatically once the AI Agent takes longer to respond, then stops the moment the AI Agent responds again. You can adjust the number of seconds before the MP3 track starts playing to give it a more natural pace.
+When enabled in Set Session Config Node, it starts playing automatically once the AI Agent takes longer to respond, then stops the moment the AI Agent responds again. You can adjust the number of seconds before Silence Overlay starts playing to give it a more natural pace.
 
 If you enabled [Call Recording](../../../../../voice-gateway/webapp/recent-calls.md#call-recordings) in Voice Gateway>Recent Calls, the Silence Overlay track is recorded together with the AI Agent's track and can be played back in the audio file.
 
