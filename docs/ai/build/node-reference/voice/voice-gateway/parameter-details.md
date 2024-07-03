@@ -110,12 +110,12 @@ Playing a background MP3 track during the conversation with AI Agents makes it m
 
 The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
-| Parameter | Type     | Description                                                                                                                                                                                                         |
-|-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background <br> - **silence** - mutes the track <br> - **remove** - removes the track from the background completely |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                             |
-| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                         |
-| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                     |
+| Parameter | Type     | Description                                                                                                                                                                                                              |
+|-----------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely. |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                        |
+| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                              |
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB.                                                                                                                                                                                                                                                                                                        |
 
 ### Advanced
 
