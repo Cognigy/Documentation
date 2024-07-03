@@ -11,16 +11,16 @@
 
 ## Description
 
-This Node is used to deactivate a specific contact profile in case a contact requests it. This node has one parameter, as it will deactivate the profile of the contact that hits the Node and could also delete the stored profile data if required.
+This Node is used to deactivate a specific contact profile if the end user requests it. After deactivation of the contact profile, the existing data will be kept, but no new data will be collected.
+
+If you want to delete all stored profile data, activate the Delete Data parameter in the Node settings.
 
 ## Settings
 
-| Parameter  | Type    | Description                                                                                                                                                                                                                             |
-|------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeleteData | Boolean | If True, this node will deactivate the contact profile and delete stored data including **all analytics data** and **all transcripts**. The **contact profile** won't get deleted so that it is still possible to re-activate the user. |
+| Parameter   | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Delete Data | Boolean | This parameter is inactive by default. If enabled, this Node will deactivate the contact profile and delete stored data including all analytics data and transcripts will be removed from the system. This operation is not revertible. The Contact Profile won't get deleted so that it is still possible to re-activate the Profile via the Activate Profile Node or the Data collection inactive toggle. |
 
-!!! tip "Common usage"
-    It is common to place this node behind an ``If Node`` that is only activated if the contact specifically requests that you shouldn't collect data their data.
+## Use Case
 
-!!! danger "Important"
-    If the "DeleteData" option is being used, **all analytics data** and **all transcripts** will be removed from the system. This operation is not revertible.
+Consider placing this Node below an If Node to trigger it when the contact explicitly requests not to collect their data.

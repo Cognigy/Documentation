@@ -6,28 +6,35 @@ hidden: false
 
 # Contact Profiles
 
-Contact Profiles store information about the end users of your AI and can be accessed by Flows and Endpoints. Contact Profiles can be used to store information persistently and personalize discussions with users.
+_Contact Profiles_ contain information about end users who interact with your AI Agents. 
+Within contact profiles, you can view user data that was collected during the conversation, for example, first name, last name, and navigate through the transcript history of the conversation. 
+These profiles enable personalized interactions and contact management across different channels, such as Webchat, WhatsApp, Slack, and more.
 
-You can manage contacts who interact with your AI's in *Contact profiles* where the contact data and transcript history is available to view.
+## GDPR Compliance
 
-## Manage Contact Profiles
+At Cognigy, we help our clients follow Europe's General Data Protection Regulation (GDPR) by providing the following capabilities:
 
-The **Contact Profiles** menu is available under the **Manage** tab of the agent toolbar.
+- Export of contact profiles via UI and API.
+- Deletion of contact profiles.
+- Turning off data collection for selected contact profiles and Endpoints.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/analyze/contact-profiles.png" width="100%" />
-   <figcaption>The Contact Profile management interface</figcaption>
-</figure>
+## View a Contact Profile
 
-Here you can search for contact profiles in the top right search box and sort the table by clicking on the column headers. **With Cognigy.AI 4.2.0, we have introduced a new checkbox "Hide inactive Profiles" which will be activated by default.** This way, our customers will only browse through active Profiles.
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select a Project.
+3. In the left-side menu of the Project page, select **Manage > Contact Profiles**.
 
-### Profile Schema
+Here you can search for contact profiles in the top right search field and sort the table by clicking on the column headers. 
+**Hide Inactive Profiles** is activated by default. 
+This way, our customers will only browse through active Profiles.
 
-The Profile Schema contains the following default schema values:
+## Profile Schema
 
-| Property Name           | Description                                                                                                                                                                                                                                                    |
+The Profile Schema contains the following predefined fields:
+
+| Field                   | Description                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Contact IDs             | Unique identifiers assigned to each contact or user.                                                                                                                                                                                                           |
+| Contact IDs             | Unique identifiers assigned to each end user.                                                                                                                                                                                                                  |
 | First Name              | The given name of the contact.                                                                                                                                                                                                                                 |
 | Last Name               | The surname or family name of the contact.                                                                                                                                                                                                                     |
 | Accepted Privacy Policy | Indicates whether the contact has agreed to the privacy policy terms and specifies the time when the agreement was made. This property is applicable to Webchat v3 when an end user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
@@ -39,74 +46,96 @@ The Profile Schema contains the following default schema values:
 | Birthday                | The date of birth of the contact.                                                                                                                                                                                                                              |
 | Location                | The geographical location or address information associated with the contact.                                                                                                                                                                                  |
 
+## Custom Fields
+
+### Add a Custom Field
+
 It is also possible to add customized schema properties to handle organization-specific data.
 
-* Click the *Edit Schema* button in the top left of the **Contact Profiles** menu to open the editor.
-* The Profile Schema pane will appear displaying each custom profile data field.
-* Click the *add* button in the top right corner to add a new field.
-* Click on an existing field to edit a schema field
+1. On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner.
+2. In the **Profile Schema** window, fill in the following fields:
+    - **Field Name** - enter a name for the field.
+    - **Internal Name** -  enter a unique system name.
+    - **Type** - select a field type:
+        - Text - for string values.
+        - Number - for an integer. A schema field set to type *Number* should not be filled with a value higher than 2<sup>53</sup> - 1 or 9,007,199,254,740,991 (~9 quadrillion). Higher integers can't be correctly represented in JavaScript.
+        - YesNo - for boolean (`true` or `false`) values.
+        - Complex - for advanced data structures.
+3. Click **Save** to confirm your changes.
 
-!!! note "Schema Fields"
-    A schema field has a field name used in the user interface, a unique internal identifier *Internal Name* and a field type.
+A new filed apper in the individual contact profile.
 
-!!! warning "Field type limitations"
-    A schema field set to type *Number* should not be filled with a value higher than 2<sup>53</sup> - 1 or 9,007,199,254,740,991 (~9 quadrillion). Higher integers can't be correctly represented in JavaScript.
+To add an extra field, click **Add** in the upper-right corner of the Profile Schema field.
 
-### Inspect Contact Profiles
+### Delete a Custom Field
 
-Click on a contact row in the table of Contact Profiles to navigate to an individual contact profile.
+1. In the upper-left corner of the **Contact Profiles** page, click **Edit Schema**.
+2. In the **Profile Schema** window, locate the field that you want to delete.
+3. Next to the **Edit Field** title, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete**.
+4. Confirm the field deletion by entering the internal field name and clicking **Confirm**. Any data related to this field will be removed from all Contact Profiles.
 
-Within the individual contact profile, a list of conversation transcripts will be displayed with the stored contact profile data available in the right-hand pane.
+## View a Contact Profile
 
-To disable data collection for the profile, click the ***Data collection active*** switch.
-To delete the contact profile, open the secondary menu from the top right corner and select ***Delete Contact***.
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select a Project.
+3. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
+4. Select a row from the list.
+5. The contact profile for a specific user will open.
 
-## Use Contact Profiles
+Within the individual contact profile, a list of conversation transcripts will be displayed, with the stored contact profile data available in the right-hand pane. 
+To view more details about each session, select a session from the list. You will be routed to the Transcript Explorer in Insights.
 
-Contact profiles allow you to personalize and work with individual contacts also across channels.
+### Turn off Collecting Data for a Contact Profile
 
-They can be used through Flow Nodes or through CognigyScript, where profiles are exposed as `profile`.
+By default, all user data is stored in the contact profile. You can disable this option for individual profiles.
 
-To activate, deactivate, delete or merge contact profiles within your flow, you can use the following nodes:
+To disable data collection for a profile, follow these steps:
+
+1. Open the Cognigy.AI interface.
+2. From the left-side menu, select a Project.
+3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
+4. Select a row from the list.
+5. The contact profile for a specific user will open.
+6. In the upper-left corner, deactivate the **Data collection active** setting.
+7. Confirm your decision:
+   - Deactivating this setting will prevent future data collection for this profile.
+   - Choose whether to keep or delete the current profile data and conversation history:
+      - **Keep** - previously collected data will remain saved, but no new data will be collected.
+      - **Delete Data** - all data, including past recordings, will be permanently deleted.
+
+### Export a Contact Profile as JSON
+
+You can export individual contact profiles as a JSON file.
+
+1. Open the Cognigy.AI interface.
+2. From the left-side menu, select a Project.
+3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
+4. Select a row from the list to open the contact profile for a specific user.
+5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Contact**.
+
+The contact will be exported as a JSON file.
+
+### Delete a Contact Profile
+
+1. Open the Cognigy.AI interface.
+2. From the left-side menu, select a Project.
+3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
+4. Select a row from the list to open the contact profile for a specific user.
+5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete Contact**.
+
+## Contact Profile Nodes
+
+You can manage contact profiles using the following Nodes:
 
 * Activate Profile
 * Deactivate Profile
 * Delete Profile
 * Merge Profile
 
-!!! tip "Use Contact Profile Data for a personalized user experience"
-    Add stored contact profile information such as name and location to add a personal touch to user messages. Find out more about accessing profile data on the [Profile](../test/interaction-panel/profile.md) page.
+Personalize the user experience by utilizing contact profile data such as name, location, and date of birth.
+Store and retrieve this information from the [Profile](../test/interaction-panel/profile.md) object to create more personalized conversations based on each user's unique details.
 
-## GDPR
+## Expiration Date for Contact Profiles
 
-Cognigy helps our customers to stay fully compliant with Europe's General Data Protection Regulation (GDPR) by allowing:
-
-- The **export** of contact profiles via UI and API
-- The **deletion** of contact profiles
-- The **turning off** of data collection for individual profiles and endpoints
-
-## Expiring Contact Profiles
-
-It is possible to configure an expiration time for contact profiles so that they will automatically be deleted from the system. This can be configured in the Management UI.
-
-## Sorting Conversation List
-
-As of Cognigy.AI v4.11.0, the conversations list in "Contact Profiles" page has been improved by sorting options.
-
-- To open the conversation list, click on a "Contact ID" on the "Contact Profiles" page.
-
-- Headers of the conversation list can be clicked and the sorting order changes accordingly.
-
-An up or down arrow is displayed next to the header that was clicked most recently, initially it's at the start date.
-
-Arrows indicate the proper sort order, ascending or descending.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/analyze/conversation-list.png" width="100%" />
-  <figcaption>Contact Profiles: Start and End Date sorted in descending order (indicated by arrow)</figcaption>
-</figure>
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/analyze/list.svg" width="100%" />
-  <figcaption>Contact Profiles: Number of messages (related to Flows) sorted in descending order (indicated by arrow)</figcaption>
-</figure>
+If you have a dedicated SaaS or on-premises installation, you can configure an expiration time for contact profiles, ensuring they are automatically deleted from the system. 
+To configure the expiration date, go to the Management UI.
