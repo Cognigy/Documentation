@@ -101,6 +101,26 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 | Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                       |
 | Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow. |
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Silence Overlay
+
+Silence Overlay enables you to play an MP3 file in the background of an active call with an AI Agent while a prolonged silence occurs. It can, for example, simulate a human agent typing the user details on a keyboard and mouse-clicking. With Silence Overlay, the user is subtly notified that the AI Agent is currently working behind the scenes, as collecting the results of their query takes some time.
+
 ### Advanced
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../../../../release-notes/4.48.md)
