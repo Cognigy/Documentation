@@ -53,6 +53,8 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Lifetime of a downloadable Snapshot until you have to re-create the download                                                      | 1 day                           |            |            |
 | **Packages**                                                                                                                      |                                 |            |            |
 | Maximum size of a Cognigy Package                                                                                                 | 256 MB                          |            |            |
+| **Playbooks**                                                                                                                     |                                 |            |            |
+| Maximum number of concurrent Playbook executions                                                                                  | 10                              |            |            |
 | **Locales**                                                                                                                       |                                 |            |            |
 | Maximum number of Locales per Agent                                                                                               | 10                              |            |            |
 | **Extensions**                                                                                                                    |                                 |            |            |
