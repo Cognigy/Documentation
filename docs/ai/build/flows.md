@@ -6,6 +6,8 @@ hidden: false
 
 # Flows
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
+
 _Flows_ are conversational processes that represent interactions between users and virtual agents. They outline the various paths that a conversation can take and define the logic behind the responses given by the virtual agent.
 Flows let you customize and design the behavior of their virtual agents, enabling you to create tailored and dynamic conversational experiences.
 
@@ -139,15 +141,15 @@ To set or unset an Entry point in your Flow explicitly, follow these steps:
 
 To manage the Flow Editor parameters, such as zoom and navigation, go to the controls in the bottom-left corner of the Flow editor.
 
-| Control                                                       | Description                                               |
-|---------------------------------------------------------------|-----------------------------------------------------------|
-| **- 100% +**                                                  | Zoom out (-) or zoom in (+) the chart in the Flow Editor. |
-| ![flow-centralize](../../_assets/icons/flow-centralize.svg)   | Centers the chart.                                        |
-| ![magnifying-glass](../../_assets/icons/magnifying-glass.svg) | Search for Nodes in the Flow.                             | 
-| ![photo-camera](../../_assets/icons/photo-camera.svg)         | Save the Flow as an Image File (PNG).                   | 
-| ![voice-preview](../../_assets/icons/voice-preview.svg)       | Testing voice outputs without executing the entire Flow.   |
-| ![arrow-back](../../_assets/icons/arrow-back.svg)             | Undo the last step by going backward in history.          |
-| ![arrow-forward](../../_assets/icons/arrow-forward.svg)       | Redo the last steps by going forward in history.          |
+| Control                                                       | Description                                                                                                                                                             |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **- 100% +**                                                  | Zoom out (-) or zoom in (+) the chart in the Flow Editor.                                                                                                               |
+| ![flow-centralize](../../_assets/icons/flow-centralize.svg)   | Centers the chart.                                                                                                                                                      |
+| ![magnifying-glass](../../_assets/icons/magnifying-glass.svg) | Search for Nodes in the Flow.                                                                                                                                           | 
+| ![photo-camera](../../_assets/icons/photo-camera.svg)         | Take a screenshot of the entire Flow and save it in PNG format. In the top left corner of each screenshot, the time of its creation and the Cognigy logo are displayed. | 
+| ![voice-preview](../../_assets/icons/voice-preview.svg)       | Test voice outputs without executing the entire Flow.                                                                                                                   |
+| ![arrow-back](../../_assets/icons/arrow-back.svg)             | Undo the last step by going backward in history.                                                                                                                        |
+| ![arrow-forward](../../_assets/icons/arrow-forward.svg)       | Redo the last steps by going forward in history.                                                                                                                        |
 
 ##### Flow Actions
 
