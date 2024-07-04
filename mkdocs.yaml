@@ -526,7 +526,7 @@ nav:
 
     - 🤖 Assistants:
       - live-agent/assistants/overview.md
-      - live-agent/assistants/la-ai-copilot.md
+      - live-agent/assistants/ai-copilot-whisper.md
       - live-agent/assistants/ai-copilot.md
       - live-agent/assistants/ai-copilot-bot.md
 
