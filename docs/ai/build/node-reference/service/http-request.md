@@ -217,11 +217,6 @@ How to use it:
 
 • When you select Form-Data, you are able to save key-value pairs as JSON payload.
 
-<figure>
-  <img class="image-center" src="../../../_assets/build/node-reference/basic/HTTP-request-Node.png" width="80%" />
-  <figcaption>HTTP Request Node editor</figcaption>
-</figure>
-
 !!! note "Note"
     The key-value pairs must be of type text. Data is not supported.
 

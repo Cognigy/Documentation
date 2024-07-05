@@ -38,13 +38,7 @@ Flow nodes can dynamically access Context properties via [Tokens](../../build/to
     You can Save, Cancel or Reset the Context Object by clicking the Save, Cancel or Reset buttons in the bottom option pane of the Interaction Panel. Context manipulations will only manipulate the value(s) in your current session.
 
 
-
 The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor](../../build/flows.md) under the **Settings** tab.
-
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/defaultContext.png" width="100%" />
-</figure>
 
 ## More Information
 

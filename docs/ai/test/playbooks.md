@@ -7,7 +7,6 @@
 
 _Playbooks_ are automated conversations, which can help you test your Flows and ensure that they work as expected. Playbooks include Assertions that check different aspects of your Flow, giving you more confidence in your conversational experiences.
 
-
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook.png" width="70%" />
 </figure>
@@ -18,6 +17,12 @@ _Playbooks_ are automated conversations, which can help you test your Flows and 
     2. Click the three dots right next to the Flow selection<br>
     3. Select *Create Playbook*<br><br>
     You will be taken to the Playbook Editor with a new Playbook based on your chat history. You can now go on and add assertions and additional steps.
+
+## Limitations
+
+- The maximum number of concurrent Playbook executions is 10. You can change this limit if you have the following environment: 
+    - On-premises. Change the limit by specifying the `MAX_CONCURRENT_PLAYBOOK_EXECUTIONS` variable in the `values.yaml` file. 
+    - Dedicated SaaS. Contact [Cognigy technical support](../../help/get-help.md).
 
 ## Functionality
 

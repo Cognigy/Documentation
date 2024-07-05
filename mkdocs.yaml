@@ -397,6 +397,7 @@ nav:
         - voice-gateway/references/verbs/amd.md
         - voice-gateway/references/verbs/config.md
         - voice-gateway/references/verbs/dial.md
+        - voice-gateway/references/verbs/dub.md
         - voice-gateway/references/verbs/dtmf.md
         - voice-gateway/references/verbs/gather.md
         - voice-gateway/references/verbs/hangup.md
@@ -525,7 +526,7 @@ nav:
 
     - 🤖 Assistants:
       - live-agent/assistants/overview.md
-      - live-agent/assistants/la-ai-copilot.md
+      - live-agent/assistants/ai-copilot-whisper.md
       - live-agent/assistants/ai-copilot.md
       - live-agent/assistants/ai-copilot-bot.md
 

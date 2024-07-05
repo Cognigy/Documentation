@@ -6,7 +6,7 @@
 # No NLU
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/empower/nlu/no-nlu.png" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/empower/nlu/no-nlu.png" width="100%" />
 </figure>
 
 ## Description

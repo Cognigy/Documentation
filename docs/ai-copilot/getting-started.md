@@ -31,13 +31,18 @@ To create your Endpoint, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
-3. Create a new Endpoint or use an existing one.
-4. On the **Endpoint Settings** page, go to the **Handover Settings** section and select your handover platform.
-5. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
-6. From the **Copilot Flow** list, select the previously created AI Copilot Flow.
-7. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
-8. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings. Make sure to add a Transcript Node in your Copilot Grid if you wish to see the transcript.
-9. Click **Save**.
+3. Click **+New Endpoint**. 
+4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
+5. In the **Endpoint type** list, select your desired Endpoint.
+6. Click **Save**. 
+7. On the **Endpoint Settings** page, go to the **Handover Settings** section and select your handover platform.
+8. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
+9. From the **Copilot Flow** list, select the previously created AI Copilot Flow. The Flow will be executed once the conversation is handed over to a human agent.
+10. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
+11. _(Optional)_ Add a Transcript Tile to display the conversation with the customer, by enabling the **Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace** toggle in the **Copilot** section. Make sure to add the `transcript` Transcript Tile ID in your AI Copilot grid to display the transcript to the human agent. This Endpoint toggle in turn enables additional settings:
+    - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer - enables the human agent to send messages from the Transcript Tile.
+    - Enable redaction of Transcript Tile messages - lets you hide sensitive data from the Transcript Tile.
+12. Click **Save**.
 
 ## Explore the AI Copilot Workspace
 
@@ -65,3 +70,4 @@ The widgets will populate with content once the customer starts the conversation
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
+- [AI Copilot Whisper](../live-agent/assistants/ai-copilot-whisper.md)

@@ -15,7 +15,7 @@ Embedding Webchat v3 into your website allows you to provide a conversational in
 
 - Ability to modify the HTML content of your website.
 - Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
-      - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they are not available in the Webchat v3 Endpoint settings. 
+      - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
 - Create a [Webchat v3 Endpoint](configuration.md).
 
 ## Add the Embedding HTML
@@ -62,8 +62,8 @@ You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidge
 - `behavior` — customize the Webchat v3 behavior by adjusting Webchat v3 Endpoint settings. In the example:
     - `enableTypingIndicator` — activate a typing indicator to show when the virtual agent is replying.
     - `messageDelay` — set the time interval, in milliseconds, between virtual agent's messages.
-    - `enableSTT` — enable the speech-to-text button in the Reply section of the chat.
-- `embeddingConfiguration` — activate settings related to Webchat browser embedding. These settings are not configurable via the Endpoint Editor.
+    - `enableSTT` — enable the speech-to-text button in the Reply section of the chat. Note that Mozilla Firefox doesn't support this parameter.
+- `embeddingConfiguration` — activate settings related to Webchat browser embedding. These settings aren't configurable via the Endpoint Editor.
     - `awaitEndpointConfig` — wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
 - `maintenance` — configure maintenance mode to prevent users from using Webchat during maintenance. In the example:
     - `mode` — informing the user about maintenance mode. Choose to either `hide` the Webchat widget, `disable` it or `inform` the user about maintenance mode.

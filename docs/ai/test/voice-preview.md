@@ -40,11 +40,6 @@ You can use the Voice Preview from 3 different places:
 2. Click on the Voice Preview icon from the Flow editor.
 
     <figure>
-      <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-icon.png" width="20%" />
-      <figcaption>Voice Preview Icon</figcaption>
-    </figure>
-
-    <figure>
       <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-flow-editor.png" width="100%" />
       <figcaption>Voice Preview Flow editor</figcaption>
     </figure>
