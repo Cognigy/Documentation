@@ -60,6 +60,9 @@ The Transcript Tile feature is intended specifically for [chat use cases](chat.m
 
 If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
 
+
+### Create an API Key
+
 To do so, you need an API key and the Project ID:
 
 1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
