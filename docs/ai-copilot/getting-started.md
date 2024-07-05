@@ -32,25 +32,25 @@ To create your Endpoint, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
 3. Create a new Endpoint or use an existing one.
-7. On the **Endpoint Settings** page, go to the **Handover Settings** section and select your handover platform.
-8. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
-9. From the **Copilot Flow** list, select the previously created AI Copilot Flow.
-10. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
-11. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings. Make sure to add a Transcript Node in your Copilot Grid if you wish to see the transcript.
-12. Click **Save**.
+4. On the **Endpoint Settings** page, go to the **Handover Settings** section and select your handover platform.
+5. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
+6. From the **Copilot Flow** list, select the previously created AI Copilot Flow.
+7. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
+8. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings. Make sure to add a Transcript Node in your Copilot Grid if you wish to see the transcript.
+9. Click **Save**.
 
 ## Explore the AI Copilot Workspace
 
 By now, your Copilot grid and connection should be set up and ready for testing.
 
-To observe the AI Copilot workspace, start a conversation with your AI Agent at the Endpoint.
-In another tab, open your Agent Workspace, for example the Live Agent, and follow the Flow until the Handover to Agent Node triggers the Handover.
+To observe the AI Copilot workspace, start a conversation with your AI Agent in the chat.
+In another tab, open your contact center desktop, for example the Live Agent, and work through the Flow until the Handover to Agent Node triggers the Handover.
 
-If you are using the `standalone` version of AI Copilot, you will receive a link to your AI Copilot Workspace.
+If you are using the `standalone` version of AI Copilot together with a provider that doesn't offer native AI Copilot support, for example RCE or Salesforce, you will receive a link to your AI Copilot Workspace in the chat.
 
 After the handover, the conversation history with the AI Agent and the current intent are forwarded to the human agent, together with a specific link to access the AI Copilot Workspace.
 
-In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agent's Desktop.
+In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your contact center desktop.
 
 Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 
@@ -65,5 +65,3 @@ The widgets will populate with content once the customer starts the conversation
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
-
-

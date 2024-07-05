@@ -8,21 +8,18 @@ hidden: false
 
 The AI Copilot configuration refers to the size and position of widgets in your grid. The AI Copilot workspace can be customized to display various types of content, including HTML, adaptive cards, or iframes. This customization enables human agents to quickly access important data, such as user profiles or ticket information related to the user's issue, without needing to spend additional time searching the knowledge database.
 
-You can configure your workspace in the following ways:
-
-1. In the Endpoint settings, select `None` from Copilot Config dropdown menu. This will enable a default grid, which you can edit using the Copilot: Set Grid Node.
-2. Alternatively, The AI Copilot configurations can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and serve as a default if selected from the Copilot Config within the Endpoint settings.
+AI Copilot comes with a default, pre-configured grid, which the users can modify by using the Copilot: Set Grid Node. Alternatively, The AI Copilot configurations can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and serve as a template if selected from the Copilot Config within the Endpoint settings.
 
 ## AI Copilot Grid
 
-The AI Copilot workspace is based on a fully customizable grid layout where widgets can be added to display different information. 
+The AI Copilot workspace is based on a fully customizable grid layout, where widgets can be added to display different information. 
 
 The grid gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
 
-You can set up and edit the grid in the following ways:
+You can edit the grid in the following ways:
 
-1. Use the default configuration and the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
-2. Create a custom grid via [AI Copilot API](#optional-create-a-custom-default-grid-from-the-api) and the Copilot: Set Grid Node.
+- Use the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
+- Create a custom grid in the [AI Copilot API](#optional-create-a-custom-default-grid-from-the-api).
 
 ## Tile ID
 
@@ -58,12 +55,9 @@ The Transcript Tile feature is intended specifically for [chat use cases](chat.m
 
 ## (Optional) Create a Custom Grid via the API
 
-If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
-
+If you want to create a new AI Copilot Config template instead of using the default one, you can do so in the API.
 
 ### Create an API Key
-
-To do so, you need an API key and the Project ID:
 
 1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
 2. In the **API Keys** section, click **+**.
@@ -79,7 +73,7 @@ To do so, you need an API key and the Project ID:
 10. Add the Project ID you copied earlier to the `projectId` field in the JSON body of the request.
 11. Check your connection by clicking **Try**.
 
-When the request is created and connection is established correctly, you will see the response code `201`.
+When the request is created, you will see the response code `201`.
 
 ### Create a Custom Grid using the API Post Request
 
