@@ -61,7 +61,7 @@ To configure the connection for a cloud-based speech service:
     1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/#authenticate/).
 
 Save your changes by clicking **Save**.
-Once you created a speech service, add this service to the [application](./applications.md).
+Once you created a speech service, add this service to the [Application](./applications.md).
 
 ## On-Premises Speech Services
 
@@ -83,6 +83,7 @@ Once you created a speech service, add this service to the [application](./appli
     4. Enter an API key in the **Subscription key** field, if required.
 
 Save your changes by clicking **Save**.
+Once you created a speech service, add this service to the [Application](./applications.md).
 
 ## Add a Custom Speech Vendor
 
