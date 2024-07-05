@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../../release-notes/4.72.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.74.4-blue.svg)](../../../release-notes/4.74.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
@@ -24,8 +24,8 @@ The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](http
 
 - You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
 - Activate Genesys Cloud Open Messaging on the Cognigy side:
-   - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-   - If you have an on-premise installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
+    - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
+    - If you have an on-premise installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
 
 ### Configure Genesys Cloud Open Messaging
 
@@ -176,34 +176,36 @@ In [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) 
 
 To test connection, click **Open Demo Web Chat**.
 
-#### (Optional) Send Genesys Status and Bot Messages to End Users
+### (Optional) Send Genesys Bot Messages to End Users
 
-_(Optional)_ Status and Bot Messages configured within Genesys can be sent to the Cognigy Flow and displayed to the user at the Endpoint.
+!!! note
+    Before using this feature, add the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
 
-By default, human agents receive messages from the Genesys bot that are configured in the Inbound Message flow on the Genesys side. Suppose you have configured the conversation status and wait time: in that case, such information will be displayed only to the human agent in the conversation as separate messages from the Genesys bot. However, this information could be useful to the end user. To resend messages from the Genesys bot to the end user, you need to extend the main Flow on the Cognigy side by adding additional Nodes below the Handover to Agent Node. In the Queue flow in Genesys, for example, this feature allows to display the queue position to the user while they are waiting for the available human agent. 
+By default, the Genesys Inbound Message flow routes messages to human agents only. 
+You can configure your settings so that not only humans but end users receive these messages.
+Forwarding messages to the end user can be helpful in the following use cases:
 
-If you wish to display Queue Position messages to the users, be sure to configure a Queue Message Flow in Genesys first.
+- when the conversation status or wait time information is relevant to the end user.
+- to provide the end user with updates and transparency throughout the interaction.
+- to allow the end user to make informed decisions while waiting for a human agent, such as requesting a callback.
 
-To enable this feature, use the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
+Genesys Inbound Flow is responsible for message configuration. For example, to allow users to see their queue position, you'd first need to configure a Queue Message Flow in Genesys.
 
-To display Genesys Status and Bot messages, follow these steps within your Cognigy Flow:
+Cognigy is responsible for message roting logic. Follow the instructions to configure this logic:
 
 1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
 2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
 3. For the child **Case** Node, specify `genericHandoverUpdate` in the **Value** field.
 4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select **Text** from the **Output Type** list, and in the **Text** field enter the following **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
-5. In the Handover Settings of the **Say** Node, select **User Only** as the Handover Output Destination.
+5. In the Handover Settings of the **Say** Node, select **User Only** from the **Handover Output Destination** list.
 6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
-7. Open the **Go To** Node. From the **Select Node** list, choose **Lookup**. Scroll down to the **Advanced** section. From the **Execution Mode** list,  select **Go to Node and wait for Input**.
+7. Open the **Go To** Node. From the **Select Node** list, choose **Lookup**. Scroll down to the **Advanced** section. From the **Execution Mode** list, select **Go to Node and wait for Input**.
 
-The **Main Flow** on Cognigy.AI should look like this:
+The main Flow on Cognigy.AI should look like this:
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
 </figure>
-
-
-If you use AI Copilot, configure the **Lookup Node** and the **Go To Node** for the the Genesys Status and Bot Messages feature within your AI Copilot flow. Ensure to set the structure above the actual AI Copilot Nodes.
 
 ## AI Copilot Workspace
 
