@@ -6,7 +6,7 @@ hidden: false
 
 # AI Copilot Configuration
 
-The AI Copilot configuration refers to the size and position of the widgets in your grid. The agent workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. This allows the agents to quickly access important data, such as user profile or ticket information regarding the user's issue, without having to spend additional time searching the database.
+The AI Copilot configuration refers to the size and position of widgets in your grid. The AI Copilot workspace can be customized to display various types of content, including HTML, adaptive cards, or iframes. This customization enables human agents to quickly access important data, such as user profiles or ticket information related to the user's issue, without needing to spend additional time searching the knowledge database.
 
 You can configure your workspace in the following ways:
 
@@ -56,7 +56,7 @@ The Transcript Tile feature is intended specifically for [chat use cases](chat.m
 | Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer | If the option is enabled, the human agent can send messages to the end user from the Transcript Tile.                                                                                     |
 | Enable redaction of Transcript Tile messages                                                       | If the option is enabled, a credit card number in the messages of the Transcript Tile will be masked and replaced with the placeholder `CREDIT_CARD_NUMBER`.                              |
 
-## _(Optional)_ Manually configure the API Connection
+## (Optional) Create a Custom Grid via the API
 
 If you want to modify the default grid configuration to set up company-wide defaults, you can do that from within the API.
 
@@ -73,19 +73,19 @@ To do so, you need an API key and the Project ID:
 7. Go to your Project in Cognigy.AI.
 8. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`. 
 9. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
-10. Add the Project ID in the Json projectId field.
-9. Check your connection by clicking **Try**.
+10. Add the Project ID you copied earlier to the `projectId` field in the JSON body of the request.
+11. Check your connection by clicking **Try**.
 
 When the request is created and connection is established correctly, you will see the response code `201`.
 
-### _(Optional)_ Create a Custom Default Grid from the API
+### Create a Custom Grid using the API Post Request
 
 To create your custom AI Copilot Config Grid with the API, follow these steps:
 
 1. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
 3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
-4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
+4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Project.
 
    ```json
    {
