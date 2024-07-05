@@ -52,9 +52,9 @@ To configure the connection for a cloud-based speech service:
     3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"
     1. Upload your Service Key to the **Service key** field. For more information on creating Service Keys in Google Cloud, visit the [Google Cloud](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
-=== "Microsoft Azure"
+=== "Microsoft Azure Speech Services"
     1. Select **Use hosted Azure service**. 
-    2. Select a region from the dropdown **Region** list.
+    2. Select a region from the **Region** list.
     3. Enter an API key in the **API key** field. For more information on API keys in Microsoft, visit the [Microsoft Learn](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys?tabs=rest-use%2Cportal-find%2Cportal-query) platform.
     4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
     5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom speech endpoint ID** field.
@@ -62,7 +62,7 @@ To configure the connection for a cloud-based speech service:
     1. Enter the client ID in the **Client ID** field. You can obtain the client ID as well as the secret key from your Nuance program manager. For more information, read the [Nuance](https://docs.nuance.com/digital-engagement/APIs/UMAPI/token-auth.html) documentation.
     2. Enter the secret key in the **Secret** field.
 === "Soniox"
-    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/).
+    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/#authenticate/).
 
 Save your changes by clicking **Save**.
 
@@ -79,7 +79,7 @@ Save your changes by clicking **Save**.
     1. Select **Use on-prem TTS** and enter the IP port in the **TTS URI** field.
     2. Select **Use on-prem STT** to enter the IP port in the **STT URI** field.
   
-=== "Microsoft Azure"
+=== "Microsoft Azure Speech Services"
     1. Select **Use Azure Docker container (on-prem)**.
     2. Enter the container URL for TTS in the **Container URL for TTS** field.
     3. Enter the container URL for STT in the **Container URL for STT** field.
