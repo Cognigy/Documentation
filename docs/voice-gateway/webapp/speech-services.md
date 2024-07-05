@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-**Speech services** act as connectors between speech vendors and VG applications. To ensure the AI Agent gets a voice, a speech service must be selected within the application. By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple configurations of one speech vendor, to quickly switch between different setups.
+**Speech services** integrate Speech-to-Text (STT) or Text-to-Speech (TTS) vendors in the Voice Gateway Self-Service Portal. To ensure the AI Agent gets a voice, a speech service must be selected within the [Application](./applications.md). By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple configurations of one speech vendor, to quickly switch between different setups.
 
 Voice Gateway supports the following speech vendor configurations:
 
