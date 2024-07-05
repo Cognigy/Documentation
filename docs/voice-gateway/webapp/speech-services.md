@@ -18,10 +18,6 @@ Voice Gateway supports the following speech vendor configurations:
 
 For the list of supported vendors and their Speech-To-Text and Text-To-Speech capabilities, see the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
-To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
-
-You can create more than one speech service using speech vendors.
-
 If you need to create multiple speech services from the same vendor, use the **Label** field to create a unique speech service.
 
 After creating a speech service, you can edit or delete it.
@@ -45,17 +41,17 @@ To configure the connection for a cloud-based speech service:
     2. Enter the Secret Access Key in the **Secret access key** field.
     3. Select a region from the **Region** list.
 === "Deepgram"
-    1. Enter an API key in the **API key** field. For more information on API keys in Deepgram, visit the [Deepgram](https://developers.deepgram.com/docs/create-additional-api-keys) documentation.
+    1. Enter an API key in the **API key** field. For more information on API keys in Deepgram, read the [Deepgram](https://developers.deepgram.com/docs/create-additional-api-keys) documentation.
 === "Elevenlabs"
-    1. Enter an API key in the **API key** field. For more information on Elevenlabs API keys, visit the [Elevenlabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
+    1. Enter an API key in the **API key** field. For more information on Elevenlabs API keys, read the [Elevenlabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
     2. Select your language model from the **Model** list. 
     3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"
-    1. Upload your Service Key to the **Service key** field. For more information on creating Service Keys in Google Cloud, visit the [Google Cloud](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
+    1. Upload your Service Key to the **Service key** field. For more information on creating Service Keys in Google Cloud, read the [Google Cloud](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
 === "Microsoft Azure Speech Services"
     1. Select **Use hosted Azure service**. 
     2. Select a region from the **Region** list.
-    3. Enter an API key in the **API key** field. For more information on API keys in Microsoft, visit the [Microsoft Learn](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys?tabs=rest-use%2Cportal-find%2Cportal-query) platform.
+    3. Enter an API key in the **API key** field. For more information on API keys in Microsoft, read the [Microsoft Learn](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys?tabs=rest-use%2Cportal-find%2Cportal-query) documentation.
     4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
     5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom speech endpoint ID** field.
 === "Nuance"
@@ -65,6 +61,7 @@ To configure the connection for a cloud-based speech service:
     1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/#authenticate/).
 
 Save your changes by clicking **Save**.
+Once you created a speech service, add this service to the [application](./applications.md).
 
 ## On-Premises Speech Services
 
