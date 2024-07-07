@@ -32,10 +32,12 @@ The chunk strategy powered by the Advanced Parser has the following advantages:
 
 ## Supported Formats
 
-| Cognigy.AI versions | Formats                                  |
-|---------------------|------------------------------------------|
-| 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*] |
-| 4.71-4.78           | `.pdf` and `.docx`                       |
+| Cognigy.AI versions | Formats                                                                                 |
+|---------------------|-----------------------------------------------------------------------------------------|
+| 4.80 or later       | `.pdf`, `.docx`, `.pptx`, `.txt`[^*], `.jpeg`, `.jpg`, `.png`, `.bmp`, `.heif`, `.tiff` |
+| 4.79                | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*]                                                |
+| 4.71-4.78           | `.pdf` and `.docx`                                                                      |
+| 4.71 or earlier     | `.pdf`                                                                                  |
 
 [^*]: `.txt` files are internally handled by the Basic Parser.
 
