@@ -7,29 +7,29 @@
 
     === "Microsoft Azure OpenAI"
         6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-            - **Model Type** — select **Chat** for models that support the Chat Completions API, or select **Completion** for models that support the Completions API. For mor information, refer to the [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br>
+            - **Model Type** — select **Chat** for models that support the Chat Completions API, **Completion** for the Completions API, or **Embedding** for the Embedding API. For mor information, refer to the [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br>
             - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br>
         6.2 Click **Save**.<br>
         6.3 On the LLM Editor page, go to the **Generative AI Connection** field.<br>
         6.4 On the right side of the field, click **+**.<br>
-        6.5 In the **Connection name**, enter a unique name for your connection.
+        6.5 In the **Connection name**, enter a unique name for your connection.<br>
         6.6 From the **Connection Type** list, select one of the following authorization methods:<br>
             - **API Key** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-            - **OAuth2** — add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. Fill in the following fields:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;- **Client ID** — the Application (client) ID assigned to your app, can be found in the app registration overview.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;- **Client Secret** — the application secret created in the **Certificates & secrets** section of the app registration portal.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;- **OAuth URL** — the authorization flow starts with directing the user to https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;- **Scope** — a space-separated list of scopes for user consent, often in the format https://management.azure.com/.default. <br>
+            - **OAuth2** — add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- **Client ID** — add the Application (client) ID assigned to your app, can be found in the in Azure AI app registration overview.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- **Client Secret** — add the application secret created in the **Certificates & secrets** section of the Azure AI app registration portal.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- **OAuth URL** — add the URL to retrieve the access token. The URL should be in the `https://<your-domain>.com/as/token.oauth2` format.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- **Scope** — add a list of scopes for user permissions, for example, `urn:grp:chatgpt`. <br>
         6.7 Click **Create**.<br>
         6.8 Fill in the remaining fields:<br>
             - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Copy the desired resource name from the **Name** column.<br>
             - **Deployment Name** — add a [deployment name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Select a resource from the **Name** column. On the resource page, go to **Resource Management > Model deployments**. On the **Model deployments** page, click **Manage Deployments**. On the **Deployments** page, copy the desired deployment name from the **Deployment name** column.<br>
             - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `YYYY-MM-DD-preview`. <br>
-            - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
+            - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern:`https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>`. If you use the OAuth2 authorization method, the URL will be `https://<your-domain>.com/deployments/<model-name>/embeddings`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
 
     === "OpenAI"
         6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-            - **Model Type** — select **Chat** for models that support the `https://api.openai.com/v1/chat/completions` API Endpoint, or **Completion** for those that support the `https://api.openai.com/v1/completions` API Endpoint. For more information, refer to the [OpenAI Text Generation Models](https://platform.openai.com/docs/guides/text-generation) documentation.<br>
+            - **Model Type** — select **Chat** for the `https://api.openai.com/v1/chat/completions` API, Completion for the `https://api.openai.com//v1/completions` API, and Embedding for the `https://api.openai.com//v1/embeddings` API. For more information, refer to the [OpenAI Text Generation Models](https://platform.openai.com/docs/guides/text-generation) documentation.<br>
             - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Azure OpenAI Service models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br>
         6.2 Click **Save**.<br>
         6.3 On the LLM Editor page, go to the **Generative AI Connection** field.<br>
@@ -41,7 +41,7 @@
 
     === "Anthropic"
         6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-            - **Model Type** — select **Chat** for models that support the Messages API, or select **Completion** for models that support the Completions API. For mor information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation.<br>
+            - **Model Type** — select **Chat** for models that support the Messages API, **Completion** for the Completions API, or **Embedding** for the Embeddings API. For mor information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation.<br>
             - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Anthropic](https://docs.anthropic.com/claude/docs/models-overview) documentation.<br>
         6.2 Click **Save**.<br>
         6.3 Fill in the following fields:<br>
@@ -76,7 +76,7 @@
         6.2 Click **Save**.<br>
         6.3 Fill in the **Connection name** field by specifying a unique name for your connection.<br>
         6.4 To upload the JSON file with a key for your model, you need to obtain this key. If you have previously used a key for the Google Vertex AI connection, you can also use this key for Google Gemini; proceed to step 6.10 to add the key. If you're setting up the connection for the first time, go to the Google Cloud console and find Vertex AI via the search bar.<br>
-        6.5 On the **Vertex AI** page, click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Ensure that the Vertex AI API is enabled.<br>
+        6.5 On the **Vertex AI** page, click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Ensure that the Vertex AI API is enabled. <br>
         6.6 In the left-side menu, go to the **IAM & Admin > Service Accounts**.<br>
         6.7 Select **Actions** and click **Manage Keys**.<br>
         6.8 On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
