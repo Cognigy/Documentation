@@ -32,10 +32,12 @@ The chunk strategy powered by the Advanced Parser has the following advantages:
 
 ## Supported Formats
 
-| Cognigy.AI versions | Formats                                  |
-|---------------------|------------------------------------------|
-| 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*] |
-| 4.71-4.78           | `.pdf` and `.docx`                       |
+| Cognigy.AI versions | Formats                                                                                 |
+|---------------------|-----------------------------------------------------------------------------------------|
+| 4.80 or later       | `.pdf`, `.docx`, `.pptx`, `.txt`[^*], `.jpeg`, `.jpg`, `.png`, `.bmp`, `.heif`, `.tiff` |
+| 4.79                | `.pdf`, `.docx`, `.pptx`, and `.txt`[^*]                                                |
+| 4.71-4.78           | `.pdf` and `.docx`                                                                      |
+| 4.71 or earlier     | `.pdf`                                                                                  |
 
 [^*]: `.txt` files are internally handled by the Basic Parser.
 
@@ -73,7 +75,7 @@ To use this feature, follow these steps:
 
 1. In your Project, navigate to **Build > Knowledge**.
 2. Open the existing Knowledge Store or create a new one.
-3. On the Knowledge Store page, click **+ New Knowledge Sources** in the upper-left corner.
+3. On the **Knowledge Store** page, click **+ New Knowledge Sources** in the upper-left corner.
 4. In the **New Knowledge Sources** window, select **File (advanced)**. The lable `advanced` means that you will be using the Advanced Parser for text extraction. 
 5. Drag and drop a `.pdf`, `.docx`, or `.pptx` file, or click **Browse Files** to select a file from your computer.
 6. Click **Create**. Note that by clicking **Create** you accept the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
@@ -83,8 +85,8 @@ To use this feature, follow these steps:
 If you don't want to use the Advanced Parser for text extraction, follow these steps:
 
 1. In your Project, navigate to **Manage > Settings**.
-2. Go to the **Knowledge AI Settings** section.
-3. From the **File Extractor** list, select **Basic**.
+2. On the **Settings** page, go to **Knowledge AI Settings > Document Processing**.
+3. From the **Content Parser** list, select **Basic**.
 4. Click **Save**.
 
 ### Cognigy.AI 4.71-4.78
@@ -93,6 +95,8 @@ The Advanced Parser is used when `.preset_ca` is appended to the file name of an
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
 ## Metadata
+
+{! _includes/ai/knowledge-ai/metadata.md !}
 
 In the Chunk Editor, each chunk has a metadata object that indicates the number of the source page where this information was located.
 The presence of page numbers in the metadata means that the text extraction feature works correctly.

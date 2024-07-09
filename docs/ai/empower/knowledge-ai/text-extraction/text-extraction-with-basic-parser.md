@@ -24,15 +24,19 @@ We recommended using this Parser in combination with **Top K** set to `5` in the
 
 ## How to Use
 
-By default, the Advanced Parser is used for text extraction. 
+By default, the Advanced Parser is used for text extraction.
+To use the Basic Parser, follow these steps:
+
+1. [Switch to Basic Text Parser](#switch-to-basic-text-parser)
+2. [Upload a File for Text Extraction](#upload-a-file-for-text-extraction)
 
 ### Switch to Basic Text Parser
 
 To switch to the Basic Parser, follow these steps:
 
 1. In your Project, navigate to **Manage > Settings**.
-2. Go to the **Knowledge AI Settings** section.
-3. From the **File Extractor** list, select **Basic**.
+2. On the **Settings** page, go to **Knowledge AI Settings > Document Processing**.
+3. From the **Content Parser** list, select **Basic**.
 4. Click **Save**.
 
 ### Upload a File for Text Extraction
