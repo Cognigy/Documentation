@@ -13,7 +13,6 @@ hidden: false
 
 ## Description
 
-
 A Question Node is used to ask a question that requests specific information from the user. 
 
 After a question is asked and the user answers, the answer is validated according to its type. If it passes, the answer is valid and stored, and the conversation continues.

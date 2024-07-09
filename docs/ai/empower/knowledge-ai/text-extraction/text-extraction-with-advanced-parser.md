@@ -7,7 +7,7 @@ hidden: false
 
 # Text Extraction with the Advanced Parser
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../release-notes/4.79.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
 
 !!! note
 	By using the Advanced Parser in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
@@ -84,7 +84,7 @@ If you don't want to use the Advanced Parser for text extraction, follow these s
 
 1. In your Project, navigate to **Manage > Settings**.
 2. Go to the **Knowledge AI Settings** section.
-3. From the **File Extractor** filed, select **Basic (local parser)**.
+3. From the **File Extractor** list, select **Basic**.
 4. Click **Save**.
 
 ### Cognigy.AI 4.71-4.78
@@ -109,5 +109,5 @@ In the example below, the metadata object indicates that the chunk's text starts
 
 ## More Information
 
-- [Knowledge Source](overview.md#knowledge-source)
-- [PDF](pdf.md)
+- [Knowledge Source](../overview.md#knowledge-source)
+- [PDF](../pdf.md)
