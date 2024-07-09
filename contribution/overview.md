@@ -8,7 +8,7 @@ To contribute to our product documentation, ensure that you have Docker installe
 docker build -f Dockerfile.development --platform linux/amd64 -t doc-local .
 ```
 
-- Run the image which has build in previous step
+- Run the image that was built in the previous step
 
 ```bash
 docker run \
