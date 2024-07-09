@@ -42,8 +42,21 @@ Knowledge Chunks and Knowledge Queries are billable units:
 
 ### Set Quotas
 
-Only a user with `admin` rights for the management-ui can set quotas via the management-ui API.
+Only a user with `admin` rights for the management-ui can set quotas via the management-ui UI or API.
 If you use a shared SaaS environment, contact [Cognigy technical support](../../../help/get-help.md) to configure quotas.
+
+### Set a Quota via UI
+
+To set a quota using the management-ui, follow these steps:
+
+1. Open the management-ui interface.
+2. In the left-side menu, select **Organisations**.
+3. On the **Organisations** page, select the organization from the list for which you want to set a quota.
+4. In the upper-right corner of the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Change Organisation Quotas**.
+5. In the **Update Organisation Quotas** window, enter the value in the **Max knowledge chunks** field.
+6. Click **Save**.
+
+### Set a Quota via API
 
 To set a quota using the management-ui API, follow these steps:
 
