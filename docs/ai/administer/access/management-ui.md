@@ -6,6 +6,8 @@ hidden: false
 
 # Management UI
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
+
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
 You can set up Management UI yourself if you have an on-premise Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../../../help/get-help.md).
@@ -106,12 +108,13 @@ In the menu, select **Change Organisation Quotas**.
 
 You can currently configure the following quotas & limits:
 
-| Attributes               | 	Description                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Max users                | 	This is the maximum number of users that can be created within the organization.                                                                                                                                                                                                                                                                              |
-| Max projects             | The maximum number of projects that can be created within this organization.                                                                                                                                                                                                                                                                                   |
-| Max channels per project | 	The maximum number of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite number of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted |
-| Max messages per day     | 	This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.                                                                                                                                                                                                                       |
+| Attributes               | 	Description                                                                                                                                                                                                                                                                                                                                                  |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Max users                | This is the maximum number of users that can be created within the organization.                                                                                                                                                                                                                                                                              |
+| Max projects             | The maximum number of projects that can be created within this organization.                                                                                                                                                                                                                                                                                  |
+| Max channels per project | The maximum number of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite number of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted |
+| Max messages per day     | This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.                                                                                                                                                                                                                       |
+| Max knowledge chunk      | The maximum number of maximum number of Knowledge Chunks can be used within the organization.                                                                                                                                                                                                                                                                 |
 
 Setting a quota to 0 disables the quota.
 
