@@ -1,27 +1,32 @@
 # Contribution
 
-To contribute to our product documentation, ensure that you have Docker installed on your machine.
+To contribute to our product documentation, ensure that you have Docker installed on your machine. 
 
-You will also need to have credentials to connect to Cognigy's private container registry.
-Log in with your credentials using the following command:
+- Build the documentation server image locally 
 
-```sh
-docker login \
-    cognigydevelopment.azurecr.io \
-    --username=<username> \
-    --password=<your-password>
+```bash
+docker build -f Dockerfile.development --platform linux/amd64 -t doc-local .
 ```
 
-Once this worked, you can run the following command in the root of this repository in order to start the development server:
+- Run the image that was built in the previous step
 
-```sh
+```bash
 docker run \
-    --rm \
-    -it \
-    -p 8000:8000 \
-    --name tech-docs-dev-server \
-    --mount type=bind,source="$(pwd)",target=/app \
-    cognigydevelopment.azurecr.io/tech-docs-dev-server:2
-```
+--rm \
+-it \
+-p 8000:8000 \
+--name doc-server \
+--mount type=bind,source="$(pwd)",target=/app \
+doc-local:latest
+``` 
+If you are a Mac user then run it with `--platform linux/amd64` 
 
-Todo: Add more documentation on how to build, how to run a dev-server, etc.
+```
+docker run \
+--rm \
+-it \
+-p 8000:8000 \
+--name doc-server \
+--mount type=bind,source="$(pwd)",target=/app --platform linux/amd64\
+doc-local:latest
+```
