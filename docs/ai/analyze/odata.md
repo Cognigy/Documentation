@@ -430,7 +430,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### LiveAgentEscalations
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.49-blue.svg)](../../release-notes/4.49.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.80-blue.svg)](../../release-notes/4.80.md)
 
 **Description**
 
@@ -462,7 +462,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | teamName          | The name of the team assigned to the conversation.                                                                                            | String   | IT Support                                                       |
 | labels            | The list of labels assigned to the conversation.                                                                                              | Array    | [Hardware]                                                       |
 | agentId           | The ID of the human agent assigned to the conversation.                                                                                       | String   | 618cf7687614774ba028dcac                                         |
-| agentName         | The name of the human agent assigned to the conversation. This field is not supported; the value is always `null`.                            | String   | null                                                             |
+| agentName         | The name of the human agent assigned to the conversation. This field is supported from Cognigy.AI 4.80.                                       | String   | John Doe                                                         |
 | contactId         | The ID of the connecting user.                                                                                                                | String   | 649ba8450d5df5cadf8b75b8                                         |
 | endpointName      | The name of the Cognigy.AI Endpoint.                                                                                                          | String   | LA Chatbot                                                       |
 | endpointType      | The type of the Endpoint.                                                                                                                     | String   | webchat2                                                         |
