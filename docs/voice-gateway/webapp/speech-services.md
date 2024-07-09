@@ -51,7 +51,7 @@ To configure the connection for a cloud-based speech service:
 === "Microsoft Azure Speech Services"
     1. Select **Use hosted Azure service**. 
     2. Select a region from the **Region** list.
-    3. Enter an API key in the **API key** field. For more information on API keys in Microsoft, read the [Microsoft Learn](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys?tabs=rest-use%2Cportal-find%2Cportal-query) documentation.
+    3. Enter an API key in the **API key** field. For more information on linking API keys, read the [Microsoft Speech Services Billing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-howto#billing-arguments) documentation.
     4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
     5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom speech endpoint ID** field.
 === "Nuance"
@@ -80,7 +80,7 @@ Once you created a speech service, add this service to the [Application](./appli
     1. Select **Use Azure Docker container (on-prem)**.
     2. Enter the container URL for TTS in the **Container URL for TTS** field.
     3. Enter the container URL for STT in the **Container URL for STT** field.
-    4. Enter an API key in the **Subscription key** field, if required.
+    4. Enter an API key in the **Subscription key** field, if required. Whether the subscription key is required will depend on your custom on-premises setup. For more information on Microsoft Speech Services, read the [Microsoft Speech Services](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview#delivery-and-presence) documentation.
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
