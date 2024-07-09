@@ -7,7 +7,7 @@ hidden: false
 
 # Activate Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.78-blue.svg)](../../../release-notes/4.78.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
 
 Before using Knowledge AI, make sure that you complete the following steps:
 
