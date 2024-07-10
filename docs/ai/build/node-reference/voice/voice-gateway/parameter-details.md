@@ -69,8 +69,8 @@ When using Barge In in the event of a Handover, make sure the Set Session Config
 
 | Parameter              | Type   | Description                                                                                                 |
 |------------------------|--------|-------------------------------------------------------------------------------------------------------------|
-| Barge In On Speech     | Toggle | Enables interrupting the virtual agent with speech.                                                         |
-| Barge In On DTMF       | Toggle | Enables interrupting the virtual agent with DTMF digits.                                                    |
+| Barge In On Speech     | Toggle | Enables interrupting the virtual agent with speech. The user is able to interrupt the virtual agent's responses even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. Barge In is disabled by default. |
+| Barge In On DTMF       | Toggle | Enables interrupting the virtual agent with DTMF digits. The user is able to interrupt the virtual agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. Barge In is disabled by default. |
 | Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in. |
 
 ### User Input Timeout
