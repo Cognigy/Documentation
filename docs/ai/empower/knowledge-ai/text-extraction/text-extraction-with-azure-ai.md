@@ -7,6 +7,8 @@ hidden: false
 
 # Text Extraction with Azure AI Document Intelligence
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
+
 !!! note
     - By using this feature, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
     - Azure AI Document Intelligence stores data and results on Azure Storage for 24 hours from the time you submit an analyze request. To learn more about data, privacy, and security for Document Intelligence, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/legal/cognitive-services/document-intelligence/data-privacy-security) documentation.
