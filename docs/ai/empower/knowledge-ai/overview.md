@@ -127,6 +127,8 @@ The following types of content are supported:
 - `.pptx`
 - `web page`
 
+With content parsers, you can handle a wider range of formats. For more details, read [Text Extraction with Content Parsers](text-extraction/overview.md).
+
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
 The `.pdf` format has [two chunk splitting strategies](pdf.md).

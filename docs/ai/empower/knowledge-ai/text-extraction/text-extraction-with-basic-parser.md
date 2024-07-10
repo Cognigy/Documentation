@@ -27,7 +27,7 @@ We recommended using this Parser in combination with **Top K** set to `5` in the
 By default, the Advanced Parser is used for text extraction.
 To use the Basic Parser, follow these steps:
 
-1. [Switch to Basic Text Parser](#switch-to-basic-text-parser)
+1. [Switch to Basic Text Parser](#switch-to-the-basic-parser)
 2. [Upload a File for Text Extraction](#upload-a-file-for-text-extraction)
 
 ### Switch to the Basic Parser
