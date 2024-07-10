@@ -119,5 +119,6 @@ In the example below, the metadata object indicates that the chunk's text starts
 
 ## More Information
 
-- [Knowledge Source](../overview.md#knowledge-source)
-- [PDF](../pdf.md)
+- [Text Extraction with Content Parsers](overview.md)
+- [Text Extraction with the Basic Parser](text-extraction-with-basic-parser.md)
+- [Text Extraction with Azure AI Document Intelligence](text-extraction-with-azure-ai.md)

@@ -5,7 +5,7 @@ description: "Text Extraction with the Basic Parser is a Cognigy solution that e
 hidden: false
 ---
 
-# Basic
+# Text Extraction with the Basic Parser
 
 _Text Extraction with the Basic Parser_ is a Cognigy solution that extracts content from files more effectively. It splits the extracted content into chunks based on a fixed token length, which returns the best results based on our research.
 
@@ -52,8 +52,8 @@ To use the Basic Parser, follow these steps:
 
 ## More Information
 
-- [Content Parsers](overview.md)
-- [ Text Extraction with the Advanced Parser](text-extraction-with-advanced-parser.md)
+- [Text Extraction with Content Parsers](overview.md)
+- [Text Extraction with the Advanced Parser](text-extraction-with-advanced-parser.md)
 - [Text Extraction with Azure AI Document Intelligence](text-extraction-with-azure-ai.md)
 
 

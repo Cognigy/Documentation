@@ -27,3 +27,7 @@ The table provides a comparative overview of parsers.
 | Limitations           | - Limited handling of complex documents. <br> - Less accuracy. <br> - Limited file format support. <br> - Lack of customization capability. | - Lack of customization capability.                                                                                                                                                                                                | - Dependency on a third-party service. <br> - Payment for using the service.                                                                                                                                                                                                                                    |
 | Price                 | Free of charge for all environments. Included in the Knowledge AI license.                                                                  | Free of charge for Cognigy SaaS environments. Included in the Knowledge AI license. <br> For Cognigy on-premises installations, payment is handled through Azure AI Document Intelligence in accordance with their pricing policy. | For all Cognigy installations, payment is handled through Azure AI Document Intelligence in accordance with their pricing policy.                                                                                                                                                                               |
 
+## More Information
+
+- [Knowledge Source](../overview.md#knowledge-source)
+- [PDF](../pdf.md)

@@ -88,5 +88,7 @@ In the example below, the metadata object indicates that the chunk's text starts
 
 ## More Information
 
+- [Text Extraction with Content Parsers](overview.md)
+- [Text Extraction with the Advanced Parser](text-extraction-with-advanced-parser.md)
+- [Text Extraction with the Basic Parser](text-extraction-with-basic-parser.md)
 - [Knowledge Source](../overview.md#knowledge-source)
-- [PDF](../pdf.md)
