@@ -30,7 +30,7 @@ To use the Basic Parser, follow these steps:
 1. [Switch to Basic Text Parser](#switch-to-basic-text-parser)
 2. [Upload a File for Text Extraction](#upload-a-file-for-text-extraction)
 
-### Switch to Basic Text Parser
+### Switch to the Basic Parser
 
 To switch to the Basic Parser, follow these steps:
 
@@ -52,9 +52,9 @@ To use the Basic Parser, follow these steps:
 
 ## More Information
 
-- [](overview.md)
-- [](text-extraction-with-advanced-parser.md)
-- [](text-extraction-with-azure-ai.md)
+- [Content Parsers](overview.md)
+- [ Text Extraction with the Advanced Parser](text-extraction-with-advanced-parser.md)
+- [Text Extraction with Azure AI Document Intelligence](text-extraction-with-azure-ai.md)
 
 
 

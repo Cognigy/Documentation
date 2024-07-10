@@ -206,10 +206,15 @@ nav:
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
         - ai/empower/knowledge-ai/activate.md
-        - ai/empower/knowledge-ai/ctxt.md
-        - ai/empower/knowledge-ai/pdf.md
-        - ai/empower/knowledge-ai/web-page.md
-        - ai/empower/knowledge-ai/text-extraction-with-advanced-parser.md
+        - Text Formats:
+          - ai/empower/knowledge-ai/ctxt.md
+          - ai/empower/knowledge-ai/pdf.md
+          - ai/empower/knowledge-ai/web-page.md
+        - Text Extraction:
+          - ai/empower/knowledge-ai/text-extraction/overview.md
+          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-basic-parser.md
+          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-advanced-parser.md
+          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:
