@@ -1,0 +1,2 @@
+!!! warning "Removal of Google Actions Endpoint"
+    Due to the sunset of [Google Conversational Actions](https://developers.google.com/assistant/ca-sunset) on June 13, 2023, our Google Actions Endpoint will be removed in the near future. Consequently, the Endpoint will become unavailable.

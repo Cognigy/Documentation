@@ -1,12 +1,7 @@
-# Overview
+# Cognigy Product Documentation
 
-This repository is home for Cognigy's brand-new product documentation which is hosted on [docs.cognigy.com](https://docs.cognigy.com).
+This repository contains the new product documentation for Cognigy, which is hosted on [docs.cognigy.com](https://docs.cognigy.com/). 
+It includes documentation for all Cognigy products such as Cognigy.AI, Insights, Webchat, Voice Gateway, and Live Agent. 
+The documentation is written in Markdown files and compiled to static HTML using the [MkDocs framework](https://www.mkdocs.org). 
 
-![Screenshot of docs.cognigy.com](./contribution/screenshot.png)
-
-The repository stores documentation for all Cognigy products like Cognigy.AI, Cognigy Insights and the Cognigy WebchatWidget. Documentation is written as Markdown files and compiled to static HTML using the [MKDocs framework](https://www.mkdocs.org/).
-
-We use a modified theme based on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) which we have extended in order to match our own corporate identity.
-
-# Contribution
-You want to contribute to the contents shown on https://docs.cognigy.com and want to help us improve the documentation? Great - check the [contribution](/contribution) folder for more info!
+We use a modified theme based on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/), which has been extended to match Cognigy corporate identity.

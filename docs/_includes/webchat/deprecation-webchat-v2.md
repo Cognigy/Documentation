@@ -1,0 +1,2 @@
+!!! warning 
+    Starting from version 4.77, the 18-month countdown to the deprecation of Webchat v2 begins. During this time, only important security updates will be provided for v2, with no further feature additions.

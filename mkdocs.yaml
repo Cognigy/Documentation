@@ -1,0 +1,787 @@
+site_name: ''
+site_description: Documentation for Cognigy software products
+site_author: Cognigy GmbH
+copyright: Copyright &copy; 2024 <a href="https://www.cognigy.com/">Cognigy</a> GmbH
+
+site_url: https://docs.cognigy.com/
+repo_url: https://github.com/Cognigy/Documentation/
+repo_name: cognigy/documentation
+nav:
+  - AI:
+    - index.md
+    - 👋 Overview:
+      - ai/overview/about-cognigy-ai.md
+      - ai/overview/ai-workforce.md
+      - ai/overview/key-features.md
+      - Getting Started:
+        - ai/overview/getting-started-with-digital-agent.md
+        - ai/overview/getting-started-with-voice-agent.md
+      - ai/glossary.md
+
+    - 🛠️ Build:
+      - ai/build/overview.md
+      - ai/build/projects.md
+      - ai/build/flows.md
+      - Nodes:
+          - ai/build/nodes/overview.md
+          - ai/build/nodes/node-search.md
+      - Node Reference:
+        - ai/build/node-reference/overview.md
+        - Basic:
+          - ai/build/node-reference/basic/overview.md
+          - ai/build/node-reference/basic/say.md
+          - ai/build/node-reference/basic/question.md
+          - ai/build/node-reference/basic/optional-question.md
+          - ai/build/node-reference/basic/send-text.md
+          - Code:
+              - ai/build/node-reference/basic/code/overview.md
+              - ai/build/node-reference/basic/code/actions.md
+              - ai/build/node-reference/basic/code/modules.md
+              - ai/build/node-reference/basic/code/channel-output.md
+              - ai/build/node-reference/basic/code/ai-default-channel-formats.md
+              - ai/build/node-reference/basic/code/analytics-data.md
+        - Logic:
+          - ai/build/node-reference/logic/overview.md
+          - ai/build/node-reference/logic/add-to-context.md
+          - ai/build/node-reference/logic/execute-flow.md
+          - ai/build/node-reference/logic/go-to.md
+          - ai/build/node-reference/logic/if.md
+          - ai/build/node-reference/logic/interval.md
+          - ai/build/node-reference/logic/lookup.md
+          - ai/build/node-reference/logic/once.md
+          - ai/build/node-reference/logic/remove-from-context.md
+          - ai/build/node-reference/logic/reset-state.md
+          - ai/build/node-reference/logic/set-state.md
+          - ai/build/node-reference/logic/stop-and-return.md
+          - ai/build/node-reference/logic/switch-locale.md
+          - ai/build/node-reference/logic/sleep.md
+          - ai/build/node-reference/logic/think.md
+          - ai/build/node-reference/logic/wait-for-input.md
+        - Voice:
+          - ai/build/node-reference/voice/overview.md
+          - Generic Voice Nodes:
+            - ai/build/node-reference/voice/generic/overview.md
+            - ai/build/node-reference/voice/generic/barge-in-config.md
+            - ai/build/node-reference/voice/generic/continuous-asr-config.md
+            - ai/build/node-reference/voice/generic/dtmf-collect-config.md
+            - ai/build/node-reference/voice/generic/hang-up.md
+            - ai/build/node-reference/voice/generic/mute-speech-input.md
+            - ai/build/node-reference/voice/generic/play-url.md
+            - ai/build/node-reference/voice/generic/send-metadata.md
+            - ai/build/node-reference/voice/generic/session-speech-parameters-config.md
+            - ai/build/node-reference/voice/generic/transfer.md
+            - ai/build/node-reference/voice/generic/user-input-timeout-config.md
+          - Voice Gateway:
+            - ai/build/node-reference/voice/voice-gateway/overview.md
+            - ai/build/node-reference/voice/voice-gateway/call-recording.md
+            - ai/build/node-reference/voice/voice-gateway/dtmf.md
+            - ai/build/node-reference/voice/voice-gateway/hangup.md
+            - ai/build/node-reference/voice/voice-gateway/mute-speech-input.md
+            - ai/build/node-reference/voice/voice-gateway/parameter-details.md
+            - ai/build/node-reference/voice/voice-gateway/play.md
+            - ai/build/node-reference/voice/voice-gateway/send-metadata.md
+            - ai/build/node-reference/voice/voice-gateway/set-session-config.md
+            - ai/build/node-reference/voice/voice-gateway/transfer.md
+          - AudioCodes:
+             - ai/build/node-reference/voice/audiocodes/overview.md
+             - ai/build/node-reference/voice/audiocodes/call-recording.md
+             - ai/build/node-reference/voice/audiocodes/hangup.md
+             - ai/build/node-reference/voice/audiocodes/play-url.md
+             - ai/build/node-reference/voice/audiocodes/send-meta-data.md
+             - ai/build/node-reference/voice/audiocodes/send-message.md
+             - ai/build/node-reference/voice/audiocodes/set-session-params.md
+             - ai/build/node-reference/voice/audiocodes/transfer-vg.md
+        - Analytics:
+          - ai/build/node-reference/analytics/overview.md
+          - ai/build/node-reference/analytics/activate-profile.md
+          - ai/build/node-reference/analytics/blind-mode.md
+          - ai/build/node-reference/analytics/complete-goal.md
+          - ai/build/node-reference/analytics/deactivate-profile.md
+          - ai/build/node-reference/analytics/delete-profile.md
+          - ai/build/node-reference/analytics/merge-profile.md
+          - ai/build/node-reference/analytics/overwrite-analytics.md
+          - ai/build/node-reference/analytics/request-rating.md
+          - ai/build/node-reference/analytics/set-rating.md
+          - ai/build/node-reference/analytics/update-profile.md
+        - Service:
+           - ai/build/node-reference/service/overview.md
+           - ai/build/node-reference/service/check-agent-availability.md
+           - ai/build/node-reference/service/close-handover.md
+           - ai/build/node-reference/service/gpt-conversation.md
+           - ai/build/node-reference/service/handover-to-agent.md
+           - ai/build/node-reference/service/http-request.md
+           - ai/build/node-reference/service/llm-prompt.md
+           - ai/build/node-reference/service/mongo-db.md
+           - ai/build/node-reference/service/ms-sql.md
+           - ai/build/node-reference/service/set-handover-inactivity.md
+           - ai/build/node-reference/service/trigger-function.md
+        - NLU:
+          - ai/build/node-reference/nlu/overview.md
+          - ai/build/node-reference/nlu/add-lexicon-keyphrase.md
+          - ai/build/node-reference/nlu/clean-text.md
+          - ai/build/node-reference/nlu/copy-slots-to-context.md
+          - ai/build/node-reference/nlu/disable-slot-fillers.md
+          - ai/build/node-reference/nlu/enable-slot-fillers.md
+          - ai/build/node-reference/nlu/execute-cognigy-nlu.md
+          - ai/build/node-reference/nlu/fuzzy-search.md
+          - ai/build/node-reference/nlu/match-pattern.md
+          - ai/build/node-reference/nlu/regex-slot-filler.md
+        - Data:
+          - ai/build/node-reference/data/overview.md
+          - ai/build/node-reference/data/datepicker.md
+          - ai/build/node-reference/data/send-smtp-email.md
+          - ai/build/node-reference/data/email-notification.md
+        - AI Copilot:
+          - ai/build/node-reference/ai-copilot/overview.md
+          - ai/build/node-reference/ai-copilot/set-adaptive-card-tile.md
+          - ai/build/node-reference/ai-copilot/set-html-tile.md
+          - ai/build/node-reference/ai-copilot/set-iframe-tile.md
+          - ai/build/node-reference/ai-copilot/identity-tile.md
+          - ai/build/node-reference/ai-copilot/knowledge-tile.md
+          - ai/build/node-reference/ai-copilot/next-action-tile.md
+          - ai/build/node-reference/ai-copilot/sentiment-tile.md
+          - ai/build/node-reference/ai-copilot/set-grid.md
+          - ai/build/node-reference/ai-copilot/transcript-tile.md
+        - xApps:
+            - ai/build/node-reference/xApp/overview.md
+            - ai/build/node-reference/xApp/init-xApp-session.md
+            - ai/build/node-reference/xApp/get-xApp-session-PIN.md
+            - ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.md
+            - ai/build/node-reference/xApp/set-html-xApp-state.md
+        - Other Nodes:
+            - ai/build/node-reference/other-nodes/overview.md
+            - ai/build/node-reference/other-nodes/knowledge-search.md
+            - ai/build/node-reference/other-nodes/llm-entity-extract.md
+            - ai/build/node-reference/other-nodes/log-message.md
+            - ai/build/node-reference/other-nodes/search-extract-output.md
+            - ai/build/node-reference/other-nodes/set-translation.md
+      - ai/build/cognigy-script.md
+      - ai/build/tokens.md
+      - Translation and Localization:
+        - ai/build/translation-and-localization/auto-translation.md
+        - ai/build/translation-and-localization/real-time-translation.md
+        - ai/build/translation-and-localization/localization.md
+      - ai/build/connections.md
+      - ai/build/extensions.md
+      - ai/build/packages.md
+      - ai/build/functions.md
+
+    - ✨ Empower:
+      - Natural Language Understanding:
+        - ai/empower/nlu/overview.md
+        - Intents:
+          - ai/empower/nlu/intents/ml-intents.md
+          - ai/empower/nlu/intents/annotations.md
+          - ai/empower/nlu/intents/conditions.md
+          - ai/empower/nlu/intents/intent-analyzer.md
+          - ai/empower/nlu/intents/intent-hierarchy.md
+          - ai/empower/nlu/intents/intent-mapping-priority.md
+          - ai/empower/nlu/intents/intent-upload-download.md
+          - ai/empower/nlu/intents/reject-intents.md
+          - ai/empower/nlu/intents/rule-intents.md
+          - ai/empower/nlu/intents/trigger-intent.md
+          - ai/empower/nlu/intents/yes-no-intents.md
+        - Slots and Lexicons:
+          - ai/empower/nlu/slots-and-lexicons/lexicons.md
+          - ai/empower/nlu/slots-and-lexicons/slots.md
+          - ai/empower/nlu/slots-and-lexicons/any-slots.md
+        - ai/empower/nlu/slot-fillers.md
+        - ai/empower/nlu/text-cleaner.md
+        - External NLU:
+          - ai/empower/nlu/external/overview.md
+          - ai/empower/nlu/external/no-nlu.md
+          - ai/empower/nlu/external/nlu-connectors.md
+          - ai/empower/nlu/external/external-nlu-intent-recognition.md
+          - ai/empower/nlu/external/intent-reranking.md
+          - ai/empower/nlu/external/nlu-transformers.md
+        - NLU Attachments:
+          - ai/empower/nlu/attachments/attached-flows.md
+          - ai/empower/nlu/attachments/attached-lexicons.md
+          - ai/empower/nlu/attachments/attachments.md
+        - Other:
+          - ai/empower/nlu/language-support.md
+          - ai/empower/nlu/nlu-warnings.md
+      - ai/empower/llms.md
+      - ai/empower/generative-ai.md
+      - Knowledge AI:
+        - ai/empower/knowledge-ai/overview.md
+        - ai/empower/knowledge-ai/activate.md
+        - ai/empower/knowledge-ai/ctxt.md
+        - ai/empower/knowledge-ai/pdf.md
+        - ai/empower/knowledge-ai/web-page.md
+        - ai/empower/knowledge-ai/text-extraction-with-advanced-parser.md
+        - ai/empower/knowledge-ai/distance-value-change-after-migration.md
+
+    - 🧪 Test and Debug:
+      - Interaction Panel:
+        - ai/test/interaction-panel/overview.md
+        - ai/test/interaction-panel/context.md
+        - ai/test/interaction-panel/input.md
+        - ai/test/interaction-panel/profile.md
+        - ai/test/interaction-panel/state.md
+      - ai/test/demo-webchat.md
+      - ai/test/logs.md
+      - ai/test/playbooks.md
+      - ai/test/voice-preview.md
+
+    - 🚀 Deploy:
+      - Endpoints:
+        - ai/deploy/endpoints/overview.md
+        - ai/deploy/endpoints/data-protection-and-analytics.md
+        - ai/deploy/endpoints/session-management.md
+        - ai/deploy/endpoints/handover-settings.md
+        - ai/deploy/endpoints/real-time-translation-settings.md
+        - ai/deploy/endpoints/file-storage.md
+        - ai/deploy/endpoints/content-conversion.md
+        - ai/deploy/endpoints/testing-mode.md
+        - ai/deploy/endpoints/inject-and-notify.md
+        - Transformers:
+          - ai/deploy/endpoints/transformers/transformers.md
+          - ai/deploy/endpoints/transformers/input-transformer.md
+          - ai/deploy/endpoints/transformers/output-transformer.md
+          - ai/deploy/endpoints/transformers/execution-finished-transformer.md
+          - ai/deploy/endpoints/transformers/notify-transformer.md
+          - ai/deploy/endpoints/transformers/inject-transformer.md
+      - Endpoint Reference:
+        - ai/deploy/endpoint-reference/overview.md
+        - ai/deploy/endpoint-reference/8x8.md
+        - ai/deploy/endpoint-reference/amazon-alexa.md
+        - ai/deploy/endpoint-reference/amazon-lex.md
+        - ai/deploy/endpoint-reference/audiocodes.md
+        - ai/deploy/endpoint-reference/avaya-cpaas.md
+        - ai/deploy/endpoint-reference/azure-bot-services.md
+        - ai/deploy/endpoint-reference/bandwidth.md
+        - ai/deploy/endpoint-reference/dialogflow.md
+        - ai/deploy/endpoint-reference/facebook-messenger.md
+        - ai/deploy/endpoint-reference/genesys.md
+        - ai/deploy/endpoint-reference/intercom.md
+        - ai/deploy/endpoint-reference/line-messenger.md
+        - ai/deploy/endpoint-reference/microsoft-teams.md
+        - ai/deploy/endpoint-reference/rest.md
+        - ai/deploy/endpoint-reference/ringcentral-engage.md
+        - ai/deploy/endpoint-reference/socketio.md
+        - ai/deploy/endpoint-reference/slack.md
+        - ai/deploy/endpoint-reference/sunshine-conversations.md
+        - ai/deploy/endpoint-reference/twilio.md
+        - ai/deploy/endpoint-reference/userlike.md
+        - ai/deploy/endpoint-reference/voice-copilot.md
+        - ai/deploy/endpoint-reference/voice-gateway.md
+        - ai/deploy/endpoint-reference/webchat.md
+        - ai/deploy/endpoint-reference/webhook.md
+        - ai/deploy/endpoint-reference/whatsapp.md
+        - ai/deploy/endpoint-reference/workplace-by-fb.md
+      - ai/deploy/snapshots.md
+
+    - 🤖 Train:
+      - ai/train/intent-trainer.md
+
+    - 📊 Analyze:
+      - ai/analyze/overview.md
+      - Collecting Data:
+        - ai/analyze/collecting-data.md
+        - ai/analyze/user-and-session-identification.md
+      - ai/analyze/insights.md
+      - ai/analyze/odata.md
+      - ai/analyze/call-tracing.md
+      - ai/analyze/contact-profiles.md
+
+    - ☎️ Escalate:
+      - ai/escalate/handovers.md
+      - Handover Reference:
+        - ai/escalate/handover-reference/overview.md
+        - ai/escalate/handover-reference/live-agent.md
+        - ai/escalate/handover-reference/chatwoot.md
+        - ai/escalate/handover-reference/ring-central-engage.md
+        - ai/escalate/handover-reference/salesforce.md
+        - ai/escalate/handover-reference/genesys-cloud-guest-chat.md
+        - ai/escalate/handover-reference/genesys-cloud-open-messaging.md
+        - ai/escalate/handover-reference/8x8.md
+      - Handover Features:
+        - ai/escalate/user-inactivity-detection.md
+      - ai/escalate/ai-copilot.md
+
+    - ⚙️ Administer:
+      - User Menu:
+        - ai/administer/user-menu/overview.md
+        - ai/administer/user-menu/my-profile.md
+        - ai/administer/hotkeys.md
+      - Access Management:
+        - Organizations and Users:
+          - ai/administer/access/admin-center.md
+          - ai/administer/access/access-control.md
+        - Project and Members:
+          - ai/administer/access/project-settings.md
+          - ai/administer/access/members.md
+        - ai/administer/access/management-ui.md
+      - ai/administer/limitations.md
+      - ai/administer/audit-events.md
+      - ai/administer/billing.md
+
+    - 👩‍💻 Developer Reference:
+      - ai/developers/api-and-cli.md
+      - ai/developers/client-libraries.md
+      - ai/developers/extension-framework.md
+
+    - 🖥️ Install, Configure, and Migrate:
+      - ai/installation/about.md
+      - ai/installation/browser-requirements.md
+      - ai/installation/architecture.md
+      - On-Premises:
+        - ai/installation/overview.md
+        - ai/installation/version-compatibility-matrix.md
+        - ai/installation/prerequisites.md
+        - ai/installation/pre-installation-checklist.md
+        - ai/installation/installation-process.md
+        - ai/installation/reset-init-user-credentials.md
+        - ai/installation/backups.md
+        - Upgrade and Migration Guides:
+          - ai/installation/migration/overview.md
+          - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
+          - ai/installation/migration/kustomize-to-helm-migration.md
+          - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
+          - ai/installation/migration/azure-file-to-azure-csi-migration.md
+          - ai/installation/migration/from-nlu-v1-to-v2-migration.md
+          - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
+          - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
+          - ai/installation/migration/from-weaviate-to-qdrant.md
+      - SaaS:
+        - ai/installation/ip-ranges-shared-environments.md
+      - Single Sign-On (SSO):
+        - ai/installation/AI-login.md
+        - ai/installation/single-signin-saml2.md
+        - ai/installation/single-signin-openid-connect.md
+
+  - Voice Gateway:
+    - voice-gateway/index.md
+    - 👋 Overview:
+      - voice-gateway/overview.md
+      - voice-gateway/getting-started.md
+      - voice-gateway/technical-capabilities.md
+      - voice-gateway/glossary.md
+    - 🛠️ Self-Service Portal:
+      - voice-gateway/webapp/overview.md
+      - voice-gateway/webapp/users.md
+      - voice-gateway/webapp/accounts.md
+      - voice-gateway/webapp/applications.md
+      - voice-gateway/webapp/recent-calls.md
+      - voice-gateway/webapp/alerts.md
+      - voice-gateway/webapp/carriers.md
+      - Speech Services:
+        - voice-gateway/webapp/speech-services.md
+        - voice-gateway/webapp/streaming.md
+      - voice-gateway/webapp/phone-numbers.md
+      - voice-gateway/webapp/outbound-call-routing.md
+    - 📞 Outbound Calls:
+      - voice-gateway/creating-outbound-calls.md
+    - 📚 References:
+      - voice-gateway/references/sip-response-codes.md
+      - Voice Gateway Events:
+        - voice-gateway/references/events/overview.md
+        - voice-gateway/references/events/ANSWERING_MACHINE_DETECTION.md
+        - voice-gateway/references/events/CALL_CREATED.md
+        - voice-gateway/references/events/CALL_COMPLETED.md
+        - voice-gateway/references/events/CALL_FAILED.md
+        - voice-gateway/references/events/CALL_RECONNECTED.md
+        - voice-gateway/references/events/RECOGNIZED_DTMF.md
+        - voice-gateway/references/events/RECOGNIZED_SPEECH.md
+        - voice-gateway/references/events/TRANSFER_DIAL_ERROR.md
+        - voice-gateway/references/events/TRANSFER_DIAL_SUCCESS.md
+        - voice-gateway/references/events/TRANSFER_REFER_ERROR.md
+        - voice-gateway/references/events/TRANSFER_REFER_SUCCESS.md
+        - voice-gateway/references/events/USER_BUSY.md
+        - voice-gateway/references/events/USER_INPUT_TIMEOUT.md
+        - voice-gateway/references/events/NO_ANSWER.md
+      - voice-gateway/references/tts-and-stt-vendors.md
+      - voice-gateway/references/sip-trunk-providers.md
+      - Voice Gateway Verbs:
+        - voice-gateway/references/verbs/overview.md
+        - voice-gateway/references/verbs/amd.md
+        - voice-gateway/references/verbs/config.md
+        - voice-gateway/references/verbs/dial.md
+        - voice-gateway/references/verbs/dub.md
+        - voice-gateway/references/verbs/dtmf.md
+        - voice-gateway/references/verbs/gather.md
+        - voice-gateway/references/verbs/hangup.md
+        - voice-gateway/references/verbs/listen.md
+        - voice-gateway/references/verbs/play.md
+        - voice-gateway/references/verbs/say.md
+        - voice-gateway/references/verbs/sip-refer.md
+        - voice-gateway/references/verbs/sip-request.md
+        - voice-gateway/references/verbs/transcribe.md
+    - 🖥️ On-Premises Installation:
+        - voice-gateway/installation/overview.md
+        - voice-gateway/installation/browser-requirements.md
+        - voice-gateway/installation/version-compatibility-matrix.md
+        - voice-gateway/installation/installation-process.md
+
+
+  - Webchat:
+    - webchat/index.md
+    - 👋 Overview:
+      - webchat/overview.md
+      - webchat/getting-started.md
+
+    - 🆕 Webchat v3 (Beta):
+      - webchat/v3/overview.md
+      - webchat/v3/supported-browsers.md
+      - webchat/v3/features.md
+      - webchat/v3/configuration.md
+      - webchat/v3/embedding.md
+
+    - 💬 Webchat v2:
+      - webchat/v2/overview.md
+      - webchat/v2/supported-browsers.md
+      - webchat/v2/features.md
+      - webchat/v2/configuration.md
+      - webchat/v2/embedding.md
+
+    - 🗂️ Miscellaneous:
+      - webchat/migration.md
+      - webchat/plugins.md
+      - webchat/demo.md
+      - webchat/release-notes.md
+
+
+  - xApps:
+    - xApps/index.md
+    - 👋 Overview:
+      - xApps/overview.md
+      - xApps/use-cases.md
+
+    - 🛠️ Build an xApp:
+      - xApps/build/overview.md
+      - xApps/build/first-xApp.md
+      - xApps/build/xApp-with-multi-channels.md
+      - xApps/build/standalone-xApp.md
+      - xApps/build/custom-xApp-node.md
+      - xApps/build/overlay.md
+
+    - 🛡️ xApp Security:
+      - xApps/security/secure-xApp-from-xss.md
+
+    - 🗂️ Miscellaneous:
+      - xApps/architecture.md
+      - xApps/tokens.md
+      - xApps/api.md
+      - xApps/supported-browsers-and-channels.md
+
+
+  - AI Copilot:
+    - ai-copilot/index.md
+    - 👋 Overview:
+      - ai-copilot/overview.md
+      - ai-copilot/getting-started.md
+
+    - 🔗 Integrate, Configure, and Embed:
+      - ai-copilot/contact-center-integration.md
+      - ai-copilot/configuration.md
+      - ai-copilot/plug-and-play-widgets.md
+      - ai-copilot/embedding.md
+
+    - 💬 Chat AI Copilot:
+      - ai-copilot/chat.md
+
+    - 🗣️ Voice AI Copilot:
+      - ai-copilot/voice/voice-overview.md
+      - ai-copilot/voice/transfer-node.md
+
+    - 🖥️ On-Premises Installation:
+      - ai-copilot/installation/overview.md
+      - ai-copilot/installation/browser-requirements.md
+      - ai-copilot/architecture.md
+      - ai-copilot/installation/version-compatibility-matrix.md
+      - ai-copilot/installation/prerequisites.md
+      - ai-copilot/installation/installation-process.md
+      - Upgrade and Migration Guides:
+        - ai-copilot/installation/migration/overview.md
+        - ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
+        - ai-copilot/installation/migration/ai-copilot-new-dns-names-migration.md
+
+  - Live Agent:
+    - live-agent/index.md
+    - 👋 Overview:
+      - live-agent/overview.md
+      - Getting Started:
+        - live-agent/getting-started/overview.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-org.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-inbox.md
+        - Handover Setup:
+          - live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md
+          - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md
+          - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-agents.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox.md
+      - live-agent/glossary.md
+
+    - 💬 Conversations:
+      - live-agent/conversation/overview.md
+      - live-agent/conversation/assign-conversations.md
+      - live-agent/conversation/conversation-queue.md
+      - Conversation Routing:
+        - live-agent/conversation/conversation-routing/overview.md
+        - live-agent/conversation/conversation-routing/manual-mode.md
+        - live-agent/conversation/conversation-routing/automatic-mode.md
+      - live-agent/conversation/send-reply.md
+      - live-agent/conversation/search-and-filter.md
+      - live-agent/conversation/other-operations.md
+
+    - 🤖 Assistants:
+      - live-agent/assistants/overview.md
+      - live-agent/assistants/ai-copilot-whisper.md
+      - live-agent/assistants/ai-copilot.md
+      - live-agent/assistants/ai-copilot-bot.md
+
+    - 📊 Analytics Tools:
+      - Reports:
+        - live-agent/reports/overview.md
+        - live-agent/reports/supervisor-overview.md
+        - Administrator Reports:
+          - live-agent/reports/admin/overview.md
+          - live-agent/reports/admin/conversations.md
+          - live-agent/reports/admin/agents.md
+          - live-agent/reports/admin/labels.md
+          - live-agent/reports/admin/inboxes.md
+          - live-agent/reports/admin/teams.md
+      - live-agent/tools/odata-endpoint.md
+
+    - 🛠️ Settings:
+      - live-agent/settings/overview.md
+      - live-agent/settings/agents.md
+      - live-agent/settings/teams.md
+      - live-agent/settings/inboxes.md
+      - live-agent/settings/labels.md
+      - live-agent/settings/skills.md
+      - live-agent/settings/automation-rules.md
+      - live-agent/settings/canned-responses.md
+      - live-agent/settings/attachments.md
+      - live-agent/settings/audit-logs.md
+      - live-agent/settings/account-settings.md
+
+    - 🔐 Access Management:
+      - live-agent/roles.md
+
+    - 📨 User Profile and Notifications:
+      - live-agent/notifications.md
+      - live-agent/profile-settings.md
+
+    - 🖥️ On-Premises Installation:
+      - live-agent/installation/browser-requirements.md
+      - live-agent/installation/deployment/version-compatibility-matrix.md
+      - Deployment:
+        - live-agent/installation/deployment/architecture.md
+        - live-agent/installation/deployment/prerequisites.md
+        - live-agent/installation/deployment/installation-using-helm.md
+        - live-agent/installation/deployment/cognigy-live-agent-oauth.md
+        - Helm Values:
+          - live-agent/installation/helm-values/helm-values.md
+          - live-agent/installation/helm-values/database.md
+          - live-agent/installation/helm-values/redis.md
+          - live-agent/installation/helm-values/storage.md
+          - live-agent/installation/helm-values/smtp.md
+          - live-agent/installation/helm-values/email-templates.md
+      - live-agent/installation/deployment/installation-updates.md
+      - Upgrade and Migration Guides:
+        - live-agent/installation/migration/overview.md
+        - live-agent/installation/migration/helm-dependencies.md
+        - live-agent/installation/migration/redis-sentinel.md
+
+    - 🗂️ Miscellaneous:
+      - live-agent/FAQs.md
+
+
+  - Insights:
+    - insights/index.md
+    - 👋 Overview:
+      - insights/overview.md
+      - insights/glossary.md
+    - 📊 Dashboards:
+      - insights/dashboards/overview.md
+      - insights/dashboards/engagement.md
+      - insights/dashboards/nlu-performance.md
+      - insights/dashboards/live-agent.md
+    - 🔭 Explorers:
+      - insights/explorers/step.md
+      - insights/explorers/transcript.md
+      - insights/explorers/message.md
+    - 🔍 Filter and Sort:
+      - insights/global-filters.md
+    - 🗓️ Time Zone and TTL:
+      - insights/time-zone.md
+      - insights/ttl.md
+    - ⬇️ Download Reports:
+      - insights/download-reports.md
+
+
+  - Support:
+    - help/index.md
+    - help/get-help.md
+
+
+  - Release Notes:
+    - release-notes/index.md
+    - release-notes/4.80.md
+    - release-notes/4.79.md
+    - release-notes/4.78.md
+    - release-notes/4.77.md
+    - release-notes/4.76.md
+    - release-notes/4.75.md
+    - release-notes/4.74.md
+    - release-notes/4.73.md
+    - release-notes/4.72.md
+    - release-notes/4.71.md
+    - release-notes/4.70.md
+    - release-notes/4.69.md
+    - release-notes/4.68.md
+    - release-notes/4.67.md
+    - release-notes/4.66.md
+    - release-notes/4.65.md
+    - release-notes/4.64.md
+    - release-notes/4.63.md
+    - release-notes/4.62.md
+    - release-notes/4.61.md
+    - release-notes/4.60.md
+    - release-notes/4.59.md
+    - release-notes/4.58.md
+    - release-notes/4.57.md
+    - release-notes/4.56.md
+    - release-notes/4.55.md
+    - release-notes/4.54.md
+    - release-notes/4.53.md
+    - release-notes/4.52.md
+    - release-notes/4.51.md
+    - release-notes/4.50.md
+    - release-notes/4.49.md
+    - release-notes/4.48.md
+    - release-notes/4.47.md
+    - release-notes/4.46.md
+    - release-notes/4.45.md
+    - release-notes/4.44.md
+    - release-notes/4.43.md
+    - release-notes/4.42.md
+    - release-notes/4.41.md
+    - release-notes/4.40.md
+    - release-notes/4.39.md
+    - release-notes/4.38.md
+    - release-notes/4.37.md
+    - release-notes/4.36.md
+    - release-notes/4.35.md
+    - release-notes/4.34.md
+    - release-notes/4.33.md
+    - release-notes/4.32.md
+    - release-notes/4.31.md
+    - release-notes/4.30.md
+    - Earlier versions:
+      - release-notes/earlier-versions/index.md
+      - release-notes/earlier-versions/cognigy-ai-pre-4.30.md
+      - release-notes/earlier-versions/insights-pre-4.30.md
+      - release-notes/earlier-versions/live-agent-pre-4.30.md
+
+
+theme:
+  name: material
+
+  logo: ./_assets/Cognigy-black.svg
+  favicon: ./_assets/favicon.webp
+
+  font:
+    text: Open Sans
+
+  palette:
+    scheme: default
+    primary: white
+
+  features:
+    - toc
+    - toc.follow
+    - search.suggest
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.tabs.link
+
+    # render navigation bar at the top of the page
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+
+    # renders top-level sections instead of collabsibles
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.progress
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: Anchor to this section
+      slugify: !!python/name:pymdownx.slugs.uslugify ''
+  - abbr
+  - attr_list
+  - def_list
+  - md_in_html
+  - admonition
+  - footnotes
+  - meta
+  - mdx_include:
+      base_path: docs
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - _assets/style.css
+
+extra_javascript:
+  - _assets/cognigy.js
+  - _assets/custom.js
+  - _assets/mathjax.js
+  - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
+
+plugins:
+  - glightbox
+  - search
+  - macros
+  - exclude:
+      glob:
+        - _includes/*
+extra:
+  # Do not display "Generated by MkDocs" in the footer
+  generator: false
+
+  # Add links to our social media accounts
+  social:
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/cognigy
+    name: Cognigy on Twitter
+  - icon: fontawesome/brands/facebook
+    link: https://www.facebook.com/cognigy/
+    name: Cognigy on Facebook
+  - icon: fontawesome/brands/github
+    link: https://github.com/Cognigy
+    name: Cognigy on GitHub
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/cognigy/mycompany/
+    name: Cognigy on LinkedIn
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/c/Cognigy
+    name: Cognigy on YouTube
+
+  # Activate Google Analytics integration
+  analytics:
+    provider: google
+    property: G-DQ0NQDZTS1
+
+  # Cookie consent screen
+  consent:
+    title: Cookie consent
+    description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your
+      consent, you're helping us to make our documentation better. To find out more about the cookies we use, see our <a href="https://www.cognigy.com/privacy-policy" target="_blank" rel="noopener">Privacy
+      Policy</a>

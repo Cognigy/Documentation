@@ -1,0 +1,15 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <g class="genai-rotate"><g class="genai-scale"><g class="top" transform="translate(18.5,8.6)">
+        <path d="M0,0l-1.05,-2.35l-2.35,-1.05l2.35,-1.075l1.05,-2.325l1.05,2.325l2.35,1.075l-2.35,1.05z"></path>
+    </g>
+        <g class="bottom" transform="translate(18.5,22.2)">
+            <path d="M0,0l-1.05,-2.325l-2.35,-1.075l2.35,-1.05l1.05,-2.35l1.05,2.35l2.35,1.05l-2.35,1.075z"></path>
+        </g>
+        <g class="left" transform="translate(8.875,18.8)">
+            <path d="M0,0l-2.1,-4.675l-4.675,-2.125l4.675,-2.125l2.1,-4.675l2.125,4.675l4.675,2.125l-4.675,2.125zm0,-3.65l1,-2.15l2.15,-1l-2.15,-1l-1,-2.15l-1,2.15l-2.15,1l2.15,1z">
+            </path>
+        </g>
+    </g>
+    </g>
+</svg>
+

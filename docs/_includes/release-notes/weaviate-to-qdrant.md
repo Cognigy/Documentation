@@ -1,0 +1,4 @@
+!!! warning "Migration from Weaviate to Qdrant"
+    In version 4.75, we will remove Weaviate as a vector database. If you have a Cognigy on-premises installation and are utilizing the [Knowledge AI features](https://docs.cognigy.com/ai/empower/knowledge-ai/overview/), switch to Qdrant before upgrading to version 4.75.0. For a smooth migration, follow the [provided guide](https://docs.cognigy.com/ai/installation/migration/from-weaviate-to-qdrant/).
+
+    The migration has a side effect that alters the `distance` value. Decision-making in the Flow will be ineffective post-migration if distance is used. If you are using this value in your Flows, refer to [recommendations](https://docs.cognigy.com/ai/empower/knowledge-ai/distance-value-change-after-migration/) for configuring this value.
