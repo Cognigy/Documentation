@@ -47,7 +47,7 @@ This feature is available in the following environments:
 
 - Trial.
 - Dedicated and shared SaaS.
-- [On-premises](#on-premises). To use this feature, set up Azure AI Document Intelligence connection and provide an API key.
+- [On-premises](#on-premises). To use this feature, set up an Azure AI Document Intelligence connection and provide an API key.
 
 ### On-Premises
 
@@ -56,8 +56,8 @@ The following environment variables must be specified in the `values.yaml` file 
 - `FEATURE_ENABLE_AZURE_DOCUMENT_INTELLIGENCE_ORG_WHITELIST`:
     - This variable should be set to a comma-separated list of organization IDs for which the feature should be enabled. For example: `FEATURE_ENABLE_AZURE_DOCUMENT_INTELLIGENCE_ORG_WHITELIST: "org1,org2,org3"`.
     - If the feature should be enabled for all organizations, the value can be set to `"*"`.
-- `AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT`. The endpoint URL for the Azure AI Document Intelligence service. To copy the URL, go to the Azure portal, on the left-side menu, select **Resource Management > Key and Endpoint**. Copy the endpoint URL from the **Endpoint** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/sdk-overview-v4-0?view=doc-intel-4.0.0&tabs=csharp#use-an-azure-active-directory-azure-ad-token-credential) documentation.
-- `AZURE_DOCUMENT_INTELLIGENCE_APIKEY`. Your API key for the Azure AI Document Intelligence service. To copy the key, go to the Azure portal, on the left-side menu, select **Resource Management > Key and Endpoint**. Copy the key from the **Key** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/sdk-overview-v4-0?view=doc-intel-4.0.0&tabs=csharp#use-an-azure-active-directory-azure-ad-token-credential) documentation.
+- `AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT`. The endpoint URL for the Azure AI Document Intelligence service. To copy the URL, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the endpoint URL from the **Endpoint** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
+- `AZURE_DOCUMENT_INTELLIGENCE_APIKEY`. Your API key for the Azure AI Document Intelligence service. To copy the key, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the key from the **Key** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
 
 ## How to Use
 
@@ -65,11 +65,11 @@ The feature usage varies depending on which version you are using:
 
 - [Cognigy.AI 4.79 or later](#cognigyai-479-or-later)
 - [Cognigy.AI 4.71-4.78](#cognigyai-471-478)
+- [Cognigy.AI 4.71 and earlier](#cognigyai-471-and-earlier)
 
 ### Cognigy.AI 4.79 or Later
 
-If the Advanced Parser is enabled in your environment,
-this feature will automatically handle text extraction.
+The Advanced Parser is used by default for text extraction.
 
 To use this feature, follow these steps:
 
@@ -94,12 +94,11 @@ If you don't want to use the Advanced Parser for text extraction, follow these s
 The Advanced Parser is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
 
-### Cognigy.AI 4.71 and earlier
+### Cognigy.AI 4.71 and Earlier
 
-The Advanced Parser is used as the Alternative Chunk strategy and only for PDF files.
+The Advanced Parser is used as the [Alternative Chunk strategy](../pdf.md#alternative-chunk-strategy) and only for PDF files.
 The Advanced Parser is applied when `cognigy.preset_uiolc_ls.pdf` is appended to the file name of an uploaded file. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
 `.preset_uiolc_ls` is the preset to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.
-For more information, read [Alternative Chunk Strategy](../pdf.md#alternative-chunk-strategy).
 
 ## Metadata
 

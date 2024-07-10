@@ -38,7 +38,7 @@ The chunk strategy powered by Azure AI Document Intelligence has the following a
 ## How to Use
 
 By default, the Advanced Parser is used for text extraction.
-To use the Basic Parser, follow these steps:
+To use the External Parser, follow these steps:
 
 1. [Switch to External Parser](#switch-to-external-text-parser)
 2. [Upload a File for Text Extraction](#upload-a-file-for-text-extraction)
@@ -53,8 +53,8 @@ To switch to the External Parser, follow these steps:
 4. Set up a connection by clicking **+** next to the **Connection to Azure AI Document Intelligence** field.
 5. Fill in the following fields:
     - **Connection name** — create a unique name for your connection.
-    - **API Key** — add an API key for the Azure AI Document Intelligence service. To find the API Key, go to the Azure portal, navigate to **Keys and Endpoint > KEY**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
-    - **Endpoint URL** — add an Endpoint URL from your Document Intelligence resource. To find the Endpoint URL, go to the Azure portal, navigate to **Keys and Endpoint > Endpoint**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation. 
+    - **API Key** — add an API key for the Azure AI Document Intelligence service. To copy the key, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the key from the **Key** field. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
+    - **Endpoint URL** — add an Endpoint URL from your Document Intelligence resource. To copy the URL, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the endpoint URL from the **Endpoint** field. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation. 
 6. Click **Create**, then **Save**.
 
 ### Upload a File for Text Extraction
