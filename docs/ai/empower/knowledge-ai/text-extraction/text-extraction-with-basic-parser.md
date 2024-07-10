@@ -7,7 +7,7 @@ hidden: false
 
 # Basic
 
-The _Basic Parser_ is a Cognigy solution that extracts content from files more effectively. It splits the extracted content into chunks based on a fixed token length, which returns the best results based on our research.
+_Text Extraction with the Basic Parser_ is a Cognigy solution that extracts content from files more effectively. It splits the extracted content into chunks based on a fixed token length, which returns the best results based on our research.
 
 We recommended using this Parser in combination with **Top K** set to `5` in the [Search Extract Output](../../../build/node-reference/other-nodes/search-extract-output.md) Node.
 

@@ -27,9 +27,9 @@ The chunk strategy powered by Azure AI Document Intelligence has the following a
 
 ## Supported Formats
 
-| Cognigy.AI versions | Formats                                                                             |
-|---------------------|-------------------------------------------------------------------------------------|
-| 4.80 or later       | `.pdf`, `.docx`, `.pptx`, `.txt`, `.jpeg`, `.jpg`, `.png`, `.bmp`, `.heif`, `.tiff` |
+| Cognigy.AI versions | Formats                                                                                 |
+|---------------------|-----------------------------------------------------------------------------------------|
+| 4.80 or later       | `.pdf`, `.docx`, `.pptx`, `.txt`, `.jpeg`, `.jpg`, `.png`, `.bmp`, `.heif`, and `.tiff` |
 
 ## Availability
 
