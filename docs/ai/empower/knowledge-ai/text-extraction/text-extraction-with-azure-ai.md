@@ -8,7 +8,8 @@ hidden: false
 # Text Extraction with Azure AI Document Intelligence
 
 !!! note
-    Azure AI Document Intelligence stores data and results on Azure Storage for 24 hours from the time you submit an analyze request. To learn more about data, privacy, and security for Document Intelligence, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/legal/cognitive-services/document-intelligence/data-privacy-security) documentation.
+    - By using this feature, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
+    - Azure AI Document Intelligence stores data and results on Azure Storage for 24 hours from the time you submit an analyze request. To learn more about data, privacy, and security for Document Intelligence, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/legal/cognitive-services/document-intelligence/data-privacy-security) documentation.
 
 _Text Extraction with [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/)_ creates semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
 
@@ -54,7 +55,7 @@ To switch to the External Parser, follow these steps:
     - **Connection name** — create a unique name for your connection.
     - **API Key** — add an API key from your Document Intelligence resource. To find the API Key, go to the Azure portal, navigate to **Keys and Endpoint > KEY**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
     - **Endpoint URL** — add an Endpoint URL from your Document Intelligence resource. To find the Endpoint URL, go to the Azure portal, navigate to **Keys and Endpoint > Endpoint**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation. 
-6. Click **Save**.
+6. Click **Create**, then **Save**.
 
 ### Upload a File for Text Extraction
 

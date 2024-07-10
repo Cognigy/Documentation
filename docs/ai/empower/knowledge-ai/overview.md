@@ -15,7 +15,14 @@ Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conver
 
 With the Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/intents/ml-intents.md) and [Default Replies](../nlu/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as [PDF](pdf.md), text, and DOCX files, as well as files in the [Cognigy CTXT](ctxt.md) format and [Web Pages](web-page.md). This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents in various formats,
+including [PDF](pdf.md),
+text, PPTX and DOCX, as well as files in the [Cognigy CTXT](ctxt.md) format and [Web Pages](web-page.md).
+This technology extracts meaningful information from these documents
+and makes it accessible to Flow designers via the Knowledge AI Nodes.
+This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
+bypassing the limitations of traditional intent-based systems
+and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 

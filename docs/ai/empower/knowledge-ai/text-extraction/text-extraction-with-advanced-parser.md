@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
 
 !!! note
-	By using the Advanced Parser in Cognigy.AI, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
+	By using this feature, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
 
 _Text Extraction with the Advanced Parser_ is a Cognigy.AI solution that is used to create semantic chunks, resulting in more accurate answers compared to the default fixed-length chunking.
 
@@ -93,6 +93,13 @@ If you don't want to use the Advanced Parser for text extraction, follow these s
 
 The Advanced Parser is used when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the text extraction, and `.pdf` is the file extension.
+
+### Cognigy.AI 4.71 and earlier
+
+The Advanced Parser is used as the Alternative Chunk strategy and only for PDF files.
+The Advanced Parser is applied when `cognigy.preset_uiolc_ls.pdf` is appended to the file name of an uploaded file. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
+`.preset_uiolc_ls` is the preset to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.
+For more information, read [Alternative Chunk Strategy](../pdf.md#alternative-chunk-strategy).
 
 ## Metadata
 
