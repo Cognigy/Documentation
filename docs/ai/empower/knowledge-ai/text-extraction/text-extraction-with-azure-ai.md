@@ -53,7 +53,7 @@ To switch to the External Parser, follow these steps:
 4. Set up a connection by clicking **+** next to the **Connection to Azure AI Document Intelligence** field.
 5. Fill in the following fields:
     - **Connection name** — create a unique name for your connection.
-    - **API Key** — add an API key from your Document Intelligence resource. To find the API Key, go to the Azure portal, navigate to **Keys and Endpoint > KEY**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
+    - **API Key** — add an API key for the Azure AI Document Intelligence service. To find the API Key, go to the Azure portal, navigate to **Keys and Endpoint > KEY**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
     - **Endpoint URL** — add an Endpoint URL from your Document Intelligence resource. To find the Endpoint URL, go to the Azure portal, navigate to **Keys and Endpoint > Endpoint**. For more information, read the [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation. 
 6. Click **Create**, then **Save**.
 
