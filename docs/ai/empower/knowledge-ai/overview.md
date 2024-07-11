@@ -225,6 +225,10 @@ The table below presents limitations. These limitations are subject to future ch
 
 **A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
 
+**Q3**: I encountered a `Error while performing knowledge search. Remote returned error: Search failed: Could not fetch embeddings due to missing API resource name for Azure OpenAI` error while using knowledge search features. How can I solve this issue?
+
+**A3**: In recent releases, we have updated the connection settings to Azure OpenAI LLMs and added new parameters, such as the Resource Name. If you have an older connection (for example, created in the 4.53 release) to Azure OpenAI LLMs, especially Azure OpenAI `text-embedding-ada-002` for knowledge search features, you might encounter this error when an LLM is triggered. To resolve this issue, recreate the LLM and the connection so that both have the latest format.
+
 ## More Information
 
 - [Cognigy Text Format](ctxt.md)
