@@ -59,3 +59,14 @@ To set up the outbound authentication process, follow these steps:
 9. Activate the **Use Public IP in Contact** field to determine whether to use the public Voice Gateway IP address when establishing contact with the SIP server. The public address will be transferred in the Contact header field.
 10. Click **Save**. 
 11. At the top of the **Edit carrier** page, check whether the connection is established. If the registration is successful, you will see the Register status `200` and a `.pcap` file.
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
+
+## SIP Encryption Over TLS
+
+Users can now choose what type and level of encryption they need. Previously, the encryption for carriers was SIPS by default. Now all new carriers have SIP encryption, while the old carriers will retain their SIPS encryption. 
+
+When using a certain Network Address as Outbound, you now have the following options:
+
+- UDP with standard SIPS encryption
+- TCP with standard SIPS encryption
