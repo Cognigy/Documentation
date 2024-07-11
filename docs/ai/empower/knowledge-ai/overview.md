@@ -15,7 +15,14 @@ Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conver
 
 With the Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/intents/ml-intents.md) and [Default Replies](../nlu/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as [PDF](pdf.md), text, and DOCX files, as well as files in the [Cognigy CTXT](ctxt.md) format and [Web Pages](web-page.md). This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents in various formats,
+including [PDF](pdf.md),
+text, PPTX and DOCX, as well as files in the [Cognigy CTXT](ctxt.md) format and [Web Pages](web-page.md).
+This technology extracts meaningful information from these documents
+and makes it accessible to Flow designers via the Knowledge AI Nodes.
+This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
+bypassing the limitations of traditional intent-based systems
+and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 
@@ -119,6 +126,8 @@ The following types of content are supported:
 - `.docx`
 - `.pptx`
 - `web page`
+
+With content parsers, you can handle a wider range of formats. For more details, read [Text Extraction with Content Parsers](text-extraction/overview.md).
 
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
@@ -224,6 +233,10 @@ The table below presents limitations. These limitations are subject to future ch
 **Q2**: I encountered a `Request failed with status code 429` error while attempting to upload a file. How can I solve this issue?
 
 **A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
+
+**Q3**: I encountered a `Error while performing knowledge search. Remote returned error: Search failed: Could not fetch embeddings due to missing API resource name for Azure OpenAI` error while using knowledge search features. How can I solve this issue?
+
+**A3**: In recent releases, we have updated the connection settings to Azure OpenAI LLMs and added new parameters, such as the Resource Name. If you have an older connection (for example, created in the 4.53 release) to Azure OpenAI LLMs, especially Azure OpenAI `text-embedding-ada-002` for knowledge search features, you might encounter this error when an LLM is triggered. To resolve this issue, recreate the LLM and the connection so that both have the latest format.
 
 ## More Information
 
