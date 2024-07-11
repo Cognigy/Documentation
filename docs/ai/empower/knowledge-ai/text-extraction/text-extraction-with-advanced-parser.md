@@ -51,11 +51,30 @@ This feature is available in the following environments:
 
 ### On-Premises
 
+The feature configuration varies depending on which version you are using:
+
+- [Cognigy.AI 4.80 or Later](#cognigyai-480-or-later)
+- [Cognigy.AI 4.79 or Earlier](#cognigyai-479-or-earlier)
+
 #### Cognigy.AI 4.80 or Later
+
+To start using the Advanced Parser and set it as the default option, add the following parameters under the `knowledgeSearch` section in the `cognigy-ai-values.yaml` file:
+
+```yaml
+knowledgeSearch:
+  enabled: true
+
+  gloabalAzureDocumentIntelligenceConfig:
+    enabled: true
+    apiKey: "<your API key>"
+    endpointUrl: "<your endpoint URL>"
+```
+
+Replace `<your API key>` with your Azure AI Document Intelligence API key and `<your endpoint URL>` with your Azure AI Document Intelligence endpoint URL.
 
 #### Cognigy.AI 4.79 or Earlier
 
-The following environment variables must be specified in the `values.yaml` file to enable the feature:
+To start using the Advanced Parser and set it as the default option, specify the following environment variables in the ` cognigy-ai-values.yaml` file:
 
 - `FEATURE_ENABLE_AZURE_DOCUMENT_INTELLIGENCE_ORG_WHITELIST`:
     - This variable should be set to a comma-separated list of organization IDs for which the feature should be enabled. For example: `FEATURE_ENABLE_AZURE_DOCUMENT_INTELLIGENCE_ORG_WHITELIST: "org1,org2,org3"`.

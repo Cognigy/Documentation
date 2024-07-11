@@ -15,8 +15,8 @@ We recommended using this Parser in combination with **Top K** set to `5` in the
 
 | Cognigy.AI versions | Formats                              |
 |---------------------|--------------------------------------|
-| 4.80 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt` |
-| 4.79 and earlier    | `.pdf`, `.docx`,  and `.txt`         |
+| 4.79 or later       | `.pdf`, `.docx`, `.pptx`, and `.txt` |
+| 4.78 and earlier    | `.pdf`, `.docx`,  and `.txt`         |
 
 ## Availability
 
