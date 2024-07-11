@@ -51,6 +51,10 @@ This feature is available in the following environments:
 
 ### On-Premises
 
+#### Cognigy.AI 4.80 or Later
+
+#### Cognigy.AI 4.79 or Earlier
+
 The following environment variables must be specified in the `values.yaml` file to enable the feature:
 
 - `FEATURE_ENABLE_AZURE_DOCUMENT_INTELLIGENCE_ORG_WHITELIST`:
