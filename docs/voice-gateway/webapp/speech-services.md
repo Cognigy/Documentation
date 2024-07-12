@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-**Speech services** integrate Speech-to-Text (STT) or Text-to-Speech (TTS) vendors in the Voice Gateway Self-Service Portal. To ensure the AI Agent gets a voice, a speech service must be selected within the [Application](./applications.md). By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway, or install multiple configurations of one speech vendor, to quickly switch between different setups.
+**Speech services** integrate Speech-to-Text (STT) or Text-to-Speech (TTS) vendors in the Voice Gateway Self-Service Portal. To ensure the AI Agent gets a voice, a speech service must be selected within the [Application](./applications.md). By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway Self-Service Portal, or install multiple configurations of one speech vendor, to quickly switch between different setups.
 
 Voice Gateway supports the following speech vendor configurations:
 
@@ -37,7 +37,7 @@ To configure the connection for a cloud-based speech service:
 {! _includes/voice-gateway/speech-services-howto.md !}
 
 === "Amazon Polly"
-    1. Enter the Access Key in the **Access key ID** field. For more information on AWS Access Keys, visit the [Amazon AWS](https://repost.aws/knowledge-center/create-access-key) documentation.
+    1. Enter the Access Key in the **Access key ID** field. For more information on AWS Access Keys, read the [Amazon AWS](https://repost.aws/knowledge-center/create-access-key) documentation.
     2. Enter the Secret Access Key in the **Secret access key** field.
     3. Select a region from the **Region** list.
 === "Deepgram"
@@ -80,7 +80,7 @@ Once you created a speech service, add this service to the [Application](./appli
     1. Select **Use Azure Docker container (on-prem)**.
     2. Enter the container URL for TTS in the **Container URL for TTS** field.
     3. Enter the container URL for STT in the **Container URL for STT** field.
-    4. Enter an API key in the **Subscription key** field, if required. Whether the subscription key is required will depend on your custom on-premises setup. For more information on Microsoft Speech Services, read the [Microsoft Speech Services](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview#delivery-and-presence) documentation.
+    4. Enter an API key in the **Subscription key** field, if required. Whether the subscription key is required will depend on your custom on-premises setup. For more information on Microsoft Azure Subscriptions, read the [Subscriptions in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-subscriptions) documentation.
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
