@@ -615,7 +615,7 @@ nav:
         - insights/data-management/pre-aggregation.md
         - insights/data-management/time-zone-with-pre-aggregation.md
       - insights/data-management/time-zone.md
-      - insights/data-management/insights/ttl.md
+      - insights/data-management/ttl.md
     - ⬇️ Download Reports:
       - insights/download-reports.md
 
