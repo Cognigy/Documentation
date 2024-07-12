@@ -191,7 +191,7 @@ Forwarding messages to the end user can be helpful in the following use cases:
 
 Genesys Inbound Flow is responsible for message configuration. For example, to allow users to see their queue position, you'd first need to configure a Queue Message Flow in Genesys.
 
-Cognigy is responsible for message roting logic. Follow the instructions to configure this logic:
+Cognigy.AI is responsible for message roting logic. Follow the instructions to configure this logic:
 
 1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
 2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
