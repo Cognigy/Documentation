@@ -51,7 +51,7 @@ By now, your Copilot grid and connection should be set up and ready for testing.
 To observe the AI Copilot workspace, start a conversation with your AI Agent in the chat.
 In another tab, open your contact center desktop, for example the Live Agent, and work through the Flow until the Handover to Agent Node triggers the Handover.
 
-If you are using the `standalone` version of AI Copilot together with a provider that doesn't offer native AI Copilot support, for example RCE or Salesforce, you will receive a link to your AI Copilot Workspace in the chat.
+If you are using the `standalone` version of AI Copilot together with a provider that doesn't offer native AI Copilot support, for example RingCentral Engage or Salesforce, you will receive a link to your AI Copilot Workspace in the chat.
 
 After the handover, the conversation history with the AI Agent and the current intent are forwarded to the human agent, together with a specific link to access the AI Copilot Workspace.
 
