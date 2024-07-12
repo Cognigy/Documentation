@@ -55,7 +55,7 @@ Insights helps businesses to better understand their users, optimize their chatb
 
     ---
 
-    Configure Time Zone and TTL (Time To Live) settings for your project
+    Learn how data pre-aggregation is used for dashboards, configure Time Zone and TTL (Time To Live) settings for your project
 
     [:octicons-arrow-right-24: Pre-Aggregation](data-management/pre-aggregation.md)<br>
     [:octicons-arrow-right-24: Time Zone](data-management/time-zone.md)<br>

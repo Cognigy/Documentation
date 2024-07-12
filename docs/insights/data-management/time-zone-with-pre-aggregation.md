@@ -1,5 +1,5 @@
 ---
-title: "Time Zone with Pre-aggregation"
+title: "Time Zone with Pre-Aggregation"
 slug: "time-zone"
 hidden: false
 ---
@@ -32,10 +32,11 @@ In the Insights interface, you will see the corresponding warning.
 
 The configuration of additional time zones depends on the type of your installation:
 
-==="Dedicated SaaS"
-    Contact your customer success manager to add preferable custom time zones.
+=== "Dedicated SaaS"
+     Contact your customer success manager to add preferable custom time zones.
 
-==="On-premises"
+=== "On-Premises"
+
     If you are using an on-premises environment, you can specify a custom time zone.
     Note that each time zone selection necessitates a separate set of pre-aggregations, which can increase the system load.
     

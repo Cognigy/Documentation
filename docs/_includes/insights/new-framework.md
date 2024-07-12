@@ -1,5 +1,7 @@
 !!! note "New Insights framework"
-    We are introducing a new architecture for Cognigy Insights, which significantly enhances the application's data processing capacity. This upgraded framework not only improves overall performance but also minimizes loading times for dashboard data.
+    We are introducing a new architecture framework for Cognigy Insights, which significantly enhances the application's data processing capacity. This upgraded framework not only improves overall performance but also minimizes loading times for dashboard data. To use this framework, migration is required.
 
-    The framework migration is not linked to a specific release. We will start with a few dedicated SaaS customers, inform them, and provide assistance for migration. Afterward, we will create guides for on-premises customers and then migrate the remaining shared SaaS and dedicated SaaS customers.
+    The migration to the new framework is not linked to a specific release. We start with a few dedicated SaaS customers, inform them, and provide assistance for migration. For on-premises customers, the [migration guide](https://docs.cognigy.com/ai/installation/migration/migration-to-the-new-insights-framework/) has been published.
+
+    Afterward, we migrate the remaining shared SaaS and dedicated SaaS customers.
 
