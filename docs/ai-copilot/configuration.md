@@ -21,43 +21,11 @@ You can edit the grid in the following ways:
 - Use the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
 - Create a custom grid in the [AI Copilot API](#optional-create-a-custom-default-grid-from-the-api).
 
-## Tile ID
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.54-blue.svg)](../release-notes/4.54.md)
-
-Each tile must have a name, for example, `map`, `profile`, or `history`, that works as a unique identifier. This exact tile ID is needed for the AI Copilot Node configuration, to ensure the content is displayed in the right Widget.
-
-If AI Copilot receives updates for a Tile ID not present in the AI Copilot configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
-
-## URL
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../release-notes/4.65.md)
-
-If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
-
-{! _includes/ai-copilot/url-pattern.md !}
-
-If you are utilizing the embedded AI Copilot workspace, you can also use this URL to investigate the workspace before deploying it to production.
-
-## Transcript Tile
-
-The Transcript Tile in the AI Copilot workspace acts as a chat interface for human agents. It allows them to seamlessly read messages from end users and respond without having to switch back to the main chat interface.
-
-To activate the Transcript Tile feature for the AI Copilot workspace, go to the **Endpoint Settings** editor and then to the **Copilot** section. This Tile is recommended only for contact centers that use a standalone AI Copilot workspace, such as the one provided by Genesys.
-
-The Transcript Tile feature is intended specifically for [chat use cases](chat.md). For voice-related scenarios, use the [Copilot: Transcript Tile](../ai/build/node-reference/ai-copilot/transcript-tile.md) Node.
-
-| Setting                                                                                            | Description                                                                                                                                                                               |
-|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace                            | If the option is enabled, you can view the session messages on the Transcript Tile. To display this tile, you must include the `transcript` tile ID it in your AI Copilot Config via API. |
-| Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer | If the option is enabled, the human agent can send messages to the end user from the Transcript Tile.                                                                                     |
-| Enable redaction of Transcript Tile messages                                                       | If the option is enabled, a credit card number in the messages of the Transcript Tile will be masked and replaced with the placeholder `CREDIT_CARD_NUMBER`.                              |
-
-## (Optional) Create a Custom Grid via the API
+### (Optional) Create a Custom Grid via the API
 
 If you want to create a new AI Copilot Config template instead of using the default one, you can do so in the API.
 
-### Create an API Key
+#### Create an API Key
 
 1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
 2. In the **API Keys** section, click **+**.
@@ -75,7 +43,7 @@ If you want to create a new AI Copilot Config template instead of using the defa
 
 When the request is created, you will see the response code `201`.
 
-### Create a Custom Grid using the API Post Request
+#### Create a Custom Grid using the API Post Request
 
 To create your custom AI Copilot Config Grid with the API, follow these steps:
 
@@ -133,6 +101,38 @@ To create your custom AI Copilot Config Grid with the API, follow these steps:
 5. Create the request by clicking **Try**.
 
 When the request is created, you will see the response code `201`.
+
+## Tile ID
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.54-blue.svg)](../release-notes/4.54.md)
+
+Each tile must have a name, for example, `map`, `profile`, or `history`, that works as a unique identifier. This exact tile ID is needed for the AI Copilot Node configuration, to ensure the content is displayed in the right Widget.
+
+If AI Copilot receives updates for a Tile ID not present in the AI Copilot configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
+
+## URL
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../release-notes/4.65.md)
+
+If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
+
+{! _includes/ai-copilot/url-pattern.md !}
+
+If you are utilizing the embedded AI Copilot workspace, you can also use this URL to investigate the workspace before deploying it to production.
+
+## Transcript Tile
+
+The Transcript Tile in the AI Copilot workspace acts as a chat interface for human agents. It allows them to seamlessly read messages from end users and respond without having to switch back to the main chat interface.
+
+To activate the Transcript Tile feature for the AI Copilot workspace, go to the **Endpoint Settings** editor and then to the **Copilot** section. This Tile is recommended only for contact centers that use a standalone AI Copilot workspace, such as the one provided by Genesys.
+
+The Transcript Tile feature is intended specifically for [chat use cases](chat.md). For voice-related scenarios, use the [Copilot: Transcript Tile](../ai/build/node-reference/ai-copilot/transcript-tile.md) Node.
+
+| Setting                                                                                            | Description                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace                            | If the option is enabled, you can view the session messages on the Transcript Tile. To display this tile, you must include the `transcript` tile ID it in your AI Copilot Config via API. |
+| Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer | If the option is enabled, the human agent can send messages to the end user from the Transcript Tile.                                                                                     |
+| Enable redaction of Transcript Tile messages                                                       | If the option is enabled, a credit card number in the messages of the Transcript Tile will be masked and replaced with the placeholder `CREDIT_CARD_NUMBER`.                              |
 
 ## More Information
 

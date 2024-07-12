@@ -18,12 +18,14 @@ To get started with the service:
 1. Go to the Cognigy.AI interface.
 2. Create a [Project](../ai/build/projects.md) or use an existing one.
 3. In the left-side menu of your Project, select **Build > Flows**.
-4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent.
+4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover to a human agent.
 5. Create a second Flow for AI Copilot.
 6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
 7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md). For example, a [Profile Node](../ai/build/node-reference/ai-copilot/identity-tile.md) with your user's most important information, an AI-powered [Sentiment Node](../ai/build/node-reference/ai-copilot/sentiment-tile.md) displaying the user's current attitude, or a [Transcript Node](../ai/build/node-reference/ai-copilot/transcript-tile.md) with the transcribed content of the conversation.
 8. Add the content that will be displayed within the AI Copilot workspace.
 9. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
+
+Check that you have two Flows: the Main Flow and the AI Copilot Flow.
 
 ## Create an Endpoint
 
@@ -49,7 +51,7 @@ To create your Endpoint, follow these steps:
 By now, your Copilot grid and connection should be set up and ready for testing.
 
 To observe the AI Copilot workspace, start a conversation with your AI Agent in the chat.
-In another tab, open your contact center desktop, for example the Live Agent, and work through the Flow until the Handover to Agent Node triggers the Handover.
+In another tab, open your contact center desktop, for example Live Agent, and work through the Flow until the Handover to Agent Node.
 
 If you are using the `standalone` version of AI Copilot together with a provider that doesn't offer native AI Copilot support, for example RingCentral Engage or Salesforce, you will receive a link to your AI Copilot Workspace in the chat.
 
