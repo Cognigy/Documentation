@@ -113,11 +113,14 @@ To create your Endpoint, follow these steps:
 4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
-7. Go to **Handover Settings**. 
-8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **Copilot Config**, select the config, which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
-11. Click **Save**.
+7. Go to the **Handover Settings** section and select your Handover Provider.
+8. Go to the **Copilot** section and select **Workspace** from the **Copilot Type** list.
+9. From the **Copilot Flow** list, select the AI Copilot Flow that you created previously. The Flow will be executed once the conversation is handed over to a human agent.
+10. From the **Copilot Config** list, select the configuration you created via API. If you select **None**, the default AI Copilot config will be applied. You can override the default config in the Copilot: Set Config Node within your AI Copilot Flow.
+11. _(Optional)_ Add a Transcript Tile to display the conversation with the customer, by enabling the **Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace** toggle in the **Copilot** section. Make sure to add the `transcript` Transcript Tile ID in your AI Copilot grid to display the transcript to the human agent. This Endpoint toggle in turn enables additional settings:
+    - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer - enables the human agent to send messages from the Transcript Tile.
+    - Enable redaction of Transcript Tile messages - lets you hide sensitive data from the Transcript Tile.
+12. Click **Save**.
 
 ## Configure an AI Copilot Flow
 
@@ -151,5 +154,4 @@ The widgets will populate their content once the customer starts the conversatio
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
-
-
+- [AI Copilot Whisper](../live-agent/assistants/ai-copilot-whisper.md)

@@ -103,7 +103,7 @@ A message is counted as understood if it has triggered an Intent, a slot is matc
 A message is not counted as understood
 if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md)
 or sent during an active handover
-without configuring [LA AI Copilot](../../live-agent/assistants/la-ai-copilot.md) Flow.
+without configuring [AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) Flow.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,

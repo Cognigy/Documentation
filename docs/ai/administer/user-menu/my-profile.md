@@ -12,7 +12,19 @@ hidden: false
 
 ## Preferences
 
-In this section, the **user interface language** can be selected. Cognigy.AI currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
+### Select Language
+
+You can select the user interface language.
+To do this, open the **Select Language** list.
+
+Cognigy.AI supports the following user interface languages: 
+
+- English
+- French
+- German
+- Japanese
+- Korean
+- Spanish
 
 ## Global Roles
 

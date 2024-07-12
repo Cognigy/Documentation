@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Models (LLMs)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.80.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
@@ -50,6 +50,8 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 [^*]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use `luminous-embedding-128`, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
 
 ## Add a Model
+
+{! _includes/release-notes/resolve-llm-connection-error.md !}
 
 To add a model to Cognigy.AI, follow these steps:
 
@@ -109,13 +111,9 @@ The model will be deleted from the list.
 
 ## Retry Mechanism
 
-If Cognigy encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code,
-
-Cognigy will automatically attempt to reconnect up to three times using a retry mechanism.
-This retry mechanism is designed to improve the reliability and stability of the system  
-when using certain Cognigy Nodes and features.
-By attempting to reconnect multiple times, it increases the chances of successful communication,
-reduces disruptions and ensures smoother operations within the system.
+If Cognigy encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code, Cognigy will automatically attempt to reconnect up to three times using a retry mechanism.
+This retry mechanism is designed to improve the reliability and stability of the system when using certain Cognigy Nodes and features.
+By attempting to reconnect multiple times, it increases the chances of successful communication, reduces disruptions and ensures smoother operations within the system.
 
 The following Nodes and features are affected by the retry mechanism:
 
