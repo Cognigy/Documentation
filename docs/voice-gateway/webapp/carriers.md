@@ -62,11 +62,15 @@ To set up the outbound authentication process, follow these steps:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
 
-## SIP Encryption Over TLS
+## SIP Encryption for Outbound Calls
 
-Users can now choose what type and level of encryption they need. Previously, the encryption for carriers was SIPS by default. Now all new carriers have SIP encryption, while the old carriers will retain their SIPS encryption. 
+Voice Gateway now supports SIP over TLS encryption for outbound calls, when coupled with the SIP Register for Outbound Authentication. Previously, the encryption for all carriers was done through SIPS by default. In rare cases, SIPS might have caused some compatibility issues. Now the users can choose whether they want SIP, SIP over TLS security layer, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP encryption by default. The existing carriers will retain their SIPS encryption.
 
-When using a certain Network Address as Outbound, you now have the following options:
+When selecting an SIP Gateway to be used for outbound calls, tick the Outbound box. This will enable the following options:
 
-- UDP with standard SIPS encryption
-- TCP with standard SIPS encryption
+- UDP with a standard SIP encryption.
+- TCP with a standard SIP encryption.
+- TLS with a standard SIP encryption. An additional box for using the SIPS scheme will appear.
+- TLS/SRTP with a standard SIP encryption. This option provides encryption for both the connection and the audio stream. An additional box for using the SIPS scheme will appear. In order to provide yet another layer of security, the pad crypto box will appear. This option, also called as "padding crypto" adds random strings of data to the encrypted voice packets, making them even harder to decrypt.
+
+The users can test and check their encryption type by triggering an outbound call and downloading the PCAP file from Voice Gateway Self-Service Portal > Recent calls.
