@@ -18,7 +18,7 @@ To get started with the service:
 1. Go to the Cognigy.AI interface.
 2. Create a [Project](../ai/build/projects.md) or use an existing one.
 3. In the left-side menu of your Project, select **Build > Flows**.
-4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover to a human agent.
+4. Create a [Flow](../ai/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent.
 5. Create a second Flow for AI Copilot.
 6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
 7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md). For example, a [Profile Node](../ai/build/node-reference/ai-copilot/identity-tile.md) with your user's most important information, an AI-powered [Sentiment Node](../ai/build/node-reference/ai-copilot/sentiment-tile.md) displaying the user's current attitude, or a [Transcript Node](../ai/build/node-reference/ai-copilot/transcript-tile.md) with the transcribed content of the conversation.
