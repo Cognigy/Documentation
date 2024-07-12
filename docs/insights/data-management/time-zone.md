@@ -29,12 +29,9 @@ To change time zone preferences, follow these steps:
 New time zone will be applied to all existing data.
 
 !!! note
-    Custom time zone preferences are stored in the browser storage, which means you will need to select your custom time zone preference again if you change the device and/or the browser.
+    Custom time zone preferences are stored in the browser storage, which means you will need to select your custom time zone preference again if you change the device or the browser.
 
-## Time Zone Considerations: OData and Insights
-
-In the OData feed, all times are consistently presented in UTC format.
-When comparing time zones with Insights, consider this to ensure accurate data interpretation.
+{! _includes/insights/time-zone-odata-and-insights.md !}
 
 ## More Information
 
