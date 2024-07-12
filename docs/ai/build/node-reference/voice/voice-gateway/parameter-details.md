@@ -115,7 +115,7 @@ The track plays during the conversation with the AI agent, continues when the ca
 | Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                      |
 | URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                             |
 | Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                                                                                                                   |
-| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, without any changes to its own volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud, nor too quiet.|
+| Volume    | Slider   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud, nor too quiet.    |
 
 ### Silence Overlay
 
