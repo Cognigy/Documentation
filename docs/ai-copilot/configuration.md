@@ -8,7 +8,7 @@ hidden: false
 
 The AI Copilot configuration refers to the size and position of widgets in your grid. The AI Copilot workspace can be customized to display various types of content, including HTML, adaptive cards, or iframes. This customization enables human agents to quickly access important data, such as user profiles or ticket information related to the user's issue, without needing to spend additional time searching the knowledge database.
 
-AI Copilot comes with a default, pre-configured grid, which the users can modify by using the Copilot: Set Grid Node. Alternatively, The AI Copilot configurations can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and serve as a template if selected from the Copilot Config within the Endpoint settings.
+AI Copilot comes with a default, pre-configured grid, which you can modify by using the Copilot: Set Grid Node. Alternatively, the AI Copilot configuration can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and can serve as a template if selected from the Copilot Config within the Endpoint settings.
 
 ## AI Copilot Grid
 

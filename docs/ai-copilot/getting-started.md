@@ -40,7 +40,7 @@ To create your Endpoint, follow these steps:
 9. From the **Copilot Flow** list, select the previously created AI Copilot Flow. The Flow will be executed once the conversation is handed over to a human agent.
 10. From the **Copilot Config** list, select **None** to use the default AI Copilot configuration.
 11. _(Optional)_ Add a Transcript Tile to display the conversation with the customer, by enabling the **Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace** toggle in the **Copilot** section. Make sure to add the `transcript` Transcript Tile ID in your AI Copilot grid to display the transcript to the human agent. This Endpoint toggle in turn enables additional settings:
-    - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer - enables the human agent to send messages from the Transcript Tile.
+    - Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer — enables the human agent to send messages from the Transcript Tile.
     - Enable redaction of Transcript Tile messages - lets you hide sensitive data from the Transcript Tile.
 12. Click **Save**.
 
