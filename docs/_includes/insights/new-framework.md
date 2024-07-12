@@ -4,4 +4,3 @@
     The migration to the new framework is not linked to a specific release. We start with a few dedicated SaaS customers, inform them, and provide assistance for migration. For on-premises customers, the [migration guide](https://docs.cognigy.com/ai/installation/migration/migration-to-the-new-insights-framework/) has been published.
 
     Afterward, we migrate the remaining shared SaaS and dedicated SaaS customers.
-
