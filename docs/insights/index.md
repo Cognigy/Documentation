@@ -51,13 +51,14 @@ Insights helps businesses to better understand their users, optimize their chatb
 
     [:octicons-arrow-right-24: Global Filters](global-filters.md)
 
--   :calendar_spiral:{ .lg .middle } __Time Zone and Data Expiration__
+-   :calendar_spiral:{ .lg .middle } __Data Management__
 
     ---
 
     Configure Time Zone and TTL (Time To Live) settings for your project
 
-    [:octicons-arrow-right-24: Time Zone](time-zone.md)<br>
-    [:octicons-arrow-right-24: Data Expiration](ttl.md)
+    [:octicons-arrow-right-24: Pre-Aggregation](data-management/pre-aggregation.md)<br>
+    [:octicons-arrow-right-24: Time Zone](data-management/time-zone.md)<br>
+    [:octicons-arrow-right-24: Data Expiration](data-management/ttl.md)
 
 </div>

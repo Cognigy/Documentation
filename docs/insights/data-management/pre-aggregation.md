@@ -1,10 +1,10 @@
 ---
-title: "Data Pre-aggregation"
+title: "Data Pre-Aggregation"
 slug: "data-pre-aggregation"
 hidden: false
 ---
 
-# Data Pre-aggregation
+# Data Pre-Aggregation
 
 {! _includes/insights/new-framework.md !}
 

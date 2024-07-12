@@ -610,9 +610,12 @@ nav:
       - insights/explorers/message.md
     - 🔍 Filter and Sort:
       - insights/global-filters.md
-    - 🗓️ Time Zone and TTL:
-      - insights/time-zone.md
-      - insights/ttl.md
+    - 🗓️ Data Management:
+      - Pre-Aggregation:
+        - insights/data-management/pre-aggregation.md
+        - insights/data-management/time-zone-with-pre-aggregation.md
+      - insights/data-management/time-zone.md
+      - insights/data-management/insights/ttl.md
     - ⬇️ Download Reports:
       - insights/download-reports.md
 

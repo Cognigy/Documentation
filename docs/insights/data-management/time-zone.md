@@ -8,7 +8,6 @@ hidden: false
 
 !!! warning
     This page explains how the Time Zone works before we start migrating to the [new Insights framework](time-zone-with-pre-aggregation.md). If the migration process has not yet started for your organization, this page remains relevant for you.
-    
 
 In Insights, _Time zone_ settings play a crucial role in presenting time-based data accurately to users based on their geographical location.
 By selecting the appropriate time zone, you can view data in your local time, which is essential for accurate data analysis and interpretation.
