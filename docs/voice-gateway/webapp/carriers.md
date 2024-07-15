@@ -64,13 +64,29 @@ To set up the outbound authentication process, follow these steps:
 
 ## SIP Encryption for Outbound Calls
 
-Voice Gateway now supports SIP over TLS encryption for outbound calls, when coupled with the SIP Register for Outbound Authentication. Previously, the encryption for all carriers was done through SIPS by default. In rare cases, SIPS might have caused some compatibility issues. Now the users can choose whether they want SIP, SIP over TLS security layer, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP encryption by default. The existing carriers will retain their SIPS encryption.
+Voice Gateway now supports SIP over TLS encryption for outbound calls. Previously, all carriers were encrypted with SIPS by default. In rare cases, SIPS might have caused some compatibility issues. Now the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP encryption by default. The existing carriers will retain their SIPS encryption.
 
-When selecting an SIP Gateway to be used for outbound calls, tick the Outbound box. This will enable the following options:
+Make sure you have [Outbound Authentication](carriers.md#outbound-authentication) set up first, then follow these steps:
 
-- UDP with a standard SIP encryption.
-- TCP with a standard SIP encryption.
-- TLS with a standard SIP encryption. An additional box for using the SIPS scheme will appear.
-- TLS/SRTP with a standard SIP encryption. This option provides encryption for both the connection and the audio stream. An additional box for using the SIPS scheme will appear. In order to provide yet another layer of security, the pad crypto box will appear. This option, also called as "padding crypto" adds random strings of data to the encrypted voice packets, making them even harder to decrypt.
+1. Open the Cognigy Voice Gateway Self-Service Portal. 
+2. In the left-side menu, select **Carriers**.
+3. Select the carrier you want to use for outbound communication.
+4. Go to SIP Gateways.
+5. Select the gateway you want to use for outbound communication and select the **Outbound** box.
+6. Select from the available netmasks:
 
-The users can test and check their encryption type by triggering an outbound call and downloading the PCAP file from Voice Gateway Self-Service Portal > Recent calls.
+=== "UDP"
+    - SIP over UDP
+=== "TCP"
+    - SIP over TCP
+=== "TLS"
+    - SIP over TLS 
+    - The **Use sips scheme** box will appear. Select this box if you wish to use the SIPS scheme.
+=== "TLS/SRTP"
+    - SIP over TLS/SRTP. This option provides encryption to both the connection and the audio stream. 
+    - The **Use sips scheme** box will appear. Select this box if you wish to use SIPS scheme. 
+    - The **Pad crypto** box will appear. This option adds random strings of data to the encrypted voice packets, making them even harder to decrypt
+
+Click **Save.**
+
+You can test and check the encryption type by triggering an outbound call and downloading the PCAP file from Voice Gateway Self-Service Portal > Recent calls.
