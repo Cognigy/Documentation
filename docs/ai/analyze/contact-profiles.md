@@ -66,7 +66,7 @@ It is also possible to add custom fields to handle organization-specific data.
 1. On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner.
 2. In the **Profile Schema** window, fill in the following fields:
     - **Field Name** — enter a name of the field.
-    - **Internal Name** — enter a system name of the field that can only consist of alphanumeric characters (uppercase and lowercase letters `A-Z`, numbers `0-9`) and underscores (`_`). It is case-insensitive, meaning "NAME123" is considered the same as "name123". The internal name must be unique and should not duplicate internal names of existing parameters.
+    - **Internal Name** — enter a system name of the field that can only consist of alphanumeric characters (uppercase and lowercase letters `A-Z`, numbers `0-9`) and underscores (`_`). It is case-insensitive, meaning `NAME123` is considered the same as `name123`. The internal name must be unique and should not duplicate internal names of existing parameters.
     - **Type** — select a field type:
         - **Text** — for string values. This type allows any combination of characters, including letters, numbers, symbols, and spaces.
         - **Number** — for integers. This type accepts whole numbers (no decimals) within the range of -9,007,199,254,740,991 to 9,007,199,254,740,991. Numbers exceeding this limit cannot be accurately represented in JavaScript.
@@ -126,18 +126,20 @@ You can export individual Contact Profiles as a JSON file.
 1. Open the Cognigy.AI interface.
 2. From the left-side menu, select a Project.
 3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
-4. Select a row from the list to open the Contact Profile for a specific user.
+4. Select a Contact Profile from the list.
 5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Contact**.
 
-The contact will be exported as a JSON file.
+The Contact Profile will be exported as a JSON file.
 
 ### Delete a Contact Profile
 
 1. Open the Cognigy.AI interface.
 2. From the left-side menu, select a Project.
 3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
-4. Select a row from the list to open the Contact Profile for a specific user.
+4. Select a Contact Profile from the list.
 5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete Contact**.
+
+The Contact Profile will be deleted and its data cannot be recovered.
 
 ## Expiration Date for Contact Profiles
 
