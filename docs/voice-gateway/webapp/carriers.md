@@ -81,13 +81,13 @@ Make sure you have [Outbound Authentication](carriers.md#outbound-authentication
     - SIP over TCP
 === "TLS"
     - SIP over TLS 
-    - The **Use sips scheme** box will appear. Select this box if you wish to use the SIPS scheme.
-    - Set the Port to 5061.
+    - The **Use sips scheme** box will appear. Select this box if you wish to use the SIPS scheme
+    - Set the Port to 5061
 === "TLS/SRTP"
-    - SIP over TLS/SRTP. This option provides encryption to both the connection and the audio stream. 
-    - The **Use sips scheme** box will appear. Select this box if you wish to use SIPS scheme. 
+    - SIP over TLS/SRTP. This option provides encryption to both the connection and the audio stream 
+    - The **Use sips scheme** box will appear. Select this box if you wish to use SIPS scheme
     - The **Pad crypto** box will appear. This option adds random strings of data to the encrypted voice packets, making them even harder to decrypt
-    - Set the Port to 5061.
+    - Set the Port to 5061
 
 Click **Save.**
 
