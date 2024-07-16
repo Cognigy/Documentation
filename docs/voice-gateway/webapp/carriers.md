@@ -71,7 +71,7 @@ Make sure you have [Outbound Authentication](carriers.md#outbound-authentication
 1. Open the Cognigy Voice Gateway Self-Service Portal. 
 2. In the left-side menu, select **Carriers**.
 3. Select the carrier you want to use for outbound communication.
-4. Go to SIP Gateways.
+4. Go to the SIP Gateways section.
 5. Select the gateway you want to use for outbound communication and select the **Outbound** box.
 6. Select from the available netmasks:
 
