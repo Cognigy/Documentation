@@ -6,7 +6,7 @@ hidden: false
 
 # Carriers
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.69-blue.svg)](../../release-notes/4.69.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
 
 *Carriers* allow you to connect your SIP Trunk with Voice Gateway. 
 
@@ -60,11 +60,9 @@ To set up the outbound authentication process, follow these steps:
 10. Click **Save**. 
 11. At the top of the **Edit carrier** page, check whether the connection is established. If the registration is successful, you will see the Register status `200` and a `.pcap` file.
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
-
 ## SIP Encryption for Outbound Calls
 
-Voice Gateway now supports SIP over TLS encryption for outbound calls. Previously, all carriers were encrypted with SIPS by default. In rare cases, SIPS might have caused some compatibility issues. Now the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP encryption by default. The existing carriers will retain their SIPS encryption.
+Starting from version [4.80](../../release-notes/4.80.md), Voice Gateway supports SIP over TLS encryption for outbound calls. Previously, all connections were encrypted with SIPS by default. In rare cases, SIPS might have caused some compatibility issues. Now the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
 
 Make sure you have [Outbound Authentication](carriers.md#outbound-authentication) set up first, then follow these steps:
 
@@ -72,23 +70,26 @@ Make sure you have [Outbound Authentication](carriers.md#outbound-authentication
 2. In the left-side menu, select **Carriers**.
 3. Select the carrier you want to use for outbound communication.
 4. Go to the SIP Gateways section.
-5. Select the gateway you want to use for outbound communication and select the **Outbound** box.
-6. Select from the available netmasks:
+5. Select an existing gateway you want to use for outbound communication or create a new one by clicking <img src="../../_assets/voice-gateway/VG_plus_button.png" alt="the plus button">. 
+6. Enter the Network Address.
+7. Enter the Port number. The assigned Port is 5060 by default. For TLS connections, the Port should be 5061.
+8. Select the **Outbound** setting.
+9. Select from the available netmasks:
 
 === "UDP"
-    - SIP over UDP
+    - SIP over UDP. UDP doesn't require an established connection or authentication to send information. It's most suitable for video or audio streaming.
 === "TCP"
-    - SIP over TCP
+    - SIP over TCP. TCP requires a connection between the sender and the receiver. It's the most commonly used Internet protocol, facilitating e-mails, messaging and file transfer, among others.
 === "TLS"
-    - SIP over TLS 
-    - The **Use sips scheme** box will appear. Select this box if you wish to use the SIPS scheme
-    - Set the Port to 5061
+    - SIP over TLS. TLS is a security protocol designed to work with TCP. It prevents third party eavesdropping and tampering with communication. The most common use for TLS is the HTTPS encryption.
+    - The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+    - Set the Port to 5061.
 === "TLS/SRTP"
-    - SIP over TLS/SRTP. This option provides encryption to both the connection and the audio stream 
-    - The **Use sips scheme** box will appear. Select this box if you wish to use SIPS scheme
-    - The **Pad crypto** box will appear. This option adds random strings of data to the encrypted voice packets, making them even harder to decrypt
-    - Set the Port to 5061
+    - SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. 
+    - The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+    - The **Pad crypto** setting will appear. This option adds random strings of data to the encrypted voice packets, making them even harder to decrypt. Padding may make traffic analysis harder, as it obscures the actual size of the voice packets.
+    - Set the Port to 5061.
 
 Click **Save.**
 
-You can test and check the encryption type by triggering an outbound call and downloading the PCAP file from Voice Gateway Self-Service Portal > Recent calls.
+Test the connection and check the encryption type by making an outbound call and downloading the PCAP file from the Voice Gateway Self-Service Portal > Recent calls.
