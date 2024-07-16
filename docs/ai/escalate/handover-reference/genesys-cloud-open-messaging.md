@@ -189,7 +189,10 @@ Forwarding messages to the end user can be helpful in the following use cases:
 - to provide the end user with updates and transparency throughout the interaction.
 - to allow the end user to make informed decisions while waiting for a human agent, such as requesting a callback.
 
-Genesys Inbound Flow is responsible for message configuration. For example, to allow users to see their queue position, you'd first need to configure a Queue Message Flow in Genesys.
+The Genesys Inbound flow is responsible for message configuration.
+However, if you want to use additional logic,
+such as allowing end users to see their queue position,
+set up the [In-Queue Message flow](https://help.mypurecloud.com/articles/work-with-in-queue-flows/) in Genesys in addition to the Genesys Inbound flow.
 
 Cognigy.AI is responsible for message roting logic. Follow the instructions to configure this logic:
 
