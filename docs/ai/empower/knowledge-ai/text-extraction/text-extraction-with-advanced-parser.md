@@ -7,7 +7,7 @@ hidden: false
 
 # Text Extraction with the Advanced Parser
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80blue.svg)](../../../../release-notes/4.80.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
 
 !!! note
 	By using this feature, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
