@@ -90,7 +90,7 @@ _**Conversation**_
 For more information about billed conversations, read the [Billing](administer/billing.md) documentation.
 
 _**Conversational AI**_
-: A technology that enables computers to interact with humans in natural language. It includes chatbots, virtual assistants, and other interfaces that understand and respond to user queries. This technology uses AI and natural language processing to simulate human-like conversations and is used in various industries for tasks like customer service and information retrieval.
+: A technology that enables computers to interact with humans in natural language. It includes chatbots, virtual assistants, and other interfaces that understand and respond to user queries. This technology uses AI and natural language processing to simulate humanlike conversations and is used in various industries for tasks like customer service and information retrieval.
 
 ## E
 
@@ -180,7 +180,7 @@ For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#k
 ## L
 
 _**Large Language Model (LLM)**_
-: A specific type of Generative AI model that is designed for generating human-like text based on the input and context provided.
+: A specific type of Generative AI model that is designed for generating humanlike text based on the input and context provided.
 With LLMs, Cognigy virtual agents can understand and respond to user input in a natural way.
 LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
 For more information, read the [Large Language Models (LLMs)](empower/llms.md) documentation.
