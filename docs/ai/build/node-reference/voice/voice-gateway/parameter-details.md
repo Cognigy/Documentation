@@ -63,9 +63,12 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
 
-Users can use Barge In to interrupt the Voice Gateway AI Agent with their speech, or by using DTMF digits. Barge In can be useful when the voice AI Agent's response is long and the customer wants to continue to the next stage of the call. When using the Cognigy AI Flows and Voice Gateway, the Barge In set in the Set Session Config Node retains its setting for the remainder of the conversation.
+Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
 
-Previously, in the event of a Handover to a contact center, Barge In was always enabled. Barge In will now retain its setting within the Set Session Config Node when working with a contact center and a Text-To-Speech engine, such as the Genesys Cloud Messaging. This way, customers can't use Barge In to skip, for example, important legal information such as the GDPR.
+Before release 4.80, this feature could not be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
+
+Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
+This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
 
 When using Barge In in the event of a Handover, make sure the Set Session Config is placed above the Handover to Agent Node.
 
