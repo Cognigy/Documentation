@@ -65,10 +65,10 @@ The following audio codecs are supported:
 - P-Asserted-Identity header to identify caller.
 - Receiving compact SIP headers.
 - Receiving re-INVITE with no Session Description Protocol (SDP).
-- Answering machine detection.
+- [Answering machine detection](./references/verbs/amd.md).
 - Configurable music on hold.
-- Configurable Atmosphere Sounds playing in the background of the conversation.
-- Configurable Silence Overlay playing background sounds when there's a long pause in a call.
+- Configurable [Atmosphere Sounds](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#atmosphere-sounds) playing in the background of the conversation.
+- Configurable [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#silence-overlay) playing background sounds when there's a long pause in a call.
 
 ### Call Management
 
@@ -79,10 +79,11 @@ The following audio codecs are supported:
 
 - [Many speech providers](../voice-gateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
 - [Fallback speech configuration](../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor) if the primary vendor fails.
+- Some [STT and TTS providers](./references/tts-and-stt-vendors.md) can be installed [on-premises](./webapp/speech-services.md#on-premises-speech-services).
 
 ### Call Recording and Storage
 
-- Call recording via integration with a third-party SIPREC server.
+- [Call recording](./webapp/recent-calls.md#call-recordings) via integration with a third-party SIPREC server.
 - Pausing or resuming transcription and recording to avoid the collection of Personally Identifiable Information (PII).
 - Call recording with no third-party components, [recordings streamed to the preferred cloud storage](../voice-gateway/webapp/recent-calls.md#call-recordings).
 
@@ -91,6 +92,7 @@ The following audio codecs are supported:
 - Observability features include [tracing call events with open telemetry](webapp/recent-calls.md#call-tracing).
 - Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTS and STT) on each call.
 - [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
+- Sending real-time audio streams to an external server over a WebSocket connection with the [listen](./references/verbs/listen.md) verb.
 
 ## Technical Support
 
