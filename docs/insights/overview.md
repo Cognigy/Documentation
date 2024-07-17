@@ -15,12 +15,12 @@ Insights features a range of key metrics, helping you to understand the usage an
 
 Cognigy.AI provides two data analysis solutions catering to different preferences:
 
-- **Cognigy OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports. For more information about the OData Endpoint, read the [Cognigy.AI: OData Analytics Endpoint](../ai/analyze/odata.md) documentation.
+- **Cognigy.AI OData Endpoint**. Allows access to raw data through APIs and is highly customizable, making it suitable for integration with BI tools and creating custom reports. For more information about the OData endpoint, read the [Cognigy.AI: OData Analytics Endpoint](../ai/analyze/odata.md) documentation.
 - **Cognigy Insights**. Offers user-friendly pre-built dashboards and tools for quick data analysis and visualization without requiring extensive technical expertise.
 
 The comparison of the OData Endpoint and Insights is outlined in the table.
 
-| Feature             | Cognigy OData Endpoint                                                                                   | Cognigy Insights                                                                     |
+| Feature             | Cognigy.AI OData Endpoint                                                                                | Cognigy Insights                                                                     |
 |---------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | Purpose             | Provides access to raw data                                                                              | Analyzes and visualizes raw data                                                     |
 | Data Type           | Raw data (structured format)                                                                             | Processed data (visualizations, reports)                                             |

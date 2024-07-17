@@ -6,17 +6,101 @@ hidden: false
 
 # AI Copilot Configuration
 
-The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid. This functionality provides full flexibility to use the AI Copilot Workspace as efficiently as possible.
+The AI Copilot configuration refers to the size and position of widgets in your grid. The AI Copilot workspace can be customized to display various types of content, including HTML, adaptive cards, or iframes. This customization enables human agents to quickly access important data, such as user profiles or ticket information related to the user's issue, without needing to spend additional time searching the knowledge database.
 
-The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid, you can choose the best placement for specific types of widgets.
+AI Copilot comes with a default, pre-configured grid, which you can modify by using the Copilot: Set Grid Node. Alternatively, the AI Copilot configuration can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and can serve as a template if selected from the Copilot Config within the Endpoint settings.
 
-The AI Copilot configurations can be created, modified, and deleted **only** using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs).
+## AI Copilot Grid
 
-## Grid
+The AI Copilot workspace is based on a fully customizable grid layout, where widgets can be added to display different information. 
 
-The AI Copilot workspace is based on a customizable grid layout where widgets can be added to display different information. 
+The grid gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
 
-The grid is fully customizable and gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
+You can edit the grid in the following ways:
+
+- Use the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
+- Create a custom grid in the [AI Copilot API](#optional-create-a-custom-default-grid-from-the-api).
+
+### (Optional) Create a Custom Grid via the API
+
+If you want to create a new AI Copilot Config template instead of using the default one, you can do so in the API.
+
+#### Create an API Key
+
+1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
+2. In the **API Keys** section, click **+**.
+3. Add an API key name and click **Confirm**. The API key will appear in the list.
+4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
+5. Paste the API Key to the following fields:
+    - API Key (X-API-Key)
+    - API Key (api_key)
+6. Click **Set** near both fields.
+7. Go to your Project in Cognigy.AI.
+8. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`. 
+9. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
+10. Add the Project ID you copied earlier to the `projectId` field in the JSON body of the request.
+11. Check your connection by clicking **Try**.
+
+When the request is created, you will see the response code `201`.
+
+#### Create a Custom Grid using the API Post Request
+
+To create your custom AI Copilot Config Grid with the API, follow these steps:
+
+1. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
+2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
+3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
+4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Project.
+
+   ```json
+   {
+      "name": "AI Copilot Config sample",
+      "description": "A sample configuration for AI Copilot showcasing the layout of tiles",
+      "config": {
+         "grid": {
+            "columns": 3,
+            "rows": 8,
+            "gap": 10
+         },
+         "tiles": {
+            "identity-assist": {
+               "x": 1,
+               "y": 1,
+               "rows": 4,
+               "columns": 1
+            },
+            "transcript-assist": {
+               "x": 2,
+               "y": 1,
+               "rows": 2,
+               "columns": 2
+            },
+            "next-action": {
+               "x": 2,
+               "y": 3,
+               "rows": 2,
+               "columns": 2
+            },
+            "knowledge-assist": {
+               "x": 2,
+               "y": 5,
+               "rows": 4,
+               "columns": 2
+            },
+            "event-assist": {
+               "x": 1,
+               "y": 5,
+               "rows": 4,
+               "columns": 1
+            }
+         }
+      },
+      "projectId": "your-project-id"
+   }
+   ```
+5. Create the request by clicking **Try**.
+
+When the request is created, you will see the response code `201`.
 
 ## Tile ID
 

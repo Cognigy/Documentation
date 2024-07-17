@@ -14,9 +14,11 @@ hidden: false
 
 ## Description
 
-This Node updates the existing AI Copilot workspace grid in the AI Copilot Configuration that you created via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs). Additionally, you can use this Node to preview the grid before making this request.
+The Copilot: Set Grid Node updates the existing AI Copilot workspace grid in the AI Copilot Configuration, created via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs). Additionally, this Node can be used instead of the AI Copilot Configuration to preview, edit, and modify the grid.
 
-Multiple nodes can be utilized within a single AI Copilot Flow, enabling you to modify the grid according to your specific requirements.
+To edit the grid configuration, open the Node Editor and modify the default Copilot Grid Configuration in JSON, then check the preview below to confirm the configuration is correct.
+
+Multiple Nodes can be utilized within a single AI Copilot Flow, enabling you to modify the grid according to your specific requirements.
 
 ## Settings
 
