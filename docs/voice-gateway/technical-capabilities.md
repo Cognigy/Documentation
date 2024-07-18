@@ -65,7 +65,7 @@ The following audio codecs are supported:
 - P-Asserted-Identity header to identify caller.
 - Receiving compact SIP headers.
 - Receiving re-INVITE with no Session Description Protocol (SDP).
-- [Answering machine detection](./references/verbs/amd.md).
+- [Answering machine detection](references/verbs/amd.md).
 - Configurable music on hold.
 - Configurable [Atmosphere Sounds](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#atmosphere-sounds) playing in the background of the conversation.
 - Configurable [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#silence-overlay) playing background sounds when there's a long pause in a call.
@@ -83,7 +83,7 @@ The following audio codecs are supported:
 
 ### Call Recording and Storage
 
-- [Call recording](./webapp/recent-calls.md#call-recordings) via integration with a third-party SIPREC server.
+- [Call recording](webapp/recent-calls.md#call-recordings) via integration with a third-party SIPREC server.
 - Pausing or resuming transcription and recording to avoid the collection of Personally Identifiable Information (PII).
 - Call recording with no third-party components, [recordings streamed to the preferred cloud storage](../voice-gateway/webapp/recent-calls.md#call-recordings).
 
