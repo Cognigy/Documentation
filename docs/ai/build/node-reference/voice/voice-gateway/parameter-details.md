@@ -71,13 +71,10 @@ Barge In enables the interruption of the virtual agent.
 
 ### User Input Timeout
 
-This feature defines what should happen when there is no input from the customer.
-
-Befort the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the added slider parameter.
+Defines what should happen when there is no input from the user.
 
 | Parameter             | Type     | Description                                                                                              |
 |-----------------------|----------|----------------------------------------------------------------------------------------------------------|
-| 
 | User No Input Mode    | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                     |
 | User No Input Timeout | Number   | Defines the timeout for user input in ms.                                                                |
 | User No Input Retries | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call. |
