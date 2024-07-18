@@ -49,7 +49,7 @@ When Cognigy detects one of these tokens, it promptly flushes the token buffer i
 To enable this mode, go to the [Storage & Streaming Options](#storage-and-streaming-options) section.
 
 Within this mode, you can use [Stream Buffer Flush Overrides](#storage-and-streaming-options) to decide when not to flush the stream buffer using specific regex patterns. 
-You can select preconfigured overrides or set additional ones.
+You can work with preconfigured overrides or set additional ones.
 
 The preconfigured overrides are listed in the table.
 
