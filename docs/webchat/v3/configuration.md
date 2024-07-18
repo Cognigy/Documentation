@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.78(beta)-purple.svg)](../../release-notes/4.78.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.81(beta)-purple.svg)](../../release-notes/4.81.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -226,7 +226,7 @@ You can customize the title of the Chat Options screen to personalize user exper
 | Parameter           | Description                                                                                                                                                                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Chat Options | This parameter activates additional interactive features like Quick Replies, Conversation Rating, and Footer within the chat interface, broadening users' communication and feedback options for a richer interaction with the virtual agent. |
-| Title               | This parameter lets you customize the title of the Chat Options screen. By default, the title is `Chat options`.                                                                                                                              |
+| Chat Options Title  | This parameter lets you customize the title of the Chat Options screen. By default, the title is `Chat options`.                                                                                                                              |
 
 #### Quick Replies
 
@@ -241,7 +241,14 @@ The Quick Replies settings improve chat interactions with pre-defined response o
 | Postback Value              | This parameter determines the specific value or message that will be automatically sent to the Flow when the user clicks on a Quick Reply. This predefined response initiates a particular conversation flow with the virtual agent, facilitating a direct, guided, and efficient user interaction based on the selected prompt. |
 | URL                         | This parameter defines the specific URL that users will be directed to when selecting a Quick Reply. It can guide users to relevant webpages or resources, enhancing their experience by providing immediate access to needed information.                                                                                       |
 | Add                         | This parameter enables you to include more Quick Replies in your list, with a maximum limit of 5 Quick Replies.                                                                                                                                                                                                                  |
-| TTS toggle label            | This parameter appears if the **Show text-to-speech** toggle is activated. It enables you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to **Enable text-to-speech**.                                                                                       |
+
+#### Text-to-Speech
+
+| Parameter                      | Description                                                                                                                                                                                                                                                                                                                                                                     |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Show text-to-speech toggle     | This parameter lets you activate the text-to-speech feature, enabling AI Agent to speak its messages aloud. By default, this parameter is inactive. By enabling this parameter, you give users the option to choose whether to activate text-to-speech. Note that the text-to-speech feature uses the Browser API, so the available voices depend on the OS and browser vendor. |
+| TTS toggle label               | This parameter appears if the **Show text-to-speech** toggle is activated. The parameter enables you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to **Enable text-to-speech**.                                                                                                                           |
+| Activate TTS toggle by default | This parameter appears if the **Show text-to-speech** toggle is activated. The parameter lets you make the setting active by default, but end users can still turn it off.                                                                                                                                                                                                      |
 
 #### Conversation Rating
 
