@@ -70,7 +70,7 @@ Before release 4.80, this feature could not be controlled when the call was tran
 Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
 This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
 
-When using Barge In in the event of a Handover, make sure the Set Session Config is placed above the Handover to Agent Node.
+To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
 
 | Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
