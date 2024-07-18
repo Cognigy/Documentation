@@ -63,15 +63,15 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
 
+!!! Warning
+    Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
+
 Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
 
 Before release 4.80, this feature could not be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
 
 Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
 This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
-
-!!! Warning
-    Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) vendor to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
 
 To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
 
