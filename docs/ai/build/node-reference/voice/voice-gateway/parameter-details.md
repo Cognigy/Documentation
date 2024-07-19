@@ -71,16 +71,19 @@ Barge In enables the interruption of the virtual agent.
 
 ### User Input Timeout
 
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
+
 This feature defines what should happen when there is no input from the customer.
 
-Before the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. When the User Input Timeout is disabled, the voice AI Agent will wait for the callers response.
+Before the release [4.81](../../../../../release-notes/4.81.md), User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release [4.81](../../../../../release-notes/4.81.md) users can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. When the User Input Timeout is disabled, the voice AI Agent will wait for the caller's response.
 
-| Parameter                    | Type     | Description                                                                                                                                 |
-|------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout option. The default value is disabled. By switching this toggle, the parameters below appear. |
-| User No Input Mode           | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                                                        |
-| User No Input Timeout        | Number   | Defines the timeout for user input in ms.                                                                                                   |
-| User No Input Retries        | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call.                                    |
+| Parameter                    | Type     | Description                                                                                                                                                          |
+|------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout option. User No Input Timeout is disabled by default. By switching this toggle, the parameters below become available. |
+| User No Input Mode           | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                                                                                 |
+| User No Input Timeout        | Number   | Defines the timeout for user input in ms.                                                                                                                            |
+| User No Input Retries        | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call.                                                             |
 
 ### DTMF
 
