@@ -59,3 +59,8 @@ The full set of configuration parameters:
 | record.recordingID         | The user-supplied string to identify the recording.                                                                                                                                                                                                                                     | No                                         |
 | sipRequestWithinDialogHook | An object or string. A webhook to call when a SIP request is received within the dialog. For example: `INFO`, `NOTIFY`, or `REFER`.                                                                                                                                                     | No                                         |
 | synthesizer                | Change the session-level default text-to-speech settings. See the [`say`](say.md) verb for details on the `synthesizer` property.                                                                                                                                                       | No                                         |
+
+# More Information
+
+- The [Listen](listen.md) verb
+- The [Gather](gather.md) verb

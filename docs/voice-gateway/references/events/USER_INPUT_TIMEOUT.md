@@ -36,3 +36,7 @@ Payload:
   "event": "USER_INPUT_TIMEOUT"
 }
 ```
+
+# More Information
+
+- [User Input Timeout](../../../ai/build/node-reference/voice/voice-gateway/parameter-details.md#user-input-timeout)
