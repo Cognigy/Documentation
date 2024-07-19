@@ -73,13 +73,14 @@ Barge In enables the interruption of the virtual agent.
 
 This feature defines what should happen when there is no input from the customer.
 
-Before the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the added slider parameter
+Before the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. With the User Input Timeout disabled, the voice AI Agent will wait for the callers response.
 
-| Parameter             | Type     | Description                                                                                              |
-|-----------------------|----------|----------------------------------------------------------------------------------------------------------|
-| User No Input Mode    | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                     |
-| User No Input Timeout | Number   | Defines the timeout for user input in ms.                                                                |
-| User No Input Retries | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call. |
+| Parameter                    | Type     | Description                                                                                                                                 |
+|------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout option. The default value is disabled. By switching this toggle, the parameters below appear. |
+| User No Input Mode           | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                                                        |
+| User No Input Timeout        | Number   | Defines the timeout for user input in ms.                                                                                                   |
+| User No Input Retries        | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call.                                    |
 
 ### DTMF
 
@@ -112,12 +113,12 @@ Playing a background MP3 track during the conversation with AI Agents makes it m
 
 The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
-| Parameter | Type     | Description                                                                                                                                                                                                                                                                                                   |
-|-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                      |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                             |
-| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                                                                                                                   |
-| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud, nor too quiet.    |
+| Parameter | Type     | Description                                                                                                                                                                                                                                                                                                |
+|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                   |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                          |
+| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                                                                                                                |
+| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud, nor too quiet. |
 
 ### Silence Overlay
 
