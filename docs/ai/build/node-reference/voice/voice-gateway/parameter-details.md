@@ -61,13 +61,25 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 ### Barge In
 
-Barge In enables the interruption of the virtual agent.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
 
-| Parameter              | Type   | Description                                                                                                 |
-|------------------------|--------|-------------------------------------------------------------------------------------------------------------|
-| Barge In On Speech     | Toggle | Enables interrupting the virtual agent with speech.                                                         |
-| Barge In On DTMF       | Toggle | Enables interrupting the virtual agent with DTMF digits.                                                    |
-| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in. |
+!!! Warning
+    Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
+
+Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
+
+Before release 4.80, this feature could not be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
+
+Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
+This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
+
+To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
+
+| Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                     |
+|------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation.                             |
+| Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation. |
+| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in.                                                                                                                                                                                                                                                     |
 
 ### User Input Timeout
 
@@ -108,7 +120,7 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
 
-The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
+The track plays during the conversation with the AI Agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
 | Parameter | Type     | Description                                                                                                                                                                                                                                                                                                   |
 |-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
