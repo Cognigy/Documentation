@@ -73,7 +73,7 @@ Barge In enables the interruption of the virtual agent.
 
 This feature defines what should happen when there is no input from the customer.
 
-Before the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. With the User Input Timeout disabled, the voice AI Agent will wait for the callers response.
+Before the release 4.81, User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release 4.81 you can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. When the User Input Timeout is disabled, the voice AI Agent will wait for the callers response.
 
 | Parameter                    | Type     | Description                                                                                                                                 |
 |------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
