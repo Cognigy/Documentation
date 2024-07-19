@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.78(beta)-purple.svg)](../../release-notes/4.78.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.81(beta)-purple.svg)](../../release-notes/4.81.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -75,7 +75,10 @@ To configure the teaser message, refer to the [Teaser Message](configuration.md#
 
 ## Chat Options
 
-Enabling Chat Options unlocks additional interactive capabilities within the chat interface, such as Quick Replies for streamlined responses, Conversation Rating for user feedback, and a customizable Footer for further information. This collective enhancement of features under the Chat Options settings enriches the engagement by offering users more ways to interact and provide feedback, ultimately elevating the overall chat experience.
+Enabling Chat Options unlocks additional interactive capabilities within the chat interface,
+such as Quick Replies for streamlined responses, Conversation Rating for user feedback, text-to-speech options, and a customizable Footer for further information.
+This collective enhancement of features under the Chat Options settings enriches the engagement
+by offering users more ways to interact and give feedback, elevating the overall chat experience.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/chat-options.png" width="100%" />
@@ -89,9 +92,17 @@ The Quick Replies feature at the top of the Chat Option screen simplifies intera
 
 To configure the quick replies, refer to the [Quick Replies](configuration.md#quick-replies) settings.
 
+### Text-to-Speech
+
+The Text-to-Speech feature on the Chat Options screen is helpful for users who prefer or require listening over reading. 
+The feature enables the chat AI Agent to speak messages aloud. 
+Users can choose whether to use this option, allowing them to tailor their chat experience to their preferences.
+
+To configure the text-to-speech feature, refer to the [Text-to-Speech](configuration.md#text-to-speech) settings.
+
 ### Conversation Rating
 
-The Conversation Rating feature in chat options allows users to rate and provide feedback on their chat experience, crucial for improving assistant performance. It offers customizable settings including the invitation to rate, placeholder for comments, submit button text, and a confirmation banner message. This streamlined feedback mechanism engages users directly, making it easier to gather and act on valuable user insights.
+The Conversation Rating feature on the Chat Options screen allows users to rate and give feedback on their chat experience, crucial for improving assistant performance. It offers customizable settings including the invitation to rate, placeholder for comments, submit button text, and a confirmation banner message. This streamlined feedback mechanism engages users directly, making it easier to gather and act on valuable user insights.
 
 To configure the conversation rating, refer to the [Conversation Rating](configuration.md#conversation-rating) settings.
 
