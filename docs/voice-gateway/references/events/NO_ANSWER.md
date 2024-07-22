@@ -32,4 +32,4 @@ Payload:
 
 ## More Information
 
-- [hangup](../verbs/hangup.md)
+- [Hangup](../verbs/hangup.md)
