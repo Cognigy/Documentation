@@ -80,10 +80,10 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 
 | Parameter                    | Type     | Description                                                                                                                                                          |
 |------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout option. User No Input Timeout is disabled by default. By switching this toggle, the parameters below become available. |
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is inactive by default. By switching this toggle, the parameters below become available. |
 | User No Input Mode           | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                                                                                 |
-| User No Input Timeout        | Number   | Defines the timeout for user input in ms.                                                                                                                            |
-| User No Input Retries        | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call.                                                             |
+| User No Input Timeout        | Number   | Defines the timeout duration for user input, specified in milliseconds (ms).                                                                                                                          |
+| User No Input Retries        | Number   | Defines how often the voice AI Agent should retry to get an input from a user before completing the call.                                                             |
 
 ### DTMF
 
