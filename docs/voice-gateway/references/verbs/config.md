@@ -60,7 +60,7 @@ The full set of configuration parameters:
 | sipRequestWithinDialogHook | An object or string. A webhook to call when a SIP request is received within the dialog. For example: `INFO`, `NOTIFY`, or `REFER`.                                                                                                                                                     | No                                         |
 | synthesizer                | Change the session-level default text-to-speech settings. See the [`say`](say.md) verb for details on the `synthesizer` property.                                                                                                                                                       | No                                         |
 
-# More Information
+## More Information
 
-- The [Listen](listen.md) verb
-- The [Gather](gather.md) verb
+- [Listen](listen.md)
+- [Gather](gather.md)

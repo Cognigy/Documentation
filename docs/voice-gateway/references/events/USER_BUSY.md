@@ -33,3 +33,6 @@ Payload:
   "event": "USER_BUSY"
 }
 ```
+## More Information
+
+- [Hangup](../verbs/hangup.md)

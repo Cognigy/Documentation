@@ -83,6 +83,6 @@ Multiple events can occur during a single call. For example, on a call to an ans
 
 You can use Answering Machine Detection for incoming calls by adding an `amd` property in a [`config`](config.md) verb. It can be useful in situations where Voice Gateway is located behind a dialer. In these cases, the dialer initiates the outbound call and then links it to Voice Gateway via an `INVITE` request.
 
-# More information
+## More information
 
-- the [ANSWERING_MACHINE_DETECTION](../events/ANSWERING_MACHINE_DETECTION.md) event
+- [ANSWERING_MACHINE_DETECTION](../events/ANSWERING_MACHINE_DETECTION.md)

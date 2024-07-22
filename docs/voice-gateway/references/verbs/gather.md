@@ -78,8 +78,8 @@ In the case of digits input, the payload includes a `digits` property indicating
 "digits": "0276"
 ```
 
-# More Information
+## More Information
 
-- [Recognized DTMF](../events/RECOGNIZED_DTMF.md) event
-- [Recognized Speech](../events/RECOGNIZED_SPEECH.md) event
-- [User Input Timeout](../events/USER_INPUT_TIMEOUT.md) event
+- [RECOGNIZED_DTMF](../events/RECOGNIZED_DTMF.md)
+- [RECOGNIZED_SPEECH](../events/RECOGNIZED_SPEECH.md)
+- [USER_INPUT_TIMEOUT](../events/USER_INPUT_TIMEOUT.md)

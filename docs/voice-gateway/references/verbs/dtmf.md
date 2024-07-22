@@ -25,6 +25,6 @@ The full set of configuration parameters:
 | dtmf      | A string containing a sequence of DTMF digits (`0-9`, `*`, `#`).      | Yes      |
 | duration  | The length of each digit in milliseconds. The default value is `500`. | No       |
 
-# More Information
+## More Information
 
-- The [RECOGNIZED_DTMF](../events/RECOGNIZED_DTMF.md) event
+- [RECOGNIZED_DTMF](../events/RECOGNIZED_DTMF.md)
