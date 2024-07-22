@@ -74,16 +74,16 @@ Barge In enables the interruption of the virtual agent.
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
 
-This feature defines what should happen when there is no input from the customer.
+This feature defines what should happen when there is no input from the user.
 
-Before the release [4.81](../../../../../release-notes/4.81.md), User Input Timeout was always enabled and the users had to determine the number of miliseconds before timeout ocurred. Starting from release [4.81](../../../../../release-notes/4.81.md) users can enable or disable User Input Timeout with the toggle parameter. This prevents the voice AI Agent from ending the call prematurely, because the caller took too long to respond. When the User Input Timeout is disabled, the voice AI Agent will wait for the caller's response.
+Before the release [4.81](../../../../../release-notes/4.81.md), User Input Timeout was always enabled and the users had to determine the number of milliseconds before timeout occurred. Starting from release [4.81](../../../../../release-notes/4.81.md), users can enable or disable User Input Timeout with the toggle. This setting keeps the voice AI Agent on the call even if the caller takes a while to answer. When the User Input Timeout is disabled, the voice AI Agent will wait for the caller's response.
 
-| Parameter                    | Type     | Description                                                                                                                                                          |
-|------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is inactive by default. By switching this toggle, the parameters below become available. |
-| User No Input Mode           | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                                                                                 |
-| User No Input Timeout        | Number   | Defines the timeout duration for user input, specified in milliseconds (ms).                                                                                                                          |
-| User No Input Retries        | Number   | Defines how often the voice AI Agent should retry to get an input from a user before completing the call.                                                             |
+| Parameter                    | Type     | Description                                                                                                                                                                                    |
+|------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is inactive by default.                                                                                                |
+| User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the virtual agent in time.                      |
+| User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
+| User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
 
 ### DTMF
 
