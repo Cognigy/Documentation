@@ -68,18 +68,18 @@ Voice Gateway supports various methods of encryption for outbound calls:
 - **SIPS**: SIPS is a URI scheme specifically designed for secure SIP communication. It indicates that the SIP signaling should be encrypted with TLS from the start. SIPS is simpler to set up as it's a dedicated scheme for secure SIP, but it might require more specific client and server configurations.
 - **Crypto padding**: serves as an additional security layer when using SIP over TLS/SRTP. The **Pad crypto** option adds random strings of data to the encrypted voice packets, making them even harder to decrypt. Padding may make traffic analysis harder, as it obscures the actual size of the voice packets.
 
-Previously, all connections were encrypted with SIPS by default. Starting from release [4.80](../../release-notes/4.80.md), the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
+Before 4.80 release, all connections were encrypted with SIPS by default. Starting from release [4.80](../../release-notes/4.80.md), the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
 
 To set up an SIP encryption, follow these steps:
 
 1. Open the Cognigy Voice Gateway Self-Service Portal. 
 2. In the left-side menu, select **Carriers**.
 3. Select the carrier you want to use for outbound communication.
-4. Go to the SIP Gateways section.
+4. Go to the **SIP Gateways** section.
 5. Select an existing gateway you want to use for outbound communication or create a new one by clicking <img src="../../_assets/voice-gateway/VG_plus_button.svg" alt="the plus button">. 
 6. Enter the Network Address.
 7. Enter the Port number. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
-8. Select the **Outbound** setting.
+8. Select the **Outbound** option.
 9. Select from the available netmasks:
 
 === "UDP"
@@ -96,4 +96,4 @@ To set up an SIP encryption, follow these steps:
 
 Click **Save.**
 
-To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in Recent Calls > Outbound Call > Details.
+To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in **Recent Calls > Outbound Call > Details**.
