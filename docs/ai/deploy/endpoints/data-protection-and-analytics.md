@@ -86,6 +86,16 @@ We will replace the following properties:
 
 Defines whether we should store conversation histories in contact profiles for end-users.
 
+## Enable Input Sanitization
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../../release-notes/4.81.md)
+
+Activates server-side input sanitization.
+It occurs on the web server after the data has been sent from the user's browser. 
+This process involves validating and cleaning the data on the server to make sure the data is safe and complies with the expected format.
+
+If this setting is enabled, input texts will be cleaned of potentially harmful HTML after being processed by the [Input Transformer](transformers/input-transformer.md).
+
 ## External Analytics Services
 
 You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.
