@@ -89,20 +89,20 @@ Any **deviations** from the default values for our Trial and App environments ar
 !!! note
     If you have on-premises Cognigy.AI environment, you can set TTL values system-wide via the Config Map and/or organization-wide via [Management UI](../administer/access/management-ui.md).
 
-| Description                                                                              | Default value |
-|------------------------------------------------------------------------------------------|---------------|
-| **Logs**                                                                                 |               |
-| Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |
-| **Sessions**                                                                             |               |
-| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |
-| **Data**                                                                                 |               |
-| Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |
-| Maximum time until Conversation transcripts will be removed                              | 30 days       |
-| **Intent Trainer Records**                                                               |               |
-| Maximum time Intent Trainer records are stored in the database                           | 30 days       |
-| **Audit Events**                                                                         |               |
-| Maximum time until audit events will be removed                                          | 30 days       |
-| **xApp Session**                                                                         |               |
-| Maximum time until an xApp Session will be expired                                       | 30 days       |
+| Description                                                                              | Default value | App          |
+|------------------------------------------------------------------------------------------|---------------|--------------|
+| **Logs**                                                                                 |               |              |
+| Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |              |
+| **Sessions**                                                                             |               |              |
+| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |              |
+| **Data**                                                                                 |               |              |
+| Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |              |
+| Maximum time until Conversation transcripts will be removed                              | 30 days       |              |
+| **Intent Trainer Records**                                                               |               |              |
+| Maximum time Intent Trainer records are stored in the database                           | 30 days       | 10 days[^**] |
+| **Audit Events**                                                                         |               |              |
+| Maximum time until audit events will be removed                                          | 30 days       |              |
+| **xApp Session**                                                                         |               |              |
+| Maximum time until an xApp Session will be expired                                       | 30 days       |              | 
 
- 
+[^**]: The limit applies to shared SaaS customers in the EU, US, and UK regions.
