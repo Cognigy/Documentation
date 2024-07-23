@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Configuration"
+title: "Overview"
 slug: "configuration"
 description: "To prepare the Cognigy virtual agent for your website, you need to deploy it by creating a Webchat v3 Endpoint and customize the agent to fit your needs using the Webchat v3 Endpoint settings."
 hidden: false
@@ -16,15 +16,14 @@ To prepare the virtual agent for your website, you need to deploy it by [creatin
 ## Create a Webchat v3 Endpoint
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:<br>
-   3.1 Select the **Webchat (v3)** Endpoint type.<br>
-   3.2 Add a unique name.<br>
-   3.3 Select a relevant Flow from the list.<br>
+   5.1 Select the **Webchat (v3)** Endpoint type.<br>
+   5.2 Add a unique name.<br>
+   5.3 Select a relevant Flow from the list.<br>
 6. Click **Save**.
-7. On the **Endpoint Editor** page, 
 
 ## Configure General Settings
 
@@ -45,8 +44,8 @@ The following general settings are available within this Endpoint:
 
 ## Configure Specific Settings
 
-Customize your webchat to meet your specific needs. 
-You can adjust colors and add features such as file uploads to enhance the effectiveness of your virtual agent. 
+Customize your webchat to meet your specific needs.
+You can adjust colors and add features such as file uploads to enhance the effectiveness of your virtual agent.
 Any updates you make will be instantly and seamlessly reflected when you load or reload your website with Webchat linked to the Endpoint.
 
 ### Webchat Layout
@@ -102,6 +101,7 @@ The Webchat Behavior settings enhance communication by enabling typing indicator
 
 | Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Collect Metadata                   | This parameter lets you collect additional data from your end users' browsers, such as language, location, device, and browser type. By using this data, you can personalize the AI agent's behavior. For example, you can offer the user the option to switch the conversation language based on their browser language, or provide offers that are relevant to the user's current location. For more information, read [Collect Metadata](metadata.md).                                                                                                                                                                                                                                                 |
 | Enable Typing Indicators           | This parameter shows when the virtual agent is typing a response, helping users understand when to expect replies. When the parameter is turned on, a typing symbol appears, signaling that the virtual agent is processing your request and will respond soon.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Input Placeholder Text             | This parameter enables you to customize the placeholder text in the Reply field, indicating where users can type their messages to interact with the virtual agent. By default, it is set to `Type something…`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Enable speech-to-text              | This parameter adds a microphone button to the Webchat interface. Users can convert speech into written text, providing a hands-free and easy way to communicate with the virtual agent. This feature is particularly beneficial for users who prefer speaking or may have difficulty typing their responses.<br><br> Note that this parameter is not supported by the Mozilla Firefox browser.                                                                                                                                                                                                                                                                                                           |
@@ -122,7 +122,7 @@ The Start Behavior settings offer features for initiating conversations that inc
 | Display Text   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This parameter presents a message as if it were entered by the user when the chat initiates. This simulation of a user input bubble creates an immediate and engaging interaction.                                                                                                                                                                                                                  |
 | Button Title   | This parameter is applicable to **Start with a Button** mode. This parameter customizes the text displayed on the Start Button, serving as the interactive prompt for users to begin their conversation with the virtual agent.                                                                                                                                                                                                                                                                            |
 
-#### Attachment Upload  
+#### Attachment Upload
 
 The Attachment Upload settings offer features to upload files in Webchat, customize the upload area text, and choose where files are stored, such as AWS, Azure, or Google Cloud, along with the necessary connection credentials.
 
@@ -148,7 +148,7 @@ The Business Hours settings help manage business hours in Webchat. They enable y
 | End Time                         | The parameter indicates the end of the virtual agent's availability each day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Day of the Week                  | The parameter indicates the operational days for the virtual agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-#### Unread Messages   
+#### Unread Messages
 
 The Unread Messages settings help users stay informed about unread messages in Webchat. They include features such as displaying message counts, previews, and notification sounds for timely responses.
 
@@ -173,8 +173,8 @@ The Home Screen settings enable personalization of welcome messages, backgrounds
 
 #### Conversation Starters
 
-The Conversation Starters settings offer pre-defined messages to prompt interactions with virtual agents, 
-enhancing user engagement and streamlining conversation flow. 
+The Conversation Starters settings offer pre-defined messages to prompt interactions with virtual agents,
+enhancing user engagement and streamlining conversation flow.
 You can customize messages, choose interaction types (Postback Value or URL), and add up to five starters.
 
 | Parameter                    | Description                                                                                                                                                                                                                                                                         |
@@ -282,7 +282,7 @@ and add up to 2 title-URL pairs for additional content.
 ### Privacy Notice
 
 The Privacy Notice settings add privacy notices to the chat interface.
-It includes options to enable a custom Privacy Notice, set its title and text, customize the Submit button, define the link title and URL for the Privacy Policy. 
+It includes options to enable a custom Privacy Notice, set its title and text, customize the Submit button, define the link title and URL for the Privacy Policy.
 These features ensure users are informed about data handling practices and consent to them, fostering trust and compliance with privacy regulations.
 
 {! _includes/webchat/privacy-notice-acceptance.md !}
@@ -325,8 +325,8 @@ The Maintenance settings offer activating maintenance mode in a chat service, in
 
 ### Webchat Custom Settings
 
-The Webchat Custom settings offer advanced options 
-to change the appearance and behavior of your webchat beyond the standard settings. 
+The Webchat Custom settings offer advanced options
+to change the appearance and behavior of your webchat beyond the standard settings.
 These settings are specified using JSON format. Ensure the JSON is correctly formatted to prevent any potential crashes of the Webchat widget.
 
 The Webchat Custom settings are used:
