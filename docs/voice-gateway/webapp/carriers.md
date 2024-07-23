@@ -76,7 +76,7 @@ To set up an SIP encryption, follow these steps:
 2. In the left-side menu, select **Carriers**.
 3. Select the carrier you want to use for outbound communication.
 4. Go to the **SIP Gateways** section.
-5. Select an existing gateway you want to use for outbound communication or create a new one by clicking <img src="../../_assets/voice-gateway/VG_plus_button.svg" alt="the plus button">. 
+5. Select an existing gateway you want to use for outbound communication or create a new one by clicking <button class="btnty" type="button" title="Add SIP Gateway"><div class="ico ico--teal"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fdb71e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></div></button>.
 6. Enter the Network Address.
 7. Enter the Port number. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
 8. Select the **Outbound** option.
