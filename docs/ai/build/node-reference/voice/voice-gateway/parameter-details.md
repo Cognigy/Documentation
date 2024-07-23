@@ -80,7 +80,7 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 
 | Parameter                    | Type     | Description                                                                                                                                                                                    |
 |------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is inactive by default.                                                                                                |
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is enabled by default.                                                                                                |
 | User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the virtual agent in time.                      |
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
