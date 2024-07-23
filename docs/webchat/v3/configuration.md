@@ -40,7 +40,7 @@ The following general settings are available within this Endpoint:
 - [File Storage](../../ai/deploy/endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"
-You can use the [Inject & Notify](../../ai/deploy/endpoints/inject-and-notify.md) feature with this Endpoint.
+    You can use the [Inject & Notify](../../ai/deploy/endpoints/inject-and-notify.md) feature with this Endpoint.
 
 ## Configure Specific Settings
 
@@ -105,7 +105,7 @@ The Webchat Behavior settings enhance communication by enabling typing indicator
 | Enable Typing Indicators           | This parameter shows when the virtual agent is typing a response, helping users understand when to expect replies. When the parameter is turned on, a typing symbol appears, signaling that the virtual agent is processing your request and will respond soon.                                                                                                                                                                                           |
 | Input Placeholder Text             | This parameter enables you to customize the placeholder text in the Reply field, indicating where users can type their messages to interact with the virtual agent. By default, it is set to `Type something…`                                                                                                                                                                                                                                            |
 | Enable speech-to-text              | This parameter adds a microphone button to the Webchat interface. Users can convert speech into written text, providing a hands-free and easy way to communicate with the virtual agent. This feature is particularly beneficial for users who prefer speaking or may have difficulty typing their responses.<br><br> Note that this parameter is not supported by the Mozilla Firefox browser.                                                           |
-| Enable text-to-speech              | This parameter adds a Text-To-Speech (TTS) feature that converts text messages into spoken voice output. This feature is particularly useful for users who prefer or require auditory feedback. Configurations for this TTS feature can be further adjusted in the Chat Options section.                                                                                                                                                                  |
+| Enable text-to-speech              | This parameter adds a Text-To-Speech (TTS) feature that converts text messages into spoken voice output. This feature is especially beneficial for users who prefer or require auditory feedback. As an alternative to this parameter, for more customization and a personalized user experience, go to the [Text-To-Speech](#text-to-speech) section in the Chat Options section.<br><br>By default, the parameter is inactive. If you turn it on and also adjust [Text-To-Speech](#text-to-speech) in the Chat Options, the Chat Options settings will override this parameter. Note that the text-to-speech feature uses the Browser API, so the available voices depend on the OS and browser vendor. |
 | Message Delay                      | This parameter defines the duration Webchat waits before sending the virtual agent's response to your messages. By default, it's set to 500 milliseconds, promoting a more natural conversational flow and mitigating the impression of an immediate automated response.                                                                                                                                                                                  |
 | Focus Input after Postback         | This parameter ensures that after a Postback button or quick reply button is clicked, Webchat immediately redirects focus back to the Reply field.                                                                                                                                                                                                                                                                                                        |
 | Enable Connection Status Indicator | This parameter displays a warning message if the user's internet connection is lost during a conversation with the virtual agent. This ensures users are aware of any potential interruptions or delays in the chat conversation. The warning automatically disappears once the internet connection is re-established, indicating that the chat can proceed normally.                                                                                     |
@@ -226,7 +226,7 @@ You can customize the title of the Chat Options screen to personalize user exper
 | Parameter           | Description                                                                                                                                                                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Chat Options | This parameter activates additional interactive features like Quick Replies, Conversation Rating, and Footer within the chat interface, broadening users' communication and feedback options for a richer interaction with the virtual agent. |
-| Title               | This parameter lets you customize the title of the Chat Options screen. By default, the title is `Chat options`.                                                                                                                              |
+| Chat Options Title  | This parameter lets you customize the title of the Chat Options screen. By default, the title is `Chat options`.                                                                                                                              |
 
 #### Quick Replies
 
@@ -241,7 +241,17 @@ The Quick Replies settings improve chat interactions with pre-defined response o
 | Postback Value              | This parameter determines the specific value or message that will be automatically sent to the Flow when the user clicks on a Quick Reply. This predefined response initiates a particular conversation flow with the virtual agent, facilitating a direct, guided, and efficient user interaction based on the selected prompt. |
 | URL                         | This parameter defines the specific URL that users will be directed to when selecting a Quick Reply. It can guide users to relevant webpages or resources, enhancing their experience by providing immediate access to needed information.                                                                                       |
 | Add                         | This parameter enables you to include more Quick Replies in your list, with a maximum limit of 5 Quick Replies.                                                                                                                                                                                                                  |
-| TTS toggle label            | This parameter appears if the **Show text-to-speech** toggle is activated. It enables you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to **Enable text-to-speech**.                                                                                       |
+
+#### Text-to-Speech
+
+The Text-to-Speech settings allow you to convert text into spoken voice, with options to customize the toggle label and set the toggle to be enabled by default.
+
+| Parameter                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Show text-to-speech toggle     | This parameter lets you activate the text-to-speech feature that converts text messages into spoken voice output. This feature is especially beneficial for users who prefer or require auditory feedback. <br><br> By default, this parameter is inactive. By enabling this parameter, you give users the option to choose whether to activate text-to-speech. Note that the text-to-speech feature uses the Browser API, so the available voices depend on the OS and browser vendor. |
+| TTS toggle label               | This parameter appears if the **Show text-to-speech toggle**  is activated. The parameter enables you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to **Enable text-to-speech**.                                                                                                                                                                                                                                  |
+| Activate TTS toggle by default | This parameter appears if the **Show text-to-speech toggle** is activated. The parameter lets you make the setting active by default, but end users can still turn it off.                                                                                                                                                                                                                                                                                                              |
+
 
 #### Conversation Rating
 
@@ -345,7 +355,7 @@ For more information on how to create and trigger plugins, refer to [Webchat Plu
 
 ### Demo Webchat Settings
 
-Demo Webchat lets test integrations with different providers and preview Webchat's appearance before deployment.
+Demo Webchat lets test integrations with different providers and preview Webchat's appearance before deployment. 
 It's a valuable tool for ensuring your Webchat functions as expected before launch.
 For more information on how to use this feature, refer to [Demo Webchat](../demo.md).
 
