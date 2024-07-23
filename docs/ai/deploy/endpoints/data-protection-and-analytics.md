@@ -91,12 +91,12 @@ Defines whether we should store conversation histories in contact profiles for e
 [![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../../release-notes/4.81.md)
 
 Activates server-side input sanitization.
-If this is enabled, any user-generated text inputs will be sanitized in order to remove potentially harmful HTML content before processing it in other parts of our system.
+If this setting is enabled,
+any user inputs will be sanitized
+to remove potentially harmful HTML content before processing it in other parts of the Cognigy.AI system.
 
-If Input Transformers are used, the sanitization will take place after the execution of those Input Transformers.
+If [Input Transformers](transformers/input-transformer.md) are used, the sanitization will take place after the execution of those Input Transformers.
 This process involves validating and cleaning the data on the server to make sure the data is safe and complies with the expected format.
-
-If this setting is enabled, input texts will be cleaned of potentially harmful HTML after being processed by the [Input Transformer](transformers/input-transformer.md).
 
 Note that for [Cognigy Webchat](../../../webchat/index.md),
 client-side input sanitization
