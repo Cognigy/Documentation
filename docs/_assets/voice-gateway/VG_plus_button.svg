@@ -1,11 +1,4 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="86.000000pt" height="80.000000pt" viewBox="0 0 86.000000 80.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fdb71e" stroke="#f5f5f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"></circle>
+  <line x1="12" y1="8" x2="12" y2="16"></line>
+  <line x1="8" y1="12" x2="16" y2="12"></line>

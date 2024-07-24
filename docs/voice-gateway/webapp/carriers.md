@@ -64,39 +64,35 @@ To set up the outbound authentication process, follow these steps:
 
 Voice Gateway supports various methods of encryption for outbound calls:
 
-- **SIP over TLS**: the standard Session Initiation Protocol (SIP) is used for signaling and establishing VoIP calls and the SIP messages are encrypted with TLS. This provides a secure channel for the signaling information. SIP over TLS is often considered more flexible as it allows for the use of existing SIP infrastructure and clients with TLS capabilities.
-- **SIPS**: SIPS is a URI scheme specifically designed for secure SIP communication. It indicates that the SIP signaling should be encrypted with TLS from the start. SIPS is simpler to set up as it's a dedicated scheme for secure SIP, but it might require more specific client and server configurations.
-- **Crypto padding**: serves as an additional security layer when using SIP over TLS/SRTP. The **Pad crypto** option adds random strings of data to the encrypted voice packets, making them even harder to decrypt. Padding may make traffic analysis harder, as it obscures the actual size of the voice packets.
+- **SIP over TLS**. The standard Session Initiation Protocol (SIP) is used for signaling and establishing communication, where the SIP messages are encrypted with TLS. This type of encryption provides a secure channel for the signaling information. SIP over TLS is often considered more flexible as it allows for the use of existing SIP infrastructure and clients with TLS capabilities.
+- **SIPS**. SIPS is a URI scheme specifically designed for secure SIP communication. It indicates that the SIP signaling should be encrypted with TLS once the connection is established. SIPS is simpler to set up as it's a dedicated scheme for secure SIP, but it might require more specific client and server configurations.
+- **SIP over TLS/SRTP with Crypto padding**. This type of encryption serves as an additional security layer when using SIP over TLS/SRTP. The **Pad crypto** option adds extra data to the encrypted voice packets, making them even harder to decrypt. Adding extra data (padding) to voice calls can make it harder to spy on them, because it hides the true size of the information being sent.
 
-Before 4.80 release, all connections were encrypted with SIPS by default. Starting from release [4.80](../../release-notes/4.80.md), the users can choose whether they want SIP, SIP over TLS, or SIP over TLS with an additional SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
+Before 4.80 release, all connections were encrypted with SIPS by default. Starting from release [4.80](../../release-notes/4.80.md), the users can choose whether they want SIP, SIP over TLS, or SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
 
-To set up an SIP encryption, follow these steps:
+To set up an SIP for outgoing calls, follow these steps:
 
 1. Open the Cognigy Voice Gateway Self-Service Portal. 
 2. In the left-side menu, select **Carriers**.
 3. Select the carrier you want to use for outbound communication.
 4. Go to the **SIP Gateways** section.
-5. Select an existing gateway you want to use for outbound communication or create a new one by clicking <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fdb71e" stroke="#f5f5f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"></circle>
-  <line x1="12" y1="8" x2="12" y2="16"></line>
-  <line x1="8" y1="12" x2="16" y2="12"></line>
-</svg>.
-6. Enter the Network Address.
-7. Enter the Port number. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
+5. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../_assets/voice-gateway/VG_plus_button.svg).
+6. In the **Network Address** field, enter the Network Address, for example `12.345.678.9`.
+7. Enter the Port number in the **Port** field. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
 8. Select the **Outbound** option.
-9. Select from the available netmasks:
+9. Select from the available options:
 
 === "UDP"
-    - SIP over UDP. UDP doesn't require an established connection or authentication to send information. It's most suitable for video or audio streaming.
+    1. SIP over UDP. UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
 === "TCP"
-    - SIP over TCP. TCP requires a connection between the sender and the receiver. It's the most commonly used Internet protocol, facilitating e-mails, messaging and file transfer, among others.
+    1. SIP over TCP. TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
 === "TLS"
-    - SIP over TLS. TLS prevents third party eavesdropping and tampering with communication. The most common use for TLS is the HTTPS encryption.
-    - The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+    1. SIP over TLS. TLS prevents third party eavesdropping and tampering with communication.
+    2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
 === "TLS/SRTP"
-    - SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. 
-    - The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
-    - The **Pad crypto** setting will appear. Select this setting if you want to add crypto padding to your connection.
+    1. SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. 
+    2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+    3. The **Pad crypto** setting will appear. Select this setting if you want to add crypto padding to your connection.
 
 Click **Save.**
 
