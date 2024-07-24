@@ -1,7 +1,7 @@
 ---
 title: "Parameter Details"
 slug: "parameter-details"
-hidden: true
+hidden: false
 ---
 
 # Voice Gateway Parameter Details
@@ -92,7 +92,7 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 
 | Parameter                    | Type     | Description                                                                                                                                                                                    |
 |------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is enabled by default.                                                                                                |
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is enabled by default.                                                                                                 |
 | User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the virtual agent in time.                      |
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
@@ -128,18 +128,18 @@ Playing a background MP3 track during the conversation with AI Agents makes it m
 
 The track plays during the conversation with the AI Agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
-| Parameter | Type     | Description                                                                                                                                                                                                                                                                                                |
-|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                   |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                          |
-| Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                             |
-| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet.|
+| Parameter | Type     | Description                                                                                                                                                                                                                                                                                               |
+|-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                 |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                         |
+| Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                                      |
+| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet. |
 
 ### Silence Overlay
 
 Silence Overlay enables you to play an MP3 file in the background during calls with an AI Agent. This feature is activated during prolonged periods of silence, which may result from either the AI Agent's background activity or customer inactivity. Playing the track informs the customer that the AI Agent is processing their query, which may take some time. Likewise, if the customer needs time to find specific, relevant data, the Silence Overlay track will play as well. The Silence Overlay track can simulate office sounds, for example, a human agent typing on a keyboard and clicking the mouse.
 
-When Silence Overlay is enabled in the [Set Session Config](./set-session-config.md) Node, the Silence Overlay track starts playing automatically once the AI Agent or the customer take longer to respond, then stops the moment the AI Agent or the customer respond. You can adjust the delay before the Silence Overlay starts to make it sound more natural.
+When Silence Overlay is enabled in the [Set Session Config](./set-session-config.md) Node, the Silence Overlay track starts playing automatically once the AI Agent or the customer takes longer to respond, then stops the moment the AI Agent or the customer responds. You can adjust the delay before the Silence Overlay starts to make it sound more natural.
 
 If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-calls.md#call-recordings) feature in the Voice Gateway Self-Service Portal, the Silence Overlay track is recorded together with the AI Agent's track and can be played back in the audio file.
 
