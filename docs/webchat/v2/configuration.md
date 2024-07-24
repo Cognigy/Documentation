@@ -14,13 +14,13 @@ To prepare the virtual agent for your website, you need to deploy it by [creatin
 ## Create a Webchat v2 Endpoint
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Deploy > Endpoints**. 
-4. On the **Endpoints** page, click **+ New Endpoint**. 
+2. In the left-side menu, select a Project.
+3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:
-   3.1 Select the **Webchat** Endpoint type.
-   3.2 Add a unique name.
-   3.3 Select a relevant Flow from the list.
+   5.1 Select the **Webchat** Endpoint type.<br>
+   5.2 Add a unique name.<br>
+   5.3 Select a relevant Flow from the list.<br>
 6. Click **Save**.
 
 ## Configure General Settings

@@ -61,23 +61,41 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 ### Barge In
 
-Barge In enables the interruption of the virtual agent.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
 
-| Parameter              | Type   | Description                                                                                                 |
-|------------------------|--------|-------------------------------------------------------------------------------------------------------------|
-| Barge In On Speech     | Toggle | Enables interrupting the virtual agent with speech.                                                         |
-| Barge In On DTMF       | Toggle | Enables interrupting the virtual agent with DTMF digits.                                                    |
-| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in. |
+!!! Warning
+    Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
+
+Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
+
+Before release 4.80, this feature could not be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
+
+Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
+This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
+
+To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
+
+| Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                     |
+|------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation.                             |
+| Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation. |
+| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in.                                                                                                                                                                                                                                                     |
 
 ### User Input Timeout
 
-Defines what should happen when there is no input from the user.
 
-| Parameter             | Type     | Description                                                                                              |
-|-----------------------|----------|----------------------------------------------------------------------------------------------------------|
-| User No Input Mode    | Dropdown | Defines the action if a user does not provide an input to the virtual agent in time.                     |
-| User No Input Timeout | Number   | Defines the timeout for user input in ms.                                                                |
-| User No Input Retries | Number   | Defines how often the virtual agent should retry to get an input from a user before completing the call. |
+[![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
+
+This feature defines what should happen when there is no input from the user.
+
+Before the release [4.81](../../../../../release-notes/4.81.md), User Input Timeout was always enabled and users had to determine the number of milliseconds before timeout occurred. Starting from release [4.81](../../../../../release-notes/4.81.md), users can enable or disable User Input Timeout using a toggle. This setting keeps the voice AI Agent on the call even if the caller takes a while to respond. When the User Input Timeout is disabled, the voice AI Agent will wait for the caller's response.
+
+| Parameter                    | Type     | Description                                                                                                                                                                                    |
+|------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is enabled by default.                                                                                                |
+| User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the virtual agent in time.                      |
+| User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
+| User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
 
 ### DTMF
 
@@ -108,14 +126,14 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
 
-The track plays during the conversation with the AI agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
+The track plays during the conversation with the AI Agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
 
-| Parameter | Type     | Description                                                                                                                                                                                                                                                                                                   |
-|-----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Action    | Dropdown | Selects an action to play, silence or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                      |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                             |
-| Loop      | Toggle   | When switched on, it loops the audio track.                                                                                                                                                                                                                                                                   |
-| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud, nor too quiet.    |
+| Parameter | Type     | Description                                                                                                                                                                                                                                                                                                |
+|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                   |
+| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                          |
+| Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                             |
+| Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet.|
 
 ### Silence Overlay
 

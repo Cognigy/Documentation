@@ -430,7 +430,9 @@ nav:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md
-      - webchat/v3/configuration.md
+      - Endpoint Configuration:
+        - webchat/v3/configuration.md
+        - webchat/v3/metadata.md
       - webchat/v3/embedding.md
 
     - 💬 Webchat v2:
@@ -624,6 +626,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.81.md
     - release-notes/4.80.md
     - release-notes/4.79.md
     - release-notes/4.78.md
