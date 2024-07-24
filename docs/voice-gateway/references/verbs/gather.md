@@ -77,3 +77,9 @@ In the case of digits input, the payload includes a `digits` property indicating
 ```json
 "digits": "0276"
 ```
+
+## More Information
+
+- [RECOGNIZED_DTMF](../events/RECOGNIZED_DTMF.md)
+- [RECOGNIZED_SPEECH](../events/RECOGNIZED_SPEECH.md)
+- [USER_INPUT_TIMEOUT](../events/USER_INPUT_TIMEOUT.md)

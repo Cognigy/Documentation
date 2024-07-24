@@ -121,3 +121,8 @@ The webhook triggers when the `amd` parameter is used and Voice Gateway identifi
 |---------------|------------------------------------------------------------------------------------------------|
 | event         | Indicates one of the following events: `amd`, `beep`, or `silence`.                            |
 | amd_type      | Specifies either `human` or `machine`. This property is provided only when the event is `amd`. |
+
+## More Information
+
+- [TRANSFER_DIAL_ERROR](../events/TRANSFER_DIAL_ERROR.md)
+- [TRANSFER_DIAL_SUCCESS](../events/TRANSFER_DIAL_SUCCESS.md)

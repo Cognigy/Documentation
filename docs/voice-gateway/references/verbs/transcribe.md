@@ -32,3 +32,8 @@ The full set of configuration parameters:
 |------------------------------|------------------------------------------------------------------------------------------------------|----------|
 | recognizer.transcriptionHook | A webhook to receive an HTTP POST when a partial or final transcription is received from a provider. | yes      |
 | recognizer                   | Speech recognition options.                                                                          | yes      |
+
+## More Information
+
+- [Dial](dial.md)
+- [Listen](listen.md)

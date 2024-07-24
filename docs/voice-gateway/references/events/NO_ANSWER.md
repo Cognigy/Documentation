@@ -29,3 +29,7 @@ Payload:
   }
 }
 ```
+
+## More Information
+
+- [Hangup](../verbs/hangup.md)

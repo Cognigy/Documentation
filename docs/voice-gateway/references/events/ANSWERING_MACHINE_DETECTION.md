@@ -62,7 +62,9 @@ Payload:
 }
 ```
 
+## More Information
 
+- [Answering Machine Detection (AMD)](../verbs/amd.md)
 
 
 
