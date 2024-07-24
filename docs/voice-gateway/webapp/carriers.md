@@ -94,6 +94,6 @@ To set up an SIP for outgoing calls, follow these steps:
         2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
         3. The **Pad crypto** setting will appear. Select this setting if you want to add crypto padding to your connection.
 
-10. Click **Save.**
+10. Click **Save**.
 
 To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in **Recent Calls > Outbound Call > Details**.
