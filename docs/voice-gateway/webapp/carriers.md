@@ -82,10 +82,10 @@ To set up an SIP for outgoing calls, follow these steps:
 8. Select the **Outbound** option.
 9. Select from the available options:
 
-    - UDP - this option activates SIP over UDP (User Datagram Protocol). UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
+    - UDP — this option activates SIP over UDP (User Datagram Protocol). UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
     - TCP - this option activates SIP over TCP (Transmission Control Protocol). TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
-    - TLS - this option activates SIP over TLS. TLS prevents third party eavesdropping and tampering with communication. If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
-    - TLS/SRTP - this option activates SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. Configure the additional options:
+    - TLS — this option activates SIP over TLS. TLS prevents third party eavesdropping and tampering with communication. If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
+    - TLS/SRTP — this option activates SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. Configure the additional options:
         - If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
         - If you want to add cryptographic padding to your connection for additional security, select **Pad crypto**.
 
