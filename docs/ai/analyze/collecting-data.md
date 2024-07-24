@@ -104,7 +104,7 @@ You can create an analytics step in the following components:
 To add an analytics step in the Node, do the following:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Build > Flows**.
 4. On the **Flows** page, select the existing Flow or create a new one.
 5. In the Flow editor, select the Node for which you want to add an Analytics step.
@@ -120,7 +120,7 @@ The Step will be recorded in the Analytics database once the Node is executed.
 To add an analytics step in the Intent, do the following:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Build > Flows**.
 4. On the **Flows** page, select the existing Flow or create a new one.
 5. In the upper-right corner, select the **NLU** tab.

@@ -26,7 +26,7 @@ Embedding Webchat v2 into your website allows you to provide a conversational in
 Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, which you want to deploy on your website:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, select a Webchat Endpoint that you recently created.
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.

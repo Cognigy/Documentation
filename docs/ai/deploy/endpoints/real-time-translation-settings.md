@@ -21,7 +21,7 @@ Before using this feature, you need to configure a machine translation provider.
 After selecting a translation provider, you can now configure translation parameters in the Endpoint configuration.
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Deploy > Endpoints**.
 4. Select an existing Endpoint or create a new one.
 5. In the Endpoint settings, go to the **Real-time Translation Settings** section. In the section, the provider you configured in the Translation Provider Settings configuration will be automatically selected.

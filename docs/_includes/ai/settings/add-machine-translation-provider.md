@@ -1,5 +1,5 @@
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Manage > Settings**.
 4. In the **Translation settings** section, select one of the following providers:
 

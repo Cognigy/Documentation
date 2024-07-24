@@ -3,7 +3,7 @@ Cognigy AI Agents use English as the default language. However, you can customiz
 To create a locale, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
+2. In the left-side menu, select a Project.
 3. In the left-side **Project** menu, select **Manage > Localization**.
 4. Click **+ Create new Locale**.
 5. In the **Name** field, enter a unique name of the locale. This name will be displayed in the Flow.
