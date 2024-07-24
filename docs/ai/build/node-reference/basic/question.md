@@ -314,7 +314,7 @@ This information can be used to trigger specific actions on escalation or to jum
 
 ## AI-enhanced output
 
-To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/generative-ai.md#rephrasing-virtual-agent-outputs) article.
+To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/generative-ai.md#rephrasing-ai-agent-outputs) article.
 
 ## Answer Preprocessing
 

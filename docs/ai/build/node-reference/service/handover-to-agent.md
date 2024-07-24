@@ -13,8 +13,8 @@ hidden: false
 ## Description
 
 The Handover to Agent Node is a tool
-that enables virtual agents to pass on conversations to human agents in contact centers.
-This tool is useful when your virtual agent is unable to handle the complexity of the inquiry
+that enables AI Agents to pass on conversations to human agents in contact centers.
+This tool is useful when your AI Agent is unable to handle the complexity of the inquiry
 or when a human touch is necessary to address sensitive issues or provide personalized assistance.
 Besides adding this Node to the Flow, select a [handover provider](../../../escalate/handover-reference/overview.md) within your Endpoint and set up the connection to your contact center.
 
@@ -22,7 +22,7 @@ Besides adding this Node to the Flow, select a [handover provider](../../../esca
 
 A handover process contains the following steps:
 
-1. **Identifying Edge Cases**. When a user request is too specific for the virtual agent, it can suggest forwarding the user to a human agent without changing channels.
+1. **Identifying Edge Cases**. When a user request is too specific for the AI Agent, it can suggest forwarding the user to a human agent without changing channels.
 
 2. **Integration with Agent Handover**. Once the **Handover to Agent** Node is triggered, it sends a handover request to the contact center configured in the [Endpoint Handover Settings](../../../deploy/endpoints/handover-settings.md), allowing a human agent to take over the conversation.
 
@@ -67,7 +67,7 @@ Use the **Handover Status** [Token](../../tokens.md) to access handover status i
 
 ### Handover Status
 
-To configure the virtual agent's behavior based on the handover status,
+To configure the AI Agent's behavior based on the handover status,
 use a [Lookup](../logic/lookup.md) Node to handle different outcomes.
 Select the **Handover Status** option in the Lookup Node settings.
 
@@ -97,7 +97,7 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
 | Parameter                           | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Flow Continuation                   | Selector | - **Below this Node** - the user will be taken to the node below the Handover node once the agent resolves the conversation. In this case, the user would continue in a different flow, but the starting point would be the node below the Handover node. <br> - **At current AgentInject Entrypoint** - the user will continue the chat at the current agent inject entrypoint. This option allows the agent to guide the user to a specific part of the chat and then give control back to the user. | 
-| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Send resolve event to AI Agent | Toggle   | Sending an event when the AI Agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ### Live Agent Settings
 

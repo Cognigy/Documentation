@@ -6,7 +6,7 @@ hidden: false
 
 # Intent Analyzer
 
-Writing a quality set of example sentences is key to building intelligent virtual agents. Cognigy.AI includes an in-tool evaluation feature that provides creators with immediate feedback on the quality of each example sentence and intent as it fits into the current version of their unique NLU training model.
+Writing a quality set of example sentences is key to building intelligent AI Agents. Cognigy.AI includes an in-tool evaluation feature that provides creators with immediate feedback on the quality of each example sentence and intent as it fits into the current version of their unique NLU training model.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/nlu-scoring.jpg" width="100%" />
@@ -45,7 +45,7 @@ Any yellow or red traffic light in the overall model indicates important intent 
 
 ### Individual Intent
 
-Each intent trained to the NLU is assigned a score that provides virtual agent designers feedback on the quality of the intent recognition relative to all other intents. The feedback window provides two pieces of information:
+Each intent trained to the NLU is assigned a score that provides AI Agent designers feedback on the quality of the intent recognition relative to all other intents. The feedback window provides two pieces of information:
 
 - The overall NLU score for the intent
 - The names of any intents that have overlapping example sentences

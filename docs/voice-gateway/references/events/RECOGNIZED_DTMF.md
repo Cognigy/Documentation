@@ -6,7 +6,7 @@ hidden: false
 
 # RECOGNIZED_DTMF
 
-The DTMF code was recognized by the virtual agent.
+The DTMF code was recognized by the AI Agent.
 
 To test a payload with the `RECOGNIZED_DTMF` event, you can use a Flow with only one **Set Session Config** Node.
 

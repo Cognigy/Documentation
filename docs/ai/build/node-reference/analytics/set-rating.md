@@ -17,7 +17,7 @@ This Node prefills a rating prompt with a specific value or updates it based on 
 You can combine this Node with the [Request Rating](request-rating.md) Node.
 For example,
 add a Set Rating Node
-to prefill a rating prompt with a default value based on the user's previous interactions with the virtual agent. Then,
+to prefill a rating prompt with a default value based on the user's previous interactions with the AI Agent. Then,
 include the Request Rating Node to enable the user to confirm or change the rating value.
 
 Note that the Set Rating Note doesn't display a rating widget to the end user, in contrast with the Request Rating Node.

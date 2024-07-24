@@ -19,9 +19,9 @@ To open the Transcript Explorer, use one of the following options:
 
 === "Via Cognigy.AI"
     1. Open the Cognigy.AI interface.
-    2. In the left-side menu, select an Agent.
-    3. Within the Agent interface, navigate to Insights using one of the following options:
-        - In the left-side **Agent** menu, select **Insights**. 
+    2. In the left-side menu, select a Project.
+    3. Within the Project interface, navigate to Insights using one of the following options:
+        - In the left-side menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
         The Cognigy Insights Overview dashboard will be displayed by default.
     4. In the left-side menu, select **Transcript Explorer**.

@@ -24,7 +24,8 @@ you can maintain better control and ensure a seamless workflow in your applicati
 ## Settings
 
 !!! warning
-    Do not turn off a speech user input throughout the call to receive additional messages from the user, especially when the virtual assistant needs to send multiple messages with time gaps in between.
+    Do not turn off a speech user input throughout the call to receive additional messages from the user,
+    especially when the AI Agent needs to send multiple messages with time gaps in between.
 
 | Parameter         | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

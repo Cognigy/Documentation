@@ -63,7 +63,7 @@
 - Fixed a bug where every-time a user deletes an intent trainer record, two records get removed instead of one from the UI
 - Fixed a bug where last activity date in Access Control displays values in an inconsistent way
 - Fixed a bug where confirmation words were registered case-sensitive. They are now case-insensitive, such that a positive confirmation word "CORRECT" would be recognized with the input text "correct"
-- Fixed a bug where all virtual agents deployed on the Slack channel would return the same responses
+- Fixed a bug where all AI Agents deployed on the Slack channel would return the same responses
 - Fixed a bug where validation for threads was missing for Ring central Engage
 - Fixed a bug where OpenAPI request for management POST users and PATCH organisation did not work
 - Fixed a bug where a new agent bot was created for each session when using Live Agent
@@ -80,7 +80,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 ### Improvements
 
 - Improved by adding 'Automatically move Flow Editor' setting to interaction Panel
-- Improved by enabling Live Agents to send a message to the virtual agent on behalf of the user
+- Improved by enabling Live Agents to send a message to the AI Agent on behalf of the user
 - Improved by adding a setting for handover assist to the say node default tab
 - Improved by sending a helper email to those user who fail to log in due missing the organisationId in URL
 - Improved by adding a "test mode" to REST Endpoints
@@ -396,7 +396,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug related to incorrect chart labels within the “Understood Messages” and the “Average Execution Time” widgets of Cognigy Insights
 - Fixed a bug related to pagination not properly working in Message Explorer of Cognigy Insights
 - Fixed a bug where changing the setting "Use Thresholds of the attached Flows" results in different Intent Scores
-- Fixed a bug where Message Explorer does not show user rating data as well as virtual agent rating request data
+- Fixed a bug where Message Explorer does not show user rating data as well as AI Agent rating request data
 - Fixed a bug where structured content is not translated when adding Node Localization by using translation
 - Fixed a bug where the loading of the Transcript Explorer does not work properly after filters are changed or reset
 - Fixed a bug where the Time to live (TTL) as well as the expiry message for a LiveChat Lite handover request is not configurable
@@ -472,7 +472,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 
 ### Features
 #### New Handover to Agent Node
-The new “Handover to Agent” Node allows users to configure different virtual agent behaviors depending on whether a Handover has been finished, a Handover has been canceled, or an error has occurred. The new Node replaces the existing "Handover" node, although the latter will continue to work.
+The new “Handover to Agent” Node allows users to configure different AI Agent behaviors depending on whether a Handover has been finished, a Handover has been canceled, or an error has occurred. The new Node replaces the existing "Handover" node, although the latter will continue to work.
 
 #### Intent handling in Lookup Nodes
 This release allows users to set the Intent hierarchy level in Lookup Nodes of type Intent. Only Intents of the selected hierarchy level are looked up. The current behavior that Intents are matched on the most detailed level remains the default behavior.
@@ -814,7 +814,9 @@ This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did no
 
 ### Features
 #### Cognigy Insights
-This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics. Insights is a totally new way to explore usage information about our virtual agents. Take a look at our product website for Insights:
+This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics.
+Insights is a totally new way to explore usage information about our AI Agents.
+Take a look at our product website for Insights:
 https://www.cognigy.com/products/overview
 
 #### Machine translation for enhanced agent building
@@ -1018,7 +1020,11 @@ Changed caching of core object used while processing user inputs - this leads to
 
 ## Features
 #### Cognigy Packages
-With Cognigy packages, we have introduced the ability to export/import individual resources in order to move them between virtual agents. With this release, we have added the ability for you to select multiple resources when exporting a package. We have also added the ability to resolve conflicts and pick resolution strategies when importing those packages once again.
+With Cognigy packages,
+we have introduced the ability to export/import individual resources in order to move them between AI Agents.
+With this release, we have added the ability for you to select multiple resources when exporting a package.
+We have also added the ability to resolve conflicts
+and pick resolution strategies when importing those packages once again.
 
 ### Improvements
 - Allows the user to open URL in a new or existing browser tab in our WebchatWidget
@@ -1179,12 +1185,12 @@ We have added the ability to copy the Agent ID to the context menu on the Index 
 - Fixed an API compatibility issue in our Sunshine Conversations V2 endpoint
 - Fixed a stability issue in the microservices that executes Cognigy Extensions
 - Fixed a bug where the NLUConnector selection in our Interaction Panel would not properly persist
-- Fixed a bug regarding user feedback when deleting a virtual agent
+- Fixed a bug regarding user feedback when deleting an AI Agent
 - Fixed a bug regarding Optional Questions and their order when multiple will be used
 - Fixed a bug while importing Intents through a file upload
 - Fixed a stability issue when deleting Extensions where certain artifacts would not get deleted properly
 - Fixed a bug related to date parsing
-- Fixed a bug where the permissions derived from the "project admin" role would not be sufficient for most operations in virtual agents
+- Fixed a bug where the permissions derived from the "project admin" role would not be sufficient for most operations in AI Agents
 - Fixed a stability issue in our NLU microservices regarding their health checks
 - Fixed a bug in our voice-gateway integration where certain calls would get dropped
 - Fixed a bug where certain emails could not be used as answers in Question Nodes

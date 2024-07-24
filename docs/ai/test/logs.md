@@ -5,7 +5,7 @@
 ---
 # Logs
 
-The **Logs** feature allows platform users to track each input and output message that occurs with virtual agents. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.
+The **Logs** feature allows platform users to track each input and output message that occurs with AI Agents. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/logs.png" width="100%" />

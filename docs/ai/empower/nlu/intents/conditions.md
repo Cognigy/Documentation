@@ -34,7 +34,7 @@ Note [States](../../../test/interaction-panel/state.md) use a predefined list of
 
 ## Example
 
-To give an example, a bank's virtual agent caters to Intents related to credit cards. If the customer does not have a credit card product, for example, we would not like a `CancelCreditCard` Intent to be found.
+To give an example, a bank's AI Agent caters to Intents related to credit cards. If the customer does not have a credit card product, for example, we would not like a `CancelCreditCard` Intent to be found.
 
 We enable and disable the Intent based on the customer's `profile`. Let's assume it has a variable `has_credit_card` which stores information on whether the customer has the product or not, the Intent Condition would be:
 

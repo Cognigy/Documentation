@@ -9,7 +9,7 @@
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/reject-Intent.png" width="100%" />
 </figure>
 
-Reject intents give you the capability to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
+Reject intents give you the capability to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the AI Agent.
 
 ## Concept
 

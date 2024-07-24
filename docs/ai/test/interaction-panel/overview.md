@@ -365,5 +365,5 @@ and the Interaction Panel automatically switches to Flow B as soon as it's opene
 ## More Information
 
 - [Cognigy Script and Objects Life Span](../../build/cognigy-script.md#life-span-of-cognigy-objects)
-- [Testing your Virtual Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
+- [Testing your AI Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
 - [Voice Gateway Parameter Details](../../build/node-reference/voice/voice-gateway/parameter-details.md)

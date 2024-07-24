@@ -50,7 +50,7 @@ To add extra vendor, follow these steps:
         - **Speech synthesis vendor** — select a TTS vendor from the list.
         - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials.
         - **Language** — select a primary language.
-        - **Voice** — select a primary voice for the virtual agent.
+        - **Voice** — select a primary voice for the AI Agent.
     - STT:
         - **Speech recognizer vendor** — select an STT vendor from the list.
         - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials.
@@ -114,9 +114,9 @@ All calls from this application will be recorded and appear in the [Recent calls
 
 ## Call Forwarding
 
-When Voice Gateway fails to establish a connection with Cognigy.AI at the beginning of a call, you can forward calls to another number. For example, if the Cognigy.AI virtual agent is unavailable,
+When Voice Gateway fails to establish a connection with Cognigy.AI at the beginning of a call, you can forward calls to another number. For example, if the Cognigy.AI AI Agent is unavailable,
 the call will be redirected to the Contact Center, where a human agent,
-instead of a virtual agent, will assist your customer with the issue.
+instead of an AI Agent, will assist your customer with the issue.
 
 To configure call forwarding, follow these steps:
 

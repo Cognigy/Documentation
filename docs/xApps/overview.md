@@ -10,7 +10,9 @@ hidden: false
 
 {! _includes/ai/xApp/pricing.md !}
 
-Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
+Cognigy xApps are infinitely flexible micro-web applications for customer self-service.
+xApps can be used stand-alone or complimentary to any channel to enhance AI and human agents'
+capabilities and to overcome channel limitations compromising user experiences.
 
 The behavior of xApps is controlled via a set of [xApp Flow Nodes](../ai/build/node-reference/xApp/overview.md).
 You can build the actual xApp Pages in two ways,

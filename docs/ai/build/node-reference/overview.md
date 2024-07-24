@@ -6,7 +6,7 @@ hidden: false
 
 # Node Reference
 
-_Nodes_ are fundamental building blocks that are used to construct Flows and define the logic of virtual agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
+_Nodes_ are fundamental building blocks that are used to construct Flows and define the logic of AI Agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
 
 Node Categories:
 
@@ -86,7 +86,7 @@ The Lookup Node acts as a switch between different options. A certain type of in
 
 Everything below a Once Node will be executed only once per session.
 This is useful
-in case the agent needs to greet the user or in case a database request needs to happen only once per session.
+in case the AI Agent needs to greet the user or in case a database request needs to happen only once per session.
 
 ### [Remove From Context](logic/remove-from-context.md)
 
@@ -122,8 +122,7 @@ The Wait for Input Node waits for user input and continues Flow execution.
 
 ## [Voice Nodes](voice/overview.md)
 
-
-Voice Nodes are for developing a voice agent.
+Voice Nodes are for developing voice AI Agents.
 
 ### [Generic Voice Nodes](voice/generic/overview.md)
 
@@ -131,18 +130,18 @@ The Generic Voice Nodes are a set of Nodes for creating voice Flows that are not
 
 #### [Barge In - Config](voice/generic/barge-in-config.md)
 
-This Node is a session config that enables the interruption of the voice agent.
+This Node is a session config that enables the interruption of the voice AI Agent.
 
 When executed, the settings will apply for the remainder of the session.
 
 #### [Continuous ASR - Config](voice/generic/continuous-asr-config.md)
 
 Continuous ASR enables the system to concatenate multiple STT recognitions of the user
-and then send them as a single textual message to the voice agent.
+and then send them as a single textual message to the voice AI Agent.
 
 #### [DTMF Collect - Config](voice/generic/dtmf-collect-config.md)
 
-Enables capturing of DTMF signals by the voice agent during the entire call session.
+Enables capturing of DTMF signals by the voice AI Agent during the entire call session.
 
 When executed, the settings will apply for the remainder of the session.
 
@@ -172,11 +171,11 @@ This Node lets pass an active call to a tel or sip target.
 
 #### [User Input Timeout - Config](voice/generic/user-input-timeout-config.md)
 
-This Node defines the action that the virtual agent should take if it does not receive any input from the user within a certain timeframe.
+This Node defines the action that the AI Agent should take if it does not receive any input from the user within a certain timeframe.
 
 ### [Voice Gateway Nodes](voice/voice-gateway/overview.md)
 
-Voice Gateway Nodes help you build a voice agent using [Voice Gateway configuration](../../../voice-gateway/overview.md).
+Voice Gateway Nodes help you build a voice AI Agent using [Voice Gateway configuration](../../../voice-gateway/overview.md).
 
 #### [Call Recording](voice/voice-gateway/call-recording.md)
 
@@ -216,7 +215,7 @@ This Node lets you transfer an ongoing call to a Tel or SIP target.
 
 ### [AudioCodes](voice/audiocodes/overview.md)
 
-AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](https://www.cognigy.com/products/voice-gateway).
+AudioCodes Nodes help you build a voice AI Agent using [AudioCodes configuration](https://www.cognigy.com/products/voice-gateway).
 
 #### [Call Recording](voice/audiocodes/call-recording.md)
 
@@ -257,9 +256,9 @@ This Node can be used to activate a [Contact Profile](../../analyze/contact-prof
 
 ### [Blind Mode](analytics/blind-mode.md)
 
-The Blind Mode disables all (or selected) logging. The Node can be used whenever the virtual agent handles sensitive data that should be excluded from the logs.
+The Blind Mode disables all (or selected) logging. The Node can be used whenever the AI Agent handles sensitive data that should be excluded from the logs.
 
-- Mask Login: Outputs XXXX in the output logs of the Agent.
+- Mask Login: Outputs XXXX in the output logs of the AI Agent.
 - Mask Analytics: Outputs XXXX in the analytics (including Contact Profile conversations).
 - Disable Conversations: Disables output analytics altogether.
 
@@ -309,7 +308,7 @@ or suggest an alternative response.
 
 ### [Close Handover](service/close-handover.md)
 
-Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the virtual agent.
+Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the AI Agent.
 
 ### [GPT Conversation](service/gpt-conversation.md)
 
@@ -321,7 +320,7 @@ The GPT Conversation Node can support the entire conversation using Large Langua
 
 ### [Handover to Agent](service/handover-to-agent.md)
 
-This Node enables virtual agents to pass on conversations to human agents in contact centers.
+This Node enables AI Agents to pass on conversations to human agents in contact centers.
 
 ### [HTTP Request](service/http-request.md)
 
@@ -479,7 +478,7 @@ This Node searches and retrieves content from data that was previously uploaded 
 
 ### [Log Message](other-nodes/log-message.md)
 
-The Log Message Node writes a message into the [Agent Logs](../../test/logs.md).
+The Log Message Node writes a message into the [Project Logs](../../test/logs.md).
 
 ### [Search Extract Output](other-nodes/search-extract-output.md)
 
@@ -487,4 +486,4 @@ This Node searches through data within the Knowledge AI solution, extracts a rel
 
 ### [Set Translation](other-nodes/set-translation.md)
 
-This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined on the [Agent Settings](../../administer/access/project-settings.md) page.
+This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined on the [Project Settings](../../administer/access/project-settings.md) page.

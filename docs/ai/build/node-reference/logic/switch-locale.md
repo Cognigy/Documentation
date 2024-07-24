@@ -43,4 +43,4 @@ Then open the Switch Locale Node configuration editor and enter the reference ID
 </figure>
 
 !!! note "More information on Localization"
-    Find out about building multilingual and regional specific virtual agents on the [Localization Page](../../translation-and-localization/localization.md).
+    Find out about building multilingual and regional specific AI Agents on the [Localization Page](../../translation-and-localization/localization.md).

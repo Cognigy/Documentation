@@ -1,6 +1,6 @@
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Manage > Settings**.
+3. In the left-side **Project** menu, select **Manage > Settings**.
 4. In the **Translation settings** section, select one of the following providers:
 
     === "Microsoft Translator"

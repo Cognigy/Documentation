@@ -1,7 +1,7 @@
 ---
 title: "Endpoint Configuration"
 slug: "configuration"
-description: "To prepare the Cognigy virtual agent for your website, you need to deploy it by creating a Webchat v2 Endpoint and customize the agent to fit your needs using the Webchat v2 Endpoint settings."
+description: "To prepare the Cognigy AI Agent for your website, you need to deploy it by creating a Webchat v2 Endpoint and customize the agent to fit your needs using the Webchat v2 Endpoint settings."
 hidden: false
 ---
 
@@ -9,13 +9,13 @@ hidden: false
 
 {! _includes/webchat/deprecation-webchat-v2.md !}
 
-To prepare the virtual agent for your website, you need to deploy it by [creating a Webchat v2 Endpoint](#create-a-webchat-v2-endpoint) and customize the agent to fit your needs using the [Webchat v2 Endpoint settings](#configure-specific-settings).
+To prepare the AI Agent for your website, you need to deploy it by [creating a Webchat v2 Endpoint](#create-a-webchat-v2-endpoint) and customize the agent to fit your needs using the [Webchat v2 Endpoint settings](#configure-specific-settings).
 
 ## Create a Webchat v2 Endpoint
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select a Project.
-3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+3. In the left-side **Project** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:
    5.1 Select the **Webchat** Endpoint type.<br>
@@ -43,20 +43,20 @@ The following General Endpoint settings that are available with this Endpoint:
 ## Configure Specific Settings
 
 Customize your webchat to meet your specific needs.
-You can adjust colors and add features such as file uploads to enhance the effectiveness of your virtual agent.
+You can adjust colors and add features such as file uploads to enhance the effectiveness of your AI Agent.
 Any updates you make will be instantly and seamlessly reflected when you load or reload your website with Webchat linked to the Endpoint.
 
 ### Webchat Layout
 
-The Webchat Layout settings have customization options, such as the title, color scheme, virtual agent and header logos, typing indicators, and input placeholder text.
+The Webchat Layout settings have customization options, such as the title, color scheme, AI Agent and header logos, typing indicators, and input placeholder text.
 
 | Parameter                | 	Description                                                              |
 |--------------------------|---------------------------------------------------------------------------|
 | Webchat Title            | The text to display within the Webchat header.                            |
 | Color Scheme             | The main colors for the Webchat widget, for example, #008080.             |
-| Bot Avatar Logo URL      | A URL linking to the logo that should be the virtual agent's avatar.      |
+| Bot Avatar Logo URL      | A URL linking to the logo that should be the AI Agent's avatar.      |
 | Header Logo URL          | A URL linking to the logo that should be displayed in the Webchat header. |
-| Enable Typing Indicators | Enables a typing indicator while the virtual agent is replying.           |
+| Enable Typing Indicators | Enables a typing indicator while the AI Agent is replying.           |
 | Input Placeholder Text   | The text to display as a placeholder in the input field.                  |
 
 #### Advanced Layout Settings
@@ -89,7 +89,7 @@ The Persistent Menu ensures quick access to different conversation stages, guide
 | Title (main)           | The title for your Persistent Menu. This title will be displayed to the users.                                                                                                                                                      |
 | Menu items             | Click on the ADD button to add items to the Persistent Menu. Each menu item consists of a Title and a Payload.                                                                                                                      |
 | Title                  | The text that you want users to see in the Persistent Menu. This text should be descriptive and clear, indicating the function or action associated with the menu item.                                                             |
-| Payload                | The payload text that will be sent to your virtual agent flow when the user selects this menu item. This payload can be a simple word or phrase, or it can be a more complex query depending on your virtual agent's functionality. |
+| Payload                | The payload text that will be sent to your AI Agent flow when the user selects this menu item. This payload can be a simple word or phrase, or it can be a more complex query depending on your AI Agent's functionality. |
 
 #### Webchat Plugins
 
@@ -103,11 +103,11 @@ The Webchat Behavior settings offer features for initiating conversations that i
 
 | Parameter      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Start Behavior | This setting allows you to define the initial action when initiating a new conversation with the virtual agent.You can select one of the following modes:<br>- **Start with a Text Field** — the conversation begins when an end user sends a message.<br>- **Start with a Button** — the conversation begins when an end user clicks the button that you configured.<br>- **Auto Send a Message to the Bot** — the conversation begins when the automated message that you configured is sent to the virtual agent. |
-| Text Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature allows you to customize the first message that initiates the conversation with the virtual agent, crafting the initial context and tone of the interaction. By customizing this opening message, you can ensure a purposeful and engaging start, aligning the conversation with your objectives from the very beginning.                                                                         |
+| Start Behavior | This setting allows you to define the initial action when initiating a new conversation with the AI Agent.You can select one of the following modes:<br>- **Start with a Text Field** — the conversation begins when an end user sends a message.<br>- **Start with a Button** — the conversation begins when an end user clicks the button that you configured.<br>- **Auto Send a Message to the Bot** — the conversation begins when the automated message that you configured is sent to the AI Agent. |
+| Text Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature allows you to customize the first message that initiates the conversation with the AI Agent, crafting the initial context and tone of the interaction. By customizing this opening message, you can ensure a purposeful and engaging start, aligning the conversation with your objectives from the very beginning.                                                                         |
 | Data Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature allows you to send the additional data to your Flow.                                                                                                                                                                                                                                                                                                                                             |
 | Display Text   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature enables you to present a message as if it were entered by the user when the chat begins. It simulates a user input bubble, creating an immediate, engaging interaction.                                                                                                                                                                                                                          |
-| Button Title   | This parameter is applicable to **Start with a Button** mode. This setting allows you to customize the text displayed on the Start Button, serving as the interactive prompt for users to begin their conversation with the virtual agent.                                                                                                                                                                                                                                                                           |
+| Button Title   | This parameter is applicable to **Start with a Button** mode. This setting allows you to customize the text displayed on the Start Button, serving as the interactive prompt for users to begin their conversation with the AI Agent.                                                                                                                                                                                                                                                                           |
 
 #### Additional Behavior
 
@@ -115,9 +115,9 @@ Within the Additional Behavior settings, functionalities such as enhancing user 
 
 | Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Delay                      | The amount of time to wait between sending virtual agent replies. Measured in milliseconds.                                                                                                                                                                                                                                                                                |
+| Message Delay                      | The amount of time to wait between sending AI Agent replies. Measured in milliseconds.                                                                                                                                                                                                                                                                                |
 | Focus Input after Postback         | This setting ensures that after a Postback button or quick reply button is clicked, the Webchat widget immediately redirects focus back to the message input field. This function enhances usability by providing a smoother, streamlined user experience, allowing you to continue typing without having to manually click back into the text input field.                |
-| Enable Connection Status Indicator | This setting, when enabled, shows a warning message if your internet connection is lost during a conversation with the virtual agent. This ensures you're aware of any potential interruptions or delays in the chat conversation. The warning will automatically disappear once the internet connection is re-established, indicating that the chat can proceed normally. |
+| Enable Connection Status Indicator | This setting, when enabled, shows a warning message if your internet connection is lost during a conversation with the AI Agent. This ensures you're aware of any potential interruptions or delays in the chat conversation. The warning will automatically disappear once the internet connection is re-established, indicating that the chat can proceed normally. |
 
 ### Teaser Message Settings
 
@@ -132,8 +132,8 @@ The Unread Messages settings help users stay informed about unread messages in W
 
 | Parameter                             | Description                                                                                                                                                                                                                                                                                                                       |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Unread Message Title Indicator | If this setting is turned on, it will show the number of unread messages in the browser tab title every 1000 milliseconds. This helps the user to keep track of messages that are yet to be read, ensuring no communication from the virtual agent is missed, especially when the user is multitasking and has several tabs open. |
-| Enable Unread Message Badge           | When this feature is enabled, a badge displaying the count of unread messages will appear on the Webchat toggle button. This ensures users are aware of any new messages or responses from the virtual agent that they have yet to view, promoting timely and responsive interactions.                                            |
+| Enable Unread Message Title Indicator | If this setting is turned on, it will show the number of unread messages in the browser tab title every 1000 milliseconds. This helps the user to keep track of messages that are yet to be read, ensuring no communication from the AI Agent is missed, especially when the user is multitasking and has several tabs open. |
+| Enable Unread Message Badge           | When this feature is enabled, a badge displaying the count of unread messages will appear on the Webchat toggle button. This ensures users are aware of any new messages or responses from the AI Agent that they have yet to view, promoting timely and responsive interactions.                                            |
 | Enable Unread Message Preview         | If you toggle this setting on, the Webchat widget displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as you can still get an idea of the most recent communication without having to open and read through the entire conversation.                    |
 | Enable Unread Message Sound           | This setting, when turned on, triggers a notification sound every time you receive a new unread message.                                                                                                                                                                                                                          |
 

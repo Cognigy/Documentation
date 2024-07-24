@@ -1,13 +1,13 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-description: "In the Getting Started Cognigy Webchat v3 tutorial, you will create a virtual agent from scratch, build a conversation using Cognigy.AI Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode."
+description: "In the Getting Started Cognigy Webchat v3 tutorial, you will create an AI Agent from scratch, build a conversation using Cognigy.AI Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode."
 hidden: false
 ---
 
 # Getting Started with Webchat v3
 
-In this tutorial, you will create a virtual agent from scratch, build a conversation using Basic Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode. Additionally, you will configure several Webchat settings: add a feedback form, customize the homepage by changing the welcome text, and include conversation starters.
+In this tutorial, you will create an AI Agent from scratch, build a conversation using Basic Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode. Additionally, you will configure several Webchat settings: add a feedback form, customize the homepage by changing the welcome text, and include conversation starters.
 
 ## Prerequisites
 
@@ -15,20 +15,20 @@ Cognigy.AI version 4.72 or later.
 
 ## Create a Project
 
-Create a project that involves building a virtual agent:
+Create a project that involves building an AI Agent:
 
 1. Open the Cognigy.AI interface.
 2. In the upper-left corner, click **+ Create Agent**.
-3. On the **Basic settings for your Virtual Agent** page, specify a name for your agent in the **Virtual Agent Name** field, for example, `AI Agent`.
-4. Click **Create Empty Agent**.
+3. On the **Basic settings for your Project** page, specify a name for your agent in the **Project Name** field, for example, `AI Project`.
+4. Click **Create Empty Project**.
 
-Once the project creation is complete, you can proceed with building the virtual agent.
+Once the project creation is complete, you can proceed with building the AI Agent.
 
 ## Build a Flow
 
-To build a virtual agent, follow these steps:
+To build an AI Agent, follow these steps:
 
-1. In the left-side **Agent** menu, navigate to **Build > Flows**.
+1. In the left-side **Project** menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
    3.1. Add a unique name, for example, `Getting Started`.<br>
@@ -59,13 +59,13 @@ To build a virtual agent, follow these steps:
 14. In the Say Node editor, go to the **Text** field and enter the following sentences: `You're welcome! If you have a moment, please rate your experience with our support today in the Chat options.`
 15. Click **Save Node**.
 
-Once your virtual agent is created, you can deploy it via the Webchat v3 Endpoint.
+Once your AI Agent is created, you can deploy it via the Webchat v3 Endpoint.
 
 ## Create an Endpoint
 
 To create a Webchat Endpoint v3, follow these steps:
 
-1. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+1. In the left-side **Project** menu, select **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following:<br>
    3.1. Select the **Webchat (v3)** Endpoint type.<br>
@@ -97,18 +97,18 @@ To customize settings within the Webchat v3 Endpoint, follow these steps:
 16. In the **Conversation Rating** settings, select **Always** from the **Enable Rating Functionality** list. 
 17. Click **Save**.
 
-Once the Webchat v3 settings are configured, proceed to test the virtual agent.
+Once the Webchat v3 settings are configured, proceed to test the AI Agent.
 
-## Test your Virtual Agent
+## Test your AI Agent
 
-To test your virtual agent via Demo Webchat, follow these steps:
+To test your AI Agent via Demo Webchat, follow these steps:
 
 1. In the upper-right corner of the **Endpoint Editor** page, select **Open Demo Webchat**. A home screen of Webchat v3 opens. 
-2. Click the button **I need technical Support** that triggers a conversation with the virtual agent.
+2. Click the button **I need technical Support** that triggers a conversation with the AI Agent.
     <figure>
       <img class="image-center" src="../../../_assets/webchat/getting-started/home-screen.png" width="100%" />
     </figure>
-3. Reply to the virtual agent with the following message: `Hi! I'd like to know where the Cognigy Headquarters is located`.
+3. Reply to the AI Agent with the following message: `Hi! I'd like to know where the Cognigy Headquarters is located`.
    <figure>
       <img class="image-center" src="../../../_assets/webchat/getting-started/start-conversation.png" width="100%" />
     </figure>
@@ -116,7 +116,7 @@ To test your virtual agent via Demo Webchat, follow these steps:
    <figure>
       <img class="image-center" src="../../../_assets/webchat/getting-started/agent-reply.png" width="100%" />
     </figure>
-5. When you send a reply, the virtual agent asks you to leave feedback on the Chat Options screen. In the upper-right corner of the current page, click ![vertical-ellipsis](../_assets/icons/vertical-ellipsis.svg).
+5. When you send a reply, the AI Agent asks you to leave feedback on the Chat Options screen. In the upper-right corner of the current page, click ![vertical-ellipsis](../_assets/icons/vertical-ellipsis.svg).
    <figure>
       <img class="image-center" src="../../../_assets/webchat/getting-started/finish-conversation.png" width="100%" />
     </figure>

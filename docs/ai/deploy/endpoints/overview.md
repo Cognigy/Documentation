@@ -6,7 +6,7 @@ hidden: false
 
 # Endpoints
 
-*Endpoints* are connectors between Cognigy virtual agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
+*Endpoints* are connectors between Cognigy AI Agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
 
 Endpoints support text-based conversations as well as conversations on your contact center phone lines.
 
@@ -27,7 +27,7 @@ Every Endpoint needs to be configured in the following configuration fields:
 
 Endpoints can be pointed to a specific [Snapshot](../snapshots.md)
 if there is at least one Snapshot in the Agent.
-This enables you to easily deploy different versions of your virtual agent.
+This enables you to easily deploy different versions of your AI Agent.
 
 While an Endpoint is active, you can replace or remove a Snapshot. Note that active sessions may continue to use the old Snapshot until they time out.
 

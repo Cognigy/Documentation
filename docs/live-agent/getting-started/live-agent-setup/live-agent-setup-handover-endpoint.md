@@ -25,7 +25,7 @@ To configure the Handover Settings of your Endpoint, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
 3. Click **+New Endpoint**.
-4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent.
+4. In the **New Endpoint** window, add an Endpoint name and select your AI Agent Flow that hands you over to a human agent.
 5. In the **Endpoint type** list, select the Webchat Endpoint.
 6. Enter a unique name and click **Save**.
 7. Go to **Handover Settings**. 

@@ -6,7 +6,7 @@
 
 # Overview
 
-*Cognigy Voice Gateway* is an AI-based solution to deploy virtual voice agents for automated phone conversations. It is seamlessly integrated with the Cognigy.AI platform and allows you to connect your virtual agent to your contact center.
+*Cognigy Voice Gateway* is an AI-based solution to deploy voice AI Agents for automated phone conversations. It is seamlessly integrated with the Cognigy.AI platform and allows you to connect your AI Agent to your contact center.
 
 Voice Gateway provides users with voice-based services, such as phone calls, voice assistants, and smart speakers. Also, Voice Gateway can perform various functions, such as speech recognition, natural language understanding, dialogue management, text-to-speech and speech-to-text conversion.
 

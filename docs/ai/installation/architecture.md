@@ -43,9 +43,9 @@ Cognigy.AI itself is a product offering different types of functionality:
 
 While Cognigy Insights is actually also part of Cognigy.AI, it plays a smaller role when taking about the Cognigy.AI core product infrastructure. To learn more, read the [Insights (Analytics)](../../insights/overview.md) documentation.
 
-### IDE - building your Virtual Agents
+### IDE - building your AI Agents
 
-A place that allows you to create virtual agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration of your virtual agent, a so-called [Snapshot](../../ai/deploy/snapshots.md) must be created in order to deploy your virtual agent into production. A Snapshot is an immutable copy of your virtual agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface to the second group of functionality: The Cognigy.AI Runtime.
+A place that allows you to create AI Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration of your AI Agent, a so-called [Snapshot](../../ai/deploy/snapshots.md) must be created in order to deploy your AI Agent into production. A Snapshot is an immutable copy of your AI Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface to the second group of functionality: The Cognigy.AI Runtime.
 
 The following table shows the most relevant microservices forming the IDE:
 
@@ -59,7 +59,7 @@ The following table shows the most relevant microservices forming the IDE:
 | service-security       | Manages users, organizations and roles including permissions.                                                                                                                                                                                                                                          |
 | service-task-manager   | Manages long running operations inside of Cognigy.AI. Those operations include creating Cognigy Snapshots, Packaging assets for downloads, Processing your uploaded documents as part of our Knowledge AI solution. Our user interface exposes a task manager which shows all long-running operations. |
 
-### Runtime - running your Virtual Agents
+### Runtime - running your AI Agents
 
 Our Runtime is optimized for performance & throughput. All microservices belonging to the runtime are stress-tested on a regular basis and can scale horizontally. Cognigy.AI's runtime is a highly distributed system and can leverage huge amounts of hardware if given. We run performance tests for every release of Cognigy.AI in order to ensure that a new version is at least as fast & scalable as the last version.
 

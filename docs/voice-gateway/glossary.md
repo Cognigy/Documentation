@@ -106,10 +106,10 @@ _**Users**_
 ## V
 
 _**Voice Gateway**_
-: An AI-based solution to deploy virtual voice agents for automated phone conversations. It seamlessly integrates with the Cognigy.AI platform, empowering you to connect your virtual agent to your contact center. Voice Gateway provides you with voice-based services, such as phone calls, voice assistants, and smart speakers. Also, Voice Gateway can perform various functions, such as speech recognition, natural language understanding, dialogue management, text-to-speech, and speech-to-text conversion. For more information, read the [Voice Gateway](../ai/deploy/endpoint-reference/voice-gateway.md) and [Voice Gateway Overview](overview.md) documentation.
+: An AI-based solution to deploy voice AI Agents for automated phone conversations. It seamlessly integrates with the Cognigy.AI platform, empowering you to connect your AI Agent to your contact center. Voice Gateway provides you with voice-based services, such as phone calls, voice assistants, and smart speakers. Also, Voice Gateway can perform various functions, such as speech recognition, natural language understanding, dialogue management, text-to-speech, and speech-to-text conversion. For more information, read the [Voice Gateway](../ai/deploy/endpoint-reference/voice-gateway.md) and [Voice Gateway Overview](overview.md) documentation.
 
 _**Voice Gateway Endpoint**_
-: A connector within Cognigy.AI that enables seamless interaction between the virtual agent and external systems or platforms. To route your contact center to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with Cognigy technical support to configure your SIP Trunk and route your number to the right Endpoint. For more information, read the [Endpoints](../ai/deploy/endpoints/overview.md) and [Create Voice Gateway Endpoint](getting-started.md#create-a-voice-gateway-endpoint) documentation.
+: A connector within Cognigy.AI that enables seamless interaction between the AI Agent and external systems or platforms. To route your contact center to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with Cognigy technical support to configure your SIP Trunk and route your number to the right Endpoint. For more information, read the [Endpoints](../ai/deploy/endpoints/overview.md) and [Create Voice Gateway Endpoint](getting-started.md#create-a-voice-gateway-endpoint) documentation.
 
 _**Voice Gateway Events**_
 : Events that refer to specific occurrences or incidents during a voice call that are recorded by Voice Gateway. These events can give valuable information about the progress and status of the call. For more information, read the [Voice Gateway Events](references/events/overview.md) documentation.
@@ -118,7 +118,7 @@ _**Voice Gateway Flow**_
 : A structured sequence of interactions designed for voice-enabled applications within the Cognigy.AI platform.
 You can start your Voice Gateway project by creating a voice Flow in Cognigy.AI.
 Every Node that offers text-based messages can be used in a Voice Flow.
-In a voice conversation, the virtual agent responds with a text-based message for every user input.
+In a voice conversation, the AI Agent responds with a text-based message for every user input.
 Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs triggered by the Flow will be bundled into one message and delivered across the phone line.
 For more information, read the [Create Voice Gateway Flow](getting-started.md#create-a-voice-gateway-flow) documentation.
 

@@ -25,18 +25,18 @@ To build a chat agent, follow these steps:
 8. Left-click the Say Node to open the Node editor. 
 9. In the Say Node editor, go to the **Text** field.
 10. In the **Text** field, enter `Hello` and click ![token](../../_assets/icons/token.svg).
-11. From the **Tokens** list, select **Answer**. This token lets reuse the user's answer in the virtual agent's response.
+11. From the **Tokens** list, select **Answer**. This token lets reuse the user's answer in the AI Agent's response.
 12. Click **Save Node**.
 
-Once your virtual agent is created, you can test it via the Interaction Panel.
+Once your AI Agent is created, you can test it via the Interaction Panel.
 
 ## Test your Chat Agent
 
-To test your virtual agent, follow these steps:
+To test your AI Agent, follow these steps:
 
 1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
 2. Initiate a conversation by entering `Hello` in the **Text Message** field and press **Enter**.
-3. Answer the virtual agent's question by entering your name. The virtual agent will greet you by your name.
+3. Answer the AI Agent's question by entering your name. The AI Agent will greet you by your name.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/overview/getting-started-chat.png" width="100%" />
@@ -46,7 +46,7 @@ Now you can deploy the agent using the [Webchat v3](../../webchat/getting-starte
 
 ## What's Next?
 
-- Familiarize yourself with the core concepts of building virtual agents, such as [Projects](../build/projects.md), [Flows](../build/flows.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigy-script.md).
+- Familiarize yourself with the core concepts of building AI Agents, such as [Projects](../build/projects.md), [Flows](../build/flows.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigy-script.md).
 - Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
 - Explore [test](../test/interaction-panel/overview.md) and [deploy](../deploy/endpoints/overview.md) features.
 - Connect your agent to the [contact center](../escalate/handovers.md).
