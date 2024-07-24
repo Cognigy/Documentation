@@ -82,18 +82,18 @@ To set up an SIP for outgoing calls, follow these steps:
 8. Select the **Outbound** option.
 9. Select from the available options:
 
-=== "UDP"
-    1. SIP over UDP. UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
-=== "TCP"
-    1. SIP over TCP. TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
-=== "TLS"
-    1. SIP over TLS. TLS prevents third party eavesdropping and tampering with communication.
-    2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
-=== "TLS/SRTP"
-    1. SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. 
-    2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
-    3. The **Pad crypto** setting will appear. Select this setting if you want to add crypto padding to your connection.
+    === "UDP"
+        1. SIP over UDP. UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
+    === "TCP"
+        1. SIP over TCP. TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
+    === "TLS"
+        1. SIP over TLS. TLS prevents third party eavesdropping and tampering with communication.
+        2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+    === "TLS/SRTP"
+        1. SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. 
+        2. The **Use sips scheme** setting will appear. Select this setting if you want to use the SIPS scheme.
+        3. The **Pad crypto** setting will appear. Select this setting if you want to add crypto padding to your connection.
 
-Click **Save.**
+10. Click **Save.**
 
 To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in **Recent Calls > Outbound Call > Details**.
