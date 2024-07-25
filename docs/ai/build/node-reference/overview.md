@@ -486,4 +486,4 @@ This Node searches through data within the Knowledge AI solution, extracts a rel
 
 ### [Set Translation](other-nodes/set-translation.md)
 
-This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined on the [Project Settings](../../administer/access/project-settings.md) page.
+This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined in the [Project Settings](../../administer/access/project-settings.md) page.

@@ -11,7 +11,7 @@ hidden: false
 
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-To learn how to use Intents, read [Train your AI Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents) in Cognigy Help Center.
+To learn how to use Intents, read [Train your AI Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents) in the Cognigy Help Center.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -34,7 +34,7 @@ To learn how to use Intents, read [Train your AI Agent to recognize Intents](htt
 Machine learning models work best with comparable amount of information on all intent classes. That is, ideally, all intents have a similar amount of example sentence and are clearly separable in terms of content. While it is able to deal with imperfect input, it always helps if you make the job for the machine easier.
 
 Make sure you do not have intents that are only a single word or sentence without useful information. Such intents may reduce the overall efficacy of the model.
-If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to ``null`` in the [Input](../../test/interaction-panel/input.md) object. You can add examples to the [Reject Intent](intents/reject-intents.md) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the AI Agent.
+If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to `null` in the [Input](../../test/interaction-panel/input.md) object. You can add examples to the [Reject Intent](intents/reject-intents.md) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the AI Agent.
 
 !!! note "Avoid punctuation marks in example sentences"
     Using punctuation marks in example sentences affects recognition accuracy.
