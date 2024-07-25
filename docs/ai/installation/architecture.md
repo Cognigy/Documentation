@@ -45,7 +45,10 @@ While Cognigy Insights is actually also part of Cognigy.AI, it plays a smaller r
 
 ### IDE - building your AI Agents
 
-A place that allows you to create AI Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration of your AI Agent, a so-called [Snapshot](../../ai/deploy/snapshots.md) must be created in order to deploy your AI Agent into production. A Snapshot is an immutable copy of your AI Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface to the second group of functionality: The Cognigy.AI Runtime.
+A service that allows you to create AI Agents and use all the components, such as Flows, Playbooks, Lexicons, and Intents, is called the IDE (Integrated Development Environment) - a term often used in software development. 
+Once you are done with the first iteration of your AI Agent, a so-called Snapshot must be created to deploy your AI Agent into production. 
+A Snapshot is an immutable copy of your AI Agent containing all resources that make it up, such as your Flows, Lexicons, Intents, and Extensions. 
+Snapshots act as the connection to the second group of functionality: the Cognigy.AI Runtime.
 
 The following table shows the most relevant microservices forming the IDE:
 
@@ -70,8 +73,8 @@ The following table describes the responsibilities of key runtime microservices:
 | service-endpoint                                | Translates channel specific incoming requests to our internal representation, executes Transformers, counts billing relevant information and sends responses back to external channels.                                                  |
 | service-app-session-manager                     | Acts as an API for Cognigy xApp sessions to connect. Distributes xApp relevant events to end-user devices and reacts on xApp data-inputs.                                                                                                |
 | service-ai                                      | Processes actual user messages, coordinates with our NLU microservices, waits for Extensions and HTTP Requests to external systems and processes Cognigy Script. This is the core of Cognigy.AI.                                         |
-| service-nlp-ner                                 | Detects [System Slots](../empower/nlu/slots-and-lexicons/slots.md) in user utterances - these are things like dates, emails, currencies and numbers.                                                                     |
-| service-nlp-matcher                             | Detects [Lexicon Slots](../empower/nlu/slots-and-lexicons/slots.md) in user utterances using [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md).                                                                  |
+| service-nlp-ner                                 | Detects [System Slots](../empower/nlu/slots-and-lexicons/slots.md) in user utterances - these are things like dates, emails, currencies and numbers.                                                                                     |
+| service-nlp-matcher                             | Detects [Lexicon Slots](../empower/nlu/slots-and-lexicons/slots.md) in user utterances using [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md).                                                                                  |
 | service-nlp-classifier-score                    | Implement intent recognition based on [Intent models](../empower/nlu/overview.md) our customers can train within our platform. There are variants for different languages (German, English, Korean, Japanese, Generic, XX).              |
 | service-nlp-embedding                           | Runs our pre-trained word-embedding models which are part of our NLU system and drive [Intent models](../empower/nlu/overview.md) our customers can create as part of our platform. Language dependent embedding services are available. |
 | service-http & execution                        | Sends HTTP-Requests to external 3rd party systems when [HTTP Request Flow Node](../build/node-reference/service/http-request.md) is used and executes Flow Nodes of our customers as part of [Extensions](../build/extensions.md).       |

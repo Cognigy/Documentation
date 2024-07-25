@@ -1,6 +1,6 @@
 # API and CLI
 
-_Cognigy.AI API and CLI_ are toolsets for developers to interact with Cognigy.AI. The API allows programmatic interaction and integration with existing systems. The CLI provides direct command-line access to manage AI Agent projects. Using both tools streamlines workflows, enhances productivity, and manages AI Agent projects efficiently.
+_Cognigy.AI API and CLI_ are toolsets for developers to interact with Cognigy.AI. The API allows programmatic interaction and integration with existing systems. The CLI provides direct command-line access to manage AI Agents. Using both tools streamlines workflows, enhances productivity, and manages Cognigy.AI Projects efficiently.
 
 ## Cognigy.AI API
 

@@ -1,11 +1,7 @@
 ---
 title: "Embedding"
 slug: "embedding"
-description:
-"Embedding Cognigy Webchat v2 into your website allows you to provide a conversational interface powered by AI Agents,
-enhancing user interaction and support.
-This process involves several key steps,
-from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
+description: "Embedding Cognigy Webchat v2 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
 hidden: false
 ---
 

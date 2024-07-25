@@ -121,7 +121,7 @@ _**Labels**_
 : Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation.
 
 _**Live Agent**_
-: Cognigy product that combines conversational AI and human agents to enhance customer experiences and improve support team productivity. It allows a smooth transition between customer-AI Agent conversation and human support, making it easier to handle customer inquiries effectively. For more information, read the [Live Agent](overview.md) documentation.
+: Cognigy is a product that combines conversational AI and human agents to enhance customer experiences and improve support team productivity. It allows a smooth transition between customer-AI Agent conversations and human support, making it easier to handle customer inquiries effectively. For more information, read the [Live Agent](overview.md) documentation.
 
 _**Live Agent Settings**_
 : Cognigy Live Agent settings offer many features, such as team and inbox management, automation rules, canned responses, attachments, audit logs, and account settings. These capabilities can significantly improve customer interactions and enhance support efficiency. Note that these settings overwrite all Profile settings. For more information, read the [Live Agent settings](settings/overview.md) documentation.
