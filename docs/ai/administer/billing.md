@@ -24,19 +24,19 @@ Sending more than 50 inputs or interacting with the Cognigy.AI platform for more
 
 **An end user sends exactly 50 user inputs within a period of less than 24 hours.**
 
-An end user begins interacting with a Cognigy.AI-powered AI Agent and sends 50 user inputs. The entire interaction takes 15 minutes. The system will record *1 billable Conversation* as the end user had fewer than 51 user inputs and only interacted with the system for 15 minutes.
+An end user begins interacting with a Cognigy AI Agent and sends 50 user inputs. The entire interaction takes 15 minutes. The system will record *1 billable Conversation* as the end user had fewer than 51 user inputs and only interacted with the system for 15 minutes.
 
 #### Scenario 2
 
 **An end user sends more than 50 user inputs within a period of less than 24 hours.**
 
-An end-user starts to interact with a Cognigy.AI powered AI Agent and sends 101 user inputs within 2 hours of time. The system will record *3 billable Conversations* as three multiples of 50 inputs have been processed.
+An end-user starts to interact with a Cognigy AI Agent and sends 101 user inputs within 2 hours of time. The system will record *3 billable Conversations* as three multiples of 50 inputs have been processed.
 
 #### Scenario 3
 
 **An end user starts an interaction by sending a message, doesn't respond for a day, and then continues the interaction.**
 
-An end user begins interacting with a Cognigy.AI powered AI Agent by sending a single message. The user then pauses the interaction for more than 24 hours and returns the next day by sending another message. The system will record *2 billable Conversations* since they extend over multiple days and exceed a duration of 24 hours.
+An end user begins interacting with a Cognigy AI Agent by sending a single message. The user then pauses the interaction for more than 24 hours and returns the next day by sending another message. The system will record *2 billable Conversations* since they extend over multiple days and exceed a duration of 24 hours.
 
 ### xApps
 
@@ -74,7 +74,8 @@ Note that additional billing will only apply *if no Flow is executed* after your
 
 ## Calls
 
-Cognigy.AI offers the ability to build voice experiences and AI Agents that you can deploy to your telephony systems. Note that you will need a separate license agreement with Cognigy for a product like Cognigy Voice Gateway.
+Cognigy.AI offers the ability to build voice experiences and AI Agents that you can deploy to your telephony systems.
+Note that you will need a separate license agreement with Cognigy for a product such as Cognigy Voice Gateway.
 Customers can purchase different packages of *concurrent lines* to connect their voice-enabled AI Agents to their telephony systems. Reporting capabilities are available to understand the *peak number of concurrent lines* used on a specific day.
 
 If a customer uses more concurrent lines than the number purchased on a given day, overage charges will apply for that day.

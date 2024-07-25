@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
 
 _Flows_ are conversational processes that represent interactions between users and AI Agents. They outline the various paths that a conversation can take and define the logic behind the responses given by the AI Agent.
-Flows let you customize and design the behavior of their AI Agents, enabling you to create tailored and dynamic conversational experiences.
+Flows let you customize and design the behavior of AI Agents, enabling you to create tailored and dynamic conversational experiences.
 
 ## Create a Flow
 

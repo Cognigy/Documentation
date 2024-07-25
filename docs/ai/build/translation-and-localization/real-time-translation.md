@@ -31,7 +31,8 @@ Conditions:
 
 Result:
 
-AI Agent's content is translated into Russian in real time. Everything in the conversation is translated, including components like the date picker (day, month, week).
+AI Agent's content is translated into Russian in real time.
+Everything in the conversation is translated, including components such as the date picker (day, month, week).
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/preselected_user_language_1.png" width="70%" />
@@ -74,7 +75,7 @@ The chat flow process between the user and the human agent, which involves real-
   <figcaption>A human agent (English) conversation with a user (German) in real-time translation</figcaption>
 </figure>
 
-By clicking Resolve, the human agent can close the conversation, and the user is returned to the AI Agent conversation as before.
+By clicking **Resolve**, the human agent can close the conversation, and the user is returned to the AI Agent conversation as before.
 
 ## More Information
 
