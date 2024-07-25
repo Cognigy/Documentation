@@ -148,7 +148,7 @@ _**Online (Agents)**_
 : One of four possible Live Agent statuses. This status indicates that the Agent is available and actively handling customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
 _**Open (conversations)**_
-: This conversation status indicates that a conversation is prepared for a handover to an agent.
+: This conversation status indicates that a conversation is prepared for a handover to a human agent.
 
 ## P
 
@@ -167,7 +167,7 @@ _**Resolved (conversations)**_
 : This conversation status means that a conversation is closed because the user's problem has been fixed.
 
 _**Roles**_
-: A method of granting permissions to specific users for data access. These permissions are based on a user role profile. In Live Agent users can have three different Single Roles: `Agents`, `Supervisors`, and `Administrators`. You can also assign more than one role to an Agent. For more information, read the [Roles](roles.md) documentation.
+: A method of granting permissions to specific users for data access. These permissions are based on a user role profile. In Live Agent users can have three different Single Roles: `Agents`, `Supervisors`, and `Administrators`. You can also assign more than one role to a human agent. For more information, read the [Roles](roles.md) documentation.
 
 ## S
 

@@ -28,7 +28,7 @@ To find out how to connect to each supported external NLU service via the Help C
 * [Microsoft LUIS: External NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
 * [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-To test and deploy an Agent using a third-party NLU, read [External NLU](overview.md#testing-and-deploying-with-an-external-nlu) page.
+To test and deploy an AI Agent using a third-party NLU, read [External NLU](overview.md#testing-and-deploying-with-an-external-nlu) page.
 
 ## More Information
 

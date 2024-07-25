@@ -26,7 +26,7 @@ Before using a web page as a source, check if at least one [Knowledge Store](ove
 
 === "There are no Knowledge Stores"
      1. Open the Cognigy.AI interface.
-     2. In the left-side menu, select an Agent where you want to add a Knowledge Store.
+     2. In the left-side menu, select a Project where you want to add a Knowledge Store.
      3. In the left-side menu, navigate to **Build > Knowledge**. The Knowledge AI wizard will be opened.
      4. Continue following the wizard instructions.
      5. Specify a unique name, select an [embedding model](../llms.md#supported-models) if you did not add it before.
@@ -44,7 +44,7 @@ Before using a web page as a source, check if at least one [Knowledge Store](ove
 
 === "There is at least one Knowledge Store"
      1. Open the Cognigy.AI interface.
-     2. In the left-side menu, select an Agent where you want to add a Knowledge Store.
+     2. In the left-side menu, select a Project where you want to add a Knowledge Store.
      3. In the left-side menu, navigate to **Build > Knowledge**. 
      4. Click **+ New Knowledge Store** and enter a name and optional description.
      5. Click **Save** and then click **New Knowledge Sources**.

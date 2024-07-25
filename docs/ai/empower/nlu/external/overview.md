@@ -40,7 +40,11 @@ Cognigy.AI provides platform users with the opportunity to substitute the NLU se
 
 ### Testing with an External NLU
 ---
-An external NLU service that has been connected via the NLU connectors feature can be used for testing via the **Interaction Panel**. Open the interaction panel from within an agent and select the ***settings*** tab to access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
+An external NLU service
+that has been connected via the NLU connectors feature can be used for testing via the **Interaction Panel**.
+Open the interaction panel from within a Project and select the ***settings*** tab
+to access the ***NLU Connector*** dropdown menu.
+This menu is populated with all the NLU connectors that have been added to the agent.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/NLU-connectors-menu-ip.png" width="100%" />

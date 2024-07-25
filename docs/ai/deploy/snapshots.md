@@ -104,11 +104,11 @@ If you are using Snapshots as a way of archiving your AI Agent, you might want t
 - **Restoring a Snapshot overwrites all existing Agent resources**. Make sure that you are fully aware of the implications when restoring an AI Agent from a Snapshot. All resources within the AI Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your AI Agent, conversations will break as those Flows will be removed.
 - **Restoring a Snapshot from another Agent may require manual changes to the Endpoints**. Restoring a Snapshot from another Agent will automatically update the Endpoints assigned with primary locale but would need a manual update for Endpoints with secondary locale. Those Endpoints will be indicated with a red dot beside the Endpoint name, like in the images below.
 
-### Restore an Agent from the Snapshot
+### Restore a Project from the Snapshot
 
 Before initiating the restoration process, review the associated risks in the [Before Getting Started](#before-getting-started) section.
 
-To restore an Agent from a Snapshot, do the following:
+To restore a Project from a Snapshot, do the following:
 
 1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your AI Agent.
 2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to restore. A selection menu will appear.
@@ -146,7 +146,8 @@ Importing and restoring a Snapshot from a newer version into an older version of
 
 ## Deploy AI Agents to Production with Snapshots
 
-The following three scenarios show the recommended methods for deploying AI Agents into production. Consider an Agent in Cognigy.AI as analogous to a project in other software.
+The following three scenarios show the recommended methods for deploying AI Agents into production.
+Consider an AI Agent in Cognigy.AI as analogous to a project in other software.
 
 ### Use a Single AI Agent
 
