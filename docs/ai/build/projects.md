@@ -23,7 +23,7 @@ AI Agents can deploy on a wide range of channels.
 5. Select a color that will be associated with your Project.
 6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
 7. Click **Next: Select Solution Accelerator**.
-8. Select **Blank** or any pre-build solution accelerators that can help you build a specific AI Agent for you.
+8. Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.
 9. Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.
 10. Select the pre-build skills if you want to use one for your Project.
 11. Click **Go to Project** to view the created Project.
