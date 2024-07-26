@@ -14,8 +14,8 @@ With LLMs, Cognigy AI Agents can understand and respond to user input in a natur
 
 ## Supported Models
 
-The table below lists the LLMs supported by Cognigy out of the box.
-Alternatively, you can specify another model that is not presented in the table.
+The table below lists LLMs supported by Cognigy.AI.
+You can also specify another model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name. For more information about adding a custom model for a selected LLM provider, refer to the [Add a Model](#add-a-model) section.
 
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & LLM-powered Answer Extraction | Generate Node Output | Knowledge Search | Sentiment Analysis | NLU Embedding Model |
