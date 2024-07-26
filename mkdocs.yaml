@@ -350,6 +350,7 @@ nav:
           - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
           - ai/installation/migration/from-weaviate-to-qdrant.md
       - SaaS:
+        - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
       - Single Sign-On (SSO):
         - ai/installation/AI-login.md
