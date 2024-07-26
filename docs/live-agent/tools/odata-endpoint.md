@@ -4,7 +4,7 @@ slug: "live-agent-odata-endpoint"
 hidden: false
 ---
 
-# OData Analytics Endpoint
+# Live Agent: OData Analytics Endpoint
 
 Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
 
