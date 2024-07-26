@@ -6,7 +6,7 @@ hidden: false
 
 # Global Filters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../release-notes/4.75.md)
 
 _Global Filters_ enable you to focus your dashboards and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all dashboards and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
 
@@ -19,6 +19,7 @@ The following global filters are available:
 
 - [Time Span](#time-span)
 - [Endpoints](#endpoints)
+  - [Interaction Panel and Playbook Data](#interaction-panel-and-playbook-data) 
 - [Snapshots](#snapshots)
 - [Locales](#locales)
 
@@ -72,6 +73,16 @@ To use the **Endpoints** filter, proceed as follows:
 6. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field. 
 8. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+
+### Interaction Panel and Playbook Data
+
+By default, the sessions created via the Interaction Panel or Playbooks are not included in the dashboards or explorers. To include such data, proceed as follows:
+
+1. Open the Insights interface.
+2. At the top of the Insights page, go to the filter bar.
+3. Click **Endpoint**.
+4. Activate the **Interaction Panel / Playbook Data** option.
+5. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Snapshots
 
