@@ -13,7 +13,7 @@ Within the platform, you can do the following:
 
 - **Check Statuses by Product**. View the current status and daily performance metrics for each specific product offered by Cognigy. This information enables you to monitor the health of the services you rely on.
 - **View Past Incidents**. Access detailed incident history to review past issues and their resolutions. This information helps you track the system's reliability over time.
-- **Subscribe to Updates**. Stay informed by subscribing to updates. You will receive notifications about system performance and incidents directly through your preferred communication channels.
+- **Subscribe to Updates**. Stay informed by subscribing to updates. You will receive notifications about system performance and incidents through your preferred communication channels.
 
 ## Availability
 
