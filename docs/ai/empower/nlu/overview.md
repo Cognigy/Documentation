@@ -5,13 +5,13 @@ hidden: false
 ---
 # NLU Overview
 
-**Natural Language Understanding** is at the core of advanced virtual agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU.
+**Natural Language Understanding** is at the core of advanced AI Agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU.
 
 ## Intents
 
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-To learn how to use Intents, read [Train your virtual agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents) in Cognigy Help Center.
+To learn how to use Intents, read [Train your AI Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents) in the Cognigy Help Center.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -34,7 +34,7 @@ To learn how to use Intents, read [Train your virtual agent to recognize Intents
 Machine learning models work best with comparable amount of information on all intent classes. That is, ideally, all intents have a similar amount of example sentence and are clearly separable in terms of content. While it is able to deal with imperfect input, it always helps if you make the job for the machine easier.
 
 Make sure you do not have intents that are only a single word or sentence without useful information. Such intents may reduce the overall efficacy of the model.
-If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to ``null`` in the [Input](../../test/interaction-panel/input.md) object. You can add examples to the [Reject Intent](intents/reject-intents.md) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
+If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to `null` in the [Input](../../test/interaction-panel/input.md) object. You can add examples to the [Reject Intent](intents/reject-intents.md) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the AI Agent.
 
 !!! note "Avoid punctuation marks in example sentences"
     Using punctuation marks in example sentences affects recognition accuracy.
@@ -44,7 +44,7 @@ If the NLU predicts the utterance is out of scope of the intent model, no intent
 As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being suboptimal and red being bad. Additional information is given on mouse-hover.
 
 !!! warning "Number of example sentences"
-    Intents must have at least a minimum of five example sentences to train the NLU sufficiently and to get a suitable [Model](intents/ml-intents.md#building-the-nlu-model). The more examples you enter, the more the model can be built with higher accuracy. As a result, Intents will be recognized in a conversation with a higher likelihood and evaluated by a higher score rate based on the more accurate model. That improves the intent recognition of your virtual agent.
+    Intents must have at least a minimum of five example sentences to train the NLU sufficiently and to get a suitable [Model](intents/ml-intents.md#building-the-nlu-model). The more examples you enter, the more the model can be built with higher accuracy. As a result, Intents will be recognized in a conversation with a higher likelihood and evaluated by a higher score rate based on the more accurate model. That improves the intent recognition of your AI Agent.
 
 ### Rules
 Rules can be used to trigger the Intent under specific conditions. Rules are defined as **JavaScript expressions** that are evaluated when the NLU is executed.

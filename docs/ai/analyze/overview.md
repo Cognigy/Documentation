@@ -6,7 +6,7 @@ hidden: false
 
 # Analytics
 
-When you work on conversational AI projects, it's important to keep track of how your virtual and human agents are performing. Cognigy offers a variety of tools that can help you analyze and evaluate your agents' effectiveness. You can use these tools to monitor important metrics, such as how long it takes to respond to customers, how often issues are resolved, and how satisfied customers are with the service they receive. By using this data, you can find areas where your agents may need more training or improvement, and make informed decisions on how to optimize their performance. With Cognigy's monitoring tools, you can be confident that your conversational AI projects are running smoothly and providing the best possible user experience.
+When you work on conversational AI projects, it's important to keep track of how your AI and human agents are performing. Cognigy offers a variety of tools that can help you analyze and evaluate your agents' effectiveness. You can use these tools to monitor important metrics, such as how long it takes to respond to customers, how often issues are resolved, and how satisfied customers are with the service they receive. By using this data, you can find areas where your agents may need more training or improvement, and make informed decisions on how to optimize their performance. With Cognigy's monitoring tools, you can be confident that your conversational AI projects are running smoothly and providing the best possible user experience.
 
 ## Cognigy Insights
 

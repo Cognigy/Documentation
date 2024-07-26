@@ -124,7 +124,7 @@ any : The requested context data
 
 ### actions.getConversationTranscript || api.getConversationTranscript
 
-Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the virtual agent.
+Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the AI Agent.
 
 **Parameters**
 

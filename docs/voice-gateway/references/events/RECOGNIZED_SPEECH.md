@@ -6,7 +6,7 @@ hidden: false
 
 # RECOGNIZED_SPEECH
 
-The user's answer was recognized by the virtual agent.
+The user's answer was recognized by the AI Agent.
 
 To test a payload with the `RECOGNIZED_SPEECH` event, you can use an empty Flow.
 

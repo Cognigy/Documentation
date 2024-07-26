@@ -1,7 +1,7 @@
 ---
 title: "Embedding"
 slug: "embedding"
-description: "Embedding Cognigy Webchat v2 into your website allows you to provide a conversational interface powered by virtual agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
+description: "Embedding Cognigy Webchat v2 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
 hidden: false
 ---
 
@@ -9,7 +9,7 @@ hidden: false
 
 {! _includes/webchat/deprecation-webchat-v2.md !}
 
-Embedding Webchat v2 into your website allows you to provide a conversational interface powered by virtual agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
+Embedding Webchat v2 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 
 ## Prerequisites
 
@@ -19,11 +19,11 @@ Embedding Webchat v2 into your website allows you to provide a conversational in
 
 ## Add the Embedding HTML
 
-Copy the HTML code from the Webchat v2 Endpoint associated with your virtual agent, which you want to deploy on your website:
+Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, which you want to deploy on your website:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+2. In the left-side menu, select a Project.
+3. In the left-side **Project** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, select a Webchat Endpoint that you recently created.
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.

@@ -22,7 +22,7 @@ To set up Voice Gateway, do the following steps:
 
 ## Create a Voice Gateway flow
 
-Start your **Voice Gateway** project by creating a voice-enabled flow. With a voice conversation, the virtual agent must respond with a text-based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
+Start your **Voice Gateway** project by creating a voice-enabled flow. With a voice conversation, the AI Agent must respond with a text-based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
 
 Every Cognigy.AI node that offers text-based messages can be used in a voice flow. If you have rich media in your flow, the fallback text field will be used as voice output.
 
@@ -39,7 +39,7 @@ For voice-specific actions, you can use the [Voice Gateway Flow Nodes](../ai/bui
 
 ## Create a Voice Gateway Endpoint
 
-To do voice-based experiences with your virtual agent, create your [Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md) in Cognigy.AI. To do that:
+To do voice-based experiences with your AI Agent, create your [Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md) in Cognigy.AI. To do that:
 
 1. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
 2. On the **Endpoints** page, click **+ New Endpoint**. 

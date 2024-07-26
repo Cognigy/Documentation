@@ -11,12 +11,13 @@ _Playbooks_ are automated conversations, which can help you test your Flows and 
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook.png" width="70%" />
 </figure>
 
-!!! note "Create Playbooks from the Interaction Panel"
-    You can turn any conversation in your Interaction Panel directly into a playbook:<br><br>
-    1. Go to the Interaction Panel and chat with your agent<br>
-    2. Click the three dots right next to the Flow selection<br>
-    3. Select *Create Playbook*<br><br>
-    You will be taken to the Playbook Editor with a new Playbook based on your chat history. You can now go on and add assertions and additional steps.
+You can turn any conversation in your Interaction Panel directly into a playbook:
+
+1. Go to the Interaction Panel and chat with your AI Agent.
+2. Click the three dots right next to the Flow selection.
+3. Select **Create Playbook**.
+
+You will be taken to the Playbook Editor with a new Playbook based on your chat history. You can now go on and add assertions and additional steps.
 
 ## Limitations
 

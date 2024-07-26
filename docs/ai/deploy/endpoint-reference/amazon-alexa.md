@@ -9,7 +9,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/alexa.png" width="100%" />
 </figure>
 
-The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an **Agent**. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
+The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
 
 !!! warning
     The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page](../../empower/nlu/external/nlu-connectors.md) for more details.

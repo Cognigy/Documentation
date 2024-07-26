@@ -10,7 +10,9 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform, you are able to connect your **Agent** to your Contact Center or other phone numbers using the AudioCodes Endpoint, allowing customers to speak to your **Agent** instead of just writing with it.
+Within our **Cognigy.AI** platform,
+you are able to connect your AI Agent to your Contact Center or other phone numbers using the AudioCodes Endpoint,
+allowing customers to speak to your AI Agent instead of just writing with it.
 
 [Watch this Episode](https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway) of Cognigy Sessions for a technical deep dive.
 

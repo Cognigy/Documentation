@@ -11,7 +11,7 @@ The collected data is utilized by Insights to display dashboards and explorers, 
 
 ## Data Collections
 
-Analytics data is created from conversations with virtual agents in Cognigy.AI and is available from five distinct collections:
+Analytics data is created from conversations with AI Agents in Cognigy.AI and is available from five distinct collections:
 
  1. Inputs
  2. Chat History
@@ -32,7 +32,7 @@ This process is explained below.
 
 ### Chat History
 
-This collection contains one record per user input, one record per virtual agent output and one record per human agent input. Chat History records are written immediately whenever the message from the respective source arrives. This record is commonly used for generating conversation transcripts.
+This collection contains one record per user input, one record per AI Agent output and one record per human agent input. Chat History records are written immediately whenever the message from the respective source arrives. This record is commonly used for generating conversation transcripts.
 
 ### Steps
 
@@ -90,7 +90,7 @@ Analytics data is generated through the whole lifecycle of an input message bein
 
 ## Analytics Steps
 
-In Cognigy.AI, Analytics Steps are implemented to monitor the paths users take during interactions with the virtual agent.
+In Cognigy.AI, Analytics Steps are implemented to monitor the paths users take during interactions with the AI Agent.
 
 ### Create a Step
 
@@ -104,8 +104,8 @@ You can create an analytics step in the following components:
 To add an analytics step in the Node, do the following:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Build > Flows**.
+2. In the left-side menu, select a Project.
+3. In the left-side **Project** menu, select **Build > Flows**.
 4. On the **Flows** page, select the existing Flow or create a new one.
 5. In the Flow editor, select the Node for which you want to add an Analytics step.
 6. Open the Node editor by clicking the Node.
@@ -120,8 +120,8 @@ The Step will be recorded in the Analytics database once the Node is executed.
 To add an analytics step in the Intent, do the following:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Build > Flows**.
+2. In the left-side menu, select a Project.
+3. In the left-side **Project** menu, select **Build > Flows**.
 4. On the **Flows** page, select the existing Flow or create a new one.
 5. In the upper-right corner, select the **NLU** tab.
 6. On the **Intents** tab, go to the existing Intent or create a new one.

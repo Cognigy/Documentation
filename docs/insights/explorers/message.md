@@ -16,7 +16,7 @@ To open the Message Explorer interface, use one of the following options:
     1. Open the Cognigy.AI interface.
     2. In the left-side menu, select a Project.
     3. Within the Agent interface, navigate to Insights using one of the following options:
-        - In the left-side **Agent** menu, select **Insights**. 
+        - In the left-side **Project** menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.
     4. The Cognigy Insights Overview dashboard will be displayed by default.
     5. In the left-side menu, select **Message Explorer**.

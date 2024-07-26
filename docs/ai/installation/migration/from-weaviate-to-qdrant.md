@@ -308,10 +308,10 @@ The example above depicts a migration where:
 
 - In the first project, two entire sources were ignored; none of the Chunks in these sources were ingested into Qdrant. 
 Note that only those Knowledge Sources are ignored entirely that are already corrupt and therefore cannot be used. 
-This action should not cause any issues for production virtual agents.
+This action should not cause any issues for production AI Agents.
 - In the second project, the number corresponding to `missingEmbedding` refers to the number of Chunks ignored because they didn't have corresponding embedding vectors stored. 
 This error is similar to the one described previously, except that in this case, the ignored Chunks may be from more than one source. 
-Also, these Chunks are already corrupt, and ignoring them should not disrupt the existing virtual agents.
+Also, these Chunks are already corrupt, and ignoring them should not disrupt the existing AI Agents.
 
 #### Delete Data from Qdrant
 

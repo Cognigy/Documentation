@@ -6,11 +6,11 @@ hidden: false
 
 # CALL_COMPLETED
 
-The call was terminated by the virtual agent or by the user.
+The call was terminated by the AI Agent or by the user.
 
 To test a payload with the `CALL_COMPLETED` event, you can use an empty Flow.
 
-Input: Start a call via the Interaction Panel by clicking ![phone](../../../_assets/icons/phone.svg) **> Start Call**. The call will either automatically end when the virtual agent terminates the conversation due to inactivity, or you can end the call by clicking **End Call**.
+Input: Start a call via the Interaction Panel by clicking ![phone](../../../_assets/icons/phone.svg) **> Start Call**. The call will either automatically end when the AI Agent terminates the conversation due to inactivity, or you can end the call by clicking **End Call**.
 
 Payload:
 

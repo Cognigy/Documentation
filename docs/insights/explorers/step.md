@@ -14,7 +14,7 @@ To open the Step Explorer, use one of the following options:
     1. Open the Cognigy.AI interface.
     2. In the left-side menu, select a Project.
     3. Within the Agent interface, navigate to Insights using one of the following options:
-        - In the left-side **Agent** menu, select **Insights**.
+        - In the left-side **Project** menu, select **Insights**.
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
         The Cognigy Insights Overview dashboard will be displayed.
     4. In the left-side menu, select **Step Explorer**.
@@ -42,7 +42,7 @@ Before collecting data with the Step Explorer, determine the data you need: Node
 To gather data on Nodes and analyze their performance, add a title to the analytics step.  Optionally, you can also leave a comment to provide context about the Node's function.
 This process of adding a title and comment is called annotating Nodes.
 
-Node annotation helps you analyze customer reactions at specific stages of their interaction with a AI Agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
+Node annotation helps you analyze customer reactions at specific stages of their interaction with an AI Agent. For instance, by examining customer reactions during the ordering process, you can identify issues such as cart abandonment. You can then make improvements to streamline the process, resulting in improved customer satisfaction and conversion rates.
 
 To annotate a Node, follow the steps below:
 

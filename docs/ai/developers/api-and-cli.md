@@ -1,6 +1,6 @@
 # API and CLI
 
-_Cognigy.AI API and CLI_ are toolsets for developers to interact with Cognigy.AI. The API allows programmatic interaction and integration with existing systems. The CLI provides direct command-line access to manage virtual agent projects. Using both tools streamlines workflows, enhances productivity, and manages virtual agent projects efficiently.
+_Cognigy.AI API and CLI_ are toolsets for developers to interact with Cognigy.AI. The API allows programmatic interaction and integration with existing systems. The CLI provides direct command-line access to manage AI Agents. Using both tools streamlines workflows, enhances productivity, and manages Cognigy.AI Projects efficiently.
 
 ## Cognigy.AI API
 
@@ -71,7 +71,7 @@ This API-key is not bound to a specific user and lives within the scope of an Or
 
 ## Cognigy.AI CLI
 
-Cognigy CLI is a command-line interface enabling users to manage virtual agent projects directly from the command line, offering functionalities such as creating snapshots, managing locales, and deploying projects efficiently.
+Cognigy CLI is a command-line interface enabling users to manage AI Agent projects directly from the command line, offering functionalities such as creating snapshots, managing locales, and deploying projects efficiently.
 
 To start using Cognigy.AI CLI, refer to the [Cognigy repository](https://github.com/Cognigy/Cognigy-CLI) on GitHub.
 

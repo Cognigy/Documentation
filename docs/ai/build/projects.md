@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 slug: "projects"
-description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and other resources. You can collaborate on a given Project with multiple team members."
+description: "Cognigy.AI Projects contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and other resources. You can collaborate on a given Project with multiple team members."
 hidden: false
 ---
 
@@ -9,8 +9,10 @@ hidden: false
 
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
-Within a project, you can create virtual agents. A virtual agent is a bot that is designed to automatically handle interactions. A virtual agent is typically designed to tackle one use case, and it can handle multiple user intents.
-Virtual agents can deploy on a wide range of channels.
+Within a project, you can create AI Agents.
+An AI Agent is a bot that is designed to automatically handle interactions.
+It is designed to tackle one use case, and it can handle multiple user intents.
+AI Agents can deploy on a wide range of channels.
 
 ## Create a Project
 
@@ -21,7 +23,7 @@ Virtual agents can deploy on a wide range of channels.
 5. Select a color that will be associated with your Project.
 6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
 7. Click **Next: Select Solution Accelerator**.
-8. Select **Blank** or any pre-build solution accelerators that can help you build a specific virtual agent for you.
+8. Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.
 9. Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.
 10. Select the pre-build skills if you want to use one for your Project.
 11. Click **Go to Project** to view the created Project.
@@ -44,7 +46,7 @@ If the Live Agent Account is already configured for your organization, you can c
     - **Disable AI Copilot** — this option doesn't require any additional resources. AI Copilot functionalities will be turned off.
     - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
 
-Complete the agent setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
+Complete the Project setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
 
 ## Copy the Project ID
 
@@ -68,7 +70,9 @@ You can copy the Project ID using one of the following methods:
 
 ## Project Dashboard
 
-The Project Dashboard serves as an overview page for your Project. It displays relevant information about your agent, including Analytics, Project Members, Recently Changed resources, and additional information about Cognigy.AI itself.
+The Project Dashboard serves as an overview page for your Project.
+It displays relevant information about your Project, including Analytics, Project Members,
+Recently Changed resources, and additional information about Cognigy.AI itself.
 
 ### Analytics Widget
 
@@ -161,7 +165,7 @@ Head over to the [User Menu](../administer/user-menu/overview.md) documentation 
 
 ### Interaction Panel
 
-The Interaction Panel can be used to interact with your virtual agent at any time. It is a useful tool that provides a representation of channel-specific output and can display more detailed debugging information.
+The Interaction Panel can be used to interact with your AI Agent at any time. It is a useful tool that provides a representation of channel-specific output and can display more detailed debugging information.
 
 <figure>
    <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_Interaction_Panel.png" style="margin-bottom: 5px">

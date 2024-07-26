@@ -69,7 +69,7 @@ This is either the prompt for completions or the system message for chat.
 
 Additionally, you can inject the recent conversation into the **Instruction (System Message/Prompt)** field by using these tags:
 
-- `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
+- `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent AI Agent and 10 user outputs, for example:
    ```text
    Bot: agentOutput1
    User: userOutput1
