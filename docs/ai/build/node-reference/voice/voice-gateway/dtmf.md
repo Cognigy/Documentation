@@ -27,7 +27,7 @@ This Node is useful when paired with a [Handover To Agent](../../service/handove
 
 To build a Flow using the DTMF Node, follow these steps:
 
-1. In your Project, open your Voice Gateway Flow.
+1. In your Cognigy AI Project, open your Voice Gateway Flow.
 2. In the Flow editor, add a DTMF Node.
 3. In the DTMF Node editor, enter the required values: 
    - For the Digits sequence, specify the number to your call center hotline, or an extension code to a human agent. 
