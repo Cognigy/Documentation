@@ -68,6 +68,9 @@ _**Service Provider (scope)**_
 _**Settings**_
 : Options to configure your Voice Gateway Account. See [Accounts](#A).
 
+_**SIP Hop**
+: A path the SIP message takes between two SIP elements in a network. Each time a SIP message is forwarded from one SIP device to another, it is called a hop. SIP hops can occur between various SIP network elements, such as proxy servers, registrar servers, or phones and softphones. For more information on SIP connections, read the [Wikipedia Session Initiation Protocol](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) documentation.
+
 _**SIP Trunk**_
 : A mechanism that allows connecting phone systems to the public telephone network using the Session Initiation Protocol (SIP) over an IP network. To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy Technical Support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint. For more information, read the [SIP trunking](https://en.wikipedia.org/wiki/SIP_trunking) documentation.
 
