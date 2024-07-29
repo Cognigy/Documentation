@@ -18,5 +18,5 @@ This Node is useful when paired with a [Handover To Agent](../../service/handove
 
 | Parameter       | Type   | Description                                                                                                                                                           |
 |-----------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Digits sequence | Text   | Specifies the digits sequence to play to the caller. The Digits sequence can be, for example, a telephone extension code or the number to the customer service center |
-| Pause time      | Slider | Specifies the pause length in milliseconds between each individual DTMF digit tone. The default value is 500 ms                                                       |
+| Digits sequence | Text   | Specifies the sequence of digits to be played to the caller. The sequence of digits can be a telephone extension code or the number for the customer service center. |
+| Pause time      | Slider | Specifies the pause length in milliseconds (ms), between each individual DTMF digit tone. The default value is 500 ms. |
