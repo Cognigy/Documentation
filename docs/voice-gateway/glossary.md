@@ -68,7 +68,7 @@ _**Service Provider (scope)**_
 _**Settings**_
 : Options to configure your Voice Gateway Account. See [Accounts](#A).
 
-_**SIP Hop**
+_**SIP Hop**_
 : A path the SIP message takes between two SIP elements in a network. Each time a SIP message is forwarded from one SIP device to another, it is called a hop. SIP hops can occur between various SIP network elements, such as proxy servers, registrar servers, or phones and softphones. For more information on SIP connections, read the [Wikipedia Session Initiation Protocol](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) documentation.
 
 _**SIP Trunk**_
