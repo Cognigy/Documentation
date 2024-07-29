@@ -30,7 +30,7 @@ To build a Flow using the DTMF Node, follow these steps:
 1. In your Cognigy AI Project, open your Voice Gateway Flow.
 2. In the Flow editor, add a DTMF Node.
 3. In the DTMF Node editor, enter the required values: 
-   - For the Digits sequence, specify the number to your call center hotline, or an extension code to a human agent. 
+   - For the Digits sequence, specify the number to your customer service center hotline, or an extension code to a human agent. 
    - For the Pause time, specify the pause length between each digit tone in milliseconds.
 4. Click **Save**.
 5. Make a test call to Voice Gateway to test your Flow.
