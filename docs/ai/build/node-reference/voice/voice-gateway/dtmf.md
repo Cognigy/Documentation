@@ -14,7 +14,7 @@
 
 The DTMF Node plays the DTMF digit tones to the caller.
 
-This Node is useful when paired with a [Handover To Agent](../../service/handover-to-agent.md) Node or a [Transfer](../generic/transfer.md) Node. By playing the DTMF digit tones, the DTMF Node informs the caller that they are transferred to another agent - either a voice AI Agent, or a human agent in a contact center.
+This Node is useful when paired with a [Handover to Agent](../../service/handover-to-agent.md) Node or a [Transfer](../generic/transfer.md) Node. By playing the DTMF digit tones, the DTMF Node informs the caller that they are transferred to another agent - either a voice AI Agent or a human agent in a contact center.
 
 ## Settings
 
