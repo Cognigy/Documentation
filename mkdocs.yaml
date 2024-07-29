@@ -687,6 +687,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: mkdocs/
 
   logo: ./_assets/Cognigy-black.svg
   favicon: ./_assets/favicon.webp
