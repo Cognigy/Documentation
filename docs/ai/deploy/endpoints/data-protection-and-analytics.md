@@ -86,6 +86,24 @@ We will replace the following properties:
 
 Defines whether we should store conversation histories in contact profiles for end-users.
 
+## Enable Input Sanitization
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../../release-notes/4.81.md)
+
+Activates server-side input sanitization.
+If this setting is enabled,
+any user inputs will be sanitized
+to remove potentially harmful HTML content before processing it in other parts of the Cognigy.AI system.
+
+If [Input Transformers](transformers/input-transformer.md) are used, the sanitization will take place after the execution of those Input Transformers.
+This process involves validating and cleaning the data on the server to make sure the data is safe and complies with the expected format.
+
+Note that for [Cognigy Webchat](../../../webchat/index.md),
+client-side input sanitization
+([`disableHtmlContentSanitization: false`](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md#endpoint-settings))
+works by default. 
+In this case, enabling server-side input sanitization will provide an additional layer of security for your server.
+
 ## External Analytics Services
 
 You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.

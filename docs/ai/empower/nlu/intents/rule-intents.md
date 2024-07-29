@@ -42,13 +42,14 @@ Rule Intents take precedence over ML Intents. That means if the user said a sent
 
 In case rules of multiple intents simultaneously apply, the order of Rule Intents within the flow and its attached flows plays a role in which intent is triggered with priority. There are three principles to remember when working with rules:
 
-1. Rule Intents lower in the list come first
-2. Children come second
-3. Attached flows come third, in the order they were created or arranged.
+1. Rule Intents lower in the list come first.
+2. Children come second.
+3. Attached Flows come third, in the order they were created or arranged.
 
-To have an example, consider an agent with a flow having multiple intents on different hierarchy levels. The flow also has two flows attached to it, each having its own intents:
+To have an example, consider an AI Agent with a Flow having multiple intents on different hierarchy levels.
+The Flow also has two Flows attached to it, each having its own intents:
 
-```
+```text
 Main Flow
 ├── Intent A
 │   └── Intent A.1

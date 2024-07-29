@@ -17,9 +17,11 @@ You can use an xApp in addition to the main communication channels, such as voic
 
 To learn how it works, follow [Build an xApp with multiple channels](build/xApp-with-multi-channels.md).
 
-### Power up virtual agents
+### Power up AI Agents
 
-Enhance the capabilities of virtual agents by supporting use cases that go beyond the limitations of the current communication channel. This allows virtual agents to handle more complex tasks and provide better assistance to users.
+Enhance the capabilities of AI Agents
+by supporting use cases that go beyond the limitations of the current communication channel.
+This improvement helps AI Agents to handle more complex tasks and provide better assistance to users.
 
 ### Power up human agents
 

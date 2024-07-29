@@ -74,13 +74,13 @@ If you require navigation options for users without the need for rich structurin
 
 ## Date Picker
 
-Whenever your virtual agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker.
+Whenever your AI Agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat//v2/date-picker-selection-date.png" width="100%" />
 </figure>
 
-After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the virtual agent.
+After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the AI Agent.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat//v2/date-picker.png" width="100%" />

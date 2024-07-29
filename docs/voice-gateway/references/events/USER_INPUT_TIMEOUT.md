@@ -6,7 +6,7 @@ hidden: false
 
 # USER_INPUT_TIMEOUT
 
-The virtual agent terminated the call because the user did not respond.
+The AI Agent terminated the call because the user did not respond.
 
 To test a payload with the `USER_INPUT_TIMEOUT` event, you can use an empty Flow.
 
@@ -36,3 +36,7 @@ Payload:
   "event": "USER_INPUT_TIMEOUT"
 }
 ```
+
+## More Information
+
+- [User Input Timeout](../../../ai/build/node-reference/voice/voice-gateway/parameter-details.md#user-input-timeout)

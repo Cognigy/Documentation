@@ -207,13 +207,13 @@ If **Store Result to Contact Profile** is enabled, the Question Result will also
 
 Allows the conversation to break out of the Question Node if a specified Intent was found. 
 
-| Action                  | Description                                                                                         |
-|-------------------------|-----------------------------------------------------------------------------------------------------|
-| Output Message          | Outputs a message (equal to a Say Node)                                                             |
-| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
-| Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
+| Action                  | Description                                                                                              |
+|-------------------------|----------------------------------------------------------------------------------------------------------|
+| Output Message          | Outputs a message (equal to a Say Node)                                                                  |
+| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                           |
+| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                              |
+| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)              |
+| Handover to Human Agent | The conversation is handed to a human agent, who can  help you finish the question step and hand it back |
 
 Add intents that can trigger the "escalate on intent" function by typing the intent name into the "Valid Intents" field and pressing ENTER on your keyboard. Adjust the dedicated intent score threshold slider to the preferred setting so that the escalation will only occur if one of the listed intents reaches that score.
 
@@ -222,13 +222,13 @@ Add intents that can trigger the "escalate on intent" function by typing the int
 
 Allows the conversation to break out of the Question Node after a number of incorrect answers were provided.
 
-| Action                  | Description                                                                                         |
-|-------------------------|-----------------------------------------------------------------------------------------------------|
-| Output Message          | Outputs a message (equal to a Say Node)                                                             |
-| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
-| Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
+| Action                  | Description                                                                                              |
+|-------------------------|----------------------------------------------------------------------------------------------------------|
+| Output Message          | Outputs a message (equal to a Say Node)                                                                  |
+| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                           |
+| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                              |
+| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)              |
+| Handover to Human Agent | The conversation is handed to a human agent, who can  help you finish the question step and hand it back |
 
 It is possible to prevent reprompts when the escalation is happening. 
 
@@ -238,7 +238,7 @@ The option "only escalate once" determines if the escalation only happens once o
 
 
 As of Release v4.4.0, we added the option **Handover to Human Agent**. Open the **Node Editor** and you will find this option as an escalation action for Intents and Wrong_Answers that offers the ability to escalate questions by creating handovers to a real human agent.  
-When this escalation is hit, the conversation is handed to an agent, who can then help you finish the question step and hand it back.
+When this escalation is hit, the conversation is handed to a human agent, who can then help you finish the question step and hand it back.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/question-escalation-to-handover.png" width="60%" />
@@ -314,7 +314,7 @@ This information can be used to trigger specific actions on escalation or to jum
 
 ## AI-enhanced output
 
-To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/generative-ai.md#rephrasing-virtual-agent-outputs) article.
+To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/generative-ai.md#rephrasing-ai-agent-outputs) article.
 
 ## Answer Preprocessing
 

@@ -21,7 +21,7 @@ sequenceDiagram
 title Cognigy PCI Vault - typical sequence of interactions
 
 participant User as End User
-participant VirtualAgent as Virtual Agent
+participant VirtualAgent as AI Agent
 participant ContactCenterAgent as Human Agent
 participant AICopilot as AI Copilot Workspace
 participant PCIVault as PCI Vault
@@ -66,8 +66,8 @@ deactivate VirtualAgent
 ```
 High-level description of the process:
 
-1. An end user initiates a conversation with a virtual agent, expressing the intent to make a payment.
-2. The virtual agent detects the user's handover request and triggers a handover to a contact center using the AI Copilot workspace.
+1. An end user initiates a conversation with an AI Agent, expressing the intent to make a payment.
+2. The AI Agent detects the user's handover request and triggers a handover to a contact center using the AI Copilot workspace.
 3. A human agent in the contact center receives the handover and engages with the user.
 4. The human agent uses the AI Copilot workspace and initiates the process to collect credit card data from the end user.
 5. PCI Vault prepares a storage container and returns authentication tokens which will be used to store and retrieve the securely stored data.

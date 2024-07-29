@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../../release-notes/4.52.md)
 
 _Lexicons_ are collections of domain-specific Keyphrases, also known as entities, that can be attached to a Flow.
-A Lexicon can be seen as a dictionary that allows the virtual agent to understand
+A Lexicon can be seen as a dictionary that allows the AI Agent to understand
 specific words, such as car brands, product groups, or zip codes.
 As soon as a keyphrase is detected, it is published to the Input object for further use. This process is called Slot Mapping.
 
@@ -55,7 +55,7 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
     Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specific flows where they are to be used. See the [Attached Lexicons Page](../../../empower/nlu/attachments/attached-lexicons.md) for more information.
 
 !!! tip "Access slots in your Flow"
-    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page](../../../empower/nlu/slots-and-lexicons/slots.md) for more information.
+    Build smart AI Agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page](../../../empower/nlu/slots-and-lexicons/slots.md) for more information.
 
 ## Upload and Download Lexicons
 

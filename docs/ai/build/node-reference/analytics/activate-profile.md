@@ -1,7 +1,8 @@
 ---
- title: "Activate Profile" 
- slug: "activate-profile" 
- hidden: false 
+title: "Activate Profile" 
+slug: "activate-profile"
+description: "The Activate Profile Node is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again."
+hidden: false 
 ---
 # Activate Profile
 
@@ -11,8 +12,15 @@
 
 ## Description
 
+This Node is used to reactivate a [specific Contact Profile](../../../analyze/contact-profiles.md#view-a-contact-profile) that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
 
-The Activate Profile Node is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again. The Node doesn't take any parameters, since it just activates the profile of the contact who hit the Node.
+## Use Case
 
-!!! tip "Common usage"
-    It is common to place this Node behind an `If Node` so that the Node is only hit if the contact specifically requests that data should be collected.
+Consider placing this Node below an [If](../logic/if.md) Node to trigger it when the contact allows collecting their data.
+
+## More Information
+
+- [Update Profile](update-profile.md)
+- [Deactivate Profile](deactivate-profile.md)
+- [Delete Profile](delete-profile.md)
+- [Merge Profile](merge-profile.md)

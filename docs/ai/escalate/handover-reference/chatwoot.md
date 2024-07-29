@@ -57,7 +57,7 @@ The new channel will be added to the Chatwoot Inbox.
 
 #### Set your Chatwoot Inbox
 
-To connect Chatwoot to your virtual agent in Cognigy.AI, you need to specify to which Chatwoot Inbox you want the handover to go.
+To connect Chatwoot to your AI Agent in Cognigy.AI, you need to specify to which Chatwoot Inbox you want the handover to go.
 
 To do this, follow these steps:
 

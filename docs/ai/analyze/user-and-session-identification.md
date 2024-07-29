@@ -6,15 +6,15 @@ hidden: false
 
 # User and Session Identification
 
-Cognigy.AI utilizes unique user IDs and session IDs to keep track of users' interactions with virtual agents.
+Cognigy.AI utilizes unique user IDs and session IDs to keep track of users' interactions with AI Agents.
 
 ## User ID
 
-A _user ID_ is a unique identifier assigned to each user that helps manage user data safely, personalize user experiences, and keep track of user history and preferences. The virtual agent utilizes this information to improve its responses and customize the conversation according to the user's needs.
+A _user ID_ is a unique identifier assigned to each user that helps manage user data safely, personalize user experiences, and keep track of user history and preferences. The AI Agent utilizes this information to improve its responses and customize the conversation according to the user's needs.
 
 ## Session ID
 
-A _session ID_ is a unique identifier given to each session initiated by a user. A session represents a period of interaction between the user and the virtual agent. The virtual agent uses session IDs to manage user sessions, track user activity, ensure security, and provide personalized experiences within the conversation.
+A _session ID_ is a unique identifier given to each session initiated by a user. A session represents a period of interaction between the user and the AI Agent. The AI Agent uses session IDs to manage user sessions, track user activity, ensure security, and provide personalized experiences within the conversation.
 
 ## Obtain User and Session IDs
 

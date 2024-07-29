@@ -7,7 +7,7 @@ hidden: false
 
 # Text Extraction with the Advanced Parser
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
 
 !!! note
 	By using this feature, you are accepting the [Cognigy.AI Additional Data Privacy Terms](https://www.cognigy.com/additional-privacy-terms).
@@ -82,6 +82,42 @@ To start using the Advanced Parser and set it as the default option, specify the
 - `AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT`. The endpoint URL for the Azure AI Document Intelligence service. To copy the URL, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the endpoint URL from the **Endpoint** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
 - `AZURE_DOCUMENT_INTELLIGENCE_APIKEY`. Your API key for the Azure AI Document Intelligence service. To copy the key, go to the Azure portal. On the left-side menu, select **Resource Management > Key and Endpoint**. Copy the key from the **Key** field. For more information, read the [Azure](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) documentation.
 
+## Text Extraction
+
+The text extraction process involves analyzing a document to identify key areas and understand their interrelationships. 
+During this process, the Advanced Parser recognizes both textual and structural elements in the uploaded document. 
+These types of elements include:
+
+- **Semantic Elements**. These elements define the meaning and structure of the text, such as titles, headings, and footers.
+- **Content Elements**. These elements represent various types of content on the page, including text, tables, images, checkmarks, numbered and bulleted lists.
+
+The following illustration shows the typical elements that can be recognized by the Advanced Parser and converted to Markdown.
+
+<figure>
+  <img class="image-center" src="../../../../../_assets/ai/empower/knowledge-ai/text-extraction/advanced-parser.png" width="100%" />
+</figure>
+
+Depending on the [file format](#supported-formats), elements may be recognized differently.
+Also, the text extraction process can be influenced by the program that was used to create the original document. 
+For example, if you created a DOCX file in Google Docs, the parsing results might be of lower quality compared to the same document created in Microsoft Word.
+
+### Metadata
+
+{! _includes/ai/knowledge-ai/metadata.md !}
+
+In the Chunk Editor, each chunk has a metadata object that indicates the number of the source page where this information was located.
+The presence of page numbers in the metadata means that the text extraction feature works correctly.
+However, the absence of page numbers suggests an error in file processing by the Advanced Parser.
+
+In the example below, the metadata object indicates that the chunk's text starts on source file page 1 and ends on page 2.
+
+```txt
+{
+  "firstPage": "1",
+  "lastPage": "2"
+}
+```
+
 ## How to Use
 
 The feature usage varies depending on which version you are using:
@@ -122,23 +158,6 @@ The Advanced Parser is used when `.preset_ca` is appended to the file name of an
 The Advanced Parser is used as the [Alternative Chunk strategy](../pdf.md#alternative-chunk-strategy) and only for PDF files.
 The Advanced Parser is applied when `cognigy.preset_uiolc_ls.pdf` is appended to the file name of an uploaded file. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
 `.preset_uiolc_ls` is the preset to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.
-
-## Metadata
-
-{! _includes/ai/knowledge-ai/metadata.md !}
-
-In the Chunk Editor, each chunk has a metadata object that indicates the number of the source page where this information was located.
-The presence of page numbers in the metadata means that the text extraction feature works correctly.
-However, the absence of page numbers suggests an error in file processing by the Advanced Parser.
-
-In the example below, the metadata object indicates that the chunk's text starts on source file page 1 and ends on page 2.
-
-```txt
-{
-  "firstPage": "1",
-  "lastPage": "2"
-}
-```
 
 ## More Information
 

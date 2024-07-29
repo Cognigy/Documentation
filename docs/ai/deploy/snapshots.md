@@ -6,7 +6,7 @@ hidden: false
 
 # Snapshots
 
-_Snapshots_ are immutable forms of your virtual agent, including the following resources:
+_Snapshots_ are immutable forms of your AI Agent, including the following resources:
 
 * Flows
 * Trained NLU Intent models
@@ -24,8 +24,8 @@ Once a resource has been included in a Snapshot, that resource within the Snapsh
 
 Snapshots can be used in the following cases:
 
-- To create an immutable just-in-time copy of all relevant resources of a virtual agent. This copy can be deployed through Endpoints, which allows you to use the current version of your virtual agent while your developers are working on the next version.
-- To create a backup of your virtual agent, which enables you to return to the previous state if necessary.
+- To create an immutable just-in-time copy of all relevant resources of an AI Agent. This copy can be deployed through Endpoints, which allows you to use the current version of your AI Agent while your developers are working on the next version.
+- To create a backup of your AI Agent, which enables you to return to the previous state if necessary.
 
 ## Restrictions
 
@@ -53,7 +53,7 @@ The `.csnap` (Cognigy Snapshot) file is a special type that can only be used wit
 
 ## Create a new Snapshot
 
-To create a new Snapshot of the current state of your virtual agent, do the following:
+To create a new Snapshot of the current state of your AI Agent, do the following:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Snapshots**.
@@ -82,8 +82,8 @@ The web browser will start to download your prepared Snapshot package as a `.csn
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
 The use case for uploading a Snapshot is usually to deploy its Flows into production.
-Since Snapshots live within virtual agents as other resources,
-you have to either first create a new virtual agent or upload the Snapshot in one of your existing ones.
+Since Snapshots live within AI Agents as other resources,
+you have to either first create a new AI Agent or upload the Snapshot in one of your existing ones.
 
 To upload a Snapshot, follow these steps:
 
@@ -95,32 +95,32 @@ To upload a Snapshot, follow these steps:
 
 After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
-## Procedure for Restoring a Virtual Agent from a Snapshot
+## Procedure for Restoring a Project from a Snapshot
 
-If you are using Snapshots as a way of archiving your virtual agent, you might want to restore your virtual agent to the point where the Snapshot was taken initially.
+If you are using Snapshots as a way of archiving your AI Agent, you might want to restore your AI Agent to the point where the Snapshot was taken initially.
 
 ### Before Getting Started
 
-- **Restoring a Snapshot overwrites all existing Agent resources**. Make sure that you are fully aware of the implications when restoring a virtual agent from a Snapshot. All resources within the virtual agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your virtual agent, conversations will break as those Flows will be removed.
+- **Restoring a Snapshot overwrites all existing Agent resources**. Make sure that you are fully aware of the implications when restoring an AI Agent from a Snapshot. All resources within the AI Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your AI Agent, conversations will break as those Flows will be removed.
 - **Restoring a Snapshot from another Agent may require manual changes to the Endpoints**. Restoring a Snapshot from another Agent will automatically update the Endpoints assigned with primary locale but would need a manual update for Endpoints with secondary locale. Those Endpoints will be indicated with a red dot beside the Endpoint name, like in the images below.
 
-### Restore an Agent from the Snapshot
+### Restore a Project from the Snapshot
 
 Before initiating the restoration process, review the associated risks in the [Before Getting Started](#before-getting-started) section.
 
-To restore an Agent from a Snapshot, do the following:
+To restore a Project from a Snapshot, do the following:
 
-1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your virtual agent.
+1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your AI Agent.
 2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to restore. A selection menu will appear.
 3. Click **Restore**. A warning dialog will appear.
 4. Enter the name of the Snapshot in order to confirm the operation.
 
-A new task will be created as deleting all current resources from the virtual agent and restoring the resources from the Snapshot can take some time.
-A success notification will be displayed once your virtual agent has been successfully restored from the Snapshot.
+A new task will be created as deleting all current resources from the AI Agent and restoring the resources from the Snapshot can take some time.
+A success notification will be displayed once your AI Agent has been successfully restored from the Snapshot.
 
 ## Delete a Snapshot
 
-Once you reach the maximum number of Snapshots in your virtual agent, you have to start deleting older Snapshots.
+Once you reach the maximum number of Snapshots in your AI Agent, you have to start deleting older Snapshots.
 
 !!! danger "Check usage of your Snapshot"
     In production, Endpoints should be directed to Snapshots. It is crucial to first check whether any Endpoints are still pointing to the Snapshot you intend to remove. Removing a Snapshot that is still referenced by one of your Endpoints will disrupt conversations for your customers.
@@ -144,28 +144,29 @@ However, Snapshots created in newer versions may not be compatible with older ve
 
 Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI are not recommended, as they can cause unexpected errors.
 
-## Deploy Virtual Agents to Production with Snapshots
+## Deploy AI Agents to Production with Snapshots
 
-The following three scenarios show the recommended methods for deploying virtual agents into production. Consider an Agent in Cognigy.AI as analogous to a project in other software.
+The following three scenarios show the recommended methods for deploying AI Agents into production.
+Consider an AI Agent in Cognigy.AI as analogous to a project in other software.
 
-### Use a Single Virtual Agent
+### Use a Single AI Agent
 
-The Snapshot concept allows you to make your virtual agents available through Endpoints while you are already working on the next version of your virtual agent. This scenario is the simplest of all, but also quite elegant.
+The Snapshot concept allows you to make your AI Agents available through Endpoints while you are already working on the next version of your AI Agent. This scenario is the simplest of all, but also quite elegant.
 
-Let's assume that you have a virtual agent called **Order Bot** for your restaurant.
+Let's assume that you have an AI Agent called **Order Bot** for your restaurant.
 
-People developing the agent would create Flows, Lexicons, Intents, and all other resources as usual. Eventually, you reach a state where you want to publish to your customers. A new Snapshot needs to be created. You don't have to prepare a downloadable package for the Snapshot because you won't download and upload it to a different place — everything will remain in the current virtual agent's project.
+People developing the agent would create Flows, Lexicons, Intents, and all other resources as usual. Eventually, you reach a state where you want to publish to your customers. A new Snapshot needs to be created. You don't have to prepare a downloadable package for the Snapshot because you won't download and upload it to a different place — everything will remain in the current AI Agent's project.
 
 To release the new Snapshot, go to your Endpoints, for example, your Webchat Endpoint used on your website, and select the new Snapshot and the Flows within it.
 
-Since you are now using resources within the Snapshot in production, developers can modify the Flows in the virtual agent directly without breaking the conversation logic for your customers.
+Since you are now using resources within the Snapshot in production, developers can modify the Flows in the AI Agent directly without breaking the conversation logic for your customers.
 
-### Use Multiple Virtual Agents
+### Use Multiple AI Agents
 
 For more control on what is actually running in production, this approach should be chosen.
 
-Let's assume that you want to build a virtual agent for FAQs on their website.
-In this case, two virtual agents should be created in Cognigy.AI:
+Let's assume that you want to build an AI Agent for FAQs on their website.
+In this case, two AI Agents should be created in Cognigy.AI:
 
 - FAQ Bot development
 - FAQ Bot production
@@ -181,9 +182,9 @@ Remember that **Snapshots do not need to be restored** for Endpoints to use thei
   <figcaption>Deployment concept using Snapshots and two Agents (projects)</figcaption>
 </figure>
 
-### Use Multiple Virtual Agents with Multiple Cognigy.AI Systems
+### Use Multiple AI Agents with Multiple Cognigy.AI Systems
 
-You can go one step further compared to the [Using Multiple virtual agents](#use-multiple-virtual-agents) concept if you have multiple physically separated Cognigy.AI installations.
+You can go one step further compared to the [Using Multiple AI Agents](#use-multiple-ai-agents) concept if you have multiple physically separated Cognigy.AI installations.
 
 Let's assume that you have the following environments:
 
@@ -191,13 +192,13 @@ Let's assume that you have the following environments:
 - **Staging**. A Cognigy.AI installation with higher hardware specs for staging purposes, where acceptance tests for new versions are conducted.
 - **Production**. A Cognigy.AI installation with high-hardware specs for production purposes.
 
-In this case, your developers only have access to virtual agent projects in the **Dev** installation.
+In this case, your developers only have access to AI Agent projects in the **Dev** installation.
 They build agents, craft entire new experiences, or improve already existing solutions.
 Once they reach a desired state in their projects, they create new Snapshots.
 Downloadable packages for Snapshots are then created and provided to the teams working on the **Staging** installation.
 
 People on staging receive the Snapshots from developers
-and upload them into their virtual agent projects in the **Staging** system.
+and upload them into their AI Agent projects in the **Staging** system.
 They point their Endpoints to the new Snapshots and run acceptance tests.
 If they find defects, they inform their development teams, which then fix the problems and provide new Snapshots.
 If testing goes well, the Snapshots are moved to the **Production** system.
@@ -207,7 +208,7 @@ provided by the teams who have verified the quality on the **Staging**
 system.
 The **Production**
 system is also the place
-in which [Cognigy Insights](../../insights/overview.md) will be used to understand how the actual users use the virtual agents,
+in which [Cognigy Insights](../../insights/overview.md) will be used to understand how the actual users use the AI Agents,
 as productive interaction only happens on this system.
 
 ## More Information

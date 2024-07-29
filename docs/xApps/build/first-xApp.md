@@ -6,7 +6,7 @@ hidden: true
 
 # Build your First xApp
 
-In this tutorial, you will learn how to create a simple xApp from scratch. You will create a virtual agent that asks users whether they are new or existing customers. If the user already exists, the virtual agent directs them to an xApp that collects their login data. If the user is new, the virtual agent guides them to an xApp that collects registration information.
+In this tutorial, you will learn how to create a simple xApp from scratch. You will create an AI Agent that asks users whether they are new or existing customers. If the user already exists, the AI Agent directs them to an xApp that collects their login data. If the user is new, the AI Agent guides them to an xApp that collects registration information.
 
 ## Configure a Basic xApp Flow
 

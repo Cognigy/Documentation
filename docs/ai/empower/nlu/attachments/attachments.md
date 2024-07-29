@@ -20,14 +20,18 @@ The **Attachments** feature means that duplication of intent and lexicon librari
 
 ## Attached Flows
 
-Flow attachment is an optional feature that allows virtual agents to access the intents of separate flows.
+Flow attachment is an optional feature that allows AI Agents to access the intents of separate flows.
 
 !!! note "Using Attached Flows"
     Find out more about flow attachment on the [Attached Flows Page](attached-flows.md).
 
 ## Attached Lexicons
 
-Lexicon attachment is required in order to teach the NLU to understand the specific keyphrases added in the [Lexicon Editor](https://docs.cognigy.com/v4.11/docs/lexicons). This means that particular flows can recognize specified keyphrases where others will not, adding to the flexibility of Cognigy.AI virtual agents.
+Lexicon attachment is required
+in order to teach the NLU
+to understand the specific keyphrases added in the [Lexicon Editor](https://docs.cognigy.com/v4.11/docs/lexicons).
+This means that particular flows can recognize specified keyphrases where others will not,
+adding to the flexibility of Cognigy.AI AI Agents.
 
 !!! note "Using Attached Lexicons"
     Find out more about lexicon attachment on the [Attached Lexicons Page](attached-lexicons.md).

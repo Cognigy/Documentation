@@ -24,3 +24,8 @@ The full set of configuration parameters:
 | Parameter | Description                                                       | Required |
 |-----------|-------------------------------------------------------------------|----------|
 | headers   | An object containing SIP headers to include in the `BYE` request. | No       |
+
+## More Information
+
+- [NO_ANSWER](../events/NO_ANSWER.md)
+- [USER_BUSY](../events/USER_BUSY.md)

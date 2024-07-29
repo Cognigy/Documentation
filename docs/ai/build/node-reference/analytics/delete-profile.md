@@ -1,7 +1,8 @@
 ---
- title: "Delete Profile" 
- slug: "delete-profile" 
- hidden: false 
+title: "Delete Profile" 
+slug: "delete-profile"
+description: "The Delete Profile Node is used to delete a specific Contact Profile if the end user requests it."
+hidden: false 
 ---
 
 # Delete Profile
@@ -12,10 +13,16 @@
 
 ## Description
 
-This Node is used to **delete** a specific contact's profile in case a contact requests it.
+This Node is used to delete a [specific Contact Profile](../../../analyze/contact-profiles.md#view-a-contact-profile) if the end user requests it.
 
-!!! danger "Important"
-    The user's data won't be available anymore after executing this node: It deletes the whole profile including **all analytics data** and **all transcripts** this user had so far.
+!!! danger
+    Executing this Node will delete the user's entire Profile, including all analytics data and all transcripts. The user's data will no longer be available.
 
-!!! tip "Common usage"
-    It is common to place this node behind an `If Node` that is only activated if the contact specifically requests that they want you to delete the persisted data.
+{! _includes/ai/node-reference/analytics/profile-node-use-case.md !}
+
+## More Information
+
+- [Activate Profile](activate-profile.md)
+- [Update Profile](update-profile.md)
+- [Deactivate Profile](deactivate-profile.md)
+- [Merge Profile](merge-profile.md)

@@ -8,7 +8,7 @@ hidden: false
 
 This event serves to indicate that the call was not answered within the specified ringing time.
 
-When the virtual agent rings for the number of seconds, you specify in the [Transfer Node](../../../ai/build/node-reference/voice/voice-gateway/transfer.md) settings, and if there is no response during this ringing period, the virtual agent will hang up the call. virtual agent will automatically end the call.
+When the AI Agent rings for the number of seconds, you specify in the [Transfer Node](../../../ai/build/node-reference/voice/voice-gateway/transfer.md) settings, and if there is no response during this ringing period, the AI Agent will hang up the call. AI Agent will automatically end the call.
 
 Payload:
 
@@ -29,3 +29,7 @@ Payload:
   }
 }
 ```
+
+## More Information
+
+- [Hangup](../verbs/hangup.md)

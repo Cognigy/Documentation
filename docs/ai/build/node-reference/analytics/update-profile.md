@@ -12,21 +12,20 @@ hidden: false
 
 ## Description
 
-The Update Profile Node is used to update the users' Contact Profile.
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/18cbc8a-update-profile.jpg" width="100%" />
-</figure>
-
-The available `Key` options are all defined fields in the Profile Schema of this Project.
-
-If the key used is an invalid value, it will not perform any function.
-For a list of default profile property keys,
-see the [Contact Profiles](../../../analyze/contact-profiles.md) page.
+This Node is used to update users' Contact Profiles.
+The available Profile Schema fields correspond to all defined fields in the Project's [Profile Schema](../../../analyze/contact-profiles.md#profile-schema). 
+If an invalid field is used, no action will be taken.
 
 ## Settings
 
-| Parameter | Type          | Description                                          |
-|-----------|---------------|------------------------------------------------------|
-| Key       | select        | Which field in the user's Contact Profile to update. |
-| Value     | CognigyScript | The value you want to set.                           |
+| Parameter            | Type          | Description                                                                                                                                                                                                                                                                                  |
+|----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profile Schema Field | Selector      | Identify the field in the user's Contact Profile that needs to be updated. The predefined Profile Schema fields are described in [Contact Profiles](../../../analyze/contact-profiles.md); you can also create a [custom field](../../../analyze/contact-profiles.md#create-a-custom-field). |
+| Value                | CognigyScript | The value of the field.                                                                                                                                                                                                                                                                      |
+
+## More Information
+
+- [Activate Profile](activate-profile.md)
+- [Deactivate Profile](deactivate-profile.md)
+- [Delete Profile](delete-profile.md)
+- [Merge Profile](merge-profile.md)

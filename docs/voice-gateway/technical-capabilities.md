@@ -65,9 +65,10 @@ The following audio codecs are supported:
 - P-Asserted-Identity header to identify caller.
 - Receiving compact SIP headers.
 - Receiving re-INVITE with no Session Description Protocol (SDP).
-- Answering machine detection.
+- [Answering machine detection](references/verbs/amd.md).
 - Configurable music on hold.
-- Configurable Atmosphere Sounds playing in the background of the conversation.
+- Configurable [Atmosphere Sounds](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#atmosphere-sounds) playing in the background of the conversation.
+- Configurable [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#silence-overlay) playing background sounds when there's a long pause in a call.
 
 ### Call Management
 
@@ -76,12 +77,12 @@ The following audio codecs are supported:
 
 ### STT and TTS providers
 
-- [Many speech providers](../voice-gateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
+- Many cloud-based and on-premises [speech providers](../voice-gateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
 - [Fallback speech configuration](../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor) if the primary vendor fails.
 
 ### Call Recording and Storage
 
-- Call recording via integration with a third-party SIPREC server.
+- [Call recording](webapp/recent-calls.md#call-recordings) via integration with a third-party SIPREC server.
 - Pausing or resuming transcription and recording to avoid the collection of Personally Identifiable Information (PII).
 - Call recording with no third-party components, [recordings streamed to the preferred cloud storage](../voice-gateway/webapp/recent-calls.md#call-recordings).
 

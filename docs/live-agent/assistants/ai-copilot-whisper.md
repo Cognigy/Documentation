@@ -31,7 +31,7 @@ To test AI Copilot Whisper, follow these steps:
 
 1. Start a Webchat session.
 2. Complete the handover process to Live Agent.
-3. Once the handover is complete, send a message as an Agent.
+3. Once the handover is complete, send a message as a human agent.
 4. After that, send a message as the user in Webchat.
 
 <figure>

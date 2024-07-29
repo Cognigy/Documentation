@@ -13,8 +13,8 @@ hidden: false
 </figure>
 
 Within our **Cognigy.AI** platform,
-you are able to connect your virtual agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
-allowing customers to speak to your virtual agent instead of just writing with it.
+you are able to connect your AI Agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
+allowing customers to speak to your AI Agent instead of just writing with it.
 
 ## Generic Endpoint Settings
 

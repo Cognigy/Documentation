@@ -6,7 +6,7 @@ hidden: false
 
 # Connections
 
-_Connections_ are configurations that empower Cognigy virtual agents to securely interact with external services, systems, or APIs. These configurations involve the encryption, storage, and management of credentials for seamless communication between Cognigy and external resources.
+_Connections_ are configurations that empower Cognigy AI Agents to securely interact with external services, systems, or APIs. These configurations involve the encryption, storage, and management of credentials for seamless communication between Cognigy and external resources.
 
 In contrast to other components in Cognigy, you cannot create a Connection from scratch on the Connections page.
 This page only lists Connections you have already created

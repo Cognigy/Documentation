@@ -12,7 +12,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="100%" />
 </figure>
 
-The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
+The **Genesys** Endpoint allows connecting AI Agent to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
 
 ## Prerequisites
 
@@ -207,9 +207,9 @@ To create a new version of a messenger configuration and a messenger deployment,
 12. From the **Select your Architect Flow** list, choose an existing published inbound message flow to trigger bot behavior or connect users with agents. 
 13. In the **Deploy your snippet** section, click **Copy to Clipboard** to copy a code snippet onto the website pages where you would like the Messenger to appear. After deploying the snippet, any future saved changes to the configuration and deployment will be applied automatically. 
 14. Click **Save**. Your deployment will then appear in the deployment list. 
-15. To test the virtual agent, visit [CodeSandbox](https://codesandbox.io/) and select a default **HTML** project. Paste the copied code snippet into the `<body>` element of the HTML document.
+15. To test the AI Agent, visit [CodeSandbox](https://codesandbox.io/) and select a default **HTML** project. Paste the copied code snippet into the `<body>` element of the HTML document.
 
-To check the virtual agent's performance, access the installation that your server administrator has deployed.
+To check the AI Agent's performance, access the installation that your server administrator has deployed.
 
 ## What's Next?
 

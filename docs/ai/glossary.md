@@ -11,12 +11,15 @@ Cognigy.AI terms listed in alphabetical order. All terms in the glossary are giv
 
 ## A
 
+_**AI Agents**_
+: Cognigy.AI bots that automatically handle calls and chats from customers and employees. AI Agents use natural language processing (NLP) to understand customer intents and search inquiries.
+
 _**AI Copilot**_
 : One of Cognigy's products that offers a variety of features that empower human agents to provide faster and more accurate customer support. The AI Copilot workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's desktop, it enhances the overall efficiency of your contact center.
 For more information, read the [AI Copilot](../ai-copilot/overview.md) documentation.
 
 _**Agent Handover**_
-: A Cognigy feature that allows virtual agents to transfer conversations to human agents when necessary, combining automation with human support for improved customer service. Agent Handover can be integrated in a Flow by using the Handover to Agent Node, with settings that allow connecting to various contact centers, such as Cognigy Live Agent, Genesys, 8x8, Salesforce, and many others.
+: A Cognigy feature that allows AI Agents to transfer conversations to human agents when necessary, combining automation with human support for improved customer service. Agent Handover can be integrated in a Flow by using the Handover to Agent Node, with settings that allow connecting to various contact centers, such as Cognigy Live Agent, Genesys, 8x8, Salesforce, and many others.
 For more information, read the [Agent Handover](./build/node-reference/service/handover-to-agent.md) documentation.
 
 _**Project Settings**_
@@ -28,14 +31,16 @@ For more information, read the [Project Settings](administer/access/project-sett
 
 _**Billing**_
 : The process of charging customers for the usage of Cognigy products. In the context of Cognigy, billing is related to the charges users incur for their interactions with the Cognigy platform.
-In Cognigy's billing model, the fundamental unit of consumption is a conversation. A conversation is an interaction between a user and a virtual or human agent within the Cognigy platform. Each conversation is considered a billable unit, and customers are charged based on the number of conversations they have.
+In Cognigy's billing model, the fundamental unit of consumption is a conversation.
+A conversation is an interaction between a user and AI or human agent within the Cognigy platform.
+Each conversation is considered a billable unit,
+and customers are charged based on the number of conversations they have.
 For more information, read the [Billing](./administer/billing.md) documentation.
 
 _**Bots**_
 : A Bot (short for "robot") is a software application that performs automated tasks typically associated with human interaction.
 Bots are programmed to execute specific functions autonomously, often without direct human intervention.
-However, at Cognigy, we prefer the term "virtual agent" instead of "bot" to refer to our automated solutions, such as AI Agents.
-For more information, read the [virtual agent](https://docs.cognigy.com/) documentation.
+However, at Cognigy, we prefer the term "AI Agent" instead of "bot" to refer to our automated solutions, such as AI Agents.
 
 ## C
 
@@ -48,7 +53,7 @@ _**Chunk Editor**_
 For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#chunk-editor) documentation.
 
 _**Channel**_
-: A Cognigy component through which users can interact with the virtual agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the virtual agent through various interfaces. Cognigy Channels include Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
+: A Cognigy component through which users can interact with the AI Agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the AI Agent through various interfaces. Cognigy Channels include Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
 
 _**Clients**_
 : Various applications developed in different programming languages connect with Cognigy.AI, all hosted on the Cognigy GitHub account.
@@ -61,7 +66,7 @@ For more information, read [Conversational AI](#c).
 
 _**Cognigy.AI API**_
 : An Application Programming Interface provided by Cognigy.AI that allows communication with the Cognigy.AI installation. It is an HTTP-based interface that enables developers to interact with Cognigy.AI programmatically and build custom integrations.
-With the Cognigy.AI API, developers can access various functionalities and resources within Cognigy.AI, including managing conversations, retrieving user data, analyzing analytics, and controlling the behavior of virtual agents.
+With the Cognigy.AI API, developers can access various functionalities and resources within Cognigy.AI, including managing conversations, retrieving user data, analyzing analytics, and controlling the behavior of AI Agents.
 For more information, read [Using Cognigy API](developers/api-and-cli.md) and [Cognigy OpenAPI](https://api-trial.cognigy.ai/openapi) documentation.
 
 _**Cognigy Products**_
@@ -69,11 +74,11 @@ _**Cognigy Products**_
 For more information, choose a [product line](../index.md) and explore all features and platform capabilities.
 
 _**CognigyScript**_
-: A scripting language developed for Cognigy.AI that serves as a superset of JavaScript. CognigyScript allows users to access and manipulate the Input and Context objects within the text and JSON data during the conversation flow with the virtual agent.
+: A scripting language developed for Cognigy.AI that serves as a superset of JavaScript. CognigyScript allows users to access and manipulate the Input and Context objects within the text and JSON data during the conversation flow with the AI Agent.
 For more information, read the [CognigyScript](build/cognigy-script.md) documentation.
 
 _**Connections**_
-: A way to securely store and manage credentials for integrating external services or APIs with the platform. They allow virtual agents to access and interact with external systems, such as databases, APIs, or third-party services, while ensuring sensitive information, such as API keys or access tokens, is securely encrypted.
+: A way to securely store and manage credentials for integrating external services or APIs with the platform. They allow AI Agents to access and interact with external systems, such as databases, APIs, or third-party services, while ensuring sensitive information, such as API keys or access tokens, is securely encrypted.
 For more information, read the [Connections](build/connections.md) article.
 
 _**Contact Profiles**_
@@ -86,21 +91,21 @@ Every contact that connects to Cognigy.AI has its own Context, which lives throu
 For more information, read the [Context](test/interaction-panel/context.md) documentation.
 
 _**Conversation**_
-: A billable unit of interaction between a user and a virtual agent or human agent.
+: A billable unit of interaction between a user and an AI Agent or human agent.
 For more information about billed conversations, read the [Billing](administer/billing.md) documentation.
 
 _**Conversational AI**_
-: A technology that enables computers to interact with humans in natural language. It includes chatbots, virtual assistants, and other interfaces that understand and respond to user queries. This technology uses AI and natural language processing to simulate human-like conversations and is used in various industries for tasks like customer service and information retrieval.
+: A technology that enables computers to interact with humans in natural language. It includes chatbots, virtual assistants, and other interfaces that understand and respond to user queries. This technology uses AI and natural language processing to simulate humanlike conversations and is used in various industries for tasks like customer service and information retrieval.
 
 ## E
 
 _**Endpoints**_
-: A connector within Cognigy.AI that enables seamless interaction between Cognigy virtual agents and external systems or platforms. It acts as a bridge, facilitating bidirectional communication, and allows virtual agents to send and receive messages to and from external services. Each Cognigy Endpoint represents a specific communication channel or interface through which the virtual agent can connect and engage with users or other systems.
-For example, if you want your virtual agent to be available on both Webchat and Facebook Messenger, you would create two Cognigy Endpoints: one for Webchat and another for Facebook Messenger. These Endpoints would handle incoming and outgoing messages for their respective platforms, enabling the virtual agent to provide responses and receive user inputs on both channels.
+: A connector within Cognigy.AI that enables seamless interaction between Cognigy AI Agents and external systems or platforms. It acts as a bridge, facilitating bidirectional communication, and allows AI Agents to send and receive messages to and from external services. Each Cognigy Endpoint represents a specific communication channel or interface through which the AI Agent can connect and engage with users or other systems.
+For example, if you want your AI Agent to be available on both Webchat and Facebook Messenger, you would create two Cognigy Endpoints: one for Webchat and another for Facebook Messenger. These Endpoints would handle incoming and outgoing messages for their respective platforms, enabling the AI Agent to provide responses and receive user inputs on both channels.
 For more information, read the [Endpoints](deploy/endpoints/overview.md) documentation.
 
 _**Extensions**_
-: Custom-built JavaScript modules that extend the platform's capabilities beyond its core features. With extensions, users can create custom actions, conditions, and integrations to enhance the virtual agent's responses and interactions. These custom functionalities can range from performing complex calculations, accessing external data, making API calls, integrating with databases, and more.
+: Custom-built JavaScript modules that extend the platform's capabilities beyond its core features. With extensions, users can create custom actions, conditions, and integrations to enhance the AI Agent's responses and interactions. These custom functionalities can range from performing complex calculations, accessing external data, making API calls, integrating with databases, and more.
 For more information, read the [Marketplace Extensions](build/extensions.md) documentation.
 
 ## F
@@ -143,7 +148,7 @@ The Input Object is passed to the Flow to determine the next action. You can fin
 For more information, read the [Input](test/interaction-panel/input.md) documentation.
 
 _**Insights**_
-: A Cognigy product used to collect and display analytics data within Cognigy.AI. Insights dashboards and explorers provide a range of key metrics for understanding the usage and performance of your virtual agents.
+: A Cognigy product used to collect and display analytics data within Cognigy.AI. Insights dashboards and explorers provide a range of key metrics for understanding the usage and performance of your AI Agents.
 For more information, read the [Cognigy Insights](../insights/overview.md) documentation.
 
 _**Intents**_
@@ -156,7 +161,7 @@ _**Intent Trainer**_
 For more information, read the [Intent Trainer](train/intent-trainer.md) documentation.
 
 _**Interaction Panel**_
-: User interface for interacting with a virtual agent, directly from the Cognigy.AI platform. It can be accessed by clicking on the "Chat" button at the top right of the interface.
+: User interface for interacting with an AI Agent, directly from the Cognigy.AI platform. It can be accessed by clicking on the "Chat" button at the top right of the interface.
 For more information, read the [Interaction Panel](test/interaction-panel/overview.md) documentation.
 
 ## K
@@ -180,25 +185,27 @@ For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#k
 ## L
 
 _**Large Language Model (LLM)**_
-: A specific type of Generative AI model that is designed for generating human-like text based on the input and context provided.
-With LLMs, Cognigy virtual agents can understand and respond to user input in a natural way.
+: A specific type of Generative AI model that is designed for generating humanlike text based on the input and context provided.
+With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way.
 LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
 For more information, read the [Large Language Models (LLMs)](empower/llms.md) documentation.
 
 _**Lexicons**_
-: A collection of domain-specific Keyphrases that can be attached to a Flow. A Lexicon enables the virtual agent to comprehend specific words such as car brands, product groups, or postal codes. Once a Keyphrase is detected, it is published to the Input Object for further use, a process known as Slot Mapping.
+: A collection of domain-specific Keyphrases that can be attached to a Flow.
+A Lexicon enables the AI Agent to comprehend specific words such as car brands, product groups, or postal codes.
+Once a Keyphrase is detected, it is published to the Input Object for further use, a process known as Slot Mapping.
 For more information, read the [Lexicons](empower/nlu/slots-and-lexicons/lexicons.md) documentation. For more information about Slot Mapping, read the [Slot Mapping](empower/nlu/slots-and-lexicons/slots.md) documentation.
 
 _**Live Agent**_
-: A Cognigy product that allows human agents to seamlessly join and assist in conversations handled by the chatbots or virtual assistants powered by Cognigy.AI. It enables a smooth transition from automated interactions to human-assisted ones, providing a more personalized and efficient customer support experience.
+: A Cognigy product that allows human agents to seamlessly join and assist in conversations handled by the virtual assistants powered by Cognigy.AI. It enables a smooth transition from automated interactions to human-assisted ones, providing a more personalized and efficient customer support experience.
 For more information, read the [Live Agent](../live-agent/overview.md) documentation.
 
 _**Localization**_
-: The process of adapting and customizing conversational experiences, such as virtual agents, to suit the preferences and languages of different regions or locales.
+: The process of adapting and customizing conversational experiences, such as AI Agents, to suit the preferences and languages of different regions or locales.
 For more information, read the [Localization](build/translation-and-localization/localization.md) documentation.
 
 _**Logs**_
-: This debugging tool feature allows platform users to track every input and output message that occurs with an agent. Logs are most commonly used to troubleshoot workflows by observing errors and identifying their points of occurrence.
+: This debugging tool feature allows platform users to track every input and output message that occurs with an AI Agent. Logs are most commonly used to troubleshoot workflows by observing errors and identifying their points of occurrence.
 For more information, read the [Logs](test/logs.md) documentation.
 
 ## M
@@ -212,7 +219,7 @@ For more information, read the [Members](administer/access/members.md) documenta
 
 ## N
 _**NLU**_
-: Cognigy NLU is an industry-leading natural language understanding engine that powers virtual agents in Cognigy.AI, allowing for advanced comprehension and interpretation of human language.
+: Cognigy NLU is an industry-leading natural language understanding engine that powers AI Agents in Cognigy.AI, allowing for advanced comprehension and interpretation of human language.
 For more information, read the [Cognigy NLU](empower/nlu/overview.md) documentation.
 
 _**NLU Connectors**_
@@ -221,7 +228,9 @@ NLU Connectors can be utilized to connect with third-party NLU engines, such as 
 For more information, read the [NLU Connectors](empower/nlu/external/nlu-connectors.md) documentation.
 
 _**NLU Model**_
-: A machine learning model that is used for Natural Language Understanding (NLU) tasks in Cognigy.AI. The NLU model is a crucial component of Cognigy's conversational AI platform, enabling virtual agents to understand and interpret natural language input from users.
+: A machine learning model that is used for Natural Language Understanding (NLU) tasks in Cognigy.AI.
+The NLU model is a crucial component of Cognigy's conversational AI platform,
+enabling AI Agents to understand and interpret natural language input from users.
 For more information, read the [Building the NLU Model](empower/nlu/intents/ml-intents.md) documentation.
 
 _**Node Editor**_
@@ -229,7 +238,7 @@ _**Node Editor**_
 For more information, read the [Nodes](build/nodes/overview.md) documentation.
 
 _**Nodes**_
-: Fundamental building blocks that are used to construct Flows and define the logic of virtual agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
+: Fundamental building blocks that are used to construct Flows and define the logic of AI Agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
 For more information, read the [Nodes](build/nodes/overview.md) documentation.
 
 ## O
@@ -257,19 +266,19 @@ _**Profile**_
 For more information, read the [Profile](test/interaction-panel/profile.md) documentation.
 
 _**Project**_
-: A workspace where you can create, test, and deploy virtual agents. Projects contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and more. It is possible to work on a given Project with multiple team members.
+: A workspace where you can create, test, and deploy AI Agents. Projects contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and more. It is possible to work on a given Project with multiple team members.
 
 ## S
 
 _**Session**_
-: A unit of interaction between a user and a virtual agent or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. A session can contain an unlimited number of user inputs.
+: A unit of interaction between a user and AI Agent or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. A session can contain an unlimited number of user inputs.
 
 _**Slot**_
 : A specific data type or custom Keyphrase detected by the Cognigy NLU and placed into the Input Object under the property input.slots. There are two types of Slots: System-defined Slots and user-defined Slots (Lexicons / Keyphrases) which can both be accessed easily through CognigyScript.
 For more information, read the [Slots](./empower/nlu/slots-and-lexicons/slots.md) documentation.
 
 _**Snapshot**_
-: A snapshot is an immutable form of a virtual agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of a virtual agent for deployment, to create backups, or to revert to an earlier state if needed.
+: A snapshot is an immutable form of an AI Agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of an AI Agent for deployment, to create backups, or to revert to an earlier state if needed.
 For more information, read the [Snapshots](./deploy/snapshots.md) documentation.
 
 _**State**_
@@ -292,7 +301,7 @@ _**Tokens**_
 : Placeholders that allow users to access dynamic data within the conversation flow without having to write code. These tokens provide a convenient way to access input, context, and profile information. Users can use default tokens provided by Cognigy.AI or create custom tokens tailored to their specific requirements.
 
 _**Tweak**_
-: One of the characteristics of virtual agents is their ability to improve over time. In addition to a self-learning mechanism, Cognigy.AI can tweak agents based on existing dialogs. This can be done using the Intent Trainer.
+: One of the characteristics of AI Agents is their ability to improve over time. In addition to a self-learning mechanism, Cognigy.AI can tweak agents based on existing dialogs. This can be done using the Intent Trainer.
 
 ## U
 
@@ -305,9 +314,6 @@ For more information, read the [User Menu](administer/user-menu/overview.md) doc
 
 ## V
 
-_**Virtual Agents**_
-: Cognigy.AI bots that automatically handle calls and chats from customers and employees. Virtual Agents utilize natural language processing (NLP) to understand customer intents and search inquiries.
-
 _**Voice Gateway**_
 : A Cognigy product that connects Cognigy.AI with phone lines and contact center solutions,
 enabling you to link your voice agent to your Contact Center or other phone numbers.
@@ -315,6 +321,7 @@ This allows customers to speak with your voice agent instead of just writing to 
 For more information, read the [Voice Gateway](./deploy/endpoint-reference/voice-gateway.md) documentation.
 
 ## W
+
 _**Webchat**_
 : A Cognigy tool designed to integrate Conversational AI into websites seamlessly. It empowers Cognigy customers to host chatbots directly on their web pages, facilitating interactive engagement with visitors. This integration allows visitors to access assistance and obtain information without navigating away from the site.
 For more information, read the [Webchat](../webchat/overview.md) documentation.
@@ -322,7 +329,9 @@ For more information, read the [Webchat](../webchat/overview.md) documentation.
 ## X
 
 _**xApps**_
-: Flexible micro-web applications for customer self-service. xApps can be used standalone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations that compromise user experiences.
+: Flexible micro-web applications for customer self-service.
+xApps can be used standalone or complimentary to any channel to enhance AI and human agents'
+capabilities and to overcome channel limitations that compromise user experiences.
 For more information, read the [xApps](../xApps/overview.md) documentation.
 
 ## Y

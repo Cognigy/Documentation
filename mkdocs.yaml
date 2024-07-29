@@ -379,7 +379,21 @@ nav:
     - 📞 Outbound Calls:
       - voice-gateway/creating-outbound-calls.md
     - 📚 References:
-      - voice-gateway/references/sip-response-codes.md
+      - Voice Gateway Verbs:
+        - voice-gateway/references/verbs/overview.md
+        - voice-gateway/references/verbs/amd.md
+        - voice-gateway/references/verbs/config.md
+        - voice-gateway/references/verbs/dial.md
+        - voice-gateway/references/verbs/dub.md
+        - voice-gateway/references/verbs/dtmf.md
+        - voice-gateway/references/verbs/gather.md
+        - voice-gateway/references/verbs/hangup.md
+        - voice-gateway/references/verbs/listen.md
+        - voice-gateway/references/verbs/play.md
+        - voice-gateway/references/verbs/say.md
+        - voice-gateway/references/verbs/sip-refer.md
+        - voice-gateway/references/verbs/sip-request.md
+        - voice-gateway/references/verbs/transcribe.md
       - Voice Gateway Events:
         - voice-gateway/references/events/overview.md
         - voice-gateway/references/events/ANSWERING_MACHINE_DETECTION.md
@@ -396,23 +410,9 @@ nav:
         - voice-gateway/references/events/USER_BUSY.md
         - voice-gateway/references/events/USER_INPUT_TIMEOUT.md
         - voice-gateway/references/events/NO_ANSWER.md
+      - voice-gateway/references/sip-response-codes.md
       - voice-gateway/references/tts-and-stt-vendors.md
       - voice-gateway/references/sip-trunk-providers.md
-      - Voice Gateway Verbs:
-        - voice-gateway/references/verbs/overview.md
-        - voice-gateway/references/verbs/amd.md
-        - voice-gateway/references/verbs/config.md
-        - voice-gateway/references/verbs/dial.md
-        - voice-gateway/references/verbs/dub.md
-        - voice-gateway/references/verbs/dtmf.md
-        - voice-gateway/references/verbs/gather.md
-        - voice-gateway/references/verbs/hangup.md
-        - voice-gateway/references/verbs/listen.md
-        - voice-gateway/references/verbs/play.md
-        - voice-gateway/references/verbs/say.md
-        - voice-gateway/references/verbs/sip-refer.md
-        - voice-gateway/references/verbs/sip-request.md
-        - voice-gateway/references/verbs/transcribe.md
     - 🖥️ On-Premises Installation:
         - voice-gateway/installation/overview.md
         - voice-gateway/installation/browser-requirements.md
@@ -430,7 +430,9 @@ nav:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md
-      - webchat/v3/configuration.md
+      - Endpoint Configuration:
+        - webchat/v3/configuration.md
+        - webchat/v3/metadata.md
       - webchat/v3/embedding.md
 
     - 💬 Webchat v2:
@@ -624,6 +626,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.81.md
     - release-notes/4.80.md
     - release-notes/4.79.md
     - release-notes/4.78.md
@@ -684,6 +687,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: mkdocs/
 
   logo: ./_assets/Cognigy-black.svg
   favicon: ./_assets/favicon.webp

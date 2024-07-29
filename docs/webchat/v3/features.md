@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.78(beta)-purple.svg)](../../release-notes/4.78.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.81(beta)-purple.svg)](../../release-notes/4.81.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -18,7 +18,7 @@ The Webchat 3 key features offer comprehensive customization options, including 
 Customization includes a comprehensive suite of features 
 that bolster your brand's presence and enhance user accessibility. 
 Customize the chat interface with your brand's title and logo, 
-alongside distinct avatars for both virtual and human agents, 
+alongside distinct avatars for both AI and human agents, 
 and adjust the color scheme across various elements. 
 Accessibility is prioritized with Text-to-Speech and Speech-to-Text functionalities. 
 Starting behavior customization sets the tone for engagement, 
@@ -55,7 +55,7 @@ To configure the conversation starters, refer to the [Home Screen](configuration
 
 ### Previous Conversations
 
-The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the virtual agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
+The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the AI Agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/previous-conversations.png" width="100%" />
@@ -75,7 +75,10 @@ To configure the teaser message, refer to the [Teaser Message](configuration.md#
 
 ## Chat Options
 
-Enabling Chat Options unlocks additional interactive capabilities within the chat interface, such as Quick Replies for streamlined responses, Conversation Rating for user feedback, and a customizable Footer for further information. This collective enhancement of features under the Chat Options settings enriches the engagement by offering users more ways to interact and provide feedback, ultimately elevating the overall chat experience.
+Enabling Chat Options unlocks additional interactive capabilities within the chat interface,
+such as Quick Replies for streamlined responses, Conversation Rating for user feedback, text-to-speech options, and a customizable Footer for further information.
+This collective enhancement of features under the Chat Options settings enriches the engagement
+by offering users more ways to interact and give feedback, elevating the overall chat experience.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/chat-options.png" width="100%" />
@@ -89,15 +92,23 @@ The Quick Replies feature at the top of the Chat Option screen simplifies intera
 
 To configure the quick replies, refer to the [Quick Replies](configuration.md#quick-replies) settings.
 
+### Text-to-Speech
+
+The Text-to-Speech feature on the Chat Options screen is helpful for users who prefer or require listening over reading. 
+The feature enables the chat AI Agent to speak messages aloud. 
+Users can choose whether to use this option, allowing them to tailor their chat experience to their preferences.
+
+To configure the text-to-speech feature, refer to the [Text-to-Speech](configuration.md#text-to-speech) settings.
+
 ### Conversation Rating
 
-The Conversation Rating feature in chat options allows users to rate and provide feedback on their chat experience, crucial for improving assistant performance. It offers customizable settings including the invitation to rate, placeholder for comments, submit button text, and a confirmation banner message. This streamlined feedback mechanism engages users directly, making it easier to gather and act on valuable user insights.
+The Conversation Rating feature on the Chat Options screen allows users to rate and give feedback on their chat experience, crucial for improving assistant performance. It offers customizable settings including the invitation to rate, placeholder for comments, submit button text, and a confirmation banner message. This streamlined feedback mechanism engages users directly, making it easier to gather and act on valuable user insights.
 
 To configure the conversation rating, refer to the [Conversation Rating](configuration.md#conversation-rating) settings.
 
 ## Privacy Notice
 
-The Privacy Notice feature ensures user trust and compliance by prompting consent to a privacy notice before chatting with the virtual agent. It includes customization of the title, detailed message, and submit button text, as well as a direct link to the full Privacy Policy, transparently informing users about data handling practices and securing their informed consent.
+The Privacy Notice feature ensures user trust and compliance by prompting consent to a privacy notice before chatting with the AI Agent. It includes customization of the title, detailed message, and submit button text, as well as a direct link to the full Privacy Policy, transparently informing users about data handling practices and securing their informed consent.
 
 {! _includes/webchat/privacy-notice-acceptance.md !}
 
@@ -198,8 +209,8 @@ For enabling attachment uploads, refer to the [Attachment Upload](configuration.
 
 ## Date Picker
 
-Whenever your virtual agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker. 
-After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the virtual agent.
+Whenever your AI Agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker. 
+After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the AI Agent.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/date-picker.png" width="100%" />

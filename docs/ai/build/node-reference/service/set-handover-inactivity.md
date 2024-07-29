@@ -32,7 +32,7 @@ To improve the user experience, after the Set Handover Inactivity Node, add a [S
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/set-handover-inactivity-say.png" width="120%" />
 </figure>
 
-Using the [Say](../basic/say.md#handover-settings) Node, you can determine whether the agent, user, or both receive messages from the virtual agent after the time has expired.
+Using the [Say](../basic/say.md#handover-settings) Node, you can determine whether the agent, user, or both receive messages from the AI Agent after the time has expired.
 
 To close a handover based on the inactivity event, use the [Close Handover](close-handover.md) Node. Alternatively, you can initiate another inactivity behavior if necessary.
 

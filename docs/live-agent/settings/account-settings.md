@@ -170,7 +170,7 @@ To find the Account ID alternatively in the Live Agent URL of your Live Agent **
 
 For example, once you have found the account ID,
 you can enter the Account ID in the [Handover Settings](../getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md#handover-to-manually-configured-live-agent) of your Endpoint in Cognigy.AI,
-to enable the handover of a customer conversation with your virtual agent to a human agent for support.
+to enable the handover of a customer conversation with your AI Agent to a human agent for support.
 
 ## Version
 

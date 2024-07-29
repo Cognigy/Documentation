@@ -15,12 +15,12 @@ Real-time translation can be configured for any Endpoint type, including voice E
 
 Use this feature for translating a conversation between the following actors:
 
-- [users and virtual agents](#users-and-virtual-agents)
+- [users and AI Agents](#users-and-ai-agents)
 - [users and human agents](#users-and-human-agents)
 
-## Users and Virtual Agents
+## Users and AI Agents
 
-Translation between a user and a virtual agent in real-time works for text-based and voice conversations.
+Translation between a user and an AI Agent in real-time works for text-based and voice conversations.
 
 ### Webchat Endpoint Example
 
@@ -31,7 +31,8 @@ Conditions:
 
 Result:
 
-Virtual agent's content is translated into Russian in real time. Everything in the conversation is translated, including components like the date picker (day, month, week).
+AI Agent's content is translated into Russian in real time.
+Everything in the conversation is translated, including components such as the date picker (day, month, week).
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/preselected_user_language_1.png" width="70%" />
@@ -53,10 +54,10 @@ Conditions:
 
 Result:
 
-The Webchat conversation between a user and the virtual agent begins.
+The Webchat conversation between a user and the AI Agent begins.
 At any point in the conversation, if the user expresses a desire to speak to a human agent,
 such as saying `I would like to talk to a human agent`,
-Cognigy virtual agent recognizes this intent, stops the Flow execution,
+Cognigy AI Agent recognizes this intent, stops the Flow execution,
 and transfers the conversation to a Live Agent who can then take over and continue the interaction.
 
 <figure>
@@ -74,7 +75,7 @@ The chat flow process between the user and the human agent, which involves real-
   <figcaption>A human agent (English) conversation with a user (German) in real-time translation</figcaption>
 </figure>
 
-By clicking Resolve, the human agent can close the conversation, and the user is returned to the virtual agent conversation as before.
+By clicking **Resolve**, the human agent can close the conversation, and the user is returned to the AI Agent conversation as before.
 
 ## More Information
 

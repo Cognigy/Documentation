@@ -98,7 +98,7 @@ Under each Case Node, you can place other Nodes, such as Say or Question, which 
 
 ## Example
 
-In this example, a user wants to order pizza and shares their preferences. The virtual agent recognizes if the user has ingredient restrictions and determines the correct Intent.
+In this example, a user wants to order pizza and shares their preferences. The AI Agent recognizes if the user has ingredient restrictions and determines the correct Intent.
 
 Let's assume that we have the following Intent data:
 
@@ -179,8 +179,8 @@ After applying the Cognigy NLU Intent mapping and external LLM reranking, the co
 }
 ```
 
-Once the virtual agent identifies the correct Intent, you can continue the Flow.
-For example, the virtual agent can offer pizza options from the identified category `Veggie Pizza`.
+Once the AI Agent identifies the correct Intent, you can continue the Flow.
+For example, the AI Agent can offer pizza options from the identified category `Veggie Pizza`.
 
 ## More Information
 
