@@ -6,7 +6,7 @@ hidden: false
 
 # AudioCodes
 
-AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](https://www.cognigy.com/products/voice-gateway).
+AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](../../../../deploy/endpoint-reference/audiocodes.md).
 
 You can use the following Voice Gateway Nodes:
 
