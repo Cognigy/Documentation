@@ -11,9 +11,9 @@
     9. From the **File Storage Provider** list, select **Azure**. 
     10. Next to the **Azure Connection**, click **+**. 
     11. In the **New Connection** window, fill in the following fields:
-        - **Container Name** - enter the Container Name that you copied and saved previously.
-        - **Account** - enter the Storage account name that you copied and saved previously.
-        - **Account Key** - enter the key that you copied and saved previously.
+        - **Container Name** — enter the Container Name that you copied and saved previously.
+        - **Account** — enter the Storage account name that you copied and saved previously.
+        - **Account Key** — enter the key that you copied and saved previously.
     12. Click **Create**, then **Save**.
 
 === "Amazon S3 Bucket"
@@ -31,10 +31,10 @@
     12. From the **File Storage Provider** list, select **Amazon**. 
     13. Next to **Google Cloud Connection**, click **+**.
     14. In the **New Connection** window, fill in the following fields:
-        - **Access Key ID**: Enter the access key ID that you copied and saved previously.
-        - **Secret Access Key**: Enter the secret key that you copied and saved previously.
-        - **Region**: Enter the AWS region that you copied and saved previously.
-        - **Bucket Name**: Enter the name of the bucket that you copied and saved previously.
+        - **Access Key ID** — enter the access key ID that you copied and saved previously.
+        - **Secret Access Key** — enter the secret key that you copied and saved previously.
+        - **Region** — enter the AWS region that you copied and saved previously.
+        - **Bucket Name** — enter the name of the bucket that you copied and saved previously.
     15. Click **Create**, then **Save**.
 
 === "Google Cloud Storage Bucket"
@@ -56,7 +56,7 @@
     11. From the **File Storage Provider** list, select **Google Cloud**.
     12. Next to **Google Cloud Connection**, click **+**.
     13. In the **New Connection** window, fill in the following fields:
-        - **Bucket Name**: Enter the bucket name that you copied and saved previously.
-        - **Client Email**: Enter the email address that you copied and saved previously.
-        - **Private Key**: Enter the key that you copied and saved previously.
+        - **Bucket Name** — enter the bucket name that you copied and saved previously.
+        - **Client Email** — enter the email address that you copied and saved previously.
+        - **Private Key** — enter the key that you copied and saved previously.
     14. Click **Create**, then **Save**.
