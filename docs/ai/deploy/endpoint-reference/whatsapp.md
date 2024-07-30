@@ -20,6 +20,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Session Management](../endpoints/session-management.md)
 - [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)  
 - [Handover Settings](../endpoints/handover-settings.md)
+- [File Storage](../endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify](../endpoints/inject-and-notify.md)** functionality with this type of Endpoint.
