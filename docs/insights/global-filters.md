@@ -19,7 +19,7 @@ The following global filters are available:
 
 - [Time Span](#time-span)
 - [Endpoints](#endpoints)
-  - [Interaction Panel and Playbook Data](#interaction-panel-and-playbook-data) 
+    - [Interaction Panel and Playbook Data](#interaction-panel-and-playbook-data) 
 - [Snapshots](#snapshots)
 - [Locales](#locales)
 
