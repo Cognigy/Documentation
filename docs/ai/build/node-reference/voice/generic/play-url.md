@@ -30,7 +30,8 @@ To build a Flow using the Play URL Node, follow these steps:
 
 1. In your Cognigy AI Project, open your Voice Gateway Flow.
 2. In the Flow editor, add a Play URL Node.
-3. In the Play URL Node editor, enter the required values: 
+3. In the Play URL Node editor, enter the required values:
+   - 
   
 
 ## More Information
