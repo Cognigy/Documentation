@@ -4,7 +4,7 @@ document$.subscribe(() => {
         case window.location.href.indexOf("http://localhost:8000/voice-gateway") !== -1:
         case window.location.href.indexOf("http://127.0.0.1:8000/voice-gateway") !== -1:
         case window.location.href.indexOf("https://docs.cognigy.com/voice-gateway") !== -1:
-            url = "https://endpoint-app.cognigy.ai/760f7cb6584e5bc5fee87952e483e60f81c5e59ea4026ec1841beba8e07b4a13"; // V3
+            // url = "https://endpoint-app.cognigy.ai/760f7cb6584e5bc5fee87952e483e60f81c5e59ea4026ec1841beba8e07b4a13"; // V3
             break;
         case window.location.href.indexOf("http://localhost:8000/insights") !== -1:
         case window.location.href.indexOf("http://127.0.0.1:8000/insights") !== -1:
