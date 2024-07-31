@@ -1,6 +1,7 @@
 ---
 title: "Complete Goal"
 slug: "complete-goal"
+description: "The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered."
 hidden: false
 ---
 # Complete Goal
