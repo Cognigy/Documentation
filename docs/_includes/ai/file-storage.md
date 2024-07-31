@@ -2,25 +2,26 @@
 === "Azure Blob Storage Container"
     1. Make sure that you have access to [Azure Blob Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) and at least one container has been created, or [create a new one](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). Note that the container must be publicly available; otherwise, users cannot upload files via the chat interface.
     2. Open the [Azure portal](https://portal.azure.com/#home). 
-    3. In the **Azure services** section, select **Storage Accounts**. 
-    4. In the left-side menu, navigate to **Data storage > Containers**. Copy the container name from the **Name** column and save it for later use. 
-    5. In the left-side menu, go to **Security + networking** and select **Access Keys**. 
-    6. On the **Access Keys** page, copy the name from the **Storage account name** field and the key from the **Key** field for later use. 
-    7. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one. 
-    8. On the **Endpoints Settings** page, go to the **File Storage** section. 
-    9. From the **File Storage Provider** list, select **Azure**. 
-    10. Next to the **Azure Connection**, click **+**. 
-    11. In the **New Connection** window, fill in the following fields:
+    3. In the **Azure services** section, select **Storage Accounts**.
+    4. On the **Storage accounts** page, select the account from the **Name** column.
+    5. In the left-side menu, navigate to **Data storage > Containers**. Copy the name of the target container from the **Name** column. This container will store user-uploaded files. Save the container name for later use.
+    6. In the left-side menu, go to **Security + networking** and select **Access Keys**. 
+    7. On the **Access Keys** page, copy the name from the **Storage account name** field and the key from the **Key** field for later use. 
+    8. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one. 
+    9. On the **Endpoints Settings** page, go to the **File Storage** section. 
+    10. From the **File Storage Provider** list, select **Azure**. 
+    11. Next to the **Azure Connection**, click **+**. 
+    12. In the **New Connection** window, fill in the following fields:
         - **Container Name** — the name of the container that you copied and saved previously.
         - **Account** — enter the storage account name that you copied and saved previously.
         - **Account Key** — enter the key that you copied and saved previously.
-    12. Click **Create**, then **Save**.
+    13. Click **Create**, then **Save**.
 
 === "Amazon S3 Bucket"
     1. Make sure that you have access to [Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) and that at least one bucket has been created, or [create a new one](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). Note that the bucket must be publicly available; otherwise, users cannot upload files via the chat interface.
     2. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/).
     3. On the **Amazon S3** page, go to the **General purpose buckets** tab.
-    4. From the **Name** column, copy the name of the bucket and save it for later use.
+    4. From the **Name** column, copy the name of the target bucket from the **Name** column. This bucket will store user-uploaded files. Save the bucket name for later use.
     5. From the **AWS Region** column, copy the region ID, for example, `us-east-1`, and save it for later use.
     6. In the upper-right corner, go to your account, then select **Security credentials**.
     7. On the **My Security Credentials** page, go to **Access keys** and click **Create access key**.
@@ -41,7 +42,7 @@
     1. Make sure that you have access to [Google Cloud Storage](https://cloud.google.com/storage/docs/) and that at least one bucket has been created, or [create a new one](https://cloud.google.com/storage/docs/creating-buckets). Note that the bucket must be [publicly available](https://cloud.google.com/storage/docs/access-control/making-data-public); otherwise, users cannot upload files via the chat interface.
     2. Open the [Google Cloud console](https://console.cloud.google.com/).
     3. In the left-side menu, select **Cloud Storage > Buckets**.
-    4. On the **Buckets** page, copy the name of the bucket from the **Bucket** column and save it for later use.
+    4. On the **Buckets** page, copy the name of the target bucket from the **Bucket** column. This bucket will store user-uploaded files. Save the bucket name for later use.
     5. In the left-side menu, select **IAM & Admin > Service Accounts**.
     6. From the **Email** field, copy the email address and save it for later use.
     7. In the **Actions** column, click **Actions > Manage Keys**.
