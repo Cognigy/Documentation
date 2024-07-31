@@ -58,6 +58,6 @@ This goal allows you to track successful information retrieval interactions via 
 The examples shows how to measure the chatbot's effectiveness in your customer call center. You can use the following approach:
 
 1. In the Flow, add a Question Node with the "Have we resolved your problem?" question and provide buttons (B1 and B2) as options.
-2. If the user selects B1 (Yes, my problem is resolved), connect it to a Complete Goal Node. This Node will mark the "Successful Chatbot Conversation" goal as completed, indicating that the chatbot has effectively assisted the customer.
+2. If the user selects B1 (Yes, my problem is resolved), connect it to a Complete Goal Node. This Node will mark the "Successful AI Agent Conversation" goal as completed, indicating that the AI Agent has effectively assisted the customer.
 3. If the customer selects B2 (No, I want to speak to a human agent), handle this separately by triggering a Handover to Agent Node. In this case, you don't need to use the Complete Goal Node.
 4. If the customer doesn't reply or types another question directly, consider it as a neutral conversation. You don't need to track it as a completed or unsuccessful goal.
