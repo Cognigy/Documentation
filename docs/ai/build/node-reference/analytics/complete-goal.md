@@ -55,7 +55,7 @@ This goal allows you to track successful information retrieval interactions via 
 
 ## Example
 
-The examples shows how to measure the chatbot's effectiveness in your customer call center. You can use the following approach:
+The example shows how to measure the AI Agent's effectiveness in your customer call center. You can use the following approach:
 
 1. In the Flow, add a Question Node with the "Have we resolved your problem?" question and provide buttons (B1 and B2) as options.
 2. If the user selects B1 (Yes, my problem is resolved), connect it to a Complete Goal Node. This Node will mark the "Successful AI Agent Conversation" goal as completed, indicating that the AI Agent has effectively assisted the customer.
