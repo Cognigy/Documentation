@@ -3,7 +3,7 @@
     1. Make sure that you have access to [Azure Blob Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) and at least one container has been created, or [create a new one](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). Note that the container must be publicly available; otherwise, users cannot upload files via the chat interface.
     2. Open the [Azure portal](https://portal.azure.com/#home). 
     3. In the **Azure services** section, select **Storage Accounts**. 
-    4. On the **Storage Accounts** page, copy the container name from the **Name** column and save it for later use. 
+    4. In the left-side menu, navigate to **Data storage > Containers**. Copy the container name from the **Name** column and save it for later use. 
     5. In the left-side menu, go to **Security + networking** and select **Access Keys**. 
     6. On the **Access Keys** page, copy the name from the **Storage account name** field and the key from the **Key** field for later use. 
     7. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one. 
