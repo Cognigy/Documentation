@@ -6,7 +6,7 @@ hidden: false
 
 # Carriers
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.69-blue.svg)](../../release-notes/4.69.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
 
 *Carriers* allow you to connect your SIP Trunk with Voice Gateway. 
 
@@ -33,7 +33,7 @@ There are two options on how the SIP Trunk can be added:
 | Active                      | Enable or disable the carrier.                                                                                                                                                                              | Account, Service Provider, Admin |
 | E.164 Syntax                | Defines a general format for international telephone numbers.                                                                                                                                               | Account, Service Provider, Admin |
 | Outbound Authentication     | Using a username and a password for the [authentication](#outbound-authentication).                                                                                                                         | Account, Service Provider, Admin |
-| Prefix                      | Is used to match a specific pattern of digits in the dialled number and route the call accordingly.                                                                                                         | Account, Service Provider, Admin |
+| Prefix                      | Is used to match a specific pattern of digits in the dialed number and route the call accordingly.                                                                                                         | Account, Service Provider, Admin |
 | SIP Diversion Header        | Means a header used to support PSTN redirecting services such as Call Forwarding.                                                                                                                           | Account, Service Provider, Admin |
 | SIP Gateways                | Add the Network Address / Port / Netmask of your carrier. You can select the direction of calls: Outbound, Inbound, or both.                                                                                | Account, Service Provider, Admin |
 
@@ -59,3 +59,38 @@ To set up the outbound authentication process, follow these steps:
 9. Activate the **Use Public IP in Contact** field to determine whether to use the public Voice Gateway IP address when establishing contact with the SIP server. The public address will be transferred in the Contact header field.
 10. Click **Save**. 
 11. At the top of the **Edit carrier** page, check whether the connection is established. If the registration is successful, you will see the Register status `200` and a `.pcap` file.
+
+## SIP Encryption for Outbound Calls
+
+Voice Gateway supports various methods of encryption for outbound calls:
+
+- **SIP over TLS**. The standard Session Initiation Protocol (SIP) is used for signaling and establishing communication, where the SIP messages are encrypted with TLS. This type of encryption provides a secure channel for the signaling information. SIP over TLS is often considered more flexible as it allows for the use of existing SIP infrastructure and clients with TLS capabilities.
+- **SIPS**. SIPS is a URI scheme specifically designed for secure SIP communication. It indicates that the SIP signaling should be encrypted with TLS once the connection is established. SIPS is simpler to set up as it's a dedicated scheme for secure SIP, but it might require more specific client and server configurations.
+- **SIP over TLS/SRTP with Crypto padding**. This type of encryption serves as an additional security layer when using SIP over TLS/SRTP. The **Pad crypto** option adds extra data to the encrypted voice packets, making them even harder to decrypt. Adding extra data (padding) to voice calls can make it harder to spy on them, because it hides the true size of the information being sent.
+
+Before 4.80 release, all connections were encrypted with SIPS by default. In some cases, the  default SIPS setting could cause compatibility issues. Some SIP network elements, such as proxy servers, still use older systems that don't support [SIP hops](../glossary.md#s) with SIPS encryption, causing the connection to fail. Starting from release [4.80](../../release-notes/4.80.md), the users can choose whether they want SIP, SIP over TLS, or SIPS encryption. All new carriers have SIP connection scheme by default. The existing carriers will retain their SIPS scheme.
+
+Before you set up the SIP encryption, make sure you know the type of encryption most suitable for your organization.
+
+To set up an SIP for outgoing calls, follow these steps:
+
+1. Open the Cognigy Voice Gateway Self-Service Portal. 
+2. In the left-side menu, select **Carriers**.
+3. Select the carrier you want to use for outbound communication.
+4. Go to the **SIP Gateways** section.
+5. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../_assets/voice-gateway/VG_plus_button.svg).
+6. In the **Network Address** field, enter the Network Address, for example `12.345.678.9`.
+7. Enter the Port number in the **Port** field. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
+8. Select the **Outbound** option.
+9. Select from the available options:
+
+    - UDP — this option activates SIP over UDP (User Datagram Protocol). UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
+    - TCP - this option activates SIP over TCP (Transmission Control Protocol). TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
+    - TLS — this option activates SIP over TLS. TLS prevents third party eavesdropping and tampering with communication. If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
+    - TLS/SRTP — this option activates SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. Configure the additional options:
+        - If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
+        - If you want to add cryptographic padding to your connection for additional security, select **Pad crypto**.
+
+10. Click **Save**.
+
+To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in **Recent Calls > Outbound Call > Details**.
