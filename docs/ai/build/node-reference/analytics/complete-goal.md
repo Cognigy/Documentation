@@ -2,7 +2,6 @@
 title: "Complete Goal"
 slug: "complete-goal"
 description: "The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered."
-description: "The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered."
 hidden: false
 ---
 # Complete Goal
@@ -15,10 +14,10 @@ hidden: false
 
 The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered.
 
-In order to start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Goal Node, the completed goal will be stored in the contact's profile and [Analytics](https://docs.cognigy.com/ai/analyze/collecting-data/ ).
+To start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Goal Node, the completed goal will be stored in the [Сontact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
 
 Goals have a variety of potential use cases and help understanding how often certain events are achieved. The achieved goals are recorded in the Contact Profiles of each end user. The data is also available in Insights (on dashboards and explorers) and through the OData endpoint. The [top goals](../../../../insights/dashboards/engagement.md#goals-reached) are listed in the Insights Engagement dashboard and allow you to track and analyze their frequency. 
-If you don't intend to analyze user profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then Analytics Steps would be more suitable.
+If you don't intend to analyze Contact Profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then [Analytics Steps](../../../analyze/collecting-data.md#analytics-steps) would be more suitable.
 
 The difference between a Complete Goal and an Analytics Step lies in their purpose and usage within a system. Complete Goals determine whether a user has completed a specific objective or task. In contrast, Analytics Steps collect data about individual events or actions for analytical purposes. Complete Goals are associated with a user's profile, whereas Analytics Steps focus on tracking and storing data information.
 
@@ -34,25 +33,25 @@ The difference between a Complete Goal and an Analytics Step lies in their purpo
 
 When a user completes the order placement process successfully, you can use the Complete Goal Node to mark the "Order Placement" goal as completed.
 
-This goal helps you track the number of successful order placements by customers through the chatbot.
+This goal helps you track the number of successful order placements by customers through the chat or voice call.
 
 ### Account Registration
 
 When a user has to create an account, you can use the Complete Goal Node to indicate that the "Account Registration" goal has been achieved.
 
-This goal helps you to track the number of successful account registrations via the chatbot.
+This goal helps you to track the number of successful account registrations through the chat or voice call.
 
 ### Appointment Booking
 
 When a user books an appointment, you can use the Complete Goal Node to signify the completion of the appointment booking process.
 
-This goal helps you track the number of successful appointments scheduled through the chatbot.
+This goal helps you track the number of successful appointments scheduled through the chat or voice call.
 
 ### Information Retrieval
 
 When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can utilize the Complete Goal Node to mark the "Information Retrieval" goal as completed.
 
-This goal allows you to track successful information retrieval interactions via the chatbot.
+This goal allows you to track successful information retrieval interactions through the chat or voice call.
 
 ## Example
 
