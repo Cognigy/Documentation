@@ -12,6 +12,8 @@ hidden: false
 _Collecting metadata_ from the user's browser during the conversation via Webchat v3 allows you
 to gather additional information that is not available by default. It includes details such as the browser language, geolocation, device type, and operating system.
 This data is stored in the [Input](../../ai/test/interaction-panel/input.md) object, enabling you to create more tailored and effective interactions with the user.
+After the session, the data is available through the [Insights Transcript Explorer](../../insights/explorers/transcript.md) and [Cognigy.AI OData endpoint](../../ai/analyze/odata.md).
+Remember that the metadata includes personal data, such as location, so make sure your privacy notices inform users about data collection and obtain their consent.
 
 Using additional metadata gives you the following benefits:
 

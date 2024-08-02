@@ -1,7 +1,7 @@
 ---
 title: "Browser Requirements" 
 slug: "browser-requirements" 
-description: "The Cognigy.AI User Interface is compatible with the following browsers: Google Chrome, Firefox, Microsoft Edge, and Safari."
+description: "The Cognigy.AI User Interface is compatible with the following browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari."
 hidden: false 
 ---
 

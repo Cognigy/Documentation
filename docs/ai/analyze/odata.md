@@ -25,7 +25,7 @@ To analyze your AI Agent's performance, you can use the [built-in Insights dashb
 
 ## Restrictions
 
-- The Cognigy OData Endpoint supports only [OData protocol version 4](https://www.odata.org/documentation/).
+- The Cognigy.AI OData endpoint supports only [OData protocol version 4](https://www.odata.org/documentation/).
 - The Cognigy.AI OData endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 - The data retrieved through the Cognigy.AI OData endpoint is not updated in real time and may not reflect current conditions or changes.
 
