@@ -57,7 +57,7 @@ To add a model to Cognigy.AI, follow these steps:
 
 ### Deprecation of Old Connections for Microsoft Azure OpenAI
 
-In recent releases, we have updated the connection settings to Microsoft Azure OpenAI models and added new parameters, such as the Resource Name.
+In recent releases, we have updated the connection settings to Microsoft Azure OpenAI models .
 
 If you have old connections (for example, created in the 4.53 release) to Azure OpenAI,
 these connections have an `AzureOpenAIProvider` type and are marked with a **Deprecated** label.
