@@ -99,7 +99,7 @@
 
     === "Amazon Bedrock"
         6.1 From the **Model** list, select **Custom Model** and configure the following fields:<br>
-            - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html).<br>
+            - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html). Note that the model will only work if your AWS admin gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).<br>
             - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html) documentation.<br>
         6.2 Click **Save**.<br>
         6.3 Fill in the following fields:<br>
