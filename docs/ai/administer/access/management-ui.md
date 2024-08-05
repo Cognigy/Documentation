@@ -204,7 +204,7 @@ All the expiration values define how many **minutes** it takes from when the dat
 | Insight's Session Data Expiration | This expiration value determines the number of minutes from when the data of Insight's Session is created until it is deleted from the database.                                                                                                                                                                                                                                                                                                  |
 | Steps Data Expiration             | This expiration value determines the number of minutes from when the data of [Steps](../../analyze/collecting-data.md#steps) is created until it is deleted from the database.                                                                                                                                                                                                                                                                    |
 
-For more information about data expiration in Insights, read [Data Expiration](../../../insights/ttl.md) in the Insights documentation.
+For more information about data expiration in Insights, read [Data Expiration](../../../insights/data-management/ttl.md) in the Insights documentation.
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
