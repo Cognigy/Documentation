@@ -14,7 +14,7 @@
 ## Description
 
 This Node provides the ability to selectively overwrite default values (intent, text,...) and the Analytics data that will be stored in [Insights Analytics](../../../../insights/overview.md).
-You can also use this Node to add custom values. When a value is left empty when overwriting, the respective key is not overwritten and the default value is used.
+You can also use this Node to add custom values. When a value is left empty, the respective key is not overwritten and the default value is used.
 
 Refer to the [Analytics data](../basic/code/analytics-data.md#analytics-data) page for a list of fields that can be overwritten.
 
