@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.81(beta)-purple.svg)](../../release-notes/4.81.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.82(beta)-purple.svg)](../../release-notes/4.82.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -234,6 +234,21 @@ To configure this behavior for pages with HTML and Adaptive Cards, use the follo
 
 - [xApp: Show HTML](../../ai/build/node-reference/xApp/set-html-xApp-state.md)
 - [xApp: Show Adaptive Card](../../ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.md)
+
+## RTL Language Support
+
+Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left). This feature is especially beneficial for languages such as Arabic,
+Persian (Farsi), Hebrew, Urdu, and other languages that use this writing direction. Supporting RTL layouts lets users from various regions interact with the Webchat widget in their native languages that enhances the user experience
+and leads to more effective and personalized interactions with the AI Agent.
+
+All elements of the Webchat widget are aligned for RTL, including the positioning of the widget itself, which now appears in the bottom-left corner of the web page. This adjustment ensures that users who speak languages with a right-to-left writing direction can easily interact with the chat, as it aligns with their usual reading and writing patterns.
+
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/rtl-support.png" width="100%" />
+</figure>
+
+To use RTL, add the attribute `dir="rtl"` to the `<html>` tag, which is placed at the beginning of the HTML-page.
+For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/WebchatWidget/tree/master?tab=readme-ov-file#development).
 
 ## More Information
 
