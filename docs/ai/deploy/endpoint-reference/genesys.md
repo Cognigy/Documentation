@@ -49,7 +49,7 @@ To set up the Genesys Endpoint, follow these steps:
 
 ### Configure Genesys Endpoint
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
+1. In the left-side menu of your Project, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
    3.1 Select the **Genesys** Endpoint type. <br>
