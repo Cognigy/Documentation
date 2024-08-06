@@ -28,9 +28,9 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 7. The HTML code contains the following entities:
-    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your webpage loads the latest version of Webchat v2.
+    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v2.
     - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
-      This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the webpage.
+      This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
 
     ```html
     <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
@@ -84,7 +84,7 @@ Example:
 
 ## Test Your Webchat
 
-After implementing the code, open your webpage in a browser to test the functionality.
+After implementing the code, open your web page in a browser to test the functionality.
 
 ```html
 <html lang="en">

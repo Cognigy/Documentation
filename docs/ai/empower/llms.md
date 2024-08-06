@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Models (LLMs)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.80.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.82-blue.svg)](../../release-notes/4.82.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating humanlike text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
@@ -24,6 +24,8 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                               | +                    | -                | +                  | -                   |
 | gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
+| gpt-4o                                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
+| gpt-4o-mini                                                                                                               | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | text-davinci-003 ([Deprecated](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/legacy-models#gpt-35)) | +                          | +                   | +                  | +               | +                     | +                                               | +                    | -                | -                  | -                   |
 | text-embedding-3-large                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | -                | -                  | +                   |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | +                | -                  | -                   |
@@ -31,6 +33,8 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                               | +                    | -                | +                  | -                   |
 | gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
+| gpt-4o                                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
+| gpt-4o-mini                                                                                                               | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | text-embedding-3-large                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | -                | -                  | +                   |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                               | -                    | +                | -                  | -                   |
 | **Anthropic**                                                                                                             |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
@@ -46,16 +50,30 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
 | luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 | luminous-embedding-128[^*]                                                                                                | -                          | -                   | -                  | -               | -                     | -                                               | -                    | +                | -                  | -                   |
+| **Amazon Bedrock**                                                                                                        |                            |                     |                    |                 |                       |                                                 |                      |                  |                    |                     |
+| [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html)-compatible models               | -                          | -                   | -                  | -               | -                     | +                                               | -                    | -                | -                  | -                   |
 
 [^*]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use `luminous-embedding-128`, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
 
 ## Add a Model
 
-{! _includes/release-notes/resolve-llm-connection-error.md !}
-
 To add a model to Cognigy.AI, follow these steps:
 
 {! _includes/ai/generative-ai/credentials.md !}
+
+### Deprecation of Old Connections for Microsoft Azure OpenAI
+
+In recent releases, we have updated the connection settings to Microsoft Azure OpenAI models.
+
+If you have old connections (for example, created in the 4.53 release) to Azure OpenAI,
+these connections have an `AzureOpenAIProvider` type and are marked with a **Deprecated** label.
+Although these connections can still be active,
+we strongly recommend creating a model with the new `AzureOpenAIProviderV2` type,
+as old connection types will no longer be available in the future.
+
+Note that for some Microsoft Azure OpenAI models, such as `text-embedding-ada-002` for knowledge search features, you might encounter the following error when an LLM is triggered:
+`Error while performing knowledge search. Remote returned error: Search failed: Could not fetch embeddings due to missing API resource name for Azure OpenAI`.
+To resolve the issue, recreate the model and the connection so that both are updated to the latest format.
 
 ## Apply a Model
 
