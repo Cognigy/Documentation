@@ -25,7 +25,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 {! _includes/ai/providers/inject-and-notify.md !}
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 The **Line Setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Line Channel**.
 

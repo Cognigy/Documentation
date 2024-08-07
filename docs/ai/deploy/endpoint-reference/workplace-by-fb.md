@@ -29,7 +29,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 {! _includes/ai/providers/inject-and-notify.md !}
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 The **Workplace Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with **Workplace Bot** deployment.
 

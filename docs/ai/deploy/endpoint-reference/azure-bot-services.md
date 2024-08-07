@@ -28,7 +28,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 !!! tip "Supports Inject & Notify"
     You can use the [Inject & Notify](../endpoints/inject-and-notify.md) functionality with this type of Endpoint.
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
 

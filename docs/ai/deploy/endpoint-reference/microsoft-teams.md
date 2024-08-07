@@ -20,7 +20,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy.AI Flows
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-# Channel Specific Settings
+# Specific Endpoint Settings
 
 The **Microsoft Teams Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Microsoft Teams Bot**.
 

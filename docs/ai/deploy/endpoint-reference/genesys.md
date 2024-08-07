@@ -32,7 +32,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 ### Genesys Bot Connector Setup
 

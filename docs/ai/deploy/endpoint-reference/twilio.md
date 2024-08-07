@@ -31,7 +31,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Session Management](../endpoints/session-management.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 ## Twilio Endpoint Settings
 
 <figure>

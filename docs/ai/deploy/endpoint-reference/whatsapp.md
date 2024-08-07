@@ -32,7 +32,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 {! _includes/ai/providers/inject-and-notify.md !}
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 ### WhatsApp Setup
 

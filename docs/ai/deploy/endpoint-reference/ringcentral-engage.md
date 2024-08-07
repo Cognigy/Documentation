@@ -21,7 +21,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy resource
 
 {! _includes/ai/providers/inject-and-notify.md !}
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 The **RingCentral Engage setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **RingCentral Engage** deployment.
 

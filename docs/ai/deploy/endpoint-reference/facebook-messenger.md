@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 {! _includes/ai/providers/inject-and-notify.md !}
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 ## Facebook (Meta) Page Setup
 
