@@ -18,7 +18,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy.AI Flows
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Handover Settings](../endpoints/handover-settings.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
 # Channel Specific Settings
 

@@ -10,37 +10,61 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform, you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook (Meta) Developer Dashboard by using our WhatsApp Endpoint integration. 
+The WhatsApp Endpoint connects AI Agents to the [WhatsApp Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/) via the [Facebook
+(Meta) App Dashboard](https://developers.facebook.com/docs/development/create-an-app/app-dashboard/).
+
+## Prerequisites
+
+- [Registration as a Meta Developer](https://developers.facebook.com/docs/development/register)
+- [Facebook (Meta) Business account](https://business.facebook.com/)
 
 ## Generic Endpoint Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)  
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)  
 - [Handover Settings](../endpoints/handover-settings.md)
 - [File Storage](../endpoints/file-storage.md)
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify](../endpoints/inject-and-notify.md)** functionality with this type of Endpoint.
+{! _includes/ai/providers/inject-and-notify.md !}
 
-## Prerequisites
+## Channel Specific Settings
 
-- [Registration as a Meta Developer](https://developers.facebook.com/docs/development/register)
-- Facebook (Meta) Business account
+### WhatsApp Setup
+
+| Parameter       | Description                                                                                                                                                                                                                      |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| App ID          | A unique App ID used by the Meta/Facebook App Dashboard to identify the WhatsApp app that communicates with the Cloud API.                                                                                                       |
+| Access Token    | A token provided by the WhatsApp app on the Meta/Facebook App Dashboard that enables communication between Cognigy.AI and the WhatsApp Cloud API. This is a required field.                                                      |
+| Phone Number ID | An ID for a phone number registered on the WhatsApp app or provided by the Facebook App Dashboard during setup for testing. This will be used as an ID in the requests made to the WhatsApp Cloud API. This is a required field. |
+| Verify Token    | A verification token for connecting the Cognigy WhatsApp Endpoint to the Meta/Facebook App Dashboard. This token needs to be generated on the Cognigy.AI side and can consist of letters, numbers, and punctuation marks.        |
+| App Secret      | This parameter can be optional. A secret that provides an extra layer of security, where every request will be checked not only against the Access Token but also the App Secret.                                                |
+
+### WhatsApp Settings
+
+| Parameter     | Description                                                                            |
+|---------------|----------------------------------------------------------------------------------------|
+| Message Delay | The amount of time to wait between sending AI Agent replies. Measured in milliseconds. |
+
+### Session Management
+
+| Parameter          | Description                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------------------|
+| Session Expiration | The amount of inactivity after which a session expires. Measured in minutes. The default value is 30 minutes. |
 
 ## How to Set up
 
 To set up the WhatsApp Endpoint, follow these steps:
 
-1. [Configure a WhatsApp Endpoint]()
+1. [Configure a WhatsApp App](#configure-a-whatsapp-app)
+2. [Configure a WhatsApp Endpoint](#configure-the-whatsapp-endpoint-settings)
+3. [Complete the WhatsApp Integration](#complete-the-whatsapp-integration)
 
-2. [Configure WhatsApp]()
-
-### WhatsApp
+### Configure a WhatsApp App
 
 1. Go to the [Create an App Dashboard](https://developers.facebook.com/apps/) page.
 2. Click **Create app**, then select **Use Cases > Other**.
@@ -60,10 +84,10 @@ To set up the WhatsApp Endpoint, follow these steps:
 13. Go to the **Step 1: Select phone numbers** section. Copy the Phone Number ID that is placed under the **Test number** field and save it for later use.
 14. Go to the **To** field. Click **Select a recipient phone number > Manage phone number list**. Specify your WhatsApp number to which you want to send messages.
 15. Go to **Step 2: Send messages with the API**, and click **Send message**. You will receive a welcome message in the WhatsApp chat. The sender will be specified as the number selected in **Step 1: Select phone numbers**. 
-16. In the left-side menu, go to **App settings > Basic**. Copy the id from the **App ID** field and save it for later use.
+16. In the left-side menu, go to **App settings > Basic**. Copy the ID from the **App ID** field and save it for later use.
 17. Next to the **App secret** field, click **Show**, confirm the action by entering your password, then copy the secret.
 
-## Configure the Endpoint Settings
+## Configure the WhatsApp Endpoint Settings
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu of your project, click **Deploy > Endpoints**.
@@ -76,9 +100,9 @@ To set up the WhatsApp Endpoint, follow these steps:
 6. Activate the **Enable Endpoint** setting.
 7. In the **WhatsApp Setup** section, in the **Verify Token** field, create a verification token for connecting the WhatsApp Endpoint to the WhatsApp App. The token can consist of letters, numbers, and punctuation marks. Save this token for later use in Genesys.
 8. Fill in the following fields:
-    - **App ID** - a unique App ID used by the Meta/Facebook Developer Dashboard to identify the WhatsApp App that communicates with the Cloud API.
-    - **Access Token** - a token provided by the WhatsApp App on the Meta/Facebook Developer Dashboard that enables communication between Cognigy.AI and the WhatsApp Cloud API. This is a required field.
-    - **Phone Number ID** - the Phone Number ID is an ID for a phone number registered on the WhatsApp App or provided by the Facebook Developer Dashboard during setup for testing. This will be used as an ID in the requests made to the WhatsApp Cloud API. This is a required field.
+    - **App ID** - a unique App ID used by the Meta/Facebook App Dashboard to identify the WhatsApp App that communicates with the Cloud API.
+    - **Access Token** - a token provided by the WhatsApp App on the Meta/Facebook App Dashboard that enables communication between Cognigy.AI and the WhatsApp Cloud API. This is a required field.
+    - **Phone Number ID** - the Phone Number ID is an ID for a phone number registered on the WhatsApp App or provided by the Facebook App Dashboard during setup for testing. This will be used as an ID in the requests made to the WhatsApp Cloud API. This is a required field.
     - **App Secret** - a secret that provides an extra layer of security, where every request will be checked not only against the Access Token but also the App Secret.
 9. Click **Save**.
 
@@ -93,16 +117,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 5. Subscribe your webhook to the message event. In the **Webhook fields** section, click **Manage**.
 6. In the **Name** column, find `messages`, and in the **Subscribe** column, activate the option.
 
-## Channel Specific Settings
-
-## WhatsApp Settings
-
-### Message Delay
-
-The amount of time to wait between sending bot replies. Measured in milliseconds.
-
 ## More Information
 
-* [HelpCenter: WhatsApp Endpoint: Deploy Native Endpoint](https://support.cognigy.com/hc/en-us/articles/5326220817948)
 * [HelpCenter: WhatsApp Endpoint: Get a Permanent Access Token](https://support.cognigy.com/hc/en-us/articles/5326310754332)
 * [HelpCenter: WhatsApp Endpoint: Messages Types and Payload Examples](https://support.cognigy.com/hc/en-us/articles/5326454286108)

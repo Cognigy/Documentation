@@ -24,7 +24,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)  
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)  
 - [File Storage](../endpoints/file-storage.md)
 
 ## Channel Specific Settings

@@ -21,9 +21,9 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
 - [Handover Settings](../endpoints/handover-settings.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)  
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify](../endpoints/inject-and-notify.md)** functionality with this type of Endpoint.
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
+
+{! _includes/ai/providers/inject-and-notify.md !}
 
 ## Channel Specific Settings
 

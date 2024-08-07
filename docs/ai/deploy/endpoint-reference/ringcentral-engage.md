@@ -17,10 +17,9 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy resource
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify](../endpoints/inject-and-notify.md)** functionality with this type of Endpoint.
+{! _includes/ai/providers/inject-and-notify.md !}
 
 ## Channel Specific Settings
 
