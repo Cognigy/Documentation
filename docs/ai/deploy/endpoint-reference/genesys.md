@@ -12,7 +12,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="100%" />
 </figure>
 
-The **Genesys** Endpoint allows connecting AI Agent to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
+The Genesys Endpoint connects AI Agents to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
 
 ## Prerequisites
 
@@ -25,20 +25,20 @@ The **Genesys** Endpoint allows connecting AI Agent to the [Genesys Cloud CX pla
 
 ## Generic Endpoint Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md)
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 ### Genesys Bot Connector Setup
 
-| Parameter    | Description                                                                                                                                                                                                     |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. This token needs to be generated on the Cognigy side and can consist of letters, numbers, and punctuation marks. |
+| Parameter    | Description                                                                                                                                                                                                        |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. This token needs to be generated on the Cognigy.AI side and can consist of letters, numbers, and punctuation marks. |
 
 ## How to Set up
 
@@ -49,7 +49,7 @@ To set up the Genesys Endpoint, follow these steps:
 
 ### Configure Genesys Endpoint
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
+1. In the left-side menu of your Project, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
    3.1 Select the **Genesys** Endpoint type. <br>

@@ -24,11 +24,11 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
 - [Handover Settings](../endpoints/handover-settings.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify](../endpoints/inject-and-notify.md)** functionality with this type of Endpoint.
-# Channel Specific Settings
+{! _includes/ai/providers/inject-and-notify.md !}
+
+# Specific Endpoint Settings
 
 The values of the following fields are used to communicate with your Sunshine Conversations app. All values can be retrieved from the Sunshine Conversations platform.
 

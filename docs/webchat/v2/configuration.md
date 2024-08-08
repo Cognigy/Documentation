@@ -33,7 +33,7 @@ The following General Endpoint settings that are available with this Endpoint:
 - [NLU Connectors](../../ai/empower/nlu/external/nlu-connectors.md)
 - [Session Management](../../ai/deploy/endpoints/session-management.md)
 - [Handover Settings](../../ai/deploy/endpoints/handover-settings.md)
-- [Real Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)
 - [AI Copilot](../../ai-copilot/overview.md)
 - [File Storage](../../ai/deploy/endpoints/file-storage.md)
 

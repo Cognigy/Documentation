@@ -29,9 +29,9 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 ## Twilio Endpoint Settings
 
 <figure>
