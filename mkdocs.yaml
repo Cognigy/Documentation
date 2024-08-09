@@ -427,7 +427,7 @@ nav:
       - webchat/overview.md
       - webchat/getting-started.md
 
-    - 🆕 Webchat v3 (Beta):
+    - 🆕 Webchat v3:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md

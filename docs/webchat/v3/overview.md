@@ -5,13 +5,9 @@ description: "Webchat v3 is the latest version of Cognigy Webchat, compatible wi
 hidden: false
 ---
 
-# Webchat v3 (Beta)
-
-{! _includes/webchat/beta.md !}
+# Webchat v3
 
 _Webchat v3_ is a new version of Cognigy Webchat, compatible with 4.72 of Cognigy.AI or later versions.
-
-In the Beta stage, most of the errors from the Webchat v3 Preview have been fixed, and features from v2 are now included in v3 Beta.
 
 Benefits of Webchat v3:
 

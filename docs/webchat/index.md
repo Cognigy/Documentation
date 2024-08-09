@@ -18,7 +18,7 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
 
     ---
 
-    Try out our new Webchat v3 (Beta)
+    Try out our new Webchat v3
 
     [:octicons-arrow-right-24: Overview](v3/overview.md)<br>
     [:octicons-arrow-right-24: Key Features](v3/features.md)<br>

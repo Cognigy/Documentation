@@ -5,5 +5,5 @@ Its main function is to facilitate real-time communication through text or voice
 
 Select the Endpoint version you want to use:
 
-- [Webchat v3 (Beta)](../../../webchat/v3/configuration.md)
+- [Webchat v3](../../../webchat/v3/configuration.md)
 - [Webchat v2](../../../webchat/v2/configuration.md)
