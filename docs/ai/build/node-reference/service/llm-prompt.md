@@ -15,11 +15,9 @@ hidden: false
 
 ## Description
 
-
 The LLM Prompt Node lets you use prompts with different LLM models to generate text or structured content.
 
 Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai).
-You can configure the Node to either use the default model defined in the Settings or choose a specific configured LLM.
 
 The Node supports the following modes:
 
@@ -62,6 +60,12 @@ The preconfigured overrides are listed in the table.
 | `\b.\..\.`                            | Two-letter abbreviations.                  | i.e., e.g. |
 
 ## Settings
+
+### Large Language Model
+
+The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project.
+
+You can select a different model from the list or override the selected model using the [Custom Model Options](#custom-options) parameter.
 
 ### Instruction
 
