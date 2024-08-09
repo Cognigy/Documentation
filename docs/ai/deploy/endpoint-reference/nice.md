@@ -39,7 +39,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 ## How to Set up
 
-To set up the WhatsApp Endpoint, follow these steps:
+To set up a connection between NICE CXone and Cognigy.AI, follow these steps:
 
 1. [Configure a NICE CXone Endpoint](#configure-a-nice-cxone-endpoint)
 2. [Create an App in NICE CXone](#create-an-app-in-nice-cxone)
@@ -47,7 +47,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 ### Configure a NICE CXone Endpoint
 
 1. Go to the Cognigy.AI interface.
-2. In the left-side menu of your project, click **Deploy > Endpoints**.
+2. In the left-side menu of your Project, click **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
 4. In the **New Endpoint** section, do the following: <br>
    4.1 Select the **NICE CXone** Endpoint type.<br>
@@ -63,7 +63,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 1. Go to the [NICE CXone](https://cxone.niceincontact.com/) platform.
 2. In the upper-left corner, click the **Applications** app selector.
 3. Go to **Others > Automation & AI**. A new window opens.
-4. In the left-side **Hubs** menu, select **Virtual Agent Hub**. The Virtual Agents panel appears.
+4. In the left-side **Hubs** menu, select **Virtual Agent Hub**. The **Virtual Agents** panel appears.
 5. Click **Add Bot**.
 6. At **Step 1: General Information**, do the following:<br>
     6.1 Enter a unique name in the **Virtual Agent (Bot) Name** field.<br>
