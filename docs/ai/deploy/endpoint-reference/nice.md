@@ -73,7 +73,7 @@ To set up a connection between NICE CXone and Cognigy.AI, follow these steps:
     - **URL** — enter the Endpoint URL that you saved and copied previously.
     - **Verify Token** — enter the Verify Token that you saved and copied previously.
 8. In the upper-right corner, click **Next**.
-9. At **Step 3: Voice**, in the **Voice Integration Options** section, activate the **Text Only** option. With this option, you can only use chat AI agents. Click **Next**.
+9. At **Step 3: Voice**, in the **Voice Integration Options** section, activate the **Text Only** option. With this option, you can only use chat AI Agents. Click **Next**.
 10. At **Step 4: Transcript**, leave the **Transcript** field with the **Nothing** value and click **Next**.
 11. At **Step 5: Test + Add**, test the bot by sending a welcome message to the chat. If you receive a response from the Cognigy.AI Agent, the connection is established correctly.
 12. Click **Add** to complete the virtual agent configuration.
