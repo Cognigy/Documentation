@@ -24,11 +24,11 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
     [:octicons-arrow-right-24: Key Features](v3/features.md)<br>
     [:octicons-arrow-right-24: Migration from v2 to v3](migration.md)<br>
 
--   :fontawesome-brands-rocketchat:{ .lg .middle } __Webchat v2__
+-   :fontawesome-brands-rocketchat:{ .lg .middle } __Webchat v2 (deprecated)__
 
     ---
 
-    Discover the stability and ease of use in  Webchat v2 for seamless communication
+    Discover the stability and ease of use in Webchat v2 for seamless communication
 
     [:octicons-arrow-right-24: Overview](v2/overview.md)<br>
     [:octicons-arrow-right-24: Key Features](v2/features.md)

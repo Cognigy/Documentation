@@ -436,7 +436,7 @@ nav:
         - webchat/v3/metadata.md
       - webchat/v3/embedding.md
 
-    - 💬 Webchat v2:
+    - 💬 Webchat v2 (Deprecated):
       - webchat/v2/overview.md
       - webchat/v2/supported-browsers.md
       - webchat/v2/features.md
