@@ -16,7 +16,7 @@ Insights supports different time zones with various time offsets. The complete l
 
 By default, Insights relies on the time zone preferences of your device according to supported time zones.
 
-## Change Timezone Settings
+## Change Time Zone Settings
 
 By default, Insights uses time zone preferences of your device. You can override this in **My Profile**. 
 
