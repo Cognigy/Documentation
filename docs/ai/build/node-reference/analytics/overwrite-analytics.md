@@ -51,7 +51,7 @@ The following values can be overwritten:
 | Custom Value 7  | custom7     | A custom field that can be set to any string value during Flow execution. Defaults to null | string
 | Custom Value 8  | custom8     | A custom field that can be set to any string value during Flow execution. Defaults to null | string
 | Custom Value 9  | custom9     | A custom field that can be set to any string value during Flow execution. Defaults to null | string
-| Custom Value 10 | ccustom10   | A custom field that can be set to any string value during Flow execution. Defaults to null | string
+| Custom Value 10 | custom10   | A custom field that can be set to any string value during Flow execution. Defaults to null | string
 
 
 !!! warning: "Selective Overwrite"
