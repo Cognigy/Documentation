@@ -757,8 +757,12 @@ plugins:
   - glightbox
   - search
   - macros
-  - tags
-      tags_file: tags.md
+  - tags:
+    tags_hierarchy: true
+    tags_file: tags.md
+    listings_map:
+              scoped:
+                 scope: true
   - exclude:
       glob:
         - _includes/*
