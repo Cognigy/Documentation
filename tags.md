@@ -48,6 +48,8 @@ Following is a list of relevant tags:
     - Channel
     - Session
 - Webchat:
-    - 
+    - V2
+    - V3
 - Insights:
+    - 
 - xApps:
