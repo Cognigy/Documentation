@@ -51,5 +51,6 @@ Following is a list of relevant tags:
     - V2
     - V3
 - Insights:
-    - 
+    - Insights
 - xApps:
+    - xApp
