@@ -2,6 +2,10 @@
 title: "Lookup" 
 slug: "lookup" 
 hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Lookup
 ---
 # Lookup
 

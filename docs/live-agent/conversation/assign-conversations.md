@@ -3,6 +3,10 @@ title: "Conversation Assignment"
 slug: "conversation-assignment"
 description: "Within a Live Agent conversation, you can assign agents, teams, priority, and labels."
 hidden: false
+tags:
+  - Live Agent
+  - Conversation
+  - Assign
 ---
 
 # Conversation Assignment

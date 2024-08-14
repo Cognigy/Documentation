@@ -3,6 +3,9 @@ title: "PCI Vault"
 slug: "pci-vault"
 description: "Cognigy PCI Vault is a specialized solution designed for contact center staff to securely collect confidential information from end users, including credit card details."
 hidden: false
+tags:
+  - Insights
+  - PCI Vault
 ---
 
 # PCI Vault

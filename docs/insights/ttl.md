@@ -2,6 +2,9 @@
  title: "Data Expiration" 
  slug: "Data Expiration" 
  hidden: false 
+ tags:
+    - Insights
+    - TTL
 ---
 # Data Expiration
 

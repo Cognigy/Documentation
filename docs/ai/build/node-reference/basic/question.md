@@ -2,6 +2,10 @@
 title: "Question" 
 slug: "question" 
 hidden: false 
+ tags:
+    - Cognigy.AI
+    - Nodes
+    - Question
 ---
 # Question
 

@@ -2,6 +2,10 @@
 title: "Transfer" 
 slug: "transfer-vg" 
 hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Transfer
 ---
 
 # Transfer

@@ -3,6 +3,9 @@ title: "Projects"
 slug: "projects"
 description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and other resources. You can collaborate on a given Project with multiple team members."
 hidden: false
+tags:
+  - Cognigy.AI
+  - Projects
 ---
 
 # Projects

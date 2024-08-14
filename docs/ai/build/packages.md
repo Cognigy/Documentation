@@ -2,6 +2,10 @@
 title: "Packages" 
 slug: "Packages" 
 hidden: false 
+tags:
+    - Cognigy.AI
+    - Packages
+    - Packaging
 ---
 
 # Packages

@@ -2,9 +2,13 @@
  title: "DTMF Collect - Config" 
  slug: "dtmf-collect-config" 
  hidden: false 
+ tags:
+  - Voice Gateway
+  - DTMF
+  
 ---
 
-# CDTMF Collect - Config
+# DTMF Collect - Config
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/dtmf-collect-config.png" width="80%" />

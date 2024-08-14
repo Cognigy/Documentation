@@ -2,6 +2,10 @@
 title: "Parameter Details"
 slug: "parameter-details"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Parameter Details
 ---
 
 # Voice Gateway Parameter Details

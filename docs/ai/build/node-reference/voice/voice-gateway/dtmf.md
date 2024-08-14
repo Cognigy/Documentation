@@ -2,6 +2,10 @@
  title: "DTMF" 
  slug: "dtmf" 
  hidden: false 
+ tags:
+  - Voice Gateway
+  - DTMF
+  - dtmf
 ---
 # DTMF
 

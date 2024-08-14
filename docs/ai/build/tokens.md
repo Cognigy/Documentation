@@ -2,6 +2,10 @@
  title: "Tokens" 
  slug: "tokens" 
  hidden: false 
+ tags:
+  - Cognigy.AI
+  - Token
+  - Tokens
 ---
 # Tokens
 

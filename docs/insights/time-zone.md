@@ -2,6 +2,9 @@
 title: "Time Zone" 
 slug: "timezone"
 hidden: false 
+tags:
+    - Insights
+    - Timezone
 ---
 
 # Time Zone

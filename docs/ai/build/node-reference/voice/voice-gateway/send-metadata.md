@@ -2,6 +2,9 @@
  title: "Send Metadata" 
  slug: "send-metadata" 
  hidden: false 
+ tags:
+  - Voice Gateway
+  - Send Metadata
 ---
 
 # Send Metadata

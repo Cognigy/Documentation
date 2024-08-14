@@ -3,6 +3,10 @@ title: "Secure xApps from XSS"
 slug: "secure-xApp-from-xss"
 description: "When building an xApp, it's important to mitigate the risk of an XSS attack by following specific guidelines."
 hidden: true
+tags:
+    - xApp
+    - XSS
+    - Cross site scripting
 ---
 
 # xApp Security: Prevent XSS Attacks

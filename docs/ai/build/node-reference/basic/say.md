@@ -2,6 +2,10 @@
 title: "Say" 
 slug: "say" 
 hidden: false 
+ tags:
+    - Cognigy.AI
+    - Nodes
+    - Say
 ---
 
 # Say

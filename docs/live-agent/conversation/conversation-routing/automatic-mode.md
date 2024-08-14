@@ -3,6 +3,10 @@ title: "Automatic Mode"
 slug: "automatic-mode"
 description: "Automatic mode in Live Agent includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents."
 hidden: false
+tags:
+    - Live Agent
+    - Conversation Routing
+    - Automatic
 ---
 
 # Automatic Mode

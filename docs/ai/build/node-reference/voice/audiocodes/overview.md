@@ -2,6 +2,9 @@
 title: "AudioCodes Nodes" 
 slug: "audiocodes" 
 hidden: false 
+tags:
+    - Voice Gateway
+    - Audiocodes
 ---
 
 # AudioCodes

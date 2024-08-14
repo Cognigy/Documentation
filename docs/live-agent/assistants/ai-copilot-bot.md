@@ -2,6 +2,10 @@
 title: "AI Copilot Bot"
 slug: "ai-copilot-bot" 
 hidden: false 
+tags:
+    - Live Agent
+    - Assistant
+    - Bot
 ---
 
 # AI Copilot Bot

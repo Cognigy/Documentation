@@ -2,6 +2,10 @@
  title: "Go To" 
  slug: "go-to" 
  hidden: false 
+ tags:
+    - Cognigy.AI
+    - Nodes
+    - Go To
 ---
 # Go To
 <figure>

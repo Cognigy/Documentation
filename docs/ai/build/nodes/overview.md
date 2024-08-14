@@ -2,6 +2,9 @@
 title: "Overview"
 slug: "node-usage"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Nodes
 ---
 
 # Nodes

@@ -3,6 +3,10 @@ title: "Manual Mode"
 slug: "manual-mode"
 description: "Manual assignment mode can be helpful in scenarios requiring specialized expertise, urgent or high-priority cases, complex or sensitive issues, and or key customers."
 hidden: false
+tags:
+    - Live Agent
+    - Conversation Routing
+    - Manual
 ---
 
 # Manual Mode

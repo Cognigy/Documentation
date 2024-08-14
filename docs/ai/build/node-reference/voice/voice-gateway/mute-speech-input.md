@@ -3,6 +3,9 @@ title: "Mute Speech Input"
 slug: "mute-speech-input"
 description: "The Voice Gateway Mute Speech Input Node allows you to control when speech input is collected in your Flow, preventing interruptions and ensuring a smoother conversation experience, especially in xApp Flows. By enabling or disabling speech gathering as needed, you can maintain better control and create a seamless workflow in your application."
 hidden: false
+tags:
+  - Voice Gateway
+  - Mute
 ---
 
 # Mute Speech Input

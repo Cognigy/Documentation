@@ -2,6 +2,10 @@
 title: "Extensions"
 slug: "extensions"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Extensions
+  - Extension
 ---
 # Extensions
 
