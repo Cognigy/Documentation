@@ -102,6 +102,7 @@ Following is a list of relevant tags:
     - Event
     - Events
 - Agent Copilot:
+    - AI Copilot
     - Grid
     - Widget
 - Live Agent:
