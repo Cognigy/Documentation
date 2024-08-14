@@ -16,7 +16,7 @@ For example, the `frontend-url` for the Trial Cognigy environment is `trial.cogn
 
 ## Log in to multiple organizations
 
-Cognigy.AI allows users to be part of multiple organizations. A user, identified by an email address and a password, can be part of different organizations. The URL to log in to Cognigy.AI should be like this, specifying which organization the user wants to log in to:
+Cognigy.AI allows users to be part of multiple organizations. A user, identified by an email address and a password, can be part of different organizations. The URL to log in to Cognigy.AI should be formatted as follows, specifying the organization the user wants to log in to:
 
 ```txt
 https://<frontend-url>/login?organisationId=<organisation-id>
@@ -37,7 +37,7 @@ The `organization-id` is a unique identifier of 24 characters that identifies an
 
 ### Multiple organization email notification
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
 
 When a user with a valid email address belongs to multiple organizations, and if no organizationId is passed in the login URL, the user will be denied a login; but will receive an email with direct login links for each organization they belong to.
 Clicking those links will open the Cognigy.AI login page with the respective organizationId param in the URL.

@@ -1,6 +1,6 @@
 # Cognigy xApps
 
-_Cognigy xApps_ are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
+_Cognigy xApps_ are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance AI and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
 <div class="grid cards" markdown>
 

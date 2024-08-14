@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-The _Calls Dashboard_ displays data from the Voice Gateway service. This dashboard helps you identify areas where your virtual agent may need improvement and make adjustments to improve the overall quality of voice interactions.
+The _Calls Dashboard_ displays data from the Voice Gateway service. This dashboard helps you identify areas where your AI Agent may need improvement and make adjustments to improve the overall quality of voice interactions.
 
 Metrics are visualized in the following charts:
 
@@ -53,7 +53,7 @@ Calculation: `duration of call 1 + duration of call 2 + duration of call 3 + ...
 
 ### Call ended by
 
-Shows the percentage of calls that were ended by the virtual agent or by the user.
+Shows the percentage of calls that were ended by the AI Agent or by the user.
 
 Source table:
 

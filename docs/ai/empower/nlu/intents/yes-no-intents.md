@@ -13,24 +13,24 @@ hidden: false
 
 The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 
-In the previous [Confirmation words](../../../administer/access/project-settings.md#additional-confirmation-words) feature, you have a limited range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` Intents.
+In the previous [Confirmation words](../../../administer/access/project-settings.md#additional-confirmation-words) feature, you have a limited range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps an AI Agent recognize different variations of `yes` and `no` Intents.
 
 Before using Yes/No Intents:
 
 ```txt
 User: Hello! 
-Virtual agent: Do you want to play the Star Wars quiz?
+AI Agent: Do you want to play the Star Wars quiz?
 User: Certainly
-Virtual agent: Not sure I understood this correctly. Try again.
+AI Agent: Not sure I understood this correctly. Try again.
 ```
 
 After using Yes/No Intents:
 
 ```txt
 User: Hello! 
-Virtual agent: Do you want to play the Star Wars quiz?
+AI Agent: Do you want to play the Star Wars quiz?
 User: Certainly
-Virtual agent: Let's start!
+AI Agent: Let's start!
 ```
 
 Yes/No Intents feature is supported in the [Question](../../../build/node-reference/basic/question.md), [Optional Question](../../../build/node-reference/basic/optional-question.md) and [Code](../../../build/node-reference/basic/code/overview.md) Nodes.
@@ -61,9 +61,9 @@ To configure a locale, do the following:
 You can use the Yes/No Intents feature for:
 
 - [a specific Flow](#flow-level-settings)
-- [all Flows in the virtual agent project](#project-level-settings)
+- [all Flows in the Project](#project-level-settings)
 
-### Project-level settings
+### Project-Level Settings
 
 To use Yes/No Intents for all Flows, do the following:
 

@@ -19,7 +19,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
 !!! note "Help Center"
     More detailed information on how to set up an **Userlike** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).

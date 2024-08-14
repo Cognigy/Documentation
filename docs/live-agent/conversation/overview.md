@@ -8,7 +8,7 @@ hidden: false
 # Conversations
 
 _Conversations_ are chats between a human agent and a customer, initiated by the customer via a messaging application, such as Cognigy Webchat, WhatsApp, Slack, and so on.
-The conversation is handed over to a human agent when the virtual agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
+The conversation is handed over to a human agent when the AI Agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
 
 <figure>
 <img class="image-center" src="../../../_assets/live-agent/conversation/conversation-panel.png" width="80%" alt="Conversation Page" />
@@ -105,7 +105,7 @@ For more information on these details, read the [Assign Conversations](assign-co
 Conversation information includes the following details: 
 
 - **Cognigy Session ID** — a unique identifier associated with a session in the Cognigy platform. In the context of Cognigy.AI and the Live Agent interface, a session refers to the collection of user inputs and agent replies within a conversation.
-- **Channel Type** — a messaging platform through which users can interact with the virtual agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the virtual agent through various interfaces. Cognigy channels include platforms like Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
+- **Channel Type** — a messaging platform through which users can interact with the AI Agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the AI Agent through various interfaces. Cognigy channels include platforms like Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
 - **Cognigy User ID** — a unique identifier for authorized access to Cognigy.AI and Live Agent.
 
 To copy this information, click ![copy](../../_assets/icons/copy.svg) next to the item.

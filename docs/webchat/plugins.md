@@ -26,8 +26,8 @@ To add a plugin from the collection of plugins, follow these steps:
 1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master) and select the plugin you want to use.
 2. On the [Releases](https://github.com/Cognigy/WebchatPlugins/releases) page, copy the plugin URL from the **Assets** section of the selected plugin. For example, the URL for the Google Firebase Authentication Webchat Plugin is `https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js`.
 3. Go to the Cognigy.AI interface 
-4. In the left-side menu, select an Agent.
-5. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+4. In the left-side menu, select a Project.
+5. In the left-side **Project** menu, select **Deploy > Endpoints**.
 6. Use an existing Endpoint or create a new one:
 
     === "Webchat v3"
@@ -51,8 +51,8 @@ To use custom plugins in your production environment or modify existing ones, yo
 4. Build your plugin by running the `npm ci && npm run build` command.
 5. Upload your plugin to cloud storage, for example, Amazon S3. Ensure that the uploaded plugin is accessible to the target audience. Check the availability settings on your cloud storage side.
 6. Go to the Cognigy.AI interface
-7. In the left-side menu, select an Agent.
-8. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+7. In the left-side menu, select a Project.
+8. In the left-side **Project** menu, select **Deploy > Endpoints**.
 9. Use an existing Endpoint or create a new one:
 
     === "Webchat v3"

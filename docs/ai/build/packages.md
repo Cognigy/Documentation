@@ -101,7 +101,7 @@ Importing a Package from a newer version into an older version of Cognigy.AI is 
 ### Import a Package
 
 !!! warning "Don't Import Knowledge Stores for Production Use"
-    Do not use Packages for deploying Knowledge to a production project. This is because virtual agents' Knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
+    Do not use Packages for deploying Knowledge to a production project. This is because AI Agents' Knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
 
 !!! warning "Using Packages as Templates: Node IDs"
     Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
@@ -144,7 +144,7 @@ The Primary Locales must be mapped. You can choose not to import the remaining L
 
 Starting from version 4.67, you can map any Locale from the Package to the Primary Locale of the Project into which the Package is being imported.
 
-If you link a Non-Primary Locale from the Package to the Primary Locale of the existing Agent, and the Non-Primary Locale does not have a complete configuration, the system will copy the missing settings from the Primary Locale of the Package.
+If you link a Non-Primary Locale from the Package to the Primary Locale of the existing Project, and the Non-Primary Locale does not have a complete configuration, the system will copy the missing settings from the Primary Locale of the Package.
 
 ## FAQ
 

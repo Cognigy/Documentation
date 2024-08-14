@@ -515,7 +515,7 @@ To activate a Voice Gateway channel:
 
 1. Go to the **Edit Node** page and click **+**.
 2. From the list, select **Voice Gateway**.
-3. In the **Text** field, add SSML markup to adjust the virtual agent's output speech.
+3. In the **Text** field, add SSML markup to adjust the AI Agent's output speech.
 
 Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../voice/voice-gateway/parameter-details.md).
 These configurations are also available in the following Nodes:
@@ -576,7 +576,7 @@ The **Genesys** tab provides two methods to create and edit messages that are sp
     }
     ```
     
-    This message suggests that the virtual agent working on the Cognigy side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
+    This message suggests that the AI Agent working on the Cognigy.AI side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
 
 ## Bandwidth
 
@@ -661,7 +661,7 @@ To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/
 
 ## Handover Settings
 
-When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
+When using a handover, such as to a live agent, you can choose who receives the message from the AI Agent:
 
 - **User and Agent** — by default, both the end user and the human agent will receive the message.
 - **User only** — the end user will receive the message.

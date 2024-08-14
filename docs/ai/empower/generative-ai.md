@@ -15,7 +15,7 @@ Generative AI refers to a type of artificial intelligence that creates new, orig
 Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
 to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms.md) to:
 
-- [Support the virtual agent builder](#design-time-generative-ai-features) (Design-Time)
+- [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
 - [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
 
 ## Prerequisites
@@ -47,7 +47,7 @@ You can check if the connection works by creating a new Generative AI Flow.
 
 ## Design-Time Generative AI Features
 
-During the design phase of creating virtual agents, LLMs can be used to generate a variety of virtual agent resources:
+During the design phase of creating AI Agents, LLMs can be used to generate a variety of AI Agent resources:
 
 - [Generating Lexicons](#generate-lexicons)
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
@@ -72,7 +72,7 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
 7. *(Optional)* Add the default [Slot](nlu/slots-and-lexicons/slots.md).
-8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agents understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
+8. *(Optional)* Activate **Generate Synonyms**. Synonyms help AI Agents understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
 9. Click **Create**.
 
 When the Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
@@ -126,7 +126,7 @@ You can also use Generative AI in the Node configuration.
 
 ## Run-Time Generative AI Features
 
-In Cognigy.AI, the Run-Time Generative AI features enrich virtual agents with dynamic interactions using LLMs.
+In Cognigy.AI, the Run-Time Generative AI features enrich AI Agents with dynamic interactions using LLMs.
 These features include running prompts, orchestrating conversations, rephrasing outputs,
 dynamic question reprompts, and generative knowledge retrieval.
 
@@ -134,7 +134,7 @@ You can configure the following Run-Time Generative AI features:
 
 - [LLM Prompt Node](#llm-prompt-node)
 - [GPT Conversation Node](#gpt-conversation-node)
-- [Rephrasing Virtual Agent Outputs](#rephrasing-virtual-agent-outputs)
+- [Rephrasing AI Agent Outputs](#rephrasing-ai-agent-outputs)
 - [LLM-powered Question Reprompts](#llm-powered-question-reprompts)
 - [Search Extract Output Node](#search-extract-output-node)
 
@@ -149,7 +149,7 @@ The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you
 
 The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
-### Rephrasing Virtual Agent Outputs
+### Rephrasing AI Agent Outputs
 
 To use AI-enhanced bot output rephrasing in [Say](../build/node-reference/basic/say.md), [Question](../build/node-reference/basic/question.md), and [Optional Question](../build/node-reference/basic/optional-question.md) Nodes, do the following:
 

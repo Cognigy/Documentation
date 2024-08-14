@@ -46,7 +46,7 @@ Enable this setting to continue the flow logic after an intent confirmation sent
 
 ### Pass Default Reply into Flow
 
-If the setting is on, the virtual agent doesn't answer with the default reply but writes it in the input object. Afterward, this information can be used in order to do something with it in the flow logic. 
+If the setting is on, the AI Agent doesn't answer with the default reply but writes it in the input object. Afterward, this information can be used in order to do something with it in the flow logic. 
 
 ### Include Default Reply in NLU Training
 
@@ -55,7 +55,7 @@ If the setting in on, NLU training will also include default replies configured 
 ## Timezone
 
 
-Set the timezone that your virtual agent will operate in.
+Set the timezone that your AI Agent will operate in.
 
 ## Intent Mapper
 

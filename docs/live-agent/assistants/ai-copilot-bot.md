@@ -32,7 +32,7 @@ they can activate a specialized AI Copilot Bot, such as one for technical suppor
 
 To use AI Copilot Bots in a Live Agent conversation, you need to create two Flows and two Endpoints in Cognigy.AI that comply with the following conditions:
 
-- The **Main** Flow for interaction between a virtual agent and an end user. Within this Flow, add a [Handover to Agent](../../ai/build/node-reference/service/handover-to-agent.md) Node to transition the conversation from the virtual agent to a human agent. The Inbox ID must be included in the Handover to Agent Node.
+- The **Main** Flow for interaction between an AI Agent and an end user. Within this Flow, add a [Handover to Agent](../../ai/build/node-reference/service/handover-to-agent.md) Node to transition the conversation from the AI Agent to a human agent. The Inbox ID must be included in the Handover to Agent Node.
 - The **Endpoint** for the **Main** Flow.
 - The **AI Copilot Bot** Flow for interaction between an AI Copilot Bot and a human agent.
 - The **Endpoint** for the **AI Copilot Bot** Flow.

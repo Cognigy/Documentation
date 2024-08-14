@@ -5,7 +5,7 @@
 ---
 # Live Agent
 
-Live Agent is Cognigy handover provider, allowing human agents to take over escalated conversations from virtual agents.
+Live Agent is Cognigy handover provider, allowing human agents to take over escalated conversations from AI Agents.
 
 Tight integration with Cognigy.AI that goes far beyond the integration we have with other handover services:
 
@@ -13,9 +13,9 @@ Tight integration with Cognigy.AI that goes far beyond the integration we have w
     
 - Configuration of the handover with just a few clicks
 
-- AI Copilot: Support of human agents by virtual agents
+- AI Copilot: Support of human agents by AI Agents
     
-- Enhance the capabilities of the virtual agent, based on outputs of human agents
+- Enhance the capabilities of the AI Agent, based on outputs of human agents
 
 Projects and Inboxes within Live Agent are easily setup, and Agents can be added and managed with ease.
 

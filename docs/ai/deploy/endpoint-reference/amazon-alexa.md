@@ -9,7 +9,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/alexa.png" width="100%" />
 </figure>
 
-The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an **Agent**. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
+The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
 
 !!! warning
     The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page](../../empower/nlu/external/nlu-connectors.md) for more details.
@@ -24,9 +24,10 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)  
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)  
+- [File Storage](../endpoints/file-storage.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 The **Alexa Settings** dropdown menu is where Cognigy.AI is provided with the credentials to connect with an **Amazon Alexa Skill**.
 
 <figure>

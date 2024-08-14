@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.81(beta)-purple.svg)](../../release-notes/4.81.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.82(beta)-purple.svg)](../../release-notes/4.82.md)
 
 {! _includes/webchat/beta.md !}
 
@@ -18,7 +18,7 @@ The Webchat 3 key features offer comprehensive customization options, including 
 Customization includes a comprehensive suite of features 
 that bolster your brand's presence and enhance user accessibility. 
 Customize the chat interface with your brand's title and logo, 
-alongside distinct avatars for both virtual and human agents, 
+alongside distinct avatars for both AI and human agents, 
 and adjust the color scheme across various elements. 
 Accessibility is prioritized with Text-to-Speech and Speech-to-Text functionalities. 
 Starting behavior customization sets the tone for engagement, 
@@ -55,7 +55,7 @@ To configure the conversation starters, refer to the [Home Screen](configuration
 
 ### Previous Conversations
 
-The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the virtual agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
+The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the AI Agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/previous-conversations.png" width="100%" />
@@ -108,7 +108,7 @@ To configure the conversation rating, refer to the [Conversation Rating](configu
 
 ## Privacy Notice
 
-The Privacy Notice feature ensures user trust and compliance by prompting consent to a privacy notice before chatting with the virtual agent. It includes customization of the title, detailed message, and submit button text, as well as a direct link to the full Privacy Policy, transparently informing users about data handling practices and securing their informed consent.
+The Privacy Notice feature ensures user trust and compliance by prompting consent to a privacy notice before chatting with the AI Agent. It includes customization of the title, detailed message, and submit button text, as well as a direct link to the full Privacy Policy, transparently informing users about data handling practices and securing their informed consent.
 
 {! _includes/webchat/privacy-notice-acceptance.md !}
 
@@ -209,8 +209,8 @@ For enabling attachment uploads, refer to the [Attachment Upload](configuration.
 
 ## Date Picker
 
-Whenever your virtual agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker. 
-After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the virtual agent.
+Whenever your AI Agent prompts for a date input via the Webchat, users can select the date using an interactive Date Picker. 
+After clicking the Date Picker button, a full-screen overlay will appear in the Webchat, allowing the user to choose a date within the constraints defined by the AI Agent.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/date-picker.png" width="100%" />
@@ -234,6 +234,21 @@ To configure this behavior for pages with HTML and Adaptive Cards, use the follo
 
 - [xApp: Show HTML](../../ai/build/node-reference/xApp/set-html-xApp-state.md)
 - [xApp: Show Adaptive Card](../../ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.md)
+
+## RTL Language Support
+
+Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left). This feature is especially beneficial for languages such as Arabic,
+Persian (Farsi), Hebrew, Urdu, and other languages that use this writing direction. Supporting RTL layouts lets users from various regions interact with the Webchat widget in their native languages that enhances the user experience
+and leads to more effective and personalized interactions with the AI Agent.
+
+All elements of the Webchat widget are aligned for RTL, including the positioning of the widget itself, which now appears in the bottom-left corner of the web page. This adjustment ensures that users who speak languages with a right-to-left writing direction can easily interact with the chat, as it aligns with their usual reading and writing patterns.
+
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/rtl-support.png" width="100%" />
+</figure>
+
+To use RTL, add the attribute `dir="rtl"` to the `<html>` tag, which is placed at the beginning of the HTML-page.
+For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/WebchatWidget/tree/master?tab=readme-ov-file#development).
 
 ## More Information
 

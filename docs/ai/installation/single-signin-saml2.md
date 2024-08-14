@@ -10,9 +10,7 @@ Cognigy.AI integrates with popular Single Sign-On (SSO) Identity Providers, such
 
 ## Get the SSO URL
 
-
-
-To configure Single Sign-on in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
+To configure a Single Sign-on in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
 
 ```txt
 https://<api-url>/auth/saml/login/<organization-id>
@@ -28,7 +26,7 @@ To configure the SSO Provider with Cognigy.AI, refer to one of the specific guid
 
 
 !!! warning
-    - Single Logout is only supported with OneLogin and Microsoft Azure Active Directory:
+    Single Logout is only supported with OneLogin and Microsoft Azure Active Directory:
         - Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
         - Identity Provider initiated Single Logout is only supported with OneLogin.
 

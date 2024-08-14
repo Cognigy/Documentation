@@ -13,8 +13,8 @@ hidden: false
 </figure>
 
 Within our **Cognigy.AI** platform,
-you are able to connect your virtual agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
-allowing customers to speak to your virtual agent instead of just writing with it.
+you are able to connect your AI Agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
+allowing customers to speak to your AI Agent instead of just writing with it.
 
 ## Generic Endpoint Settings
 
@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Transformer Functions](../endpoints/transformers/transformers.md)
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
 ## Bandwidth Settings
 

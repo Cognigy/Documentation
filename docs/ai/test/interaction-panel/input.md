@@ -15,7 +15,7 @@ the **Slots** that were identified and many other useful pieces of information.
 The input object is passed to the Project's [Flow](../../../ai/build/flows.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/build/cognigy-script.md) page.
 
 !!! note "Intent Default Replies override flow logic"
-    If an intent is configured with a default reply, this will override the agent's flow logic and automatically be delivered as the response.
+    If an intent is configured with a default reply, this will override the AI Agent's flow logic and automatically be delivered as the response.
 
 ## Properties
 

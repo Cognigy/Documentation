@@ -21,7 +21,7 @@ _**Account Settings**_
 :  You can change the general settings for an account, such as name and language. You will find access via the dashboard sidebar of Live Agent. For more information, read the [Account Settings](settings/account-settings.md) documentation.
 
 _**Agents**_
-:  Members of your Customer Support team. Agents will be able to view and reply to messages from your users. On the Live Agent sidebar you can click Settings > Agents to configure it. To differentiate between virtual agents and human agents in the Live Agent documentation, we primarily use the [Human Agent](#h) term to denote members of the support team. For more information, read the [Agent](settings/agents.md) documentation.
+:  Members of your Customer Support team. Agents will be able to view and reply to messages from your users. On the Live Agent sidebar you can click Settings > Agents to configure it. To differentiate between AI agents and human agents in the Live Agent documentation, we primarily use the [Human Agent](#h) term to denote members of the support team. For more information, read the [Agent](settings/agents.md) documentation.
 
 _**Agent Queue**_
 :  A list of conversations waiting for attention from Agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the Agent has not sent the first reply. The queue is visible to Agents on the Mine tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention. For more information, read the [Agent Queue](conversation/conversation-queue.md) documentation.
@@ -102,7 +102,7 @@ _**Conversation Workflow**_
 ## H
 
 _**Human Agents**_
-: Human members of your Customer Support team. They will be able to view and reply to messages from your users directly or, for example, when a virtual agent is asked to forward a customer request to a human support member.
+: Human members of your Customer Support team. They will be able to view and reply to messages from your users directly or, for example, when an AI Agent is asked to forward a customer request to a human support member.
 
 ## I
 
@@ -115,13 +115,13 @@ _**Inbox ID**_
 ## L
 
 _**LA Copilot**_
-: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered virtual agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
+: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered agents when conversing with the customer. Using this functionality, during an active handover, fully configurable AI Agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
 
 _**Labels**_
 : Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation.
 
 _**Live Agent**_
-: Cognigy product that combines conversational AI and human agents to enhance customer experiences and improve support team productivity. It allows a smooth transition between customer-virtual agent conversation and human support, making it easier to handle customer inquiries effectively. For more information, read the [Live Agent](overview.md) documentation.
+: Cognigy is a product that combines conversational AI and human agents to enhance customer experiences and improve support team productivity. It allows a smooth transition between customer-AI Agent conversations and human support, making it easier to handle customer inquiries effectively. For more information, read the [Live Agent](overview.md) documentation.
 
 _**Live Agent Settings**_
 : Cognigy Live Agent settings offer many features, such as team and inbox management, automation rules, canned responses, attachments, audit logs, and account settings. These capabilities can significantly improve customer interactions and enhance support efficiency. Note that these settings overwrite all Profile settings. For more information, read the [Live Agent settings](settings/overview.md) documentation.
@@ -148,7 +148,7 @@ _**Online (Agents)**_
 : One of four possible Live Agent statuses. This status indicates that the Agent is available and actively handling customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
 _**Open (conversations)**_
-: This conversation status indicates that a conversation is prepared for a handover to an agent.
+: This conversation status indicates that a conversation is prepared for a handover to a human agent.
 
 ## P
 
@@ -167,7 +167,7 @@ _**Resolved (conversations)**_
 : This conversation status means that a conversation is closed because the user's problem has been fixed.
 
 _**Roles**_
-: A method of granting permissions to specific users for data access. These permissions are based on a user role profile. In Live Agent users can have three different Single Roles: `Agents`, `Supervisors`, and `Administrators`. You can also assign more than one role to an Agent. For more information, read the [Roles](roles.md) documentation.
+: A method of granting permissions to specific users for data access. These permissions are based on a user role profile. In Live Agent users can have three different Single Roles: `Agents`, `Supervisors`, and `Administrators`. You can also assign more than one role to a human agent. For more information, read the [Roles](roles.md) documentation.
 
 ## S
 
