@@ -43,6 +43,7 @@ You can filter conversations using the filters mentioned in the table below. Mul
 | Team Name               | Filters data related to a particular team.                                                   |
 | Conversation Identifier | Filters based on a unique identifier for a conversation.                                     |
 | Cognigy Session ID      | Filters based on a unique identifier for a session within the Cognigy platform.              |
+| Cognigy User ID         | Filters based on a unique identifier for a user within the Cognigy platform.              |
 | Labels                  | Filters based on tags assigned to conversations for categorization and easy filtering.       |
 | Created At              | Filters based on the timestamp of when an conversation was created.                          |
 | First Reply Created At  | Filters based on the timestamp of the first reply to an conversation.                        |
