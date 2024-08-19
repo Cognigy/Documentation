@@ -7,4 +7,9 @@ hidden: false
 
 # Webchat Release Notes
 
-Find the Webchat release notes on [GitHub](https://github.com/Cognigy/WebchatWidget/releases) and central [Release Notes](../release-notes/index.md) page.
+Find the Webchat release notes on:
+
+- [GitHub](https://github.com/Cognigy/)
+    - [v3](https://github.com/Cognigy/Webchat/releases) 
+    - [v2 (deprecated)](https://github.com/Cognigy/WebchatWidget/releases)
+- The central [Release Notes](../release-notes/index.md) page.

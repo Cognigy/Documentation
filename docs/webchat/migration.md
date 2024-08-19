@@ -7,6 +7,8 @@ hidden: false
 
 # Migration From v2 to v3
 
+{! _includes/webchat/deprecation-webchat-v2.md !}
+
 The page includes a comparative table outlining the key changes between chat versions to assist you in migration to Webchat v3.
 
 ## Feature Comparison
@@ -14,7 +16,7 @@ The page includes a comparative table outlining the key changes between chat ver
 In the table, learn about the key differences between Webchat version 2 and version 3.
 Features that are not available for any of the versions are marked as N/A (Not applicable).
 
-| Feature                | v2                                                                                                                                                                       | v3                                                                                                                                                                                           |
+| Feature                | v2 (deprecated)                                                                                                                                                          | v3                                                                                                                                                                                           |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Webchat Design         | Basic design requiring additional CSS customization.                                                                                                                     | Enhanced design aligned with contemporary design principles and trends.                                                                                                                      |
 | Plugin Compatibility   | Compatible with all plugins from Cognigy plugin collection.                                                                                                              | May not Compatible with all plugins from Cognigy plugin collection.                                                                                                                          |
