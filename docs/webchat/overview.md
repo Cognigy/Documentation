@@ -22,7 +22,7 @@ Webchat is adaptable to retail, healthcare, finance, and other industries, makin
 
 ## Benefits of Cognigy Webchat
 
-Cognigy supports two Webchat versions: [v2 (deprecated)](v2/overview.md) and [v3 (preview)](v3/overview.md).
+Cognigy supports two Webchat versions: [v2 (deprecated)](v2/overview.md) and [v3](v3/overview.md).
 You can easily switch between the deprecated version and the new version to explore new features.
 
 Benefits applicable to both versions:
