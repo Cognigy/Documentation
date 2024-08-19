@@ -34,6 +34,5 @@ configuration, and how to integrate it into your project:
 1. [Key Features](features.md). Explore the Webchat v3 features.
 2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v3.
 3. [Configuration](configuration.md). Create a Webchat v3 Endpoint and customize various settings within it.
-4. Test your Webchat v3 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v3 locally using [developer tools](https://github.com/Cognigy/WebchatWidget?tab=readme-ov-file#building-your-webchat).
+4. Test your Webchat v3 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v3 locally using [developer tools](https://github.com/Cognigy/Webchat/blob/main/README.md#building-your-webchat).
 5. [Embedding](embedding.md). Launch the Webchat v3 version on your website.
-

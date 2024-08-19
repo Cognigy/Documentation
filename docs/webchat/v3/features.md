@@ -246,7 +246,7 @@ All elements of the Webchat widget are aligned for RTL, including the positionin
 </figure>
 
 To use RTL, add the attribute `dir="rtl"` to the `<html>` tag, which is placed at the beginning of the HTML-page.
-For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/WebchatWidget/tree/master?tab=readme-ov-file#development).
+For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/Webchat/blob/main/README.md#development).
 
 ## More Information
 

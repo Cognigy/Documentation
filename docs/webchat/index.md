@@ -53,8 +53,8 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
 
     ---
 
-    The Cognigy Webchat widget is licensed under MIT and available on [GitHub](https://github.com/Cognigy/WebchatWidget)
+    The Cognigy Webchat widget is licensed under MIT and available on [GitHub](https://github.com/Cognigy/Webchat)
 
-    [:octicons-arrow-right-24: License](https://github.com/Cognigy/WebchatWidget/blob/master/LICENSE)
+    [:octicons-arrow-right-24: License](https://github.com/Cognigy/Webchat/blob/main/LICENSE)
 
 </div>
