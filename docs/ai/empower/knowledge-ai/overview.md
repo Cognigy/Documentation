@@ -149,7 +149,7 @@ you need to specify them within the Cognigy.AI interface when creating a new kno
 
 !!! note "Source Tags"
     - The maximum number of tags per knowledge source is 10.
-    - You can add or remove source tags from previously created resources.
+    - You can add or remove source tags from previously created sources.
 
 #### Chunk 
 
