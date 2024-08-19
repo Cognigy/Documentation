@@ -11,6 +11,8 @@ hidden: false
 
 The page includes a comparative table outlining the key changes between chat versions to assist you in migration to Webchat v3.
 
+When migrating from Webchat v2 to v3, extensive testing is highly recommended. If you encounter any issues with v3, such as a feature you use not being supported in the new version or functionality not working as expected, contact [Cognigy technical support](../help/get-help.md).
+
 ## Feature Comparison
 
 In the table, learn about the key differences between Webchat version 2 and version 3.
