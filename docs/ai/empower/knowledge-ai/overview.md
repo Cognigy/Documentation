@@ -147,11 +147,9 @@ For the .ctxt format, you must include them in the [source metadata](ctxt.md#sou
 while for other formats,
 you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
 
-
 !!! note "Source Tags"
     - The maximum number of tags per knowledge source is 10.
-    - A Source Tag can be modified after creating the source.
-    - A Source Tag cannot be added to already existing sources. 
+    - You can add or remove source tags from previously created resources.
 
 #### Chunk 
 
