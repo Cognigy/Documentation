@@ -1,0 +1,3 @@
+!!! warning "Removal of Several GPT-3.5-Turbo Versions by OpenAI"
+    Due to the sunset of the [`gpt-3.5-turbo-0301`](https://platform.openai.com/docs/deprecations/2023-06-13-updated-chat-models),[`gpt-3.5-turbo-0613` and `gpt-3.5-turbo-16k-0613`](https://platform.openai.com/docs/deprecations/2023-11-06-chat-model-updates) model versions by OpenAI on September 13,
+    2024, they will no longer be available in Cognigy.AI.
