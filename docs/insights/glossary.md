@@ -41,8 +41,8 @@ _**Download Report**_
 _**Endpoints**_
 : Endpoints ensure that channel-specific input and output (images, galleries, voice) are converted to the standardized Input object. This means that a Cognigy Flow only needs to be developed once, after which it can be deployed to multiple channels by configuring Endpoints. Examples of Endpoints include Webchat, Voice Gateway, Microsoft Teams, and more. In Insights, you can select one or more Endpoints for analysis. For more information, read the [Endpoints](global-filters.md#endpoints) documentation.
 
-_**Expert Mode**_
-: This mode provides additional information for conversation messages, including the triggered Intent and its score, as well as the filled Slots. You can enable Expert Mode by toggling the switch at the top of the Transcript panel. For more information, read the [Expert Mode](explorers/transcript.md#expert-mode) documentation.
+_**Debug Mode**_
+: This mode provides additional information for conversation messages, including the triggered Intent and its score, as well as the filled Slots. You can enable Debug Mode by toggling the switch at the top of the Transcript panel. For more information, read the [Debug Mode](explorers/transcript.md#debug-mode) documentation.
 
 _**Engagement**_
 : A dashboard in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Dashboard](dashboards/engagement.md) documentation.

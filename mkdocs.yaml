@@ -33,6 +33,7 @@ nav:
           - ai/build/node-reference/basic/question.md
           - ai/build/node-reference/basic/optional-question.md
           - ai/build/node-reference/basic/send-text.md
+          - ai/build/node-reference/basic/debug-message.md
           - Code:
               - ai/build/node-reference/basic/code/overview.md
               - ai/build/node-reference/basic/code/actions.md

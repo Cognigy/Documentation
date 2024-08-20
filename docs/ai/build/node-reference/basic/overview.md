@@ -15,3 +15,4 @@ You can use the following Basic Nodes:
 - [Optional Question](optional-question.md)
 - [Send Text](send-text.md)
 - [Code](code/overview.md)
+- [Debug Message](debug-message.md)

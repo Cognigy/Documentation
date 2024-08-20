@@ -170,7 +170,7 @@ By default, Cognigy.AI will reject connecting against insecure SSL endpoints, su
   <figcaption>Error Handling</figcaption>
 </figure>
 
-### Error Handling
+### Error Handling & Logging
 #### Error Logging
 If HTTP Requests return a status code > 299, the response is considered an error. This setting allows the user to either:
 
@@ -180,6 +180,14 @@ If HTTP Requests return a status code > 299, the response is considered an error
 
 #### Abort Flow Execution on Error
 If active, the Flow will stop here if the response returned with a status code > 299
+
+#### Debug Mode Logging
+Choose what information to log to [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) when using the Interaction Panel. The following options can be selected:
+
+- Do not log Request & Response
+- Request
+- Response
+- Request & Response
 
 ## GET Requests
 

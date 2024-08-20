@@ -22,7 +22,7 @@ follow these steps to familiarize yourself with its features and start testing A
 1. [Open the Interaction Panel](#open-the-interaction-panel) and [configure the Project-related settings](#project-related-settings).
 2. [Select the mode](#test) in which you want to test the AI Agent.
 3. [Examine the data stored in the AI Agent's memory](#info) and how it's reused.
-4. Consider enabling [additional settings](#settings), such as [Expert mode](#expert-mode), for more detailed testing.
+4. Utilize the [Debug mode](#debug-mode) for more detailed testing.
 5. Run [Playbooks](#playbooks) to catch potential errors.
 
 ## Open the Interaction Panel
@@ -118,6 +118,7 @@ In **Chat** mode, you can use additional settings:
 - **Reset Session** — the setting clears the chat history in the Interaction Panel. 
 - **Create Playbook** — the setting starts a new Playbook for testing conversations. For more information, refer to [Playbooks](../playbooks.md).
 - **Create Playbook with Assertions** — the setting starts a new Playbook with assertions for in-depth testing. For more information, refer to [Playbook with Assertions](../playbooks.md#assertion).
+- **Enable/Disable Debug Mode** - the setting toggles the [Debug mode](#debug-mode) (enabled by default)
 
 #### Voice Call
 
@@ -248,8 +249,10 @@ To configure the relevant settings for the Interaction Panel, click the tab **Se
 | **General**                       |                                                                                                                                                                |
 | NLU Connector                     | Provides a selection list. The default is the Cognigy NLU engine.                                                                                              |
 | Text to Speech                    | Reads out messages from the system.                                                                                                                            |
-| Expert Mode                       | Displays additional information about the Flow.                                                                                                                |
 | Channel Selection                 | Provides a selection list for Endpoint providers.                                                                                                              |
+| **Debug Mode**                    |                                                                                                                                                                |
+| Debug Mode toggle                 | Enable/disable Debug Mode.                                                                                                                |
+| Node Filter                       | Select the Node types to show in Debug mode.                                                                                                                   |
 | **Chat**                          |                                                                                                                                                                |
 | Show Data Input                   | Displays data input.                                                                                                                                           |
 | **Voice Call**                    |                                                                                                                                                                |
@@ -278,25 +281,34 @@ For more information on how to manage NLU connectors, refer to [NLU Connectors](
 The **Chat Output** setting lets you customize how information is displayed in the Interaction Panel:
 
 - [Text to Speech](#text-to-speech) — activate this setting to have system messages read aloud.
-- [Expert mode](#expert-mode) — activate this mode to view more details about the Flow execution.
+- [Debug mode](#debug-mode) — activate this mode to view more details about the Flow execution.
 - [Channel Select](#channel-select) — select the channels you want to display from the list.
 
 ##### Text-to-Speech
 
 When the **Text-to-Speech** setting is enabled, an AI Agent will vocalize its responses using your browser's built-in Text-to-Speech (TTS) functionality.
 
-##### Expert Mode
+##### Debug Mode
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
 
-If the **Expert Mode** setting is enabled, the Interaction Panel displays more information about the Flow execution, including:
+If the **Debug Mode** setting is enabled, the Interaction Panel displays more information about the Flow execution, including:
 
 - Triggered [Intents](../../empower/nlu/intents/ml-intents.md) and their [score](../../empower/nlu/intents/intent-analyzer.md).
 - Triggered [Yes/No Intents](../../empower/nlu/intents/yes-no-intents.md) and their [score](../../empower/nlu/intents/intent-analyzer.md).
-- The name of the Flow that was triggered. 
+- Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
+- Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
+- [State](./state.md) changes
+- Flow Transitions, e.g. when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Node specific output, e.g. from a [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. The Node specific outputs can be disabled granularly in the Interaction Panel [settings](#settings).
+
+Debug Messages can also be triggered explicitly, either using
+
+- the [Debug Message](../../build/node-reference/basic/debug-message.md) Node, or
+- the [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-expert-mode.png" width="80%" />
+  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />
 </figure>
 
 ##### Channel Select

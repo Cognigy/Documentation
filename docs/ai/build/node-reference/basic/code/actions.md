@@ -1,10 +1,10 @@
 ---
-title: "Action" 
+title: "Actions" 
 slug: "actions" 
 hidden: false 
 ---
 
-# Action
+# Actions
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
 
@@ -53,6 +53,21 @@ Sets the time zone offset from UTC.
 | Parameter | Type     | Description               |
 |-----------|----------|---------------------------|
 | offset    | *number* | The time offset in hours. |
+
+**Returns**
+
+void
+
+### actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError
+
+Send a debug message or debug error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
+
+**Parameters**
+
+| Parameter | Type   | Description                                       |
+|-----------|--------|---------------------------------------------------|
+| message   | string | The debug message text.    |
+| header    | string | The Header text for the debug message (optional). |
 
 **Returns**
 
