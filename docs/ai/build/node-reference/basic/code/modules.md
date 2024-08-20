@@ -56,29 +56,6 @@ In this example we're extracting the last element of the `favouriteFoods` array 
 
 ## Messenger Platform
 
-[Messenger Documentation](https://github.com/snlangsuan/facebook-bot-messenger)
-
-For building Facebook Messenger messages (quick replies, buttons, lists, generic templates, etc.) you can use the **facebook-bot-messenger** module within a Code Node.
-
-### Usage
----
-In a Code Node, you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types, visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
-
-### Example
----
-The following snippet can be used to generate a quick reply message. Keep in mind that the built message (`builder.buildMessage()`) must be the value of the **message** property of the **_facebook** object. 
-```javaScript
-// use facebook-bot-messenger to compile reply
-const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');
-builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'https://cognigy.com/img/red.png')
-       .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'https://cognigy.com/img/green.png');
-
-// output the reply
-actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
-``` 
-
-## Messenger Platform
-
 [XML-js Documentation](https://www.npmjs.com/package/xml-js)
 
 In case you want to parse XML data, you can use this module.
