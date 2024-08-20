@@ -22,15 +22,15 @@ Webchat is adaptable to retail, healthcare, finance, and other industries, makin
 
 ## Benefits of Cognigy Webchat
 
-Cognigy supports two Webchat versions: [v2](v2/overview.md) and [v3 (preview)](v3/overview.md).
-You can easily switch between the reliable stable version and the innovative preview version to explore new features.
+Cognigy supports two Webchat versions: [v2 (deprecated)](v2/overview.md) and [v3](v3/overview.md).
+You can easily switch between the deprecated version and the new version to explore new features.
 
 Benefits applicable to both versions:
 
 ### Free of Charge
 
 The Cognigy Webchat widget is an open-source Webchat component, available free of charge. It offers transparency, flexibility, and opportunities for collaboration and customization.
-Fork the [Cognigy Webchat GitHub](https://github.com/Cognigy/WebchatWidget) repository and implement a custom Webchat version.
+Fork the [Cognigy Webchat GitHub](https://github.com/Cognigy/Webchat) repository and implement a custom Webchat version.
 
 ### User-Friendly Interface and UI Customization
 
