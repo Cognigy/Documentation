@@ -6,6 +6,8 @@ hidden: false
 
 # Profile Settings
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../release-notes/4.83.md)
+
 _Profile Settings_ are a set of customizable options and configurations available to individual users within the Live Agent system. These settings include the customization of profile appearance, notification preferences, activation of AI Copilot, configuration of hotkeys for sending messages, and access to API functionality.
 
 To open the **Profile Settings** in Live Agent, do the following:
@@ -27,10 +29,10 @@ Additionally, you can copy the [API Token](#api-access-token) to access the [Liv
 
 To personalize your profile settings, you can edit both your profile image and the name that will be displayed in conversations.
 
-| Setting       | Description                                                                                                                            |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Profile image | The image will be displayed in the conversations, agent lists and user profile menu.                                                   |
-| Display name  | This name will be displayed in the conversations and is used as sender name when human agents send conversation transcripts in emails. |
+| Setting       | Description                                                                                                                                                                                                                                                                                                                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profile image | The image will be displayed in the conversations, agent lists and user profile menu.<br> For [Webchat v3](../webchat/v3/configuration.md#webchat-layout), when the Profile Image is not available, the system will use the value from the Human Agent Avatar Logo URL parameter in the Webchat Layout section if it is provided. Otherwise, a default human agent icon will be displayed.                                 |
+| Display name  | This name will be displayed in the conversations and is used as sender name when human agents send conversation transcripts in emails.<br> For [Webchat v3](../webchat/v3/configuration.md#webchat-layout), it is advisable to fill in this field, as leaving it empty will result in Webchat v3 displaying the internal agent name specified in the [Cognigy.AI user profile](../ai/administer/user-menu/my-profile.md). |
 
 The other user data, such as email address, full name and password, need to be updated in the Cognigy.AI account. The changes will automatically apply to Live Agent.
 
