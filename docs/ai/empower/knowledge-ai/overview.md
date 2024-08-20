@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../../release-notes/4.83.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -147,11 +147,9 @@ For the .ctxt format, you must include them in the [source metadata](ctxt.md#sou
 while for other formats,
 you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
 
-
 !!! note "Source Tags"
     - The maximum number of tags per knowledge source is 10.
-    - A Source Tag cannot be modified after creating the source.
-    - A Source Tag cannot be added to already existing sources. 
+    - You can add or remove source tags from previously created sources.
 
 #### Chunk 
 
