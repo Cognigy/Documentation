@@ -14,7 +14,8 @@ You'll find the corresponding release notes after opening one of the versions be
     We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
 
 - **4.8x**:
-    - [4.82 (latest)](4.82.md)
+    - [4.83 (latest)](4.83.md) 
+    - [4.82](4.82.md)
     - [4.81](4.81.md)
     - [4.80](4.80.md)
 - **4.7x**:
