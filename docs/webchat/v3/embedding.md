@@ -7,17 +7,15 @@ hidden: false
 
 # Webchat 3: Embedding
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.82(beta)-purple.svg)](../../release-notes/4.82.md)
-
-{! _includes/webchat/beta.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.82.md)
 
 Embedding Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 
 ## Prerequisites
 
 - Ability to modify the HTML content of your website.
-- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
-      - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
+- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
+      - Note that some settings are [specific to embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
 - Create a [Webchat v3 Endpoint](configuration.md).
 
 ## Add the Embedding HTML
@@ -57,7 +55,7 @@ Note that plugins suitable for Webchat v2 may not be compatible with Webchat v3.
 
 ## Customize the Webchat Settings
 
-You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to your requirements:
+You can customize the [Webchat settings](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#client-side-configuration) according to your requirements:
 
 - `colors` — customize a Webchat v3 color. In the example:
   `primaryColor` — change the primary color.
@@ -117,7 +115,7 @@ After implementing the code, open your web page in a browser to test the functio
     ```html
     <html lang="en">
     <body>
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.33/webchat.js"></script>
+    <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
     <script src="./path/to/myPlugin.js"></script>
     <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
     <script>
@@ -153,7 +151,7 @@ After implementing the code, open your web page in a browser to test the functio
     ```html
     <html lang="ar" dir="rtl">
     <body>
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.33/webchat.js"></script>
+    <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
     <script src="./path/to/myPlugin.js"></script>
     <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
     <script>
@@ -188,7 +186,7 @@ After implementing the code, open your web page in a browser to test the functio
 
 Customize Webchat further to align with your brand identity and meet specific interaction goals:
 
-- [Webchat API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
-- [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
-- [Analytics API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
-- [Custom Avatars](https://github.com/Cognigy/WebchatWidget/blob/master/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.
+- [Webchat API](https://github.com/Cognigy/Webchat/blob/main/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
+- [CSS Customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
+- [Analytics API](https://github.com/Cognigy/Webchat/blob/main/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
+- [Custom Avatars](https://github.com/Cognigy/Webchat/blob/main/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.
