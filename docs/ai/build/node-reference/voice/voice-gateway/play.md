@@ -30,4 +30,4 @@ This Node is useful for playing advertisements, pre-recorded jingles, or other s
 
 - [Parameter Details](../voice-gateway/parameter-details.md)
 - [AudioCodes Play URL Node](../audiocodes/play-url.md)
-- [Generic Play URL Node](../voice-gateway/play.md)
+- [Generic Play URL Node](../generic/play-url.md)
