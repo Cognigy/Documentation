@@ -21,7 +21,7 @@ The Play URL Node might be useful when you want to play an advertisement, a pre-
 
 | Parameter               | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |-------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Media URL               | Text   | Accepts direct URL links to MP3 and WAV tracks, for example, https://abc.xyz/music.mp3.                                                                                                                                                                                                                               |
+| Media URL               | Text   | Accepts direct URL links to MP3 and WAV tracks. The parameter requires a URL in the `https://<yourdomain>.<domain_extension>/<file-name>.mp3` format, for example,  `https://yourdomain.com/welcome_message.mp3`. |       
 | Set Activity Parameters | Toggle | Enables parameters which will be valid for this activity only. The available parameters are: <br> - [Recognizer (STT)](../voice-gateway/parameter-details.md#recognizer---speech-to-text) <br> - [Barge In](../voice-gateway/parameter-details.md#barge-in) <br> - [DTMF](../voice-gateway/parameter-details.md#dtmf) |
 
 To use the Play URL Node:
