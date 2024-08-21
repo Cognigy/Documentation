@@ -14,7 +14,7 @@
 
 ## Description
 
-The Play URL Node lets you stream a sound file into the call with the ability to loop it.
+The Play Node lets you stream a sound file into the call with the ability to loop it.
 
 This Node is useful for playing advertisements, pre-recorded jingles, or other sound files for callers. It supports MP3 and WAV encoded files.
 
