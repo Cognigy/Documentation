@@ -6,6 +6,8 @@ hidden: false
 
 # Debug Message
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.83-blue.svg)](../../../../release-notes/4.83.md)
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/debug-message.png" width="80%" />
 </figure>

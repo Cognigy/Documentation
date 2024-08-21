@@ -182,6 +182,9 @@ If HTTP Requests return a status code > 299, the response is considered an error
 If active, the Flow will stop here if the response returned with a status code > 299
 
 #### Debug Mode Logging
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../../release-notes/4.83.md)
+
 Choose what information to log to [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) when using the Interaction Panel. The following options can be selected:
 
 - Do not log Request & Response

@@ -290,7 +290,7 @@ When the **Text-to-Speech** setting is enabled, an AI Agent will vocalize its re
 
 ##### Debug Mode
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
 
 If the **Debug Mode** setting is enabled, the Interaction Panel displays more information about the Flow execution, including:
 

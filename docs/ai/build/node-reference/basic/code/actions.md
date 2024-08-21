@@ -6,7 +6,7 @@ hidden: false
 
 # Actions
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../../release-notes/4.84.md)
 
 Within a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 
