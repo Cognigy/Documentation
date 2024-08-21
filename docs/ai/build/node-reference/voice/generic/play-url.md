@@ -15,7 +15,7 @@
 
 The Play URL Node lets you stream a sound file into the call. 
 
-The Play URL Node might be useful when you want to play an advertisement, a pre-recorded jingle or another sound file for the caller. MP3 and WAV encoded files are supported.
+The Play URL Node is useful for playing advertisements, pre-recorded jingles, or other sound files for callers. It supports MP3 and WAV encoded files.
 
 ## Settings
 
