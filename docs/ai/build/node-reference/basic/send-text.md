@@ -6,6 +6,9 @@ hidden: false
 
 # Send Text
 
+!!! danger "Deprecation"
+    The Send Text Node has been deprecated and will no longer be createable from Cognigy.AI v4.84 onwards. Please use the [Say Node](./say.md) default setting for simple text outputs.
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/send-text.png" width="80%" />
 </figure>

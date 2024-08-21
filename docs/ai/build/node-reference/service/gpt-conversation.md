@@ -6,6 +6,9 @@ hidden: false
 
 # GPT Conversation (Research preview)
 
+!!! danger "Deprecation"
+    The GPT Conversation Node has been deprecated and will no longer be createable from Cognigy.AI v4.84 onwards. Please use the [LLM Prompt Node](./llm-prompt.md) & the AI Agent Node to cover any use cases.
+
 [![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../../release-notes/4.48.md)
 
 <figure>
