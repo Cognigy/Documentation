@@ -51,7 +51,7 @@ To build a flow with the DTMF Node, either add a new Flow or extend an existing 
 7. In the Question Node editor, configure the following settings:<br>
     7.1 From the **Question Type** list, select **Number**.<br>
     7.2 From the **Output Type** list, select **Text**.<br>
-    7.3 In the **Text** field, enter the following sentencee:`Hello! Welcome to our Support. We can help you with your equipment needs. If you want to place an order for equipment, press 1. If you have already received your equipment and need help with setup or are experiencing issues, press 2.`<br>
+    7.3 In the **Text** field, enter the following sentence:`Hello! Welcome to our Support. We can help you with your equipment needs. If you want to place an order for equipment, press 1. If you have already received your equipment and need help with setup or are experiencing issues, press 2.`<br>
     7.4 Click **Save Node**.<br>
 8. Below the Question Node, add a Lookup Node. 
 9. In the Lookup Node editor, select the **Text** type and click **Save Node**. 
