@@ -24,7 +24,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Transformer Functions](../endpoints/transformers/transformers.md)
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
 !!! note "Contact Center & Phone number linking"
     To route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.

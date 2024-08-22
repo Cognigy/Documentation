@@ -37,6 +37,8 @@ To set up the connection between Cognigy.AI and the Generative AI Provider, do t
 
 #### Add a Model
 
+{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
+
 {! _includes/ai/generative-ai/credentials.md !}
 
 #### Apply the Model

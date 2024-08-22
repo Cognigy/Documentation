@@ -112,12 +112,6 @@ The [NLU Connectors](../../empower/nlu/external/nlu-connectors.md) that are conf
 
 In the [Data Protection & Analytics](data-protection-and-analytics.md) section, you can configure the collection of analytics and choose whether or not to gather any data.
 
-#### Chatbase
-
-{! _includes/release-notes/chatbase-removal.md !}
-
-Cognigy.AI can be connected directly to Google's **Chatbase** analytics platform. When enabled, your Chatbase bot's API key needs to be entered. All relevant data that enters the Endpoint is forwarded to Chatbase.
-
 #### Dashbot
 
 When enabled, the **Dashbot** feature will collect analytics data for the selected Endpoint.

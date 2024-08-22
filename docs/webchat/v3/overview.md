@@ -5,13 +5,9 @@ description: "Webchat v3 is the latest version of Cognigy Webchat, compatible wi
 hidden: false
 ---
 
-# Webchat v3 (Beta)
-
-{! _includes/webchat/beta.md !}
+# Webchat v3
 
 _Webchat v3_ is a new version of Cognigy Webchat, compatible with 4.72 of Cognigy.AI or later versions.
-
-In the Beta stage, most of the errors from the Webchat v3 Preview have been fixed, and features from v2 are now included in v3 Beta.
 
 Benefits of Webchat v3:
 
@@ -19,6 +15,8 @@ Benefits of Webchat v3:
 - **Customization Options**. With Webchat v3, you can customize the appearance and behavior of the chat widget to align with your brand identity and user preferences.
 - **Advanced Functionality**. The latest version of Webchat provides advanced functionalities such as rich media support, chat history, and real-time typing indicators, enhancing the overall user experience.
 - **Modern Design Out of the Box**. With Webchat v3, you no longer need to spend time extensively configuring styles; most settings are within the Endpoint configuration, allowing you to adjust styles in a user-friendly interface.
+- **Adherence to Accessibility Guidelines**. Webchat v3 is fully aligned with WCAG 2.1 Level AA guidelines, guaranteeing enhanced readability, seamless navigation, and interactive functionality within the interface.
+- **RTL Support**. Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left), enhancing usability for languages such as Arabic, Hebrew, Urdu, and more.
 
 If you're using Webchat v2 and looking to transition to Webchat v3, refer to the [migration guide](../migration.md).
 
@@ -36,6 +34,5 @@ configuration, and how to integrate it into your project:
 1. [Key Features](features.md). Explore the Webchat v3 features.
 2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v3.
 3. [Configuration](configuration.md). Create a Webchat v3 Endpoint and customize various settings within it.
-4. Test your Webchat v3 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v3 locally using [developer tools](https://github.com/Cognigy/WebchatWidget?tab=readme-ov-file#building-your-webchat).
+4. Test your Webchat v3 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v3 locally using [developer tools](https://github.com/Cognigy/Webchat/blob/main/README.md#building-your-webchat).
 5. [Embedding](embedding.md). Launch the Webchat v3 version on your website.
-

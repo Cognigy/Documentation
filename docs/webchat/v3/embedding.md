@@ -1,25 +1,21 @@
 ---
 title: "Embedding"
 slug: "embedding"
-description:
-"Embedding Cognigy Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents,
-enhancing user interaction and support.
-This process involves several key steps,
-from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
+description: "Embedding Cognigy Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
 hidden: false
 ---
 
 # Webchat 3: Embedding
 
-{! _includes/webchat/beta.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.82.md)
 
 Embedding Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 
 ## Prerequisites
 
 - Ability to modify the HTML content of your website.
-- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
-      - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
+- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
+      - Note that some settings are [specific to embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
 - Create a [Webchat v3 Endpoint](configuration.md).
 
 ## Add the Embedding HTML
@@ -33,9 +29,9 @@ Copy the HTML code from the Webchat v3 Endpoint associated with your AI Agent, w
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 7. The HTML code contains the following entities:
-    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your webpage loads the latest version of Webchat v3.
+    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v3.
     - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
-      This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the webpage.
+      This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
    
     ```html
     <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.19/webchat.js"></script>
@@ -59,7 +55,7 @@ Note that plugins suitable for Webchat v2 may not be compatible with Webchat v3.
 
 ## Customize the Webchat Settings
 
-You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to your requirements:
+You can customize the [Webchat settings](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#client-side-configuration) according to your requirements:
 
 - `colors` — customize a Webchat v3 color. In the example:
   `primaryColor` — change the primary color.
@@ -103,49 +99,94 @@ Example:
 </script>
 ```
 
+### RTL Configuration
+
+By default, the Webchat widget uses the LTR (left-to-right) layout. 
+To override this setting for languages that use [RTL (right-to-left)](features.md#rtl-language-support),
+add the attribute `dir="rtl"` to the `<html>` tag on the web page where the widget is placed. 
+For example, for a web page in Arabic, use `<html lang="ar" dir="rtl">`.
+
 ## Test your Webchat
 
-After implementing the code, open your webpage in a browser to test the functionality.
+After implementing the code, open your web page in a browser to test the functionality.
 
-```html
-<html lang="en">
-<body>
-<script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.19/webchat.js"></script>
-<script src="./path/to/myPlugin.js"></script>
-<link rel="stylesheet" href="./path/to/myStylesheet.css" />
-<script>
-    initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
-      settings: {
-        colors: {
-          primaryColor: "#fab",
-        },
-        behavior: {
-          enableTypingIndicator: true,
-          messageDelay: 5,
-          enableSTT: true,
-        },
-        embeddingConfiguration: {
-          awaitEndpointConfig: true,
-        },
-        maintenance: {
-          enabled: true,
-          mode: "inform",
-          text: "The agent is currently in maintenance mode, try again later",
-          title: "Maintenance hours",
-        },
-      },
-    }
-    );
-  </script>
-</body>
-</html>
-```
+=== "LTR (Left-to-Right) Layout"
+
+    ```html
+    <html lang="en">
+    <body>
+    <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
+    <script src="./path/to/myPlugin.js"></script>
+    <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
+    <script>
+        initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
+          settings: {
+            colors: {
+              primaryColor: "#fab",
+            },
+            behavior: {
+              enableTypingIndicator: true,
+              messageDelay: 5,
+              enableSTT: true,
+            },
+            embeddingConfiguration: {
+              awaitEndpointConfig: true,
+            },
+            maintenance: {
+              enabled: true,
+              mode: "inform",
+              text: "The agent is currently in maintenance mode, try again later",
+              title: "Maintenance hours",
+            },
+          },
+        }
+        );
+      </script>
+    </body>
+    </html>
+    ```
+
+=== "RTL (Right-to-Left) Layout"
+      
+    ```html
+    <html lang="ar" dir="rtl">
+    <body>
+    <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
+    <script src="./path/to/myPlugin.js"></script>
+    <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
+    <script>
+        initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
+          settings: {
+            colors: {
+              primaryColor: "#fab",
+            },
+            behavior: {
+              enableTypingIndicator: true,
+              messageDelay: 5,
+              enableSTT: true,
+            },
+            embeddingConfiguration: {
+              awaitEndpointConfig: true,
+            },
+            maintenance: {
+              enabled: true,
+              mode: "inform",
+              text: "الوكيل في وضع الصيانة حالياً، يرجى المحاولة مرة أخرى لاحقاً",
+              title: "ساعات الصيانة",
+            },
+          },
+        }
+        );
+      </script>
+    </body>
+    </html>
+    ```
 
 ## What's Next?
 
 Customize Webchat further to align with your brand identity and meet specific interaction goals:
 
-- [Webchat API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
-- [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
-- [Analytics API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
-- [Custom Avatars](https://github.com/Cognigy/WebchatWidget/blob/master/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.
+- [Webchat API](https://github.com/Cognigy/Webchat/blob/main/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
+- [CSS Customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
+- [Analytics API](https://github.com/Cognigy/Webchat/blob/main/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
+- [Custom Avatars](https://github.com/Cognigy/Webchat/blob/main/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.

@@ -137,7 +137,7 @@ The track plays during the conversation with the AI Agent, continues when the ca
 
 ### Silence Overlay
 
-Silence Overlay enables you to play an MP3 file in the background during calls with an AI Agent. This feature is activated during prolonged periods of silence, which may result from either the AI Agent's background activity or customer inactivity. Playing the track informs the customer that the AI Agent is processing their query, which may take some time. Likewise, if the customer needs time to find specific, relevant data, the Silence Overlay track will play as well. The Silence Overlay track can simulate office sounds, for example, a human agent typing on a keyboard and clicking the mouse.
+Silence Overlay enables you to play an MP3 file in the background during calls with an AI Agent. This feature is activated during prolonged periods of silence, which may result from the AI Agent's background activity. Playing the track informs the customer that the AI Agent is processing their query, which may take some time. The Silence Overlay track can simulate office sounds, for example, a human agent typing on a keyboard and clicking the mouse.
 
 When Silence Overlay is enabled in the [Set Session Config](./set-session-config.md) Node, the Silence Overlay track starts playing automatically once the AI Agent takes longer to respond, then stops the moment the AI Agent responds. You can adjust the delay before the Silence Overlay starts to make it sound more natural.
 

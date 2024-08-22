@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../../release-notes/4.83.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -25,6 +25,8 @@ bypassing the limitations of traditional intent-based systems
 and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
+
+{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
 
 Before using this feature, follow these steps:
 
@@ -53,7 +55,13 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 
     === "Microsoft Azure OpenAI"
         - **Connection name** — create a unique name for your connection.<br>
-        - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
+        - **Connection Type** — select one of the following authorization methods:<br>
+        &nbsp;- **API Key** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
+        &nbsp;- **OAuth2** — this method is experimental and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- **clientId** — add the Application (client) ID assigned to your app, can be found in the in Azure AI app registration overview.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- **clientSecret** — add the application secret created in the **Certificates & secrets** section of the Azure AI app registration portal.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- **oauthUrl** — add the URL to retrieve the access token. The URL should be in the `https://<your-domain>.com/as/token.oauth2` format.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- **scope** — add a list of scopes for user permissions, for example, `urn:grp:chatgpt`. <br>
         - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Copy the desired resource name from the **Name** column.<br>
         - **Deployment Name** — add a [deployment name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Select a resource from the **Name** column. On the resource page, go to **Resource Management > Model deployments**. On the **Model deployments** page, click **Manage Deployments**. On the **Deployments** page, copy the desired deployment name from the **Deployment name** column.<br>
         - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `YYYY-MM-DD-preview`. <br>
@@ -147,11 +155,9 @@ For the .ctxt format, you must include them in the [source metadata](ctxt.md#sou
 while for other formats,
 you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
 
-
 !!! note "Source Tags"
     - The maximum number of tags per knowledge source is 10.
-    - A Source Tag cannot be modified after creating the source.
-    - A Source Tag cannot be added to already existing sources. 
+    - You can add or remove source tags from previously created sources.
 
 #### Chunk 
 

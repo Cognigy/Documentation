@@ -572,7 +572,7 @@ The **Genesys** tab provides two methods to create and edit messages that are sp
     }
     ```
     
-    This message suggests that the AI Agent working on the Cognigy side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
+    This message suggests that the AI Agent working on the Cognigy.AI side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
 
 ## Bandwidth
 
