@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../../release-notes/4.48.md)
 
 !!! warning "Deprecation"
-    The GPT Conversation Node has been deprecated and will no longer be createable from Cognigy.AI v4.84 onwards. Use the [LLM Prompt Node](./llm-prompt.md) to generate messages using LLM services.
+    The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.84 and later. Use the [LLM Prompt Node](llm-prompt.md) to generate messages with LLM services.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation.png" width="80%" />
