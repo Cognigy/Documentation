@@ -13,12 +13,19 @@
 
 ## Description
 
-The Play URL Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
+The Play URL Node lets you stream a sound file into the call. 
 
-| Parameter               | Type          | Description                                                         |
-|-------------------------|---------------|---------------------------------------------------------------------|
-| Media URL               | CognigyScript | You can use MP3 or WAV encoded files                                |
-| Set Activity Parameters | Toggle        | Option to add parameters which will be valid for this activity only |
+This Node is useful for playing advertisements, pre-recorded jingles, or other sound files for callers. It supports MP3 and WAV encoded files.
 
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters for Voice Gateway on our [Parameter Details](../voice-gateway/parameter-details.md) page. For AudioCodes activity parameter visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959). 
+## Settings
+
+| Parameter               | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Media URL               | CognigyScript | Accepts direct URL links to MP3 and WAV tracks. You need to upload the file with an `.mp3` or `.wav` extension to the storage location where you want to host it. Make sure the file is publicly accessible. |
+| Set Activity Parameters | Toggle        | Enables parameters which will be valid for this activity only. The available parameters are: <br> - [Recognizer (STT)](../voice-gateway/parameter-details.md#recognizer---speech-to-text) <br> - [Barge In](../voice-gateway/parameter-details.md#barge-in) <br> - [DTMF](../voice-gateway/parameter-details.md#dtmf)                                                                                                                                               |
+
+## More Information
+
+- [AudioCodes Play URL Node](../audiocodes/play-url.md)
+- [Voice Gateway Play Node](../voice-gateway/play.md)
+- [Parameter Details](../voice-gateway/parameter-details.md)
