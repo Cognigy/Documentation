@@ -80,7 +80,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum number of characters in the code editor                                                                                   | 200K                            |            |            |
 
 [^*]: The rate limit of 1000 requests per 5 minutes from a single IP address applies only to shared SaaS environments.
-[^**]: The limit for both the Input and Context objects can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable.
+[^**]: The limit for both the Input and Context objects can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Be aware that increasing the object size could lead to performance issues.
 
 ## Retention of Records
 
