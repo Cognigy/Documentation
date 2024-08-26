@@ -1,7 +1,7 @@
 ---
 title: "DTMF" 
 slug: "dtmf"
-description: "A Voice Gateway DTMF Node plays tones to inform callers that they are being transferred to another agent, whether it is a voice AI or a human. The Node can also be used in scenarios where it confirms digit entries by playing back the corresponding DTMF tones."
+description: "A Voice Gateway DTMF Node sends RTP payloads to the caller's SIP provider to play DTMF digit tones to the caller. If the caller's SIP provider supports RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833), the customer will hear the voice tones of the DTMF digits. The Node can also be used in scenarios where it confirms digit entries by playing back the corresponding DTMF tones."
 hidden: false 
 ---
 
@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-The DTMF Node plays the DTMF digit tones to the caller.
+The DTMF Node sends RTP payloads to the caller's SIP provider to play DTMF digit tones to the caller. If the caller's SIP provider supports RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833), the customer will hear the voice tones of the DTMF digits.
 
 This Node is useful when paired with a [Handover to Agent](../../service/handover-to-agent.md) Node or a [Transfer](../generic/transfer.md) Node.
 By playing the DTMF digit tones,
