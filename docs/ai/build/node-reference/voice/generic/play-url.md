@@ -1,7 +1,7 @@
 ---
- title: "Play URL" 
- slug: "play-url" 
- hidden: false 
+title: "Play URL" 
+slug: "play-url" 
+hidden: false 
 ---
 
 # Play URL
@@ -12,6 +12,8 @@
 </figure>
 
 ## Description
+
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Play URL Node lets you stream a sound file into the call. 
 

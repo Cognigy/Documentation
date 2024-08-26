@@ -15,6 +15,8 @@ hidden: false
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 This Node enables the change of speech parameters during the Flow.
 
 When executed, the settings will apply for the remainder of the session.

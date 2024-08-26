@@ -14,6 +14,8 @@ hidden: false
   <figcaption>Generic Mute Speech Input</figcaption>
 </figure>
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 {! _includes/ai/nodes/mute-speech-input.md !}
 
 ## More Information
