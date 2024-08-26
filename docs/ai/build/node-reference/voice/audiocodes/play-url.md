@@ -12,6 +12,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Play URL Node lets you retrieve a WAV file from a URL location and play it back to the user.
 
 | Parameter               | Type          | Description                                                                                         |
