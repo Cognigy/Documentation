@@ -109,7 +109,7 @@ The Transcript Explorer enables you to view session transcripts to analyze them,
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
 <figure>
-  <img class="image-center" src="../../../_assets/insights/explorers/transcript/Transcript_Explorer_profile.png" width="100%" />
+  <img class="image-center" src="../../../_assets/insights/explorers/transcript/transcript-explorer-profile.png" width="100%" />
   <figcaption>Session Transcript with Debug Mode</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ You can use the scroll bar to navigate through the messages in the **Session Tra
 
 #### Debug Mode
 
-Insights' Debug mode is not fully equivalent to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/overview.md#debug-mode) documentation. Debug Messages from Nodes (including Code Nodes and Debug Message Nodes) are only meant for immediate testing and therefore only viewable in the Interaction Panel.
+Insights' Debug mode is not fully equal to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/overview.md#debug-mode) documentation. Debug messages from Nodes (including Code Nodes and Debug Message Nodes) are only for immediate testing and can only be seen in the Interaction Panel.
 
 The Debug mode offers additional context for conversation messages, including:
 

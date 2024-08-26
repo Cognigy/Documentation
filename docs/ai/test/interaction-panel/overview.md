@@ -251,7 +251,7 @@ To configure the relevant settings for the Interaction Panel, click the tab **Se
 | Text to Speech                    | Reads out messages from the system.                                                                                                                            |
 | Channel Selection                 | Provides a selection list for Endpoint providers.                                                                                                              |
 | **Debug Mode**                    |                                                                                                                                                                |
-| Debug Mode toggle                 | Enable/disable Debug Mode.                                                                                                                |
+| Debug Mode toggle                 | Enable/disable Debug Mode.                                                                                                                                     |
 | Node Filter                       | Select the Node types to show in Debug mode.                                                                                                                   |
 | **Chat**                          |                                                                                                                                                                |
 | Show Data Input                   | Displays data input.                                                                                                                                           |
@@ -292,20 +292,19 @@ When the **Text-to-Speech** setting is enabled, an AI Agent will vocalize its re
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
 
-If the **Debug Mode** setting is enabled, the Interaction Panel displays more information about the Flow execution, including:
+The **Debug Mode** setting is enabled by default.
 
-- Triggered [Intents](../../empower/nlu/intents/ml-intents.md) and their [score](../../empower/nlu/intents/intent-analyzer.md).
-- Triggered [Yes/No Intents](../../empower/nlu/intents/yes-no-intents.md) and their [score](../../empower/nlu/intents/intent-analyzer.md).
+Within this mode, the Interaction Panel displays more information about the Flow execution, including:
+
+- Triggered [Intents](../../empower/nlu/intents/ml-intents.md) and their [scores](../../empower/nlu/intents/intent-analyzer.md).
+- Triggered [Yes/No Intents](../../empower/nlu/intents/yes-no-intents.md) and their [scores](../../empower/nlu/intents/intent-analyzer.md).
 - Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
 - Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
 - [State](./state.md) changes
-- Flow Transitions, e.g. when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
-- Node specific output, e.g. from a [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. The Node specific outputs can be disabled granularly in the Interaction Panel [settings](#settings).
+- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
-Debug Messages can also be triggered explicitly, either using
-
-- the [Debug Message](../../build/node-reference/basic/debug-message.md) Node, or
-- the [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node
+Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />

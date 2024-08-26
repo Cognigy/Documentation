@@ -60,14 +60,14 @@ void
 
 ### actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError
 
-Send a debug message or debug error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
+Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
 
 **Parameters**
 
-| Parameter | Type   | Description                                       |
-|-----------|--------|---------------------------------------------------|
-| message   | string | The debug message text.    |
-| header    | string | The Header text for the debug message (optional). |
+| Parameter | Type   | Description                                                        |
+|-----------|--------|--------------------------------------------------------------------|
+| message   | string | The debug message text.                                            |
+| header    | string | The Header text for the debug message. This parameter is optional. |
 
 **Returns**
 

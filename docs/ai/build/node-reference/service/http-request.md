@@ -183,14 +183,15 @@ If active, the Flow will stop here if the response returned with a status code >
 
 #### Debug Mode Logging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../../release-notes/4.83.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../release-notes/4.84.md)
 
-Choose what information to log to [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) when using the Interaction Panel. The following options can be selected:
+Select what information
+to log to [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) when using the Interaction Panel:
 
-- Do not log Request & Response
-- Request
-- Response
-- Request & Response
+- **Do not log Request & Response** — do not log any request or response data to the Interaction Panel. This option is activated by default.
+- **Request** — log only the request data sent to the server.
+- **Response** — log only the response data received from the server.
+- **Request & Response** — log both the request data sent to the server and the response data received from the server.
 
 ## GET Requests
 

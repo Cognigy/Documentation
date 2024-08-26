@@ -29,9 +29,9 @@ The hotkeys listed in the table are applicable to the Flow editor.
 
 The hotkeys listed in the table are applicable to the Interaction Panel.
 
-| Hotkey                     | Description            |
-|----------------------------|------------------------|
-| ++ctrl+b++  <br> ++cmd+b++ | Clear the Chat         |
+| Hotkey                     | Description           |
+|----------------------------|-----------------------|
+| ++ctrl+b++  <br> ++cmd+b++ | Clear the Chat        |
 | ++ctrl+shift+f++           | Toggle the Debug mode |
 
 ## Intents
