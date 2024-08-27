@@ -301,8 +301,8 @@ Within this mode, the Interaction Panel displays more information about the Flow
 - Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
 - Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
 - [State](./state.md) changes
-- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
-- Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
+- Flow Transitions, for example when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Node-specific output, for example from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
 Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node.
 
