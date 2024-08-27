@@ -42,8 +42,8 @@ In the Search & Extract & Output mode, the following steps are involved:
 4. The extracted information is stored in the Input or Context objects. 
 5. The system automatically outputs the result from the LLM as either plain text or an adaptive card.
 
-For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-
+For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
+`
 #### Search & Extract
 
 Performs a search, extracts an answer, but does not perform an automatic output. Our customers can then manually create the output they desire.
@@ -54,7 +54,7 @@ In the Search & Extract mode, the following steps are involved:
 2. The retrieved data is directly sent to the LLM for extraction of key points or answers.
 3. The LLM extracts the relevant information and writes it to the Input or Context objects.
 
-For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover both the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
 
 #### Search Only
 

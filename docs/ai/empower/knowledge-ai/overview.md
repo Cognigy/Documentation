@@ -36,7 +36,9 @@ Before using this feature, follow these steps:
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
     - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-    For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
+    For the Knowledge AI case, you need the `text-embedding-ada-002` model.
+   However, if you intend to transform the Knowledge Search result and output it,
+   you will also need an additional model from the **LLM Prompt Node** and **Answer Extraction** columns in the [supported models](../../empower/llms.md) list.
 
 ## Create a Knowledge Store
 
@@ -191,8 +193,8 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, select the knowledge store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
 
      <figure>
