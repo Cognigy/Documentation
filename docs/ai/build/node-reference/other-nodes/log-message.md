@@ -1,7 +1,7 @@
 ---
 title: "Log Message" 
 slug: "log-message" 
-description: "A Log Message Node writes a message into the [Project Logs](../../../test/logs.md)."
+description: "A Log Message Node writes a message into the Project Logs."
 hidden: false 
 ---
 
