@@ -43,7 +43,7 @@ In the Search & Extract & Output mode, the following steps are involved:
 5. The system automatically outputs the result from the LLM as either plain text or an adaptive card.
 
 For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
-`
+
 #### Search & Extract
 
 Performs a search, extracts an answer, but does not perform an automatic output. Our customers can then manually create the output they desire.
