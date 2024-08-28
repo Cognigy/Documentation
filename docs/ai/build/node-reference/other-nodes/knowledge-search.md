@@ -1,7 +1,7 @@
 ---
 title: "Knowledge Search"
 slug: "knowledge-search"
-description: "The Knowledge Search Node performs a content search and retrieves content from data that was previously uploaded to the knowledge store through a source file."
+description: "The Knowledge Search Node performs a content search and retrieves content from data that was previously uploaded to the Knowledge Store through a source file."
 hidden: false
 ---
 

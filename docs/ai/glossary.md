@@ -175,7 +175,7 @@ _**Knowledge AI**_
 For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md) documentation.
 
 _**Knowledge Store**_
-: A container that contains and organizes multiple knowledge sources and can be searched from the Flow. It provides a centralized and structured environment for managing and categorizing various sources of knowledge. The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
+: A container that contains and organizes multiple Knowledge Sources and can be searched from the Flow. It provides a centralized and structured environment for managing and categorizing various sources of knowledge. The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#knowledge-store) documentation.
 
 _**Knowledge Source**_

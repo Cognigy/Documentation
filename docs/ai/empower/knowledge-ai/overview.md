@@ -40,7 +40,7 @@ Before using this feature, follow these steps:
 
 ## Create a Knowledge Store
 
-You can create a preconfigured knowledge store. To do this, follow these steps:
+You can create a preconfigured Knowledge Store. To do this, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select **Knowledge**. The Knowledge AI wizard will be opened.
@@ -79,7 +79,7 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The knowledge source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
+8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The Knowledge Source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.  
@@ -99,7 +99,7 @@ Working with Knowledge AI involves two phases similar to how one would work with
 **Second phase:**
 
 1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the knowledge base to provide accurate and contextually appropriate responses to user queries.
-2. **Knowledge-based AI Agents Building**. AI Agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
+2. **Knowledge-based AI Agents Building**. AI Agents utilize the Knowledge Stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
 
 ### Knowledge AI Management
 
@@ -147,17 +147,19 @@ The maximum number of sources per store is described in the [Limitations](#limit
     <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/knowledge-source.png" width="100%" />
 </figure>
 
-Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
+Additionally, you can use Source Tags.
+These Tags serve to refine the scope of your knowledge search,
+allowing you to include only the most pertinent sections of the knowledge base and,
 as a result, improve the accuracy of search outputs.
 
-To apply these tags, specify them when uploading a source type.
+To apply these Tags, specify them when uploading a source type.
 For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
 while for other formats,
-you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
+you need to specify them within the Cognigy.AI interface when creating a new Knowledge Source.
 
 !!! note "Source Tags"
-    - The maximum number of tags per knowledge source is 10.
-    - You can add or remove source tags from previously created sources.
+    - The maximum number of Tags per Knowledge Source is 10.
+    - You can add or remove Source Tags from previously created sources.
 
 #### Chunk 
 
@@ -189,7 +191,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 
 1. Navigate to **Build > Flows** and create a new Flow.
 2. In the **Flow** editor, add a **Search Extract Output** Node.
-3. In the **Node** editor, select the knowledge store that you recently created.
+3. In the **Node** editor, select the Knowledge Store that you recently created.
 4. Select one of the following modes:
     - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
@@ -201,7 +203,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
    
 5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing an AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side. 
 6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results.
-7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected knowledge source. 
+7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected Knowledge Source. 
 8. Click **Save Node**. 
 9. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
@@ -218,8 +220,8 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of Knowledge Stores per Project                                                                                  | 10    | Applicable to version 4.77 and earlier |
 | Maximum number of Knowledge Sources per Store                                                                                   | 10    | Applicable to version 4.77 and earlier |
 | Maximum file upload size for creating a Knowledge Source                                                                        | 10 MB | All                                    |
-| Maximum number of source tags per Knowledge Source                                                                              | 10    | All                                    |
-| Maximum number of source tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5     | All                                    |
+| Maximum number of Source Tags per Knowledge Source                                                                              | 10    | All                                    |
+| Maximum number of Source Tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5     | All                                    |
 | Maximum number of Chunks per Knowledge Source                                                                                   | 1000  | All                                    |
 | Maximum number of Source metadata pairs                                                                                         | 20    | All                                    |
 | Maximum number of Chunk metadata pairs                                                                                          | 20    | All                                    |
