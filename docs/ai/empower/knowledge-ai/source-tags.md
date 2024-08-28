@@ -12,13 +12,13 @@ _Source Tags_ serve to refine the scope of your knowledge search, allowing you t
 Using Source Tags provides the following benefits:
 
 - **Increased Search Accuracy**. Tags help focus on specific Knowledge Sources, ensuring that only the most relevant results are included, which is useful with a large number of sources.
-- **Flexible Tag Filtering**. Refine searches using `AND` and `OR` operators with Tags.
+- **Flexible Tag Filtering**. Refine search using `AND` and `OR` operators with Tags.
 - **Faster Search Performance**. By limiting the number of sources considered, search queries are processed more quickly, leading to faster results.
 - **Enhanced Content Organization**. Tags allow for precise and flexible categorization of content, improving the management and retrieval of information across different topics.
 
-## Limitations
+## Naming Guidelines for Source Tags
 
-- You can add CognigyScript within Source Tags.
+- You can add [CognigyScript](../../build/cognigy-script.md) within Source Tags.
 - Source Tags are always lower-case, only alpha-numerics (a-z, 0-9), underscores, and hyphens are allowed.
 - When using CognigyScript for Source Tags, it is important to lowercase them. For example, by using the following: `{{"{{input.text.toLowerCase()}}"}}`.
 
@@ -72,32 +72,17 @@ You can add a Knowledge Source to the existing resource or to a new one.
 8. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results. 
 9. In the **Source Tags** field, add tags by specifying each tag separately and pressing ++enter++. Before specifying tags, ensure that they were provided during the upload of the source file for the selected [Knowledge Source](#add-source-tags-to-knowledge-source). You can add up to 5 Tags.
 10. If you specified more than one tag, select a parameter from the **Match Type for Source Tags** list. Select one of the following operators to filter Knowledge Sources by Source Tags:
-    
-    === "AND (default)"
-    Requires all tags to match across multiple Knowledge Sources.
-    Consider the following table:
-
-    | Source Knowledge | Tags in Source Knowledge       | Tags in Search Extract Output Node | 
-    |------------------|--------------------------------|------------------------------------|
-    | Article 1        | `AI`, `John Doe`               | `AI`, `John Doe`                   | 
-    | Article 2        | `AI`, `Jane Smith`             | `AI`, `John Doe`                   |
-    | Article 3        | `Machine Learning`, `John Doe` | `AI`, `John Doe`                   |
-    
-    Result: Article 1
-   
-    === "OR"
-    Requires at least one tag to match across multiple Knowledge Sources.
-    Consider the following table:
-    | **Article Name** | **Article Tags**               | **Source Tags**  |
-    |------------------|--------------------------------|------------------|
-    | Article 1        | `AI`, `John Doe`               | `AI`, `John Doe` |
-    | Article 2        | `AI`, `Jane Smith`             | `AI`, `John Doe` |
-    | Article 3        | `Machine Learning`, `John Doe` | `AI`, `John Doe` |
-
-    Result: Article 1, Article 2, and Article 3.
-
+    - **AND** — requires all tags to match across multiple Knowledge Sources.
+    - **OR** — requires at least one tag to match across multiple Knowledge Sources.
 11. Click **Save Node**.
+12. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
-## Run AI Agent to Filter the Content
+## Example
 
-Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the `Can Cognigy connect to a Contact Center?` question.
+Consider that we have two files that can be uploaded as source files:
+
+- [.pdf](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/call-tracing-sample.pdf)
+- [.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt)
+
+Create a new Knowledge Store and upload these files as resources.
+Then, go to Flow where the Search Output Node is placed and run the Flow.
