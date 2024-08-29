@@ -83,7 +83,7 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
 
 ## Example
 
-Consider an example where you upload two files in different formats to create knowledge sources. For each Knowledge Source, specific tags will be specified. In the Flow where the AI Agent is configured, you selectively add tags to the Search Output Node and test the results in the Interaction Panel.
+Consider an example where you upload two files in different formats to create Knowledge Sources. For each Knowledge Source, specific tags will be specified. In the Flow where the AI Agent is configured, you selectively add tags to the Search Output Node and test the results in the Interaction Panel.
 
 1. Create a new Knowledge Store.
 2. Upload the following files as Knowledge Sources:
