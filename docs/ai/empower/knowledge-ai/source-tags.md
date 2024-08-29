@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge Source Tags
 
-_Source Tags_ help streamline your knowledge search by allowing you to include only the most relevant parts of the knowledge base, which can improve the accuracy of search results.
+_Source Tags_ act as filters that direct the search engine to focus on specific Knowledge Sources, narrow the search scope, and provide more targeted results.
 
 Using Source Tags provides the following benefits:
 
