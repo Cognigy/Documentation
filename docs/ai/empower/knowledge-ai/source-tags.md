@@ -87,7 +87,7 @@ Consider an example where you upload two files in different formats to create Kn
 
 1. Create a new Knowledge Store.
 2. Upload the following files as Knowledge Sources:
-    - [PDF](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/call-tracing-sample.pdf). Specify the following tags: `cognigy`, `architecture`, `Voice`, and `call-tracing`.
+    - [PDF](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/call-tracing-sample.pdf). Specify the following tags: `cognigy`, `architecture`, `voice`, and `call-tracing`.
     - [CTXT](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt). The Tags are already specified in the file.
 3. Review Tags in Knowledge Sources. After uploading the files, the Knowledge Sources will have the following tags:
     ```txt
