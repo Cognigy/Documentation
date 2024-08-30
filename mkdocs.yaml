@@ -262,6 +262,7 @@ nav:
         - ai/deploy/endpoint-reference/intercom.md
         - ai/deploy/endpoint-reference/line-messenger.md
         - ai/deploy/endpoint-reference/microsoft-teams.md
+        - ai/deploy/endpoint-reference/nice.md
         - ai/deploy/endpoint-reference/rest.md
         - ai/deploy/endpoint-reference/ringcentral-engage.md
         - ai/deploy/endpoint-reference/socketio.md
@@ -427,7 +428,7 @@ nav:
       - webchat/overview.md
       - webchat/getting-started.md
 
-    - 🆕 Webchat v3 (Beta):
+    - 🆕 Webchat v3:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md
@@ -436,7 +437,7 @@ nav:
         - webchat/v3/metadata.md
       - webchat/v3/embedding.md
 
-    - 💬 Webchat v2:
+    - 💬 Webchat v2 (Deprecated):
       - webchat/v2/overview.md
       - webchat/v2/supported-browsers.md
       - webchat/v2/features.md
@@ -630,6 +631,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.83.md
     - release-notes/4.82.md
     - release-notes/4.81.md
     - release-notes/4.80.md

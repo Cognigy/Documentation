@@ -18,17 +18,17 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
 
     ---
 
-    Try out our new Webchat v3 (Beta)
+    Try out our new Webchat v3
 
     [:octicons-arrow-right-24: Overview](v3/overview.md)<br>
     [:octicons-arrow-right-24: Key Features](v3/features.md)<br>
     [:octicons-arrow-right-24: Migration from v2 to v3](migration.md)<br>
 
--   :fontawesome-brands-rocketchat:{ .lg .middle } __Webchat v2__
+-   :fontawesome-brands-rocketchat:{ .lg .middle } __Webchat v2 (Deprecated)__
 
     ---
 
-    Discover the stability and ease of use in  Webchat v2 for seamless communication
+    Discover the stability and ease of use in Webchat v2 for seamless communication
 
     [:octicons-arrow-right-24: Overview](v2/overview.md)<br>
     [:octicons-arrow-right-24: Key Features](v2/features.md)
@@ -53,8 +53,8 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
 
     ---
 
-    The Cognigy Webchat widget is licensed under MIT and available on [GitHub](https://github.com/Cognigy/WebchatWidget)
+    The Cognigy Webchat widget is licensed under MIT and available on [GitHub](https://github.com/Cognigy/Webchat)
 
-    [:octicons-arrow-right-24: License](https://github.com/Cognigy/WebchatWidget/blob/master/LICENSE)
+    [:octicons-arrow-right-24: License](https://github.com/Cognigy/Webchat/blob/main/LICENSE)
 
 </div>

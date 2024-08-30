@@ -1,7 +1,7 @@
 ---
- title: "Transfer" 
- slug: "transfer-ac" 
- hidden: false 
+title: "Transfer" 
+slug: "transfer-ac" 
+hidden: false 
 ---
 # Transfer
 
@@ -11,6 +11,8 @@
 </figure>
 
 ## Description
+
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Transfer Node lets you pass an active call to a tel or sip target.
 

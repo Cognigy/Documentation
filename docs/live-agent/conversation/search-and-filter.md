@@ -7,6 +7,8 @@ hidden: false
 
 # Search, Filter, and Sort Conversations
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.83.md)
+
 In Live Agent, human agents can easily search, filter, and organize conversations.
 The agents can find messages by entering keywords,
 apply filters for status, assignee name, and team name,
@@ -42,17 +44,16 @@ You can filter conversations using the filters mentioned in the table below. Mul
 | Inbox Name              | Filters based on conversations associated with a specific Inbox.                             |
 | Team Name               | Filters data related to a particular team.                                                   |
 | Conversation Identifier | Filters based on a unique identifier for a conversation.                                     |
-| Cognigy Session ID      | Filters based on a unique identifier for a session within the Cognigy platform.              |
+| Cognigy Session ID      | Filters based on a unique identifier for a session within the Cognigy.AI platform.           |
+| Cognigy User ID         | Filters based on a unique identifier for a user within the Cognigy.AI platform.              |
 | Labels                  | Filters based on tags assigned to conversations for categorization and easy filtering.       |
 | Created At              | Filters based on the timestamp of when an conversation was created.                          |
 | First Reply Created At  | Filters based on the timestamp of the first reply to an conversation.                        |
 | Last Activity           | Filters based on the timestamp of the last activity on an conversation.                      |
 | Priority                | Filters based on the priority level assigned to an conversation.                             |
-| Cognigy Channel Type    | Filters based on the type of channel or communication platform within Cognigy.               |
+| Cognigy Channel Type    | Filters based on the type of channel or communication platform within Cognigy.AI.            |
 
 ### Filter Conversations by Priority
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
 
 To filter conversations by priority, do the following:
 

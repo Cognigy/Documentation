@@ -15,6 +15,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
 
 | Parameter | Type | Description                        |

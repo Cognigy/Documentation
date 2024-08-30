@@ -14,6 +14,8 @@ With LLMs, Cognigy AI Agents can understand and respond to user input in a natur
 
 ## Supported Models
 
+{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
+
 The table below lists LLMs supported by Cognigy.AI.
 You can also specify another model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name. For more information about adding a custom model for a selected LLM provider, refer to the [Add a Model](#add-a-model) section.

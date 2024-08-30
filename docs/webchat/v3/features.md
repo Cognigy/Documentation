@@ -7,9 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.82(beta)-purple.svg)](../../release-notes/4.82.md)
-
-{! _includes/webchat/beta.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.82.md)
 
 The Webchat 3 key features offer comprehensive customization options, including branding elements, accessibility features, and tailored starting behaviors, ensuring a personalized and efficient user experience. Additionally, it introduces enhancements such as Quick Replies, Conversation Ratings, and Privacy Notices to elevate engagement and user feedback mechanisms, while features such as adaptive cards and media attachments enrich interactions by presenting structured content and media files seamlessly within the chat interface.
 
@@ -248,7 +246,7 @@ All elements of the Webchat widget are aligned for RTL, including the positionin
 </figure>
 
 To use RTL, add the attribute `dir="rtl"` to the `<html>` tag, which is placed at the beginning of the HTML-page.
-For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/WebchatWidget/tree/master?tab=readme-ov-file#development).
+For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/Webchat/blob/main/README.md#development).
 
 ## More Information
 

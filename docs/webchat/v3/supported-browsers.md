@@ -7,8 +7,6 @@ hidden: false
 
 # Webchat v3: Supported Browsers
 
-{! _includes/webchat/beta.md !}
-
 Cognigy Webchat v3 is compatible with the browsers listed in the tabel.
 
 | Browser         | Versions                                          |

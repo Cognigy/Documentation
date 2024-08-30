@@ -39,4 +39,7 @@ open the chat in test mode
 and upload a file to the chat interface by either dragging it from your computer or using the Attach file button.
 The file will begin uploading automatically.
 
-For testing file uploads for the Webchat v2 and Webchat v3 Endpoints, use [Demo Webchat](../../../webchat/demo.md).
+To test file uploads for the Webchat v2 and Webchat v3 Endpoints, use [Demo Webchat](../../../webchat/demo.md).
+For other Endpoints, testing only works in the production environment. 
+Upload a file to the chat interface and go to the file storage on your provider's side.
+If the file appears in the storage, then file uploads work correctly.

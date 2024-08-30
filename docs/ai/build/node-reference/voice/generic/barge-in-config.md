@@ -13,6 +13,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Barge In - Config Node is a session config that enables the interruption of the voice agent.
 
 When executed, the settings will apply for the remainder of the session.
