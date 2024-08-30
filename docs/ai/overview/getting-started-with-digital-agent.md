@@ -12,15 +12,15 @@ To build a chat agent, follow these steps:
 1. In the left-side menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
-   3.1. Add a unique name, for example, `Getting Started`.<br>
-   3.2. Add a relevant description, for example, `Getting Started Guide for chat agent`.<br>
-   3.3. Click **Create**.<br>
+   3.1 Add a unique name, for example, `Getting Started`.<br>
+   3.2 Add a relevant description, for example, `Getting Started Guide for chat agent`.<br>
+   3.3 Click **Create**.<br>
 4. In the Flow editor, create a new Node by clicking **+** and selecting a Question Node from the list.
 5. Left-click the Question Node to open the Node editor.
 6. In the Question Node editor, set up the following parameters:<br>
-   5.1. From the **Question Type** list, select **Text**.<br>
-   5.2. In the **Text** field, enter the following sentences: `Hello! What's your name?`<br>
-   5.3. Click **Save Node**.<br>
+   6.1 From the **Question Type** list, select **Text**.<br>
+   6.2 In the **Text** field, enter the following sentences: `Hello! What's your name?`<br>
+   6.3 Click **Save Node**.<br>
 7. Below the Question Node, add a Say Node. 
 8. Left-click the Say Node to open the Node editor. 
 9. In the Say Node editor, go to the **Text** field.
@@ -50,14 +50,3 @@ Now you can deploy the agent using the [Webchat v3](../../webchat/getting-starte
 - Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
 - Explore [test](../test/interaction-panel/overview.md) and [deploy](../deploy/endpoints/overview.md) features.
 - Connect your agent to the [contact center](../escalate/handovers.md).
-
-
-
-
-
-
-
-
-
-
-    

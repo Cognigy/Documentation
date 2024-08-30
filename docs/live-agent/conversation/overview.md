@@ -78,14 +78,14 @@ The following table represents data that be edited within Live Agent and stored 
 | Goals                   | Goals are the user's intention or task.              |
 | Profile Picture         | When available, the URL address of a user's picture. |
 
-To modify the Contact Profile, follow these steps:
+To change the Contact Profile, follow these steps:
 
 1. Go to the Live Agent interface. 
-2. In the left-side menu, select Conversations. 
+2. In the left-side menu, select **Conversations**. 
 3. Select a conversation from the list. 
 4. On the right side of the page, navigate to **Conversation Details**. 
-5. On the **Details** tab, Click ![edit](../../_assets/icons/edit.svg) to modify the Contact Profile. 
-6. In the Contact Profile window, fill in the fields and click **Submit** to save your changes.
+5. On the **Details** tab, click ![edit](../../_assets/icons/edit.svg) to change the Contact Profile. 
+6. In the **Contact Profile** window, fill in the fields and click **Submit** to save your changes.
 
 This action will also update the [Contact Profile](../../ai/analyze/contact-profiles.md) on the Cognigy.AI side. In Live Agent, cached Contact Profile data will persist for one hour. You can change this parameter if you have an on-premises or dedicated SaaS environment. To do so, add the `COGNIGY_CONTACT_PROFILE_CACHE_TIME` variable in the Live Agent `values.yaml` file and specify the value in seconds.
 
@@ -134,7 +134,7 @@ To open a conversation in Live Agent, follow these steps:
     - **Mine** — displays conversations assigned to you.
     - **Unassigned** — shows conversations without a designated owner.
     - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can enable access in the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
-5. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-hand side panel.
+5. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
 
 ## More Information
 

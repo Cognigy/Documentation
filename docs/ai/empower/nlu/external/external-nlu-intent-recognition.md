@@ -1,5 +1,6 @@
 ---
 title: "Intent Recognition with External Embedding Model"
+description: "In Cognigy.AI, the Intent Recognition with External Embedding Model feature allows using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models."
 slug: "external-intent-recognition"
 hidden: false
 ---
@@ -11,7 +12,7 @@ hidden: false
 An embedding is a sequence of numbers that represents the meaning of sentences and is used by the NLU for tasks such as intent classification.
 
 The _Intent Recognition with External Embedding Model_ feature allows
-using the `text-embedding-3-model` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models:
+using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models:
 
 - It is designed for complex projects with a large number of intents and example sentences.
 - It enables you to set up the intent model faster because you spend less time selecting and refining example sentences.
@@ -23,14 +24,14 @@ using the `text-embedding-3-model` hosted by OpenAI and Azure OpenAI, replacing 
 ## Prerequisites
 
 - Add the [`text-embedding-3-large`](../../llms.md#add-a-model) model provided by Azure OpenAI or OpenAI. Note that if you use an external embedding model provider, Cognigy will send user inputs to the selected service. Ensure that your data processing policy reflects this practice.
-- Consider that using the `text-embedding-3-model` external NLU model increases [Snapshot](../../../deploy/snapshots.md) size, leading to longer download and upload times.
+- Consider that using the `text-embedding-3-large` external NLU model increases [Snapshot](../../../deploy/snapshots.md) size, leading to longer download and upload times.
 
 ## Set Up a Third-Party NLU model
 
 To set up a third-party NLU model, follow these steps:
 
 1. Open the Cognigy.AI interface. 
-2. In the left-side menu, select an Project where you want to use a third-party NLU model. 
+2. In the left-side menu, select the Project where you want to use a third-party NLU model. 
 3. In the left-side menu of the Project, navigate to **Manage > Settings**.
 4. Go to the **NLU Settings** section.
 5. From the **Embedding Model Provider** list, select a model that you added as part of the [Prerequisites](#prerequisites).
