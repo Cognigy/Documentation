@@ -203,7 +203,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
    
 5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing an AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM provider's side. 
 6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results.
-7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected Knowledge Source. 
+7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the content type for the selected Knowledge Source. 
 8. Click **Save Node**. 
 9. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the `Can Cognigy connect to a Contact Center?` question.
 

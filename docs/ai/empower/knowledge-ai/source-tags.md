@@ -54,7 +54,16 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
      7. In the **Source Tags** field, specify tags that you want to add to the Knowledge Store. Press ++enter++ to add a Tag. You can add only up to 10 tags.
      8. Click **Create**.
     
-    Once you added Tags, they will be available to view in the **Tags** column on the **Knowledge Sources** page.
+     Once you added Tags, they will be available to view in the **Tags** column on the **Knowledge Sources** page.
+
+#### Edit Source Tags
+
+When you add Source Tags, you can edit them by deleting or adding new ones to an existing Knowledge Source.
+
+To do so, go to the Knowledge Sources page, and next to the Source whose tags you want to change, ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Edit**.
+In the Source Tags field, add new tags by pressing ++enter++,
+or remove existing tags by clicking **x** next to the tag name.
+Save your changes.
 
 ### Add Source Tags to Search Extract Output Node
 
@@ -63,23 +72,12 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
 3. In the left-side menu of the Project, navigate to **Build > Flows** and create a new Flow. 
 4. In the **Flow** editor, add a **Search Extract Output** Node. 
 5. In the **Node** editor, select the Knowledge Store that you recently created. 
-6. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only need the `text-embedding-ada-002` model.
-
-     <figure>
-       <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/configure-search-extract-output.png" width="100%" />
-     </figure>
-
-7. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing an AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM provider side.
-8. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results. 
-9. In the **Source Tags** field, add tags by specifying each tag separately and pressing ++enter++. Before specifying tags, ensure that they were provided during the upload of the source file for the selected [Knowledge Source](#add-source-tags-to-knowledge-source). You can add up to 5 Tags.
-10. If you specified more than one tag, select a parameter from the **Match Type for Source Tags** list. Select one of the following operators to filter Knowledge Sources by Source Tags:
+6. In the **Source Tags** field, add tags by specifying each tag separately and pressing ++enter++. Before specifying tags, ensure that they were provided during the upload of the content type for the selected [Knowledge Source](#add-source-tags-to-knowledge-source). You can add up to 5 Tags. 
+7. If you specified more than one tag, select a parameter from the **Match Type for Source Tags** list. Select one of the following operators to filter Knowledge Sources by Source Tags:
     - **AND** — requires all tags to match across multiple Knowledge Sources.
     - **OR** — requires at least one tag to match across multiple Knowledge Sources.
-11. Click **Save Node**.
-12. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the input.
+8. Click **Save Node**.
+9. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the input.
 
 ## Example
 
