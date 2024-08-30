@@ -118,7 +118,7 @@ In **Chat** mode, you can use additional settings:
 - **Reset Session** — the setting clears the chat history in the Interaction Panel. 
 - **Create Playbook** — the setting starts a new Playbook for testing conversations. For more information, refer to [Playbooks](../playbooks.md).
 - **Create Playbook with Assertions** — the setting starts a new Playbook with assertions for in-depth testing. For more information, refer to [Playbook with Assertions](../playbooks.md#assertion).
-- **Enable/Disable Debug Mode** - the setting toggles the [Debug mode](#debug-mode) (enabled by default)
+- **Enable/Disable Debug Mode** — the setting toggles the [Debug mode](#debug-mode). Debug mode is enabled by default.
 
 #### Voice Call
 
@@ -251,7 +251,7 @@ To configure the relevant settings for the Interaction Panel, click the tab **Se
 | Text to Speech                    | Reads out messages from the system.                                                                                                                            |
 | Channel Selection                 | Provides a selection list for Endpoint providers.                                                                                                              |
 | **Debug Mode**                    |                                                                                                                                                                |
-| Debug Mode toggle                 | Enable/disable Debug Mode.                                                                                                                                     |
+| Debug mode                        | Enable or disable Debug mode.                                                                                                                                  |
 | Node Filter                       | Select the Node types to show in Debug mode.                                                                                                                   |
 | **Chat**                          |                                                                                                                                                                |
 | Show Data Input                   | Displays data input.                                                                                                                                           |
@@ -301,8 +301,8 @@ Within this mode, the Interaction Panel displays more information about the Flow
 - Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
 - Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
 - [State](./state.md) changes
-- Flow Transitions, for example when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
-- Node-specific output, for example from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug Mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
+- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
 Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node.
 
