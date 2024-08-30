@@ -25,9 +25,9 @@ To build a voice agent, follow these steps:
 1. In the left-side menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
-   3.1. Add a unique name, for example, `Getting Started`.<br>
-   3.2. Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
-   3.3. Click **Create**.<br>
+   3.1 Add a unique name, for example, `Getting Started`.<br>
+   3.2 Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
+   3.3 Click **Create**.<br>
 4. In the Flow editor, click **+** and select **Extensions > VG**.
 5. Create a new Node by selecting **Set Session Config** from the list. The Node appears in the Flow editor.
 6. Left-click the **Set Session Config** Node to open the Node editor.
