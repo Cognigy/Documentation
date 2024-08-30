@@ -59,7 +59,7 @@ Creating a **Token** requires the following information:
 
 ## Token Management Menu
 
-The **Token Management Menu** can be found under the *Manage* section of the *Project Resources* menu. A full list of tokens that have been created in a Project is accessible to view.
+The **Token Management Menu** can be found under the **Manage** section of the **Project Resources** menu. A full list of tokens that have been created in a Project is accessible to view.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/build/tokens/page.png" width="100%" />
