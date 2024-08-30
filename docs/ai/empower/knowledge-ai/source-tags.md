@@ -122,7 +122,8 @@ Consider an example where you upload two files in different formats to create Kn
 
     **Scenario 3**
 
-    Test the retrieval of knowledge the retrieval of documents related to Cognigy xApps.
+    Test the retrieval of knowledge related to Cognigy xApps.
+
     ```txt
     | Tags in Knowledge Search Output Node | User Input                  | Operator | Expected Result             |
     |--------------------------------------|-----------------------------|----------|-----------------------------|
