@@ -99,7 +99,7 @@ Working with Knowledge AI involves two phases similar to how one would work with
 **Second phase:**
 
 1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the knowledge base to provide accurate and contextually appropriate responses to user queries.
-2. **Knowledge-based AI Agents Building**. AI Agents utilize the Knowledge Stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
+2. **Knowledge-based AI Agents Building**. AI Agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
 
 ### Knowledge AI Management
 
