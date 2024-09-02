@@ -49,7 +49,7 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
      2. Go to the Project that you want to change.
      3. In the left-side menu of the Project, select **Build > Knowledge**.
      4. Select a Knowledge Store from the list, and then select the Knowledge Source that you want to change.
-     5. In the **New Knowledge Sources** menu, select a type of the source from the **Type** list, for example, **File**. Note that if you select **Cognigy CTXT**, you need to [specify Tags in the file](ctxt.md) before uploading it.
+     5. In the **Edit Knowledge Source** window, select a type of the source from the **Type** list, for example, **File**. Note that if you select **Cognigy CTXT**, you need to [specify Tags in the file](ctxt.md) before uploading it.
      6. Click **Browse files**, select a file from your computer and upload it. If you select **Web Page**, add a URL to the page that you want to upload.
      7. In the **Source Tags** field, specify Tags that you want to add to the Knowledge Store. Press ++enter++ to add a Tag. You can add up to 10 Tags.
      8. Click **Create**.
