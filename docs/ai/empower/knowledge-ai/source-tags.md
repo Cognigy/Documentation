@@ -103,7 +103,7 @@ use the `input.knowledgeSearch.topK` Input object by navigating to **INFO > Inpu
     | DOCX              | endpoint, voice, voice-gateway             |
     | PDF               | endpoint, webchat, text-based              |
     ```
-4. Navigate to the Flow and add the Search Output Node. Run the following scenarios to retrieve information based on the specified Tags.
+4. Navigate to the Flow and add the Search Extract Output Node. Run the following scenarios to retrieve information based on the specified Tags.
    To track how the output changes with different Tag combinations, use the same input `Could you share a list of native endpoints for Cognigy?` in the Interaction Panel.
    To check the output results in the Interaction Panel, use the `input.knowledgeSearch.topK` Input object in **INFO > Input**.
 
