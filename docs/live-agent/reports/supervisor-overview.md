@@ -32,7 +32,7 @@ The summary of key metrics is represented in the following charts:
 
 ### Open Conversations
 
-Indicates the number of conversations that have the following statuses: Open, Queued, and Unassigned.
+Indicates the number of conversations that have the following statuses: `Open`, `Queued`, and `Unassigned`.
 
 ### Today
 
@@ -40,7 +40,7 @@ Indicates the number of conversations that were handled on current day.
 
 ### Agent Status
 
-Indicates the number of agents that currently are Online, Busy, Away, or Offline.
+Indicates the number of agents that currently are `Online`, `Busy`, `Away`, or `Offline`.
 
 ### Conversation handling
 
@@ -70,16 +70,18 @@ Indicates conversation details in a 24-hour time grid, visualized with colored l
 
 Provides information about the status and performance of agents:
 
-| Title                   | Description                                                        |
-|-------------------------|--------------------------------------------------------------------|
-| STATUS                  | Indicates the status of the Agent: Away, Busy, Online, Offline.    |
-| OPEN                    | Number of active conversations pending.                            |
-| QUEUED                  | Indicates the number of assigned conversations waiting.            |
-| AVG FIRST RESPONSE TIME | Indicates the average value when an Agent responded first.         |
-| AVG RESOLUTION TIME     | Indicates the average value when an Agent resolved a conversation. |
-| RESOLVED                | Indicates how many conversations were resolved by Agents.          |
+| Title                   | Description                                                             |
+|-------------------------|-------------------------------------------------------------------------|
+| STATUS                  | Indicates the status of the Agent: `Away`, `Busy`, `Online`, `Offline`. |
+| OPEN                    | Number of active conversations pending.                                 |
+| QUEUED                  | Indicates the number of assigned conversations waiting.                 |
+| AVG FIRST RESPONSE TIME | Indicates the average value when an Agent responded first.              |
+| AVG RESOLUTION TIME     | Indicates the average value when an Agent resolved a conversation.      |
+| RESOLVED                | Indicates how many conversations were resolved by Agents.               |
 
-You can modify an agent's status when they are online by clicking an agent icon in the **Agent** column of the table. You can choose to set their status as 'busy' or 'away.' However, if the agent is offline, any changes you attempt to make to their status will not be applied.
+You can modify an agent's status when they are online by clicking an agent icon in the **Agent** column of the table.
+You can set their status as `Busy` or `Away`.
+However, if the agent is offline, any changes you attempt to make to their status will not be applied.
 
 Additionally, you can filter the data in the table according to the agent's status.
 

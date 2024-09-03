@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../../release-notes/4.83.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -36,7 +36,15 @@ Before using this feature, follow these steps:
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
     - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-    For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
+### Which Model to Choose?
+
+For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node** and **Answer Extraction** columns in the [supported models](../../empower/llms.md) list.
+
+Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-3-large` or `text-embedding-3-small` models for the Knowledge AI case, but use them with caution due to the following reasons:
+
+- The `text-embedding-3-large` model returns embedding vectors that are twice as large, leading to higher memory use and larger [Package](../../build/packages.md) sizes for Knowledge AI.
+- The `text-embedding-3-large` or `text-embedding-3-small` models may only be available in geographically remote locations, leading to high latency for the search operation.
+- The `text-embedding-3-large` or `text-embedding-3-small` models are more expensive to use.
 
 ## Create a Knowledge Store
 
@@ -193,8 +201,8 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, select the Knowledge Store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only need the `text-embedding-ada-002` model.
 
      <figure>
