@@ -215,6 +215,7 @@ nav:
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-basic-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-advanced-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
+        - ai/empower/knowledge-ai/source-tags.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:

@@ -1,0 +1,31 @@
+﻿`version: 1`
+`title: Cognigy Voice Copilot Endpoint`
+`url: https://www.cognigy.com`
+`tags: [endpoint, voice, copilot]`
+
+Cognigy Voice Copilot Endpoint
+Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with AI Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the AI Copilot workspace.
+`url: https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-copilot/`
+`image: https://docs.cognigy.com/_assets/ai/deploy/endpoint-reference/voice-copilot.png`
+
+Key Features
+- Automatic Transcription Handling: Receives and processes transcriptions, identifying user and session IDs for precise session management.
+- Native Integration: As a native Endpoint, it is built directly into the Cognigy.AI platform, offering smooth functionality and compatibility with supported handover providers.
+`url: https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-copilot/`
+
+Prerequisites
+- Version 4.65+: Enabled by default.
+- Version 4.64 and earlier: Requires activation:
+   - For SaaS installations, contact Cognigy support.
+   - For on-premises installations, set the feature flag `FEATURE_ENABLE_AGENT_ASSIST_VOICE: true`.
+`url: https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-copilot/`
+
+Configuration
+Cognigy.AI in Front
+Cognigy.AI in Front means that Cognigy.AI is your setup's primary system handling user interactions. It involves configuring the Transfer Node to manage call transfers and integrate with services like Voice Copilot. This setup ensures that Cognigy.AI processes and routes interactions effectively.
+`url: https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-copilot/`
+
+
+SIPREC Contact Center Integration
+No Transfer Node configuration is needed. SIPREC integrates with the contact center through Session Border Controllers (SBC), sending transcriptions directly to the Voice Copilot Endpoint. In this process, traditional session and user IDs are replaced with Contact Center-specific IDs.
+`url: https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-copilot/`
