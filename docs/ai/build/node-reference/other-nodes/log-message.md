@@ -1,8 +1,10 @@
 ---
- title: "Log Message" 
- slug: "log-message" 
- hidden: false 
+title: "Log Message" 
+slug: "log-message" 
+description: "A Log Message Node writes a message into the Project Logs."
+hidden: false 
 ---
+
 # Log Message
 
 <figure>
@@ -11,14 +13,17 @@
 
 ## Description
 
-The Log Message Node writes a message into the [Agent Logs](../../../test/logs.md).
+This Node writes a message into the [Project Logs](../../../test/logs.md).
 
 ## Settings
 
-| Parameter | Type          | Description                                                      |
-|-----------|---------------|------------------------------------------------------------------|
-| Message   | CognigyScript | The message to log                                               |
-| Log Level | Select        | The log level to use. One of:<br/>- Debug<br/>- Info<br/>- Error |
+| Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                  |
+|-----------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message   | CognigyScript | The message to log. The message should be a string that provides the content of the log entry. For example: `User login attempt successful`.                                                                                                                                                                                                 |
+| Log Level | Select        | The log level to use. The level determines the severity and visibility of the log message. Select one of the following options:<br/>- **Debug** — logs detailed information for debugging purposes.<br/>- **Info** — logs general information about system operations.<br/>- **Error** — logs critical errors that need immediate attention. |
 
-!!! note "Log a message in a Code Node"
-    Next to this Flow Node, one can execute the same functionality in a [Code Node](../basic/code/overview.md) by using the [Actions / API object](../basic/code/actions.md).
+## Alternatives
+
+To log messages, you can also use the [Actions/API](../basic/code/actions.md) object in a [Code](../basic/code/overview.md) Node.
+
+If you want to send a debug message to the Interaction Panel, use the [Debug Message](../basic/debug-message.md) Node for more precise testing.
