@@ -631,6 +631,7 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
+    - release-notes/4.84.md
     - release-notes/4.83.md
     - release-notes/4.82.md
     - release-notes/4.81.md
