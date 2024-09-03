@@ -23,7 +23,7 @@ Warnings will only be generated and forwarded to our user interface when the Int
 5. Go to the **Conditions** edit field and enter. For example, `input.includes==="condition"`.
 6. Click **Build Model** to finish the intent creation. Now user inputs can be scored of matching to the defined intent example sentences.
 7. Open the Interaction Panel on the right-hand side.
-8. For the scoring test, activate **Expert Mode** in the **SETTINGS** tab. Activated Expert Mode will show more detailed data on the Interaction Panel.
+8. For the scoring test, activate **Debug mode** on the **SETTINGS** tab. Activated Debug mode will show more detailed data in the Interaction Panel.
 
     <figure>
       <img class="image-center" src="../../../../_assets/ai/empower/nlu/expert-mode.png" width="100%" />
