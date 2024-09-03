@@ -12,7 +12,7 @@ hidden: false
     If you still want to use Any Slots, activate this feature by setting the `FEATURE_ENABLE_ANY_SLOTS` flag for your environment. All the configurations related to Any Slots you had before will be restored once you add this feature flag.
     Support for this feature has ended, so feature requests and bug fixes are no longer available.
 
-*Any Slots* are catch-all placeholder Slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder Slot exactly, it will populate a [Cognigy Slot](slots.md) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.
+*Any Slots* are catch-all placeholder Slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder Slot exactly, it will populate a [Cognigy Slot](slots.md) with the matched content. The result is the same as if the matched user input has been added to an attached Lexicon as a keyphrase.
 
 To add an Any Slot, annotate a single word in your example sentence and select the **Any-Slot** type. Then enter the desired Slot name.
 
@@ -40,7 +40,7 @@ Any input content that exactly matches the pattern of an Any Slot in your exampl
 
 ## Examples
 
-### Any Slot at the end of a Sentence
+### Any Slot at the End of a Sentence
 
 Consider the following example:
 
@@ -84,7 +84,8 @@ Grammatical issues aside, using multiple words does also work:
 
 ### Any Slot in combination with Lexicon Slot
 
-When using Any Slots, we rely on the user to use the exact word structure of that sentence. To remain rather flexible with what the user may say for *Any Slot* to still be detected, we can make use of a Lexicon Slot.
+When using Any Slots, we rely on the user to provide the exact wording of the sentence. To remain rather flexible with what the user may say for *Any Slot* to still be detected,
+we can make use of a Lexicon Slot.
 
 Let's annotate the example sentence from the previous example with a Lexicon Slot:
 
