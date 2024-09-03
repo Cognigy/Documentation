@@ -213,7 +213,7 @@ Correct:
 <img class="image-center" src="../../../../../_assets/ai/empower/nlu/5_right_out.png" width="60%" />
 </figure>
 
-### Multiple words as Any Slot annotations
+### Multiple Words as Any Slot Annotations
 
 When using Any Slot annotations, it's best to stick to single-word annotations to avoid unexpected results.
 Keep in mind that you can still detect multi-word `Any Slots`, but using multiple words in annotations may limit your ability to detect single-word `Any Slots`.
