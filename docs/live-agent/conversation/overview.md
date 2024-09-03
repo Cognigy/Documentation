@@ -7,6 +7,8 @@ hidden: false
 
 # Conversations
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../release-notes/4.84.md)
+
 _Conversations_ are chats between a human agent and a customer, initiated by the customer via a messaging application, such as Cognigy Webchat, WhatsApp, Slack, and so on.
 The conversation is handed over to a human agent when the AI Agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
 
@@ -63,20 +65,23 @@ The Contact Profile information is shared at the beginning of the handover proce
 
 If the human agent doesn't leave the conversation page, they may miss contact profile updates. To view profile updates that occur on the Cognigy.AI side, the human agent must reenter the conversation. This can be done by switching to another page within Live Agent and then returning.
 
-The following table represents data that be edited within Live Agent and stored in the Contact Profile.
+The following table represents data that can be edited within Live Agent and stored in the Contact Profile.
 
-| Contact Profile Details | Description                                          |
-|-------------------------|------------------------------------------------------|
-| First Name              | User's first name.                                   |
-| Last name               | User's last name.                                    |
-| Email                   | User's email address.                                |
-| Gender                  | User's gender.                                       |
-| Age                     | User's age.                                          |
-| Birthday                | User's birthday.                                     |
-| Location                | User's location.                                     |
-| Accepted GDPR           | Accepted General Data Protection Regulation          |
-| Goals                   | Goals are the user's intention or task.              |
-| Profile Picture         | When available, the URL address of a user's picture. |
+| Contact Profile Details | Description                                                                                                                                                      |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| First Name              | User's first name.                                                                                                                                               |
+| Last name               | User's last name.                                                                                                                                                |
+| Email                   | User's email address.                                                                                                                                            |
+| Gender                  | User's gender.                                                                                                                                                   |
+| Age                     | User's age.                                                                                                                                                      |
+| Birthday                | User's birthday.                                                                                                                                                 |
+| Location                | User's location.                                                                                                                                                 |
+| Accepted GDPR           | Accepted General Data Protection Regulation.                                                                                                                     |
+| Accepted Privacy Policy | Accepted the privacy policy terms. This field is applicable to Webchat v3 when a user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
+| Goals                   | Goals are the user's intention or task.                                                                                                                          |
+| Profile Picture         | When available, the URL address of a user's picture.                                                                                                             |
+
+#### Change Contact Profile Details
 
 To change the Contact Profile, follow these steps:
 
@@ -88,6 +93,17 @@ To change the Contact Profile, follow these steps:
 6. In the **Contact Profile** window, fill in the fields and click **Submit** to save your changes.
 
 This action will also update the [Contact Profile](../../ai/analyze/contact-profiles.md) on the Cognigy.AI side. In Live Agent, cached Contact Profile data will persist for one hour. You can change this parameter if you have an on-premises or dedicated SaaS environment. To do so, add the `COGNIGY_CONTACT_PROFILE_CACHE_TIME` variable in the Live Agent `values.yaml` file and specify the value in seconds.
+
+#### View Hidden Fields in Contact Profile Details
+
+By default, only fields that contain values appear in the Contact Profile.
+To view empty fields, follow these steps:
+
+1. Go to the Live Agent interface.
+2. In the left-side menu, select **Conversations**.
+3. Select a conversation from the list.
+4. On the right side of the page, navigate to **Conversation Details**.
+5. On the **Details** tab, click ![closed-eye](../../_assets/live-agent/icons/closed-eye.svg) to view the empty fields. To hide them again, click ![opened-eye](../../_assets/live-agent/icons/opened-eye.svg).
 
 ### Conversation Actions
 
