@@ -1,6 +1,7 @@
 ---
 title: "Packages" 
-slug: "Packages" 
+slug: "Packages"
+description: ""
 hidden: false 
 ---
 
@@ -32,7 +33,7 @@ You can export a single resource as a Package, or you can export many resources 
 
 Export one resource as a Package using one of the following options:
 
-=== "Via a Resource page"
+=== "Via the Resource page"
      1. Go to the Cognigy.AI interface.
      2. In the left-side menu, select a section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
      3. On the **Resource** page, select a specific resource from the list.
@@ -40,7 +41,7 @@ Export one resource as a Package using one of the following options:
      5. Check the status of the **Create Package** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
      6. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
 
-=== "Via a Packages page"
+=== "Via the Packages page"
      1. Go to the Cognigy.AI interface.
      2. In the left-side menu, navigate to **Settings > Packaging**.
      3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
@@ -82,11 +83,18 @@ To export all available resources as a Package within your Project, follow these
 
 ## Import Resources as a Package
 
-Ensure to verify package compatibility before importing. Similarly to the export process, you can specify the number of resources to import. During the import, you may need to resolve conflicts if a resource from the package duplicates an existing one.
+Make sure to familiarize yourself with the essential considerations before initiating the Package import process. Once you have completed that, proceed with the import.
 
-Note that the specifics of importing resources may vary. For example, for a Flow, you need to map locales.
+### Before you Import a Package
 
-### Check Package Compatibility
+Before you import a Package, review these essential considerations:
+
+- Ensure to verify [Package compatibility](#check-package-compatibility) before importing. Similarly to the export process, you can specify the number of resources to import. During the import, you may need to resolve conflicts if a resource from the Package duplicates an existing one. Note that the specifics of importing resources may vary. For example, for a Flow, you need to [map locales](#map-locales-during-flow-import).
+- Do not use Packages for deploying Knowledge.AI resources to a production Project. AI Agents' knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
+- Node IDs will remain unchanged upon import to ensure that hardcoded links between Flows and Nodes are not broken. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
+- If your Package contains any deprecated or unsupported resources, they will be skipped and not imported. For example, deprecated Endpoints or LLM resources with outdated configuration schemas will not be imported.
+
+#### Check Package Compatibility
 
 Packages that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
 
@@ -95,12 +103,6 @@ However, Packages created in newer versions may not be compatible with older ver
 Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
 ### Import a Package
-
-!!! warning "Don't Import Knowledge Stores for Production Use"
-    Do not use Packages for deploying Knowledge to a production project. This is because AI Agents' Knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
-
-!!! warning "Using Packages as Templates: Node IDs"
-    Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
 
 To import resources as a Package, follow these steps:
 
@@ -146,11 +148,11 @@ If you link a Non-Primary Locale from the Package to the Primary Locale of the e
 
 **Q1**: What should I do if I encounter errors during Knowledge Store Import?
 
-**A1**: Try to upload the package again. During the reupload, select only the Knowledge Stores that were not fully imported.
+**A1**: Try to upload the Package again. During the reupload, select only the Knowledge Stores that were not fully imported.
 
-**Q2:** How can I avoid browser request timeouts during Knowledge Store package upload?
+**Q2:** How can I avoid browser request timeouts during Knowledge Store Package upload?
 
-**A2:** To avoid browser request timeouts, keep the package size low. Separate your resources into smaller packages.
+**A2:** To avoid browser request timeouts, keep the Package size low. Separate your resources into smaller Packages.
 
 ## More Information
 
