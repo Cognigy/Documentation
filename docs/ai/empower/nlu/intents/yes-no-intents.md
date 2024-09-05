@@ -98,7 +98,7 @@ To use Yes/No Intents for a specific Flow, do the following:
 ## Test your Flow by using the Interaction Panel
 
 !!! tip
-    Starting from Cognigy 4.47, Yes/No Intents are supported in [Expert mode](../../../test/interaction-panel/overview.md#expert-mode).
+    Starting from Cognigy 4.47, Yes/No Intents are supported in [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode).
 
 Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../../test/interaction-panel/overview.md):
 

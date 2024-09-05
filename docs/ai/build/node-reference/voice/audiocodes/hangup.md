@@ -13,6 +13,8 @@ hidden: false
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Hangup Node will instruct AudioCodes to end the call.
 
 | Parameter | Type          | Description                                              |

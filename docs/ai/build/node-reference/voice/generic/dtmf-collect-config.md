@@ -13,6 +13,7 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 Enables capturing of DTMF signals by the voice agent during the entire call session.
 

@@ -1,12 +1,12 @@
 ---
-title: "Action" 
+title: "Actions" 
 slug: "actions" 
 hidden: false 
 ---
 
-# Action
+# Actions
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../../release-notes/4.84.md)
 
 Within a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 
@@ -53,6 +53,21 @@ Sets the time zone offset from UTC.
 | Parameter | Type     | Description               |
 |-----------|----------|---------------------------|
 | offset    | *number* | The time offset in hours. |
+
+**Returns**
+
+void
+
+### actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError
+
+Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
+
+**Parameters**
+
+| Parameter | Type   | Description                                                        |
+|-----------|--------|--------------------------------------------------------------------|
+| message   | string | The debug message text.                                            |
+| header    | string | The Header text for the debug message. This parameter is optional. |
 
 **Returns**
 

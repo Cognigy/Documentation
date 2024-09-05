@@ -1,0 +1,29 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="awsBedrockSvg" data-name="awsBedrockSvg" viewBox="0 0 70 70" width="20" height="20" >
+  <defs>
+    <style>
+      #awsBedrockSvg .cls-1 {
+        fill: none;
+        stroke: #222c3a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="35.09 62.65 35.09 7.16 27.75 3.07 11.19 12.43 11.19 23.18 3.24 27.7 3.24 42.75 11.19 48.45 11.19 57.38 27.22 66.87 35.09 62.65"/>
+  <line class="cls-1" x1="19.16" y1="7.92" x2="19.16" y2="16.94"/>
+  <polyline class="cls-1" points="11.19 23.18 19.26 27.27 27.2 23.18 27.2 15.57"/>
+  <line class="cls-1" x1="19.26" y1="27.27" x2="19.26" y2="33.76"/>
+  <polyline class="cls-1" points="24.9 37.51 19.26 33.52 14.98 37.11"/>
+  <line class="cls-1" x1="10.43" y1="31.58" x2="3.24" y2="35.78"/>
+  <line class="cls-1" x1="11.19" y1="48.45" x2="18.45" y2="43.52"/>
+  <line class="cls-1" x1="35.09" y1="43.52" x2="18.45" y2="52.35"/>
+  <line class="cls-1" x1="19.8" y1="62.48" x2="25.43" y2="58.88"/>
+  <polyline class="cls-1" points="35.09 23.15 50.07 23.15 50.07 15.81"/>
+  <line class="cls-1" x1="35.09" y1="31.81" x2="59.02" y2="31.81"/>
+  <polyline class="cls-1" points="35.09 39.53 52.49 39.53 55.96 43.52"/>
+  <polyline class="cls-1" points="35.09 47.93 46.44 47.93 46.44 54.77"/>
+  <circle class="cls-1" cx="50.07" cy="11.78" r="3.87"/>
+  <circle class="cls-1" cx="62.89" cy="31.81" r="3.87"/>
+  <circle class="cls-1" cx="58.49" cy="46.53" r="3.87"/>
+  <circle class="cls-1" cx="46.44" cy="58.64" r="3.87"/>
+</svg>

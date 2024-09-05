@@ -1,7 +1,7 @@
 ---
- title: "Send Meta Data" 
- slug: "send-meta-data" 
- hidden: false 
+title: "Send Meta Data" 
+slug: "send-meta-data" 
+hidden: false 
 ---
 # Send Meta Data
 
@@ -11,6 +11,8 @@
 </figure>
 
 ## Description
+
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Send Meta Data Node will send meta data via SIP INFO messages to the connected SIP trunk.
 

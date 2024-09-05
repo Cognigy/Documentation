@@ -13,7 +13,7 @@ Knowledge AI supports using a web page as a type when creating a new Knowledge S
 
 ## Restrictions
 
-Using a Web Page as a knowledge source has a current set of restrictions:
+Using a Web Page as a Knowledge Source has a current set of restrictions:
 
 - All visible text on the page, including items such as cookie notices, will be included in the result.
 - The content must be hosted on a publicly accessible website, reachable from the Cognigy environment.
@@ -65,7 +65,7 @@ When ingesting a web page, the Knowledge AI chunking process will perform the fo
 3. Access lazy-loaded[^*] content by checking for any text changes until the page is stable and no longer loading additional text.
 4. Generate Knowledge Source content based on the visible text result.
 
-The web page content will be imported into a knowledge source once. The source is not automatically updated to reflect future content changes on the web page.
+The web page content will be imported into a Knowledge Source once. The source is not automatically updated to reflect future content changes on the web page.
 
 ## More Information
 

@@ -12,6 +12,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Hang Up Node will instruct the system to end the call.
 
 | Parameter          | Type | Description                                            |
