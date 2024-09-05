@@ -292,6 +292,10 @@ nav:
       - ai/analyze/odata.md
       - ai/analyze/call-tracing.md
       - ai/analyze/contact-profiles.md
+      - Goals:
+        - ai/analyze/goals/overview.md
+        - ai/analyze/goals/v1.md
+        - ai/analyze/goals/v2.md
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md
