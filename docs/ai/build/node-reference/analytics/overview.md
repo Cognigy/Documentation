@@ -19,5 +19,5 @@ You can use the following Analytics Nodes:
 - [Overwrite Analytics](overwrite-analytics.md)
 - [Request Rating](request-rating.md)
 - [Set Rating](set-rating.md)
+- [Track Goal Process](track-goal-process.md)
 - [Update Profile](update-profile.md)
-
