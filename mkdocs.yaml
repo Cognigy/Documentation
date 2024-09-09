@@ -613,6 +613,7 @@ nav:
     - 📊 Dashboards:
       - insights/dashboards/overview.md
       - insights/dashboards/engagement.md
+      - insights/dashboards/goals.md
       - insights/dashboards/nlu-performance.md
       - insights/dashboards/live-agent.md
     - 🔭 Explorers:
