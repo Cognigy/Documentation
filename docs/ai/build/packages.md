@@ -92,7 +92,7 @@ Before you import a Package, review these essential considerations:
 - Ensure to verify [Package compatibility](#check-package-compatibility) before importing. Similarly to the export process, you can specify the number of resources to import. During the import, you may need to resolve conflicts if a resource from the Package duplicates an existing one. Note that the specifics of importing resources may vary. For example, for a Flow, you need to [map locales](#map-locales-during-flow-import).
 - Do not use Packages for deploying Knowledge.AI resources to a production Project. AI Agents' knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
 - Node IDs will remain unchanged upon import to ensure that hardcoded links between Flows and Nodes are not broken. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
-- If your Package contains any deprecated or unsupported resources, they will be skipped and not imported. For example, deprecated Endpoints or LLM resources with outdated configuration schemas will not be imported.
+- If your Package contains any resources that are not supported in new Projects, they will be skipped and not imported. For example, removed Endpoints or LLMs with outdated configuration schemas will not be imported.
 
 #### Check Package Compatibility
 
