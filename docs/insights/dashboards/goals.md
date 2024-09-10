@@ -1,6 +1,7 @@
 ---
 title: "Goals"
 slug: "goals"
+description: "The Goals Dashboard highlights goal tracking, completion status, time and cost metrics, step-by-step analysis, and the business impact of AI Agents."
 hidden: false
 ---
 
@@ -13,6 +14,8 @@ The _Goals Dashboard_ highlights goal tracking, completion status, time and cost
 - [Bar charts](#bar-charts)
 
 {! _includes/insights/global-filters.md !}
+
+<should be a screenshot of this dashboard>
 
 ## Indicators
 
@@ -70,19 +73,21 @@ You can track efficiency gains and compare time saved across different goals.
 
 Displays the amount of the money saved for each goal completed within the selected time frame.
 You can analyze cost savings across different goals, identify the most cost-effective processes, and optimize resource allocation.
-The chart shows how specific goals help reduce costs, improve efficiency, and increase profitability.
 
 <What should be added: formula, example of calculation, screenshot>
 
 ### Revenue Earnings (in USD$)
 
-Displays the total revenue earned for each goal completed within the filtered time frame.
-The chart provides a detailed view of how much each completed goal contributes to overall business revenue.
-You can review earnings by goal, compare performance over time, and see how each goal impacts financial results.
-This analysis helps you evaluate the effectiveness of business processes linked to each goal.
+Displays the total revenue earned for each completed goal within the selected time frame. 
+The chart offers a detailed view of how much each completed goal contributes to the overall business revenue. 
+You can analyze earnings by goal, compare performance over time, and understand the impact of each goal on your financial results. 
+This analysis helps evaluate the performance of business processes linked to each goal.
 
 <What should be added: formula, example of calculation, screenshot>
 
 ## More Information
 
 - [Goals v2](../../ai/analyze/goals/v2.md)
+- [Dashboard Overview](overview.md)
+- [Dashboard NLU Performance](nlu-performance.md)
+- [Dashboard Live Agent](live-agent.md)

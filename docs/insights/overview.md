@@ -51,6 +51,7 @@ Insights provides the following Dashboards:
 
 - [Overview](dashboards/overview.md)
 - [Engagement](dashboards/engagement.md)
+- [Goals](dashboards/goals.md)
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
 
@@ -99,12 +100,5 @@ The left-side menu also allows you to switch back to Cognigy.AI by clicking **Co
 ## More Information
 
 - [Global Filters](global-filters.md)
-- Dashboards:
-    - [Overview](dashboards/overview.md)
-    - [Dashboard Engagement](dashboards/engagement.md)
-    - [Dashboard NLU Performance](dashboards/nlu-performance.md)
-- Explorers:
-    - [Step Explorer](explorers/step.md)
-    - [Transcript Explorer](explorers/transcript.md)
-    - [Message Explorer](explorers/message.md)
-    - [Download Report](download-reports.md)
+- [Pre-Aggregation](data-management/pre-aggregation.md)
+- [Data Expiration](data-management/ttl.md)

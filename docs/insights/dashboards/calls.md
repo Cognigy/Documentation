@@ -276,7 +276,7 @@ Result: `0.117`
 
 ## More Information
 
-- [Overview](overview.md)
+- [Dashboard Overview](overview.md)
 - [Dashboard NLU Performance](nlu-performance.md)
 - [Dashboard Engagement](engagement.md)
 - [Dashboard Live Agent](live-agent.md)

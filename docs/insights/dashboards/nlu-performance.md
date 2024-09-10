@@ -274,5 +274,5 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 ## More Information
 
 - [Dashboard Engagement](engagement.md)
-- [Overview](overview.md)
+- [Dashboard Overview](overview.md)
 - [Dashboard Live Agent](live-agent.md)

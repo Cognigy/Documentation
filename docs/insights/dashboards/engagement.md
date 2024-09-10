@@ -295,5 +295,6 @@ Result:
 ## More Information
 
 - [Overview](overview.md)
+- [Dashboard Goals](goals.md)
 - [Dashboard NLU Performance](nlu-performance.md)
 - [Dashboard Live Agent](live-agent.md)
