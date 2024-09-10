@@ -4,6 +4,7 @@ slug: "complete-goal"
 description: "The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered."
 hidden: false
 ---
+
 # Complete Goal
 
 <figure>
@@ -12,11 +13,11 @@ hidden: false
 
 ## Description
 
-The Complete Goal Node provides an easy way to track the completion of a specific event, once the Node is triggered.
+The Complete Goal Node provides an easy way to track the completion of a specific event once the node is triggered and can be used only with [Goals v1](../../../analyze/goals/v1).
 
-To start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Goal Node, the completed goal will be stored in the [Сontact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
+To start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Goal Node, the completed goal will be stored in the [Contact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
 
-Goals have a variety of potential use cases and help understanding how often certain events are achieved. The achieved goals are recorded in the Contact Profiles of each end user. The data is also available in Insights (on dashboards and explorers) and through the OData endpoint. The [top goals](../../../../insights/dashboards/engagement.md#goals-reached) are listed in the Insights Engagement dashboard and allow you to track and analyze their frequency. 
+Goals have a variety of potential use cases and help understand how often certain events are achieved. The achieved goals are recorded in the Contact Profiles of each end user. The data is also available in Insights (on dashboards and explorers) and through the OData endpoint. The [top goals](../../../../insights/dashboards/engagement.md#goals-reached) are listed in the Insights Engagement dashboard and allow you to track and analyze their frequency. 
 If you don't intend to analyze Contact Profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then [Analytics Steps](../../../analyze/collecting-data.md#analytics-steps) would be more suitable.
 
 The difference between a Complete Goal and an Analytics Step lies in their purpose and usage within a system. Complete Goals determine whether a user has completed a specific objective or task. In contrast, Analytics Steps collect data about individual events or actions for analytical purposes. Complete Goals are associated with a user's profile, whereas Analytics Steps focus on tracking and storing data information.
@@ -61,3 +62,8 @@ The example shows how to measure the AI Agent's effectiveness in your customer c
 2. If the user selects B1 (Yes, my problem is resolved), connect it to a Complete Goal Node. This Node will mark the "Successful AI Agent Conversation" goal as completed, indicating that the AI Agent has effectively assisted the customer.
 3. If the customer selects B2 (No, I want to speak to a human agent), handle this separately by triggering a Handover to Agent Node. In this case, you don't need to use the Complete Goal Node.
 4. If the customer doesn't reply or types another question directly, consider it as a neutral conversation. You don't need to track it as a completed or unsuccessful goal.
+
+## Alternatives
+
+As an alternative to this Node, you can use the [Track Goal Process](track-goal-process.md) Node with Goals v2. 
+In this case, you can define multiple steps within one goal and track important metrics such as time and money.

@@ -7,7 +7,8 @@ hidden: false
 
 # Track Goal Process
 
-The Track Goal Process Node lets you monitor the progress of a specific goal within a Flow.
+The Track Goal Process Node lets you monitor the progress of a specific goal within a Flow
+and can be used only with [Goals v2](../../../analyze/goals/v2). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
 and then analyze the results in the Insights dashboard or via the OData endpoint.
@@ -29,3 +30,9 @@ The steps within this goal are the following:
 1. Customer Request Received. This step represents when the customer initiates contact with support.
 2. Request Resolved by Chatbot. This step tracks when the AI Agent successfully resolves a customer query.
 3. Escalation to Human Agent. This step tracks when the AI Agent escalates the request to a human agent if needed.
+
+## More Information
+
+- [Goals v2](../../../analyze/goals/v2)
+- [Dashboard Goals](../../../../insights/dashboards/goals.md)
+- [Complete Goal Node](complete-goal.md)
