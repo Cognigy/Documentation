@@ -1,13 +1,13 @@
 ---
 title: "Goals"
 slug: "goals"
-description: "The Goals Dashboard highlights goal tracking, completion status, time and cost metrics, step-by-step analysis, and the business impact of AI Agents."
+description: "The Goals Dashboard highlights goal tracking, completion status, time and cost metrics, and the business impact of AI Agents."
 hidden: false
 ---
 
 # Goals
 
-The _Goals Dashboard_ highlights goal tracking, completion status, time and cost metrics, step-by-step analysis, and the business impact of AI Agents in the following charts:
+The _Goals Dashboard_ highlights goal tracking, completion status, time and cost metrics, and the business impact of AI Agents in the following charts:
 
 - [Indicators](#indicators)
 - [Line charts](#line-charts)
@@ -43,9 +43,9 @@ Displays the total cost savings for completed and partially completed goals.
 Displays the percentage of goals achieved within the selected time frame.
 The goals have three distinct categories, each has a separate bar:
 
-- **Incomplete** — goals that have not yet been started or are still pending.
-- **Partial Completion** — goals that are partially completed but not fully achieved.
-- **Total Completion** — goals that have been fully achieved.
+- **Incomplete** — goals that have been started, with only the Startpoint step triggered.
+- **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
+- **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
 
 <What should be added: formula, example of calculation, screenshot>
 
@@ -56,9 +56,9 @@ The goals have three distinct categories, each has a separate bar:
 Displays the goal completion rates over the selected time frame.
 The goals have three distinct categories, each has a separate bar:
 
-- **Incomplete** — goals that have not yet been started or are still pending.
-- **Partial Completion** — goals that are partially completed but not fully achieved.
-- **Total Completion** — goals that have been fully achieved.
+- **Incomplete** — goals that have been started, with only the Startpoint step triggered.
+- **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
+- **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
 
 <What should be added: formula, example of calculation, screenshot>
 
@@ -76,14 +76,6 @@ You can analyze cost savings across different goals, identify the most cost-effe
 
 <What should be added: formula, example of calculation, screenshot>
 
-### Revenue Earnings (in USD$)
-
-Displays the total revenue earned for each completed goal within the selected time frame. 
-The chart offers a detailed view of how much each completed goal contributes to the overall business revenue. 
-You can analyze earnings by goal, compare performance over time, and understand the impact of each goal on your financial results. 
-This analysis helps evaluate the performance of business processes linked to each goal.
-
-<What should be added: formula, example of calculation, screenshot>
 
 ## More Information
 

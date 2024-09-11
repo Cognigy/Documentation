@@ -48,7 +48,7 @@ This collection contains one record per session. The main purpose of this record
 
 ## Analytics Data Flow
 
-Analytics data is generated through the whole lifecycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
+Analytics data is generated through the whole life cycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/analyze/analytics-data-flow.png" width="100%" />

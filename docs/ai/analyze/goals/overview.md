@@ -19,20 +19,20 @@ Cognigy.AI supports two versions of Goals: [v1](v1.md) and [v2](v2.md). Both off
 - **Better Decision Making**. With detailed data on Goal achievements, you can make informed decisions about optimizing Flows and improving AI Agent's performance.
 - **Focused Analysis**. If you need detailed analysis of specific interactions, Goals can be combined with other analytical tools such as [Analytics Steps](../collecting-data.md#analytics-steps) to get a comprehensive view of user interactions.
 
-## Goal Lifecycle
+## Goal Life Cycle
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/analyze/goals/lifecycle.png" width="50%" />
+  <img class="image-center" src="../../../../_assets/ai/analyze/goals/life-cycle.png" width="50%" />
 </figure>
 
-A goal has the following lifecycle:
+A goal has the following life cycle:
 
 1. The conversation designer defines a goal. 
 2. The conversation designer configures the goal settings. 
 3. The end user triggers the goal via the conversation with AI Agent. 
 4. The system records the goal completion. 
-5. The system updates the Contact Profile to reflect the completed goal in the user's interaction history. 
-6. The system stores the goal in the Analytics database. 
+5. The system stores the goal in the Analytics database.
+6. The system processes the result to be available for retrieval via the OData endpoint and renders new data on the Insights dashboards.
 7. The conversation designer accesses and analyzes data to review the results. 
 8. The conversation designer improves the Flow.
 
