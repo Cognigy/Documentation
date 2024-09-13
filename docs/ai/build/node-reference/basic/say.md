@@ -459,11 +459,11 @@ The **LINE** tab provides two methods for creating and editing a message which i
     Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
-### Amazon Polly Voice
----
-In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio documentation, see:
 
-[:link: Twilio Amazon Polly](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
+### Amazon Polly Voice
+
+In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice.
+It has some features listed in the [Twilio documentation](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly).
 
 ## Twilio SMS
 
