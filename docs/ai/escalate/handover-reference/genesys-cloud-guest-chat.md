@@ -27,7 +27,7 @@ The Genesys Cloud Guest Chat handover is based on [Genesys Guest Chat APIs](http
 
 ### Prerequisites
 
-- You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
+- You need to have an account in [Genesys Cloud](https://login.mypurecloud.com/).
 
 ### Configure Handover Settings
 
