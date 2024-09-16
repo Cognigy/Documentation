@@ -124,8 +124,8 @@ For example:
 
 where:
 
-`Content-Type` — specifies the media type of the resource being sent to the server.
-`Accept` — indicates the media types that the client is willing to receive from the server.
+- `Content-Type` — specifies the media type of the resource being sent to the server.
+- `Accept` — indicates the media types that the client is willing to receive from the server.
 
 Alternatively, you can click **Use JSON Editor** to switch between the list view and the JSON editor. The resulting JSON will be the same in either case.
 
