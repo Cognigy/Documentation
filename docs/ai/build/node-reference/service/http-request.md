@@ -1,7 +1,7 @@
 ---
 title: "HTTP Request" 
 slug: "http-request"
-description: "The HTTP Request Node lets you make an HTTP request to a specific resource within a Flow."
+description: "The HTTP Request Node lets you make an HTTP request within a Flow. When triggered, the HTTP Request Node performs the request to the specified URL during Flow execution."
 hidden: false 
 ---
 
@@ -13,9 +13,12 @@ hidden: false
 
 ## Description
 
-The HTTP Request Node lets you make an HTTP request to a specific resource within a Flow.
+The HTTP Request Node lets you make an HTTP request within a Flow. When triggered, the HTTP Request Node performs the request to the specified URL during Flow execution.
 
-When triggered, the HTTP Request Node performs the request to the specified URL during Flow execution.
+Using the HTTP Request Node, you can manage Cognigy.AI resources by creating, updating, and deleting them via the Cognigy.AI API. 
+
+You can also use external APIs, such as Google Maps for location data, OpenWeatherMap for weather updates, and NewsAPI for the latest news, or any other external API to enhance chat or voice conversations.
+If you use an external API, make sure the server has a public certificate to [avoid connection and secure issues](#handling-certificate-errors).
 
 ## Limitations
 
