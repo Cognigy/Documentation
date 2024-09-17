@@ -33,7 +33,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
     In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Check the specific Output Type above to verify channel support.
 
 !!! warning "Fallback Text"
-    In case the automatic conversion to channel specific output cannot take place, the Fallback Text will be triggered.
+    In case the automatic conversion to channel-specific output cannot take place, the Fallback Text will be triggered.
 
 ## Output Types
 
@@ -57,35 +57,34 @@ Multiple text messages can be added for conversational variation. When multiple 
 !!! warning "Using Multiple Text Outputs"
     By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
 
-#### Text Options
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/37689d0-SayOptions.jpg" width="100%" />
-</figure>
+#### Options
 
-When sending simple text output, Cognigy.AI dialog nodes provide options for configuring the behavior of output and attaching data to the message. The configuration options and their functions are listed below:
+When you send text responses, you can control how the text is delivered and attach additional data to the message. The following options are available for configuring the behavior:
 
-| Parameter | Type   | Description                                                                                                                                                     |
-|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Linear    | toggle | Iterates through the text options linearly instead of randomly.                                                                                                 |
-| Loop      | toggle | If `linear` is set, the order restarts at the first text response after reaching the end. Otherwise the last text option will be repeatedly used, once reached. |
-| Data      | JSON   | The data you want to send to the client                                                                                                                         |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                           |
+|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Linear    | Toggle | Controls whether the text responses are shown in a specific order (linearly) or randomly. If enabled, the text options are presented one after the other in the defined sequence.                                                                                     |
+| Loop      | Toggle | Works in conjunction with the **Linear** option. If **Linear** is enabled and **Loop** is also enabled, the sequence starts over from the beginning after reaching the end. If **Loop** is disabled, the last text option will keep repeating after reaching the end. |
+| Data      | JSON   | Allows you to include additional data that you want to send along with the message to the client. For example, `{ "type": "motivational" }`.                                                                                                                          |
 
-!!! note "Linear and Loop"
-    There are three different combinations of applying the Linear and Loop toggles, each providing a different behavior style for the order in which messages are delivered on future activation of the same node. The three combinations are:
+When configuring Linear and Loop, you can achieve different message delivery behavior:
 
-    * Random (for example, 4, 2, 5, 4, 4, 2, 5, 1, ...)
-    * Linear + non-looping (for example, 1, 2, 3, 4, 5, 5, 5, 5...)
-    * Linear + looping (for example, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
+- [Random Behavior]()
+- [Linear + Non-looping Behavior]()
+- [Linear + Looping Behavior]()
+
+### ChantBot Configuration Scenarios
+
+| Scenario             | Configuration            | Example Conversation                                                                                                                                                                                                                                                                                                                                                                           |
+|----------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Random Behavior      | Linear: Off<br>Loop: Off | User: `Give me some motivation.`<br>ChantBot: `You are doing great!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `Keep pushing forward!`<br><br>Responses are in random order each time.                                                                                                                                      |
+| Linear + Non-looping | Linear: On<br>Loop: Off  | User: `Give me some motivation.`<br>ChantBot: `Keep pushing forward!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `You are doing great!`<br>User: `One more, please.`<br>ChantBot: `You are doing great!` (repeats last message)<br><br>Responses follow a fixed sequence and repeat the last message after reaching the end. |
+| Linear + Looping     | Linear: On<br>Loop: On   | User: `Give me some motivation.`<br>ChantBot: `Keep pushing forward!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `You are doing great!`<br>User: `Next!`<br>ChantBot: `Keep pushing forward!` (starts sequence over)<br><br>Responses cycle through in a fixed order and restart from the beginning after reaching the end.  |
+
 ### Text with Quick Replies
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/5f55583-say-node-qr.jpg" width="100%" />
-</figure>
 
 Text with Quick Replies can be used to show the user a number of configurable Quick Replies. Quick Replies are pre-defined answers that are rendered as input chips.
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/01d80fd-Say_Node_quick_replies_2.jpg" width="50%" />
-</figure>
 
 The click action can be configured to be **Phone Number** or **Send Postback**.
 

@@ -29,6 +29,9 @@ nav:
         - ai/build/node-reference/overview.md
         - Basic:
           - ai/build/node-reference/basic/overview.md
+          - Say:
+              - ai/build/node-reference/basic/say/overview.md
+              - ai/build/node-reference/basic/say/channels.md
           - ai/build/node-reference/basic/say.md
           - ai/build/node-reference/basic/question.md
           - ai/build/node-reference/basic/optional-question.md
