@@ -440,6 +440,7 @@ nav:
       - Endpoint Configuration:
         - webchat/v3/configuration.md
         - webchat/v3/metadata.md
+      - webchat/v3/accessibility.md
       - webchat/v3/embedding.md
 
     - 💬 Webchat v2 (Deprecated):
