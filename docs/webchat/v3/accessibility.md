@@ -117,6 +117,10 @@ Thank you for watching, and don't forget to subscribe for more tutorials.
 [Music fades out]
 ```
 
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/video-transcript.png" width="100%" />
+</figure>
+
 ## Add Text for Lables in Adaptive Cards
 
 In Microsoft Adaptive Cards, each field should contain a title with meaningful text. 
