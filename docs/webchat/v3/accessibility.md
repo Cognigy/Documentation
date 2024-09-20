@@ -107,7 +107,12 @@ For video and audio, provide the same content in an alternate format, such as a 
 An audio track should be provided along with the transcript for this track.
 In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
 or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Audio** output type,
-add the audio file and paste the transcript into the **Audio Alternative Text** field in the following format:
+add the audio file and paste the transcript into the **Audio Alternative Text** field:
+
+To convert your audio into text, you can use third-party tools such as [Transcriptor](https://transkriptor.com/),
+[Sonix](https://sonix.ai/), and others.
+
+The audio transcript should have the following format:
 
 ???+ note "Audio Transcript Sample"
       ```txt
@@ -136,8 +141,6 @@ The transcript should accurately reflect the number of speakers and their lines,
 
 In the Webchat widget,
 the transcript will be available under the **Download Transcript** button and accessible in `.txt` format.
-
-You can use third-party tools such as [Transcriptor](https://transkriptor.com/), [Sonix](https://sonix.ai/), and others to upload your audio and convert it into text.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/audio-transcript.png" width="100%" />
@@ -196,7 +199,7 @@ or [Optional Question](../../ai/build/node-reference/basic/optional-question.md)
 you need to paste a URL, which links to the captions, into the **Captions URL** field.
 
 To create captions, you can use YouTube.
-Upload a video, and once the captions are generated, go to Subtitles in YouTube Studio.
+Upload a video, and once the captions are generated, go to **Subtitles** in YouTube Studio.
 Click the video, and then select **Download** to export the captions in `.vtt` format.
 Alternatively, you can use [Veed.io](https://www.veed.io/) and [Kapwing](https://www.kapwing.com/) to generate, edit, and export captions in `.vtt` format.
 
@@ -255,11 +258,12 @@ the captions will be available under ![vertical-ellipsis](../../_assets/icons/ve
 
 ## Increase Text Visibility
 
-By default, Webchat v3 follows color contrast recommendations. This means that Webchat v3 uses a dark color as the primary, the text color will be light, and vice versa.
+By default, Webchat v3 adheres to color contrast guidelines, ensuring a clear difference in brightness between a text and its background. This means that if a dark color is used as the primary background in Webchat, the text will automatically be light, and vice versa.
+
 However, you need to manually check the color contrast, especially if you add additional customizations to the home screen, such as a colorful background image. In such cases, ensure that the text in the foreground remains visible.
 You can control the color scheme within the **Color** section in the [Endpoint Settings](configuration.md#colors) or via the [CSS customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md) options.
 
-For each set of text, we recommend maintaining a sufficient color contrast — the difference in perceived brightness between the text and its background.
+For each set of text, we recommend maintaining sufficient color contrast as follows:
 
 - The minimum contrast ratio for normal text is 4.5:1. Avoid using text smaller than 12px.
 - For larger text, the contrast ratio should be at least 3:1.
@@ -268,14 +272,14 @@ To verify the color contrast in your Webchat, use an online contrast checker, fo
 
 You can determine the contrast ratio of your Webchat using the browser DevTools. For Chrome DevTools, follow these steps to check the color contrast ratio:
 
-1. Open Chrome DevTools by right-clicking on the webpage and select **Inspect**, or press ++ctrl++ + ++shift++ + ++i++ (Windows/Linux) or ++cmd++ + ++option++ ++i++ (Mac). 
-2. In the **Elements** panel, hover over the HTML elements to highlight sections of the page, or click on the specific element you want to inspect.
+1. Open Chrome DevTools by right-clicking on the web page and select **Inspect**, or press ++ctrl++ + ++shift++ + ++i++ (Windows/Linux) or ++cmd++ + ++option++ ++i++ (Mac). 
+2. In the **Elements** panel, hover over the HTML elements to highlight sections of the page or click the specific element you want to inspect.
 3. In the **Styles** panel on the right, find the `color` property for the text or the `background-color` property for the background.
 4. Click the color swatch next to the `color` or `background-color` value to open the color picker.
 5. Look for the **Contrast Ratio** section below the color values in the color picker. The contrast ratio will be displayed, showing whether the colors meet the WCAG guidelines:
     - **Passes** — shows a checkmark if the ratio meets AA or AAA standards for normal or large text.
-    - **Fails** — indicates if the ratio does not meet the standards and suggests adjustments.
-6. Use the color picker to adjust the color values. This will update the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click on the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
+    - **Fails** — shows if the ratio does not meet the standards and suggests adjustments.
+6. Use the color picker to adjust the color values. This tool updates the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click on the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/color-contrast.png" width="100%" />
@@ -283,7 +287,9 @@ You can determine the contrast ratio of your Webchat using the browser DevTools.
 
 ## Revise Extensions
 
-If you built a custom Node, make sure that the Node you created via the [Extension](../../ai/build/extensions.md) framework is developed according to accessibility standards.
+If you built a custom Node,
+make sure that the Node
+you created via the [Extension](../../ai/build/extensions.md) framework is developed according to accessibility standards.
 
 ## More Information
 
