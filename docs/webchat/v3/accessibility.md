@@ -34,11 +34,11 @@ Additionally, include alternative (Alt) text to describe images for users who ca
 
 ### Adaptive Cards
 
-When you use adaptive card output in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
+When you use the **Adaptive Card** output type in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
 or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, ensure that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/) contains a title with meaningful text and that the text has a hierarchical structure. The following parameters need to be added to the JSON of the Adaptive Card:
 
-- Each field contains a `label` parameter with meaningful text.
-- Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an Adaptive Card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
+- Each field contains a `label` parameter with meaningful text to title the field.
+- Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an adaptive card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/adaptive-card-labels.png" width="100%" />
