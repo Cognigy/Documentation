@@ -1,205 +1,272 @@
 ---
-title: "Say" 
-slug: "say" 
-hidden: false 
+title: "Say"
+slug: "say"
+hidden: false
 ---
 
 # Say
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../release-notes/4.84.md)
+
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/say.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/message/say.png" width="80%" />
 </figure>
 
 ## Description
 
-A Say Node is used to send a message to the user.
+The Say Node is used to send a message to the user. 
+This message can be in different formats, ranging from a simple text to rich media such as galleries, adaptive cards, videos, and audio outputs. 
 
-Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
+Additionally, you can enhance the existing output via Generative AI and control who can receive messages when the conversation is handed over to a contact center.
+
+## Settings
+
+### Channels
+
+Depending on the current channel, additional rich media formats are available. 
+Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the [Endpoint](../../../deploy/endpoints/overview.md) that will be deployed.
+
+See the list of available [Channels](../../nodes/channels.md).
+
+### Output Type (Default AI Channel)
+
+The default AI Channel allows for the configuration of different output types. 
+Not all [Endpoints](../../../deploy/endpoints/overview.md) can correctly convert your content to the desired output type. 
+Before configuration,
+[check the compatibility](../../../deploy/endpoints/content-conversion.md) of the output type with the Endpoint.
+
+#### Text
+
+The **Text** output type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript](../../cognigy-script.md) and [Tokens](../../tokens.md) that can be added by clicking ![token](../../../../_assets/icons/token.svg) at the end of each field.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ea04ba5-channels.jpg" width="80%" />
-  <figcaption>The say node menu with all channel output types enabled.</figcaption>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/text.png" width="100%" />
 </figure>
 
-If there is a Channel-specific configuration for the current Channel, this configuration will be used *instead* of the one on the default section.
+| Parameters | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text       | CognigyScript | Enter the text. If you want to customize the text by adding italic or bold styles or including links, note that Markdown is not supported; only HTML is allowed. <br> You can add multiple text messages — one message per field. Enter the first message and press ++enter++ to add additional messages.<br><br>When multiple text messages are added, the delivery order is controlled by the **Linear** and **Loop** parameters available in the **Options** section. Only one message will be delivered with each Node execution. If you want the AI Agent to send two or more messages at once, add a new Say Node. |
 
-## AI (default channel) 
+##### Options
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/894062b-1AI.jpg" width="100%" />
-</figure>
+When you send text responses, you can control how the text is delivered and attach additional data to the message. 
 
-!!! tip "Automatic Conversion to Channel Specific Output"
-    In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Check the specific Output Type above to verify channel support.
+| Parameter | Type   | Description                                                                                                                                                                                                                                            |
+|-----------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Linear    | Toggle | Controls whether the text responses are shown in a specific order (linearly) or randomly. If enabled, the text options are presented one after the other in the defined sequence.                                                                      |
+| Loop      | Toggle | Works in conjunction with the **Linear** option. If **Linear** and **Loop** are enabled, the sequence starts over from the beginning after reaching the end. If **Loop** is disabled, the last text option will keep repeating after reaching the end. |
+| Data      | JSON   | Allows you to include additional data that you want to send along with the message to the client. For example, `{ "type": "motivational" }`.                                                                                                           |
 
-!!! warning "Fallback Text"
-    In case the automatic conversion to channel-specific output cannot take place, the Fallback Text will be triggered.
+When configuring the **Linear** and **Loop** parameters, the message delivery behavior differs:
 
-## Output Types
-
-The AI Channel allows for the configuration of different **Output Types**. Not all [endpoints](../../../deploy/endpoints/overview.md) can correctly convert your content to the desired output type. Before configuration, [check the compatibility](../../../deploy/endpoints/content-conversion.md) of the output type with the endpoint.
-
-### Text
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6746960-node-say.jpg" width="100%" />
-</figure>
-
-The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript](../../cognigy-script.md) and [Tokens](../../tokens.md) that can be added by clicking the **AI** button at the end of each field.
-
-!!! tip "Channel Support"
-    The **Text** Output Type is currently converted to compatible output on all channels. Keep in mind that **emojis** may not render properly on all channels.
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/9f49b00-OutputTypeText.jpg" width="100%" />
-</figure>
-
-Multiple text messages can be added for conversational variation. When multiple text messages are configured, the delivery order is controlled by the *linear* and *loop* settings available in the ***options*** dropdown menu.
-
-!!! warning "Using Multiple Text Outputs"
-    By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
-
-#### Options
-
-When you send text responses, you can control how the text is delivered and attach additional data to the message. The following options are available for configuring the behavior:
-
-| Parameter | Type   | Description                                                                                                                                                                                                                                                           |
-|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Linear    | Toggle | Controls whether the text responses are shown in a specific order (linearly) or randomly. If enabled, the text options are presented one after the other in the defined sequence.                                                                                     |
-| Loop      | Toggle | Works in conjunction with the **Linear** option. If **Linear** is enabled and **Loop** is also enabled, the sequence starts over from the beginning after reaching the end. If **Loop** is disabled, the last text option will keep repeating after reaching the end. |
-| Data      | JSON   | Allows you to include additional data that you want to send along with the message to the client. For example, `{ "type": "motivational" }`.                                                                                                                          |
-
-When configuring Linear and Loop, you can achieve different message delivery behavior:
-
-- [Random Behavior]()
-- [Linear + Non-looping Behavior]()
-- [Linear + Looping Behavior]()
-
-### ChantBot Configuration Scenarios
-
-| Scenario             | Configuration            | Example Conversation                                                                                                                                                                                                                                                                                                                                                                           |
+| Behavior             | Configuration            | Example Conversation                                                                                                                                                                                                                                                                                                                                                                           |
 |----------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Random Behavior      | Linear: Off<br>Loop: Off | User: `Give me some motivation.`<br>ChantBot: `You are doing great!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `Keep pushing forward!`<br><br>Responses are in random order each time.                                                                                                                                      |
-| Linear + Non-looping | Linear: On<br>Loop: Off  | User: `Give me some motivation.`<br>ChantBot: `Keep pushing forward!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `You are doing great!`<br>User: `One more, please.`<br>ChantBot: `You are doing great!` (repeats last message)<br><br>Responses follow a fixed sequence and repeat the last message after reaching the end. |
-| Linear + Looping     | Linear: On<br>Loop: On   | User: `Give me some motivation.`<br>ChantBot: `Keep pushing forward!`<br>User: `Another one, please.`<br>ChantBot: `Believe in yourself!`<br>User: `More motivation.`<br>ChantBot: `You are doing great!`<br>User: `Next!`<br>ChantBot: `Keep pushing forward!` (starts sequence over)<br><br>Responses cycle through in a fixed order and restart from the beginning after reaching the end.  |
+| Random Behavior      | Linear: Off<br>Loop: Off | User: `Give me some motivation.`<br>AI Agent: `You are doing great!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `Keep pushing forward!`<br><br>Responses are in random order each time.                                                                                                                                      |
+| Linear + Non-looping | Linear: On<br>Loop: Off  | User: `Give me some motivation.`<br>AI Agent: `Keep pushing forward!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `You are doing great!`<br>User: `One more, please.`<br>AI Agent: `You are doing great!` (repeats last message)<br><br>Responses follow a fixed sequence and repeat the last message after reaching the end. |
+| Linear + Looping     | Linear: On<br>Loop: On   | User: `Give me some motivation.`<br>AI Agent: `Keep pushing forward!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `You are doing great!`<br>User: `Next!`<br>AI Agent: `Keep pushing forward!` (starts sequence over)<br><br>Responses cycle through in a fixed order and restart from the beginning after reaching the end.  |
 
-### Text with Quick Replies
+#### Text with Quick Replies
 
-Text with Quick Replies can be used to show the user a number of configurable Quick Replies. Quick Replies are pre-defined answers that are rendered as input chips.
-
-
-The click action can be configured to be **Phone Number** or **Send Postback**.
+The **Text with Quick Replies** output type can be used to show the user a number of configurable quick replies.
+Quick replies are pre-defined answers that are rendered as input chips.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/3dbf220-select_button_type.jpg" width="50%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/text-with-quick-replies.png" width="100%" />
 </figure>
 
-#### Postback Value
-When a **Postback Value** is configured and the **Quick Reply** is clicked, the Postback Value will be sent to the start of the Flow. This simulates user input - it is "as if" the user would have manually typed something. This is the most typical behavior for Quick Replies.
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text                      | CognigyScript | Enter the text. If you want to customize the text by adding italic or bold styles or including links, note that Markdown is not supported; only HTML is allowed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Add Quick Reply           | Button        | Adds a new Empty Quick Reply button. You can add multiple buttons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Empty Quick Reply         | Button        | Adds a new Quick Reply button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Button Title              | CognigyScript | Appears only when the Empty Quick Reply parameter is selected. The title of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Select Button Type        | Dropdown      | You can select the following options:<br> - **Postback Value** - sends a specified value to the start of the Flow, simulating user input as if the user had manually typed it. This behavior is typical for Quick Replies and is used to trigger specific responses or actions based on predefined values.<br>- **Phone Number** - opens the phone application on the device when the button is clicked, allowing users to initiate a call directly from the chat interface.<br>- **Trigger Intent** - allows you to manually trigger an Intent by using the `cIntent:` prefix, followed by the name of the desired intent. When this option is used, the regular Intent mapping is bypassed, and the specified intent is activated directly. For more information, read [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md). <br>- **Open xApp** - opens an xApp page. Note that, for the xApp session link to be available, you need to add the [xApp: Init Session](../xApp/init-xApp-session.md) and either the [xApp: Show HTML](../xApp/set-html-xApp-state.md) or [xApp: Show Adaptive Card Nodes](../xApp/set-AdaptiveCard-xApp-state.md) before the Say Node. |
+| Postback Value            | CognigyScript | Appears if the Post back value in Select Button Type is selected. The value that sends to the start of the Flow, simulating user input as if the user had manually typed it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| URL                       | CognigyScript | Appears if the URL value in Select Button Type is selected. The URL must start with `http://` or `https://`, be a valid, publicly accessible address, and contain no spaces or unsafe characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| URL Target                | CognigyScript | Appears if the URL value is selected in the Select Button Type. You can select one of the following options:<br>- **Open URL in a new tab** - the selected URL will open in a new browser tab.<br>- **Open URL in the same tab** - the selected URL will replace the current page in the same browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Phone number              | CognigyScript | Appears if the Phone number value in Select Button Type is selected. The number must be formatted as a valid phone number and should not contain spaces or special characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Intent name               | CognigyScript | Appears if the Trigger Intent value in Select Button Type is selected. The Intent name that should be triggered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Condition: Cognigy Script | CognigyScript | Allows to control when buttons are shown or hidden based on conditions written in CognigyScript. If you're displaying buttons in a card and only want to show a  when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the button will appear; if false, it stays hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Fallback Text             | CognigyScript | The text that will appear if the Gallery is not be rendered in the chat.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 
 
-#### Phone Number
-When this option is configured, clicking the Quick Reply will try to open the phone application on the device.
+#### Gallery
 
-#### Trigger Intent
-The Trigger Intent feature allows you to manually trigger an Intent by writing cIntent:, followed by the desired intent name in your text input, the regular Intent mapping will be ignored.
-More information see [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md)
+The **Gallery** output type consists of powerful visual widgets that are ideal for displaying a list of options with images. They are typically used to showcase a variety of products or other items that can be browsed.
 
-!!! warning "Channel Support"
-    The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### Gallery
-
-Galleries are powerful visual widgets that are ideal for showing a list of options with images. They are typically used to show a number of products or other items that can be browsed.
+A gallery can be configured with multiple cards. Each card contains an image, a title, and a subtitle, and can be configured with optional buttons.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/243f107-Say_order_taxi_2.PNG" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/gallery.png" width="100%" />
 </figure>
 
-A gallery can be configured with a number of cards. A card contains an image, a title and a subtitle and can be configured with (optional) buttons.
+##### Card
+
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                               |
+|---------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Card                  | Button        | Adds a new card for the Gallery type. You can add multiple cards.                                                                                                                                                                                                                                                                                                         |
+| Add Image                 | Button        | Adds an image for the selected card.                                                                                                                                                                                                                                                                                                                                      |
+| Image URL                 | Button        | Appears when the Add Image parameter is selected. This is the URL for the image. Note that if you upload a URL to a storage service such as Google Cloud Storage or AWS, the URL should be publicly accessible.                                                                                                                                                           |
+| Image Alternate Text      | CognigyScript | Appears when the Add Image parameter is selected. The alternative text for accessibility, which describes the image for users who cannot see it.                                                                                                                                                                                                                          |
+| Title                     | CognigyScript | Appears when the Add Card parameter is selected. The title of the card.                                                                                                                                                                                                                                                                                                   | 
+| Subtitle                  | CognigyScript | Appears when the Add Card parameter is selected. The subtitle of the card.                                                                                                                                                                                                                                                                                                |
+| Condition: Cognigy Script | CognigyScript | Allows to control when cards are shown or hidden based on conditions written in CognigyScript. If you're displaying cards in a Gallery and only want to show a card when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the card will appear; if false, it stays hidden. |
+| Fallback Text             | CognigyScript | The text that will appear if the Gallery is not be rendered in the chat.                                                                                                                                                                                                                                                                                                  | 
+
+##### Button
+
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Button                | Button        | Adds a new Empty Title button. You can add multiple buttons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Empty Title               | Button        | Adds a new button to the selected card.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Button Title              | Button        | Appears only when the Empty Title parameter is selected. The title of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Select Button Type        | Dropdown      | You can select the following options:<br> - **Postback Value** - sends a specified value to the start of the Flow, simulating user input as if the user had manually typed it. This behavior is typical for Quick Replies and is used to trigger specific responses or actions based on predefined values. <br>- **URL** - opens the web page corresponding to the URL provided in the field. <br>- **Phone Number** - opens the phone application on the device when the button is clicked, allowing users to initiate a call directly from the chat interface.<br>- **Trigger Intent** - allows you to manually trigger an Intent by using the `cIntent:` prefix, followed by the name of the desired intent. When this option is used, the regular Intent mapping is bypassed, and the specified intent is activated directly. For more information, read [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md).<br>- **Open xApp** - opens an xApp page. Note that, for the xApp session link to be available, you need to add the [xApp: Init Session](../xApp/init-xApp-session.md) and either the [xApp: Show HTML](../xApp/set-html-xApp-state.md) or [xApp: Show Adaptive Card Nodes](../xApp/set-AdaptiveCard-xApp-state.md) before the Say Node. |
+| Postback Value            | CognigyScript | Appears if the Post back value in Select Button Type is selected. The value that sends to the start of the Flow, simulating user input as if the user had manually typed it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| URL                       | CognigyScript | Appears if the URL value in Select Button Type is selected. The URL must start with `http://` or `https://`, be a valid, publicly accessible address, and contain no spaces or unsafe characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| URL Target                | CognigyScript | Appears if the URL value is selected in the Select Button Type. You can select one of the following options:<br>- **Open URL in a new tab** - the selected URL will open in a new browser tab.<br>- **Open URL in the same tab** - the selected URL will replace the current page in the same browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Phone number              | CognigyScript | Appears if the Phone number value in Select Button Type is selected. The number must be formatted as a valid phone number and should not contain spaces or special characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Intent name               | CognigyScript | Appears if the Trigger Intent value in Select Button Type is selected. The Intent name that should be triggered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Condition: Cognigy Script | CognigyScript | Allows to control when buttons are shown or hidden based on conditions written in CognigyScript. If you're displaying buttons in a card and only want to show a  when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the button will appear; if false, it stays hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+#### Text with Buttons
+
+The **Text with Buttons** output type is similar to [Text with Quick Replies](#text-with-quick-replies), but it differs in its presentation. 
+Instead of quick replies, this widget is displayed as a vertical list of button options. Configuration for this output type is also similar to that of the quick replies.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/cd2a3a1-SAY_gallery_cards_1.PNG" width="75%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/text-with-buttons.png" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Gallery** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### Text with Buttons
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/c7c32f9-say-buttons.jpg" width="100%" />
-</figure>
+##### Text
 
-**Text with Buttons** is a similar **Output Type** to **Text with Quick Replies**. The difference comes from the way the widget is rendered, which resembles a vertical list of button options. It can be configured in a similar fashion.
+| Parameters    | Type          | Description                                                                                                                                                      |
+|---------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text          | CognigyScript | Enter the text. If you want to customize the text by adding italic or bold styles or including links, note that Markdown is not supported; only HTML is allowed. |
+| Fallback Text | CognigyScript | The text that will appear if the Text with Buttons is not rendered in the chat.                                                                                  | 
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6554383-textbuttons.PNG" width="75%" />
-</figure>
+##### Button
 
-!!! warning "Channel Support"
-    The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### List
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/1c5a0c7-list1.PNG" width="100%" />
-</figure>
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Button                | Button        | Adds a new Empty Title button. You can add up to 6 buttons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Empty Title               | Button        | Adds a new button to the selected card.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Button Title              | Button        | Appears only when the Empty Title parameter is selected. The title of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Select Button Type        | Dropdown      | You can select the following options:<br> - **Postback Value** - sends a specified value to the start of the Flow, simulating user input as if the user had manually typed it. This behavior is typical for Quick Replies and is used to trigger specific responses or actions based on predefined values. <br>- **Phone Number** - opens the phone application on the device when the button is clicked, allowing users to initiate a call directly from the chat interface.<br>- **Trigger Intent** - allows you to manually trigger an Intent by using the `cIntent:` prefix, followed by the name of the desired intent. When this option is used, the regular Intent mapping is bypassed, and the specified intent is activated directly. For more information, read [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md).<br>- **Open xApp** - opens an xApp page. Note that, for the xApp session link to be available, you need to add the [xApp: Init Session](../xApp/init-xApp-session.md) and either the [xApp: Show HTML](../xApp/set-html-xApp-state.md) or [xApp: Show Adaptive Card Nodes](../xApp/set-AdaptiveCard-xApp-state.md) before the Say Node. |
+| Postback Value            | CognigyScript | Appears if the Post back value in Select Button Type is selected. The value that sends to the start of the Flow, simulating user input as if the user had manually typed it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| URL                       | CognigyScript | Appears if the URL value in Select Button Type is selected. The URL must start with `http://` or `https://`, be a valid, publicly accessible address, and contain no spaces or unsafe characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| URL Target                | CognigyScript | Appears if the URL value is selected in the Select Button Type. You can select one of the following options:<br>- **Open URL in a new tab** - the selected URL will open in a new browser tab.<br>- **Open URL in the same tab** - the selected URL will replace the current page in the same browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Phone number              | CognigyScript | Appears if the Phone number value in Select Button Type is selected. The number must be formatted as a valid phone number and should not contain spaces or special characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Intent name               | CognigyScript | Appears if the Trigger Intent value in Select Button Type is selected. The Intent name that should be triggered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Condition: Cognigy Script | CognigyScript | Allows to control when buttons are shown or hidden based on conditions written in CognigyScript. If you're displaying buttons in a card and only want to show a  when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the button will appear; if false, it stays hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-**List** output allows a customized list of items to be displayed with many configuration options such as the header image, buttons, images and more. 
+#### List
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/782c02f-list2.PNG" width="100%" />
-</figure>
+The **List** output type allows a customized list of items to be displayed, with many configuration options such as a header image, buttons, images, and more.
 
-The first list item can optionally be converted to a header item that houses the list title, subtitle and button. Each additional list item can have a title, subtitle, image and button added. The list can also have a button added at the bottom.
-
-!!! warning "Channel Support"
-    The **List** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Azure Bot Services**, **RingCentral Engage**, **UserLike** and **Line**.
-### Audio
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/7c58ec2-node-audio.jpg" width="100%" />
-</figure>
-
-The **Audio Output Type** can render audio output in case this is supported by the channel. It can be configured, by providing it with a URL to an audio file.
+The first list item can optionally be converted into a header that includes the list title, subtitle, and button. Each additional list item can have a title, subtitle, image, and button. A button can also be added at the bottom of the list.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/86d62bf-audio.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/list.png" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Audio** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
-### Image
+##### Item
+
+| Parameters           | Type          | Description                                                                                                                                                                                                                                                                                                                                                            |
+|----------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add item             | Button        | Adds a new Empty Title button to the selected card. You can add up 10 items.                                                                                                                                                                                                                                                                                           |
+| Empty Title          | Button        | Adds a new entry to the list.                                                                                                                                                                                                                                                                                                                                          |
+| Title                | CognigyScript | Appears when you select **Empty Title**.                                                                                                                                                                                                                                                                                                                               |
+| Subtitle             | CognigyScript | Appears when the Add Card parameter is selected. The subtitle of the card.                                                                                                                                                                                                                                                                                             |
+| Image URL            | Button        | Appears when the Add Image parameter is selected. This is the URL for the image. Note that if you upload a URL to a storage service such as Google Cloud Storage or AWS, the URL should be publicly accessible.                                                                                                                                                        |
+| Image Alternate Text | CognigyScript | Appears when the Add Image parameter is selected. The alternative text for accessibility, which describes the image for users who cannot see it.                                                                                                                                                                                                                       |
+| Default Action URL   | CognigyScript | Appears when the Empty Title parameter is selected. It is a link that opens when the user clicks anywhere on the item. It's used when you want the entire item to be clickable, directing the user to a specific website or resource.                                                                                                                                  |
+| Condition            | CognigyScript | Allows to control when items are shown or hidden based on conditions written in CognigyScript. If you're displaying items in a list and only want to show a list when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the item will appear; if false, it stays hidden. |
+| Fallback Text        | CognigyScript | The text that will appear if the List is not rendered in the chat.                                                                                                                                                                                                                                                                                                     | 
+
+###### Item Button
+
+Each item can have a separate button.
+To configure it, hover the mouse over the Empty Title and click **+** icon.
+You can add only one button per item.
+
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Button Title              | Button        | Appears only when the Empty Title parameter is selected. The title of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Select Button Type        | Dropdown      | You can select the following options:<br> - **Postback Value** - sends a specified value to the start of the Flow, simulating user input as if the user had manually typed it. This behavior is typical for Quick Replies and is used to trigger specific responses or actions based on predefined values. <br>- **Phone Number** - opens the phone application on the device when the button is clicked, allowing users to initiate a call directly from the chat interface.<br>- **Trigger Intent** - allows you to manually trigger an Intent by using the `cIntent:` prefix, followed by the name of the desired intent. When this option is used, the regular Intent mapping is bypassed, and the specified intent is activated directly. For more information, read [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md).<br>- **Open xApp** - opens an xApp page. Note that, for the xApp session link to be available, you need to add the [xApp: Init Session](../xApp/init-xApp-session.md) and either the [xApp: Show HTML](../xApp/set-html-xApp-state.md) or [xApp: Show Adaptive Card Nodes](../xApp/set-AdaptiveCard-xApp-state.md) before the Say Node. |
+| Postback Value            | CognigyScript | Appears if the Post back value in Select Button Type is selected. The value that sends to the start of the Flow, simulating user input as if the user had manually typed it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| URL                       | CognigyScript | Appears if the URL value in Select Button Type is selected. The URL must start with `http://` or `https://`, be a valid, publicly accessible address, and contain no spaces or unsafe characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| URL Target                | CognigyScript | Appears if the URL value is selected in the Select Button Type. You can select one of the following options:<br>- **Open URL in a new tab** - the selected URL will open in a new browser tab.<br>- **Open URL in the same tab** - the selected URL will replace the current page in the same browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Phone number              | CognigyScript | Appears if the Phone number value in Select Button Type is selected. The number must be formatted as a valid phone number and should not contain spaces or special characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Intent name               | CognigyScript | Appears if the Trigger Intent value in Select Button Type is selected. The Intent name that should be triggered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Condition: Cognigy Script | CognigyScript | Allows to control when buttons are shown or hidden based on conditions written in CognigyScript. If you're displaying buttons in a card and only want to show a  when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the button will appear; if false, it stays hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+##### Button
+
+You can add only one item for the list.
+
+| Parameters                | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Button                | Button        | Adds a new Empty Title button. You can add up to 6 buttons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Empty Title               | Button        | Adds a new button to the selected card.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Button Title              | Button        | Appears only when the Empty Title parameter is selected. The title of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Select Button Type        | Dropdown      | You can select the following options:<br> - **Postback Value** - sends a specified value to the start of the Flow, simulating user input as if the user had manually typed it. This behavior is typical for Quick Replies and is used to trigger specific responses or actions based on predefined values. <br>- **URL** - opens the web page corresponding to the URL provided in the field. <br>- **Phone Number** - opens the phone application on the device when the button is clicked, allowing users to initiate a call directly from the chat interface.<br>- **Trigger Intent** - allows you to manually trigger an Intent by using the `cIntent:` prefix, followed by the name of the desired intent. When this option is used, the regular Intent mapping is bypassed, and the specified intent is activated directly. For more information, read [Trigger Intent](../../../empower/nlu/intents/trigger-intent.md).<br>- **Open xApp** - opens an xApp page. Note that, for the xApp session link to be available, you need to add the [xApp: Init Session](../xApp/init-xApp-session.md) and either the [xApp: Show HTML](../xApp/set-html-xApp-state.md) or [xApp: Show Adaptive Card Nodes](../xApp/set-AdaptiveCard-xApp-state.md) before the Say Node. |
+| Postback Value            | CognigyScript | Appears if the Post back value in Select Button Type is selected. The value that sends to the start of the Flow, simulating user input as if the user had manually typed it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| URL                       | CognigyScript | Appears if the URL value in Select Button Type is selected. The URL must start with `http://` or `https://`, be a valid, publicly accessible address, and contain no spaces or unsafe characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| URL Target                | CognigyScript | Appears if the URL value is selected in the Select Button Type. You can select one of the following options:<br>- **Open URL in a new tab** - the selected URL will open in a new browser tab.<br>- **Open URL in the same tab** - the selected URL will replace the current page in the same browser tab.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Phone number              | CognigyScript | Appears if the Phone number value in Select Button Type is selected. The number must be formatted as a valid phone number and should not contain spaces or special characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Intent name               | CognigyScript | Appears if the Trigger Intent value in Select Button Type is selected. The Intent name that should be triggered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Condition: Cognigy Script | CognigyScript | Allows to control when buttons are shown or hidden based on conditions written in CognigyScript. If you're displaying buttons in a card and only want to show a  when there's data, use this condition: `{{ "{{context.array.length > 0}}" }}`. It checks if the array has items (length is greater than 0). If true, the button will appear; if false, it stays hidden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+#### Audio
+
+The **Audio** output type plays audio when supported by the channel. It is configured by providing a URL to the audio file and includes controls to play, pause, and stop the audio.
+
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/506f002-Say_image.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/audio.png" width="100%" />
 </figure>
 
-Image Output Types display an image in a similar fashion to the gallery. The image output, however, only outputs one particular image.
+| Parameters           | Type          | Description                                                                                                         |
+|----------------------|---------------|---------------------------------------------------------------------------------------------------------------------|
+| Audio URL            | CognigyScript | The URL of the track you want to play. Note that the URL should be publicly accessible.                             |
+| Audio Alternate Text | CognigyScript | The audio transcript you can add alongside the audio, allowing users to download it. Only applicable to Webchat v3. |
+| Fallback Text        | CognigyScript | The text that will appear if the audio is not rendered in the chat.                                                 |
+
+#### Image
+
+The **Image** output type displays a single image.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/c8fd6f9-Output_Type_image.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/image.png" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Image** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
-### Video
+| Parameters           | Type          | Description                                                                                                                                                                                                     |
+|----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Image URL            | Button        | Appears when the Add Image parameter is selected. This is the URL for the image. Note that if you upload a URL to a storage service such as Google Cloud Storage or AWS, the URL should be publicly accessible. |
+| Image Alternate Text | CognigyScript | Appears when the Add Image parameter is selected. The alternative text for accessibility, which describes the image for users who cannot see it.                                                                |
+| Fallback Text        | CognigyScript | The text that will appear if the Image is not rendered in the chat.                                                                                                                                             | 
+
+#### Video
+
+The **Video** output type allows you to add a video clip.
+It takes a URL as an input parameter and will automatically start playing the video if supported by the Endpoint.
+
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/f8b5cdf-Say_video.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/video.png" width="100%" />
 </figure>
 
-The Video Output Type allows you to configure a video output. It takes a URL as an input parameter and will start playing the video automatically if this is supported by the channel.
+| Parameters           | Type          | Description                                                                                                                                                                                                                    |
+|----------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Video URL            | Button        | The URL of the track you want to play. Note that the URL should be publicly accessible.                                                                                                                                        |
+| Video Alternate Text | CognigyScript | The video transcript you can add alongside the audio to allow users to download it. This field is applicable only to Webchat v3.                                                                                               |
+| Video Captions URL   | CognigyScript | A link to a file containing captions for the video. This URL provides text-based descriptions of the audio content, which helps with accessibility and understanding the video content. The captions should be in .vtt format. |  
+| Fallback Text        | CognigyScript | The text that will appear if the video is not rendered in the chat.                                                                                                                                                            |
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/f71165b-Output_Type_video.svg" width="100%" />
-</figure>
+#### Adaptive Card
 
-!!! warning "Channel Support"
-    The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
-    
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, YouTube links might not work).
-
-!!! note "CognigyScript"
-    Any text field in the say node supports the use of **CognigyScript**. 
-    
-    For detailed instructions, read the Chapter on [CognigyScript](../../cognigy-script.md).
-
-### Adaptive Card
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../../../release-notes/4.56.md)
-
-The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
+The **Adaptive Card** output type allows you
+to add [Microsoft Adaptive Cards](https://learn.microsoft.com/en-us/adaptive-cards/).
+They offer customization options, support for rich media (images, video, and audio),
+ease of use with a simple JSON schema,
+and the ability to create dynamic content for users to match their specific needs and branding.
 
 To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
 
@@ -207,10 +274,10 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
     Cognigy supports the limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../../deploy/endpoints/content-conversion.md) for better compatibility.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/adaptive-card-output-type.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say/adaptive-card-output-type.png" width="80%" />
 </figure>
 
-??? info "Adaptive Card JSON example"
+??? note "Adaptive Card JSON example"
 
       ```json    
       {
@@ -273,14 +340,14 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
         ]
       }
       ```
-#### Create an Adaptive Card with Generative AI
+##### Create an Adaptive Card with Generative AI
 
 You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../../empower/generative-ai.md#prerequisites).
 
 To use this feature, follow these steps:
 
 1. Select the **Adaptive Card** output type.
-2. On the right side of the **Output type** list, click ![the Gen AI Icon](../../../../_assets/icons/beta.svg).
+2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../_assets/icons/beta.svg).
 
 {! _includes/ai/nodes/adaptive-card-genai.md !}
 
@@ -290,7 +357,7 @@ To replace the current Adaptive Card with a new one, click ![recycle bin](../../
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="100%" />
 </figure>
 
-??? info "Generative AI Adaptive Card JSON example"
+??? note "Generative AI Adaptive Card JSON example"
 
     ```json
     {
@@ -321,343 +388,19 @@ To replace the current Adaptive Card with a new one, click ![recycle bin](../../
     }
     ```
 
-## Alexa
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/1ebe307-alexa.jpg" width="100%" />
-</figure>
-
-Defines what an Amazon Echo enabled system will say as an answer. 
-
-### SSML Editor
-
-In addition to regular text output, Alexa supports SSML which enables the admin to define the way the output is pronounced.
-
-!!! warning "Multiple voice outputs"
-    If more than one Say Node is hit in one Flow execution using the Alexa Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
-
-!!! note "CognigyScript in SSML"
-    You can also use CognigyScript expressions within SSML parameters.
-
-### Home Cards
-
-!!! warning "Multiple Cards"
-    If more than one Card is being output during one Flow execution, only the last one will be sent.
-
-Defines an optional additional Card that is available to the user through a connected Alexa app. They can be used to provide additional information that is not perceptible without a screen.
-
-The following Card Templates are available:
-
-- Text
-- Text & Image
-- Link Account
-### Display Templates for Echo Show
-
-If more than one Display configuration is being output during one Flow execution, only the last one will be sent.
-
-Defines content that will be shown on Amazon Echo Show devices.
-
-The following Display Templates are available:
-
-* Full-width Text
-* Text & Image right
-* Text & Image left
-* Image & Text overlay
-* Vertical List
-* Horizontal List
-
-### Custom JSON Directives
-
-Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
-
-For further details see the [Amazon Alexa Documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
-
-## Messenger
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/16b8fc7-messenger.jpg" width="100%" />
-    <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger Send API</a></div>
-</figure>
-
-Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
-
-The following Facebook (Meta) Messenger Templates are available:
-
-- Text & Quick Replies
-- Buttons
-- Gallery
-- Attachment
-- List
-
-!!! tip "Output any Facebook JSON"
-    Instead of using the UI functions provided by Cognigy, you can also output arbitrary JSON by selecting **Custom JSON** as the Type. This lets you see the JSON you compiled through Cognigy and modify it or add to it.
-
-!!! tip "Using Code Nodes to output Facebook Markup"
-    You can use the output action in Code Nodes to send JSON directly to Facebook. To do that, set the following code as the data property:
-
-    ```JSON
-    {
-      "_cognigy": {
-        "_facebook": {      
-          "message": {
-            // this contains your message to facebook
-          }
-        }
-      }
-    }
-    ```
-
-!!! danger "Location Button Deprecation"
-    The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
-
-## Webchat
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/26ca2e8-webchat.jpg" width="100%" />
-</figure>
-
-The Webchat Channel features the configuration options of our Facebook (Meta) integration.
-
-As the output format is the same, you can configure the Webchat Channel to use your output from the Facebook tab or manually override it for Webchat-specific customization.
-
-The Webchat will render HTML markup for outputs from the DEFAULT tab's text as well as the text field from the Webchat tab's "Text + Quick Replies" template.
-## LINE
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/8313bb3-line.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
-</figure>
-
-The **LINE** tab provides two methods for creating and editing a message which is only for the **LINE** channel:
-
-- **Text** for sending text message responses
-- **Custom JSON** for defining more complex messages and templates
-
-| Type        | Description                                                                                                                                                      |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                                                                                           |
-| Custom JSON | Can contain a valid LINE message object. See the [Line Documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
-
-## Twilio
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6404b3e-twilio.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
-</figure>
-
-| Type  | Description                                                                                                                                                                                                    |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text  | A simple text message.                                                                                                                                                                                         |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
-
-!!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
-
-    You will also have to make sure that the content of your TwiML is escaped XML.
-
-### Amazon Polly Voice
-
-In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice.
-It has some features listed in the [Twilio documentation](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly).
-
-## Twilio SMS
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/9819b1c-twiliosms.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS Documentation</a></div>
-</figure>
-
-| Type  | Description                                                                                                                               |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Text  | A simple text message.                                                                                                                    |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
-
-!!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
-
-    You will also have to make sure that the content of your TwiML is escaped XML.
-## Microsoft Teams
-
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/892e801-teams.jpg" width="100%" />
-</figure>
-
-!!! note "Teams Cards"
-    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint](../../../deploy/endpoint-reference/azure-bot-services.md) page for information on how to send messages.
-<!-- need to change the link above  -->
-
-<div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
-
-| Type | Description                                                                                                                                                                                                                                                                    |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text | A simple text message.                                                                                                                                                                                                                                                         |
-| JSON | Can contain valid JSON in the Bot Framework / Microsoft Teams format. See the [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
-
-!!! warning "Multiple Flow Outputs"
-    If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
-
-## Voice Gateway
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../../release-notes/4.48.md)
-
-To activate a Voice Gateway channel:
-
-1. Go to the **Edit Node** page and click **+**.
-2. From the list, select **Voice Gateway**.
-3. In the **Text** field, add SSML markup to adjust the AI Agent's output speech.
-
-Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../voice/voice-gateway/parameter-details.md).
-These configurations are also available in the following Nodes:
-
-- [Question](question.md)
-- [Optional Question](optional-question.md)
-- [Set Session Config](../voice/voice-gateway/set-session-config.md)
-- [Play](../voice/voice-gateway/play.md)
-- [Session Speech Parameters Config](../voice/generic/session-speech-parameters-config.md)
-
-## 8x8
-
-The **8x8** tab provides three methods for creating and editing messages within the 8x8 channel.
-
-| Type          | Description                                                                                                                             |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | A simple text message.                                                                                                                  |
-| Custom JSON   | Can contain a valid 8x8 message object.                                                                                                 |
-| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../../deploy/endpoints/content-conversion.md). |
-
-??? info "Custom JSON example"
-    
-    ```json
-    {
-        "authorType": "customer",
-        "text": "Hello!",
-        "attachments": [
-            {
-                "id": "string"
-            }    
-        ],
-        "cards": [
-            {
-                "contentType": "application/vnd.microsoft.card.adaptive",
-                "content": {}
-            }
-        ]
-    }
-    ```
-
-## Genesys
-
-The **Genesys** tab provides two methods to create and edit messages that are specific to the **Genesys** channel.
-
-| Type        | Description                                                                                    |
-|-------------|------------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                         |
-| Custom JSON | Can contain a valid Genesys Cloud message object. Defines more complex messages and templates. |
-
-??? info "Custom JSON example"
-
-    ```json
-    {
-      "replymessages": [],
-      "parameters": {
-        "command": "handover"
-      }
-    }
-    ```
-    
-    This message suggests that the AI Agent working on the Cognigy.AI side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
-
-## Bandwidth
-
-The **Bandwidth** tab provides two methods to create and edit messages that are specific to the **Bandwidth** channel.
-
-| Type        | Description                                                                                 |
-|-------------|---------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                      |
-| Custom JSON | Can contain a valid Bandwidth message object.  Defines more complex messages and templates. |
-
-
-??? info "Custom JSON example"
-
-    ```json
-    {
-      "activities": [
-        {
-          "id": "123456789",
-          "timestamp": "1999-12-31T23:59:59.999Z",
-          "type": "message",
-          "text": "Hello. This is my message."
-        }
-      ]
-    }
-    ```
-
-## URL opening options in the existing browser tab in Webchat Widget
-
-
-As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
-
-**Say Node example using Text with Buttons**
-
-1. Create a Flow with Say Node. 
-2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 
-3. Then select **URL** as **Button Type** and enter the Internet address you want. 
-4. Complete the configuration by selecting **Open URL in a new tab** or **Open URL in the same tab**. 
-5. Deploy an Endpoint with the Webchat option and start a conversation.
-    The configured Say Node Buttons will be displayed in the Webchat Widget.
-6. Click on the Button.
-7. Depending on the configuration the URL will be opened in a separate tab or in the same tab.
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/3492532-Show_URL_in_same_tab.PNG" width="75%" />
-</figure>
-
-Say Node configuration with 'URL Target' setting "Open URL in the same tab".
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
-</figure>
-
-Webchat with button "Show URL in same tab".
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/320961c-Cognigy_Website_same_tab.png" width="75%" />
-</figure>
-
-URL has been opened in the same tab.
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/3014d6c-Show_URL_in_new_tab.PNG" width="75%" />
-</figure>
-
-Say Node configuration with 'URL Target' setting "Open URL in new tab".
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
-</figure>
-
-Webchat with button "Show URL in new tab".
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/af2f15e-URL_opened_in_new_tab.png" width="75%" />
-</figure>
-
-URL has been opened in a new tab.
-
-## AI-enhanced output
+### AI-Enhanced Output
 
 To use AI-enhanced output rephrasing, read the [Generative AI](../../../empower/generative-ai.md) article.
 
-## Handover Settings
+### Handover Settings
 
-When using a handover, such as to a live agent, you can choose who receives the message from the AI Agent:
+When using a handover to a contact center, you can choose who receives the message from the AI Agent:
 
 - **User and Agent** — by default, both the end user and the human agent will receive the message.
 - **User only** — the end user will receive the message.
 - **Agent only** — the responsible human agent will receive the message.
+
+## More Information
+
+- [Overview](../overview.md)
+- [Channels](../../nodes/channels.md)

@@ -1,10 +1,18 @@
+---
+title: "Channels"
+slug: "channels"
+description: "Channels are components through which users can interact with the AI Agent."
+hidden: false
+---
 
 # Channels
 
-_Channels_ are components through which users can interact with the AI Agent. Each channel is associated with one or more Cognigy.AI [Endpoints](../../../../deploy/endpoints/overview.md), allowing users to communicate with the AI Agent through various interfaces. Cognigy.AI Channels include Webchat, Facebook Messenger, Slack, WhatsApp, and other text-based and voice platforms.
+_Channels_ are components through which users can interact with the AI Agent. Each channel is associated with one or more Cognigy.AI [Endpoints](../../deploy/endpoints/overview.md), allowing users to communicate with the AI Agent through various interfaces. Cognigy.AI channels include Webchat, Facebook Messenger, Slack, WhatsApp, and other text-based and voice platforms.
 
-By default, the AI channel is activated in the Say, Question, and Optional Question Nodes.
-Channels can be configured only in these message Nodes.
+By default, the AI Channel is activated in the [Say](../node-reference/basic/say.md), [Question](../node-reference/basic/question.md), and [Optional Question](../node-reference/basic/optional-question.md) Nodes.
+Channels can be configured only in these Nodes as they provide different content type outputs,
+such as texts with images, audio and video, adaptive cards.
+
 Within these Nodes, you can use multiple channels simultaneously.
 This allows you
 to customize the AI Agent's messages for different platforms
@@ -26,7 +34,7 @@ Defines what an Amazon Echo enabled system will say as an answer.
 
 #### SSML Editor
 
-In addition to regular text output, Alexa supports SSML which enables the admin to define the way the output is pronounced.
+In addition to regular text output, Alexa supports SSML, which enables the admin to define the way the output is pronounced.
 
 !!! warning "Multiple voice outputs"
     If more than one Say Node is hit in one Flow execution using the Alexa Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
@@ -37,7 +45,7 @@ In addition to regular text output, Alexa supports SSML which enables the admin 
 #### Home Cards
 
 !!! warning "Multiple Cards"
-   If more than one Card is being output during one Flow execution, only the last one will be sent.
+    If more than one Card is being output during one Flow execution, only the last one will be sent.
 
 Defines an optional additional Card that is available to the user through a connected Alexa app. They can be used to provide additional information that is not perceptible without a screen.
 
@@ -104,7 +112,7 @@ The following Facebook (Meta) Messenger Templates are available:
     ```
 
 !!! danger "Location Button Deprecation"
-    The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
+    The Quick Reply Button "Location" to send a user location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
 
 ## Webchat
 
@@ -125,7 +133,7 @@ The Webchat will render HTML markup for outputs from the DEFAULT tab's text as w
   <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
 </figure>
 
-The **LINE** tab provides two methods for creating and editing a message which is only for the **LINE** channel:
+The **LINE** tab provides two methods for creating and editing a message, which is only for the **LINE** channel:
 
 - **Text** for sending text message responses
 - **Custom JSON** for defining more complex messages and templates
@@ -148,7 +156,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
 
 !!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Make sure the TwiML provided in the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 
@@ -171,7 +179,7 @@ It has some features listed in the [Twilio documentation](https://www.twilio.com
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
 !!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Make sure the TwiML provided in the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 
@@ -182,7 +190,7 @@ It has some features listed in the [Twilio documentation](https://www.twilio.com
 </figure>
 
 !!! note "Teams Cards"
-    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint](../../../deploy/endpoint-reference/azure-bot-services.md) page for information on how to send messages.
+    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint](../../deploy/endpoint-reference/azure-bot-services.md) page for information on how to send messages.
     <!-- need to change the link above  -->
 
 <div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
@@ -197,7 +205,7 @@ It has some features listed in the [Twilio documentation](https://www.twilio.com
 
 ### Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../../release-notes/4.48.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
 
 To activate a Voice Gateway channel:
 
@@ -205,24 +213,24 @@ To activate a Voice Gateway channel:
 2. From the list, select **Voice Gateway**.
 3. In the **Text** field, add SSML markup to adjust the AI Agent's output speech.
 
-Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../voice/voice-gateway/parameter-details.md).
+Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../node-reference/voice/voice-gateway/parameter-details.md).
 These configurations are also available in the following Nodes:
 
-- [Question](question.md)
-- [Optional Question](optional-question.md)
-- [Set Session Config](../voice/voice-gateway/set-session-config.md)
-- [Play](../voice/voice-gateway/play.md)
-- [Session Speech Parameters Config](../voice/generic/session-speech-parameters-config.md)
+- [Question](../node-reference/basic/question.md)
+- [Optional Question](../node-reference/basic/optional-question.md)
+- [Set Session Config](../node-reference/voice/voice-gateway/set-session-config.md)
+- [Play](../node-reference/voice/voice-gateway/play.md)
+- [Session Speech Parameters Config](../node-reference/voice/generic/session-speech-parameters-config.md)
 
 ### 8x8
 
 The **8x8** tab provides three methods for creating and editing messages within the 8x8 channel.
 
-| Type          | Description                                                                                                                             |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | A simple text message.                                                                                                                  |
-| Custom JSON   | Can contain a valid 8x8 message object.                                                                                                 |
-| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../../deploy/endpoints/content-conversion.md). |
+| Type          | Description                                                                                                                          |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Text          | A simple text message.                                                                                                               |
+| Custom JSON   | Can contain a valid 8x8 message object.                                                                                              |
+| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../deploy/endpoints/content-conversion.md). |
 
 ??? info "Custom JSON example"
 
@@ -290,3 +298,8 @@ The **Bandwidth** tab provides two methods to create and edit messages that are 
       ]
     }
     ```
+## More Information
+
+- [Say Node](../node-reference/basic/say.md)
+- [Question Node](../node-reference/basic/question.md)
+- [Optional Question Node](../node-reference/basic/optional-question.md)
