@@ -9,13 +9,13 @@ hidden: false
 Cognigy provides a wide range of Endpoints for its conversational AI platform.
 Not all of these Endpoints can correctly convert your content to the desired output type.
 
-The table below shows the [output types](../../build/node-reference/basic/say.md#output-types)
-that Cognigy can provide for various Endpoints and other services,
+The table below shows the [output types](../../build/node-reference/basic/say.md#output-type--default-ai-channel-)
+that Cognigy can provide for various Endpoints and other components,
 such as the Interaction Panel, xApp: Show Adaptive Card Node, and Live Agent. 
 
 If the Endpoint does not support the selected output type, the system returns a fallback text as a default output.
 The following table shows whether Cognigy.AI will convert the respective output type (+), use the fallback text (-),
-or indicate that it is not applicable (N/A) to a particular service.
+or indicate that it is not applicable (N/A) to a particular component.
 
 | Component, Endpoint / Output Type | Text | Text with Quick Replies | Gallery | Text with Buttons | List | Audio | Image | Video | JSON/XML | Adaptive Card (including supported versions) |
 |-----------------------------------|------|-------------------------|---------|-------------------|------|-------|-------|-------|----------|----------------------------------------------|
