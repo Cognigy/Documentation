@@ -26,7 +26,7 @@ Remember to label all UI elements in your Webchat to explain their purpose clear
 Provide users with descriptive labels for each interactive element, including links, text on buttons, and forms.
 Make sure the visible and non-visible text is meaningful to help users navigate the screen using headings or links.
 
-Additionally, include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md#output-type--default-ai-channel-) that contain images.
+Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md#output-type--default-ai-channel-) that contain images.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/image-alt-text.png" width="100%" />
@@ -35,7 +35,11 @@ Additionally, include alternative (Alt) text to describe images for users who ca
 ### Adaptive Cards
 
 When you use the **Adaptive Card** output type in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, ensure that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/) contains a title with meaningful text and that the text has a hierarchical structure. The following parameters need to be added to the JSON of the Adaptive Card:
+or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes,
+ensure
+that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/) contains a title with meaningful text
+and that the text has a hierarchical structure.
+The following parameters need to be added to the JSON of the adaptive card:
 
 - Each field contains a `label` parameter with meaningful text to title the field.
 - Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an adaptive card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
@@ -107,12 +111,12 @@ For video and audio, provide the same content in an alternate format, such as a 
 An audio track should be provided along with the transcript for this track.
 In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
 or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Audio** output type,
-add the audio file and paste the transcript into the **Audio Alternative Text** field:
+add the audio file and paste the transcript into the **Audio Alternative Text** field.
 
 To convert your audio into text, you can use third-party tools such as [Transcriptor](https://transkriptor.com/),
 [Sonix](https://sonix.ai/), and others.
 
-The audio transcript should have the following format:
+The audio transcript can have the following format:
 
 ???+ note "Audio Transcript Sample"
       ```txt
@@ -139,8 +143,7 @@ The audio transcript should have the following format:
 
 The transcript should accurately reflect the number of speakers and their lines, include all the voice content present in the audio, and account for any background music.
 
-In the Webchat widget,
-the transcript will be available under the **Download Transcript** button and accessible in `.txt` format.
+In Webchat, the transcript will be available in the audio widget under the **Download Transcript** button and accessible in `.txt` format.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/audio-transcript.png" width="100%" />
@@ -167,7 +170,7 @@ you need to paste a vidio transcript into the **Video Alternative Text** field.
 To convert your video into text, you can use third-party tools such as [Transcriptor](https://transkriptor.com/),
 [Sonix](https://sonix.ai/), and others.
 
-The video transcript should have the following format:
+The video transcript can have the following format:
 
 ???+ note "Video Transcript Sample"
 
@@ -187,8 +190,7 @@ The video transcript should have the following format:
       [00:37] Speaker 1: Thank you for watching, and don't forget to subscribe for more tutorials.
       ```
 
-In the Webchat widget,
-the transcript will be available under the **Download Transcript** button and accessible in `.txt` format.
+In Webchat, the transcript will be available in the video widget under the **Download Transcript** button and accessible in `.txt` format.
 
 #### Captions
 
@@ -253,8 +255,7 @@ The file that includes captions should have the following `.vtt` format:
       [Music fades out]
       ```
 
-In the Webchat v3 widget,
-the captions will be available under ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions** and accessible in `.txt` format.
+In Webchat, the captions will be available in the video widget under ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions** and accessible in `.txt` format.
 
 ## Increase Text Visibility
 
@@ -277,8 +278,8 @@ You can determine the contrast ratio of your Webchat using the browser DevTools.
 3. In the **Styles** panel on the right, find the `color` property for the text or the `background-color` property for the background.
 4. Click the color swatch next to the `color` or `background-color` value to open the color picker.
 5. Look for the **Contrast Ratio** section below the color values in the color picker. The contrast ratio will be displayed, showing whether the colors meet the WCAG guidelines:
-    - **Passes** — shows a checkmark if the ratio meets AA or AAA standards for normal or large text.
-    - **Fails** — shows if the ratio does not meet the standards and suggests adjustments.
+    - **Passes** — shows a checkmark ✅ if the ratio meets AA or AAA standards for normal or large text.
+    - **Fails** — shows a prohibited symbol 🚫 if the ratio does not meet AA or AAA standards for normal or large text.
 6. Use the color picker to adjust the color values. This tool updates the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click on the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
 
 <figure>
