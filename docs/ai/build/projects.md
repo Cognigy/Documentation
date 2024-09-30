@@ -50,14 +50,13 @@ Complete the Project setup with the Live Agent feature by following the steps as
 
 ## Search Projects
 
+The projects are sorted by **last activity**, with the most recently updated projects displayed at the top of the list.
 To search for projects in Cognigy.AI, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. On the left side of the screen, click on the **search bar**.
 3. Enter the name of the project you're looking for.
 4. Select the project you want to edit.
-
-The projects are sorted by **last activity**, with the most recently updated projects displayed at the top of the list.
 
 ## Copy the Project ID
 
