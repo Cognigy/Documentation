@@ -13,10 +13,10 @@ Cognigy encourages conversation designers to build solutions with accessibility 
 
 This page outlines the following recommendations for implementing essential accessibility features:
 
-- [Label UI Elements](#label-ui-elements)
-- [Add Transcripts and Captions for Media Files](#add-transcripts-and-captions-for-media-files)
-- [Increase Text Visibility](#increase-text-visibility)
-- [Revise Extensions](#revise-extensions)
+- [Label UI elements](#label-ui-elements)
+- [Add transcripts and captions for media files](#add-transcripts-and-captions-for-media-files)
+- [Increase text visibility](#increase-text-visibility)
+- [Revise extensions](#revise-extensions)
 
 These measures are intended to make it easier for everyone to use your Webchat.
 
@@ -41,7 +41,7 @@ that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/
 and that the text has a hierarchical structure.
 The following parameters need to be added to the JSON of the adaptive card:
 
-- Each field contains a `label` parameter with meaningful text to title the field.
+- Each field contains the `label` parameter with meaningful text to title the field.
 - Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an adaptive card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
 
 <figure>
@@ -255,7 +255,7 @@ The file that includes captions should have the following `.vtt` format:
       [Music fades out]
       ```
 
-In Webchat, the captions will be available in the video widget under ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions** and accessible in `.txt` format.
+In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions**.
 
 ## Increase Text Visibility
 
