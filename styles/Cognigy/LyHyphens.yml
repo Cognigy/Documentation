@@ -1,0 +1,13 @@
+extends: existence
+message: "'%s' doesn't need a hyphen."
+level: error
+ignorecase: false
+nonword: true
+action:
+  name: edit
+  params:
+    - regex
+    - "-"
+    - " "
+tokens:
+  - '\b[^\s-]+ly-\w+\b'
