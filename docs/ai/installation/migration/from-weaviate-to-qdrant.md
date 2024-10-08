@@ -124,7 +124,8 @@ To enable Qdrant, follow these steps:
       enabled: true
       metrics:
         serviceMonitor:
-          enabled: true
+          # You can enable this only if are running the Cognigy Monitoring Stack or kube-prometheus-stack in your cluster.
+          enabled: false
     
     # Enable the storage class for qdrant
     # Set the following for AWS

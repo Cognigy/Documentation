@@ -25,6 +25,7 @@ nav:
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md
+          - ai/build/nodes/channels.md
       - Node Reference:
         - ai/build/node-reference/overview.md
         - Basic:
@@ -437,6 +438,7 @@ nav:
       - Endpoint Configuration:
         - webchat/v3/configuration.md
         - webchat/v3/metadata.md
+      - webchat/v3/accessibility.md
       - webchat/v3/embedding.md
 
     - 💬 Webchat v2 (Deprecated):
@@ -636,6 +638,8 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.8x:
+        - release-notes/4.86.md
+        - release-notes/4.85.md
         - release-notes/4.84.md
         - release-notes/4.83.md
         - release-notes/4.82.md

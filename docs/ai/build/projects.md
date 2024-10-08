@@ -17,7 +17,7 @@ AI Agents can deploy on a wide range of channels.
 ## Create a Project
 
 1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click **Create Project**.
+2. In the upper-left corner, click the **Plus button** to create a project.
 3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
 4. Select the primary language for your Project.
 5. Select a color that will be associated with your Project.
@@ -47,6 +47,16 @@ If the Live Agent Account is already configured for your organization, you can c
     - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
 
 Complete the Project setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
+
+## Search Projects
+
+The projects are sorted by **last activity**, with the most recently updated projects displayed at the top of the list.
+To search for projects in Cognigy.AI, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. On the left side of the screen, click on the **search bar**.
+3. Enter the name of the project you're looking for.
+4. Select the project you want to edit.
 
 ## Copy the Project ID
 
