@@ -72,7 +72,7 @@ Intents can be configured with direct output (answers) in the form of so-called 
   <img class="image-center" src="../../../../_assets/ai/empower/nlu/intent_settings_default_replies_training.png" width="100%" />
 </figure>
 
-You can override the setting to use the **Default Replies** as example sentences per each individual Intent. Per default, the setting is set to **Use Flow Settings**, meaning we will use the Flow [Settings](../../administer/access/project-settings.md).
+You can override the setting to use the **Default Replies** as example sentences per each individual Intent. Per default, the setting is set to **Use Flow [Settings](../../administer/access/project-settings.md)**.
 
 If this feature is enabled, the NLU will also use the configured default replies to train, improving the match rate for the configured intent.
 
