@@ -7,6 +7,8 @@ hidden: false
 
 # Projects
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.86-blue.svg)](../../release-notes/4.86.md)
+
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
 Within a project, you can create AI Agents.
@@ -50,13 +52,14 @@ Complete the Project setup with the Live Agent feature by following the steps as
 
 ## Search Projects
 
-The projects are sorted by **last activity**, with the most recently updated projects displayed at the top of the list.
-To search for projects in Cognigy.AI, follow these steps:
+The Projects are sorted by last activity, with the most recently updated Projects displayed at the top of the list.
+
+To search for Projects in Cognigy.AI, follow these steps:
 
 1. Go to the Cognigy.AI interface.
-2. On the left side of the screen, click on the **search bar**.
-3. Enter the name of the project you're looking for.
-4. Select the project you want to edit.
+2. On the left side of the screen, navigate to the **Search Projects** filed.
+3. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
+4. Select the Project you want to edit.
 
 ## Copy the Project ID
 

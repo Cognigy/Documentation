@@ -122,7 +122,7 @@ In **Chat** mode, you can use additional settings:
 
 #### Voice Call
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/earlier-versions/index.md)
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/earlier-versions/overview.md)
 
 !!! note "Feature availability"
     - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
