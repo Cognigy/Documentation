@@ -40,7 +40,7 @@ window.addEventListener("message", function (event) {
 
 In the Copilot: HTML Tile Node, you can enhance your HTML content by utilizing the [React](https://react.dev/) or [Angular](https://angular.dev/) libraries.
 These libraries allow you to seamlessly display dynamic widgets within your workspace. 
-To use these libraries in the Copilot: HTML Tile Node, you need to include the respective libraries in your HTML code.
+To use these libraries in the Copilot: HTML Tile Node, you need to include them in your HTML code.
 
 Example of using React:
 
