@@ -6,7 +6,10 @@ The Cognigy Documentation team develops, maintains, and manages the Cognigy styl
 
 ## Anatomy of the Linter
 
+The Cognigy Documentation contains the following :
 
+- `.vale.ini` - the configuration file to define settings, such as the paths to styles and specific rules to apply. This file is located at the root of the documentation repo.
+- `styles` - the folder with a set of rules and checks, allowing for tailored linting according to the Cognigy Style Guide.
 
 ## How to Run the Linter
 
