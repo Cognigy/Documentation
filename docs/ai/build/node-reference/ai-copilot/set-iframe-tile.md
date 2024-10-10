@@ -22,6 +22,51 @@ This Node in Cognigy allows you to embed external websites directly into the AI 
 | IFrame URL | URL           | The URL to render inside the Widget.                     |
 | JSON Data  | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
+## Receiving JSON Data
+
+JSON data is passed into the HTML code using the  [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. 
+To receive and process the JSON data in your tile, add an event listener to your website and handle the data accordingly.
+
+```js
+window.addEventListener("message", function (event) {
+  console.log("Content of message: " + event.data);
+});
+``` 
+
+Example of an HTML page hosted on your website:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Example</title>
+</head>
+<body>
+<script>
+        let i = 0; // Handle postMessage from iframe parent
+
+        // Update the body document content every second
+        setInterval(function () {
+            i++;
+            document.body.innerHTML = '<h1>Iframe Tile ' + i + '</h1>';
+        }, 1000);
+
+        // Listen for messages from the parent window
+        window.addEventListener('message', function (event) {
+            // We only accept messages from ourselves
+            // if (event.source != window) return; // Uncomment this line if needed
+            console.log('Content of message: ' + event.data);
+        });
+    </script>
+<h1>Iframe Tile</h1>
+</body>
+</html>
+```
+
+## Postback
+
+{! _includes/ai/nodes/postback.md !}
+
 ## More Information
 
 - [Copilot: HTML Tile](set-html-tile.md)
