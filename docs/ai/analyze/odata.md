@@ -197,7 +197,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | flowReferenceId    | The ID of the Flow.                                                                             | String   | 66ceb9cc-ac5b-4cdd-9f4b-8a48dfbb35d9                             |
 | entrypoint         | The ID of the Project or Snapshot used by the Endpoint.                                         | String   | 621d3deb87016d3855ec0c92                                         |
 | ip                 | The IP address from which the request originated.                                               | String   | 78.143.45.111                                                    |
-| contactId          | The ID of the connecting user.                                                                  | String   | myContactID                                                      |
+| contactId          | The hash of the user ID.                                                                        | String   | 99ea95befe61812656bf963ba7d44ab7                                 |
 | sessionId          | The Session ID.                                                                                 | String   | 5a91d194fde28b0011ce2425                                         |
 | inputId            | The ID of the input message.                                                                    | String   | 5a91d194fde28b0011ce2424                                         |
 | inputText          | The input text.                                                                                 | String   | Hello World!                                                     |
