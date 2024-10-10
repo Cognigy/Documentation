@@ -1,5 +1,8 @@
-The Postback feature allows you to send data either back to the Flow or directly to the chat with the user.
-This feature can be useful for updating the state of your widget based on user interactions.
+The Postback feature allows you
+to send data either back to the system to view [logs](https://docs.cognigy.com/ai/test/logs/) or directly to the widget interface.
+This feature can be useful for updating the state of your widget based on human agent interactions.
+These interactions can include actions such as submitting forms,
+updating display elements, or notifying the system of changes made by the human agent.
 
 Follow these steps to implement postback for your widget:
 
@@ -30,7 +33,7 @@ Follow these steps to implement postback for your widget:
 
 In this example, the `SDK.postback` function sends the value of `name` back to the user.
 If `name` is falsy, meaning the user did not enter a name, the `else` block is executed, and the function calls `setMessage('Please enter your name.');`.
-This system prompts the user to provide their name, ensuring that they are aware of the required input.
+This message will appear in the widget, prompting the user to provide their name and ensuring they are aware of the required input.
 
 ```html
 <!DOCTYPE html>

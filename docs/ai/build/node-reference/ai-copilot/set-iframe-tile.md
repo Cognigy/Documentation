@@ -24,7 +24,7 @@ This Node in Cognigy allows you to embed external websites directly into the AI 
 
 ## Receiving JSON Data
 
-JSON data is passed into the HTML code using the  [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. 
+JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. 
 To receive and process the JSON data in your tile, add an event listener to your website and handle the data accordingly.
 
 ```js
