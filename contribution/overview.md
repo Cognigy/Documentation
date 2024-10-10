@@ -19,7 +19,7 @@ To contribute to Cognigy product documentation, ensure that you've Docker instal
     --mount type=bind,source="$(pwd)",target=/app \
     doc-local:latest
     ``` 
-3. If you are a Mac user, then run it with `--platform linux/amd64` 
+3. If you are a Mac user, then run it with `--platform linux/amd64`: 
 
     ```bash
     docker run \

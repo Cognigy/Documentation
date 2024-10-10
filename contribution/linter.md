@@ -1,6 +1,14 @@
 # Linter
 
-## How to Run Vale Linter
+_[Vale](https://vale.sh/)_ is a linter for writers, open-source and customizable. Unlike traditional code linters, it checks the style, grammar, and consistency of written content such as documentation, blogs, and technical writing.
+
+The Cognigy Documentation team develops, maintains, and manages the Cognigy style guide linter. It is built on the Vale Linter and includes style rules and documentation best practices tailored for Cognigy.
+
+## Anatomy of the Linter
+
+
+
+## How to Run the Linter
 
 1. [Install Vale](https://vale.sh/docs/vale-cli/installation/) by following the instructions for your operating system. 
 2. To verify that Vale is installed, run the following command in your terminal:
@@ -43,7 +51,11 @@
        vale docs/ai/
        ```
 
-5. Vale will display any issues found in your files, along with suggestions. Review the feedback carefully to understand where and how to improve the text.
+5. Vale will display any issues found in your files. The issues can have the following types:
+    - `error` - critical issues must be fixed. Note that exceptions are always possible. Consider the context of the sentence.
+    - `warning` - potential issues that may affect the readability or clarity of your writing.
+    - `suggestion` - optional recommendations that can help improve your writing style or consistency.
+  Review the feedback carefully to understand where and how to improve the text.
 6. Make the necessary changes to your files based on the feedback from Vale.
 7. After fixing the issues, rerun Vale to ensure that they have been resolved.
 

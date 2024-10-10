@@ -86,3 +86,12 @@ AI Copilot workspace
 workspace
 xApps
 xApp
+MongoDB
+PostgreSQL
+Helm chart
+OData
+[Hh]uman agent
+docx
+DOCX
+PDF
+pdf
