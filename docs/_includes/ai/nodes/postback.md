@@ -33,7 +33,7 @@ Follow these steps to implement postback for your widget:
 
 In this example, the `SDK.postback` function sends the value of `name` back to the user.
 If `name` is falsy, meaning the user did not enter a name, the `else` block is executed, and the function calls `setMessage('Please enter your name.');`.
-This message will appear in the widget, prompting the user to provide their name and ensuring they are aware of the required input.
+This message will appear in the widget, prompting the user to provide their name and reminding them of the required input.
 
 ```html
 <!DOCTYPE html>
