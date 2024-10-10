@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../release-notes/4.81.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.86-blue.svg)](../../../../release-notes/4.86.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt.png" width="80%" />
@@ -143,6 +143,7 @@ Examples:
 
 | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Log to System Logs             | Toggle | Log errors to the system logs. They can be viewed on the [Logs](../../../test/logs.md) page of your Project. The parameter is inactive by default.                                                                                                                                                                                                                                                     |
 | Select Error Handling Approach | Select | You can select one of the Error Handling options:<br>- **Stop Flow Execution** — terminate the current Flow execution.<br>- **Continue Flow Execution** — allow the Flow to continue executing, bypassing the error and proceeding to the next steps.<br>- **Go to Node** — redirect the workflow to a specific Node in the Flow, which can be useful for error recovery or customized error handling. |
 | Error Message (optional)       | Text   | The parameter appears when **Continue Flow Execution** is selected. Add an message to output if the LLM Prompt Node fails.                                                                                                                                                                                                                                                                             |
 | Select Flow                    | Select | The parameter appears when **Go to Node** is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                       |
