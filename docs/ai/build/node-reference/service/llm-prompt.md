@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../release-notes/4.81.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.86-blue.svg)](../../../../release-notes/4.86.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt.png" width="80%" />
