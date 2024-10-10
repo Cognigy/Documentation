@@ -26,6 +26,16 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 | HTML Content | HTML          | The HTML content to render inside the Widget.            |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
+## Receiving JSON Data
+
+JSON Data is passed into the HTML code by using the [postMessage method](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). In order to receive and process passed JSON in your tile, you need to add an event listener and handle the data accordingly.
+
+```JavaScript
+window.addEventListener("message", function (event) {
+  console.log("Content of message: " + event.data);
+});
+``` 
+
 ## Using React or Angular in the HTML Tile
 
 It is possible to use the HTML Tile to display React or Angular pages. To do this, simply include the respective libraries in your code.
