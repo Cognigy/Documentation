@@ -1,6 +1,7 @@
 ---
 title: "Copilot: HTML Tile"
 slug: "set-html-tile"
+description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the AI Copilot Workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
 hidden: false
 ---
 
@@ -12,11 +13,9 @@ hidden: false
 
 ## Description
 
-This Node allows you to display any HTML content in the AI Copilot Workspace. You can create custom layouts and designs for presenting information to a human agent. HTML content can for exmaple include text, images, videos, links, but also scripts. The Set HTML Tile Node is useful for displaying complex information.
+This Node allows you to display HTML content in the AI Copilot Workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts. The Set HTML Tile Node is useful for displaying complex information.
 
-Technically, the HTML content will be injected into an [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) on the workspace side, so any restrictions pertaining to iFrames in general also apply here.
-
-
+Technically, the HTML content will be injected into an [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) on the workspace side, so any general restrictions on iFrames also apply to this case.
 
 ## Settings
 
@@ -28,9 +27,10 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 
 ## Receiving JSON Data
 
-JSON Data is passed into the HTML code by using the [postMessage method](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). In order to receive and process passed JSON in your tile, you need to add an event listener and handle the data accordingly.
+JSON data is passed into the HTML code
+using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. To receive and process passed JSON in your tile, add an event listener and handle the data accordingly.
 
-```JavaScript
+```js
 window.addEventListener("message", function (event) {
   console.log("Content of message: " + event.data);
 });
@@ -38,11 +38,11 @@ window.addEventListener("message", function (event) {
 
 ## Using React or Angular in the HTML Tile
 
-It is possible to use the HTML Tile to display React or Angular pages. To do this, simply include the respective libraries in your code.
+You can use the HTML Tile to display [React](https://react.dev/) or [Angular](https://angular.dev/) pages. To do this, include the respective libraries in your code.
 
-See below for a simple example with React.
+Example of using React:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
