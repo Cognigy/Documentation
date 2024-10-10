@@ -27,8 +27,8 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 
 ## Receiving JSON Data
 
-JSON data is passed into the HTML code
-using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. To receive and process passed JSON in your tile, add an event listener and handle the data accordingly.
+JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
+To receive and process the passed JSON in your tile, add an event listener and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
@@ -36,9 +36,11 @@ window.addEventListener("message", function (event) {
 });
 ``` 
 
-## Using React or Angular in the HTML Tile
+## Using React or Angular
 
-You can use the HTML Tile to display [React](https://react.dev/) or [Angular](https://angular.dev/) pages. To do this, include the respective libraries in your code.
+In the Copilot: HTML Tile Node, you can enhance your HTML content by utilizing the [React](https://react.dev/) or [Angular](https://angular.dev/) libraries.
+These libraries allow you to seamlessly display dynamic widgets within your workspace. 
+To use these libraries in the Copilot: HTML Tile Node, you need to include the respective libraries in your HTML code.
 
 Example of using React:
 
