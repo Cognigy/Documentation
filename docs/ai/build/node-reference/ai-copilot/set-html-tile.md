@@ -25,16 +25,45 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 | HTML Content | HTML          | The HTML content to render inside the Widget.            |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
-## Receiving JSON Data
+## Receiving JSON Data from the Flow
 
-JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
+When a HTML Tile Node is used, JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
 To receive and process the passed JSON in your tile, add an event listener and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
   console.log("Content of message: " + event.data);
 });
-``` 
+```
+
+> If you want to send data to your tile without updating the content, simply send the same content without changes again, together with the data. The tile will only update if the html content has changed.
+
+## Sending JSON Data back to the Flow
+
+You can send data back to the Flow by using the following code in your HTML:
+
+```js
+// sending a string back to the Flow
+SDK.postback('yes');
+
+// sending an object back to the Flow
+SDK.postback({ "key": "value" });
+```
+
+This will send the following payload back to your Flow:
+
+```json
+{
+  "data": {
+    "_cognigy": {
+      "_agentAssist": {
+        "type": "submit",
+        "payload": "yes"
+      }
+    }
+  }
+}
+```
 
 ## Using React or Angular
 
@@ -64,8 +93,8 @@ Example of using React:
 
       // this event listener processes incoming data updates
       window.addEventListener("message", function (event) {
-		    console.log("Content of message: " + event.data);
-	    });
+        console.log("Content of message: " + event.data);
+      });
 
       function ReactWidget() {
         const [name, setName] = useState('');

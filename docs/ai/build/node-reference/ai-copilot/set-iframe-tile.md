@@ -22,6 +22,19 @@ This Node in Cognigy allows you to embed external websites directly into the AI 
 | IFrame URL | URL           | The URL to render inside the Widget.                     |
 | JSON Data  | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
+## Passing JSON Data into the IFrame
+
+When an IFrame Tile Node is used, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
+To receive and process the passed JSON in your tile, add an event listener and handle the data accordingly.
+
+```js
+window.addEventListener("message", function (event) {
+  console.log("Content of message: " + event.data);
+});
+```
+
+> If you want to send data to your tile without updating the content, simply send the IFrame URL without changes again, together with the data. The tile will only update if the IFrame URL has changed.
+
 ## More Information
 
 - [Copilot: HTML Tile](set-html-tile.md)
