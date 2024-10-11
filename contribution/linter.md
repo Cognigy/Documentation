@@ -1,15 +1,28 @@
 # Linter
 
-_[Vale](https://vale.sh/)_ is a linter for writers, open-source and customizable. Unlike traditional code linters, it checks the style, grammar, and consistency of written content such as documentation, blogs, and technical writing.
+_[Vale](https://vale.sh/)_ is a linter for writers, open-source and customizable tool. Unlike traditional code linters, it checks the style, grammar, and consistency of written content such as documentation, blogs, and technical writing.
 
-The Cognigy Documentation team develops, maintains, and manages the Cognigy style guide linter. It is built on the Vale Linter and includes style rules and documentation best practices tailored for Cognigy.
+The Cognigy Documentation team develops, maintains, and manages the Cognigy Documentation linter.
+It is built on the Vale Linter
+and includes style rules and documentation best practices tailored for the [Cognigy Documentation](https://docs.cognigy.com/).
 
 ## Anatomy of the Linter
 
-The Cognigy Documentation contains the following :
+The Cognigy Documentation linter contains the following components:
 
-- `.vale.ini` - the configuration file to define settings, such as the paths to styles and specific rules to apply. This file is located at the root of the documentation repo.
-- `styles` - the folder with a set of rules and checks, allowing for tailored linting according to the Cognigy Style Guide.
+- [configuration file](#configuration-file)
+- [styles](#styles)
+
+### Configuration File
+
+- `.vale.ini` is the configuration file that defines settings, such as the paths to styles and specific rules to apply. This file is located at the root of the documentation repo.
+
+### Styles
+
+- `styles` - the folder with rules and checks for customized linting based on the [Cognigy Documentation Style Guide](https://login.microsoftonline.com/4a7853bd-0ffb-40ff-904c-b20996f4be78/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=D5DEC8FD8384F197062A3C293F6875D6F23A84E9E37ACCCC%2D8DAA84DCBE23DC31D6147A2371797C31A503539F0ADF7AA9F34DA43EF75B7718&redirect%5Furi=https%3A%2F%2Fcognigy%2Dmy%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=28ca58a1%2D80de%2D9000%2Df7be%2D6a9b1ecf34cc&sso_reload=true). This folder is located at the root of the documentation repo.
+   The `styles` folder contains the following sub-folders:
+    - `Cognigy` - contains a list of `.yml` files; each file is a separate grammar or style rule.
+    - `config/vocabularies/Docs` - contains terminology that is accepted or rejected by the linter.
 
 ## How to Run the Linter
 
@@ -23,7 +36,7 @@ The Cognigy Documentation contains the following :
    ```bash
    cd path/to/your/repository
    ```
-4. Run Vale Linter by using one of the following commands:
+4. Run the Vale linter by using one of the following commands:
 
      - To lint a specific file, run:
      
@@ -58,7 +71,23 @@ The Cognigy Documentation contains the following :
     - `error` - critical issues must be fixed. Note that exceptions are always possible. Consider the context of the sentence.
     - `warning` - potential issues that may affect the readability or clarity of your writing.
     - `suggestion` - optional recommendations that can help improve your writing style or consistency.
-  Review the feedback carefully to understand where and how to improve the text.
-6. Make the necessary changes to your files based on the feedback from Vale.
-7. After fixing the issues, rerun Vale to ensure that they have been resolved.
+    Review the feedback carefully to understand where and how to improve the text.
+    This feedback has the following format:
 
+    ```txt
+    docs\ai\test\logs.md 
+    6:3     error       Use 'logs' instead of 'Logs'.   Vale.Terms
+    
+    39:5    suggestion  Try to keep your sentence       Cognigy.SentenceLenghth
+                        length to 25 words or fewer.
+    
+    40:117  warning     Avoid temporal words like       Cognigy.Tense
+                        'currently'.
+    ```
+    where `docs\ai\test\logs.md` is the file where linter found issues.
+6. Open the files where the linter found issues and make the necessary changes based on the feedback.
+7. After fixing the issues, rerun the linter to ensure that they have been resolved.
+
+## More Information
+
+- [Vale: Quick Start](https://vale.sh/docs/vale-cli/structure/#quick-start)
