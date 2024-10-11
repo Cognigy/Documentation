@@ -1,0 +1,9 @@
+Cognigy AI
+node
+project
+flow
+[Pp]lease
+[Uu]nfortunately
+[Ff]ortunately
+VoiceGateway
+agent

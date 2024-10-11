@@ -1,0 +1,11 @@
+extends: existence
+message: "Don't use internet slang and its abbreviations such as '%s'."
+ignorecase: true
+level: error
+tokens:
+  - 'tl;dr'
+  - btw
+  - ymmv
+  - asap
+  - imo
+  - fyi
