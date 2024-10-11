@@ -728,6 +728,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - content.tabs.link
+    - content.code.copy
 
     # render navigation bar at the top of the page
     - navigation.tracking
