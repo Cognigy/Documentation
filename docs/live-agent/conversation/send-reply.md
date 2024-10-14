@@ -184,7 +184,8 @@ To delete a private note you have already sent, follow these steps:
 
 ## Track Human Agent Typing Events
 
-To monitor when human agents start and stop typing, you can set up a WebSocket connection. This connection allows you to monitor typing events in real time using a webhook, which enables immediate updates and actions.
+To monitor when human agents start and stop typing, you can set up a WebSocket connection. This connection allows you to monitor typing events in real time using a webhook, which enables immediate updates.
+In this implementation, Live Agent utilizes [CloudEvents](https://github.com/cloudevents/spec), which serve as a standardized way to describe and transport event data across different systems and services.
 
 By analyzing typing patterns during conversations, you can identify peak agent activity and pinpoint any bottlenecks in response times. This information can be used to enhance staffing and streamline workflows.
 
@@ -212,7 +213,7 @@ After configuration, your webhook will receive the event payload in the followin
 
 | Parameter               | Type   | Description                                                                                                                                                                                                                                                            |
 |-------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| specversion             | String | Indicates the version of the CloudEvents specification being used, for example, `1.0`.                                                                                                                                                                                 |
+| specversion             | String | Indicates the version of the [CloudEvents](https://github.com/cloudevents/spec) specification being used. For example, `1.0`.                                                                                                                                          |
 | type                    | String | Specifies the type of event. The following events are available: <br>- `ai.cognigy.live-agent.conversation.typing_off` — indicates when a human agent stops typing. <br>- `ai.cognigy.live-agent.conversation.typing_on` — indicates when a human agent starts typing. |
 | source                  | String | The source of the event, typically a URL identifying the origin. For example, `http://127.0.0.1:3000`.                                                                                                                                                                 |
 | subject                 | String | The context for the event, specifying the entity. For example, `conversation.2`.                                                                                                                                                                                       |
