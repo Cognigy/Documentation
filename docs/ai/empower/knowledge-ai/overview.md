@@ -191,6 +191,8 @@ The Editor provides a user-friendly interface that enables you to manipulate the
 Users can modify the text, add new information, delete sections,
 or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
 
+Note that all chunks must contain some content in the Chunk Editor. You can't save empty chunks.
+
 <figure>
     <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/chunk-editor.png" width="100%" />
 </figure>
