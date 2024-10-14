@@ -14,7 +14,7 @@ The queue is visible to agents on the **Mine** tab of the Conversation page, whe
 The provided examples show how the agent queue works:
 
 !!! note
-    The [conversation limits](../settings/account-settings.md#conversation-limit-per-agent) and specific queue behavior may vary depending on the Live Agent configuration and settings in use.
+    The [conversation limits](../../settings/account-settings.md#conversation-limit-per-agent) and specific queue behavior may vary depending on the Live Agent configuration and settings in use.
 
 **Example 1**
 
@@ -46,7 +46,7 @@ Conditions:
 - Conversations are assigned to an agent, but the agent still needs to send the first reply.
 - The Conversation limit is set to 2 conversations per agent.
 - There is one online agent available.
-- 3 conversations with different [priorities](conversation-routing/automatic-mode.md#additional-automatic-assignment-parameters) are created:
+- 3 conversations with different [priorities](../conversation-routing/automatic-mode.md#additional-automatic-assignment-parameters) are created:
     - Conversation 1 is Medium.
     - Conversation 2 is Low.
     - Conversation 3 is High.
@@ -56,5 +56,5 @@ Result: The agent is assigned Conversation 3 (High), followed by Conversation 1 
 
 ## More Information
 
-- [Conversation Routing: Automatic mode](conversation-routing/automatic-mode.md)
-- [Conversation Routing Overview](conversation-routing/overview.md)
+- [Conversation Routing: Automatic mode](../conversation-routing/automatic-mode.md)
+- [Conversation Routing Overview](../conversation-routing/overview.md)

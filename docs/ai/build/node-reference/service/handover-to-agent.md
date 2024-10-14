@@ -26,7 +26,7 @@ A handover process contains the following steps:
 
 2. **Integration with Agent Handover**. Once the **Handover to Agent** Node is triggered, it sends a handover request to the contact center configured in the [Endpoint Handover Settings](../../../deploy/endpoints/handover-settings.md), allowing a human agent to take over the conversation.
 
-3. **Flow Pausing and Resumption**. When a handover is initiated, the Flow pauses until the customer cancels the request or an agent finishes the conversation. Upon completion, the Flow resumes execution below the Handover to Agent Node.
+3. **Flow Pausing and Resumption**. When a handover is initiated, the Flow pauses until the end user cancels the request or an agent finishes the conversation. Upon completion, the Flow resumes execution below the Handover to Agent Node.
 
 4. **Handover Status**. The handover status can be:
     - **completed** — the agent finished the Handover.
@@ -101,12 +101,20 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
 
 ### Live Agent Settings
 
-| Parameter           | Description                                                                                                           | 
-|---------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Live Agent Inbox Id | Enter the Inbox ID that you obtained in the [previous step](../../../escalate/handover-reference/live-agent.md).      |
-| Skills              | Enter a list of skills that should be used to filter the available agents. For example, `technical support, billing`. |
-| Languages           | Enter a list of languages that should be used to filter the available agents. For example, `english, spanish`.        |
-| Priority            | Select a priority for the conversation from the list. For example, `Urgent`.                                          |
+| Parameter                   | Description                                                                                                                                                                            | 
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Live Agent Inbox Id         | Enter the Inbox ID that you obtained in the [previous step](../../../escalate/handover-reference/live-agent.md).                                                                       |
+| Skills                      | Enter a list of skills that should be used to filter the available agents. For example, `technical support, billing`.                                                                  |
+| Languages                   | Enter a list of languages that should be used to filter the available agents. For example, `english, spanish`.                                                                         |
+| Priority                    | Select a priority for the conversation from the list. For example, `Urgent`.                                                                                                           |
+| Get Queue Position          | Enable the system to retrieve the end user's current queue position. This parameter is inactive by default.                                                                            |
+| Update Interval             | Specify the interval, in seconds, for how often to receive updates on the queue status. This parameter appears if **Get Queue Position** is selected.                                  |
+| Get Estimated Wait Time     | Enable the retrieval of the estimated wait time for the end user. This parameter is inactive by default.                                                                               |
+| Wait Time Update Interval   | Set the interval, in seconds, for how often to receive updates on estimated wait time. This parameter appears if **Get Estimated Wait Time** is selected.                              |
+| Alternative Update          | The alternative update options when certain conditions are met. This parameter is inactive by default.                                                                                 |
+| Maximum Queue Position      | Set the threshold for the maximum queue position. If this threshold is reached, the alternative text will be sent. This parameter appears if **Alternative Update** is selected.       |
+| Maximum Estimated Wait Time | Define the maximum estimated wait time in milliseconds. If this duration is exceeded, the alternative text will be sent. This parameter appears if **Alternative Update** is selected. |
+| Alternative Text            | The message to be sent when either the maximum queue position or maximum wait time is reached. This parameter appears if **Alternative Update** is selected.                           |
 
 For more information, read the [Live Agent Handover Setup](../../../../live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md) documentation.
 
