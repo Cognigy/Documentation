@@ -83,7 +83,6 @@ To ensure Barge In works correctly after the call is transferred to the contact 
 
 ### User Input Timeout
 
-
 [![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
 
 This feature defines what should happen when there is no input from the user.
@@ -96,6 +95,24 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 | User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the AI Agent in time.                           |
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
+
+### Flow No Input Timeout
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
+
+This feature is designed for use cases where response delays occur in a flow, such as when utilizing large language models (LLMs), waiting for responses from external services, or managing complex processing tasks. It helps maintain user engagement by proactively delivering information or prompts during these delays.
+
+For example, you can inform end users that their request is being processed or that assistance is on the way.
+
+| Parameter                    | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Flow No Input Timeout | Toggle        | This parameter is disabled by default. When enabled, this setting plays a track or speaks a prompt while waiting for a response from the flow.                                                                                                                                                                                                                                                                                                                                                   |
+| Flow No Input Mode           | Dropdown      | This parameter is active only when **Enable Flow No Input Timeout** is enabled. Select one of the following modes: <br>**Speak** - outputs a spoken message, allowing you to communicate important information or prompts to the user.<br><br>**Play** - plays an audio track, such as music, sound effects, or pre-recorded messages.                                                                                                                                                           |
+| Flow No Input URL            | URL           | This parameter is active only when the **Play** option in **Enable Flow No Input Timeout** is selected. <br><br> Define the URL that will be played if the flow does not continue in time. MP3 and WAV files are supported.                                                                                                                                                                                                                                                                      |
+| Flow No Input Speech         | CognigyScript | This parameter is active only when the **Speak** option in **Enable Flow No Input Timeout** is selected. Define a prompt to be spoken if the Flow does not continue in time.                                                                                                                                                                                                                                                                                                                     |
+| Flow No Input Timeout        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. <br><br> Defines how frequently the voice AI Agent should retry to obtain input from the Flow before completing the call.                                                                                                                                                                                                                                                                                        |
+| Flow No Input Retries        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. Define how many times the AI Agent should retry to obtain input from the Flow before executing an action.                                                                                                                                                                                                                                                                                                        |
+| AI Agent Fails on Error      | Toggle        | This parameter is disabled by default. It defines a failure condition when the maximum number of retry attempts is reached. If [Call Failover](../../../../deploy/endpoint-reference/voice-gateway.md#call-failover) is enabled in the Voice Gateway Endpoint Settings, the call  the call will be transferred either to another voice AI Agent or to a human agent in the contact center.  If Call Failover is not enabled, the call will disconnect, leaving the user without further support. |
 
 ### DTMF
 
