@@ -16,6 +16,13 @@ Flows using these Nodes will continue to operate after the deprecation date.
 Before that date, we strongly recommend migrating from the third-party AudioCodes service to the native Cognigy product,
 [Voice Gateway](index.md), for smoother integration with your voice AI Agents.
 
+## Prerequisites
+
+- Add the `FEATURE_VG_AC_COMPATIBILITY_MODE` feature flag to the Cognigy.AI `values.yaml` file to activate the compatibility mode.
+- Note that when transferring settings from AudioCodes Nodes to Voice Gateway:
+    - Some parameter names may differ slightly, as well as the names of the Nodes.
+    - The values of some parameters may also vary slightly. If you notice a significant difference in the configuration, contact [Cognigy technical support](../help/get-help.md).
+
 ## Install Voice Gateway
 
 1. Install the [Voice Gateway Self-Service Portal](overview.md) as a SaaS or on-premises solution.
@@ -39,12 +46,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 
 You can use the AudioCodes Endpoint alongside the Voice Gateway Endpoint. First, test the AI Agent with the Voice Gateway Endpoint, and if the tests are successful, you can switch to the Voice Gateway Endpoint permanently.
 
-With Compatibility Mode enabled, you can simultaneously use both Voice Gateway and AudioCodes Nodes.
-
-Note that when transferring settings from AudioCodes Nodes to Voice Gateway:
-
-- Some parameter names may differ slightly, as well as the names of the Nodes.
-- The values of some parameters may also vary slightly. If you notice a significant difference in the configuration, contact [Cognigy technical support](../help/get-help.md).
+With Compatibility Mode enabled, you can simultaneously use both Voice Gateway and AudioCodes Nodes in a Flow.
 
 ## More Information
 
