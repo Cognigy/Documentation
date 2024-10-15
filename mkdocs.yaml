@@ -367,6 +367,7 @@ nav:
       - voice-gateway/overview.md
       - voice-gateway/getting-started.md
       - voice-gateway/technical-capabilities.md
+      - voice-gateway/migrate-from-ac-to-vg.md
       - voice-gateway/glossary.md
     - 🛠️ Self-Service Portal:
       - voice-gateway/webapp/overview.md
