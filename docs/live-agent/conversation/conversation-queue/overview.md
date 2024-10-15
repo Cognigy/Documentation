@@ -1,5 +1,5 @@
 ---
-title: "Conversation Queue"
+title: "Overview"
 slug: "conversation-queue"
 description: "Conversation Queue is a list of conversations waiting for attention from human agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply."
 hidden: false
@@ -56,5 +56,6 @@ Result: The agent is assigned Conversation 3 (High), followed by Conversation 1 
 
 ## More Information
 
+- [Real-Time Queue Notifications](real-time-queue-notifications.md)
 - [Conversation Routing: Automatic mode](../conversation-routing/automatic-mode.md)
 - [Conversation Routing Overview](../conversation-routing/overview.md)

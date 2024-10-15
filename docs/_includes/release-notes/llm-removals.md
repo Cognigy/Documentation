@@ -1,5 +1,5 @@
 ???+ warning "Removal of Several LLM Versions by OpenAI, Azure OpenAI, and Google"
-    If you are using these models as custom models, switch to [newer versions](../../ai/empower/llms.md#supported-models) before the shutdown date.
+    If you are using these models as custom models, switch to [newer versions](https://docs.cognigy.com/ai/empower/llms/#supported-models) before the shutdown date.
 
     - OpenAI: 
         - `gpt-3.5-turbo-0301`, `gpt-3.5-turbo-0613` and `gpt-3.5-turbo-16k-0613` (removal date is September 13, 2024)
