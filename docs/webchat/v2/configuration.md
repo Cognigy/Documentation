@@ -54,9 +54,9 @@ The Webchat Layout settings have customization options, such as the title, color
 |--------------------------|---------------------------------------------------------------------------|
 | Webchat Title            | The text to display within the Webchat header.                            |
 | Color Scheme             | The main colors for the Webchat widget, for example, #008080.             |
-| Bot Avatar Logo URL      | A URL linking to the logo that should be the AI Agent's avatar.      |
+| Bot Avatar Logo URL      | A URL linking to the logo that should be the AI Agent's avatar.           |
 | Header Logo URL          | A URL linking to the logo that should be displayed in the Webchat header. |
-| Enable Typing Indicators | Enables a typing indicator while the AI Agent is replying.           |
+| Enable Typing Indicators | Enables a typing indicator while the AI Agent is replying.                |
 | Input Placeholder Text   | The text to display as a placeholder in the input field.                  |
 
 #### Advanced Layout Settings
