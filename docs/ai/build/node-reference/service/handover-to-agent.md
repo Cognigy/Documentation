@@ -116,7 +116,7 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
 | Maximum Estimated Wait Time | Define the maximum estimated wait time in milliseconds. If this duration is exceeded, the alternative text will be sent. This parameter appears if **Alternative Update** is selected. |
 | Alternative Text            | The message to be sent when either the maximum queue position or maximum wait time is reached. This parameter appears if **Alternative Update** is selected.                           |
 
-For more information, read the [Live Agent Handover Setup](../../../../live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md) documentation.
+For more information, read the [Live Agent Handover Setup](../../../../live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md) and [Real-Time Queue Notifications](../../../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) documentation.
 
 ### Salesforce Settings
 

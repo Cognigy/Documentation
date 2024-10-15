@@ -19,6 +19,11 @@ With Live Agent, you can inform customers about queue updates by configuring sev
 - [Say](#add-say-nodes)
 - [Go To](#add-a-go-to-node)
 
+## Prerequisites
+
+- Cognigy.AI and Live Agent versions 4.87 and later.
+- The feature is inactive by default. To enable it, set FEATURE_USE_QUEUE_UPDATE_EVENTS to true in the Cognigy.AI values.yaml file. This feature affects all organizations in the environment.
+
 ## Configure Settings for a Handover to Agent Node
 
 1. In the Flow editor, add the Handover to Agent Node or use an existing one if you already added it earilier. 
