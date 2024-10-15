@@ -7,6 +7,8 @@ hidden: false
 
 # Real-Time Queue Notifications for End Users
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../release-notes/4.87.md)
+
 The _Real-Time Queue Notifications_ feature keeps end users informed about queue updates by providing real-time position and wait time information. 
 This feature helps reduce anxiety and creates transparency, making your customers feel valued and respected. By analyzing the data collected from the queue, you can identify patterns and trends for further analysis.
 For example, you might identify peak times when the queue is longest or determine the typical wait time for a response from a human agent.
