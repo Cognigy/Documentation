@@ -33,7 +33,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
     - 5.3 Select a relevant voice from the list.<br>
 6. Click **Save**.
 7. In the Endpoint, go to the **AudioCodes Compatibility Mode** section.
-8. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your flow with the AudioCodes Node as if it were a flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.
+8. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your Flow with the AudioCodes Node as if it were a Flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.
 9. Manually move the required settings from your previous AudioCodes Endpoint to the Voice Gateway Endpoint.
 10. Save your changes.
 
