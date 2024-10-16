@@ -34,7 +34,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 2. In the left-side menu, select the Project where you want to create a Voice Gateway Endpoint.
 3. In the left-side menu of the Project, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
-5. In the **New Endpoint** section, do the following:
+5. In the **New Endpoint** section, do the following:<br>
     5.1 Select the **Voice Gateway** Endpoint type.<br>
     5.2 Add a unique name.<br>
     5.3 Select a relevant voice Flow from the list.<br>
