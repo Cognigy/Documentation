@@ -7,7 +7,7 @@ hidden: false
 
 # Migration from AudioCodes to Voice Gateway
 
-Starting in February 2025,
+Starting from February 2025,
 you will no longer be able
 to create new [AudioCodes Nodes](../ai/build/node-reference/voice/audiocodes/overview.md),
 but you can still edit or clone existing ones.
@@ -20,7 +20,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 
 - Add the `FEATURE_VG_AC_COMPATIBILITY_MODE` feature flag to the Cognigy.AI `values.yaml` file to activate the compatibility mode.
 - Note that when transferring settings from [AudioCodes Nodes](../ai/build/node-reference/voice/audiocodes/overview.md) to [Voice Gateway Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md):
-    - Some parameter names may differ slightly, as well as the names of the Nodes.
+    - Some parameter names may differ slightly, as well as the [names of the Nodes](#mapping-of-audiocodes-nodes-to-voice-gateway-nodes). 
     - The values of some parameters may also vary slightly. If you notice a significant difference in the configuration, contact [Cognigy technical support](../help/get-help.md).
 
 ## Install Voice Gateway
@@ -48,8 +48,25 @@ You can use the AudioCodes Endpoint alongside the Voice Gateway Endpoint. First,
 
 With Compatibility Mode enabled, you can simultaneously use both Voice Gateway and AudioCodes Nodes in a Flow.
 
+## Mapping of AudioCodes Nodes to Voice Gateway Nodes
+
+The table outlines the mapping of AudioCodes Nodes to their corresponding Voice Gateway Nodes. By following this mapping during migration, you can ensure that your flows remain functional and effectively utilize the features of Cognigy Voice Gateway.
+
+| AudioCodes Node                                                                         | Voice Gateway Node                                                                         |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Call Recording](../ai/build/node-reference/voice/audiocodes/call-recording.md)         | [Call Recording](../ai/build/node-reference/voice/voice-gateway/call-recording.md)         |
+| [Hang Up](../ai/build/node-reference/voice/audiocodes/hangup.md)                        | [Hang Up](../ai/build/node-reference/voice/voice-gateway/hangup.md)                        |                                                                              |
+| [Play URL](../ai/build/node-reference/voice/audiocodes/play-url.md)                     | [Play](../ai/build/node-reference/voice/voice-gateway/play.md)                             |
+| [Send Meta Data](../ai/build/node-reference/voice/audiocodes/send-meta-data.md)         | [Send Meta Data](../ai/build/node-reference/voice/voice-gateway/send-metadata.md)          |
+| [Send Message](../ai/build/node-reference/voice/audiocodes/send-message.md)             | - [^*]                                                                                     |                                                                              |
+| [Set Session Params](../ai/build/node-reference/voice/audiocodes/set-session-params.md) | [Set Session Config](../ai/build/node-reference/voice/voice-gateway/set-session-config.md) |
+| [Transfer](../ai/build/node-reference/voice/audiocodes/transfer-vg.md)                  | [Transfer](../ai/build/node-reference/voice/voice-gateway/transfer.md)                     |
+
+[^*]: There is no direct replacement for the [Send Message](../ai/build/node-reference/voice/audiocodes/send-message.md) Node. Alternatively, you can use a [Say Node](../ai/build/node-reference/basic/say.md) with the [Voice Gateway Channel](../ai/build/nodes/channels.md#voice-gateway) that supports SSML.
+
 ## More Information
 
+- [Generic Voice Nodes](../ai/build/node-reference/voice/generic/overview.md)
 - [AudioCodes Nodes](../ai/build/node-reference/voice/audiocodes/overview.md)
 - [AudioCodes Endpoint](../ai/deploy/endpoint-reference/audiocodes.md)
 - [Voice Gateway Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md)
