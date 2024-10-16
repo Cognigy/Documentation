@@ -19,7 +19,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 ## Prerequisites
 
 - Add the `FEATURE_VG_AC_COMPATIBILITY_MODE` feature flag to the Cognigy.AI `values.yaml` file to activate the compatibility mode.
-- Note that when transferring settings from AudioCodes Nodes to Voice Gateway:
+- Note that when transferring settings from [AudioCodes Nodes](../ai/build/node-reference/voice/audiocodes/overview.md) to [Voice Gateway Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md):
     - Some parameter names may differ slightly, as well as the names of the Nodes.
     - The values of some parameters may also vary slightly. If you notice a significant difference in the configuration, contact [Cognigy technical support](../help/get-help.md).
 
