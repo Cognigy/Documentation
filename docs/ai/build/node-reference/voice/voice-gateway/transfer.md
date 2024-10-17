@@ -89,7 +89,7 @@ and enter the following in the JSON field:
 
 In case you receive a 487 error log message after using a Transfer Node with Dial,
 check the related [PCAP](../../../../../voice-gateway/webapp/recent-calls.md) file in the Voice Gateway Self-Service Portal first.
-There you should see a `CANCEL` action followed by the `487 Request Terminated` error. 
+There you should see a `CANCEL` method followed by the `487 Request Terminated` error. 
 
 This error indicates that the callee did not answer within the defined timeout.
 Within the Flow, you will receive the [no-answer](../../../../../voice-gateway/references/events/NO_ANSWER.md) call event.
