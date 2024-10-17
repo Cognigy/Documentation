@@ -84,3 +84,12 @@ and enter the following in the JSON field:
     "P-Asserted-Identity": "<sip:phonenumber@host>"
     }
    ```
+
+
+#### Possible 487 Error After Dial Transfer
+
+In case you receive a 487 error log message after using a Transfer Node with Dial, check the related [PCAP](../../../../../voice-gateway/webapp/recent-calls.md) file in the Voice Gateway Self-Service Portal first. There you should see a `CANCEL` followed by a `487 Request Terminated`. 
+
+This indicates, that the callee did not answer within the defined timeout.
+Within the flow you will receive the [no-answer](../../../../../voice-gateway/references/events/NO_ANSWER.md) call event.
+   
