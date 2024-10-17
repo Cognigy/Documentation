@@ -17,11 +17,13 @@ Any kind of information that is visible and any kind of action that can be perfo
 
 This is the URL where the API is available.
 
-| Environment              | API Base URL                                                                                            |
-|--------------------------|---------------------------------------------------------------------------------------------------------|
-| Trial (trial.cognigy.ai) | `https://api-trial.cognigy.ai`                                                                          |
-| App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                            |
-| On-Premise Installations | This is the url that has been defined as `BACKEND_BASE_URL_WITH_PROTOCOL` in your `production.env` file | 
+| Environment              | API Base URL                                                                                                                                                                                                                         |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trial (trial.cognigy.ai) | `https://api-trial.cognigy.ai`                                                                                                                                                                                                       |
+| App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                                                                                                                                                         |
+| App-US                   | `https://api-app-us.cognigy.ai/openapi`                                                                                                                                                                                              |
+| Dedicated SaaS           | Use the following pattern `https://api-<company-name>.cognigy.cloud/openapi`, where `company-name` is your company name. For example, if your company name is `abc123`, the URL would be `https://api-abc123.cognigy.cloud/openapi`. |                                                                                                      |
+| On-Premise Installations | This is the url that has been defined as `BACKEND_BASE_URL_WITH_PROTOCOL` in your `production.env` file                                                                                                                              | 
 
 ### Manage API Keys
 
