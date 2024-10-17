@@ -92,5 +92,4 @@ check the related [PCAP](../../../../../voice-gateway/webapp/recent-calls.md) fi
 There you should see a `CANCEL` method followed by the `487 Request Terminated` error. 
 
 This error indicates that the callee did not answer within the defined timeout.
-Within the Flow, you will receive the [no-answer](../../../../../voice-gateway/references/events/NO_ANSWER.md) call event.
-   
+Within the Flow, you will receive the [NO_ANSWER](../../../../../voice-gateway/references/events/NO_ANSWER.md) call event.
