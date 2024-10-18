@@ -13,7 +13,7 @@ This API can also be used by developers to build custom integrations with Cognig
 
 Any kind of information that is visible and any kind of action that can be performed in the frontend is queried or triggered through this API, which is 100% exposed for developers, too.
 
-### The API Baseurl
+### The API Base URL
 
 The API Base URL is the endpoint for accessing the Cognigy.AI OpenAPI.
 The table outlines the base URLs for different environments.
