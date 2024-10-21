@@ -59,7 +59,7 @@ Cognigy.AI exposes several web services for which you will need to assign DNS re
 To authenticate a web server and to encrypt web traffic between clients and the web server, you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation processes. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for Cognigy.AI. The reverse-proxy we ship with Cognigy.AI cannot support multiple certificates out of the box, and Cognigy will not provide support for such configurations.
 
 ### Whitelisting of Domains
-If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that Kubernetes nodes can reach the following domains:
+If you plan to set up a Kubernetes environment in a private data center or if there are networking restrictions applied in your public cloud setup, make sure that the Kubernetes nodes can reach the following domains:
 
 - `cognigy.azurecr.io:443` — Cognigy's container registry.
 - `billing.cognigy.ai:443` — Cognigy's billing server.
