@@ -12,7 +12,7 @@ hidden: false
 To create a copy of the existing model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Clone** from the list.
 
 The model will contain the same settings as the initial one.
@@ -24,7 +24,7 @@ Setting a default model ensures a smooth transition when a specific model is rem
 To set a model as the default, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Make Default** from the list.
 
 The setting will be applied for the selected model.
@@ -36,9 +36,9 @@ To reuse a model in other agents, you can package the model.
 To package a model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Create a package**.
-4. Once the package has created, a new [task](../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the package has created, a new [task](../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, the package will be downloaded.
 
@@ -49,7 +49,7 @@ Note that a [default model](#set-a-model-as-default) cannot be deleted. Before d
 To delete a model, follow these steps:
 
 1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Delete**.
 4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
 

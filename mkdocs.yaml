@@ -203,7 +203,18 @@ nav:
         - Other:
           - ai/empower/nlu/language-support.md
           - ai/empower/nlu/nlu-warnings.md
-      - ai/empower/llms.md
+      - Large Language Models:
+          - ai/empower/llms/overview.md
+          - ai/empower/llms/model-support-by-feature.md
+          - Providers:
+            - ai/empower/llms/providers/all-providers.md
+            - ai/empower/llms/providers/microsoft-azure-openai.md
+            - ai/empower/llms/providers/openai.md
+            - ai/empower/llms/providers/anthropic.md
+            - ai/empower/llms/providers/google.md
+            - ai/empower/llms/providers/aleph-alpha.md
+            - ai/empower/llms/providers/amazon-bedrock.md
+          - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md

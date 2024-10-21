@@ -27,13 +27,13 @@ By attempting to reconnect multiple times, it increases the chances of successfu
 
 The following Nodes and features are affected by the retry mechanism:
 
-- [LLM Prompt](../build/node-reference/service/llm-prompt.md)
-- [LLM Entity Extract](../build/node-reference/other-nodes/llm-entity-extract.md)
-- [GPT Conversation](../build/node-reference/service/gpt-conversation.md)
-- [Search Extract Output](../build/node-reference/other-nodes/search-extract-output.md)
-- Question Node Slot Mapping (in case of using [external NLU embedding](nlu/external/external-nlu-intent-recognition.md))
-- [Question Node LLM Reprompting](../build/node-reference/basic/question.md#llm-prompt)
-- [Sentiment Analysis](../build/node-reference/ai-copilot/sentiment-tile.md)
+- [LLM Prompt](../../build/node-reference/service/llm-prompt.md)
+- [LLM Entity Extract](../../build/node-reference/other-nodes/llm-entity-extract.md)
+- [GPT Conversation](../../build/node-reference/service/gpt-conversation.md)
+- [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md)
+- Question Node Slot Mapping (in case of using [external NLU embedding](../nlu/external/external-nlu-intent-recognition.md))
+- [Question Node LLM Reprompting](../../build/node-reference/basic/question.md#llm-prompt)
+- [Sentiment Analysis](../../build/node-reference/ai-copilot/sentiment-tile.md)
 
 The retry mechanism can be customized through the environment variables for the on-premises installations.
 By adjusting these environment variables, system administrators can fine-tune the retry behavior

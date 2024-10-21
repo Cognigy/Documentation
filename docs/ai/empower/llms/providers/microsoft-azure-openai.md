@@ -1,6 +1,13 @@
+---
+title: "Microsoft Azure OpenAI"
+slug: "microsoft-azure-openAI"
+description: ""
+hidden: false
+---
 
 # Microsoft Azure OpenAI
 
+To add a model provided by Microsoft Azure OpenAI to Cognigy.AI, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. Go to **Build > LLM**.

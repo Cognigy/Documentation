@@ -11,7 +11,9 @@ hidden: false
 
 The table below lists LLMs supported by Cognigy.AI.
 You can also specify another model that is not presented in the table.
-To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name. For more information about adding a custom model for a selected LLM provider, refer to the [Add a Model](#add-a-model) section.
+To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name.
+For more information about adding a custom model for a selected LLM provider,
+refer to the [All Provivers](providers/all-providers.md) page.
 
 | <div style="width:215px">Models/<br>Cognigy Features</div>                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node | Answer Extraction | Knowledge Search | Sentiment Analysis | NLU Embedding Model | Adaptive Card Generation |
 |------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|-------------------|------------------|--------------------|---------------------|--------------------------|
@@ -49,6 +51,6 @@ To do so, select the **Custom Model** parameter when creating a model and specif
 | **Amazon Bedrock**                                                                                                                       |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
 | [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html)-compatible models                              | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        |
 
-[^*]: For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](knowledge-ai/overview.md#whats-model-to-choose)
+[^*]: For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](../knowledge-ai/overview.md#which-model-to-choose)
 
 [^**]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use `luminous-embedding-128`, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.

@@ -1,5 +1,13 @@
+---
+title: "Aleph Alpha"
+slug: "aleph-alpha"
+description: ""
+hidden: false
+---
 
 # Aleph Alpha
+
+To add a model provided by Aleph Alpha to Cognigy.AI, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. Go to **Build > LLM**.

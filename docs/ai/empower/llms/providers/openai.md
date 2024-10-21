@@ -5,8 +5,9 @@ description: ""
 hidden: false
 ---
 
-
 # OpenAI
+
+To add a model provided by OpenAI to Cognigy.AI, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. Go to **Build > LLM**.

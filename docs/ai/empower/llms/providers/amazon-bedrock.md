@@ -1,5 +1,13 @@
+---
+title: "Amazon Bedrock"
+slug: "amazon-bedrock"
+description: ""
+hidden: false
+---
 
 # Amazon Bedrock
+
+To add a model provided by Amazon Bedrock to Cognigy.AI, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. Go to **Build > LLM**.
