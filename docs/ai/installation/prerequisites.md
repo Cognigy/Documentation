@@ -61,10 +61,10 @@ To authenticate a web server and to encrypt web traffic between clients and the 
 ### Whitelisting of Domains
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that Kubernetes nodes can reach the following domains:
 
-- `cognigy.azurecr.io:443`: Cognigy’s container registry
-- `billing.cognigy.ai:443`: Cognigy's billing server
+- `cognigy.azurecr.io:443` — Cognigy's container registry.
+- `billing.cognigy.ai:443` — Cognigy's billing server.
 
-Otherwise, Cognigy.AI setup will not be able to download docker images and assets during the installation process.
+Otherwise, the Cognigy.AI setup won't be able to download Docker images and assets during the installation process.
 
 ### Network Firewalls / Websocket Support
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Cognigy.AI heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
