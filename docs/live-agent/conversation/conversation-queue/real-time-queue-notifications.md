@@ -27,7 +27,7 @@ With Live Agent, you can inform customers about queue updates by configuring sev
 
 ## Configure Settings for a Handover to Agent Node
 
-1. In the Flow editor, add the Handover to Agent Node or use an existing one if you already added it earilier. 
+1. In the Flow editor, add the Handover to Agent Node or use an existing one if you already added it earlier. 
 2. Open a Node editor by clicking the Handover to Agent Node.
 3. Go to the **Live Agent Settings** section.
 4. For the queue position, configure the following settings:
