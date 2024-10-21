@@ -104,7 +104,7 @@ To change the appearance of this message and make it more accessible, as well as
 4. Below the condition **Else**, paste the following text into the **Text** field to display the text from the **Alternative Text** field:  
 
     ```txt  
-    {{"{{input?.handover?.data?.alternativeText}}"}}
+    {{"{{input.handover.data.alternativeText}}"}}
     ```
 5. Click **Save Node**.
 
