@@ -1,27 +1,105 @@
 ---
-title: "Large Language Models"
-slug: "LLMs"
+title: "Overview"
+slug: "overview"
 description: "Large Language Models (LLMs) in Cognigy are advanced Generative AI models that generate humanlike text based on input and context. Trained on vast text data, they understand user input, provide contextually appropriate responses, manage dialogues, and offer multilingual support for an enhanced conversational experience."
 hidden: false
 ---
 
 # Large Language Models (LLMs)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../release-notes/4.84.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating humanlike text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
-With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
+With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also help in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
+
+In the Cognigy.AI interface, you can connect to an LLM provider of your choice via API.
+Cognigy.AI offers a variety of models from top providers such as OpenAI,
+Azure, Anthropic, AWS, Google, and Aleph Alpha.
+
+To optimize your LLM integration into the conversational design process, follow these steps:
+
+1. [Determine a use case aligning with your business objectives](#use-cases). 
+2. [Select a standard or custom model](#model-types) from a preferred LLM provider. Ensure that you have all the necessary API credentials for to access the specific LLM you intend to use. 
+3. Make sure to familiarize yourself with [Cognigy.AI's retry mechanism](#retry-mechanism) in case the model does not respond.
 
 ## Use Cases
 
+Explore key use cases that illustrate how LLMs can be used in Cognigy.AI and learn about the features needed to create these use cases:
 
-## Custom Model
+- [Automate routine tasks](#automate-routine-tasks)
+- [Improve AI Agent's output](#improve-ai-agents-output)
+- [Retrieve data from different knowledge databases](#retrieve-data-from-different-knowledge-stores)
+- [Determine the emotional tone of the conversation](#determine-the-emotional-tone-of-the-conversation)
+- [Ensure LLM accuracy with human review](#ensure-llm-accuracy-with-human-review)
 
+### Automate Routine Tasks
+
+LLMs are highly effective for automating repetitive tasks that previously required manual effort. They can create conversational flows, define intents for AI agents, and generate visual elements such as adaptive cards, significantly reducing time and effort.
+
+- **Generate Flows**. LLMs can create Flows based on the title and description you provide, which can save time during conversation design iterations. To generate Flows, refer to the [Generate Flows](../generative-ai.md#generate-flows) section.
+- **Generate Lexicons**. Define the vocabulary that the AI Agent will understand, ensuring accurate interpretation of user queries. To generate Lexicons, refer to the [Generate Lexicons](../generative-ai.md#generate-lexicons) section.
+- **Generate Intent sentences**. Build a list of intent sentences based on the title and description of the provided Intent. To generate Intents, refer to the [Generate Intent Sentences](../generative-ai.md#generate-intent-sentences) section.
+- **Generate adaptive cards**. LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
+
+### Improve AI Agent's Output
+
+AI Agents are widely used in customer service, but their output often requires refinement to meet the high standards customers expect.
+LLMs can enhance the performance of these agents in various ways:
+
+- **Generate Enhanced Output**. By using LLMs, AI Agents can produce responses that are more comprehensive, nuanced, and in line with customer needs. This is particularly important in handling queries that require a level of empathy or complex information processing.
+- **Rephrase AI Agent's Output**. LLMs are particularly good at rephrasing texts while maintaining the original meaning. This allows for smoother communication, particularly if the original output of an AI Agent lacks clarity or tone alignment. Enable AI-enhanced rephrasing in [Say](../../build/node-reference/basic/say.md#ai-enhanced-output), [Question](../../build/node-reference/basic/question.md), or [Optional Question](../../build/node-reference/basic/optional-question.md) Nodes by selecting the **Rephrase Output** option in the **AI-enhanced output** section. Additionally, LLMs can be used in [Question Nodes](../../build/node-reference/basic/question.md#reprompt-methods) to generate dynamic reprompts for incorrect answers.
+- **Train Intents and Find the Right Intent**. Enhance intent understanding across multiple languages by [using external LLMs](../nlu/external/external-nlu-intent-recognition.md). Improve intent classification accuracy through [context-based intent reordering](../nlu/external/external-nlu-intent-recognition.md), leading to more relevant responses and reduced errors.
+
+### Retrieve Data from Different Knowledge Stores
+
+In Cognigy.AI, LLMs can act as a bridge to retrieve information from various sources efficiently,
+helping both AI Agents and human agents to find the right answers.
+
+- **Use Knowledge AI for AI Agents**. Using LLMs integrated into your Project, AI Agents can access relevant knowledge articles, databases, and frequently asked questions with ease. To create a first Knowledge Store, go to the [Knowledge AI](../knowledge-ai/overview.md) documentation. To retrieve data from the Knowledge Store and improve the AI Agent's output, use the [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md) Node.
+- **Use Knowledge AI for human agents**. By retrieving data from different knowledge bases, LLMs reduce the burden on human agents, making information access quicker and more efficient. To let human agents use the knowledge base for solving tasks, add a widget to the AI Copilot workspace using a [Copilot: Knowledge Tile](../../build/node-reference/ai-copilot/knowledge-tile.md) Node. The widget works as a search tool for the database. Human agents can enter a question to retrieve information from the knowledge base.
+
+### Extract Specific Entities from User Inputs
+
+By using LLMs, you can extract specific entities from user inputs, such as product or booking codes and customer IDs, in chat and voice conversations. For example, if a user says, `I would like to book flight AB123 from New York to London`, the LLM can extract the booking code `AB123` from the input. 
+This capability allows for dynamic, context-aware responses while improving accuracy and reducing manual data entry.
+To add this feature to your AI Agent,
+add the [LLM Entity Extract](../../build/node-reference/other-nodes/llm-entity-extract.md) to your Flow.
+
+### Determine the Emotional Tone of the Conversation
+
+Understanding the emotional tone of customer interactions is crucial. LLMs can analyze conversations in real time to determine customer sentiment. 
+With AI Copilot sentiment analysis, LLMs can provide insights, enabling human agents to adjust responses for a more effective interaction and improved service quality.
+To let human agents use sentiment analysis provided by LLM,
+add a widget to the AI Copilot workspace
+using an [AI Copilot: Sentiment Analysis Tile](../../build/node-reference/ai-copilot/sentiment-tile.md) Node. The widget monitors the conversation and displays the emotional tone (positive, negative, or neutral) of the latest user input in real time.
+
+### Ensure LLM Accuracy with Human Review
+
+Even though LLMs are powerful, there are situations where human oversight is essential.
+Errors in data retrieval,
+Intent matching, or sentiment analysis can occur, especially with nuanced or complex information.
+Human review can help minimize these errors.
+
+AI Copilot provides a [workspace](../../../ai-copilot/index.md) where human agents can review the output generated by LLMs before sending responses to customers. 
+This human-in-the-loop approach ensures that wrong or misleading information doesn't reach customers.
+
+## Model Types
+
+You can either select a standard model or a custom model, which is useful when newer models or versions become available.
+
+### Standard Model
+
+Users can select the name of a standard model from a list of available options. After selecting a model, it is necessary to enter the credentials from the provider that offers this model. This ensures access to the functionality of the chosen model.
+
+### Custom Model
+
+For a custom model, users manually enter the name of the model without selecting from a list. Similar to the standard model, users must provide the credentials from the provider that offers this model to gain access to its functionality.
 
 ## Retry Mechanism
 
-If Cognigy encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code, Cognigy will automatically attempt to reconnect up to three times using a retry mechanism.
+If Cognigy.AI encounters issues while trying to connect with LLM providers that don't return a `200 OK` response code,
+Cognigy.AI will automatically attempt to reconnect up to three times using a retry mechanism.
 This retry mechanism is designed to improve the reliability and stability of the system when using certain Cognigy Nodes and features.
 By attempting to reconnect multiple times, it increases the chances of successful communication, reduces disruptions and ensures smoother operations within the system.
 
@@ -45,5 +123,3 @@ to suit specific performance requirements and network conditions.
 | GENERATIVE_AI_RETRY_OPTIONS_MIN_TIMEOUT       | Determines the timeout between retries to avoid rate limiting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_MAX_TIMEOUT       | Determines the maximum timeout between retries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_FACTOR            | Determines how long a retry timeout will last. The timeout duration will increase with each subsequent retry attempt. If the factor is greater than 1, the timeout duration will increase exponentially. This means that with each subsequent attempt, the waiting time will not just increase by a constant amount, but rather by multiples. For example, if the initial timeout is 1 second and the factor is set to 2, then the second timeout will be 2 seconds, the third will be 4 seconds, the fourth will be 8 seconds, and so on. | 1             |
-
-

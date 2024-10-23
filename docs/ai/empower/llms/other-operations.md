@@ -5,7 +5,14 @@ description: ""
 hidden: false
 ---
 
-# Other Operations
+# Other LLM Operations
+
+Once you've added an LLM to Cognigy.AI, you can perform the following operations with your model:
+
+- [Clone a Model](#clone-a-model)
+- [Set a Model as Default](#set-a-model-as-default)
+- [Export a Model as a Package](#export-a-model-as-a-package)
+- [Delete a Model](#delete-a-model)
 
 ## Clone a Model
 
@@ -38,7 +45,7 @@ To package a model, follow these steps:
 1. Go to **Build > LLM**.
 2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
 3. Select **Create a package**.
-4. Once the package has created, a new [task](../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the package has created, a new [task](../../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, the package will be downloaded.
 
@@ -57,3 +64,6 @@ The model will be deleted from the list.
 
 ## More Information
 
+- [Overview](overview.md)
+- [LLM Providers](providers/all-providers.md)
+- [Model Support by Feature](model-support-by-feature.md)

@@ -38,8 +38,6 @@ To set up the connection between Cognigy.AI and the Generative AI Provider, do t
 
 #### Add a Model
 
-{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
-
 {! _includes/ai/generative-ai/credentials.md !}
 
 #### Apply the Model
@@ -149,6 +147,8 @@ The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+    The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later.
+    Use the [LLM Prompt Node](#llm-prompt-node) to generate messages with LLM services.
 
 The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
@@ -158,15 +158,15 @@ To use AI-enhanced bot output rephrasing in [Say](../build/node-reference/basic/
 
 1. Open the existing Flow.
 2. Add one of the Nodes: Say, Question, or Optional Question.
-3. Go to the AI-enhanced output section.
-4. In the Rephrase Output setting, select one of the options:
+3. Go to the **AI-enhanced output** section.
+4. In the **Rephrase Output** setting, select one of the options:
     - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
     - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
     - **Based on previous user inputs** — set the last `x` user Inputs considered.
 5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
 6. Click **Save Node**.
 
-Check in the interactive panel if your Flow works as expected.
+Check in the Interaction Panel if your Flow works as expected.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/empower/generative-ai/generating-output.png" width="90%" />

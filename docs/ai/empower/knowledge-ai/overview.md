@@ -26,8 +26,6 @@ and simplifying the process of creating sophisticated conversational experiences
 
 ## Prerequisites
 
-{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
-
 Before using this feature, follow these steps:
 
 1. [Apply for a license and allocate quotas](activate.md).

@@ -7,15 +7,13 @@ hidden: false
 
 # Model Support by Feature
 
-{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
-
-The table below lists LLMs supported by Cognigy.AI.
-You can also specify another model that is not presented in the table.
+The table below outlines the LLM providers supported by Cognigy and shows the standard models along with their compatibility with Cognigy.AI features.
+You can also add a custom model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name.
 For more information about adding a custom model for a selected LLM provider,
-refer to the [All Provivers](providers/all-providers.md) page.
+refer to the [All Providers](providers/all-providers.md) page.
 
-| <div style="width:215px">Models/<br>Cognigy Features</div>                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node | Answer Extraction | Knowledge Search | Sentiment Analysis | NLU Embedding Model | Adaptive Card Generation |
+| <div style="width:215px">Models/<br>Cognigy.AI Features</div>                                                                            | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node | Answer Extraction | Knowledge Search | Sentiment Analysis | NLU Embedding Model | Adaptive Card Generation |
 |------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|-------------------|------------------|--------------------|---------------------|--------------------------|
 | **Microsoft Azure OpenAI**                                                                                                               |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
 | gpt-3.5-turbo (ChatGPT) ([Legacy](https://platform.openai.com/docs/deprecations))                                                        | +                          | +                   | +                  | +               | +                     | +               | +                 | -                | +                  | -                   | +                        |
