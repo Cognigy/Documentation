@@ -138,6 +138,7 @@ You can configure the following Run-Time Generative AI features:
 - [Rephrasing AI Agent Outputs](#rephrasing-ai-agent-outputs)
 - [LLM-powered Question Reprompts](#llm-powered-question-reprompts)
 - [Search Extract Output Node](#search-extract-output-node)
+- [LLM Entity Extract Node](#llm-entity-extract-node)
 
 ### LLM Prompt Node
 
@@ -181,6 +182,10 @@ The [Question Node](../build/node-reference/basic/question.md#reprompt-methods) 
 The [Search Extract Output Node](../build/node-reference/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](knowledge-ai/overview.md)
 to execute a search within a Knowledge Store,
 extracts a relevant answer via a Generative AI model, and creates an output.
+
+### LLM Entity Extract Node
+
+The [LLM Entity Extract Node](../build/node-reference/other-nodes/llm-entity-extract.md) extracts specific entities from user inputs, such as product or booking codes and customer IDs. For example, if a user says, `I would like to book flight AB123 from New York to London`, the LLM can extract the booking code `AB123` from the input.
 
 ## FAQ
 
