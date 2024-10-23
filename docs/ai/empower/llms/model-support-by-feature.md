@@ -1,13 +1,13 @@
 ---
 title: "Model Support by Feature"
 slug: "model-support-by-feature"
-description: ""
+description: "The Model Support by Feature table outlines the LLM providers supported by Cognigy.AI and shows the standard models along with their compatibility with Cognigy.AI features."
 hidden: false
 ---
 
 # Model Support by Feature
 
-The table below outlines the LLM providers supported by Cognigy and shows the standard models along with their compatibility with Cognigy.AI features.
+The table outlines the LLM providers supported by Cognigy.AI and shows the standard models along with their compatibility with Cognigy.AI features.
 You can also add a custom model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name.
 For more information about adding a custom model for a selected LLM provider,
