@@ -23,7 +23,7 @@ using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing 
 
 ## Prerequisites
 
-- Add the [`text-embedding-3-large`](../../llms.md#add-a-model) model provided by Azure OpenAI or OpenAI. Note that if you use an external embedding model provider, Cognigy will send user inputs to the selected service. Ensure that your data processing policy reflects this practice.
+- Add the [`text-embedding-3-large`](../../llms/model-support-by-feature.md) model provided by [Azure OpenAI](../../llms/providers/microsoft-azure-openai.md#add-a-model) or [OpenAI](../../llms/providers/openai.md#add-a-model). Note that if you use an external embedding model provider, Cognigy will send user inputs to the selected service. Ensure that your data processing policy reflects this practice.
 - Consider that using the `text-embedding-3-large` external NLU model increases [Snapshot](../../../deploy/snapshots.md) size, leading to longer download and upload times.
 
 ## Set Up a Third-Party NLU model
@@ -74,5 +74,5 @@ Note that during the training process, the order of Flows is not predefined. Flo
 
 ## More Information
 
-- [LLMs](../../llms.md)
+- [LLMs](../../llms/overview.md)
 - [Intent Overview](../overview.md)

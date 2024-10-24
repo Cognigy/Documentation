@@ -22,7 +22,7 @@ This Node searches through data within the Knowledge AI solution, extracts a rel
 Before using this Node,
 ensure that you configured the `text-embedding-ada-002` model as well as the
 `text-davinci-003 (deprecated)`  or `gpt-3.5-turbo` models.
-For more information, refer to the [list of supported providers](../../../empower/llms.md).
+For more information, refer to the [list of supported providers](../../../empower/llms/model-support-by-feature.md).
 
 ## Settings
 
@@ -42,7 +42,7 @@ In the Search & Extract & Output mode, the following steps are involved:
 4. The extracted information is stored in the Input or Context objects. 
 5. The system automatically outputs the result from the LLM as either plain text or an adaptive card.
 
-For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
+For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
 
 #### Search & Extract
 
@@ -54,7 +54,7 @@ In the Search & Extract mode, the following steps are involved:
 2. The retrieved data is directly sent to the LLM for extraction of key points or answers.
 3. The LLM extracts the relevant information and writes it to the Input or Context objects.
 
-For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover both the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
+For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover both the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
 
 #### Search Only
 
@@ -65,7 +65,7 @@ In the Search only mode, the following steps are involved:
 1. The system performs a knowledge search and retrieves relevant information. 
 2. The search response is stored in the Input or Context objects.
 
-For this mode, select models from the [list of supported providers](../../../empower/llms.md) that cover the `Knowledge Search` case.
+For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover the `Knowledge Search` case.
 
 ### Knowledge Store
 
@@ -136,6 +136,6 @@ In the following table, a dialogue between the user and the AI Agent is presente
 
 - [Knowledge Search Node](knowledge-search.md)
 - [Knowledge Search Overview](../../../empower/knowledge-ai/overview.md)
-- [LLM](../../../empower/llms.md)
+- [LLM](../../../empower/llms/overview.md)
 
 

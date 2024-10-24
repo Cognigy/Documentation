@@ -50,6 +50,20 @@ When the model is added, you will see it in the list of models.
 
 To apply this model for Cognigy.AI features, go to the settings by clicking **Manage LLM Features**.
 
+### Deprecation of Old Connections for Microsoft Azure OpenAI
+
+In recent releases, we have updated the connection settings to Microsoft Azure OpenAI models.
+
+If you have old connections (for example, created in the 4.53 release) to Azure OpenAI,
+these connections have an `AzureOpenAIProvider` type and are marked with a **Deprecated** label.
+Although these connections can still be active,
+we strongly recommend creating a model with the new `AzureOpenAIProviderV2` type,
+as old connection types will no longer be available in the future.
+
+Note that for some Microsoft Azure OpenAI models, such as `text-embedding-ada-002` for knowledge search features, you might encounter the following error when an LLM is triggered:
+`Error while performing knowledge search. Remote returned error: Search failed: Could not fetch embeddings due to missing API resource name for Azure OpenAI`.
+To resolve the issue, recreate the model and the connection so that both are updated to the latest format.
+
 ## Apply the Model
 
 {! _includes/ai/generative-ai/apply-model.md !}

@@ -13,7 +13,7 @@ hidden: false
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
 Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
-to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms.md) to:
+to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
 - [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
@@ -203,5 +203,5 @@ The [LLM Entity Extract Node](../build/node-reference/other-nodes/llm-entity-ext
 - [Flow Nodes](../build/node-reference/overview.md)
 - [Intents](nlu/overview.md#intents)
 - [Lexicons](nlu/slots-and-lexicons/lexicons.md)
-- [LLMs](llms.md)
+- [LLMs](llms/overview.md)
 - [Cognigy.AI Settings](../administer/access/project-settings.md)

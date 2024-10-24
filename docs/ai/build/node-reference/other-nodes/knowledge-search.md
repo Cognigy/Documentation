@@ -20,7 +20,7 @@ hidden: false
 
 This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
 
-Before using this Node, ensure that you have a `text-embedding-ada-002` LLM configured. Refer to the [list of supported providers](../../../empower/llms.md). 
+Before using this Node, ensure that you have a `text-embedding-ada-002` LLM configured. Refer to the [list of supported providers](../../../empower/llms/model-support-by-feature.md). 
 
 To display the output of the Knowledge Search Node to the user, follow these steps:
 
