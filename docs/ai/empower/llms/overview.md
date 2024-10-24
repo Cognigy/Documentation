@@ -24,11 +24,12 @@ To integrate LLM into your conversational design process within Cognigy.AI, foll
 
 ## Use Cases
 
-Explore key use cases that illustrate how LLMs can be used in Cognigy.AI and learn about the features needed to create these use cases:
+Explore key use cases
+that illustrate how LLMs can be used in Cognigy.AI and learn about the features needed to implement these use cases:
 
 - [Automate routine tasks](#automate-routine-tasks)
 - [Improve AI Agent's output](#improve-ai-agents-output)
-- [Retrieve data from different knowledge databases](#retrieve-data-from-different-knowledge-stores)
+- [Retrieve data from different knowledge bases](#retrieve-data-from-different-knowledge-stores)
 - [Determine the emotional tone of the conversation](#determine-the-emotional-tone-of-the-conversation)
 - [Ensure LLM accuracy with human review](#ensure-llm-accuracy-with-human-review)
 
@@ -36,9 +37,9 @@ Explore key use cases that illustrate how LLMs can be used in Cognigy.AI and lea
 
 In the Cognigy interface, LLMs automate repetitive tasks that previously required manual effort from conversation designers:
 
-- **Generate Flows**. LLMs can create Flows based on the title and description you provide, which can save time during conversation design iterations. To generate Flows, refer to the [Generate Flows](../generative-ai.md#generate-flows) section.
-- **Generate Lexicons**. Define the vocabulary that the AI Agent will understand, ensuring accurate interpretation of user queries. To generate Lexicons, refer to the [Generate Lexicons](../generative-ai.md#generate-lexicons) section.
-- **Generate Intent sentences**. Build a list of intent sentences based on the title and description of the provided Intent. To generate Intents, refer to the [Generate Intent Sentences](../generative-ai.md#generate-intent-sentences) section.
+- **Generate Flows**. LLMs can generate Flows based on the provided title and description, helping save time during conversation design iterations. To generate Flows, refer to the [Generate Flows](../generative-ai.md#generate-flows) section.
+- **Generate Lexicons**. Build a list of Lexicon entries for the language of your choice based on the title and description. To generate Lexicons, refer to the [Generate Lexicons](../generative-ai.md#generate-lexicons) section.
+- **Generate Intent sentences**. Build a list of Intent sentences based on the title and description of the provided Intent. To generate Intents, refer to the [Generate Intent Sentences](../generative-ai.md#generate-intent-sentences) section.
 - **Generate adaptive cards**. LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
 
 ### Improve AI Agent's Output
@@ -46,20 +47,20 @@ In the Cognigy interface, LLMs automate repetitive tasks that previously require
 The AI Agent's output often requires refinement to meet the high standards customers expect.
 With Cognigy.AI, LLMs can enhance the performance of AI Agents in various ways:
 
-- **Generate Enhanced Output**. By using LLMs, AI Agents can produce responses that are more comprehensive, nuanced, and in line with customer needs. This enhancement is important in handling queries that require a level of empathy or complex information processing.
+- **Generate Enhanced Output**. By using LLMs, AI Agents can produce responses that are more comprehensive, nuanced, and in line with customer needs. This enhancement is important in handling queries that require a level of empathy or complex information processing. To generate enhanced output, add [LLM Prompt Nodes](../../build/node-reference/service/llm-prompt.md) within your Flow.
 - **Rephrase AI Agent's Output**. LLMs are good at rephrasing texts while maintaining the original meaning. This capability allows for smoother communication if the original output of an AI Agent lacks clarity or tone alignment. To use this capability, enable AI-enhanced rephrasing in [Say](../../build/node-reference/basic/say.md#ai-enhanced-output), [Question](../../build/node-reference/basic/question.md), or [Optional Question](../../build/node-reference/basic/optional-question.md) Nodes by selecting the **Rephrase Output** option in the **AI-enhanced output** section. Also, you can generate dynamic reprompts for incorrect answers via [Question Nodes](../../build/node-reference/basic/question.md#reprompt-methods).
-- **Train Intents and Find the Right Intent**. To enhance intent understanding across multiple languages, you can use [external LLMs](../nlu/external/external-nlu-intent-recognition.md) as an alternative to the Cognigy.AI NLU model. Also, use LLM assistance to improve intent classification accuracy through [context-based intent reordering](../nlu/external/external-nlu-intent-recognition.md).
+- **Train Intents and Find the Right Intent**. To enhance intent understanding across multiple languages, you can add [external LLMs](../nlu/external/external-nlu-intent-recognition.md) as an alternative to the Cognigy.AI NLU model. Also, use LLM assistance to improve intent classification accuracy through [context-based intent reordering](../nlu/external/external-nlu-intent-recognition.md).
 
 ### Retrieve Data from Different Knowledge Stores
 
-In Cognigy.AI, LLMs can serve as a bridge to efficiently retrieve information from various sources, assisting both AI agents and human agents in the following ways:
+In Cognigy.AI, LLMs act as a bridge to retrieve information from various knowledge bases, such as PDFs, DOCs, PowerPoint presentations, web pages, and images, assisting both AI and human agents:
 
-- **Use Knowledge AI for AI Agents**. Using LLMs integrated into your Project, AI Agents can access relevant knowledge sources: articles, web pages, images with ease. To create a first Knowledge Store, go to the [Knowledge AI](../knowledge-ai/overview.md) documentation. To retrieve data from the Knowledge Store and improve the AI Agent's output, use the [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md) Node.
+- **Use Knowledge AI for AI Agents**. Using LLMs integrated into your Project, AI Agents can access relevant knowledge sources, including articles from subject-matter experts, frequently asked questions, and diagrams. To create a first Knowledge Store, go to the [Knowledge AI](../knowledge-ai/overview.md) documentation. To retrieve data from the Knowledge Store and improve the AI Agent's output, use the [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md) Node.
 - **Use Knowledge AI for human agents**. By retrieving data from different knowledge bases, LLMs reduce the burden on human agents, making information access quicker and more efficient. To let human agents use the knowledge base for solving tasks, add a widget to the AI Copilot workspace using a [Copilot: Knowledge Tile](../../build/node-reference/ai-copilot/knowledge-tile.md) Node. The widget serves as a search tool, enabling human agents to enter questions and retrieve information from the knowledge base.
 
 ### Extract Specific Entities from User Inputs
 
-By using LLMs, you can extract specific entities from user inputs, such as product or booking codes and customer IDs, in chat and voice conversations. For example, if a user says, `I would like to book flight AB123 from New York to London`, the LLM can extract the booking code `AB123` from the input. 
+By using LLMs, you can extract specific entities from user inputs, such as product or booking codes and customer IDs. For example, if a user says, `I would like to book flight AB123 from New York to London`, the LLM can extract the booking code `AB123` from the input. 
 This capability allows for dynamic, context-aware responses while improving accuracy and reducing manual data entry.
 To add this feature to your AI Agent,
 add the [LLM Entity Extract](../../build/node-reference/other-nodes/llm-entity-extract.md) Node within your Flow.
@@ -75,8 +76,7 @@ using an [AI Copilot: Sentiment Analysis Tile](../../build/node-reference/ai-cop
 ### Ensure LLM Accuracy with Human Review
 
 Even though LLMs are powerful, there are situations where human oversight is essential.
-Errors in data retrieval,
-Intent matching, or sentiment analysis can occur, especially with nuanced or complex information.
+Errors in data retrieval or sentiment analysis can occur, especially with nuanced or complex information.
 Human review can help minimize these errors.
 
 AI Copilot provides [plug-and-play widgets](../../../ai-copilot/plug-and-play-widgets.md) in the [workspace](../../../ai-copilot/index.md), allowing human agents to review the output generated by LLMs before sending responses to customers. 
@@ -89,15 +89,15 @@ In Cognigy.AI, you can add an LLM from the offered LLM providers as either a sta
 ### Standard Models
 
 _Standard models_ are predefined models in the Cognigy.AI interface.
-As a result, you have to select an LLM provider and then select the model name from the list. 
-By choosing a standard model, you ensure compatibility with Cognigy.AI features.
+To use a standard model, select an LLM provider and then select the model name from the list in the Cognigy.AI interface. 
+By choosing a standard model, you can ensure that this model is fully compatible with Cognigy.AI features.
 For more information, refer to the [Model Support by Feature](model-support-by-feature.md) table.
 
 After selecting a model, you must enter the API credentials from the [LLM provider](providers/all-providers.md) that offers this model to get access to its functionality.
 
 ### Custom Models
 
-_Custom Models_ are non-predefined models in the Cognigy.AI interface. As a result, you have to select an LLM provider and manually enter the model name instead of selecting from a list. While these models may not guarantee the same feature support as standard models, they can be helpful when you need a specific version and are familiar with its capabilities. Moreover, if LLM providers release new model versions, opting for a custom model lets you avoid waiting for Cognigy.AI to update its list.
+_Custom Models_ are non-predefined models in the Cognigy.AI interface. To use a custom model, select an LLM provider and manually enter the model name instead of selecting from a list. While these models may not guarantee the same feature support as standard models, they can be helpful when you need a specific version and are familiar with its capabilities. Moreover, if LLM providers release new model versions, opting for a custom model lets you avoid waiting for Cognigy.AI to update its list.
 
 Similar to the standard model, you must enter the API credentials from the [LLM provider](providers/all-providers.md) that offers this model to get access to its functionality.
 

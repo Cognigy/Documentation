@@ -1,6 +1,6 @@
 ---
 title: "Other Operations"
-slug: "llms-other-operations"
+slug: "other-llm-operations"
 description: "Once you've added an LLM to Cognigy.AI, you can perform the following operations with your model: clone, set as default, export, or delete. "
 hidden: false
 ---
