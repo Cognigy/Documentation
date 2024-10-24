@@ -27,7 +27,7 @@ With Live Agent, you can inform customers about queue updates by configuring sev
 
 ## Configure Settings for a Handover to Agent Node
 
-1. In the Flow editor, add the Handover to Agent Node or use an existing one if you already added it earilier. 
+1. In the Flow editor, add the Handover to Agent Node or use an existing one if you already added it earlier. 
 2. Open a Node editor by clicking the Handover to Agent Node.
 3. Go to the **Live Agent Settings** section.
 4. For the queue position, configure the following settings:
@@ -101,10 +101,10 @@ To change the appearance of this message and make it more accessible, as well as
     - `input.data.request.estimatedWaitTime / (1000 * 60)` minutes — the estimated wait time in minutes. The `estimatedWaitTime` is initially provided in milliseconds. It is divided by 1000 to convert it to seconds, and then by 60 to convert it to minutes.
 
 3. Click **Save Node**.
-4. Below the condition **Else**, paste the following text into the **Text** field to display the text from the **Alternative Text** field:  
+4. Below the condition **Else**, paste the following text into the **Text** field to display the text from the **Alternative Text** field of the Handover to Agent Node that [you configured earlier](#configure-settings-for-a-handover-to-agent-node):  
 
     ```txt  
-    {{"{{input?.handover?.data?.alternativeText}}"}}
+    {{"{{input.handover.data.alternativeText}}"}}
     ```
 5. Click **Save Node**.
 
