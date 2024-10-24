@@ -23,7 +23,7 @@ To create a label within Live Agent, do the following:
 3. In the settings column, select **Labels**.
 4. At the top right of the window, click **Add label**.
 5. In the **Add label** window, do the following, fill in the following fields:
-    - **Label Name** — a name for the label to identify its category. For example, `Premium_Customer`. The name can contain only letters, numbers, underscores, and hyphens.       
+    - **Label Name** — a name for the label to identify its category. For example, `Premium_Customer`. The name can contain any characters but can't start with `=` and must be at least 2 characters long.    
     - **Description** — a brief explanation of the label's meaning. For example, `This issue needs to be handled with priority`.  
     - **Level** — a level of access to objects where the label is applicable. Select one of the following levels: 
         - **Global** — the label is available for all Teams and Inboxes. 

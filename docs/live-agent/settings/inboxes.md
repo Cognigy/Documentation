@@ -21,7 +21,7 @@ To create an Inbox in Live Agent, do the following:
 2. Go to **Settings > Inboxes**.
 3. In the upper-right corner, click **+ Add Inbox**. Live Agent will show you a screen to set up your Inbox. 
 4. On the **Inbox setup** page, fill in the following fields:
-    - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`. The name can contain only letters, numbers, underscores, hyphens, and spaces.
+    - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`. The name can contain any characters but can't start with `=` and must be at least 2 characters long.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
 5. In the **Pick agents for the inbox** list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
 6. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your agents to the new Inbox.
