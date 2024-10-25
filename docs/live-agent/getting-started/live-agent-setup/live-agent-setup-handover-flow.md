@@ -35,7 +35,7 @@ To create a Live Agent Flow, follow these steps:
 
 ## Test your Connection
 
-1. Go to the Endpoint that you created.
+1. Go to the Endpoint that you created in the Cognigy.AI interface.
 2. Click **Open Demo Webchat**.
 3. Start the conversation by typing `Hi` and clicking the **Send** button.
 
@@ -44,7 +44,7 @@ To create a Live Agent Flow, follow these steps:
         <figcaption>Webchat Screen</figcaption>
     </figure>
 
-4. In the upper-right corner, click **User Menu > Live Agent**.
+4. In the bottom-left corner of your Project, click **User Menu > Live Agent**.
 5. In the left-side menu of the Live Agent interface, select **Conversations**.
    On the **All** tab, the conversation that you started should appear in the conversation list.
 6. Open the conversation.

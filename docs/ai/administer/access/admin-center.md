@@ -15,8 +15,10 @@ The Admin Center provides platform administrators with a comprehensive report on
 
 On the **Admin Center** page, administrators can activate Live Agent and Voice Gateway products, as well as delete organizations.
 
-To access the **Admin Center** page, 
-click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Admin Center**.
+You can access the **Admin Center** page by one of the following options:
+
+- Click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page.
+- Select **My Profile** from the user menu in the bottom-left corner of the Project page.
 
 ## Billable Conversations
 

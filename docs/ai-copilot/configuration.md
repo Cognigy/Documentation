@@ -27,19 +27,20 @@ If you want to create a new AI Copilot Config template instead of using the defa
 
 #### Create an API Key
 
-1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**.
-2. In the **API Keys** section, click **+**.
-3. Add an API key name and click **Confirm**. The API key will appear in the list.
-4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
-5. Paste the API Key to the following fields:
+1. Open the Cognigy.AI interface.
+2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile**. 
+3. In the **API Keys** section, click **+**. 
+4. Add an API key name and click **Confirm**. The API key will appear in the list. 
+5. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site. 
+6. Paste the API Key to the following fields:
     - API Key (X-API-Key)
     - API Key (api_key)
-6. Click **Set** near both fields.
-7. Go to your Project in Cognigy.AI.
-8. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`. 
-9. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request.
-10. Add the Project ID you copied earlier to the `projectId` field in the JSON body of the request.
-11. Check your connection by clicking **Try**.
+7. Click **Set** near both fields. 
+8. Go to your Project in Cognigy.AI. 
+9. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`. 
+10. Go to the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
+11. Add the Project ID you copied earlier to the `projectId` field in the JSON body of the request. 
+12. Check your connection by clicking **Try**.
 
 When the request is created, you will see the response code `201`.
 

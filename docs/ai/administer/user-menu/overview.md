@@ -14,7 +14,9 @@ manage roles with ACL, access Cognigy products and documentation quickly, and lo
 To open the User Menu, follow these steps:
 
 1. Go to the Cognigy.AI interface.
-2. In the upper-right corner of the Cognigy.AI interface, click ![user-menu](../../../_assets/icons/user-menu.svg).
+2. Access the **Admin Center** page by one of the following options:
+    - Click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page.
+    - Select **My Profile** from the user menu in the bottom-left corner of the Project page.
 
 ## User Menu Options
 
