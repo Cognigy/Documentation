@@ -3,7 +3,7 @@
  slug: "if" 
  hidden: false 
  tags:
-  - Cognigy.Ai
+  - Cognigy.AI
   - Nodes
   - If
 ---

@@ -786,11 +786,7 @@ plugins:
   - search
   - macros
   - tags:
-    tags_hierarchy: true
-    tags_file: tags.md
-    listings_map:
-              scoped:
-                 scope: true
+      tags_file: tags.md
   - exclude:
       glob:
         - _includes/*
