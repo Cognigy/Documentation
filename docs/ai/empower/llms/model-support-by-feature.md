@@ -7,10 +7,12 @@ hidden: false
 
 # Model Support by Feature
 
-The table outlines the LLM providers supported by Cognigy.AI and shows the standard models along with their compatibility with Cognigy.AI features.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
+
+The table provides an overview of the LLM providers supported by Cognigy.AI, detailing the standard models and their compatibility with Cognigy.AI features.
 You can also add a custom model that is not presented in the table.
 To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name.
-For more information about adding a custom model for a selected LLM provider,
+For more information about adding a custom or standard model for a selected LLM provider,
 refer to the [All LLM Providers](providers/all-providers.md) page.
 
 | <div style="width:215px">Models/<br>Cognigy.AI Features</div>                                                                            | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node | Answer Extraction | Knowledge Search | Sentiment Analysis | NLU Embedding Model | Adaptive Card Generation |
@@ -41,7 +43,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 | claude-instant-v1 ([Legacy](https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models))                         | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        |
 | ![google-vertex](../../../_assets/icons/google-vertex.svg) **[Google Vertex](providers/google.md)**                                      |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
 | text-bison-001 (Bard)                                                                                                                    | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        |
-| ![google-gemini](../../../_assets/icons/google-gemini.svg) **[Google Gemini](providers/google.md)***                                     |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
+| ![google-gemini](../../../_assets/icons/google-gemini.svg) **[Google Gemini](providers/google.md)**                                      |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
 | gemini-1.0-pro                                                                                                                           | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        |
 | ![alephalpha](../../../_assets/icons/alephalpha.svg) **[Aleph Alpha](providers/aleph-alpha.md)**                                         |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |
 | luminous                                                                                                                                 | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        |
@@ -52,3 +54,9 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 [^*]: For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](../knowledge-ai/overview.md#which-model-to-choose)
 
 [^**]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use `luminous-embedding-128`, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
+
+## More Information
+
+- [Overview](overview.md)
+- [All LLM Providers](providers/all-providers.md)
+- [Other LLM Operations](other-operations.md)

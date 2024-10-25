@@ -67,3 +67,11 @@ To resolve the issue, recreate the model and the connection so that both are upd
 ## Apply the Model
 
 {! _includes/ai/generative-ai/apply-model.md !}
+
+## More Information
+
+- [Other LLM Operations](../other-operations.md)
+- [Overview](../overview.md)
+- [All LLM Providers](all-providers.md)
+- [Model support by feature](../model-support-by-feature.md)
+- [OpenAI](openai.md)

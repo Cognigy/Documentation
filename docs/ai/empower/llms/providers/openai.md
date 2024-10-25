@@ -43,3 +43,12 @@ To apply this model for Cognigy.AI features, go to the settings by clicking **Ma
 ## Apply the Model
 
 {! _includes/ai/generative-ai/apply-model.md !}
+
+
+## More Information
+
+- [Other LLM Operations](../other-operations.md)
+- [Overview](../overview.md)
+- [All LLM Providers](all-providers.md)
+- [Model support by feature](../model-support-by-feature.md)
+- [Azure OpenAI](microsoft-azure-openai.md)
