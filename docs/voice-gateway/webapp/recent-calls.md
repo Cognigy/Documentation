@@ -50,7 +50,10 @@ To view detailed information about the call, click the **Details** tab.
 
 Additionally, Voice Gateway provides PCAP files, which can be downloaded in the detailed information overview.
 
-## Call Tracing 
+## Call Tracing (Beta)
+
+!!! note
+    This feature is in Beta. The data displayed on the Tracing tab does not have persistent storage and may be lost at any time.
 
 For inbound calls, you can analyze the captured media stream (log) to diagnose and troubleshoot voice quality issues by clicking the **Tracing** tab and viewing the report. This feature provides valuable insights into the duration of different actions during the call, such as speech recognition and connections. By reviewing the report, you can identify any delays or issues that occurred during these actions, helping you pinpoint potential areas of improvement in terms of performance and efficiency.
 

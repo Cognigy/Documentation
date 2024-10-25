@@ -14,3 +14,4 @@ To set up the logic for escalating communication to the contact center, you can 
     - [Set Handover Inactivity](../build/node-reference/service/set-handover-inactivity.md)
 - Features:
     - [User Inactivity Detection](user-inactivity-detection.md)
+    - [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) (applicable only to Cognigy Live Agent)

@@ -4,7 +4,7 @@ slug: "webchat-v2"
 hidden: false
 ---
 
-# Webchat v2
+# Webchat v2 (Deprecated)
 
 {! _includes/webchat/deprecation-webchat-v2.md !}
 

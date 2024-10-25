@@ -109,8 +109,8 @@ The Transcript Explorer enables you to view session transcripts to analyze them,
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
 <figure>
-  <img class="image-center" src="../../../_assets/insights/explorers/transcript/Transcript_Explorer_profile.png" width="100%" />
-  <figcaption>Session Transcript with Expert Mode</figcaption>
+  <img class="image-center" src="../../../_assets/insights/explorers/transcript/transcript-explorer-profile.png" width="100%" />
+  <figcaption>Session Transcript with Debug Mode</figcaption>
 </figure>
 
 ### Session Transcript
@@ -118,11 +118,11 @@ To view a session transcript, select a session from the list on the **Transcript
 Session transcripts display all individual messages between the end user and agent during their conversation. By selecting a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
-#### Expert mode
+#### Debug Mode
 
-Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../../ai/test/interaction-panel/overview.md#expert-mode) documentation.
+Insights' Debug mode is not fully equal to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/overview.md#debug-mode) documentation. Debug messages from Nodes (including Code Nodes and Debug Message Nodes) are only for immediate testing and can only be seen in the Interaction Panel.
 
-The Expert mode offers additional context for conversation messages, including:
+The Debug mode offers additional context for conversation messages, including:
 
 - Triggered Intent and its score
 - Filled Slots
@@ -132,12 +132,12 @@ The Expert mode offers additional context for conversation messages, including:
 
 Additionally, you can switch to a Flow related to the current session.
 
-To activate Expert mode, do the following:
+To activate Debug mode, do the following:
 
 1. Go to the Insights interface.
 2. From the left-side menu, select **Transcript Explorer**.
 3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
-4. At the top of the **Session Transcript** window, activate the **Expert mode** toggle.
+4. At the top of the **Session Transcript** window, activate the **Debug mode** toggle.
 
 #### Playbooks
 

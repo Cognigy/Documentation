@@ -7,7 +7,7 @@ hidden: false
 
 # PDF
 
-When you use a PDF file as a knowledge source, the following chunk splitting strategies will be applied after uploading the file:
+When you use a PDF file as a Knowledge Source, the following chunk splitting strategies will be applied after uploading the file:
 
 - [Default](#default-chunk-strategy)
 - [Alternative](#alternative-chunk-strategy)

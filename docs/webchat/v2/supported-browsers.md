@@ -1,7 +1,7 @@
 ---
 title: "Supported Browsers"
 slug: "supported-browsers"
-description: "Cognigy Webchat v2  is compatible with the browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari."
+description: "Cognigy Webchat v2 is compatible with the browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari."
 hidden: false
 ---
 

@@ -10,6 +10,8 @@ tags:
 
 # Projects
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.86-blue.svg)](../../release-notes/4.86.md)
+
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
 Within a project, you can create AI Agents.
@@ -20,7 +22,7 @@ AI Agents can deploy on a wide range of channels.
 ## Create a Project
 
 1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click **Create Project**.
+2. In the upper-left corner, click the **Plus button** to create a project.
 3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
 4. Select the primary language for your Project.
 5. Select a color that will be associated with your Project.
@@ -50,6 +52,17 @@ If the Live Agent Account is already configured for your organization, you can c
     - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
 
 Complete the Project setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
+
+## Search Projects
+
+The Projects are sorted by last activity, with the most recently updated Projects displayed at the top of the list.
+
+To search for Projects in Cognigy.AI, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. On the left side of the screen, navigate to the **Search Projects** filed.
+3. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
+4. Select the Project you want to edit.
 
 ## Copy the Project ID
 

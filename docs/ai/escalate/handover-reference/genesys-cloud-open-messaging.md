@@ -22,7 +22,7 @@ The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](http
 
 ### Prerequisites
 
-- You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
+- You need to have an account in [Genesys Cloud](https://login.mypurecloud.com/).
 - Activate Genesys Cloud Open Messaging on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
     - If you have an on-premise installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.

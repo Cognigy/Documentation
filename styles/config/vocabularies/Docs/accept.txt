@@ -1,0 +1,103 @@
+Cognigy.AI
+Cognigy's
+Cognigy
+Voice Gateway
+Live Agent
+AI Copilot
+AI Agent
+Chunks
+Chunk editor
+Connection
+Contact Profile
+Context
+Cognigy.AI API
+CognigyScript
+Flow
+Flow editor
+Function
+Intents
+Input object
+Keyphrase
+Knowledge AI
+Knowledge Source
+Source
+Knowledge Store
+Store
+LLM
+LLMs
+Lexicon
+Locale
+Nodes
+Node editor
+NLU
+Package
+Project
+Snapshot
+Slot
+State 
+Synonym
+Tokens
+Yes/No Intents
+agent
+channel
+localization
+logs
+members
+model
+roles
+user input
+Insights
+conversation
+dashboards
+escalations
+explorers
+session
+time zone
+Live Agent
+Access token
+`Administrator`
+`Agent`
+AI Copilot Bot
+AI Copilot Live Agent
+AI Copilot Whisper
+attachments
+automation
+canned responses
+conversation
+human agents
+inbox
+labels
+notifications
+report
+`Supervisor`
+teams
+Voice Gateway
+account
+alerts
+application
+carriers
+phone number
+recent calls
+scopes
+SIP
+speech provider
+speech vendor
+users
+AI Copilot
+AI Copilot Config
+AI Copilot configuration
+Tile ID
+`tile id`
+AI Copilot workspace
+workspace
+xApps
+xApp
+MongoDB
+PostgreSQL
+Helm chart
+OData
+[Hh]uman agent
+docx
+DOCX
+PDF
+pdf

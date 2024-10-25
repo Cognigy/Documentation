@@ -23,7 +23,7 @@ _Cognigy Voice Gateway_ is an AI-based solution to deploy voice AI Agents for au
 
     [:octicons-arrow-right-24: Voice Gateway Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md)<br>
     [:octicons-arrow-right-24: Voice Gateway Verbs](references/verbs/overview.md)<br>
-    [:octicons-arrow-right-24: Voice Gateway Endpoint](../ai/deploy/endpoint-reference/overview.md)<br>
+    [:octicons-arrow-right-24: Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md)<br>
 
 -   :speaking_head:{ .lg .middle } __Configure Voice Calls__
 

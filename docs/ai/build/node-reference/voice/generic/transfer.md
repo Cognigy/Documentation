@@ -15,6 +15,7 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Transfer Node lets pass an active call to a tel or sip target.
 

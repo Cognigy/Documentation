@@ -16,6 +16,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 Continuous ASR enables the system to concatenate multiple STT recognitions of the user and then send them as a single textual message to the voice agent.
 
 When executed, the settings will apply for the remainder of the session.

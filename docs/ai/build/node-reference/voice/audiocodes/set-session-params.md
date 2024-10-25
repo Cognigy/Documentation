@@ -13,6 +13,7 @@ hidden: false
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Set Session Params Node configures the AudioCodes Session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 

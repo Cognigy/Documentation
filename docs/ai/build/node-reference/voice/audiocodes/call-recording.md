@@ -12,6 +12,8 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 The Call Recording Node controls the voice recording capabilities of the conversation.
 
 Recording is done by the SBC (SRC) using the SIPRec protocol and functioning as the Session Recording Client (SRC).

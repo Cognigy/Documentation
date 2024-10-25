@@ -83,8 +83,17 @@ In this case, it might be necessary to configure the P-Asserted-Identity header 
 To do this, turn on the Custom Transfer SIP Headers toggle in the Advanced settings of the Transfer Node,
 and enter the following in the JSON field:
 
-   ```json
-    {
-    "P-Asserted-Identity": "<sip:phonenumber@host>"
-    }
-   ```
+```json
+{
+"P-Asserted-Identity": "<sip:phonenumber@host>"
+}
+```
+
+#### Possible 487 Error After Dial Transfer
+
+In case you receive a 487 error log message after using a Transfer Node with Dial,
+check the related [PCAP](../../../../../voice-gateway/webapp/recent-calls.md) file in the Voice Gateway Self-Service Portal first.
+There you should see a `CANCEL` method followed by the `487 Request Terminated` error. 
+
+This error indicates that the callee did not answer within the defined timeout.
+Within the Flow, you will receive the [NO_ANSWER](../../../../../voice-gateway/references/events/NO_ANSWER.md) call event.

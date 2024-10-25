@@ -25,6 +25,7 @@ nav:
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md
+          - ai/build/nodes/channels.md
       - Node Reference:
         - ai/build/node-reference/overview.md
         - Basic:
@@ -33,6 +34,7 @@ nav:
           - ai/build/node-reference/basic/question.md
           - ai/build/node-reference/basic/optional-question.md
           - ai/build/node-reference/basic/send-text.md
+          - ai/build/node-reference/basic/debug-message.md
           - Code:
               - ai/build/node-reference/basic/code/overview.md
               - ai/build/node-reference/basic/code/actions.md
@@ -215,6 +217,7 @@ nav:
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-basic-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-advanced-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
+        - ai/empower/knowledge-ai/source-tags.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:
@@ -364,6 +367,7 @@ nav:
       - voice-gateway/overview.md
       - voice-gateway/getting-started.md
       - voice-gateway/technical-capabilities.md
+      - voice-gateway/migrate-from-ac-to-vg.md
       - voice-gateway/glossary.md
     - 🛠️ Self-Service Portal:
       - voice-gateway/webapp/overview.md
@@ -428,16 +432,17 @@ nav:
       - webchat/overview.md
       - webchat/getting-started.md
 
-    - 🆕 Webchat v3 (Beta):
+    - 🆕 Webchat v3:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md
       - Endpoint Configuration:
         - webchat/v3/configuration.md
         - webchat/v3/metadata.md
+      - webchat/v3/accessibility.md
       - webchat/v3/embedding.md
 
-    - 💬 Webchat v2:
+    - 💬 Webchat v2 (Deprecated):
       - webchat/v2/overview.md
       - webchat/v2/supported-browsers.md
       - webchat/v2/features.md
@@ -525,7 +530,9 @@ nav:
     - 💬 Conversations:
       - live-agent/conversation/overview.md
       - live-agent/conversation/assign-conversations.md
-      - live-agent/conversation/conversation-queue.md
+      - Conversation Queue:
+        - live-agent/conversation/conversation-queue/overview.md
+        - live-agent/conversation/conversation-queue/real-time-queue-notifications.md
       - Conversation Routing:
         - live-agent/conversation/conversation-routing/overview.md
         - live-agent/conversation/conversation-routing/manual-mode.md
@@ -631,61 +638,74 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
-    - release-notes/4.82.md
-    - release-notes/4.81.md
-    - release-notes/4.80.md
-    - release-notes/4.79.md
-    - release-notes/4.78.md
-    - release-notes/4.77.md
-    - release-notes/4.76.md
-    - release-notes/4.75.md
-    - release-notes/4.74.md
-    - release-notes/4.73.md
-    - release-notes/4.72.md
-    - release-notes/4.71.md
-    - release-notes/4.70.md
-    - release-notes/4.69.md
-    - release-notes/4.68.md
-    - release-notes/4.67.md
-    - release-notes/4.66.md
-    - release-notes/4.65.md
-    - release-notes/4.64.md
-    - release-notes/4.63.md
-    - release-notes/4.62.md
-    - release-notes/4.61.md
-    - release-notes/4.60.md
-    - release-notes/4.59.md
-    - release-notes/4.58.md
-    - release-notes/4.57.md
-    - release-notes/4.56.md
-    - release-notes/4.55.md
-    - release-notes/4.54.md
-    - release-notes/4.53.md
-    - release-notes/4.52.md
-    - release-notes/4.51.md
-    - release-notes/4.50.md
-    - release-notes/4.49.md
-    - release-notes/4.48.md
-    - release-notes/4.47.md
-    - release-notes/4.46.md
-    - release-notes/4.45.md
-    - release-notes/4.44.md
-    - release-notes/4.43.md
-    - release-notes/4.42.md
-    - release-notes/4.41.md
-    - release-notes/4.40.md
-    - release-notes/4.39.md
-    - release-notes/4.38.md
-    - release-notes/4.37.md
-    - release-notes/4.36.md
-    - release-notes/4.35.md
-    - release-notes/4.34.md
-    - release-notes/4.33.md
-    - release-notes/4.32.md
-    - release-notes/4.31.md
-    - release-notes/4.30.md
-    - Earlier versions:
-      - release-notes/earlier-versions/index.md
+    - release-notes/deprecations-and-removals.md
+    - 📦 Product Versions:
+      - 4.8x:
+        - release-notes/4.87.md
+        - release-notes/4.86.md
+        - release-notes/4.85.md
+        - release-notes/4.84.md
+        - release-notes/4.83.md
+        - release-notes/4.82.md
+        - release-notes/4.81.md
+        - release-notes/4.80.md
+      - 4.7x:
+        - release-notes/4.79.md
+        - release-notes/4.78.md
+        - release-notes/4.77.md
+        - release-notes/4.76.md
+        - release-notes/4.75.md
+        - release-notes/4.74.md
+        - release-notes/4.73.md
+        - release-notes/4.72.md
+        - release-notes/4.71.md
+        - release-notes/4.70.md
+      - 4.6x:
+        - release-notes/4.69.md
+        - release-notes/4.68.md
+        - release-notes/4.67.md
+        - release-notes/4.66.md
+        - release-notes/4.65.md
+        - release-notes/4.64.md
+        - release-notes/4.63.md
+        - release-notes/4.62.md
+        - release-notes/4.61.md
+        - release-notes/4.60.md
+      - 4.5x:
+        - release-notes/4.59.md
+        - release-notes/4.58.md
+        - release-notes/4.57.md
+        - release-notes/4.56.md
+        - release-notes/4.55.md
+        - release-notes/4.54.md
+        - release-notes/4.53.md
+        - release-notes/4.52.md
+        - release-notes/4.51.md
+        - release-notes/4.50.md
+      - 4.4x:
+        - release-notes/4.49.md
+        - release-notes/4.48.md
+        - release-notes/4.47.md
+        - release-notes/4.46.md
+        - release-notes/4.45.md
+        - release-notes/4.44.md
+        - release-notes/4.43.md
+        - release-notes/4.42.md
+        - release-notes/4.41.md
+        - release-notes/4.40.md
+      - 4.3x:
+        - release-notes/4.39.md
+        - release-notes/4.38.md
+        - release-notes/4.37.md
+        - release-notes/4.36.md
+        - release-notes/4.35.md
+        - release-notes/4.34.md
+        - release-notes/4.33.md
+        - release-notes/4.32.md
+        - release-notes/4.31.md
+        - release-notes/4.30.md
+    - 📜 Earlier Product Versions:
+      - release-notes/earlier-versions/overview.md
       - release-notes/earlier-versions/cognigy-ai-pre-4.30.md
       - release-notes/earlier-versions/insights-pre-4.30.md
       - release-notes/earlier-versions/live-agent-pre-4.30.md
@@ -712,6 +732,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - content.tabs.link
+    - content.code.copy
 
     # render navigation bar at the top of the page
     - navigation.tracking

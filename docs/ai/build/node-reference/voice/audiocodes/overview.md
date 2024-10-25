@@ -9,6 +9,8 @@ tags:
 
 # AudioCodes
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
 AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](../../../../deploy/endpoint-reference/audiocodes.md).
 
 You can use the following Voice Gateway Nodes:

@@ -12,7 +12,7 @@ Insights helps businesses to better understand their users, optimize their chatb
     To analyze your AI agents and take your chat and voice agents to the next level, explore the capabilities of Cognigy Insights
 
     [:octicons-arrow-right-24: Overview](overview.md)<br>
-    [:octicons-arrow-right-24: Glossary]()
+    [:octicons-arrow-right-24: Glossary](glossary.md)
 
 -   :bar_chart:{ .lg .middle } __View Dashboard Metrics__
 
@@ -21,9 +21,9 @@ Insights helps businesses to better understand their users, optimize their chatb
     Monitor key metrics by utilizing ready-made charts on dashboards
 
     [:octicons-arrow-right-24: Overview](dashboards/overview.md)<br>
-    [:octicons-arrow-right-24: Engagement](../ai/build/node-reference/xApp/overview.md)<br>
-    [:octicons-arrow-right-24: NLU Performance](https://github.com/Cognigy/xApps/tree/main/xapps)<br>
-    [:octicons-arrow-right-24: Live Agent (Beta)](https://github.com/Cognigy/xApps/tree/main/xapps)<br>
+    [:octicons-arrow-right-24: Engagement](dashboards/engagement.md)<br>
+    [:octicons-arrow-right-24: NLU Performance](dashboards/nlu-performance.md)<br>
+    [:octicons-arrow-right-24: Live Agent (Beta)](dashboards/live-agent.md)<br>
 
 -   :telescope:{ .lg .middle } __Use Explorers__
 

@@ -13,15 +13,18 @@ This API can also be used by developers to build custom integrations with Cognig
 
 Any kind of information that is visible and any kind of action that can be performed in the frontend is queried or triggered through this API, which is 100% exposed for developers, too.
 
-### The API baseurl
+### The API Base URL
 
-This is the URL where the API is available.
+The API Base URL is the endpoint for accessing the Cognigy.AI OpenAPI.
+The table outlines the base URLs for different environments.
 
-| Environment              | API Base URL                                                                                            |
-|--------------------------|---------------------------------------------------------------------------------------------------------|
-| Trial (trial.cognigy.ai) | `https://api-trial.cognigy.ai`                                                                          |
-| App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                            |
-| On-Premise Installations | This is the url that has been defined as `BACKEND_BASE_URL_WITH_PROTOCOL` in your `production.env` file | 
+| Environment              | API Base URL                                                                                                                                                                                                                         |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Trial (trial.cognigy.ai) | `https://api-trial.cognigy.ai`                                                                                                                                                                                                       |
+| App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                                                                                                                                                         |
+| App-US                   | `https://api-app-us.cognigy.ai/openapi`                                                                                                                                                                                              |
+| Dedicated SaaS           | Use the following pattern `https://api-<company-name>.cognigy.cloud/openapi`, where `company-name` is your company name. For example, if your company name is `abc123`, the URL would be `https://api-abc123.cognigy.cloud/openapi`. |                                                                                                      |
+| On-Premise Installations | Specify the API URL as the value for the environment variable `BACKEND_BASE_URL_WITH_PROTOCOL` in your Cognigy.AI `values.yaml` file.                                                                                                | 
 
 ### Manage API Keys
 
