@@ -1,12 +1,13 @@
 ---
- title: "If" 
- slug: "if" 
- hidden: false 
- tags:
+title: "If" 
+slug: "if" 
+hidden: false 
+tags:
   - Cognigy.AI
   - Nodes
   - If
 ---
+
 # If
 
 <figure>

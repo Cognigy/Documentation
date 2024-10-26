@@ -4,9 +4,9 @@ slug: "conversation-queue"
 description: "Conversation Queue is a list of conversations waiting for attention from human agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply."
 hidden: false
 tags:
-    - Live Agent
-    - Conversation
-    - Queue
+  - Live Agent
+  - Conversation
+  - Queue
 ---
 
 # Conversation Queue

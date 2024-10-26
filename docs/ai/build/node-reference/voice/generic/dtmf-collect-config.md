@@ -1,11 +1,10 @@
 ---
- title: "DTMF Collect - Config" 
- slug: "dtmf-collect-config" 
- hidden: false 
- tags:
+title: "DTMF Collect - Config" 
+slug: "dtmf-collect-config" 
+hidden: false 
+tags:
   - Voice Gateway
   - DTMF
-  
 ---
 
 # DTMF Collect - Config

@@ -2,7 +2,7 @@
 
 Following is a list of relevant tags:
 
-<!-- material/tags scoped -->
+<!--  
 
 - Cognigy.AI:
     - Node:
@@ -155,5 +155,7 @@ Following is a list of relevant tags:
 - xApps:
     - xApp
     - XSS
-    - Cross site scripting
+    - Cross-site scripting
     - API
+
+-->

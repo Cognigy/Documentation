@@ -4,9 +4,9 @@ slug: "webchat-plugins"
 description: "Utilize pre-made plugins for your Cognigy Webchat or develop your own plugin to customize it according to your needs."
 hidden: false
 tags:
-    - Webchat
-    - Plugins
-    - Plugin
+  - Webchat
+  - Plugins
+  - Plugin
 ---
 
 # Webchat Plugins

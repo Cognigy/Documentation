@@ -2,10 +2,10 @@
 title: "Send Text" 
 slug: "send-text" 
 hidden: false 
- tags:
-    - Cognigy.AI
-    - Nodes
-    - Send Text
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Send Text
 ---
 
 # Send Text

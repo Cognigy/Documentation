@@ -4,9 +4,9 @@ slug: "Packages"
 description: "Cognigy.AI Packages are a useful tool for exporting and importing a Project's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive."
 hidden: false 
 tags:
-    - Cognigy.AI
-    - Packages
-    - Packaging
+  - Cognigy.AI
+  - Packages
+  - Packaging
 ---
 
 # Packages

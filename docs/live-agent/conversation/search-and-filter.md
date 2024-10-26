@@ -4,9 +4,9 @@ slug: "search-and-filter"
 description: "In Live Agent, human agents can search, filter, and organize conversations. The agents can find messages by entering keywords, apply filters for status, assignee name, and team name, and sort conversations by last activity, creation date, or priority."
 hidden: false
 tags:
-    - Live Agent
-    - Conversation
-    - Search And Filter
+  - Live Agent
+  - Conversation
+  - Search And Filter
 ---
 
 # Search, Filter, and Sort Conversations

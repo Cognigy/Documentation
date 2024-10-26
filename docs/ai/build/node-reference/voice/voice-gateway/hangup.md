@@ -1,11 +1,12 @@
 ---
- title: "Hang Up" 
- slug: "hang-up" 
- hidden: false 
- tags:
+title: "Hang Up" 
+slug: "hang-up" 
+hidden: false 
+tags:
   - Voice Gateway
   - Hangup
 ---
+
 # Hang Up
 
 <figure>

@@ -1,12 +1,13 @@
 ---
- title: "Once" 
- slug: "once" 
- hidden: false 
- tags:
+title: "Once" 
+slug: "once" 
+hidden: false 
+tags:
   - Cognigy.AI
   - Nodes
   - Once
 ---
+
 # Once
 
 <figure>

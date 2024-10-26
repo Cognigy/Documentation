@@ -3,9 +3,9 @@ title: "SMTP"
 slug: "smtp" 
 hidden: false 
 tags:
-    - Live Agent
-    - Helm Values
-    - SMTP
+  - Live Agent
+  - Helm Values
+  - SMTP
 ---
 
 # SMTP

@@ -4,9 +4,9 @@ slug: "email-templates"
 hidden: false 
 ignore_macros: true
 tags:
-    - Live Agent
-    - Email Template
-    - Email Templates
+  - Live Agent
+  - Email Template
+  - Email Templates
 ---
 
 # Email Templates
