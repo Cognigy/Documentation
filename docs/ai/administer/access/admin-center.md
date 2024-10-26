@@ -18,7 +18,7 @@ On the **Admin Center** page, administrators can activate Live Agent and Voice G
 You can access the **Admin Center** page by one of the following options:
 
 - Click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page.
-- Select **My Profile** from the user menu in the bottom-left corner of the Project page.
+- Select **Admin Center** from the User Menu in the bottom-left corner of the Project page.
 
 ## Billable Conversations
 

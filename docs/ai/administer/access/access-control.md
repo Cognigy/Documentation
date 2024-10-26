@@ -52,7 +52,7 @@ To create a new user, follow these steps:
 4. In the **New User** window, fill in the following fields:
     - **Display Name** — a name that will be visible to other users within the organization.
     - **Email Address** — a unique email address associated with the user's account.
-    - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the user menu in the bottom-left corner of the Project page.
+    - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the User Menu in the bottom-left corner of the Project page.
 5. Click **Save&Open** to assign the global roles and Agents (projects).
 
 When you create a new user, this user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
@@ -70,7 +70,7 @@ To assign global roles to a user, follow these steps:
         3.2 In the **New User** window, fill in the following fields:<br>
             - **Display Name** — a name that will be visible to other users within the organization.<br>
             - **Email Address** — a unique email address associated with the user's account.<br>
-            - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the user menu in the bottom-left corner of the Project page.<br>
+            - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the User Menu in the bottom-left corner of the Project page.<br>
         3.3 Click **Save&Open** to assign the global roles.<br>
         3.4 In the **Global Roles** section, click **+** to open a list of roles.<br>
         3.5 Select the desired role from the list.<br>
@@ -95,7 +95,7 @@ To assign a Project to a user, follow these steps:
         3.2 In the **New User** window, fill in the following fields:<br>
             - **Display Name** — a name that will be visible to other users within the organization.<br>
             - **Email Address** — a unique email address associated with the user's account.<br>
-            - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the user menu in the bottom-left corner of the Project page.<br>
+            - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the User Menu in the bottom-left corner of the Project page.<br>
         3.3 Click **Save&Open** to assign the Projects.<br>
         3.4 In the **Assigned Agents** section, click **+** to open a list of available Projects.<br>
         3.5 Type the name of the Project, then select them from the list, or scroll to find and make your selection.
