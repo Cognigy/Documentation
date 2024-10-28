@@ -6,6 +6,8 @@ hidden: false
 
 # Copilot: IFrame Tile
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-iframe-tile.png" width="80%" />
 </figure>
