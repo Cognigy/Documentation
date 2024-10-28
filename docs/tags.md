@@ -1,6 +1,6 @@
 # Tags
 
-Following is a list of relevant tags:
+This page allows you to find relevant content by searching through the page tags.
 
 <!--  
 

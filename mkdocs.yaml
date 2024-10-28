@@ -786,7 +786,6 @@ plugins:
   - search
   - macros
   - tags:
-      tags: false
       tags_file: tags.md
   - exclude:
       glob:
