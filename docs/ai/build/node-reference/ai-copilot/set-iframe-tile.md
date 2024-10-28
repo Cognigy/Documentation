@@ -24,16 +24,50 @@ This Node in Cognigy allows you to embed external websites directly into the AI 
 
 ## Passing JSON Data into the IFrame
 
-When an IFrame Tile Node is used, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
-To receive and process the passed JSON in your tile, add an event listener and handle the data accordingly.
+When you use an IFrame Tile Node, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. 
+To receive and process the passed JSON data in your tile, add an event listener to your website and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
   console.log("Content of message: " + event.data);
 });
+``` 
+
+Example of an HTML page hosted on your website:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Example</title>
+</head>
+<body>
+<script>
+        let i = 0; // Handle postMessage from iframe parent
+
+        // Update the body document content every second
+        setInterval(function () {
+            i++;
+            document.body.innerHTML = '<h1>Iframe Tile ' + i + '</h1>';
+        }, 1000);
+
+        // Listen for messages from the parent window
+        window.addEventListener('message', function (event) {
+            // We only accept messages from ourselves
+            // if (event.source != window) return; // Uncomment this line if needed
+            console.log('Content of message: ' + event.data);
+        });
+    </script>
+<h1>Iframe Tile</h1>
+</body>
+</html>
 ```
 
-> If you want to send data to your tile without updating the content, simply send the IFrame URL without changes again, together with the data. The tile will only update if the IFrame URL has changed.
+If you want to send data to your tile without updating the content, simply resend the IFrame URL along with the data, ensuring that the URL remains unchanged. The tile will only update if the IFrame URL has changed.
+
+## Postback
+
+{! _includes/ai/nodes/postback.md !}
 
 ## More Information
 

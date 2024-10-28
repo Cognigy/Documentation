@@ -21,7 +21,7 @@ To generate new initial user credentials, run the following commands:
 
     ```bash
     kubectl exec -it -n mongodb mongodb-0 bash
-    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+    mongosh -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     rs.status()
     ```
 
@@ -29,7 +29,7 @@ To generate new initial user credentials, run the following commands:
 
     ```bash
     kubectl exec -it -n mongodb mongodb-0 bash
-    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+    mongosh -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     use service-security
     db.users.drop()
     db.organisations.drop()

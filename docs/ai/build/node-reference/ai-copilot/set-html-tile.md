@@ -128,6 +128,10 @@ Example of using React:
 </html>
 ```
 
+## Postback
+
+{! _includes/ai/nodes/postback.md !}
+
 ## More Information
 
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
