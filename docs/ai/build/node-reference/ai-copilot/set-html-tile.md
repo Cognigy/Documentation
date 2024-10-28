@@ -25,46 +25,6 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 | HTML Content | HTML          | The HTML content to render inside the Widget.            |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
-## Receiving JSON Data from the Flow
-
-When a HTML Tile Node is used, JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
-To receive and process the passed JSON in your tile, add an event listener and handle the data accordingly.
-
-```js
-window.addEventListener("message", function (event) {
-  console.log("Content of message: " + event.data);
-});
-```
-
-> If you want to send data to your tile without updating the content, simply send the same content without changes again, together with the data. The tile will only update if the html content has changed.
-
-## Sending JSON Data back to the Flow
-
-You can send data back to the Flow by using the following code in your HTML:
-
-```js
-// sending a string back to the Flow
-SDK.postback('yes');
-
-// sending an object back to the Flow
-SDK.postback({ "key": "value" });
-```
-
-This will send the following payload back to your Flow:
-
-```json
-{
-  "data": {
-    "_cognigy": {
-      "_agentAssist": {
-        "type": "submit",
-        "payload": "yes"
-      }
-    }
-  }
-}
-```
-
 ## Using React or Angular
 
 In the Copilot: HTML Tile Node, you can enhance your HTML content by utilizing the [React](https://react.dev/) or [Angular](https://angular.dev/) libraries.
@@ -78,7 +38,7 @@ Example of using React:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Minimal React Widget</title>
     <!-- External React libraries -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -128,14 +88,27 @@ Example of using React:
 </html>
 ```
 
-## Postback
+## Receiving JSON Data from the Flow
+
+When you use a Copilot: HTML Tile, JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
+To receive and process the passed JSON in your widget, add an event listener into Copilot: HTML Tile Node and handle the data accordingly.
+
+```js
+window.addEventListener("message", function (event) {
+  console.log("Content of message: " + event.data);
+});
+```
+
+## Sending JSON Data back to the Flow
+
+You can send data back to the Flow by using the Postback feature.
 
 {! _includes/ai/nodes/postback.md !}
 
 ## More Information
 
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
-- [Copilot: IFrame tile](set-iframe-tile.md)
+- [Copilot: IFrame Tile](set-iframe-tile.md)
 - [Copilot: Set Grid](set-grid.md)
 - [AI Copilot Nodes](overview.md)
 - [AI Copilot](../../../../ai-copilot/overview.md)
