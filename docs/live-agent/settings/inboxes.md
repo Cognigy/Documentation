@@ -6,6 +6,8 @@ hidden: false
 
 # Inboxes
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
+
 _Inboxes_ are workspaces where human agents handle real-time chat interactions with customers and manage related tasks. Each Inbox ID represents the connection from Cognigy.AI to Live Agent. 
 
 You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
