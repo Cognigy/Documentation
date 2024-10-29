@@ -2,6 +2,9 @@
 title: "Flows"
 slug: "flows"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Flows
 ---
 
 # Flows

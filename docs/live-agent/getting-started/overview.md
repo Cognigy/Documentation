@@ -2,6 +2,8 @@
 title: "Getting Started with Live Agent" 
 slug: "live-agent-getting-started" 
 hidden: false 
+tags:
+  - Live Agent
 ---
 
 # Getting Started with Live Agent
