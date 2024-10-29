@@ -6,6 +6,8 @@ hidden: false
 
 # Teams
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
+
 _Teams_  are organized groups of human agents within your customer support team. These teams are formed based on their specific responsibilities or expertise in handling different types of customer inquiries or issues.
 
 A human agent can be part of multiple teams.
