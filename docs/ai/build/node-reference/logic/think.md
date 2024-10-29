@@ -7,6 +7,8 @@ hidden: false
 
 # Think
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/think.png" width="80%" />
 </figure>

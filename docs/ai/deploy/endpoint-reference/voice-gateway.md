@@ -7,7 +7,7 @@ hidden: false
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.87-blue.svg)](../../../release-notes/4.87.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../release-notes/4.88.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/voice-gateway.png" width="100%" />

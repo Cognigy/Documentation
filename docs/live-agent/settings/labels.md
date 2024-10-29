@@ -6,6 +6,8 @@ hidden: false
 ---
 # Labels
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
+
 _Labels_ are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation.
 
 They can be used to create custom workflows, to make conversations easier to identify, filter, and organize.
@@ -13,8 +15,6 @@ They can be used to create custom workflows, to make conversations easier to ide
 Only Administrators and Supervisors can create, edit, and delete labels.
 
 ### Create a Label
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
 
 To create a label within Live Agent, do the following:
 
