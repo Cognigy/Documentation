@@ -6,139 +6,25 @@ updating display elements, or notifying the system of changes made by the human 
 
 Follow these steps to implement postback for your widget:
 
-1. Copy the SDK source code:
+1. Add the `SDK.postback` function to the HTML page. Make sure this code is included after the SDK script is loaded:
 
-    ```js
-     const u = (n) => ({
-         __INTER_FRAME_SOCKET_MESSAGE: true,
-         workspaceEvent: n,
-     });
+    === "Send a String"
+        ```html
+        <button type="button" onclick="SDK.postback('value');">Yes</button>
+        ```
+    === "Send an Object"
+        ```js
+        <button type="button" onclick="SDK.postback({ "key": "value" });">Yes</button>
+        ```
 
-     const h = (n, e) => ({
-         type: n,
-         payload: e,
-     });
-
-     const w = (n) => {
-         var e;
-         return !!((e = n.data) != null && e.__INTER_FRAME_SOCKET_MESSAGE);
-     };
-
-     class b {
-         constructor(e, a, d) {
-             this.sourceWindow = e;
-             this.targetWindow = a;
-             this.targetOrigin = d;
-             this.unsubscribers = new Set();
-
-             this.emit = (s, i) => {
-                 const t = h(s, i);
-                 const r = u(t);
-                 this.targetWindow.postMessage(r, this.targetOrigin);
-             };
-
-             this.on = (s, i) => {
-                 const t = (o) => {
-                     if (o.source === this.targetWindow && w(o) && o.data.workspaceEvent.type === s) {
-                         try {
-                             i(o.data.workspaceEvent);
-                         } catch {}
-                     }
-                 };
-
-                 this.sourceWindow.addEventListener("message", t);
-
-                 const r = () => {
-                     this.sourceWindow.removeEventListener("message", t);
-                     this.unsubscribers.delete(r);
-                 };
-
-                 this.unsubscribers.add(r);
-                 return r;
-             };
-
-             this.once = (s, i) => {
-                 const t = this.on(s, (r) => {
-                     i(r);
-                     t();
-                 });
-                 return t;
-             };
-
-             this.cleanup = () => {
-                 for (const s of this.unsubscribers) s();
-             };
-         }
-     }
-
-     class c {
-         constructor() {
-             this._ready = false;
-             this.socket = new b(window, window.parent, "*");
-
-             this.sendReady = () => {
-                 if (!this._ready) {
-                     this.socket.emit("ready");
-                     c.log("ready!");
-                     this._ready = true;
-                 }
-             };
-
-             this.postback = (e) =>
-                 new Promise((a, d) => {
-                     const s = [];
-                     const i = () => {
-                         s.forEach((t) => {
-                             t();
-                         });
-                     };
-
-                     s.push(
-                         this.socket.once("postback-accepted", () => {
-                             i();
-                             a();
-                         })
-                     );
-
-                     s.push(
-                         this.socket.once("postback-rejected", () => {
-                             i();
-                             d();
-                         })
-                     );
-
-                     this.socket.emit("postback", e);
-                 });
-
-             window.addEventListener("load", () => {
-                 this.sendReady();
-             });
-
-             this.socket.emit("sdk-loaded");
-             c.log("initialized");
-         }
-
-         static log(...e) {
-             console.log("[AgentAssistWidgetSDK]", ...e);
-         }
-     }
-
-     const g = new c();
-     window.SDK = g;    
-    ```
-2. Paste the copied source code into a `<script>` section within your HTML page.
-3. Add the `SDK.postback` function to the HTML page. Make sure this code is included after the SDK script is loaded:
-    ```html
-    <button type="button" onclick="SDK.postback('yes');">Yes</button>
-    ```
-4. Clicking the button in the widget will send an injected message formatted as follows:
+2. Click the button in the widget in the AI Copilot workspace. Triggering this action will send an injected message formatted as follows:
     ```json
     {
       "data": {
         "_cognigy": {
           "_agentAssist": {
             "type": "submit",
-            "payload": "yes"
+            "payload": "value"
           }
         }
       }
@@ -146,7 +32,7 @@ Follow these steps to implement postback for your widget:
     ```
 
 To allow human agents to view this object, add `{{ input.data._cognigy._agentAssist }}` to the **Text** field in the Say Node of your Copilot Flow. 
-This Node should be placed below the Node with the SDK.postback function. 
+This Node should be placed below the Node with the `SDK.postback` function. 
 The output will be available in the chat message and visible only to human agents.
 
 ### Example
@@ -160,127 +46,8 @@ This message will appear in the widget, prompting the user to provide their name
 <html lang="en">
 <head>
    <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>Minimal React Widget</title>
-   <script type="text/javascript">
-        const u = (n) => ({
-            __INTER_FRAME_SOCKET_MESSAGE: true,
-            workspaceEvent: n,
-        });
-
-        const h = (n, e) => ({
-            type: n,
-            payload: e,
-        });
-
-        const w = (n) => {
-            var e;
-            return !!((e = n.data) != null && e.__INTER_FRAME_SOCKET_MESSAGE);
-        };
-
-        class b {
-            constructor(e, a, d) {
-                this.sourceWindow = e;
-                this.targetWindow = a;
-                this.targetOrigin = d;
-                this.unsubscribers = new Set();
-
-                this.emit = (s, i) => {
-                    const t = h(s, i);
-                    const r = u(t);
-                    this.targetWindow.postMessage(r, this.targetOrigin);
-                };
-
-                this.on = (s, i) => {
-                    const t = (o) => {
-                        if (o.source === this.targetWindow && w(o) && o.data.workspaceEvent.type === s) {
-                            try {
-                                i(o.data.workspaceEvent);
-                            } catch {}
-                        }
-                    };
-
-                    this.sourceWindow.addEventListener("message", t);
-
-                    const r = () => {
-                        this.sourceWindow.removeEventListener("message", t);
-                        this.unsubscribers.delete(r);
-                    };
-
-                    this.unsubscribers.add(r);
-                    return r;
-                };
-
-                this.once = (s, i) => {
-                    const t = this.on(s, (r) => {
-                        i(r);
-                        t();
-                    });
-                    return t;
-                };
-
-                this.cleanup = () => {
-                    for (const s of this.unsubscribers) s();
-                };
-            }
-        }
-
-        class c {
-            constructor() {
-                this._ready = false;
-                this.socket = new b(window, window.parent, "*");
-
-                this.sendReady = () => {
-                    if (!this._ready) {
-                        this.socket.emit("ready");
-                        c.log("ready!");
-                        this._ready = true;
-                    }
-                };
-
-                this.postback = (e) =>
-                    new Promise((a, d) => {
-                        const s = [];
-                        const i = () => {
-                            s.forEach((t) => {
-                                t();
-                            });
-                        };
-
-                        s.push(
-                            this.socket.once("postback-accepted", () => {
-                                i();
-                                a();
-                            })
-                        );
-
-                        s.push(
-                            this.socket.once("postback-rejected", () => {
-                                i();
-                                d();
-                            })
-                        );
-
-                        this.socket.emit("postback", e);
-                    });
-
-                window.addEventListener("load", () => {
-                    this.sendReady();
-                });
-
-                this.socket.emit("sdk-loaded");
-                c.log("initialized");
-            }
-
-            static log(...e) {
-                console.log("[AgentAssistWidgetSDK]", ...e);
-            }
-        }
-
-        const g = new c();
-        window.SDK = g;
-    </script>
-
    <!-- External React libraries -->
    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
