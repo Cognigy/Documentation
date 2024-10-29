@@ -1,9 +1,15 @@
 ---
- title: "Go To" 
- slug: "go-to" 
- hidden: false 
+title: "Go To" 
+slug: "go-to" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Go To
 ---
+
 # Go To
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/go-to.png" width="80%" />
 </figure>

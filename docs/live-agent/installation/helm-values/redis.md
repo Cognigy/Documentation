@@ -2,6 +2,10 @@
 title: "Redis" 
 slug: "redis" 
 hidden: false 
+tags:
+  - Live Agent
+  - Helm Values
+  - Redis
 ---
 
 # Redis

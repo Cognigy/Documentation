@@ -3,6 +3,9 @@ title: "Create Outbound Calls"
 slug: "create-outbound-calls"
 description: "Outbound calls are calls initiated by Voice Gateway to an external endpoint, such as a phone number, call center, or another system capable of handling voice communication."
 hidden: false
+tags:
+  - Voice Gateway
+  - Outbound
 ---
 
 # Create Outbound Calls 

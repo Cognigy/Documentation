@@ -71,3 +71,7 @@
 .md-social__link svg {
     max-height: .7rem;
 }
+
+.md-tags {
+    --md-accent-fg-color: #9e9e9e;
+}

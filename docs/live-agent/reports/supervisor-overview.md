@@ -2,6 +2,9 @@
 title: "Supervisor Report" 
 slug: "supervisor report" 
 hidden: false 
+tags:
+  - Live Agent
+  - Supervisor Overview
 ---
 
 # Supervisor Overview Report

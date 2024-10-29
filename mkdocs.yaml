@@ -785,6 +785,8 @@ plugins:
   - glightbox
   - search
   - macros
+  - tags:
+      tags_file: tags.md
   - exclude:
       glob:
         - _includes/*

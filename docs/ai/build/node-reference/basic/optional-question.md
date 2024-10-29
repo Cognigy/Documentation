@@ -1,8 +1,13 @@
 ---
- title: "Optional Question" 
- slug: "optional-question" 
- hidden: false 
+title: "Optional Question" 
+slug: "optional-question" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Optional Question
 ---
+
 # Optional Question
 
 <figure>

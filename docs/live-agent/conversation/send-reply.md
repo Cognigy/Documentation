@@ -3,6 +3,10 @@ title: "Send Replies"
 slug: "send-replies"
 description: "Within a Live Agent conversation, as a human agent, you can send replies to the end user, the AI Agent, and another human agent."
 hidden: false
+tags:
+  - Live Agent
+  - Conversations
+  - Send Reply
 ---
 
 # Send Replies

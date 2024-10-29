@@ -2,6 +2,9 @@
 title: "Helm Values" 
 slug: "helm-values" 
 hidden: false 
+tags:
+  - Live Agent
+  - Helm Values
 ---
 
 # Helm Values

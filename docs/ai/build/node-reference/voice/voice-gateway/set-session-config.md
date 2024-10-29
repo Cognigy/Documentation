@@ -2,6 +2,10 @@
 title: "Set Session Config"
 slug: "set-session-config"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Set Session Config
 ---
 
 # Set Session Config
