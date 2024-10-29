@@ -42,7 +42,8 @@ You can control data available through the OData endpoint at both the [Endpoint]
 
 | Cognigy.AI version | Cognigy.AI OData Endpoint version |
 |--------------------|-----------------------------------|
-| 4.48 and later     | 2.3                               |
+| ?? and later       | 2.4                               |
+| 4.48 and ??        | 2.3                               |
 | 4.31-4.47          | 2.0–2.3                           |
 | 4.30 and earlier   | 2.0–2.2                           |
 
@@ -98,6 +99,18 @@ The OData Analytics Endpoint supports the following [OData system query options]
 
 The tables contain examples of requests using System Query Options.
 Select the OData endpoint version [compatible with your Cognigy.AI version](#supported-versions).
+
+=== "OData 2.4"
+
+    | Request Description                                                                                                                                                                                            | OData 2.3 Request                                                                                                                                              |
+    |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Returns total count of Analytics records (not supported in Microsoft Excel or Power BI).                                                                                                                       | `https://odata-trial.cognigy.ai/v2.4/Analytics/$count?apikey=<your-api-key>`                                                                                   |
+    | Returns all Analytics records for the given API Key.                                                                                                                                                           | `https://odata-trial.cognigy.ai/v2.4/Analytics?apikey=<your-api-key>`                                                                                          |
+    | Returns the first 10 Analytics records.                                                                                                                                                                        | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$top=10&apikey=<your-api-key>`                                                                                 |
+    | Returns the top 5 Analytics records where `executionTime` is less than 50ms, ordered by `executionTime`.                                                                                                       | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=<your-api-key>`                               |
+    | Returns all Analytics records for a specific Cognigy.AI Project filtered by `projectId`                                                                                                                        | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=projectId eq '<project-id>'&apikey=<your-api-key>`                                                     |
+    | Returns Project IDs and Session IDs for a specific Cognigy.AI project. The request filters the data based on the `projectId` field and selects only the `projectId` and `sessionId` for each matching entry.   | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=projectId eq '<project-id>'&$select=projectId,sessionId&apikey=<your-api-key>`                         |
+    | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021.                                                                                                                  | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=<your-api-key>` |
 
 === "OData 2.3"
 
