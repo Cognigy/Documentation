@@ -2,7 +2,11 @@
 title: "DTMF" 
 slug: "dtmf"
 description: "A Voice Gateway DTMF Node sends RTP payloads to the caller's SIP provider to play DTMF digit tones to the caller. If the caller's SIP provider supports RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833), the customer will hear the voice tones of the DTMF digits. The Node can also be used in scenarios where it confirms digit entries by playing back the corresponding DTMF tones."
-hidden: false 
+hidden: false
+tags:
+  - Voice Gateway
+  - DTMF
+  - dtmf
 ---
 
 # DTMF

@@ -1,8 +1,9 @@
 ---
- title: "Call Recording" 
- slug: "call-recording" 
- hidden: false 
+title: "Call Recording"
+slug: "call-recording"
+hidden: false
 ---
+
 # Call Recording
 
 <figure>

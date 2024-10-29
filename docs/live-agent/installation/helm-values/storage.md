@@ -2,6 +2,10 @@
 title: "Storage" 
 slug: "storage"
 hidden: false 
+tags:
+  - Live Agent
+  - Helm Values
+  - Storage
 ---
 
 # Storage

@@ -72,11 +72,11 @@ Global filters apply across the entirety of Cognigy Insights. Once you set them 
 
 Local filters are specific filters, which are only available for one or a few different dashboards. When you switch from one board to another, they will be temporarily disabled, but not removed from your selection.
 
-## User menu
+## User Menu
 
-You can find the [user menu](../ai/administer/user-menu/overview.md) in the upper-right corner of the screen.
+You can find the [User Menu](../ai/administer/user-menu/overview.md) in the upper-right corner of the screen.
 
-## Main menu
+## Main Menu
 
 The Insights left-side menu displays all available dashboards and explorers. This menu allows you to easily switch between different dashboards and explorers to analyze your AI Agent's performance.
 

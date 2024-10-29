@@ -1,8 +1,13 @@
 ---
- title: "Tokens" 
- slug: "tokens" 
- hidden: false 
+title: "Tokens" 
+slug: "tokens" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Token
+  - Tokens
 ---
+
 # Tokens
 
 The **Tokens** feature allows **CognigyScript** expressions to be packaged into a visual **Token** to provide non-technical platform creators with access to dynamic conversation data without writing code themselves.
