@@ -135,6 +135,7 @@ Test your Flow via the demo Webchat and any connected providers, for example, Co
 - [Close Handover](../build/node-reference/service/close-handover.md)
 - [Handover Providers](handover-reference/overview.md)
 - [Agent Handover](../build/node-reference/service/handover-to-agent.md)
+- [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md)
 
 
 

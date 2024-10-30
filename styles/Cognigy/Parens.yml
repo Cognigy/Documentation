@@ -1,0 +1,6 @@
+extends: existence
+message: "Use parentheses (round brackets) thoughtfully and only when necessary."
+nonword: true
+level: suggestion
+tokens:
+  - '\(.+\)'

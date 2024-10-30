@@ -2,7 +2,12 @@
 title: "AI Copilot Whisper"
 slug: "ai-copilot-whisper"
 hidden: false
+tags:
+  - Live Agent
+  - Assistant
+  - Whisper
 ---
+
 # AI Copilot Whisper 
 
 {! _includes/live-agent/assistant-setup.md !}

@@ -1,7 +1,7 @@
 ---
 title: "Other Operations"
 slug: "other-operations"
-description: ""
+description: "In Live Agent, you can mute or unmute, send transcripts via email, clear chat history, and enable agent masking. These actions make managing conversations more efficient, organized, and user-friendly."
 hidden: false
 ---
 

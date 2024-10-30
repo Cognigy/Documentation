@@ -1,10 +1,13 @@
 ---
 title: "Think" 
 slug: "think"
+description: "The Think Node lets you re-execute the Flow within a single iteration. The Node is useful when you want to start the Flow again, either with changed text/data or by triggering an intent explicitly."
 hidden: false 
 ---
 
 # Think
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/think.png" width="80%" />
@@ -26,6 +29,16 @@ and execution resumes from the beginning of the parent Flow at its Start node.
 | Text to think     | CognigyScript | This field appears if the **Think Text (default)** action is selected.<br><br> The provided text serves as a message to emulate user input. This custom data will be available in the `input.text` object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Data to think     | JSON          | This field appears if the **Think Text (default)** action is selected.<br><br> The provided data serves as a message to emulate user input. This custom data will be available in the `input.data` object and can include any additional information that are relevant to the Flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Intent to trigger | CognigyScript | This field appears if the **Trigger Intent** action is selected.<br><br> Cognigy will trigger the Intent using the [`cIntent`](../../../empower/nlu/intents/trigger-intent.md) method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+### Error Handling
+
+| Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+|--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Log to System Logs             | Toggle | Log errors to the system logs. They can be viewed on the [Logs](../../../test/logs.md) page of your Project. The parameter is inactive by default.                                                                                                                                                                                                                                                     |
+| Select Error Handling Approach | Select | You can select one of the Error Handling options:<br>- **Stop Flow Execution** — terminate the current Flow execution.<br>- **Continue Flow Execution** — allow the Flow to continue executing, bypassing the error and proceeding to the next steps.<br>- **Go to Node** — redirect the workflow to a specific Node in the Flow, which can be useful for error recovery or customized error handling. |
+| Error Message (optional)       | Text   | Active when the **Continue Flow Execution** option is selected. Optional message to output if the Search or Extract service fails.                                                                                                                                                                                                                                                                     |
+| Select Flow                    | Select | Active when the **Go to Node** option is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                           |
+| Select Node                    | Select | Active when the **Go to Node** option is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                           |
 
 ## Alternatives
 

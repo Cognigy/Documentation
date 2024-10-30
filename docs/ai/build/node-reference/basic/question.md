@@ -2,7 +2,12 @@
 title: "Question" 
 slug: "question" 
 hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Question
 ---
+
 # Question
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
@@ -12,7 +17,6 @@ hidden: false
 </figure>
 
 ## Description
-
 
 A Question Node is used to ask a question that requests specific information from the user. 
 
@@ -42,7 +46,7 @@ Question Nodes have a selection of types that determine the validation used befo
 | Text                                 | Any text input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                     |
 | Yes / No                             | A positive or negative response                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                     |
 | Intent                               | One of the trained [Intents](../../../empower/nlu/intents/ml-intents.md) must be identified from the user's response                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                     |
-| Slot                                 | A [System Slot](../../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots) or [Lexicon Slot](../../../empower/nlu/slots-and-lexicons/lexicons.md) must be detected within the user's response. The slot is defined by name.                                                                                                                                                                                                                                                                 |                                                                     |
+| Slot                                 | A [System Slot](../../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots) or [Lexicon Slot](../../../empower/nlu/slots-and-lexicons/lexicons.md) must be detected within the user's response. The slot is defined by name.                                                                                                                                                                                                                                                                                 |                                                                     |
 | Date                                 | Any date (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                     |
 | Number                               | Any number (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                     |
 | Temperature                          | Any temperature (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                     |

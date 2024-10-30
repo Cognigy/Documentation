@@ -3,9 +3,14 @@ title: "Projects"
 slug: "projects"
 description: "Cognigy.AI Projects contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and other resources. You can collaborate on a given Project with multiple team members."
 hidden: false
+tags:
+  - Cognigy.AI
+  - Projects
 ---
 
 # Projects
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
 
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
@@ -17,7 +22,7 @@ AI Agents can deploy on a wide range of channels.
 ## Create a Project
 
 1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click **Create Project**.
+2. In the upper-left corner, click the **Plus button** to create a project.
 3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
 4. Select the primary language for your Project.
 5. Select a color that will be associated with your Project.
@@ -47,6 +52,17 @@ If the Live Agent Account is already configured for your organization, you can c
     - **Enable AI Copilot** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
 
 Complete the Project setup with the Live Agent feature by following the steps as you would for a [simple Project](#create-a-project).
+
+## Search Projects
+
+The Projects are sorted by last activity, with the most recently updated Projects displayed at the top of the list.
+
+To search for Projects in Cognigy.AI, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. On the left side of the screen, navigate to the **Search Projects** filed.
+3. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
+4. Select the Project you want to edit.
 
 ## Copy the Project ID
 
@@ -85,31 +101,17 @@ Find more information about Cognigy Analytics on the [Analytics](../analyze/over
 
 ## Top Toolbar
 
-Projects have a Top Toolbar in every view, offering quick access to Project-specific resources, such as Search, Tasks, and the Interaction Panel. The Top Toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available.
-
-With Cognigy.AI version 4.11.0, tooltips have been added to the Toolbar to enhance navigation through hover interactions.
+Projects have a Top Toolbar in every view, offering quick access to Project-specific resources, such as Search, Tasks, and the Interaction Panel.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/build/projects/toolbar.png">
 </figure>
 
-### Help Center Search
-
-The Help Center Search feature allows you to search for potential answers within the list of articles available on the [Cognigy Help Center](https://support.cognigy.com/) website.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/projects/HelpCenter_search_result.png"/>
-  <figcaption>List of available Help Center articles</figcaption>
-</figure>
-
 ### Search
 
 The Search interface can be utilized to search for resources within the Project.
+To open the search, click the Search icon ![search](../../_assets/icons/search.svg) in the upper-right corner of the Project.
 It offers a convenient way to promptly access resources and includes an autocomplete feature.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_search.png">
-</figure>
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/build/projects/search.png"/>
@@ -121,19 +123,12 @@ It offers a convenient way to promptly access resources and includes an autocomp
 
 _Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Project. A Task is an asynchronous process that can run in the background and is associated with the notification system.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_taskmenu.png">
-</figure>
-
 #### Task Panel
 
 The Task Panel provides an overview of both current and previous tasks,
 serving as a high-level change log for relevant activities.
-It is accessible by clicking the **Task** icon ![task-menu](../../_assets/icons/task-menu.svg) located at the top-right of the Cognigy.AI interface.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_taskmenu.png">
-</figure>
+It is accessible
+by clicking the **Task Menu** icon ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner of the Project.
 
 The Task Panel displays both ongoing and finished tasks.
 
@@ -153,26 +148,32 @@ This means
 you are requesting to skip the first 100 tasks
 and display the next 100 to view the preceding tasks that are not visible on the UI.
 
-### User Menu
-
-The User Menu provides access to a set of views.
-
- <figure>
-   <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_usermenu.png">
- </figure>
-
-Head over to the [User Menu](../administer/user-menu/overview.md) documentation for more information.
-
 ### Interaction Panel
 
 The Interaction Panel can be used to interact with your AI Agent at any time. It is a useful tool that provides a representation of channel-specific output and can display more detailed debugging information.
 
+To open the Interaction Panel, click the **Chat with your Agent** icon ![interaction-panel](../../_assets/icons/interaction-panel.svg) in the upper-right corner of the Project.
+
+Refer to the [Interaction Panel](../test/interaction-panel/overview.md) documentation for more information.
+
+## Help Center Search
+
+The Help Center Search feature allows you to search for potential answers within the list of articles available on the [Cognigy Help Center](https://support.cognigy.com/) website.
+
+To open the Help Center widget, go to the left-side menu of the Project, click the **Help** icon ![help](../../_assets/icons/help.svg) in the bottom-left corner.
+
 <figure>
-   <img class="image-center" src="../../../_assets/ai/build/projects/toolbar_Interaction_Panel.png" style="margin-bottom: 5px">
- </figure>
+  <img class="image-center" src="../../../_assets/ai/build/projects/HelpCenter_search_result.png"/>
+  <figcaption>List of available Help Center articles</figcaption>
+</figure>
 
-Head over to the [Interaction Panel](../test/interaction-panel/overview.md) documentation for more information.
+## User Menu
 
+The User Menu provides access to a set of views.
+
+To open the User Menu, go to the left-side menu of the Project, click the user icon in the bottom-left corner.
+
+Refer to the [User Menu](../administer/user-menu/overview.md) documentation for more information.
 
 ## Notifications
 

@@ -149,7 +149,7 @@ To open a conversation in Live Agent, follow these steps:
 4. On the Conversations panel, choose one of the following tabs:
     - **Mine** — displays conversations assigned to you.
     - **Unassigned** — shows conversations without a designated owner.
-    - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can enable access in the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
+    - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can grant access through the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
 5. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
 
 ## More Information

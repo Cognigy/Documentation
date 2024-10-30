@@ -6,6 +6,8 @@ hidden: false
 
 # Teams
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
+
 _Teams_  are organized groups of human agents within your customer support team. These teams are formed based on their specific responsibilities or expertise in handling different types of customer inquiries or issues.
 
 A human agent can be part of multiple teams.
@@ -20,8 +22,8 @@ To create a team within Live Agent, do the following:
 2. Go to **Settings > Teams**.
 3. In the upper-right corner, click **Create new team**.
 4. In the **Create a new team** window, fill in the following fields:
-    - **Team name** — enter a meaningful name of the team, that associates with its responsibilities, for example, `Team Customer Support`.
-    - **Team Description** — enter a short description about this team. 
+    - **Team name** — enter a meaningful name of the team, that associates with its responsibilities. For example, `Team Customer Support`. The name can contain any characters but can't start with `=` and must be at least 2 characters long.
+     - **Team Description** — enter a short description about this team. 
 5. Click **Create team**.
 6. On the **Add agents to team** page, add available agents you want to your newly created team. This lets you collaborate as a team on conversations and get notified on new events in the same conversation. You can also select all available agents at once for the new team by activating the setting next to **AGENT**.
 7. Click **Add agents** to confirm your selection.
