@@ -12,7 +12,7 @@ hidden: false
 With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also help in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
 
 In the Cognigy.AI interface, you can connect to an LLM provider of your choice via API.
-Cognigy supports LLM integration with top providers such as OpenAI, Azure, Anthropic, AWS, Google, and Aleph Alpha.
+Cognigy supports LLM integration with top providers such as OpenAI, Azure, Anthropic, Amazon Bedrock, Google, and Aleph Alpha.
 
 To integrate LLM into your conversational design process within Cognigy.AI, follow these steps:
 
