@@ -95,7 +95,7 @@ After selecting a model, you must enter the API credentials from the [LLM provid
 
 ### Custom Models
 
-_Custom Models_ are non-predefined models in the Cognigy.AI interface. To use a custom model, select an LLM provider and manually enter the model name instead of selecting from a list. While these models may not guarantee the same Cognigy.AI feature support as standard models, they can be helpful when you need a specific version and are familiar with its capabilities. Moreover, if LLM providers release new model versions, opting for a custom model lets you avoid waiting for Cognigy.AI to update its list of standard models.
+_Custom models_ are non-predefined models in the Cognigy.AI interface. To use a custom model, select an LLM provider and manually enter the model name instead of selecting from a list. While these models may not guarantee the same Cognigy.AI feature support as standard models, they can be helpful when you need a specific version and are familiar with its capabilities. Moreover, if LLM providers release new model versions, opting for a custom model lets you avoid waiting for Cognigy.AI to update its list of standard models.
 
 Similar to the standard model, you must enter the API credentials from the [LLM provider](providers/all-providers.md) that offers this model to get access to its functionality.
 
