@@ -1,7 +1,7 @@
 ---
 title: "AudioCodes Nodes" 
 slug: "audiocodes" 
-hidden: false 
+hidden: false
 ---
 
 # AudioCodes

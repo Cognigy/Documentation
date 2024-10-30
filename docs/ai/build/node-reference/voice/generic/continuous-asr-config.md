@@ -2,6 +2,9 @@
  title: "Continuous ASR - Config" 
  slug: "continuous-asr-config" 
  hidden: false 
+ tags: 
+  - Voice Gateway
+  - ASR
 ---
 
 # Continuous ASR - Config

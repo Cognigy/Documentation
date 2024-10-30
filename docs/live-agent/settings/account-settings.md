@@ -83,12 +83,14 @@ The Auto Resolve Duration option automatically resolves the conversation after a
 
 The **Auto Resolve Action** option resolves or abandons a conversation automatically after the set **Auto Resolve Duration** has expired.
 
-You can set two options using the drop-down list:
+The system starts a timer based on the last activity in the conversation. 
+This activity can be any interaction, such as adding or removing a label, changing the priority, assigning or unassigning a human agent. 
+If there's no activity within the set time, the system marks the conversation as ready to be closed.
 
-- Select **Resolve** to resolve a conversation. The conversation will be closed because the user request is treated as resolved. 
-- Select **Abandon** to abandon a conversation. The conversation will be closed because the user or the agent left the conversation. 
+You can select one of the following options:
 
-The selected action will start if the conversation did not get any customer reply, agent replay or shows other activity after the set resolve duration. You can set filters based on these statuses.
+- Select **Resolve** to close a conversation if the specified time has passed without any activity and the last message was sent by either a human agent or an end user.
+- Select **Abandon** to close a conversation if the specified time has passed without any activity and the last message was sent by a human agent. If an end user replied last, the conversation won't be marked as abandoned.
 
 ### Automatically Delete Resolved Conversations
 

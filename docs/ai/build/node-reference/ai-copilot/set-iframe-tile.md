@@ -6,6 +6,8 @@ hidden: false
 
 # Copilot: IFrame Tile
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-iframe-tile.png" width="80%" />
 </figure>
@@ -22,10 +24,10 @@ This Node in Cognigy allows you to embed external websites directly into the AI 
 | IFrame URL | URL           | The URL to render inside the Widget.                     |
 | JSON Data  | JSON          | The Data to send to the IFrame as a postMessage event.   |
 
-## Receiving JSON Data
+## Passing JSON Data into the IFrame
 
-JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. 
-To receive and process the JSON data in your tile, add an event listener to your website and handle the data accordingly.
+When you use a Copilot: IFrame Tile Node, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
+To receive and process the passed JSON in your widget, add an event listener to the Copilot HTML Tile Node and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
@@ -63,7 +65,9 @@ Example of an HTML page hosted on your website:
 </html>
 ```
 
-## Postback
+## Sending JSON Data back to the Flow
+
+You can send data back to the Flow by using the Postback feature.
 
 {! _includes/ai/nodes/postback.md !}
 

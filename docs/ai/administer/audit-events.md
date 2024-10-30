@@ -9,7 +9,7 @@ Audit Events interface permits users with admin [roles](access/access-control.md
 
 ### Access Audit Events Dashboard
 
-As an admin user, you have access to the **Audit Events** button located in the user menu.
+As an admin user, you have access to the **Audit Events** button located in the User Menu.
 Click **Audit Events** to navigate to the Audit Events dashboard.
 
 <figure>

@@ -2,7 +2,12 @@
 title: "Question" 
 slug: "question" 
 hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Question
 ---
+
 # Question
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../release-notes/4.80.md)

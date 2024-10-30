@@ -1,8 +1,12 @@
 ---
- title: "Data Expiration" 
- slug: "Data Expiration" 
- hidden: false 
+title: "Data Expiration" 
+slug: "Data Expiration" 
+hidden: false 
+tags:
+  - Insights
+  - TTL
 ---
+
 # Data Expiration
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)

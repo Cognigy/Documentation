@@ -1,9 +1,12 @@
 ---
- title: "Mongo DB" 
- slug: "mongo-db" 
- hidden: false 
+title: "Mongo DB" 
+slug: "mongo-db" 
+description: "The MongoDB Nodes allow you to execute a range of operations on your MongoDB database, such as find, update, and remove operations."
+hidden: false 
 ---
 # Mongo DB
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/mongo-db-find.png" width="80%" />
@@ -11,7 +14,11 @@
 
 ## Description
 
-The MongoDB Nodes let you execute a range of operations on your MongoDB.
+The MongoDB Nodes let you execute a range of operations on your [MongoDB](https://www.mongodb.com/docs/).
+
+## Restrictions
+
+- MongoDB Nodes are compatible with MongoDB 3.6 or later versions.
 
 ## Nodes
 
@@ -26,7 +33,6 @@ The name of the MongoDB collection.
 The MongoDB query in JSON format.
 
 [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)
-
 
 #### Result Storage
 
