@@ -6,7 +6,7 @@ hidden: false
 
 # Overview
 
-*Handover Providers* are connectors between Cognigy.AI and Contact Centers. Conversations are passed between Cognigy.AI and a Handover Service using the [Agent to Handover](../../build/node-reference/service/handover-to-agent.md) Node.
+*Handover Providers* are connectors between Cognigy.AI and Contact Centers. Conversations are passed between Cognigy.AI and a Handover Service using the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node.
 
 ## Cognigy Handover Provider
 
@@ -28,4 +28,4 @@ The following Handover Providers allow integrations with third-party products:
 - [User Inactivity Detection and Handling](../user-inactivity-detection.md)
 - [Set Handover Inactivity](../../build/node-reference/service/set-handover-inactivity.md)
 - [Close Handover](../../build/node-reference/service/close-handover.md)
-- [Agent Handover](../../build/node-reference/service/handover-to-agent.md)
+- [Handover to Agent](../../build/node-reference/service/handover-to-agent.md)
