@@ -10,7 +10,7 @@ hidden: false
 
 ## Cognigy Handover Provider
 
-The [Cognigy Live Agent](live-agent.md) Endpoints is specific to the Cognigy.AI platform.
+The [Cognigy Live Agent](live-agent.md) Endpoint is specific to the Cognigy.AI platform.
 
 ## Third-party Handover Providers
 
