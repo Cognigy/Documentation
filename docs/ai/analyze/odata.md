@@ -442,7 +442,7 @@ Each handover (escalation) is logged as a single record.
 
 **Request**
 
-=== "OData 2.3"
+=== "OData 2.4"
 
     `https://odata-trial.cognigy.ai/v2.4/LiveAgentEscalations?apikey=<your-api-key>`
 
@@ -456,8 +456,8 @@ When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name        | Description                                                                                                                                   | Type     | Example                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------|
-| id                | The unique ID of the record. Applicable to the OData endpoint v2.4 or later.                                                                      | String   | 5a91d194fde28b0011ce2423                                         |
-| _id               | The unique ID of the record. Applicable to the OData endpoint v2.3 or earlier.                                                                    | String   | 5a91d194fde28b0011ce2423                                         |
+| id                | The unique ID of the record. Applicable to the OData endpoint v2.4 or later.                                                                  | String   | 5a91d194fde28b0011ce2423                                         |
+| _id               | The unique ID of the record. Applicable to the OData endpoint v2.3 or earlier.                                                                | String   | 5a91d194fde28b0011ce2423                                         |
 | organisationId    | The ID of the Cognigy.AI organization associated with the record.                                                                             | String   | 5eb4a49d426cd3d05f2892a9                                         |
 | projectId         | The ID of the Project related to the record.                                                                                                  | String   | 6409b6c53c9687b5e78e6403                                         |
 | sessionId         | The Session ID.                                                                                                                               | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
