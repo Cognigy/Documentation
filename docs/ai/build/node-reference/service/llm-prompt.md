@@ -189,7 +189,7 @@ The LLM Prompt Node now utilizes the `claude-3-sonnet-20240229` model.
 
 Below, you'll find documentation for supported models:
 
-- [Aleph Alpha Models](https://docs.aleph-alpha.com/docs/)
+- [Aleph Alpha Models](https://docs.aleph-alpha.com/)
 - [Anthropic Models](https://docs.anthropic.com/claude/docs/models-overview)
 - [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
 - [OpenAI Models](https://platform.openai.com/docs/models)

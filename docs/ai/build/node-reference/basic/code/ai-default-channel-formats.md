@@ -18,7 +18,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 Sends text to the Endpoint.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/9fc53d9-say_in_nodde.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/9fc53d9-say_in_node.png" width="100%" />
   <figcaption>Text in Say Node</figcaption>
 </figure>
 
