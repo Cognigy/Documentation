@@ -21,6 +21,7 @@ nav:
     - 🛠️ Build:
       - ai/build/overview.md
       - ai/build/projects.md
+      - ai/build/ai-agent-management.md
       - ai/build/flows.md
       - Nodes:
           - ai/build/nodes/overview.md
