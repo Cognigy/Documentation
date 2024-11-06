@@ -7,7 +7,7 @@ hidden: false
 
 # Aleph Alpha
 
-To start using an Amazon Bedrock model with Cognigy.AI features, follow these steps:
+To start using an Aleph Alpha model with Cognigy.AI features, follow these steps:
 
 1. [Add a Model](#add-a-model)
 2. [Apply the Model](#apply-the-model)
