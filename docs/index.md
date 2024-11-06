@@ -35,7 +35,7 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
     Craft humanlike, experienced agents. Leverage existing knowledge bases to enhance your agents' expertise
 
     [:octicons-arrow-right-24: Natural Language Understanding (NLU)](ai/empower/nlu/overview.md)<br>
-    [:octicons-arrow-right-24: Large Language Models (LLMs)](ai/empower/llms.md)<br>
+    [:octicons-arrow-right-24: Large Language Models (LLMs)](ai/empower/llms/overview.md)<br>
     [:octicons-arrow-right-24: Generative AI](ai/empower/generative-ai.md)<br>
     [:octicons-arrow-right-24: Knowledge AI](ai/empower/knowledge-ai/overview.md)<br>
 

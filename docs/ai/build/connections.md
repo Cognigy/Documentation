@@ -10,7 +10,7 @@ _Connections_ are configurations that empower Cognigy AI Agents to securely inte
 
 In contrast to other components in Cognigy, you cannot create a Connection from scratch on the Connections page.
 This page only lists Connections you have already created
-when adding a Node that requires credentials or adding a new provider for [LLM](../empower/llms.md#add-a-model),
+when adding a Node that requires credentials or adding a new provider for [LLM](../empower/llms/providers/all-providers.md),
 [translation](translation-and-localization/auto-translation.md), [voice](../test/voice-preview.md),
 [handover](../escalate/handovers.md), or [file storage](../deploy/endpoints/file-storage.md).
 

@@ -188,7 +188,7 @@ _**Large Language Model (LLM)**_
 : A specific type of Generative AI model that is designed for generating humanlike text based on the input and context provided.
 With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way.
 LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
-For more information, read the [Large Language Models (LLMs)](empower/llms.md) documentation.
+For more information, read the [Large Language Models (LLMs)](empower/llms/overview.md) documentation.
 
 _**Lexicons**_
 : A collection of domain-specific Keyphrases that can be attached to a Flow.

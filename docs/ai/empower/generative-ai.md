@@ -13,7 +13,7 @@ hidden: false
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
 Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
-to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms.md) to:
+to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
 - [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
@@ -37,8 +37,6 @@ To set up the connection between Cognigy.AI and the Generative AI Provider, do t
 - [Apply the model](#apply-the-model)
 
 #### Add a Model
-
-{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
 
 {! _includes/ai/generative-ai/credentials.md !}
 
@@ -140,6 +138,7 @@ You can configure the following Run-Time Generative AI features:
 - [Rephrasing AI Agent Outputs](#rephrasing-ai-agent-outputs)
 - [LLM-powered Question Reprompts](#llm-powered-question-reprompts)
 - [Search Extract Output Node](#search-extract-output-node)
+- [LLM Entity Extract Node](#llm-entity-extract-node)
 
 ### LLM Prompt Node
 
@@ -149,6 +148,8 @@ The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+    The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later.
+    Use the [LLM Prompt Node](#llm-prompt-node) to generate messages with LLM services.
 
 The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
@@ -158,15 +159,15 @@ To use AI-enhanced bot output rephrasing in [Say](../build/node-reference/basic/
 
 1. Open the existing Flow.
 2. Add one of the Nodes: Say, Question, or Optional Question.
-3. Go to the AI-enhanced output section.
-4. In the Rephrase Output setting, select one of the options:
+3. Go to the **AI-enhanced output** section.
+4. In the **Rephrase Output** setting, select one of the options:
     - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
     - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
     - **Based on previous user inputs** — set the last `x` user Inputs considered.
 5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
 6. Click **Save Node**.
 
-Check in the interactive panel if your Flow works as expected.
+Check in the Interaction Panel if your Flow works as expected.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/empower/generative-ai/generating-output.png" width="90%" />
@@ -181,6 +182,13 @@ The [Question Node](../build/node-reference/basic/question.md#reprompt-methods) 
 The [Search Extract Output Node](../build/node-reference/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](knowledge-ai/overview.md)
 to execute a search within a Knowledge Store,
 extracts a relevant answer via a Generative AI model, and creates an output.
+
+### LLM Entity Extract Node
+
+The [LLM Entity Extract Node](../build/node-reference/other-nodes/llm-entity-extract.md) retrieves specific entities from user inputs,
+such as product or booking codes and customer IDs.
+For example, if a user input is `I would like to book flight AB123 from New York to London`,
+the LLM can extract the booking code `AB123` from this input.
 
 ## FAQ
 
@@ -198,5 +206,5 @@ extracts a relevant answer via a Generative AI model, and creates an output.
 - [Flow Nodes](../build/node-reference/overview.md)
 - [Intents](nlu/overview.md#intents)
 - [Lexicons](nlu/slots-and-lexicons/lexicons.md)
-- [LLMs](llms.md)
+- [LLMs](llms/overview.md)
 - [Cognigy.AI Settings](../administer/access/project-settings.md)

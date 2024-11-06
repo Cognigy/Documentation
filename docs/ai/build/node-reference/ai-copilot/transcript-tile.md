@@ -21,7 +21,7 @@ which allows for assessing the user's speech tone.
 This sentiment analysis can provide insights into whether the user's response is positive, negative, or neutral.
 Before using this option,
 set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai)
-and select the appropriate model in the [supported model list](../../../empower/llms.md#supported-models).
+and select the appropriate model in the [supported model list](../../../empower/llms/model-support-by-feature.md).
 
 ## Settings
 
