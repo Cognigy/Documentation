@@ -70,9 +70,9 @@ To do so, follow these steps:
     - **Name** — create a meaningful name for your Flow. For example, `Customer Support`.
     - **Description** — this field is optional. Create a meaningful description for your Flow. For example, `Automates the processing of incoming orders and updates inventory accordingly`.
 6. Click **Create**.
-7. In the flow editor, click **+** to open the **Node Selection** menu.
-8. On the **By Function** tab, go to the **AI** tab and select the **AI Agent** node from the list. The AI Agent node will appear in the Flow editor.
-9. Right-click the node to open the Flow Editor.
+7. In the Flow editor, click **+** to open the **Node Selection** menu.
+8. On the **By Function** tab, go to the **AI** tab and select the **AI Agent** Node from the list. The AI Agent Node will appear in the Flow editor.
+9. Right-click the Node to open the Flow Editor.
 10. Select the desired AI Agent from the AI Agent list.
 11. Click **Save Node**.
 
@@ -120,9 +120,9 @@ To delete a humanlike AI Agent, follow these steps:
 ## More Information
 
 - AI Agent Nodes:
-  - [AI Agent](node-reference/ai/ai-agent.md)
-  - [Resolve Tool Action](node-reference/ai/resolve-tool-action.md)
-  - [AI Agent Handover](node-reference/ai/ai-agent-handover.md)
-  - [Add Memory](node-reference/analytics/add-memory.md)
-  - [Get Transcript](node-reference/service/get-transcript.md)
-  - [Add Transcript Step](node-reference/service/add-transcript-steps.md)
+    - [AI Agent](node-reference/ai/ai-agent.md)
+    - [Resolve Tool Action](node-reference/ai/resolve-tool-action.md)
+    - [AI Agent Handover](node-reference/ai/ai-agent-handover.md)
+    - [Add Memory](node-reference/analytics/add-memory.md)
+    - [Get Transcript](node-reference/service/get-transcript.md)
+    - [Add Transcript Step](node-reference/service/add-transcript-steps.md)

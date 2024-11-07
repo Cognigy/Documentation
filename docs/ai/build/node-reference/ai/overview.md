@@ -21,6 +21,7 @@ You can use the following NLU Nodes:
 - [Fuzzy Search](fuzzy-search.md)
 - [Match Pattern](match-pattern.md)
 - [Regex Slot Filler](regex-slot-filler.md)
+- [Resolve Tool Action](resolve-tool-action.md)
 
 [Watch this Episode](https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU) of Cognigy Sessions for a technical deep dive.
 

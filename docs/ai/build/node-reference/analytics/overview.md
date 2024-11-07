@@ -11,6 +11,7 @@ Analytics Nodes let you take advantage of Cognigy AI's comprehensive marketing f
 You can use the following Analytics Nodes:
 
 - [Activate Profile](activate-profile.md)
+- [Add Memory](add-memory.md)
 - [Blind Mode](blind-mode.md)
 - [Complete Goal](complete-goal.md)
 - [Deactivate Profile](deactivate-profile.md)

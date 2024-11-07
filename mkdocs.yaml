@@ -97,6 +97,7 @@ nav:
         - Analytics:
           - ai/build/node-reference/analytics/overview.md
           - ai/build/node-reference/analytics/activate-profile.md
+          - ai/build/node-reference/analytics/add-memory.md
           - ai/build/node-reference/analytics/blind-mode.md
           - ai/build/node-reference/analytics/complete-goal.md
           - ai/build/node-reference/analytics/deactivate-profile.md

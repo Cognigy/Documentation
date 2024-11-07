@@ -13,8 +13,10 @@ Service Nodes are used to:
 
 You can use the following Service Nodes:
 
+- [Add Transcript Steps](add-transcript-steps.md)
 - [Check Agent Availability](check-agent-availability.md)
 - [Close Handover](close-handover.md)
+- [Get Transcript](get-transcript.md)
 - [GPT Conversation](gpt-conversation.md)
 - [Handover to Agent](handover-to-agent.md)
 - [HTTP Request](http-request.md)
