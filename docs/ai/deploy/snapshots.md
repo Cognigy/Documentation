@@ -1,6 +1,7 @@
 ---
 title: "Snapshots"
 slug: "snapshots"
+description: "Snapshots are immutable forms of an AI Agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of an AI Agent for deployment, to create backups, or to revert to an earlier state if needed."
 hidden: false
 ---
 
@@ -8,17 +9,18 @@ hidden: false
 
 _Snapshots_ are immutable forms of your AI Agent, including the following resources:
 
-* Flows
-* Trained NLU Intent models
-* Lexicons
-* Connections
-* NLU Connectors
-* Functions
-* Playbooks
-* Settings
-* Localization
-* Tokens
-* Extensions
+- Connections
+- Extensions
+- Flows
+- Functions
+- Large Language Models
+- Lexicons
+- Localization
+- NLU Connectors
+- Playbooks
+- Settings
+- Tokens
+- Trained NLU Intent models
 
 Once a resource has been included in a Snapshot, that resource within the Snapshot can no longer be modified through any operation, for example, in the Flow Editor or through Cognigy's RESTful APIs.
 
