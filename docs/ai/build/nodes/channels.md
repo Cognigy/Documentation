@@ -146,7 +146,7 @@ The **LINE** tab provides two methods for creating and editing a message, which 
 ### Twilio
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6404b3e-twilio.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/twilio.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
 </figure>
 
