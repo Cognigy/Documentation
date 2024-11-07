@@ -1,13 +1,13 @@
 ---
-title: "AI Agent Management"
-slug: "ai-agent-management"
+title: "Agentic AI"
+slug: "agentic-ai"
 description: "To manage a new generation of AI Agents, Cognigy.AI introduces the AI Agent Management interface, where you can create, edit, and delete humanlike AI Agents."
 hidden: false
 ---
 
-# AI Agent Management
+# Agentic AI
 
-_Agentic AI_ represents a new generation of autonomous, goal-oriented, humanlike AI Agents designed to boost operational efficiency, enhance customer satisfaction, and drive superior enterprise outcomes.
+_Agentic AI_ represents a new generation of autonomous, goal-oriented AI Agents designed to boost operational efficiency, enhance customer satisfaction, and drive superior enterprise outcomes.
 
 Key features of Agentic AI:
 
@@ -17,11 +17,11 @@ Key features of Agentic AI:
 - **Hyper-Personalization**. Built-in memory enables context-aware interactions, creating uniquely tailored experiences for each customer.
 
 To manage a new generation of AI Agents, Cognigy.AI introduces the AI Agent Management interface,
-where you can create, edit, and delete humanlike AI Agents.
+where you can create, edit, and delete AI Agents.
 
 ## Create an AI Agent
 
-To create a humanlike AI Agent, follow these steps:
+To create an AI Agent, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
@@ -37,16 +37,16 @@ To create a humanlike AI Agent, follow these steps:
 8. Click **Next**.
 9. In the **Knowledge & Instruction** step, configure the following fields:
     - **Instructions** — fine-tune AI Agents through custom commands and settings.
-    - **Knowledge Store** — select the Knowledge Store from which the AI Agent will access information from documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries.
+    - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) from which the AI Agent will access information from documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries.
 10. Click **Next**.
 11. In the **Data Privacy & Security** step, configure the following fields:
     - **Contact Profile Information** — select which information the AI Agent should use from the Cognigy Contact Profile.
     - **Safety Instructions** — customize how the AI Agent handles sensitive topics by selecting a safety level: no guidance, standard safety based on Cognigy-crafted instructions, or custom guidelines.
-12. Click **Create & Chat** to save changes and open the flow with the created agent, or click **Create** to save changes without opening the flow.
+12. Click **Create & Chat** to save changes and open the Flow with the created AI Agent, or click **Create** to save changes without opening the Flow.
 
 ## Edit an AI Agent
 
-To edit a humanlike AI Agent, follow these steps:
+To edit an AI Agent, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
@@ -56,7 +56,7 @@ To edit a humanlike AI Agent, follow these steps:
 
 ## Add AI Agents to a Flow
 
-When you create a humanlike AI Agent and click **Create & Chat**, a default Flow with your AI Agent's name will be created.
+When you create an AI Agent and click **Create & Chat**, a default Flow with your AI Agent's name will be created.
 
 However, you can create a dedicated Flow and add more than one AI Agent to it.
 
@@ -78,7 +78,7 @@ To do so, follow these steps:
 
 ## Hire an AI Agent
 
-Instead of [creating creating humanlike AI Agents from scratch](#create-an-ai-agent)
+Instead of [creating creating  AI Agents from scratch](#create-an-ai-agent)
 or select a pre-made AI Agent template tailored to your industry,
 such as airlines, finance, insurance, or utilities,
 and customize it to suit your business needs.
@@ -93,36 +93,36 @@ To do so, follow these steps:
 
 ## Copy the AI Agent Reference ID
 
-Reference IDs can be helpful if you want to edit humanlike AI Agents via the API.
+Reference IDs can be helpful if you want to edit AI Agents via the API.
 
-To copy the Reference ID of a humanlike AI Agent, follow these steps:
+To copy the Reference ID of an AI Agent, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
 4. On the **AI Agents** page, hover your cursor over the card of the AI Agent for which you want to copy the reference ID.
-5. Click the ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) icon and select **Copy Reference ID**. The ID will be copied to the clipboard.
+5. Click the ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) icon and select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Delete an AI Agent
 
-Before deleting a humanlike AI Agent, make sure that it is not used in any of your Flows.  
+Before deleting an AI Agent, make sure that it is not used in any of your Flows.  
 Otherwise, all Flows related to the deleted AI Agent will stop working.
 
-To delete a humanlike AI Agent, follow these steps:
+To delete an AI Agent, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
 4. On the **AI Agents** page, hover your cursor over the card of the AI Agent you want to delete.
-5. Click the ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) icon and select **Delete**.
+5. Click the ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) icon and select **Delete**.
 6. Click **Confirm**.
 
 ## More Information
 
 - AI Agent Nodes:
-    - [AI Agent](node-reference/ai/ai-agent.md)
-    - [Resolve Tool Action](node-reference/ai/resolve-tool-action.md)
-    - [AI Agent Handover](node-reference/ai/ai-agent-handover.md)
-    - [Add Memory](node-reference/analytics/add-memory.md)
-    - [Get Transcript](node-reference/service/get-transcript.md)
-    - [Add Transcript Step](node-reference/service/add-transcript-steps.md)
+    - [AI Agent](../../build/node-reference/ai/ai-agent.md)
+    - [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md)
+    - [AI Agent Handover](../../build/node-reference/ai/ai-agent-handover.md)
+    - [Add Memory](../../build/node-reference/analytics/add-memory.md)
+    - [Get Transcript](../../build/node-reference/service/get-transcript.md)
+    - [Add Transcript Step](../../build/node-reference/service/add-transcript-steps.md)

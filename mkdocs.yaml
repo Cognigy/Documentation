@@ -21,7 +21,6 @@ nav:
     - 🛠️ Build:
       - ai/build/overview.md
       - ai/build/projects.md
-      - ai/build/ai-agent-management.md
       - ai/build/flows.md
       - Nodes:
           - ai/build/nodes/overview.md
@@ -234,6 +233,8 @@ nav:
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
         - ai/empower/knowledge-ai/source-tags.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
+      - Agentic AI:
+        - ai/empower/agentic-ai/overview.md
 
     - 🧪 Test and Debug:
       - Interaction Panel:
