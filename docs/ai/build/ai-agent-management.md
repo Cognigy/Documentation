@@ -1,6 +1,7 @@
 ---
 title: "AI Agent Management"
 slug: "ai-agent-management"
+description: "To manage a new generation of AI Agents, Cognigy.AI introduces the AI Agent Management interface, where you can create, edit, and delete humanlike AI Agents."
 hidden: false
 ---
 
@@ -118,7 +119,10 @@ To delete a humanlike AI Agent, follow these steps:
 
 ## More Information
 
-- [Cheat Sheet: CognigyScript](https://support.cognigy.com/hc/en-us/articles/4403321637394-Cheat-Sheet-CognigyScript#general-0-0)
-- [Input](../test/interaction-panel/input.md)
-- [Context](../test/interaction-panel/context.md)
-- [Profile](../test/interaction-panel/profile.md)
+- AI Agent Nodes:
+  - [AI Agent](node-reference/ai/ai-agent.md)
+  - [Resolve Tool Action](node-reference/ai/resolve-tool-action.md)
+  - [AI Agent Handover](node-reference/ai/ai-agent-handover.md)
+  - [Add Memory](node-reference/analytics/add-memory.md)
+  - [Get Transcript](node-reference/service/get-transcript.md)
+  - [Add Transcript Step](node-reference/service/add-transcript-steps.md)

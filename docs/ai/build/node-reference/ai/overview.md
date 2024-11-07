@@ -11,6 +11,8 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
 You can use the following NLU Nodes:
 
 - [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)
+- [AI Agent](ai-agent.md)
+- [AI Agent Handover](ai-agent-handover.md)
 - [Clean Text](clean-text.md)
 - [Copy Slots To Context](copy-slots-to-context.md)
 - [Disable Slot Fillers](disable-slot-fillers.md)
