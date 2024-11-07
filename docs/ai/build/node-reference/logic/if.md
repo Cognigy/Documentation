@@ -27,12 +27,12 @@ This Node is used to execute either one or another part of a [Flow](../../../bui
 
 The Rule Editor allows you to quickly create simple conditions.
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/db4d06f-if-conditions.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/if-conditions.jpg" width="100%" />
 </figure>
 
 ## Advanced Editor
 
 The Advanced Editor allows you to write Conditions that go beyond one comparison.
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/48b7a3f-if-conditions-rule.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/if-conditions-rule.jpg" width="100%" />
 </figure>

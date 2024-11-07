@@ -25,7 +25,7 @@ You can customize a rating widget in the Webchat Endpoint by doing the following
 5. Click **Save**.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/Request_Rating_Webchat_5.svg"/>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/request-rating-webchat-5.svg"/>
   <figcaption>Webchat Rating Widget</figcaption>
 </figure>
 
