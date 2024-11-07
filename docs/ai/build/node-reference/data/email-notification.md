@@ -115,7 +115,7 @@ If switched on, the flow execution will **continue directly after** the Send Ema
 The email will be sent with templating around it, looking roughly like this:
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/eccd2bc-Screen_Shot_080.PNG" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/test-email.png" width="100%" />
 </figure>
 
 The recipient will get the email notification
