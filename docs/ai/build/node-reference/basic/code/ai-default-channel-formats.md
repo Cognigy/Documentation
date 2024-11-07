@@ -228,7 +228,7 @@ Outputs a list.
 </figure>
 
 <figure>
-<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-list-option-order-3.svg" width="100%" />
+<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-list-option-order.svg" width="100%" />
 <figcaption>Say Node settings</figcaption>
 </figure>
 

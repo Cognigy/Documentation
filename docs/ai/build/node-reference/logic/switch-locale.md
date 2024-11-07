@@ -38,7 +38,7 @@ Click on the 'three dots' button on the right side of any available locale to co
 Then open the Switch Locale Node configuration editor and enter the reference ID in the **Locale ID** field when Cognigy Script is activated.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/copy-reference-id-00.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/copy-reference-id.svg" width="100%" />
   <figcaption>Copying locale reference ID</figcaption>
 </figure>
 

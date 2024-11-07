@@ -24,7 +24,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 ## Properties
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-options1.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-options.jpg" width="100%" />
 </figure>
 
 ### Datepicker Title
