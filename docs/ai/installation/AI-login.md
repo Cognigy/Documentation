@@ -16,13 +16,10 @@ For example, the `frontend-url` for the Trial Cognigy environment is `trial.cogn
 
 ## Limit active login sessions
 
-By default, there is no limit to the number of sessions you can start in Cognigy.AI across different browsers. To limit the number of active sessions, proceed as follows:
+By default, there is no limit to the number of sessions you can start in Cognigy.AI across different browsers. However, you can set a limit for the following installations:
 
-- For dedicated SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-- For on-premises installations, set the `REFRESH_TOKEN_MAX_AMOUNT_PER_USER` [Helm value](../../live-agent/installation/helm-values/helm-values.md) to the number of active sessions you want to allow in `values.yml`. For example, if you want to allow only one active session, set `REFRESH_TOKEN_MAX_AMOUNT_PER_USER=1`.
-
-!!! note "Shared SaaS installations"
-    For shared SaaS installations, `REFRESH_TOKEN_MAX_AMOUNT_PER_USER` cannot be changed. By default, the number of active sessions is unlimited.
+- For dedicated SaaS, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+- For on-premises, set the `REFRESH_TOKEN_MAX_AMOUNT_PER_USER` variable in `values.yml` to the number of active sessions you want to allow. For example, if you want to allow only one active session, set `REFRESH_TOKEN_MAX_AMOUNT_PER_USER=1`.
 
 ## Log in to multiple organizations
 
