@@ -19,7 +19,6 @@ nav:
       - ai/glossary.md
 
     - 🛠️ Build:
-      - ai/build/overview.md
       - ai/build/projects.md
       - ai/build/flows.md
       - Nodes:
