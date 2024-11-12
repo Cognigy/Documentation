@@ -15,7 +15,7 @@ Live Agent allows customization of email notifications.
 
 To customize the email notifications, follow the instructions below. To update the content, you have to add a new template in the Database, here is how you can do it.
 
-### 1. Login Into The Rails Console.
+### 1. Login to The Rails Console.
 
 Attach a shell to the main Live Agent pod and run the following command:
 
