@@ -326,15 +326,16 @@ nav:
         - ai/administer/user-menu/my-profile.md
         - ai/administer/hotkeys.md
       - Access Management:
-        - Organizations and Users:
-          - ai/administer/access/admin-center.md
-          - ai/administer/access/access-control.md
+        - Admin Center:
+          - ai/administer/access/admin-center/overview.md
+          - ai/administer/access/admin-center/dashboard.md
+          - ai/administer/access/admin-center/access-control.md
+          - ai/administer/access/admin-center/audit-events.md
         - Project and Members:
           - ai/administer/access/project-settings.md
           - ai/administer/access/members.md
         - ai/administer/access/management-ui.md
       - ai/administer/limitations.md
-      - ai/administer/audit-events.md
       - ai/administer/billing.md
 
     - 👩‍💻 Developer Reference:

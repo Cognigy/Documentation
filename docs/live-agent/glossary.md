@@ -142,7 +142,7 @@ _**OData Analytics Endpoint**_
 : Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. OData, the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool. Note that the Live Agent OData Endpoint only supports GET requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`. For more information, read the [OData Endpoint](tools/odata-endpoint.md) documentation.
 
 _**Offline (Agents)**_
-: One of four possible Live Agent statuses. This status indicates that the agent is not currently logged into the Live Agent system. Agents in this status cannot handle customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
+: One of four possible Live Agent statuses. This status indicates that the agent is not currently logged in to the Live Agent system. Agents in this status cannot handle customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
 _**Online (Agents)**_
 : One of four possible Live Agent statuses. This status indicates that the Agent is available and actively handling customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.

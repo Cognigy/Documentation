@@ -1,6 +1,6 @@
 # Members
 
-The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](../access/access-control.md) panel.
+The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](admin-center/access-control.md) panel.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/members.png" width="100%" />

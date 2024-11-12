@@ -56,7 +56,7 @@ The OData endpoint is located on a different domain than your Cognigy User Inter
 
 ### Authentication
 
-To connect to the OData endpoint, you need to have either `odata` or `admin` [global role](../../ai/administer/access/access-control.md#global-roles)
+To connect to the OData endpoint, you need to have either `odata` or `admin` [global role](../../ai/administer/access/admin-center/access-control.md#global-roles)
 and an [API Key](../../ai/administer/user-menu/my-profile.md#create-api-keys).
 
 OData Endpoint URL format:

@@ -120,7 +120,7 @@ If the secrets are the same value, but the integration is not working (for examp
 
 ### OAuth
 
-These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with their same credentials.
+These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log in to Live Agent with their same credentials.
 
 | Name                                    | Description                     | Default Value                                                     |
 |-----------------------------------------|---------------------------------|-------------------------------------------------------------------|
