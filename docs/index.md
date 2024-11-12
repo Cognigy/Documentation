@@ -87,9 +87,9 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
 
     Manage your organizations, projects, and users efficiently with user-friendly management tools
 
-    [:octicons-arrow-right-24: Organization and Users](ai/administer/access/access-control.md)<br>
+    [:octicons-arrow-right-24: Admin Center](ai/administer/access/admin-center/overview.md)<br>
     [:octicons-arrow-right-24: Project and Members](ai/administer/access/members.md)<br>
-    [:octicons-arrow-right-24: Audit Events](ai/administer/audit-events.md)<br>
+    [:octicons-arrow-right-24: Quotas and Limits](ai/administer/limitations.md)<br>
     [:octicons-arrow-right-24: Billing](ai/administer/billing.md)
 
 -   :technologist:{ .lg .middle } __Developer Reference__
