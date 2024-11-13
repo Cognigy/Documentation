@@ -21,35 +21,50 @@ where you can create, edit, and delete AI Agents.
 
 ## Create an AI Agent
 
-To create an AI Agent, follow these steps:
+You can create an AI Agent from scratch or select a pre-made AI Agent template tailored to your industry,
+such as airlines, finance, insurance, or utilities,
+and customize it to suit your business needs.
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu of the **Projects** page, select a Project.
-3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
-4. Click **Create AI Agent** if you are creating an agent for the first time, or click **+ New AI Agent** on the AI Agents page if you have created at least one AI Agent before.
-5. In the **General Settings** step, fill in the following fields:
-    - **Name** — enter a name for your AI Agent. This name will be for internal reference only and will not be visible to your end users.
-    - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, describe the AI Agent as follows: `A laid-back individual who jokes easily, making others feel comfortable with a relaxed tone.`
-6. Click **Next**.
-7. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
-    - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
-    - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
-8. Click **Next**.
-9. In the **Knowledge & Instructions** step, configure the following fields:
-    - **Instructions** — fine-tune AI Agents through custom commands and settings.
-    - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) from which the AI Agent will access information from documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries.
-10. Click **Next**.
-11. In the **Data Privacy & Security** step, configure the following fields:
-    - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
-        - **None** — no data will be used from the Contact Profile. This option is selected by default.
-        - **Selected Profile Fields** — select specific fields from the Contact Profile for targeted data use. 
-        - **Completed Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
-        - **Profile Memories** — use the Memories field from the Contact Profile.
-    - **Safety Instructions** — customize how the AI Agent handles sensitive topics by selecting a safety level: no guidance, standard safety based on Cognigy-crafted instructions, or custom guidelines.
-        - **None** — no safety guidelines are applied.
-        - **Standard** — apply standard safety guidelines based on Cognigy's instructions. This option is selected by default.
-        - **Custom** — define your custom safety guidelines.
-12. Click **Create & Chat** to save changes and open the Flow with the created AI Agent, or click **Create** to save changes without opening the Flow.
+To create an AI Agent, select one of the following options:
+
+=== "Create AI Agent From Scratch"
+
+    1. Open the Cognigy.AI interface.
+    2. In the left-side menu of the **Projects** page, select a Project.
+    3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
+    4. Click **Create AI Agent** if you are creating an agent for the first time, or click **+ New AI Agent** on the AI Agents page if you have created at least one AI Agent before.
+    5. In the **General Settings** step, fill in the following fields:
+        - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another AI Agent. For example, `Hello, my name is Sara. How can I help you?` or `Our support specialist Alex will help with this question, transferring the conversation now`.
+        - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, describe the AI Agent as follows: `Anna works at ACME and is highly skilled at making customers feel comfortable.`
+    6. Click **Next**.
+    7. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
+        - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
+        - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
+    8. Click **Next**.
+    9. In the **Knowledge & Instructions** step, configure the following fields:
+        - **Instructions** — fine-tune AI Agents through custom commands and settings.
+        - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) from which the AI Agent will access information from documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries.
+    10. Click **Next**.
+    11. In the **Data Privacy & Security** step, configure the following fields:
+        - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
+            - **None** — no data will be used from the Contact Profile. This option is selected by default.
+            - **Selected Profile Fields** — select specific fields from the Contact Profile for targeted data use. 
+            - **Completed Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
+            - **Profile Memories** — use the Memories field from the Contact Profile.
+        - **Safety Instructions** — customize how the AI Agent handles sensitive topics by selecting a safety level: no guidance, standard safety based on Cognigy-crafted instructions, or custom guidelines.
+            - **None** — no safety guidelines are applied.
+            - **Standard** — apply standard safety guidelines based on Cognigy's instructions. This option is selected by default.
+            - **Custom** — define your custom safety guidelines.
+    12. Click **Create & Chat** to save changes and open the Flow with the created AI Agent, or click **Create** to save changes without opening the Flow.
+
+=== "Create AI Agent From Template"
+
+    1. Open the Cognigy.AI interface.
+    2. In the left-side menu on the **Projects** page, select a Project.
+    3. In the left-side menu on the **Project** page, select **Build > AI Agents**.
+    4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page with a list of AI Agent templates will open.
+    5. Hover your cursor over the desired AI Agent template and click **Hire**.
+    6. Select an AI Agent from the list.
 
 ## Edit an AI Agent
 
@@ -82,21 +97,6 @@ To do so, follow these steps:
 9. Left-click the Node to open the Flow Editor.
 10. Select the desired AI Agent from the AI Agent list.
 11. Click **Save Node**.
-
-## Hire an AI Agent
-
-Instead of [creating AI Agents from scratch](#create-an-ai-agent)
-or select a pre-made AI Agent template tailored to your industry,
-such as airlines, finance, insurance, or utilities,
-and customize it to suit your business needs.
-
-To do so, follow these steps:
-
-1. Open the Cognigy.AI interface.
-2. In the left-side menu on the **Projects** page, select a Project.
-3. In the left-side menu on the **Project** page, select **Build > AI Agents**.
-4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page will open.
-5. Select an AI Agent from the list.
 
 ## Copy the AI Agent Reference ID
 
