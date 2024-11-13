@@ -58,7 +58,7 @@ If you have set up [single sign-on (SSO)](single-sign-in-saml2.md), you can log 
 
 ### Multiple Organizations
 
-In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#organizations). Each organization has a different login URL. For each organization, the login URL follows the pattern below:
+In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#organizations). Each organization has a different login URL. For each organization, the login URL follows this pattern:
 
 ```txt
 https://<frontend-url>/login?organizationId=<organization-id>
@@ -79,12 +79,14 @@ The login links in the email redirect you to the Cognigy.AI login page with the 
 
 ## Log Out
 
-1. In the upper-right corner of the **Projects** page, click the **User Menu**.
-2. Select **Logout**.
+To log out of Cognigy.AI, you have two options:
 
-## Automatic Log-Out
+- In the the upper-right corner of the **Projects** page, click the **User Menu > Logout**.
+- In the bottom-left corner of the Project page, click **User Menu > Logout**.
 
-The **Automatic log-out** feature allows you to set an inactivity period for users in your organization. If a user remains inactive longer than this period, they are automatically logged out.
+## Automatic Logout
+
+The **Automatic logout** feature allows you to set an inactivity period for users in your organization. If a user remains inactive longer than this period, they are automatically logged out.
 
 By default, the inactivity period is 15 minutes. However, you can set a limit for the following installations:
 
