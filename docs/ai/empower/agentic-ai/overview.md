@@ -1,5 +1,5 @@
 ---
-title: "Agentic AI"
+title: "Overview"
 slug: "agentic-ai"
 description: "To manage a new generation of AI Agents, Cognigy.AI introduces the AI Agent Management interface, where you can create, edit, and delete humanlike AI Agents."
 hidden: false
