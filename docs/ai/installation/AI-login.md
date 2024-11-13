@@ -30,10 +30,15 @@ For example, `frontend-url` for Cognigy.AI's trial environment is `trial.cognigy
 To log in to Cognigy.AI, follow these steps:
 
 1. Go to the login page and enter your account credentials in the following fields:
-    - **E-Mail**
-    - **Password**
+
+    - **E-Mail**: The email you provided to your Cognigy.AI admin to register your Cognigy.AI account.
+    - **Password**: The password you received from your Cognigy.AI admin. If you don't remember you password, you can [reset your password](#reset-password).
+
 2. _(Optional)_ If you want to stay logged in after you close your session, activate the **Remember me** checkbox.
 3. Click **Sign in**.
+
+!!! note
+    If you enter the wrong password, your account is temporarily locked. An error message appears on the screen and displays a countdown to unlock your account. The more times you enter the wrong password, the longer your account is locked.
 
 ## Limit Active Login Sessions
 
@@ -47,6 +52,8 @@ By default, there is no limit to the number of sessions you can start in Cognigy
 1. Go to the login page and click **Forgot Password?**.
 2. Enter your email in the **E-Mail** field.
 3. Click **Send link**.
+
+You will receive an email with instructions to reset your password. You need to choose a password according to the [password policy](../administer/management-ui.md#password-policy) your admin set up. 
 
 ### Log In with Single Sign-On
 
@@ -64,7 +71,7 @@ In Cognigy.AI, you can be part of more than one [organization](../administer/acc
 https://<frontend-url>/login?organizationId=<organization-id>
 ```
 
-The `organization-id` is a unique identifier with 24 characters that identifies an organization in Cognigy.AI.
+The `organization-id` parameter is a unique identifier with 24 characters that identifies an organization in Cognigy.AI.
 
 !!! warning
     If you are part of more than one organization, you need to include `organizationId` in the login URL. Otherwise, the login fails.
@@ -73,9 +80,9 @@ The `organization-id` is a unique identifier with 24 characters that identifies 
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
 
-If your login fails because you didn't include an `organizationId` in the login URL, you receive an email with login links for each organization you belong to.
+If your login fails because you didn't include `organizationId` in the login URL, you receive an email with login links for each organization you belong to.
 
-The login links in the email redirect you to the Cognigy.AI login page with the `organizationId` of the respective organization in the URL.
+The login links in the email redirect you to the Cognigy.AI login page with the `organizationId` parameter of the respective organization in the URL.
 
 ## Log Out
 
