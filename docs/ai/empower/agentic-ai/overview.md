@@ -40,8 +40,8 @@ To create an AI Agent, select one of the following options:
        You can create your own avatar for AI Agents using the [Cognigy.AI PSD template](https://docs.cognigy.com/_assets/ai/empower/agentic-ai/Template.psd). To open and customize the template, you will need Adobe Photoshop or [Paint.net](https://www.getpaint.net/) with the [PSD plugin](https://www.psdplugin.com/) installed. The requirements for the avatar are as follows:
         - Use an Alpha Channel for a transparent background.
         - Include `_optimized` in the file name.
-        - Recommended Width is `136px`.
-        - Recommended Height is `184px`.
+        - Recommended width is `136px`.
+        - Recommended height is `184px`.
         - File type is `.png`.
     7. Click **Next**.
     8. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
@@ -78,7 +78,7 @@ To create an AI Agent, select one of the following options:
     3. In the left-side menu on the **Project** page, select **Build > AI Agents**.
     4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page with a list of AI Agent templates will open.
     5. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
-    6. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
+    6. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
     7. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
 
 ## Edit an AI Agent
