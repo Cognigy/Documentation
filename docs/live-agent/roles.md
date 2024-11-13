@@ -183,7 +183,7 @@ You can assign roles to human agent.
 
 To create an Agent with certain access rights, do the following steps:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/administer/access/access-control.md).
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/administer/access/admin-center/access-control.md).
 2. Assign one of the following roles to the Agent:
     - `liveAgentAgent`
     - `liveAgentSupervisor`

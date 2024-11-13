@@ -15,7 +15,7 @@ hidden: false
 The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
 !!! tip "Automatically Triggered by Question Nodes"
@@ -24,7 +24,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 ## Properties
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6c556ea-datepicker-options1.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-options.jpg" width="100%" />
 </figure>
 
 ### Datepicker Title
@@ -40,7 +40,7 @@ Mode determines the behavior of the Datepicker.
   * **Range**: This lets the user select a date range. 
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ffaba00-date-range.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/date-range.jpg" width="100%" />
 </figure>
 
 ### Button Texts
@@ -98,7 +98,7 @@ The Datepicker can be configured to exclude or include specific dates.
 This setting is useful when certain dates should be unavailable, such as for a booking or reservation.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/c17af07-datepicker-enable-disable.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-enable-disable.jpg" width="100%" />
 </figure>
 
 #### Enable specific dates
