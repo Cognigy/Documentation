@@ -35,8 +35,8 @@ The below message types will be properly displayed in the Userlike unified messa
 - Quick replies 
 - Image/Audio/Video 
 
-!!! note 
-    The Fallback Text is displayed for the Output Type "Gallery" and "List" as well as for invalid media formats for image/audio/video.
+!!! note
+    The text from the Textual Description field is displayed for the **Gallery** or **List** output types, as well as for invalid media formats (image, audio, video).
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/userlike-webchat.png" width="100%" />

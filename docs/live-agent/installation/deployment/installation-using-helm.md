@@ -16,7 +16,7 @@ For the Helm chart installation, the Helm package needs to be pulled from the Co
    HELM_EXPERIMENTAL_OCI=1
    ```
 
-2. Login into the OCI prod registry with the following command:
+2. Login to the OCI prod registry with the following command:
 
    ```sh
    helm registry login cognigy.azurecr.io

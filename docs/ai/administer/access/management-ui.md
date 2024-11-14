@@ -58,7 +58,7 @@ You can add a user (identified by an email address) to multiple organizations an
 If you click on one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
 
 - see general information
-- see the users current [roles](../access/access-control.md)
+- see the users current [roles](admin-center/access-control.md)
 - see certain status information
 - impersonate the user. This will forward to the actual product and login as if you were the selected user
 - additional actions for the user are in the triple-dot icon on the right-top corner.

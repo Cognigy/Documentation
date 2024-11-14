@@ -66,7 +66,7 @@ it will also be implemented that the link to the xApp will be shared with the cu
    ```txt
    Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
    ```
-10. Copy and paste the text from the **Text with Buttons** setting to the **Fallback Text** field, as a voice channel doesn't support the **Text with Buttons** setting.
+10. Copy and paste the text from the **Text with Buttons** setting to the **Textual Description** field, as a voice channel doesn't support the **Text with Buttons** setting.
 11. Click **Add button**. Fill in the following fields:
     - **Button Title** — enter **Open xApp**.
     - **Selection Button Type** — select the **URL** from the list.
