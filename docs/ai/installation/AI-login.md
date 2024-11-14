@@ -31,8 +31,8 @@ To log in to Cognigy.AI, follow these steps:
 
 1. Go to the login page and enter your account credentials in the following fields:
 
-    - **E-Mail**: The email you provided to your Cognigy.AI admin to register your Cognigy.AI account.
-    - **Password**: The password you received from your Cognigy.AI admin. If you don't remember you password, you can [reset your password](#reset-password).
+    - **E-Mail** — the email you provided to your Cognigy.AI admin to register your Cognigy.AI account.
+    - **Password** — the password you received from your Cognigy.AI admin. If you don't remember you password, you can [reset your password](#reset-password).
 
 2. _(Optional)_ If you want to stay logged in after you close your session, activate the **Remember me** checkbox.
 3. Click **Sign in**.
