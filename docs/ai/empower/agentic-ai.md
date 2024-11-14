@@ -27,11 +27,11 @@ Before using this feature, you need:
 
 1. Create an account in one of the Generative AI Providers:
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-    - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+    - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
     - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access. 
 2. Add two models:
-    - A primary model to control the agent. It can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](llms/providers/openai.md) or [Azure OpenAI](llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](llms/providers/anthropic.md).
-    - If you want to enable the [Knowledge AI](knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model in addition to the primary model. We recommend using `text-embedding-ada-002` to enhance Agentic AI capabilities.
+    - A primary model to control the AI Agent. It can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](llms/providers/openai.md) or [Azure OpenAI](llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](llms/providers/anthropic.md).
+    - If you want to enable the [Knowledge AI](knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
   
 ## Create an AI Agent
 
@@ -77,7 +77,7 @@ To create an AI Agent, select one of the following options:
         - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../analyze/contact-profiles.md):
             - **None** — no data will be used from the Contact Profile. This option is selected by default.
             - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
-            - **Completed Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
+            - **Complete Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
             - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
         - **Safety Instructions** — configure the risk mitigation measures for the AI Agent. The built-in instructions apply to content generation, chats, Q&A, rewriting, summarization, and other tasks. The selected components are included in the prompt to enhance safety, which may increase token usage. Select one of the following options:
             - **None** — no safety guidelines are applied.

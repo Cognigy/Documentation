@@ -23,7 +23,7 @@ to enable Generative AI functionality. This functionality is broadly classified 
 Before using this feature, you need to create an account in one of the Generative AI Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
 - [Google Vertex AI and Gemini](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
 - [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).
