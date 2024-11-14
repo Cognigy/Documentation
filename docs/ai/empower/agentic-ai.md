@@ -30,8 +30,8 @@ Before using this feature, you need:
     - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
     - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access. 
 2. Add two models:
-    - A primary model to control the agent. I can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](llms/providers/openai.md) or [Azure OpenAI](llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](llms/providers/anthropic.md).
-    - If you want to enable the [Knowledge AI](knowledge-ai/overview.md) feature for your AI agent, make sure to add an embedding model in addition to the primary model. We recommend using `text-embedding-ada-002` to enhance Agentic AI capabilities.
+    - A primary model to control the agent. It can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](llms/providers/openai.md) or [Azure OpenAI](llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](llms/providers/anthropic.md).
+    - If you want to enable the [Knowledge AI](knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model in addition to the primary model. We recommend using `text-embedding-ada-002` to enhance Agentic AI capabilities.
   
 ## Create an AI Agent
 
@@ -79,7 +79,7 @@ To create an AI Agent, select one of the following options:
             - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
             - **Completed Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
             - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
-        - **Safety Instructions** — configure the risk mitigation measures for the AI agent. The built-in instructions apply to content generation, chats, Q&A, rewriting, summarization, and other tasks. The selected components are included in the prompt to enhance safety, which may increase token usage. Select one of the following options:
+        - **Safety Instructions** — configure the risk mitigation measures for the AI Agent. The built-in instructions apply to content generation, chats, Q&A, rewriting, summarization, and other tasks. The selected components are included in the prompt to enhance safety, which may increase token usage. Select one of the following options:
             - **None** — no safety guidelines are applied.
             - **Standard** — apply standard safety guidelines based on Cognigy's instructions. This option is selected by default.
             - **Custom** — define your custom safety guidelines.
@@ -123,7 +123,7 @@ To do so, follow these steps:
 6. Click **Create**.
 7. In the Flow editor, click **+** to open the **Node Selection** menu.
 8. On the **By Function** tab, go to the **AI** tab and select the [AI Agent](../build/node-reference/ai/ai-agent.md) Node from the list. The AI Agent Node will appear in the Flow editor.
-9. Left-click the Node to open the Flow Editor.
+9. Left-click the Node to open the Flow editor.
 10. Select the desired AI Agent from the AI Agent list. Configure the [rest of the fields](../build/node-reference/ai/ai-agent.md#ai-agent-settings).
 11. Click **Save Node**.
 12. Below the parent AI Agent Node, configure the [child Tool Node](../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings). Specify the tool's use case, such as unlocking an account or registering a new user. Make sure the tool's name and description are clear and informative for the model.
@@ -156,7 +156,7 @@ To copy the Reference ID of an AI Agent, follow these steps:
 
 ### Delete an AI Agent
 
-Before deleting an AI Agent, make sure that it is not used in any of your Flows.  
+Before deleting an AI Agent, make sure the AI Agent isn't used in any Flows.
 Otherwise, Nodes linked to the deleted AI Agent may cause the Flow to fail.
 
 To delete an AI Agent, follow these steps:
