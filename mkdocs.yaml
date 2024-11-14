@@ -130,6 +130,7 @@ nav:
           - ai/build/node-reference/ai/fuzzy-search.md
           - ai/build/node-reference/ai/match-pattern.md
           - ai/build/node-reference/ai/regex-slot-filler.md
+          - ai/build/node-reference/ai/resolve-tool-action.md
         - Data:
           - ai/build/node-reference/data/overview.md
           - ai/build/node-reference/data/datepicker.md

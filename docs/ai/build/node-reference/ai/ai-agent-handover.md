@@ -30,3 +30,9 @@ The AI Agent Handover Node is used to transfer the conversation to another AI Ag
 |---------------|--------|-------------------------------------------------------------------------------------------------|
 | Parse Intents | Toggle | Enable the system to check for Intents in the correct sub Flow, rather than in the parent Flow. |
 | Parse Slots   | Toggle | Enable the system to check for Slots in the correct sub Flow, rather than in the parent Flow.   |
+
+## More Information
+
+- [AI Agent](ai-agent.md)
+- [Resolve Tool Action](resolve-tool-action.md)
+- [Agentic AI](../../../empower/agentic-ai.md)
