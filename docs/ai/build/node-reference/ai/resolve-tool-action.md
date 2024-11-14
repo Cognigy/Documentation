@@ -15,7 +15,7 @@ hidden: false
 
 {! _includes/ai/beta.md !}
 
-The Resolve Tool Action Node allows configuration and control of how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
+The Resolve Tool Action Node allows for the configuration and control of how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
 
 ## Settings
 
@@ -23,3 +23,9 @@ The Resolve Tool Action Node allows configuration and control of how an AI Agent
 |---------------|---------------|--------------------------------------------------------------------------------------------------------------|
 | Answer Text   | CognigyScript | Add the text that serves as the AI Agent's response to confirm that the requested action has been completed. |
 | Debug Message | Toggle        | Enable sending a debug message that displays the tool name and the generated answer text.                    |
+
+## More Information
+
+- [AI Agent](ai-agent.md)
+- [AI Agent Handover](ai-agent-handover.md)
+- [Agentic AI](../../../empower/agentic-ai.md)

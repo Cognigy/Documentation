@@ -46,7 +46,7 @@ To create an AI Agent, select one of the following options:
     1. Open the Cognigy.AI interface.
     2. In the left-side menu of the **Projects** page, select a Project.
     3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
-    4. Click **Create AI Agent** if you are creating an agent for the first time, or click **+ New AI Agent** on the AI Agents page if you have created at least one AI Agent before.
+    4. Click **Create AI Agent** if you are creating an AI Agent for the first time, or click **+ New AI Agent** on the **AI Agents** page if you have created at least one AI Agent before.
     5. In the **General Settings** step, fill in the following fields:
         - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another AI Agent. For example, `Hello, my name is Sara. How can I help you?` or `Our support specialist Alex will help with this question, transferring the conversation now`.
         - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, describe the AI Agent as follows: `Anna works at ACME and is highly skilled at making customers feel comfortable.`
