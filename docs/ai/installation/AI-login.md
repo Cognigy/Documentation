@@ -14,6 +14,13 @@ https://<frontend-url>/login
 
 For example, the `frontend-url` for the Trial Cognigy environment is `trial.cognigy.ai`.
 
+## Limit active login sessions
+
+By default, there is no limit to the number of sessions you can start in Cognigy.AI across different browsers. However, you can set a limit for the following installations:
+
+- For dedicated SaaS, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+- For on-premises, set the `REFRESH_TOKEN_MAX_AMOUNT_PER_USER` variable in `values.yml` to the number of active sessions you want to allow. For example, if you want to allow only one active session, set `REFRESH_TOKEN_MAX_AMOUNT_PER_USER=1`.
+
 ## Log in to multiple organizations
 
 Cognigy.AI allows users to be part of multiple organizations. A user, identified by an email address and a password, can be part of different organizations. The URL to log in to Cognigy.AI should be formatted as follows, specifying the organization the user wants to log in to:
