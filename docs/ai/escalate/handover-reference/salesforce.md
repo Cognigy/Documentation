@@ -79,14 +79,11 @@ configure the following settings:
 
 #### Pre-chat Entities and Details
 
-Cognigy.AI sends the Conversation History by default, which includes the entire chat between the user and agent. 
-It's displayed when the agent receives the first message from the user
-and can be found in the **Transcripts** tab of Salesforce Service Console under the **Transcript > Details > Transcript > Body** section.
+If you activate the [**Send Transcript as a first message**](#configure-handover-settings) setting, Cognigy.AI sends the conversation transcript as the first message in the chat between the user and the human agent. The conversation transcript includes the entire chat between the user and the AI Agent.
 
-Moreover, Cognigy.AI allows users to send Pre-chat Details and Pre-chat Entities arrays as a custom JSON structure.
-This feature allows users
-to include additional context or relevant information before initiating the chat with the human agent.
-This information can then be used for further processing or personalizing the conversation based on the provided details.
+The conversation script is displayed when the agent receives the first message from the user and can be found in the **Transcripts** tab of Salesforce Service Console under the **Transcript > Details > Transcript > Body** section.
+
+Moreover, Cognigy.AI allows users to send Pre-chat Details and Pre-chat Entities arrays as a custom JSON structure. This feature allows users to include additional context or relevant information before initiating the chat with the human agent. This information can then be used for further processing or personalizing the conversation based on the provided details.
 
 ##### Pre-chat Entities
 
