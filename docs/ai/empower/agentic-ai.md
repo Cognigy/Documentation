@@ -50,13 +50,13 @@ To create an AI Agent, select one of the following options:
     5. In the **General Settings** step, fill in the following fields:
         - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another AI Agent. For example, `Hello, my name is Sara. How can I help you?` or `Our support specialist Alex will help with this question, transferring the conversation now`.
         - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, describe the AI Agent as follows: `Anna works at ACME and is highly skilled at making customers feel comfortable.`
-    6. In the **Avatar** section select avatar of your choice of upload your custom one by clicing **+** next to avatars.
+    6. In the **Avatar** section select avatar of your choice or upload your custom one by clicking **+** next to avatars.
        You can create your own avatar for AI Agents using the [Cognigy.AI PSD template](https://docs.cognigy.com/_assets/ai/empower/agentic-ai/Template.psd). To open and customize the template, you will need Adobe Photoshop or [Paint.net](https://www.getpaint.net/) with the [PSD plugin](https://www.psdplugin.com/) installed. The requirements for the avatar are as follows:
-        - Use an Alpha Channel for a transparent background.
+        - Use an alpha channel for a transparent background.
+        - Set the recommended width to 136px.
+        - Set the recommended height to 184px.
+        - Save the file as `.png`.
         - Include `_optimized` in the file name.
-        - Recommended width is `136px`.
-        - Recommended height is `184px`.
-        - File type is `.png`.
     7. Click **Next**.
     8. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
         - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
