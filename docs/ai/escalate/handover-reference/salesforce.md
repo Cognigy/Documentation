@@ -79,7 +79,7 @@ configure the following settings:
 
 #### Pre-chat Entities and Details
 
-If you activate the [**Send Transcript as a first message**](#configure-handover-settings) setting, Cognigy.AI sends the conversation transcript as the first message in the chat between the user and the human agent. The conversation transcript includes the entire chat between the user and the AI Agent.
+If you activate the [**Send Transcript as a first message**](#configure-handover-settings) setting, Cognigy.AI sends the conversation transcript as the first message to the chat between the user and the human agent. The conversation transcript includes the entire chat between the user and the AI Agent.
 
 The conversation script is displayed when the agent receives the first message from the user and can be found in the **Transcripts** tab of Salesforce Service Console under the **Transcript > Details > Transcript > Body** section.
 
