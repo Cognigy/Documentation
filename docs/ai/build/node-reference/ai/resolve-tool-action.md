@@ -1,7 +1,7 @@
 ---
 title: "Resolve Tool Action"
 slug: "resolve-tool-action"
-description: "This Node lets configure and control how an AI Agent responds after completing an action, as well as to enable debugging information."
+description: "The Resolve Tool Action lets configure and control how an AI Agent responds after completing an action, as well as to enable debugging information."
 hidden: false
 ---
 
@@ -13,7 +13,9 @@ hidden: false
 
 ## Description
 
-This Node allows configuration and control of how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
+{! _includes/ai/beta.md !}
+
+The Resolve Tool Action Node allows configuration and control of how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
 
 ## Settings
 

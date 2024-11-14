@@ -13,6 +13,9 @@ hidden: false
 
 ## Description
 
+!!! warning
+    With the [Agentic AI (Beta)](../../../../empower/agentic-ai.md) feature, the api.getConversationTranscript method has been deprecated. If the Agentic AI (Beta) feature is enabled for your installation, use the [Get Transcript Node](../../service/get-transcript.md) before the Code Node, because the Code Node can't pause to wait for tasks to finish.
+
 Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow.
 The Code Node editor has full IntelliSense and exposes all Cognigy objects and actions.
 For better performance, the TypeScript code will be transpiled when the Node is saved.

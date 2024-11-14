@@ -66,6 +66,7 @@ The Profile Schema has the following predefined fields:
 | Age                     | age            | The age of the contact, represented in years.                                                                                                                                                                                                               |
 | Birthday                | birthday       | The date of birth of the contact.                                                                                                                                                                                                                           |
 | Location                | location       | The geographical location or address information associated with the contact.                                                                                                                                                                               |
+| Memories                | memories       | Some data recorded via [Add Memory Nodes](../build/node-reference/analytics/add-memory.md).                                                                                                                                                                 |
 
 ### Custom Fields
 

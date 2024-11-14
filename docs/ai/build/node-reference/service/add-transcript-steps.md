@@ -1,6 +1,7 @@
 ---
 title: "Add Transcript Steps"
 slug: "add-transcript-steps"
+description: "The Add Transcript Steps Node allows you to add a step for one of the conversation actor's inputs to simulate that input."
 hidden: false
 ---
 
@@ -12,7 +13,10 @@ hidden: false
 
 ## Description
 
-The Add Transcript Steps Node allows you to add an additional step for one of the conversation actor's inputs to simulate that input.
+!!! warning
+    This Node is not compatible with the `@cognigyRecentConversation` and `@cognigyRecentUserInputs` tags in the [LLM Prompt Node](../service/llm-prompt.md).
+
+The Add Transcript Steps Node allows you to add a step for one of the conversation actor's inputs to simulate that input.
 
 ## Settings
 
@@ -22,3 +26,8 @@ The Add Transcript Steps Node allows you to add an additional step for one of th
 | Type      | Selector      | Currently, only the `Input` type is available. This specifies that the data being provided is input text that will be processed by the system.                                                                                                                                                                                                                                                                                                                                                                                          |
 | Text      | CognigyScript | The actual content to be used as input for the system. This text is processed and analyzed by the AI, either for intent recognition, response generation, or other tasks depending on the configuration.                                                                                                                                                                                                                                                                                                                                |
 | Data      | JSON          | Allows you to include additional structured information that supplements the main input text. For example, `{ "type": "motivational" }` can be used to categorize the input or provide context to influence how the system processes the text. This can be useful for customizing the AI's response based on specific data.                                                                                                                                                                                                             |
+
+## More Information
+
+- [Get Transcript Steps](get-transcript.md)
+- [Agentic AI](../../../empower/agentic-ai.md)

@@ -31,3 +31,6 @@ To provide the transcript to the agent, specify in the job prompt a reference to
 | Input Key      | CognigyScript | The parameter appears when **Input** is selected. The result is stored in the `transcript` Input object by default. You can specify another value.       |
 | Context Key    | CognigyScript | The parameter appears when **Context** is selected. The result is stored in the `transcript` Context object by default. You can specify another value.   |
 
+## More Information
+
+- [Agentic AI](../../../empower/agentic-ai.md)
