@@ -1,73 +1,103 @@
 ---
-title: "Cognigy.AI Sign-in and Sign-out"
+title: "Access to Cognigy.AI"
 slug: "AI-login"
 hidden: false
 ---
 
-# Cognigy.AI Sign-in and Sign-out
+# Access to Cognigy.AI
 
-Users can sign in to Cognigy.AI with this URL:
+Access to Cognigy.AI allows you to log in to and log out of Cognigy.AI.
+
+## Prerequisites
+
+- You need to have a Cognigy.AI account.
+
+## Log In
+
+You can access Cognigy.AI's login page through the following login URL:
 
 ```txt
 https://<frontend-url>/login
 ```
 
-For example, the `frontend-url` for the Trial Cognigy environment is `trial.cognigy.ai`.
+`frontend-url` depends on your installation:
 
-## Limit active login sessions
+- For on-premises, `frontend-url` is a domain you defined to run Cognigy.AI.
+- For dedicated and shared SaaS, `frontend-url` is provided to you during deployment.
+
+For example, `frontend-url` for Cognigy.AI's trial environment is `trial.cognigy.ai`, and the login URL is `https://trial.cognigy.ai/login`.
+
+To log in to Cognigy.AI, follow these steps:
+
+1. Go to the login page and enter your account credentials in the following fields:
+
+    - **E-Mail** — the email you provided to your Cognigy.AI admin to register your Cognigy.AI account.
+    - **Password** — the password you received from your Cognigy.AI admin. If you don't remember you password, you can [reset your password](#reset-password).
+
+2. _(Optional)_ If you want to stay logged in after you close your session, activate the **Remember me** checkbox.
+3. Click **Sign in**.
+
+!!! note
+    If you enter the wrong password, your account is temporarily locked. An error message appears on the screen and displays a countdown to unlock your account. The more times you enter the wrong password, the longer your account is locked.
+
+## Limit Active Login Sessions
 
 By default, there is no limit to the number of sessions you can start in Cognigy.AI across different browsers. However, you can set a limit for the following installations:
 
 - For dedicated SaaS, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 - For on-premises, set the `REFRESH_TOKEN_MAX_AMOUNT_PER_USER` variable in `values.yml` to the number of active sessions you want to allow. For example, if you want to allow only one active session, set `REFRESH_TOKEN_MAX_AMOUNT_PER_USER=1`.
 
-## Log in to multiple organizations
+### Reset Password
 
-Cognigy.AI allows users to be part of multiple organizations. A user, identified by an email address and a password, can be part of different organizations. The URL to log in to Cognigy.AI should be formatted as follows, specifying the organization the user wants to log in to:
+1. Go to the login page and click **Forgot Password?**.
+2. Enter your email in the **E-Mail** field.
+3. Click **Send link**.
+
+You will receive an email with instructions to reset your password. You need to choose a password according to the [password policy](../administer/management-ui.md#password-policy) your admin set up. 
+
+### Log In with Single Sign-On
+
+If you have set up [single sign-on (SSO)](single-sign-in-saml2.md), you can log in to Cognigy.AI by following these steps:
+
+  1. Go to the login page and click **Login with SSO**.
+  2. Enter your email in the **E-Mail** field.
+  3. Click **Sign in with SSO**.
+
+### Multiple Organizations
+
+In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#organizations). Each organization has a different login URL. For each organization, the login URL follows this pattern:
 
 ```txt
-https://<frontend-url>/login?organisationId=<organisation-id>
+https://<frontend-url>/login?organizationId=<organization-id>
 ```
 
-The `organization-id` is a unique identifier of 24 characters that identifies an organization in the Cognigy system.
-
-<br>
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/installation/CognigyAI_Login.png" width="100%" />
-  <figcaption> Cognigy.AI User Login page</figcaption>
-</figure>
+The `organization-id` parameter is a unique identifier with 24 characters that identifies an organization in Cognigy.AI.
 
 !!! warning
-    If a user is part of multiple organizations and no `organizationId` is passed in the login URL, the user will be denied a login.
+    If you are part of more than one organization, you need to include `organizationId` in the login URL. Otherwise, the login fails.
 
-    For a user assigned to a single organization, including the `organizationId` in the login URL is optional and has no impact.
-
-### Multiple organization email notification
+#### Email Notification for Failed Login
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
 
-When a user with a valid email address belongs to multiple organizations, and if no organizationId is passed in the login URL, the user will be denied a login; but will receive an email with direct login links for each organization they belong to.
-Clicking those links will open the Cognigy.AI login page with the respective organizationId param in the URL.
+If your login fails because you didn't include `organizationId` in the login URL, you receive an email with login links for each organization you belong to.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/installation/multi-org-email.png" width="100%" />
-  <figcaption>Multiple organization user email on failed login</figcaption>
-</figure>
+The login links in the email redirect you to the Cognigy.AI login page with the `organizationId` parameter of the respective organization in the URL.
 
-### Reset a Password
+## Log Out
 
-Suppose a user wants to reset the password for one of the organizations to which the user is assigned. In that case, having the organizationId in the login URL is mandatory when filling out the "Forgot Password" form.
+To log out of Cognigy.AI, you have two options:
 
-### Log in with SSO
+- In the the upper-right corner of the **Projects** page, click the **User Menu > Logout**.
+- In the bottom-left corner of the Project page, click **User Menu > Logout**.
 
-A user who is part of multiple organizations can log in with SSO using the above same login URL, including the organizationId, and then clicking **LOG IN WITH SSO**.
+## Automatic Logout
 
-More information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0](single-signin-saml2.md) page.
+The **Automatic logout** feature allows you to set an inactivity period for users in your organization. If a user remains inactive longer than this period, they are automatically logged out.
 
-## Automatic Sign-out
+By default, the inactivity period is 15 minutes. However, you can set a limit for the following installations:
 
-The **Automatic sign-out** feature allows you to set an inactivity period for members of your organization. If a user remains inactive during this period, they will be automatically signed out.
-
-This feature is available only for on-premises and dedicated SaaS customers. To activate the feature, specify `FEATURE_ENABLE_AUTO_LOGOUT_ON_INACTIVITY= true` in the `values.yaml` file.
-
-By default, the inactivity period is set to 15 minutes. You can change this value by specifying `AUTO_LOGOUT_IDLE_TIME_IN_MIN=<your time in minutes>` in the `values.yaml` file.
+- For dedicated SaaS, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+- For on-premises, set the following variables in `values.yml`:
+  - `FEATURE_ENABLE_AUTO_LOGOUT_ON_INACTIVITY=true`
+  - `AUTO_LOGOUT_IDLE_TIME_IN_MIN` to the inactivity period you want in minutes
