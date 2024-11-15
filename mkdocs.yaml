@@ -796,8 +796,9 @@ extra_javascript:
   - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
-  - glightbox
   - search
+  - print-site
+  - glightbox
   - macros
   - tags:
       tags_file: tags.md
