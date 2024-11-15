@@ -107,8 +107,10 @@ nav:
           - ai/build/node-reference/analytics/update-profile.md
         - Service:
            - ai/build/node-reference/service/overview.md
+           - ai/build/node-reference/service/add-transcript-steps.md
            - ai/build/node-reference/service/check-agent-availability.md
            - ai/build/node-reference/service/close-handover.md
+           - ai/build/node-reference/service/get-transcript.md
            - ai/build/node-reference/service/gpt-conversation.md
            - ai/build/node-reference/service/handover-to-agent.md
            - ai/build/node-reference/service/http-request.md

@@ -15,7 +15,7 @@ hidden: false
 
 {! _includes/ai/beta.md !}
 
-The Resolve Tool Action Node allows for the configuration and control of how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
+The Resolve Tool Action Node lets you configure and control how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
 
 ## Settings
 

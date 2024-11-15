@@ -1,13 +1,14 @@
 ---
 title: "Get Transcript"
 slug: "get-transcript"
+description: "The Get Transcript Node allows AI Agent to receive a real-time transcript of the conversation and store the result in the Input or Context object."
 hidden: false
 ---
 
 # Get Transcript
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/get-transcript.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/get-transcript.png" width="80%" />
 </figure>
 
 ## Description
@@ -15,7 +16,9 @@ hidden: false
 The Get Transcript Node allows AI Agent
 to receive a real-time transcript of the conversation and store the result in the Input or Context object.
 
-To provide the transcript to the agent, specify in the job prompt a reference to the input or context object where the agent is stored.
+To provide the transcript to the AI Agent, go to the [AI Agent Node](../ai/ai-agent.md).
+In the **Job Description** or **Instructions and Context** field,
+specify the path to the Input or Context object where the transcript is stored.
 
 ## Settings
 
@@ -33,4 +36,5 @@ To provide the transcript to the agent, specify in the job prompt a reference to
 
 ## More Information
 
+- [Add Transcript Steps](add-transcript-steps.md)
 - [Agentic AI](../../../empower/agentic-ai.md)

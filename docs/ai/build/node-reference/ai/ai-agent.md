@@ -132,7 +132,7 @@ Configure the parameters that will be collected by the AI Agent before the tool 
 
 In this example, the `unlock_account` tool unlocks a user account by providing the email and specifying the reason for the unlocking.
 
-Tool Configuration in JSON:
+Tool configuration in JSON:
 
 ```json
 {
@@ -154,12 +154,12 @@ Tool Configuration in JSON:
 
 where:
 
-- `"type": "object"` — specifies that the input for this tool should be an object containing certain properties.
+- `"type": "object"` — indicates that the input for this tool must be an object containing specific properties.
 - `properties` — defines the individual properties for the tool's input:
     - `email` — a required property for unlocking the account.
     - `reason` — an optional property that provides the reason for unlocking the account.
 - `required` — lists `email` as a required property, ensuring that this value must always be provided.
-- `"additionalProperties": false` — ensures that no other properties, aside from `email` and `reason`, are allowed in the input.
+- `"additionalProperties": false` — ensures that the input contains only the `email` and `reason` properties, and no others are allowed.
 
 ## More Information
 
