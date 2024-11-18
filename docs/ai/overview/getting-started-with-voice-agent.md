@@ -73,6 +73,6 @@ For these steps, refer to the [Voice Gateway](../../voice-gateway/overview.md) d
 ## What's Next?
 
 - Familiarize yourself with the core concepts of building AI Agents, such as [Projects](../build/projects.md), [Flows](../build/flows.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigy-script.md).
-- Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
+- Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms/overview.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
 - Explore [test](../test/interaction-panel/overview.md) and [deploy](../deploy/endpoints/overview.md) features.
 - Connect your agent to the [contact center](../escalate/handovers.md).

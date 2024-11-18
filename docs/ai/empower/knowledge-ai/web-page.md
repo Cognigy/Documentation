@@ -29,7 +29,7 @@ Before using a web page as a source, check if at least one [Knowledge Store](ove
      2. In the left-side menu, select a Project where you want to add a Knowledge Store.
      3. In the left-side menu, navigate to **Build > Knowledge**. The Knowledge AI wizard will be opened.
      4. Continue following the wizard instructions.
-     5. Specify a unique name, select an [embedding model](../llms.md#supported-models) if you did not add it before.
+     5. Specify a unique name, select an [embedding model](../llms/model-support-by-feature.md) if you did not add it before.
      6. Click **Next**.
      7. In the **Upload Knowledge** step, select the **Web Page** option.
      8. Copy and paste the URL of the web page you want to ingest into the **URL** field.

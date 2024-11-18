@@ -204,7 +204,18 @@ nav:
         - Other:
           - ai/empower/nlu/language-support.md
           - ai/empower/nlu/nlu-warnings.md
-      - ai/empower/llms.md
+      - Large Language Models:
+          - ai/empower/llms/overview.md
+          - ai/empower/llms/model-support-by-feature.md
+          - Providers:
+            - ai/empower/llms/providers/all-providers.md
+            - ai/empower/llms/providers/microsoft-azure-openai.md
+            - ai/empower/llms/providers/openai.md
+            - ai/empower/llms/providers/anthropic.md
+            - ai/empower/llms/providers/google.md
+            - ai/empower/llms/providers/aleph-alpha.md
+            - ai/empower/llms/providers/amazon-bedrock.md
+          - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
@@ -320,15 +331,16 @@ nav:
         - ai/administer/user-menu/my-profile.md
         - ai/administer/hotkeys.md
       - Access Management:
-        - Organizations and Users:
-          - ai/administer/access/admin-center.md
-          - ai/administer/access/access-control.md
+        - Admin Center:
+          - ai/administer/access/admin-center/overview.md
+          - ai/administer/access/admin-center/dashboard.md
+          - ai/administer/access/admin-center/access-control.md
+          - ai/administer/access/admin-center/audit-events.md
         - Project and Members:
           - ai/administer/access/project-settings.md
           - ai/administer/access/members.md
         - ai/administer/access/management-ui.md
       - ai/administer/limitations.md
-      - ai/administer/audit-events.md
       - ai/administer/billing.md
 
     - 👩‍💻 Developer Reference:
@@ -647,6 +659,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.8x:
+        - release-notes/4.89.md
         - release-notes/4.88.md
         - release-notes/4.87.md
         - release-notes/4.86.md
@@ -789,8 +802,9 @@ extra_javascript:
   - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
-  - glightbox
   - search
+  - print-site
+  - glightbox
   - macros
   - tags:
       tags_file: tags.md

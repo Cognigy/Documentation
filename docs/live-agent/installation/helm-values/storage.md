@@ -55,7 +55,7 @@ Set the following value to `"cdn"` to use a Content Delivery network or CDN, and
 
 ### Using Amazon S3
 
-You can start by creating an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+You can start by creating an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html)
 and [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 to configure the following details.
 

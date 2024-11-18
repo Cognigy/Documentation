@@ -27,7 +27,7 @@ This setup ensures that AI Agent messages are delivered in the format supported 
 ### Alexa
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/1ebe307-alexa.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/alexa.jpg" width="100%" />
 </figure>
 
 Defines what an Amazon Echo enabled system will say as an answer.
@@ -79,7 +79,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 ### Messenger
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/16b8fc7-messenger.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/messenger.jpg" width="100%" />
     <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger Send API</a></div>
 </figure>
 
@@ -117,7 +117,7 @@ The following Facebook (Meta) Messenger Templates are available:
 ## Webchat
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/26ca2e8-webchat.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/webchat.jpg" width="100%" />
 </figure>
 
 The Webchat Channel features the configuration options of our Facebook (Meta) integration.
@@ -129,7 +129,7 @@ The Webchat will render HTML markup for outputs from the DEFAULT tab's text as w
 ## LINE
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/8313bb3-line.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/line.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
 </figure>
 
@@ -146,7 +146,7 @@ The **LINE** tab provides two methods for creating and editing a message, which 
 ### Twilio
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6404b3e-twilio.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/twilio.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
 </figure>
 
@@ -169,7 +169,7 @@ It has some features listed in the [Twilio documentation](https://www.twilio.com
 
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/9819b1c-twiliosms.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/twiliosms.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS Documentation</a></div>
 </figure>
 
@@ -186,7 +186,7 @@ It has some features listed in the [Twilio documentation](https://www.twilio.com
 ### Microsoft Teams
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/892e801-teams.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/teams.jpg" width="100%" />
 </figure>
 
 !!! note "Teams Cards"

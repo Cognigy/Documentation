@@ -22,7 +22,7 @@ This real-time analysis offers immediate feedback to agents regarding the emotio
 For instance, if the sentiment becomes negative during a conversation,
 the system can promptly alert the human agent to take appropriate action.
 
-Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../../empower/llms.md#supported-models).
+Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../../empower/llms/model-support-by-feature.md).
 
 ## Settings
 

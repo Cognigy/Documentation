@@ -66,10 +66,10 @@ This setting allows users with the [Account](./webapp/users.md#account) role to 
 To set up the Voice Gateway for your organization, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the upper-right corner of the **Projects** page, click the **User Menu**.
-3. Select the **Admin Center** from the menu.
+2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > Admin Center**.
+3. In the Admin Center interface, select **Dashboard** from the left-side menu.
 4. Click **Set up Voice Gateway**.
-5. Go to **User Menu > Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Portal with the Account role. Note that Admins and Service Providers cannot log in using Cognigy.AI user credentials.
+5. In the left-side menu, select **Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Portal with the Account role. Note that Admins and Service Providers cannot log in using Cognigy.AI user credentials.
 
 ## What's Next?
 

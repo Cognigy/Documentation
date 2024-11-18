@@ -26,8 +26,6 @@ and simplifying the process of creating sophisticated conversational experiences
 
 ## Prerequisites
 
-{! _includes/release-notes/removal-gpt-3.5-turbo-versions-by-openai.md !}
-
 Before using this feature, follow these steps:
 
 1. [Apply for a license and allocate quotas](activate.md).
@@ -38,13 +36,19 @@ Before using this feature, follow these steps:
 
 ### Which Model to Choose?
 
-For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node** and **Answer Extraction** columns in the [supported models](../../empower/llms.md) list.
+For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node** and **Answer Extraction** columns in the [supported models](../../empower/llms/model-support-by-feature.md) list.
 
 Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-3-large` or `text-embedding-3-small` models for the Knowledge AI case, but use them with caution due to the following reasons:
 
 - The `text-embedding-3-large` model returns embedding vectors that are twice as large, leading to higher memory use and larger [Package](../../build/packages.md) sizes for Knowledge AI.
 - The `text-embedding-3-large` or `text-embedding-3-small` models may only be available in geographically remote locations, leading to high latency for the search operation.
 - The `text-embedding-3-large` or `text-embedding-3-small` models are more expensive to use.
+
+Once an embedding model is set up within a [Project](../../build/projects.md),
+all [Knowledge Stores](#knowledge-store) must use that model.
+After you create the first Knowledge Store, you can't change the embedding model for Knowledge AI. 
+If you want to switch to a different embedding model,
+you must either delete all existing Knowledge Stores in the current Project or create a new Project.
 
 ## Create a Knowledge Store
 
@@ -203,8 +207,8 @@ Note that all chunks must contain some content in the Chunk Editor. Empty chunks
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, select the Knowledge Store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms/model-support-by-feature.md) that cover the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms/model-support-by-feature.md) that cover both the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only need the `text-embedding-ada-002` model.
 
      <figure>
@@ -262,5 +266,5 @@ The table below presents limitations. These limitations are subject to future ch
 - [PDF](pdf.md)
 - [Web Page](web-page.md)
 - [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md)
-- [LLM](../llms.md)
+- [LLM](../llms/overview.md)
 - [Generative AI](../generative-ai.md)

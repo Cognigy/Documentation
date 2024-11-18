@@ -100,7 +100,7 @@ For example:
 - `conditionalEntryPointWasExecuted`
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/3c5a246-Screen_Shot_008.PNG" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/code-node-editor.png" width="100%" />
 </figure>
 
 Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the `context` object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.

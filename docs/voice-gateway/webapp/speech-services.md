@@ -58,7 +58,7 @@ To configure the connection for a cloud-based speech service:
     1. Enter the client ID in the **Client ID** field. You can obtain the client ID as well as the secret key from your Nuance program manager. For more information, read the [Nuance](https://docs.nuance.com/digital-engagement/APIs/UMAPI/token-auth.html) documentation.
     2. Enter the secret key in the **Secret** field.
 === "Soniox"
-    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/#authenticate/).
+    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/speech-recognition/quickstart/index.html#authenticate).
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).

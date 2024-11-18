@@ -19,7 +19,7 @@ Contact Profiles offer the following benefits:
 
 ## Limitations
 
-- A Contact Profile will be removed after 30 days if not read or modified. If you have a dedicated SaaS or on-premises installation, you can configure an expiration date for Contact Profiles. To set the expiration date, go to the [management-ui](../administer/access/access-control.md).
+- A Contact Profile will be removed after 30 days if not read or modified. If you have a dedicated SaaS or on-premises installation, you can configure an expiration date for Contact Profiles. To set the expiration date, go to the [management-ui](../administer/access/management-ui.md).
 
 ## View Contact Profiles
 
