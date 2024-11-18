@@ -8,7 +8,7 @@ hidden: false
 # Track Goal Process
 
 The Track Goal Process Node lets you monitor the progress of a specific goal within a Flow
-and can be used only with [Goals v2](../../../analyze/goals/v2). 
+and can be used only with [Goals v2](../../../analyze/goals/v2.md). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
 and then analyze the results in the Insights dashboard or via the OData endpoint.
