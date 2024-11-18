@@ -44,6 +44,11 @@ Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-
 - The `text-embedding-3-large` or `text-embedding-3-small` models may only be available in geographically remote locations, leading to high latency for the search operation.
 - The `text-embedding-3-large` or `text-embedding-3-small` models are more expensive to use.
 
+Once an embedding model is set up within a [Project](../../build/projects.md),
+all [Knowledge Stores](#knowledge-store) must use that model.
+If your Project was created with the initial model and you want to switch to a different one,
+you must either delete all existing Knowledge Stores in the current Project or create a new Project.
+
 ## Create a Knowledge Store
 
 You can create a preconfigured Knowledge Store. To do this, follow these steps:
