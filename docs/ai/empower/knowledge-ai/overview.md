@@ -46,7 +46,8 @@ Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-
 
 Once an embedding model is set up within a [Project](../../build/projects.md),
 all [Knowledge Stores](#knowledge-store) must use that model.
-If your Project was created with the initial model and you want to switch to a different one,
+After you create the first Knowledge Store, you can't change the embedding model for Knowledge AI. 
+If you want to switch to a different embedding model,
 you must either delete all existing Knowledge Stores in the current Project or create a new Project.
 
 ## Create a Knowledge Store
