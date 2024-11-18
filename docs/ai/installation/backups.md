@@ -4,7 +4,7 @@ slug: "backups"
 hidden: false
 ---
 
-## Cognigy.AI Secrets Backups
+# Cognigy.AI Secrets Backups
 
 Follow the Cognigy.AI installation guide to [make a backup of secrets](https://github.com/Cognigy/cognigy-ai-helm-chart#cognigyai-secrets-backup).
 
