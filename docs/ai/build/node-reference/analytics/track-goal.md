@@ -1,19 +1,19 @@
 ---
-title: "Track Goal Process"
-slug: "track-goal-process"
-description: "The Track Goal Process Node lets you monitor the progress of a specific goal within a Flow."
+title: "Track Goal"
+slug: "track-goal"
+description: "The Track Goal Node lets you monitor the progress of a specific goal within a Flow."
 hidden: false
 ---
 
-# Track Goal Process
+# Track Goal
 
-The Track Goal Process Node lets you monitor the progress of a specific goal within a Flow
+The Track Goal Node lets you monitor the progress of a specific goal within a Flow
 and can be used only with [Goals v2](../../../analyze/goals/v2.md). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
 and then analyze the results in the Insights dashboard or via the OData endpoint.
 
-For example, if your goal is to reduce call handling time, the Track Goal Process Node will track each interaction step, helping you measure whether your Flow is achieving the desired reductions in response times.
+For example, if your goal is to reduce call handling time, the Track Goal Node will track each interaction step, helping you measure whether your Flow is achieving the desired reductions in response times.
 
 ## Settings
 

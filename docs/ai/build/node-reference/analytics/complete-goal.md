@@ -65,5 +65,5 @@ The example shows how to measure the AI Agent's effectiveness in your customer c
 
 ## Alternatives
 
-As an alternative to this Node, you can use the [Track Goal Process](track-goal-process.md) Node with Goals v2. 
+As an alternative to this Node, you can use the [Track Goal](track-goal.md) Node with Goals v2. 
 In this case, you can define multiple steps within one goal and track important metrics such as time and money.

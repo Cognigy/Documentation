@@ -103,7 +103,7 @@ nav:
           - ai/build/node-reference/analytics/merge-profile.md
           - ai/build/node-reference/analytics/overwrite-analytics.md
           - ai/build/node-reference/analytics/request-rating.md
-          - ai/build/node-reference/analytics/track-goal-process.md
+          - ai/build/node-reference/analytics/track-goal.md
           - ai/build/node-reference/analytics/set-rating.md
           - ai/build/node-reference/analytics/update-profile.md
         - Service:

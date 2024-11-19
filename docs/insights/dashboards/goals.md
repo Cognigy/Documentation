@@ -27,11 +27,11 @@ The _Goals Dashboard_ highlights goal tracking, completion status, time and cost
 
 ### Completed
 
-Displays the total number of [completed goals](../../ai/build/node-reference/analytics/track-goal-process.md).
+Displays the total number of [completed goals](../../ai/build/node-reference/analytics/track-goal.md).
 
 ### Partially Completed
 
-Displays the total number of partially [completed goals](../../ai/build/node-reference/analytics/track-goal-process.md).
+Displays the total number of partially [completed goals](../../ai/build/node-reference/analytics/track-goal.md).
 This chart shows the goals for which some steps were not completed.
 
 ### Time Saved
