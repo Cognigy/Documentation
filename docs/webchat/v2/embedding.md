@@ -28,8 +28,8 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 7. The HTML code contains the following entities:
-    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub under `https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js`, ensures that your web page loads the latest version of Webchat v2. You can also deploy another Webchat v2 version by entering `https://github.com/Cognigy/WebchatWidget/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v2 version you want to use. For example, to use Webchat v2.59.0, enter `https://github.com/Cognigy/WebchatWidget/releases/download/v2.59.0/webchat.js`.
-    - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
+    - The Webchat JavaScript bundle — hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v2. You can also deploy another Webchat v2 version by replacing `https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js` with `https://github.com/Cognigy/WebchatWidget/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v2 version you want to use. For example, to use Webchat v2.59.0, enter `https://github.com/Cognigy/WebchatWidget/releases/download/v2.59.0/webchat.js`.
+    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
 
     ```html
