@@ -14,7 +14,6 @@ hidden: false
 The _Goals Dashboard_ highlights goal tracking, completion status, time and cost metrics, and the business impact of AI Agents in the following charts:
 
 - [Indicators](#indicators)
-- [Line charts](#line-charts)
 - [Bar charts](#bar-charts)
 
 {! _includes/insights/global-filters.md !}
@@ -42,45 +41,6 @@ Displays the total time saved for completed and partially completed goals.
 ### Cost Savings
 
 Displays the total cost savings for completed and partially completed goals.
-
-## Line charts
-
-### Goal Completion Rate In %
-
-Displays the percentage of goals achieved within the selected time frame.
-The goals have three distinct categories, each has a separate bar:
-
-- **Incomplete** — goals that have been started, with only the Startpoint step triggered.
-- **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
-- **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
-
-Here is the table based on the data you provided:
-
-```txt
-| Dimension       | Measure                  | Value |
-|-----------------|--------------------------|-------|
-| 10/27/2024 0:00 | completed_rate           | 33%   |
-| 10/27/2024 0:00 | incompleted_rate         | 33%   |
-| 10/27/2024 0:00 | partially_completed_rate | 34%   |
-| 10/28/2024 0:00 | completed_rate           | 41%   |
-| 10/28/2024 0:00 | incompleted_rate         | 40%   |
-| 10/28/2024 0:00 | partially_completed_rate | 19%   |
-| 10/29/2024 0:00 | completed_rate           | 44%   |
-| 10/29/2024 0:00 | incompleted_rate         | 14%   |
-| 10/29/2024 0:00 | partially_completed_rate | 42%   |
-| 10/30/2024 0:00 | completed_rate           | 39%   |
-| 10/30/2024 0:00 | incompleted_rate         | 24%   |
-| 10/30/2024 0:00 | partially_completed_rate | 38%   |
-| 10/31/2024 0:00 | completed_rate           | 35%   |
-| 10/31/2024 0:00 | incompleted_rate         | 35%   |
-| 10/31/2024 0:00 | partially_completed_rate | 30%   |
-````
-
-Result:
-
-<figure>
-  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goals-completion-rate.png" width="100%" />
-</figure>
 
 ## Bar charts
 

@@ -10,7 +10,7 @@ tags:
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../../release-notes/4.88.md)
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/transfer.png" width="80%" />
