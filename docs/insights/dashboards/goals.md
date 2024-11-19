@@ -54,6 +54,34 @@ The goals have three distinct categories, each has a separate bar:
 - **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
 - **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
 
+Here is the table based on the data you provided:
+
+```txt
+| Dimension       | Measure                  | Value |
+|-----------------|--------------------------|-------|
+| 10/27/2024 0:00 | completed_rate           | 33%   |
+| 10/27/2024 0:00 | incompleted_rate         | 33%   |
+| 10/27/2024 0:00 | partially_completed_rate | 34%   |
+| 10/28/2024 0:00 | completed_rate           | 41%   |
+| 10/28/2024 0:00 | incompleted_rate         | 40%   |
+| 10/28/2024 0:00 | partially_completed_rate | 19%   |
+| 10/29/2024 0:00 | completed_rate           | 44%   |
+| 10/29/2024 0:00 | incompleted_rate         | 14%   |
+| 10/29/2024 0:00 | partially_completed_rate | 42%   |
+| 10/30/2024 0:00 | completed_rate           | 39%   |
+| 10/30/2024 0:00 | incompleted_rate         | 24%   |
+| 10/30/2024 0:00 | partially_completed_rate | 38%   |
+| 10/31/2024 0:00 | completed_rate           | 35%   |
+| 10/31/2024 0:00 | incompleted_rate         | 35%   |
+| 10/31/2024 0:00 | partially_completed_rate | 30%   |
+````
+
+Result:
+
+<figure>
+  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goals-completion-rate.png" width="100%" />
+</figure>
+
 ## Bar charts
 
 ### Time Saved (in hours)
