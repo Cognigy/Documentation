@@ -117,6 +117,23 @@ To use the **Locales** filter, proceed as follows:
 7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
 8. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
+## Goals (Beta)
+
+The **Goals** filter allows you to include or exclude one or more goals from the data.  
+For more information, refer to the [Goals v2](../ai/analyze/goals/v2.md) documentation.
+
+To use the **Goals** filter, follow these steps:
+
+1. Open the **Insights** interface.
+2. In the left-side menu, select where you want to filter goals: the **Goals Dashboard** or the **Transcript Explorer**.
+3. At the top of the page, go to the filter bar and click **More Filters**.
+4. Under **Goals**, click to open the list.
+5. Use the **Type to search** field to find a specific goal, or select goals from the list.
+6. _(Optional)_ Activate the **Negate** option to exclude the selected goals from your analysis. All goals except the selected ones will be considered.
+7. _(Optional)_ To view only the selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
+8. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
+9. Click **Apply** to activate the filter settings. Based on your selection, the dashboard or explorer will display the corresponding data.
+
 ## Share Insights URL with Filters
 
 When you share a specific URL with global filters applied,

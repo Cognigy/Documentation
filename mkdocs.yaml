@@ -768,7 +768,7 @@ markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Anchor to this section
-      slugify: !!python/name:pymdownx.slugs.uslugify ''
+      slugify: !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
   - abbr
   - attr_list
   - def_list
