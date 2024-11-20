@@ -27,7 +27,7 @@ During the call, the following voice events are recorded in the payload:
 | [USER_INPUT_TIMEOUT](USER_INPUT_TIMEOUT.md)                   | The AI Agent terminated the call because the user did not respond.                                                  |
 | [NO_ANSWER](NO_ANSWER.md)                                     | The user or recipient of the call does not answer.                                                                       |
 
-You can access Voice Gateway events either in the input object `input.data.event` or in the [Output Transformer](../../../ai/deploy/endpoints/transformers/output-transformer.md), with exception of the `CALL_COMPLETED` event. You can allow the recording of `CALL_COMPLETED` by activating the respective toggle in the [Call Events section](../../../ai/deploy/endpoint-reference/overview.md#call-events) of the Voice Gateway Endpoint configuration. Advanced users can use these events for special purposes like [analytics](../../../ai/analyze/collecting-data.md).
+You can access Voice Gateway events either in the input object `input.data.event` or in the [Output Transformer](../../../ai/deploy/endpoints/transformers/output-transformer.md), with exception of the `CALL_COMPLETED` event. To record `CALL_COMPLETED` by activating the respective toggle in the [Call Events section](../../../ai/deploy/endpoint-reference/overview.md#call-events) of the Voice Gateway Endpoint configuration. Advanced users can use these events for special purposes like [analytics](../../../ai/analyze/collecting-data.md).
 
 The Output Transformer is executed after processing the flow. For example, if you receive the `CALL_COMPLETED` event, write some metrics in the transformer via HTTP request.
 
