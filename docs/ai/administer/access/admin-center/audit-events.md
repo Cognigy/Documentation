@@ -1,7 +1,7 @@
 ---
 title: "Audit Events"
 slug: "audit-events"
-description: "The Audit Events interface allows users with the `admin` and `fullSupportUser` role to track events at an organization-wide level."
+description: "The Audit Events interface allows users with the `admin` and `fullSupportUser` roles to track events at an organization-wide level."
 hidden: false
 ---
 
