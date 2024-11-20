@@ -41,7 +41,6 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
     </script>
     ```
     
-
 ## Include Custom Plugins and Stylesheets
 
 If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md) for the Webchat widget, include them by adding the appropriate `<script>` and `<link>` tags respectively. Replace the placeholders with the paths to your custom files.
