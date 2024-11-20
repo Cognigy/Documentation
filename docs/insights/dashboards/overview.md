@@ -177,17 +177,8 @@ Result:
 
 ### Understood / Misunderstood Messages
 
-Displays the number of understood messages and misunderstood messages in percentages over a period of time.
+{! _includes/insights/understood-messages.md !}
 
-A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/overview.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md). 
-A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md)
-or sent during an active handover
-without configuring [AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) Flow. 
-
-By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
-you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow.
 
 Source table:
 
