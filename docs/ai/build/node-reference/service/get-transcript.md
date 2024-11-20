@@ -21,9 +21,9 @@ specify the path to the Input or Context object where the transcript is stored.
 
 ## Settings
 
-| Parameter | Type    | Description                                                                                                                     |
-|-----------|---------|---------------------------------------------------------------------------------------------------------------------------------|
-| Limit     | Slider  | Determine how many transcript steps to include. One transcript step consists of a pair: one user input and one AI Agent output. |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                                                               |
+|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Limit     | Slider | Determine how many transcript steps to include. Each step is an input from any participant in the conversation. For example, if you specify `1`, only the last input will be included in the transcript. This input could be, for instance, an AI Agent's message if it was the last in the conversation. |
 
 ### Storage
 
