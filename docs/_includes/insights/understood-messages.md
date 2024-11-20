@@ -3,11 +3,8 @@ Displays the percentage of messages understood and misunderstood by the system o
 A message is considered `understood` if any of the following conditions are met:
 
 - An Intent or Slot is identified.
-- It is marked as understood through one of the following Nodes:
-    - [Code Node](https://docs.cognigy.com/ai/build/node-reference/basic/code/analytics-data.md)
-    - [Overwrite Analytics Node](https://docs.cognigy.com/ai/build/node-reference/analytics/overwrite-analytics.md)
-    - [Search Extract Output Node](https://docs.cognigy.com/ai/build/node-reference/other-nodes/search-extract-output.md)
-- The sentence type is `pAnswer`, `nAnswer`, or `Greeting` (if **Confirmation Word logic** is activated)
+- It is marked as understood through one of the following Nodes: [Code](https://docs.cognigy.com/ai/build/node-reference/basic/code/analytics-data.md), [Overwrite Analytics](https://docs.cognigy.com/ai/build/node-reference/analytics/overwrite-analytics.md), or [Search Extract Output](https://docs.cognigy.com/ai/build/node-reference/other-nodes/search-extract-output.md).
+- The sentence type is `pAnswer`, `nAnswer`, or `Greeting` (if **Confirmation Word logic** is activated).
 
 A message is considered `not understood` if any of the following conditions are met:
 
