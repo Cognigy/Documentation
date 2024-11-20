@@ -25,9 +25,9 @@ The following global filters are available:
 
 ## Time Span
 
-To focus on a specific time span, you can either set a preset time frame or select specific dates using a date picker.
+To focus on a specific time span, you can either set a preset time span or select specific dates using a date picker.
 
-Available preset time frames include:
+Available preset time spans include:
 
 | Time Span     | Description                                                             |
 |---------------|-------------------------------------------------------------------------|
@@ -39,12 +39,12 @@ Available preset time frames include:
 | This Year     | Shows data from the current calendar year.                              |
 | Custom Period | Shows data from a user-defined range of dates.                          |
 
-If you have changed a time frame, click **Apply** to confirm and activate this filter.
+If you have changed a time span, click **Apply** to confirm and activate this filter.
 
 ### Select a Custom Time Period
 
-You can select specific hours within the chosen time frame to narrow down your results to a more precise time period.
-To define a custom time frame, proceed as follows:
+You can select specific hours within the chosen time span to narrow down your results to a more precise time period.
+To define a custom time span, proceed as follows:
 
 1. Open the Insights interface.
 2. At the top of the Insights page, go to the filter bar.

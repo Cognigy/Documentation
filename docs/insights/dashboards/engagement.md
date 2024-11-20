@@ -48,7 +48,7 @@ Result: `11`
 Displays how long the average session lasted.
 
 The session length is defined as the time difference between the timestamp of the first user input and the last user input.
-The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
+The Average session length is the mean of all session lengths within the specified time span in your Insights filter.
 
 Source table:
 
@@ -221,7 +221,7 @@ Result:
 
 ### Handovers in Time
 
-Displays the number of times a human agent was contacted within the filtered time frame. Multiple handovers can occur within a single session.
+Displays the number of times a human agent was contacted within the filtered time span. Multiple handovers can occur within a single session.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,

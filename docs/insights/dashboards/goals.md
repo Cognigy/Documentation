@@ -46,7 +46,7 @@ Displays the total cost savings for completed and partially completed goals.
 
 ### Time Saved (in hours)
 
-Displays time saved in hours for each goal that was completed within the filtered time frame.
+Displays time saved in hours for each goal that was completed within the filtered time span.
 You can track efficiency gains and compare time saved across different goals.
 
 Source table:
@@ -73,7 +73,7 @@ Result:
 
 ### Cost Savings
 
-Displays the amount of the money saved for each goal completed within the selected time frame.
+Displays the amount of the money saved for each goal completed within the selected time span.
 You can analyze cost savings across different goals, identify the most cost-effective processes, and optimize resource allocation.
 
 Source table:
