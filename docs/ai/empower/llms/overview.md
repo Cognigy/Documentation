@@ -19,6 +19,7 @@ To integrate LLM into your conversational design process within Cognigy.AI, foll
 1. [Determine a use case that aligns with your business objectives](#use-cases). 
 2. [Select a standard or custom model](#model-types) from a preferred LLM provider. Ensure that you have all the necessary API credentials to access the specific LLM you intend to use. 
 3. Make sure to familiarize yourself with [Cognigy.AI's retry mechanism](#retry-mechanism) in case the model does not respond.
+4. _(Beta)_ Implement a [fallback strategy](#llm-fallback--beta-) to enhance the reliability of the model's connection.
 
 ## Use Cases
 
@@ -138,6 +139,12 @@ to suit specific performance requirements and network conditions.
 | GENERATIVE_AI_RETRY_OPTIONS_MIN_TIMEOUT       | Determines the timeout between retries to avoid rate limiting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_MAX_TIMEOUT       | Determines the maximum timeout between retries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_FACTOR            | Determines how long a retry timeout will last. The timeout duration will increase with each subsequent retry attempt. If the factor is greater than 1, the timeout duration will increase exponentially. This means that with each subsequent attempt, the waiting time will not just increase by a constant amount, but rather by multiples. For example, if the initial timeout is 1 second and the factor is set to 2, then the second timeout will be 2 seconds, the third will be 4 seconds, the fourth will be 8 seconds, and so on. | 1             |
+
+## LLM Fallback (Beta)
+
+As an alternative to the [default retry mechanism](#retry-mechanism)that is applicable to all models, you can override it for a specific model by using an [LLM fallback](fallback.md).
+Create a fallback model to ensure your AI agents continue working if the main model fails. 
+Set a threshold for failed requests to trigger the fallback, specify its active duration, and enable notifications. Only chat and completion models are supported.
 
 ## More Information
 
