@@ -1,15 +1,15 @@
 ---
 title: "Audit Events"
 slug: "audit-events"
-description: "The Audit Events interface allows users with the `admin` and `fullSupportUser` roles to track events at an organization-wide level."
+description: "The Audit Events interface allows users with the `admin` role to track events at an organization-wide level."
 hidden: false
 ---
 
 # Audit Events
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.89-blue.svg)](../../../../release-notes/4.89.md)
 
-The _Audit Events_ interface allows users with the `admin` and `fullUserSupport` roles to track events at an organization-wide level.
+The _Audit Events_ interface allows users with the `admin` role to track events at an organization-wide level.
 
 You can access the **Audit Events** page by one of the following options:
 
