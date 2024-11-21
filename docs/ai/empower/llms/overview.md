@@ -142,7 +142,7 @@ to suit specific performance requirements and network conditions.
 
 ## LLM Fallback (Beta)
 
-As an alternative to the [default retry mechanism](#retry-mechanism)that is applicable to all models, you can override it for a specific model by using an [LLM fallback](fallback.md).
+As an alternative to the [default retry mechanism](#retry-mechanism) that is applicable to all models, you can override it for a specific model by using an [LLM fallback](fallback.md).
 Create a fallback model to ensure your AI agents continue working if the main model fails. 
 Set a threshold for failed requests to trigger the fallback, specify its active duration, and enable notifications. Only chat and completion models are supported.
 
