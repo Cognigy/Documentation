@@ -33,7 +33,7 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
 
     ```html
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
+    <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
     <script>
         initWebchat(
             "https://endpoint-trial.cognigy.ai/c62364a8a1b1e986efc5c5b3bed5b2300aeab6788a6551f88fa24dcf9c37dbmf"
@@ -89,7 +89,7 @@ After implementing the code, open your web page in a browser to test the functio
 ```html
 <html lang="en">
 <body>
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
+    <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
     <script src="./path/to/myPlugin.js"></script>
     <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
     <script>
