@@ -12,7 +12,6 @@ such as Kubernetes, MongoDB, and Redis.
 
 {! _includes/installation/on-prem-compatibility-matrix-note.md !}
 
-| v4.90                                            | 1.19-1.30  | 6.0     | 7.4 (HA with Sentinel)   | 3.1     | 3.13     | 3.9+ | v1.8 (Only when KAI is enabled) |
 
 | Cognigy.AI + Insights /<br> Infra component | Kubernetes | MongoDB | Redis / Redis Persistent | Traefik | RabbitMQ | Helm          | Qdrant     |
 |---------------------------------------------|------------|---------|--------------------------|---------|----------|---------------|------------|
