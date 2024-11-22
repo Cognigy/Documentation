@@ -211,7 +211,7 @@ The main Flow on Cognigy.AI should look like this:
 
 ### (Optional) Filter Transcript Messages
 
-By default, Cognigy.AI sends the conversation transcript as a single message once the handover to Genesys occurs.
+By default, Cognigy.AI sends the full conversation transcript as a single message once the handover to Genesys occurs.
 Additionally, you can filter out empty or unsupported messages to keep the transcript relevant and concise:
 
 - **Filter unsupported messages** — if the system detects a message in an unsupported format, such as `UNSUPPORTED_STRUCTURE_DATA`, the system will exclude the message from the conversation transcript. To activate this feature, use the `FEATURE_FILTER_UNSUPPORTED_MESSAGES_HANDOVER_PROVIDER` feature flag.
