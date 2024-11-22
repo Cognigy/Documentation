@@ -11,7 +11,7 @@ hidden: false
 
 _LLM Fallback_ is a mechanism designed to maintain continuous service when a main model fails to respond or encounters an error. 
 In such cases, the system automatically activates an alternative model to handle the request,
-minimizing disruptions for AI Agents. 
+minimizing disruptions for AI Agents during [design](../generative-ai.md#design-time-generative-ai-features) and [run-time](../generative-ai.md#run-time-generative-ai-features) operations.
 The fallback model is selected for its similar capabilities to the main model, providing redundancy and improving the reliability of the connection.
 
 Using a fallback model provides the following benefits:
