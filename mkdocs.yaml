@@ -174,7 +174,8 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
-      - Natural Language Understanding:
+        - ai/empower/agentic-ai.md
+        - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:
           - ai/empower/nlu/intents/ml-intents.md
@@ -235,7 +236,6 @@ nav:
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
         - ai/empower/knowledge-ai/source-tags.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
-      - ai/empower/agentic-ai.md
 
     - 🧪 Test and Debug:
       - Interaction Panel:
