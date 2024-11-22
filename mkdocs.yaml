@@ -652,8 +652,9 @@ nav:
     - release-notes/index.md
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
-      - 4.8x:
+      - 4.9x:
         - release-notes/4.90.md
+      - 4.8x:
         - release-notes/4.89.md
         - release-notes/4.88.md
         - release-notes/4.87.md
