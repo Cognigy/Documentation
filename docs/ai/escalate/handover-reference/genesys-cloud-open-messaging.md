@@ -1,20 +1,19 @@
 ---
 title: "Genesys Cloud Open Messaging"
 slug: "genesys-cloud-open-messaging"
+description: "Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud."
 hidden: false
 ---
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.74.4-blue.svg)](../../../release-notes/4.74.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
 </figure>
 
-Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
-
-Open messaging facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
+Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud.
 
 The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](https://developer.genesys.cloud/commdigital/digital/openmessaging/openmessaging-apis). [Open messaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
 
@@ -209,6 +208,14 @@ The main Flow on Cognigy.AI should look like this:
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
 </figure>
+
+### (Optional) Filter Transcript Messages
+
+By default, Cognigy.AI sends the conversation transcript as a single message once the handover to Genesys occurs.
+Additionally, you can filter out empty or unsupported messages to keep the transcript relevant and concise:
+
+- **Filter unsupported messages** — if the system detects a message in an unsupported format, such as `UNSUPPORTED_STRUCTURE_DATA`, the system will exclude the message from the conversation transcript. To activate this feature, use the `FEATURE_FILTER_UNSUPPORTED_MESSAGES_HANDOVER_PROVIDER` feature flag.
+- **Filter empty messages** — if a user sends a blank message with no text or content, the system will exclude the message from the conversation transcript. To activate this feature, use the `FEATURE_FILTER_EMPTY_MESSAGES_HANDOVER_PROVIDER` feature flag.
 
 ## AI Copilot Workspace
 
