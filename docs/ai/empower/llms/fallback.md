@@ -7,6 +7,8 @@ hidden: false
 
 # LLM Fallback (Beta)
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.90(beta)-purple.svg)](../../../release-notes/4.90.md)
+
 {! _includes/ai/beta.md !}
 
 _LLM Fallback_ is a mechanism designed to maintain continuous service when a main model fails to respond or encounters an error. 
