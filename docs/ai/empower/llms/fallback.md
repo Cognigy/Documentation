@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Fallback (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.90(beta)-purple.svg)](../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.90(Beta)-purple.svg)](../../../release-notes/4.90.md)
 
 {! _includes/ai/beta.md !}
 
