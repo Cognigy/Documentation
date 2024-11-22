@@ -10,7 +10,8 @@ hidden: false
 {! _includes/ai/beta.md !}
 
 _LLM Fallback_ is a mechanism designed to maintain continuous service when a main model fails to respond or encounters an error. 
-In such cases, the system automatically activates an alternative model to handle the request, minimizing disruptions for AI agents. 
+In such cases, the system automatically activates an alternative model to handle the request,
+minimizing disruptions for AI Agents. 
 The fallback model is selected for its similar capabilities to the main model, providing redundancy and improving the reliability of the connection.
 
 Using a fallback model provides the following benefits:
@@ -25,7 +26,7 @@ This model failure can occur if the credentials are outdated or incorrectly modi
 
 ## Restrictions
 
-- Creating fallbacks for embedding models are not supported.
+- Creating fallbacks for embedding models is not supported.
 - Using a fallback model overrides the [default retry mechanism](overview.md#retry-mechanism).
 - You can add only one fallback to a main model.
 
