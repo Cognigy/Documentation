@@ -6,6 +6,8 @@ hidden: false
 
 # CALL_IN_PROGRESS
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+
 The call is considered in progress after the user provides their first input.
 
 To capture this event, follow these steps:
