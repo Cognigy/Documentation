@@ -136,7 +136,7 @@ and overrides the [Profile Settings](../profile-settings.md#notifications).
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-You can configure email and push notifications as well the notification sound of [audio notifications](../notifications.md#configure-notifications-at-the-user-profile-level).
+You can configure email and push notifications as well as the notification sound of [audio notifications](../notifications.md#configure-notifications-at-the-user-profile-level).
 
 ### Email and Push Notifications
 
