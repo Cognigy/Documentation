@@ -132,13 +132,15 @@ Enables DTMF collection.
 
 ### Continuous ASR
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+
 Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the AI Agent.
 
 | Parameter                   | Type          | Description                                                                                                                                                                                                                  |
 |-----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR. <br><br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the [Recognizer - Speech-To-Text](#recognizer---speech-to-text). |
-| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                                                                                                                                            |
-| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow.                                                                                                                      |
+| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key that sends the accumulated recognitions to the Flow.                                                                                                                                              |
+| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the Flow. The default and minimum value is 2000.                                                                               |
 
 ### Atmosphere Sounds
 
