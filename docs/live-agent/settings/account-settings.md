@@ -149,16 +149,16 @@ You can activate push and email notifications in the **Push Notifications** and 
 - You are mentioned in a conversation.
 - You receive a message in an assigned conversation.
 
-To unlock the event options, activate the **Enable overriding email notification preferences** setting. The event options you set apply to all human agents of your organization account and override individual agents' [Profile settings](../profile-settings.md#notifications).
+To unlock the event options, activate the **Enable overriding email notification preferences** setting. The event options you set apply to all human agents of your Live Agent organization's account and override individual agents' [Profile settings](../profile-settings.md#notifications).
 
 ### Notification Sound
 
 To configure the notification sound, follow these steps:
 
 1. Go to **Settings > Account Settings**.
-2. From the **Sound** drop-down menu in the **Notification Sound** section, select one of the following options:
+2. From the **Sound** list in the **Notification Sound** section, select one of the following options:
     - **Default** — a short sound is triggered when you send or receive a message.
-    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. The supported formats for the sound file are `.m4a`, `.mp3`, `.wav`, and `.ogg`. The notification sound is triggered when you send or receive a message. We recommend using a notification sound between 3 and 5 seconds. Longer notification sounds may overlap if you send or receive consecutive messages in short intervals.
+    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. The supported formats for the sound file are `.m4a`, `.mp3`, `.wav`, and `.ogg`. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when you send or receive a message. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly.
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
