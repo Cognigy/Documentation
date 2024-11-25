@@ -12,16 +12,17 @@ The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding
 
 Cognigy.AI supports the following Nodes:
 
-- [Copilot: Identity Tile](identity-tile.md)
-- [Copilot: Next Action Tile](next-action-tile.md)
-- [Copilot: Sentiment Tile](sentiment-tile.md)
-- [Copilot: HTML Tile](set-html-tile.md)
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
+- [Copilot: HTML Tile](set-html-tile.md)
 - [Copilot: IFrame Tile](set-iframe-tile.md)
+- [Copilot: Identity Tile](identity-tile.md)
+- [Copilot: Knowledge Tile](knowledge-tile.md)
+- [Copilot: Next Action Tile](next-action-tile.md)
+- [Copilot: Secure Forms Tile](secure-forms-tile.md)
+- [Copilot: Send Data](send-data-tile.md)
+- [Copilot: Sentiment Tile](sentiment-tile.md)
 - [Copilot: Set Grid](set-grid.md)
 - [Copilot: Transcript Tile](transcript-tile.md)
-- [Copilot: Knowledge Tile](knowledge-tile.md)
-- [Copilot: Secure Forms Tile](secure-forms-tile.md)
 
 ## More Information
 

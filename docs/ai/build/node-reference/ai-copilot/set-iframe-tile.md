@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: IFrame Tile
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-iframe-tile.png" width="80%" />
@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-This Node in Cognigy allows you to embed external websites directly into the AI Copilot Workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the AI Copilot workspace without redirecting human agents to an external site.
+This Node lets you embed external websites directly into the AI Copilot Workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the AI Copilot workspace without redirecting human agents to an external site.
 
 ## Settings
 
@@ -70,6 +70,12 @@ Example of an HTML page hosted on your website:
 You can send data back to the Flow by using the Postback feature.
 
 {! _includes/ai/nodes/postback.md !}
+
+### Via Copilot: Send Data Tile Node
+
+In the AI Copilot Flow, below the Copilot: IFrame Tile Node, add a [Copilot: Send Data Tile](send-data-tile.md).
+In the JSON field of the Copilot: Send Data Tile Node,
+specify the parameters you want to pass as metadata to the Copilot: IFrame Tile Node to update the content.
 
 ## More Information
 
