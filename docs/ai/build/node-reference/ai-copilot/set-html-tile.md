@@ -93,7 +93,7 @@ Example of using React:
 ## Receiving JSON Data from the Flow
 
 When you use a Copilot: HTML Tile, JSON data is passed into the HTML code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method.
-To receive and process the passed JSON in your widget, add an event listener into Copilot: HTML Tile Node and handle the data accordingly.
+To receive and process the passed JSON in your widget, add an event listener into the Copilot: HTML Tile Node and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
@@ -107,16 +107,15 @@ You can send data back to the Flow by using the Postback feature.
 
 {! _includes/ai/nodes/postback.md !}
 
-### Via Copilot: Send Data Tile Node
-
 In the AI Copilot Flow, below the Copilot: HTML Tile Node, add a [Copilot: Send Data Tile](send-data-tile.md).
-In the JSON field of the Copilot: Send Data Tile Node,
+In the **JSON** field of the Copilot: Send Data Tile Node,
 specify the parameters you want to pass as metadata to the Copilot: HTML Tile Node to update the content.
 
 ## More Information
 
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
 - [Copilot: IFrame Tile](set-iframe-tile.md)
+- [Copilot: Send Data Tile](send-data-tile.md)
 - [Copilot: Set Grid](set-grid.md)
 - [AI Copilot Nodes](overview.md)
 - [AI Copilot](../../../../ai-copilot/overview.md)

@@ -1,6 +1,7 @@
 ---
 title: "Copilot: IFrame Tile"
 slug: "set-iframe-tile"
+description: "The Copilot: IFrame Tile Node lets you embed external websites directly into the AI Copilot Workspace. "
 hidden: false
 ---
 
@@ -71,16 +72,15 @@ You can send data back to the Flow by using the Postback feature.
 
 {! _includes/ai/nodes/postback.md !}
 
-### Via Copilot: Send Data Tile Node
-
 In the AI Copilot Flow, below the Copilot: IFrame Tile Node, add a [Copilot: Send Data Tile](send-data-tile.md).
-In the JSON field of the Copilot: Send Data Tile Node,
+In the **JSON** field of the Copilot: Send Data Tile Node,
 specify the parameters you want to pass as metadata to the Copilot: IFrame Tile Node to update the content.
 
 ## More Information
 
 - [Copilot: HTML Tile](set-html-tile.md)
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
+- [Copilot: Send Data Tile](send-data-tile.md)
 - [Copilot: Set Grid](set-grid.md)
 - [AI Copilot Nodes](overview.md)
 - [AI Copilot](../../../../ai-copilot/overview.md)

@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Send Data Tile"
 slug: "send-data-tile"
-description: "This Node updates the content in the AI Copilot widgets (IFrame or HTML) without refreshing the entire tile, simplifying the modification of dynamic content."
+description: "The Copilot: Send Data Tile Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time."
 hidden: false
 ---
 
@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-This Node updates the content in the AI Copilot widgets (IFrame or HTML) without refreshing the entire tile, simplifying the modification of dynamic content.
+This Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time.
 
 ## Settings
 
@@ -26,76 +26,77 @@ This Node updates the content in the AI Copilot widgets (IFrame or HTML) without
 
 ## Example
 
-This example shows how data (metadata) can be dynamically updated in an HTML tile by sending updates through a Send Data Node and receiving them in the HTML tile with a script that handles the data.
+This example shows how to dynamically update metadata in the Copilot: HTML Tile Node using the Copilot: Send Data Tile and a processing script.
 
-### HTML in the Copilot: HTML Tile Node
+### Copilot: HTML Tile Node
 
-1. The JavaScript inside the HTML Tile listens for messages sent to it via the `postMessage` API.
-2. Once a message is received, the content of the message (stored in `event.data`) is logged to the browser's console.
-3. If the message contains data, the content of the `metadataDisplay` div updates to show the received data.
+Configure the Copilot: HTML Tile Node:
 
-```html
-<!DOCTYPE html>
-<html>
-  <head></head>
-  <body>
-    <!-- Script to listen for messages sent to this HTML Tile -->
-    <script>
-      // Listen for 'message' events (data sent to this HTML tile)
-      window.addEventListener("message", function (event) {
-        // Log the content of the received message to the console
-        console.log("Content of message: " + JSON.stringify(event.data));
-        
-        // If data is received, display it inside the metadataDisplay div
-        if (event.data) {
-            document.getElementById("metadataDisplay").innerText = "Metadata: " + JSON.stringify(event.data);
-        }
-      });
-    </script>
+1. Enter the following script in the **HTML Content** field:
 
-    <!-- Header for the HTML Tile -->
-    <h1>HTML Tile</h1>
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head></head>
+      <body>
+        <!-- Script to listen for messages sent to this HTML Tile -->
+        <script>
+          // Listen for 'message' events (data sent to this HTML tile)
+          window.addEventListener("message", function (event) {
+            // Log the content of the received message to the console
+            console.log("Content of message: " + JSON.stringify(event.data));
+            
+            // If data is received, display it inside the metadataDisplay div
+            if (event.data) {
+                document.getElementById("metadataDisplay").innerText = "Metadata: " + JSON.stringify(event.data);
+            }
+          });
+        </script>
+    
+        <!-- Header for the HTML Tile -->
+        <h1>HTML Tile</h1>
+    
+        <!-- Placeholder for dynamic content -->
+        <div id="test">
+            Here will be your content
+        </div>
+    
+        <!-- Div to display received metadata -->
+        <div id="metadataDisplay">Metadata: None</div>
+      </body>
+    </html>
+    ```
 
-    <!-- Placeholder for dynamic content -->
-    <div id="test">
-        Here will be your content
-    </div>
+    The JavaScript in the `<script>` tag listens for messages sent via the `postMessage` API. Once a message is received, the content of the message (stored in `event.data`) is logged to the browser's console. If the message contains data, the content of the `metadataDisplay` div updates to show the received data.
 
-    <!-- Div to display received metadata -->
-    <div id="metadataDisplay">Metadata: None</div>
-  </body>
-</html>
-```
+2. Define the current version of the Copilot: HTML Tile Node content on the **JSON** field:
 
-### JSON in the Copilot: HTML Tile Node
+    ```json
+    {
+      "version": 1
+    }
+    ```
 
-This JSON configuration defines the current version of the Copilot: HTML Tile Node content.
+### Copilot: Send Data Tile Node
 
-```json
-{
-  "version": 1
-}
-```
+Configure the Copilot: Send Data Tile Node:
 
-### JSON in the Copilot: Send Data Tile Node
+1. Below the Copilot: HTML Tile Node, add a Copilot: Send Data Tile Node.
+2. Open the Node editor and enter the Tile ID of the Copilot: HTML Tile Node in the **Tile ID** field.
+3. In the **JSON** field, enter the following JSON:
 
-This JSON configuration defines the updated content for the Copilot: HTML Tile Node.
-The process works as follows:
+    ```json
+    {
+      "version": 2,  // Version of the Copilot: HTML Tile Node
+      "additionalInfo": "Updated metadata"  // The updated metadata that will be sent to the Copilot: HTML Tile Node
+    }
+    ```
 
-1. The Copilot: Send Data Tile Node sends updated metadata to the Copilot: HTML Tile Node when triggered.
-2. The listener script inside the Copilot: HTML Tile Node dynamically displays this metadata on the widget.
-
-```json
-{
-  "version": 2,               // Version of the Copilot: HTML Tile Node
-  "additionalInfo": "Updated metadata"  // The updated metadata that will be sent to the Copilot: HTML Tile Node
-}
-```
+The Copilot: Send Data Tile Node sends updated metadata to the Copilot: HTML Tile Node when triggered. The listener script inside the Copilot: HTML Tile Node dynamically displays this metadata on the widget.
 
 ## More Information
 
-- [Copilot: Transcript Tile](transcript-tile.md)
-- [Copilot: Next Action Tile](next-action-tile.md)
-- [Copilot: Identity Tile](identity-tile.md)
+- [Copilot: HTML Tile](set-html-tile.md)
+- [Copilot: IFrame Tile](set-iframe-tile.md)
 - [AI Copilot Nodes](overview.md)
 - [AI Copilot](../../../../ai-copilot/overview.md)
