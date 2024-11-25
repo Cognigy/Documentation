@@ -136,7 +136,7 @@ and overrides the [Profile Settings](../profile-settings.md#notifications).
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-In Live Agent, you can configure email, push, and audio notifications as well the notification sound for different human conversation events.
+You can configure email and push notifications as well the notification sound of [audio notifications](../notifications.md#configure-notifications-at-the-user-profile-level).
 
 ### Email and Push Notifications
 
@@ -146,14 +146,14 @@ You can activate push and email notifications in the **Push Notifications** and 
 
 - A conversation is created.
 - A conversation is assigned to you.
-- You are mentioned in conversation.
-- You receive a message an assigned conversation.
+- You are mentioned in a conversation.
+- You receive a message in an assigned conversation.
 
-To unlock the event options, activate the **Enable overriding email notification preferences** setting. The event options you set apply to all human agents of your organization account and overrides individual agents' [Profile settings](../profile-settings.md#notifications).
+To unlock the event options, activate the **Enable overriding email notification preferences** setting. The event options you set apply to all human agents of your organization account and override individual agents' [Profile settings](../profile-settings.md#notifications).
 
 ### Notification Sound
 
-For audio notifications, you can configure the notification sound. To configure the notification sound, follow these steps:
+To configure the notification sound, follow these steps:
 
 1. Go to **Settings > Account Settings**.
 2. From the **Sound** drop-down menu in the **Notification Sound** section, select one of the following options:
