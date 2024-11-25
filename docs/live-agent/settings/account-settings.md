@@ -157,8 +157,8 @@ To configure the notification sound, follow these steps:
 
 1. Go to **Settings > Account Settings**.
 2. From the **Sound** drop-down menu in the **Notification Sound** section, select one of the following options:
-    - **Default** — A short sound is triggered when you send or receive a message.
-    - **Custom** — The **Sound URL** appears. Enter the URL for the sound file you want to set as audio notification. The supported formats for the sound file are `.m4a`, `.mp3`, `.wav`, and `.ogg`. We recommend using a notification sound between 3 and 5 seconds. Longer notification sounds may overlap if you send or receive consecutive messages in short intervals.
+    - **Default** — a short sound is triggered when you send or receive a message.
+    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. The supported formats for the sound file are `.m4a`, `.mp3`, `.wav`, and `.ogg`. We recommend using a notification sound between 3 and 5 seconds. Longer notification sounds may overlap if you send or receive consecutive messages in short intervals.
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
