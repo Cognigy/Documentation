@@ -165,7 +165,7 @@ Result:
 
 ### Top Slots
 
-Similar to **Top Goals** and **Top Intents**, this chart displays top-rated number of slots in a horizontal bar chart.
+Similar to **Top Tasks** and **Top Intents**, this chart displays top-rated number of slots in a horizontal bar chart.
 
 Source table:
 
