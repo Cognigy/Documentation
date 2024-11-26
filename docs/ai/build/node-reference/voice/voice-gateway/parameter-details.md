@@ -100,7 +100,7 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
 
-### Flow No Input Timeout
+### Flow Input Timeout
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
 
@@ -132,17 +132,19 @@ Enables DTMF collection.
 
 ### Continuous ASR
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+
 Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the AI Agent.
 
 | Parameter                   | Type          | Description                                                                                                                                                                                                                  |
 |-----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR. <br><br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the [Recognizer - Speech-To-Text](#recognizer---speech-to-text). |
-| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                                                                                                                                            |
-| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow.                                                                                                                      |
+| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key that sends the accumulated recognitions to the Flow.                                                                                                                                              |
+| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the Flow. The default and minimum value is 2000.                                                                               |
 
 ### Atmosphere Sounds
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
 
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
@@ -152,7 +154,7 @@ The track plays during the conversation with the AI Agent, continues when the ca
 | Parameter | Type     | Description                                                                                                                                                                                                                                                                                               |
 |-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                 |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                         |
+| URL       | Text     | Accepts URL links to MP3 tracks. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`.                                                                                                       |
 | Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                                      |
 | Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet. |
 
@@ -167,7 +169,7 @@ If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-c
 | Parameter                              | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action                                 | Dropdown | Defines an action to play or remove the track: <br> - **play** - plays the track in the background when prolonged silence occurs. <br> - **remove** - removes the track from the conversation. Next time a prolonged silence occurs, the Silence Overlay will not play. <br> Make sure to place the next Set Session Config Node before the Node that needs to have Silence Overlay removed. |
-| URL                                    | Text     | Accepts a direct URL link to an MP3 track, for example, `https://abc.xyz/music.mp3`. This parameter appears when the play action is selected.                                                                                                                                                                                                                                                |
+| URL                                    | Text     | Accepts URL links to an MP3 track. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`. This parameter appears when the play action is selected.                                                                                                                               |
 | Delay for starting the Silence Overlay | Number   | Defines the wait time before the MP3 track plays, simulating a humanlike response. For example, human agents often have a pause between speaking and typing. This parameter appears when the play action is selected.                                                                                                                                                                        |
 
 ### Advanced

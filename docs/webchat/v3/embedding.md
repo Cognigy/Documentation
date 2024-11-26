@@ -29,12 +29,12 @@ Copy the HTML code from the Webchat v3 Endpoint associated with your AI Agent, w
 5. On the **Endpoint Settings** page, go to the Embedding HTML section.
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 7. The HTML code contains the following entities:
-    - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v3.
-    - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
+    - The Webchat JavaScript bundle — hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v3. You can also deploy another Webchat v3 version by replacing `https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js` with `https://github.com/Cognigy/Webchat/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v3 version you want to use. For example, to use Webchat v3.2.0, enter `https://github.com/Cognigy/Webchat/releases/download/v3.2.0/webchat.js`. If you enter a specific version, ensure it is the same or later than the version where the Webchat v3 features you use were introduced. Learn more about Webchat v3 versions on the [Webchat v3 release page](https://github.com/Cognigy/Webchat/releases).
+    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
    
     ```html
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.19/webchat.js"></script>
+    <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
     <script>
         initWebchat(
             "https://endpoint-trial.cognigy.ai/c62364a8a1b1e986efc5c5b3bed5b2300aeab6788a6551f88fa24dcf9c37dbmf"

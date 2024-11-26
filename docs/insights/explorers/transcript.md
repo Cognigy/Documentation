@@ -92,7 +92,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
 | Source              | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                          |
-| Goals (Beta)        | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Goals v2](../../ai/analuze)                                                                                                                                                                                          |
+| Tasks               | Select from predefined tasks to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
 | Goals               | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Goals v1]().                                                                                                                                                                                                         |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
@@ -215,7 +215,7 @@ The transcript details include the following sections:
 | Birthday                | User's birthday.                             |
 | Location                | User's location.                             |
 | Accepted GDPR           | Accepted General Data Protection Regulation  |
-| Goals Completed         | All goals that were achieved in the session. |
+| Tasks Completed         | All tasks that were achieved in the session. |
 
 
 ## More Information 

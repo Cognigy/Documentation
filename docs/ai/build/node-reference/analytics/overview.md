@@ -12,7 +12,7 @@ You can use the following Analytics Nodes:
 
 - [Activate Profile](activate-profile.md)
 - [Blind Mode](blind-mode.md)
-- [Complete Goal](complete-goal.md)
+- [Complete Task](complete-task.md)
 - [Deactivate Profile](deactivate-profile.md)
 - [Delete Profile](delete-profile.md)
 - [Merge Profile](merge-profile.md)
