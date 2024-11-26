@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
 
-The _Audit Events_ interface allows users with the `admin`and `fullUserSupport` roles to track events at an organization-wide level.
+The _Audit Events_ interface allows users with the `admin` and `fullUserSupport` roles to track events at an organization-wide level.
 
 You can access the **Audit Events** page by one of the following options:
 
