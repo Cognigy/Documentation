@@ -100,7 +100,7 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
 
-### Flow No Input Timeout
+### Flow Input Timeout
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
 
