@@ -141,6 +141,7 @@ nav:
           - ai/build/node-reference/ai-copilot/identity-tile.md
           - ai/build/node-reference/ai-copilot/knowledge-tile.md
           - ai/build/node-reference/ai-copilot/next-action-tile.md
+          - ai/build/node-reference/ai-copilot/send-data.md
           - ai/build/node-reference/ai-copilot/sentiment-tile.md
           - ai/build/node-reference/ai-copilot/set-grid.md
           - ai/build/node-reference/ai-copilot/transcript-tile.md
