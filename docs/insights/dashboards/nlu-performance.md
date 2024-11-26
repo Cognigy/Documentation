@@ -97,17 +97,7 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
-Displays the percentage of messages understood and misunderstood by the system over a selected time frame.
-
-A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/analytics-data.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md).
-A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md)
-or sent during an active handover
-without configuring [AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) Flow.
-
-By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
-you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow and Intents. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
+{! _includes/insights/understood-messages.md !}
 
 Source table:
 
