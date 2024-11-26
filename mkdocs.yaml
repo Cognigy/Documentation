@@ -97,7 +97,7 @@ nav:
           - ai/build/node-reference/analytics/overview.md
           - ai/build/node-reference/analytics/activate-profile.md
           - ai/build/node-reference/analytics/blind-mode.md
-          - ai/build/node-reference/analytics/complete-goal.md
+          - ai/build/node-reference/analytics/complete-task.md
           - ai/build/node-reference/analytics/deactivate-profile.md
           - ai/build/node-reference/analytics/delete-profile.md
           - ai/build/node-reference/analytics/merge-profile.md
@@ -214,6 +214,7 @@ nav:
             - ai/empower/llms/providers/google.md
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
+          - ai/empower/llms/fallback.md
           - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
@@ -418,6 +419,7 @@ nav:
         - voice-gateway/references/events/CALL_CREATED.md
         - voice-gateway/references/events/CALL_COMPLETED.md
         - voice-gateway/references/events/CALL_FAILED.md
+        - voice-gateway/references/events/CALL_IN_PROGRESS.md
         - voice-gateway/references/events/CALL_RECONNECTED.md
         - voice-gateway/references/events/RECOGNIZED_DTMF.md
         - voice-gateway/references/events/RECOGNIZED_SPEECH.md

@@ -7,6 +7,8 @@ hidden: false
 
 # Large Language Models (LLMs)
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating humanlike text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
 With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also help in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
@@ -19,6 +21,7 @@ To integrate LLM into your conversational design process within Cognigy.AI, foll
 1. [Determine a use case that aligns with your business objectives](#use-cases). 
 2. [Select a standard or custom model](#model-types) from a preferred LLM provider. Ensure that you have all the necessary API credentials to access the specific LLM you intend to use. 
 3. Make sure to familiarize yourself with [Cognigy.AI's retry mechanism](#retry-mechanism) in case the model does not respond.
+4. _(Beta)_ Implement a [fallback strategy](#llm-fallback--beta-) to enhance the reliability of the model's connection.
 
 ## Use Cases
 
@@ -138,6 +141,13 @@ to suit specific performance requirements and network conditions.
 | GENERATIVE_AI_RETRY_OPTIONS_MIN_TIMEOUT       | Determines the timeout between retries to avoid rate limiting.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_MAX_TIMEOUT       | Determines the maximum timeout between retries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 50ms          |
 | GENERATIVE_AI_RETRY_OPTIONS_FACTOR            | Determines how long a retry timeout will last. The timeout duration will increase with each subsequent retry attempt. If the factor is greater than 1, the timeout duration will increase exponentially. This means that with each subsequent attempt, the waiting time will not just increase by a constant amount, but rather by multiples. For example, if the initial timeout is 1 second and the factor is set to 2, then the second timeout will be 2 seconds, the third will be 4 seconds, the fourth will be 8 seconds, and so on. | 1             |
+
+## LLM Fallback (Beta)
+
+As an alternative to the [default retry mechanism](#retry-mechanism) that is applicable to all models, you can override it for a specific model by using an [LLM fallback](fallback.md).
+Create a fallback model to ensure your AI agents continue working if the main model fails. 
+Set a threshold for failed requests to trigger the fallback, specify its active duration, and enable notifications.
+Note that creating fallbacks for embedding models is not supported.
 
 ## More Information
 
