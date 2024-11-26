@@ -7,6 +7,8 @@ hidden: false
 
 # Microsoft Azure OpenAI
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
+
 To start using a Microsoft Azure OpenAI model with Cognigy.AI features, follow these steps:
 
 1. [Add a Model](#add-a-model)
