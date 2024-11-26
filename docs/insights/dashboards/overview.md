@@ -130,9 +130,9 @@ Result:
   <img class="image-center" src="../../../_assets/insights/dashboards/overview/users_by_locale.png" width="100%" />
 </figure>
 
-### Top Goals
+### Top Tasks
 
-Indicates the top-rated number of goals reached.
+Indicates the top-rated number of tasks reached.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -141,7 +141,7 @@ which leads you to the Step Explorer in Insights.
 Source table:
 
 ```txt 
-| Sessions    | Goals                  |
+| Sessions    | Tasks                  |
 | ----------- | ---------------------- |
 | session-123 | Goal A, Goal B, Goal D |
 | session-456 | Goal B, Goal C, Goal E |
@@ -158,7 +158,7 @@ Result:
 
 ### Top Slots
 
-Similar to Top Goals and Top Intents, this chart displays top-rated number of slots displayed in a bar chart.
+Similar to Top Tasks and Top Intents, this chart displays top-rated number of slots displayed in a bar chart.
 
 Source table:
 

@@ -25,14 +25,14 @@ The _Engagement Dashboard_ highlights customer interactions in conversations and
 
 The Indicator charts displays real-time data that refreshes every 30 seconds.
 
-### Goals reached 
+### Tasks reached 
 
-This chart displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
+This chart displays the total number of [completed tasks](../../ai/build/node-reference/analytics/complete-task.md). 
 
 Source table:
 
 ```txt
- | StartedAt  |  Sessions   |  Goals                   | Goals reached |
+ | StartedAt  |  Sessions   |  Tasks                   | Tasks reached |
  | ---------- | ----------- | ------------------------ | ------------- |
  | 2022/01/01 | session-123 | "Goal A, Goal B, Goal D" |       3       |
  | 2022/01/01 | session-456 | "Goal B, Goal C, Goal E" |       3       |
@@ -155,9 +155,9 @@ Result:
 
 ## Bar charts
 
-### Top Goals
+### Top Tasks
 
-Displays the number of completed goals.
+Displays the number of completed tasks.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -166,7 +166,7 @@ which leads you to the Step Explorer in Insights.
 Source table:
 
 ```txt 
-| Sessions    | Goals                  |
+| Sessions    | Tasks                  |
 | ----------- | ---------------------- |
 | session-123 | Goal A, Goal B, Goal D |
 | session-456 | Goal B, Goal C, Goal E |
