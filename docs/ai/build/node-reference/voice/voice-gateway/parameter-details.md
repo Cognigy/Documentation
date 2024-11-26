@@ -142,7 +142,7 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 
 ### Atmosphere Sounds
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
 
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
