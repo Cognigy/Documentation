@@ -17,7 +17,7 @@ TARGET_DIRS=(
 )
 
 # Step 2: Output file
-OUTPUT_FILE="$(pwd)/file_changes_all.txt"
+OUTPUT_FILE="$(pwd)/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
 # Step 3: Initialize counters

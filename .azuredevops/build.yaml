@@ -6,11 +6,6 @@ trigger:
     include:
       - "main"
 
-pr:
-  branches:
-    include:
-      - "main"
-
 resources:
   - repo: self
 
@@ -23,33 +18,6 @@ pool:
   vmImage: ubuntu-20.04
 
 stages:
-  - stage: BuildLastChanges
-    displayName: Generate Last Changes and Build Documentation
-    jobs:
-      - job:
-        displayName: Generate Last Changes List
-        steps:
-          # Checkout code with full history to ensure git log works
-          - checkout: self
-            persistCredentials: "true"
-            clean: "true"
-            fetchDepth: 0
-
-          # Grant execute permissions to the script
-          - script: chmod +x ./generate-last-changes-list.sh
-            displayName: Grant execute permissions to the script
-
-          # Execute the script
-          - script: ./generate-last-changes-list.sh
-            displayName: Run script to generate last changes list
-
-          # Optionally, publish the output file as a pipeline artifact
-          - task: PublishBuildArtifacts@1
-            displayName: Publish changes list
-            inputs:
-              PathtoPublish: $(System.DefaultWorkingDirectory)/file_changes_all.txt
-              ArtifactName: last-changes-list
-
   - stage: Build
     displayName: Build product documentation
     jobs:
