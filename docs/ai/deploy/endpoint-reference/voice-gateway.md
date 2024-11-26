@@ -66,10 +66,11 @@ Voice Gateway identifies information about the caller and adds it to the [Input]
 
 These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
 
-| Parameter                  | Type   | Description                                                                                                               |
-|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------|
-| Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
-| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
+| Parameter                           | Type   | Description                                                                                                                                                                  |
+|-------------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Prosody Settings                    | Toggle | If the parameter is enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output.                                   |
+| Show Best Transcripts Only          | Toggle | If the parameter is enabled, only the best transcript in the input object is accessible, instead of all variations.                                                          |
+| Enable Call Event: Call in Progress | Toggle | If the parameter is enabled, the [Call in Progress](../../../voice-gateway/references/events/CALL_IN_PROGRESS.md) toggle appears in the [Call Events](#call-events) section. |
 
 #### Prosody Settings
 
@@ -232,4 +233,3 @@ In this example, an end user seeks billing assistance and interacts with actors 
 **Voice Agent:** Receives human agent's typed response. Converts the text message into speech using text-to-speech technology.<br>
 **End User:** Hears human agent's response spoken by voice agent. Example: `Ich habe das Problem gefunden. Es scheint, dass es einen Fehler in der Rechnungsstellung gab. Ich werde es für dich korrigieren`.<br>
 **End User/Human Agent:** The conversation between the end user and the human agent continues until the issue is resolved or the interaction is concluded.
-

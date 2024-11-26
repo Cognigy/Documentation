@@ -418,6 +418,7 @@ nav:
         - voice-gateway/references/events/CALL_CREATED.md
         - voice-gateway/references/events/CALL_COMPLETED.md
         - voice-gateway/references/events/CALL_FAILED.md
+        - voice-gateway/references/events/CALL_IN_PROGRESS.md
         - voice-gateway/references/events/CALL_RECONNECTED.md
         - voice-gateway/references/events/RECOGNIZED_DTMF.md
         - voice-gateway/references/events/RECOGNIZED_SPEECH.md
