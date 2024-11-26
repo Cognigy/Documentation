@@ -7,7 +7,7 @@ hidden: false
 
 # Account Settings
 
-_Account settings_ control the administration and optimization of Live Agent functionality within an organization.
+_Account Settings_ control the administration and optimization of Live Agent functionality within an organization.
 
 Only users having the `Administrator` role have access to the **Account Settings**. 
 
