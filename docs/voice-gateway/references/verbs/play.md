@@ -22,14 +22,14 @@ The `play` verb is used to stream recorded audio to a call.
 
 You can use the following options in the `play` verb:
 
-| Parameters  | Description                                                                                                                                  | Required |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| url         | A single WAV or MP3 URL or an array of URLs to play in sequence.                                                                             | Yes      |
-| loop        | The number of times to play the URLs. The default value is `1`.                                                                              | No       |
-| earlyMedia  | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`. | No       |
-| timeoutSecs | The number of seconds to play the URLs.                                                                                                      | No       |
-| seekOffset  | The number of samples to seek into the URL.                                                                                                  | No       |
-| actionHook  | A webhook to receive an HTTP POST when the `play` verb completes.                                                                            | No       |
+| Parameters  | Description                                                                                                                                                                                                                                 | Required |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| url         | A single WAV or MP3 URL or an array of URLs to play in sequence. The URLs don't need to include the `.mp3` or `.wav` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr` | Yes      |
+| loop        | The number of times to play the URLs. The default value is `1`.                                                                                                                                                                             | No       |
+| earlyMedia  | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`.                                                                                                | No       |
+| timeoutSecs | The number of seconds to play the URLs.                                                                                                                                                                                                     | No       |
+| seekOffset  | The number of samples to seek into the URL.                                                                                                                                                                                                 | No       |
+| actionHook  | A webhook to receive an HTTP POST when the `play` verb completes.                                                                                                                                                                           | No       |
 
 ## actionHook Properties
 
