@@ -1,11 +1,11 @@
 ---
-title: "Copilot: Send Data Tile"
-slug: "send-data-tile"
-description: "The Copilot: Send Data Tile Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time."
+title: "Copilot: Send Data"
+slug: "send-data"
+description: "The Copilot: Send Data Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time."
 hidden: false
 ---
 
-# Copilot: Send Data Tile
+# Copilot: Send Data
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
 
@@ -26,7 +26,7 @@ This Node lets you update the content within AI Copilot widgets (IFrame or HTML)
 
 ## Example
 
-This example shows how to dynamically update metadata in the Copilot: HTML Tile Node using the Copilot: Send Data Tile and a processing script.
+This example shows how to dynamically update metadata in the Copilot: HTML Tile Node using the Copilot: Send Data and a processing script.
 
 ### Copilot: HTML Tile Node
 
@@ -77,11 +77,11 @@ Configure the Copilot: HTML Tile Node:
     }
     ```
 
-### Copilot: Send Data Tile Node
+### Copilot: Send Data Node
 
-Configure the Copilot: Send Data Tile Node:
+Configure the Copilot: Send Data Node:
 
-1. Below the Copilot: HTML Tile Node, add a Copilot: Send Data Tile Node.
+1. Below the Copilot: HTML Tile Node, add a Copilot: Send Data Node.
 2. Open the Node editor and enter the Tile ID of the Copilot: HTML Tile Node in the **Tile ID** field.
 3. In the **JSON** field, enter the following JSON:
 
@@ -92,7 +92,7 @@ Configure the Copilot: Send Data Tile Node:
     }
     ```
 
-The Copilot: Send Data Tile Node sends updated metadata to the Copilot: HTML Tile Node when triggered. The listener script inside the Copilot: HTML Tile Node dynamically displays this metadata on the widget.
+The Copilot: Send Data Node sends updated metadata to the Copilot: HTML Tile Node when triggered. The listener script inside the Copilot: HTML Tile Node dynamically displays this metadata on the widget.
 
 ## More Information
 

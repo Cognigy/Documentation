@@ -7,7 +7,7 @@ updating display elements, or notifying the system of changes made by the human 
 The Postback feature can be configured in the following ways:
 
 - [Using SDK.postback](#using-sdkpostback)
-- [Using the Copilot: Send Data Tile](#using-the-copilot--send-data-tile)
+- [Using the Copilot: Send Data](#using-the-copilot--send-data)
 
 ### Using SDK.postback
 
@@ -104,4 +104,4 @@ This message will appear in the widget, prompting the user to provide their name
 </html>
 ```
 
-### Using the Copilot: Send Data Tile
+### Using the Copilot: Send Data
