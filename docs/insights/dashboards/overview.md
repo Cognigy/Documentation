@@ -6,7 +6,7 @@ hidden: false
 
 # Overview
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
 
 The _Overview Dashboard_ gives you a quick summary of how customers are interacting with your AI Agent.
 
