@@ -64,7 +64,7 @@ To configure notifications at the user profile level, follow these steps:
 
 The settings will be applied automatically.
 
-Users with the `Administrator` role can configure the notification sound in the [Account settings](settings/account-settings.md).
+Users with the `Administrator` role can configure the notification sound in the [Account Settings](settings/account-settings.md).
 
 ### Configure Notifications at the Account Level
 
