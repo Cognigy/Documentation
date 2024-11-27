@@ -46,10 +46,10 @@ Displays the total cost savings for completed and partially completed goals.
 
 ### Goal Completion Rate In %
 
-Displays the percentage of goals achieved within the selected time frame.
+Displays the percentage of goals achieved within the selected time span.
 The goals have three distinct categories, each has a separate bar:
 
-- **Incomplete** — goals that have been started, with only the Startpoint step triggered.
+- **Incomplete** — goals that have been started, with only the initial step triggered.
 - **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
 - **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
 
