@@ -8,7 +8,7 @@ hidden: false
 # Track Goal
 
 The Track Goal Node lets you monitor the progress of a specific goal within a Flow
-and can be used only with [Goals v2](../../../analyze/goals-and-tasks/v2.md). 
+and can be used only with [Goals](../../../analyze/goals-and-tasks/goals.md). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
 and then analyze the results in the Insights dashboard or via the OData endpoint.
@@ -33,6 +33,6 @@ The steps within this goal are the following:
 
 ## More Information
 
-- [Goals v2](../../../analyze/goals-and-tasks/v2.md)
+- [Goals](../../../analyze/goals-and-tasks/goals.md)
 - [Dashboard Goals](../../../../insights/dashboards/goals.md)
 - [Complete Goal Node](complete-goal.md)

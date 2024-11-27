@@ -19,5 +19,5 @@ For more information, read the [Complete Task Node](../../../ai/build/node-refer
 
 ## More Information
 
-- [Goals v2](v2.md)
+- [Goals](goals.md)
 - [Overview](overview.md)
