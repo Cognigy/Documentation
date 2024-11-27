@@ -54,7 +54,7 @@ This task helps you to track the number of successful account registrations thro
 
 When a user books an appointment, you can use the Complete Task Node to signify the completion of the appointment booking process.
 
-This goal helps you track the number of successful appointments scheduled through the chat or voice call.
+This task helps you track the number of successful appointments scheduled through the chat or voice call.
 
 ### Information Retrieval
 
