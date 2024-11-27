@@ -58,9 +58,9 @@ This task helps you track the number of successful appointments scheduled throug
 
 ### Information Retrieval
 
-When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can utilize the Complete Task Node to mark the "Information Retrieval" goal as completed.
+When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can utilize the Complete Task Node to mark the "Information Retrieval" task as completed.
 
-This goal allows you to track successful information retrieval interactions through the chat or voice call.
+This task allows you to track successful information retrieval interactions through the chat or voice call.
 
 ## Example
 
