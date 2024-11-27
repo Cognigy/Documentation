@@ -144,7 +144,7 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 
 ### Atmosphere Sounds
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
 
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
@@ -155,7 +155,7 @@ The track plays during the conversation with the AI Agent, continues when the ca
 |-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                 |
 | URL       | Text     | Accepts URL links to MP3 tracks. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`.                                                                                                       |
-| Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                                      |
+| Loop      | Toggle   | Turns on looping for the audio track.                                                                                                                                                                                                                                                                     |
 | Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet. |
 
 ### Silence Overlay

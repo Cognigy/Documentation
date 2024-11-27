@@ -6,7 +6,7 @@ hidden: false
 
 # CALL_IN_PROGRESS
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 The call is in progress once the call has been successfully established.
 
