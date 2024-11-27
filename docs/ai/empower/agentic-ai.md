@@ -51,7 +51,7 @@ To create an AI Agent, select one of the following options:
         - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another AI Agent. For example, `Hello, my name is Sara. How can I help you?` or `Our support specialist Alex will help with this question, transferring the conversation now`.
         - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, describe the AI Agent as follows: `Anna works at ACME and is highly skilled at making customers feel comfortable.`
     6. In the **Avatar** section select avatar of your choice or upload your custom one by clicking **+** next to avatars.
-       You can create your own avatar for AI Agents using the [Cognigy.AI PSD template](https://docs.cognigy.com/_assets/ai/empower/agentic-ai/Template.psd). To open and customize the template, you will need Adobe Photoshop or [Paint.net](https://www.getpaint.net/) with the [PSD plugin](https://www.psdplugin.com/) installed. The requirements for the avatar are as follows:
+       You can use any image as an avatar for your AI Agent, or create a Cognigy-style avatar using the [Cognigy.AI PSD template](https://docs.cognigy.com/_assets/ai/empower/agentic-ai/Template.psd). To open and customize the template, you will need Adobe Photoshop or [Paint.net](https://www.getpaint.net/) with the [PSD plugin](https://www.psdplugin.com/) installed. The requirements for the avatar are as follows:
         - Use an alpha channel for a transparent background.
         - Set the recommended width to 136px.
         - Set the recommended height to 184px.
@@ -71,18 +71,19 @@ To create an AI Agent, select one of the following options:
          - Share troubleshooting links for technical issues.
          - Apologize if errors occur, then correct promptly.
         ```
-        - **Knowledge Store** — select the [Knowledge Store](knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries.
+        - **Knowledge Store** — select the [Knowledge Store](knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](knowledge-ai/overview.md#which-model-to-choose) to use Knowledge AI.
     11. Click **Next**.
     12. In the **Data Privacy & Security** step, configure the following fields:
         - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../analyze/contact-profiles.md):
             - **None** — no data will be used from the Contact Profile. This option is selected by default.
-            - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
+            - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
             - **Complete Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
-            - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
-        - **Safety Instructions** — configure the risk mitigation measures for the AI Agent. The built-in instructions apply to content generation, chats, Q&A, rewriting, summarization, and other tasks. The selected components are included in the prompt to enhance safety, which may increase token usage. Select one of the following options:
-            - **None** — no safety guidelines are applied.
-            - **Standard** — apply standard safety guidelines based on Cognigy's instructions. This option is selected by default.
-            - **Custom** — define your custom safety guidelines.
+            - **Profile Memories** — use the [Memories](../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
+        - **Safety Instructions** — adjust the AI Agent's safety settings to guide content generation, interactions, and responses, ensuring compliance with ethical, legal, and operational standards. Although these settings reduce risks, occasional unexpected outputs may still occur. The selected safety instructions are included in the prompt to enhance safety, which may increase token usage. Select the safety instructions you want to apply:
+            - **Avoid harmful content** — prevent generating content that could be harmful, offensive, or abusive to end users.
+            - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
+            - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
+            - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
     13. Click **Create & Chat** to save changes and open the Flow with the created AI Agent, or click **Create** to save changes without opening the Flow.
 
 === "Create AI Agent From Template"

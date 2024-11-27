@@ -175,8 +175,8 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
-        - ai/empower/agentic-ai.md
-        - Natural Language Understanding:
+      - ai/empower/agentic-ai.md
+      - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:
           - ai/empower/nlu/intents/ml-intents.md
