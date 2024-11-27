@@ -48,7 +48,7 @@ This goal helps you track the number of successful order placements by customers
 
 When a user has to create an account, you can use the Complete Task Node to indicate that the "Account Registration" goal has been achieved.
 
-This goal helps you to track the number of successful account registrations through the chat or voice call.
+This task helps you to track the number of successful account registrations through the chat or voice call.
 
 ### Appointment Booking
 
