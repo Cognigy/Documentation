@@ -484,7 +484,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Goals
 
-The Goals collection contains records from [Goals v2](../analyze/goals/overview.md).
+The Goals collection contains records from [Goals v2](goals-and-tasks/overview.md).
 Each goal is logged as a single record.
 
 **Request**
@@ -509,7 +509,7 @@ Each goal is logged as a single record.
 
 ### GoalSteps
 
-The GoalSteps collection contains records about specific goal step from [Goals v2](../analyze/goals/overview.md).
+The GoalSteps collection contains records about specific goal step from [Goals v2](goals-and-tasks/overview.md).
 Each goal is logged as a single record.
 
 **Request**
@@ -533,7 +533,7 @@ Each goal is logged as a single record.
 
 ### GoalStepMetrics
 
-The GoalStepMetrics collection contains records about specific goal-related events from [Goals v2](../analyze/goals/overview.md).
+The GoalStepMetrics collection contains records about specific goal-related events from [Goals v2](goals-and-tasks/overview.md).
 Each metric is logged as a single record.
 
 **Request**
@@ -559,7 +559,7 @@ categories of metrics that can be tracked for goals.  types such as "duration" "
 
 ### GoalEvents
 
-The GoalEvents collection contains records about specific goal-related events from [Goals v2](../analyze/goals/overview.md).
+The GoalEvents collection contains records about specific goal-related events from [Goals v2](goals-and-tasks/overview.md).
 Each event is logged as a single record.
 
 **Request**

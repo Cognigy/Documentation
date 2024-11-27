@@ -120,7 +120,7 @@ To use the **Locales** filter, proceed as follows:
 ## Goals (Beta)
 
 The **Goals** filter allows you to include or exclude one or more goals from the data.  
-For more information, refer to the [Goals v2](../ai/analyze/goals/v2.md) documentation.
+For more information, refer to the [Goals v2](../ai/analyze/goals-and-tasks/v2.md) documentation.
 
 To use the **Goals** filter, follow these steps:
 

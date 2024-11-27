@@ -307,10 +307,10 @@ nav:
       - ai/analyze/odata.md
       - ai/analyze/call-tracing.md
       - ai/analyze/contact-profiles.md
-      - Goals:
-        - ai/analyze/goals/overview.md
-        - ai/analyze/goals/v1.md
-        - ai/analyze/goals/v2.md
+      - Goals and Tasks:
+        - ai/analyze/goals-and-tasks/overview.md
+        - ai/analyze/goals-and-tasks/tasks.md
+        - ai/analyze/goals-and-tasks/goals.md
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md

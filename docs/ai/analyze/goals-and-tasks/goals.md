@@ -1,17 +1,19 @@
 ---
-title: "Goals v2"
-slug: "goals-v2"
-description: "Goals v2 are used to track specific user interactions during conversations between end-users and AI Agents that align with your business objectives. "
+title: "Goals"
+slug: "goals"
+description: "Goals are used to track specific user interactions during conversations between end-users and AI Agents that align with your business objectives. "
 hidden: false
 ---
 
-# Goals v2
+# Goals
 
 !!! note
-   The Goals v2 feature is in Beta and is available if you have migrated to the new [Insights framework](../../../insights/data-management/pre-aggregation.md).
-   We encourage you to try this feature out and provide us with feedback.
+    We encourage you to explore the new version of Goals as soon as you migrate to the new [Insights framework](../../../insights/data-management/pre-aggregation.md).
 
-_Goals v2_ enhances the previous version, [Goals v1](v1.md), by tracking not only user actions during AI Agent conversations but also aligning them with business objectives.
+_Goals_ are structured objectives within AI Agent interactions that require specific steps to be completed. They not only track user actions but also tie those actions to measurable business metrics, ensuring alignment with organizational objectives.
+
+By defining multiple steps and associating them with predefined metrics,
+Goals provide a more comprehensive way to evaluate success compared to [Tasks](tasks.md).
 
 With Goals, you can evaluate and enhance the business impact of your AI Agent:
 
@@ -58,6 +60,7 @@ To create a goal, follow these steps:
     - **Mark this step as a completion step** — activate this setting to mark the current step as the point where the goal is considered fully completed. For example, this step can reflect the key result when the AI Agent has resolved all user requests. Note that at least one step within the goal must be marked as completed. Multiple steps can be marked as completed.
 8. In the **Success Metrics** field, measure the impact of your goal by tracking the following performance metrics:
     - **Cost Savings** — track saved money by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure).
+    - **Revenue Earnings** — track earned money by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure). 
     - **Time Saved** — track saved time by entering values in the format `00:00:00` (hours:minutes:seconds). For example, `02:45:00` represents 2 hours and 45 minutes.
 9. Click **Save** to save the step.
 10. Click **Save** to complete your goal configuration.
@@ -91,6 +94,7 @@ Once a goal and its steps are added to your Flows, you can monitor metrics in th
 For example:
 
 - **Cost Savings**. You may see a trend showing how much cost was saved through automation over the past month.
+- **Revenue Earned**. Monitor the income generated through specific interactions, processes, or transactions managed by the AI Agent.
 - **Time Saved**. Track how many hours were saved as tasks were handled automatically by the AI Agent instead of a human agent.
 
 For more information on how the data is calculated, refer to [Goals](../../../insights/dashboards/goals.md) in the Insights documentation.

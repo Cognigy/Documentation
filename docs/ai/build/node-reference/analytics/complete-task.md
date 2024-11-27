@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-The Complete Task Node provides an easy way to track the completion of a specific event once the Node is triggered and can be used only with [Goals v1](../../../analyze/goals/v1.md).
+The Complete Task Node provides an easy way to track the completion of a specific event once the Node is triggered and can be used only with [Goals v1](../../../analyze/goals-and-tasks/v1.md).
 
 To start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Task Node, the completed goal will be stored in the [Contact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
 

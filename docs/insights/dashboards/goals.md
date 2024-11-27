@@ -122,7 +122,7 @@ Result:
 
 ## More Information
 
-- [Goals v2](../../ai/analyze/goals/v2.md)
+- [Goals v2](../../ai/analyze/goals-and-tasks/v2.md)
 - [Dashboard Overview](overview.md)
 - [Dashboard NLU Performance](nlu-performance.md)
 - [Dashboard Live Agent](live-agent.md)
