@@ -44,6 +44,40 @@ Displays the total cost savings for completed and partially completed goals.
 
 ## Bar charts
 
+### Goal Completion Rate In %
+
+Displays the percentage of goals achieved within the selected time frame.
+The goals have three distinct categories, each has a separate bar:
+
+- **Incomplete** — goals that have been started, with only the Startpoint step triggered.
+- **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
+- **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
+
+Source table:
+
+```txt
+| Date        | Value                    | Percentage |
+|-------------|--------------------------|------------|
+| 10/29/2024  | completed_rate           | 44%        |
+| 10/29/2024  | partially_completed_rate | 42%        |
+| 10/29/2024  | incompleted_rate         | 14%        |
+| 10/30/2024  | completed_rate           | 39%        |
+| 10/30/2024  | partially_completed_rate | 38%        |
+| 10/30/2024  | incompleted_rate         | 24%        |
+| 10/31/2024  | completed_rate           | 35%        |
+| 10/31/2024  | partially_completed_rate | 35%        |
+| 10/31/2024  | incompleted_rate         | 30%        |
+| 11/1/2024   | completed_rate           | 44%        |
+| 11/1/2024   | partially_completed_rate | 40%        |
+| 11/1/2024   | incompleted_rate         | 16%        |
+```
+
+Result:
+
+<figure>
+  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goal-completion-rate.png" width="100%" />
+</figure>
+
 ### Time Saved (in hours)
 
 Displays time saved in hours for each goal that was completed within the filtered time span.
