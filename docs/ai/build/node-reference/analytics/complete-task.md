@@ -19,7 +19,9 @@ The Complete Task Node provides an easy way
 to track the completion of a specific event once the Node is triggered
 and can be used only with [Tasks](../../../analyze/goals-and-tasks/goals.md).
 
-To start using this Node, add it below the Node that completes the action you want to track. Once the user has passed this action and triggered the Complete Task Node, the completed goal will be stored in the [Contact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
+To start using this Node, add it below the Node that completes the action you want to track.
+Once the user has passed this action and triggered the Complete Task Node,
+the completed task will be stored in the [Contact Profile](../../../analyze/contact-profiles.md) and [Analytics database](../../../analyze/collecting-data.md).
 
 Complete Tasks have a variety of potential use cases and help understand how often certain events are achieved.
 The achieved tasks are recorded in the Contact Profiles of each end user.
@@ -40,9 +42,10 @@ The difference between a Complete Task and an Analytics Step lies in their purpo
 
 ### Order Placement
 
-When a user completes the order placement process successfully, you can use the Complete Task Node to mark the "Order Placement" goal as completed.
+When a user completes the order placement process successfully,
+you can use the Complete Task Node to mark the "Order Placement" task as completed.
 
-This goal helps you track the number of successful order placements by customers through the chat or voice call.
+This task helps you track the number of successful order placements by customers through the chat or voice call.
 
 ### Account Registration
 
@@ -73,5 +76,5 @@ The example shows how to measure the AI Agent's effectiveness in your customer c
 
 ## Alternatives
 
-As an alternative to this Node, you can use the [Track Task](track-goal.md) Node with Goals. 
-In this case, you can define multiple steps within one goal and track important metrics such as time and money.
+As an alternative to this Node, you can use the [Track Goal](track-goal.md) Node. 
+In this case, you can define multiple steps within one [goal](../../../analyze/goals-and-tasks/goals.md) and track important metrics such as time and money.
