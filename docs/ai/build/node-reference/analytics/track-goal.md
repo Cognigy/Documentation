@@ -35,4 +35,4 @@ The steps within this goal are the following:
 
 - [Goals](../../../analyze/goals-and-tasks/goals.md)
 - [Dashboard Goals](../../../../insights/dashboards/goals.md)
-- [Complete Goal Node](complete-goal.md)
+- [Complete Task Node](complete-task.md)
