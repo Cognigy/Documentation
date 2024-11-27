@@ -8,7 +8,7 @@
 ## Description 
 
 
-Cognigy.AI already supports [SSO (Single Sign-on)](single-signin-saml2.md) through the usage of our SAML 2.0 integration. 
+Cognigy.AI already supports [SSO (Single Sign-on)](single-sign-in-saml2.md) through the usage of our SAML 2.0 integration. 
 
 With release v4.3.0, Cognigy has added Single Sign-on support for OpenID Connect. Customers can now select the type of strategy they want to use to implement their corporate SSO strategy.
 

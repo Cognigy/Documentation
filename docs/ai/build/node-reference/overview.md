@@ -262,9 +262,11 @@ The Blind Mode disables all (or selected) logging. The Node can be used whenever
 - Mask Analytics: Outputs XXXX in the analytics (including Contact Profile conversations).
 - Disable Conversations: Disables output analytics altogether.
 
-### [Complete Goal](analytics/complete-goal.md)
+### [Complete Task](analytics/complete-task.md)
 
-This Node can be used to add a custom Goal to the [Contact Profile](../../analyze/contact-profiles.md). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the [Contact Profile](../../analyze/contact-profiles.md) overview.
+This Node can be used to add a custom Goal to the [Contact Profile](../../analyze/contact-profiles.md).
+Custom Tasks are KPIs that can be dynamically configured
+and that show up in the output analytics as well as the [Contact Profile](../../analyze/contact-profiles.md) overview.
 
 ### [Deactivate Profile](analytics/deactivate-profile.md)
 

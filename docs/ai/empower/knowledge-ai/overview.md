@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -45,6 +45,12 @@ Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-
 - The `text-embedding-3-large` or `text-embedding-3-small` models may only be available in geographically remote locations, leading to high latency for the search operation.
 - The `text-embedding-3-large` or `text-embedding-3-small` models are more expensive to use.
 
+Once an embedding model is set up within a [Project](../../build/projects.md),
+all [Knowledge Stores](#knowledge-store) must use that model.
+After you create the first Knowledge Store, you can't change the embedding model for Knowledge AI. 
+If you want to switch to a different embedding model,
+you must either delete all existing Knowledge Stores in the current Project or create a new Project.
+
 ## Create a Knowledge Store
 
 You can create a preconfigured Knowledge Store. To do this, follow these steps:
@@ -64,7 +70,7 @@ You can create a preconfigured Knowledge Store. To do this, follow these steps:
         - **Connection name** — create a unique name for your connection.<br>
         - **Connection Type** — select one of the following authorization methods:<br>
         &nbsp;- **API Key** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-        &nbsp;- **OAuth2** — this method is experimental and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
+        &nbsp;- **OAuth2** — this method is experimental, hidden behind the `FEATURE_ENABLE_OAUTH2_AZURE_CONNECTION_WHITELIST` feature flag, and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
           &nbsp;&nbsp;&nbsp;&nbsp;- **clientId** — add the Application (client) ID assigned to your app, can be found in the in Azure AI app registration overview.<br>
           &nbsp;&nbsp;&nbsp;&nbsp;- **clientSecret** — add the application secret created in the **Certificates & secrets** section of the Azure AI app registration portal.<br>
           &nbsp;&nbsp;&nbsp;&nbsp;- **oauthUrl** — add the URL to retrieve the access token. The URL should be in the `https://<your-domain>.com/as/token.oauth2` format.<br>
