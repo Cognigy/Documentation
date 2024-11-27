@@ -37,7 +37,7 @@ With Goals, you can evaluate and enhance the business impact of your AI Agent:
 Decide whether you want to track money, time, or both:
 
 - **Money Saved**. Track cost savings. To set the currency, go to **Manage > Settings > Currency Settings** and select a currency type from the **Set Standard Currency** list. You can select only one type of currency per Project.
-- **Revenue Earned**. Monitor financial performance. To set the currency, go to **Manage > Settings > Currency Settings** and select a currency type from the **Set Standard Currency** list. You can select only one type of currency per Project.
+- **Revenue Earned**. Monitor the additional revenue you earn by automating the process with the AI Agent. To set the currency, go to **Manage > Settings > Currency Settings** and select a currency type from the **Set Standard Currency** list. You can select only one type of currency per Project.
 - **Time Saved**. Measure the amount of time a person would have spent on the task. This metric shows the human time saved each time the goal is achieved.
 
 ### Create a Goal
@@ -60,7 +60,7 @@ To create a goal, follow these steps:
     - **Mark this step as a completion step** — activate this setting to mark the current step as the point where the goal is considered fully completed. For example, this step can reflect the key result when the AI Agent has resolved all user requests. Note that at least one step within the goal must be marked as completed. Multiple steps can be marked as completed.
 8. In the **Success Metrics** field, measure the impact of your goal by tracking the following performance metrics:
     - **Cost Savings** — track saved money by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure).
-    - **Revenue Earnings** — track earned money by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure). 
+    - **Revenue Earnings** — track earnings by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure). 
     - **Time Saved** — track saved time by entering values in the format `00:00:00` (hours:minutes:seconds). For example, `02:45:00` represents 2 hours and 45 minutes.
 9. Click **Save** to save the step.
 10. Click **Save** to complete your goal configuration.

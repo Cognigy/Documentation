@@ -1,7 +1,7 @@
 ---
 title: "Goals"
 slug: "goals"
-description: "The Goals Dashboard highlights goal tracking, completion status, time and cost metrics, and the business impact of AI Agents."
+description: "The Goals Dashboard highlights goal tracking, completion status, time, revenue, and cost metrics, and the business impact of AI Agents."
 hidden: false
 ---
 
@@ -11,7 +11,7 @@ hidden: false
     The Goals Dashboard is in Beta and is available if you have migrated to the new [Insights framework](../data-management/pre-aggregation.md).
     We encourage you to try this feature out and provide us with feedback.
 
-The _Goals Dashboard_ highlights goal tracking, completion status, time and cost metrics, and the business impact of AI Agents in the following charts:
+The _Goals Dashboard_ highlights goal tracking, completion status, time, revenue, and cost metrics, and the business impact of AI Agents in the following charts:
 
 - [Indicators](#indicators)
 - [Bar charts](#bar-charts)
