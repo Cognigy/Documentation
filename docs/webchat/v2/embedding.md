@@ -40,7 +40,7 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
         );
     </script>
     ```
-    
+
 
 ## Include Custom Plugins and Stylesheets
 

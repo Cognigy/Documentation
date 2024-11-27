@@ -4,6 +4,13 @@ This feature can be useful for updating the state of your widget based on human 
 These interactions can include actions such as submitting forms,
 updating display elements, or notifying the system of changes made by the human agent.
 
+The Postback feature can be configured in the following ways:
+
+- [Using SDK.postback](#using-sdkpostback)
+- [Using the Copilot: Send Data](#using-the-copilot--send-data)
+
+### Using SDK.postback
+
 Follow these steps to implement postback for your widget:
 
 1. Add the `SDK.postback` function to the HTML page. Make sure this code is included after the SDK script is loaded:
@@ -35,7 +42,7 @@ To allow human agents to view this object, add `{{ input.data._cognigy._agentAss
 This Node should be placed below the Node with the `SDK.postback` function. 
 The output will be available in the chat message and visible only to human agents.
 
-### Example
+#### Example
 
 In this example, the `SDK.postback` function sends the value of `name` back to the user.
 If `name` is falsy, meaning the user did not enter a name, the `else` block is executed, and the function calls `setMessage('Please enter your name.');`.
@@ -96,3 +103,5 @@ This message will appear in the widget, prompting the user to provide their name
 </body>
 </html>
 ```
+
+### Using the Copilot: Send Data
