@@ -30,9 +30,9 @@ The difference between a Complete Task and an Analytics Step lies in their purpo
 
 ## Settings
 
-| Parameter | Type          | Description                                                                   |
-|-----------|---------------|-------------------------------------------------------------------------------|
-| Goal      | CognigyScript | The name of the goal that should be completed when the contact hits the Node. |
+| Parameter | Type          | Description                                                               |
+|-----------|---------------|---------------------------------------------------------------------------|
+| Task      | CognigyScript | The name of the task that should be completed when the Node is triggered. |
 
 ## Use Cases
 
