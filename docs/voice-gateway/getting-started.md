@@ -67,12 +67,16 @@ This setting allows users with the [Account](./webapp/users.md#account) role to 
 
 To set up the Voice Gateway for your organization, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > Admin Center**.
-3. In the Admin Center interface, select **Dashboard** from the left-side menu.
-4. Click **Set up Voice Gateway**. The **Voice Gateway Setup** window opens.
-5. In the **Voice Gateway Account ID** field, enter the SID that you copied from the **Account SID** field on the **Accounts** page of the Voice Gateway Self-Service Portal. Note that your SID can only be associated with one organization in the Cognigy.AI.
-6. In the left-side menu, select **Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Self-Service Portal with the Account role. Note that Admins and Service Providers cannot log in using Cognigy.AI user credentials.
+1. Open the Voice Gateway Self-Service Portal.
+2. In the left-side menu, select **Accounts**.
+3. On the **Accounts** page, select an account from the list. 
+4. In the **Account SID** field, copy the SID and save it for later use. 
+5. Go to the Cognigy.AI interface. 
+6. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > Admin Center**. 
+7. In the Admin Center interface, select **Dashboard** from the left-side menu. 
+8. Click **Set up Voice Gateway**. The **Voice Gateway Setup** window opens. 
+9. In the **Voice Gateway Account ID** field, enter the SID you copied and saved earlier. Note that your SID can only be associated with one organization in the Cognigy.AI. 
+10. In the left-side menu, select **Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Self-Service Portal with the Account role. Note that Admins and Service Providers can't log in using Cognigy.AI user credentials.
 
 ## What's Next?
 
