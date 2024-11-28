@@ -24,12 +24,8 @@ A _session ID_ is a unique identifier given to each session initiated by a user.
 
 ## Obtain User and Session IDs
 
-To obtain the user ID and session ID, you can access them in the Input object `input.userId` and `input.sessionId`,
-or you can use the **User ID** and **Session ID** Tokens to retrieve this data from the [Input](../test/interaction-panel/input.md) Object.
-Also, you can find these IDs on the [Logs](../test/logs.md) page.
+To obtain the user ID and session ID, you can access them in the Input object `input.userId` and `input.sessionId`, or you can use the **User ID** and **Session ID** Tokens to retrieve this data from the [Input](../test/interaction-panel/input.md) Object. Also, you can find these IDs on the [Logs](../test/logs.md) page.
 
 ## Immutable User and Session IDs
 
-During a conversation, it is not allowed to modify the user ID or session ID.
-This means you cannot change these IDs using any [transformers](../deploy/endpoints/transformers/transformers.md),
-[xApps](../../xApps/overview.md), [extensions](../build/extensions.md), or [Code Nodes](../build/node-reference/basic/code/overview.md). Doing so can cause unexpected issues and termination of the conversation.
+During a conversation, it is not allowed to modify the user ID or session ID. This means you cannot change these IDs using any [transformers](../deploy/endpoints/transformers/transformers.md), [xApps](../../xApps/overview.md), [extensions](../build/extensions.md), or [Code Nodes](../build/node-reference/basic/code/overview.md). Doing so can cause unexpected issues and termination of the conversation.
