@@ -633,9 +633,9 @@ nav:
     - 📊 Dashboards:
       - insights/dashboards/overview.md
       - insights/dashboards/engagement.md
-      - insights/dashboards/goals.md
       - insights/dashboards/nlu-performance.md
       - insights/dashboards/live-agent.md
+      - insights/dashboards/goals.md
     - 🔭 Explorers:
       - insights/explorers/step.md
       - insights/explorers/transcript.md

@@ -51,9 +51,9 @@ Insights provides the following Dashboards:
 
 - [Overview](dashboards/overview.md)
 - [Engagement](dashboards/engagement.md)
-- [Goals](dashboards/goals.md)
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
+- [Goals](dashboards/goals.md)
 
 And additionally, a set of Explorers:
 
