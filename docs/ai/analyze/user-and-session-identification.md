@@ -8,6 +8,12 @@ hidden: false
 
 Cognigy.AI utilizes unique user IDs and session IDs to keep track of users' interactions with AI Agents.
 
+## Limitations
+
+- Including special characters, such as plus signs, in user and session IDs may cause unexpected issues.
+- Session IDs cannot be used across different organizations within the same Cognigy.AI instance.
+- Reusing the combination of user and session IDs across endpoints leads to endpoint collisions and unexpected behavior.
+
 ## User ID
 
 A _user ID_ is a unique identifier assigned to each user that helps manage user data safely, personalize user experiences, and keep track of user history and preferences. The AI Agent utilizes this information to improve its responses and customize the conversation according to the user's needs.
