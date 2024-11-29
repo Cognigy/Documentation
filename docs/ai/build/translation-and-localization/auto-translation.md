@@ -10,7 +10,7 @@ Cognigy has integrated _automatic translation_ capabilities to streamline the pr
 
 ## Restrictions
 
-- For [Intent localization](#machine-translation-for-intent-localization) and [Multi-Intent localization](#machine-translation-for-multi-intent-localization), machine translation doesn't match the [Slots](../../empower/nlu/intents/ml-intents.md) you set for your primary locale to the Slots in the localized Example Sentences. After performing Intent or Multi-Intent localization, check and fix the Slot annotation for the localized Example Sentences.
+- For [Intent](#machine-translation-for-intent-localization) and [Multi-Intent localization](#machine-translation-for-multi-intent-localization), machine translation doesn't match the [Slots](../../empower/nlu/intents/ml-intents.md) you set for your primary locale to the Slots in the localized Example Sentences. After performing Intent or Multi-Intent localization, check and fix the Slot annotation for the localized Example Sentences.
 
 ## Compatibility with Machine Translation Providers
 
