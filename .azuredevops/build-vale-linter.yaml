@@ -1,0 +1,61 @@
+trigger:
+  - none # Disable automatic triggers on branches.
+
+pr:
+  - '*' # Trigger pipeline on any Pull Request.
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  # Step 1: Install Vale
+  - script: |
+      echo "Downloading and installing Vale..."
+      curl -fsSL https://github.com/errata-ai/vale/releases/download/v3.9.1/vale_3.9.1_Linux_64-bit.tar.gz -o vale.tar.gz || exit 1
+      tar -xvzf vale.tar.gz -C vale_bin || exit 1
+      sudo mv vale_bin/vale /usr/local/bin/vale || exit 1
+      vale --version || exit 1
+    displayName: 'Install Vale'
+
+  # Step 2: Identify Modified Files in the PR
+  - script: |
+      echo "Fetching target branch and identifying modified Markdown files..."
+      git fetch origin $(System.PullRequest.TargetBranch) || exit 1
+      MODIFIED_FILES=$(git diff --name-only origin/$(System.PullRequest.TargetBranch)..$(System.PullRequest.SourceBranch))
+      echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
+    displayName: 'Identify Modified Files'
+
+  # Step 3: Run Vale on Filtered Files
+  - script: |
+      echo "Running Vale on modified Markdown files..."
+      FILTERED_FILES=$(cat filtered_files.txt)
+      if [ -z "$FILTERED_FILES" ]; then
+        echo "No Markdown files to lint. Skipping."
+        exit 0
+      fi
+      
+      vale $FILTERED_FILES --output=JSON > vale-report.json || exit 1
+      echo "Vale linting completed. Report saved to vale-report.json."
+    displayName: 'Run Vale Linter'
+
+  # Step 4: Publish Vale Report as Artifact
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: 'vale-report.json'
+      artifactName: 'vale-report'
+    displayName: 'Publish Vale Report Artifact'
+
+  # Step 5: Post Artifact Link as PR Comment
+  - script: |
+      echo "Generating artifact URL and posting as PR comment..."
+      ARTIFACT_URL="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_apis/build/builds/$(Build.BuildId)/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
+      
+      COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
+      
+      curl -X POST -H "Authorization: Bearer $(System.AccessToken)" \
+        -H "Content-Type: application/json" \
+        -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
+        "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1"
+    displayName: 'Post Artifact Link as PR Comment'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
