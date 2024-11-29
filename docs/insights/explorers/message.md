@@ -47,9 +47,9 @@ The top messages are the ones that are sent most frequently during the specified
 
 ## Explore Messages
 
-When you click on a message from the list, the page view will change and split into three columns: **Prior**, **Current Message**, and **Following**. The message you have chosen will be displayed as the current message in the middle column. The message that came before the current message will be displayed in the **Prior** column, and the message that follows the current message will be displayed in the **Following** column.
+When you click a message from the list, the page view will change and split into three columns: **Prior**, **Current Message**, and **Following**. The message you have chosen will be displayed as the current message in the middle column. The message that came before the current message will be displayed in the **Prior** column, and the message that follows the current message will be displayed in the **Following** column.
 
-Every time you click on a message, it will be moved to the **Current Message** column, and the context messages before and after it will move accordingly to the **Prior** and **Following** columns. This allows you to navigate step by step through conversations to analyze the context of the situation, moving forward or backward.
+Every time you click a message, it will be moved to the **Current Message** column, and the context messages before and after it will move accordingly to the **Prior** and **Following** columns. This allows you to navigate step by step through conversations to analyze the context of the situation, moving forward or backward.
 
 If there are numerous messages, you can use the blue scroll bars located beside the **Prior**, **Current Message**, and **Following** message fields to view all of them.
 

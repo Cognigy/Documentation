@@ -135,7 +135,7 @@ To set or unset an Entry point in your Flow explicitly, follow these steps:
 
 1. Open the Flow you want to edit in Cognigy.AI.
 2. Navigate to the Node where you want to set the Entry point explicitly. For example, you may want to set an Entry point at a Say Node within a loop to ensure it's passed multiple times without returning to the Start Node.
-3. Right-click on the Node to open a drop-down menu.
+3. Right-click the Node to open a drop-down menu.
 4. Choose one of the following options:
     - **Set Entrypoint** — this option displays a green triangle icon next to the Node, indicating that the Entrypoint has been set at that step.
     - **Unset Entrypoint** — this option disables a previously set Entrypoint at that step.

@@ -42,7 +42,7 @@ We will now have a look at the individual view and what can be done in there.
 
 ## Users
 
-Here you can add new users to the system. A user needs to get assigned to an **organization**, so you might need to create a new organization first. To create a new user, click on the huge pink button on the right-bottom corner of the view. You will then see a dialog where you enter the:
+Here you can add new users to the system. A user needs to get assigned to an **organization**, so you might need to create a new organization first. To create a new user, click the huge pink button on the right-bottom corner of the view. You will then see a dialog where you enter the:
 
 - name
 - email
@@ -56,7 +56,7 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 You can add a user (identified by an email address) to multiple organizations.
 Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
 
-If you click on one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
+If you click one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
 
 - see general information
 - see the users current [roles](admin-center/access-control.md)
@@ -85,7 +85,7 @@ You can also create a new organization or disable an already existing one.
 
 ## System Message
 
-If you have your own Cognigy.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click on the pink button to create a new system message.
+If you have your own Cognigy.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click the pink button to create a new system message.
 
 Only one system message can exist at a time. Such a message has an actual message text and a **valid until** date. The message will be displayed on all UI clients as long as the message is valid. It will automatically varnish when it is expired.
 
@@ -98,7 +98,7 @@ The system message will get displayed for all users - regardless of their organi
 
 ## Quotas & Limits
 
-With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organization level. Larger customers with multiple organizations can use these quotas to limit what is possible within certain organizations. To configure limits, first select an organization, open its details and click on the triple-dot button on the right-top corner.
+With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organization level. Larger customers with multiple organizations can use these quotas to limit what is possible within certain organizations. To configure limits, first select an organization, open its details and click the triple-dot button on the right-top corner.
 
 In the menu, select **Change Organisation Quotas**.
 
@@ -121,7 +121,7 @@ Setting a quota to 0 disables the quota.
 
 ## Password Policy
 
-It is also possible to configure the password policies of an organization in the Management UI. To configure the password policy, first select an organization and click on the triple-dot button on the right-top corner.
+It is also possible to configure the password policies of an organization in the Management UI. To configure the password policy, first select an organization and click the triple-dot button on the right-top corner.
 
 In the menu, select **Change Password Policy**.
 
@@ -146,7 +146,7 @@ Clicking the **Save & Enforce** button results in all users of the organization 
 
 ## Data Privacy Settings
 
-It is possible to set the data privacy settings of an organization in the Management UI. To configure the data privacy settings, first select and organization and then click on the triple-dot button on the right-top corner.
+It is possible to set the data privacy settings of an organization in the Management UI. To configure the data privacy settings, first select and organization and then click the triple-dot button on the right-top corner.
 
 In the menu, select **Change Data Privacy Settings**
 
@@ -185,7 +185,7 @@ The projects will ignore the organization data privacy settings and use the ones
 
 ## Expiration Values (TTL) for Sensitive Data
 
-It is possible to configure when certain sensitive data expires and is deleted from the system. In order to change this, first select an organization and click on the triple-dot button on the right-top corner.
+It is possible to configure when certain sensitive data expires and is deleted from the system. In order to change this, first select an organization and click the triple-dot button on the right-top corner.
 
 In the menu, select **Change Expiration Values**.
 

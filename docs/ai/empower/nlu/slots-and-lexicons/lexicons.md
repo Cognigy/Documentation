@@ -36,7 +36,7 @@ In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that ar
 To add a new Keyphrase, go to the `Enter new keyphrase` input field, type the name of the Keyphrase and hit **Enter**.
 
 ### Edit Keyphrases
-To edit a Keyphrase, just click on the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit **Enter**.
+To edit a Keyphrase, just click the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit **Enter**.
 
 ### Add Keyphrase Data
 You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click ![expand](../../../../_assets/icons/expand.svg) on the right of the Keyphrase entry, and then type in the desired data in JSON format.
