@@ -8,7 +8,7 @@ hidden: false
 
 Cognigy.AI utilizes unique user IDs and session IDs to keep track of users' interactions with AI Agents.
 
-## Limitations
+## Restrictions
 
 - Including special characters, such as plus signs, in user and session IDs may cause unexpected issues.
 - Session IDs cannot be used across different organizations within the same Cognigy.AI instance.
