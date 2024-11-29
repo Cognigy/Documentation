@@ -8,7 +8,7 @@ hidden: false
 
 Cognigy has integrated _automatic translation_ capabilities to streamline the process of customizing Flows and Intents for various locales. This feature is helpful for users who need multilingual support without the need for manual translations.
 
-## Restrictions
+## Limitations
 
 - For [Intent](#machine-translation-for-intent-localization) and [Multi-Intent localization](#machine-translation-for-multi-intent-localization), machine translation doesn't match the [Slots](../../empower/nlu/intents/ml-intents.md) you set for your primary locale to the Slots in the localized Example Sentences. After performing Intent or Multi-Intent localization, check and fix the Slot annotation for the localized Example Sentences.
 
