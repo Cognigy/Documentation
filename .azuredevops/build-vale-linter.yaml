@@ -1,11 +1,13 @@
+name: build-vale-linter
+
 trigger:
   - none # Disable automatic triggers on branches.
 
 pr:
-  - '*' # Trigger pipeline on any Pull Request.
+  - task/86067-vg-settings # Trigger pipeline on a specific Pull Request.
 
 pool:
-  vmImage: 'ubuntu-latest'
+    vmImage: ubuntu-20.04
 
 steps:
   # Step 1: Install Vale
