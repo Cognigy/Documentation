@@ -347,7 +347,7 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
       ```
 ##### Create an Adaptive Card with Generative AI
 
-You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../../empower/generative-ai.md#prerequisites).
+You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
 
 To use this feature, follow these steps:
 

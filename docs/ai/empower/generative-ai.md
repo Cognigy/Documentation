@@ -12,7 +12,7 @@ hidden: false
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
+Cognigy.AI integrates with various [LLM Providers](#prerequisites)
 to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
@@ -20,7 +20,7 @@ to enable Generative AI functionality. This functionality is broadly classified 
 
 ## Prerequisites
 
-Before using this feature, you need to create an account in one of the Generative AI Providers:
+Before using this feature, you need to create an account in one of the LLM Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.

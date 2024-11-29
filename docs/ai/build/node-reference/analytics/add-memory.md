@@ -15,8 +15,20 @@ hidden: false
 
 {! _includes/ai/beta.md !}
 
-The Add Memory Node stores text, such as user input and other relevant details, within the [Contact Profile](../../../analyze/contact-profiles.md). 
-This Node enables your AI Agent to access and reference this information, leading to more informed and effective communication between the end user and the AI Agent.
+The Add Memory Node stores memories within the [Contact Profile](../../../analyze/contact-profiles.md).
+A memory entry can be any text, such as user input and other relevant details.
+
+Recorded memories are also accessible within the [Profile](../../../test/interaction-panel/profile.md) object in the Interaction Panel.
+The array of memories consists of multiple memory objects.
+Each memory object contains:
+
+- `id` — a unique identifier for the memory.
+- `timestamp` — the exact time the memory was created, recorded in ISO 8601 format.
+- `text` — the content of the memory.
+
+Each time the Add Memory Node is triggered, it adds a new memory object to the array, updating the AI Agent's long-term memory.
+
+By referencing stored memories, the AI Agent can generate responses based on past interactions, offering a more personalized and context-aware experience for the end user.
 
 ## Settings
 

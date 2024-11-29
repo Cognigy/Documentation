@@ -25,7 +25,7 @@ where you can create, edit, and delete AI Agents.
 
 Before using this feature, you need:
 
-1. Create an account in one of the Generative AI Providers:
+1. Create an account in one of the LLM Providers:
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
     - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
     - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access. 
@@ -35,13 +35,11 @@ Before using this feature, you need:
   
 ## Create an AI Agent
 
-You can create an AI Agent from scratch or select a pre-made AI Agent template tailored to your industry,
-such as airlines, finance, insurance, or utilities,
-and customize it to suit your business needs.
+You can create an AI Agent from scratch or hire an AI Agent from the Job Market, designed for your industry, such as airlines, food services, or sales, and customize it to fit your business needs.
 
 To create an AI Agent, select one of the following options:
 
-=== "Create AI Agent From Scratch"
+=== "Create from Scratch"
 
     1. Open the Cognigy.AI interface.
     2. In the left-side menu of the **Projects** page, select a Project.
@@ -86,12 +84,12 @@ To create an AI Agent, select one of the following options:
             - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
     13. Click **Create & Chat** to save changes and open the Flow with the created AI Agent, or click **Create** to save changes without opening the Flow.
 
-=== "Create AI Agent From Template"
+=== "Hire from Job Market"
 
     1. Open the Cognigy.AI interface.
     2. In the left-side menu on the **Projects** page, select a Project.
     3. In the left-side menu on the **Project** page, select **Build > AI Agents**.
-    4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page with a list of AI Agent templates will open.
+    4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page, displaying a list of AI Agent job seekers, will open.
     5. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
     6. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
     7. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
