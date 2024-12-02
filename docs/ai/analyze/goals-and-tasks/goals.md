@@ -19,7 +19,7 @@ With Goals, you can evaluate and enhance the business impact of your AI Agent:
 
 - **Track user interactions**. Monitor specific user interactions during conversations to ensure they align with your business objectives.
 - **Monitor different goals and their steps**. Track different goals and their corresponding steps to get a comprehensive view of the user journey within conversations.
-- **Measure business value**. Goals are linked to business metrics, allowing you to assess the value of AI Agents in achieving key business objectives. Tracking metrics such as time and cost savings for each completed goal and step provides a detailed view of the AI Agent's performance.
+- **Measure business value**. Goals are linked to business metrics, allowing you to assess the value of AI Agents in achieving key business objectives. Tracking metrics such as time and money for each completed goal and step provides a detailed view of the AI Agent's performance.
 - **Gain valuable insights**. Measure how effectively your AI Agent conversations achieve business objectives and optimize AI Agents to improve performance and user satisfaction.
 
 ## Prerequisites
