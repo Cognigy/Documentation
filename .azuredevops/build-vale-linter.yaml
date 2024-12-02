@@ -16,6 +16,7 @@ steps:
       echo "Target Branch: $(System.PullRequest.TargetBranch)"
       echo "Source Branch: $(System.PullRequest.SourceBranch)"
       
+      mkdir -p vale_bin
       git fetch origin $(System.PullRequest.TargetBranch) || exit 1
       git diff --name-only origin/$(System.PullRequest.TargetBranch)..$(System.PullRequest.SourceBranch) | grep -E '\.md$' > filtered_files.txt || true
     displayName: 'Identify Modified Files'
