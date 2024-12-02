@@ -83,7 +83,7 @@ To add a goal to a Flow, follow these steps:
 
 You can add multiple **Track Goal** Nodes in the same Flow to track different steps and KPIs.
 
-While you add multiple steps to reflect various stages of your goal completion process, both the initial and completion steps must be defined in your Flow. Without a completion step, your goal will be partially completed or incomplete if only the initial step is triggered.
+While you may choose to add multiple steps to reflect various stages of your goal completion process, both the initial and completion steps must be defined in your Flow. Without a completion step, your goal will be partially completed or incomplete if only the initial step is triggered.
 
 ### Track a Goal in the Insights Dashboard
 
