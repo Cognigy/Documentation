@@ -83,6 +83,8 @@ To add a goal to a Flow, follow these steps:
 
 You can add multiple **Track Goal** Nodes in the same Flow to track different steps and KPIs.
 
+To mark a goal as completed, add both the initial step and the step you marked as completed. Without a completion step, your goal will be partially completed or incomplete if only the initial step is triggered.
+
 ### Track a Goal in the Insights Dashboard
 
 Once a goal and its steps are added to your Flows, you can monitor metrics in the Insights dashboard.
