@@ -76,7 +76,7 @@ To set up the Voice Gateway for your organization, follow these steps:
 7. In the Admin Center interface, select **Dashboard** from the left-side menu. 
 8. Click **Set up Voice Gateway**. The **Voice Gateway Setup** window opens. 
 9. In the **Voice Gateway Account ID** field, enter the SID you copied and saved earlier. Note that your SID can only be associated with one organization in the Cognigy.AI. 
-10. In the left-side menu, select **Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Self-Service Portal with the Account role. Note that Admins and Service Providers can't log in using Cognigy.AI user credentials.
+10. In the left-side menu, select **Access Control** and assign the `voice-gatewayUser` role to the users who need access to the Voice Gateway Self-Service Portal with the Account role. When the `voice-gatewayUser` role is assigned to a user, they can log in to the Voice Gateway Self-Service Portal using the **Sign in with a Cognigy.AI account** option. This option is available to users with the Account role linked to a Cognigy.AI organization or to `voicegatewayUser` role users without a Voice Gateway Self-Service Portal account — accounts are automatically created upon first login.
 
 ## What's Next?
 
