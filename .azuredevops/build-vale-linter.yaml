@@ -7,27 +7,20 @@ pr:
   - task/86067-vg-settings # Trigger pipeline on a specific Pull Request.
 
 pool:
-    vmImage: ubuntu-20.04
+  vmImage: ubuntu-20.04
 
 steps:
-  # Step 1: Install Vale
-  - script: |
-      echo "Downloading and installing Vale..."
-      curl -fsSL https://github.com/errata-ai/vale/releases/download/v3.9.1/vale_3.9.1_Linux_64-bit.tar.gz -o vale.tar.gz || exit 1
-      tar -xvzf vale.tar.gz -C vale_bin || exit 1
-      sudo mv vale_bin/vale /usr/local/bin/vale || exit 1
-      vale --version || exit 1
-    displayName: 'Install Vale'
-
-  # Step 2: Identify Modified Files in the PR
+  # Step 1: Identify Modified Files in the PR
   - script: |
       echo "Fetching target branch and identifying modified Markdown files..."
+      echo "Target Branch: $(System.PullRequest.TargetBranch)"
+      echo "Source Branch: $(System.PullRequest.SourceBranch)"
+      
       git fetch origin $(System.PullRequest.TargetBranch) || exit 1
-      MODIFIED_FILES=$(git diff --name-only origin/$(System.PullRequest.TargetBranch)..$(System.PullRequest.SourceBranch))
-      echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
+      git diff --name-only origin/$(System.PullRequest.TargetBranch)..$(System.PullRequest.SourceBranch) | grep -E '\.md$' > filtered_files.txt || true
     displayName: 'Identify Modified Files'
 
-  # Step 3: Run Vale on Filtered Files
+  # Step 2: Run Vale on Filtered Files Using Docker
   - script: |
       echo "Running Vale on modified Markdown files..."
       FILTERED_FILES=$(cat filtered_files.txt)
@@ -35,19 +28,23 @@ steps:
         echo "No Markdown files to lint. Skipping."
         exit 0
       fi
-      
-      vale $FILTERED_FILES --output=JSON > vale-report.json || exit 1
-      echo "Vale linting completed. Report saved to vale-report.json."
-    displayName: 'Run Vale Linter'
 
-  # Step 4: Publish Vale Report as Artifact
+      echo "$FILTERED_FILES" > file_list.txt
+      docker run --rm -v $(pwd)/styles:/styles \
+                 -v $(pwd):/workspace \
+                 -w /workspace \
+                 jdkato/vale $(cat file_list.txt) --output=JSON > vale-report.json || exit 1
+      echo "Vale linting completed. Report saved to vale-report.json."
+    displayName: 'Run Vale Linter with Docker'
+
+  # Step 3: Publish Vale Report as Artifact
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: 'vale-report.json'
       artifactName: 'vale-report'
     displayName: 'Publish Vale Report Artifact'
 
-  # Step 5: Post Artifact Link as PR Comment
+  # Step 4: Post Artifact Link as PR Comment
   - script: |
       echo "Generating artifact URL and posting as PR comment..."
       ARTIFACT_URL="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_apis/build/builds/$(Build.BuildId)/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
@@ -57,7 +54,7 @@ steps:
       curl -X POST -H "Authorization: Bearer $(System.AccessToken)" \
         -H "Content-Type: application/json" \
         -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-        "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1"
+        "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1" || exit 1
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
