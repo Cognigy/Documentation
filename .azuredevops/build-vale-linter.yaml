@@ -13,7 +13,7 @@ steps:
   # Step 1: Run Vale using Docker
   - script: |
       echo "Running Vale using Docker..."
-      docker run --rm -v $(pwd)/styles:/styles \
+      docker run --rm -v $(pwd)/documentation:/documentation \
                  -v $(pwd)/fixtures/styles/demo:/docs \
                  -w /docs \
                  jdkato/vale .
