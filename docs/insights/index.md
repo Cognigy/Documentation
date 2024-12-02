@@ -1,7 +1,7 @@
 # Cognigy Insights
 
-_Cognigy Insights_ is a tool that provides businesses with actionable insights and analytics derived from conversational data collected through Cognigy.AI. 
-Insights helps businesses to better understand their users, optimize their chatbot interactions, and improve overall customer experience.
+_Cognigy Insights_ is a tool that provides businesses with actionable insights and analytics derived from conversational data collected through Cognigy.AI.
+Insights help businesses better understand their users, optimize chat and voice interactions, and improve the overall customer experience.
 
 <div class="grid cards" markdown>
 
@@ -22,6 +22,7 @@ Insights helps businesses to better understand their users, optimize their chatb
 
     [:octicons-arrow-right-24: Overview](dashboards/overview.md)<br>
     [:octicons-arrow-right-24: Engagement](dashboards/engagement.md)<br>
+    [:octicons-arrow-right-24: Goals](dashboards/goals.md)<br>
     [:octicons-arrow-right-24: NLU Performance](dashboards/nlu-performance.md)<br>
     [:octicons-arrow-right-24: Live Agent (Beta)](dashboards/live-agent.md)<br>
 
@@ -47,7 +48,7 @@ Insights helps businesses to better understand their users, optimize their chatb
 
     ---
 
-    Utilize global filters to effectively sort and filter data both on dashboards and explorers
+    Use global filters to effectively sort and filter data both on dashboards and explorers
 
     [:octicons-arrow-right-24: Global Filters](global-filters.md)
 

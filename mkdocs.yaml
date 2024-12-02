@@ -103,6 +103,7 @@ nav:
           - ai/build/node-reference/analytics/merge-profile.md
           - ai/build/node-reference/analytics/overwrite-analytics.md
           - ai/build/node-reference/analytics/request-rating.md
+          - ai/build/node-reference/analytics/track-goal.md
           - ai/build/node-reference/analytics/set-rating.md
           - ai/build/node-reference/analytics/update-profile.md
         - Service:
@@ -306,6 +307,10 @@ nav:
       - ai/analyze/odata.md
       - ai/analyze/call-tracing.md
       - ai/analyze/contact-profiles.md
+      - Goals and Tasks:
+        - ai/analyze/goals-and-tasks/overview.md
+        - ai/analyze/goals-and-tasks/tasks.md
+        - ai/analyze/goals-and-tasks/goals.md
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md
@@ -630,6 +635,7 @@ nav:
       - insights/dashboards/engagement.md
       - insights/dashboards/nlu-performance.md
       - insights/dashboards/live-agent.md
+      - insights/dashboards/goals.md
     - 🔭 Explorers:
       - insights/explorers/step.md
       - insights/explorers/transcript.md
