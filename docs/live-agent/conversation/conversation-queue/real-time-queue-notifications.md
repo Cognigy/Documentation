@@ -122,10 +122,10 @@ To change the appearance of this message and make it more accessible, as well as
 ## AI Copilot
 
 If you use the [AI Copilot workspace](../../assistants/ai-copilot.md) in Live Agent,
-you should add the [Handover to Agent](#configure-settings-for-a-handover-to-agent-node) and [Lookup](#add-a-lookup-node) Nodes with the Queue status in your AI Copilot Flow,
+add the [Handover to Agent](#configure-settings-for-a-handover-to-agent-node) and [Lookup](#add-a-lookup-node) Nodes with the Queue status in your AI Copilot Flow,
 along with a [Say Node](#add-say-nodes).
 In the Main Flow, below the Case Node with the Queue status,
-add the [Go To Node](../../../ai/build/node-reference/logic/go-to.md) that leads to the AI Copilot Flow and its Lookup Node.
+add a [Go To Node](../../../ai/build/node-reference/logic/go-to.md) that leads to the AI Copilot Flow and its Lookup Node.
 
 ## More Information
 
