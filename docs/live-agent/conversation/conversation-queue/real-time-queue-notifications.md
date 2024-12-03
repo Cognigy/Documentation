@@ -119,7 +119,7 @@ To change the appearance of this message and make it more accessible, as well as
     <figcaption>Configuration of Real-Time Queue Notifications</figcaption>
 </figure>
 
-## (Optional) AI Copilot
+## AI Copilot
 
 If you use the [AI Copilot workspace](../../assistants/ai-copilot.md) in Live Agent,
 you should add the [Handover to Agent](#configure-settings-for-a-handover-to-agent-node) and [Lookup](#add-a-lookup-node) Nodes with the Queue status in your AI Copilot Flow,
