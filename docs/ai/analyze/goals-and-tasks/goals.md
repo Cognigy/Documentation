@@ -28,7 +28,7 @@ With Goals, you can evaluate and enhance the business impact of your AI Agent:
 
 ## Limitations
 
-- The default number of steps per goal is 10. You can increase this number to 20 by using the `FEATURE_USE_GOALS_V2__MAX_STEPS_PER_GOAL` variable in the `values.yaml` file.
+- The default number of steps per goal is 10. You can increase this number to 20 by using the `FEATURE_USE_GOALS__MAX_STEPS_PER_GOAL` variable in the `values.yaml` file.
 
 ## How to Use
 
