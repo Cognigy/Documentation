@@ -10,7 +10,7 @@ One of the characteristics of AI Agents is that they can improve over time. Cogn
 The **Intent Trainer** enables you to analyze the collected user inputs (records)
 and add them to [Intents](../../ai/empower/nlu/intents/ml-intents.md)
 to improve your AI Agent's user input comprehension.
-You can decide which user input record improves the Agents intent and then click **Add to Intent** -
+You can decide which user input record improves the Agents intent and then click **Add to Intent**.
 Then use the **Train** button in the top right above the record list
 to overtake the new intent to the **NLU intent list** in your Flow.
 You do not need to execute "Build Model", because the "Train" functionality of the 'Intent Trainer'
