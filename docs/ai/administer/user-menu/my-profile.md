@@ -79,5 +79,5 @@ This section lets users manage their **Connected Accounts**, 3rd-party accounts 
 The Profile page includes an extended menu accessed by clicking the three dots in the top-right corner of the page. This provides access to the following functions:
 
   * Edit Profile
-  * Copy Organization ID (Used for [Single Sign-on](../../installation/single-sign-in-saml2.md))
+  * Copy Organization ID (Used for [Single Sign-on](../../installation/single-sign-on-saml2.md))
   * Delete Account

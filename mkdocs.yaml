@@ -377,7 +377,7 @@ nav:
         - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
       - Single Sign-On (SSO):
-        - ai/installation/single-sign-in-saml2.md
+        - ai/installation/single-sign-on-saml2.md
         - ai/installation/single-signin-openid-connect.md
 
   - Voice Gateway:
