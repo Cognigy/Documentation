@@ -10,7 +10,6 @@ Cognigy.AI utilizes unique user IDs and session IDs to keep track of users' inte
 
 ## Restrictions
 
-- Including special characters, such as plus signs, in user and session IDs may cause unexpected issues.
 - You must use session IDs only within one organization in your Cognigy.AI instance.
 - Except for [Voice Copilot Endpoint](../../ai/deploy/endpoint-reference/voice-copilot.md), reusing the combination of user and session IDs across Endpoints leads to Endpoint collisions and unexpected behavior.
 - You must keep user and session IDs unchanged during interactions with AI Agents. Changing user and session IDs with [transformers](../deploy/endpoints/transformers/transformers.md), [xApps](../../xApps/overview.md), [extensions](../build/extensions.md), or [Code Nodes](../build/node-reference/basic/code/overview.md) can cause unexpected issues and termination of interactions with AI Agents.
