@@ -24,7 +24,7 @@ This data is accessed by connecting to the [OData Analytics Endpoint](odata.md).
 ### Inputs
 
 This collection consists of one entry per user input.
-It contains detailed data about the input message such as NLU results (intents & slots), goals achieved, and more.
+It contains detailed data about the input message such as NLU results (intents & slots), tasks achieved, and more.
 The inputs collection is different from the other 4 collections
 as it can be adjusted by the flow logic
 using the [Overwrite Analytics](../build/node-reference/analytics/overwrite-analytics.md) or [Code](../build/node-reference/basic/code/overview.md) Nodes.
@@ -48,7 +48,7 @@ This collection contains one record per session. The main purpose of this record
 
 ## Analytics Data Flow
 
-Analytics data is generated through the whole lifecycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
+Analytics data is generated through the whole life cycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/analyze/analytics-data-flow.png" width="100%" />

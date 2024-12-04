@@ -75,7 +75,7 @@ With the included media player controls, scan the audio and download the recordi
 
 <img class="image-center"  src="../../../_assets/voice-gateway/audio-player.png"  width="100%" />
 
-When you click on highlighted STT and DTMF events, a new window will open, presenting the speech-to-text result along with specific parameters:
+When you click highlighted STT and DTMF events, a new window will open, presenting the speech-to-text result along with specific parameters:
 
 - **Vendor** — the STT provider used. For example, `deepgram`.
 - **Confidence** — the confidence score associated with the transcription result. For example, `0.9760742`.

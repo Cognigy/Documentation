@@ -53,7 +53,7 @@ _Cognigy xApps_ are infinitely flexible micro-web applications for customer self
 
     ---
 
-    Explore the architecture and lifecycle of xApps through diagrams
+    Explore the architecture and life cycle of xApps through diagrams
 
     [:octicons-arrow-right-24: Architecture](architecture.md)
 

@@ -92,7 +92,7 @@ To include a variable, follow these steps:
 
 1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
 2. Select a variable by using one of these methods:
-    - Click on the desired variable.
+    - Click the desired variable.
     - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
     Alternatively, you can type out variables instead of selecting them from the suggestions.
 

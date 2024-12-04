@@ -61,7 +61,7 @@ _**Filter Bar**_
 ## G
 
 _**Global Filter**_
-: A tool that allows users to set consistent filtering criteria, such as time frame, endpoints, snapshot, locales, and message rating, across different dashboards and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
+: A tool that allows users to set consistent filtering criteria, such as time span, endpoints, snapshot, locales, and message rating, across different dashboards and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
 
 ## L
 
@@ -114,8 +114,8 @@ _**Steps**_
 _**Tiles**_
 : A UI element designed for displaying Indicator charts. These tiles are positioned at the top of a dashboard. For more information, read the [Overview Dashboard](dashboards/overview.md) documentation.
 
-_**Time frame**_
-: A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Timeframe](global-filters.md#time-span) documentation.
+_**Time span**_
+: A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Time Span](global-filters.md#time-span) documentation.
 
 _**Time zone**_
 : Insights supports presenting time-based data according to the user's specified time zone in the Cognigy.AI user profile settings. For more information, read the [Timezone](data-management/time-zone.md) documentation.

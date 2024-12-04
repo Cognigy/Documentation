@@ -12,12 +12,12 @@ You can use the following Analytics Nodes:
 
 - [Activate Profile](activate-profile.md)
 - [Blind Mode](blind-mode.md)
-- [Complete Goal](complete-goal.md)
+- [Complete Task](complete-task.md)
 - [Deactivate Profile](deactivate-profile.md)
 - [Delete Profile](delete-profile.md)
 - [Merge Profile](merge-profile.md)
 - [Overwrite Analytics](overwrite-analytics.md)
 - [Request Rating](request-rating.md)
 - [Set Rating](set-rating.md)
+- [Track Goal](track-goal.md)
 - [Update Profile](update-profile.md)
-
