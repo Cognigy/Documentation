@@ -42,8 +42,6 @@ Learn more about connecting to your proffered SSO provider in [Cognigy Help Cent
 
 ## Change a Single Sign-on Configuration in Cognigy.AI
 
-
-
 You can have only one SSO configuration for your organization. If you want to change the configuration, you first need to delete it and create a new one. To delete an SSO configuration, send a `POST` request to:
 
 ```txt
@@ -54,14 +52,20 @@ Read more about using the Cognigy.AI API on the [API Reference Page](https://api
 
 ## Log in via SSO
 
-
-
 When a user logs into Cognigy.AI via SSO for the first time, they need to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
 
 !!! warning "First time login"
     During the first login, users need to log in using their Identity Provider (IDP) credentials.
 
 To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter your email. This will redirect you to your configured IDP if an IDP is configured for your organization.
+
+## Enforce Login via SSO
+
+By default, you can log in to Cognigy.AI with your credentials or via SSO. For security reasons, you may want to enforce login via SSO and, if needed, for specific organizations within your installation. To enforce login via SSO, proceed as follows:
+
+- For dedicated SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
+- For shared SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
+- For on-premises installations, set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. To enforce login via SSO for specific organizations, assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. To log in, you can only click the **Sign in with SSO** button.
 
 ## More Information
 
