@@ -1,7 +1,7 @@
 ---
 title: "Build LLM-Driven Flows"
 slug: "build-llm-driven-flows"
-description: "LLM-Driven Flow Design involves using large language models (LLMs) to power Flows and decision-making processes within a Project. This design pattern ensures that AI Agents can understand and process complex tasks, interact with tools, and make decisions autonomously within a defined Flow."
+description: "LLM-Driven Flow Design involves using large language models (LLMs) to power Flows and allowing AI Agents to manage decision-making processes within a conversation."
 hidden: false
 ---
 
@@ -19,6 +19,12 @@ However, you can create a dedicated Flow and add more than one AI Agent to it.
 
 To do so, follow these steps:
 
+1. [Create a Flow](#create-a-flow)
+2. [Add an AI Agent Node](#add-ai-agents-to-a-flow)
+3. [Configure a Tool Action](#configure-a-tool-action)
+
+### Create a Flow
+
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > Flow**.
@@ -27,15 +33,21 @@ To do so, follow these steps:
     - **Name** — create a meaningful name for your Flow. For example, `Customer Support`.
     - **Description** — this field is optional. Create a meaningful description for your Flow. For example, `Automates the processing of incoming orders and updates inventory accordingly`.
 6. Click **Create**.
-7. In the Flow editor, click **+** to open the **Node Selection** menu.
-8. On the **By Function** tab, go to the **AI** tab and select the [AI Agent](../../build/node-reference/ai/ai-agent.md) Node from the list. The AI Agent Node will appear in the Flow editor.
-9. Left-click the Node to open the Flow editor.
-10. Select the desired AI Agent from the AI Agent list. Configure the [rest of the fields](../../build/node-reference/ai/ai-agent.md#ai-agent-settings).
-11. Click **Save Node**.
-12. Below the parent AI Agent Node, configure the [child Tool Node](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings). Specify the tool's use case, such as unlocking an account or registering a new user. Make sure the tool's name and description are clear and informative for the model.
-13. Click **Save Node**.
-14. Below the child Tool Node, add an Action Node. If you are editing the AI Agent for the first time, replace the placeholder Node with an Action Node. The Action Node can be any Node that allows your AI Agent to perform an action, such as sending an [HTTP request](../../build/node-reference/service/http-request.md), [sending an email](../../build/node-reference/data/email-notification.md), or [querying a database](../../build/node-reference/service/mongo-db.md). This Action Node performs the task that the tool handles.
-15. Below the Action Node, add a [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md) Node to control how the AI Agent responds after executing the Action Node. The Node returns the conversation to the parent AI Agent Node, providing the option to choose a different tool.
+
+### Add an AI Agent Node
+
+1. In the Flow editor, click **+** to open the **Node Selection** menu.
+2. On the **By Function** tab, go to the **AI** tab and select the [AI Agent](../../build/node-reference/ai/ai-agent.md) Node from the list. The AI Agent Node will appear in the Flow editor.
+3. Left-click the Node to open the Flow editor.
+4. Select the desired AI Agent from the AI Agent list. Configure the [rest of the fields](../../build/node-reference/ai/ai-agent.md#ai-agent-settings).
+5. Click **Save Node**.
+
+### Configure a Tool Action
+
+1. Below the parent AI Agent Node, configure the [child Tool Node](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings). Specify the tool's use case, such as unlocking an account or registering a new user. Make sure the tool's name and description are clear and informative for the model.
+2. Click **Save Node**.
+3. Below the child Tool Node, add an Action Node. If you are editing the AI Agent for the first time, replace the placeholder Node with an Action Node. The Action Node can be any Node that allows your AI Agent to perform an action, such as sending an [HTTP request](../../build/node-reference/service/http-request.md), [sending an email](../../build/node-reference/data/email-notification.md), or [querying a database](../../build/node-reference/service/mongo-db.md). This Action Node performs the task that the tool handles.
+4. Below the Action Node, add a [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md) Node to control how the AI Agent responds after executing the Action Node. The Node returns the conversation to the parent AI Agent Node, providing the option to choose a different tool.
 
 ## Configure Additional Nodes
 

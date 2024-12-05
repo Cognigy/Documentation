@@ -118,3 +118,9 @@ The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) 
 ##### Add Transcript Steps
 
 The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's inputs to simulate that input.
+
+## More Information
+
+- [Getting Started](getting-started.md)
+- [Manage AI Agents](manage-ai-agents.md)
+- [Build LLM-Driven Flows](build-llm-driven-flows.md)
