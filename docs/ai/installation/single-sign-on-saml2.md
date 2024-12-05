@@ -58,9 +58,13 @@ Enforcing login with SSO can be useful to standardize the authentication process
 
 To enforce login with SSO, proceed as follows:
 
-  - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
-  - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
-  - For on-premises installations, set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. To enforce login via SSO for specific organizations, assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. To log in, you can only click the **Sign in with SSO** button.
+  - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials in the login page, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
+  - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). You can enforce login with SSO for:
+    - The entire Cognigy.AI installation — the login with credentials is deactivated for all users. To log in, enter your email address in the login page and click **Sign in with SSO**.
+    - Specific organizations — if you try to log in with your credentials in the login page, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
+  - For on-premises installations, you can enforce login with SSO for:
+    - The entire Cognigy.AI installation —  set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. The login with credentials is deactivated for all users. To log in, enter your email address in the login page and click **Sign in with SSO**. 
+    - Specific organizations — set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `false` and assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. If you try to log in to the organizations you assigned to `DEACTIVATE_NON_SSO_LOGIN_WHITELIST`, you receive an error message. To log in, enter your email address and click the **Sign in with SSO** button.
 
 ## Log in with SSO
 
