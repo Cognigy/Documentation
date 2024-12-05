@@ -1,6 +1,6 @@
-## Log In to Cognigy.AI
+## Log in to Cognigy.AI
 
-You can login with your Cognigy.AI credentials or, optionally, with single sign-on (SSO), if you have [set up the login with SSO](../../ai/installation/single-sign-on-saml2.md). If your administrator has [enforced login with SSO](../../ai/installation/single-sign-on-saml2.md#enforce-login-with-sso), you can only log in with SSO.
+You can login with your Cognigy.AI credentials or, optionally, with single sign-on (SSO), if you have [set up login with SSO](../../ai/installation/single-sign-on-saml2.md). If you have [enforced login with SSO](../../ai/installation/single-sign-on-saml2.md#enforce-login-with-sso), you can only log in with SSO.
 
 To login to Cognigy.AI, follow these steps:
 

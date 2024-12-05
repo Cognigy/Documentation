@@ -2,13 +2,13 @@
 
 In this tutorial, you will learn how to create a simple digital AI Agent from scratch that greets you by name. Then you will test this agent using built-in Cognigy.AI testing tools.
 
-{! _includes/ai/overview/create-projects.md !}
-
 ## Prerequisites
 
 - You need to have access to a Cognigy.AI account.
 
 {! _includes/ai/overview/log-in-with-credentials-or-sso.md !}
+
+{! _includes/ai/overview/create-projects.md !}
 
 ## Build a Chat Agent
 

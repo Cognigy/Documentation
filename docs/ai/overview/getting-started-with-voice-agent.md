@@ -7,6 +7,8 @@ In this tutorial, you will learn how to create a voice agent that uses dial logi
 - You need to have access to a Cognigy.AI account.
 - One of the following speech provider credentials is required for testing a voice agent: Microsoft Azure Speech Services, Google Speech Services, or Amazon Polly.
 
+{! _includes/ai/overview/log-in-with-credentials-or-sso.md !}
+
 {! _includes/ai/overview/create-projects.md !}
 
 ## Add Speech Provider Credentials

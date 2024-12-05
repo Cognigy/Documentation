@@ -6,11 +6,11 @@ hidden: false
 
 # Single Sign-on using SAML 2.0
 
-Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using Single Sign-on automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
+Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using SSO automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
 
 ## Get the SSO URL
 
-To configure a Single Sign-on in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
+To configure a SSO in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
 
 ```txt
 https://<api-url>/auth/saml/login/<organization-id>
@@ -40,7 +40,7 @@ For instance, the frontend URL could be `app.cognigy.ai`.
 
 Learn more about connecting to your proffered SSO provider in [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
 
-## Change a Single Sign-on Configuration in Cognigy.AI
+## Change a SSO Configuration in Cognigy.AI
 
 You can have only one SSO configuration for your organization. If you want to change the configuration, you first need to delete it and create a new one. To delete an SSO configuration, send a `POST` request to:
 
