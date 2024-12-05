@@ -61,7 +61,7 @@ To create an AI Agent, select one of the following options:
             - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
             - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
             - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
-    13. Click **Next**
+    13. Click **Next**.
     14. In the **Job Selection** step, select one of the following options:
         - **Default** — create an AI Agent with a predefined Flow, then click **Create & Chat** to save changes and open the Flow with the created AI Agent.
         - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
@@ -101,7 +101,7 @@ To combine custom and hired AI Agents, follow these steps:
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
 4. On the **AI Agents** page, select **+ Hire AI Agent**. The **Job Market** page, displaying a list of AI Agent job seekers, will open. 
-5. Hover your cursor over the desired AI Agent template and click ![expand](../../../_assets/icons/expand.svg) > **Hire&Configure**.
+5. Hover your cursor over the desired AI Agent template and click ![expand](../../../_assets/icons/expand.svg) **> Hire & Configure**.
 6. In the **Select an AI Agent to Combine** window, use the search field to find an AI Agent by name, then select the agent from the list.
 7. Click **Combine**. This action will trigger the **Hire AI Agent** and **Merge Package** tasks in the Task Manager.
 8. In the left-side menu of the **Project** page, select **Build > Flows**.

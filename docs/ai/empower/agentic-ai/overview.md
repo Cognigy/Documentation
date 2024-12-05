@@ -87,9 +87,9 @@ For example, you could include instructions for executing an API call, processin
 _Tool Actions_ represent specific tasks that an AI Agent needs to perform within a Flow. 
 A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to interact with external services to accomplish a particular job, such as calling an API or processing data.
 
-##### Tool Call
+##### Tool Calls
 
-A _Tool Call_ occurs when the AI Agent decides to use a Tool Action and sends a request to the LLM to execute it.
+_Tool Calls_ occur when the AI Agent decides to use a Tool Action and sends a request to the LLM to execute it.
 
 #### Resolve Tool Action Node
 
