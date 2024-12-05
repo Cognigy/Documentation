@@ -40,7 +40,7 @@ To edit an Inbox, follow these steps:
 1. In the Live Agent interface, go to **Settings > Inboxes**.
 2. On the **Inboxes** page, click ![gear](../../_assets/icons/gear.svg) next to the Inbox you want to edit. 
 4. In the **Inboxes Settings** section, update the following fields:
-    - **Channel Avatar** — upload an image that represents the Inbox. The Channel Avatar helps you identify the Inbox visually. 
+    - **Channel Avatar** — upload an image that represents the Inbox. The Channel Avatar helps you visually identify the Inbox. 
     - **Inbox Name**
     - **Cognigy Project ID** — enter the Project ID of the Project to which you want to assign the Inbox. You can [copy the Project ID](../../ai/build/projects.md#copy-the-project-id) from the Cognigy.AI interface. If you enter an invalid Project ID, you receive an error message and cannot update the Inbox. After you assign the Inbox to a Project, [copy the Inbox ID](#copy-inbox-id) and enter it in the **Live Agent Inbox Id** field of the respective Nodes of the Project, for example, the [Handover Agent](../../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) and [Check Agent Availability](../../ai/build/node-reference/service/check-agent-availability.md#settings) Nodes.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
