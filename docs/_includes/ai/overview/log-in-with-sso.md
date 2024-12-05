@@ -1,4 +1,4 @@
-=== "Login with Optional SSO"
+=== "Log in with Optional SSO"
 
     1. Go to the login page and click **Login with SSO**.
     2. Enter your email in the **E-Mail** field.
