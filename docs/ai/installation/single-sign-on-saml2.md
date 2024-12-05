@@ -6,11 +6,13 @@ hidden: false
 
 # Single Sign-on using SAML 2.0
 
-Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using SSO automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
+Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers (IDPs), such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials.
+
+Using SSO automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users and fulfill security standards. If you need SSO to comply with security standards across your organization, you can [enforce login with SSO](#enforce-login-with-sso).
 
 ## Get the SSO URL
 
-To configure a SSO in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
+To configure a SSO in your IDP, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
 
 ```txt
 https://<api-url>/auth/saml/login/<organization-id>
@@ -18,9 +20,9 @@ https://<api-url>/auth/saml/login/<organization-id>
 
 For example, the api-url for the app environment is `api-app.cognigy.ai`. The `organization-id` is the `id` of your organization within Cognigy.AI. You can get your `organizationId` on the [My Profile](../test/interaction-panel/profile.md) page by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy Organization ID**.
 
-You will need the SSO URL when configuring your Identity Provider (IDP) using one of the setup guides provided.
+You will need the SSO URL when configuring your IDP using one of the setup guides provided.
 
-To configure the SSO Provider with Cognigy.AI, refer to one of the specific guides for the [supported Identity Providers](#more-information). These guides provide examples of the required API requests. If your Identity Provider is not listed, we recommend following the [OneLogin guide](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) as an example. The API request for configuring SSO with Cognigy.AI is the same, but the configuration values may vary depending on the provider.
+To configure the SSO Provider with Cognigy.AI, refer to one of the specific guides for the [supported IDPs](#more-information). These guides provide examples of the required API requests. If your IDP is not listed, we recommend following the [OneLogin guide](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) as an example. The API request for configuring SSO with Cognigy.AI is the same, but the configuration values may vary depending on the provider.
 
 ## Get the SLO URL
 
@@ -28,9 +30,9 @@ To configure the SSO Provider with Cognigy.AI, refer to one of the specific guid
 !!! warning
     Single Logout is only supported with OneLogin and Microsoft Azure Active Directory:
         - Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
-        - Identity Provider initiated Single Logout is only supported with OneLogin.
+        - IDP initiated Single Logout is only supported with OneLogin.
 
-To configure Single Logout for your Identity Provider, you will need the URL that is used to process the logout request from the IDP. During the Single Logout process, the IDP will redirect to the frontend of Cognigy.AI. Therefore, you should use the frontend domain that you have configured for your installation. The SLO URL will have the following format:
+To configure Single Logout for your IDP, you will need the URL that is used to process the logout request from the IDP. During the Single Logout process, the IDP will redirect to the frontend of Cognigy.AI. Therefore, you should use the frontend domain that you have configured for your installation. The SLO URL will have the following format:
 
 ```txt
 https://<frontend-url>/slo/<organization-id>
@@ -50,15 +52,6 @@ https://<api-url>/v2.0/identityprovider/reset
 
 Read more about using the Cognigy.AI API on the [API Reference Page](https://api-trial.cognigy.ai/openapi#post-/v2.0/identityprovider/reset).
 
-## Log in with SSO
-
-When a user logs into Cognigy.AI with SSO for the first time, they need to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
-
-!!! warning "First time login"
-    During the first login, users need to log in using their Identity Provider (IDP) credentials.
-
-To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter your email. This will redirect you to your configured IDP if an IDP is configured for your organization.
-
 ## Enforce Login with SSO
 
 Enforcing login with SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI system. By default, you can log in to Cognigy.AI with your credentials or with SSO. However, you can enforce login with SSO for all users within your Cognigy.AI system or for specific organizations within your installation. By doing so, users can only login with SSO.
@@ -68,6 +61,24 @@ To enforce login with SSO, proceed as follows:
   - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
   - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
   - For on-premises installations, set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. To enforce login via SSO for specific organizations, assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. To log in, you can only click the **Sign in with SSO** button.
+
+## Log in with SSO
+
+!!! warning "First time login"
+    During the first login with SSO, you need to log in using your IDP credentials. Cognigy.AI redirects you to your configured IDP. You need to enter your IDP credentials to complete the login.
+
+=== "Login with Optional SSO"
+
+    1. Go to the login page and click **Login with SSO**.
+    2. Enter your email in the **E-Mail** field.
+    3. Click **Login with SSO**.
+    4. Click **Sign in with SSO**.
+
+=== "With Login Enforced SSO"
+
+    1. Go to the login page and click **Login with SSO**.
+    2. Enter your email in the **E-Mail** field.
+    3. Click **Sign in with SSO**.
 
 ## More Information
 
