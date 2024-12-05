@@ -6,7 +6,7 @@ hidden: false
 
 # Single Sign-on using SAML 2.0
 
-Cognigy.AI integrates with popular Single Sign-On (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using Single Sign-On automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
+Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using Single Sign-on automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
 
 ## Get the SSO URL
 
@@ -65,9 +65,9 @@ Enforcing login via SSO can be useful to standardize the authentication process 
 
 To enforce login via SSO, proceed as follows:
 
-    - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
-    - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
-    - For on-premises installations, set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. To enforce login via SSO for specific organizations, assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. To log in, you can only click the **Sign in with SSO** button.
+  - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
+  - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
+  - For on-premises installations, set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. To enforce login via SSO for specific organizations, assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. To log in, you can only click the **Sign in with SSO** button.
 
 ## More Information
 

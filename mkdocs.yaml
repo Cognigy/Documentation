@@ -14,7 +14,7 @@ nav:
       - ai/overview/ai-workforce.md
       - ai/overview/key-features.md
       - Getting Started:
-        - ai/overview/access-to-cognigy-ai.md
+        - ai/installation/access-to-cognigy-ai.md
         - ai/overview/getting-started-with-digital-agent.md
         - ai/overview/getting-started-with-voice-agent.md
       - ai/glossary.md
@@ -376,7 +376,7 @@ nav:
       - SaaS:
         - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
-      - Single Sign-On (SSO):
+      - Single Sign-on (SSO):
         - ai/installation/single-sign-on-saml2.md
         - ai/installation/single-signin-openid-connect.md
 

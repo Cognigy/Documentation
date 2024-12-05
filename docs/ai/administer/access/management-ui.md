@@ -54,7 +54,7 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 </figure>
 
 You can add a user (identified by an email address) to multiple organizations.
-Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../overview/access-to-cognigy-ai.md#multiple-organizations) page.
+Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
 
 If you click one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
 
