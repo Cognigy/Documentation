@@ -67,18 +67,7 @@ To enforce login with SSO, proceed as follows:
 !!! warning "First time login"
     During the first login with SSO, you need to log in using your IDP credentials. Cognigy.AI redirects you to your configured IDP. You need to enter your IDP credentials to complete the login.
 
-=== "Login with Optional SSO"
-
-    1. Go to the login page and click **Login with SSO**.
-    2. Enter your email in the **E-Mail** field.
-    3. Click **Login with SSO**.
-    4. Click **Sign in with SSO**.
-
-=== "With Login Enforced SSO"
-
-    1. Go to the login page and click **Login with SSO**.
-    2. Enter your email in the **E-Mail** field.
-    3. Click **Sign in with SSO**.
+{! _includes/ai/overview/log-in-with-sso.md}
 
 ## More Information
 
