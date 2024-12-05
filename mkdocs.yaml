@@ -14,7 +14,6 @@ nav:
       - ai/overview/ai-workforce.md
       - ai/overview/key-features.md
       - Getting Started:
-        - ai/installation/access-to-cognigy-ai.md
         - ai/overview/getting-started-with-digital-agent.md
         - ai/overview/getting-started-with-voice-agent.md
       - ai/glossary.md
@@ -352,6 +351,7 @@ nav:
       - ai/developers/extension-framework.md
 
     - 🖥️ Install, Configure, and Migrate:
+      - ai/installation/access-to-cognigy-ai.md
       - ai/installation/about.md
       - ai/installation/browser-requirements.md
       - ai/installation/architecture.md

@@ -50,20 +50,20 @@ https://<api-url>/v2.0/identityprovider/reset
 
 Read more about using the Cognigy.AI API on the [API Reference Page](https://api-trial.cognigy.ai/openapi#post-/v2.0/identityprovider/reset).
 
-## Log in via SSO
+## Log in with SSO
 
-When a user logs into Cognigy.AI via SSO for the first time, they need to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
+When a user logs into Cognigy.AI with SSO for the first time, they need to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
 
 !!! warning "First time login"
     During the first login, users need to log in using their Identity Provider (IDP) credentials.
 
 To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter your email. This will redirect you to your configured IDP if an IDP is configured for your organization.
 
-## Enforce Login via SSO
+## Enforce Login with SSO
 
-Enforcing login via SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI system. By default, you can log in to Cognigy.AI with your credentials or via SSO. However, you can enforce login via SSO for all users within your Cognigy.AI system or for specific organizations within your installation. By doing so, users can only login via SSO.
+Enforcing login with SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI system. By default, you can log in to Cognigy.AI with your credentials or with SSO. However, you can enforce login with SSO for all users within your Cognigy.AI system or for specific organizations within your installation. By doing so, users can only login with SSO.
 
-To enforce login via SSO, proceed as follows:
+To enforce login with SSO, proceed as follows:
 
   - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
   - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.

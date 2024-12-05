@@ -1,11 +1,10 @@
 # Build Your Voice AI Agent in Minutes
 
-In this tutorial, you will learn how to create a voice agent that uses dial logic.
-Dial logic lets users select options by pressing the corresponding numbers on a dial pad.
-This way, the voice agent can guide users through predefined paths based on their choices.
+In this tutorial, you will learn how to create a voice agent that uses dial logic. Dial logic lets users select options by pressing the corresponding numbers on a dial pad. This way, the voice agent can guide users through predefined paths based on their choices.
 
 ## Prerequisites
 
+- You need to have access to a Cognigy.AI account.
 - One of the following speech provider credentials is required for testing a voice agent: Microsoft Azure Speech Services, Google Speech Services, or Amazon Polly.
 
 {! _includes/ai/overview/create-projects.md !}
