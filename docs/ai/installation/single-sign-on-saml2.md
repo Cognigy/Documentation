@@ -61,7 +61,9 @@ To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter y
 
 ## Enforce Login via SSO
 
-Enforcing login via SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI system. By default, you can log in to Cognigy.AI with your credentials or via SSO. However, you can enforce login via SSO for all users within your Cognigy.AI system or for specific organizations within your installation. By doing so, users can only login via SSO. To enforce login via SSO, proceed as follows:
+Enforcing login via SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI system. By default, you can log in to Cognigy.AI with your credentials or via SSO. However, you can enforce login via SSO for all users within your Cognigy.AI system or for specific organizations within your installation. By doing so, users can only login via SSO.
+
+To enforce login via SSO, proceed as follows:
 
     - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md). If you try to log in with your credentials, you receive an error message. To log in, enter your email address and click **Sign in with SSO**.
     - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md). The login with credentials is deactivated. You can only log in by clicking the **Sign in with SSO** button.
