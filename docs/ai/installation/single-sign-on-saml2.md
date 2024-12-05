@@ -4,11 +4,11 @@ slug: "single-signin-saml2"
 hidden: false 
 ---
 
-# Single Sign-on using SAML 2.0
+# Single Sign-on with SAML 2.0
 
 Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers (IDPs), such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials.
 
-Using SSO automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users and fulfill security standards. If you need SSO to comply with security standards across your organization, you can [enforce login with SSO](#enforce-login-with-sso).
+Using SSO automatically grants access that ensures a streamlined authentication process. Additionally, you can use the robust Access Control tool in Cognigy.AI to effectively manage the access rights of individual users and fulfill security standards. If you need SSO to comply with security standards across your organization, you can [enforce login with SSO](#enforce-login-with-sso).
 
 ## Get the SSO URL
 

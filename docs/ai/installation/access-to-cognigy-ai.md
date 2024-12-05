@@ -60,7 +60,7 @@ You will receive an email with instructions to reset your password. You need to 
 
 ### Log in with Single Sign-on
 
-In Cognigy.AI, you can set up [single sign-on (SSO)](single-sign-on-saml2.md) and, if necessary, you can [enforce login with SSO](single-sign-on-saml2.md) to your users.
+In Cognigy.AI, you can set up [single sign-on (SSO)](single-sign-on-saml2.md) and, if necessary, you can [enforce login with SSO](single-sign-on-saml2.md) for your users.
 
 To log in with SSO, follow these steps:
 
