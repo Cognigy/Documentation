@@ -33,21 +33,20 @@ A new Live Agent Inbox has been created. You can configure the Inbox settings by
 
 The changes will be applied.
 
-## Configure an Inbox Appearance
+## Edit Inbox
 
-To configure the Inbox appearance, do the following:
+To update your Inbox, follow these steps:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**. 
-4. In the **Inboxes Settings** tab window, you can update the following fields as needed:
-    - **Channel Avatar** — upload an image or icon that represents the Inbox. It is used for visual identification. 
-    - **Inbox Name** — edit the name of the Inbox here, which can be helpful for organizational purposes.
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. On the **Inboxes** page, click ![gear](../../../_assets/icons/gear.svg) next to the Inbox you want to edit. 
+4. In the **Inboxes Settings** section, update the following fields:
+    - **Channel Avatar** — upload an image that represents the Inbox. The Channel Avatar helps you identify the Inbox visually. 
+    - **Inbox Name**
+    - **Cognigy Project ID** — enter the Project ID of the Project to which you want to assign the Inbox. If you enter an invalid Project ID, you receive an error message and cannot update the Inbox. [Copy the Project ID](../../ai/build/projects.md#copy-the-project-id) from the Cognigy.AI interface. After you assign the Inbox to a Project, [copy the Inbox ID](#copy-inbox-id) and enter it in the **Live Agent Inbox Id** field of the respective Nodes of the Project, for example, the [Handover Agent](../../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) and [Check Agent Availability](../../ai/build/node-reference/service/check-agent-availability.md#settings) Nodes.
+    - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
 5. Click **Update**.
 
-The Inboxes fields and settings will be updated.
-
-## Copy an Inbox ID
+## Copy Inbox ID
 
 Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is used in API and UI URL path names.
 
