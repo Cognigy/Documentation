@@ -19,10 +19,10 @@ The AI Agent Handover Node is used to transfer the conversation to another AI Ag
 
 ## Settings
 
-| Parameter   | Type     | Description                                                                                                                                                                                                                                                                |
-|-------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select Flow | Selector | Select the target Flow that is switched to whenever the Flow execution triggers the AI Agent Handover Node.                                                                                                                                                                |
-| Select Node | Selector | Select the target Node that is switched to whenever the Flow execution triggers the Go To Node. A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md#set-entrypoint) setting. | 
+| Parameter   | Type     | Description                                                                                                                                                                                                                                                                            |
+|-------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Select Flow | Selector | Select the target Flow that is switched to whenever the Flow execution triggers the AI Agent Handover Node.                                                                                                                                                                            |
+| Select Node | Selector | Select the target Node that is switched to whenever the Flow execution triggers the AI Agent Handover Node. A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md#set-entrypoint) setting. | 
 
 ### Advanced
 

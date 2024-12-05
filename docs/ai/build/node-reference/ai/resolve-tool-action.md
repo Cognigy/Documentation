@@ -1,7 +1,7 @@
 ---
 title: "Resolve Tool Action"
 slug: "resolve-tool-action"
-description: "The Resolve Tool Action lets configure and control how an AI Agent responds after completing an action, as well as to enable debugging information."
+description: "The Resolve Tool Action Node is used to handle the result of a tool action that was triggered by the AI Agent."
 hidden: false
 ---
 
@@ -15,14 +15,23 @@ hidden: false
 
 {! _includes/ai/beta.md !}
 
-The Resolve Tool Action Node lets you configure and control how an AI Agent responds after completing an action triggered by an [AI Agent tool](ai-agent.md#ai-agent-tool-settings).
+The Resolve Tool Action Node is used to handle the result of a [tool action](ai-agent.md#ai-agent-tool-settings) that was triggered by the AI Agent.
+When the AI Agent calls a tool to perform an action, the tool action is executed.
+Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
+indicating the result of that action.
+This approach helps the AI Agent continue processing and make decisions based on the results of the tool action it initiated.
 
 ## Settings
 
 | Parameter     | Type          | Description                                                                                                  |
 |---------------|---------------|--------------------------------------------------------------------------------------------------------------|
 | Answer Text   | CognigyScript | Add the text that serves as the AI Agent's response to confirm that the requested action has been completed. |
-| Debug Message | Toggle        | Enable sending a debug message that displays the tool name and the generated answer text.                    |
+
+### Debug Settings
+
+| Parameter     | Type          | Description                                                                     |
+|---------------|---------------|---------------------------------------------------------------------------------|
+| Debug Message | Toggle        | Enable sending a debug message that displays the tool name and the answer text. |
 
 ## More Information
 
