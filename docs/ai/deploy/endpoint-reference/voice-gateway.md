@@ -116,7 +116,7 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 
 ### Call Failover
 
-The **Call Failover** section is intended to handle runtime errors that occur on the Cognigy.AI side during the execution of a Flow.
+The **Call Failover** section is intended to handle runtime and speech provider authetication errors that occur on the Cognigy.AI side during the execution of a Flow.
 
 !!! note "Feature availability"
     - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
