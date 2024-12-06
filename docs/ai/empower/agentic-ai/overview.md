@@ -20,9 +20,6 @@ Key features of Agentic AI:
 - **Collaborative AI**. Works seamlessly with other AI Agents and humans to deliver efficient and accurate solutions.
 - **Hyper-Personalization**. Built-in memory enables context-aware interactions, creating uniquely tailored experiences for each customer.
 
-To manage a new generation of AI Agents, Cognigy.AI introduces the AI Agent Management interface,
-where you can create, edit, and delete AI Agents.
-
 ## Prerequisites
 
 Before using the Agentic AI feature, you need:
@@ -43,7 +40,7 @@ Before using the Agentic AI feature, you need:
 
 ## Concepts
 
-- [AI Agnet Management](#ai-agent-management)
+- [AI Agent Management](#ai-agent-management)
 - [ LLM-driven Flow Design](#llm-driven-flow-design)
 
 ### AI Agent Management
@@ -63,11 +60,11 @@ You can hire an agent with a ready-made set of skills for a specific task and ad
 
 The table shows available AI Agents for hire.
 
-| AI Agent                                                                                            | Job              | Job Description                                                                                                              | Job Package                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Skyron** <img src="../../../../_assets/ai/empower/agentic-ai/Skyron.png" alt="Skyron" width="50"> | Airline Support  | An AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                  |
-| **Anna** <br> <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" alt="Anna" width="50">  | BDR Assistance   | An AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                               |
-| **Sophie** <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" alt="Sophie" width="50"> | Restaurant Guide | An AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Dining Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
+| AI Agent                                                                                            | Job              | Job Description                                                                                                               | Job Package                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Skyron** <img src="../../../../_assets/ai/empower/agentic-ai/Skyron.png" alt="Skyron" width="50"> | Airline Support  | The AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                  |
+| **Anna** <br> <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" alt="Anna" width="50">  | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                               |
+| **Sophie** <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" alt="Sophie" width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Dining Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
 
 ### LLM-driven Flow Design
 
@@ -97,7 +94,7 @@ The [Resolve Tool Action Node](../../build/node-reference/ai/resolve-tool-action
 When the AI Agent calls a tool to perform an action, the tool action is executed.
 Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
 indicating the result of that action.
-This approach helps the AI Agent continue processing and make decisions based on the results of the tool action it initiated.
+This approach helps the AI Agent process and make decisions based on the results of the tool actions it initiated.
 
 #### AI Agent Handover Node
 
@@ -105,7 +102,8 @@ The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md)
 
 #### Add Memory Node
 
-The [Add Memory Node](../../build/node-reference/analytics/add-memory.md) stores memories within the [Contact Profile](../../analyze/contact-profiles.md), enabling the AI to recall and reference past interactions for better future conversations.
+The [Add Memory Node](../../build/node-reference/analytics/add-memory.md) stores memories within the [Contact Profile](../../analyze/contact-profiles.md),
+enabling AI Agents to recall and reference past interactions for better future conversations.
 
 #### Transcript Nodes
 
@@ -113,7 +111,8 @@ The Transcript Nodes enable the AI Agent to simulate, retrieve, and store conver
 
 ##### Get Transcript Node
 
-The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets AI Agent receive a real-time transcript of the conversation and store the result in the Input or Context object.
+The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets AI
+Agents receive a real-time conversation transcript and store the result in the Input or Context object.
 
 ##### Add Transcript Steps
 
@@ -124,3 +123,5 @@ The [Add Transcript Steps Node](../../build/node-reference/service/add-transcrip
 - [Getting Started](getting-started.md)
 - [Manage AI Agents](manage-ai-agents.md)
 - [Build LLM-Driven Flows](build-llm-driven-flows.md)
+- [LLMs](../llms/overview.md)
+- [Knowledge AI](../knowledge-ai/overview.md)

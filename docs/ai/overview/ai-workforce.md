@@ -81,7 +81,7 @@ By using advanced AI technologies like [Generative AI](../empower/generative-ai.
 you can empower AI Agents — whether chat, voice, or digital — to understand complex requests,
 retrieve information from multiple sources, and deliver personalized responses that enhance user experiences.
 
-Also, you can make your AI Agent [fully driven by Large Language Models (LLMs)](../empower/agentic-ai.md), tailoring its personality to align with your brand and customer preferences.
+Also, you can make your AI Agent [fully driven by Large Language Models (LLMs)](../empower/agentic-ai/overview.md), tailoring its personality to align with your brand and customer preferences.
 
 ### Human Agent Assistants
 

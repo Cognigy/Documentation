@@ -35,4 +35,4 @@ The AI Agent Handover Node is used to transfer the conversation to another AI Ag
 
 - [AI Agent](ai-agent.md)
 - [Resolve Tool Action](resolve-tool-action.md)
-- [Agentic AI](../../../empower/agentic-ai.md)
+- [Agentic AI](../../../empower/agentic-ai/overview.md)

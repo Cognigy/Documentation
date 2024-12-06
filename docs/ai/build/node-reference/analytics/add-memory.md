@@ -39,5 +39,5 @@ By referencing stored memories, the AI Agent can generate responses based on pas
 ## More Information
 
 - [Agent AI](../ai/ai-agent.md)
-- [Agentic AI](../../../empower/agentic-ai.md)
+- [Agentic AI](../../../empower/agentic-ai/overview.md)
 - [Contact Profile](../../../analyze/contact-profiles.md)

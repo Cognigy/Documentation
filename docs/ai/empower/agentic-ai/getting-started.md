@@ -11,10 +11,10 @@ hidden: false
 
 This guide walks you through the process of creating a Project with an AI Agent powered by a large language model (LLM). 
 You'll learn how to create an AI Agent with the persona of a customer support engineer,
-implement a tool to unlock accounts by validating the email provided by the user,
+implement a tool to unlock accounts by validating the user email,
 and test your Flow using the Interaction Panel.
 
-## Before you Begin
+## Prerequisites
 
 - Ensure you have access to your Cognigy.AI account and have [configured a primary LLM](overview.md#prerequisites).
 - During the Flow Configuration steps, an [Email Notification Node](../../build/node-reference/data/email-notification.md) will be used. Make sure your SMTP server settings are properly configured to receive notifications.
@@ -57,7 +57,7 @@ To create your first LLM-powered AI Agent, follow these steps:
 9. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
 10. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
 
-## Configure the AI Agent in Your Flow
+## Configure the AI Agent in your Flow
 
 Once you open the Flow, you'll see the AI Agent Node with predefined settings based on the AI Agent persona you created.
 
@@ -66,7 +66,7 @@ To configure the Flow, follow these steps:
 1. Below the parent AI Agent Node, configure the [child Tool Action Node](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings). Left-click the **unlock_account** Node to open the Node editor.
 2. Activate the **Use Parameters** setting to request a user email before unlocking the account. In the **Parameters** section, make sure that the email parameter appears.
 3. Click **Save Node**.
-4. Below the child Tool Node, replace the placeholder Node with an Action Node, for example, [Email Notification](../../build/node-reference/data/email-notification.md]. This Action Node is designed to trigger specific actions, such as sending an email, and performs the task that the tool is responsible for. In this case, the Email Notification Node will send a confirmation email when the task is completed.
+4. Below the child Tool Node, replace the placeholder Node with an [Email Notification](../../build/node-reference/data/email-notification.md) Node. The Email Notification Node acts as an Action Node, designed to trigger specific actions and perform the task assigned to the tool. In this case, the Email Notification Node will send a confirmation email when the task is completed.
 5. Open the Node editor and configure the following fields:
     - **Recipient TO Email Addresses** — enter the email address to which the account unlocking confirmation should be sent.
     - **Email Subject** — enter `Account Unlocked`.
@@ -74,7 +74,7 @@ To configure the Flow, follow these steps:
 6. Click **Save Node**. 
 7. Below the Action Node, add a [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md) Node to control how the AI Agent responds after executing the Email Notification Node. The Resolve Tool Action Node returns the conversation to the parent AI Agent Node, providing the option to choose a different tool.
 
-## Test Your Agent
+## Test your Agent
 
 To run your Flow, follow these steps:
 
@@ -88,5 +88,5 @@ To run your Flow, follow these steps:
 
 ## What's Next?
 
-1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [select one from the marketplace](manage-ai-agents.md#create-an-ai-agent).
+1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [hire one from the Job Market](manage-ai-agents.md#create-an-ai-agent).
 2. [Add the AI Agent to your Flow](build-llm-driven-flows.md#add-ai-agents-to-a-flow) and [create a set of tool actions](build-llm-driven-flows.md#configure-additional-nodes) for your AI Agent to operate.

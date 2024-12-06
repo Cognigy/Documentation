@@ -36,4 +36,4 @@ specify the path to the Input or Context object where the transcript is stored.
 ## More Information
 
 - [Add Transcript Steps](add-transcript-steps.md)
-- [Agentic AI](../../../empower/agentic-ai.md)
+- [Agentic AI](../../../empower/agentic-ai/overview.md)

@@ -19,7 +19,7 @@ The Resolve Tool Action Node is used to handle the result of a [tool action](ai-
 When the AI Agent calls a tool to perform an action, the tool action is executed.
 Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
 indicating the result of that action.
-This approach helps the AI Agent continue processing and make decisions based on the results of the tool action it initiated.
+This approach helps the AI Agent process and make decisions based on the results of the tool actions it initiated.
 
 ## Settings
 
@@ -37,4 +37,4 @@ This approach helps the AI Agent continue processing and make decisions based on
 
 - [AI Agent](ai-agent.md)
 - [AI Agent Handover](ai-agent-handover.md)
-- [Agentic AI](../../../empower/agentic-ai.md)
+- [Agentic AI](../../../empower/agentic-ai/overview.md)

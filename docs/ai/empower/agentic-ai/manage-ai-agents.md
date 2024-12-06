@@ -89,20 +89,19 @@ To edit an AI Agent, follow these steps:
 
 ## Combine Custom and Hired AI Agents
 
-You can reassign your custom AI Agent to take on the responsibilities of the hired agent.
+You can reassign your custom AI Agent to take on the responsibilities of the hired AI Agent.
 To do this, hire an AI Agent from the Job Market
 and configure their interaction by defining which functions and personality traits should be combined.
-This approach lets you combine the strengths of both agents:
-a ready-made job description that aligns with your brand's AI Agent persona.
+This approach lets combine the strengths of both AI Agents: ready-made job functions from the hired AI Agent and your brand's AI Agent persona from your custom AI Agent.
 
 To combine custom and hired AI Agents, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
-4. On the **AI Agents** page, select **+ Hire AI Agent**. The **Job Market** page, displaying a list of AI Agent job seekers, will open. 
+4. On the **AI Agents** page, select **+ Hire AI Agent**. The **Job Market** page will display a list of AI Agent job seekers. 
 5. Hover your cursor over the desired AI Agent template and click ![expand](../../../_assets/icons/expand.svg) **> Hire & Configure**.
-6. In the **Select an AI Agent to Combine** window, use the search field to find an AI Agent by name, then select the agent from the list.
+6. In the **Select an AI Agent to Combine** window, use the search field to find an AI Agent by name, then select the AI Agent from the list.
 7. Click **Combine**. This action will trigger the **Hire AI Agent** and **Merge Package** tasks in the Task Manager.
 8. In the left-side menu of the **Project** page, select **Build > Flows**.
 9. Select the Flow that belongs to the hired AI Agent. In the Flow, you will see an AI Agent Node with your custom AI Agent persona.
@@ -135,12 +134,6 @@ To delete an AI Agent, follow these steps:
 
 ## More Information
 
-- AI Agent Nodes:
-    - [AI Agent](../../build/node-reference/ai/ai-agent.md)
-    - [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md)
-    - [AI Agent Handover](../../build/node-reference/ai/ai-agent-handover.md)
-    - [Add Memory](../../build/node-reference/analytics/add-memory.md)
-    - [Get Transcript](../../build/node-reference/service/get-transcript.md)
-    - [Add Transcript Step](../../build/node-reference/service/add-transcript-steps.md)
-- [LLMs](../llms/overview.md)
-- [Knowledge AI](../knowledge-ai/overview.md)
+- [Overview](overview.md)
+- [Getting Started](getting-started.md)
+- [Build LLM-Driven Flows](build-llm-driven-flows.md)

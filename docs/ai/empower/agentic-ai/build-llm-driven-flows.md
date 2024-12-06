@@ -62,3 +62,4 @@ To enhance the AI Agent's Flow, you can add more Nodes related to the Agentic AI
 
 - [Overview](overview.md)
 - [Getting Started](getting-started.md)
+- [Manage AI Agents](manage-ai-agents.md)

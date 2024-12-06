@@ -30,4 +30,4 @@ The Add Transcript Steps Node lets you add a step for one of the conversation ac
 ## More Information
 
 - [Get Transcript](get-transcript.md)
-- [Agentic AI](../../../empower/agentic-ai.md)
+- [Agentic AI](../../../empower/agentic-ai/overview.md)
