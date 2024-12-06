@@ -1,16 +1,16 @@
 ---
-title: "Cognigy's AI Agents"
+title: "Cognigy AI Agents"
 slug: "cognigy-ai-agents"
-description: "Cognigy's AI Agents are virtual assistants powered by artificial intelligence that can interact with users through text or voice, handling tasks traditionally performed by humans."
+description: "Cognigy AI Agents are virtual assistants powered by artificial intelligence that can interact with users through text or voice, handling tasks traditionally performed by humans."
 hidden:  false
 ---
 
-# Cognigy's AI Agents
+# Cognigy AI Agents
 
 _AI Agents_ are virtual assistants powered by artificial intelligence that can interact with users through text or voice, handling tasks traditionally performed by humans.
 
-_Cognigy's AI Workforce_ is a collection of AI Agents that you can design using the Cognigy.AI platform to automate tasks and enhance various business processes.
-Cognigy's AI Agents can handle a wide range of tasks, from answering simple customer inquiries to providing complex technical support.
+_Cognigy AI Workforce_ is a collection of AI Agents that you can design using the Cognigy.AI platform to automate tasks and enhance various business processes.
+Cognigy AI Agents can handle a wide range of tasks, from answering simple customer inquiries to providing complex technical support.
 
 Key benefits of an AI Workforce include:
 
@@ -19,7 +19,7 @@ Key benefits of an AI Workforce include:
 - **Consistency**. AI Agents provide consistent and accurate responses.
 - **Efficiency**. Automating routine tasks reduces operational costs and frees up human resources.
 
-Cognigy's AI Workforce goes beyond simply offering virtual assistants.
+Cognigy AI Workforce goes beyond simply offering virtual assistants.
 It offers intelligent AI Agents to support both end users and human agents:
 
 - [Self-Service AI Agents](#self-service-ai-agents)
@@ -85,7 +85,7 @@ Also, you can make your AI Agent [fully driven by Large Language Models (LLMs)](
 
 ### Human Agent Assistants
 
-Cognigy's AI Agents can assist human agents by offering real-time support, accessing knowledge bases, and analyzing customer sentiment. 
+Cognigy AI Agents can assist human agents by offering real-time support, accessing knowledge bases, and analyzing customer sentiment. 
 By assisting human agents, AI Agents improve efficiency, speed up resolution times, and enhance customer service quality.
 
 Cognigy.AI offers a comprehensive suite of human assistants, each tailored to meet specific needs in your contact center solution:
@@ -96,7 +96,7 @@ Cognigy.AI offers a comprehensive suite of human assistants, each tailored to me
 
 #### AI Copilot
 
-[Cognigy's AI Copilot](../../ai-copilot/index.md) is an intelligent assistant that helps human agents work more effectively. 
+[Cognigy AI Copilot](../../ai-copilot/index.md) is an intelligent assistant that helps human agents work more effectively. 
 It provides real-time suggestions, handles routine tasks, and manages extra workload during busy times.
 With an easy-to-use interface and customizable widgets,
 such as tools for quick knowledge searches or sentiment analysis, it offers human agents fast access to key information.
@@ -104,13 +104,13 @@ By boosting the productivity of each human agent, AI Copilot helps address labor
 
 #### AI Copilot Whisper
 
-[Cognigy's AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) is a real-time AI assistant that provides direct, in-conversation support to human agents. It listens to the ongoing conversation and offers suggestions, recommendations, and relevant information directly within the chat interface, empowering agents to provide faster and more accurate responses.
+[Cognigy AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) is a real-time AI assistant that provides direct, in-conversation support to human agents. It listens to the ongoing conversation and offers suggestions, recommendations, and relevant information directly within the chat interface, empowering agents to provide faster and more accurate responses.
 
 AI Copilot Whisper is available only in the Cognigy Live Agent interface.
 
 #### AI Copilot Bot
 
-[Cognigy's AI Copilot Bot](../../live-agent/assistants/ai-copilot-bot.md) is a dedicated chat-based assistant designed to support human agents.
+[Cognigy AI Copilot Bot](../../live-agent/assistants/ai-copilot-bot.md) is a dedicated chat-based assistant designed to support human agents.
 It provides a personalized workflow, enabling AI Agents to access additional information and resources as needed.
 
 AI Copilot Bot ia available only in the Cognigy Live Agent interface.
