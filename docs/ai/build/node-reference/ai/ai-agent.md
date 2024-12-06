@@ -169,12 +169,13 @@ Tool configuration in JSON:
 
 where:
 
-- `"type": "object"` — the type for a tool parameter schema, which must always be `"object"`.
+- `type` — the type for a tool parameter schema, which must always be `"object"`.
 - `properties` — defines the parameters for the tool configuration:
     - `email` — a required tool parameter for unlocking the account.
         - `type` — defines the data type for the tool parameter.
         - `description` — a brief explanation of what the property represents.
-- `"additionalProperties": false` — ensures that the input contains only the `email` and `reason` properties, and no others are allowed.
+- `required` — ensures that the specified tool parameters (in this case, `email`) must be included in the object for it to be valid. If `email` is missing, the object will be invalid.
+- `additionalProperties` — ensures that the input contains only the `email` tool parameter, and no others are allowed.
 
 ## More Information
 
