@@ -12,8 +12,7 @@ _Inboxes_ are workspaces where human agents handle real-time chat interactions w
 
 You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
 
-Within the Inbox setting, you can customize the appearance of the Inbox, add and remove agents,
-configure message visibility for them, set up conversation routing, and add assistant bots.
+Within the Inbox setting, you can edit the Inbox, add and remove agents, configure message visibility for them, set up conversation routing, and add assistant bots.
 
 ## Create an Inbox
 
@@ -33,18 +32,20 @@ A new Live Agent Inbox has been created. You can configure the Inbox settings by
 
 The changes will be applied.
 
-## Edit Inbox
+## Edit an Inbox
+
+If you want to change how one of your Inboxes works or reuse an Inbox from a deleted Project, you need to edit the Inbox.
 
 To edit an Inbox, follow these steps:
 
 1. In the Live Agent interface, go to **Settings > Inboxes**.
-2. On the **Inboxes** page, click ![gear](../../_assets/icons/gear.svg) next to the Inbox you want to edit. 
-4. In the **Inboxes Settings** section, update the following fields:
+2. On the **Inboxes** page, click ![gear](../../_assets/icons/gear.svg) next to the Inbox you want to edit.
+3. In the **Inboxes Settings** section, update the following fields:
     - **Channel Avatar** — upload an image that represents the Inbox. The Channel Avatar helps you visually identify the Inbox. 
-    - **Inbox Name**
-    - **Cognigy Project ID** — enter the Project ID of the Project to which you want to assign the Inbox. You can [copy the Project ID](../../ai/build/projects.md#copy-the-project-id) from the Cognigy.AI interface. If you enter an invalid Project ID, you receive an error message and cannot update the Inbox. After you assign the Inbox to a Project, [copy the Inbox ID](#copy-inbox-id) and enter it in the **Live Agent Inbox Id** field of the respective Nodes of the Project, for example, the [Handover Agent](../../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) and [Check Agent Availability](../../ai/build/node-reference/service/check-agent-availability.md#settings) Nodes.
+    - **Inbox Name** — enter a unique Inbox name.
+    - **Cognigy Project ID** — this field is pre-populated for [Inboxes created through Cognigy.AI](../getting-started/live-agent-setup/live-agent-setup-additional-inbox.md). Enter a valid the Project ID. The Project ID allows Live Agent to retrieve [Contact Profile](../../ai/analyze/contact-profiles.md) data from Cognigy.AI and binds the Inbox to the respective Project. You can [copy the Project ID](../../ai/build/projects.md#copy-the-project-id) from the Cognigy.AI interface. After you assign the Inbox to a Project, [copy the Inbox ID](#copy-inbox-id) and enter it in the respective Cognigy.AI Nodes of the Project, for example, the [Handover Agent](../../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) and [Check Agent Availability](../../ai/build/node-reference/service/check-agent-availability.md#settings) Nodes. If this field is empty, Live Agent can still communicate with Cognigy.AI Nodes, but the Agents cannot retrieve Contact Profile data through this Inbox.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
-5. Click **Update**.
+4. Click **Update**.
 
 ## Copy Inbox ID
 
