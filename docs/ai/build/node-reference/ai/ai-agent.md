@@ -80,7 +80,7 @@ This configuration assigns an AI Agent to a job, defines its role and responsibi
 |---------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | LLM                       | Selector | Select a model that supports the [AI Agent Node feature](../../../empower/llms/model-support-by-feature.md). The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project. Select the model that you [added earlier](../../../empower/agentic-ai/overview.md#prerequisites) while configuring Agentic AI feature. This model will manage your AI Agent.                                                                                                                                                                               |
 | AI Agent Base Version     | Selector | Select the base version of the AI Agent to use:<br>- **Fixed Version** — select a specific version, such as `1.0`, to ensure stability and avoid potential breaking changes. Use this version in production environments or for critical workflows.<br>- **Latest** — use the most recent version of the AI Agent. While this version ensures access to the latest features, it may cause breaking changes that require manual updates. <br><br> When upgrading to a fixed version or switching to the latest, always test your AI Agent carefully to ensure it works with the selected version. |
-| Timeout                   | Number   | Define the maximum number of milliseconds to wait for a response from the Generative AI provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Timeout                   | Number   | Define the maximum number of milliseconds to wait for a response from the LLM provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Maximum Completion Tokens | Slider   | Define the maximum number of tokens that can be used during a process to manage costs. However, if the limit is set too low, the output may be incomplete, as the process could be cut off before it finishes. For example, if you set the maximum tokens to 100, the model will stop generating content once it reaches 100 tokens. This number would be roughly equal to 100 words, depending on the language and tokenization method.                                                                                                                                                         |
 
 ### Image Handling
@@ -107,7 +107,7 @@ This configuration assigns an AI Agent to a job, defines its role and responsibi
 |-----------------------|--------|----------------------------------------------------------------------------------------------------------------------|
 | Log Job Execution     | Toggle | Send a debug message with the current AI Agent Job configuration. The parameter is active by default.                |
 | Log Knowledge Results | Toggle | Send a debug message containing the result from a Knowledge Search. The parameter is inactive by default.            |
-| Log Token Count       | Toggle | Send a debug message with the token count for both the request and completion. The parameter is inactive by default. |                                      |
+| Log Token Count       | Toggle | Send a debug message with the token count for both the request and completion. The parameter is inactive by default. |
 
 ## AI Agent Tool Settings
 
@@ -141,9 +141,9 @@ Configure the parameters that will be collected by the AI Agent before the tool 
 
 ### Advanced
 
-| Parameter | Type          | Description                                                                                                                                        |
-|-----------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Condition | CognigyScript | The Tool will only be enabled if the condition is evaluated as true. If false, the Tool is not part of the AI Agent's Tools within this execution. |
+| Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Condition | CognigyScript | The tool will only be enabled if the condition is evaluated as true. If false, the tool is not part of the AI Agent's Tools within this execution. For example, when using the unlock_account tool, you can specify a condition like `context.accountStatus === "locked"`. This checks the value in the context, and if it is missing or different, the tool will not be enabled. |
 
 ## Example
 
@@ -169,12 +169,12 @@ Tool configuration in JSON:
 
 where:
 
-- `type` — the type for a tool parameter schema, which must always be `"object"`.
+- `type` — the type for a tool parameter schema, which must always be `object`.
 - `properties` — defines the parameters for the tool configuration:
     - `email` — a required tool parameter for unlocking the account.
         - `type` — defines the data type for the tool parameter.
         - `description` — a brief explanation of what the property represents.
-- `required` — ensures that the specified tool parameters (in this case, `email`) must be included in the object for it to be valid. If `email` is missing, the object will be invalid.
+- `required` — lists `email` as a required parameter, ensuring that this value is always provided when the tool is called.
 - `additionalProperties` — ensures that the input contains only the `email` tool parameter, and no others are allowed.
 
 ## More Information
