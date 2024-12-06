@@ -54,7 +54,7 @@ Read more about using the Cognigy.AI API on the [API Reference Page](https://api
 
 ## Enforce Login with SSO
 
-Enforcing login with SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI installation. By default, you can log in to Cognigy.AI with your credentials or with SSO. However, you can enforce login with SSO for all users within your Cognigy.AI system or for specific organizations within your installation. In this case, users can only log in with SSO.
+Enforcing login with SSO can be useful to standardize the authentication process and meet security standards within your Cognigy.AI installation. By default, you can log in to Cognigy.AI with your credentials or with SSO. However, you can enforce login with SSO for all users across either all organizations or specific ones within your installation. In this case, users can only log in with SSO.
 
 To enforce login with SSO, proceed as follows:
 
