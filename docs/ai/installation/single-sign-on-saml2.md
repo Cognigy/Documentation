@@ -64,7 +64,7 @@ To enforce login with SSO, proceed as follows:
     - Specific organizations — if you use your credentials to log in, you receive an error message. To log in, enter your email address on the login page and click **Sign in with SSO**.
   - For on-premises installations, you can enforce login with SSO for:
     - The entire Cognigy.AI installation —  set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. The login with credentials is deactivated for all users. To log in, enter your email address on the login page and click **Sign in with SSO**. 
-    - Specific organizations — set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `false` and assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_WHITELIST` environment variable in `values.yml`. If you use your credentials to log in to the organizations listed in `DEACTIVATE_NON_SSO_LOGIN_WHITELIST`, you receive an error message. To log in, enter your email address on the log in page and click **Sign in with SSO**.
+    - Specific organizations — set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `false` and assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST` environment variable in `values.yml`. If you use your credentials to log in to the organizations listed in `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST`, you receive an error message. To log in, enter your email address on the log in page and click **Sign in with SSO**.
 
 ## Log in with SSO
 
