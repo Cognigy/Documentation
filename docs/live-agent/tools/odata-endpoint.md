@@ -52,7 +52,7 @@ The authentication can also be done using a query param such as follows:
 !!! note "OData Domain Name"
     The OData endpoint is available on a different domain to your Cognigy User Interface domain. For example, [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
 
-    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premise installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premises installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 !!! note "Excel/Power BI"
     When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication` and pass the Live Agent access token as a query parameter `&apikey=<Live Agent access-token>`

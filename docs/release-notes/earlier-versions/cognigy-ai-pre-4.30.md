@@ -914,7 +914,7 @@ More customers than ever are using our API-key feature in the product to automat
 Developers can use the so-called expert mode in the Interaction Panel to get more verbose output about certain events (e.g. when an Intent has been found) when talking to their Agents. This release adds the ability to use ++ctrl+shift+f++ to toggle the expert mode without visiting the settings panel
 
 #### Embeddable extensions
-This release of Cognigy.AI adds the ability for on-premise customers to embed certain extensions into the baseline of Cognigy.AI
+This release of Cognigy.AI adds the ability for on-premises customers to embed certain extensions into the baseline of Cognigy.AI
 
 ### Improvements
 - Added the ability to select a Locale Reference ID in a couple of nodes where this has not been possible before
@@ -948,7 +948,7 @@ This release of Cognigy.AI adds the ability for on-premise customers to embed ce
 
 ### Features
 #### Hiding Endpoints
-This release adds the possibility to hide integrated Endpoints (channel types) by defining an additional blacklist of technical Endpoint names. This can be used by our on-premise customers to hide certain Endpoints they don't want to offer to their customers.
+This release adds the possibility to hide integrated Endpoints (channel types) by defining an additional blacklist of technical Endpoint names. This can be used by our on-premises customers to hide certain Endpoints they don't want to offer to their customers.
 
 #### Alternative Playbook creation
 This release adds the ability to create playbooks from the transcript stored in Contact Profiles.
@@ -1249,7 +1249,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - added a tiny rich-text editor to our send email Nodes content field
 - added the ability to bulk-create Intent Localizations
 - added tooltips to our handover- and httpRequest-Flow Nodes in order to better explain the individual properties
-- added the ability for our on-premise customers to "trust" the code within an Extensions in order to execute them in a less secure, but highly performant way
+- added the ability for our on-premises customers to "trust" the code within an Extensions in order to execute them in a less secure, but highly performant way
 - product alignment with voice-gateway v2.4 features
 - improve NLU training stability by adjusting the TTL for Training Jobs and adjust the concept of how Training Jobs will time out
 - improve UX by removing the "Delete all Intents" functionality from the Intent Editor when a non-primary Locale is selected
@@ -1291,7 +1291,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 ### Improvements
 - added the ability to disable implicit Slot parsing for System- and Lexicon Slots
 - added the ability to use nested conditions in Flow node fields
-- added the ability to create a "super-API-key" for our on-premise customers in order to use our RESTful API without project-wide restrictions
+- added the ability to create a "super-API-key" for our on-premises customers in order to use our RESTful API without project-wide restrictions
 - improved various sections in our RESTful API documentation (OpenAPI spec)
 - added the new validation concepts which we have recently introduced into Question Nodes for Slot Fillers as well
 - improved tooltips and wording of such in various locations within our user interface

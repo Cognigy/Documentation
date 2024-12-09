@@ -18,7 +18,7 @@ Cognigy has integrated **Chatwoot** as an additional handover provider. This int
 
 ### Prerequisites
 
-- You need to have an account in [Chatwoot](https://www.chatwoot.com/). You can also set up Chatwoot to run on an [on-premise environment](https://www.chatwoot.com/docs/self-hosted).
+- You need to have an account in [Chatwoot](https://www.chatwoot.com/). You can also set up Chatwoot to run on an [on-premises environment](https://www.chatwoot.com/docs/self-hosted).
 - You need two IDs that are listed in the Chatwoot address line:
 
     - **Account ID** is a unique number for you as the user.
@@ -71,7 +71,7 @@ To connect the Endpoint to Chatwoot, do the following:
 
 1. Open your **Endpoint Editor** in Cognigy.AI and select the **Handover Settings**.
 2. Select **Chatwoot** as **Handover Platform**.
-3. Enter a Base URL for the Chatwoot instance. The Base URL is your Chatwoot installation URL extended by `/api/v1`. For example, `https://app.chatwoot.com/api/v1` serves as the Base URL, where `https://app.chatwoot.com` is the Chatwoot URL. Alternatively, you can use your on-premise Chatwoot API URL.
+3. Enter a Base URL for the Chatwoot instance. The Base URL is your Chatwoot installation URL extended by `/api/v1`. For example, `https://app.chatwoot.com/api/v1` serves as the Base URL, where `https://app.chatwoot.com` is the Chatwoot URL. Alternatively, you can use your on-premises Chatwoot API URL.
 4. Enter Chatwoot **Account ID**.
 5. Enter the **API Key**.
 6. Click **Save** to confirm the entries.
