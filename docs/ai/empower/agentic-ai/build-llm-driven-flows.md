@@ -38,7 +38,7 @@ To do so, follow these steps:
 
 1. In the Flow editor, click **+** to open the **Node Selection** menu.
 2. On the **By Function** tab, go to the **AI** tab and select the [AI Agent](../../build/node-reference/ai/ai-agent.md) Node from the list. The AI Agent Node will appear in the Flow editor.
-3. Left-click the Node to open the Flow editor.
+3. Left-click the Node to open the Node editor.
 4. Select the desired AI Agent from the AI Agent list. Configure the [rest of the fields](../../build/node-reference/ai/ai-agent.md#ai-agent-settings).
 5. Click **Save Node**.
 
