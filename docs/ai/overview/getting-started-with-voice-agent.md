@@ -13,7 +13,7 @@ You can login with your Cognigy.AI credentials or, optionally, with single sign-
 
 ### Log in with Credentials
 
-{! _includes/ai/overview/log-in-with-credentials-or-sso.md !}
+{! _includes/ai/overview/log-in-with-credentials.md !}
 
 ### Log in with SSO
 
