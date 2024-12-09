@@ -31,10 +31,7 @@ steps:
   # Step 1: Run Vale using Docker
   - script: |
       echo "Running Vale using Docker..."
-      docker run --rm -v $(pwd):/docs \
-                #  -v $(pwd)/fixtures/styles/demo:/docs \
-                 -w /docs \
-                 jdkato/vale .
+      docker run --rm -v $(pwd):/docs -w /docs jdkato/vale .
     displayName: 'Run Vale in Docker'
 
   # Step 4: Publish Vale Report as Artifact
