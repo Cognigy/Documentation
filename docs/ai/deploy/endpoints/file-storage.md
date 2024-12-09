@@ -20,7 +20,7 @@ After uploading a file to the chat interface, the file will be saved in the stor
 
 ## Supported Endpoints
 
-The File Storage section is supported by the following Endpoints:
+You can use the File Storage section in the following Endpoints:
 
 - [8x8](../endpoint-reference/8x8.md)
 - [Alexa](../endpoint-reference/amazon-alexa.md)
@@ -43,3 +43,34 @@ To test file uploads for the Webchat v2 and Webchat v3 Endpoints, use [Demo Webc
 For other Endpoints, testing only works in the production environment. 
 Upload a file to the chat interface and go to the file storage on your provider's side.
 If the file appears in the storage, then file uploads work correctly.
+
+## Access Files in the Input Object
+
+By default, uploaded files are recorded in the `input.data.attachments` array. 
+Each file contains a URL pointing to the uploaded file.
+
+## Resize Images
+
+For image file types, such as JPEG, PNG, GIF, WebP, and others, you can automatically resize images based on the query parameters in the URL. 
+The available parameters are in the table.
+
+| Query Parameter          | Description                                             |
+|--------------------------|---------------------------------------------------------|
+| `maxWidth`               | The maximum width of the image.                         |
+| `maxHeight`              | The maximum height of the image.                        |
+| `maxFileSizeInBytes`     | The maximum file size of the image, specified in bytes. |
+
+#### Use Cases
+
+| Use Case                      | Description                                                                                                                                       | Example                                                                                          | URL Example                                                             |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Use original Attachment URL   | An attachment is uploaded with the original URL.                                                                                                  | The image has dimensions of 3840 x 2160 and a size of 8 MB.                                      | `https://files-trial.cognigy.ai/123/456/789`                            |
+| Resize to Specific Dimensions | When `maxWidth` and `maxHeight` parameters are provided, the image will be resized to fit within those bounds while maintaining its aspect ratio. | To resize the image to a maximum of 640x480, append the `maxWidth` and `maxHeight` parameters.   | `https://files-trial.cognigy.ai/123/456/789?maxWidth=640&maxHeight=480` |
+| Limit File Size               | If the `maxFileSizeInBytes` parameter is provided, the image quality is gradually reduced until the image file size meets the specified limit.    | To ensure the image is less than 100 KB (102,400 bytes), use the `maxFileSizeInBytes` parameter. | `https://files-trial.cognigy.ai/123/456/789?maxFileSizeInBytes=102400`  |
+
+#### HTTP Error Codes
+
+| Error Code | Description                                                                                                                             |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| `500`      | Returns if the image can't be resized according to the specified parameters. For example, if the `maxFileSizeInBytes` can't be reached. |
+
