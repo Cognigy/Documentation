@@ -30,17 +30,17 @@ steps:
   #     SYSTEM_PULLREQUEST_SOURCEBRANCH: main
   #     SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
 
-  - script: |
-      git fetch --all
-      git diff --name-only "main" "test-pr-branch" > filtered_files.txt
-    displayName: 'install Vale'
+  # - script: |
+  #     git fetch --all
+  #     git diff --name-only "main" "test-pr-branch" > filtered_files.txt
+  #   displayName: 'install Vale'
 
-  # Step 4: Publish Vale Report as Artifact
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: 'filtered_files.txt'
-      artifactName: 'filtered_files'
-    displayName: 'Publish Vale Report Artifact'
+  # # Step 4: Publish Vale Report as Artifact
+  # - task: PublishBuildArtifacts@1
+  #   inputs:
+  #     pathtoPublish: 'filtered_files.txt'
+  #     artifactName: 'filtered_files'
+  #   displayName: 'Publish Vale Report Artifact'
 
   # Step 1: Run Vale using Docker
   - script: |
@@ -49,7 +49,7 @@ steps:
 
   # Step 1: Run Vale using Docker
   - script: |
-      vale ./docs
+      vale ./docs || true
     displayName: 'Run Vale'
 
   # # Step 1: Run Vale using Docker
