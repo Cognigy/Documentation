@@ -7,6 +7,8 @@ hidden: false
 
 # File Storage
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../../release-notes/4.91.md)
+
 By default, users cannot attach files to chat messages.
 To enable file uploads via drag and drop or the Attach file button,
 you must connect your Endpoint to a third-party storage provider.
