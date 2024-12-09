@@ -31,6 +31,7 @@ steps:
   #     SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
 
   - script: |
+      git fetch --all
       git diff --name-only "main" "test-pr-branch" > filtered_files.txt
     displayName: 'install Vale'
 
