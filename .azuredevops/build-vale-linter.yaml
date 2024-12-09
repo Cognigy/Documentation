@@ -27,8 +27,8 @@ steps:
     displayName: 'Identify Modified Files'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-      SYSTEM_PULLREQUEST_SOURCEBRANCH: $(System.PullRequest.SourceBranch)
-      SYSTEM_PULLREQUEST_TARGETBRANCH: $(System.PullRequest.TargetBranch)
+      SYSTEM_PULLREQUEST_SOURCEBRANCH: main
+      SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
 
   # Step 4: Publish Vale Report as Artifact
   - task: PublishBuildArtifacts@1
