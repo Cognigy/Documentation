@@ -32,12 +32,6 @@ Before using the Agentic AI feature, you need:
     - A primary model to control the AI Agent. It can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](../llms/providers/anthropic.md).
     - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
 
-## Use Cases
-
-- **Using AI Agent Persona.** You can create various AI Agent personas to align conversations with their brand's tone and identity. This approach allows for more personalized, consistent, and brand-focused customer interactions.
-- **Developing Tools**. Equip your AI Agent with a robust collection of tools to manage various tasks, with each task assigned to its own Node. This approach eliminates the need to create multiple Nodes or sub-Flows for a single task.
-- **Using Agent-to-Agent Communication**. You can add multiple AI Agents with different roles to work together in one Flow. This teamwork helps the AI Agents complete specific tasks more efficiently and improves the user experience. For example, a customer support AI Agent can collaborate with a sales inquiry AI Agent. Together, they can quickly answer customer questions and provide personalized product recommendations.
-
 ## Concepts
 
 - [AI Agent Management](#ai-agent-management)
@@ -49,7 +43,7 @@ _AI Agent Management_ refers to the workspace used control AI Agents within a Pr
 This workspace includes the creation, modification, and deletion of AI Agents. 
 With AI Agent Management, you can effectively build autonomous AI Agents for specific roles, tasks, and workflows.
 
-#### Custom AI Agents
+#### AI Agent Creation
 
 You can create AI Agents tailored to meet specific business needs.
 Designing these AI Agents allows you to handle a wide range of tasks, such as providing customer support, driving sales, automating data analysis, and more.
@@ -66,9 +60,9 @@ The table shows available AI Agents for hire.
 | **Anna** <br> <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" alt="Anna" width="50">  | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                               |
 | **Sophie** <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" alt="Sophie" width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Dining Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
 
-### LLM-driven Flow Design
+### AI Agents - a new conversational paradigm
 
-_LLM-Driven Flow Design_ involves using large language models (LLMs) to power Flows and allowing AI Agents to manage decision-making processes within a conversation. This design pattern ensures that AI Agents can understand and process complex tasks, interact with tools, and make decisions autonomously within a defined Flow.
+AI Agents autonomously perform a lot of tasks which in previous conversational AI deployments had to be manually developed, such as intent detection and management, decision making, entity extraction, etc. All of these are now configured as part of the AI Agent.
 
 #### AI Agent Node
 
@@ -81,12 +75,12 @@ For example, you could include instructions for executing an API call, processin
 
 ##### Tool Actions
 
-_Tool Actions_ represent specific tasks that an AI Agent needs to perform within a Flow. 
-A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to interact with external services to accomplish a particular job, such as calling an API or processing data.
+_Tool Actions_ represent specific tasks that an AI Agent can perform. 
+A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to for example interact with external services such as an API or to execute a number of rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
 
 ##### Tool Calls
 
-_Tool Calls_ occur when the AI Agent decides to use a Tool Action and sends a request to the LLM to execute it.
+_Tool Calls_ occur when the AI Agent decides to use a Tool Action and executed the branch underneath the Tool Action node.
 
 #### Resolve Tool Action Node
 
@@ -98,12 +92,7 @@ This approach helps the AI Agent process and make decisions based on the results
 
 #### AI Agent Handover Node
 
-The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md) enables smooth Agent-to-Agent handovers, allowing multiple AI Agents to collaborate and take over tasks to efficiently resolve complex customer inquiries.
-
-#### Add Memory Node
-
-The [Add Memory Node](../../build/node-reference/analytics/add-memory.md) stores memories within the [Contact Profile](../../analyze/contact-profiles.md),
-enabling AI Agents to recall and reference past interactions for better future conversations.
+The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md) enables smooth AI Agent-to-AI Agent handovers, allowing multiple AI Agents to collaborate and take over tasks to efficiently resolve complex customer inquiries.
 
 #### Transcript Nodes
 
@@ -122,6 +111,5 @@ The [Add Transcript Steps Node](../../build/node-reference/service/add-transcrip
 
 - [Getting Started](getting-started.md)
 - [Manage AI Agents](manage-ai-agents.md)
-- [Build LLM-Driven Flows](build-llm-driven-flows.md)
 - [LLMs](../llms/overview.md)
 - [Knowledge AI](../knowledge-ai/overview.md)
