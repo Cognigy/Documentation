@@ -1,7 +1,7 @@
 ---
 title: "Resolve Tool Action"
 slug: "resolve-tool-action"
-description: "The Resolve Tool Action Node is used to handle the result of a tool action that was triggered by the AI Agent."
+description: "The Resolve Tool Action Node sends a response to a tool call to the AI Agent after completing a tool action."
 hidden: false
 ---
 
@@ -15,7 +15,8 @@ hidden: false
 
 {! _includes/ai/beta.md !}
 
-The Resolve Tool Action Node is used to handle the result of a [tool action](ai-agent.md#ai-agent-tool-settings) that was triggered by the AI Agent.
+The Resolve Tool Action Node sends a response to a tool call to the AI Agent after completing a [tool action](ai-agent.md#ai-agent-tool).
+
 When the AI Agent calls a tool to perform an action, the tool action is executed.
 Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
 indicating the result of that action.
@@ -23,9 +24,9 @@ This approach helps the AI Agent process and make decisions based on the results
 
 ## Settings
 
-| Parameter     | Type          | Description                                                                                                  |
-|---------------|---------------|--------------------------------------------------------------------------------------------------------------|
-| Answer Text   | CognigyScript | Add the text that serves as the AI Agent's response to confirm that the requested action has been completed. |
+| Parameter   | Type          | Description                                                                                                                                          |
+|-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Answer Text | CognigyScript | Specify the text that is sent to the AI Agent in response to the tool call to inform it about success, failure, or other details of the Tool Action. |
 
 ### Debug Settings
 
