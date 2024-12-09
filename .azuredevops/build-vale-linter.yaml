@@ -30,9 +30,19 @@ steps:
 
   # Step 1: Run Vale using Docker
   - script: |
-      echo "Running Vale using Docker..."
-      docker run --rm -v $(pwd):/docs -w /docs jdkato/vale .
-    displayName: 'Run Vale in Docker'
+      sudo snap install vale
+    displayName: 'install Vale'
+
+  # Step 1: Run Vale using Docker
+  - script: |
+      vale ./docs
+    displayName: 'Run Vale'
+
+  # # Step 1: Run Vale using Docker
+  # - script: |
+  #     echo "Running Vale using Docker..."
+  #     docker run --rm -v $(pwd):/docs -w /docs jdkato/vale .
+  #   displayName: 'Run Vale in Docker'
 
   # Step 4: Publish Vale Report as Artifact
   - task: PublishBuildArtifacts@1
