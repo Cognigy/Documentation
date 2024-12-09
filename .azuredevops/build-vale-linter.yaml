@@ -10,15 +10,6 @@ pool:
   vmImage: ubuntu-20.04
 
 steps:
-  # Step 1: Run Vale using Docker
-  - script: |
-      echo "Running Vale using Docker..."
-      docker run --rm -v $(pwd)/docs:/docs \
-                 -v $(pwd)/fixtures/styles/demo:/docs \
-                 -w /docs \
-                 jdkato/vale .
-    displayName: 'Run Vale in Docker'
-
   # Step 2: Identify Modified Files in the PR
   - script: |
       echo "Configuring Git to use the Azure DevOps token..."
@@ -37,18 +28,34 @@ steps:
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 
-  # Step 3: Run Vale on Filtered Files
+  # Step 1: Run Vale using Docker
   - script: |
-      echo "Running Vale on modified Markdown files..."
-      FILTERED_FILES=$(cat filtered_files.txt)
-      if [ -z "$FILTERED_FILES" ]; then
-        echo "No Markdown files to lint. Skipping."
-        exit 0
-      fi
+      echo "Running Vale using Docker..."
+      docker run --rm -v $(pwd)/docs:/docs \
+                 -v $(pwd)/fixtures/styles/demo:/docs \
+                 -w /docs \
+                 jdkato/vale .
+    displayName: 'Run Vale in Docker'
+
+  # Step 4: Publish Vale Report as Artifact
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: 'filtered_files.txt'
+      artifactName: 'filtered_files'
+    displayName: 'Publish Vale Report Artifact'
+
+  # Step 3: Run Vale on Filtered Files
+  # - script: |
+  #     echo "Running Vale on modified Markdown files..."
+  #     FILTERED_FILES=$(cat filtered_files.txt)
+  #     if [ -z "$FILTERED_FILES" ]; then
+  #       echo "No Markdown files to lint. Skipping."
+  #       exit 0
+  #     fi
       
-      vale $FILTERED_FILES --output=JSON > vale-report.json || exit 1
-      echo "Vale linting completed. Report saved to vale-report.json."
-    displayName: 'Run Vale Linter'
+  #     vale $FILTERED_FILES --output=JSON > vale-report.json || exit 1
+  #     echo "Vale linting completed. Report saved to vale-report.json."
+  #   displayName: 'Run Vale Linter'
 
   # Step 4: Publish Vale Report as Artifact
   - task: PublishBuildArtifacts@1
