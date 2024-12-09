@@ -72,7 +72,7 @@ To create an AI Agent, select one of the following options:
     1. Open the Cognigy.AI interface.
     2. In the left-side menu on the **Projects** page, select a Project.
     3. In the left-side menu on the **Project** page, select **Build > AI Agents**.
-    4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page, displaying a list of AI Agent job seekers, will open.
+    4. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page displays a list of available AI Agents to hire.
     5. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
     6. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
     7. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
@@ -92,14 +92,14 @@ To edit an AI Agent, follow these steps:
 You can reassign your custom AI Agent to take on the responsibilities of the hired AI Agent.
 To do this, hire an AI Agent from the Job Market
 and configure their interaction by defining which functions and personality traits should be combined.
-This approach lets combine the strengths of both AI Agents: ready-made job functions from the hired AI Agent and your brand's AI Agent persona from your custom AI Agent.
+This approach lets you combine the strengths of both AI Agents: ready-made job functions from the hired AI Agent and your brand's AI Agent persona from your custom AI Agent.
 
 To combine custom and hired AI Agents, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu of the **Projects** page, select a Project.
 3. In the left-side menu of the **Project** page, select **Build > AI Agents**.
-4. On the **AI Agents** page, select **+ Hire AI Agent**. The **Job Market** page will display a list of AI Agent job seekers. 
+4. On the **AI Agents** page, select **+ Hire AI Agent**. The **Job Market** page displays a list of available AI Agents to hire.
 5. Hover your cursor over the desired AI Agent template and click ![expand](../../../_assets/icons/expand.svg) **> Hire & Configure**.
 6. In the **Select an AI Agent to Combine** window, use the search field to find an AI Agent by name, then select the AI Agent from the list.
 7. Click **Combine**. This action will trigger the **Hire AI Agent** and **Merge Package** tasks in the Task Manager.
