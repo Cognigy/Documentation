@@ -10,29 +10,29 @@ pool:
   vmImage: ubuntu-20.04
 
 steps:
-  # Step 2: Identify Modified Files in the PR
-  - script: |
-      echo "Configuring Git to use the Azure DevOps token..."
-      git config --global credential.helper store
-      echo "https://:$SYSTEM_ACCESSTOKEN@$(System.CollectionUri)" > ~/.git-credentials
+  # # Step 2: Identify Modified Files in the PR
+  # - script: |
+  #     echo "Configuring Git to use the Azure DevOps token..."
+  #     git config --global credential.helper store
+  #     echo "https://:$SYSTEM_ACCESSTOKEN@$(System.CollectionUri)" > ~/.git-credentials
 
-      echo "Fetching target branch and identifying modified Markdown files..."
-      echo "Target Branch: $SYSTEM_PULLREQUEST_TARGETBRANCH"
-      echo "Source Branch: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
+  #     echo "Fetching target branch and identifying modified Markdown files..."
+  #     echo "Target Branch: $SYSTEM_PULLREQUEST_TARGETBRANCH"
+  #     echo "Source Branch: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
       
-      mkdir -p vale_bin
-      git fetch origin "$SYSTEM_PULLREQUEST_TARGETBRANCH" || exit 1
-      MODIFIED_FILES=$(git diff --name-only origin/"$SYSTEM_PULLREQUEST_TARGETBRANCH"..origin/"$SYSTEM_PULLREQUEST_SOURCEBRANCH")
-      echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
-    displayName: 'Identify Modified Files'
-    env:
-      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  #     mkdir -p vale_bin
+  #     git fetch origin "$SYSTEM_PULLREQUEST_TARGETBRANCH" || exit 1
+  #     MODIFIED_FILES=$(git diff --name-only origin/"$SYSTEM_PULLREQUEST_TARGETBRANCH"..origin/"$SYSTEM_PULLREQUEST_SOURCEBRANCH")
+  #     echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
+  #   displayName: 'Identify Modified Files'
+  #   env:
+  #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 
   # Step 1: Run Vale using Docker
   - script: |
       echo "Running Vale using Docker..."
-      docker run --rm -v $(pwd)/docs:/docs \
-                 -v $(pwd)/fixtures/styles/demo:/docs \
+      docker run --rm -v $(pwd):/docs \
+                #  -v $(pwd)/fixtures/styles/demo:/docs \
                  -w /docs \
                  jdkato/vale .
     displayName: 'Run Vale in Docker'
