@@ -10,23 +10,32 @@ pool:
   vmImage: ubuntu-20.04
 
 steps:
-  # # Step 2: Identify Modified Files in the PR
-  # - script: |
-  #     echo "Configuring Git to use the Azure DevOps token..."
-  #     git config --global credential.helper store
-  #     echo "https://:$SYSTEM_ACCESSTOKEN@$(System.CollectionUri)" > ~/.git-credentials
+  # Step 2: Identify Modified Files in the PR
+  - script: |
+      echo "Configuring Git to use the Azure DevOps token..."
+      git config --global credential.helper store
+      echo "https://:$SYSTEM_ACCESSTOKEN@$(System.CollectionUri)" > ~/.git-credentials
 
-  #     echo "Fetching target branch and identifying modified Markdown files..."
-  #     echo "Target Branch: $SYSTEM_PULLREQUEST_TARGETBRANCH"
-  #     echo "Source Branch: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
+      echo "Fetching target branch and identifying modified Markdown files..."
+      echo "Target Branch: $SYSTEM_PULLREQUEST_TARGETBRANCH"
+      echo "Source Branch: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
       
-  #     mkdir -p vale_bin
-  #     git fetch origin "$SYSTEM_PULLREQUEST_TARGETBRANCH" || exit 1
-  #     MODIFIED_FILES=$(git diff --name-only origin/"$SYSTEM_PULLREQUEST_TARGETBRANCH"..origin/"$SYSTEM_PULLREQUEST_SOURCEBRANCH")
-  #     echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
-  #   displayName: 'Identify Modified Files'
-  #   env:
-  #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+      mkdir -p vale_bin
+      git fetch origin "$SYSTEM_PULLREQUEST_TARGETBRANCH" || exit 1
+      MODIFIED_FILES=$(git diff --name-only origin/"$SYSTEM_PULLREQUEST_TARGETBRANCH"..origin/"$SYSTEM_PULLREQUEST_SOURCEBRANCH")
+      echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
+    displayName: 'Identify Modified Files'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+      SYSTEM_PULLREQUEST_SOURCEBRANCH: $(System.PullRequest.SourceBranch)
+      SYSTEM_PULLREQUEST_TARGETBRANCH: $(System.PullRequest.TargetBranch)
+
+  # Step 4: Publish Vale Report as Artifact
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: 'filtered_files.txt'
+      artifactName: 'filtered_files'
+    displayName: 'Publish Vale Report Artifact'
 
   # Step 1: Run Vale using Docker
   - script: |
@@ -44,12 +53,7 @@ steps:
   #     docker run --rm -v $(pwd):/docs -w /docs jdkato/vale .
   #   displayName: 'Run Vale in Docker'
 
-  # Step 4: Publish Vale Report as Artifact
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: 'filtered_files.txt'
-      artifactName: 'filtered_files'
-    displayName: 'Publish Vale Report Artifact'
+
 
   # Step 3: Run Vale on Filtered Files
   # - script: |
