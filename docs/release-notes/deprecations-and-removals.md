@@ -18,7 +18,7 @@ and other external connectors.
 - **Deprecations**. A feature is considered as outdated and no longer recommended for use, with support limited to critical fixes only. The deprecation process starts with an announcement and continues until the feature is removed in future releases.
 - **Removals**. A feature is completely removed and no longer supported after the specified removal date.
 
-## Platform Features
+## Cognigy Features
 
 The table lists Cognigy features that are deprecated and will be removed in future releases.
 
