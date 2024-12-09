@@ -251,7 +251,7 @@ Result:
 
 ### Unique Contacts
 
-Displays the number of unique users (`userid`) over a selected time frame. If a user has multiple sessions in a single day, they are counted as one unique contact for that day.
+Displays the number of unique users (`userid`) over a selected time span. If a user has multiple sessions in a single day, they are counted as one unique contact for that day.
 
 Source table:
 

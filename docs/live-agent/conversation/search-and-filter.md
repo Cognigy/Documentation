@@ -41,21 +41,21 @@ You can find all conversations where other agents mentioned you. To do so, follo
 
 You can filter conversations using the filters mentioned in the table below. Multiple filters can be combined using the `AND` and `OR` operators.
 
-| Filter Name             | Description                                                                                  |
-|-------------------------|----------------------------------------------------------------------------------------------|
-| Status                  | Filters data based on the current conversation [status](overview.md#conversation-lifecycle). |
-| Assignee Name           | Filters based on the human agent responsible for a conversation.                             |
-| Inbox Name              | Filters based on conversations associated with a specific Inbox.                             |
-| Team Name               | Filters data related to a particular team.                                                   |
-| Conversation Identifier | Filters based on a unique identifier for a conversation.                                     |
-| Cognigy Session ID      | Filters based on a unique identifier for a session within the Cognigy.AI platform.           |
-| Cognigy User ID         | Filters based on a unique identifier for a user within the Cognigy.AI platform.              |
-| Labels                  | Filters based on tags assigned to conversations for categorization and easy filtering.       |
-| Created At              | Filters based on the timestamp of when an conversation was created.                          |
-| First Reply Created At  | Filters based on the timestamp of the first reply to an conversation.                        |
-| Last Activity           | Filters based on the timestamp of the last activity on an conversation.                      |
-| Priority                | Filters based on the priority level assigned to an conversation.                             |
-| Cognigy Channel Type    | Filters based on the type of channel or communication platform within Cognigy.AI.            |
+| Filter Name             | Description                                                                                   |
+|-------------------------|-----------------------------------------------------------------------------------------------|
+| Status                  | Filters data based on the current conversation [status](overview.md#conversation-life-cycle). |
+| Assignee Name           | Filters based on the human agent responsible for a conversation.                              |
+| Inbox Name              | Filters based on conversations associated with a specific Inbox.                              |
+| Team Name               | Filters data related to a particular team.                                                    |
+| Conversation Identifier | Filters based on a unique identifier for a conversation.                                      |
+| Cognigy Session ID      | Filters based on a unique identifier for a session within the Cognigy.AI platform.            |
+| Cognigy User ID         | Filters based on a unique identifier for a user within the Cognigy.AI platform.               |
+| Labels                  | Filters based on tags assigned to conversations for categorization and easy filtering.        |
+| Created At              | Filters based on the timestamp of when an conversation was created.                           |
+| First Reply Created At  | Filters based on the timestamp of the first reply to an conversation.                         |
+| Last Activity           | Filters based on the timestamp of the last activity on an conversation.                       |
+| Priority                | Filters based on the priority level assigned to an conversation.                              |
+| Cognigy Channel Type    | Filters based on the type of channel or communication platform within Cognigy.AI.             |
 
 ### Save a Filter
 
@@ -106,7 +106,7 @@ To sort conversations by status and specified characteristics, follow these step
     - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can grant access through the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations). 
 5. Above the tabs, click ![arrows](../../_assets/live-agent/icons/arrows.svg).
 6. In the **Sort Conversations** window, select the following options:
-    - **Status** — select a conversation [status](overview.md#conversation-lifecycle) you want to search for. Available statuses are `Open`, `Pending`, `Resolved`, `Snoozed`, and `Abandoned`.<br>
+    - **Status** — select a conversation [status](overview.md#conversation-life-cycle) you want to search for. Available statuses are `Open`, `Pending`, `Resolved`, `Snoozed`, and `Abandoned`.<br>
     - **Order by** — select one of the available options:
         - **Oldest** — sorts conversations by the longest active ones. By default, the **Unassigned** tab shows the oldest at the top of the list.
         - **Last activity** — sorts conversations by the most recent user or human agent interaction, displaying the most recently active conversations at the top of the list.

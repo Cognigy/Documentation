@@ -75,7 +75,7 @@ This process contains the following steps:
       <figcaption>Delete Organization</figcaption>
     </figure>
 
-2. Once the system administrator receives the email, they will be able to click on the provided link to the [Management UI](../../access/management-ui.md) with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.
+2. Once the system administrator receives the email, they will be able to click the provided link to the [Management UI](../../access/management-ui.md) with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.
 
     <figure>
       <img class="image-center" src="../../../../../_assets/ai/administer/access/deleteOrg-request-email.png" width="100%" />
