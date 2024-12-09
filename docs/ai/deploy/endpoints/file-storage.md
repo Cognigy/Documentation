@@ -75,4 +75,3 @@ The available parameters are in the table.
 | Error Code | Description                                                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `500`      | Returns if the image can't be resized according to the specified parameters. For example, if the `maxFileSizeInBytes` can't be reached. |
-
