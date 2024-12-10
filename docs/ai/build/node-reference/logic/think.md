@@ -42,4 +42,4 @@ and execution resumes from the beginning of the parent Flow at its Start node.
 
 ## Alternatives
 
-When you need to process user input or other text in the middle of a Flow to retrieve an NLU result, and you do not want to restart the Flow from the Start Node, use the [Execute Cognigy NLU Node](../nlu/execute-cognigy-nlu.md).
+When you need to process user input or other text in the middle of a Flow to retrieve an NLU result, and you do not want to restart the Flow from the Start Node, use the [Execute Cognigy NLU Node](../ai/execute-cognigy-nlu.md).

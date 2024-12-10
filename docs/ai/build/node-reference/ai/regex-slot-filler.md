@@ -6,7 +6,7 @@
 # Regex Slot Filler
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/nlu/regex-slot-filler.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/regex-slot-filler.png" width="80%" />
 </figure>
 
 ## Description

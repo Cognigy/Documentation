@@ -1,6 +1,22 @@
-# What's Cognigy.AI?
+---
+title: "About Cognigy.AI Platform"
+slug: "cognigy-ai-platform"
+description: "Cognigy.AI is an AI customer experience orchestration platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction."
+hidden:  false
+---
 
-_Cognigy.AI_ is an AI Customer Experience Orchestration Platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction.
+# About Cognigy.AI Platform
+
+_The Cognigy.AI platform_ is an AI customer experience orchestration platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction.
+
+<figure>
+  <img class="image-center" src="../../../_assets/ai/overview/cognigy-orchestration.png" width="100%" />
+  <figcaption>The orchestration engine</figcaption>    
+</figure>
+
+## Cognigy.AI Platform Products
+
+### Cognigy.AI
 
 The Cognigy.AI interface provides conversation designers with a range of powerful tools and features
 to create and manage voice and chat assistants.
@@ -8,13 +24,6 @@ It serves as an Integrated Development Environment (IDE)
 that simplifies the development process and enables designers to create engaging user experiences.
 The interface helps conversation designers build and refine conversational flows, test and analyze user interactions,
 and quickly deploy voice and chat assistants across multiple channels.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/overview/cognigy-orchestration.png" width="100%" />
-  <figcaption>The orchestration engine</figcaption>    
-</figure>
-
-## Other Cognigy Products
 
 ### Voice Gateway
 

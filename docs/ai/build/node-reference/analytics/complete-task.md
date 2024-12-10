@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/complete-task.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/analytics/complete-task.png" width="80%" />
 </figure>
 
 ## Description
