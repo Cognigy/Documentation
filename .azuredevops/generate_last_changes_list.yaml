@@ -34,10 +34,10 @@ stages:
             displayName: Run script to generate last changes list
 
           - script: ls -R $(System.DefaultWorkingDirectory)
-          displayName: Debug: List all files and directories
+            displayName: Debug: List all files and directories
 
           - script: find $(System.DefaultWorkingDirectory) -name "file_changes_all.txt"
-          displayName: Debug: Find generated file
+            displayName: Debug: Find generated file
 
           # Publish the output file as a pipeline artifact
           - task: PublishBuildArtifacts@1
