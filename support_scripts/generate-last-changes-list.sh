@@ -4,19 +4,19 @@
 
 # Step 1: Define the target directories
 TARGET_DIRS=(
-  "../docs/ai"
-  "../docs/ai-copilot"
-  "../docs/help"
-  "../docs/insights"
-  "../docs/live-agent"
-  "../docs/pci-vault"
-  "../docs/voice-gateway"
-  "../docs/webchat"
-  "../docs/xApps"
+  "docs/ai"
+  "docs/ai-copilot"
+  "docs/help"
+  "docs/insights"
+  "docs/live-agent"
+  "docs/pci-vault"
+  "docs/voice-gateway"
+  "docs/webchat"
+  "docs/xApps"
 )
 
 # Step 2: Output file
-OUTPUT_FILE="$(pwd)/../last_changes/file_changes_all.txt"
+OUTPUT_FILE="$(pwd)/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
 # Step 3: Loop through the target directories
