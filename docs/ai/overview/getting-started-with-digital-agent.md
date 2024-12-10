@@ -1,7 +1,22 @@
 # Build Your Digital AI Agent in Minutes
 
-In this tutorial, you will learn how to create a simple digital AI Agent from scratch that greets you by name.
-Then you will test this agent using built-in Cognigy testing tools.
+In this tutorial, you will learn how to create a simple digital AI Agent from scratch that greets you by name. Then you will test this agent using built-in Cognigy.AI testing tools.
+
+## Prerequisites
+
+- You need to have access to a Cognigy.AI account.
+
+## Log in to Cognigy.AI
+
+You can log in with your Cognigy.AI credentials or, optionally, with single sign-on (SSO), if you have [set up login with SSO](../../ai/installation/single-sign-on-saml2.md). If [login with SSO is enforced](../../ai/installation/single-sign-on-saml2.md#enforce-login-with-sso), you can only log in with SSO.
+
+### Log in with Credentials
+
+{! _includes/ai/overview/log-in-with-credentials.md !}
+
+### Log in with SSO
+
+{! _includes/ai/overview/log-in-with-sso.md !}
 
 {! _includes/ai/overview/create-projects.md !}
 

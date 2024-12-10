@@ -29,10 +29,10 @@ After creating an application, you can edit or delete it.
 | Settings                                                | Description                                                                                                                                                                                                 | Scope                            |
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | Application Name                                        | A unique application name.                                                                                                                                                                                  | Account, Service Provider, Admin |
-| Account                                                 | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin | 
+| Account                                                 | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin |
 | Calling Webhook                                         | A Cognigy.AI Endpoint URL for the Web Application that will handle calls. Specify your Endpoint URL from the Voice Gateway Endpoint. Select the **POST** request type.                                      | Account, Service Provider, Admin |
-| Call Status Webhook                                     | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status. Specify your Endpoint URL from the Voice Gateway Endpoint. Select the **POST** request type.                           | Account, Service Provider, Admin | 
-| Speech synthesis vendor                                 | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
+| Call Status Webhook                                     | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status. Specify your Endpoint URL from the Voice Gateway Endpoint. Select the **POST** request type.                           | Account, Service Provider, Admin |
+| Speech synthesis vendor                                 | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin |
 | Speech recognizer vendor                                | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
 | Use a fallback speech vendor if primary fails           | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
 | Perform a fallback transfer if webhook connection fails | [Redirect a call](#call-forwarding) if the connection to Cognigy.AI is unavailable for any reason.                                                                                                          | Account, Service Provider, Admin |
@@ -114,9 +114,7 @@ All calls from this application will be recorded and appear in the [Recent calls
 
 ## Call Forwarding
 
-When Voice Gateway fails to establish a connection with Cognigy.AI at the beginning of a call, you can forward calls to another number. For example, if the Cognigy.AI AI Agent is unavailable,
-the call will be redirected to the Contact Center, where a human agent,
-instead of an AI Agent, will assist your customer with the issue.
+When Voice Gateway fails to establish a connection with Cognigy.AI at the beginning of a call, you can forward the call to another number. For example, if an AI Agent is unavailable, the call is redirected, for example, to a contact center, where a human agent could help the customer. If the call forwarded to the contact center fails, Voice Gateway terminates the connection.
 
 To configure call forwarding, follow these steps:
 
