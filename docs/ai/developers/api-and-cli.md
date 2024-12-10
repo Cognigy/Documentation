@@ -24,7 +24,7 @@ The table outlines the base URLs for different environments.
 | App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                                                                                                                                                         |
 | App-US                   | `https://api-app-us.cognigy.ai/openapi`                                                                                                                                                                                              |
 | Dedicated SaaS           | Use the following pattern `https://api-<company-name>.cognigy.cloud/openapi`, where `company-name` is your company name. For example, if your company name is `abc123`, the URL would be `https://api-abc123.cognigy.cloud/openapi`. |                                                                                                      |
-| On-Premises Installations | Specify the API URL as the value for the environment variable `BACKEND_BASE_URL_WITH_PROTOCOL` in your Cognigy.AI `values.yaml` file.                                                                                                | 
+| On-premises installations | Specify the API URL as the value for the environment variable `BACKEND_BASE_URL_WITH_PROTOCOL` in your Cognigy.AI `values.yaml` file.                                                                                                | 
 
 ### Manage API Keys
 
