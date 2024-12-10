@@ -43,5 +43,5 @@ stages:
           - task: PublishBuildArtifacts@1
             displayName: Publish changes list
             inputs:
-              PathtoPublish: /home/vsts/work/1/last_changes/file_changes_all.txt
+              PathtoPublish: /home/vsts/work/1/s/last_changes/file_changes_all.txt
               ArtifactName: last-changes-list
