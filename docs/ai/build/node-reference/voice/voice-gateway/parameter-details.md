@@ -68,7 +68,7 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
 
 !!! Warning
-Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
+    Enabled Barge-In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge-In may lead to increased subscription costs with your vendor.
 
 Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
 
@@ -182,47 +182,47 @@ If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-c
 
 #### List of Additional Session Parameters
 
-| Feature                | Parameter               | Description                                                                                                      | Type             | Example                                    |
-|------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------|
-| **User Input Timeout** | `user`                  | The [User Input Timeout](#user-input-timeout) feature.                                                           | Object           | -                                          |
-|                        | `noInputMode`           | The mode when no input is detected. Possible values: `"event"`, `"speech"`, `"play"`.                            | String           | `"speech"`                                 |
-|                        | `noInputTimeout`        | The timeout duration for no input (in milliseconds).                                                             | Number           | `5000` (5 seconds)                         |
-|                        | `noInputRetries`        | The number of retries allowed when no input is detected.                                                         | Number           | `3`                                        |
-|                        | `noInputSpeech`         | The speech to play when no input is detected.                                                                    | String           | `"Please speak now."`                      |
-|                        | `noInputUrl`            | The URL to fetch audio when no input is detected.                                                                | String           | `"https://example.com/no-input-audio.mp3"` |
-| **Flow Input Timeout** | `flow`                  | The [Flow Input Timeout](#flow-input-timeout) feature.                                                           | Object           | `{}`                                       |
-|                        | `flowNoInputEnable`     | Enables no-input handling for Flows.                                                                             | Boolean          | `true`                                     |
-|                        | `flowNoInputMode`       | The mode when no input is detected in a Flow. Possible values: `"speech"`, `"play"`.                             | String           | `"play"`                                   |
-|                        | `flowNoInputTimeout`    | The timeout duration for no input in a Flow (in milliseconds).                                                   | Number           | `3000` (3 seconds)                         |
-|                        | `flowNoInputRetries`    | The number of retries for no input in a Flow.                                                                    | Number           | `2`                                        |
-|                        | `flowNoInputSpeech`     | The speech to play for no input in a Flow.                                                                       | String           | `"Please try again."`                      |
-|                        | `flowNoInputUrl`        | The URL to fetch audio for no input in a Flow.                                                                   | String           | `"https://example.com/flow-no-input.mp3"`  |
-|                        | `flowNoInputFail`       | Indicates whether to fail the Flow on no input.                                                                  | Boolean          | `true`                                     |
-| **Recognizer**         | `recognizer`            | The [Recognizer - Speech-To-Text](#recognizer---speech-to-text) feature.                                         | Object           | -                                          |
-|                        | `vendor`                | The vendor for speech recognition. Possible values: `"google"`, `"microsoft"`, or other available vendors.       | String           | `"google"`                                 |
-|                        | `language`              | The language for speech recognition.                                                                             | String           | `"de-DE"`                                  |
-|                        | `hints`                 | A list of hints to improve recognition accuracy.                                                                 | Array of strings | `["help", "skip", "confirm"]`              |
-|                        | `hintBoost`             | A value to boost the weight of hints in recognition.                                                             | Number           | `20`                                       |
-| **Synthesizer**        | `synthesizer`           | The [Synthesizer - Text-To-Speech](#synthesizer---text-to-speech) feature.                                       | Object           | -                                          |
-|                        | `vendor`                | The vendor for text-to-speech synthesis. Possible values: `"google"`, `"microsoft"`, or other available vendors. | String           | `"microsoft"`                              |
-|                        | `language`              | The language for text-to-speech synthesis.                                                                       | String           | `"de-DE"`                                  |
-|                        | `voice`                 | The voice used for text-to-speech synthesis.                                                                     | String           | `"en-US-JennyNeural"`                      |
-| **DTMF**               | `dtmf`                  | The [DTMF](#dtmf) feature.                                                                                       | Object           | -                                          |
-|                        | `dtmfEnable`            | Enables DTMF (Dual-Tone Multi-Frequency) input.                                                                  | Boolean          | `true`                                     |
-|                        | `dtmfInterDigitTimeout` | The timeout between digits during DTMF input (in milliseconds).                                                  | Number           | `1000` (1 second)                          |
-|                        | `dtmfMaxDigits`         | The maximum number of digits allowed for DTMF input.                                                             | Number           | `10`                                       |
-|                        | `dtmfMinDigits`         | The minimum number of digits required for DTMF input.                                                            | Number           | `3`                                        |
-|                        | `dtmfSubmitDigit`       | The digit used to submit the DTMF input.                                                                         | String           | `"9"`                                      |
-| **Barge-In**           | `bargeIn`               | The [Barge-In](#barge-in) feature.                                                                               | Object           | -                                          |
-|                        | `bargeInEnable`         | Enables barge-in functionality.                                                                                  | Boolean          | `true`                                     |
-|                        | `bargeInOnDtmf`         | Allows barge-in on DTMF input.                                                                                   | Boolean          | `true`                                     |
-|                        | `bargeInOnSpeech`       | Allows barge-in on speech input.                                                                                 | Boolean          | `false`                                    |
-|                        | `bargeInMinimunWords`   | The minimum words required to trigger barge-in.                                                                  | Number           | `5`                                        |
-|                        | `bargeInSticky`         | Keeps barge-in active after initial input.                                                                       | Boolean          | `true`                                     |
-| **Continuous ASR**     | `continuousAsr`         | The [Continuous ASR](#continuous-asr) feature.                                                                   | Object           | -                                          |
-|                        | `asrEnabled`            | Enables Continuous Automatic Speech Recognition (ASR).                                                           | Boolean          | `true`                                     |
-|                        | `asrDigit`              | The specific digit for triggering ASR.                                                                           | String           | `"5"`                                      |
-|                        | `asrTimeout`            | The timeout for ASR detection (in milliseconds).                                                                 | Number           | `5000` (5 seconds)                         |
+| Feature                | Parameter               | Description                                                                                                                                                      | Type             | Example                                    |
+|------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------|
+| **User Input Timeout** | `user`                  | The [User Input Timeout](#user-input-timeout) feature.                                                                                                           | Object           | -                                          |
+|                        | `noInputMode`           | The mode when no input is detected. Possible values: `"event"`, `"speech"`, `"play"`.                                                                            | String           | `"speech"`                                 |
+|                        | `noInputTimeout`        | The timeout duration for no input (in milliseconds).                                                                                                             | Number           | `5000` (5 seconds)                         |
+|                        | `noInputRetries`        | The number of retries allowed when no input is detected.                                                                                                         | Number           | `3`                                        |
+|                        | `noInputSpeech`         | The speech to play when no input is detected.                                                                                                                    | String           | `"Please speak now."`                      |
+|                        | `noInputUrl`            | The URL to fetch audio when no input is detected.                                                                                                                | String           | `"https://example.com/no-input-audio.mp3"` |
+| **Flow Input Timeout** | `flow`                  | The [Flow Input Timeout](#flow-input-timeout) feature.                                                                                                           | Object           | `{}`                                       |
+|                        | `flowNoInputEnable`     | Enables no-input handling for Flows.                                                                                                                             | Boolean          | `true`                                     |
+|                        | `flowNoInputMode`       | The mode when no input is detected in a Flow. Possible values: `"speech"`, `"play"`.                                                                             | String           | `"play"`                                   |
+|                        | `flowNoInputTimeout`    | The timeout duration for no input in a Flow (in milliseconds).                                                                                                   | Number           | `3000` (3 seconds)                         |
+|                        | `flowNoInputRetries`    | The number of retries for no input in a Flow.                                                                                                                    | Number           | `2`                                        |
+|                        | `flowNoInputSpeech`     | The speech to play for no input in a Flow.                                                                                                                       | String           | `"Please try again."`                      |
+|                        | `flowNoInputUrl`        | The URL to fetch audio for no input in a Flow.                                                                                                                   | String           | `"https://example.com/flow-no-input.mp3"`  |
+|                        | `flowNoInputFail`       | Indicates whether to fail the Flow on no input.                                                                                                                  | Boolean          | `true`                                     |
+| **Recognizer**         | `recognizer`            | The [Recognizer - Speech-To-Text](#recognizer---speech-to-text) feature.                                                                                         | Object           | -                                          |
+|                        | `vendor`                | The vendor for speech recognition. Possible values: `"aws"`, `"deepgram"`, `"google"`, `"microsoft"`, `"nuance"`, `"soniox"`, `"default"`, `"custom"`.           | String           | `"google"`                                 |
+|                        | `language`              | The language for speech recognition.                                                                                                                             | String           | `"de-DE"`                                  |
+|                        | `hints`                 | A list of hints to improve recognition accuracy.                                                                                                                 | Array of strings | `["help", "skip", "confirm"]`              |
+|                        | `hintBoost`             | A value to boost the weight of hints in recognition.                                                                                                             | Number           | `20`                                       |
+| **Synthesizer**        | `synthesizer`           | The [Synthesizer - Text-To-Speech](#synthesizer---text-to-speech) feature.                                                                                       | Object           | -                                          |
+|                        | `vendor`                | The vendor for text-to-speech synthesis. Possible values: `"aws"`, `"deepgram"`, `"elevenlabs"`, `"google"`, `"microsoft"`, `"nuance"`, `"default"`, `"custom"`. | String           | `"microsoft"`                              |
+|                        | `language`              | The language for text-to-speech synthesis.                                                                                                                       | String           | `"de-DE"`                                  |
+|                        | `voice`                 | The voice used for text-to-speech synthesis.                                                                                                                     | String           | `"en-US-JennyNeural"`                      |
+| **DTMF**               | `dtmf`                  | The [DTMF](#dtmf) feature.                                                                                                                                       | Object           | -                                          |
+|                        | `dtmfEnable`            | Enables DTMF (Dual-Tone Multi-Frequency) input.                                                                                                                  | Boolean          | `true`                                     |
+|                        | `dtmfInterDigitTimeout` | The timeout between digits during DTMF input (in milliseconds).                                                                                                  | Number           | `1000` (1 second)                          |
+|                        | `dtmfMaxDigits`         | The maximum number of digits allowed for DTMF input.                                                                                                             | Number           | `10`                                       |
+|                        | `dtmfMinDigits`         | The minimum number of digits required for DTMF input.                                                                                                            | Number           | `3`                                        |
+|                        | `dtmfSubmitDigit`       | The digit used to submit the DTMF input.                                                                                                                         | String           | `"9"`                                      |
+| **Barge-In**           | `bargeIn`               | The [Barge-In](#barge-in) feature.                                                                                                                               | Object           | -                                          |
+|                        | `bargeInEnable`         | Enables barge-in functionality.                                                                                                                                  | Boolean          | `true`                                     |
+|                        | `bargeInOnDtmf`         | Allows barge-in on DTMF input.                                                                                                                                   | Boolean          | `true`                                     |
+|                        | `bargeInOnSpeech`       | Allows barge-in on speech input.                                                                                                                                 | Boolean          | `false`                                    |
+|                        | `bargeInMinimunWords`   | The minimum words required to trigger barge-in.                                                                                                                  | Number           | `5`                                        |
+|                        | `bargeInSticky`         | Keeps barge-in active after initial input.                                                                                                                       | Boolean          | `true`                                     |
+| **Continuous ASR**     | `continuousAsr`         | The [Continuous ASR](#continuous-asr) feature.                                                                                                                   | Object           | -                                          |
+|                        | `asrEnabled`            | Enables Continuous Automatic Speech Recognition (ASR).                                                                                                           | Boolean          | `true`                                     |
+|                        | `asrDigit`              | The specific digit for triggering ASR.                                                                                                                           | String           | `"5"`                                      |
+|                        | `asrTimeout`            | The timeout for ASR detection (in milliseconds).                                                                                                                 | Number           | `5000` (5 seconds)                         |
 
 JSON example:
 
@@ -242,6 +242,27 @@ JSON example:
       "confirm"
     ],
     "hintBoost": 20
+  },
+  "user": {
+    "noInputMode": "speech",
+    "noInputTimeout": "{{"{{context.user.noInputTimeout}}"}}",
+    "noInputRetries": "{{"{{context.user.noInputRetries}}"}}",
+    "noInputSpeech": "{{"{{context.user.noInputSpeech}}"}}"
+  },
+  "continuousAsr": {
+    "asrEnabled": true,
+    "asrTimeout": "{{"{{context.continuousAsr.asrTimeout}}"}}"
+  },
+  "dtmf": {
+    "dtmfEnable": true,
+    "dtmfInterDigitTimeout": "{{"{{context.dtmf.dtmfInterDigitTimeout}}"}}"
+  },
+  "flow": {
+    "flowNoInputEnable": true,
+    "flowNoInputMode": "speech",
+    "flowNoInputTimeout": 15,
+    "flowNoInputRetries": 2,
+    "flowNoInputSpeech": "I'm sorry, I didn't hear anything"
   }
 }
 ```
