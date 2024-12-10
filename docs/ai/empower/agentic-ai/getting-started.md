@@ -24,7 +24,7 @@ and test your Flow using the Interaction Panel.
 To create a Project, follow these steps:
 
 1. In the upper-left corner, click **+** to create a Project.
-2. Configure your basic Project settings
+2. Configure your basic Project settings.
 3. Select **Agentic AI** as your **Project Type**.
 
 ## Create an AI Agent
