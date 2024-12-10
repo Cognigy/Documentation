@@ -32,12 +32,10 @@ To create an AI Agent, select one of the following options:
         - Set the recommended height to 184px.
         - Save the file as `.png`.
         - Include `_optimized` in the file name.
-    5. Click **Next**.
-    6. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
+    5. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
         - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
         - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
-    7. Click **Next**.
-    8. In the **Knowledge & Instructions** step, configure the following fields:
+    6. In the **Knowledge & Instructions** step, configure the following fields:
         - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
         ```txt
          - Greet users warmly and professionally.
@@ -47,8 +45,7 @@ To create an AI Agent, select one of the following options:
          - Apologize if errors occur, then correct promptly.
         ```
         - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md#which-model-to-choose) to use Knowledge AI.
-    9. Click **Next**.
-    10. In the **Data Privacy & Security** step, configure the following fields:
+    7. In the **Data Privacy & Security** step, configure the following fields:
         - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
             - **None** — no data will be used from the Contact Profile. This option is selected by default.
             - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
@@ -59,8 +56,7 @@ To create an AI Agent, select one of the following options:
             - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
             - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
             - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
-    11. Click **Next**.
-    12. In the **Job Selection** step, select one of the following options:
+    8. In the **Job Selection** step, select one of the following options:
         - **Default** — create an AI Agent with a predefined Flow, then click **Create & Chat** to save changes and open the Flow with the created AI Agent.
         - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
         - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
