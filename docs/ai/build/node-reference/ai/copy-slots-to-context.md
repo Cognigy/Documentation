@@ -6,7 +6,7 @@
 # Copy Slots to Context
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/nlu/copy-slots-to-context.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/copy-slots-to-context.png" width="80%" />
 </figure>
 
 ## Description

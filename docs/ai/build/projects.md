@@ -10,7 +10,7 @@ tags:
 
 # Projects
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../release-notes/4.88.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../release-notes/4.91.md)
 
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
@@ -22,18 +22,26 @@ AI Agents can deploy on a wide range of channels.
 ## Create a Project
 
 1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click the **Plus button** to create a project.
-3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
+2. In the upper-left corner, click the **Plus button** to create a Project.
+3. Give your Project a unique name that describes its purpose. You will also be able to change the name later.
 4. Select the primary language for your Project.
 5. Select a color that will be associated with your Project.
 6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
-7. Click **Next: Select Solution Accelerator**.
-8. Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.
-9. Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.
-10. Select the pre-build skills if you want to use one for your Project.
-11. Click **Go to Project** to view the created Project.
+7. Click **Next: Select Project Type**.
+8. Select your Project type:
 
-Once these steps are completed, your Project setup is finished.
+    ==="Agentic AI (Beta)"
+        8.1 Click **Next**.
+        8.2 Create your first AI-driven Agent to complete the creation of your Project.
+    
+    ==="Intent-driven AI"
+        8.1. Click **Next**.<br> 
+        8.2 Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.<br>
+        8.3 Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.<br>
+        8.4 Select the pre-build skills if you want to use one for your Project.<br> 
+        8.5 Click **Go to Project** to view the created Project.
+
+        Once these steps are completed, your Project setup is finished.
 
 ## Create a Project with Live Agent Flow
 

@@ -19,7 +19,6 @@ nav:
       - ai/glossary.md
 
     - 🛠️ Build:
-      - ai/build/overview.md
       - ai/build/projects.md
       - ai/build/flows.md
       - Nodes:
@@ -96,6 +95,7 @@ nav:
         - Analytics:
           - ai/build/node-reference/analytics/overview.md
           - ai/build/node-reference/analytics/activate-profile.md
+          - ai/build/node-reference/analytics/add-memory.md
           - ai/build/node-reference/analytics/blind-mode.md
           - ai/build/node-reference/analytics/complete-task.md
           - ai/build/node-reference/analytics/deactivate-profile.md
@@ -108,8 +108,10 @@ nav:
           - ai/build/node-reference/analytics/update-profile.md
         - Service:
            - ai/build/node-reference/service/overview.md
+           - ai/build/node-reference/service/add-transcript-steps.md
            - ai/build/node-reference/service/check-agent-availability.md
            - ai/build/node-reference/service/close-handover.md
+           - ai/build/node-reference/service/get-transcript.md
            - ai/build/node-reference/service/gpt-conversation.md
            - ai/build/node-reference/service/handover-to-agent.md
            - ai/build/node-reference/service/http-request.md
@@ -118,17 +120,20 @@ nav:
            - ai/build/node-reference/service/ms-sql.md
            - ai/build/node-reference/service/set-handover-inactivity.md
            - ai/build/node-reference/service/trigger-function.md
-        - NLU:
-          - ai/build/node-reference/nlu/overview.md
-          - ai/build/node-reference/nlu/add-lexicon-keyphrase.md
-          - ai/build/node-reference/nlu/clean-text.md
-          - ai/build/node-reference/nlu/copy-slots-to-context.md
-          - ai/build/node-reference/nlu/disable-slot-fillers.md
-          - ai/build/node-reference/nlu/enable-slot-fillers.md
-          - ai/build/node-reference/nlu/execute-cognigy-nlu.md
-          - ai/build/node-reference/nlu/fuzzy-search.md
-          - ai/build/node-reference/nlu/match-pattern.md
-          - ai/build/node-reference/nlu/regex-slot-filler.md
+        - AI:
+          - ai/build/node-reference/ai/overview.md
+          - ai/build/node-reference/ai/add-lexicon-keyphrase.md
+          - ai/build/node-reference/ai/ai-agent.md
+          - ai/build/node-reference/ai/ai-agent-handover.md
+          - ai/build/node-reference/ai/clean-text.md
+          - ai/build/node-reference/ai/copy-slots-to-context.md
+          - ai/build/node-reference/ai/disable-slot-fillers.md
+          - ai/build/node-reference/ai/enable-slot-fillers.md
+          - ai/build/node-reference/ai/execute-cognigy-nlu.md
+          - ai/build/node-reference/ai/fuzzy-search.md
+          - ai/build/node-reference/ai/match-pattern.md
+          - ai/build/node-reference/ai/regex-slot-filler.md
+          - ai/build/node-reference/ai/resolve-tool-action.md
         - Data:
           - ai/build/node-reference/data/overview.md
           - ai/build/node-reference/data/datepicker.md
@@ -171,6 +176,10 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
+      - Agentic AI (Beta):
+          - ai/empower/agentic-ai/overview.md
+          - ai/empower/agentic-ai/getting-started.md
+          - ai/empower/agentic-ai/manage-ai-agents.md
       - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:

@@ -7,7 +7,7 @@ hidden: false
 # Update Profile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/update-profile.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/analytics/update-profile.png" width="80%" />
 </figure>
 
 ## Description

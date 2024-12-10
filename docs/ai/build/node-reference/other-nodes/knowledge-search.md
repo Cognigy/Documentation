@@ -39,7 +39,7 @@ Select a store from the list to allow the Node to retrieve the data.
 
 | Parameter                     | Type          | Description                                                                                                                                                                    |
 |-------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Top K                         | Number        | The Number of optimal matching chunks that the Knowledge AI solution should provide.                                                                                           |
+| Top K                         | Number        | Specify how many of the top K knowledge search results should be returned.                                                                                         |
 | Where to store the result     | Select        | The storage for the search results. Select a storage:<br> - Input — the content will be stored in the Input object.<br> - Context — the content will be stored in the Context. |
 | Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                        |
 | Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                    |

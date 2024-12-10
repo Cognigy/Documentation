@@ -29,7 +29,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 ### Create an Adaptive Card with Generative AI
 
-Before creating an Adaptive Card with Generative AI, ensure that you are connected to one of the [Generative AI providers](../../../empower/generative-ai.md#prerequisites).
+Before creating an Adaptive Card with Generative AI, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
 
 To use this feature, follow these steps:
 

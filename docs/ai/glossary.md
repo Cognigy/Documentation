@@ -125,7 +125,7 @@ For more information, read the [Functions](build/functions.md) documentation.
 
 _**Generative AI**_
 : A type of artificial intelligence that creates new content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
-Cognigy.AI integrates with multiple generative AI providers and their LLMs to empower you to improve real-time customer interactions through personalized responses, advanced language understanding and sentiment analysis.
+Cognigy.AI integrates with multiple LLM Providers to empower you to improve real-time customer interactions through personalized responses, advanced language understanding and sentiment analysis.
 For more information, read the [Generative AI](empower/generative-ai.md) documentation and see [Wikipedia](https://en.wikipedia.org/wiki/Generative_artificial_intelligence).
 
 ## H
