@@ -12,8 +12,7 @@ _Inboxes_ are workspaces where human agents handle real-time chat interactions w
 
 You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
 
-Within the Inbox setting, you can customize the appearance of the Inbox, add and remove agents,
-configure message visibility for them, set up conversation routing, and add assistant bots.
+Within the Inbox setting, you can edit the Inbox, add and remove agents, configure message visibility for them, set up conversation routing, and add assistant bots.
 
 ## Create an Inbox
 
@@ -33,21 +32,22 @@ A new Live Agent Inbox has been created. You can configure the Inbox settings by
 
 The changes will be applied.
 
-## Configure an Inbox Appearance
+## Edit an Inbox
 
-To configure the Inbox appearance, do the following:
+If you want to change how one of your Inboxes works or reuse an Inbox from a deleted Project, you need to edit the Inbox.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**. 
-4. In the **Inboxes Settings** tab window, you can update the following fields as needed:
-    - **Channel Avatar** — upload an image or icon that represents the Inbox. It is used for visual identification. 
-    - **Inbox Name** — edit the name of the Inbox here, which can be helpful for organizational purposes.
-5. Click **Update**.
+To edit an Inbox, follow these steps:
 
-The Inboxes fields and settings will be updated.
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. On the **Inboxes** page, click ![gear](../../_assets/icons/gear.svg) next to the Inbox you want to edit.
+3. In the **Inboxes Settings** section, update the following fields:
+    - **Channel Avatar** — upload an image that represents the Inbox. The Channel Avatar helps you visually identify the Inbox. 
+    - **Inbox Name** — enter a unique Inbox name.
+    - **Cognigy Project ID** — this field is pre-populated for [Inboxes created through Cognigy.AI](../getting-started/live-agent-setup/live-agent-setup-additional-inbox.md). Enter a valid the Project ID. The Project ID allows Live Agent to retrieve [Contact Profile](../../ai/analyze/contact-profiles.md) data from Cognigy.AI and binds the Inbox to the respective Project. You can [copy the Project ID](../../ai/build/projects.md#copy-the-project-id) from the Cognigy.AI interface. After you assign the Inbox to a Project, [copy the Inbox ID](#copy-inbox-id) and enter it in the respective Cognigy.AI Nodes of the Project, for example, the [Handover Agent](../../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) and [Check Agent Availability](../../ai/build/node-reference/service/check-agent-availability.md#settings) Nodes. If you delete the Project to which the Project ID refers, Live Agent can still communicate with Cognigy.AI Nodes, but the system cannot retrieve Contact Profile data through this Inbox.
+    - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
+4. Click **Update**.
 
-## Copy an Inbox ID
+## Copy Inbox ID
 
 Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is used in API and UI URL path names.
 
