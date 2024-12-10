@@ -76,8 +76,8 @@ steps:
   # Step 4: Publish Vale Report as Artifact
   - task: PublishBuildArtifacts@1
     inputs:
-      pathtoPublish: '/home/vsts/work/1/s/vale-report.json'
-      artifactName: 'vale-report'
+      pathtoPublish: /home/vsts/work/1/s/vale-report.json
+      artifactName: vale-report
     displayName: 'Publish Vale Report Artifact'
 
   # Step 5: Post Artifact Link as PR Comment
