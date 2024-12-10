@@ -110,11 +110,11 @@ This configuration assigns an AI Agent to a job, defines its role and responsibi
 
 ## AI Agent Tool Settings
 
-Tool Actions are child-nodes to AI Agent Nodes. They define actions which can be taken by the AI Agent. If an AI Agent wants to execute the Action Tool, the branch below the child-Node is executed.
+Tool Actions are child-nodes to AI Agent Nodes. They define actions which can be taken by the AI Agent. If an AI Agent wants to execute the Tool, the branch below the child-Node is executed.
 
 At the end of a Tool Action branch it is advisable to use a [Resolve Tool Action](resolve-tool-action.md) Node to return to the AI Agent.
 
-Clicking on the Action Tool Node lets you define a tool, set its parameters, and allows for debugging by enabling detailed messages about the tool's execution.
+Clicking on the Tool Node lets you define a tool, set its parameters, and allows for debugging by enabling detailed messages about the tool's execution.
 
 ### Tool
 
