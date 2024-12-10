@@ -44,7 +44,7 @@ To create your first LLM-powered AI Agent, follow these steps:
      - Greet users warmly and professionally.
      - Keep responses concise; expand only if requested.
     ```
-5. In the **Data Privacy & Security** step, we recommend to leave the settings unchanged. 
+5. In the **Data Privacy & Security** step, we recommend leaving the settings unchanged. 
 6. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
 7. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
 
