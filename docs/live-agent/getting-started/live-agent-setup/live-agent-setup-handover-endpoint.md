@@ -42,7 +42,7 @@ Both options are described below.
 
 If the toggle switch for the **Handover to pre-configured Live Agent account** option is activated, conversations will be transferred to the Live Agent Account mapped to the current Cognigy.AI organization.
 
-If you have on-premise installation, set the following environment variables in your Cognigy.AI installation:
+If you have on-premises installation, set the following environment variables in your Cognigy.AI installation:
 
 ```txt
 FEATURE_USE_COGNIGY_LIVE_AGENT: true

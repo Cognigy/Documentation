@@ -11,6 +11,8 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
 You can use the following NLU Nodes:
 
 - [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)
+- [AI Agent](ai-agent.md)
+- [AI Agent Handover](ai-agent-handover.md)
 - [Clean Text](clean-text.md)
 - [Copy Slots To Context](copy-slots-to-context.md)
 - [Disable Slot Fillers](disable-slot-fillers.md)
@@ -19,6 +21,7 @@ You can use the following NLU Nodes:
 - [Fuzzy Search](fuzzy-search.md)
 - [Match Pattern](match-pattern.md)
 - [Regex Slot Filler](regex-slot-filler.md)
+- [Resolve Tool Action](resolve-tool-action.md)
 
 [Watch this Episode](https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU) of Cognigy Sessions for a technical deep dive.
 
