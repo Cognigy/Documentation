@@ -30,7 +30,7 @@ stages:
             displayName: Grant execute permissions to the script
 
           # Execute the script
-          - script: ./generate-last-changes-list.sh
+          - script: .support_scripts/generate-last-changes-list.sh
             displayName: Run script to generate last changes list
 
           - script: ls -R $(System.DefaultWorkingDirectory)
