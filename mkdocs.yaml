@@ -360,10 +360,10 @@ nav:
       - ai/developers/extension-framework.md
 
     - 🖥️ Install, Configure, and Migrate:
+      - ai/installation/access-to-cognigy-ai.md
       - ai/installation/about.md
       - ai/installation/browser-requirements.md
       - ai/installation/architecture.md
-      - ai/installation/access-to-cognigy-ai.md
       - On-Premises:
         - ai/installation/overview.md
         - ai/installation/version-compatibility-matrix.md
@@ -385,8 +385,8 @@ nav:
       - SaaS:
         - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
-      - Single Sign-On (SSO):
-        - ai/installation/single-sign-in-saml2.md
+      - Single Sign-on (SSO):
+        - ai/installation/single-sign-on-saml2.md
         - ai/installation/single-signin-openid-connect.md
 
   - Voice Gateway:
