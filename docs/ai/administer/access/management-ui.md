@@ -10,7 +10,7 @@ hidden: false
 
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
-You can set up Management UI yourself if you have an on-premise Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../../../help/get-help.md).
+You can set up Management UI yourself if you have an on-premises Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../../../help/get-help.md).
 
 Many users don't know that Cognigy.AI is able to handle a multi-tenant scenario. These individual tenants are called **organizations** within Cognigy.AI.
 

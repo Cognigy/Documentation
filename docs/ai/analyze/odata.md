@@ -54,7 +54,7 @@ You can control data available through the OData endpoint at both the [Endpoint]
 The OData endpoint is located on a different domain than your Cognigy User Interface domain:
 
 - Trial. Use [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
-- SaaS and On-premises. Replace `odata-trial.cognigy.ai` with your installation's domain name.
+- SaaS and on-premises. Replace `odata-trial.cognigy.ai` with your installation's domain name.
 
 ### Authentication
 
