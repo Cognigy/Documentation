@@ -23,13 +23,9 @@ and test your Flow using the Interaction Panel.
 
 To create a Project, follow these steps:
 
-1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click **+** to create a Project.
-3. Give your Project a unique name that describes its purpose.
-4. Select the primary language for your Project.
-5. Select a color that will be associated with your Project.
-6. Click **Next: Select Project Type** and select **Agentic AI**.
-7. Click **Next**.
+1. In the upper-left corner, click **+** to create a Project.
+2. Configure your basic Project settings
+3. Select **Agentic AI** as your **Project Type**.
 
 ## Create an AI Agent
 
@@ -39,38 +35,33 @@ To create your first LLM-powered AI Agent, follow these steps:
     - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another. For example, `Hello, my name is John. How can I help you?`
     - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example: `John works at ACME and is highly skilled at making customers feel comfortable.`
 2. In the **Avatar** section, select an avatar of your choice.
-3. Click **Next**.
-4. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
+3. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
     - **Concise/Comprehensive** — adjust the slider to the left for brief responses.
     - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses.
-5. Click **Next**.
-6. In the **Knowledge & Instructions** step, configure the following fields:
+4. In the **Knowledge & Instructions** step, configure the following fields:
     - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
     ```txt
      - Greet users warmly and professionally.
      - Keep responses concise; expand only if requested.
     ```
-7. Click **Next**.
-8. In the **Data Privacy & Security** step, leave the settings unchanged and click **Next**. 
-9. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
-10. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
+5. In the **Data Privacy & Security** step, we recommend to leave the settings unchanged. 
+6. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
+7. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
 
 ## Configure the AI Agent in your Flow
 
-Once you open the Flow, you'll see the AI Agent Node with predefined settings based on the AI Agent persona you created.
+Once the Flow opens, you'll see the AI Agent Node with predefined settings based on the AI Agent persona you created.
 
 To configure the Flow, follow these steps:
 
 1. Below the parent AI Agent Node, configure the [child Tool Action Node](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings). Left-click the **unlock_account** Node to open the Node editor.
 2. Activate the **Use Parameters** setting to request a user email before unlocking the account. In the **Parameters** section, make sure that the email parameter appears.
-3. Click **Save Node**.
-4. Below the child Tool Node, replace the placeholder Node with an [Email Notification](../../build/node-reference/data/email-notification.md) Node. The Email Notification Node acts as an Action Node, designed to trigger specific actions and perform the task assigned to the tool. In this case, the Email Notification Node will send a confirmation email when the task is completed.
-5. Open the Node editor and configure the following fields:
+3. Below the child Tool Node, replace the placeholder Node with an [Email Notification](../../build/node-reference/data/email-notification.md) Node. The Email Notification Node acts as an Action Node, designed to trigger specific actions and perform the task assigned to the tool. In this case, the Email Notification Node will send a confirmation email when the task is completed.
+4. Open the Node editor and configure the following fields:
     - **Recipient TO Email Addresses** — enter the email address to which the account unlocking confirmation should be sent.
     - **Email Subject** — enter `Account Unlocked`.
     - **Email Content** — enter `Dear user, your account has been successfully unlocked`.
-6. Click **Save Node**. 
-7. Below the Action Node, add a [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md) Node to control how the AI Agent responds after executing the Email Notification Node. The Resolve Tool Action Node returns the conversation to the parent AI Agent Node, providing the option to choose a different tool.
+5. Below the Action Node, add a [Resolve Tool Action](../../build/node-reference/ai/resolve-tool-action.md) Node to control how the AI Agent responds after executing the Email Notification Node. The Resolve Tool Action Node returns the conversation to the parent AI Agent Node, providing the option to choose a different tool.
 
 ## Test your Agent
 
