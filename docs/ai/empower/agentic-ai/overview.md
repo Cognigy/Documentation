@@ -35,11 +35,11 @@ Before using the Agentic AI feature, you need:
 ## Concepts
 
 - [AI Agent Management](#ai-agent-management)
-- [ LLM-driven Flow Design](#llm-driven-flow-design)
+- [AI Agents — a New Conversational Paradigm](#ai-agents--a-new-conversational-paradigm)
 
 ### AI Agent Management
 
-_AI Agent Management_ refers to the workspace used control AI Agents within a Project. 
+_AI Agent Management_ refers to the workspace used to control AI Agents within a Project. 
 This workspace includes the creation, modification, and deletion of AI Agents. 
 With AI Agent Management, you can effectively build autonomous AI Agents for specific roles, tasks, and workflows.
 
@@ -60,9 +60,9 @@ The table shows available AI Agents for hire.
 | **Anna** <br> <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" alt="Anna" width="50">  | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                               |
 | **Sophie** <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" alt="Sophie" width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Dining Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
 
-### AI Agents - a new conversational paradigm
+### AI Agents — a New Conversational Paradigm
 
-AI Agents autonomously perform a lot of tasks which in previous conversational AI deployments had to be manually developed, such as intent detection and management, decision making, entity extraction, etc. All of these are now configured as part of the AI Agent.
+AI Agents autonomously perform many tasks that in previous conversational AI deployments had to be manually developed, such as intent detection and management, decision-making, entity extraction, and more. All of these tasks are now configured as part of the AI Agent.
 
 #### AI Agent Node
 
@@ -76,7 +76,7 @@ For example, you could include instructions for executing an API call, processin
 ##### Tool Actions
 
 _Tool Actions_ represent specific tasks that an AI Agent can perform. 
-A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to for example interact with external services such as an API or to execute a number of rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
+A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
 
 ##### Tool Calls
 
@@ -84,7 +84,8 @@ _Tool Calls_ occur when the AI Agent decides to use a Tool Action and executed t
 
 #### Resolve Tool Action Node
 
-The [Resolve Tool Action Node](../../build/node-reference/ai/resolve-tool-action.md) is used to handle the result of a [tool action](#tool-actions) that was triggered by the AI Agent.
+The [Resolve Tool Action Node](../../build/node-reference/ai/resolve-tool-action.md) sends an answer as the response to a tool call to the AI Agent after completing a [tool action](#tool-actions).
+
 When the AI Agent calls a tool to perform an action, the tool action is executed.
 Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
 indicating the result of that action.

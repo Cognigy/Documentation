@@ -22,7 +22,8 @@ Once the action is completed, the Resolve Tool Action Node sends a response back
 indicating the result of that action.
 This approach helps the AI Agent process and make decisions based on the results of the tool actions it initiated.
 
-> Note: Sending the result is optional! If the Tool Action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
+!!! note
+    Sending the result is optional. If the Tool Action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
 
 ## Settings
 

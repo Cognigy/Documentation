@@ -31,8 +31,6 @@ To create a Project, follow these steps:
 6. Click **Next: Select Project Type** and select **Agentic AI**.
 7. Click **Next**.
 
-To complete the creation of your Project, create your first LLM-powered AI Agent.
-
 ## Create an AI Agent
 
 To create your first LLM-powered AI Agent, follow these steps:
@@ -89,4 +87,4 @@ To run your Flow, follow these steps:
 ## What's Next?
 
 1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [hire one from the Job Market](manage-ai-agents.md#create-an-ai-agent).
-2. [Add the AI Agent to your Flow](build-llm-driven-flows.md#add-ai-agents-to-a-flow) and [create a set of tool actions](build-llm-driven-flows.md#configure-additional-nodes) for your AI Agent to operate.
+2. [Add the AI Agent to your Flow](../../build/flows.md) and [create a set of tool actions](../../build/node-reference/ai/ai-agent.md#tool) for your AI Agent to operate.
