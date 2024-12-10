@@ -50,7 +50,15 @@ steps:
   # Step 1: Run Vale using Docker
   - script: |
       vale ./docs || true
-    displayName: 'Run Vale'
+      echo "Current directory:"
+      pwd
+      # List all files to check where vale-report.json might be
+      echo "Listing all files in the current directory:"
+      ls -lah
+      # Search for the vale-report.json file
+      echo "Searching for vale-report.json file:"
+      find . -name "vale-report.json"
+    displayName: 'Run Vale and Debug'
 
   # # Step 1: Run Vale using Docker
   # - script: |
