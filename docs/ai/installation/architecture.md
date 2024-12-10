@@ -25,7 +25,7 @@ dependencies together with the actual application into one shippable unit. One o
 
 Managing a high number of moving parts — the microservices mentioned above — is quite a challenge and requires an additional software product
 that is called a container orchestrator.
-Kubernetes](https://kubernetes.io/) is such a container orchestrator dealing with the following tasks:
+[Kubernetes](https://kubernetes.io/) is such a container orchestrator dealing with the following tasks:
 
 - Assigning containers to one of the available servers in the Kubernetes cluster respecting their individual hardware requirements and matching these against the available hardware on a server.
 - Observing whether containers need to be restarted in case they crash.

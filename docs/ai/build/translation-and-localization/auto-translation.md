@@ -1,14 +1,18 @@
 ---
-title: "Auto-Translation" 
+title: "Automatic Translation" 
 slug: "auto-translation" 
 hidden: false 
 ---
 
 # Automatic Translation
 
-Cognigy has integrated _automatic translation_ capabilities
-to streamline the process of customizing Flows and Intents for various locales.
-This feature is helpful for users who need multilingual support without the need for manual translations.
+Cognigy has integrated _automatic translation_ capabilities to streamline the process of customizing Flows and Intents for various locales. This feature is helpful for users who need multilingual support without the need for manual translations.
+
+## Restrictions
+
+- For [Intent](#machine-translation-for-intent-localization) and [Multi-Intent localization](#machine-translation-for-multi-intent-localization), machine translation doesn't match the [Slots](../../empower/nlu/intents/ml-intents.md) you set for your primary locale to the Keyphrases in the localized Example Sentences. After performing an Intent or Multi-Intent localization, check and fix the [Slot annotation](../../empower/nlu/intents/annotations.md#example-sentences) in the localized Example Sentences.
+
+## Compatibility with Machine Translation Providers
 
 Cognigy.AI is compatible with the following machine translation providers:
 

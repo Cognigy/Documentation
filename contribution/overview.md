@@ -28,6 +28,6 @@ docker run \
 -it \
 -p 8000:8000 \
 --name doc-server \
---mount type=bind,source="$(pwd)",target=/app --platform linux/amd64\
+--mount type=bind,source="$(pwd)",target=/app --platform linux/amd64 \
 doc-local:latest
 ```

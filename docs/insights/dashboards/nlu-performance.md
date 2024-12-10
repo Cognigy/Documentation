@@ -46,7 +46,7 @@ You can find a calculation example with data visualization in the [Average Execu
 
 ### Avg Intent Score
 
-Displays the average Intent score for the selected time frame. Higher Intent scores indicate better AI Agent performance in matching user queries.
+Displays the average Intent score for the selected time span. Higher Intent scores indicate better AI Agent performance in matching user queries.
 For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
 
 To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
@@ -233,7 +233,7 @@ Result:
 
 ### Average Execution Time
 
-Displays the average time in milliseconds it takes to execute a Flow process over a selected time frame.
+Displays the average time in milliseconds it takes to execute a Flow process over a selected time span.
 
 Formula:
                              
@@ -264,5 +264,5 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 ## More Information
 
 - [Dashboard Engagement](engagement.md)
-- [Overview](overview.md)
+- [Dashboard Overview](overview.md)
 - [Dashboard Live Agent](live-agent.md)

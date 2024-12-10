@@ -280,7 +280,7 @@ You can determine the contrast ratio of your Webchat using the browser DevTools.
 5. Look for the **Contrast Ratio** section below the color values in the color picker. The contrast ratio will be displayed, showing whether the colors meet the WCAG guidelines:
     - **Passes** — shows a checkmark ✅ if the ratio meets AA or AAA standards for normal or large text.
     - **Fails** — shows a prohibited symbol 🚫 if the ratio does not meet AA or AAA standards for normal or large text.
-6. Use the color picker to adjust the color values. This tool updates the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click on the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
+6. Use the color picker to adjust the color values. This tool updates the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/color-contrast.png" width="100%" />

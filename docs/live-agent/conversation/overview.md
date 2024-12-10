@@ -17,9 +17,9 @@ The conversation is handed over to a human agent when the AI Agent cannot assist
   <figcaption>Conversation Page</figcaption>
 </figure>
 
-## Conversation Lifecycle
+## Conversation Life Cycle
 
-The conversation lifecycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
+The conversation life cycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
 
 <figure>
 <img class="image-center" src="../../../_assets/live-agent/conversation/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />

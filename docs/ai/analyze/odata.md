@@ -54,7 +54,7 @@ You can control data available through the OData endpoint at both the [Endpoint]
 The OData endpoint is located on a different domain than your Cognigy User Interface domain:
 
 - Trial. Use [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
-- SaaS and On-premises. Replace `odata-trial.cognigy.ai` with your installation's domain name.
+- SaaS and on-premises. Replace `odata-trial.cognigy.ai` with your installation's domain name.
 
 ### Authentication
 
@@ -144,6 +144,10 @@ The set of collections varies depending on which version you are using:
     - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
     - [Sessions](#sessions) (`/Sessions`)
     - [LiveAgentEscalations](#liveagentescalations) (`/LiveAgentEscalations`)
+    - [Goals](#goals) (`/Goals`)
+    - [GoalSteps](#goalsteps) (`/GoalSteps`)
+    - [GoalStepMetrics](#goalstepmetrics) (`/GoalStepMetrics`)
+    - [GoalEvents](#goalevents) (`/GoalEvents`)
 
     The URL for accessing the v2.4 OData endpoint is as follows:
     `https://<odata-domain>/v2.4/<collection>?apikey=<your-api-key>`
@@ -477,6 +481,113 @@ When retrieving this collection, the endpoint will return the following fields:
 | localeReferenceId | The ID of the locale.                                                                                                                         | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
 | snapshotId        | The ID of the Snapshot.                                                                                                                       | String   | 63ff0cc47a466cab278fd19b                                         |
 | snapshotName      | The name of the Snapshot.                                                                                                                     | String   | Prod-Snapshot 26.7.23                                            |
+
+### Goals
+
+The Goals collection contains records from [Goals](goals-and-tasks/overview.md).
+Each goal is logged as a single record.
+
+**Request**
+
+=== "OData 2.4"
+
+    `https://odata-trial.cognigy.ai/v2.4/Goals?apikey=<your-api-key>`
+
+| Field Name     | Description                                                                                                                                 | Field Type | Example                                                      |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------|
+| goalId         | The Goal ID.                                                                                                                                | String     | 66ebf71693dfb26c3ca4c827                                     |
+| name           | The name of the goal.                                                                                                                       | String     | Goal_07                                                      |
+| version        | The UUID for tracking the current version of the goal configuration. Each update or change of the goal configuration creates a new version. | String     | 8ec4de84-71e2-4c98-a7c3-b18173f36223                         |
+| description    | The description of the goal.                                                                                                                | String     | The goal is to gather metrics for a flight booking use case. |
+| referenceId    | The Reference ID associated with the goal.                                                                                                  | String     | 04dd272f-6c8c-4957-9714-937e6f0847c2                         |
+| projectId      | The ID of the Project related to the record.                                                                                                | String     | 5a91d194fde28b0011ce2422                                     |
+| organisationId | The ID of the Cognigy.AI organization associated with the record.                                                                           | String     | 5eb4a49d426cd3d05f2892a9                                     |
+| createdAt      | Timestamp indicating when the goal was created.                                                                                             | Timestamp  | 2024-09-19T10:04:06.000Z                                     |
+| lastChanged    | Timestamp of the last update to the goal.                                                                                                   | Timestamp  | 2024-09-19T10:04:06.000Z                                     |
+| createdBy      | The identifier for the user who created the goal.                                                                                           | String     | 63bff78cd74f7c7f7dd12944                                     |
+| lastChangedBy  | The identifier for the user who last modified the goal.                                                                                     | String     | 63bff78cd74f7c7f7dd12944                                     | 
+
+### GoalSteps
+
+The GoalSteps collection contains records about specific goal step from [Goals](goals-and-tasks/overview.md).
+Each goal is logged as a single record.
+
+**Request**
+
+=== "OData 2.4"
+
+    `https://odata-trial.cognigy.ai/v2.4/GoalSteps?apikey=<your-api-key>`
+
+| Field Name     | Description                                                                                                                                                                                                          | Field Type | Example                                                      |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------|
+| goalStepId     | The Goal Step ID.                                                                                                                                                                                                    | String     | 66eac7950dc3fd6e4b3bcd8c                                     |
+| name           | The Name of the goal step.                                                                                                                                                                                           | String     | Start                                                        |
+| version        | The UUID for tracking step the version of the specific step configuration within the goal. Each update or change of the goal configuration creates a new version.                                                    | String     | 6cb467d0-9f79-4df0-ad31-991d1bb91910                         |
+| description    | The description of the goal step.                                                                                                                                                                                    | String     | The goal is to gather metrics for a flight booking use case. |
+| order          | The order of the step within the goal configuration.                                                                                                                                                                 | Integer    | null                                                         |
+| text           | Additional text information for the goal step                                                                                                                                                                        | String     | null                                                         |
+| type           | The type of the goal step: <br>`start` — the initial (first) step of the goal. It shows the beginning of the process.<br>`completion` — the completion (last) step of the goal. It shows that the objectives are met. | String     | start                                                        |
+| goalId         | The Goal ID for the goal associated with the step.                                                                                                                                                                   | String     | 66eac7950dc3fdb39c3bcd8b                                     |
+| projectId      | The ID of the Project related to the record.                                                                                                                                                                         | String     | 5a91d194fde28b0011ce2422                                     |
+| organisationId | The ID of the Cognigy.AI organization associated with the record.                                                                                                                                                    | String     | 5eb4a49d426cd3d05f2892a9                                     |
+
+### GoalStepMetrics
+
+The GoalStepMetrics collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.md).
+Each metric is logged as a single record.
+
+**Request**
+
+=== "OData 2.4"
+
+    `https://odata-trial.cognigy.ai/v2.4/GoalStepMetrics?apikey=<your-api-key>`
+
+| Field Name       | Description                                                                                                                                                        | Field Type | Example                              |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------|
+| goalStepMetricId | The Metric ID for the goal step.                                                                                                                                   | String     | 66ebf5a2cabacf6ecb0b5a81             |
+| name             | The mame of the metric.                                                                                                                                            | String     | null                                 |
+| version          | The UUID for tracking step the version of the specific metric configuration within the goal. Each update or change of the goal configuration creates a new version. | String     | 6cb467d0-9f79-4df0-ad31-991d1bb91910 |
+| description      | The description of the metric.                                                                                                                                     | String     | null                                 |
+| type             | The category of metrics that can be tracked for goals:<br>- `duration` — time in minutes or hours.<br>- `currency` — currency specified in the Project settings.    | String     | currency                             |
+| value            | The value of the metric.                                                                                                                                           | Integer    | 20                                   |
+| goalId           | The Goal ID.                                                                                                                                                       | String     | 66ebf5a2cabacf2ac70b5a7e             |
+| goalStepId       | The Goal Step ID.                                                                                                                                                  | String     | 66ebf5a2cabacf7c810b5a80             |
+| projectId        | The ID of the Project related to the record.                                                                                                                       | String     | 5a91d194fde28b0011ce2422             |
+| organisationId   | The ID of the Cognigy.AI organization associated with the record.                                                                                                  | String     | 5eb4a49d426cd3d05f2892a9             |
+
+categories of metrics that can be tracked for goals.  types such as "duration" "currenc
+
+### GoalEvents
+
+The GoalEvents collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.md).
+Each event is logged as a single record.
+
+**Request**
+
+=== "OData 2.4"
+
+    `https://odata-trial.cognigy.ai/v2.4/GoalEvents?apikey=<your-api-key>`
+
+| Field Name        | Description                                                                                                                                                                                                | Field Type | Example                                                          |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------|
+| id                | The unique ID of the record. Applicable to the OData endpoint v2.4 or later.                                                                                                                               | String     | 5a91d194fde28b0011ce2423                                         |
+| version           | The UUID for tracking the current version of the goal configuration. Each update or change of the goal configuration creates a new version.                                                                | String     | 8ec4de84-71e2-4c98-a7c3-b18173f36223                             |
+| timestamp         | The date and time indicating when a specific event related to the goal occurred.                                                                                                                           | Timestamp  | 2024-09-19T10:00:02.322Z                                         |
+| goalCycleId       | The ID of the goal cycle to track each iteration of a goal. The cycle groups different goal tracking events into one attempt to complete a goal.                                                           | String     | a0da54a5-ee2e-43be-b743-23d4bccf513c                             |
+| stepId            | The ID of the specific goal step.                                                                                                                                                                          | String     | 66ebeca3cabacf41170b4a6d                                         |
+| goalId            | The Goal ID.                                                                                                                                                                                               | String     | 66ebeca3cabacf6c820b4a6c                                         |
+| sessionId         | The Session ID.                                                                                                                                                                                            | String     | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
+| projectId         | The ID of the Project related to the record.                                                                                                                                                               | String     | 5a91d194fde28b0011ce2422                                         |
+| organisationId    | The ID of the Cognigy.AI organization associated with the record.                                                                                                                                          | String     | 5eb4a49d426cd3d05f2892a9                                         |
+| expiresAt         | The [expiration date](../administer/access/management-ui.md#expiration-values--ttl--for-sensitive-data) for the goal record. After that time, the goal record will be removed from the Analytics database. | Timestamp  | null                                                             |
+| localeName        | The name of the locale.                                                                                                                                                                                    | String     | English                                                          |
+| endpointName      | The name of the Cognigy.AI Endpoint.                                                                                                                                                                       | String     | LA Chatbot                                                       |
+| endpointType      | The type of the Endpoint.                                                                                                                                                                                  | String     | webchat2                                                         |
+| endpointUrlToken  | The URL token for the Endpoint.                                                                                                                                                                            | String     | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
+| channel           | The channel through which the record was received.                                                                                                                                                         | String     | admin-webchat                                                    |
+| localeReferenceId | The ID of the locale.                                                                                                                                                                                      | String     | 7eff993c-b801-4556-b111-1c319e8577cf                             |
+| snapshotId        | The ID of the Snapshot.                                                                                                                                                                                    | String     | 63ff0cc47a466cab278fd19b                                         |
+| snapshotName      | The name for the Snapshot used by the Endpoint.                                                                                                                                                            | String     | Bot Release 2.2                                                  |
 
 ## Cognigy.AI OData Collections: Entity Relationship Diagram (ERD)
 

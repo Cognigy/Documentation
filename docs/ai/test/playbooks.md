@@ -59,7 +59,7 @@ In addition to executing a Playbook in the Interaction Panel, you can also sched
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-runs.png" width="70%" />
 </figure>
 
-In order to schedule a new Run, click on the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current Playbook. Configuring a Playbook Run in this dialog box is similar to configuring a Playbook Execution in the Interaction Panel. When done, click on the **Run** button in the dialog box.
+In order to schedule a new Run, click the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current Playbook. Configuring a Playbook Run in this dialog box is similar to configuring a Playbook Execution in the Interaction Panel. When done, click the **Run** button in the dialog box.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-runs-dialog.png" width="90%" />

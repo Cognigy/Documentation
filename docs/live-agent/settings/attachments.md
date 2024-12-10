@@ -80,7 +80,7 @@ To download an attachment within Live Agent, you can do this either in a convers
     5. Find the attachment in the conversation, click **Download**.
 
 
-The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
+The file will be opened in a new tab of your browser. Click your file to save it to your local device.
 
 ## Delete an Attachment
 

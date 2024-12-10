@@ -57,7 +57,7 @@ This product is provided together with Cognigy.AI.
 
 ## Cognigy Installations
 
-Cognigy offers shared SaaS, dedicated SaaS, and On-premises installations for all products:
+Cognigy offers shared SaaS, dedicated SaaS, and on-premises installations for all products:
 
 - Shared SaaS — multiple customers share one cloud-hosted instance.
 - Dedicated SaaS — each customer gets their own cloud-hosted instance.
