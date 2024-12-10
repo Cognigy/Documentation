@@ -26,16 +26,22 @@ stages:
             fetchDepth: 0
 
           # Grant execute permissions to the script
-          - script: chmod +x ./generate-last-changes-list.sh
+          - script: chmod +x ./support_scripts/generate-last-changes-list.sh
             displayName: Grant execute permissions to the script
 
           # Execute the script
           - script: ./generate-last-changes-list.sh
             displayName: Run script to generate last changes list
 
+          - script: ls -R $(System.DefaultWorkingDirectory)
+          displayName: Debug: List all files and directories
+
+          - script: find $(System.DefaultWorkingDirectory) -name "file_changes_all.txt"
+          displayName: Debug: Find generated file
+
           # Publish the output file as a pipeline artifact
           - task: PublishBuildArtifacts@1
             displayName: Publish changes list
             inputs:
-              PathtoPublish: $(System.DefaultWorkingDirectory)/file_changes_all.txt
+              PathtoPublish: $(System.DefaultWorkingDirectory)/last_changes/file_changes_all.txt
               ArtifactName: last-changes-list
