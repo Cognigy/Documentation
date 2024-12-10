@@ -14,7 +14,7 @@ Cognigy.AI is fully compatible with the following managed Kubernetes services:
 - AWS EKS
 - Azure AKS
 
-Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
+Running Cognigy.AI on top of on-premises Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
 
 !!! warning "Kubernetes versions"
     Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).

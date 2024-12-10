@@ -36,7 +36,7 @@ Go to **User Menu > Admin Center > Access Control** and add a `voice-gatewayUser
 
 ### Service Provider
 
-This scope is only available for On-premises Cognigy Voice Gateway installations. 
+This scope is only available for on-premises Cognigy Voice Gateway installations. 
 
 It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Provider scope. 
 
@@ -44,7 +44,7 @@ Additionally, users with the Service Provider scope can create, edit, and delete
 
 ### Admin
 
-This scope is only available for On-premises Cognigy Voice Gateway installations. 
+This scope is only available for on-premises Cognigy Voice Gateway installations. 
 
 It includes all operations in the Account and Service Provider scopes, allowing for performing all operations in the Voice Gateway. 
 

@@ -170,7 +170,7 @@ Conflicting training sentences may yield undesired results. Notice the same begi
 
 Bear in mind that this might also happen when Any Slots are used in combination with Lexicon Slots, System Slots, or other Any Slots. If you are planning to make excessive use of Slot matching in your agent, particular care must be taken to ensure that multiple annotated training sentences of the same or multiple intents will not conflict each other.
 
-This behavior may be adjusted by configuring Any Slot matching on system level for customers using Cognigy On-Premises. Two additional options to the default option are available:
+This behavior may be adjusted by configuring Any Slot matching on system level for customers using Cognigy on-premises. Two additional options to the default option are available:
 
 | Any Slot Return Mode | Description                                                                                                                                                |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|

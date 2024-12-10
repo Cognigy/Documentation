@@ -137,7 +137,7 @@ To mark an Extension as untrusted, click ![vertical-ellipsis](../../_assets/icon
 
 ## Extension organization-wide embeddable
 
-With Cognigy.AI v4.8, we have introduced the ability for on-premise customers to embed certain extensions organization-wide.
+With Cognigy.AI v4.8, we have introduced the ability for on-premises customers to embed certain extensions organization-wide.
 
 To enable the feature, the following additional environment variable can be used to update the GitHub `config.map` file:
 
