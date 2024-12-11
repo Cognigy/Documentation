@@ -4,7 +4,7 @@ trigger:
   - none # Disable automatic triggers on branches.
 
 pr:
-  - task/86067-vg-settings # Trigger pipeline on a specific Pull Request.
+  - test-pr-branch # Trigger pipeline on a specific Pull Request.
 
 pool:
   vmImage: ubuntu-20.04
@@ -84,8 +84,8 @@ steps:
   # Step 2: Identify Modified Files
   - script: |
       echo "Fetching branches and identifying modified files..."
-      git fetch origin $(System.PullRequest.TargetBranch)
-      MODIFIED_FILES=$(git diff --name-only origin/$(System.PullRequest.TargetBranch)..HEAD)
+      git fetch origin $(SYSTEM_PULLREQUEST_SOURCEBRANCH)
+      MODIFIED_FILES=$(git diff --name-only origin/$(SYSTEM_PULLREQUEST_TARGETBRANCH)..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
       if [ ! -s filtered_files.txt ]; then
@@ -96,6 +96,9 @@ steps:
       echo "Modified Markdown files identified:"
       cat filtered_files.txt
     displayName: "Identify Modified Markdown Files"
+    env:
+      SYSTEM_PULLREQUEST_SOURCEBRANCH: main
+      SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
 
   # Step 3: Run Vale on Filtered Files
   - script: |
