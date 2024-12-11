@@ -26,7 +26,7 @@ Before using this feature, you need to create an account in one of the LLM Provi
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
 - [Google Vertex AI and Gemini](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
-- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).
+- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
 - [Amazon Bedrock](https://aws.amazon.com/bedrock/). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
 
 ### Set up Generative AI

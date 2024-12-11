@@ -7,6 +7,12 @@ hidden: false
 
 # Track Goal
 
+<figure>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/track-goal.png" width="80%" />
+</figure>
+
+## Description
+
 The Track Goal Node lets you monitor the progress of a specific goal within a Flow
 and can be used only with [Goals](../../../analyze/goals-and-tasks/goals.md). 
 

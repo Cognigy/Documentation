@@ -7,7 +7,7 @@ hidden: false
 # Deactivate Profile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/analytics/deactivate-profile.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/deactivate-profile.png" width="80%" />
 </figure>
 
 ## Description
