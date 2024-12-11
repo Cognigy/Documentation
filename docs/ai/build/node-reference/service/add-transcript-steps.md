@@ -1,7 +1,7 @@
 ---
 title: "Add Transcript Steps"
 slug: "add-transcript-steps"
-description: "The Add Transcript Steps Node allows you to add a step for one of the conversation actor's inputs to simulate that input."
+description: "The Add Transcript Steps Node lets you add a step for one of the conversation actor's to simulate an input or output."
 hidden: false
 ---
 
@@ -16,7 +16,7 @@ hidden: false
 !!! warning
     This Node is not compatible with the `@cognigyRecentConversation` and `@cognigyRecentUserInputs` tags in the [LLM Prompt Node](../service/llm-prompt.md).
 
-The Add Transcript Steps Node lets you add a step for one of the conversation actor's inputs to simulate that input.
+The Add Transcript Steps Node lets you add a step for one of the conversation actor's to simulate an input or output.
 
 ## Settings
 
