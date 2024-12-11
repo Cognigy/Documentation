@@ -84,6 +84,8 @@ steps:
   # Step 2: Identify Modified Files
   - script: |
       echo "Fetching branches and identifying modified files..."
+      git config --global user.name "e.baskakova"
+      git config --global user.email "e.baskakova@cognigy.com"
       git fetch origin main
       MODIFIED_FILES=$(git diff --name-only origin/test-pr-branch..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
@@ -99,6 +101,7 @@ steps:
     env:
       SYSTEM_PULLREQUEST_SOURCEBRANCH: main
       SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 
   # Step 3: Run Vale on Filtered Files
   - script: |
