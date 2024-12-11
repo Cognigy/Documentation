@@ -97,16 +97,15 @@ The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md)
 
 #### Transcript Nodes
 
-The Transcript Nodes enable the AI Agent to simulate, retrieve, and store conversation transcripts, allowing it to reference past interactions for improved decision-making and providing more accurate responses in conversations.
+AI Agents use the conversation transcript to process conversations, allowing it to reference past interactions for improved decision-making and providing more accurate responses in conversations.
 
 ##### Get Transcript Node
 
-The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets AI
-Agents receive a real-time conversation transcript and store the result in the Input or Context object.
+The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets receive a real-time conversation transcript and store the result in the Input or Context object.
 
 ##### Add Transcript Steps
 
-The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's inputs to simulate that input.
+The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's to simulate an input or output.
 
 ## More Information
 
