@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-20.04
 
 steps:
+  - checkout: self
+    fetchDepth: 0
+    persistCredentials: true
   # # Step 2: Identify Modified Files in the PR
   # - script: |
   #     echo "Configuring Git to use the Azure DevOps token..."
