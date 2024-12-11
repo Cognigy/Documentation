@@ -84,8 +84,8 @@ steps:
   # Step 2: Identify Modified Files
   - script: |
       echo "Fetching branches and identifying modified files..."
-      git fetch origin $(SYSTEM_PULLREQUEST_SOURCEBRANCH)
-      MODIFIED_FILES=$(git diff --name-only origin/$(SYSTEM_PULLREQUEST_TARGETBRANCH)..HEAD)
+      git fetch origin main
+      MODIFIED_FILES=$(git diff --name-only origin/test-pr-branch..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
       if [ ! -s filtered_files.txt ]; then
