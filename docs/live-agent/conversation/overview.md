@@ -40,7 +40,7 @@ Conversations can be [selected and filtered by their statuses](search-and-filter
 
 ## Conversation Assignment Statuses 
 
-A conversation with `Open` status in Live Agent can have one of the following assignment statuses:
+A conversation with the `Open` status in Live Agent can have one of the following assignment statuses:
 
 - **Unassigned** — a conversation is not assigned to a human agent.
 - **Assigned** — a conversation is assigned to a human agent. The assignment occurs either [manually](../conversation/conversation-routing/manual-mode.md) or [automatically](../conversation/conversation-routing/automatic-mode.md).
