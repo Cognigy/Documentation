@@ -175,7 +175,7 @@ project identifiers, Flow specifics, and essential performance metrics.
 When a chat or voice AI Agent session happens in Cognigy.AI, it creates an Analytics record for the interaction. 
 Each interaction is logged as a single record. The information is saved only after the entire session is finished.
 You can change this data
-by using the [Overwrite Analytics Node](../build/node-reference/analytics/overwrite-analytics.md).
+by using the [Overwrite Analytics Node](../build/node-reference/analytics/overwrite-analytics/).
 
 **Requests**
 

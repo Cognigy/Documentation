@@ -28,7 +28,7 @@ To add a model provided by Aleph Alpha to Cognigy.AI, follow these steps:
     6.2 Click **Save**.<br>
     6.3 Fill in the following fields:<br>
         - **Connection name** — create a unique name for your connection.<br>
-        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).<br>
+        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).<br>
     6.4 Click **Create**.<br>
     6.5 Fill in the remaining field:<br>
         - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.

@@ -8,8 +8,8 @@ A message is considered `understood` if any of the following conditions are met:
 
 A message is considered `not understood` if any of the following conditions are met:
 
-- It is marked as `Don't count` or `Null` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/build/node-reference/analytics/overwrite-analytics.md).
-- It is sent during an active handover without configuring the [AI Copilot Whisper](https://docs.cognigy.com/live-agent/assistants/ai-copilot-whisper.md) Flow.
+- It is marked as `Don't count` or `Null` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/build/node-reference/analytics/overwrite-analytics/).
+- It is sent during an active handover without configuring the [AI Copilot Whisper](https://docs.cognigy.com/live-agent/assistants/ai-copilot-whisper/) Flow.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,

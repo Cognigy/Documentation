@@ -54,11 +54,11 @@ You can hire an agent with a ready-made set of skills for a specific task and ad
 
 The table shows available example AI Agents for hire.
 
-| AI Agent                                                                                            | Job              | Job Description                                                                                                               | Job Package                                                                                                                                                               |
-|-----------------------------------------------------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Skyron** <img src="../../../../_assets/ai/empower/agentic-ai/Skyron.png" alt="Skyron" width="50"> | Airline Support  | The AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                          |
-| **Anna** <br> <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" alt="Anna" width="50">  | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                                       |
-| **Sophie** <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" alt="Sophie" width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Main - Dinging Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
+| AI Agent                                                                     | Job              | Job Description                                                                                                               | Job Package                                                                                                                                                               |
+|------------------------------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="../../../../_assets/ai/empower/agentic-ai/John.png"  width="50">   | Airline Support  | The AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                          |
+| <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" width="50">    | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                                       |
+| <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png"  width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Main - Dinging Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
 
 ### AI Agents — a New Conversational Paradigm
 
@@ -97,16 +97,15 @@ The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md)
 
 #### Transcript Nodes
 
-The Transcript Nodes enable the AI Agent to simulate, retrieve, and store conversation transcripts, allowing it to reference past interactions for improved decision-making and providing more accurate responses in conversations.
+AI Agents use the conversation transcript to process conversations, allowing it to reference past interactions for improved decision-making and providing more accurate responses in conversations.
 
 ##### Get Transcript Node
 
-The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets AI
-Agents receive a real-time conversation transcript and store the result in the Input or Context object.
+The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) lets receive a real-time conversation transcript and store the result in the Input or Context object.
 
 ##### Add Transcript Steps
 
-The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's inputs to simulate that input.
+The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's to simulate an input or output.
 
 ## More Information
 

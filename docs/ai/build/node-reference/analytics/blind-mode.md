@@ -6,7 +6,7 @@ hidden: false
 # Blind Mode
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/profile/analytics/blind-mode.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/blind-mode.png" width="80%" />
 </figure>
 
 ## Description
