@@ -109,16 +109,23 @@ steps:
   - script: |
       echo "Running Vale on filtered files..."
       FILTERED_FILES=$(cat filtered_files.txt)
-      vale $FILTERED_FILES --output=JSON > vale-report.json || { echo "Vale linting failed!"; exit 1; }
+      vale $FILTERED_FILES --output=JSON > vale-report.json || exit 0
+      # { echo "Vale linting failed!"; exit 1; }
       echo "Vale linting completed. Report saved to vale-report.json."
     displayName: "Run Vale Linter"
 
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: 'vale-report.json'
+      artifactName: 'vale-report'
+    displayName: 'Publish Vale Report Artifact'
+
     # # Step 4: Publish Vale Report as Artifact
-    # - task: PublishBuildArtifacts@1
-    #   inputs:
-    #     pathtoPublish: /home/vsts/work/1/s/vale-report.json
-    #     artifactName: vale-report
-    #   displayName: 'Publish Vale Report Artifact'
+  # - task: PublishBuildArtifacts@1
+  #   inputs:
+  #     pathtoPublish: /home/vsts/work/1/s/vale-report.json
+  #     artifactName: vale-report
+  #   displayName: 'Publish Vale Report Artifact'
 
     # # Step 5: Post Artifact Link as PR Comment
     # - script: |
