@@ -86,7 +86,6 @@ steps:
       echo "Fetching branches and identifying modified files..."
       git config --global user.name "e.baskakova@cognigy.com"
       git config --global user.email "e.baskakova@cognigy.com"
-      # git fetch origin main
       MODIFIED_FILES=$(git diff --name-only origin/test-pr-branch..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
