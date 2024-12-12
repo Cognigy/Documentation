@@ -85,9 +85,9 @@
 
 ol {
     counter-reset: parent-counter;
+    list-style-type: none;
 }
 
-/* Style for top-level ordered list items */
 ol>li {
     counter-increment: parent-counter;
 }
@@ -96,12 +96,11 @@ ol>li::before {
     content: counter(parent-counter) ". ";
 }
 
-/* Reset child counters for nested ordered lists */
 ol>li>ol {
     counter-reset: child-counter;
+    list-style-type: none;
 }
 
-/* Style for nested list items */
 ol>li>ol>li {
     counter-increment: child-counter;
 }
