@@ -61,9 +61,9 @@
         7. Select **Actions** and click **Manage Keys**.<br>
         8. On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
         9. In the appeared window, select the **JSON** key type and click **Create**. The file will be downloaded.<br>
-        1.0 In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
-        1.1 Click **Create**.<br>
-        1.2 Fill in the remaining fields:<br>
+        10. In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
+        11. Click **Create**.<br>
+        12. Fill in the remaining fields:<br>
             - **Location** — add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.<br>
             - **API Endpoint** — add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model. For example, `us-central1-aiplatform.googleapis.com`. Note that the endpoint should be specified without `https://` or `http://`. <br>
             - **Publisher** — add an owner's name of the model. If not specified, `Google` will be used by default.
@@ -81,9 +81,9 @@
         7. Select **Actions** and click **Manage Keys**.<br>
         8. On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
         9. In the appeared window, select the **JSON** key type and click **Create**. The file will be downloaded.<br>
-        1.0 In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
-        1.1 Click **Create**.<br>
-        1.2 In the **Location** field, add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.
+        10. In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
+        11. Click **Create**.<br>
+        12. In the **Location** field, add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.
 
     === "Aleph Alpha"
         1. From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
