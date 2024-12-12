@@ -35,9 +35,9 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 3. In the left-side menu of the Project, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:<br>
-    5.1 Select the **Voice Gateway** Endpoint type.<br>
-    5.2 Add a unique name.<br>
-    5.3 Select a relevant voice Flow from the list.<br>
+    1. Select the **Voice Gateway** Endpoint type.<br>
+    2. Add a unique name.<br>
+    3. Select a relevant voice Flow from the list.<br>
 6. Click **Save**.
 7. In the Endpoint, go to the **AudioCodes Compatibility Mode** section.
 8. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your Flow with the AudioCodes Node as if it were a Flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.

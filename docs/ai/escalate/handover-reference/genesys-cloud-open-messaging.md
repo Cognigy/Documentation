@@ -250,10 +250,10 @@ To create a script, follow these steps:
 12. In the upper-right corner, go to the **Variables** tab.
 13. On the **Variables** tab, go to the **Basic Types** section and click **String**.
 14. Create a new variable:<br>
-    14.1 In the **Name** field, enter `userId`.<br>
-    14.2 In the **Description** field, enter `Cognigy variable`.<br>
-    14.3 Enable the **Input** toggle.<br>
-    14.4 Click **Apply**.<br>
+    1. In the **Name** field, enter `userId`.<br>
+    2. In the **Description** field, enter `Cognigy variable`.<br>
+    3. Enable the **Input** toggle.<br>
+    4. Click **Apply**.<br>
 15. In the upper-left corner of the script page, click **Script > Properties**.
 16. In the **Script Properties** section, activate the **Inbound** and **Message** features.
 17. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
