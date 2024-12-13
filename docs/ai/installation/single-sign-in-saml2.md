@@ -38,7 +38,7 @@ https://<frontend-url>/slo/<organization-id>
 
 For instance, the frontend URL could be `app.cognigy.ai`.
 
-Learn more about connecting to your proffered SSO provider in [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
+Learn more about connecting to your proffered SSO provider in the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
 
 ## Change a Single Sign-on Configuration in Cognigy.AI
 
