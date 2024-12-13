@@ -127,23 +127,63 @@ steps:
   #     artifactName: vale-report
   #   displayName: 'Publish Vale Report Artifact'
 
-  # Step 5: Post Artifact Link as PR Comment
+  # # Step 5: Post Artifact Link as PR Comment
+  # - script: |
+  #     echo "Generating artifact URL and posting as PR comment..."
+  #     ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
+      
+  #     COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
+      
+  #     curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+  #       -H "Content-Type: application/json" \
+  #       -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
+  #       "${System_CollectionUri}${System_TeamProject}/_apis/git/repositories/${Build_Repository_Name}/pullRequests/${System_PullRequest_PullRequestId}/threads?api-version=7.1-preview.1"
+  #   displayName: 'Post Artifact Link as PR Comment'
+  #   env:
+  #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  #   condition: eq(variables['Build.Reason'], 'PullRequest')
+# Step: Post Artifact Link as PR Comment
   - script: |
-      echo "Generating artifact URL and posting as PR comment..."
-      ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
-      
-      COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
-      
-      if [ -z "$System_PullRequest_PullRequestId" ]; then
+      # Declare and Initialize Variables
+      pr_id=$(System.PullRequest.PullRequestId)
+      repository_url=$(System.PullRequest.SourceRepositoryURI)
+      repository_id=$(basename "$repository_url")
+      apikey=$(System.AccessToken)
+      token=$(echo -n user:$apikey | base64 -w0)
+      team_project="$(System.TeamProject)"
+      team_name=$(echo -n "$team_project" | jq -sRr @uri)
+
+      # Log All Variables for Debugging
+      echo "PR ID: $pr_id"
+      echo "Repository URL: $repository_url"
+      echo "Repository ID: $repository_id"
+      echo "API Key: $apikey"
+      echo "Token: $token"
+      echo "Team Project: $team_project"
+      echo "Team Name: $team_name"
+
+      # Log Information for Context
+      echo "Running Changelog Validation for PR: $pr_id in repository: $repository_id in team_name: $team_name"
+
+      # Exit Early if No Pull Request ID (e.g., not a PR Build)
+      if [ -z "$pr_id" ]; then
         echo "No Pull Request ID found. Exiting."
         exit 0
       fi
-      
-      curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+
+      # Generate Artifact URL
+      ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
+
+      # Prepare the Comment Body
+      COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
+
+      # Post the Comment to the Pull Request
+      curl -X POST "https://dev.azure.com/$team_name/_apis/git/repositories/$repository_id/pullrequests/$pr_id/threads?api-version=7.0" \
+        -H "Authorization: Basic ${token}" \
         -H "Content-Type: application/json" \
-        -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-        "${System_CollectionUri}${System_TeamProject}/_apis/git/repositories/${Build_Repository_Name}/pullRequests/${System_PullRequest_PullRequestId}/threads?api-version=7.1-preview.1"
+        -d "{\"status\": \"active\", \"comments\": [{\"parentCommentId\": 0, \"content\": \"$COMMENT_BODY\", \"commentType\": 1}]}"
+
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-    condition: eq(variables['Build.Reason'], 'PullRequest')
+    condition: eq(variables['Build.Reason'], 'PullRequest')  
