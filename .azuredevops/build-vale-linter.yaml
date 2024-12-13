@@ -165,12 +165,6 @@ steps:
       # Log Information for Context
       echo "Running Changelog Validation for PR: $pr_id in repository: $repository_id in team_name: $team_name"
 
-      # Exit Early if No Pull Request ID (e.g., not a PR Build)
-      if [ -z "$pr_id" ]; then
-        echo "No Pull Request ID found. Exiting."
-        exit 0
-      fi
-
       # Generate Artifact URL
       ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
 
