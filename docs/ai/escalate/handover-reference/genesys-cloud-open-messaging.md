@@ -1,6 +1,7 @@
 ---
 title: "Genesys Cloud Open Messaging"
 slug: "genesys-cloud-open-messaging"
+description: "Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud."
 hidden: false
 ---
 
@@ -12,9 +13,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
 </figure>
 
-Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
-
-Open messaging facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
+Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud.
 
 The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](https://developer.genesys.cloud/commdigital/digital/openmessaging/openmessaging-apis). [Open messaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
 
@@ -209,6 +208,8 @@ The main Flow on Cognigy.AI should look like this:
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
 </figure>
+
+{! _includes/ai/providers/genesys/filter-transcript-messages.md !}
 
 ## AI Copilot Workspace
 
