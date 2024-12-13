@@ -13,6 +13,7 @@ hidden: false
 
 ## Description
 
+
 Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow.
 The Code Node editor has full IntelliSense and exposes all Cognigy objects and actions.
 For better performance, the TypeScript code will be transpiled when the Node is saved.

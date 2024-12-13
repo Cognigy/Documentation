@@ -17,9 +17,9 @@ The conversation is handed over to a human agent when the AI Agent cannot assist
   <figcaption>Conversation Page</figcaption>
 </figure>
 
-## Conversation Lifecycle
+## Conversation Life Cycle
 
-The conversation lifecycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
+The conversation life cycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
 
 <figure>
 <img class="image-center" src="../../../_assets/live-agent/conversation/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />
@@ -40,10 +40,10 @@ Conversations can be [selected and filtered by their statuses](search-and-filter
 
 ## Conversation Assignment Statuses 
 
-When a conversation appears in the Live Agent status in the `Open` status, the conversation can have one of the following assignment statuses:
+A conversation with the `Opened` status in Live Agent can have one of the following assignment statuses:
 
-- **Unassigned** — you can assign conversations to a human agent manually, or these conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an administrator.
-- **Assigned** — you can assign conversations to a human agent manually or incoming conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an administrator.
+- **Unassigned** — a conversation is not assigned to a human agent.
+- **Assigned** — a conversation is assigned to a human agent. The assignment occurs either [manually](../conversation/conversation-routing/manual-mode.md) or [automatically](../conversation/conversation-routing/automatic-mode.md).
 
 ## Conversation Details 
 
@@ -78,7 +78,7 @@ The following table represents data that can be edited within Live Agent and sto
 | Location                | User's location.                                                                                                                                                 |
 | Accepted GDPR           | Accepted General Data Protection Regulation.                                                                                                                     |
 | Accepted Privacy Policy | Accepted the privacy policy terms. This field is applicable to Webchat v3 when a user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
-| Goals                   | Goals are the user's intention or task.                                                                                                                          |
+| Tasks                   | Tasks are the user's intention or task.                                                                                                                          |
 | Profile Picture         | When available, the URL address of a user's picture.                                                                                                             |
 
 #### Change Contact Profile Details

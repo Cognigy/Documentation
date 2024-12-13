@@ -5,7 +5,7 @@ hidden: false
 ---
 # Engagement Dashboard
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
 
 The _Engagement Dashboard_ highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
 
@@ -25,14 +25,14 @@ The _Engagement Dashboard_ highlights customer interactions in conversations and
 
 The Indicator charts displays real-time data that refreshes every 30 seconds.
 
-### Goals reached 
+### Tasks reached 
 
-This chart displays the total number of [completed goals](../../ai/build/node-reference/analytics/complete-goal.md). 
+This chart displays the total number of [completed tasks](../../ai/build/node-reference/analytics/complete-task.md). 
 
 Source table:
 
 ```txt
- | StartedAt  |  Sessions   |  Goals                   | Goals reached |
+ | StartedAt  |  Sessions   |  Tasks                   | Tasks reached |
  | ---------- | ----------- | ------------------------ | ------------- |
  | 2022/01/01 | session-123 | "Goal A, Goal B, Goal D" |       3       |
  | 2022/01/01 | session-456 | "Goal B, Goal C, Goal E" |       3       |
@@ -48,7 +48,7 @@ Result: `11`
 Displays how long the average session lasted.
 
 The session length is defined as the time difference between the timestamp of the first user input and the last user input.
-The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
+The Average session length is the mean of all session lengths within the specified time span in your Insights filter.
 
 Source table:
 
@@ -155,9 +155,9 @@ Result:
 
 ## Bar charts
 
-### Top Goals
+### Top Tasks
 
-Displays the number of completed goals.
+Displays the number of completed tasks.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -166,7 +166,7 @@ which leads you to the Step Explorer in Insights.
 Source table:
 
 ```txt 
-| Sessions    | Goals                  |
+| Sessions    | Tasks                  |
 | ----------- | ---------------------- |
 | session-123 | Goal A, Goal B, Goal D |
 | session-456 | Goal B, Goal C, Goal E |
@@ -221,7 +221,7 @@ Result:
 
 ### Handovers in Time
 
-Displays the number of times a human agent was contacted within the filtered time frame. Multiple handovers can occur within a single session.
+Displays the number of times a human agent was contacted within the filtered time span. Multiple handovers can occur within a single session.
 
 By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
 you can select **Go to Step Explorer**,
@@ -295,5 +295,6 @@ Result:
 ## More Information
 
 - [Overview](overview.md)
+- [Dashboard Goals](goals.md)
 - [Dashboard NLU Performance](nlu-performance.md)
 - [Dashboard Live Agent](live-agent.md)

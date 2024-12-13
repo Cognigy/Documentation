@@ -12,4 +12,4 @@ Cognigy offers three types of installation:
 
 - [On-Premises](overview.md)
 - [SaaS](ip-ranges-shared-environments.md)
-- [Single Sign-On (SSO)](single-sign-in-saml2.md)
+- [Single Sign-on (SSO)](single-sign-on-saml2.md)

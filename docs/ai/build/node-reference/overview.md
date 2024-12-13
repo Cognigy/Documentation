@@ -262,9 +262,11 @@ The Blind Mode disables all (or selected) logging. The Node can be used whenever
 - Mask Analytics: Outputs XXXX in the analytics (including Contact Profile conversations).
 - Disable Conversations: Disables output analytics altogether.
 
-### [Complete Goal](analytics/complete-goal.md)
+### [Complete Task](analytics/complete-task.md)
 
-This Node can be used to add a custom Goal to the [Contact Profile](../../analyze/contact-profiles.md). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the [Contact Profile](../../analyze/contact-profiles.md) overview.
+This Node can be used to add a custom Goal to the [Contact Profile](../../analyze/contact-profiles.md).
+Custom Tasks are KPIs that can be dynamically configured
+and that show up in the output analytics as well as the [Contact Profile](../../analyze/contact-profiles.md) overview.
 
 ### [Deactivate Profile](analytics/deactivate-profile.md)
 
@@ -346,44 +348,44 @@ This Node detects and handles user inactivity, freeing up capacity for the human
 
 This Node is used to execute a [Function](../functions.md).
 
-## [NLU Nodes](nlu/overview.md)
+## [NLU Nodes](ai/overview.md)
 
 
 NLU Nodes are a collection of Nodes that are related to the platform's [NLU](../../empower/nlu/overview.md). It features a range of different Nodes.
 
-### [Add Lexicon Keyphrase](nlu/add-lexicon-keyphrase.md)
+### [Add Lexicon Keyphrase](ai/add-lexicon-keyphrase.md)
 
 This Node can be used to dynamically create a [Lexicons](../../empower/nlu/slots-and-lexicons/lexicons.md) Keyphrase entry, either based on hardcoded or dynamic data.
 
-### [Clean Text](nlu/clean-text.md)
+### [Clean Text](ai/clean-text.md)
 
 This Node enables a user to clean a provided text using the Text Cleaner class, which exposes various functions for cleaning text.
 
-### [Copy Slots to Context](nlu/copy-slots-to-context.md)
+### [Copy Slots to Context](ai/copy-slots-to-context.md)
 
 This Node can be used to copy Slots that were detected and published in the [Input](../../test/interaction-panel/input.md) object, to the conversation [Context](../../test/interaction-panel/context.md).
 
-### [Disable Slot Fillers](nlu/disable-slot-fillers.md)
+### [Disable Slot Fillers](ai/disable-slot-fillers.md)
 
 This Node lets you disable any active Slot Fillers. For more information on Slot Fillers, refer to [NLU (Natural Language Understanding)](../../empower/nlu/overview.md).
 
-### [Enable Slot Fillers](nlu/enable-slot-fillers.md)
+### [Enable Slot Fillers](ai/enable-slot-fillers.md)
 
 This Node lets you enable a particular Slot Filler. Use the drop-down menu to select the Slot Filler that you want to enable. For more information on Slot Fillers, refer to [NLU (Natural Language Understanding](../../empower/nlu/overview.md).
 
-### [Execute Cognigy NLU](nlu/execute-cognigy-nlu.md)
+### [Execute Cognigy NLU](ai/execute-cognigy-nlu.md)
 
 This Node can be used to explicitly execute [Cognigy NLU](../../empower/nlu/overview.md) at a certain point in the Flow. NLU execution happens automatically at the start of the Flow and with each new user input.
 
-### [Fuzzy Search](nlu/fuzzy-search.md)
+### [Fuzzy Search](ai/fuzzy-search.md)
 
 This Node enables a Flow to search through a list (string array) of source data by providing a search pattern. It will return the best possible matches, based on a set of parameters.
 
-### [Match Pattern](nlu/match-pattern.md)
+### [Match Pattern](ai/match-pattern.md)
 
 This Node enables a user to find patterns in text and expose them in the [Input Object](../../test/interaction-panel/input.md).
 
-### [Regex Slot Filler](nlu/regex-slot-filler.md)
+### [Regex Slot Filler](ai/regex-slot-filler.md)
 
 This Node can be used to create a Slot based on a regex pattern. When the pattern is detected, a Slot will be published to the [Input](../../test/interaction-panel/input.md) object.
 

@@ -119,8 +119,15 @@ To change the appearance of this message and make it more accessible, as well as
     <figcaption>Configuration of Real-Time Queue Notifications</figcaption>
 </figure>
 
+## AI Copilot
+
+If you use the [AI Copilot workspace](../../assistants/ai-copilot.md) in Live Agent, include additional Nodes in your AI Copilot Flow: the [Handover to Agent](#configure-settings-for-a-handover-to-agent-node) and [Lookup](#add-a-lookup-node) with the Queue status, followed by the [Say Nodes](#add-say-nodes).
+In the Main Flow, below the Case Node with the Queue status,
+add a [Go To Node](../../../ai/build/node-reference/logic/go-to.md) that leads to the AI Copilot Flow and its Lookup Node.
+
 ## More Information
 
 - [Overview](overview.md)
+- [Lookup](../../../ai/build/node-reference/logic/lookup.md#handover-status)
 - [User Inactivity Detection and Handling](../../../ai/escalate/user-inactivity-detection.md)
 - [Agent Handover](../../../ai/build/node-reference/service/handover-to-agent.md)

@@ -16,7 +16,7 @@ These functions support the English (`en`) and German (`de`) locales.
 
 The functions are available in the following entities:
 
-- [Clean Text Node](../../build/node-reference/nlu/clean-text.md)
+- [Clean Text Node](../../build/node-reference/ai/clean-text.md)
 - [Question Nodes](../../build/node-reference/basic/question.md#answer-preprocessing)
 - [Code Node](../../build/node-reference/basic/code/modules.md#text-cleaner)
 - [Transformers](../../deploy/endpoints/transformers/transformers.md#text-cleaner-class)

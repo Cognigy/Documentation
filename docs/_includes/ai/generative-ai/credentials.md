@@ -15,7 +15,7 @@
         6.5 In the **Connection name**, enter a unique name for your connection.<br>
         6.6 From the **Connection Type** list, select one of the following authorization methods:<br>
             - **API Key** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-            - **OAuth2** — this method is experimental and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
+            - **OAuth2** — this method is experimental, hidden behind the `FEATURE_ENABLE_OAUTH2_AZURE_CONNECTION_WHITELIST` feature flag, and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:<br>
             &nbsp;&nbsp;&nbsp;&nbsp;- **Client ID** — add the Application (client) ID assigned to your app, can be found in the in Azure AI app registration overview.<br>
             &nbsp;&nbsp;&nbsp;&nbsp;- **Client Secret** — add the application secret created in the **Certificates & secrets** section of the Azure AI app registration portal.<br>
             &nbsp;&nbsp;&nbsp;&nbsp;- **OAuth URL** — add the URL to retrieve the access token. The URL should be in the `https://<your-domain>.com/as/token.oauth2` format.<br>
@@ -92,7 +92,7 @@
         6.2 Click **Save**.<br>
         6.3 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
-            - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).<br>
+            - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).<br>
         6.4 Click **Create**.<br>
         6.5 Fill in the remaining field:<br>
             - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.

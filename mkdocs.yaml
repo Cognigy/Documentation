@@ -19,7 +19,6 @@ nav:
       - ai/glossary.md
 
     - 🛠️ Build:
-      - ai/build/overview.md
       - ai/build/projects.md
       - ai/build/flows.md
       - Nodes:
@@ -96,19 +95,23 @@ nav:
         - Analytics:
           - ai/build/node-reference/analytics/overview.md
           - ai/build/node-reference/analytics/activate-profile.md
+          - ai/build/node-reference/analytics/add-memory.md
           - ai/build/node-reference/analytics/blind-mode.md
-          - ai/build/node-reference/analytics/complete-goal.md
+          - ai/build/node-reference/analytics/complete-task.md
           - ai/build/node-reference/analytics/deactivate-profile.md
           - ai/build/node-reference/analytics/delete-profile.md
           - ai/build/node-reference/analytics/merge-profile.md
           - ai/build/node-reference/analytics/overwrite-analytics.md
           - ai/build/node-reference/analytics/request-rating.md
+          - ai/build/node-reference/analytics/track-goal.md
           - ai/build/node-reference/analytics/set-rating.md
           - ai/build/node-reference/analytics/update-profile.md
         - Service:
            - ai/build/node-reference/service/overview.md
+           - ai/build/node-reference/service/add-transcript-steps.md
            - ai/build/node-reference/service/check-agent-availability.md
            - ai/build/node-reference/service/close-handover.md
+           - ai/build/node-reference/service/get-transcript.md
            - ai/build/node-reference/service/gpt-conversation.md
            - ai/build/node-reference/service/handover-to-agent.md
            - ai/build/node-reference/service/http-request.md
@@ -117,17 +120,20 @@ nav:
            - ai/build/node-reference/service/ms-sql.md
            - ai/build/node-reference/service/set-handover-inactivity.md
            - ai/build/node-reference/service/trigger-function.md
-        - NLU:
-          - ai/build/node-reference/nlu/overview.md
-          - ai/build/node-reference/nlu/add-lexicon-keyphrase.md
-          - ai/build/node-reference/nlu/clean-text.md
-          - ai/build/node-reference/nlu/copy-slots-to-context.md
-          - ai/build/node-reference/nlu/disable-slot-fillers.md
-          - ai/build/node-reference/nlu/enable-slot-fillers.md
-          - ai/build/node-reference/nlu/execute-cognigy-nlu.md
-          - ai/build/node-reference/nlu/fuzzy-search.md
-          - ai/build/node-reference/nlu/match-pattern.md
-          - ai/build/node-reference/nlu/regex-slot-filler.md
+        - AI:
+          - ai/build/node-reference/ai/overview.md
+          - ai/build/node-reference/ai/add-lexicon-keyphrase.md
+          - ai/build/node-reference/ai/ai-agent.md
+          - ai/build/node-reference/ai/ai-agent-handover.md
+          - ai/build/node-reference/ai/clean-text.md
+          - ai/build/node-reference/ai/copy-slots-to-context.md
+          - ai/build/node-reference/ai/disable-slot-fillers.md
+          - ai/build/node-reference/ai/enable-slot-fillers.md
+          - ai/build/node-reference/ai/execute-cognigy-nlu.md
+          - ai/build/node-reference/ai/fuzzy-search.md
+          - ai/build/node-reference/ai/match-pattern.md
+          - ai/build/node-reference/ai/regex-slot-filler.md
+          - ai/build/node-reference/ai/resolve-tool-action.md
         - Data:
           - ai/build/node-reference/data/overview.md
           - ai/build/node-reference/data/datepicker.md
@@ -141,6 +147,7 @@ nav:
           - ai/build/node-reference/ai-copilot/identity-tile.md
           - ai/build/node-reference/ai-copilot/knowledge-tile.md
           - ai/build/node-reference/ai-copilot/next-action-tile.md
+          - ai/build/node-reference/ai-copilot/send-data.md
           - ai/build/node-reference/ai-copilot/sentiment-tile.md
           - ai/build/node-reference/ai-copilot/set-grid.md
           - ai/build/node-reference/ai-copilot/transcript-tile.md
@@ -169,6 +176,10 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
+      - Agentic AI (Beta):
+          - ai/empower/agentic-ai/overview.md
+          - ai/empower/agentic-ai/getting-started.md
+          - ai/empower/agentic-ai/manage-ai-agents.md
       - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:
@@ -214,6 +225,7 @@ nav:
             - ai/empower/llms/providers/google.md
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
+          - ai/empower/llms/fallback.md
           - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
@@ -304,6 +316,10 @@ nav:
       - ai/analyze/odata.md
       - ai/analyze/call-tracing.md
       - ai/analyze/contact-profiles.md
+      - Goals and Tasks:
+        - ai/analyze/goals-and-tasks/overview.md
+        - ai/analyze/goals-and-tasks/tasks.md
+        - ai/analyze/goals-and-tasks/goals.md
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md
@@ -344,10 +360,10 @@ nav:
       - ai/developers/extension-framework.md
 
     - 🖥️ Install, Configure, and Migrate:
+      - ai/installation/access-to-cognigy-ai.md
       - ai/installation/about.md
       - ai/installation/browser-requirements.md
       - ai/installation/architecture.md
-      - ai/installation/access-to-cognigy-ai.md
       - On-Premises:
         - ai/installation/overview.md
         - ai/installation/version-compatibility-matrix.md
@@ -369,8 +385,8 @@ nav:
       - SaaS:
         - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
-      - Single Sign-On (SSO):
-        - ai/installation/single-sign-in-saml2.md
+      - Single Sign-on (SSO):
+        - ai/installation/single-sign-on-saml2.md
         - ai/installation/single-signin-openid-connect.md
 
   - Voice Gateway:
@@ -418,6 +434,7 @@ nav:
         - voice-gateway/references/events/CALL_CREATED.md
         - voice-gateway/references/events/CALL_COMPLETED.md
         - voice-gateway/references/events/CALL_FAILED.md
+        - voice-gateway/references/events/CALL_IN_PROGRESS.md
         - voice-gateway/references/events/CALL_RECONNECTED.md
         - voice-gateway/references/events/RECOGNIZED_DTMF.md
         - voice-gateway/references/events/RECOGNIZED_SPEECH.md
@@ -627,6 +644,7 @@ nav:
       - insights/dashboards/engagement.md
       - insights/dashboards/nlu-performance.md
       - insights/dashboards/live-agent.md
+      - insights/dashboards/goals.md
     - 🔭 Explorers:
       - insights/explorers/step.md
       - insights/explorers/transcript.md
@@ -652,6 +670,9 @@ nav:
     - release-notes/index.md
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
+      - 4.9x:
+        - release-notes/4.91.md
+        - release-notes/4.90.md
       - 4.8x:
         - release-notes/4.89.md
         - release-notes/4.88.md

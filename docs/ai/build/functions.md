@@ -19,7 +19,7 @@ You can start using Functions by navigating to **Build > Functions** in the left
 ## Limitations
 
 The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes.
-If you have an On-premise environment, you can change this limit.
+If you have an on-premises environment, you can change this limit.
 
 ## Configuration and Monitoring
 

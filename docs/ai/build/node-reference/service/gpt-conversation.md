@@ -87,7 +87,7 @@ Grounding Knowledge is the foundational information that the AI Agent has access
 
 | Parameter       | Type          | Description                                                                                |
 |-----------------|---------------|--------------------------------------------------------------------------------------------|
-| Timeout         | Select        | The maximum amount of milliseconds to wait for a response from the Generative AI Provider. |
+| Timeout         | Select        | The maximum amount of milliseconds to wait for a response from the Generative AI provider. |
 | Timeout Message | CognigyScript | The message to output if the timeout is hit.                                               |
 
 ## Examples

@@ -6,13 +6,13 @@ hidden: false
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
 
 {! _includes/ai/terms-of-use.md !}
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
+Cognigy.AI integrates with various [LLM Providers](#prerequisites)
 to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
@@ -20,13 +20,13 @@ to enable Generative AI functionality. This functionality is broadly classified 
 
 ## Prerequisites
 
-Before using this feature, you need to create an account in one of the Generative AI Providers:
+Before using this feature, you need to create an account in one of the LLM Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
 - [Google Vertex AI and Gemini](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
-- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).
+- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
 - [Amazon Bedrock](https://aws.amazon.com/bedrock/). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
 
 ### Set up Generative AI

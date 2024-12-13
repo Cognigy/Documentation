@@ -58,13 +58,13 @@ To log in to Cognigy.AI, follow these steps:
 
 You will receive an email with instructions to reset your password. You need to choose a password according to the [password policy](../administer/access/management-ui.md#password-policy) your admin set up. 
 
-### Log in with Single Sign-On
+### Log in with Single Sign-on
 
-If you have set up [single sign-on (SSO)](single-sign-in-saml2.md), you can log in to Cognigy.AI by following these steps:
+In Cognigy.AI, you can set up [single sign-on (SSO)](single-sign-on-saml2.md) and, if necessary, you can [enforce login with SSO](single-sign-on-saml2.md) for your users.
 
-1. Go to the login page and click **Login with SSO**.
-2. Enter your email in the **E-Mail** field.
-3. Click **Sign in with SSO**.
+To log in with SSO, follow these steps:
+
+{! _includes/ai/overview/log-in-with-sso.md !}
 
 ### Multiple Organizations
 
