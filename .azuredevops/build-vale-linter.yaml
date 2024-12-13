@@ -127,17 +127,17 @@ steps:
   #     artifactName: vale-report
   #   displayName: 'Publish Vale Report Artifact'
 
-    # # Step 5: Post Artifact Link as PR Comment
-    # - script: |
-    #     echo "Generating artifact URL and posting as PR comment..."
-    #     ARTIFACT_URL="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_apis/build/builds/$(Build.BuildId)/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
-        
-    #     COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
-        
-    #     curl -X POST -H "Authorization: Bearer $(System.AccessToken)" \
-    #       -H "Content-Type: application/json" \
-    #       -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-    #       "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1"
-    #   displayName: 'Post Artifact Link as PR Comment'
-    #   env:
-    #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  # Step 5: Post Artifact Link as PR Comment
+  - script: |
+      echo "Generating artifact URL and posting as PR comment..."
+      ARTIFACT_URL="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_apis/build/builds/$(Build.BuildId)/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
+      
+      COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
+      
+      curl -X POST -H "Authorization: Bearer $(System.AccessToken)" \
+        -H "Content-Type: application/json" \
+        -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
+        "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1"
+    displayName: 'Post Artifact Link as PR Comment'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
