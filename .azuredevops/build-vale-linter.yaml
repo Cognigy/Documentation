@@ -130,14 +130,20 @@ steps:
   # Step 5: Post Artifact Link as PR Comment
   - script: |
       echo "Generating artifact URL and posting as PR comment..."
-      ARTIFACT_URL="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_apis/build/builds/$(Build.BuildId)/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
+      ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
       
       COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
       
-      curl -X POST -H "Authorization: Bearer $(System.AccessToken)" \
+      if [ -z "$System_PullRequest_PullRequestId" ]; then
+        echo "No Pull Request ID found. Exiting."
+        exit 0
+      fi
+      
+      curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
         -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-        "$(System.CollectionUri)$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.Name)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=7.1-preview.1"
+        "${System_CollectionUri}${System_TeamProject}/_apis/git/repositories/${Build_Repository_Name}/pullRequests/${System_PullRequest_PullRequestId}/threads?api-version=7.1-preview.1"
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+    condition: eq(variables['Build.Reason'], 'PullRequest')
