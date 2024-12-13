@@ -23,6 +23,9 @@ To initiate an outgoing call, use on of the following methods:
 
 ## Create an Outbound Call via API Request
 
+!!! warning
+    Outbound calls via the API work only if a speech provider is configured without a label.
+
 Send an HTTP POST request to the Voice Gateway API to generate an outbound call.
 When the call is answered, the specified webhook will be invoked to manage the call.
 Authorization is established via a Bearer token.
