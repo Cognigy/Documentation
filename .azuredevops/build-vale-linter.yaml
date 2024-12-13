@@ -97,4 +97,3 @@ steps:
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-    condition: eq(variables['Build.Reason'], 'PullRequest')
