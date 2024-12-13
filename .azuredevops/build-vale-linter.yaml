@@ -13,37 +13,6 @@ steps:
   - checkout: self
     fetchDepth: 0
     persistCredentials: true
-  # # Step 2: Identify Modified Files in the PR
-  # - script: |
-  #     echo "Configuring Git to use the Azure DevOps token..."
-  #     git config --global credential.helper store
-  #     echo "https://:$SYSTEM_ACCESSTOKEN@$(System.CollectionUri)" > ~/.git-credentials
-
-  #     echo "Fetching target branch and identifying modified Markdown files..."
-  #     echo "Target Branch: $SYSTEM_PULLREQUEST_TARGETBRANCH"
-  #     echo "Source Branch: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
-      
-  #     mkdir -p vale_bin
-  #     git fetch origin "$SYSTEM_PULLREQUEST_TARGETBRANCH" || exit 1
-  #     MODIFIED_FILES=$(git diff --name-only origin/"$SYSTEM_PULLREQUEST_TARGETBRANCH"..origin/"$SYSTEM_PULLREQUEST_SOURCEBRANCH")
-  #     echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt || true
-  #   displayName: 'Identify Modified Files'
-  #   env:
-  #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  #     SYSTEM_PULLREQUEST_SOURCEBRANCH: main
-  #     SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
-
-  # - script: |
-  #     git fetch --all
-  #     git diff --name-only "main" "test-pr-branch" > filtered_files.txt
-  #   displayName: 'install Vale'
-
-  # # Step 4: Publish Vale Report as Artifact
-  # - task: PublishBuildArtifacts@1
-  #   inputs:
-  #     pathtoPublish: 'filtered_files.txt'
-  #     artifactName: 'filtered_files'
-  #   displayName: 'Publish Vale Report Artifact'
 
   # Step 1: Run Vale using Docker
   - script: |
@@ -62,27 +31,6 @@ steps:
   #     echo "Searching for vale-report.json file:"
   #     find . -name "vale-report.json"
   #   displayName: 'Run Vale and Debug'
-
-  # # Step 1: Run Vale using Docker
-  # - script: |
-  #     echo "Running Vale using Docker..."
-  #     docker run --rm -v $(pwd):/docs -w /docs jdkato/vale .
-  #   displayName: 'Run Vale in Docker'
-
-
-
-  # Step 3: Run Vale on Filtered Files
-  # - script: |
-  #     echo "Running Vale on modified Markdown files..."
-  #     FILTERED_FILES=$(cat filtered_files.txt)
-  #     if [ -z "$FILTERED_FILES" ]; then
-  #       echo "No Markdown files to lint. Skipping."
-  #       exit 0
-  #     fi
-      
-  #     vale $FILTERED_FILES --output=JSON > vale-report.json || exit 1
-  #     echo "Vale linting completed. Report saved to vale-report.json."
-  #   displayName: 'Run Vale Linter'
 
   # Step 2: Identify Modified Files
   - script: |
@@ -120,31 +68,8 @@ steps:
       artifactName: 'vale-report'
     displayName: 'Publish Vale Report Artifact'
 
-    # # Step 4: Publish Vale Report as Artifact
-  # - task: PublishBuildArtifacts@1
-  #   inputs:
-  #     pathtoPublish: /home/vsts/work/1/s/vale-report.json
-  #     artifactName: vale-report
-  #   displayName: 'Publish Vale Report Artifact'
-
-  # # Step 5: Post Artifact Link as PR Comment
-  # - script: |
-  #     echo "Generating artifact URL and posting as PR comment..."
-  #     ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
-      
-  #     COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
-      
-  #     curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
-  #       -H "Content-Type: application/json" \
-  #       -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-  #       "${System_CollectionUri}${System_TeamProject}/_apis/git/repositories/${Build_Repository_Name}/pullRequests/${System_PullRequest_PullRequestId}/threads?api-version=7.1-preview.1"
-  #   displayName: 'Post Artifact Link as PR Comment'
-  #   env:
-  #     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  #   condition: eq(variables['Build.Reason'], 'PullRequest')
-# Step: Post Artifact Link as PR Comment
+  # Step 5: Post Artifact Link as PR Comment
   - script: |
-      # Declare and Initialize Variables
       pr_id=$(System.PullRequest.PullRequestId)
       repository_url=$(System.PullRequest.SourceRepositoryURI)
       repository_id=$(basename "$repository_url")
@@ -152,7 +77,6 @@ steps:
       token=$(echo -n user:$apikey | base64 -w0)
       team_project="$(System.TeamProject)"
       team_name=$(echo -n "$team_project" | jq -sRr @uri)
-
       # Log All Variables for Debugging
       echo "PR ID: $pr_id"
       echo "Repository URL: $repository_url"
@@ -160,24 +84,17 @@ steps:
       echo "API Key: $apikey"
       echo "Token: $token"
       echo "Team Project: $team_project"
-      echo "Team Name: $team_name"
-
-      # Log Information for Context
-      echo "Running Changelog Validation for PR: $pr_id in repository: $repository_id in team_name: $team_name"
-
-      # Generate Artifact URL
+      echo "Team Name: $team_name" 
+      echo "Generating artifact URL and posting as PR comment..."
       ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
-
-      # Prepare the Comment Body
+      
       COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
-
-      # Post the Comment to the Pull Request
-      curl -X POST "https://dev.azure.com/$team_name/_apis/git/repositories/$repository_id/pullrequests/$pr_id/threads?api-version=7.0" \
-        -H "Authorization: Basic ${token}" \
+      
+      curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
-        -d "{\"status\": \"active\", \"comments\": [{\"parentCommentId\": 0, \"content\": \"$COMMENT_BODY\", \"commentType\": 1}]}"
-
+        -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
+        "${System_CollectionUri}$team_project/_apis/git/repositories/$repository_id/pullRequests/$pr_id/threads?api-version=7.1-preview.1"
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-    condition: eq(variables['Build.Reason'], 'PullRequest')  
+    condition: eq(variables['Build.Reason'], 'PullRequest')
