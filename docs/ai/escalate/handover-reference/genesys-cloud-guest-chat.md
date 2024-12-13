@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys Cloud Guest Chat
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.72-blue.svg)](../../../release-notes/4.72.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />

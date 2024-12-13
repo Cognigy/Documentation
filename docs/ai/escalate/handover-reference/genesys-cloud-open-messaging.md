@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.74.4-blue.svg)](../../../release-notes/4.74.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
