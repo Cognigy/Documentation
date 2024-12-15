@@ -35,8 +35,8 @@ steps:
   # Step 2: Identify Modified Files
   - script: |
       echo "Fetching branches and identifying modified files..."
-      git config --global user.name "e.baskakova@cognigy.com"
-      git config --global user.email "e.baskakova@cognigy.com"
+      git config --global user.name "azure-pipeline@cognigy.com"
+      git config --global user.email "azure-pipeline@cognigy.com"
       MODIFIED_FILES=$(git diff --name-only origin/main..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
@@ -78,8 +78,6 @@ steps:
       team_project="$(System.TeamProject)"
       team_name=$(echo -n "$team_project" | jq -sRr @uri)
       BUILD_ID=$(Build.BuildId)
-      ARTIFACT_NAME="vale-report"
-      CONTAINER_ID="29971540"
       # Log All Variables for Debugging
       echo "PR ID: $pr_id"
       echo "Repository URL: $repository_url"
@@ -88,11 +86,11 @@ steps:
       echo "Team Name: $team_name" 
       echo "Generating artifact URL and posting as PR comment..."
       
-      ARTIFACT_URL="https://$(System.TeamFoundationCollectionUri)/_apis/resources/Containers/${CONTAINER_ID}/${ARTIFACT_NAME}?itemPath=${ARTIFACT_NAME}%2Fvale-report.json&%24format=zip&saveAbsolutePath=false"
+      ARTIFACT_URL="https://dev.azure.com/cognigy/Documentation/_build/results?buildId=${BUILD_ID}&view=artifacts&pathAsName=false&type=publishedArtifacts"
       
       echo "Vale report is available [here](${UNIQUE_ARTIFACT_URL})"
 
-      COMMENT_BODY="### The Vale report is available to download [here]($ARTIFACT_URL)."
+      COMMENT_BODY="### THello, I'm Mr. Vale, your documentation linter! I've spotted a few areas for improvement — like grammar, style, or spelling — check my suggestions in the [link]($ARTIFACT_URL)."
       
       curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
