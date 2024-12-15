@@ -90,7 +90,7 @@ steps:
       
       echo "Vale report is available [here](${UNIQUE_ARTIFACT_URL})"
 
-      COMMENT_BODY="### THello, I'm Mr. Vale, your documentation linter! I've spotted a few areas for improvement — like grammar, style, or spelling — check my suggestions in the [link]($ARTIFACT_URL)."
+      COMMENT_BODY="Hi there! 😊 I'm Mr. Vale, your documentation linter. I've found a few little things to tweak — like grammar and style — that could make your writing even better. Take a peek at my suggestions through the [link]($ARTIFACT_URL)."
       
       curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
