@@ -14,7 +14,7 @@ steps:
     fetchDepth: 0
     persistCredentials: true
 
-  # Step 1: Run Vale using Docker
+  # Step 1: Install Vale
   - script: |
       sudo snap install vale
     displayName: 'install Vale'
@@ -37,7 +37,7 @@ steps:
       echo "Fetching branches and identifying modified files..."
       git config --global user.name "azure-pipeline@cognigy.com"
       git config --global user.email "azure-pipeline@cognigy.com"
-      MODIFIED_FILES=$(git diff --name-only origin/main..HEAD)
+      MODIFIED_FILES=$(git diff --name-only origin/test-pr-branch...HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
       if [ ! -s filtered_files.txt ]; then
