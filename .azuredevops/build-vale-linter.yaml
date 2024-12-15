@@ -77,18 +77,22 @@ steps:
       token=$(echo -n user:$apikey | base64 -w0)
       team_project="$(System.TeamProject)"
       team_name=$(echo -n "$team_project" | jq -sRr @uri)
+      BUILD_ID=$(Build.BuildId)
+      ARTIFACT_NAME="vale-report"
+      CONTAINER_ID="29971540"
       # Log All Variables for Debugging
       echo "PR ID: $pr_id"
       echo "Repository URL: $repository_url"
       echo "Repository ID: $repository_id"
-      echo "API Key: $apikey"
-      echo "Token: $token"
       echo "Team Project: $team_project"
       echo "Team Name: $team_name" 
       echo "Generating artifact URL and posting as PR comment..."
-      ARTIFACT_URL="${System_TeamFoundationCollectionUri}${System_TeamProject}/_apis/build/builds/${Build_BuildId}/artifacts?artifactName=vale-report&api-version=6.0-preview.1"
       
-      COMMENT_BODY="### Vale Linter Report%0AThe Vale report is available [here]($ARTIFACT_URL)."
+      ARTIFACT_URL="https://$(System.TeamFoundationCollectionUri)/_apis/resources/Containers/${CONTAINER_ID}/${ARTIFACT_NAME}?itemPath=${ARTIFACT_NAME}%2Fvale-report.json&%24format=zip&saveAbsolutePath=false"
+      
+      echo "Vale report is available [here](${UNIQUE_ARTIFACT_URL})"
+
+      COMMENT_BODY="### The Vale report is available to download [here]($ARTIFACT_URL)."
       
       curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
@@ -97,5 +101,3 @@ steps:
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-
-      
