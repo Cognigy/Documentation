@@ -93,7 +93,9 @@ steps:
       curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
         -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-        "${System_CollectionUri}$team_project/_apis/git/repositories/$repository_id/pullRequests/$pr_id/threads?api-version=7.1-preview.1"
+        "https://dev.azure.com/cognigy/Documentation/_apis/git/repositories/documentation/pullRequests/36814/threads?api-version=5.0"
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+      
