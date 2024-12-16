@@ -4,7 +4,7 @@ trigger:
   - none # Disable automatic triggers on branches.
 
 pr:
-  - test-pr-branch # Trigger pipeline on a specific Pull Request.
+  - main # Trigger pipeline on a specific Pull Request.
 
 pool:
   vmImage: ubuntu-20.04
@@ -37,8 +37,7 @@ steps:
       echo "Fetching branches and identifying modified files..."
       git config --global user.name "azure-pipeline@cognigy.com"
       git config --global user.email "azure-pipeline@cognigy.com"
-      ANCESTOR_COMMIT=$(git merge-base $SYSTEM_PULLREQUEST_TARGETBRANCH)
-      MODIFIED_FILES=$(git diff --name-only $ANCESTOR_COMMIT..HEAD)
+      MODIFIED_FILES=$(git diff --name-only origin/main..HEAD)
       echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
 
       if [ ! -s filtered_files.txt ]; then
@@ -96,7 +95,7 @@ steps:
       curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
         -H "Content-Type: application/json" \
         -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
-        "https://dev.azure.com/cognigy/Documentation/_apis/git/repositories/documentation/pullRequests/36814/threads?api-version=5.0"
+        "https://dev.azure.com/cognigy/Documentation/_apis/git/repositories/documentation/pullRequests/$pr_id/threads?api-version=5.0"
     displayName: 'Post Artifact Link as PR Comment'
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
