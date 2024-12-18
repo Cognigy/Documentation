@@ -25,7 +25,7 @@ To create a Project, follow these steps:
 
 1. In the upper-left corner, click **+** to create a Project.
 2. Configure your basic Project settings.
-3. Select **Agentic AI** as your **Project Type**.
+3. Select **Agentic AI** as your Project type.
 
 ## Create an AI Agent
 
@@ -46,7 +46,7 @@ To create your first LLM-powered AI Agent, follow these steps:
     ```
 5. In the **Data Privacy & Security** step, we recommend leaving the settings unchanged. 
 6. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
-7. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
+7. Click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent.
 
 ## Configure the AI Agent in your Flow
 
