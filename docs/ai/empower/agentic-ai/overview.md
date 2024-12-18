@@ -7,7 +7,7 @@ hidden: false
 
 # Agentic AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.91(Beta)-purple.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../release-notes/4.91.md)
 
 {! _includes/ai/beta.md !}
 
@@ -28,8 +28,12 @@ Before using the Agentic AI feature, you need:
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
     - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
     - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
+    - [Google Gemini](https://ai.google.dev/gemini-api/docs/models/gemini). You need to have a paid account or be a member of an organization that provides you access.
 2. Add two models:
-    - A primary model to control the AI Agent. It can be `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md), or `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](../llms/providers/anthropic.md).
+    - A primary model to control the AI Agent, selected from the following providers:
+       - `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md).
+       - `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](../llms/providers/anthropic.md).
+       - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google.md).
     - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
 
 ## Concepts
