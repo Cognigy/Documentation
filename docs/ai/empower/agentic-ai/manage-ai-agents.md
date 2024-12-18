@@ -60,6 +60,7 @@ To create an AI Agent, select one of the following options:
         - **Default** — create an AI Agent with a predefined Flow, then click **Create & Chat** to save changes and open the Flow with the created AI Agent.
         - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
         - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
+    9. Click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to configure a model to ensure your AI-driven Flow works.
 
 === "Hire from Job Market"
 
