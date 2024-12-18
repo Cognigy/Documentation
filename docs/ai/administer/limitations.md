@@ -26,7 +26,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------|------------|
 | **Network**                                                                                                                       |                                 |            |            |
 | Rate limit                                                                                                                        | 1000 requests per 5 minutes[^*] |            |            |
-| Waiting period before the `user disconnected` event is triggered.                                                                 | 3 seconds[^**]                  |            |            |
+| Waiting period before the `user disconnected` event is triggered                                                                  | 3 seconds[^**]                  |            |            |
 | **Database and HTTP Node Calls**                                                                                                  |                                 |            |            |
 | Maximum Database query result from DB Flow Nodes                                                                                  | 500 kB                          |            |            |
 | Maximum [Input](../test/interaction-panel/input.md) size                                                                          | 65 kB[^***]                     |            | **1.5 MB** |
