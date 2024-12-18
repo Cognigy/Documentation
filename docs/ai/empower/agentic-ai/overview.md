@@ -7,7 +7,7 @@ hidden: false
 
 # Agentic AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.91(Beta)-purple.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../release-notes/4.91.md)
 
 {! _includes/ai/beta.md !}
 
