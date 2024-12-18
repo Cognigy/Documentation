@@ -29,12 +29,14 @@ Before using the Agentic AI feature, you need:
     - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
     - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
     - [Google Gemini](https://ai.google.dev/gemini-api/docs/models/gemini). You need to have a paid account or be a member of an organization that provides you access.
+    - [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/). You need to have a paid account or be a member of an organization that provides you access.
 2. Add two models:
     - A primary model to control the AI Agent, selected from the following providers:
-       - `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md).
-       - `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](../llms/providers/anthropic.md).
-       - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google.md).
-    - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
+        - `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md).
+        - `claude-3-opus`, `claude-3-haiku`, or `claude-3-sonnet` by [Anthropic](../llms/providers/anthropic.md).
+        - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google.md).
+        - `amazon.nova-lite-v1:0`, `amazon.nova-pro-v1:0`, `anthropic.claude-3-5-sonnet-20240620-v1:0` by [Amazon Bedrock](../llms/providers/amazon-bedrock.md). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
+     - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
 
 ## Concepts
 
