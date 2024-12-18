@@ -26,10 +26,11 @@ Any **deviations** from the default values for our Trial and App environments ar
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------|------------|
 | **Network**                                                                                                                       |                                 |            |            |
 | Rate limit                                                                                                                        | 1000 requests per 5 minutes[^*] |            |            |
+| Waiting period before the `user disconnected` event is triggered.                                                                 | 3 seconds[^**]                  |            |            |
 | **Database and HTTP Node Calls**                                                                                                  |                                 |            |            |
 | Maximum Database query result from DB Flow Nodes                                                                                  | 500 kB                          |            |            |
-| Maximum [Input](../test/interaction-panel/input.md) size                                                                          | 65 kB[^**]                      |            | **1.5 MB** |
-| Maximum [Context](../test/interaction-panel/context.md) size                                                                      | 65 kB[^**]                      |            | **1.5 MB** |
+| Maximum [Input](../test/interaction-panel/input.md) size                                                                          | 65 kB[^***]                     |            | **1.5 MB** |
+| Maximum [Context](../test/interaction-panel/context.md) size                                                                      | 65 kB[^***]                     |            | **1.5 MB** |
 | Maximum HTTP payload size for HTTP-Request Flow Node                                                                              | 65 kB                           |            |            |
 | Maximum HTTP response size for HTTP-Request Flow Node                                                                             | 524 kB                          | **2.6 MB** | **1.5 MB** |
 | HTTP-Request Flow Node timeout                                                                                                    | 8 s                             |            | **15 s**   |
@@ -80,7 +81,8 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum number of characters in the code editor                                                                                   | 200K                            |            |            |
 
 [^*]: The rate limit of 1000 requests per 5 minutes from a single IP address applies only to shared SaaS environments.
-[^**]: The limit for both the Input and Context objects can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Be aware that increasing the object size could lead to performance issues.
+[^**]: If you have a dedicated SaaS or on-premises environment, you can change this limit. The `SOCKET_ENDPOINT_DISCONNECT_GRACE_PERIOD` variable lets you set a waiting period (in seconds) before marking a user as disconnected. This delay ensures temporary network issues or brief interruptions don't immediately trigger the `user disconnected` event. 
+[^***]: The limit for both the Input and Context objects can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Be aware that increasing the object size could lead to performance issues.
 
 ## Retention of Records
 
