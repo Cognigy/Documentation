@@ -57,10 +57,9 @@ To create an AI Agent, select one of the following options:
             - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
             - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
     8. In the **Job Selection** step, select one of the following options:
-        - **Default** — create an AI Agent with a predefined Flow, then click **Create & Chat** to save changes and open the Flow with the created AI Agent.
+        - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
         - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
         - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
-    9. Click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to configure a model to ensure your AI-driven Flow works.
 
 === "Hire from Job Market"
 
