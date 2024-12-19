@@ -53,8 +53,8 @@ Each file object in this array contains a file name, file type, and URL pointing
 
 ```json
 {
-  "name": "example_file.txt",
-  "url": "https://example.com/uploads/example_file.txt",
+  "name": "example_file.png",
+  "url": "https://example.com/uploads/example_file.png",
   "type": "image"
 }
 ```
@@ -63,8 +63,8 @@ Each file object in this array contains a file name, file type, and URL pointing
 
 | Use Case                    | Description                                                                                                                        | CognigyScript                                 | Example Output                                 |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------|
-| Confirm Uploaded Files      | To ensure the user uploaded the correct file, display the file name for confirmation.                                              | `{{"{{input.data.attachments[0].name}}"}}`    | `example_file.txt`                             |
-| Provide the Direct File URL | Share the direct URL of the uploaded file with the user.                                                                           | `{{"{{input.data.attachments[0].url}}"}}`     | `https://example.com/uploads/example_file.txt` |
+| Confirm Uploaded Files      | To ensure the user uploaded the correct file, display the file name for confirmation.                                              | `{{"{{input.data.attachments[0].name}}"}}`    | `example_file.png`                             |
+| Provide the Direct File URL | Share the direct URL of the uploaded file with the user.                                                                           | `{{"{{input.data.attachments[0].url}}"}}`     | `https://example.com/uploads/example_file.png` |
 | Validate Attachments        | To check if a valid file has been uploaded in the most recent user input, verify the length of the `input.data.attachments` array. | `{{"{{input.data.attachments.length}}"}} > 0` | -                                              |
 
 ## Resize Images
