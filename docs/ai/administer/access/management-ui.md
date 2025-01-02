@@ -56,13 +56,13 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 You can add a user (identified by an email address) to multiple organizations.
 Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
 
-If you click one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
+If you click a user, the user details page opens. On the user details page, you can do the following:
 
-- see general information
-- see the users current [roles](admin-center/access-control.md)
-- see certain status information
-- impersonate the user. This will forward to the actual product and login as if you were the selected user
-- additional actions for the user are in the triple-dot icon on the right-top corner.
+- See general information
+- See the users current [roles](admin-center/access-control.md)
+- See certain status information
+- Impersonate the user by clicking **Impersonate** in the upper-right corner. By impersonating a user, you are forwarded you to the Cogngiy.AI interface and logged in as if you were the selected user
+- Disable or delete the user, or update the user's password by clicking ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) and selecting the respective option.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/mui-3.png" width="100%" />
@@ -71,6 +71,11 @@ If you click one of the already existing users, a details page opens and display
 
 !!! note "Impersonating a user"
     When impersonating a user, you can log in to the system as the selected user without knowing their actual account password. Make sure to log out after you have finished your work.
+    
+    You can disable the user impersonation capability as follows:
+
+       - For SaaS installations, contact Cognigy support.
+       - For dedicated SaaS and on-premises installations, enter the organization IDs in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
 
 ## Organizations
 
