@@ -92,6 +92,14 @@ You can copy the Project ID using one of the following methods:
     3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
     4. Save the copied Project ID later use.
 
+## Pin and Unpin Projects
+
+If you have projects that you use more frequently than others, you can pin them under the **Your Projects** list in the Cognigy.AI interface to access them more easily.
+
+To pin a project, hover over a project in the **Recent** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Pin Project**. If you don't have any pinned projects, a new **Pinned** section is created and your project is moved from the **Recent** section to the **Pinned** section. Projects in the **Pinned** section are listed in alphabetical order.
+
+To unpin a project, hover over a project in the **Pinned** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Unpin Project**. Your project is moved from the **Pinned** section to the **Recent** section.
+
 ## Project Dashboard
 
 The Project Dashboard serves as an overview page for your Project.
