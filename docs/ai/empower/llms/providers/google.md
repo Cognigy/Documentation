@@ -7,9 +7,6 @@ hidden: false
 
 # Google
 
-!!! warning
-    Google will deprecate Gemini 1.0 Pro on April 9, 2025. If you use Gemini 1.0 Pro within any Cognigy.AI capability, make sure you switch to [another Gemini model](../model-support-by-feature.md) to avoid that Cognigy.AI doesn't function as expected.
-
 To start using a Google Vertex AI or Gemini model with Cognigy.AI features, follow these steps:
 
 1. [Add a Model](#add-a-model)
