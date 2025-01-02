@@ -75,7 +75,7 @@ If you click a user, the user details page opens. On the user details page, you 
     You can disable the user impersonation capability as follows:
 
        - For SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-       - For dedicated SaaS and on-premises installations, enter the organization IDs in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
+       - For dedicated SaaS and on-premises installations, enter the relevant organization ID in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag. To block impersonation for more than one organization, separate the organization IDs with commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`
 
 ## Organizations
 
