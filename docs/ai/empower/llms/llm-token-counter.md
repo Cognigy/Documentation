@@ -9,22 +9,20 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
-In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track the Large Language Model (LLM) token usage for Knowledge Search and Answer Extraction. This way, you can track your [LLM providers](providers/all-providers.md) costs.
-
-The LLM Token Counter capability outputs the total token usage of each model you are using for Knowledge Search and Answer Extraction within a chat session.
+In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track the Large Language Model (LLM) token usage. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
 ## Prerequisite
 
 - You have configured LLMs that [support Knowledge Search and Answer Extraction](model-support-by-feature.md).
-- You have added a [Search Extract Output Node](../../build/node-reference/other-nodes/knowledge-search.md), [AI Agent Node](../../build/node-reference/ai/ai-agent.md), or [AI Copilot Nodes](../../build/node-reference/ai-copilot/overview.md) to your Flow to perform Knowledge Search and Answer Extraction.
+- You have added a Node that uses an LLM to your Flow, for example, an [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md), a [Search Extract Output Node](../../build/node-reference/other-nodes/knowledge-search.md), an [AI Agent Node](../../build/node-reference/ai/ai-agent.md), or [AI Copilot Nodes](../../build/node-reference/ai-copilot/overview.md).
 
 ## Limitations
 
-- The LLM Token Counter supports only [OpenAI](providers/openai.md) and [Azure OpenAI](providers/microsoft-azure-openai.md) embedding models for Knowledge Search. If you configure an Aleph Alpha embedding model for Knowledge Search, you receive 0 as the total token count.
+- The LLM Token Counter supports only [OpenAI](providers/openai.md) and [Azure OpenAI](providers/microsoft-azure-openai.md) embedding models. If you configure an Aleph Alpha embedding model, you receive 0 as the total token count.
 
 ## Set Up an LLM Token Counter
 
-1. Add a Code Node following the Node with which you perform a Knowledge Search and Answer Extraction, for example, a Search Extract Output Node.
+1. Add a Code Node after the Node that uses an LLM, for example, after an [AI Agent Node](../../build/node-reference/ai/ai-agent.md).
 2. Add the following code to the Code Node:
 
     ```javaScript
@@ -40,13 +38,16 @@ The LLM Token Counter capability outputs the total token usage of each model you
 
 ## LLM Token Counter Output
 
-After carrying out the Knowledge Search and Answer Extraction, the Code Node provides the following message with the token usage for the Knowledge Search model first and the Answer Extraction model later:
+After your Node triggers the LLM, the Code Node provides the following message with the token usage for each model used in your Flow:
 
 <figure>
     <img class="image-center" src="../../../_assets/ai/empower/llms/llm-token-counter.png" width="50%" alt="LLM Token Counter output in chat session">
 </figure>
 
-The LLM Token Counter displays the total input and output tokens within the chat sessions in the `inputTokens` and `outputTokens` JSON parameters. The output token count for the Knowledge Search model is always 0. 
+The LLM Token Counter displays the total input and output tokens within the chat sessions in the `inputTokens` and `outputTokens` JSON parameters.
+
+!!!note "Embedding Models Output Tokens"
+    The output token count for the Knowledge Search model is always 0. 
 
 ## More Information
 
