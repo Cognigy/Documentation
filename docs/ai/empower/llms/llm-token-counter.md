@@ -7,6 +7,8 @@ hidden: false
 
 # Large Language Model Token Counter
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
+
 In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track the Large Language Model (LLM) token usage for Knowledge Search and Answer Extraction. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
 The LLM Token Counter capability outputs the total token usage of each model you are using for Knowledge Search and Answer Extraction within a chat session.
