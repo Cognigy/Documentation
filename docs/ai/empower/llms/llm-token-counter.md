@@ -47,7 +47,7 @@ After your Node triggers the LLM, the Code Node provides the following message w
 The LLM Token Counter displays the total input and output tokens within the chat sessions in the `inputTokens` and `outputTokens` JSON parameters.
 
 !!!note "Embedding Models Output Tokens"
-    The output token count for the Knowledge Search model is always 0. 
+    The output tokens count for the Knowledge Search model is always 0. 
 
 ## More Information
 
