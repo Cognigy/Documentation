@@ -36,6 +36,8 @@ The LLM Token Counter capability outputs the total token usage of each model you
 
     `"Total conversation token usage: "` corresponds to the message text the LLM Token Counter sends to indicate the token usage. You can change the message text as needed. `tokens` corresponds to the token usage values. The LLM Token Counter sends the token usage in JSON format after the message text.
 
+## LLM Token Counter Output
+
 After carrying out the Knowledge Search and Answer Extraction, the Code Node provides the following message with the token usage for the Knowledge Search model first and the Answer Extraction model later:
 
 <figure>
