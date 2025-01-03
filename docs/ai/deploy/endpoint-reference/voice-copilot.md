@@ -41,9 +41,9 @@ Find out about the generic endpoint settings available with this endpoint on the
 1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
-   1. Select the **Voice Copilot** Endpoint type. <br>
-   2. Add a unique name.<br>
-   3. Select a relevant Flow from the list.<br>
+    1. Select the **Voice Copilot** Endpoint type. <br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
 4. In the **Configuration Information** section, copy the Endpoint URL. Save it for later usage in the Transfer Node for the scenario [Cognigy.AI in Front](#cognigyai-in-front).
 5. Activate the **Enable Endpoint** setting. 
 6. Click **Save**.
@@ -56,9 +56,9 @@ If Cognigy.AI in Front, you need to configure the Transfer Node:
 2. Select a voice Flow from the list.
 3. Go to the Voice Gateway Transfer Node.
 4. In the Transfer Node, select the **Dial** transfer type.<br>
-   1. Activate the **Enable Copilot** setting.<br>
-   2. Define the **Copilot Headers Key**. The key is provider-dependent. For example, for Genesys, the key is `User-to-User`. The generated value becomes accessible after engaging the **Transfer** Node, located in the input object as `{{ "{{input.UUIValue}}" }}`. Note that you do not need to handle this value manually. It is automatically generated and added to the header.<br>
-   3. In the **Transcribe** section, navigate to the **Transcription Webhook** field. Enter the Voice Copilot Endpoint URL, which you need to copy from the **Endpoint URL** field of the Endpoint. For example, `https://endpoint.cognigy.ai/<your-endpoint-id>`. This setup ensures that the Voice Copilot Endpoint receives the transcription, corresponding session, and user ID, ensuring the transcript is correctly matched with the AI Copilot workspace.<br> 
+    1. Activate the **Enable Copilot** setting.<br>
+    2. Define the **Copilot Headers Key**. The key is provider-dependent. For example, for Genesys, the key is `User-to-User`. The generated value becomes accessible after engaging the **Transfer** Node, located in the input object as `{{ "{{input.UUIValue}}" }}`. Note that you do not need to handle this value manually. It is automatically generated and added to the header.<br>
+    3. In the **Transcribe** section, navigate to the **Transcription Webhook** field. Enter the Voice Copilot Endpoint URL, which you need to copy from the **Endpoint URL** field of the Endpoint. For example, `https://endpoint.cognigy.ai/<your-endpoint-id>`. This setup ensures that the Voice Copilot Endpoint receives the transcription, corresponding session, and user ID, ensuring the transcript is correctly matched with the AI Copilot workspace.<br> 
 5. Click **Save Node**.
 
 ## SIPREC Contact Center Integration in Front

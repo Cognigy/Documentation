@@ -73,8 +73,8 @@ To add an LLM Prompt Node with the relevant prompt, follow these steps:
       {% endraw %}
 
 3. Navigate to the **Advanced** section and configure the recommended parameters as follows:<br>
-   1. From the **Sampling Method** list, select **Temperature** and set the temperature to `0`.<br>
-   2. From the **Response Format** list, select **JSON Object**.
+    1. From the **Sampling Method** list, select **Temperature** and set the temperature to `0`.<br>
+    2. From the **Response Format** list, select **JSON Object**.
 4. _(Optional)_ If you want the model to return the similar result for the subsequent requests, specify a number in the **Seed** parameter. For example, `123`.
 5. Click **Save Node**.
 
@@ -89,8 +89,8 @@ To retrieve this Intent for further use, follow these steps:
 3. Click **Save Node**.
 4. Below the Code Node, add a Lookup Node.
 5. In the Lookup Node editor, configure the following fields:<br>
-   1. From the **Type** list, select **Intent**.<br>
-   2. Set the **Intent Level** field to **Default**, matching Intents at the most detailed hierarchy level.
+    1. From the **Type** list, select **Intent**.<br>
+    2. Set the **Intent Level** field to **Default**, matching Intents at the most detailed hierarchy level.
 6. Click **Save Node**.
 7. Add child Case Nodes of the Lookup Node, specifying the Intent name in the **Value** field for each Node.
 

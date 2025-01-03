@@ -60,19 +60,19 @@ To build a flow with the DTMF Node, either add a new Flow or extend an existing 
 8. Below the Question Node, add a Lookup Node. 
 9. In the Lookup Node editor, select the **Text** type and click **Save Node**. 
 10. Configure the logic in the branch for the first **Case** Node:<br>
-   1. Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.<br>
-   2. Below the **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, please leave a voice message with the information about the equipment you wish to order, and we will call you back`.<br> 
-   3. Click **Save Node**.<br> 
-   4. Below the Say Node, add a DTMF Node. Specify `1` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br> 
-   5. Click **Save Node**.<br>
-   6. After that, you can add a **Call Recording** Node to record the caller speech.<br>
+    1. Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.<br>
+    2. Below the **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, please leave a voice message with the information about the equipment you wish to order, and we will call you back`.<br> 
+    3. Click **Save Node**.<br> 
+    4. Below the Say Node, add a DTMF Node. Specify `1` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br> 
+    5. Click **Save Node**.<br>
+    6. After that, you can add a **Call Recording** Node to record the caller speech.<br>
 11. Configure the logic in the branch for the second **Case** Node:<br>
-   1. Click the second **Case** Node. In the **Value** field, specify `2`.<br> 
-   2. Below the second **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, you will be transferred to a contact center`.<br>
-   3. Click **Save Node**.<br>
-   4. Below the second Say Node, add another DTMF Node. Specify `2` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br>
-   5. Click **Save Node**.<br>
-   6. After that, you can add a **Handover to Agent** Node to route the caller to the contact center.
+    1. Click the second **Case** Node. In the **Value** field, specify `2`.<br> 
+    2. Below the second **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, you will be transferred to a contact center`.<br>
+    3. Click **Save Node**.<br>
+    4. Below the second Say Node, add another DTMF Node. Specify `2` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br>
+    5. Click **Save Node**.<br>
+    6. After that, you can add a **Handover to Agent** Node to route the caller to the contact center.
 
     <figure>
       <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/dtmf-example.png" width="100%" />

@@ -46,9 +46,9 @@ To do voice-based experiences with your AI Agent, create your [Voice Gateway End
 3. In the left-side menu of your Project, click **Deploy > Endpoints**. 
 4. On the **Endpoints** page, click **+ New Endpoint**. 
 5. In the **New Endpoint** section, do the following:<br>
-   1. Select the **voice-gateway** Endpoint type.<br>
-   2. Add a unique name.<br>
-   3. Select a relevant Flow from the list.<br>
+    1. Select the **voice-gateway** Endpoint type.<br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
 6. Click **Save**.
 
 <figure>

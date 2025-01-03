@@ -50,10 +50,10 @@ To set up a connection between NICE CXone and Cognigy.AI, follow these steps:
 2. In the left-side menu of your Project, click **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
 4. In the **New Endpoint** section, do the following: <br>
-   1. Select the **NICE CXone** Endpoint type.<br>
-   2. Add a unique name.<br>
-   3. Select a relevant Flow from the list.<br>
-   4. Click **Save**.<br>
+    1. Select the **NICE CXone** Endpoint type.<br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
+    4. Click **Save**.<br>
 5. In the **Configuration Information** section, copy the Endpoint URL and save it for later use in NICE CXone.
 6. Activate the **Enable Endpoint** setting.
 7. In the **NICE CXone Setup** section, copy the token from the **Verify Token** field and save it for later use in NICE CXone.

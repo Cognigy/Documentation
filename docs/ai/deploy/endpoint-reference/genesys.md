@@ -52,9 +52,9 @@ To set up the Genesys Endpoint, follow these steps:
 1. In the left-side menu of your Project, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
-   1. Select the **Genesys** Endpoint type. <br>
-   2. Add a unique name.<br>
-   3. Select a relevant Flow from the list.<br>
+    1. Select the **Genesys** Endpoint type. <br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
 4. In the **Configuration Information** section, copy the Endpoint URL and save it for later usage in Genesys.
 5. Activate the **Enable Endpoint** setting.
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.
