@@ -10,7 +10,7 @@ tags:
 
 # Projects
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../release-notes/4.92.md)
 
 _Projects_ are collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md), [Endpoints](../deploy/endpoints/overview.md), and other resources. You can collaborate on a given Project with multiple team members.
 
