@@ -106,6 +106,7 @@ ol ol>li {
 
 ol ol>li::before {
     content: counters(item, ".") "." counter(subitem) " ";
+    margin-left: -15px;
 }
 
 ol ol>li::marker {
