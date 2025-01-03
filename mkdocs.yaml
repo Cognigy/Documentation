@@ -226,6 +226,7 @@ nav:
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
           - ai/empower/llms/fallback.md
+          - ai/empower/llms/llm-token-counter.md
           - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
