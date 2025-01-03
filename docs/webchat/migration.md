@@ -45,9 +45,9 @@ For a smooth migration, follow these steps:
 2. Create a [Webchat v3 Endpoint](v3/configuration.md) in Cognigy.AI.
 3. Manually transfer the settings from the old Webchat Endpoint to the Webchat v3 Endpoint.
 4. Update your embedding code according to the new [Embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md) specification:
-   - Replace the old bundle link with a new bundle for Webchat v3.
-   - Within the `initWebchat()` function replace the old Endpoint Config URL with a new Webchat v3 Endpoint Config URL.
-   - If you configure Webchat settings in the `initWebchat()` function, replace them with the [new ones](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#client-side-configuration) according to the new Webchat v3 Endpoint settings structure.
+    - Replace the old bundle link with a new bundle for Webchat v3.
+    - Within the `initWebchat()` function replace the old Endpoint Config URL with a new Webchat v3 Endpoint Config URL.
+    - If you configure Webchat settings in the `initWebchat()` function, replace them with the [new ones](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#client-side-configuration) according to the new Webchat v3 Endpoint settings structure.
 5. Locally build Webchat and verify that everything functions as expected.
 6. Publish Webchat on your website.
 
