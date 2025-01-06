@@ -11,6 +11,8 @@ hidden: false
 
 In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track and output the Large Language Model (LLM) total token usage in a chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
+The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information is not available, the token usage is estimated by Cognigy.AI.
+
 ## Prerequisite
 
 - You have added a Node that uses an LLM to your Flow, for example, an [AI Agent Node](../../build/node-reference/ai/ai-agent.md), [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md), a [Search Extract Output Node](../../build/node-reference/other-nodes/knowledge-search.md), or [AI Copilot Nodes](../../build/node-reference/ai-copilot/overview.md).
