@@ -16,6 +16,6 @@ You can use the following Voice Gateway Nodes:
 - [Hang Up](hangup.md)
 - [Play URL](play-url.md)
 - [Send Message](send-message.md)
-- [Send Meta Data](send-meta-data.md)
+- [Send Metadata](send-meta-data.md)
 - [Set Session Parameters](set-session-params.md)
 - [Transfer](transfer-vg.md)
