@@ -96,7 +96,7 @@ You can copy the Project ID using one of the following methods:
 
 If you have Projects that you use more frequently than others, you can pin them under the **Your Projects** list in the Cognigy.AI interface to access them more easily.
 
-To pin a Project, hover over a Project in the **Recent** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Pin Project**. If you don't have any pinned Projects, a new **Pinned** section is created, and your Project is moved from the **Recent** section to the **Pinned** section. Projects in the **Pinned** section are listed in alphabetical order.To pin a Project, hover over a Project in the **Recent** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Pin Project**. If you don't have any pinned Projects, a new **Pinned** section is created and your Project is moved from the **Recent** section to the **Pinned** section. Projects in the **Pinned** section are listed in alphabetical order.
+To pin a Project, hover over a Project in the **Recent** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Pin Project**. If you don't have any pinned Projects, a new **Pinned** section is created, and your Project is moved from the **Recent** section to the **Pinned** section. Projects in the **Pinned** section are listed in alphabetical order.
 
 To unpin a Project, hover over a Project in the **Pinned** section and select ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) **> Unpin Project**. Your Project is moved from the **Pinned** section to the **Recent** section.
 
