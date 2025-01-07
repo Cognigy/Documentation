@@ -16,7 +16,7 @@ hidden: false
 
 - Improved by removing resolve functionality from the mute operation. Previously, whenever an agent would mute a conversation, the conversation would be automatically resolved
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where the preview of conversation messages for adaptive cards were not displayed properly
 
@@ -58,7 +58,7 @@ hidden: false
 
 - Improved by removing UI parts related to custom attributes as they were not used
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where the agent will not show its online status in the contact actions dropdown
 

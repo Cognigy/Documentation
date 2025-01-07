@@ -27,7 +27,7 @@ The [Inject & Notify](../endpoints/inject-and-notify.md) functionality only work
 
 Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes](../../build/node-reference/voice/audiocodes/overview.md) for more information.
 
-## Number Meta Data
+## Number Metadata
 
 AudioCodes identifies information about the caller and adds it to the Cognigy [Input](../../test/interaction-panel/input.md) Object as `input.data.numberMetaData`.
 

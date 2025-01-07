@@ -6,7 +6,7 @@ hidden: false
 
 # Release Notes
 
-Cognigy release notes provide information on the features, improvements, and bugfixes in each release.
+Cognigy release notes provide information on the features, improvements, and bug fixes in each release.
 You'll find the corresponding release notes after opening one of the versions below.
 
 !!! note "Security Updates for Cognigy's Products"

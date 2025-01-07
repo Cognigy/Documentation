@@ -44,7 +44,7 @@ Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gatewa
 The SIP headers, including any custom headers, are available within the [Input](../../test/interaction-panel/input.md) object. 
 You can find them in `input.data` or `input.data.sip.headers`.
 
-### Call Meta Data
+### Call Metadata
 
 Voice Gateway identifies information about the caller and adds it to the [Input](../../test/interaction-panel/input.md) object as `input.data.numberMetaData`.
 
