@@ -7,7 +7,7 @@ hidden: false
 
 # Amazon Bedrock
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../../release-notes/4.92.md)
 
 To start using an Amazon Bedrock model with Cognigy.AI features, follow these steps:
 
