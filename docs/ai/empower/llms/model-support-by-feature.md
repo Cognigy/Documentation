@@ -7,7 +7,7 @@ hidden: false
 
 # Model Support by Feature
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
 The table provides an overview of the LLM providers supported by Cognigy.AI, detailing the standard models and their compatibility with Cognigy.AI features.
 You can also add a custom model that is not presented in the table.
@@ -45,7 +45,9 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 | ![google-vertex](../../../_assets/icons/google-vertex.svg) **[Google Vertex](providers/google.md)**                                      |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |                      |
 | text-bison-001 (Bard)                                                                                                                    | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | -                    |
 | ![google-gemini](../../../_assets/icons/google-gemini.svg) **[Google Gemini](providers/google.md)**                                      |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |                      |
-| gemini-1.0-pro                                                                                                                           | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | -                    |
+| gemini-1.0-pro (Deprecated since February 15, 2024. Unavailable on April 9, 2025.)                                                       | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | -                    |
+| gemini-1.5-flash                                                                                                                         | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | +                    |
+| gemini-1.5-pro                                                                                                                           | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | +                    |
 | ![alephalpha](../../../_assets/icons/alephalpha.svg) **[Aleph Alpha](providers/aleph-alpha.md)**                                         |                            |                     |                    |                 |                       |                 |                   |                  |                    |                     |                          |                      |
 | luminous                                                                                                                                 | -                          | -                   | -                  | -               | -                     | +               | +                 | -                | -                  | -                   | -                        | -                    |
 | luminous-embedding-128[^**]                                                                                                              | -                          | -                   | -                  | -               | -                     | -               | -                 | +                | -                  | -                   | -                        | -                    |
@@ -54,7 +56,9 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 
 [^*]: For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](../knowledge-ai/overview.md#which-model-to-choose)
 
-[^**]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use `luminous-embedding-128`, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
+[^**]: This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per Project. If you choose to use `luminous-embedding-128`, you must create a new Project. Once you have chosen an embedding model for a Project, you cannot switch to a different embedding model; you must use a different Project. Failing to do so will result in errors while this feature is in Beta.
+
+[^***]: Note that some models from the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html) might not support the AI Agent Node feature.
 
 ## More Information
 
