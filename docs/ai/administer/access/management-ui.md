@@ -6,7 +6,7 @@ hidden: false
 
 # Management UI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
@@ -56,13 +56,13 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 You can add a user (identified by an email address) to multiple organizations.
 Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
 
-If you click one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
+If you click a user, the user details page opens. On the user details page, you can do the following:
 
-- see general information
-- see the users current [roles](admin-center/access-control.md)
-- see certain status information
-- impersonate the user. This will forward to the actual product and login as if you were the selected user
-- additional actions for the user are in the triple-dot icon on the right-top corner.
+- See general information
+- See the users current [roles](admin-center/access-control.md)
+- See certain status information
+- Impersonate the user by clicking **Impersonate** in the upper-right corner. By impersonating a user, you are forwarded you to the Cogngiy.AI interface and logged in as if you were the selected user
+- Disable or delete the user, or update the user's password by clicking ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) and selecting the respective option.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/mui-3.png" width="100%" />
@@ -71,6 +71,14 @@ If you click one of the already existing users, a details page opens and display
 
 !!! note "Impersonating a user"
     When impersonating a user, you can log in to the system as the selected user without knowing their actual account password. Make sure to log out after you have finished your work.
+    
+    You can block user impersonation as follows:
+
+       - For SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+       - For dedicated SaaS and on-premises installations, use the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag. You can block user impersonation for:
+          - **One organization** — enter the relevant organization ID in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
+          - **More than one organization** — enter the relevant organization IDs separated by commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`.
+          - **All organizations** — set `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=*`
 
 ## Organizations
 
