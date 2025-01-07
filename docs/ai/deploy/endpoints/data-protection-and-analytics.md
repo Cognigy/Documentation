@@ -104,6 +104,18 @@ client-side input sanitization
 works by default. 
 In this case, enabling server-side input sanitization will provide an additional layer of security for your server.
 
+## Hide References to External Resources in Transcripts
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.92-blue.svg)](../../../release-notes/4.92.md)
+
+If this parameter is enabled, tags that reference third-party APIs, such as `<a>` for links and `<img>` for images, will be removed from user inputs in conversation transcripts to enhance security and protect Cognigy.AI users from potential risks associated with third-party content.
+
+In the Transcript Explorer and Message Explorer in Insights,
+conversation transcripts will contain references instead of rendering the actual images or links.
+For example,  `<img src="url-to-an-image">` or `<a href="url">`.
+
+For the Interaction Panel, use the `DISABLE_SKIP_URI_TAGS_IP_CONVERSATIONS: "true"` feature flag to hide references to external resources.
+
 ## External Analytics Services
 
 You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.
