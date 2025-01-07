@@ -11,7 +11,7 @@ hidden: false
 
 In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track the Large Language Model (LLM) total token usage in a conversation or chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
-The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information is not available by the provider, the token usage is estimated by Cognigy.AI.
+The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information isn't available by the provider, the token usage is estimated by Cognigy.AI.
 
 ## Prerequisite
 
@@ -19,7 +19,8 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 
 ## Limitations
 
-- The LLM Session Token Counter does not support embedding models from Aleph Alpha.
+- The LLM Session Token Counter doesn't support embedding models from Aleph Alpha.
+- The LLM Session Token Counter doesn't support fallback LLMs.
 
 ## Fetching Session-Wide Token Usage
 
