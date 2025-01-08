@@ -202,7 +202,7 @@ If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-c
 |                        | `vendor`                | The vendor for speech recognition. Possible values: `"aws"`, `"deepgram"`, `"google"`, `"microsoft"`, `"nuance"`, `"soniox"`, `"default"`, `"custom"`.           | String           | `"google"`                                 |
 |                        | `language`              | The language for speech recognition.                                                                                                                             | String           | `"de-DE"`                                  |
 |                        | `hints`                 | A list of hints to improve recognition accuracy.                                                                                                                 | Array of strings | `["help", "skip", "confirm"]`              |
-|                        | `hintBoost`             | A value to boost the weight of hints in recognition.                                                                                                             | Number           | `20`                                       |
+|                        | `hintsBoost`            | A value to boost the weight of hints in recognition.                                                                                                             | Number           | `20`                                       |
 | **Synthesizer**        | `synthesizer`           | The [Synthesizer - Text-To-Speech](#synthesizer---text-to-speech) feature.                                                                                       | Object           | -                                          |
 |                        | `vendor`                | The vendor for text-to-speech synthesis. Possible values: `"aws"`, `"deepgram"`, `"elevenlabs"`, `"google"`, `"microsoft"`, `"nuance"`, `"default"`, `"custom"`. | String           | `"microsoft"`                              |
 |                        | `language`              | The language for text-to-speech synthesis.                                                                                                                       | String           | `"de-DE"`                                  |
@@ -241,7 +241,7 @@ JSON example:
       "skip",
       "confirm"
     ],
-    "hintBoost": 20
+    "hintsBoost": 20
   },
   "user": {
     "noInputMode": "speech",
