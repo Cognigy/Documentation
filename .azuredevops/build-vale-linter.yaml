@@ -62,6 +62,7 @@ steps:
       echo "Vale linting completed. Report saved to vale-report.json."
     displayName: "Run Vale Linter"
 
+  # Step 4: Publish Vale Report Artifact
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: 'vale-report.json'
