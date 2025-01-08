@@ -153,12 +153,12 @@ To unlock the event options, activate the **Enable overriding email notification
 
 ### Notification Sound
 
-To configure the notification sound, follow these steps:
+You add a notification sound to the push notifications you configured. To configure the notification sound, follow these steps:
 
 1. Go to **Settings > Account Settings**.
 2. From the **Sound** list in the **Notification Sound** section, select one of the following options:
     - **Default** — a short sound is triggered when you send or receive a message.
-    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. The supported formats for the sound file are `.m4a`, `.mp3`, `.wav`, and `.ogg`. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when you send or receive a message. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly.
+    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when a push notification is triggered. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly.
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
