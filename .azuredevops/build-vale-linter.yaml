@@ -1,0 +1,102 @@
+name: build-vale-linter
+
+trigger:
+  - none # Disable automatic triggers on branches.
+
+pr:
+  - main # Trigger pipeline on a specific Pull Request.
+
+pool:
+  vmImage: ubuntu-20.04
+
+steps:
+  - checkout: self
+    fetchDepth: 0
+    persistCredentials: true
+
+  # Step 1: Install Vale
+  - script: |
+      sudo snap install vale
+    displayName: 'install Vale'
+
+  # # Step 1: Run Vale using Docker
+  # - script: |
+  #     vale ./docs || true
+  #     echo "Current directory:"
+  #     pwd
+  #     # List all files to check where vale-report.json might be
+  #     echo "Listing all files in the current directory:"
+  #     ls -lah
+  #     # Search for the vale-report.json file
+  #     echo "Searching for vale-report.json file:"
+  #     find . -name "vale-report.json"
+  #   displayName: 'Run Vale and Debug'
+
+  # Step 2: Identify Modified Files
+  - script: |
+      echo "Fetching branches and identifying modified files..."
+      git config --global user.name "azure-pipeline@cognigy.com"
+      git config --global user.email "azure-pipeline@cognigy.com"
+      MODIFIED_FILES=$(git diff --name-only origin/main..HEAD)
+      echo "$MODIFIED_FILES" | grep -E '\.md$' > filtered_files.txt
+
+      if [ ! -s filtered_files.txt ]; then
+        echo "No Markdown files to lint. Skipping."
+        exit 0
+      fi
+
+      echo "Modified Markdown files identified:"
+      cat filtered_files.txt
+    displayName: "Identify Modified Markdown Files"
+    env:
+      SYSTEM_PULLREQUEST_SOURCEBRANCH: main
+      SYSTEM_PULLREQUEST_TARGETBRANCH: test-pr-branch
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+  # Step 3: Run Vale on Filtered Files
+  - script: |
+      echo "Running Vale on filtered files..."
+      FILTERED_FILES=$(cat filtered_files.txt)
+      vale $FILTERED_FILES --output=JSON > vale-report.json || exit 0
+      # { echo "Vale linting failed!"; exit 1; }
+      echo "Vale linting completed. Report saved to vale-report.json."
+    displayName: "Run Vale Linter"
+
+  # Step 4: Publish Vale Report Artifact
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: 'vale-report.json'
+      artifactName: 'vale-report'
+    displayName: 'Publish Vale Report Artifact'
+
+  # Step 5: Post Artifact Link as PR Comment
+  - script: |
+      pr_id=$(System.PullRequest.PullRequestId)
+      repository_url=$(System.PullRequest.SourceRepositoryURI)
+      repository_id=$(basename "$repository_url")
+      apikey=$(System.AccessToken)
+      token=$(echo -n user:$apikey | base64 -w0)
+      team_project="$(System.TeamProject)"
+      team_name=$(echo -n "$team_project" | jq -sRr @uri)
+      BUILD_ID=$(Build.BuildId)
+      # Log All Variables for Debugging
+      echo "PR ID: $pr_id"
+      echo "Repository URL: $repository_url"
+      echo "Repository ID: $repository_id"
+      echo "Team Project: $team_project"
+      echo "Team Name: $team_name" 
+      echo "Generating artifact URL and posting as PR comment..."
+      
+      ARTIFACT_URL="https://dev.azure.com/cognigy/Documentation/_build/results?buildId=${BUILD_ID}&view=artifacts&pathAsName=false&type=publishedArtifacts"
+      
+      echo "Vale report is available [here](${UNIQUE_ARTIFACT_URL})"
+
+      COMMENT_BODY="Hi there! 😊 I'm Mr. Vale, your documentation linter. I've found a few little things to tweak — like grammar and style — that could make your writing even better. Take a peek at my suggestions through the [link]($ARTIFACT_URL)."
+      
+      curl -X POST -H "Authorization: Bearer $SYSTEM_ACCESSTOKEN" \
+        -H "Content-Type: application/json" \
+        -d "{\"comments\": [{\"content\": \"$COMMENT_BODY\"}]}" \
+        "https://dev.azure.com/cognigy/Documentation/_apis/git/repositories/documentation/pullRequests/${pr_id}/threads?api-version=5.0"
+    displayName: 'Post Artifact Link as PR Comment'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
