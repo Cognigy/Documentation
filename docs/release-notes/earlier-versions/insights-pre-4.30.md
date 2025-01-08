@@ -9,7 +9,7 @@
 
 **Released** July 7th, 2022
 
-## Bugfixes
+## Bug Fixes
 
 - Fixed a bug where Odata would double stringify already stringified content and produce wrong JSON
 - Fixed a bug where the top part of the filters sidebar was blocked after the Notification disappeared
@@ -30,7 +30,7 @@
 
 - Improved by fixing the Analytics API openapi documentation which was unclear and cannot get the request to work. changed handoverEscalations to number
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where the locale options in global filters of insights repeated twice, because they contained both locale name and nluLanguage
 - Fixed a bug where analytics sessions used to use always hardcoded new Date() instead of incoming timestamp
@@ -44,7 +44,7 @@
 - Improved by adding necessary and missing indices on analytics and sessions collections so that the initial load of Quantitative Queries are covered. Reduces the count totalDocsExamined to 0 by only scanning the indexed Keys
 - Improved by adding distinct color to the agent messages
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where conversation records(input) would miss the analytics database because of invalid field names that start with $
 - Fixed a visualization problem of "switched Flow" messages in the Transcript Explorer
@@ -53,7 +53,7 @@
 
 **Released** May 10th, 2022
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where Message Explorer had 2 scroll bars which caused to invalid infinite loader behavior
 
@@ -68,7 +68,7 @@
 - Improved by reducing the dashboard UI response time by replacing SVG based charts with canvas-based charts
 - Improved by adding pagination in the Step Explorer to support complex step graphs
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where number reports with "Amount" types show non-integer values
 - Fixed a bug when a transcript list had a loading issue after filters/agent change
@@ -87,7 +87,7 @@ This release does not contain any fixes or improvements.
 
 - Improved by indicating Flow switches in the expert mode of Transcript Explorer
 
-### Bugfixes
+### Bug Fixes
 
 - Fixed a bug where data are not loaded in Step Explorer
 - Fixed a bug where Step Explorer mistakenly does not display a newly tracked steps, if there is already a cached version of today’s report

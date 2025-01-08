@@ -49,7 +49,23 @@ If the file appears in the storage, then file uploads work correctly.
 ## Access Files in the Input Object
 
 By default, uploaded files are recorded in the `input.data.attachments` array. 
-Each file contains a URL pointing to the uploaded file.
+Each file object in this array contains a file name, file type, and URL pointing to the uploaded file:
+
+```json
+{
+  "name": "example_file.png",
+  "url": "https://example.com/uploads/example_file.png",
+  "type": "image"
+}
+```
+
+### Use Cases
+
+| Use Case                    | Description                                                                                                                        | CognigyScript                                 | Example Output                                 |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------|
+| Confirm Uploaded Files      | To ensure the user uploaded the correct file, display the file name for confirmation.                                              | `{{"{{input.data.attachments[0].name}}"}}`    | `example_file.png`                             |
+| Provide the Direct File URL | Share the direct URL of the uploaded file with the user.                                                                           | `{{"{{input.data.attachments[0].url}}"}}`     | `https://example.com/uploads/example_file.png` |
+| Validate Attachments        | To check if a valid file has been uploaded in the most recent user input, verify the length of the `input.data.attachments` array. | `{{"{{input.data.attachments.length}}"}} > 0` | -                                              |
 
 ## Resize Images
 
