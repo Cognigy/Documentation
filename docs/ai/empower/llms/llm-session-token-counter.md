@@ -20,7 +20,7 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 ## Limitations
 
 - The LLM Session Token Counter doesn't support embedding models from Aleph Alpha.
-- The LLM Session Token Counter doesn't support fallback LLMs.
+- The LLM Session Token Counter doesn't support [fallback LLMs](fallback.md).
 
 ## Fetching Session-Wide Token Usage
 
@@ -38,7 +38,7 @@ This API request fetches the total token usage in the session and stores it in t
 After your Flow triggers the LLM, the Code Node outputs the total token usage for each model used in your session:
 
 <figure>
-    <img class="image-center" src="../../../_assets/ai/empower/llms/llm-token-counter.png" width="50%" alt="LLM Token Counter output in chat session">
+    <img class="image-center" src="../../../../_assets/ai/empower/llms/llm-token-counter.png" width="50%" alt="LLM Token Counter output in chat session">
 </figure>
 
 The LLM Token Counter displays the total input and output tokens within the chat sessions in the `inputTokens` and `outputTokens` properties.
