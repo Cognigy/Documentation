@@ -20,7 +20,7 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 ## Limitations
 
 - The LLM Session Token Counter doesn't support embedding models from Aleph Alpha.
-- The LLM Session Token Counter doesn't support fallback LLMs.
+- The LLM Session Token Counter doesn't support [fallback LLMs](fallback.md).
 
 ## Fetching Session-Wide Token Usage
 
