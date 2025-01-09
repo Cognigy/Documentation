@@ -99,6 +99,8 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
+{! _includes/insights/understood-messages.md !}
+
 Source table:
 
 ```txt
