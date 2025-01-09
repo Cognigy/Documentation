@@ -179,6 +179,8 @@ Result:
 
 ### Understood / Misunderstood Messages
 
+{! _includes/insights/understood-messages.md !}
+
 Source table:
 
 ```txt
