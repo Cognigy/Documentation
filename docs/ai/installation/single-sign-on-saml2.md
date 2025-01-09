@@ -12,7 +12,7 @@ Using SSO automatically grants access that ensures a streamlined authentication 
 
 ## Get the SSO URL
 
-To configure a SSO in your IDP, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
+To configure an SSO in your IDP, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
 
 ```txt
 https://<api-url>/auth/saml/login/<organization-id>
@@ -42,7 +42,7 @@ For instance, the frontend URL could be `app.cognigy.ai`.
 
 Learn more about connecting to your proffered SSO provider in [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
 
-## Change a SSO Configuration in Cognigy.AI
+## Change an SSO Configuration in Cognigy.AI
 
 You can have only one SSO configuration for your organization. If you want to change the configuration, you first need to delete it and create a new one. To delete an SSO configuration, send a `POST` request to:
 
@@ -64,7 +64,7 @@ To enforce login with SSO, proceed as follows:
     - Specific organizations — if you use your credentials to log in, you receive an error message. To log in, enter your email address on the login page and click **Sign in with SSO**.
   - For on-premises installations, you can enforce login with SSO for:
     - The entire Cognigy.AI installation —  set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `true`. The login with credentials is deactivated for all users. To log in, enter your email address on the login page and click **Sign in with SSO**. 
-    - Specific organizations — set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `false` and assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST` environment variable in `values.yml`. If you use your credentials to log in to the organizations listed in `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST`, you receive an error message. To log in, enter your email address on the log in page and click **Sign in with SSO**.
+    - Specific organizations — set the `DEACTIVATE_NON_SSO_LOGIN` feature flag to `false` and assign the `organization-id` to the `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST` environment variable in `values.yml`. If you use your credentials to log in to the organizations listed in `DEACTIVATE_NON_SSO_LOGIN_ORG_WHITELIST`, you receive an error message. To log in, enter your email address on the login page and click **Sign in with SSO**.
 
 ## Log in with SSO
 

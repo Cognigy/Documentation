@@ -226,6 +226,7 @@ nav:
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
           - ai/empower/llms/fallback.md
+          - ai/empower/llms/llm-session-token-counter.md
           - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
@@ -671,6 +672,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.9x:
+        - release-notes/4.92.md
         - release-notes/4.91.md
         - release-notes/4.90.md
       - 4.8x:

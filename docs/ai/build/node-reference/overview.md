@@ -159,7 +159,7 @@ The Play URL Node lets you stream a sound file into the call with the ability to
 
 #### [Send Metadata](voice/generic/send-metadata.md)
 
-The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
+The Send Metadata Node sends metadata via SIP INFO messages to the connected SIP trunk.
 
 #### [Session Speech Parameters - Config](voice/generic/session-speech-parameters-config.md)
 
@@ -233,7 +233,7 @@ This Node lets you retrieve a WAV file from a URL location and play it back to t
 
 This Node sends a text (optionally with SSML) to AudioCodes, which then turns this text into speech (TTS) and outputs it to the caller.
 
-#### [Send Meta Data](voice/audiocodes/send-meta-data.md)
+#### [Send Metadata](voice/audiocodes/send-meta-data.md)
 
 This Node sends metadata via SIP INFO messages to the connected SIP trunk.
 

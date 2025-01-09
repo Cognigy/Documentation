@@ -12,7 +12,7 @@ To start using a Google Vertex AI or Gemini model with Cognigy.AI features, foll
 1. [Add a Model](#add-a-model)
 2. [Apply the Model](#apply-the-model)
 
-## Add a Model 
+## Add a Model
 
 To add a model provided by Google to Cognigy.AI, follow these steps:
 

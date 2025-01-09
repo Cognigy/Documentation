@@ -25,7 +25,7 @@ To create a Project, follow these steps:
 
 1. In the upper-left corner, click **+** to create a Project.
 2. Configure your basic Project settings.
-3. Select **Agentic AI** as your **Project Type**.
+3. Select **Agentic AI** as your Project type.
 
 ## Create an AI Agent
 
@@ -46,7 +46,7 @@ To create your first LLM-powered AI Agent, follow these steps:
     ```
 5. In the **Data Privacy & Security** step, we recommend leaving the settings unchanged. 
 6. In the **Job Selection** step, select **Default** to create an AI Agent with a predefined Flow. 
-7. Click **Create & Chat** to save changes and open the Flow with the created AI Agent.
+7. Click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent.
 
 ## Configure the AI Agent in your Flow
 
@@ -79,3 +79,4 @@ To run your Flow, follow these steps:
 
 1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [hire one from the Job Market](manage-ai-agents.md#create-an-ai-agent).
 2. [Add the AI Agent to your Flow](../../build/flows.md) and [create a set of tool actions](../../build/node-reference/ai/ai-agent.md#tool) for your AI Agent to operate.
+3. For a deeper dive into Agentic AI, visit the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/17346581840796-Getting-Started-with-AI-Agents).

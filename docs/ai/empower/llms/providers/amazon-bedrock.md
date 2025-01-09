@@ -7,6 +7,8 @@ hidden: false
 
 # Amazon Bedrock
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../../release-notes/4.92.md)
+
 To start using an Amazon Bedrock model with Cognigy.AI features, follow these steps:
 
 1. [Add a Model](#add-a-model)
@@ -22,8 +24,8 @@ To add a model provided by Amazon Bedrock to Cognigy.AI, follow these steps:
 4. In the **New LLM** window, select a model from the **Model Type** list.
 5. Add a unique name and description for your model.
 6. From the **Provider** list, select an LLM's provider:<br>
-    1. From the **Model** list, select **Custom Model** and configure the following fields:<br>
-        - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html). Note that the model will only work if your AWS admin gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).<br>
+    6.1 From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
+        - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).<br>
         - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html) documentation.<br>
     2. Click **Save**.<br>
     3. Fill in the following fields:<br>

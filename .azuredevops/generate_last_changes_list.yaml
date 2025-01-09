@@ -1,0 +1,47 @@
+name: generate-last-changes-list
+
+trigger:
+  batch: "true"
+  branches:
+    include:
+      - "main"
+
+resources:
+  - repo: self
+
+pool:
+  vmImage: ubuntu-20.04
+
+stages:
+  - stage: BuildLastChanges
+    displayName: Generate Last Changes Lists
+    jobs:
+      - job:
+        displayName: Generate Last Changes List
+        steps:
+          # Checkout code with full history to ensure git log works
+          - checkout: self
+            persistCredentials: "true"
+            clean: "true"
+            fetchDepth: 0
+
+          # Grant execute permissions to the script
+          - script: chmod +x ./support_scripts/generate-last-changes-list.sh
+            displayName: Grant execute permissions to the script
+
+          # Execute the script
+          - script: ./support_scripts/generate-last-changes-list.sh
+            displayName: Run script to generate last changes list
+
+          - script: ls -R /home/vsts/work/1/
+            displayName: List all files and directories
+
+          - script: find /home/vsts/work/1/ -name "file_changes_all.txt"
+            displayName: Find generated file
+
+          # Publish the output file as a pipeline artifact
+          - task: PublishBuildArtifacts@1
+            displayName: Publish changes list
+            inputs:
+              PathtoPublish: /home/vsts/work/1/s/last_changes/file_changes_all.txt
+              ArtifactName: last-changes-list
