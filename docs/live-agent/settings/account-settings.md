@@ -7,9 +7,9 @@ hidden: false
 
 # Account Settings
 
-_Account settings_ control the administration and optimization of Live Agent functionality within an organization.
+_Account Settings_ control the administration and optimization of Live Agent functionality within an organization.
 
-Only users having the **Administrator** role have access to the **Account Settings**. 
+Only users having the `Administrator` role have access to the **Account Settings**. 
 
 There are the following settings available within the account:
 
@@ -136,21 +136,29 @@ and overrides the [Profile Settings](../profile-settings.md#notifications).
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-In Live Agent, you can configure email and push notifications, and also add audio alerts for certain types of actions that trigger notifications.
+You can configure email and push notifications as well as the notification sound of [audio notifications](../notifications.md#configure-notifications-at-the-user-profile-level).
+
+### Email and Push Notifications
 
 {! _includes/live-agent/push-notifications.md !}
 
-As a user, having the **Administrator** role, you can configure **Push Notifications** and **Email Notifications** for the following events:
+You can activate push and email notifications in the **Push Notifications** and **Email Notifications** sections for the following event options:
 
-- When a new conversation is created.
-- When a conversation is assigned to you.
-- When you are mentioned in conversation.
-- When a new message is created in an assigned conversation.
+- A conversation is created.
+- A conversation is assigned to you.
+- You are mentioned in a conversation.
+- You receive a message in an assigned conversation.
 
-Before selecting one or more notification event options as a preset for all human agents,
-activate the **Enable overriding email notification preferences** setting
-to enable the event options for selecting.
-The configuration set here applies to all human agents of your organization account and overrides the ones of the individual agent [Profile settings](../profile-settings.md#notifications).
+To unlock the event options, activate the **Enable overriding email notification preferences** setting. The event options you set apply to all human agents of your Live Agent organization's account and override individual agents' [Profile settings](../profile-settings.md#notifications).
+
+### Notification Sound
+
+You add a notification sound to the push notifications you configured. To configure the notification sound, follow these steps:
+
+1. Go to **Settings > Account Settings**.
+2. From the **Sound** list in the **Notification Sound** section, select one of the following options:
+    - **Default** — a short sound is triggered when you send or receive a message.
+    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when a push notification is triggered. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly.
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
