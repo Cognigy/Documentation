@@ -98,7 +98,7 @@
             - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.
 
     === "Amazon Bedrock"
-        6.1 From the **Model** list, select **Custom Model** and configure the following fields:<br>
+        1. From the **Model** list, select **Custom Model** and configure the following fields:<br>
             - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).<br>
             - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html) documentation.<br>
         2. Click **Save**.<br>
