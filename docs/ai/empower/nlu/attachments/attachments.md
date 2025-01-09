@@ -7,7 +7,7 @@
 
 Agent Flows and Lexicons can be shared across multiple flows throughout the agent. This is achieved using the **Attachments** menu where lists of the respective resources are populated and can be enabled. 
 
-The **Attachments Menu** is found in the **NLU** tab inside the Flow Editor.
+The **Attachments Menu** is found on the **NLU** tab inside the Flow Editor.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/attachments.png" width="80%" />

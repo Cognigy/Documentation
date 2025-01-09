@@ -70,7 +70,7 @@ To annotate an Intent, follow these steps:
 3. Navigate to **Build > Flows**.
 4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
 5. In the upper-right corner of the Flow editor, select the **NLU** tab.
-6. In the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
+6. On the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
 7. On the selected Intent page, go to **Advanced > Analytics Step**.
 8. In the **Analytics Step** section, provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
 9. Click **Save**.
