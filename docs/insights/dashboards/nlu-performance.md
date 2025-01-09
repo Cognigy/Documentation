@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
-{! _includes/insights/understood-messages.md !}
+{! _includes/ai/understood-messages.md !}
 
 The _NLU Performance Dashboard_ provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
