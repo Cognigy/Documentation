@@ -717,7 +717,7 @@ This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 - Improved by adding information about the required Cognigy version to use option resolvers and localization to the Extension tools documentation
 
 ### Bug Fixes
-- Fixed a bug where the confirmation and disambiguation sentence are not translated when automatically translating an intent in the NLU tab
+- Fixed a bug where the confirmation and disambiguation sentence are not translated when automatically translating an intent on the NLU tab
 - Fixed a bug where an Agent does not disappear from the list of Agents after deleting it
 - Fixed a bug related to the layout of the Member select dropdown
 - Fixed a bug where the language and Intent dropdown menus automatically scroll to the top by mistake
@@ -799,7 +799,7 @@ Added a JSON field to Webchat Endpoint Editor to configure additional settings n
 - Fixed a bug where an index in service-resources is missing, limiting the overall MongoDB query performance
 - Fixed a bug where case sensitivity in Rules of Intents is mistakenly ignored
 - Fixed a bug related to an application freeze when URLs are pasted into Say Nodes of type Image
-- Fixed a bug where an error message is mistakenly shown when an Intent is selected in the NLU tab and the Flow is switched
+- Fixed a bug where an error message is mistakenly shown when an Intent is selected on the NLU tab and the Flow is switched
 
 
 ## 4.10.1
