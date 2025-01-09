@@ -31,14 +31,14 @@ To build an AI Agent, follow these steps:
 1. In the left-side **Project** menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
-   3.1. Add a unique name, for example, `Getting Started`.<br>
-   3.2. Add a relevant description, for example, `Getting Started Guide for Webchat v3`.<br>
-   3.3. Click **Create**.<br>
+    3.1. Add a unique name, for example, `Getting Started`.<br>
+    3.2. Add a relevant description, for example, `Getting Started Guide for Webchat v3`.<br>
+    3.3. Click **Create**.<br>
 4. In the Flow editor, create a new Node by clicking **+** and selecting a Question Node from the list.
 5. In the Question Node editor, set up the following parameters:<br>
-   5.1. From the **Question Type** list, select **Text**.<br>
-   5.2. In the **Text** field, enter the following sentences: `Hello! Welcome to Cognigy Support. How can I assist you today?`<br>
-   5.3. Click **Save Node**.<br>
+    5.1. From the **Question Type** list, select **Text**.<br>
+    5.2. In the **Text** field, enter the following sentences: `Hello! Welcome to Cognigy Support. How can I assist you today?`<br>
+    5.3. Click **Save Node**.<br>
 6. Below the Question Node, add a Say Node.
 7. In the Say Node editor, go to the **Text** field and enter the following sentences: `The Cognigy Headquarters is located in Düsseldorf, Germany. Is there anything else I can help you with?`
 8. Click **Save Node**.
@@ -68,9 +68,9 @@ To create a Webchat Endpoint v3, follow these steps:
 1. In the left-side **Project** menu, select **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following:<br>
-   3.1. Select the **Webchat (v3)** Endpoint type.<br>
-   3.2. Add a unique name.<br>
-   3.3. Select a Flow that you created on the [previous step](#build-a-flow).<br>
+    3.1. Select the **Webchat (v3)** Endpoint type.<br>
+    3.2. Add a unique name.<br>
+    3.3. Select a Flow that you created on the [previous step](#build-a-flow).<br>
 4. Click **Save**.
 
 Now you can change the default settings of the Webchat v3 Endpoint.

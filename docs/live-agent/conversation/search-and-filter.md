@@ -86,9 +86,9 @@ To filter conversations by priority, do the following:
 3. From the **Inboxes** list, select an Inbox.
 4. At the top of the **Conversations** list, click ![filter](../../_assets/icons/filter.svg).
 5. In the **Filter Conversations** window, select the following options:<br>
-    5.1 In the **Filter** list, select **Priority**.<br>
-    5.2 In the **Operator** list, select **Equal to** or **Not Equal to** as the filter condition. These operators indicate whether you want to filter conversations that match or do not match the specified priority level.<br>
-    5.3 In the **Select** list, choose a priority level by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple priorities from the list.<br> 
+    1. In the **Filter** list, select **Priority**.<br>
+    2. In the **Operator** list, select **Equal to** or **Not Equal to** as the filter condition. These operators indicate whether you want to filter conversations that match or do not match the specified priority level.<br>
+    3. In the **Select** list, choose a priority level by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple priorities from the list.<br> 
 6. Click **Apply filters** to activate the filter settings.
 
 The filtered conversations, matching to the activated priority filter settings, will be displayed in the list of conversations.

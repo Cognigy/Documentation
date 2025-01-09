@@ -183,21 +183,21 @@ Then monitor and analyze each step of the booking process.
    What works best for you?
    ```  
 5. Click **Add Button** and configure the first button:
-   5.1 In the **Button Title** field, enter `pre-booking`.  
-   5.2 From the **Select Button Type** list, select **Postback Value**.  
-   5.3 In the **Postback Value** field, enter `pre-booking`. 
-   5.4 Click **Save**.
+    1. In the **Button Title** field, enter `pre-booking`.  
+    2. From the **Select Button Type** list, select **Postback Value**.  
+    3. In the **Postback Value** field, enter `pre-booking`. 
+    4. Click **Save**.
 6. Click **Add Button** and configure the second button: 
-   6.1 In the **Button Title** field, enter `contact an operator`.  
-   6.2 From the **Select Button Type** list, select **Postback Value**.  
-   6.3 In the **Postback Value** field, enter `contact an operator`.  
-   6.4 Click **Save**.
+    1. In the **Button Title** field, enter `contact an operator`.  
+    2. From the **Select Button Type** list, select **Postback Value**.  
+    3. In the **Postback Value** field, enter `contact an operator`.  
+    4. Click **Save**.
 7. Below the Question Node, add a **Track Goal** Node. In the Node editor, select the initial step you created earlier. Click **Save Node**. This Node will initiate the goal tracking process.
 8. Below the **Track Goal** Node, add an **If** Node. In the Node editor, configure the `Answer contains pre-booking` condition:  
-   8.1 In the **Condition** field, click ![token](../../../_assets/icons/token.svg) and select the **Answer** Token. 
-   8.2 From the dropdown list, select `contains`.  
-   8.3 Specify `pre-booking` below the list.  
-   8.4 Click **Save Node**.
+    1. In the **Condition** field, click ![token](../../../_assets/icons/token.svg) and select the **Answer** Token. 
+    2. From the dropdown list, select `contains`.  
+    3. Specify `pre-booking` below the list.  
+    4. Click **Save Node**.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/analyze/goals/goal-flow.png" width="80%" />
@@ -208,8 +208,8 @@ Then monitor and analyze each step of the booking process.
 1. Below your **Then** child Node, add a **Question Node**. Below the **Else** child Node, add a **Handover to Agent Node**.
 2. Add a **Question Node**.
    In the Node editor, configure the following fields: 
-   2.1 From the **Question Type** list, select **Text**.
-   2.2 From the **Output Type** list, select **Text** and enter the following text:
+    1. From the **Question Type** list, select **Text**.
+    2. From the **Output Type** list, select **Text** and enter the following text:
    ```txt
    I'll just need your full name and contact information to finalize the booking.
    ```  
@@ -227,10 +227,10 @@ Then monitor and analyze each step of the booking process.
 
    Please confirm your booking by entering your email.
    ```  
-   5.1 In the **Button Title** field, enter `pre-booking`.  
-   5.2 From the **Select Button Type** list, select **Postback Value**.  
-   5.3 In the **Postback Value** field, enter `pre-booking`.  
-   5.4 Click **Save**.
+    1. In the **Button Title** field, enter `pre-booking`.  
+    2. From the **Select Button Type** list, select **Postback Value**.  
+    3. In the **Postback Value** field, enter `pre-booking`.  
+    4. Click **Save**.
 6. Below the **Question Node**, add a **Track Goal Node**. In the Node editor, select **Confirm Booking** from the **Steps** list. Click **Save Node**. This Node will record how much money is saved when the user submits the data manually.
 7. Below the **Track Goal Node**, add a **Say Node**. In the Node editor, enter the following text in the **Text** field:
    ```txt

@@ -18,9 +18,9 @@ To prepare the AI Agent for your website, you need to deploy it by [creating a W
 3. In the left-side **Project** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:
-   5.1 Select the **Webchat** Endpoint type.<br>
-   5.2 Add a unique name.<br>
-   5.3 Select a relevant Flow from the list.<br>
+    1. Select the **Webchat** Endpoint type.<br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
 6. Click **Save**.
 
 ## Configure General Settings

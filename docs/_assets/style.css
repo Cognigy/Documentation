@@ -1,6 +1,6 @@
 /* image */
 .image-center {
-	margin: auto;
+    margin: auto;
 }
 
 
@@ -8,7 +8,9 @@
     max-width: 76rem;
 }
 
-.md-typeset .emojione, .md-typeset .gemoji, .md-typeset .twemoji {
+.md-typeset .emojione,
+.md-typeset .gemoji,
+.md-typeset .twemoji {
     --md-icon-size: 0.85rem;
     display: inline-flex;
     height: var(--md-icon-size);
@@ -28,7 +30,8 @@
     }
 }
 
-.md-sidebar__scrollwrap:focus-within, .md-sidebar__scrollwrap:hover {
+.md-sidebar__scrollwrap:focus-within,
+.md-sidebar__scrollwrap:hover {
     scrollbar-color: #9e9e9e #0000;
 }
 
@@ -45,7 +48,8 @@
     font-size: 0.7rem;
 }
 
-.md-typeset .admonition, .md-typeset details {
+.md-typeset .admonition,
+.md-typeset details {
     font-size: .6rem;
 }
 
@@ -61,7 +65,8 @@
 }
 
 .md-footer {
-    background: linear-gradient(to right, #33BED2, #A166FF, #025AFB); /* Adjust colors*/
+    background: linear-gradient(to right, #33BED2, #A166FF, #025AFB);
+    /* Adjust colors*/
 }
 
 .md-copyright {
@@ -74,4 +79,36 @@
 
 .md-tags {
     --md-accent-fg-color: #9e9e9e;
+}
+
+ol {
+    list-style-type: decimal !important;
+}
+
+ol ol {
+    list-style-type: decimal !important;
+}
+
+/* Style top-level list items */
+ol>li {
+    counter-increment: item;
+    /* Increment the counter */
+}
+
+/* Style nested list items */
+ol ol {
+    counter-reset: subitem;
+}
+
+ol ol>li {
+    counter-increment: subitem;
+}
+
+ol ol>li::before {
+    content: counters(item, ".") "." counter(subitem) " ";
+    margin-left: -20px;
+}
+
+ol ol>li::marker {
+    content: "";
 }

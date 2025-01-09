@@ -43,9 +43,9 @@ To build a voice agent, follow these steps:
 1. In the left-side menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
-   3.1 Add a unique name, for example, `Getting Started`.<br>
-   3.2 Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
-   3.3 Click **Create**.<br>
+    1. Add a unique name, for example, `Getting Started`.<br>
+    2. Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
+    3. Click **Create**.<br>
 4. In the Flow editor, click **+** and select **Extensions > VG**.
 5. Create a new Node by selecting **Set Session Config** from the list. The Node appears in the Flow editor.
 6. Left-click the **Set Session Config** Node to open the Node editor.
@@ -54,10 +54,10 @@ To build a voice agent, follow these steps:
 9. Click **Save** Node.
 10. Below the Set Session Config Node, add a Question Node.<br>
 11. In the Question Node editor, configure the following settings:<br>
-    11.1 From the **Question Type** list, select **Number**.<br>
-    11.2 From the **Output Type** list, select **Text**.<br>
-    11.3 In the **Text** field, enter the following sentences:`Welcome to our customer service line. To learn about payment options, press 1. To contact technical support, press 2.`<br>
-    11.4 Click **Save Node**.<br>
+    1. From the **Question Type** list, select **Number**.<br>
+    2. From the **Output Type** list, select **Text**.<br>
+    3. In the **Text** field, enter the following sentences:`Welcome to our customer service line. To learn about payment options, press 1. To contact technical support, press 2.`<br>
+    4. Click **Save Node**.<br>
 12. Below the Question Node, add a Lookup Node.
 13. In the Lookup Node editor, select the **Text** type and click **Save Node**.
 14. Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.

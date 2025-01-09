@@ -120,15 +120,15 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
       2. After the GPT Conversation Node, add the **Lookup** Node. 
       3. Go to the **Lookup** Node:<br>
-         3.1 Select **CognigyScript** from the **Type** list.<br>
-         3.2 Enter `context.action` in the **Operator** field.<br>
-         3.3 Click **Save Node**.
+         1. Select **CognigyScript** from the **Type** list.<br>
+         2. Enter `context.action` in the **Operator** field.<br>
+         3. Click **Save Node**.
            <figure>
            <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-lookup.png" width="80%" />
          </figure>
       4. Go to the Case of the Lookup Node:<br>
-         4.1 Paste`checkAppointment` in the **Value** field.<br>
-         4.2 Click **Save Node**.
+         1. Paste`checkAppointment` in the **Value** field.<br>
+         2. Click **Save Node**.
        <figure>
            <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-lookup-case.png" width="80%" />
          </figure>
@@ -140,10 +140,10 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
       2. After the GPT Conversation Node, add the IF Node.
       3. Go to the **IF** Node:<br>
-         3.1 Select **CognigyScript** from the **Type** list.<br>
-         3.2 Enter `context.action === "checkAppointment"` in the **Condition** field.<br>
-         3.3 Select **exists** from the list.
-         3.4 Click **Save Node**.
+         1. Select **CognigyScript** from the **Type** list.<br>
+         2. Enter `context.action === "checkAppointment"` in the **Condition** field.<br>
+         3. Select **exists** from the list.
+         4. Click **Save Node**.
          <figure>
            <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-if.png" width="80%" />
          </figure>

@@ -31,15 +31,15 @@ AI Agents can deploy on a wide range of channels.
 8. Select your Project type:
 
     === "Agentic AI (Beta)"
-         8.1 Click **Next**.<br>
-         8.2 Create your [first AI-driven Agent](../empower/agentic-ai/manage-ai-agents.md).
+         1. Click **Next**.<br>
+         2. Create your [first AI-driven Agent](../empower/agentic-ai/manage-ai-agents.md).
     
     === "Intent-driven AI"
-         8.1 Click **Next**.<br> 
-         8.2 Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.<br>
-         8.3 Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.<br>
-         8.4 Select the pre-build skills if you want to use one for your Project.<br> 
-         8.5 Click **Go to Project** to view the created Project.
+         1. Click **Next**.<br> 
+         2. Select **Blank** or any pre-built solution accelerators that can help you build a specific AI Agent.<br>
+         3. Select an Endpoint you want to use first for the Project. You can also add more Endpoints later.<br>
+         4. Select the pre-build skills if you want to use one for your Project.<br> 
+         5. Click **Go to Project** to view the created Project.
 
          Once these steps are completed, your Project setup is finished.
 

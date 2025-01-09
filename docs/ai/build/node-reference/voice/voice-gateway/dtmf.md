@@ -53,26 +53,26 @@ To build a flow with the DTMF Node, either add a new Flow or extend an existing 
 5. Click **Save** Node. 
 6. Below the Set Session Config Node, add a Question Node.<br>
 7. In the Question Node editor, configure the following settings:<br>
-    7.1 From the **Question Type** list, select **Number**.<br>
-    7.2 From the **Output Type** list, select **Text**.<br>
-    7.3 In the **Text** field, enter the following sentence:`Hello! Welcome to our Support. We can help you with your equipment needs. If you want to place an order for equipment, press 1. If you have already received your equipment and need help with setup or are experiencing issues, press 2.`<br>
-    7.4 Click **Save Node**.<br>
+    1. From the **Question Type** list, select **Number**.<br>
+    2. From the **Output Type** list, select **Text**.<br>
+    3. In the **Text** field, enter the following sentence:`Hello! Welcome to our Support. We can help you with your equipment needs. If you want to place an order for equipment, press 1. If you have already received your equipment and need help with setup or are experiencing issues, press 2.`<br>
+    4. Click **Save Node**.<br>
 8. Below the Question Node, add a Lookup Node. 
 9. In the Lookup Node editor, select the **Text** type and click **Save Node**. 
 10. Configure the logic in the branch for the first **Case** Node:<br>
-   10.1 Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.<br>
-   10.2 Below the **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, please leave a voice message with the information about the equipment you wish to order, and we will call you back`.<br> 
-   10.3 Click **Save Node**.<br> 
-   10.4 Below the Say Node, add a DTMF Node. Specify `1` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br> 
-   10.5 Click **Save Node**.<br>
-   10.6 After that, you can add a **Call Recording** Node to record the caller speech.<br>
+    1. Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.<br>
+    2. Below the **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, please leave a voice message with the information about the equipment you wish to order, and we will call you back`.<br> 
+    3. Click **Save Node**.<br> 
+    4. Below the Say Node, add a DTMF Node. Specify `1` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br> 
+    5. Click **Save Node**.<br>
+    6. After that, you can add a **Call Recording** Node to record the caller speech.<br>
 11. Configure the logic in the branch for the second **Case** Node:<br>
-   11.1 Click the second **Case** Node. In the **Value** field, specify `2`.<br> 
-   11.2 Below the second **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, you will be transferred to a contact center`.<br>
-   11.3 Click **Save Node**.<br>
-   11.4 Below the second Say Node, add another DTMF Node. Specify `2` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br>
-   11.5 Click **Save Node**.<br>
-   11.6 After that, you can add a **Handover to Agent** Node to route the caller to the contact center.
+    1. Click the second **Case** Node. In the **Value** field, specify `2`.<br> 
+    2. Below the second **Case** Node, add a Say Node. In the Say Node editor, go to the **Text** field and in specify the following sentence: `After the signal, you will be transferred to a contact center`.<br>
+    3. Click **Save Node**.<br>
+    4. Below the second Say Node, add another DTMF Node. Specify `2` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.<br>
+    5. Click **Save Node**.<br>
+    6. After that, you can add a **Handover to Agent** Node to route the caller to the contact center.
 
     <figure>
       <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/dtmf-example.png" width="100%" />
