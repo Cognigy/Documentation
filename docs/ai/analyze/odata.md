@@ -191,6 +191,8 @@ Select one of the requests to extract data from the collection. Note that the AP
 
 **Fields**
 
+{! _includes/ai/understood-messages.md !}
+
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Type     | Example                                                          |

@@ -21,6 +21,8 @@ The input object is passed to the Project's [Flow](../../../ai/build/flows.md) t
 
 ## Properties
 
+{! _includes/insights/understood-messages.md !}
+
 The Input object contains the following properties (for text input).
 
 | Key                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |

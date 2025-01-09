@@ -8,6 +8,8 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
 
+{! _includes/insights/understood-messages.md !}
+
 The _Overview Dashboard_ gives you a quick summary of how customers are interacting with your AI Agent.
 
 The summary of key metrics is represented in the following charts:
@@ -176,9 +178,6 @@ Result:
 </figure>
 
 ### Understood / Misunderstood Messages
-
-{! _includes/insights/understood-messages.md !}
-
 
 Source table:
 
