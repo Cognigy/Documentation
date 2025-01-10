@@ -19,6 +19,8 @@ When you use Cognigy products daily, the data expiration values won't change bec
 
 ## Data Expiration Table
 
+{! _includes/ai/understood-messages.md !}
+
 In the table below, you can view the data included in TTL.
 
 | Data                | Description                                                                                                     | Dashboards/Explorers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |

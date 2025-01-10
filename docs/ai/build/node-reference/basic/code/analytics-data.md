@@ -18,6 +18,8 @@ analyticsdata.intent = "test";
 
 ## Analytics Fields
 
+{! _includes/ai/understood-messages.md !}
+
 The following fields can be overwritten in a Code Node:
 
 | Field          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Type            |
