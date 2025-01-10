@@ -16,14 +16,14 @@ hidden: false
 
 {! _includes/ai/understood-messages.md !}
 
-This Node allows you to selectively overwrite default values such as Intents, text, understood messages, and more,
-and manage the analytics data stored in the [Analytics](../../../analyze/collecting-data.md) database.
+This Node allows you to selectively overwrite default values, such as Intents, text, understood messages, and more,
+as well as manage the analytics data stored in the [Analytics](../../../analyze/collecting-data.md) database.
 You can view this data on the [Insights dashboards](../../../../insights/overview.md) or retrieve it via the [Cognigy.AI OData Endpoint](../../../analyze/odata.md).
 You can also use this Node to add custom values.
 
 Empty fields don't overwrite the initial values.
 If you add this Node and leave some fields empty, such as the **Intent** default field,
-the initial value stored in the analytics will remain unchanged.
+the initial value stored in the Analytics database will remain unchanged.
 
 ## Settings
 
@@ -52,7 +52,7 @@ For example, if user inputs contain words such as `excellent` or `great`, you ca
 
 Default fields allow you to change existing data or add new data to the default parameters,
 such as Intents, States, and inputs.
-If a default value is left empty, the previous value will be used in the analytics record.
+If a default field is left empty, the previous value will be used in the analytics record.
 
 The table includes the most commonly used parameters for overwriting.
 For example, you can overwrite the Intent name.
