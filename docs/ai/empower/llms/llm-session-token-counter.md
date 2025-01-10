@@ -9,9 +9,9 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
-In Cognigy.AI, you can use a [Code Node](../../build/node-reference/basic/code/overview.md) to track the Large Language Model (LLM) total token usage in a conversation or chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
+In Cognigy.AI, you can use the `api.getLLMTokenUsageForSession()` API call in a [Code Node](../../build/node-reference/basic/code/overview.md) or an [Extension](../../build/extensions.md) to fetch the Large Language Model (LLM) total token usage in a conversation or chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
-The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information isn't available by the provider, the token usage is estimated by Cognigy.AI.
+The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information isn't available by the provider, Cognigy.AI estimates the token usage.
 
 ## Prerequisite
 
@@ -24,27 +24,52 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 
 ## Fetching Session-Wide Token Usage
 
-1. Add a Code Node after the Node that uses an LLM, for example, after an [AI Agent Node](../../build/node-reference/ai/ai-agent.md).
-2. Add the following API request to the Code Node:
+1. Add a [Code Node](../../build/node-reference/basic/code/overview.md) after the Node that uses an LLM, for example, after an [AI Agent Node](../../build/node-reference/ai/ai-agent.md).
+2. Add the following code to the Code Node:
 
     ```javaScript
     const tokens = api.getLLMTokenUsageForSession();
     ```
 
-This API request fetches the total token usage in the session and stores it in the `token` variable.
+This Code Node fetches the total token usage in the session and stores it in the `token` variable.
 
-## LLM Session Token Counter Output
+The following JSON example shows an object returned by `api.getLLMTokenUsageForSession()`:
 
-After your Flow triggers the LLM, the Code Node outputs the total token usage for each model used in your session:
+```json
+{
+    "1c945b38-5dbb-4fcf-9fdd-112bd8177f9c": {
+        "IlmDisplayName": "openAI - text- embedding-3-large - 1735891122507",
+        "providerType": "openAI",
+        "modelType" : "text-embedding-3-large",
+        "usage": {
+            "inputTokens": 6,
+            "outputTokens": 0
+        }
+    },
+    "ce190e1f-eff7-4f6b-9074-9f705375a3d3": {
+        "IlmDisplayName": "openAI - gpt-40 - 1735891179896",
+        "providerType": "openAI",
+        "modelType": "gpt-40",
+        "usage": {
+            "inputTokens": 441,
+            "outputTokens": 106
+        }
+    }
+}
+```
 
-<figure>
-    <img class="image-center" src="../../../../_assets/ai/empower/llms/llm-token-counter.png" width="50%" alt="LLM Token Counter output in chat session">
-</figure>
+| Key            | Type   | Description                                                                                                                                           | Example                                |
+|----------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| llmReferenceId | String | The LLM reference ID.                                                                                                                                 | `ce190e1f-eff7-4f6b-9074-9f705375a3d3` |
+| llmDisplayName | String | The name of the LLM.                                                                                                                                  | `openAI - gpt-40 - 1735891179896`      |
+| providerType   | String | The LLM provider.                                                                                                                                     | `openAI`                               |
+| modelType      | String | The LLM model.                                                                                                                                        | `gpt-40`                               |
+| usage          | String | The object containing information about the session total token usage.                                                                                | -                                      |
+| inputTokens    | Number | The number of input tokens.                                                                                                                           | 441                                    |
+| outputTokens   | Number | The number output tokens. The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens. | 106                                    |
 
-The LLM Token Counter displays the total input and output tokens within the chat sessions in the `inputTokens` and `outputTokens` properties.
 
-!!!note "Embedding Models Output Tokens"
-    The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens.
+For testing in the Interaction Panel, you can output the JSON object by adding `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md).
 
 ## More Information
 
