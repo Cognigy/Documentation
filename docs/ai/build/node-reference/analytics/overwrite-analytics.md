@@ -8,16 +8,22 @@ hidden: false
 # Overwrite Analytics
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/overwrite-analytics.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/overwrite-analytics.png" width="80%" />
   <figcaption>Overwrite Analytics</figcaption>
 </figure>
 
 ## Description
 
-This Node allows you to selectively overwrite default values such as intent, text, understood messages, and more,
+{! _includes/ai/understood-messages.md !}
+
+This Node allows you to selectively overwrite default values such as Intents, text, understood messages, and more,
 and manage the analytics data stored in the [Analytics](../../../analyze/collecting-data.md) database.
 You can view this data on the [Insights dashboards](../../../../insights/overview.md) or retrieve it via the [Cognigy.AI OData Endpoint](../../../analyze/odata.md).
-You can also use this Node to add custom values. When a value is left empty, the respective key is not overwritten and the default value is used.
+You can also use this Node to add custom values.
+
+Empty fields don't overwrite the initial values.
+If you add this Node and leave some fields empty, such as the **Intent** default field,
+the initial value stored in the analytics will remain unchanged.
 
 ## Settings
 
@@ -45,15 +51,15 @@ For example, if user inputs contain words such as `excellent` or `great`, you ca
 ### Default Fields
 
 Default fields allow you to change existing data or add new data to the default parameters,
-such as intents, states and inputs.
+such as Intents, States, and inputs.
 If a default value is left empty, the previous value will be used in the analytics record.
 
 The table includes the most commonly used parameters for overwriting.
-For example, you can overwrite the intent name.
+For example, you can overwrite the Intent name.
 Consider the case where a user says, `I need to return an item`.
-The AI Agent recognizes this message as the `Return request` intent.
+The AI Agent recognizes this message as the `Return request` Intent.
 For more precise tracking,
-you can configure the AI Agent to overwrite this intent so that it is recorded in analytics as `Product return`.
+you can configure the AI Agent to overwrite this Intent so that it is recorded in analytics as `Product return`.
 
 | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                  | 
 |----------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,6 +72,18 @@ you can configure the AI Agent to overwrite this intent so that it is recorded i
 | Completed Goals      | Text          | Store a list of completed goals.                                                                                                                                                                                                                                                                                                                                                                                             |
 | Understood           | Dropdown      | Select one of the following options:<br>**Don't Overwrite** — the current status of the message (whether it is `understood` or `misunderstood`) will not be overridden. <br>**True** — the message will be counted as `understood`.<br>**False** — the message will not be counted as `misunderstood`.<br>**Don't Count** — the message will not be included in the calculation of `understood` or `misunderstood` messages. |
 | Handover Escalations | CognigyScript | Store the number of handover escalations.                                                                                                                                                                                                                                                                                                                                                                                    |
+
+## Examples
+
+### Replace Personal Data for Privacy in OData
+
+You can replace specific text in the field to ensure privacy while maintaining context in OData. 
+For example, instead of `My name is Alex, how do I do something?` you can replace it with `My name is <Name>, how do I do something?`.
+
+### Clean Up NLU Metrics with Understood
+
+To clean up NLU metrics, you can set the `Understood` field to `null` or `true` in specific circumstances.
+This approach is useful in voice AI Agents for handling Voice Gateway payloads, which are automatically set to `false`.
 
 ## Alternatives
 
