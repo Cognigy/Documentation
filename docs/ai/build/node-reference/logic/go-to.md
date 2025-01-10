@@ -1,9 +1,15 @@
 ---
- title: "Go To" 
- slug: "go-to" 
- hidden: false 
+title: "Go To" 
+slug: "go-to" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Go To
 ---
+
 # Go To
+
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/go-to.png" width="80%" />
 </figure>
@@ -61,7 +67,7 @@ This setting will parse the input into the sub Flow, and the NLU will then score
 If the **Absorb Context** setting is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
 
 !!! warning "Loops"
-    Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premise installations.
+    Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premises installations.
 
 
 !!! note "Open Target Flow"

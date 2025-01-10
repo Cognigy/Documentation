@@ -12,33 +12,33 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="100%" />
 </figure>
 
-The **Genesys** Endpoint allows connecting AI Agent to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
+The Genesys Endpoint connects AI Agents to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
 
 ## Prerequisites
 
 - You need to have an account in [Genesys Cloud](https://apps.mypurecloud.de/).
 - Activate the Genesys Endpoint on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premise installation, specify the following feature flags: 
+    - If you have an on-premises installation, specify the following feature flags: 
         - `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Endpoint for all organizations in your installation, use `*` instead of a list of organizations.
         - `FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST="organisation1,organisation2"`. Add this feature flag to use Genesys [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) with AI Copilot. To enable this feature for all organizations within the Genesys Endpoint in your installation, use `*` instead of a list of organizations.
 
 ## Generic Endpoint Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md)
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 - [Transformer Functions](../endpoints/transformers/transformers.md)
 
-## Channel Specific Settings
+## Specific Endpoint Settings
 
 ### Genesys Bot Connector Setup
 
-| Parameter    | Description                                                                                                                                                                                                     |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. This token needs to be generated on the Cognigy side and can consist of letters, numbers, and punctuation marks. |
+| Parameter    | Description                                                                                                                                                                                                        |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. This token needs to be generated on the Cognigy.AI side and can consist of letters, numbers, and punctuation marks. |
 
 ## How to Set up
 
@@ -49,12 +49,12 @@ To set up the Genesys Endpoint, follow these steps:
 
 ### Configure Genesys Endpoint
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
+1. In the left-side menu of your Project, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
-   3.1 Select the **Genesys** Endpoint type. <br>
-   3.2 Add a unique name.<br>
-   3.3 Select a relevant Flow from the list.<br>
+    1. Select the **Genesys** Endpoint type. <br>
+    2. Add a unique name.<br>
+    3. Select a relevant Flow from the list.<br>
 4. In the **Configuration Information** section, copy the Endpoint URL and save it for later usage in Genesys.
 5. Activate the **Enable Endpoint** setting.
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.

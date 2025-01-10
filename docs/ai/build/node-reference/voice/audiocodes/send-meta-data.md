@@ -1,22 +1,24 @@
 ---
- title: "Send Meta Data" 
- slug: "send-meta-data" 
- hidden: false 
+title: "Send Metadata" 
+slug: "send-meta-data" 
+hidden: false 
 ---
-# Send Meta Data
+# Send Metadata
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/send-metadata.png" width="80%" />
-  <figcaption>AudioCodes Meta Data</figcaption>
+  <figcaption>AudioCodes Metadata</figcaption>
 </figure>
 
 ## Description
 
-The Send Meta Data Node will send meta data via SIP INFO messages to the connected SIP trunk.
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
+The Send Metadata Node will send metadata via SIP INFO messages to the connected SIP trunk.
 
 | Parameter | Type | Description                                                   |
 |-----------|------|---------------------------------------------------------------|
-| Meta Data | JSON | The meta data to send via SIP INFO. See below for an example. |
+| Metadata | JSON | The metadata to send via SIP INFO. See below for an example. |
 
 ```json
 {

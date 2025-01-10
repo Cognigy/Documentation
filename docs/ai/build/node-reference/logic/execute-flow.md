@@ -1,8 +1,13 @@
 ---
- title: "Execute Flow" 
- slug: "execute-flow" 
- hidden: false 
+title: "Execute Flow" 
+slug: "execute-flow" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Execute Flow
 ---
+
 # Execute Flow
 
 <figure>
@@ -15,7 +20,7 @@ An Execute Flow Node is used to immediately execute another Flow.
 
 After the target Flow finished executing, the current Flow will continue executing.
 
-Cognigy monitors the number of times an Execute Flow Node is triggered without user input. The maximum loop count is set to 4 by default. This value is configurable only for on-premise installations.
+Cognigy monitors the number of times an Execute Flow Node is triggered without user input. The maximum loop count is set to 4 by default. This value is configurable only for on-premises installations.
 
 When a Flow is executed, it will inherit the current Context from the parent Flow. The executed Flow can then make modifications to this Context, and these changes will be available to the parent Flow once the execution of the child Flow is completed.
 

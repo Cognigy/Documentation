@@ -24,7 +24,7 @@ _**Agents**_
 :  Members of your Customer Support team. Agents will be able to view and reply to messages from your users. On the Live Agent sidebar you can click Settings > Agents to configure it. To differentiate between AI agents and human agents in the Live Agent documentation, we primarily use the [Human Agent](#h) term to denote members of the support team. For more information, read the [Agent](settings/agents.md) documentation.
 
 _**Agent Queue**_
-:  A list of conversations waiting for attention from Agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the Agent has not sent the first reply. The queue is visible to Agents on the Mine tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention. For more information, read the [Agent Queue](conversation/conversation-queue.md) documentation.
+:  A list of conversations waiting for attention from Agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the Agent has not sent the first reply. The queue is visible to Agents on the Mine tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention. For more information, read the [Agent Queue](conversation/conversation-queue/overview.md) documentation.
 
 _**Agent Status**_
 :  Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests. For more information, read the [Agent Statuses](settings/agents.md) documentation.
@@ -75,7 +75,7 @@ For more information, read the [Agent Statuses](settings/agents.md) documentatio
 _**Canned Responses**_
 : Pre-saved reply templates allow human agents to respond to a conversation quickly.
 Canned Response templates provide support for HTML formatting.
-For creating a Canned Response, just click on the Add Canned Response.
+For creating a Canned Response, just click the Add Canned Response.
 Canned responses are used with the help of Short Codes. Agents can access canned responses while on a chat by typing `/` followed by the short code.
 For more information, read the [Canned Responses](settings/canned-responses.md) documentation.
 
@@ -142,7 +142,7 @@ _**OData Analytics Endpoint**_
 : Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. OData, the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool. Note that the Live Agent OData Endpoint only supports GET requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`. For more information, read the [OData Endpoint](tools/odata-endpoint.md) documentation.
 
 _**Offline (Agents)**_
-: One of four possible Live Agent statuses. This status indicates that the agent is not currently logged into the Live Agent system. Agents in this status cannot handle customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
+: One of four possible Live Agent statuses. This status indicates that the agent is not currently logged in to the Live Agent system. Agents in this status cannot handle customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
 _**Online (Agents)**_
 : One of four possible Live Agent statuses. This status indicates that the Agent is available and actively handling customer interactions. For more information, read the [Agent Statuses](settings/agents.md) documentation.

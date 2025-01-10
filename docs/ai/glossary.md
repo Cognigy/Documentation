@@ -125,7 +125,7 @@ For more information, read the [Functions](build/functions.md) documentation.
 
 _**Generative AI**_
 : A type of artificial intelligence that creates new content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
-Cognigy.AI integrates with multiple generative AI providers and their LLMs to empower you to improve real-time customer interactions through personalized responses, advanced language understanding and sentiment analysis.
+Cognigy.AI integrates with multiple LLM Providers to empower you to improve real-time customer interactions through personalized responses, advanced language understanding and sentiment analysis.
 For more information, read the [Generative AI](empower/generative-ai.md) documentation and see [Wikipedia](https://en.wikipedia.org/wiki/Generative_artificial_intelligence).
 
 ## H
@@ -175,7 +175,7 @@ _**Knowledge AI**_
 For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md) documentation.
 
 _**Knowledge Store**_
-: A container that contains and organizes multiple knowledge sources and can be searched from the Flow. It provides a centralized and structured environment for managing and categorizing various sources of knowledge. The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
+: A container that contains and organizes multiple Knowledge Sources and can be searched from the Flow. It provides a centralized and structured environment for managing and categorizing various sources of knowledge. The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#knowledge-store) documentation.
 
 _**Knowledge Source**_
@@ -188,7 +188,7 @@ _**Large Language Model (LLM)**_
 : A specific type of Generative AI model that is designed for generating humanlike text based on the input and context provided.
 With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way.
 LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
-For more information, read the [Large Language Models (LLMs)](empower/llms.md) documentation.
+For more information, read the [Large Language Models (LLMs)](empower/llms/overview.md) documentation.
 
 _**Lexicons**_
 : A collection of domain-specific Keyphrases that can be attached to a Flow.

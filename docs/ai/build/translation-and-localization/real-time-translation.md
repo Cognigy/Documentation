@@ -79,6 +79,6 @@ By clicking **Resolve**, the human agent can close the conversation, and the use
 
 ## More Information
 
-- [Real Time Translation Settings](../../deploy/endpoints/real-time-translation-settings.md)
+- [Real-Time Translation Settings](../../deploy/endpoints/real-time-translation-settings.md)
 - [Automatic Translation](auto-translation.md)
 - [Localization](localization.md)

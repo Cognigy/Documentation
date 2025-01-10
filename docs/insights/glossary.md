@@ -31,7 +31,7 @@ _**Dashboard**_
 : A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
 
 _**Data Expiration**_
-: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](ttl.md) documentation.
+: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](data-management/ttl.md) documentation.
 
 _**Download Report**_
 : Each widget on the Insights dashboards provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
@@ -41,8 +41,8 @@ _**Download Report**_
 _**Endpoints**_
 : Endpoints ensure that channel-specific input and output (images, galleries, voice) are converted to the standardized Input object. This means that a Cognigy Flow only needs to be developed once, after which it can be deployed to multiple channels by configuring Endpoints. Examples of Endpoints include Webchat, Voice Gateway, Microsoft Teams, and more. In Insights, you can select one or more Endpoints for analysis. For more information, read the [Endpoints](global-filters.md#endpoints) documentation.
 
-_**Expert Mode**_
-: This mode provides additional information for conversation messages, including the triggered Intent and its score, as well as the filled Slots. You can enable Expert Mode by toggling the switch at the top of the Transcript panel. For more information, read the [Expert Mode](explorers/transcript.md#expert-mode) documentation.
+_**Debug Mode**_
+: This mode provides additional information for conversation messages, including the triggered Intent and its score, as well as the filled Slots. You can enable Debug mode by toggling the switch at the top of the Transcript panel. For more information, read the [Debug Mode](explorers/transcript.md#debug-mode) documentation.
 
 _**Engagement**_
 : A dashboard in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Dashboard](dashboards/engagement.md) documentation.
@@ -61,7 +61,7 @@ _**Filter Bar**_
 ## G
 
 _**Global Filter**_
-: A tool that allows users to set consistent filtering criteria, such as time frame, endpoints, snapshot, locales, and message rating, across different dashboards and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
+: A tool that allows users to set consistent filtering criteria, such as time span, endpoints, snapshot, locales, and message rating, across different dashboards and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
 
 ## L
 
@@ -114,11 +114,11 @@ _**Steps**_
 _**Tiles**_
 : A UI element designed for displaying Indicator charts. These tiles are positioned at the top of a dashboard. For more information, read the [Overview Dashboard](dashboards/overview.md) documentation.
 
-_**Time frame**_
-: A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Timeframe](global-filters.md#time-span) documentation.
+_**Time span**_
+: A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Time Span](global-filters.md#time-span) documentation.
 
 _**Time zone**_
-: Insights supports presenting time-based data according to the user's specified time zone in the Cognigy.AI user profile settings. For more information, read the [Timezone](time-zone.md) documentation.
+: Insights supports presenting time-based data according to the user's specified time zone in the Cognigy.AI user profile settings. For more information, read the [Timezone](data-management/time-zone.md) documentation.
 
 _**Transcripts**_
 : Logged conversations between end users and agents.

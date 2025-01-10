@@ -2,6 +2,10 @@
 title: "Database" 
 slug: "database" 
 hidden: false 
+tags:
+  - Live Agent
+  - Helm Values
+  - Database
 ---
 
 # Database
@@ -16,7 +20,7 @@ Compatible and tested PostgreSQL versions **>= 10** and **<= 15**
 |----------------------------|--------|---------------------------|-------------------------------------------------------------------------------|
 | `postgresql.enabled`       | bool   | `true`                    | Set to `false` if using an external postgres, and modify the below variables. |
 | `postgresql.nameOverride`  | string | `"postgresql"`            | Pod Name Override                                                             |
-| `postgresql.auth.database` | string | `"live_agent_production"` |
+| `postgresql.auth.database` | string | `"live_agent_production"` |                                                                               |
 | `postgresql.auth.username` | string | `"postgres"`              | Database User                                                                 |
 | `postgresql.host`          | string | `"postgres"`              | Commented, unless using an external database.                                 |
 | `postgresql.port`          | string | `"postgres"`              | Commented, unless using an external database.                                 |
@@ -33,5 +37,5 @@ It is good practice to change the `postgres.auth.postgresqlPassword` in the `val
 2. Type the user credentials and uncomment the properties `postgresqlHost`, `postgresqlPort`, giving them the correct values.
 
 3. Define a password to access the external Postgres instance:
-   - A. A secret is created by default. Edit the password inside the Postgres secret. The secret name is composed of the `release name` + `postgres`.
-   - B. (Recommended) Define an existing secret. Create the secret and set the values inside the `values.yaml` file. The keys are `postgresql.existingSecret` and `postgresql.auth.secretKeys.adminPasswordKey`.
+    - A. A secret is created by default. Edit the password inside the Postgres secret. The secret name is composed of the `release name` + `postgres`.
+    - B. (Recommended) Define an existing secret. Create the secret and set the values inside the `values.yaml` file. The keys are `postgresql.existingSecret` and `postgresql.auth.secretKeys.adminPasswordKey`.

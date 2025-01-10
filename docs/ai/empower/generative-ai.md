@@ -6,27 +6,28 @@ hidden: false
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
 
 {! _includes/ai/terms-of-use.md !}
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
-to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms.md) to:
+Cognigy.AI integrates with various [LLM Providers](#prerequisites)
+to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
 - [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
 
 ## Prerequisites
 
-Before using this feature, you need to create an account in one of the Generative AI Providers:
+Before using this feature, you need to create an account in one of the LLM Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
-- [Google Vertex AI](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
-- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/).
+- [Google Vertex AI and Gemini](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
+- [Aleph Alpha](https://aleph-alpha.com/). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
+- [Amazon Bedrock](https://aws.amazon.com/bedrock/). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
 
 ### Set up Generative AI
 
@@ -137,6 +138,7 @@ You can configure the following Run-Time Generative AI features:
 - [Rephrasing AI Agent Outputs](#rephrasing-ai-agent-outputs)
 - [LLM-powered Question Reprompts](#llm-powered-question-reprompts)
 - [Search Extract Output Node](#search-extract-output-node)
+- [LLM Entity Extract Node](#llm-entity-extract-node)
 
 ### LLM Prompt Node
 
@@ -146,6 +148,8 @@ The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+    The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later.
+    Use the [LLM Prompt Node](#llm-prompt-node) to generate messages with LLM services.
 
 The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
@@ -155,15 +159,15 @@ To use AI-enhanced bot output rephrasing in [Say](../build/node-reference/basic/
 
 1. Open the existing Flow.
 2. Add one of the Nodes: Say, Question, or Optional Question.
-3. Go to the AI-enhanced output section.
-4. In the Rephrase Output setting, select one of the options:
+3. Go to the **AI-enhanced output** section.
+4. In the **Rephrase Output** setting, select one of the options:
     - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
     - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
     - **Based on previous user inputs** — set the last `x` user Inputs considered.
 5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
 6. Click **Save Node**.
 
-Check in the interactive panel if your Flow works as expected.
+Check in the Interaction Panel if your Flow works as expected.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/empower/generative-ai/generating-output.png" width="90%" />
@@ -178,6 +182,13 @@ The [Question Node](../build/node-reference/basic/question.md#reprompt-methods) 
 The [Search Extract Output Node](../build/node-reference/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](knowledge-ai/overview.md)
 to execute a search within a Knowledge Store,
 extracts a relevant answer via a Generative AI model, and creates an output.
+
+### LLM Entity Extract Node
+
+The [LLM Entity Extract Node](../build/node-reference/other-nodes/llm-entity-extract.md) retrieves specific entities from user inputs,
+such as product or booking codes and customer IDs.
+For example, if a user input is `I would like to book flight AB123 from New York to London`,
+the LLM can extract the booking code `AB123` from this input.
 
 ## FAQ
 
@@ -195,5 +206,5 @@ extracts a relevant answer via a Generative AI model, and creates an output.
 - [Flow Nodes](../build/node-reference/overview.md)
 - [Intents](nlu/overview.md#intents)
 - [Lexicons](nlu/slots-and-lexicons/lexicons.md)
-- [LLMs](llms.md)
+- [LLMs](llms/overview.md)
 - [Cognigy.AI Settings](../administer/access/project-settings.md)

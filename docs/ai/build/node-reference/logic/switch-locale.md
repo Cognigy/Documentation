@@ -28,17 +28,17 @@ To switch the locale for the current execution, one needs to use a [Think](think
 As of release v4.8 Cognigy Script can be used to switch to another locale by using the locale reference ID. 
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/d22f5e3-Switch_Locale_example.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/switch-locale-example.svg" width="100%" />
   <figcaption>Switch locale using Cognigy Script</figcaption>
 </figure>
 
 The reference ID you can find in the **Localization** of the **Manage** application in Cognigy.AI.
 
-Click on the 'three dots' button on the right side of any available locale to copy the respective reference ID. 
+Click the **three dots** button on the right side of any available locale to copy the respective reference ID. 
 Then open the Switch Locale Node configuration editor and enter the reference ID in the **Locale ID** field when Cognigy Script is activated.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/cda3717-copy_reference_ID_00.svg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/copy-reference-id.svg" width="100%" />
   <figcaption>Copying locale reference ID</figcaption>
 </figure>
 

@@ -1,12 +1,30 @@
+---
+title: "Build Your Voice AI Agent in Minutes"
+slug: "getting-started-with-voice-agent"
+description: "Build Your Voice AI Agent in Minutes: In this tutorial, you will learn how to create a voice agent that uses dial logic. Dial logic lets users select options by pressing the corresponding numbers on a dial pad. This way, the voice agent can guide users through predefined paths based on their choices."
+hidden: false
+---
+
 # Build Your Voice AI Agent in Minutes
 
-In this tutorial, you will learn how to create a voice agent that uses dial logic.
-Dial logic lets users select options by pressing the corresponding numbers on a dial pad.
-This way, the voice agent can guide users through predefined paths based on their choices.
+In this tutorial, you will learn how to create a voice agent that uses dial logic. Dial logic lets users select options by pressing the corresponding numbers on a dial pad. This way, the voice agent can guide users through predefined paths based on their choices.
 
 ## Prerequisites
 
+- You need to have access to a Cognigy.AI account.
 - One of the following speech provider credentials is required for testing a voice agent: Microsoft Azure Speech Services, Google Speech Services, or Amazon Polly.
+
+## Log in to Cognigy.AI
+
+You can login with your Cognigy.AI credentials or, optionally, with single sign-on (SSO), if you have [set up login with SSO](../../ai/installation/single-sign-on-saml2.md). If you have [enforced login with SSO](../../ai/installation/single-sign-on-saml2.md#enforce-login-with-sso), you can only log in with SSO.
+
+### Log in with Credentials
+
+{! _includes/ai/overview/log-in-with-credentials.md !}
+
+### Log in with SSO
+
+{! _includes/ai/overview/log-in-with-sso.md !}
 
 {! _includes/ai/overview/create-projects.md !}
 
@@ -25,9 +43,9 @@ To build a voice agent, follow these steps:
 1. In the left-side menu, navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
-   3.1. Add a unique name, for example, `Getting Started`.<br>
-   3.2. Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
-   3.3. Click **Create**.<br>
+    1. Add a unique name, for example, `Getting Started`.<br>
+    2. Add a relevant description, for example, `Getting Started Guide for voice agent`.<br>
+    3. Click **Create**.<br>
 4. In the Flow editor, click **+** and select **Extensions > VG**.
 5. Create a new Node by selecting **Set Session Config** from the list. The Node appears in the Flow editor.
 6. Left-click the **Set Session Config** Node to open the Node editor.
@@ -36,10 +54,10 @@ To build a voice agent, follow these steps:
 9. Click **Save** Node.
 10. Below the Set Session Config Node, add a Question Node.<br>
 11. In the Question Node editor, configure the following settings:<br>
-    11.1 From the **Question Type** list, select **Number**.<br>
-    11.2 From the **Output Type** list, select **Text**.<br>
-    11.3 In the **Text** field, enter the following sentences:`Welcome to our customer service line. To learn about payment options, press 1. To contact technical support, press 2.`<br>
-    11.4 Click **Save Node**.<br>
+    1. From the **Question Type** list, select **Number**.<br>
+    2. From the **Output Type** list, select **Text**.<br>
+    3. In the **Text** field, enter the following sentences:`Welcome to our customer service line. To learn about payment options, press 1. To contact technical support, press 2.`<br>
+    4. Click **Save Node**.<br>
 12. Below the Question Node, add a Lookup Node.
 13. In the Lookup Node editor, select the **Text** type and click **Save Node**.
 14. Click the **Case** Node. In the **Value** field, specify `1`, then click **Save Node**.
@@ -73,6 +91,6 @@ For these steps, refer to the [Voice Gateway](../../voice-gateway/overview.md) d
 ## What's Next?
 
 - Familiarize yourself with the core concepts of building AI Agents, such as [Projects](../build/projects.md), [Flows](../build/flows.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigy-script.md).
-- Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
+- Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms/overview.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
 - Explore [test](../test/interaction-panel/overview.md) and [deploy](../deploy/endpoints/overview.md) features.
 - Connect your agent to the [contact center](../escalate/handovers.md).

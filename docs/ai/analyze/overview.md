@@ -24,10 +24,8 @@ Cognigy.AI provides an [OData Analytics Endpoint](odata.md) that enables adminis
 
 [Contact Profiles](contact-profiles.md) store user information and can be accessed by Flows and Endpoints. They allow you to store data persistently and personalize conversations with users.
 
-## Dashbot and Chatbase
+## Dashbot
 
-{! _includes/release-notes/chatbase-removal.md !}
-
-Any Cognigy.AI endpoint can be natively connected to third-party analytics vendors [Dashbot or Chatbase](../deploy/endpoints/data-protection-and-analytics.md#available-external-analytics-services-).
+Any Cognigy.AI endpoint can be natively connected to the third-party analytics vendor [Dashbot](../deploy/endpoints/data-protection-and-analytics.md#available-external-analytics-services-).
 
 

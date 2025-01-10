@@ -2,6 +2,9 @@
 title: "CognigyScript" 
 slug: "cognigy-script" 
 hidden: false 
+tags:
+  - Cognigy.AI
+  - CognigyScript
 ---
 
 # CognigyScript

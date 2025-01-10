@@ -100,7 +100,7 @@ To activate the Knowledge AI feature flag, contact [Cognigy technical support](.
 
 ## View Metrics
 
-Familiarize yourself with the [Admin Center](../../administer/access/admin-center.md) page.
+Familiarize yourself with the [Admin Center](../../administer/access/admin-center/overview.md) page.
 On this page, you can monitor Knowledge AI metrics to manage the consumption of Knowledge AI resources effectively.
 
 <figure>

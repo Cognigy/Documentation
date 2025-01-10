@@ -27,7 +27,7 @@ The [Inject & Notify](../endpoints/inject-and-notify.md) functionality only work
 
 Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes](../../build/node-reference/voice/audiocodes/overview.md) for more information.
 
-## Number Meta Data
+## Number Metadata
 
 AudioCodes identifies information about the caller and adds it to the Cognigy [Input](../../test/interaction-panel/input.md) Object as `input.data.numberMetaData`.
 
@@ -66,7 +66,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Transformer Functions](../endpoints/transformers/transformers.md) 
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md) 
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
 
 !!! note "Contact Center & Phone number linking"
     To link the AudioCodes Endpoint to a phone number, contact your Cognigy representative to provision and configure a Voice Gateaway instance.

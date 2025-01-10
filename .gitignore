@@ -1,3 +1,5 @@
 .history
 **/.DS_Store
 .idea
+.vscode
+documentation/last_changes/

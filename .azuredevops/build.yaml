@@ -29,7 +29,7 @@ stages:
             clean: "true"
 
           - task: Docker@2
-            displayName: Login into Docker-Registry
+            displayName: Login to Docker-Registry
             inputs:
               command: "login"
               containerRegistry: $(containerRegistryReference)

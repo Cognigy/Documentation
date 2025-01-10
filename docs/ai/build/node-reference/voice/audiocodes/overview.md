@@ -1,12 +1,14 @@
 ---
 title: "AudioCodes Nodes" 
 slug: "audiocodes" 
-hidden: false 
+hidden: false
 ---
 
 # AudioCodes
 
-AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](https://www.cognigy.com/products/voice-gateway).
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+
+AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](../../../../deploy/endpoint-reference/audiocodes.md).
 
 You can use the following Voice Gateway Nodes:
 
@@ -14,6 +16,6 @@ You can use the following Voice Gateway Nodes:
 - [Hang Up](hangup.md)
 - [Play URL](play-url.md)
 - [Send Message](send-message.md)
-- [Send Meta Data](send-meta-data.md)
+- [Send Metadata](send-meta-data.md)
 - [Set Session Parameters](set-session-params.md)
 - [Transfer](transfer-vg.md)

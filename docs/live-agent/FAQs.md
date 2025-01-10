@@ -11,7 +11,7 @@ hidden: false
 ### How to remove a user?
 Removing a user (human agent) from Live Agent can be done from the Cognigy.AI [Members page](../ai/administer/access/members.md). The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and this will prevent the human agent from logging into Live Agent. This can also be achieved by deleting the user from Cognigy.AI.
 
-Head over to [Cognigy.AI Access Control](../ai/administer/access/access-control.md) for more information.
+Head over to [Cognigy.AI Access Control](../ai/administer/access/admin-center/access-control.md) for more information.
 
 ### How to create an Agent with multiple roles?
 
@@ -61,7 +61,7 @@ To add an Agent to an Inbox, follow these steps:
 Head over to [Inboxes](settings/inboxes.md#add-agents-to-an-inbox) for more information.
 
 ### How to create a team and add members to it?
-Navigate to **Settings > Teams** and click on the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
+Navigate to **Settings > Teams** and click the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
 Head over to [Teams](settings/teams.md) for more information.
 

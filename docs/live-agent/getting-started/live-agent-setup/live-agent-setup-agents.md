@@ -13,8 +13,8 @@ Once you have [set up your Endpoint and Flow for Handover to Live Agent](live-ag
 To create a User, follow these steps:
 
 1. Open the Cognigy.AI interface. If the Agent or Admin you want to add already exists as a User in Cognigy.AI, proceed to [Adding Live Agent Roles to Users](#add-live-agent-roles-to-users).
-2. In the upper-right corner, click **User Menu > Access Control**.
-3. In the upper-left corner of the **Users** page, click **+ Create new User**. 
+2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center**.
+3. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
 4. In the **New User** window, fill in the following fields:
     - **Display Name** — enter the name that you want to be displayed for this user. For example, `John Doe`.
     - **Email Address** — enter the user's email address. For example, `johndoe@example.com`.
@@ -36,11 +36,12 @@ For more information, see [Live Agent Roles](../../roles.md).
 To add one of these roles to users, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the upper-right corner, click **User Menu > Access Control**. 
-3. Select a user you would like to assign roles to.
-4. On the User page, go to the **Global Roles** section. 
-5. Click **+** and select the needed role. 
-6. Assign one of the following roles:
+2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center**.
+3. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
+4. Select a user you would like to assign roles to.
+5. On the User page, go to the **Global Roles** section. 
+6. Click **+** and select the needed role. 
+7. Assign one of the following roles:
     - `liveAgentAdmin` — for users intended to have Admin rights in Live Agent.
     - `liveAgentAgent` — for users intended to have Agent rights in Live Agent.
 

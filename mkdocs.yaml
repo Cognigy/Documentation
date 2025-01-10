@@ -19,12 +19,12 @@ nav:
       - ai/glossary.md
 
     - 🛠️ Build:
-      - ai/build/overview.md
       - ai/build/projects.md
       - ai/build/flows.md
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md
+          - ai/build/nodes/channels.md
       - Node Reference:
         - ai/build/node-reference/overview.md
         - Basic:
@@ -33,6 +33,7 @@ nav:
           - ai/build/node-reference/basic/question.md
           - ai/build/node-reference/basic/optional-question.md
           - ai/build/node-reference/basic/send-text.md
+          - ai/build/node-reference/basic/debug-message.md
           - Code:
               - ai/build/node-reference/basic/code/overview.md
               - ai/build/node-reference/basic/code/actions.md
@@ -94,19 +95,23 @@ nav:
         - Analytics:
           - ai/build/node-reference/analytics/overview.md
           - ai/build/node-reference/analytics/activate-profile.md
+          - ai/build/node-reference/analytics/add-memory.md
           - ai/build/node-reference/analytics/blind-mode.md
-          - ai/build/node-reference/analytics/complete-goal.md
+          - ai/build/node-reference/analytics/complete-task.md
           - ai/build/node-reference/analytics/deactivate-profile.md
           - ai/build/node-reference/analytics/delete-profile.md
           - ai/build/node-reference/analytics/merge-profile.md
           - ai/build/node-reference/analytics/overwrite-analytics.md
           - ai/build/node-reference/analytics/request-rating.md
+          - ai/build/node-reference/analytics/track-goal.md
           - ai/build/node-reference/analytics/set-rating.md
           - ai/build/node-reference/analytics/update-profile.md
         - Service:
            - ai/build/node-reference/service/overview.md
+           - ai/build/node-reference/service/add-transcript-steps.md
            - ai/build/node-reference/service/check-agent-availability.md
            - ai/build/node-reference/service/close-handover.md
+           - ai/build/node-reference/service/get-transcript.md
            - ai/build/node-reference/service/gpt-conversation.md
            - ai/build/node-reference/service/handover-to-agent.md
            - ai/build/node-reference/service/http-request.md
@@ -115,17 +120,20 @@ nav:
            - ai/build/node-reference/service/ms-sql.md
            - ai/build/node-reference/service/set-handover-inactivity.md
            - ai/build/node-reference/service/trigger-function.md
-        - NLU:
-          - ai/build/node-reference/nlu/overview.md
-          - ai/build/node-reference/nlu/add-lexicon-keyphrase.md
-          - ai/build/node-reference/nlu/clean-text.md
-          - ai/build/node-reference/nlu/copy-slots-to-context.md
-          - ai/build/node-reference/nlu/disable-slot-fillers.md
-          - ai/build/node-reference/nlu/enable-slot-fillers.md
-          - ai/build/node-reference/nlu/execute-cognigy-nlu.md
-          - ai/build/node-reference/nlu/fuzzy-search.md
-          - ai/build/node-reference/nlu/match-pattern.md
-          - ai/build/node-reference/nlu/regex-slot-filler.md
+        - AI:
+          - ai/build/node-reference/ai/overview.md
+          - ai/build/node-reference/ai/add-lexicon-keyphrase.md
+          - ai/build/node-reference/ai/ai-agent.md
+          - ai/build/node-reference/ai/ai-agent-handover.md
+          - ai/build/node-reference/ai/clean-text.md
+          - ai/build/node-reference/ai/copy-slots-to-context.md
+          - ai/build/node-reference/ai/disable-slot-fillers.md
+          - ai/build/node-reference/ai/enable-slot-fillers.md
+          - ai/build/node-reference/ai/execute-cognigy-nlu.md
+          - ai/build/node-reference/ai/fuzzy-search.md
+          - ai/build/node-reference/ai/match-pattern.md
+          - ai/build/node-reference/ai/regex-slot-filler.md
+          - ai/build/node-reference/ai/resolve-tool-action.md
         - Data:
           - ai/build/node-reference/data/overview.md
           - ai/build/node-reference/data/datepicker.md
@@ -139,6 +147,7 @@ nav:
           - ai/build/node-reference/ai-copilot/identity-tile.md
           - ai/build/node-reference/ai-copilot/knowledge-tile.md
           - ai/build/node-reference/ai-copilot/next-action-tile.md
+          - ai/build/node-reference/ai-copilot/send-data.md
           - ai/build/node-reference/ai-copilot/sentiment-tile.md
           - ai/build/node-reference/ai-copilot/set-grid.md
           - ai/build/node-reference/ai-copilot/transcript-tile.md
@@ -167,6 +176,10 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
+      - Agentic AI (Beta):
+          - ai/empower/agentic-ai/overview.md
+          - ai/empower/agentic-ai/getting-started.md
+          - ai/empower/agentic-ai/manage-ai-agents.md
       - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:
@@ -201,7 +214,20 @@ nav:
         - Other:
           - ai/empower/nlu/language-support.md
           - ai/empower/nlu/nlu-warnings.md
-      - ai/empower/llms.md
+      - Large Language Models:
+          - ai/empower/llms/overview.md
+          - ai/empower/llms/model-support-by-feature.md
+          - Providers:
+            - ai/empower/llms/providers/all-providers.md
+            - ai/empower/llms/providers/microsoft-azure-openai.md
+            - ai/empower/llms/providers/openai.md
+            - ai/empower/llms/providers/anthropic.md
+            - ai/empower/llms/providers/google.md
+            - ai/empower/llms/providers/aleph-alpha.md
+            - ai/empower/llms/providers/amazon-bedrock.md
+          - ai/empower/llms/fallback.md
+          - ai/empower/llms/llm-session-token-counter.md
+          - ai/empower/llms/other-operations.md
       - ai/empower/generative-ai.md
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
@@ -215,6 +241,7 @@ nav:
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-basic-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-advanced-parser.md
           - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
+        - ai/empower/knowledge-ai/source-tags.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:
@@ -262,6 +289,7 @@ nav:
         - ai/deploy/endpoint-reference/intercom.md
         - ai/deploy/endpoint-reference/line-messenger.md
         - ai/deploy/endpoint-reference/microsoft-teams.md
+        - ai/deploy/endpoint-reference/nice.md
         - ai/deploy/endpoint-reference/rest.md
         - ai/deploy/endpoint-reference/ringcentral-engage.md
         - ai/deploy/endpoint-reference/socketio.md
@@ -289,6 +317,10 @@ nav:
       - ai/analyze/odata.md
       - ai/analyze/call-tracing.md
       - ai/analyze/contact-profiles.md
+      - Goals and Tasks:
+        - ai/analyze/goals-and-tasks/overview.md
+        - ai/analyze/goals-and-tasks/tasks.md
+        - ai/analyze/goals-and-tasks/goals.md
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md
@@ -311,15 +343,16 @@ nav:
         - ai/administer/user-menu/my-profile.md
         - ai/administer/hotkeys.md
       - Access Management:
-        - Organizations and Users:
-          - ai/administer/access/admin-center.md
-          - ai/administer/access/access-control.md
+        - Admin Center:
+          - ai/administer/access/admin-center/overview.md
+          - ai/administer/access/admin-center/dashboard.md
+          - ai/administer/access/admin-center/access-control.md
+          - ai/administer/access/admin-center/audit-events.md
         - Project and Members:
           - ai/administer/access/project-settings.md
           - ai/administer/access/members.md
         - ai/administer/access/management-ui.md
       - ai/administer/limitations.md
-      - ai/administer/audit-events.md
       - ai/administer/billing.md
 
     - 👩‍💻 Developer Reference:
@@ -328,6 +361,7 @@ nav:
       - ai/developers/extension-framework.md
 
     - 🖥️ Install, Configure, and Migrate:
+      - ai/installation/access-to-cognigy-ai.md
       - ai/installation/about.md
       - ai/installation/browser-requirements.md
       - ai/installation/architecture.md
@@ -350,10 +384,10 @@ nav:
           - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
           - ai/installation/migration/from-weaviate-to-qdrant.md
       - SaaS:
+        - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
-      - Single Sign-On (SSO):
-        - ai/installation/AI-login.md
-        - ai/installation/single-signin-saml2.md
+      - Single Sign-on (SSO):
+        - ai/installation/single-sign-on-saml2.md
         - ai/installation/single-signin-openid-connect.md
 
   - Voice Gateway:
@@ -362,6 +396,7 @@ nav:
       - voice-gateway/overview.md
       - voice-gateway/getting-started.md
       - voice-gateway/technical-capabilities.md
+      - voice-gateway/migrate-from-ac-to-vg.md
       - voice-gateway/glossary.md
     - 🛠️ Self-Service Portal:
       - voice-gateway/webapp/overview.md
@@ -400,6 +435,7 @@ nav:
         - voice-gateway/references/events/CALL_CREATED.md
         - voice-gateway/references/events/CALL_COMPLETED.md
         - voice-gateway/references/events/CALL_FAILED.md
+        - voice-gateway/references/events/CALL_IN_PROGRESS.md
         - voice-gateway/references/events/CALL_RECONNECTED.md
         - voice-gateway/references/events/RECOGNIZED_DTMF.md
         - voice-gateway/references/events/RECOGNIZED_SPEECH.md
@@ -426,16 +462,17 @@ nav:
       - webchat/overview.md
       - webchat/getting-started.md
 
-    - 🆕 Webchat v3 (Beta):
+    - 🆕 Webchat v3:
       - webchat/v3/overview.md
       - webchat/v3/supported-browsers.md
       - webchat/v3/features.md
       - Endpoint Configuration:
         - webchat/v3/configuration.md
         - webchat/v3/metadata.md
+      - webchat/v3/accessibility.md
       - webchat/v3/embedding.md
 
-    - 💬 Webchat v2:
+    - 💬 Webchat v2 (Deprecated):
       - webchat/v2/overview.md
       - webchat/v2/supported-browsers.md
       - webchat/v2/features.md
@@ -523,7 +560,9 @@ nav:
     - 💬 Conversations:
       - live-agent/conversation/overview.md
       - live-agent/conversation/assign-conversations.md
-      - live-agent/conversation/conversation-queue.md
+      - Conversation Queue:
+        - live-agent/conversation/conversation-queue/overview.md
+        - live-agent/conversation/conversation-queue/real-time-queue-notifications.md
       - Conversation Routing:
         - live-agent/conversation/conversation-routing/overview.md
         - live-agent/conversation/conversation-routing/manual-mode.md
@@ -606,15 +645,19 @@ nav:
       - insights/dashboards/engagement.md
       - insights/dashboards/nlu-performance.md
       - insights/dashboards/live-agent.md
+      - insights/dashboards/goals.md
     - 🔭 Explorers:
       - insights/explorers/step.md
       - insights/explorers/transcript.md
       - insights/explorers/message.md
     - 🔍 Filter and Sort:
       - insights/global-filters.md
-    - 🗓️ Time Zone and TTL:
-      - insights/time-zone.md
-      - insights/ttl.md
+    - 🗓️ Data Management:
+      - Pre-Aggregation:
+        - insights/data-management/pre-aggregation.md
+        - insights/data-management/time-zone-with-pre-aggregation.md
+      - insights/data-management/time-zone.md
+      - insights/data-management/ttl.md
     - ⬇️ Download Reports:
       - insights/download-reports.md
 
@@ -626,60 +669,80 @@ nav:
 
   - Release Notes:
     - release-notes/index.md
-    - release-notes/4.81.md
-    - release-notes/4.80.md
-    - release-notes/4.79.md
-    - release-notes/4.78.md
-    - release-notes/4.77.md
-    - release-notes/4.76.md
-    - release-notes/4.75.md
-    - release-notes/4.74.md
-    - release-notes/4.73.md
-    - release-notes/4.72.md
-    - release-notes/4.71.md
-    - release-notes/4.70.md
-    - release-notes/4.69.md
-    - release-notes/4.68.md
-    - release-notes/4.67.md
-    - release-notes/4.66.md
-    - release-notes/4.65.md
-    - release-notes/4.64.md
-    - release-notes/4.63.md
-    - release-notes/4.62.md
-    - release-notes/4.61.md
-    - release-notes/4.60.md
-    - release-notes/4.59.md
-    - release-notes/4.58.md
-    - release-notes/4.57.md
-    - release-notes/4.56.md
-    - release-notes/4.55.md
-    - release-notes/4.54.md
-    - release-notes/4.53.md
-    - release-notes/4.52.md
-    - release-notes/4.51.md
-    - release-notes/4.50.md
-    - release-notes/4.49.md
-    - release-notes/4.48.md
-    - release-notes/4.47.md
-    - release-notes/4.46.md
-    - release-notes/4.45.md
-    - release-notes/4.44.md
-    - release-notes/4.43.md
-    - release-notes/4.42.md
-    - release-notes/4.41.md
-    - release-notes/4.40.md
-    - release-notes/4.39.md
-    - release-notes/4.38.md
-    - release-notes/4.37.md
-    - release-notes/4.36.md
-    - release-notes/4.35.md
-    - release-notes/4.34.md
-    - release-notes/4.33.md
-    - release-notes/4.32.md
-    - release-notes/4.31.md
-    - release-notes/4.30.md
-    - Earlier versions:
-      - release-notes/earlier-versions/index.md
+    - release-notes/deprecations-and-removals.md
+    - 📦 Product Versions:
+      - 4.9x:
+        - release-notes/4.92.md
+        - release-notes/4.91.md
+        - release-notes/4.90.md
+      - 4.8x:
+        - release-notes/4.89.md
+        - release-notes/4.88.md
+        - release-notes/4.87.md
+        - release-notes/4.86.md
+        - release-notes/4.85.md
+        - release-notes/4.84.md
+        - release-notes/4.83.md
+        - release-notes/4.82.md
+        - release-notes/4.81.md
+        - release-notes/4.80.md
+      - 4.7x:
+        - release-notes/4.79.md
+        - release-notes/4.78.md
+        - release-notes/4.77.md
+        - release-notes/4.76.md
+        - release-notes/4.75.md
+        - release-notes/4.74.md
+        - release-notes/4.73.md
+        - release-notes/4.72.md
+        - release-notes/4.71.md
+        - release-notes/4.70.md
+      - 4.6x:
+        - release-notes/4.69.md
+        - release-notes/4.68.md
+        - release-notes/4.67.md
+        - release-notes/4.66.md
+        - release-notes/4.65.md
+        - release-notes/4.64.md
+        - release-notes/4.63.md
+        - release-notes/4.62.md
+        - release-notes/4.61.md
+        - release-notes/4.60.md
+      - 4.5x:
+        - release-notes/4.59.md
+        - release-notes/4.58.md
+        - release-notes/4.57.md
+        - release-notes/4.56.md
+        - release-notes/4.55.md
+        - release-notes/4.54.md
+        - release-notes/4.53.md
+        - release-notes/4.52.md
+        - release-notes/4.51.md
+        - release-notes/4.50.md
+      - 4.4x:
+        - release-notes/4.49.md
+        - release-notes/4.48.md
+        - release-notes/4.47.md
+        - release-notes/4.46.md
+        - release-notes/4.45.md
+        - release-notes/4.44.md
+        - release-notes/4.43.md
+        - release-notes/4.42.md
+        - release-notes/4.41.md
+        - release-notes/4.40.md
+      - 4.3x:
+        - release-notes/4.39.md
+        - release-notes/4.38.md
+        - release-notes/4.37.md
+        - release-notes/4.36.md
+        - release-notes/4.35.md
+        - release-notes/4.34.md
+        - release-notes/4.33.md
+        - release-notes/4.32.md
+        - release-notes/4.31.md
+        - release-notes/4.30.md
+    - 📜 Earlier Product Versions:
+      - release-notes/earlier-versions/overview.md
       - release-notes/earlier-versions/cognigy-ai-pre-4.30.md
       - release-notes/earlier-versions/insights-pre-4.30.md
       - release-notes/earlier-versions/live-agent-pre-4.30.md
@@ -687,6 +750,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: mkdocs/
 
   logo: ./_assets/Cognigy-black.svg
   favicon: ./_assets/favicon.webp
@@ -705,6 +769,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - content.tabs.link
+    - content.code.copy
 
     # render navigation bar at the top of the page
     - navigation.tracking
@@ -720,7 +785,7 @@ markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Anchor to this section
-      slugify: !!python/name:pymdownx.slugs.uslugify ''
+      slugify: !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
   - abbr
   - attr_list
   - def_list
@@ -754,12 +819,31 @@ extra_javascript:
   - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
-  - glightbox
   - search
+  - glightbox
   - macros
+  - tags:
+      tags_file: tags.md
   - exclude:
       glob:
         - _includes/*
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'Print Site'
+      add_print_site_banner: false
+      # Table of contents
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 2
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_cover_page: true
+      cover_page_template: ""
+      path_to_pdf: ""
+      include_css: true
+      enabled: true
 extra:
   # Do not display "Generated by MkDocs" in the footer
   generator: false

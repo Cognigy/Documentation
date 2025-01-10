@@ -1,20 +1,19 @@
 ---
 title: "Genesys Cloud Open Messaging"
 slug: "genesys-cloud-open-messaging"
+description: "Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud."
 hidden: false
 ---
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.74.4-blue.svg)](../../../release-notes/4.74.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
 </figure>
 
-Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
-
-Open messaging facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
+Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud.
 
 The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](https://developer.genesys.cloud/commdigital/digital/openmessaging/openmessaging-apis). [Open messaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
 
@@ -22,10 +21,10 @@ The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](http
 
 ### Prerequisites
 
-- You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
+- You need to have an account in [Genesys Cloud](https://login.mypurecloud.com/).
 - Activate Genesys Cloud Open Messaging on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premise installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
+    - If you have an on-premises installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
 
 ### Configure Genesys Cloud Open Messaging
 
@@ -210,6 +209,8 @@ The main Flow on Cognigy.AI should look like this:
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
 </figure>
 
+{! _includes/ai/providers/genesys/filter-transcript-messages.md !}
+
 ## AI Copilot Workspace
 
 Within Genesys integration, you can use [AI Copilot Workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
@@ -250,10 +251,10 @@ To create a script, follow these steps:
 12. In the upper-right corner, go to the **Variables** tab.
 13. On the **Variables** tab, go to the **Basic Types** section and click **String**.
 14. Create a new variable:<br>
-    14.1 In the **Name** field, enter `userId`.<br>
-    14.2 In the **Description** field, enter `Cognigy variable`.<br>
-    14.3 Enable the **Input** toggle.<br>
-    14.4 Click **Apply**.<br>
+    1. In the **Name** field, enter `userId`.<br>
+    2. In the **Description** field, enter `Cognigy variable`.<br>
+    3. Enable the **Input** toggle.<br>
+    4. Click **Apply**.<br>
 15. In the upper-left corner of the script page, click **Script > Properties**.
 16. In the **Script Properties** section, activate the **Inbound** and **Message** features.
 17. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.

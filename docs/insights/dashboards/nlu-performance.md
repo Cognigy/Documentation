@@ -8,6 +8,8 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
+{! _includes/ai/understood-messages.md !}
+
 The _NLU Performance Dashboard_ provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
 You can find more information about our NLU and Intents in the [NLU Overview](../../ai/empower/nlu/overview.md) article.
@@ -46,7 +48,7 @@ You can find a calculation example with data visualization in the [Average Execu
 
 ### Avg Intent Score
 
-Displays the average Intent score for the selected time frame. Higher Intent scores indicate better AI Agent performance in matching user queries.
+Displays the average Intent score for the selected time span. Higher Intent scores indicate better AI Agent performance in matching user queries.
 For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
 
 To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
@@ -97,17 +99,7 @@ Result: In the provided source table, there is one record with an intent score o
 
 ### Understood / Misunderstood Messages
 
-Displays the percentage of messages understood and misunderstood by the system over a selected time frame.
-
-A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](../../ai/build/node-reference/basic/code/analytics-data.md) or [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md).
-A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](../../ai/build/node-reference/analytics/overwrite-analytics.md)
-or sent during an active handover
-without configuring [AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) Flow.
-
-By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
-you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow and Intents. For more information, see [Intent Trainer](../../ai/train/intent-trainer.md).
+{! _includes/insights/understood-messages.md !}
 
 Source table:
 
@@ -165,7 +157,7 @@ Result:
 
 ### Top Slots
 
-Similar to **Top Goals** and **Top Intents**, this chart displays top-rated number of slots in a horizontal bar chart.
+Similar to **Top Tasks** and **Top Intents**, this chart displays top-rated number of slots in a horizontal bar chart.
 
 Source table:
 
@@ -243,7 +235,7 @@ Result:
 
 ### Average Execution Time
 
-Displays the average time in milliseconds it takes to execute a Flow process over a selected time frame.
+Displays the average time in milliseconds it takes to execute a Flow process over a selected time span.
 
 Formula:
                              
@@ -274,5 +266,5 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 ## More Information
 
 - [Dashboard Engagement](engagement.md)
-- [Overview](overview.md)
+- [Dashboard Overview](overview.md)
 - [Dashboard Live Agent](live-agent.md)

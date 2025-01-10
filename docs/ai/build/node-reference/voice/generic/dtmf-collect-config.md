@@ -1,10 +1,13 @@
 ---
- title: "DTMF Collect - Config" 
- slug: "dtmf-collect-config" 
- hidden: false 
+title: "DTMF Collect - Config" 
+slug: "dtmf-collect-config" 
+hidden: false 
+tags:
+  - Voice Gateway
+  - DTMF
 ---
 
-# CDTMF Collect - Config
+# DTMF Collect - Config
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/dtmf-collect-config.png" width="80%" />
@@ -13,6 +16,7 @@
 
 ## Description
 
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 Enables capturing of DTMF signals by the voice agent during the entire call session.
 

@@ -1,8 +1,9 @@
 ---
- title: "Call Recording" 
- slug: "call-recording" 
- hidden: false 
+title: "Call Recording"
+slug: "call-recording"
+hidden: false
 ---
+
 # Call Recording
 
 <figure>
@@ -11,6 +12,8 @@
 </figure>
 
 ## Description
+
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Call Recording Node controls the voice recording capabilities of the conversation.
 

@@ -26,9 +26,11 @@ Any **deviations** from the default values for our Trial and App environments ar
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------|------------|
 | **Network**                                                                                                                       |                                 |            |            |
 | Rate limit                                                                                                                        | 1000 requests per 5 minutes[^*] |            |            |
+| Waiting period before the `user disconnected` event is triggered                                                                  | 3 seconds[^**]                  |            |            |
 | **Database and HTTP Node Calls**                                                                                                  |                                 |            |            |
 | Maximum Database query result from DB Flow Nodes                                                                                  | 500 kB                          |            |            |
-| Maximum [Context](../test/interaction-panel/context.md) size                                                                      | 65 kB                           |            | **1.5 MB** |
+| Maximum [Input](../test/interaction-panel/input.md) size                                                                          | 65 kB[^***]                     |            | **1.5 MB** |
+| Maximum [Context](../test/interaction-panel/context.md) size                                                                      | 65 kB[^***]                     |            | **1.5 MB** |
 | Maximum HTTP payload size for HTTP-Request Flow Node                                                                              | 65 kB                           |            |            |
 | Maximum HTTP response size for HTTP-Request Flow Node                                                                             | 524 kB                          | **2.6 MB** | **1.5 MB** |
 | HTTP-Request Flow Node timeout                                                                                                    | 8 s                             |            | **15 s**   |
@@ -79,7 +81,8 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum number of characters in the code editor                                                                                   | 200K                            |            |            |
 
 [^*]: The rate limit of 1000 requests per 5 minutes from a single IP address applies only to shared SaaS environments.
-
+[^**]: If you have a dedicated SaaS or on-premises environment, you can change this limit. The `SOCKET_ENDPOINT_DISCONNECT_GRACE_PERIOD` variable lets you set a waiting period (in seconds) before marking a user as disconnected. This delay ensures temporary network issues or brief interruptions don't immediately trigger the `user disconnected` event. 
+[^***]: The limit for both the Input and Context objects can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Be aware that increasing the object size could lead to performance issues.
 
 ## Retention of Records
 
@@ -89,20 +92,18 @@ Any **deviations** from the default values for our Trial and App environments ar
 !!! note
     If you have on-premises Cognigy.AI environment, you can set TTL values system-wide via the Config Map and/or organization-wide via [Management UI](../administer/access/management-ui.md).
 
-| Description                                                                              | Default value | App          |
-|------------------------------------------------------------------------------------------|---------------|--------------|
-| **Logs**                                                                                 |               |              |
-| Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |              |
-| **Sessions**                                                                             |               |              |
-| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |              |
-| **Data**                                                                                 |               |              |
-| Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |              |
-| Maximum time until Conversation transcripts will be removed                              | 30 days       |              |
-| **Intent Trainer Records**                                                               |               |              |
-| Maximum time Intent Trainer records are stored in the database                           | 30 days       | 10 days[^**] |
-| **Audit Events**                                                                         |               |              |
-| Maximum time until audit events will be removed                                          | 30 days       |              |
-| **xApp Session**                                                                         |               |              |
-| Maximum time until an xApp Session will be expired                                       | 30 days       |              | 
-
-[^**]: The limit applies to shared SaaS customers in the EU, US, and UK regions.
+| Description                                                                              | Default value | 
+|------------------------------------------------------------------------------------------|---------------|
+| **Logs**                                                                                 |               |
+| Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |
+| **Sessions**                                                                             |               |
+| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |
+| **Data**                                                                                 |               |
+| Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |
+| Maximum time until Conversation transcripts will be removed                              | 30 days       |
+| **Intent Trainer Records**                                                               |               |
+| Maximum time Intent Trainer records are stored in the database                           | 10 days       |
+| **Audit Events**                                                                         |               |
+| Maximum time until audit events will be removed                                          | 30 days       |
+| **xApp Session**                                                                         |               |
+| Maximum time until an xApp Session will be expired                                       | 30 days       |

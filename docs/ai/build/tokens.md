@@ -1,8 +1,13 @@
 ---
- title: "Tokens" 
- slug: "tokens" 
- hidden: false 
+title: "Tokens" 
+slug: "tokens" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Token
+  - Tokens
 ---
+
 # Tokens
 
 The **Tokens** feature allows **CognigyScript** expressions to be packaged into a visual **Token** to provide non-technical platform creators with access to dynamic conversation data without writing code themselves.
@@ -59,7 +64,7 @@ Creating a **Token** requires the following information:
 
 ## Token Management Menu
 
-The **Token Management Menu** can be found under the *Manage* section of the *Project Resources* menu. A full list of tokens that have been created in an Project is accessible to view.
+The **Token Management Menu** can be found under the **Manage** section of the **Project Resources** menu. A full list of tokens that have been created in a Project is accessible to view.
 
 <figure>
   <img class="image-center" src="../../../_assets/ai/build/tokens/page.png" width="100%" />

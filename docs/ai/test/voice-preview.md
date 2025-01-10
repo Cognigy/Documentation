@@ -1,6 +1,7 @@
 ---
 title: "Voice Preview" 
-slug: "voice-preview" 
+slug: "voice-preview"
+description: "The Voice Preview feature lets users quickly test their voice output without going through the entire flow with a mock call. It supports cloud speech-to-text and text-to-speech services from providers such as Google, Microsoft, and Amazon AWS."
 hidden: true 
 ---
 
@@ -12,44 +13,30 @@ It supports cloud speech-to-text and text-to-speech services from providers such
 To use this feature, you need to input raw text or SSML syntax, select the language and voice.
 However, note that the SSML syntax must be supported by the chosen Voice Preview provider.
 
-!!! note "Access STT and TTS Providers"
-    If your environment has network connection restrictions or requires strict security rules, make sure both Speech-to-Text (STT) and Text-to-Speech (TTS) providers are accessible. Add the IP address ranges of your STT and TTS providers to the firewall's whitelist. By doing so, the Cognigy.AI server can interact smoothly with both providers, guaranteeing the expected functionality of the Voice Preview feature.
+## Restrictions
 
-### Set up a Voice Preview Provider
+Only Google, Microsoft, and Amazon AWS speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
+
+## Access STT and TTS Providers
+    
+If your environment has network connection restrictions or requires strict security rules, make sure both Speech-to-Text (STT) and Text-to-Speech (TTS) providers are accessible. Add the IP address ranges of your STT and TTS providers to the firewall's whitelist. By doing so, the Cognigy.AI server can interact smoothly with both providers, guaranteeing the expected functionality of the Voice Preview feature.
+
+## Set up a Voice Preview Provider
 
 To set up a voice provider to test your voice agents, follow these steps:
 
 {! _includes/ai/voice-providers.md !}
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-settings.png" width="100%" />
-  <figcaption>Voice Preview Settings</figcaption>
-</figure>
-
 ### Use Voice Preview
 
-You can use the Voice Preview from 3 different places:
+You can access the Voice Preview feature in three different ways:
 
-1. With the hotkey ++ctrl+alt+p++ or ++cmd+opt+p++.
+- Use the hotkey ++ctrl+alt+p++ or ++cmd+opt+p++ in the Flow editor to open the Voice Panel.
+- Click the **Voice Preview** ![voice-preview](../../_assets/icons/voice-preview.svg) button from the Flow editor.
+- Click the **Voice Preview** ![voice-preview](../../_assets/icons/voice-preview.svg) button in the interactive tooltip of a message output within the Interaction Panel. This action will copy the output text to the Voice Preview input field. The Voice Preview button displays for certain types of output, including regular text output, fallback text, and text or SSML output from channels that support voice.
 
-    <figure>
-      <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-panel.png" width="100%" />
-      <figcaption>Voice Preview panel</figcaption>
-    </figure>
+## More Information
 
-2. Click on the Voice Preview icon from the Flow editor.
-
-    <figure>
-      <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-flow-editor.png" width="100%" />
-      <figcaption>Voice Preview Flow editor</figcaption>
-    </figure>
-
-3. Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field.
-
-!!! note "Supported Output"
-    Note that the Voice Preview button will only be shown for specific output. This includes regular text output, fallback text, as well as text/ssml output from channels with Voice support.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/test/voice/voice-preview-chat-panel.png" width="100%" />
-  <figcaption>Voice Preview Interactive Tooltip</figcaption>
-</figure>
+- [Interaction Panel](interaction-panel/overview.md)
+- [Voice Gateway](../../voice-gateway/index.md)
+- [Voice Nodes](../build/node-reference/voice/overview.md)

@@ -3,6 +3,9 @@ title: "Create Outbound Calls"
 slug: "create-outbound-calls"
 description: "Outbound calls are calls initiated by Voice Gateway to an external endpoint, such as a phone number, call center, or another system capable of handling voice communication."
 hidden: false
+tags:
+  - Voice Gateway
+  - Outbound
 ---
 
 # Create Outbound Calls 
@@ -19,6 +22,9 @@ To initiate an outgoing call, use on of the following methods:
     -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
 
 ## Create an Outbound Call via API Request
+
+!!! warning
+    Outbound calls via the API work only if a speech provider is configured without a label.
 
 Send an HTTP POST request to the Voice Gateway API to generate an outbound call.
 When the call is answered, the specified webhook will be invoked to manage the call.

@@ -18,12 +18,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 Sends text to the Endpoint.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/9fc53d9-say_in_nodde.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-in-node.png" width="100%" />
   <figcaption>Text in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/ade750b-say_in_webchat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-in-webchat.png" width="100%" />
   <figcaption>Text in Webchat</figcaption>
 </figure>
 
@@ -36,17 +36,17 @@ actions.output("Your text", null);
 Sends text and a number of quick reply buttons.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/c3989d9-Say_Node_quick_replies.PNG" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-node-quick-replies.png" width="100%" />
   <figcaption>Quick Replies in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/1414533-Say_Node_text_with_quick_reply.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-node-text-with-quick-reply.png" width="100%" />
   <figcaption>Quick Reply Detailed Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/a8c2356-Webchat_quick_reply_buttons.PNG" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/webchat-quick-reply-buttons.png" width="100%" />
   <figcaption>Webchat Quick Replies</figcaption>
 </figure>
 
@@ -91,17 +91,17 @@ actions.output(null, {
 Outputs a carousel of cards.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/3f7ebfd-gallery_say_node.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-say-node.png" width="100%" />
   <figcaption>Gallery in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/7f7fa36-Gallery_Button_Settings.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-button-settings.png" width="100%" />
   <figcaption>Gallery Button Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/5868040-gallery_web_chat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-web-chat.png" width="100%" />
   <figcaption>Gallery in Webchat</figcaption>
 </figure>
 
@@ -162,17 +162,17 @@ actions.output(null, {
 Outputs text with a list of buttons.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/a2bfb8c-Buttons_in_Editor.AI.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/buttons-in-editor-ai.png" width="100%" />
   <figcaption>Text with Buttons in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/52ff65d-Text_with_Buttons.PNG" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/text-with-buttons.png" width="100%" />
   <figcaption>Text with Buttons Detailed Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/8278835-test_with_buttons_in_web_chat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/test-with-buttons-in-web-chat.png" width="100%" />
   <figcaption>Text with Buttons in Webchat</figcaption>
 </figure>
 
@@ -223,17 +223,17 @@ actions.output(null, {
 Outputs a list.
 
 <figure>
-<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/2a940c5-Edit_Node_list.svg" width="100%" />
+<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/edit-node-list.svg" width="100%" />
 <figcaption>List in Say Node</figcaption>
 </figure>
 
 <figure>
-<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/2fff87d-Say_list_option_order_3.svg" width="100%" />
+<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-list-option-order.svg" width="100%" />
 <figcaption>Say Node settings</figcaption>
 </figure>
 
 <figure>
-<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/483e566-Webchat_Say_node_list_items.svg" width="100%" />
+<img class="image-center" src="../../../../../../_assets/ai/build/node-reference/webchat-say-node-list-items.svg" width="100%" />
 <figcaption>List in webchat</figcaption>
 </figure>
 
@@ -318,12 +318,12 @@ actions.output(null, {
 Outputs audio from a URL.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/bb4f85f-Audio_and_Details_in_Say_Node.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audio-and-details-in-say-node.png" width="100%" />
   <figcaption>Audio and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/eef7261-audio_in_webchat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audio_in_webchat.png" width="100%" />
   <figcaption>Audio in Webchat</figcaption>
 </figure>
 
@@ -346,12 +346,12 @@ actions.output(null, {
 Outputs image from a URL.
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/Image.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/image.png" width="100%" />
   <figcaption>Image and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/Image in Webchat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/image-in-webchat.png" width="100%" />
   <figcaption>Image in Webchat</figcaption>
 </figure>
 
@@ -374,12 +374,12 @@ actions.output(null, {
 Outputs video from a URL. 
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/47700b9-video_in_Say_Node.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/video-in-say-node.png" width="100%" />
   <figcaption>Video and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/2ab75df-video_in_web_chat.png" width="100%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/video_in_web_chat.png" width="100%" />
   <figcaption>Video in Webchat</figcaption>
 </figure>
 

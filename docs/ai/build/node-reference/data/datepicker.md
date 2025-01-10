@@ -15,7 +15,7 @@ hidden: false
 The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
 !!! tip "Automatically Triggered by Question Nodes"
@@ -24,7 +24,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 ## Properties
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/6c556ea-datepicker-options1.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-options.jpg" width="100%" />
 </figure>
 
 ### Datepicker Title
@@ -40,13 +40,10 @@ Mode determines the behavior of the Datepicker.
   * **Range**: This lets the user select a date range. 
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ffaba00-date-range.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/date-range.jpg" width="100%" />
 </figure>
 
 ### Button Texts
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ee3c577-datepicker-buttontext.jpg" width="100%" />
-</figure>
 
 #### Open Datepicker Button Text
 This is the text that is shown in the button that is rendered when the Datepicker is triggered. By default, is says: **pick date**. 
@@ -58,11 +55,9 @@ This is the text that is shown on the "cancel" button that is rendered when the 
 This is the text that is shown on the "submit" button that is rendered when the Datepicker has been opened. The default is **submit**.
 
 ### Date settings
-The Datepicker allows you to pricisely configure which dates can be selected. 
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/2573a7e-datepicker-datesettings.jpg" width="100%" />
-</figure>
+The Datepicker allows you to configure precisely which dates can be selected.
+
 
 #### Default Date
 This is the default selected date. If not filled out, it will be the current date. 
@@ -70,15 +65,11 @@ This is the default selected date. If not filled out, it will be the current dat
 #### Minimum Date
 This is the minimum date. If not filled out, it will not have a minimum date. 
 
-#### Maxium Date
+#### Maximum Date
 This is the maximum selectable date. If not filled out, it will not have a maximum date.
 
 ### Time settings
-The Datepicker allows you to configure whether times can be selected. If so, it also allows you to configure the default times in detail. 
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/8204cac-datepicker-timesettings.jpg" width="100%" />
-</figure>
+The Datepicker allows you to configure whether times can be selected. If so, it also allows you to configure the default times in detail.
 
 #### Allow Date & Time
 Determines whether the Datepicker should additionally show selectable time.
@@ -102,16 +93,21 @@ The incremental increase in minutes, when the minute selection is used. The defa
 Enable this setting to show seconds in the Datepicker options.
 
 ### Enable/Disable Dates
-The Datepicker can be configured to exclude (or include) specific dates. This is useful in use cases where specific dates should be unavailable - for example, a booking or reservation bot.
+
+The Datepicker can be configured to exclude or include specific dates. 
+This setting is useful when certain dates should be unavailable, such as for a booking or reservation.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/c17af07-datepicker-enable-disable.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/datepicker-enable-disable.jpg" width="100%" />
 </figure>
 
 #### Enable specific dates
-This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition, you can define a function that is used to enable dates - for example only weekdays.
+This setting allows you to enter a range of dates that should be enabled.
+If configured, all other dates will automatically be disabled.
+In addition, you can define a function that is used to enable dates, for example, only weekdays.
 
-Enable dates by function - example:
+Example of enabling dates by function:
+
 ```ts
 (date: Date): boolean => {
     /* The function takes in a Date object, and should return a boolean value.
@@ -124,7 +120,9 @@ Enable dates by function - example:
 ```
 
 #### Disable specific dates
-This setting allows you to enter a range of dates that should be disabled. If configured, all other dates will automatically be enabled. In addition, you can define a function that is used to disable dates - for example every saturday and sunday.
+This setting allows you to enter a range of dates that should be disabled.
+If configured, all other dates will automatically be enabled.
+In addition, you can define a function that is used to disable dates,for example, every saturday and sunday.
 
 Disable dates by function - example:
 ```ts
@@ -142,10 +140,6 @@ Disable dates by function - example:
 ### Advanced Options
 
 The Datepicker comes with four advanced options:
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/7f9dcfe-advanced-options.jpg" width="100%" />
-</figure>
 
 #### Date Format
 This field can be used to output a specific date format, like: "Y-m-d".

@@ -22,8 +22,7 @@ If you need to create multiple speech services from the same vendor, use the **L
 
 After creating a speech service, you can edit or delete it.
 
-!!! warning
-    Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
+Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
 
 <figure>
   <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-speech-services.png"  width="60%" />
@@ -58,7 +57,7 @@ To configure the connection for a cloud-based speech service:
     1. Enter the client ID in the **Client ID** field. You can obtain the client ID as well as the secret key from your Nuance program manager. For more information, read the [Nuance](https://docs.nuance.com/digital-engagement/APIs/UMAPI/token-auth.html) documentation.
     2. Enter the secret key in the **Secret** field.
 === "Soniox"
-    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/quickstart/#authenticate/).
+    1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/speech-recognition/quickstart/index.html#authenticate).
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
@@ -104,7 +103,7 @@ To add a custom speech vendor, follow these steps:
 4. On the **Add a speech service** page, select **Custom** from the **Vendor** list.
 5. In the **Name** field, specify a unique name for your provider. You need to reuse this name in the Node configuration.
 6. From the **Account** list, select a specific account or leave the **All accounts** value if you want that custom speech provider will be available for all available accounts.
-7. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use. 
+7. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use. Note that [outbound calls via the API](../creating-outbound-calls.md#create-an-outbound-call-via-api-request) work only if a speech provider is configured without a label.
 8. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed. 
 9. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL of the server where your custom vendor is deployed.
 10. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection. 
@@ -113,7 +112,7 @@ To add a custom speech vendor, follow these steps:
 To start using your speech provider,
 you need to specify the provider name in the **Custom** parameter of the relevant Nodes,
 such as [Set Session Config](../../ai/build/node-reference/voice/voice-gateway/set-session-config.md),
-[Say](../../ai/build/node-reference/basic/say.md#voice-gateway), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
+[Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md) or [Optional Question](../../ai/build/node-reference/basic/optional-question.md),
 or [Session Speech Parameters Config](../../ai/build/node-reference/voice/generic/session-speech-parameters-config.md).
 
 ## More Information

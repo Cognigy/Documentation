@@ -32,7 +32,7 @@ For push notifications, the following requirements exist:
 
 ### Customization of Email Notifications
 
-If you have an on-premise Live Agent installation, you can customize your [email template](installation/helm-values/email-templates.md).
+If you have an on-premises Live Agent installation, you can customize your [email template](installation/helm-values/email-templates.md).
 
 ## Configure Notifications
 
@@ -64,9 +64,11 @@ To configure notifications at the user profile level, follow these steps:
 
 The settings will be applied automatically.
 
+Users with the `Administrator` role can configure the notification sound in the [Account Settings](settings/account-settings.md).
+
 ### Configure Notifications at the Account Level
 
-You can configure email and push notifications at the Account level only if you have an `Administrator` role.
+Users with the `Administrator` role can configure email and push notifications at the Account level.
 
 This configuration applies to all user profiles within your account (organization) and overrides the [Profile Settings](#configure-notifications-at-the-user-profile-level).
 

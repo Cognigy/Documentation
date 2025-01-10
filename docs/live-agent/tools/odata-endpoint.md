@@ -6,6 +6,8 @@ hidden: false
 
 # Live Agent: OData Analytics Endpoint
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.83.md)
+
 Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
 
 Note that the Live Agent OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
@@ -50,7 +52,7 @@ The authentication can also be done using a query param such as follows:
 !!! note "OData Domain Name"
     The OData endpoint is available on a different domain to your Cognigy User Interface domain. For example, [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
 
-    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premise installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+    For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For on-premises installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 !!! note "Excel/Power BI"
     When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication` and pass the Live Agent access token as a query parameter `&apikey=<Live Agent access-token>`
@@ -170,29 +172,30 @@ A Conversation is the communication channel opened between an Agent and a client
 
 When retrieving this data model, the Endpoint will return the following fields:
 
-| Field Name            | Description                                                           | Type   | Example                                |
-|-----------------------|-----------------------------------------------------------------------|--------|----------------------------------------|
-| id                    | Unique Conversation ID                                                | Number | 1                                      |
-| account_id            | Account ID (where the conversation belongs)                           | Number | 1                                      |
-| inbox_id              | Inbox ID (where the conversation belongs)                             | Number | 1                                      |
-| status                | Conversation Status: { open: 0, resolved: 1, pending: 2, snoozed: 3 } | Number | 1                                      |
-| assignee_id           | Agent ID (assigned to the conversation)                               | Number | 1                                      |
-| created_at            | Conversation Creation Date                                            | Date   | 2021-12-11 12:41:26.745                |
-| updated_at            | Conversation Updated Date                                             | Date   | 2021-12-11 12:41:26.745                |
-| contact_id            | Client Unique Identification.                                         | Number | 3                                      |
-| display_id            | Display ID                                                            | Number | 3                                      |
-| contact_last_seen_at  | Contact/Client Date Last Seen                                         | Date   | 2021-12-11 12:41:26.745                |
-| agent_last_seen_at    | Agent Date Last Seen                                                  | Date   | 2021-12-11 12:41:26.745                |
-| additional_attributes | JSON Containing Any Additional Attributes.                            | JSON   | {}                                     |
-| contact_inbox_id      | Contact Inbox ID                                                      | Number | 1                                      |
-| uuid                  | Unique Identifier                                                     | String | 89f20666-e17d-427c-9283-268ba7870283   |
-| identifier            | Identifier                                                            | String | "89f20666-e17d-427c-9283-268ba7870283" |
-| last_activity_at      | Last Activity Date.                                                   | Date   | 2021-12-11 12:41:26.745                |
-| team_id               | Team ID (belonging to the conversation)                               | Number | 1                                      |
-| campaign_id           | Campaign ID                                                           | Number | 1                                      |
-| snoozed_until         | Snoozed Date End                                                      | Date   | 2021-12-11 12:41:26.745                |
-| custom_attributes     | Extra Add-on Attributes                                               | JSON   | "{}"                                   |
-| assignee_last_seen_at | Date Of Last Time The Assignee Has Been Seen                          | Date   | 2021-12-11 12:41:26.745                |
+| Field Name            | Description                                                           | Type   | Example                                      |
+|-----------------------|-----------------------------------------------------------------------|--------|----------------------------------------------|
+| id                    | Unique Conversation ID                                                | Number | 1                                            |
+| account_id            | Account ID (where the conversation belongs)                           | Number | 1                                            |
+| inbox_id              | Inbox ID (where the conversation belongs)                             | Number | 1                                            |
+| status                | Conversation Status: { open: 0, resolved: 1, pending: 2, snoozed: 3 } | Number | 1                                            |
+| assignee_id           | Agent ID (assigned to the conversation)                               | Number | 1                                            |
+| created_at            | Conversation Creation Date                                            | Date   | 2021-12-11 12:41:26.745                      |
+| updated_at            | Conversation Updated Date                                             | Date   | 2021-12-11 12:41:26.745                      |
+| contact_id            | Client Unique Identification.                                         | Number | 3                                            |
+| display_id            | Display ID                                                            | Number | 3                                            |
+| contact_last_seen_at  | Contact/Client Date Last Seen                                         | Date   | 2021-12-11 12:41:26.745                      |
+| agent_last_seen_at    | Agent Date Last Seen                                                  | Date   | 2021-12-11 12:41:26.745                      |
+| additional_attributes | JSON Containing Any Additional Attributes.                            | JSON   | {}                                           |
+| contact_inbox_id      | Contact Inbox ID                                                      | Number | 1                                            |
+| uuid                  | Unique Identifier                                                     | String | 89f20666-e17d-427c-9283-268ba7870283         |
+| identifier            | Identifier                                                            | String | "89f20666-e17d-427c-9283-268ba7870283"       |
+| last_activity_at      | Last Activity Date.                                                   | Date   | 2021-12-11 12:41:26.745                      |
+| team_id               | Team ID (belonging to the conversation)                               | Number | 1                                            |
+| campaign_id           | Campaign ID                                                           | Number | 1                                            |
+| snoozed_until         | Snoozed Date End                                                      | Date   | 2021-12-11 12:41:26.745                      |
+| custom_attributes     | Extra Add-on Attributes                                               | JSON   | "{}"                                         |
+| assignee_last_seen_at | Date Of Last Time The Assignee Has Been Seen                          | Date   | 2021-12-11 12:41:26.745                      |
+| cognigy_session_id    | Unique Session ID                                                     | String | session-deedb62a-8062-490f-83ac-826de9ef94S3 |
 
 ### Inbox
 

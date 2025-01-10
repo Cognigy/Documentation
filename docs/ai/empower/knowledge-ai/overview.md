@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -32,13 +32,27 @@ Before using this feature, follow these steps:
 2. Create an account in one of the LLM Providers:
 
     - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-    - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+    - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 
-    For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../../empower/llms.md) list.
+### Which Model to Choose?
+
+For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node** and **Answer Extraction** columns in the [supported models](../../empower/llms/model-support-by-feature.md) list.
+
+Instead of `text-embedding-ada-002`, you can consider using the `text-embedding-3-large` or `text-embedding-3-small` models for the Knowledge AI case, but use them with caution due to the following reasons:
+
+- The `text-embedding-3-large` model returns embedding vectors that are twice as large, leading to higher memory use and larger [Package](../../build/packages.md) sizes for Knowledge AI.
+- The `text-embedding-3-large` or `text-embedding-3-small` models may only be available in geographically remote locations, leading to high latency for the search operation.
+- The `text-embedding-3-large` or `text-embedding-3-small` models are more expensive to use.
+
+Once an embedding model is set up within a [Project](../../build/projects.md),
+all [Knowledge Stores](#knowledge-store) must use that model.
+After you create the first Knowledge Store, you can't change the embedding model for Knowledge AI. 
+If you want to switch to a different embedding model,
+you must either delete all existing Knowledge Stores in the current Project or create a new Project.
 
 ## Create a Knowledge Store
 
-You can create a preconfigured knowledge store. To do this, follow these steps:
+You can create a preconfigured Knowledge Store. To do this, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select **Knowledge**. The Knowledge AI wizard will be opened.
@@ -52,8 +66,17 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 5. Click **Configure** and enter credentials for the model:
 
     === "Microsoft Azure OpenAI"
-        - **Connection name** — create a unique name for your connection.<br>
-        - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
+        - **Connection name** — create a unique name for your connection.
+        - **Connection Type** — select one of the following authorization methods:
+        
+            - **API Key** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
+            - **OAuth2** — this method is experimental, hidden behind the `FEATURE_ENABLE_OAUTH2_AZURE_CONNECTION_WHITELIST` feature flag, and may encounter some issues. Add credentials for the [OAuth 2.0 authorization code flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow). OAuth 2.0 offers more control and security than API keys by allowing specific permissions, expiring tokens, and reducing exposure through short-lived tokens instead of constant client secret use. To use this type of connection, fill in the following fields:
+
+                - **clientId** — add the Application (client) ID assigned to your app, can be found in the in Azure AI app registration overview.<br>
+                - **clientSecret** — add the application secret created in the **Certificates & secrets** section of the Azure AI app registration portal.<br>
+                - **oauthUrl** — add the URL to retrieve the access token. The URL should be in the `https://<your-domain>.com/as/token.oauth2` format.<br>
+                - **scope** — add a list of scopes for user permissions, for example, `urn:grp:chatgpt`. <br>
+        
         - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Copy the desired resource name from the **Name** column.<br>
         - **Deployment Name** — add a [deployment name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under the **Azure AI Services** section, select **Azure Open AI**. Select a resource from the **Name** column. On the resource page, go to **Resource Management > Model deployments**. On the **Model deployments** page, click **Manage Deployments**. On the **Deployments** page, copy the desired deployment name from the **Deployment name** column.<br>
         - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `YYYY-MM-DD-preview`. <br>
@@ -66,12 +89,12 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 
     === "Aleph Alpha"
         - **Connection name** — create a unique name for your connection.<br>
-        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>        
+        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).<br>        
         - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL, for example: `https://api.aleph-alpha.com`.
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The knowledge source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
+8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The Knowledge Source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.  
@@ -139,19 +162,19 @@ The maximum number of sources per store is described in the [Limitations](#limit
     <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/knowledge-source.png" width="100%" />
 </figure>
 
-Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
+Additionally, you can use Source Tags.
+These Tags serve to refine the scope of your knowledge search,
+allowing you to include only the most pertinent sections of the knowledge base and,
 as a result, improve the accuracy of search outputs.
 
-To apply these tags, specify them when uploading a source type.
+To apply these Tags, specify them when uploading a source type.
 For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
 while for other formats,
-you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
-
+you need to specify them within the Cognigy.AI interface when creating a new Knowledge Source.
 
 !!! note "Source Tags"
-    - The maximum number of tags per knowledge source is 10.
-    - A Source Tag cannot be modified after creating the source.
-    - A Source Tag cannot be added to already existing sources. 
+    - The maximum number of Tags per Knowledge Source is 10.
+    - You can add or remove Source Tags from previously created sources.
 
 #### Chunk 
 
@@ -175,6 +198,8 @@ The Editor provides a user-friendly interface that enables you to manipulate the
 Users can modify the text, add new information, delete sections,
 or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
 
+Note that all chunks must contain some content in the Chunk Editor. Empty chunks cannot be saved.
+
 <figure>
     <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/chunk-editor.png" width="100%" />
 </figure>
@@ -183,19 +208,19 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 
 1. Navigate to **Build > Flows** and create a new Flow.
 2. In the **Flow** editor, add a **Search Extract Output** Node.
-3. In the **Node** editor, select the knowledge store that you recently created.
+3. In the **Node** editor, select the Knowledge Store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../../empower/llms/model-support-by-feature.md) that cover the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../../empower/llms/model-support-by-feature.md) that cover both the `LLM Prompt Node`, `Answer Extraction` and `Knowledge Search` cases.
+    - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only need the `text-embedding-ada-002` model.
 
      <figure>
        <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
    
-5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing an AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side. 
+5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing an AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM provider's side. 
 6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results.
-7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected knowledge source. 
+7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the content type for the selected Knowledge Source. 
 8. Click **Save Node**. 
 9. Proceed to the [Interaction Panel](../../test/interaction-panel/overview.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
@@ -212,8 +237,8 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of Knowledge Stores per Project                                                                                  | 10    | Applicable to version 4.77 and earlier |
 | Maximum number of Knowledge Sources per Store                                                                                   | 10    | Applicable to version 4.77 and earlier |
 | Maximum file upload size for creating a Knowledge Source                                                                        | 10 MB | All                                    |
-| Maximum number of source tags per Knowledge Source                                                                              | 10    | All                                    |
-| Maximum number of source tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5     | All                                    |
+| Maximum number of Source Tags per Knowledge Source                                                                              | 10    | All                                    |
+| Maximum number of Source Tags per [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) | 5     | All                                    |
 | Maximum number of Chunks per Knowledge Source                                                                                   | 1000  | All                                    |
 | Maximum number of Source metadata pairs                                                                                         | 20    | All                                    |
 | Maximum number of Chunk metadata pairs                                                                                          | 20    | All                                    |
@@ -244,5 +269,5 @@ The table below presents limitations. These limitations are subject to future ch
 - [PDF](pdf.md)
 - [Web Page](web-page.md)
 - [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md)
-- [LLM](../llms.md)
+- [LLM](../llms/overview.md)
 - [Generative AI](../generative-ai.md)

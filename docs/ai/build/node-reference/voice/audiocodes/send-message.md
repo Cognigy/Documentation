@@ -1,7 +1,7 @@
 ---
- title: "Send Message" 
- slug: "send-message" 
- hidden: false 
+title: "Send Message" 
+slug: "send-message" 
+hidden: false 
 ---
 # Send Message
 
@@ -11,6 +11,8 @@
 </figure>
 
 ## Description
+
+{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Send Message Node sends a text (optionally with SSML) to AudioCodes, which then turns this text into speech (TTS) and outputs it to the caller.
 

@@ -3,6 +3,10 @@ title: "Webchat Plugins"
 slug: "webchat-plugins"
 description: "Utilize pre-made plugins for your Cognigy Webchat or develop your own plugin to customize it according to your needs."
 hidden: false
+tags:
+  - Webchat
+  - Plugins
+  - Plugin
 ---
 
 # Webchat Plugins
@@ -27,12 +31,12 @@ To add a plugin from the collection of plugins, follow these steps:
 6. Use an existing Endpoint or create a new one:
 
     === "Webchat v3"
-        6.1 Select the **Webchat (v3)** Endpoint.<br>
-        6.2 In the Webchat v3 Endpoint settings, navigate to the **Advanced Settings** section.
+        1. Select the **Webchat (v3)** Endpoint.<br>
+        2. In the Webchat v3 Endpoint settings, navigate to the **Advanced Settings** section.
 
     === "Webchat v2"
-        6.1 Select the **Webchat** Endpoint.<br>
-        6.2 In the Webchat Endpoint settings, navigate to the **Webchat Layout** section.
+        1. Select the **Webchat** Endpoint.<br>
+        2. In the Webchat Endpoint settings, navigate to the **Webchat Layout** section.
 
 7. Paste the URL directly into the **Webchat Plugin URL** field.
 8. Click **Save**.
@@ -52,12 +56,12 @@ To use custom plugins in your production environment or modify existing ones, yo
 9. Use an existing Endpoint or create a new one:
 
     === "Webchat v3"
-        9.1 Select the **Webchat (v3)** Endpoint.<br>
-        9.2 In the Webchat v3 Endpoint settings, navigate to the **Advanced Settings** section.
+        1. Select the **Webchat (v3)** Endpoint.<br>
+        2. In the Webchat v3 Endpoint settings, navigate to the **Advanced Settings** section.
 
     === "Webchat v2"
-        9.1 Select the **Webchat** Endpoint.<br>
-        9.2 In the Webchat Endpoint settings, navigate to the **Webchat Layout** section.
+        1. Select the **Webchat** Endpoint.<br>
+        2. In the Webchat Endpoint settings, navigate to the **Webchat Layout** section.
 
 10. Paste the URL into the **Webchat Plugin URL** field. Follow the format `https://url.to/plugin.js`, where `url.to` represents the storage location for your plugin, such as Amazon S3, and `plugin` is the name of the specific plugin you use. Note that you can upload multiple plugins.
 11. Click **Save**.

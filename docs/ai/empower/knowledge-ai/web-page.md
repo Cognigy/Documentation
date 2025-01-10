@@ -13,7 +13,7 @@ Knowledge AI supports using a web page as a type when creating a new Knowledge S
 
 ## Restrictions
 
-Using a Web Page as a knowledge source has a current set of restrictions:
+Using a Web Page as a Knowledge Source has a current set of restrictions:
 
 - All visible text on the page, including items such as cookie notices, will be included in the result.
 - The content must be hosted on a publicly accessible website, reachable from the Cognigy environment.
@@ -29,7 +29,7 @@ Before using a web page as a source, check if at least one [Knowledge Store](ove
      2. In the left-side menu, select a Project where you want to add a Knowledge Store.
      3. In the left-side menu, navigate to **Build > Knowledge**. The Knowledge AI wizard will be opened.
      4. Continue following the wizard instructions.
-     5. Specify a unique name, select an [embedding model](../llms.md#supported-models) if you did not add it before.
+     5. Specify a unique name, select an [embedding model](../llms/model-support-by-feature.md) if you did not add it before.
      6. Click **Next**.
      7. In the **Upload Knowledge** step, select the **Web Page** option.
      8. Copy and paste the URL of the web page you want to ingest into the **URL** field.
@@ -65,7 +65,7 @@ When ingesting a web page, the Knowledge AI chunking process will perform the fo
 3. Access lazy-loaded[^*] content by checking for any text changes until the page is stable and no longer loading additional text.
 4. Generate Knowledge Source content based on the visible text result.
 
-The web page content will be imported into a knowledge source once. The source is not automatically updated to reflect future content changes on the web page.
+The web page content will be imported into a Knowledge Source once. The source is not automatically updated to reflect future content changes on the web page.
 
 ## More Information
 

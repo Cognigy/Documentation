@@ -1,8 +1,13 @@
 ---
- title: "Optional Question" 
- slug: "optional-question" 
- hidden: false 
+title: "Optional Question" 
+slug: "optional-question" 
+hidden: false 
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Optional Question
 ---
+
 # Optional Question
 
 <figure>
@@ -66,13 +71,13 @@ The difference with a regular Question Node is that the Optional Question Node d
 Lets you decide on which user input the CognigyScript after Answer should be executed.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/711c019-optional-question-advanced.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/optional-question-advanced.jpg" width="100%" />
 </figure>
 
 ## Result Storage
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/c04587d-context.jpg" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/context.jpg" width="100%" />
 </figure>
 
 If Store Result in Context is enabled, the Question Result will also be stored in the [Context](../../../test/interaction-panel/context.md) object. 

@@ -14,13 +14,20 @@
 
 ## Description
 
-The Play Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
+The Play Node lets you stream a sound file into the call with the ability to loop it.
 
-| Parameter               | Type          | Description                                                         |
-|-------------------------|---------------|---------------------------------------------------------------------|
-| Media URL               | CognigyScript | You can use MP3 or WAV encoded files                                |
-| Loop count              | Number        | Number of times the media will be looped                            |
-| Set Activity Parameters | Toggle        | Option to add parameters which will be valid for this activity only |
+This Node is useful for playing advertisements, pre-recorded jingles, or other sound files for callers. It supports MP3 and WAV encoded files.
 
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.
+## Settings
+
+| Parameter               | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Media URL               | CognigyScript | Accepts URL links to MP3 and WAV tracks. The URL should point to the storage location where you want to host it and doesn't need to include the `.mp3` or `.wav` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`. Make sure the file is publicly accessible.                                                                                     |
+| Loop count              | Number        | The number of times the track will be looped.                                                                                                                                                                                                                                                                                                                                                                           |
+| Set Activity Parameters | Toggle        | Enables parameters which will be valid for this activity only. The available parameters are: <br> - [Recognizer (STT)](../voice-gateway/parameter-details.md#recognizer---speech-to-text) <br> - [Barge In](../voice-gateway/parameter-details.md#barge-in) <br> - [DTMF](../voice-gateway/parameter-details.md#dtmf) <br> - [Advanced (Additional Session Parameters)](../voice-gateway/parameter-details.md#advanced) |
+
+## More Information
+
+- [Parameter Details](../voice-gateway/parameter-details.md)
+- [AudioCodes Play URL Node](../audiocodes/play-url.md)
+- [Generic Play URL Node](../generic/play-url.md)

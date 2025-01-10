@@ -53,6 +53,7 @@ Insights provides the following Dashboards:
 - [Engagement](dashboards/engagement.md)
 - [NLU Performance](dashboards/nlu-performance.md)
 - [Live Agent](dashboards/live-agent.md)
+- [Goals](dashboards/goals.md)
 
 And additionally, a set of Explorers:
 
@@ -72,11 +73,11 @@ Global filters apply across the entirety of Cognigy Insights. Once you set them 
 
 Local filters are specific filters, which are only available for one or a few different dashboards. When you switch from one board to another, they will be temporarily disabled, but not removed from your selection.
 
-## User menu
+## User Menu
 
-You can find the [user menu](../ai/administer/user-menu/overview.md) in the upper-right corner of the screen.
+You can find the [User Menu](../ai/administer/user-menu/overview.md) in the upper-right corner of the screen.
 
-## Main menu
+## Main Menu
 
 The Insights left-side menu displays all available dashboards and explorers. This menu allows you to easily switch between different dashboards and explorers to analyze your AI Agent's performance.
 
@@ -99,12 +100,5 @@ The left-side menu also allows you to switch back to Cognigy.AI by clicking **Co
 ## More Information
 
 - [Global Filters](global-filters.md)
-- Dashboards:
-    - [Overview](dashboards/overview.md)
-    - [Dashboard Engagement](dashboards/engagement.md)
-    - [Dashboard NLU Performance](dashboards/nlu-performance.md)
-- Explorers:
-    - [Step Explorer](explorers/step.md)
-    - [Transcript Explorer](explorers/transcript.md)
-    - [Message Explorer](explorers/message.md)
-    - [Download Report](download-reports.md)
+- [Pre-Aggregation](data-management/pre-aggregation.md)
+- [Data Expiration](data-management/ttl.md)

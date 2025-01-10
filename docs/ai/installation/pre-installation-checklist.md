@@ -22,7 +22,7 @@ Before proceeding with your on-prem installation with or without installation su
 
 7. Kubernetes cluster has enough resources: at least 6 x worker nodes (8 CPU, 16 GB RAM, `x86_64` architecture, 100 GB root SSD storage).
 
-8. Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup if possible.
+8. Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high-availability setup if possible.
 
 9. Cognigy.AI license key is available.
 
@@ -32,7 +32,7 @@ Before proceeding with your on-prem installation with or without installation su
 
 12. Wildcard TLS certificate(s) are ready.
 
-13. IP whitelisting for Cognigy’s container registry is complete: `cognigy.azurecr.io:443`.
+13. IP whitelisting for Cognigy’s container registry (`cognigy.azurecr.io:443`) and billing server (`billing.cognigy.ai:443`) is complete.
 
 14. Network access is allowed for HTTP/HTTPS requests.
 

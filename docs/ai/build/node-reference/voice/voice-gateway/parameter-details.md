@@ -2,6 +2,10 @@
 title: "Parameter Details"
 slug: "parameter-details"
 hidden: false
+tags:
+  - Cognigy.AI
+  - Nodes
+  - Parameter Details
 ---
 
 # Voice Gateway Parameter Details
@@ -75,14 +79,13 @@ This way, the caller can't use Barge In to skip, for example, important legal in
 
 To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
 
-| Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                     |
-|------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation.                             |
-| Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation. |
-| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in.                                                                                                                                                                                                                                                     |
+| Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation. <br><br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the [Recognizer - Speech-To-Text](#recognizer---speech-to-text). |
+| Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through Text-To-Speech. This parameter is disabled by default. It will retain its setting throughout the whole conversation.                                                                                                                                                                |
+| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge-in.                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### User Input Timeout
-
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
 
@@ -96,6 +99,24 @@ Before the release [4.81](../../../../../release-notes/4.81.md), User Input Time
 | User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the action if a user does not provide an input to the AI Agent in time.                           |
 | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
 | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br><br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
+
+### Flow Input Timeout
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
+
+This feature is designed for use cases where response delays occur in a Flow, such as when utilizing large language models (LLMs), waiting for responses from external services, or managing complex processing tasks. It helps maintain user engagement by proactively delivering information or prompts during these delays.
+
+For example, you can inform end users that their request is being processed or that assistance is on the way.
+
+| Parameter                    | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Flow No Input Timeout | Toggle        | This parameter is disabled by default. When enabled, this setting plays a track or speaks a prompt while waiting for a response from the Flow.                                                                                                                                                                                                                                                                                                                                        |
+| Flow No Input Mode           | Dropdown      | This parameter is active only when **Enable Flow No Input Timeout** is enabled. Select one of the following modes: <br>**Speak** - outputs a spoken message, allowing you to communicate important information or prompts to the user.<br><br>**Play** - plays an audio track, such as music, sound effects, or pre-recorded messages.                                                                                                                                                |
+| Flow No Input URL            | URL           | This parameter is active only when the **Play** option in **Enable Flow No Input Timeout** is selected. <br><br> Define the URL that will be played if the Flow does not continue in time. MP3 and WAV files are supported.                                                                                                                                                                                                                                                           |
+| Flow No Input Speech         | CognigyScript | This parameter is active only when the **Speak** option in **Enable Flow No Input Timeout** is selected. Define a prompt to be spoken if the Flow does not continue in time.                                                                                                                                                                                                                                                                                                          |
+| Flow No Input Timeout        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. <br><br> Defines how frequently the voice AI Agent should retry to obtain input from the Flow before completing the call.                                                                                                                                                                                                                                                                             |
+| Flow No Input Retries        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. Define how many times the AI Agent should retry to obtain input from the Flow before executing an action.                                                                                                                                                                                                                                                                                             |
+| AI Agent Fails on Error      | Toggle        | This parameter is disabled by default. It defines a failure condition when the maximum number of retry attempts is reached. If [Call Failover](../../../../deploy/endpoint-reference/voice-gateway.md#call-failover) is enabled in the Voice Gateway Endpoint Settings, the call will be transferred either to another voice AI Agent or to a human agent in the contact center. If Call Failover is not enabled, the call will disconnect, leaving the user without further support. |
 
 ### DTMF
 
@@ -111,17 +132,19 @@ Enables DTMF collection.
 
 ### Continuous ASR
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+
 Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the AI Agent.
 
-| Parameter                   | Type          | Description                                                                                             |
-|-----------------------------|---------------|---------------------------------------------------------------------------------------------------------|
-| Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR.                                                                       |
-| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow.                       |
-| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow. |
+| Parameter                   | Type          | Description                                                                                                                                                                                                                  |
+|-----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR. <br><br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the [Recognizer - Speech-To-Text](#recognizer---speech-to-text). |
+| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key that sends the accumulated recognitions to the Flow.                                                                                                                                              |
+| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the Flow. The default and minimum value is 2000.                                                                               |
 
 ### Atmosphere Sounds
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../../release-notes/4.79.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
 
 This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
 Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
@@ -131,8 +154,8 @@ The track plays during the conversation with the AI Agent, continues when the ca
 | Parameter | Type     | Description                                                                                                                                                                                                                                                                                               |
 |-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action    | Dropdown | Selects an action to play, silence, or remove the track: <br> - **play** - plays the track in the background. <br> - **silence** - mutes the track. <br> - **remove** - removes the track from the background completely.                                                                                 |
-| URL       | Text     | Accepts direct URL links to MP3 tracks, for example, `https://abc.xyz/music.mp3`.                                                                                                                                                                                                                         |
-| Loop      | Toggle   | Turns on looping for the audio track                                                                                                                                                                                                                                                                      |
+| URL       | Text     | Accepts URL links to MP3 tracks. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`.                                                                                                       |
+| Loop      | Toggle   | Turns on looping for the audio track.                                                                                                                                                                                                                                                                     |
 | Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet. |
 
 ### Silence Overlay
@@ -146,16 +169,60 @@ If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-c
 | Parameter                              | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action                                 | Dropdown | Defines an action to play or remove the track: <br> - **play** - plays the track in the background when prolonged silence occurs. <br> - **remove** - removes the track from the conversation. Next time a prolonged silence occurs, the Silence Overlay will not play. <br> Make sure to place the next Set Session Config Node before the Node that needs to have Silence Overlay removed. |
-| URL                                    | Text     | Accepts a direct URL link to an MP3 track, for example, `https://abc.xyz/music.mp3`. This parameter appears when the play action is selected.                                                                                                                                                                                                                                                |
+| URL                                    | Text     | Accepts URL links to an MP3 track. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`. This parameter appears when the play action is selected.                                                                                                                               |
 | Delay for starting the Silence Overlay | Number   | Defines the wait time before the MP3 track plays, simulating a humanlike response. For example, human agents often have a pause between speaking and typing. This parameter appears when the play action is selected.                                                                                                                                                                        |
 
 ### Advanced
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../../../../release-notes/4.48.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../../../../release-notes/4.91.md)
 
 | Parameter                     | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------------------------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Additional Session Parameters | JSON | Allows for configuring settings using JSON. If you have already made changes using the UI settings above, this field will overwrite them. Also, you can specify additional parameters in the JSON, which are unavailable in the UI, such as vendor credentials. <br><br>If you want to specify a [custom TTS or STT provider](#settings) in the **vendor** parameter, use the `custom:<provider-name>` format, for example, `"vendor": "custom:My Speech provider"`. |
+
+#### List of Additional Session Parameters
+
+| Feature                | Parameter               | Description                                                                                                                                                      | Type             | Example                                    |
+|------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------|
+| **User Input Timeout** | `user`                  | The [User Input Timeout](#user-input-timeout) feature.                                                                                                           | Object           | -                                          |
+|                        | `noInputMode`           | The mode when no input is detected. Possible values: `"event"`, `"speech"`, `"play"`.                                                                            | String           | `"speech"`                                 |
+|                        | `noInputTimeout`        | The timeout duration for no input (in milliseconds).                                                                                                             | Number           | `5000` (5 seconds)                         |
+|                        | `noInputRetries`        | The number of retries allowed when no input is detected.                                                                                                         | Number           | `3`                                        |
+|                        | `noInputSpeech`         | The speech to play when no input is detected.                                                                                                                    | String           | `"Please speak now."`                      |
+|                        | `noInputUrl`            | The URL to fetch audio when no input is detected.                                                                                                                | String           | `"https://example.com/no-input-audio.mp3"` |
+| **Flow Input Timeout** | `flow`                  | The [Flow Input Timeout](#flow-input-timeout) feature.                                                                                                           | Object           | `{}`                                       |
+|                        | `flowNoInputEnable`     | Enables no-input handling for Flows.                                                                                                                             | Boolean          | `true`                                     |
+|                        | `flowNoInputMode`       | The mode when no input is detected in a Flow. Possible values: `"speech"`, `"play"`.                                                                             | String           | `"play"`                                   |
+|                        | `flowNoInputTimeout`    | The timeout duration for no input in a Flow (in milliseconds).                                                                                                   | Number           | `3000` (3 seconds)                         |
+|                        | `flowNoInputRetries`    | The number of retries for no input in a Flow.                                                                                                                    | Number           | `2`                                        |
+|                        | `flowNoInputSpeech`     | The speech to play for no input in a Flow.                                                                                                                       | String           | `"Please try again."`                      |
+|                        | `flowNoInputUrl`        | The URL to fetch audio for no input in a Flow.                                                                                                                   | String           | `"https://example.com/flow-no-input.mp3"`  |
+|                        | `flowNoInputFail`       | Indicates whether to fail the Flow on no input.                                                                                                                  | Boolean          | `true`                                     |
+| **Recognizer**         | `recognizer`            | The [Recognizer - Speech-To-Text](#recognizer---speech-to-text) feature.                                                                                         | Object           | -                                          |
+|                        | `vendor`                | The vendor for speech recognition. Possible values: `"aws"`, `"deepgram"`, `"google"`, `"microsoft"`, `"nuance"`, `"soniox"`, `"default"`, `"custom"`.           | String           | `"google"`                                 |
+|                        | `language`              | The language for speech recognition.                                                                                                                             | String           | `"de-DE"`                                  |
+|                        | `hints`                 | A list of hints to improve recognition accuracy.                                                                                                                 | Array of strings | `["help", "skip", "confirm"]`              |
+|                        | `hintsBoost`            | A value to boost the weight of hints in recognition.                                                                                                             | Number           | `20`                                       |
+| **Synthesizer**        | `synthesizer`           | The [Synthesizer - Text-To-Speech](#synthesizer---text-to-speech) feature.                                                                                       | Object           | -                                          |
+|                        | `vendor`                | The vendor for text-to-speech synthesis. Possible values: `"aws"`, `"deepgram"`, `"elevenlabs"`, `"google"`, `"microsoft"`, `"nuance"`, `"default"`, `"custom"`. | String           | `"microsoft"`                              |
+|                        | `language`              | The language for text-to-speech synthesis.                                                                                                                       | String           | `"de-DE"`                                  |
+|                        | `voice`                 | The voice used for text-to-speech synthesis.                                                                                                                     | String           | `"en-US-JennyNeural"`                      |
+| **DTMF**               | `dtmf`                  | The [DTMF](#dtmf) feature.                                                                                                                                       | Object           | -                                          |
+|                        | `dtmfEnable`            | Enables DTMF (Dual-Tone Multi-Frequency) input.                                                                                                                  | Boolean          | `true`                                     |
+|                        | `dtmfInterDigitTimeout` | The timeout between digits during DTMF input (in milliseconds).                                                                                                  | Number           | `1000` (1 second)                          |
+|                        | `dtmfMaxDigits`         | The maximum number of digits allowed for DTMF input.                                                                                                             | Number           | `10`                                       |
+|                        | `dtmfMinDigits`         | The minimum number of digits required for DTMF input.                                                                                                            | Number           | `3`                                        |
+|                        | `dtmfSubmitDigit`       | The digit used to submit the DTMF input.                                                                                                                         | String           | `"9"`                                      |
+| **Barge-In**           | `bargeIn`               | The [Barge-In](#barge-in) feature.                                                                                                                               | Object           | -                                          |
+|                        | `bargeInEnable`         | Enables barge-in functionality.                                                                                                                                  | Boolean          | `true`                                     |
+|                        | `bargeInOnDtmf`         | Allows barge-in on DTMF input.                                                                                                                                   | Boolean          | `true`                                     |
+|                        | `bargeInOnSpeech`       | Allows barge-in on speech input.                                                                                                                                 | Boolean          | `false`                                    |
+|                        | `bargeInMinimunWords`   | The minimum words required to trigger barge-in.                                                                                                                  | Number           | `5`                                        |
+|                        | `bargeInSticky`         | Keeps barge-in active after initial input.                                                                                                                       | Boolean          | `true`                                     |
+| **Continuous ASR**     | `continuousAsr`         | The [Continuous ASR](#continuous-asr) feature.                                                                                                                   | Object           | -                                          |
+|                        | `asrEnabled`            | Enables Continuous Automatic Speech Recognition (ASR).                                                                                                           | Boolean          | `true`                                     |
+|                        | `asrDigit`              | The specific digit for triggering ASR.                                                                                                                           | String           | `"5"`                                      |
+|                        | `asrTimeout`            | The timeout for ASR detection (in milliseconds).                                                                                                                 | Number           | `5000` (5 seconds)                         |
 
 JSON example:
 
@@ -174,7 +241,28 @@ JSON example:
       "skip",
       "confirm"
     ],
-    "hintBoost": 20
+    "hintsBoost": 20
+  },
+  "user": {
+    "noInputMode": "speech",
+    "noInputTimeout": "{{"{{context.user.noInputTimeout}}"}}",
+    "noInputRetries": "{{"{{context.user.noInputRetries}}"}}",
+    "noInputSpeech": "{{"{{context.user.noInputSpeech}}"}}"
+  },
+  "continuousAsr": {
+    "asrEnabled": true,
+    "asrTimeout": "{{"{{context.continuousAsr.asrTimeout}}"}}"
+  },
+  "dtmf": {
+    "dtmfEnable": true,
+    "dtmfInterDigitTimeout": "{{"{{context.dtmf.dtmfInterDigitTimeout}}"}}"
+  },
+  "flow": {
+    "flowNoInputEnable": true,
+    "flowNoInputMode": "speech",
+    "flowNoInputTimeout": 15,
+    "flowNoInputRetries": 2,
+    "flowNoInputSpeech": "I'm sorry, I didn't hear anything"
   }
 }
 ```

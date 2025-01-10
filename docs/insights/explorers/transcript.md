@@ -92,7 +92,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
 | Source              | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                          |
-| Goals               | Select from predefined goals to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
+| Goals Completed     | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Tasks](../../ai/build/node-reference/overview.md#complete-task).                                                                                                                                                     |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
 | Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
@@ -109,8 +109,8 @@ The Transcript Explorer enables you to view session transcripts to analyze them,
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
 <figure>
-  <img class="image-center" src="../../../_assets/insights/explorers/transcript/Transcript_Explorer_profile.png" width="100%" />
-  <figcaption>Session Transcript with Expert Mode</figcaption>
+  <img class="image-center" src="../../../_assets/insights/explorers/transcript/transcript-explorer-profile.png" width="100%" />
+  <figcaption>Session Transcript with Debug Mode</figcaption>
 </figure>
 
 ### Session Transcript
@@ -118,11 +118,11 @@ To view a session transcript, select a session from the list on the **Transcript
 Session transcripts display all individual messages between the end user and agent during their conversation. By selecting a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
-#### Expert mode
+#### Debug Mode
 
-Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../../ai/test/interaction-panel/overview.md#expert-mode) documentation.
+Insights' Debug mode is not fully equal to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/overview.md#debug-mode) documentation. Debug messages from Nodes (including Code Nodes and Debug Message Nodes) are only for immediate testing and can only be seen in the Interaction Panel.
 
-The Expert mode offers additional context for conversation messages, including:
+The Debug mode offers additional context for conversation messages, including:
 
 - Triggered Intent and its score
 - Filled Slots
@@ -132,12 +132,12 @@ The Expert mode offers additional context for conversation messages, including:
 
 Additionally, you can switch to a Flow related to the current session.
 
-To activate Expert mode, do the following:
+To activate Debug mode, do the following:
 
 1. Go to the Insights interface.
 2. From the left-side menu, select **Transcript Explorer**.
 3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
-4. At the top of the **Session Transcript** window, activate the **Expert mode** toggle.
+4. At the top of the **Session Transcript** window, activate the **Debug mode** toggle.
 
 #### Playbooks
 
@@ -214,7 +214,7 @@ The transcript details include the following sections:
 | Birthday                | User's birthday.                             |
 | Location                | User's location.                             |
 | Accepted GDPR           | Accepted General Data Protection Regulation  |
-| Goals Completed         | All goals that were achieved in the session. |
+| Tasks Completed         | All tasks that were achieved in the session. |
 
 
 ## More Information 

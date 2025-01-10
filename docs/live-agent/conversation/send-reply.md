@@ -3,14 +3,22 @@ title: "Send Replies"
 slug: "send-replies"
 description: "Within a Live Agent conversation, as a human agent, you can send replies to the end user, the AI Agent, and another human agent."
 hidden: false
+tags:
+  - Live Agent
+  - Conversations
+  - Send Reply
 ---
 
 # Send Replies
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.87-blue.svg)](../../release-notes/4.87.md)
 
 Within a conversation, as a human agent, you can send a reply to the following actors:
 
 - [end user](#send-a-reply-to-a-user)
 - [another human agent](#send-a-reply-to-another-human-agent) 
+
+You can also [track typing activity](#track-human-agent-typing-events) via a WebSocket connection to determine when the human agent starts typing.
 
 <figure>
 <img class="image-center" src="../../../_assets/live-agent/conversation/reply-section.png" width="80%" alt="Live Agent Conversations Reply" />
@@ -18,8 +26,6 @@ Within a conversation, as a human agent, you can send a reply to the following a
 </figure>
 
 ## Send a Reply to a User
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
 
 To respond to a user in a conversation, type your message in the **Reply** section and click **Send**. 
 
@@ -80,15 +86,13 @@ For a simple quick reply to a user in the conversation chat, you can use canned 
 
 #### Send a Response with Variables
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
-
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
 To include a variable, follow these steps:
 
 1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
 2. Select a variable by using one of these methods:
-    - Click on the desired variable.
+    - Click the desired variable.
     - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
     Alternatively, you can type out variables instead of selecting them from the suggestions.
 
@@ -147,8 +151,6 @@ The selected canned response will be inserted into your reply, allowing you to e
 
 #### Send a Canned Response with Variables
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
-
 You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
 
 A canned response with variables is called the same way as a [simple canned response](#advanced-quick-reply), by using the symbol `/`.
@@ -156,8 +158,6 @@ When you select the canned response, variables in the response will be replaced 
 If any of the variables do not have values, you will receive a corresponding warning.
 
 ## Send a Reply to Another Human Agent
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
 
 As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
 
@@ -185,6 +185,47 @@ To delete a private note you have already sent, follow these steps:
 
 1. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) icon beside the sent message.
 2. Select **Delete**. The private note will be deleted.
+
+## Track Human Agent Typing Events
+
+To monitor when human agents start and stop typing, you can set up a WebSocket connection. This connection allows you to monitor typing events in real time using a webhook, which enables immediate updates.
+In this implementation, Live Agent utilizes [CloudEvents](https://github.com/cloudevents/spec), which serve as a standardized way to describe and transport event data across different systems and services.
+
+By analyzing typing patterns during conversations, you can identify peak agent activity and pinpoint any bottlenecks in response times. This information can be used to enhance staffing and streamline workflows.
+
+To track human agent typing events, you'll need to update your Live Agent `.yaml` file by adding the necessary configuration variables.
+
+- `EVENT_GATEWAY_ACTIVE=true`
+- `EVENT_GATEWAY_HTTP_ENDPOINT="your-webhook-url"`, replace `your-webhook-url` with the URL to which you want to send events for tracking. For example, `https://webhook-test.com/e183f157-5703-4258-a519-fba23ca15b09`.
+
+After configuration, your webhook will receive the event payload in the following format:
+
+```json
+{
+  "specversion": "1.0",
+  "type": "ai.cognigy.live-agent.conversation.typing_off",
+  "source": "http://127.0.0.1:3000",
+  "subject": "conversation.2",
+  "id": "01J9KKW5VS6A0FPWDQ11BHRVWX",
+  "time": "2024-10-07T13:49:35Z",
+  "datacontenttype": "application/json",
+  "data": {
+    "cognigy_session_id": "c101cbc0-807d-426f-bd81-tb756dbdec44"
+  }
+}
+```
+
+| Parameter               | Type   | Description                                                                                                                                                                                                                                                            |
+|-------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| specversion             | String | Indicates the version of the [CloudEvents](https://github.com/cloudevents/spec) specification being used. For example, `1.0`.                                                                                                                                          |
+| type                    | String | Specifies the type of event. The following events are available: <br>- `ai.cognigy.live-agent.conversation.typing_off` — indicates when a human agent stops typing. <br>- `ai.cognigy.live-agent.conversation.typing_on` — indicates when a human agent starts typing. |
+| source                  | String | The source of the event, typically a URL identifying the origin. For example, `http://127.0.0.1:3000`.                                                                                                                                                                 |
+| subject                 | String | The context for the event, specifying the entity. For example, `conversation.2`.                                                                                                                                                                                       |
+| id                      | String | A unique identifier for the event for distinct recognition. For example, `01J9KKW5VS6A0FPWDQ11BHRVWX`.                                                                                                                                                                 |
+| time                    | String | A timestamp indicating when the event occurred, formatted in the ISO 8601 standard. For example, `2024-10-07T13:49:35Z`.                                                                                                                                               |
+| datacontenttype         | String | The media type of the data being sent. For example, `application/json`.                                                                                                                                                                                                |
+| data                    | Object | Contains the actual event data, which holds additional information relevant to the event.                                                                                                                                                                              |
+| data.cognigy_session_id | String | A unique identifier for the Cognigy session associated with this event. For example, `c101cbc0-807d-426f-bd81-tb756dbdec44`.                                                                                                                                           |
 
 ## More Information
 
