@@ -1,7 +1,7 @@
 ---
 title: "Overwrite Analytics"
 slug: "overwrite-analytics"
-description: "An Overwrite Analytics Node lets you overwrite default values such as intent, text, understood messages, and more, and manage the analytics data stored in the Cognigy.AI Analytics] database."
+description: "An Overwrite Analytics Node lets you overwrite default values such as intent, text, understood messages, and more, and manage the analytics data stored in the Cognigy.AI Analytics database."
 hidden: false
 ---
 
