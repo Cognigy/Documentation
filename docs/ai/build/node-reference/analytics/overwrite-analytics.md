@@ -59,7 +59,7 @@ For example, you can overwrite the Intent name.
 Consider the case where a user says, `I need to return an item`.
 The AI Agent recognizes this message as the `Return request` Intent.
 For more precise tracking,
-you can configure the AI Agent to overwrite this Intent so that it is recorded in analytics as `Product return`.
+you can configure the AI Agent to overwrite this Intent so that it is stored in the Analytics database as `Product return`.you can configure the AI Agent to overwrite this Intent so that it is recorded in analytics as `Product return`.
 
 | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                  | 
 |----------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
