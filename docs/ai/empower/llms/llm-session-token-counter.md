@@ -33,7 +33,7 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 
 This Code Node fetches the total token usage in the session and stores it in the `token` variable.
 
-JSON Example:
+The following JSON example shows an object returned by `api.getLLMTokenUsageForSession()`:
 
 ```json
 {
