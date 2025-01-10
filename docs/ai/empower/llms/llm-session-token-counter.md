@@ -72,7 +72,7 @@ The following JSON example shows an object returned by `api.getLLMTokenUsageForS
 !!!note "Embedding Models Output Tokens"
     The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens.
 
-For example, you can add an `api.say()` request in the Code Node for testing purposes.
+For example, you can add `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md) for testing purposes in your Flow editor.
 
 ## More Information
 
