@@ -69,7 +69,7 @@ The following JSON example shows an object returned by `api.getLLMTokenUsageForS
 | outputTokens   | Number | The number output tokens. The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens. | 106                                    |
 
 
-For testing in the Interaction Panel, you can output the JSON object by addeing `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md).
+For testing in the Interaction Panel, you can output the JSON object by adding `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md).
 
 ## More Information
 
