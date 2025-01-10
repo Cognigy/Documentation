@@ -58,21 +58,18 @@ The following JSON example shows an object returned by `api.getLLMTokenUsageForS
 }
 ```
 
-| Key            | Type   | Description                                                                                    | Example                                            |
-|----------------|--------|------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| llmReferenceId | Object | The object with the LLM reference ID in Cognigy.AI as key and information about the LLM model. | `1c945b38-5dbb-4fcf-9fdd-112bd8177f9c`             |
-| llmDisplayName | String | The name of the LLM Connection.                                                                | `openAI - text- embedding-3-large - 1735891122507` |
-| providerType   | String | The LLM provider.                                                                              | `openAI`                                           |
-| modelType      | String | The operating system of the user's device.                                                     | `text-embedding-3-large`                           |
-| usage          | String | The object containing information about the session total token usage.                         | -                                                  |
-| inputTokens    | Number | The token count sent to the LLM model.                                                         | 6                                                  |
-| outputTokens   | Number | The token count output by the LLM model.                                                       | 0                                                  |
+| Key            | Type   | Description                                                                                                                                           | Example                                |
+|----------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| llmReferenceId | String | The LLM reference ID.                                                                                                                                 | `ce190e1f-eff7-4f6b-9074-9f705375a3d3` |
+| llmDisplayName | String | The name of the LLM.                                                                                                                                  | `openAI - gpt-40 - 1735891179896`      |
+| providerType   | String | The LLM provider.                                                                                                                                     | `openAI`                               |
+| modelType      | String | The LLM model.                                                                                                                                        | `gpt-40`                               |
+| usage          | String | The object containing information about the session total token usage.                                                                                | -                                      |
+| inputTokens    | Number | The number of input tokens.                                                                                                                           | 441                                    |
+| outputTokens   | Number | The number output tokens. The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens. | 106                                    |
 
 
-!!!note "Embedding Models Output Tokens"
-    The output tokens count for embedding models is always 0 since embedding models output embedding vectors instead of tokens.
-
-For example, you can add `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md) for testing purposes in your Flow editor.
+For testing in the Interaction Panel, you can output the JSON object by addeing `api.say()` at the end of your [Code Node](../../build/node-reference/basic/code/actions.md).
 
 ## More Information
 
