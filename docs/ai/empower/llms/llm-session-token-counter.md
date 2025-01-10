@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
-In Cognigy.AI, you can use `api.getLLMTokenUsageForSession()` to fetch the Large Language Model (LLM) total token usage in a conversation or chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
+In Cognigy.AI, you can use the `api.getLLMTokenUsageForSession()` API call in a [Code Node](../../build/node-reference/basic/code/overview.md) or an [Extension](../../build/extensions.md) to fetch the Large Language Model (LLM) total token usage in a conversation or chat session. This way, you can track your [LLM providers](providers/all-providers.md) costs.
 
 The LLM Session Token Counter retrieves the token usage information via LLM provider-specific API calls to return the exact number of tokens the LLM uses. If the information isn't available by the provider, Cognigy.AI estimates the token usage.
 
