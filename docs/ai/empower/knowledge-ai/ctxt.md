@@ -173,7 +173,7 @@ The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files vi
 
 ## Download Knowledge Sources as CTXT
 
-You can download Knowledge Sources as a CTXT file, including Knowledge Sources created from web pages and other file formats. Using CTXT files offers more flexibility in managing Knowledge Sources. With a CTXT file, you can:
+You can download Knowledge Sources as a CTXT file, including Knowledge Sources created from web pages and other file formats. Downloading Knowledge Sources as CTXT files offers more flexibility in managing Knowledge Sources. With a CTXT file, you can:
 
 - Back up Knowledge Sources more easily after you have edited the Knowledge Chunks.
 - Use Knowledge Sources across Knowledge Stores with different embedding vector dimensions.
