@@ -179,7 +179,12 @@ Downloading Knowledge Sources as CTXT provides more flexibility in handling Know
 - Use CTXT files across Knowledge Stores with different embedding vector dimensions.
 - Use external tools, such as text editors, with features like search and replace, bulk editing, and to edit Knowledge Sources more efficiently.
 
+To download a Knowledge Source as CTXT, select a Knowledge Store in **Build > Knowledge**. On the Knowledge Store page:
 
+??? info "Download a Knowledge Source as CTXT"
+
+    1. Hover over a Knowledge Source and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right.
+    2. Select **Download as CTXT**.
 
 ## More Information
 
