@@ -7,7 +7,7 @@ hidden: false
 
 # Cognigy Text Format
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
 _Cognigy text format_ (`ctxt`) is a specialized text format developed by Cognigy.
 This format serves to import custom-chunked content into the [Cognigy Knowledge AI](overview.md) solution.
