@@ -74,9 +74,9 @@ you can configure the AI Agent to overwrite this Intent so that it is stored in 
 
 ## Examples
 
-### Replace Personal Data for Privacy in OData
+### Anonymize Personal Data for Privacy in OData
 
-You can replace specific text in the field to ensure privacy while maintaining context in OData. 
+You can anonymize specific text in the field to ensure privacy while maintaining context in OData. 
 For example, instead of `My name is Alex, how do I do something?` you can replace it with `My name is <Name>, how do I do something?`.
 
 ### Clean Up NLU Metrics with Understood
