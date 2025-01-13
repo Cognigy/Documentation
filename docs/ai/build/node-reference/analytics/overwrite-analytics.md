@@ -30,7 +30,6 @@ the initial value stored in the Analytics database will remain unchanged.
 ### Custom Fields
 
 Custom fields allow you to store any data as a string value.
-If the custom field remains empty, the field value will contain `null` in the analytics records.
 
 Custom fields can be useful for enriching the information about a user's conversation by adding more details.
 For example, if user inputs contain words such as `excellent` or `great`, you can add a custom field with the value `Positive feedback` to make it easier to analyze positive feedback through analytics records.
