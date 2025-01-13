@@ -177,15 +177,19 @@ You can download Knowledge Sources as a CTXT file, including Knowledge Sources c
 
 - Back up Knowledge Sources more easily after you have edited the Knowledge Chunks.
 - Use Knowledge Sources across Knowledge Stores with different embedding vector dimensions.
-- Edit Knowledge sources more efficiently with external tools, such as text editors, with features like search and replace, bulk editing, and integration of AI tools.
+- Edit downloaded Knowledge Sources more efficiently with external tools, such as text editors, with features like search and replace, bulk editing, and integration of AI tools.
 
-To download a Knowledge Source as CTXT, select a Knowledge Store in **Build > Knowledge**. On the Knowledge Store page:
+To download a Knowledge Source as CTXT, select a Knowledge Store in **Build > Knowledge** and proceed as follows:
 
 ??? info "Download a Knowledge Source as CTXT"
+    === "On the Knowledge Store Page"
+        1. Hover over a Knowledge Source and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right.
+        2. Select **Download as CTXT**.
 
-    1. Hover over a Knowledge Source and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right.
-    2. Select **Download as CTXT**.
-
+    === "On the Knowledge Source Page"
+        1. Select a Knowledge Source.
+        2. Click ![download](../../../_assets/voice-gateway/dowload.svg) next to the **Search Chunk** field.
+    
 ## More Information
 
 - [Knowledge AI Overview](overview.md)
