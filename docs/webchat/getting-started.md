@@ -17,10 +17,9 @@ Cognigy.AI version 4.72 or later.
 
 Create a project that involves building an AI Agent:
 
-1. Open the Cognigy.AI interface.
-2. In the upper-left corner, click **+ Create Agent**.
-3. On the **Basic settings for your Project** page, specify a name for your agent in the **Project Name** field, for example, `AI Project`.
-4. Click **Create Empty Project**.
+1. In the upper-left corner of the **Projects** page, click **+ Create Project**.
+2. On the **Basic settings for your Project** page, specify a name for your agent in the **Project Name** field, for example, `AI Project`.
+3. Click **Create Empty Project**.
 
 Once the project creation is complete, you can proceed with building the AI Agent.
 

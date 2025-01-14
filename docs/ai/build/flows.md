@@ -18,14 +18,12 @@ Flows let you customize and design the behavior of AI Agents, enabling you to cr
 
 To create a Flow, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side menu of the Project, navigate to **Build > Flows**.
-4. On the **Flows** page, click **+ New Flow**.
-5. In the New Flow window, fill in the following fields:
+1. In the left-side menu of the Project, navigate to **Build > Flows**.
+2. On the **Flows** page, click **+ New Flow**.
+3. In the New Flow window, fill in the following fields:
     - **Name** — create a meaningful name for your Flow, for example, `Customer Support`.
     - **Description** — this parameter is optional. Create a meaningful description for your Flow, for example, `Automates the processing of incoming orders and updates inventory accordingly`.
-6. Click **Create**.
+4. Click **Create**.
 
 You've created a simple Flow with the Start and End Nodes. Now you need to add [Nodes](#nodes) to it to build the conversation.
 However,
@@ -39,11 +37,9 @@ Reference IDs can be helpful if you want to edit Flows via API.
 
 To copy the Reference ID of a Flow, do the following:
 
-1. Open the Cognigy.AI interface. 
-2. In the left-side menu, select the Project you need. 
-3. In the left-side menu of your Project, navigate to **Build > Flows**. 
-4. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
-5. Select **Copy Reference ID**. The ID will be copied to the clipboard.
+1. In the left-side menu of your Project, navigate to **Build > Flows**. 
+2. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
+3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Flow Interface
 
@@ -158,10 +154,9 @@ To manage the Flow Editor parameters, such as zoom and navigation, go to the con
 
 To manage Flows in different use cases for your Project, do the following:
 
-1. Open Cognigy.AI and select a Project on the left side of the page.
-2. Go to **Build** > **Flows** to see your available Flows for the selected Project.
-3. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to edit. A selection menu appears.
-4. Select one of the following options, depending on the intended action you need:
+1. Go to **Build** > **Flows** to see your available Flows for the selected Project.
+2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to edit. A selection menu appears.
+3. Select one of the following options, depending on the intended action you need:
     - **Edit** — change the name and the description for the selected Flow.
     - **Delete** — delete a Flow. When you select this option, you need to confirm the deletion of the selected Flow.
     - **Copy Reference ID** — copy a unique Flow ID to perform [API calls](../developers/api-and-cli.md).
@@ -178,12 +173,11 @@ _[Nodes](nodes/overview.md)_ are the fundamental components of your Flow. Cognig
 
 To add a Node to your Flow, follow these steps:
 
-1. Open your Project in Cognigy.AI.
-2. Select the Flow you want to edit.
-3. Click the **+** icon located between the Nodes where you want to add a new Node. For example, you can add a **Say** Node, which is the most basic output Node. A window will appear to provide available Nodes to add.
-4. Select the **By Function** tab, then choose **Basic**.
-5. Click **Say** in the selection list. A Say Node will be added at the location where you clicked the **+** icon in your Flow.
-6. Configure your added Node as required for your project. For detailed information on Nodes and how to configure them, refer to the [Nodes](nodes/overview.md) documentation.
+1. In your Project, select the Flow you want to edit.
+2. Click the **+** icon located between the Nodes where you want to add a new Node. For example, you can add a **Say** Node, which is the most basic output Node. A window will appear to provide available Nodes to add.
+3. Select the **By Function** tab, then choose **Basic**.
+4. Click **Say** in the selection list. A Say Node will be added at the location where you clicked the **+** icon in your Flow.
+5. Configure your added Node as required for your project. For detailed information on Nodes and how to configure them, refer to the [Nodes](nodes/overview.md) documentation.
 
 ##### Testing a Flow
 
@@ -196,11 +190,10 @@ Using the **Interaction Panel**, you can chat at any time with your AI Agent dur
 
 To start a chat with your AI Agent and test the Flow functionality, follow these steps:
 
-1. Open your Project in Cognigy.AI.
-2. Select a Flow you want to test.
-3. In the upper-right corner, click ![chat](../../_assets/icons/chat.svg) to open the **Interaction Panel**. The Interaction Panel will open on the right side of the Flow creation page.
-4. Click the **TEST** tab to open the conversation window of the Interaction Panel.
-5. In the **Text Message** field, enter a message and press **ENTER** or click ![send-message](../../_assets/icons/send-message.svg) next to the field. The message you send represents input from a potential user and initiates a conversation with your AI Agent, which will respond based on the created Flow. The conversation will be displayed on the Interaction Panel screen.
+1. In your Project, select the Flow you want to test.
+2. In the upper-right corner, click ![chat](../../_assets/icons/chat.svg) to open the **Interaction Panel**. The Interaction Panel will open on the right side of the Flow creation page.
+3. Click the **TEST** tab to open the conversation window of the Interaction Panel.
+4. In the **Text Message** field, enter a message and press **ENTER** or click ![send-message](../../_assets/icons/send-message.svg) next to the field. The message you send represents input from a potential user and initiates a conversation with your AI Agent, which will respond based on the created Flow. The conversation will be displayed on the Interaction Panel screen.
 
 While interacting with the AI Agent in a simulated user conversation, you can review the Flow structure to ensure it meets your intended task requirements.
 The execution path of your conversation is highlighted by a green path in your Flow Chart,

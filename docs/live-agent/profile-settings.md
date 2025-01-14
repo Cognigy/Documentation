@@ -12,9 +12,8 @@ _Profile Settings_ are a set of customizable options and configurations availabl
 
 To open the **Profile Settings** in Live Agent, do the following:
 
-1. Open your Live Agent interface. 
-2. In the bottom-left corner of the Live Agent interface, click **Profile Settings**.
-3. In the drop-down list, select **Profile Settings**. The **Profile Settings** page will be displayed.
+1. In the bottom-left corner of the Live Agent interface, click **Profile Settings**.
+2. In the drop-down list, select **Profile Settings**. The **Profile Settings** page will be displayed.
 
 There are the following settings available within the user profile:
 

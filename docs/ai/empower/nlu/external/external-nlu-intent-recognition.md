@@ -30,12 +30,10 @@ using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing 
 
 To set up a third-party NLU model, follow these steps:
 
-1. Open the Cognigy.AI interface. 
-2. In the left-side menu, select the Project where you want to use a third-party NLU model. 
-3. In the left-side menu of the Project, navigate to **Manage > Settings**.
-4. Go to the **NLU Settings** section.
-5. From the **Embedding Model Provider** list, select a model that you added as part of the [Prerequisites](#prerequisites).
-6. Confirm changes.
+1. In the left-side menu of the Project, navigate to **Manage > Settings**.
+2. Go to the **NLU Settings** section.
+3. From the **Embedding Model Provider** list, select a model that you added as part of the [Prerequisites](#prerequisites).
+4. Confirm changes.
 
 ## Train Flows
 

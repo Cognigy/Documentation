@@ -18,15 +18,14 @@ Within the Inbox setting, you can edit the Inbox, add and remove agents, configu
 
 To create an Inbox in Live Agent, do the following:
 
-1. Open the Live Agent interface. 
-2. Go to **Settings > Inboxes**.
-3. In the upper-right corner, click **+ Add Inbox**. Live Agent will show you a screen to set up your Inbox. 
-4. On the **Inbox setup** page, fill in the following fields:
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. In the upper-right corner, click **+ Add Inbox**. Live Agent will show you a screen to set up your Inbox. 
+3. On the **Inbox setup** page, fill in the following fields:
     - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`. The name can contain any characters but can't start with `=`.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
-5. In the **Pick agents for the inbox** list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your agents to the new Inbox.
-7. Select your required agents in the selection list and click **Add Agents**.
+4. In the **Pick agents for the inbox** list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
+5. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your agents to the new Inbox.
+6. Select your required agents in the selection list and click **Add Agents**.
 
 A new Live Agent Inbox has been created. You can configure the Inbox settings by clicking **More settings**.
 
@@ -69,11 +68,10 @@ Deleting an Inbox is irreversible and will result in the loss of synchronization
 
 To delete an Inbox within Live Agent, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the team you want to delete, click **Delete**. 
-4. You are prompted to enter the Inbox name you want to delete. 
-5. Click **Yes, Delete**.
+1. In the Live Agent interface, go to **Settings > Inboxes**. 
+2. On the **Inboxes** page, to the right of the team you want to delete, click **Delete**. 
+3. You are prompted to enter the Inbox name you want to delete. 
+4. Click **Yes, Delete**.
 
 The selected Inbox will be deleted.
 
@@ -81,10 +79,9 @@ The selected Inbox will be deleted.
 
 To configure the conversation assignments within Live Agent, do the following:
 
-1. Go to Live Agent.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
-4. In the **Conversation Assignment** sections, update the conversation assignment settings:
+1. In the Live Agent interface, go to **Settings > Inboxes**. 
+2. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
+3. In the **Conversation Assignment** sections, update the conversation assignment settings:
     - [Allow auto assignment](../conversation/conversation-routing/automatic-mode.md#automatic-assignment)
     - [Allow conversations to be reassigned](../conversation/conversation-routing/automatic-mode.md#automatic-reassignment)
 
@@ -94,12 +91,11 @@ The changes will be applied successfully.
 
 To add agents to an Inbox, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section.
-5. In the agent list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click **Update**.
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
+3. On the **Collaborators** tab, go to the **Agents** section.
+4. In the agent list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
+5. Click **Update**.
 
 The changes will be applied.
 
@@ -108,10 +104,9 @@ The changes will be applied.
 By default, your agents can see all messages within an Inbox. 
 To change this behavior for agents with the `Agent` role, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
-4. In the **Conversation Assignment** section, disable the **Allow Agents to see all conversations in this inbox** setting.
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
+3. In the **Conversation Assignment** section, disable the **Allow Agents to see all conversations in this inbox** setting.
 
 The changes will be applied. Note that this setting will not affect agents with the `Administrator` or `Supervisor` roles.
 They will still be able to see all messages within the Inbox.
@@ -120,12 +115,11 @@ They will still be able to see all messages within the Inbox.
 
 To remove the Inbox appearance, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section.
-5. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
-6. Click **Update**.
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
+3. On the **Collaborators** tab, go to the **Agents** section.
+4. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
+5. Click **Update**.
 
 ## Add an AI Copilot Bot 
 

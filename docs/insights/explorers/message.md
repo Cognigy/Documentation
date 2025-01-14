@@ -13,17 +13,15 @@ The Message Explorer shows the entire conversation as context around a specific 
 To open the Message Explorer interface, use one of the following options:
 
 === "Via Cognigy.AI"
-    1. Open the Cognigy.AI interface.
-    2. In the left-side menu, select a Project.
-    3. Within the Agent interface, navigate to Insights using one of the following options:
+    1. In the left-side menu of the Cognigy.AI interface, select a Project.
+    2. Within the Project, navigate to Insights using one of the following options:
         - In the left-side **Project** menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.
-    4. The Cognigy Insights Overview dashboard will be displayed by default.
-    5. In the left-side menu, select **Message Explorer**.
+    3. The Cognigy Insights Overview dashboard will be displayed by default.
+    4. In the left-side menu, select **Message Explorer**.
          
 === "Via Insights"
-    1. Open your Cognigy Insights interface.<br>
-    2. In the left-side menu, select **Message Explorer**.
+    1. In the left-side menu of the Insights interface, select **Message Explorer**.
 
 The Message Explorer interface will be displayed.
 

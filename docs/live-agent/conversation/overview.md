@@ -143,14 +143,13 @@ Cognigy provides three assistants for giving human agents support in their servi
 
 To open a conversation in Live Agent, follow these steps:
 
-1. Open your Live Agent interface.
-2. In the left-side menu, click **Conversations**.
-3. In the upper-left corner, select **All Conversations**.
-4. On the Conversations panel, choose one of the following tabs:
+1. In the left-side menu of the Live Agent interface, click **Conversations**.
+2. In the upper-left corner, select **All Conversations**.
+3. On the Conversations panel, choose one of the following tabs:
     - **Mine** — displays conversations assigned to you.
     - **Unassigned** — shows conversations without a designated owner.
     - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can grant access through the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
-5. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
+4. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
 
 ## More Information
 

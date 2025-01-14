@@ -21,9 +21,8 @@ You can copy a Reference ID here or export the Connection as a Package.
 
 To view available Connections, do the following:
 
-1. Open the Cognigy.AI interface.
-2. Select a Project in which you want to view Connections.
-3. In the left-side menu, navigate to **Build > Connections**.
+1. Select a Project in which you want to view Connections.
+2. In the left-side menu, navigate to **Build > Connections**.
 
 On the **Connections** page, a list of available Connections will be displayed.
 
@@ -31,12 +30,10 @@ On the **Connections** page, a list of available Connections will be displayed.
 
 To edit a Connection, do the following:
 
-1. Open the Cognigy.AI interface.
-2. Select a Project you want to edit.
-3. Go to **Build > Connections** to open the Connections view with listed Connections.
-4. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to edit.
-5. Select **Edit** to open the Connection editor window.
-6. Change configuration settings and click **Save**.
+1. Go to **Build > Connections** to open the Connections view with listed Connections.
+2. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to edit.
+3. Select **Edit** to open the Connection editor window.
+4. Change configuration settings and click **Save**.
 
 ## Copy the Connection Reference ID
 
@@ -44,19 +41,17 @@ Reference IDs can be helpful if you want to edit Connections via API.
 
 To copy the Reference ID of a Connection, do the following:
 
-1. Open Cognigy.AI and select a Project you want to edit.
-2. In the left-side menu, navigate to **Build > Connections**.
-3. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to copy the reference ID.
-4. Select **Copy Reference ID**. The ID will be copied to the clipboard.
+1. In the left-side menu, navigate to **Build > Connections**.
+2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to copy the reference ID.
+3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Export a Connection
 
 To export a Connection, do the following:
 
-1. Open Cognigy.AI and select a Project you want to edit.
-2. In the left-side menu, navigate to **Build > Connections**.
-3. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to export.
-4. Select **Export as package**.
+1. In the left-side menu, navigate to **Build > Connections**.
+2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to export.
+3. Select **Export as package**.
 
 ## Delete a Connection
 
@@ -65,11 +60,10 @@ To export a Connection, do the following:
 
 To delete a Connection, do the following:
 
-1. Open Cognigy.AI and select a Project you want to edit.
-2. In the left-side menu, navigate to **Build > Connections**.
-3. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to delete.
-4. Select **Delete**.  A confirmation window appears and prompts you to confirm deleting the Connection.
-5. Click **Confirm**. The selected Connection will be deleted and is no longer available in the list.
+1. In the left-side menu, navigate to **Build > Connections**.
+2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to delete.
+3. Select **Delete**.  A confirmation window appears and prompts you to confirm deleting the Connection.
+4. Click **Confirm**. The selected Connection will be deleted and is no longer available in the list.
 
 ## More Information
 

@@ -11,17 +11,15 @@ The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visua
 To open the Step Explorer, use one of the following options:
 
 === "Via Cognigy.AI"
-    1. Open the Cognigy.AI interface.
-    2. In the left-side menu, select a Project.
-    3. Within the Agent interface, navigate to Insights using one of the following options:
+    1. In the left-side menu of the Cognigy.AI interface, select a Project.
+    2. Within the Project, navigate to Insights using one of the following options:
         - In the left-side **Project** menu, select **Insights**.
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
         The Cognigy Insights Overview dashboard will be displayed.
-    4. In the left-side menu, select **Step Explorer**.
+    3. In the left-side menu, select **Step Explorer**.
 
 === "Via Insights"
-    1. Open your Cognigy Insights interface.<br>
-    2. In the left-side menu, select **Step Explorer**.
+    1. In the left-side menu of the Insights interface, select **Step Explorer**.
 
 The Step Explorer interface will be displayed.
 Each column on the Step Explorer page represents a Node or Intent [annotated](#before-you-begin) in the Cognigy.AI Flow.
@@ -46,15 +44,13 @@ Node annotation helps you analyze customer reactions at specific stages of their
 
 To annotate a Node, follow the steps below:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. Navigate to **Build > Flows**.
-4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or using an existing one.
-5. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or using an existing one.
-6. Open the Node editor by clicking the Node you want to annotate.
-7. In the Node Editor, go to **Settings > Analytics Step**.
-8. In the **Analytics Step** field, enter a title for the Node's action. For example, if the Node is responsible for selecting multiple products, the step could be titled `Product Selection`.
-9. Click **Save**.
+1. In the left-side menu of Project, go to **Build > Flows**.
+2. Create a new Flow by clicking **+ New Flow** in the upper-right corner or using an existing one.
+3. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or using an existing one.
+4. Open the Node editor by clicking the Node you want to annotate.
+5. In the Node Editor, go to **Settings > Analytics Step**.
+6. In the **Analytics Step** field, enter a title for the Node's action. For example, if the Node is responsible for selecting multiple products, the step could be titled `Product Selection`.
+7. Click **Save**.
 
 ### Annotate Intents
 
@@ -65,21 +61,18 @@ Intent annotation helps you analyze customer behaviors and preferences within sp
 
 To annotate an Intent, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. Navigate to **Build > Flows**.
-4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
-5. In the upper-right corner of the Flow editor, select the **NLU** tab.
-6. On the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
-7. On the selected Intent page, go to **Advanced > Analytics Step**.
-8. In the **Analytics Step** section, provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
-9. Click **Save**.
+1. In the left-side menu of Project, go to **Build > Flows**.
+2. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
+3. In the upper-right corner of the Flow editor, select the **NLU** tab.
+4. On the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
+5. On the selected Intent page, go to **Advanced > Analytics Step**.
+6. In the **Analytics Step** section, provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
+7. Click **Save**.
 
 ### Test your Flow
 
 To view the results on the Step Explorer page, test your AI Agent via the Interaction Panel or Demo Webchat.
 To view the Interaction Panel and Playbook data for your AI Agent, follow these steps:
-
 
 1. On the **Step Explorer** page, go to the filter bar.
 2. Select **Endpoint > Interaction Panel / Playbook data**.

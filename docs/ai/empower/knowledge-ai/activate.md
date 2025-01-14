@@ -60,7 +60,7 @@ To set a quota using the management-ui, follow these steps:
 
 To set a quota using the management-ui API, follow these steps:
 
-1. Open the Cognigy.AI API and navigate to the **AUTHENTICATION > HTTP Basic**.
+1. In the Cognigy.AI API, go to the **AUTHENTICATION > HTTP Basic**.
 2. Enter the login and password you use for the management-ui authorization, then click **SET**.
 3. Select the organization to which you want to apply a quota:
 

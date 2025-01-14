@@ -8,10 +8,7 @@ hidden: false
 
 *Alerts* are created when errors happen in your account configuration. For example, your credentials from the speech provider need to be updated.
 
-To view alerts, follow these steps:
-
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Alerts**.
+To view alerts, select **Alerts** in the left-side menu of the Voice Gateway Self-Service Portal.
 
 Note that you can only filter by a maximum of the last 7 days.
 

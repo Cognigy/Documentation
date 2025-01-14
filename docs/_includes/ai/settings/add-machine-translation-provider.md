@@ -1,7 +1,5 @@
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side **Project** menu, select **Manage > Settings**.
-4. In the **Translation settings** section, select one of the following providers:
+1. In the left-side **Project** menu, select **Manage > Settings**.
+2. In the **Translation settings** section, select one of the following providers:
 
     === "Microsoft Translator"
         - **Translation Provider API Key** — enter your unique API key provided by Microsoft Translator. It's necessary for authentication and allows you to access translation services.
@@ -24,4 +22,4 @@
         - **Sentence Cache Expiry Timeout** — determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is `84,600` seconds, which is equivalent to 1 day. You can set it to `0` for no caching.
         - **Custom API Base URL** — this setting is optional. If you have specific requirements or need to connect to a custom instance of the DeepL Translate Pro API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, for example `https://api-free.deepl.com/`, to tailor the API connection to your needs.
 
-5. Click **Save**.
+3. Click **Save**.

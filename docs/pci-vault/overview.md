@@ -96,35 +96,34 @@ To empower your human agents to securely access end user credit card data via PC
 
 ## Test your Configuration
 
-In the following example we are using the Webchat Widget, the Webchat Endpoint and Cognigy Live Agent in order to demonstrate PCI Vault:
+In the following example, we use the Webchat Widget, the Webchat Endpoint, and Cognigy Live Agent to demonstrate PCI Vault:
 
-1. Open the Cognigy.AI interface and select your AI Agent.
-2. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
-3. On the **Endpoints** page, select the **Webchat** Endpoint that you have already created with the predefined configuration.
-4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**. 
-5. Start a conversation in the chat. For example, `I would like to pay for the ticket`.
-6. Perform a handover to a human agent. 
-7. In the Live Agent interface, a human agent receives your message. On the right side of the conversation chat, the human agent will see the **Request payment information** button.
+1. In the left-side menu of your Project, click **Deploy > Endpoints**. 
+2. On the **Endpoints** page, select the **Webchat** Endpoint that you have already created with the predefined configuration.
+3. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**. 
+4. Start a conversation in the chat. For example, `I would like to pay for the ticket`.
+5. Perform a handover to a human agent. 
+6. In the Live Agent interface, a human agent receives your message. On the right side of the conversation chat, the human agent will see the **Request payment information** button.
    <figure>
      <img class="image-center" src="../../../_assets/pci-vault/request-payment.png" width="90%"/>
    </figure>
-8. When the human agent clicks this button, a link for entering card details will be generated and sent to the chat. If the link is not received, the human agent can forward it manually.
+7. When the human agent clicks this button, a link for entering card details will be generated and sent to the chat. If the link is not received, the human agent can forward it manually.
    <figure>
      <img class="image-center" src="../../../_assets/pci-vault/waiting-for-payment-data.png" width="90%"/>
    </figure>
-9. In a new browser window, open the link to fill in the payment form and click **Submit**.
+8. In a new browser window, open the link to fill in the payment form and click **Submit**.
    <figure>
      <img class="image-center" src="../../../_assets/pci-vault/payment.png" width="90%"/>
    </figure>
-10. If you successfully submit the data, the browser will display a PIN that you need to send to the chat with the human agent.
+9. If you successfully submit the data, the browser will display a PIN that you need to send to the chat with the human agent.
     <figure>
       <img class="image-center" src="../../../_assets/pci-vault/pin.png" width="90%"/>
     </figure>
-11. The human agent will enter this PIN in the **Unlock Pin** field within the AI Copilot workspace.
+10. The human agent will enter this PIN in the **Unlock Pin** field within the AI Copilot workspace.
     <figure>
       <img class="image-center" src="../../../_assets/pci-vault/unlock-pin.png" width="90%"/>
     </figure>
-12. If the user successfully submits the data, the human agent in the AI Copilot workspace will receive the card details. For security reasons, the card data can only be unlocked once and will disappear when switching to another conversation. The human agent must take immediate action.
+11. If the user successfully submits the data, the human agent in the AI Copilot workspace will receive the card details. For security reasons, the card data can only be unlocked once and will disappear when switching to another conversation. The human agent must take immediate action.
     <figure>
       <img class="image-center" src="../../../_assets/pci-vault/card-details.png" width="90%"/>
     </figure>

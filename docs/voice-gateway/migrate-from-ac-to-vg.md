@@ -30,19 +30,18 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 
 ## Create a Voice Gateway Endpoint
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select the Project where you want to create a Voice Gateway Endpoint.
-3. In the left-side menu of the Project, select **Deploy > Endpoints**.
-4. On the **Endpoints** page, click **+ New Endpoint**.
-5. In the **New Endpoint** section, do the following:<br>
+1. In the left-side menu of the Cognigy.AI interface, select the Project where you want to create a Voice Gateway Endpoint.
+2. In the left-side menu of the Project, select **Deploy > Endpoints**.
+3. On the **Endpoints** page, click **+ New Endpoint**.
+4. In the **New Endpoint** section, do the following:<br>
     1. Select the **Voice Gateway** Endpoint type.<br>
     2. Add a unique name.<br>
     3. Select a relevant voice Flow from the list.<br>
-6. Click **Save**.
-7. In the Endpoint, go to the **AudioCodes Compatibility Mode** section.
-8. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your Flow with the AudioCodes Node as if it were a Flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.
-9. Manually move the required settings from your previous AudioCodes Endpoint to the Voice Gateway Endpoint.
-10. Save your changes.
+5. Click **Save**.
+6. In the Endpoint, go to the **AudioCodes Compatibility Mode** section.
+7. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your Flow with the AudioCodes Node as if it were a Flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.
+8. Manually move the required settings from your previous AudioCodes Endpoint to the Voice Gateway Endpoint.
+9. Save your changes.
 
 You can use the AudioCodes Endpoint alongside the Voice Gateway Endpoint. First, test the AI Agent with the Voice Gateway Endpoint, and if the tests are successful, you can switch to the Voice Gateway Endpoint permanently.
 

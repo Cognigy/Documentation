@@ -17,17 +17,16 @@ Canned Response templates provide support for HTML formatting.
 
 To create a new canned response, follow these steps:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Canned Responses**.
-3. In the upper-right corner, click **Add Canned Response**.
-4. In the **Add Canned Response** window, fill in the following fields:
+1. In the Live Agent interface, go to **Settings > Canned Responses**.
+2. In the upper-right corner, click **Add Canned Response**.
+3. In the **Add Canned Response** window, fill in the following fields:
     - **Short Code** — add a word that associates with the response.
     - **Content** — add a message that will be sent to the user. In this message, you can replace user contact profile data or human agent profile data with specific variables, such as <code>&lcub;&lcub;agent.name&rcub;&rcub;</code>, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code>, <code>&lcub;&lcub;contact.email&rcub;&rcub;</code>, and more. To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
     - **Level** — select one of the following options from the list:
         - **Global** — all human agents can use a canned response.
         - **Personal** — only you can use a canned response.
         - **Team** — only human agents from the selected [team](teams.md) can use a canned response. You can select only one team.
-5. Click **Submit**.
+4. Click **Submit**.
 
 The canned response will appear in the list on the Canned Responses page.
 

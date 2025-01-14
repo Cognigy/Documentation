@@ -23,17 +23,16 @@ Before configuring the outbound routing rules, ensure that the **Outbound** opti
 
 To set up a rule for outbound calls, follow these steps:
 
-1. Open the Cognigy Voice Gateway Self-Service Portal. 
-2. In the left-side menu, select **Outbound Call Routing**. 
-3. On the **Outbound Call Routing** page, click **Add outbound call routes**. 
-4. On the **Add Outbound Call Routing** page, in the Name field, specify a unique name that complies with the requirements for your rule. 
-5. Enable the **Active** setting to start applying this rule. If you want to save this rule as a draft, deactivate this setting. 
-6. Select a default outbound carrier through which the outbound calls will route when no rules are applied. 
-7. Select accounts to which the rule should belong from the Used by list. By default, All accounts are selected. 
-8. In the **Route based on first match** section, configure a set of rules:
+1. In the left-side menu of the Cognigy Voice Gateway Self-Service Portal, select **Outbound Call Routing**. 
+2. On the **Outbound Call Routing** page, click **Add outbound call routes**. 
+3. On the **Add Outbound Call Routing** page, in the Name field, specify a unique name that complies with the requirements for your rule. 
+4. Enable the **Active** setting to start applying this rule. If you want to save this rule as a draft, deactivate this setting. 
+5. Select a default outbound carrier through which the outbound calls will route when no rules are applied. 
+6. Select accounts to which the rule should belong from the Used by list. By default, All accounts are selected. 
+7. In the **Route based on first match** section, configure a set of rules:
     - **Digit pattern** — specify a code number of the country, for example, 49 for Germany, 46 for Sweden, or 1 for the United States.<br>If you need to capture a specific area, you can also use a regular expression (regex). For example, `^\d{2}41\d{8}` maps only Brazilian numbers with the country code `55` and area code `41`, which covers several cities in Brazil. Alternatively, using the digit combination `5541` gives the same mapping result.
     - **Carrier** — select a carrier from the list.
-9. Click **Save**.
+8. Click **Save**.
 
 The rule will be applied.
 

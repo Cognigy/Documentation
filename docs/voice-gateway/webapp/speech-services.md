@@ -97,17 +97,16 @@ for example, in the AWS Cloud, then copy the address of the custom provider for 
 
 To add a custom speech vendor, follow these steps:
 
-1. Open The Cognigy Voice Gateway Self-Service Portal.
-2. In the left-side menu, select **Speech**.
-3. On the **Speech services** page, click **Add speech service**.
-4. On the **Add a speech service** page, select **Custom** from the **Vendor** list.
-5. In the **Name** field, specify a unique name for your provider. You need to reuse this name in the Node configuration.
-6. From the **Account** list, select a specific account or leave the **All accounts** value if you want that custom speech provider will be available for all available accounts.
-7. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use. Note that [outbound calls via the API](../creating-outbound-calls.md#create-an-outbound-call-via-api-request) work only if a speech provider is configured without a label.
-8. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed. 
-9. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL of the server where your custom vendor is deployed.
-10. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection. 
-11. Click **Save**.
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Speech**.
+2. On the **Speech services** page, click **Add speech service**.
+3. On the **Add a speech service** page, select **Custom** from the **Vendor** list.
+4. In the **Name** field, specify a unique name for your provider. You need to reuse this name in the Node configuration.
+5. From the **Account** list, select a specific account or leave the **All accounts** value if you want that custom speech provider will be available for all available accounts.
+6. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use. Note that [outbound calls via the API](../creating-outbound-calls.md#create-an-outbound-call-via-api-request) work only if a speech provider is configured without a label.
+7. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed. 
+8. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL of the server where your custom vendor is deployed.
+9. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection. 
+10. Click **Save**.
 
 To start using your speech provider,
 you need to specify the provider name in the **Custom** parameter of the relevant Nodes,
