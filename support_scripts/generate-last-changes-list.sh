@@ -2,21 +2,24 @@
 
 # Description: Generate a list of .md files with their last modification date and user.
 
-# Step 1: Define the target directories
+# Step 1: Define the base directory as the root of the Git repository
+BASE_DIR=$(git rev-parse --show-toplevel)
+
+# Step 2: Define the target directories
 TARGET_DIRS=(
-  "docs/ai"
-  "docs/ai-copilot"
-  "docs/help"
-  "docs/insights"
-  "docs/live-agent"
-  "docs/pci-vault"
-  "docs/voice-gateway"
-  "docs/webchat"
-  "docs/xApps"
+  "$BASE_DIR/docs/ai"
+  "$BASE_DIR/docs/ai-copilot"
+  "$BASE_DIR/docs/help"
+  "$BASE_DIR/docs/insights"
+  "$BASE_DIR/docs/live-agent"
+  "$BASE_DIR/docs/pci-vault"
+  "$BASE_DIR/docs/voice-gateway"
+  "$BASE_DIR/docs/webchat"
+  "$BASE_DIR/docs/xApps"
 )
 
-# Step 2: Output file
-OUTPUT_FILE="$(pwd)/last_changes/file_changes_all.txt"
+# Step 3: Output file
+OUTPUT_FILE="$BASE_DIR/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
 # Step 3: Loop through the target directories
