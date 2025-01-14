@@ -20,7 +20,7 @@ stages:
         displayName: Generate Last Changes List
         steps:
           - checkout: self
-            persistCredentials: true
+            persistCredentials: "true"
             clean: true
             fetchDepth: 0
 
