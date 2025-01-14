@@ -30,7 +30,7 @@ for TARGET_DIR in "${TARGET_DIRS[@]}"; do
   # Step 4: Process each .md file
   while IFS= read -r file; do
     # Get the last change (date and user) for the current file
-    last_change=$(git log -1 --date=short --format="%ad %an" -- "$file")
+    last_change=$(git log -1 --date=short --format="%ad %an" main -- "$file")
     # If the file has a last change, append it to the output
     if [ -n "$last_change" ]; then
       echo -e "$file\t$last_change" >> "$OUTPUT_FILE"
