@@ -12,7 +12,11 @@ hidden: false
 
 In Voice Gateway, an account may represent a specific customer organization and can have multiple users associated with it. 
 
-The account owner controls what the other users can see and do within the platform, ensuring that sensitive data and functions are kept secure. The account owner can be a user with Service Provider and Admin scopes. They can create more than one account and manage them. To create an account, in the left-side menu, select Accounts, then click **Add account** or **+**.
+The account owner controls what the other users can see and do within the platform,
+ensuring that sensitive data and functions are kept secure.
+The account owner can be a user with Service Provider and Admin scopes.
+They can create more than one account and manage them.
+To create an account, in the left-side menu of the Voice Gateway Self-Service Portal, select **Accounts**, then click **Add account** or **+**.
 
 A user with the Account scope can view and edit only the account to which they belong.
 

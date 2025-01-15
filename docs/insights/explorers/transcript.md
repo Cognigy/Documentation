@@ -23,7 +23,7 @@ To open the Transcript Explorer, use one of the following options:
         - In the left-side menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
         The Cognigy Insights Overview dashboard will be displayed by default.
-    3. In the left-side menu, select **Transcript Explorer**.
+    3. In the left-side menu of the Insights interface, select **Transcript Explorer**.
 
 === "Via Insights"
     1. In the left-side menu of the Insights interface, select **Transcript Explorer**.

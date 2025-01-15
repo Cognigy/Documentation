@@ -67,7 +67,7 @@ You can use the Yes/No Intents feature for:
 
 To use Yes/No Intents for all Flows, do the following:
 
-1. In the left-side menu, click **Manage > Settings**.
+1. In the left-side menu of the Project, click **Manage > Settings**.
 2. On the **Settings** page, click **NLU Settings**.
 3. In the **General Flow Logic** section, select one of the following options from the **Yes/No Logic** list:
     - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.

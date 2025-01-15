@@ -22,7 +22,7 @@ You can copy a Reference ID here or export the Connection as a Package.
 To view available Connections, do the following:
 
 1. Select a Project in which you want to view Connections.
-2. In the left-side menu, navigate to **Build > Connections**.
+2. In the left-side menu of the Project, go to **Build > Connections**.
 
 On the **Connections** page, a list of available Connections will be displayed.
 
@@ -41,7 +41,7 @@ Reference IDs can be helpful if you want to edit Connections via API.
 
 To copy the Reference ID of a Connection, do the following:
 
-1. In the left-side menu, navigate to **Build > Connections**.
+1. In the left-side menu of the Project, go to **Build > Connections**.
 2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to copy the reference ID.
 3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
@@ -49,7 +49,7 @@ To copy the Reference ID of a Connection, do the following:
 
 To export a Connection, do the following:
 
-1. In the left-side menu, navigate to **Build > Connections**.
+1. In the left-side menu of the Project, go to **Build > Connections**.
 2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to export.
 3. Select **Export as package**.
 
@@ -60,7 +60,7 @@ To export a Connection, do the following:
 
 To delete a Connection, do the following:
 
-1. In the left-side menu, navigate to **Build > Connections**.
+1. In the left-side menu of the Project, go to **Build > Connections**.
 2. On the **Connections** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to delete.
 3. Select **Delete**.  A confirmation window appears and prompts you to confirm deleting the Connection.
 4. Click **Confirm**. The selected Connection will be deleted and is no longer available in the list.

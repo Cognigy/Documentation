@@ -86,7 +86,7 @@ Reference IDs can be helpful if you want to edit Locales via API.
 
 To copy the Reference ID of a Locale, do the following:
 
-1. In the left-side menu of your Project, go to **Manage > Localization**. 
+1. In the left-side menu of the Project, go to **Manage > Localization**. 
 2. On the **Localization** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Locale you want to copy the reference ID. 
 3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 

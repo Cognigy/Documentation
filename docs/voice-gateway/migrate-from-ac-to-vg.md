@@ -31,7 +31,7 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 ## Create a Voice Gateway Endpoint
 
 1. In the left-side menu of the Cognigy.AI interface, select the Project where you want to create a Voice Gateway Endpoint.
-2. In the left-side menu of the Project, select **Deploy > Endpoints**.
+2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
 4. In the **New Endpoint** section, do the following:<br>
     1. Select the **Voice Gateway** Endpoint type.<br>

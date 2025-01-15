@@ -69,7 +69,7 @@ Once the steps are added, proceed to the Flow section to integrate your goal wit
 
 To add a goal to a Flow, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, either use an existing Flow or click **+ New Flow** to create a new one. 
 3. In the Flow editor, add a **Track Goal** Node to monitor goal progress within the Flow. 
 4. Configure the Node settings:
@@ -120,11 +120,10 @@ Before deleting the goal, either replace it with another goal in the Flow or rem
 
 To delete a goal, follow these steps:
 
-1. Go to the Project in which you want to delete a goal.
-2. Go to **Build > Goals**. 
-3. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
-4. Select **Delete**. 
-5. Confirm the deletion by entering the name of the goal.
+1. In the Project in which you want to delete a goal, go to **Build > Goals**.
+2. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
+3. Select **Delete**. 
+4. Confirm the deletion by entering the name of the goal.
 
 The goal will be deleted from the list.
 

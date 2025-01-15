@@ -98,7 +98,7 @@ To empower your human agents to securely access end user credit card data via PC
 
 In the following example, we use the Webchat Widget, the Webchat Endpoint, and Cognigy Live Agent to demonstrate PCI Vault:
 
-1. In the left-side menu of your Project, click **Deploy > Endpoints**. 
+1. In the left-side menu of the Project, go to **Deploy > Endpoints**. 
 2. On the **Endpoints** page, select the **Webchat** Endpoint that you have already created with the predefined configuration.
 3. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**. 
 4. Start a conversation in the chat. For example, `I would like to pay for the ticket`.

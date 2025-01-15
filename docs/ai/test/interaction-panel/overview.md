@@ -29,7 +29,7 @@ follow these steps to familiarize yourself with its features and start testing A
 
 To open the Interaction Panel, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, select the Flow that contains the AI Agent you want to test. 
 3. In the toolbar at the top right of the Cognigy.AI interface, click ![chat-menu](../../../_assets/icons/chat-menu.svg).
 

@@ -18,7 +18,7 @@ Flows let you customize and design the behavior of AI Agents, enabling you to cr
 
 To create a Flow, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, click **+ New Flow**.
 3. In the New Flow window, fill in the following fields:
     - **Name** — create a meaningful name for your Flow, for example, `Customer Support`.
@@ -37,7 +37,7 @@ Reference IDs can be helpful if you want to edit Flows via API.
 
 To copy the Reference ID of a Flow, do the following:
 
-1. In the left-side menu of your Project, navigate to **Build > Flows**. 
+1. In the left-side menu of the Project, go to **Build > Flows**. 
 2. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
 3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 

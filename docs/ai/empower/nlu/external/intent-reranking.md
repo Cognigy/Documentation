@@ -39,7 +39,7 @@ To rerank Intents via an external LLM, follow these steps:
 
 To add descriptions to Intents, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, select the Flow you want to change.
 3. In the upper-right corner, select **NLU**.
 4. On the **Intents** tab, locate the Intent to which you want to add a description.

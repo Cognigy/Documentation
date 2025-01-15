@@ -25,7 +25,7 @@ Contact Profiles offer the following benefits:
 
 To view Contact Profiles, follow these steps:
 
-1. In the left-side menu of the Projects page, select a Project.
+1. In the left-side menu of the **Projects** page, select a Project.
 2. In the left-side menu of the Project page, select **Manage > Contact Profiles**.
 
 On the **Contact Profiles** page, you can search for Contact Profiles using the search field in the upper-right corner and sort the results by clicking on the column headers. 
@@ -35,7 +35,7 @@ The **Hide Inactive Profiles** setting is activated by default, allowing you to 
 
 To view a Contact Profile, follow these steps:
 
-1. In the left-side menu of the Projects page, select a Project.
+1. In the left-side menu of the **Projects** page, select a Project.
 2. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
 3. Select a Contact Profile from the list. The Contact Profile for a specific user will open.
 
@@ -74,7 +74,7 @@ If you want to extend the Profile Schema, you can create custom fields to make P
 
 To create a custom field, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Manage > Contact Profiles**. 
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**. 
 2.  On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner. 
 3. In the **Profile Schema** window, fill in the following fields:
     - **Field Name** — enter a name of the field.
@@ -94,7 +94,7 @@ To add an extra field, click **Add** in the upper-right corner of the **Profile 
 
 To delete a custom field, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Manage > Contact Profiles**. 
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**. 
 2. In the upper-left corner of the **Contact Profiles** page, click **Edit Schema**. 
 3. In the **Profile Schema** window, locate the field that you want to delete. 
 4. Next to the **Edit Field** title, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete**. 

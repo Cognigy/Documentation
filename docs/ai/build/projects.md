@@ -78,13 +78,13 @@ You can copy the Project ID using one of the following methods:
 
 === "From the UI" 
 
-    1. In the left-side menu of the Projects page, find the Project you need and hover your cursor over it.
+    1. In the left-side menu of the **Projects** page, find the Project you need and hover your cursor over it.
     2. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
     3. Select **Copy Project ID**. The ID will be copied to the clipboard.
 
 === "From the URL" 
 
-    1. In the left-side menu of the Projects page, select the Project you need.
+    1. In the left-side menu of the **Projects** page, select the Project you need.
     2. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
     3. Save the copied Project ID later use.
 

@@ -30,7 +30,7 @@ using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing 
 
 To set up a third-party NLU model, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Manage > Settings**.
+1. In the left-side menu of the Project, go to **Manage > Settings**.
 2. Go to the **NLU Settings** section.
 3. From the **Embedding Model Provider** list, select a model that you added as part of the [Prerequisites](#prerequisites).
 4. Confirm changes.
@@ -51,7 +51,7 @@ Select the number of Flows that need training:
 
 If you have only one Flow in your Project, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, select the Flow that you want to train.
 3. In the upper-right corner, select **NLU**.
 4. On the **Intents** tab, click **Build Model**.
@@ -62,7 +62,7 @@ Once the model building process is complete, the intent recognition capability o
 
 If you have more one Flow in your Project, follow these steps:
 
-1. In the left-side menu of the Project, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, check if the **Train all Flows** button exists. If the **Train all Flows** button is not enabled for your environment, specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 3. Click **Train all Flows**. 
 

@@ -15,7 +15,7 @@ Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup
 To create a Live Agent Flow, follow these steps:
 
 1. In the Cognigy.AI interface, open the Project.
-2. In the left-side menu of the Project, select **Build > Flows**.
+2. In the left-side menu of the Project, go to **Build > Flows**.
 3. Click **+ New Flow**.
 4. Specify a unique name and provide a relevant description. For example, `Customer Support Flow`.
 5. Click **Create**.

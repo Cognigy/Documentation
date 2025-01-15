@@ -54,7 +54,7 @@ you must either delete all existing Knowledge Stores in the current Project or c
 
 You can create a preconfigured Knowledge Store. To do this, follow these steps:
 
-1. In the left-side menu of the Project, select **Knowledge**. The Knowledge AI wizard will be opened.
+1. In the left-side menu of the Project, go to **Knowledge**. The Knowledge AI wizard will be opened.
 2. Continue following the wizard instructions. 
 3. Specify a unique name and select an embedding model.
 
