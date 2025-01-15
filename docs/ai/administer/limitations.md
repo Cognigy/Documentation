@@ -43,7 +43,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum total number of Intents in Flows including Attached Flow Intents                                                          | 2,500                           | **10,000** |            |
 | Maximum time an Intent-Training task is allowed to run                                                                            | 10 m                            |            |            |
 | **Cognigy Functions**                                                                                                             |                                 |            |            |
-| Maximum number of outbound HTTP requests in a single Cognigy Function instance                                                    | 5                               |            |            | 
+| Maximum number of outbound HTTP requests in a single Cognigy Function instance                                                    | 5                               |            |            |
 | Maximum HTTP response size in Cognigy Functions                                                                                   | 1 MB                            |            |            |
 | Maximum time a Cognigy Function can run                                                                                           | 15 m                            |            |            |
 | Maximum time for how long data about Cognigy Function instances is stored                                                         | 30 days                         |            |            |
@@ -67,6 +67,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum number of HTTP requests an Options Resolver can send                                                                      | 5                               |            |            |
 | Maximum HTTP response size in an Options Resolver                                                                                 | 1 MB                            |            |            |
 | Maximum time an Options Resolver can run                                                                                          | 5 s (max HTTP calls * 1 s)      |            |            |
+| Maximum message size for [Untrusted Extensions](../build/extensions.md#make-an-extension-trusted)                                 | 300 KB                          |            |            |
 | **Execution and Operations**                                                                                                      |                                 |            |            |
 | Maximum number of times a Flow can execute the same Path for a single user message before “Infinite Loop protection” is triggered | 4                               |            |            |
 | Maximum number of undo/redo operations to be stored per user in the Flow Editor                                                   | 5                               |            |            |
@@ -92,7 +93,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 !!! note
     If you have on-premises Cognigy.AI environment, you can set TTL values system-wide via the Config Map and/or organization-wide via [Management UI](../administer/access/management-ui.md).
 
-| Description                                                                              | Default value | 
+| Description                                                                              | Default value |
 |------------------------------------------------------------------------------------------|---------------|
 | **Logs**                                                                                 |               |
 | Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |
