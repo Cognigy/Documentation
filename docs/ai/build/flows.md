@@ -38,7 +38,7 @@ Reference IDs can be helpful if you want to edit Flows via API.
 To copy the Reference ID of a Flow, do the following:
 
 1. In the left-side menu of the Project, go to **Build > Flows**. 
-2. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to copy the reference ID. 
+2. On the **Flows** page, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) next to the Flow to copy the reference ID. 
 3. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Flow Interface
@@ -64,7 +64,7 @@ including the currently selected Project, Flow, and Locale.
 
 - To open the [Project's dashboard](projects.md#project-dashboard), click the icon located on the left side next to the displayed Flow project. The dashboard provides specific information regarding your projects, the project members involved, and an analytic chart.
 - To switch to another Flow, click the displayed Flow name and select the desired Flow from the list.
-- To change the [Locale](#locale-settings), click the displayed Locale on the right side next to the Flow list and select the desired Locale you want to switch to.
+- To change the [Locale](#locale-settings), click the displayed Locale next to the Flow list and select the desired Locale you want to switch to.
 
 For more information, read [Projects](projects.md#top-toolbar).
 
@@ -155,7 +155,7 @@ To manage the Flow Editor parameters, such as zoom and navigation, go to the con
 To manage Flows in different use cases for your Project, do the following:
 
 1. Go to **Build** > **Flows** to see your available Flows for the selected Project.
-2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to edit. A selection menu appears.
+2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg next to the Flow you want to edit. A selection menu appears.
 3. Select one of the following options, depending on the intended action you need:
     - **Edit** — change the name and the description for the selected Flow.
     - **Delete** — delete a Flow. When you select this option, you need to confirm the deletion of the selected Flow.

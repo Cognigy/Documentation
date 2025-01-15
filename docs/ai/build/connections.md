@@ -31,7 +31,7 @@ On the **Connections** page, a list of available Connections will be displayed.
 To edit a Connection, do the following:
 
 1. Go to **Build > Connections** to open the Connections view with listed Connections.
-2. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to edit.
+2. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) next to a Connection you want to edit.
 3. Select **Edit** to open the Connection editor window.
 4. Change configuration settings and click **Save**.
 

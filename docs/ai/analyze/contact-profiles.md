@@ -37,7 +37,7 @@ To view a Contact Profile, follow these steps:
 
 1. In the left-side menu of the **Projects** page, select a Project.
 2. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
-3. Select a Contact Profile from the list. The Contact Profile for a specific user will open.
+3. Select a Contact Profile from the list. The Contact Profile shows user details.
 
 Within the individual Contact Profile, a list of conversation transcripts will be displayed, with the stored Contact Profile data available in the right pane.
 To view more details about each session, select a session from the list. You will be routed to the [Transcript Explorer](../../insights/explorers/transcript.md) in Insights.
@@ -122,7 +122,7 @@ User data is stored in all Contact Profiles by default. You can turn off this fo
 To turn off data collection for a Contact Profile, follow these steps:
 
 1. In the left-side menu of the Project, go to **Manage > Contact Profiles**.
-2. Select a Contact Profile from the list. The Contact Profile for a specific user will open.
+2. Select a Contact Profile from the list. The Contact Profile shows user details.
 3. In the upper-left corner, deactivate the **Data collection active** setting.
 4. Confirm your decision. Choose whether to keep or delete the current Profile data and conversation history:
      - **Keep** — previously collected data will remain saved, but no new data will be collected.
