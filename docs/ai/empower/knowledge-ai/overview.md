@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.93-blue.svg)](../../../release-notes/4.93.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -85,12 +85,17 @@ You can create a preconfigured Knowledge Store. To do this, follow these steps:
     === "OpenAI"
         - **Connection name** — create a unique name for your connection.<br>
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
-        - **Custom Model** — this parameter is optional. Add the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
 
     === "Aleph Alpha"
         - **Connection name** — create a unique name for your connection.<br>
-        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).<br>        
+        - **token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).<br>        
         - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL, for example: `https://api.aleph-alpha.com`.
+
+   === "Amazon Bedrock"
+        You can add the `amazon.titan-embed-text-v2:0` model. The model is hidden behind the `FEATURE_ENABLE_AWS_BEDROCK_EMBEDDING_LLM_WHITELIST` feature flag.
+        - **Connection name** — create a unique name for your connection.<br>
+        - **accessKeyID** — specify an Access Key ID. Log in to the AWS Management Console, go to the IAM dashboard, select **Users**, and choose the IAM user. Navigate to the **Security credentials** tab, and under **Access keys**, create a new access key if one hasn't been created. Copy the Access Key ID provided after creation.<br>
+        - **secretAccessKey** — specify a Secret Access Key. After creating the access key, you'll be prompted to download a file containing the Access Key ID and the Secret Access Key. Alternatively, you can retrieve the Secret Access Key by navigating to the IAM dashboard, selecting the user, going to the **Security credentials** tab, and clicking **Show** next to the Access Key ID to reveal and copy the Secret Access Key.
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
