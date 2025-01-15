@@ -75,7 +75,7 @@ If you want to extend the Profile Schema, you can create custom fields to make P
 To create a custom field, follow these steps:
 
 1. In the left-side menu of the Project, go to **Manage > Contact Profiles**. 
-2.  On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner. 
+2. On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner. 
 3. In the **Profile Schema** window, fill in the following fields:
     - **Field Name** — enter a name of the field.
     - **Internal Name** — enter a system name of the field that can only consist of alphanumeric characters (uppercase and lowercase letters `A-Z`, numbers `0-9`) and underscores (`_`). It is case-insensitive, meaning `NAME123` is considered the same as `name123`. The internal name must be unique and should not duplicate internal names of existing parameters.

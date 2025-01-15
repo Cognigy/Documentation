@@ -36,7 +36,7 @@ To filter audit events, follow these steps:
 1. Access the **Audit Events** page by one of the following options:
     - Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page, then select **Audit Events** from the left-side menu.
     - Select **Admin Center** from the User Menu in the bottom-left corner of the Project page, then select **Audit Events** from the left-side menu.
-2. On the Audit Events page, choose your preferred filter options:
+2. On the **Audit Events** page, choose your preferred filter options:
     - **User email** — find all events triggered by a specific user, enter the user’s email in the search field. The list of audit events will update accordingly to display only the events related to that user. 
     - **Event type** — find a specific type of system event (for example, `Action`, `Create`, `Patch`), select a type from the **Filter by Type** list. The list of audit events will update to show only events matching the selected type.
 

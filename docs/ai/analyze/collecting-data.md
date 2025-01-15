@@ -103,7 +103,7 @@ You can create an analytics step in the following components:
 
 To add an analytics step in the Node, do the following:
 
-1. In the left-side menu of the Project , select **Build > Flows**. 
+1. In the left-side menu of the Project, go to **Build > Flows**. 
 2. On the **Flows** page, select the existing Flow or create a new one.
 3. In the Flow editor, select the Node for which you want to add an Analytics step.
 4. Open the Node editor by clicking the Node.
@@ -117,7 +117,7 @@ The Step will be recorded in the Analytics database once the Node is executed.
 
 To add an analytics step in the Intent, do the following:
 
-1. In the left-side menu of the Project , select **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, select the existing Flow or create a new one.
 3. In the upper-right corner, select the **NLU** tab.
 4. On the **Intents** tab, go to the existing Intent or create a new one.

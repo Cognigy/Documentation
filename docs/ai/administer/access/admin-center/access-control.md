@@ -48,7 +48,7 @@ To register a new user in Cognigy for your organization, you must have an `admin
 
 To create a new user, follow these steps:
 
-1. In the upper-right corner of the **Projects** page, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
 2. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
 3. In the **New User** window, fill in the following fields:
     - **Display Name** — a name that will be visible to other users within the organization.
@@ -62,7 +62,7 @@ When you create a new user, this user will receive a notification at the email a
 
 To assign global roles to a user, follow these steps:
 
-1. In the upper-right corner of the **Projects** page, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
 2. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
 
     === "New user"
@@ -86,7 +86,7 @@ Once a role has been assigned to a user, the role label will be displayed in the
 
 To assign a Project to a user, follow these steps:
 
-1. In the upper-right corner of the **Projects** page, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
 2. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
 
     === "New user"

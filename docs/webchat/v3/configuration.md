@@ -14,7 +14,7 @@ To prepare the AI Agent for your website, you need to deploy it by [creating a W
 ## Create a Webchat v3 Endpoint
 
 1. In the left-side menu of the Cognigy.AI interface, select a Project.
-2. In the left-side menu of the Project, select **Deploy > Endpoints**.
+2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
 4. In the **New Endpoint** section, do the following:<br>
     1. Select the **Webchat (v3)** Endpoint type.<br>

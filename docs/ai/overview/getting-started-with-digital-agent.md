@@ -53,7 +53,7 @@ To build a chat AI Agent, follow these steps:
 
 Once your AI Agent is created, you can test it via the Interaction Panel.
 
-## Test your Chat Agent
+## Test your Chat AI Agent
 
 To test your AI Agent, follow these steps:
 

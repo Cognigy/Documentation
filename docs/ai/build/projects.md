@@ -21,7 +21,7 @@ AI Agents can deploy on a wide range of channels.
 
 ## Create a Project
 
-1. In the upper-left corner of the Projects page, click the **Plus button** to create a Project.
+1. In the upper-left corner of the **Projects** page, click the **Plus button** to create a Project.
 2. Give your Project a unique name that describes its purpose. You will also be able to change the name later.
 3. Select the primary language for your Project.
 4. Select a color that will be associated with your Project.
@@ -66,7 +66,7 @@ The Projects are sorted by last activity, with the most recently updated Project
 
 To search for Projects in Cognigy.AI, follow these steps:
 
-1. In the upper-left corner of the Projects page, go to the **Search Projects** filed.
+1. In the upper-left corner of the **Projects** page, go to the **Search Projects** filed.
 2. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
 3. Select the Project you want to edit.
 

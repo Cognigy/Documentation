@@ -64,7 +64,7 @@ Once your AI Agent is created, you can deploy it via the Webchat v3 Endpoint.
 
 To create a Webchat Endpoint v3, follow these steps:
 
-1. In the left-side menu of the Project , select **Deploy > Endpoints**.
+1. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following:<br>
     3.1. Select the **Webchat (v3)** Endpoint type.<br>
