@@ -44,7 +44,7 @@ Node annotation helps you analyze customer reactions at specific stages of their
 
 To annotate a Node, follow the steps below:
 
-1. In the left-side menu of Project, go to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner or using an existing one.
 3. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or using an existing one.
 4. Open the Node editor by clicking the Node you want to annotate.
@@ -61,7 +61,7 @@ Intent annotation helps you analyze customer behaviors and preferences within sp
 
 To annotate an Intent, follow these steps:
 
-1. In the left-side menu of Project, go to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
 3. In the upper-right corner of the Flow editor, select the **NLU** tab.
 4. On the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
@@ -148,7 +148,7 @@ To view step operations, right-click the selected Step on the Step Explorer page
 | Operation                             | Description                                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Open Flow                             | Opens a related Flow in the Cognigy.AI interface in a new browser tab.                                                                                                                                                                                                                                                                                          |
-| Open Node                             | Opens a related Node in the Cognigy.AI interface in a new browser tab.                                                                                                                                                                                                                                                                                          |                                                                             |
+| Open Node                             | Opens a related Node in the Cognigy.AI interface in a new browser tab.                                                                                                                                                                                                                                                                                          |
 | Open sessions that took this path     | Tracks the number of sessions following the same sequence of steps, including the selected step, which is useful for understanding user interaction with your application. It helps optimize the user experience, identify successful strategies, and assess the effectiveness of features. <br>Related sessions are displayed on the Transcript Explorer page. |
 | Open sessions which contain this step | Tracks the number of sessions in which end users have completed the selected step.<br> Related sessions are displayed on the Transcript Explorer page.                                                                                                                                                                                                          |
 | Open conversations that ended here    | This option appears in the menu only if you click the Drop-off step. This means that you can view all sessions from which end users leave a step before finishing it.                                                                                                                                                                                           |
