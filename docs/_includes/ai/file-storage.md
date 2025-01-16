@@ -7,7 +7,7 @@
     5. In the left-side menu, navigate to **Data storage > Containers**. Copy the name of the target container from the **Name** column. This container will store user-uploaded files. Save the container name for later use.
     6. In the left-side menu, go to **Security + networking** and select **Access Keys**. 
     7. On the **Access Keys** page, copy the name from the **Storage account name** field and the key from the **Key** field for later use. 
-    8. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
+    8. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, go to **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
     9. Depending on the Endpoint you select, proceed as follows:
         - **Webchat v3** — go to **Webchat Behavior > Attachment Upload** on the **Endpoint Settings** page. Activate the **Allow Attachment Upload** setting.
         - **Other Endpoints** — go to the **File Storage** section on the **Endpoint Settings** page.
@@ -29,7 +29,7 @@
     7. On the **My Security Credentials** page, go to **Access keys** and click **Create access key**.
     8. On the **Alternatives to root user access keys** page, review the security recommendations. To continue, select the checkbox, and then click **Create access key**. On the **Retrieve access key** page, your access key ID is displayed.
     9. Under **Secret access key**, click **Show** and then copy the access key ID and secret key from your browser window and save them for later use. Click **Done**. If you want to use temporary access with MFA instead of a secret key, you need a [session token](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html#:~:text=Returns%20a%20set%20of%20temporary,key%2C%20and%20a%20security%20token). To set up a session token, obtain this value via AWS API and specify the token in the `AWS_SESSION_TOKEN` variable in the `values.yaml` file. For more information, read [Using temporary credentials with AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html). 
-    10. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
+    10. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, go to **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
     11. Depending on the Endpoint you select, proceed as follows:
         - **Webchat v3** — go to **Webchat Behavior > Attachment Upload** on the **Endpoint Settings** page. Activate the **Allow Attachment Upload** setting.
         - **Other Endpoints** — go to the **File Storage** section on the **Endpoint Settings** page.
@@ -56,7 +56,7 @@
        -----END PRIVATE KEY-----
        ```
        Save the key for later use.
-    9. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, select **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
+    9. On the Cognigy.AI side, open the Project that contains the Endpoint for which you want to configure file uploads. In the left-side menu of the Project, go to **Deploy > Endpoints**. On the **Endpoints** page, select one of the Endpoints that supports file uploads or create a new one.
     10. Depending on the Endpoint you select, proceed as follows:
         - **Webchat v3** — go to **Webchat Behavior > Attachment Upload** on the **Endpoint Settings** page. Activate the **Allow Attachment Upload** setting.
         - **Other Endpoints** — go to the **File Storage** section on the **Endpoint Settings** page.

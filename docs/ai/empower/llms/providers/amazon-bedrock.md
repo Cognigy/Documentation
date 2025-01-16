@@ -18,12 +18,11 @@ To start using an Amazon Bedrock model with Cognigy.AI features, follow these st
 
 To add a model provided by Amazon Bedrock to Cognigy.AI, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. Go to **Build > LLM**.
-3. Click **+New LLM**.
-4. In the **New LLM** window, select a model from the **Model Type** list.
-5. Add a unique name and description for your model.
-6. From the **Provider** list, select an LLM's provider:<br>
+1. In the left-side menu of the Project, go to **Build > LLM**.
+2. Click **+New LLM**.
+3. In the **New LLM** window, select a model from the **Model Type** list.
+4. Add a unique name and description for your model.
+5. From the **Provider** list, select an LLM's provider:<br>
     1. From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
         - **Model Type** — select the **Chat** type for models that support the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).<br>
         - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html) documentation.<br>
@@ -36,8 +35,8 @@ To add a model provided by Amazon Bedrock to Cognigy.AI, follow these steps:
     5. Fill in the remaining field:<br>
         - **Region** — enter the AWS region where your model is located, for example, `us-east-1` for the US East (N. Virginia) region.<br>
 
-7. To apply changes, click **Save**.
-8. To check if the connection was set up, click **Test**.
+6. To apply changes, click **Save**.
+7. To check if the connection was set up, click **Test**.
 
 When the model is added, you will see it in the list of models.
 

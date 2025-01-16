@@ -52,9 +52,8 @@ The configuration of additional time zones depends on the type of your installat
 
 To change time zone preferences, follow these steps:
 
-1. Go to Cognigy.AI. interface.
-2. In the upper-right corner of the **Projects** page, select **User Menu > My Profile**.
-3. In the **Preferences** section, select time zone from the **Select Insights time zone** list.
+1. In the upper-right corner of the **Projects** page, select **User Menu > My Profile**.
+2. In the **Preferences** section, select time zone from the **Select Insights time zone** list.
 
 New time zone will be applied to all existing data.
 

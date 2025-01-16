@@ -85,12 +85,11 @@ The following table represents data that can be edited within Live Agent and sto
 
 To change the Contact Profile, follow these steps:
 
-1. Go to the Live Agent interface. 
-2. In the left-side menu, select **Conversations**. 
-3. Select a conversation from the list. 
-4. On the right side of the page, navigate to **Conversation Details**. 
-5. On the **Details** tab, click ![edit](../../_assets/icons/edit.svg) to change the Contact Profile. 
-6. In the **Contact Profile** window, fill in the fields and click **Submit** to save your changes.
+1. In the left-side menu of the Live Agent interface, select **Conversations**. 
+2. Select a conversation from the list. 
+3. On the right side of the page, navigate to **Conversation Details**. 
+4. On the **Details** tab, click ![edit](../../_assets/icons/edit.svg) to change the Contact Profile. 
+5. In the **Contact Profile** window, fill in the fields and click **Submit** to save your changes.
 
 This action will also update the [Contact Profile](../../ai/analyze/contact-profiles.md) on the Cognigy.AI side. In Live Agent, cached Contact Profile data will persist for one hour. You can change this parameter if you have an on-premises or dedicated SaaS environment. To do so, add the `COGNIGY_CONTACT_PROFILE_CACHE_TIME` variable in the Live Agent `values.yaml` file and specify the value in seconds.
 
@@ -99,11 +98,10 @@ This action will also update the [Contact Profile](../../ai/analyze/contact-prof
 By default, only fields that contain values appear in the Contact Profile.
 To view empty fields, follow these steps:
 
-1. Go to the Live Agent interface.
-2. In the left-side menu, select **Conversations**.
-3. Select a conversation from the list.
-4. On the right side of the page, navigate to **Conversation Details**.
-5. On the **Details** tab, click ![closed-eye](../../_assets/live-agent/icons/closed-eye.svg) to view the empty fields. To hide them again, click ![opened-eye](../../_assets/live-agent/icons/opened-eye.svg).
+1. In the left-side menu of the Live Agent interface, select **Conversations**.
+2. Select a conversation from the list.
+3. On the right side of the page, navigate to **Conversation Details**.
+4. On the **Details** tab, click ![closed-eye](../../_assets/live-agent/icons/closed-eye.svg) to view the empty fields. To hide them again, click ![opened-eye](../../_assets/live-agent/icons/opened-eye.svg).
 
 ### Conversation Actions
 
@@ -143,14 +141,13 @@ Cognigy provides three assistants for giving human agents support in their servi
 
 To open a conversation in Live Agent, follow these steps:
 
-1. Open your Live Agent interface.
-2. In the left-side menu, click **Conversations**.
-3. In the upper-left corner, select **All Conversations**.
-4. On the Conversations panel, choose one of the following tabs:
+1. In the left-side menu of the Live Agent interface, click **Conversations**.
+2. In the upper-left corner, select **All Conversations**.
+3. On the Conversations panel, choose one of the following tabs:
     - **Mine** — displays conversations assigned to you.
     - **Unassigned** — shows conversations without a designated owner.
     - **All** — shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can grant access through the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
-5. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
+4. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-side panel.
 
 ## More Information
 

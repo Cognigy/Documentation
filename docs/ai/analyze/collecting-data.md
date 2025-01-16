@@ -103,15 +103,13 @@ You can create an analytics step in the following components:
 
 To add an analytics step in the Node, do the following:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side **Project** menu, select **Build > Flows**.
-4. On the **Flows** page, select the existing Flow or create a new one.
-5. In the Flow editor, select the Node for which you want to add an Analytics step.
-6. Open the Node editor by clicking the Node.
-7. In the Node editor, navigate to **Settings > Analytics Step**. 
-8. In the **Analytics Step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters. 
-9. Click **Save**.
+1. In the left-side menu of the Project, go to **Build > Flows**. 
+2. On the **Flows** page, select the existing Flow or create a new one.
+3. In the Flow editor, select the Node for which you want to add an Analytics step.
+4. Open the Node editor by clicking the Node.
+5. In the Node editor, navigate to **Settings > Analytics Step**. 
+6. In the **Analytics Step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters. 
+7. Click **Save**.
 
 The Step will be recorded in the Analytics database once the Node is executed.
 
@@ -119,15 +117,13 @@ The Step will be recorded in the Analytics database once the Node is executed.
 
 To add an analytics step in the Intent, do the following:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side **Project** menu, select **Build > Flows**.
-4. On the **Flows** page, select the existing Flow or create a new one.
-5. In the upper-right corner, select the **NLU** tab.
-6. On the **Intents** tab, go to the existing Intent or create a new one.
-7. Navigate to **Advanced > Analytics step**.
-8. In the **Analytics step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters.
-9. Click **Save**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
+2. On the **Flows** page, select the existing Flow or create a new one.
+3. In the upper-right corner, select the **NLU** tab.
+4. On the **Intents** tab, go to the existing Intent or create a new one.
+5. Navigate to **Advanced > Analytics step**.
+6. In the **Analytics step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters.
+7. Click **Save**.
 
 The Step will be recorded in the Analytics database once the Flow is executed.
 

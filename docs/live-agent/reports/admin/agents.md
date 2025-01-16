@@ -21,9 +21,8 @@ To learn more about metrics, refer to [Report Metrics](overview.md#report-metric
 
 To view a report, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Agents**.
-3. In the upper-left corner of the report page, select an agent and time period from the lists.
+1. In the Live Agent interface, go to **Reports > Agents**.
+2. In the upper-left corner of the report page, select an agent and time period from the lists.
 
 The chart will be updated with the corresponding data related to the selected filters.
 

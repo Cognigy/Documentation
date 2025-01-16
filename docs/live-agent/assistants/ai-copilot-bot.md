@@ -43,14 +43,13 @@ You can create multiple AI Copilot Bots within an Inbox.
 
 To create an AI Copilot Bot, do the following:
 
-1. Open the Live Agent interface.
-2. Navigate to **Settings > Inboxes**.
-3. To edit the previously created Inbox settings, click **Settings** next to the Inbox.
-4. On the **Settings** tab, click **Add Bots**.
-5. In the **Create AI Copilot Bot** window, fill in the following fields:
+1. In the Live Agent interface, go to **Settings > Inboxes**.
+2. To edit the previously created Inbox settings, click **Settings** next to the Inbox.
+3. On the **Settings** tab, click **Add Bots**.
+4. In the **Create AI Copilot Bot** window, fill in the following fields:
     - **Name** — enter a unique name for your bot. This name is helpful if there are multiple bots within the same Inbox, allowing you to distinguish them easily.
     - **Endpoint Config URL** — enter the URL copied from the Endpoint settings in Cognigy.AI. You can find and copy the **Config URL** in the Webchat Endpoint settings for the previously created AI Copilot Bot Flow in Cognigy.AI.
-6. Click **Add**.   
+5. Click **Add**.   
 
 The created AI Copilot Bot will be available for all assigned human agents within the Inbox.
 

@@ -23,10 +23,7 @@ Depending on your role, the following reports will be available:
 
 ## View Reports
 
-To view the reports, do the following:
-
-1. Go to Live Agent.
-2. In the left-side menu, click **Reports**.
+To view the reports, select **Reports** in the left-side menu of the Live Agent interface.
 
 ## More information
 

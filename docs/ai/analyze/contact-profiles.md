@@ -25,9 +25,8 @@ Contact Profiles offer the following benefits:
 
 To view Contact Profiles, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side menu of the Project page, select **Manage > Contact Profiles**.
+1. In the left-side menu of the **Projects** page, select a Project.
+2. In the left-side menu of the Project page, select **Manage > Contact Profiles**.
 
 On the **Contact Profiles** page, you can search for Contact Profiles using the search field in the upper-right corner and sort the results by clicking on the column headers. 
 The **Hide Inactive Profiles** setting is activated by default, allowing you to browse only active Profiles.
@@ -36,10 +35,9 @@ The **Hide Inactive Profiles** setting is activated by default, allowing you to 
 
 To view a Contact Profile, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
-4. Select a Contact Profile from the list. The Contact Profile for a specific user will open.
+1. In the left-side menu of the **Projects** page, select a Project.
+2. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
+3. Select a Contact Profile from the list. The Contact Profile shows user details.
 
 Within the individual Contact Profile, a list of conversation transcripts will be displayed, with the stored Contact Profile data available in the right pane.
 To view more details about each session, select a session from the list. You will be routed to the [Transcript Explorer](../../insights/explorers/transcript.md) in Insights.
@@ -76,11 +74,9 @@ If you want to extend the Profile Schema, you can create custom fields to make P
 
 To create a custom field, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select a Project.
-3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**. 
-4. On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner. 
-5. In the **Profile Schema** window, fill in the following fields:
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**. 
+2. On the **Contact Profiles** page, click **Edit Schema** in the upper-left corner. 
+3. In the **Profile Schema** window, fill in the following fields:
     - **Field Name** — enter a name of the field.
     - **Internal Name** — enter a system name of the field that can only consist of alphanumeric characters (uppercase and lowercase letters `A-Z`, numbers `0-9`) and underscores (`_`). It is case-insensitive, meaning `NAME123` is considered the same as `name123`. The internal name must be unique and should not duplicate internal names of existing parameters.
     - **Type** — select a field type:
@@ -88,7 +84,7 @@ To create a custom field, follow these steps:
         - **Number** — for integers. This type accepts whole numbers (no decimals) within the range of -9,007,199,254,740,991 to 9,007,199,254,740,991. Numbers exceeding this limit cannot be accurately represented in JavaScript.
         - **YesNo** — for boolean values. This type is used for `true` or `false` options.
         - **Complex** — for objects. This type allows you to define nested structures containing other data types.
-6. Click **Save** to confirm your changes.
+4. Click **Save** to confirm your changes.
 
 A new field appears in both the Profile Schema and the individual Contact Profile.
 
@@ -98,13 +94,11 @@ To add an extra field, click **Add** in the upper-right corner of the **Profile 
 
 To delete a custom field, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select a Project.
-3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**. 
-4. In the upper-left corner of the **Contact Profiles** page, click **Edit Schema**. 
-5. In the **Profile Schema** window, locate the field that you want to delete. 
-6. Next to the **Edit Field** title, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete**. 
-7. Confirm the field deletion by entering the internal field name and clicking **Confirm**. 
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**. 
+2. In the upper-left corner of the **Contact Profiles** page, click **Edit Schema**. 
+3. In the **Profile Schema** window, locate the field that you want to delete. 
+4. Next to the **Edit Field** title, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete**. 
+5. Confirm the field deletion by entering the internal field name and clicking **Confirm**. 
 
 Once a custom field is deleted, any data related to this field will be removed from all Contact Profiles.
 
@@ -127,12 +121,10 @@ User data is stored in all Contact Profiles by default. You can turn off this fo
 
 To turn off data collection for a Contact Profile, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select a Project.
-3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
-4. Select a Contact Profile from the list. The Contact Profile for a specific user will open.
-5. In the upper-left corner, deactivate the **Data collection active** setting.
-6. Confirm your decision. Choose whether to keep or delete the current Profile data and conversation history:
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**.
+2. Select a Contact Profile from the list. The Contact Profile shows user details.
+3. In the upper-left corner, deactivate the **Data collection active** setting.
+4. Confirm your decision. Choose whether to keep or delete the current Profile data and conversation history:
      - **Keep** — previously collected data will remain saved, but no new data will be collected.
      - **Delete Data** — all data, including past recordings, will be permanently deleted.
 
@@ -144,11 +136,9 @@ You can export individual Contact Profiles as a JSON file.
 
 To export a Contact Profile, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select a Project.
-3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
-4. Select a Contact Profile from the list.
-5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Contact**.
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**.
+2. Select a Contact Profile from the list.
+3. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Contact**.
 
 The Contact Profile will be exported as a JSON file.
 
@@ -156,11 +146,9 @@ The Contact Profile will be exported as a JSON file.
 
 To delete a Contact Profile, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select a Project.
-3. In the left-side menu of the Project page, navigate to **Manage > Contact Profiles**.
-4. Select a Contact Profile from the list.
-5. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete Contact**.
+1. In the left-side menu of the Project, go to **Manage > Contact Profiles**.
+2. Select a Contact Profile from the list.
+3. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete Contact**.
 
 The Contact Profile will be deleted and its data cannot be recovered.
 
