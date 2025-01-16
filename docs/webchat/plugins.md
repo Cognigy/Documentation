@@ -94,7 +94,7 @@ You can set up plugins in production in the embedding code of your [Webchat v3](
 
 === "Custom Plugin"
     1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master).
-    2. Clone and modfy the plugin source code as needed.
+    2. Clone and modify the plugin source code as needed.
     3. Build your plugin by running the `npm ci && npm run build` command.
     4. Upload your plugin to your cloud storage, for example, Amazon S3. Ensure that the uploaded plugin is accessible to the target audience. Check the availability settings on your cloud storage side.
     5. Enter the plugin URL in a `<script>` tag after loading `webchat.js` and before calling `initWebchat()` in your HTML code. For the plugin URL, follow the format `https://url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins. For example:
