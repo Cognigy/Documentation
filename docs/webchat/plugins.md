@@ -37,11 +37,11 @@ To test a plugin from the plugin collection, follow these steps:
 
     === "Webchat v3"
         1. Select the **Webchat (v3)** Endpoint.
-        2. In the Webchat v3 Endpoint settings, paste the URL into the **Webchat Plugin URL** field under the **Demo Webchat Settings** section.
+        2. In the Webchat v3 Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Demo Webchat Settings** section.
 
     === "Webchat v2"
         1. Select the **Webchat** Endpoint.
-        2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugin URL** field under the **Demo Webchat Settings** section.
+        2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section.
 
 ### Test a Custom Plugin
 
@@ -56,11 +56,11 @@ To test custom plugins, you need to install them manually and then set them up i
 
     === "Webchat v3"
         1. Select the **Webchat (v3)** Endpoint.
-        2. In the Webchat v3 Endpoint settings, paste the URL into the **Webchat Plugin URL** field under the **Demo Webchat Settings** section. Follow the format `https://url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
+        2. In the Webchat v3 Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Demo Webchat Settings** section. Follow the format `https://url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
 
     === "Webchat v2"
         1. Select the **Webchat** Endpoint.
-        2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugin URL** field under the **Demo Webchat Settings** section. Follow the format `url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
+        2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section. Follow the format `url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
 
 ## Set Up Plugins in Production
 
@@ -83,7 +83,7 @@ You can set up plugins in production in the embedding code of your [Webchat v3](
         </style>
     </head>
     <body>
-        <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
+        <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.2.0/webchat.js"></script>
         <script src="https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js"></script>
         <script>
         initWebchat(
@@ -113,7 +113,7 @@ You can set up plugins in production in the embedding code of your [Webchat v3](
         </style>
     </head>
     <body>
-        <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
+        <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.2.0/webchat.js"></script>
         <script src="https://my-plugin-directory/dir1/dir2/my-plugin.js"></script>
         <script>
         initWebchat(
