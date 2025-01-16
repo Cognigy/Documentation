@@ -7,7 +7,7 @@ hidden: false
 
 # Cognigy Text Format
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
 _Cognigy text format_ (`ctxt`) is a specialized text format developed by Cognigy.
 This format serves to import custom-chunked content into the [Cognigy Knowledge AI](overview.md) solution.
@@ -83,12 +83,12 @@ The header should be separated from the [body](#body) by double-line breaks.
 
 #### Source Metadata
 
-| Key     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Mandatory |
-|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| version | The version of the ctxt format. It should be set to 1 as the only supported version is 1 currently. The version number can be changed when a new version is introduced.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | yes       |
+| Key     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Mandatory |
+|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| version | The version of the ctxt format. It should be set to 1 as the only supported version is 1 currently. The version number can be changed when a new version is introduced.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | yes       |
 | title   | The `title` key is an example of a custom-defined metadata key to define the document's name. When a user requests the information source, the AI Agent could be configured in a way to display the document's title in the response message. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.title`.                                                                                                                                                                                                                                                                             | no        |
 | url     | The `url` key is an example of a custom-defined metadata key to define a url to the document's source, e.g. a website where the information was obtained. When a user requests the information source, the AI Agent could be configured in a way to display the link to the source in the response message. This parameter enables users to access the source for more details or verification. For example, if the document's information came from your company's website, the URL field would contain the website's URL. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.url`. | no        |
-| tags    | The `tags` key is an example of a custom-defined metadata key used to define tags that help users filter their knowledge searches, focus on relevant information, and ultimately obtain more accurate search results. The maximum number of tags per Knowledge Source is 10.                                                                                                                                                                                                                                                                                                                                                               | no        |             
+| tags    | The `tags` key is an example of a custom-defined metadata key used to define tags that help users filter their knowledge searches, focus on relevant information, and ultimately obtain more accurate search results. The maximum number of tags per Knowledge Source is 10.                                                                                                                                                                                                                                                                                                                                                              | no        |
 
 You can create your types of keys for metadata, for example,
 `author: Cognigy`, where `author` is a key.
@@ -171,6 +171,25 @@ The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files vi
 `image: https://docs.cognigy.com/ai/images/xApp/architecture.png`
 ```
 
+## Download Knowledge Sources as CTXT
+
+You can download Knowledge Sources as a CTXT file, including Knowledge Sources created from web pages and other file formats. Downloading Knowledge Sources as CTXT files offers more flexibility in managing Knowledge Sources. With a CTXT file, you can:
+
+- Back up Knowledge Sources more easily after you have edited the Knowledge Chunks.
+- Use Knowledge Sources across Knowledge Stores with different embedding vector dimensions.
+- Edit downloaded Knowledge Sources more efficiently with external tools, such as text editors, with features like search and replace, bulk editing, and integration of AI tools.
+
+To download a Knowledge Source as CTXT, select a Knowledge Store in **Build > Knowledge** and proceed as follows:
+
+??? info "Download a Knowledge Source as CTXT"
+    === "On the Knowledge Store Page"
+        1. Hover over a Knowledge Source and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) on the right.
+        2. Select **Download as CTXT**.
+
+    === "On the Knowledge Source Page"
+        1. Select a Knowledge Source.
+        2. Click ![download](../../../_assets/voice-gateway/dowload.svg) next to the **Search Chunk** field.
+    
 ## More Information
 
 - [Knowledge AI Overview](overview.md)
