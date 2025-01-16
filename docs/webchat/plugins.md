@@ -14,7 +14,7 @@ tags:
 You can customize the Webchat widget by adding plugins from the [plugin collection](https://github.com/Cognigy/WebchatPlugins/tree/master) on GitHub or by creating your own. Set up plugins:
 
 - [For testing purposes in the Demo Webchat](#test-plugins-in-demo-webchat) by using the Webchat Endpoint settings.
-- In your production environment, [to add plugins](#implement-plugins-in-production) to the Webchat in your website.
+- In your production environment, [to add plugins](#set-up-plugins-in-production) to the Webchat in your website.
 
 After setting them up, you need to [trigger them in the Flow editor](#trigger-plugins).
 
