@@ -9,7 +9,7 @@ hidden: false
 
 !!! note
     We encourage you to explore the new version of Goals as soon as you migrate to the new [Insights framework](../../../insights/data-management/pre-aggregation.md).
-    Before migration, you can also explore the Goals in the Cognigy trial environment.
+    Before migration, you can also explore Goals in the Cognigy trial environment.
 
 _Goals_ are structured objectives within AI Agent interactions that require specific steps to be completed. They not only track user actions but also tie those actions to measurable business metrics, ensuring alignment with organizational objectives.
 
