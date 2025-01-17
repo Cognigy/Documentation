@@ -13,20 +13,20 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.93(Beta)-purple.svg)](../../../release-notes/4.93.md)
 
-You can customize the Webchat widget by adding plugins from the [plugin collection](https://github.com/Cognigy/WebchatPlugins/tree/master) on GitHub or by creating your own. Set up plugins:
+You can customize the Webchat widget by adding plugins. Find Webchat plugins in the [plugin collection](https://github.com/Cognigy/WebchatPlugins/tree/master) on GitHub or create your own custom plugins. 
 
-- [For testing purposes in the Demo Webchat](#test-plugins-in-demo-webchat) by using the Webchat Endpoint settings.
-- In your production environment, [to add plugins](#set-up-plugins-in-production) to the Webchat in your website.
+You can implement plugins in:
+
+- [The Demo Webchat](#test-plugins-in-demo-webchat) — test plugins from the collection by using the Webchat Endpoint settings.
+- [In your production environment](#set-up-plugins-in-production) — add custom plugins or plugins from the collection to the Webchat widget in your website.
 
 After setting them up, you need to [trigger them in the Flow editor](#trigger-plugins).
 
-## Restrictions
+## Limitations
 
-Webchat v3 may not support plugins compatible with Webchat v2.
+Plugins created for Webchat v2 are compatible with Webchat v3 but may display lower graphic qualities.
 
 ## Test Plugins in Demo Webchat
-
-### Test a Plugin from the Collection
 
 To test a plugin from the plugin collection, follow these steps:
 
@@ -42,25 +42,6 @@ To test a plugin from the plugin collection, follow these steps:
     === "Webchat v2"
         1. Select the **Webchat** Endpoint.
         2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section.
-
-### Test a Custom Plugin
-
-To test custom plugins, you need to install them manually and then set them up in the Endpoint settings as follows:
-
-1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master).
-2. Clone and modify the plugin source code as needed.
-3. Build your plugin by running the `npm ci && npm run build` command.
-4. Upload your plugin to your cloud storage, for example, Amazon S3. Ensure that the uploaded plugin is accessible to the target audience. Check the availability settings on your cloud storage side.
-5. In the left-side menu of the Cognigy.AI interface, select a Project.
-6. In **Deploy > Endpoints**, select an Endpoint or create a new one:
-
-    === "Webchat v3"
-        1. Select the **Webchat (v3)** Endpoint.
-        2. In the Webchat v3 Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Demo Webchat Settings** section. Follow the format `https://url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
-
-    === "Webchat v2"
-        1. Select the **Webchat** Endpoint.
-        2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section. Follow the format `url.to/plugin.js`, where `url.to` represents your plugin's directory path in your cloud storage, such as `https://my-plugin-directory/dir1/dir2/`, and `my-plugin` is the name of the plugin you use. Note that you can upload multiple plugins.
 
 ## Set Up Plugins in Production
 
