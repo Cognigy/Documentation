@@ -22,9 +22,8 @@ You can implement plugins in:
 
 After setting them up, you need to [trigger them in the Flow editor](#trigger-plugins).
 
-## Limitations
-
-Plugins created for Webchat v2 are compatible with Webchat v3 but may display lower graphic qualities.
+!!! note
+    Plugins created for Webchat v2 are compatible with Webchat v3 but may display lower graphic qualities.
 
 ## Test Plugins in Demo Webchat
 
