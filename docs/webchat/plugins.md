@@ -18,12 +18,12 @@ You can customize the Webchat widget by adding plugins. Find Webchat plugins in 
 You can implement plugins in:
 
 - [The Demo Webchat](#test-plugins-in-demo-webchat) — test plugins from the collection by using the Webchat Endpoint settings.
-- [In your production environment](#set-up-plugins-in-production) — add custom plugins or plugins from the collection to the Webchat widget in your website.
+- [In your code](#set-up-plugins-in-your-code) — add custom plugins or plugins from the collection to the Webchat widget in your website.
 
 After setting them up, you need to [trigger them in the Flow editor](#trigger-plugins).
 
 !!! note
-    Plugins created for Webchat v2 are compatible with Webchat v3 but may display lower graphic qualities.
+    Plugins created for Webchat v2 are compatible with Webchat v3 but may display a different styling.
 
 ## Test Plugins in Demo Webchat
 
@@ -42,9 +42,9 @@ To test a plugin from the plugin collection, follow these steps:
         1. Select the **Webchat** Endpoint.
         2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section.
 
-## Set Up Plugins in Production
+## Set Up Plugins in Your Code
 
-You can set up plugins in production in the embedding code of your [Webchat v3](v3/embedding.md) or [Webchat v2](v2/embedding.md). To add the plugins in production, proceed as follows:
+You can set up plugins in your code in the embedding code of your [Webchat v3](v3/embedding.md) or [Webchat v2](v2/embedding.md). To add the plugins in your code, proceed as follows:
 
 === "Plugin from Collection"
     1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master) and select the plugin you want to use.
