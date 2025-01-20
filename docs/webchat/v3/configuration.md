@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.87-blue.svg)](../../release-notes/4.87.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.93-blue.svg)](../../release-notes/4.93.md)
 
 To prepare the AI Agent for your website, you need to deploy it by [creating a Webchat v3 Endpoint](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
 
@@ -311,6 +311,7 @@ enhancing recognition and customization options.
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Watermark      | This parameter lets you select the type of watermark that appears at the bottom of the chat interface, acting as a subtle brand or platform identifier. You have the ability to choose between **Default**, **Custom**, and **None**. If Default is selected, the Cognigy.AI Watermark will be displayed. |
 | Watermark Text | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your own text. The default text is `Powered by Cognigy.AI`.                                                                                                                            |
+| Watermark URL  | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your URL as a hyperlink, following this pattern: `https://www.example.com/`. The default URL is `https://www.cognigy.com/`.                                                            |
 
 #### Maintenance
 
