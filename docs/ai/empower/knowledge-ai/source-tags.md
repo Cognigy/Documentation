@@ -33,7 +33,7 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
 === "New Knowledge Source"
      1. Open the Cognigy.AI interface.
      2. Go to the Project that you want to change.
-     3. In the left-side menu of the Project, select **Build > Knowledge**.
+     3. In the left-side menu of the Project, go to **Build > Knowledge**.
      4. Create a Knowledge Store or select an existing one.
      5. Open the created Knowledge Store by selecting it.
      6. In the upper-left corner, click **+ New Knowledge Sources**.
@@ -47,7 +47,7 @@ You can create Source Tags with a new Knowledge Source or add them to an existin
 === "Existing Knowledge Source"
      1. Open the Cognigy.AI interface.
      2. Go to the Project that you want to change.
-     3. In the left-side menu of the Project, select **Build > Knowledge**.
+     3. In the left-side menu of the Project, go to **Build > Knowledge**.
      4. Select a Knowledge Store from the list, and then select the Knowledge Source that you want to change, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Edit** next to the Source. The **Edit Knowledge Source** window opens.
      5. In the **Source Tags** field, add new Tags by pressing ++enter++. You can add up to 10 Tags. 
      6. Click **Save**.
@@ -60,7 +60,7 @@ If you have already added a Knowledge Source, you can edit the list of Source Ta
 
 1. Open the Cognigy.AI interface.
 2. Go to the Project you want to modify.
-3. In the left-side menu of the Project, select **Build > Knowledge**.
+3. In the left-side menu of the Project, go to **Build > Knowledge**.
 4. On the **Knowledge Stores** page, select a Knowledge Store from the list.
 5. On the **Knowledge Sources** page, find the Source whose Tags you want to change. Click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Edit**. The **Edit Knowledge Source** window opens.
 6. In the **Source Tags** field, add new Tags by pressing ++enter++ or remove existing Tags by clicking ![vertical-ellipsis](../../../_assets/icons/source-tag-cross.svg) next to the Tag name. 
@@ -70,7 +70,7 @@ If you have already added a Knowledge Source, you can edit the list of Source Ta
 
 1. Open the Cognigy.AI interface.
 2. Go to the Project that you want to change.
-3. In the left-side menu of the Project, navigate to **Build > Flows** and create a new Flow. 
+3. In the left-side menu of the Project, go to **Build > Flows** and create a new Flow. 
 4. In the **Flow** editor, add a **Search Extract Output** Node. 
 5. In the **Node** editor, select the Knowledge Store that you recently created. 
 6. In the **Source Tags** field, add Tags by specifying each Tag separately and pressing ++enter++. Before specifying Tags, ensure that they were provided during the upload of the content type for the selected [Knowledge Source](#create-source-tags). You can add up to 5 Tags. 

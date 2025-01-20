@@ -80,7 +80,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 9. In the left-side menu of the [App Dashboard](https://developers.facebook.com/docs/development/create-an-app/app-dashboard) interface, select **WhatsApp > Quickstart**.
 10. In the **WhatsApp Business Platform API** window, select your portfolio from the **Select business portfolio** list. If you do not have one, you need to create it. Click **Continue**.
 11. In the upper-right corner, go to **WhatsApp > API Setup**.
-12. In the **Temporary access token** field, copy the value and save it for later use. Note that this token is useful for testing purposes, but it expires after 23 hours. To get a permanent token, refer to the [Get a Permanent Access Token]() section.
+12. In the **Temporary access token** field, copy the value and save it for later use. Note that this token is useful for testing purposes, but it expires after 23 hours. To get a permanent token, refer to the [Get a Permanent Access Token](#get-a-permanent-access-token) section.
 13. Go to the **Step 1: Select phone numbers** section. Copy the Phone Number ID that is placed under the **Test number** field and save it for later use.
 14. Go to the **To** field. Click **Select a recipient phone number > Manage phone number list**. Specify your WhatsApp number to which you want to send messages.
 15. Go to **Step 2: Send messages with the API**, and click **Send message**. You will receive a welcome message in the WhatsApp messenger. The sender will be specified as the number selected in **Step 1: Select phone numbers**. 
@@ -90,7 +90,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 ### Configure a WhatsApp Endpoint
 
 1. Go to the Cognigy.AI interface.
-2. In the left-side menu of your project, click **Deploy > Endpoints**.
+2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
 4. In the **New Endpoint** section, do the following: <br>
     1. Select the **WhatsApp** Endpoint type.<br>
@@ -108,7 +108,7 @@ To set up the WhatsApp Endpoint, follow these steps:
 
 ### Complete the WhatsApp Integration
 
-1. In the left-side menu, go to **WhatsApp > Configuration**.
+1. Open your WhatsApp app that you [configured previously](#configure-a-whatsapp-app). In the left-side menu, go to **WhatsApp > Configuration**.
 2. In the **Webhook** section, click **Edit**.
 3. In the **Edit webhook's callback URL** window, fill in the following fields:
     - **Callback URL** — aAdd the Webchat Endpoint URL to the Callback URL field.
@@ -123,7 +123,7 @@ To prevent your connection from expiring after 23 hours,
 replace the temporary access token with a permanent access token:
 
 1. On the Meta/Facebook App Dashboard, go to the Business settings of your app. To do so, click the blue link next to the business name.
-2. In the left-side menu, go to **Users > System Users**.
+2. In the left-side menu of the app, go to **Users > System Users**.
 3. Click **Add**.
 4. Specify a name in the **System Username** field and select a role from the **System User Role** list.
 5. Click **Create System User**.

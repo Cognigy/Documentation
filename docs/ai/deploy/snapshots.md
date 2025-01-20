@@ -57,10 +57,9 @@ The `.csnap` (Cognigy Snapshot) file is a special type that can only be used wit
 
 To create a new Snapshot of the current state of your AI Agent, do the following:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Deploy > Snapshots**.
-3. Click **New Snapshot**.
-4. Enter a name and description for the new Snapshot. We recommend including a version number in the name field and providing a description of the changes made in this version in the description field.
+1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
+2. Click **New Snapshot**.
+3. Enter a name and description for the new Snapshot. We recommend including a version number in the name field and providing a description of the changes made in this version in the description field.
 
 Your Snapshot will appear in the list.
 
@@ -72,9 +71,9 @@ You can download Snapshots you have created previously. This is useful if you wa
 
 To download a Snapshot, follow these steps:
 
-1. When your Snapshot has been created, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to download from the list.
+1. When your Snapshot has been created, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) next to the Snapshot you want to download from the list.
 2. Select **Prepare Download**. A downloadable Snapshot package will be created. A success notification will appear once your Snapshot package is prepared.
-3. Click ![snapshot download](../../_assets/icons/snapshot-download.svg) on the right side next to the previously prepared Snapshot
+3. Click ![snapshot download](../../_assets/icons/snapshot-download.svg) next to the previously prepared Snapshot
    in order to initiate the download.
 
 The web browser will start to download your prepared Snapshot package as a `.csnap` file.
@@ -89,11 +88,10 @@ you have to either first create a new AI Agent or upload the Snapshot in one of 
 
 To upload a Snapshot, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Deploy > Snapshots**.
-3. On the **Snapshots** page, click **Upload Snapshot**.
-4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
-5. Once the file has been uploaded, a new [task](../build/projects.md#tasks), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
+1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
+2. On the **Snapshots** page, click **Upload Snapshot**.
+3. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
+4. Once the file has been uploaded, a new [task](../build/projects.md#tasks), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
 
 After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
@@ -113,7 +111,7 @@ Before initiating the restoration process, review the associated risks in the [B
 To restore a Project from a Snapshot, do the following:
 
 1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your AI Agent.
-2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to restore. A selection menu will appear.
+2. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) next to the Snapshot you want to restore. A selection menu will appear.
 3. Click **Restore**. A warning dialog will appear.
 4. Enter the name of the Snapshot in order to confirm the operation.
 
@@ -129,12 +127,11 @@ Once you reach the maximum number of Snapshots in your AI Agent, you have to sta
 
 To delete a Snapshot, do the following:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Deploy > Snapshots**.
-3. On the **Snapshots** page, select the Snapshot you want to delete.
-4. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to delete. A selection menu will appear.
-5. Select **Delete**.
-6. Click **Confirm** in the dialog that opens.
+1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
+2. On the **Snapshots** page, select the Snapshot you want to delete.
+3. Click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) next to the Snapshot you want to delete. A selection menu will appear.
+4. Select **Delete**.
+5. Click **Confirm** in the dialog that opens.
 
 A new task will be created, and your Snapshot will be removed.
 

@@ -58,7 +58,7 @@ and the Inbox ID is `32852`.
 
 To configure a Flow for a Handover to a Live Agent, follow these steps:
 
-1. Open your Flow in Cognigy.AI, prepared with a Handover Node.
+1. In the Cognigy.AI interface, open the Flow that contains the Handover Node.
 
     <figure>
         <img src="../../../../_assets/live-agent/Flow_handover_node_config.png" width="80%">

@@ -65,22 +65,21 @@ Actions are tasks or processes that are executed when the conditions are met.
 
 To create an automation rule, follow these steps:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Automation**.
-3. In the upper-right corner, click **+ Add Automation Rule**.
-4. In the **Rule Name** field, enter a unique name for the rule.
-5. In the **Description** field, enter a relevant description for the rule.
-6. From the **Event** list, select the desired event.
-7. In the **Conditions** section, set up a condition:
+1. In the Live Agent interface, go to **Settings > Automation**.
+2. In the upper-right corner, click **+ Add Automation Rule**.
+3. In the **Rule Name** field, enter a unique name for the rule.
+4. In the **Description** field, enter a relevant description for the rule.
+5. From the **Event** list, select the desired event.
+6. In the **Conditions** section, set up a condition:
     - **Left operand** — select a [condition type](#conditions).
     - **Operator** — a comparison operator that checks whether the value of the left operand is `Equal to` or `Not Equal to` the value of the right operand.
     - **Right operand** — select values corresponding to condition types. For example, if you choose `Status` as a condition type, you can add multiple statuses, such as `Open`, `Pending`, `Resolved`.
-8. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:
+7. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:
     - **AND** — all conditions must be true for the overall condition to be true. For example, `Condition A AND Condition B` means that both `Condition A` and `Condition B` must be true to trigger the action.
     - **OR** — at least one of the conditions must be true for the overall condition to be true. For example, `Condition A OR Condition B` means that if either `Condition A` or `Condition B` is true, the action will be triggered.
-9. In the **Actions** section, select an action. Note that you need to provide additional information depending on which type of action you selected. For example, if you select **Send an email to a Team**, you need to choose a team and write an email template.
-10. _(Optional)_ Add one more action.
-11. Click **Create**.
+8. In the **Actions** section, select an action. Note that you need to provide additional information depending on which type of action you selected. For example, if you select **Send an email to a Team**, you need to choose a team and write an email template.
+9. _(Optional)_ Add one more action.
+10. Click **Create**.
 
 The automation rule will appear in the automation rule list and will be automatically activated.
 

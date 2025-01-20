@@ -46,15 +46,14 @@ If you have changed a time span, click **Apply** to confirm and activate this fi
 You can select specific hours within the chosen time span to narrow down your results to a more precise time period.
 To define a custom time span, proceed as follows:
 
-1. Open the Insights interface.
-2. At the top of the Insights page, go to the filter bar.
-3. In the **Time Span** filter, select **Custom Period**. 
-4. Activate the **Select time** option to include hours in your selection. 
-5. Click **Start Date** to open a date picker calendar. 
-6. Select both the date and time by adjusting the clock hand to your preferred hour within the 24-hour cycle. 
-7. Select **End Date** to open the date picker calendar once more. 
-8. Similarly, select the end date and time that you desire. 
-9. Click **Apply** to activate the selected filter settings.
+1. At the top of the Insights interface, go to the filter bar.
+2. In the **Time Span** filter, select **Custom Period**. 
+3. Activate the **Select time** option to include hours in your selection. 
+4. Click **Start Date** to open a date picker calendar. 
+5. Select both the date and time by adjusting the clock hand to your preferred hour within the 24-hour cycle. 
+6. Select **End Date** to open the date picker calendar once more. 
+7. Similarly, select the end date and time that you desire. 
+8. Click **Apply** to activate the selected filter settings.
 
 ## Endpoints
 
@@ -65,24 +64,22 @@ You can select one or more Endpoints to be analyzed.
 
 To use the **Endpoints** filter, proceed as follows:
 
-1. Open the Insights interface.
-2. At the top of the Insights page, go to the filter bar.
-3. Click **Endpoint**.
-4. Use the **Type to search** field to find a specific Endpoint or select Endpoints from the list.
-5. _(Optional)_ Activate the **Negate** option and select Endpoints you don't want to include in your analysis. All Endpoints except the selected ones will be included in your data charts.
-6. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
-7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field. 
-8. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+1. At the top of the Insights interface, go to the filter bar.
+2. Click **Endpoint**.
+3. Use the **Type to search** field to find a specific Endpoint or select Endpoints from the list.
+4. _(Optional)_ Activate the **Negate** option and select Endpoints you don't want to include in your analysis. All Endpoints except the selected ones will be included in your data charts.
+5. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
+6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field. 
+7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ### Interaction Panel and Playbook Data
 
 By default, the sessions created via the Interaction Panel or Playbooks are not included in the dashboards or explorers. To include such data, proceed as follows:
 
-1. Open the Insights interface.
-2. At the top of the Insights page, go to the filter bar.
-3. Click **Endpoint**.
-4. Activate the **Interaction Panel / Playbook Data** option.
-5. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+1. At the top of the Insights interface, go to the filter bar.
+2. Click **Endpoint**.
+3. Activate the **Interaction Panel / Playbook Data** option.
+4. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Snapshots
 
@@ -91,15 +88,13 @@ For more information, read the [Snapshots](../ai/deploy/snapshots.md) documentat
 
 To use the **Snapshot** filter, proceed as follows:
 
-1. Open the Insights interface.
-2. At the top of the Insights page, you will see the **Filter Bar** including the **Snapshot** filter.
-3. Under **Snapshots**, open the list by clicking on it.
-4. Use the **Type to search** field to find a specific Snapshot or select Snapshots from the list.
-5. *(Optional)* Activate the **Negate** option to select the Snapshots you don't want to include in your analysis. All Snapshots except the selected ones will be considered for analysis.
-6.  *(Optional)* Activate the **None** option to obtain analysis data of all available endpoint data, except for Snapshot data.
-7. *(Optional)* To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
-8. *(Optional)* To reset the search results, click **x** in the **Type to search** field.
-9. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+1. At the top of the Insights interface, go to the filter bar. Under **Snapshots**, open the list by clicking on it. 
+2. Use the **Type to search** field to find a specific Snapshot or select Snapshots from the list.
+3. *(Optional)* Activate the **Negate** option to select the Snapshots you don't want to include in your analysis. All Snapshots except the selected ones will be considered for analysis.
+4. *(Optional)* Activate the **None** option to obtain analysis data of all available endpoint data, except for Snapshot data.
+5. *(Optional)* To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
+6. *(Optional)* To reset the search results, click **x** in the **Type to search** field.
+7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Locales
 
@@ -108,14 +103,13 @@ For more information, read the [Localization](../ai/build/translation-and-locali
 
 To use the **Locales** filter, proceed as follows:
 
-1. Open the Insights interface.
-2. At the top of the Insights page, go to the filter bar and click **more filters**.
-3. Under **Locales**, open the list by clicking on it.
-4. Use the **Type to search** field to find a specific Locale or select Locales from the list.
-5. _(Optional)_ Activate the **Negate** option to select the Locales you don't want to include in your analysis. All Locales except the selected ones will be considered for analysis.
-6. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
-7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
-8. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+1. At the top of the Insights interface, go to the filter bar and click **more filters**.
+2. Under **Locales**, open the list by clicking on it.
+3. Use the **Type to search** field to find a specific Locale or select Locales from the list.
+4. _(Optional)_ Activate the **Negate** option to select the Locales you don't want to include in your analysis. All Locales except the selected ones will be considered for analysis.
+5. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
+6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
+7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
 
 ## Goals (Beta)
 
@@ -124,15 +118,13 @@ For more information, refer to the [Goals](../ai/analyze/goals-and-tasks/goals.m
 
 To use the **Goals** filter, follow these steps:
 
-1. Open the **Insights** interface.
-2. In the left-side menu, select where you want to filter goals: the **Goals Dashboard** or the **Transcript Explorer**.
-3. At the top of the page, go to the filter bar and click **More Filters**.
-4. Under **Goals**, click to open the list.
-5. Use the **Type to search** field to find a specific goal, or select goals from the list.
-6. _(Optional)_ Activate the **Negate** option to exclude the selected goals from your analysis. All goals except the selected ones will be considered.
-7. _(Optional)_ To view only the selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
-8. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
-9. Click **Apply** to activate the filter settings. Based on your selection, the dashboard or explorer will display the corresponding data.
+1. In the left-side menu of the Insights interface, select where you want to filter goals: the **Goals Dashboard** or the **Transcript Explorer**.
+2. At the top of the page, go to the filter bar and click **More Filters**. Under **Goals**, click to open the list.
+3. Use the **Type to search** field to find a specific goal, or select goals from the list.
+4. _(Optional)_ Activate the **Negate** option to exclude the selected goals from your analysis. All goals except the selected ones will be considered.
+5. _(Optional)_ To view only the selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
+6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
+7. Click **Apply** to activate the filter settings. Based on your selection, the dashboard or explorer will display the corresponding data.
 
 ## Share Insights URL with Filters
 

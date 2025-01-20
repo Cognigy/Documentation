@@ -49,7 +49,7 @@ If you use a shared SaaS environment, contact [Cognigy technical support](../../
 
 To set a quota using the management-ui, follow these steps:
 
-1. Open the management-ui interface.
+1. Open the Management UI interface.
 2. In the left-side menu, select **Organisations**.
 3. On the **Organisations** page, select the organization from the list for which you want to set a quota.
 4. In the upper-right corner of the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Change Organisation Quotas**.
@@ -60,7 +60,7 @@ To set a quota using the management-ui, follow these steps:
 
 To set a quota using the management-ui API, follow these steps:
 
-1. Open the Cognigy.AI API and navigate to the **AUTHENTICATION > HTTP Basic**.
+1. In the Cognigy.AI API, go to the **AUTHENTICATION > HTTP Basic**.
 2. Enter the login and password you use for the management-ui authorization, then click **SET**.
 3. Select the organization to which you want to apply a quota:
 

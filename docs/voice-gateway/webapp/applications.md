@@ -41,11 +41,10 @@ After creating an application, you can edit or delete it.
 
 To add extra vendor, follow these steps:
 
-1. Open the Cognigy Voice Gateway Self-Service Portal.
-2. In the left-side menu, select **Applications**. 
-3. Create a new application or use an existing one.
-4. On the application page, activate the **Use a fallback speech vendor if primary fails** setting.
-5. Choose the vendor type you want to add (STT or TTS) or add both at once:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Applications**. 
+2. Create a new application or use an existing one.
+3. On the application page, activate the **Use a fallback speech vendor if primary fails** setting.
+4. Choose the vendor type you want to add (STT or TTS) or add both at once:
     - TTS:
         - **Speech synthesis vendor** — select a TTS vendor from the list.
         - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials.
@@ -55,8 +54,8 @@ To add extra vendor, follow these steps:
         - **Speech recognizer vendor** — select an STT vendor from the list.
         - **Label** — specify the alternative name of the vendor in the Label field if you have the default vendor with the same credentials.
         - **Language** — select a primary language. 
-6. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
-7. Click **Save**.
+5. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
+6. Click **Save**.
 
 The changes will be applied.
 
@@ -80,12 +79,11 @@ When enabled at the application level, only calls from a specific application wi
 
 To enable recording calls at an application level, follow these steps:
 
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Applications**.
-3. Create a new application or use an existing one.
-4. In the **Call recording configuration** section, click the checkbox for **Enable call recording**.
-5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
-6. Select a bucket vendor:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Applications**.
+2. Create a new application or use an existing one.
+3. In the **Call recording configuration** section, click the checkbox for **Enable call recording**.
+4. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
+5. Select a bucket vendor:
 
     === "Amazon S3"
         - **Bucket Name** — provide the name of your bucket.
@@ -104,11 +102,11 @@ To enable recording calls at an application level, follow these steps:
         - **Connection String** — provide a [connection string](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string).
         - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
 
-7. Click **Test** to verify your connection. 
-8. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
-9. Click the application to edit. 
-10. Scroll down to the **Call recording configuration** section, activate the **Record all calls** setting.
-11. Click **Save**.
+6. Click **Test** to verify your connection. 
+7. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
+8. Click the application to edit. 
+9. Scroll down to the **Call recording configuration** section, activate the **Record all calls** setting.
+10. Click **Save**.
 
 All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
 
@@ -118,11 +116,10 @@ When Voice Gateway fails to establish a connection with Cognigy.AI at the beginn
 
 To configure call forwarding, follow these steps:
 
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Applications**.
-3. Create a new application or use an existing one.
-4. On the **Edit application** page, activate the **Perform a fallback transfer if webhook connection fails** setting.
-5. Select your preferred method for call redirection:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Applications**.
+2. Create a new application or use an existing one.
+3. On the **Edit application** page, activate the **Perform a fallback transfer if webhook connection fails** setting.
+4. Select your preferred method for call redirection:
 
     === "Forward an existing call"
          1. From the **Transfer type** list, select **Refer**.<br>
@@ -136,5 +133,5 @@ To configure call forwarding, follow these steps:
          3. In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format (E.164), starting with a `+` sign.<br>
          4. *(Optional)* In the **Caller ID** field, specify the caller ID. Note that some carriers, such as Twilio, may require a registered number for outgoing calls.
   
-6. Click **Save**.
+5. Click **Save**.
 

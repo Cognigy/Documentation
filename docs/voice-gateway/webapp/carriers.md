@@ -46,19 +46,18 @@ The process of authentication in SIP involves verifying the identity of the Voic
 
 To set up the outbound authentication process, follow these steps:
 
-1. Open the Cognigy Voice Gateway Self-Service Portal. 
-2. In the left-side menu, select **Carriers**. 
-3. Go to the **Outbound Authentication** section and activate its setting.
-4. Fill in the following fields:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Carriers**. 
+2. Go to the **Outbound Authentication** section and activate its setting.
+3. Fill in the following fields:
     - **Username** — the name of the user required for outbound call authentication.
     - **Password** — the user password required for outbound call authentication.<br> These credentials are used by the SIP client to authenticate with the SIP trunk provider when making outbound calls.
-5. Activate the **Require SIP Register** setting. This setting indicates whether the SIP trunk provider requires SIP registration before allowing outbound calls. SIP registration is the process where the SIP client registers its location and availability with the SIP server.
-6. In the **SIP Realm** field, specify the domain associated with the SIP server's, for example, `sip.nexmo.com`.
-7. _(Optional)_ In the **SIP From User** field, specify the user of the SIP From header, indicating the message's sender. This field can contain the name or telephone number of the Voice Gateway Carrier.
-8. _(Optional)_ In the **SIP From Domain** field, specify the domain of the SIP From header, indicating the message's sender. This field can contain the domain of your Voice Gateway installation.
-9. Activate the **Use Public IP in Contact** field to determine whether to use the public Voice Gateway IP address when establishing contact with the SIP server. The public address will be transferred in the Contact header field.
-10. Click **Save**. 
-11. At the top of the **Edit carrier** page, check whether the connection is established. If the registration is successful, you will see the Register status `200` and a `.pcap` file.
+4. Activate the **Require SIP Register** setting. This setting indicates whether the SIP trunk provider requires SIP registration before allowing outbound calls. SIP registration is the process where the SIP client registers its location and availability with the SIP server.
+5. In the **SIP Realm** field, specify the domain associated with the SIP server's, for example, `sip.nexmo.com`.
+6. _(Optional)_ In the **SIP From User** field, specify the user of the SIP From header, indicating the message's sender. This field can contain the name or telephone number of the Voice Gateway Carrier.
+7. _(Optional)_ In the **SIP From Domain** field, specify the domain of the SIP From header, indicating the message's sender. This field can contain the domain of your Voice Gateway installation.
+8. Activate the **Use Public IP in Contact** field to determine whether to use the public Voice Gateway IP address when establishing contact with the SIP server. The public address will be transferred in the Contact header field.
+9. Click **Save**. 
+10. At the top of the **Edit carrier** page, check whether the connection is established. If the registration is successful, you will see the Register status `200` and a `.pcap` file.
 
 ## SIP Encryption for Outbound Calls
 
@@ -74,23 +73,22 @@ Before you set up the SIP encryption, make sure you know the type of encryption 
 
 To set up an SIP for outgoing calls, follow these steps:
 
-1. Open the Cognigy Voice Gateway Self-Service Portal. 
-2. In the left-side menu, select **Carriers**.
-3. Select the carrier you want to use for outbound communication.
-4. Go to the **SIP Gateways** section.
-5. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../_assets/voice-gateway/VG_plus_button.svg).
-6. In the **Network Address** field, enter the Network Address, for example `12.345.678.9`.
-7. Enter the Port number in the **Port** field. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
-8. Select the **Outbound** option.
-9. Select from the available options:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Carriers**.
+2. Select the carrier you want to use for outbound communication.
+3. Go to the **SIP Gateways** section.
+4. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../_assets/voice-gateway/VG_plus_button.svg).
+5. In the **Network Address** field, enter the Network Address, for example `12.345.678.9`.
+6. Enter the Port number in the **Port** field. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
+7. Select the **Outbound** option.
+8. Select from the available options:
 
     - UDP — this option activates SIP over UDP (User Datagram Protocol). UDP doesn't require an established connection or authentication to send information. UDP is most suitable for audio streaming.
-    - TCP - this option activates SIP over TCP (Transmission Control Protocol). TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
+    - TCP — this option activates SIP over TCP (Transmission Control Protocol). TCP requires an established connection between the sender and the receiver. With TCP, only the sender and the receiver are able to communicate with one another.
     - TLS — this option activates SIP over TLS. TLS prevents third party eavesdropping and tampering with communication. If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
     - TLS/SRTP — this option activates SIP over TLS/SRTP. This option provides TLS encryption to both the connection and the audio stream. Configure the additional options:
         - If you want to use an additional layer of security (SIPS), select **Use sips scheme**.
         - If you want to add cryptographic padding to your connection for additional security, select **Pad crypto**.
 
-10. Click **Save**.
+9. Click **Save**.
 
 To check the connection, make an outbound call. To check the encryption type, download the PCAP file, which can be found in **Recent Calls > Outbound Call > Details**.

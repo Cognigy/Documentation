@@ -18,12 +18,11 @@ To start using a Microsoft Azure OpenAI model with Cognigy.AI features, follow t
 
 To add a model provided by Microsoft Azure OpenAI to Cognigy.AI, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. Go to **Build > LLM**.
-3. Click **+New LLM**.
-4. In the **New LLM** window, select a model from the **Model Type** list.
-5. Add a unique name and description for your model.
-6. From the **Provider** list, select an LLM's provider:
+1. In the left-side menu of the Project, go to **Build > LLM**.
+2. Click **+New LLM**.
+3. In the **New LLM** window, select a model from the **Model Type** list.
+4. Add a unique name and description for your model.
+5. From the **Provider** list, select an LLM's provider:
     1. From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:
         - **Model Type** — select **Chat** for models that support the Chat Completions API, **Completion** for the Completions API, or **Embedding** for the Embedding API. For more information, refer to the [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.
         - **Model Name** — specify an ID of the model that you want to use as a custom. To find model IDs, refer to the [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.
@@ -45,8 +44,8 @@ To add a model provided by Microsoft Azure OpenAI to Cognigy.AI, follow these st
         - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `YYYY-MM-DD-preview`. 
         - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern:`https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/<model-type>?api-version=<api-verson>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
 
-7. To apply changes, click **Save**.
-8. To check if the connection was set up, click **Test**.
+6. To apply changes, click **Save**.
+7. To check if the connection was set up, click **Test**.
 
 When the model is added, you will see it in the list of models.
 

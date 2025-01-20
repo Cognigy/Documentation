@@ -28,11 +28,11 @@ You can log in with your Cognigy.AI credentials or, optionally, with single sign
 
 {! _includes/ai/overview/create-projects.md !}
 
-## Build a Chat Agent
+## Build a Chat AI Agent
 
-To build a chat agent, follow these steps:
+To build a chat AI Agent, follow these steps:
 
-1. In the left-side menu, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
     1. Add a unique name, for example, `Getting Started`.<br>
@@ -53,7 +53,7 @@ To build a chat agent, follow these steps:
 
 Once your AI Agent is created, you can test it via the Interaction Panel.
 
-## Test your Chat Agent
+## Test your Chat AI Agent
 
 To test your AI Agent, follow these steps:
 

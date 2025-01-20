@@ -42,10 +42,7 @@ In the second log entry, the user with the `user@cognigy.com` login deleted an a
 
 ## View Audit Logs
 
-To view audit logs, follow these steps:
-
-1. Open the Live Agent interface.
-2. Go to **Settings > Audit Logs**.
+To view audit logs, go to **Settings > Audit Logs** in the Live Agent interface.
 
 You will see a list of log entries containing user and system events.
 
@@ -55,9 +52,8 @@ For actions, you can view details on any changes that were made.
 
 To do this, follow these steps:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Audit Logs**.
-3. Select a log from the list by clicking on it.
+1. In the Live Agent interface, go to **Settings > Audit Logs**.
+2. Select a log from the list by clicking on it.
 
 A window will open displaying the details of the changes.
 

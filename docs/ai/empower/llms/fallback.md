@@ -44,17 +44,15 @@ For example, if you are using Azure OpenAI `gpt-4o` in the West US region as you
 
 To add a fallback model, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. Select the Project where you want to add a fallback model.
-3. In the left-side menu of the Project, go to **Build > LLM**.
-4. Select the model to which you want to add a fallback.
-5. Go to the **Fallback** section and activate the **Enable Fallback** setting.
-6. Configure the following fields:
+1. In the left-side menu of the Project, go to **Build > LLM**.
+2. Select the model to which you want to add a fallback.
+3. Go to the **Fallback** section and activate the **Enable Fallback** setting.
+4. Configure the following fields:
     - **Select a Fallback Model** — select a model from the list. If no model is available, [create a new one](#create-a-fallback-model).
     - **Number of failed requests** — specify the number of failed requests to the main model before the fallback model is triggered. You can specify up to 5 attempts. The default value is `1`.
     - **Duration in minutes of active fallback** — define how long the system should use the fallback model instead of the main model. After the specified time, the fallback will deactivate, and the main model will resume. The duration can be up to 30 minutes. The default value is `30`.
     - **Email Notifications** — add up to 5 email addresses to receive notifications when the fallback model is triggered. Enter each email in a separate input field using the format `example@domain.com`.
-7. Click **Save**.
+5. Click **Save**.
 
 ## More Information
 
