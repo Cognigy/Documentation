@@ -5,7 +5,13 @@
 # Step 1: Define the base directory as the root of the Git repository
 BASE_DIR=$(git rev-parse --show-toplevel)
 
-# Step 2: Define the target directories
+# Step 2: Determine the default branch
+DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+
+# Print the branch being checked
+echo "Checking changes on branch: $DEFAULT_BRANCH"
+
+# Step 3: Define the target directories
 TARGET_DIRS=(
   "$BASE_DIR/docs/ai"
   "$BASE_DIR/docs/ai-copilot"
@@ -18,11 +24,11 @@ TARGET_DIRS=(
   "$BASE_DIR/docs/xApps"
 )
 
-# Step 3: Output file
+# Step 4: Output file
 OUTPUT_FILE="$BASE_DIR/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
-# Step 4: Loop through the target directories
+# Step 5: Loop through the target directories
 for TARGET_DIR in "${TARGET_DIRS[@]}"; do
   # Check if the target directory exists
   if [ ! -d "$TARGET_DIR" ]; then
@@ -30,12 +36,12 @@ for TARGET_DIR in "${TARGET_DIRS[@]}"; do
     continue
   fi
 
-  # Step 5: Process each .md file
+  # Step 6: Process each .md file
   while IFS= read -r file; do
     # Check if the file is tracked by Git
     if git ls-files --error-unmatch "$file" > /dev/null 2>&1; then
-      # Get the last change (date and user) for the current file from the 'main' branch only
-      last_change=$(git log -1 --date=short --format="%ad %an" main -- "$file")
+      # Get the last change (date and user) for the current file from the default branch only
+      last_change=$(git log -1 --date=short --format="%ad %an" "$DEFAULT_BRANCH" -- "$file")
       # If the file has a last change, append it to the output
       if [ -n "$last_change" ]; then
         # Get the relative path from the BASE_DIR for output clarity
@@ -46,7 +52,7 @@ for TARGET_DIR in "${TARGET_DIRS[@]}"; do
   done < <(find "$TARGET_DIR" -type f -name "*.md")
 done
 
-# Step 6: Display results
+# Step 7: Display results
 echo "Changes for .md files across all directories saved to $OUTPUT_FILE."
 echo -e "\nSummary:"
 cat "$OUTPUT_FILE"

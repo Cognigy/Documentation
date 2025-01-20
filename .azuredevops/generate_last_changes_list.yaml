@@ -25,6 +25,10 @@ stages:
             clean: "true"
             fetchDepth: 0
 
+          # Ensure the main branch is checked out
+          - script: git checkout main
+            displayName: Checkout main branch
+
           # Grant execute permissions to the script
           - script: chmod +x ./support_scripts/generate-last-changes-list.sh
             displayName: Grant execute permissions to the script
