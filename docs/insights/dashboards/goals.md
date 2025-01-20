@@ -9,6 +9,7 @@ hidden: false
 
 !!! note
     The Goals Dashboard is in Beta and is available if you have migrated to the new [Insights framework](../data-management/pre-aggregation.md).
+    Before migration, you can also explore the Goals Dashboard in the Cognigy trial environment.
     We encourage you to try this feature out and provide us with feedback.
 
 The _Goals Dashboard_ highlights goal tracking, completion status, time, revenue, and cost metrics, and the business impact of AI Agents in the following charts:
