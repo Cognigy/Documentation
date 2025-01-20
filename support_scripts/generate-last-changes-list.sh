@@ -22,7 +22,7 @@ TARGET_DIRS=(
 OUTPUT_FILE="$BASE_DIR/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
-# Step 3: Loop through the target directories
+# Step 4: Loop through the target directories
 for TARGET_DIR in "${TARGET_DIRS[@]}"; do
   # Check if the target directory exists
   if [ ! -d "$TARGET_DIR" ]; then
@@ -30,18 +30,23 @@ for TARGET_DIR in "${TARGET_DIRS[@]}"; do
     continue
   fi
 
-  # Step 4: Process each .md file
+  # Step 5: Process each .md file
   while IFS= read -r file; do
-    # Get the last change (date and user) for the current file
-    last_change=$(git log -1 --date=short --format="%ad %an" main -- "$file")
-    # If the file has a last change, append it to the output
-    if [ -n "$last_change" ]; then
-      echo -e "$file\t$last_change" >> "$OUTPUT_FILE"
+    # Check if the file is tracked by Git
+    if git ls-files --error-unmatch "$file" > /dev/null 2>&1; then
+      # Get the last change (date and user) for the current file from the 'main' branch only
+      last_change=$(git log -1 --date=short --format="%ad %an" main -- "$file")
+      # If the file has a last change, append it to the output
+      if [ -n "$last_change" ]; then
+        # Get the relative path from the BASE_DIR for output clarity
+        relative_file_path="${file#$BASE_DIR/}"
+        echo -e "$relative_file_path\t$last_change" >> "$OUTPUT_FILE"
+      fi
     fi
   done < <(find "$TARGET_DIR" -type f -name "*.md")
 done
 
-# Step 5: Display results
+# Step 6: Display results
 echo "Changes for .md files across all directories saved to $OUTPUT_FILE."
 echo -e "\nSummary:"
 cat "$OUTPUT_FILE"
