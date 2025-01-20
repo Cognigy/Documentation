@@ -62,7 +62,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 
 [^**]: This feature is currently in Beta, hidden behind the `FEATURE_ENABLE_ALEPH_ALPHA_EMBEDDING_LLM_WHITELIST` feature flag, and may contain issues. Only one type of embedding LLM should be used per Project. If you choose to use `luminous-embedding-128`, you must create a new Project. Once you have chosen an embedding model for a Project, you cannot switch to a different embedding model; you must use a different Project. Failing to do so will result in errors while this feature is in Beta.
 
-[^***] This feature is hidden behind the `FEATURE_ENABLE_AWS_BEDROCK_EMBEDDING_LLM_WHITELIST` feature flag.
+[^***] The option to select this model is hidden behind the `FEATURE_ENABLE_AWS_BEDROCK_EMBEDDING_LLM_WHITELIST` feature flag.
 
 [^****]: Note that some models from the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html) might not support the AI Agent Node feature.
 
