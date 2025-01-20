@@ -11,7 +11,7 @@ tags:
 
 # Webchat Plugins
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.93(Beta)-purple.svg)](../../../release-notes/4.93.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.93(Beta)-purple.svg)](../release-notes/4.93.md)
 
 You can customize the Webchat widget by adding plugins. Find Webchat plugins in the [plugin collection](https://github.com/Cognigy/WebchatPlugins/tree/master) on GitHub or create your own custom plugins. 
 
