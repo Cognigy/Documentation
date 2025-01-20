@@ -311,7 +311,7 @@ enhancing recognition and customization options.
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Watermark      | This parameter lets you select the type of watermark that appears at the bottom of the chat interface, acting as a subtle brand or platform identifier. You have the ability to choose between **Default**, **Custom**, and **None**. If Default is selected, the Cognigy.AI Watermark will be displayed. |
 | Watermark Text | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your own text. The default text is `Powered by Cognigy.AI`.                                                                                                                            |
-| Watermark URL  | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your URL following this pattern: `https://www.example.com/`. The default URL is `https://www.cognigy.com/`.                                                                            |
+| Watermark URL  | This parameter appears when the Custom option is selected for the watermark. This parameter enables you to specify your URL as a hyperlink, following this pattern: `https://www.example.com/`. The default URL is `https://www.cognigy.com/`.                                                            |
 
 #### Maintenance
 
