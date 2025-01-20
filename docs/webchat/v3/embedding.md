@@ -22,13 +22,12 @@ Embedding Webchat v3 into your website allows you to provide a conversational in
 
 Copy the HTML code from the Webchat v3 Endpoint associated with your AI Agent, which you want to deploy on your website:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select a Project.
-3. In the left-side **Project** menu, select **Deploy > Endpoints**.
-4. On the **Endpoints** page, select a Webchat v3 Endpoint that you recently created.
-5. On the **Endpoint Settings** page, go to the Embedding HTML section.
-6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
-7. The HTML code contains the following entities:
+1. In the left-side menu Cognigy.AI interface, select a Project.
+2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
+3. On the **Endpoints** page, select a Webchat v3 Endpoint that you recently created.
+4. On the **Endpoint Settings** page, go to the Embedding HTML section.
+5. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
+6. The HTML code contains the following entities:
     - The Webchat JavaScript bundle — hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v3. You can also deploy another Webchat v3 version by replacing `https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js` with `https://github.com/Cognigy/Webchat/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v3 version you want to use. For example, to use Webchat v3.2.0, enter `https://github.com/Cognigy/Webchat/releases/download/v3.2.0/webchat.js`. If you enter a specific version, ensure it is the same or later than the version where the Webchat v3 features you use were introduced. Learn more about Webchat v3 versions on the [Webchat v3 release page](https://github.com/Cognigy/Webchat/releases).
     - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.

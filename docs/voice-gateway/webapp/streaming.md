@@ -25,12 +25,11 @@ Voice Gateway integrates streaming capabilities with the [ElevenLabs](https://el
 
 To enable streaming for voice agent, follow these steps:
 
-1. Open the Voice Gateway Self-Service Portal.
-2. In the left-side menu, select **Speech**.
-3. On the **Speech services** page, navigate to the existing Evenlabs speech service (if previously created) or create a new one by clicking **Add speech service**.
-4. On the **Add Speech service** page, enable the **Use Streaming** option. Note that the **Use for text-to-speech** option must also be activated.
-5. _(Optional)_ To ensure a smoother and more tailored TTS output, customize the streaming settings. These settings include parameters for optimizing streaming latency, stability, similarity boost, and speaker boost. To configure these settings, activate Extra Options at the end of the page and change the desired parameters.
-6. Click **Save**.
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Speech**.
+2. On the **Speech services** page, navigate to the existing Evenlabs speech service (if previously created) or create a new one by clicking **Add speech service**.
+3. On the **Add Speech service** page, enable the **Use Streaming** option. Note that the **Use for text-to-speech** option must also be activated.
+4. _(Optional)_ To ensure a smoother and more tailored TTS output, customize the streaming settings. These settings include parameters for optimizing streaming latency, stability, similarity boost, and speaker boost. To configure these settings, activate Extra Options at the end of the page and change the desired parameters.
+5. Click **Save**.
 
 ## More Information
 

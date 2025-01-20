@@ -97,9 +97,8 @@ Additionally, you can filter the data in the table according to the agent's stat
 
 To view a report, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Overview**. 
-3. At the top of the report, from the **Inbox** list, select an Inbox you want to inspect.
+1. In the Live Agent interface, go to **Reports > Overview**. 
+2. At the top of the report, from the **Inbox** list, select an Inbox you want to inspect.
 
 The report will be updated with the corresponding data related to the selected Inbox.
 

@@ -54,7 +54,7 @@ Only users with `Administrator` roles can perform this action.
 
 To add an Agent to an Inbox, follow these steps:
 
-1. In the left-side menu, navigate to **Settings**, then select **Inboxes**.
+1. In the left-side menu of the Live Agent interface, navigate to **Settings**, then select **Inboxes**.
 2. Locate the Inbox that you want to edit and click the **Settings** icon.
 3. On the **Collaborators** tab, select the Agent name from the **Agents** list.
 4. Apply changes by clicking **Update**.

@@ -44,26 +44,24 @@ Decide whether you want to track money, time, or both:
 
 To create a goal, follow these steps:
 
-1. Open the Cognigy.AI Interface.
-2. Go to the Project where you want to create a goal.
-3. In the left-side menu of the Project, go to **Build > Goals** and click **+ New Goal**.
-4. On the **Goal** page, configure the parameters of a goal:
+1. In the left-side menu of the Project, go to **Build > Goals** and click **+ New Goal**.
+2. On the **Goal** page, configure the parameters of a goal:
     - **Name** — this field is mandatory. Enter a name that reflects the goal. For example, `Reduce Call Handling Time` or `Increase Automation Efficiency`.
     - **Description** — this field is optional. Provide a brief description that reflects the goal. For example, `This goal aims to reduce average call handling time by automating common customer requests`.
-5. In the **Initial Step** section, complete the following fields:
+3. In the **Initial Step** section, complete the following fields:
     - **Name** — this field is mandatory. Provide a descriptive name for the starting step. For example, `Initiate AI Agent Conversation`. The initial step is required, as the goal activates when the Flow triggers this step.
     - **Description** — this field is optional. Add a detailed description of the starting step. For example, `This step triggers when a user begins an AI Agent session`.
-6. In the **Steps** section, click **+ New Step** and add at least one step to complete the goal configuration. Note that if you add only one step, it must be marked as a Completion Point.
-7. Configure the step parameters:
+4. In the **Steps** section, click **+ New Step** and add at least one step to complete the goal configuration. Note that if you add only one step, it must be marked as a Completion Point.
+5. Configure the step parameters:
     - **Name** — this field is mandatory. Enter a name that reflects the step. For example, `Customer Request Handled`.
     - **Description** — this field is optional. Describe the step. For example, `This step captures when the AI Agent successfully resolves a customer request`.
     - **Mark this step as a completion step** — activate this setting to mark the current step as the point where the goal is considered fully completed. For example, this step can reflect the key result when the AI Agent has resolved all user requests. Note that at least one step within the goal must be marked as completed. Multiple steps can be marked as completed.
-8. In the **Success Metrics** field, measure the impact of your goal by tracking the following performance metrics:
+6. In the **Success Metrics** field, measure the impact of your goal by tracking the following performance metrics:
     - **Cost Savings** — track saved money by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure).
     - **Revenue Earnings** — track earnings by entering values in the format `xx.xx`. For example, `150.00` represents `$150`. Make sure your currency is configured in the **Currency Settings** section within the [Project Settings](#determine-what-you-want-to-measure). 
     - **Time Saved** — track saved time by entering values in the format `00:00:00` (hours:minutes:seconds). For example, `02:45:00` represents 2 hours and 45 minutes.
-9. Click **Save** to save the step.
-10. Click **Save** to complete your goal configuration.
+7. Click **Save** to save the step.
+8. Click **Save** to complete your goal configuration.
 
 Once the steps are added, proceed to the Flow section to integrate your goal with a Flow.
 
@@ -71,15 +69,13 @@ Once the steps are added, proceed to the Flow section to integrate your goal wit
 
 To add a goal to a Flow, follow these steps:
 
-1. Open the Cognigy.AI Interface.
-2. Go to the Project where you want to create a goal. 
-3. In the left-side menu of the Project, navigate to **Build > Flows**.
-4. On the **Flows** page, either use an existing Flow or click **+ New Flow** to create a new one. 
-5. In the Flow editor, add a **Track Goal** Node to monitor goal progress within the Flow. 
-6. Configure the Node settings:
+1. In the left-side menu of the Project, go to **Build > Flows**.
+2. On the **Flows** page, either use an existing Flow or click **+ New Flow** to create a new one. 
+3. In the Flow editor, add a **Track Goal** Node to monitor goal progress within the Flow. 
+4. Configure the Node settings:
     - **Select Goal** — choose the goal you recently created, such as `Reduce Call Handling Time`.
     - **Select Steps** — choose the steps within the goal that you want to track. Note that the first selected step must be the initial step. Set the initial step at the beginning of the process you want to track in your Flow. Otherwise, the goal will not be tracked.
-7. Click **Save Node** to confirm your changes.
+5. Click **Save Node** to confirm your changes.
 
 You can add multiple **Track Goal** Nodes in the same Flow to track different steps and KPIs.
 
@@ -109,12 +105,10 @@ To reuse a goal in other Projects, you can package the goal.
 
 To package a goal, follow these steps:
 
-1. Open the Cognigy.AI Interface.
-2. Go to the Project from which you want to export a goal. 
-3. Go to **Build > Goals**. 
-4. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
-5. Select **Export as package**. 
-6. Once the Package has created, a new [task](../../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
+1. In the Project from which you want to export a goal, go to **Build > Goals**. 
+2. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
+3. Select **Export as package**. 
+4. Once the Package has created, a new [task](../../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, download the Package.
 
@@ -126,12 +120,10 @@ Before deleting the goal, either replace it with another goal in the Flow or rem
 
 To delete a goal, follow these steps:
 
-1. Open the Cognigy.AI Interface.
-2. Go to the Project in which you want to delete a goal.
-3. Go to **Build > Goals**. 
-4. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
-5. Select **Delete**. 
-6. Confirm the deletion by entering the name of the goal.
+1. In the Project in which you want to delete a goal, go to **Build > Goals**.
+2. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
+3. Select **Delete**. 
+4. Confirm the deletion by entering the name of the goal.
 
 The goal will be deleted from the list.
 
@@ -142,13 +134,11 @@ Before deleting the step, make sure to replace it with another step in the Node.
 
 To delete a step, do the following:
 
-1. Open the Cognigy.AI Interface.
-2. Go to the Project in which you want to delete a goal.
-3. Go to **Build > Goals**.
-4. Select the goal from which you want to delete a step.
-5. On the **Goal** page, go to the step you want to delete and click ![recycle bin blue](../../../_assets/icons/recycle-bin-blue.svg). Note that you will not be able to save the goal if this step is the last remaining step or the only completion step.
-6. Delete the goal by clicking **Confirm**. 
-7. Click **Save**.
+1. In the Project in which you want to delete a goal, go to **Build > Goals**.
+2. Select the goal from which you want to delete a step.
+3. On the **Goal** page, go to the step you want to delete and click ![recycle bin blue](../../../_assets/icons/recycle-bin-blue.svg). Note that you will not be able to save the goal if this step is the last remaining step or the only completion step.
+4. Delete the goal by clicking **Confirm**. 
+5. Click **Save**.
 
 The step will be deleted from the list.
 

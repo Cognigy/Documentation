@@ -17,10 +17,9 @@ Cognigy.AI version 4.72 or later.
 
 Create a project that involves building an AI Agent:
 
-1. Open the Cognigy.AI interface.
-2. In the upper-left corner, click **+ Create Agent**.
-3. On the **Basic settings for your Project** page, specify a name for your agent in the **Project Name** field, for example, `AI Project`.
-4. Click **Create Empty Project**.
+1. In the upper-left corner of the **Projects** page, click **+ Create Project**.
+2. On the **Basic settings for your Project** page, specify a name for your agent in the **Project Name** field, for example, `AI Project`.
+3. Click **Create Empty Project**.
 
 Once the project creation is complete, you can proceed with building the AI Agent.
 
@@ -28,7 +27,7 @@ Once the project creation is complete, you can proceed with building the AI Agen
 
 To build an AI Agent, follow these steps:
 
-1. In the left-side **Project** menu, navigate to **Build > Flows**.
+1. In the left-side menu of the Project , navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
     3.1. Add a unique name, for example, `Getting Started`.<br>
@@ -65,7 +64,7 @@ Once your AI Agent is created, you can deploy it via the Webchat v3 Endpoint.
 
 To create a Webchat Endpoint v3, follow these steps:
 
-1. In the left-side **Project** menu, select **Deploy > Endpoints**.
+1. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following:<br>
     3.1. Select the **Webchat (v3)** Endpoint type.<br>

@@ -48,14 +48,13 @@ To register a new user in Cognigy for your organization, you must have an `admin
 
 To create a new user, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
-3. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
-4. In the **New User** window, fill in the following fields:
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+2. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
+3. In the **New User** window, fill in the following fields:
     - **Display Name** — a name that will be visible to other users within the organization.
     - **Email Address** — a unique email address associated with the user's account.
     - **Password** — a user password. Passwords can be modified at any time and are securely stored. Users can change their passwords later by navigating **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > My Profile** on the **Projects** page or by selecting **My Profile** from the User Menu in the bottom-left corner of the Project page.
-5. Click **Save&Open** to assign the global roles and Agents (projects).
+4. Click **Save&Open** to assign the global roles and Agents (projects).
 
 When you create a new user, this user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
 
@@ -63,9 +62,8 @@ When you create a new user, this user will receive a notification at the email a
 
 To assign global roles to a user, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
-3. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+2. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
 
     === "New user"
         1. On the **Users** page, create a new user by clicking **+ Create new User**.<br>
@@ -88,9 +86,8 @@ Once a role has been assigned to a user, the role label will be displayed in the
 
 To assign a Project to a user, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
-3. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
+1. In the upper-right corner of the **Projects** page, select **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center**.
+2. In the Admin Center interface, select **Access Control** from the left-side menu. Select a user you want to assign global roles to:
 
     === "New user"
         1. On the **Users** page, create a new user by clicking **+ Create new User**.<br>

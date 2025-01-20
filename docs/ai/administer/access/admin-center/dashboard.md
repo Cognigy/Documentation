@@ -11,7 +11,7 @@ hidden: false
 
 The _Admin Center Dashboard_ allows you to track the number of billable conversations, Knowledge Chunks, and Queries within your organization. Additionally, you can activate other Cognigy services, such as Live Agent and Voice Gateway, as well as delete the organization if necessary.
 
-You can access the **Admin Center Dashboard** page by one of the following options:
+You can access the **Admin Center Dashboard** page using one of the following options:
 
 - Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page, then select **Dashboard** from the left-side menu.
 - Select **Admin Center** from the User Menu in the bottom-left corner of the Project page, then select **Dashboard** from the left-side menu.

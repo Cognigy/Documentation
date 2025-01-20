@@ -39,17 +39,15 @@ To rerank Intents via an external LLM, follow these steps:
 
 To add descriptions to Intents, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. From the left-side menu, select the project where you want to implement LLM-based intent reranking.
-3. In the **Project** menu, navigate to **Build > Flows**.
-4. On the **Flows** page, select the Flow you want to change.
-5. In the upper-right corner, select **NLU**.
-6. On the **Intents** tab, locate the Intent to which you want to add a description.
-7. On the **Intent** page, in the upper-right corner, click ![vertical-ellipsis](../../../../_assets/icons/vertical-ellipsis.svg) **> Edit**.
-8. In the **Edit Intent** window, go to the **Description** field. Enter a clear and concise description that reflects the content of the example sentences listed in the Intent. Note that the **Description** field can contain no more than 200 characters.
-9. Click **Save**.
-10. Repeat steps 6-9 for other Intents within the Flow.
-11. In the upper-right corner, click **Build Model**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
+2. On the **Flows** page, select the Flow you want to change.
+3. In the upper-right corner, select **NLU**.
+4. On the **Intents** tab, locate the Intent to which you want to add a description.
+5. On the **Intent** page, in the upper-right corner, click ![vertical-ellipsis](../../../../_assets/icons/vertical-ellipsis.svg) **> Edit**.
+6. In the **Edit Intent** window, go to the **Description** field. Enter a clear and concise description that reflects the content of the example sentences listed in the Intent. Note that the **Description** field can contain no more than 200 characters.
+7. Click **Save**.
+8. Repeat steps 6-9 for other Intents within the Flow.
+9. In the upper-right corner, click **Build Model**.
 
 ### Add an LLM Prompt Node
 

@@ -38,52 +38,48 @@ You can export a single resource as a Package, or you can export many resources 
 Export one resource as a Package using one of the following options:
 
 === "Via the Resource page"
-     1. Go to the Cognigy.AI interface.
-     2. In the left-side menu, select a section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
-     3. On the **Resource** page, select a specific resource from the list.
-     4. On the right side of the resource, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**. This action will trigger the **Create Package** task in the Task Manager.
-     5. Check the status of the **Create Package** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
-     6. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
+     1. In the left-side menu of the Project, go to the section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
+     2. On the **Resource** page, select a specific resource from the list.
+     3. On the right side of the resource, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**. This action will trigger the **Create Package** task in the Task Manager.
+     4. Check the status of the **Create Package** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
+     5. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
 
 === "Via the Packages page"
-     1. Go to the Cognigy.AI interface.
-     2. In the left-side menu, navigate to **Settings > Packaging**.
-     3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
-     4. Select a resource from the list by activating the checkbox next to the chosen resource.
-     5. Click **Next**.
-     6. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary.
-     7. Click **Export**. 
-     8. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page.
-     9. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer.
-     10. Click **Start Over** to return to the page with the selection of resources for export.
+     1. In the left-side menu of the Project, go to **Settings > Packaging**.
+     2. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
+     3. Select a resource from the list by activating the checkbox next to the chosen resource.
+     4. Click **Next**.
+     5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary.
+     6. Click **Export**. 
+     7. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page.
+     8. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer.
+     9. Click **Start Over** to return to the page with the selection of resources for export.
 
 ### Export Multiple Resources
 
 To export multiple resources as a Package, follow these steps:
 
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, navigate to **Settings > Packaging**. 
-3. On the **Packages** page, select resources from the list by activating the checkboxes next to the specific resources or resource types. For example, if you want to export all existing Flows within a Project, select the **Flows** resource type. Alternatively, if you intend to export a larger set of resources, activate the checkbox next to the **Select Resources for Export** option. Then, deactivate the checkbox next to the resources you do not want to export. 
-4. Click **Next**. 
-5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
-6. Click **Export**. 
-7. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
-8. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
-9. Click **Start Over** to return to the page with the selection of resources for export.
+1. In the left-side menu of the Project, go to **Settings > Packaging**. 
+2. On the **Packages** page, select resources from the list by activating the checkboxes next to the specific resources or resource types. For example, if you want to export all existing Flows within a Project, select the **Flows** resource type. Alternatively, if you intend to export a larger set of resources, activate the checkbox next to the **Select Resources for Export** option. Then, deactivate the checkbox next to the resources you do not want to export. 
+3. Click **Next**. 
+4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
+5. Click **Export**. 
+6. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
+7. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
+8. Click **Start Over** to return to the page with the selection of resources for export.
 
 ### Export All Available Resources
 
 To export all available resources as a Package within your Project, follow these steps:
 
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, navigate to **Settings > Packaging**.
-3. On the **Packages** page, activate the checkbox next to the **Select Resources for Export** option. 
-4. Click **Next**. 
-5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
-6. Click **Export**. 
-7. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
-8. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
-9. Click **Start Over** to return to the page with the selection of resources for export.
+1. In the left-side menu of the Project, go to **Settings > Packaging**.
+2. On the **Packages** page, activate the checkbox next to the **Select Resources for Export** option. 
+3. Click **Next**. 
+4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
+5. Click **Export**. 
+6. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
+7. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
+8. Click **Start Over** to return to the page with the selection of resources for export.
 
 ## Import Resources as a Package
 
@@ -110,14 +106,13 @@ Importing a Package from a newer version into an older version of Cognigy.AI is 
 
 To import resources as a Package, follow these steps:
 
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, navigate to **Settings > Packaging**.
-3. On the **Packages** page, go to the **Drop a Package here to Import or Browse File** section.
-4. From your folder on your computer, select the Package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the Package from your folder on your computer. 
-5. Wait for the Package to load.
-6. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to [resolve a conflict](#resolve-conflicts) if the Package contains resources that match the names of resources in the Project into which you are importing the new Package. If you are importing a Package with Flows, you will also need to [map the Locales](#map-locales-during-flow-import).
-7. Click **Export**. 
-8. When the Package import is complete, click **Start Over**.
+1. In the left-side menu of the Project, go to **Settings > Packaging**.
+2. On the **Packages** page, go to the **Drop a Package here to Import or Browse File** section.
+3. From your folder on your computer, select the Package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the Package from your folder on your computer. 
+4. Wait for the Package to load.
+5. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to [resolve a conflict](#resolve-conflicts) if the Package contains resources that match the names of resources in the Project into which you are importing the new Package. If you are importing a Package with Flows, you will also need to [map the Locales](#map-locales-during-flow-import).
+6. Click **Export**. 
+7. When the Package import is complete, click **Start Over**.
 
 ### Resolve Conflicts
 

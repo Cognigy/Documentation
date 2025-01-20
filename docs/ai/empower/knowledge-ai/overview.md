@@ -54,16 +54,15 @@ you must either delete all existing Knowledge Stores in the current Project or c
 
 You can create a preconfigured Knowledge Store. To do this, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Knowledge**. The Knowledge AI wizard will be opened.
-3. Continue following the wizard instructions.
-4. Specify a unique name and select an embedding model.
+1. In the left-side menu of the Project, go to **Knowledge**. The Knowledge AI wizard will be opened.
+2. Continue following the wizard instructions. 
+3. Specify a unique name and select an embedding model.
 
     <figure>
       <img class="image-center" src="../../../../_assets/ai/empower/knowledge-ai/knowledge-ai-wizard.png" width="100%" />
     </figure>
 
-5. Click **Configure** and enter credentials for the model:
+4. Click **Configure** and enter credentials for the model:
 
     === "Microsoft Azure OpenAI"
         - **Connection name** — create a unique name for your connection.
@@ -97,12 +96,12 @@ You can create a preconfigured Knowledge Store. To do this, follow these steps:
         - **accessKeyID** — specify an Access Key ID. Log in to the AWS Management Console, go to the IAM dashboard, select **Users**, and choose the IAM user. Navigate to the **Security credentials** tab, and under **Access keys**, create a new access key if one hasn't been created. Copy the Access Key ID provided after creation.<br>
         - **secretAccessKey** — specify a Secret Access Key. After creating the access key, you'll be prompted to download a file containing the Access Key ID and the Secret Access Key. Alternatively, you can retrieve the Secret Access Key by navigating to the IAM dashboard, selecting the user, going to the **Security credentials** tab, and clicking **Show** next to the Access Key ID to reveal and copy the Secret Access Key.
 
-6. Click **Next**. 
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The Knowledge Source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
-9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
-10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
-11. Click **Next**.  
+5. Click **Next**. 
+6. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/_assets/ai/empower/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
+7. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. The Knowledge Source will get the same name as the file name. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
+8. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
+9. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
+10. Click **Next**.  
 
 To learn more about `ctxt`, refer to [Cognigy Text Format](ctxt.md).
 

@@ -18,17 +18,15 @@ For example, you can search for keywords such as booking, canceling, or messagin
 To open the Transcript Explorer, use one of the following options:
 
 === "Via Cognigy.AI"
-    1. Open the Cognigy.AI interface.
-    2. In the left-side menu, select a Project.
-    3. Within the Project interface, navigate to Insights using one of the following options:
+    1. In the left-side menu of the Cognigy.AI interface, select a Project.
+    2. Within the Project interface, navigate to Insights using one of the following options:
         - In the left-side menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
         The Cognigy Insights Overview dashboard will be displayed by default.
-    4. In the left-side menu, select **Transcript Explorer**.
+    3. In the left-side menu of the Insights interface, select **Transcript Explorer**.
 
 === "Via Insights"
-    1. Open your Cognigy Insights interface.<br>
-    2. In the left-side menu, select **Transcript Explorer**.
+    1. In the left-side menu of the Insights interface, select **Transcript Explorer**.
 
 The Transcript Explorer interface will be displayed. 
 
@@ -134,20 +132,18 @@ Additionally, you can switch to a Flow related to the current session.
 
 To activate Debug mode, do the following:
 
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**.
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
-4. At the top of the **Session Transcript** window, activate the **Debug mode** toggle.
+1. In the left-side menu of the Insights interface, select **Transcript Explorer**.
+2. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+3. At the top of the **Session Transcript** window, activate the **Debug mode** toggle.
 
 #### Playbooks
 
 To create a Playbook of a transcript, do the following:
 
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**.
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
-4. In the upper-right corner of the **Session Transcript** window, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) to open a selection menu.
-5. Select one of the following options:
+1. In the left-side menu of the Insights interface, select **Transcript Explorer**.
+2. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+3. In the upper-right corner of the **Session Transcript** window, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) to open a selection menu.
+4. Select one of the following options:
     - **Create Playbook** — generate a Playbook to test your Flows.
     - **Create Playbook with Assertions** — generate a Playbook and its Assertions, which are checks to ensure your Flows behaves as expected during testing.
 
@@ -159,10 +155,9 @@ To check your [Flow](../../ai/build/flows.md) or to improve the configuration, t
 
 To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, do the following:
 
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**.
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
-4. In the **Session Transcript** window, right-click a specific message and select **Open Flow**.
+1. In the left-side menu of the Insights interface, select **Transcript Explorer**.
+2. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+3. In the **Session Transcript** window, right-click a specific message and select **Open Flow**.
 
 The corresponding Flow in Cognigy.AI will be displayed.
 

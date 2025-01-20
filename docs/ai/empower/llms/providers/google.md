@@ -16,12 +16,11 @@ To start using a Google Vertex AI or Gemini model with Cognigy.AI features, foll
 
 To add a model provided by Google to Cognigy.AI, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. Go to **Build > LLM**.
-3. Click **+New LLM**.
-4. In the **New LLM** window, select a model from the **Model Type** list.
-5. Add a unique name and description for your model.
-6. From the **Provider** list, select an LLM's provider:
+1. In the left-side menu of the Project, go to **Build > LLM**.
+2. Click **+New LLM**.
+3. In the **New LLM** window, select a model from the **Model Type** list.
+4. Add a unique name and description for your model.
+5. From the **Provider** list, select an LLM's provider:
 
     === "Google Vertex AI"
         1. From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
@@ -59,8 +58,8 @@ To add a model provided by Google to Cognigy.AI, follow these steps:
         6.11 Click **Create**.<br>
         6.12 In the **Location** field, add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.
 
-7. To apply changes, click **Save**.
-8. To check if the connection was set up, click **Test**.
+6. To apply changes, click **Save**.
+7. To check if the connection was set up, click **Test**.
 
 When the model is added, you will see it in the list of models.
 

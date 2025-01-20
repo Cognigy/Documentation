@@ -12,7 +12,11 @@ hidden: false
 
 In Voice Gateway, an account may represent a specific customer organization and can have multiple users associated with it. 
 
-The account owner controls what the other users can see and do within the platform, ensuring that sensitive data and functions are kept secure. The account owner can be a user with Service Provider and Admin scopes. They can create more than one account and manage them. To create an account, in the left-side menu, select Accounts, then click **Add account** or **+**.
+The account owner controls what the other users can see and do within the platform,
+ensuring that sensitive data and functions are kept secure.
+The account owner can be a user with Service Provider and Admin scopes.
+They can create more than one account and manage them.
+To create an account, in the left-side menu of the Voice Gateway Self-Service Portal, select **Accounts**, then click **Add account** or **+**.
 
 A user with the Account scope can view and edit only the account to which they belong.
 
@@ -60,12 +64,11 @@ When the Call recording feature is enabled at the account level, calls from all 
 
 To enable recording calls at an account level, follow these steps:
 
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Accounts**.
-3. Create a new account or use an existing one.
-4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
-5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats. 
-6. Select a bucket vendor:
+1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Accounts**.
+2. Create a new account or use an existing one.
+3. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
+4. In the **Audio Format** field, choose between `.wav` and `.mp3` formats. 
+5. Select a bucket vendor:
 
     === "Amazon S3"
         - **Bucket Name** — provide the name of your bucket.
@@ -84,9 +87,9 @@ To enable recording calls at an account level, follow these steps:
         - **Connection String** — provide a [connection string](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string).
         - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
 
-7. Click **Test** to verify your connection. 
-8. Activate the **Record all calls for this account** option if you want to record calls for all applications within this account.
-9. Click **Save**.
+6. Click **Test** to verify your connection. 
+7. Activate the **Record all calls for this account** option if you want to record calls for all applications within this account.
+8. Click **Save**.
 
 All calls from all applications on this account will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
 

@@ -22,9 +22,8 @@ To learn more about metrics, refer to [Report Metrics](overview.md#report-metric
 
 To view a report, do the following:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Teams**.
-3. In the upper-left corner of the report page, select a team and time period from the list.
+1. In the Live Agent interface, go to **Reports > Teams**.
+2. In the upper-left corner of the report page, select a team and time period from the list.
 
 The chart will be updated with the corresponding data related to the selected filter.
 

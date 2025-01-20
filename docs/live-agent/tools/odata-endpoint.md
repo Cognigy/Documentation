@@ -30,17 +30,16 @@ Note that the Live Agent OData Endpoint only supports `GET` requests and does no
 
 To connect to the OData Endpoint, get a Live Agent Access Token:
 
-1. Open the Live Agent interface.
-2. In the left-side menu, go to **Profile Settings**.
-3. In the **Access Token** section, copy the existing token.
-4. Paste this token to your OData request.
+1. In the left-side menu of the Live Agent interface, go to **Profile Settings**.
+2. In the **Access Token** section, copy the existing token.
+3. Paste this token to your OData request.
 
 An OData URL is composed of the service root, API version, service path, data collection, and Live Agent access token parameter as follows:
 
-```
-    GET /<api-version>/odata/<OData data model>?<odata query> HTTP/1.1
-    Host: <odata domain>
-    Authorization: Bearer <Live Agent access token>
+```txt
+GET /<api-version>/odata/<OData data model>?<odata query> HTTP/1.1
+Host: <odata domain>
+Authorization: Bearer <Live Agent access token>
 ```
 
 The authentication can also be done using a query param such as follows:

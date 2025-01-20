@@ -1,4 +1,4 @@
-1. In the left-side menu of your project, select **Manage > Settings**.
+1. In the left-side menu of the Project, go to **Manage > Settings**.
 2. Go to the **Voice Preview Settings** section and select one of the following providers:
 
     === "Microsoft Azure Speech Services"

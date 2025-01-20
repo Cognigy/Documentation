@@ -36,11 +36,11 @@ To add credentials for a speech provider, follow these steps:
 
 After adding credentials for the speech provider, you can create your first voice agent.
 
-## Build a Voice Agent
+## Build a Voice AI Agent
 
-To build a voice agent, follow these steps:
+To build a voice AI Agent, follow these steps:
 
-1. In the left-side menu, navigate to **Build > Flows**.
+1. In the left-side menu of the Project, go to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
 3. In the **New Flow** window, do the following:<br>
     1. Add a unique name, for example, `Getting Started`.<br>
@@ -72,9 +72,9 @@ To build a voice agent, follow these steps:
 
 Once the voice agent is created, you can test it using the Interaction Panel.
 
-## Test your Voice Agent
+## Test your Voice AI Agent
 
-To test your voice agent, follow these steps:
+To test your voice AI Agent, follow these steps:
 
 1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
 2. Initiate a call by clicking ![phone](../../_assets/icons/phone.svg) **> Start Call** at the bottom of the Interaction Panel. 

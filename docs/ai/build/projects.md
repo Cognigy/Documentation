@@ -21,14 +21,13 @@ AI Agents can deploy on a wide range of channels.
 
 ## Create a Project
 
-1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click the **Plus button** to create a Project.
-3. Give your Project a unique name that describes its purpose. You will also be able to change the name later.
-4. Select the primary language for your Project.
-5. Select a color that will be associated with your Project.
-6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
-7. Click **Next: Select Project Type**.
-8. Select your Project type:
+1. In the upper-left corner of the **Projects** page, click the **Plus button** to create a Project.
+2. Give your Project a unique name that describes its purpose. You will also be able to change the name later.
+3. Select the primary language for your Project.
+4. Select a color that will be associated with your Project.
+5. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create a Project with Live Agent Flow](#create-a-project-with-live-agent-flow) section.
+6. Click **Next: Select Project Type**.
+7. Select your Project type:
 
     === "Agentic AI (Beta)"
          1. Click **Next**.<br>
@@ -67,10 +66,9 @@ The Projects are sorted by last activity, with the most recently updated Project
 
 To search for Projects in Cognigy.AI, follow these steps:
 
-1. Go to the Cognigy.AI interface.
-2. On the left side of the screen, navigate to the **Search Projects** filed.
-3. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
-4. Select the Project you want to edit.
+1. In the upper-left corner of the **Projects** page, go to the **Search Projects** filed.
+2. Enter the name of the Project you're looking for. As you start typing the Project name in the search field, the search results will dynamically change, providing you with a list of Projects that match the entered text.
+3. Select the Project you want to edit.
 
 ## Copy the Project ID
 
@@ -80,17 +78,15 @@ You can copy the Project ID using one of the following methods:
 
 === "From the UI" 
 
-    1. Go to the Cognigy.AI interface.
-    2. In the left-side menu, find the Project you need and hover your cursor over it.
-    3. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
-    4. Select **Copy Project ID**. The ID will be copied to the clipboard.
+    1. In the left-side menu of the **Projects** page, find the Project you need and hover your cursor over it.
+    2. Click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg).
+    3. Select **Copy Project ID**. The ID will be copied to the clipboard.
 
 === "From the URL" 
 
-    1. Go to the Cognigy.AI interface.
-    2. In the left-side menu, select the Project you need.
-    3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
-    4. Save the copied Project ID later use.
+    1. In the left-side menu of the **Projects** page, select the Project you need.
+    2. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/project/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
+    3. Save the copied Project ID later use.
 
 ## Pin and Unpin Projects
 
