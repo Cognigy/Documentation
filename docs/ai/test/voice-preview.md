@@ -13,9 +13,13 @@ It supports cloud speech-to-text and text-to-speech services from providers such
 To use this feature, you need to input raw text or SSML syntax, select the language and voice.
 However, note that the SSML syntax must be supported by the chosen Voice Preview provider.
 
+## Prerequisites
+
+- Allow microphone access in your browser, and then in your device settings if needed.
+
 ## Restrictions
 
-Only Google, Microsoft, and Amazon AWS speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
+- Only Google, Microsoft, and Amazon AWS speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
 
 ## Access STT and TTS Providers
     
