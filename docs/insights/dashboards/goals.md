@@ -7,7 +7,7 @@ hidden: false
 
 # Goals
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.93(Beta)-purple.svg)](../../../release-notes/4.93.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.93(Beta)-purple.svg)](../../release-notes/4.93.md)
 
 !!! note
     The Goals Dashboard is in Beta and is available if you have migrated to the new [Insights framework](../data-management/pre-aggregation.md).
