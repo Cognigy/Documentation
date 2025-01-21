@@ -59,7 +59,7 @@ The goals have three distinct categories, each has a separate bar:
 Source table:
 
 ```txt
-| dimension | measure                   | value |
+| Dimension | Measure                   | Value |
 |-----------|---------------------------|-------|
 | Goal_01   | completed_count           | 13667 |
 | Goal_04   | completed_count           | 3601  |
