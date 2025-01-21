@@ -7,6 +7,8 @@ hidden: false
 
 # Goals
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.93(Beta)-purple.svg)](../../../release-notes/4.93.md)
+
 !!! note
     The Goals Dashboard is in Beta and is available if you have migrated to the new [Insights framework](../data-management/pre-aggregation.md).
     Before migration, you can also explore the Goals Dashboard in the Cognigy trial environment.
@@ -45,38 +47,44 @@ Displays the total cost savings for completed and partially completed goals.
 
 ## Bar charts
 
-### Goal Completion Rate In %
+### Goals Performance (in numbers)
 
-Displays the percentage of goals achieved within the selected time span.
+Displays the number of goals achieved within the selected time span.
 The goals have three distinct categories, each has a separate bar:
 
 - **Incomplete** — goals that have been started, with only the initial step triggered.
-- **Partial Completion** — goals that have been started and progressed through some steps but the completion step was not achieved.
-- **Total Completion** — goals that have been started, progressed through some steps, and include at least one completion step was achieved.
+- **Partial Completion** — goals that have been started and progressed through some steps, but the completion step was not achieved.
+- **Total Completion** — goals that have been started, progressed through some steps, and at least one completion step was achieved.
 
 Source table:
 
 ```txt
-| Date        | Value                    | Percentage |
-|-------------|--------------------------|------------|
-| 10/29/2024  | completed_rate           | 44%        |
-| 10/29/2024  | partially_completed_rate | 42%        |
-| 10/29/2024  | incompleted_rate         | 14%        |
-| 10/30/2024  | completed_rate           | 39%        |
-| 10/30/2024  | partially_completed_rate | 38%        |
-| 10/30/2024  | incompleted_rate         | 24%        |
-| 10/31/2024  | completed_rate           | 35%        |
-| 10/31/2024  | partially_completed_rate | 35%        |
-| 10/31/2024  | incompleted_rate         | 30%        |
-| 11/1/2024   | completed_rate           | 44%        |
-| 11/1/2024   | partially_completed_rate | 40%        |
-| 11/1/2024   | incompleted_rate         | 16%        |
+| Dimension | Measure                   | Value |
+|-----------|---------------------------|-------|
+| Goal_01   | completed_count           | 13667 |
+| Goal_04   | completed_count           | 3601  |
+| Goal_05   | completed_count           | 3425  |
+| Goal_03   | completed_count           | 1396  |
+| Goal_02   | completed_count           | 1358  |
+| Goal_08   | completed_count           | 99    |
+| Goal_01   | incompleted_count         | 6640  |
+| Goal_04   | incompleted_count         | 3691  |
+| Goal_05   | incompleted_count         | 3573  |
+| Goal_03   | incompleted_count         | 3124  |
+| Goal_02   | incompleted_count         | 11687 |
+| Goal_08   | incompleted_count         | 0     |
+| Goal_01   | partially_completed_count | 3229  |
+| Goal_04   | partially_completed_count | 3494  |
+| Goal_05   | partially_completed_count | 3632  |
+| Goal_03   | partially_completed_count | 0     |
+| Goal_02   | partially_completed_count | 0     |
+| Goal_08   | partially_completed_count | 0     |
 ```
 
 Result:
 
 <figure>
-  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goal-completion-rate.png" width="100%" />
+  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goals_performance.png" width="100%" />
 </figure>
 
 ### Time Saved (in hours)
@@ -87,15 +95,15 @@ You can track efficiency gains and compare time saved across different goals.
 Source table:
 
 ```txt
-| Date       | Goal_1   | Goal_3   | Goal_4   | Goal_5   |
-|------------|----------|----------|----------|----------|
-| 27.10.2024 | 37:27:00 | -        | 22:27:00 | 28:20:00 |
-| 28.10.2024 | 216 h    | 25:30    | 37:06:00 | 48:50:00 |
-| 29.10.2024 | 165 h    | 23:30    | 22:42:00 | 27:50:00 |
-| 30.10.2024 | 108 h    | 8:30     | 27:48:00 | 36:20:00 |
-| 31.10.2024 | 82:53:00 | 5:30     | 38:03:00 | 49:30:00 |
-| 01.11.2024 | 144 h    | 18:30    | 16:12:00 | 25:10:00 |
-| 02.11.2024 | 31:22.00 | -        | 18:30:00 | 21:10:00 |
+| Date       | Goal_1   | Goal_3 | Goal_4   | Goal_5   |
+|------------|----------|--------|----------|----------|
+| 27.10.2024 | 37:27:00 | -      | 22:27:00 | 28:20:00 |
+| 28.10.2024 | 216 h    | 25:30  | 37:06:00 | 48:50:00 |
+| 29.10.2024 | 165 h    | 23:30  | 22:42:00 | 27:50:00 |
+| 30.10.2024 | 108 h    | 8:30   | 27:48:00 | 36:20:00 |
+| 31.10.2024 | 82:53:00 | 5:30   | 38:03:00 | 49:30:00 |
+| 01.11.2024 | 144 h    | 18:30  | 16:12:00 | 25:10:00 |
+| 02.11.2024 | 31:22.00 | -      | 18:30:00 | 21:10:00 |
 ```
 
 Result:
