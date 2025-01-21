@@ -84,7 +84,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goals_performance_in_numbers.png" width="100%" />
+  <img class="image-center" src="../../../_assets/insights/dashboards/goals/goals_performance.png" width="100%" />
 </figure>
 
 ### Time Saved (in hours)
