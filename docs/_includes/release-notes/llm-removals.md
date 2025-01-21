@@ -7,4 +7,4 @@
     - Google Vertex AI: `chat-bison@002`, `chat-bison@002`, `chat-bison-32k@002`, `code-bison@002`,`code-bison-32k@002`,`codechat-bison@002`, `codechat-bison-32k@002`, `text-bison@002`, `text-bison-32k@002` (removal date is October 9, 2024)
     - Azure OpenAI: `gpt-35-turbo (version 1106)` (removal date is no earlier than November 17, 2024)<br>
 
-     Refer to the list of all upcoming removals on the [Deprecations and Removals](deprecations-and-removals.md) page.
+     Refer to the list of all upcoming removals on the [Deprecations and Removals](https://docs.cognigy.com/relese-notes/deprecations-and-removals/) page.

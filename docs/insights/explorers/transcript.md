@@ -168,9 +168,8 @@ The Message Explorer shows you the previous and subsequent messages for the sele
 
 To switch from the selected transcript message to the Message Explorer, follow these steps:
 
-1. On the **Transcript Explorer** page, On the right side of the screen, the transcript will be displayed.
-2. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
-3. In the **Session Transcript** window, right-click a specific message and select **Open in Message Explorer**.
+1. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+2. In the **Session Transcript** window, right-click a specific message and select **Open in Message Explorer**.
 
 The Message Explorer interface will be opened.
 
