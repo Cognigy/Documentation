@@ -1,4 +1,12 @@
-# Live Agent
+---
+title: "Cognigy Live Agent"
+slug: "cognigy-live-agent"
+description: "Cognigy Live Agent is a contact center solution that is designed to work exclusively with Cognigy.AI. It utilizes human agents to handle escalated conversations from AI Agents. The system automatically assigns human agents based on their expertise and availability, which helps businesses to optimize efficiency, scalability and deliver exceptional customer support."
+hide:
+  - feedback
+---
+
+# Cognigy Live Agent
 
 _Cognigy Live Agent_ is a contact center solution that is designed to work exclusively with Cognigy.AI. It utilizes human agents to handle escalated conversations from AI Agents. The system automatically assigns human agents based on their expertise and availability, which helps businesses to optimize efficiency, scalability and deliver exceptional customer support.
 

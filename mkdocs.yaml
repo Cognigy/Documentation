@@ -817,7 +817,6 @@ extra_javascript:
   - _assets/cognigy.js
   - _assets/custom.js
   - _assets/mathjax.js
-  - https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.25/webchat.js
 
 plugins:
   - search
@@ -871,6 +870,18 @@ extra:
   analytics:
     provider: google
     property: G-DQ0NQDZTS1
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via
+            a GitHub issue</a>
 
   # Cookie consent screen
   consent:

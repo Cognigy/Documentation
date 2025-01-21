@@ -1,3 +1,11 @@
+---
+title: "Cognigy Insights"
+slug: "cognigy-insights"
+description: "Cognigy Insights is a tool that provides businesses with actionable insights and analytics derived from conversational data collected through Cognigy.AI. Insights help businesses better understand their users, optimize chat and voice interactions, and improve the overall customer experience."
+hide:
+  - feedback
+---
+
 # Cognigy Insights
 
 _Cognigy Insights_ is a tool that provides businesses with actionable insights and analytics derived from conversational data collected through Cognigy.AI.

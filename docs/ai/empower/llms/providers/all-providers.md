@@ -2,7 +2,8 @@
 title: "All LLM Providers"
 slug: "all-llm-providers"
 description: "To add a model to Cognigy.AI, select an LLM provider that has integration with Cognigy.AI from the list."
-hidden: false
+hide: 
+  - feedback
 ---
 
 To add a standard or custom model, select an LLM provider integrated with Cognigy.AI:
