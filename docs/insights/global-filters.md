@@ -6,7 +6,7 @@ hidden: false
 
 # Global Filters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../release-notes/4.75.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.93-blue.svg)](../release-notes/4.93.md)
 
 _Global Filters_ enable you to focus your dashboards and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all dashboards and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
 
@@ -31,9 +31,9 @@ Available preset time spans include:
 
 | Time Span     | Description                                                             |
 |---------------|-------------------------------------------------------------------------|
-| Last 7 days   | Shows data from the past week.                                          |
-| Last 30 days  | Shows data from the last 30 days.                                       |
-| Last 365 days | Shows data from the previous year. The maximum period for data storage. |
+| Last 7 Days   | Shows data from the past week. This time span is the default filter.    |
+| Last 30 Days  | Shows data from the last 30 days.                                       |
+| Last 365 Days | Shows data from the previous year. The maximum period for data storage. |
 | Today         | Shows data from from the current day.                                   |
 | This Month    | Shows data from  the current month.                                     |
 | This Year     | Shows data from the current calendar year.                              |
