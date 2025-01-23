@@ -1,6 +1,6 @@
 # Members
 
-The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](admin-center/access-control.md) panel.
+The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Project. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](admin-center/access-control.md) panel.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/members.png" width="100%" />
@@ -8,21 +8,21 @@ The **Members** panel allows **Project Admins** to manage the **Roles** that use
 
 ## Project Roles
 
-In addition to global roles, Cognigy.AI offers Agent-specific roles, which can be assigned to compliment the global access rights that have been granted for a given user.
+In addition to global roles, Cognigy.AI offers Project-specific roles, which can be assigned to compliment the global access rights that have been granted for a given user.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/members2.png" width="100%" />
 </figure>
 
 !!! note "Project Member Administration"
-    A user profile requires the "Project Admin" role to be able to make changes to any user access for that specific agent. This will automatically be assigned to any user who creates a new agent.
+    A user profile requires the "Project Admin" role to be able to make changes to any user access for that Agent. This will automatically be assigned to any user who creates a new Agent.
 
 The available project roles are presented in the table below.
 
 | Project Role           | Permissions                                                                                                                                                                                                                                                                                                                 |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics              | Adds the following permissions: <br> - full permissions on analytics                                                                                                                                                                                                                                                        |
-| Basic                  | Adds the following permissions: <br> - read permission for all agent assets except: User Details, contact profiles, Node Comments, Logs, and Member Details                                                                                                                                                                 |
+| Basic                  | Adds the following permissions: <br> - read permission for all Project assets except: User Details, contact profiles, Node Comments, Logs, and Member Details                                                                                                                                                                 |
 | Connection Admin       | Adds the following permissions: <br> - full permissions for Connections                                                                                                                                                                                                                                                     |
 | Contact Profile Admin  | Adds the following permissions: <br> - full permissions for Contact Profiles <br> - full permissions for Conversation History                                                                                                                                                                                               |
 | Contact Profile Editor | Adds the following permissions: <br> - read/update permissions for Contact Profiles                                                                                                                                                                                                                                         |
@@ -67,7 +67,7 @@ When you create a new member in your project, that user will receive a notificat
 
 ## Locale Restrictions
 
-The locale restrictions feature allows a user's access to be granted to a single locale. By enabling the "User is restricted to the following locales" option, the user can be assigned any of the locales that exist within the agent.
+The locale restrictions feature allows a user's access to be granted to a single locale. By enabling the "User is restricted to the following locales" option, the user can be assigned any of the locales that exist within the Project.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/localeRestrictions.png" width="100%" />
