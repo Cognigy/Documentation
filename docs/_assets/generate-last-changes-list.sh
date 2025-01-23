@@ -6,7 +6,8 @@
 BASE_DIR=$(git rev-parse --show-toplevel)
 
 # Step 2: Determine the default branch
-DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+# First try to get it from origin HEAD, fallback to 'main' if not found
+DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@' || echo "main")
 
 # Print the branch being checked
 echo "Checking changes on branch: $DEFAULT_BRANCH"
@@ -40,8 +41,11 @@ for TARGET_DIR in "${TARGET_DIRS[@]}"; do
   while IFS= read -r file; do
     # Check if the file is tracked by Git
     if git ls-files --error-unmatch "$file" > /dev/null 2>&1; then
-      # Get the last change (date and user) for the current file from the default branch only
-      last_change=$(git log -1 --date=short --format="%ad %an" "$DEFAULT_BRANCH" -- "$file")
+      # Get the last change (date and user) for the current file
+      # Try branch-specific first, fall back to any branch if needed
+      last_change=$(git log -1 --date=short --format="%ad %an" "origin/$DEFAULT_BRANCH" -- "$file" 2>/dev/null || 
+                    git log -1 --date=short --format="%ad %an" -- "$file")
+      
       # If the file has a last change, append it to the output
       if [ -n "$last_change" ]; then
         # Get the relative path from the BASE_DIR for output clarity
