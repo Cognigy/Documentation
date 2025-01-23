@@ -14,21 +14,26 @@ Cognigy.AI is fully compatible with the following managed Kubernetes services:
 - AWS EKS
 - Azure AKS
 
-Running Cognigy.AI on top of on-premises Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
+!!! warning "On-premises Kubernetes deployments"
+    Running Cognigy.AI on top of on-premises Kubernetes clusters (like OpenShift) will require significant additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning on-premises Kubernetes clusters to make them compatible with Cognigy products.
 
 !!! warning "Kubernetes versions"
-    Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
+    Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
 
 ### Hardware Requirements
-For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specification for AWS EKS (or equivalents on other cloud providers):
+For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specifications for AWS EKS (or equivalents on other cloud providers):
 
 - At least 6 x `c5.2xlarge` (AWS) or 6 x `Standard_F8s_v2` (Azure) worker nodes or equivalent VMs with 8 CPU/16 GB RAM and `x86_64` CPU architecture on other cloud providers.
+- A dedicated and isolated VPC (Virtual Private Cloud on AWS) or VNET (Virtual Network on Azure) with at least /18 private IP address space for a production Kubernetes cluster. Note that by leveraging an overlay CNI plugin like `kubenet` on Azure, you can drastically reduce the private IP address space required for the installation. However, the Kubernetes cluster must support up to 1000 pods for a production setup.
+- Kubernetes worker nodes must be distributed across 3 Availability Zones (AZ) for a high-availability setup.
 - 100 GB root SSD storage per worker node.
-- Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high-availability setup.
-- 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup).
-- 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets.
-- A dedicated and isolated VPC (Virtual Private Cloud on AWS) or VNET (Virtual Network on Azure) with at least /18 private IP address space for a production Kubernetes cluster.
+- 3 x 250 GB block SSD storage for a MongoDB database (3-replica MongoDB setup).
+- 3 x 15 GB block SSD storage for Redis-persistent deployment.
+- 3 x 50 GB block SSD storage for Knowledge AI database (if Knowledge AI feature is required).
+- At least 2 x 10 GB of shared file system storage (EFS, AFS, or other NFS-compatible equivalents) for application assets.
 
+!!! note "Dynamic storage provisioning on AWS and Azure"
+    If you use AWS EKS or Azure AKS platform to run your Kubernetes cluster and your cloud environment supports dynamic storage provisioning, the block SSD storage will be created dynamically. However, for other cloud providers and on-premise installations, you will need to provision custom storage classes with equal performance and ensure the corresponding storage disks can be created. You can find references to storage classes on AWS and Azure in [MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart/tree/master/cloud-providers) and [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/699853e79f3573b5923b361bda8fc6796bb8cbcf/values.yaml#L4093).
 
 !!! warning "General-purpose machines"
     Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
@@ -42,7 +47,7 @@ Cognigy products are packaged with the [Helm](https://helm.sh/) package manager 
 
 
 !!! warning "Helm versions"
-    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
+    For Helm versions compatible with Cognigy.AI refer to [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
 
 ### Cognigy License
 Cognigy.AI product requires a license key, which you will receive once a license agreement is signed. The key is necessary to install the product.
@@ -65,6 +70,7 @@ If you plan to set up a Kubernetes environment in a private data center or if th
 - `billing.cognigy.ai:443` — Cognigy's billing server.
 
 Otherwise, the Cognigy.AI setup won't be able to download Docker images and assets during the installation process.
+Note, depending on the implementation of Cognigy.AI flows, additional access to resources located in Internet may be required.
 
 ### Network Firewalls / Websocket Support
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Cognigy.AI heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
