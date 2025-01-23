@@ -103,7 +103,7 @@ docs/ai/empower/llms/providers/anthropic.md	2025-01-14 Elena Baskakova
 docs/ai/empower/llms/providers/openai.md	2025-01-14 Elena Baskakova
 docs/ai/empower/llms/providers/aleph-alpha.md	2025-01-14 Elena Baskakova
 docs/ai/empower/llms/providers/microsoft-azure-openai.md	2025-01-14 Elena Baskakova
-docs/ai/empower/llms/providers/all-providers.md	2025-01-02 Caio Lopes de Melo Lindoso
+docs/ai/empower/llms/providers/all-providers.md	2025-01-21 Elena Baskakova
 docs/ai/empower/llms/providers/amazon-bedrock.md	2025-01-14 Elena Baskakova
 docs/ai/empower/llms/providers/google.md	2025-01-14 Elena Baskakova
 docs/ai/empower/llms/llm-session-token-counter.md	2025-01-16 Caio Lopes de Melo Lindoso
@@ -327,12 +327,12 @@ docs/ai-copilot/installation/migration/overview.md	2024-05-16 Benjamin Mayr
 docs/ai-copilot/installation/migration/ai-copilot-new-dns-names-migration.md	2024-05-16 Benjamin Mayr
 docs/ai-copilot/getting-started.md	2025-01-15 Elena Baskakova
 docs/ai-copilot/embedding.md	2024-07-16 Martyna Korzynek
-docs/ai-copilot/index.md	2024-07-01 Elena Baskakova
+docs/ai-copilot/index.md	2025-01-21 Elena Baskakova
 docs/ai-copilot/voice/transfer-node.md	2024-07-15 martyna korzynek
 docs/ai-copilot/voice/voice-overview.md	2024-07-16 martyna korzynek
 docs/ai-copilot/configuration.md	2025-01-14 Elena Baskakova
 docs/ai-copilot/plug-and-play-widgets.md	2024-05-16 Benjamin Mayr
-docs/help/index.md	2024-05-16 Benjamin Mayr
+docs/help/index.md	2025-01-21 Elena Baskakova
 docs/help/get-help.md	2024-05-16 Benjamin Mayr
 docs/insights/global-filters.md	2025-01-21 Elena Baskakova
 docs/insights/overview.md	2024-11-28 Elena Baskakova
@@ -342,7 +342,7 @@ docs/insights/data-management/pre-aggregation.md	2024-07-12 Elena Baskakova
 docs/insights/data-management/time-zone.md	2025-01-14 Elena Baskakova
 docs/insights/glossary.md	2024-11-20 Elena Baskakova
 docs/insights/download-reports.md	2024-05-16 Benjamin Mayr
-docs/insights/index.md	2024-09-10 Elena Baskakova
+docs/insights/index.md	2025-01-21 Elena Baskakova
 docs/insights/dashboards/overview.md	2025-01-21 Elena Baskakova
 docs/insights/dashboards/nlu-performance.md	2025-01-09 Elena Baskakova
 docs/insights/dashboards/live-agent.md	2024-09-10 Elena Baskakova
@@ -397,7 +397,7 @@ docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.
 docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md	2024-05-16 Benjamin Mayr
 docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md	2025-01-15 Elena Baskakova
 docs/live-agent/getting-started/live-agent-setup/live-agent-setup-org.md	2025-01-15 Elena Baskakova
-docs/live-agent/index.md	2025-01-08 Elena Baskakova
+docs/live-agent/index.md	2025-01-21 Elena Baskakova
 docs/live-agent/reports/overview.md	2025-01-15 Elena Baskakova
 docs/live-agent/reports/admin/overview.md	2024-05-16 Benjamin Mayr
 docs/live-agent/reports/admin/conversations.md	2025-01-14 Elena Baskakova
@@ -470,7 +470,7 @@ docs/voice-gateway/installation/installation-process.md	2024-05-16 Benjamin Mayr
 docs/voice-gateway/installation/version-compatibility-matrix.md	2025-01-20 Elena Baskakova
 docs/voice-gateway/creating-outbound-calls.md	2024-12-13 Elena Baskakova
 docs/voice-gateway/getting-started.md	2025-01-15 Elena Baskakova
-docs/voice-gateway/index.md	2024-09-12 Elena Baskakova
+docs/voice-gateway/index.md	2025-01-21 Elena Baskakova
 docs/voice-gateway/technical-capabilities.md	2024-11-28 Elena Baskakova
 docs/voice-gateway/migrate-from-ac-to-vg.md	2025-01-15 Elena Baskakova
 docs/webchat/overview.md	2024-08-19 Elena Baskakova
@@ -483,7 +483,7 @@ docs/webchat/v2/supported-browsers.md	2024-08-19 Elena Baskakova
 docs/webchat/v2/embedding.md	2025-01-15 Elena Baskakova
 docs/webchat/v2/configuration.md	2025-01-15 Elena Baskakova
 docs/webchat/v2/features.md	2024-07-24 Elena Baskakova
-docs/webchat/index.md	2024-08-19 Elena Baskakova
+docs/webchat/index.md	2025-01-21 Elena Baskakova
 docs/webchat/v3/overview.md	2024-09-20 Elena Baskakova
 docs/webchat/v3/supported-browsers.md	2024-08-09 Elena Baskakova
 docs/webchat/v3/accessibility.md	2024-11-29 Caio Lopes de Melo Lindoso
@@ -497,7 +497,7 @@ docs/xApps/overview.md	2024-07-24 Elena Baskakova
 docs/xApps/api.md	2024-10-26 Elena Baskakova
 docs/xApps/security/secure-xApp-from-xss.md	2024-10-26 Elena Baskakova
 docs/xApps/supported-browsers-and-channels.md	2024-05-16 Benjamin Mayr
-docs/xApps/index.md	2024-09-11 Elena Baskakova
+docs/xApps/index.md	2025-01-21 Elena Baskakova
 docs/xApps/build/overview.md	2024-05-16 Benjamin Mayr
 docs/xApps/build/first-xApp.md	2024-07-24 Elena Baskakova
 docs/xApps/build/overlay.md	2024-05-16 Benjamin Mayr

@@ -1,4 +1,4 @@
-name: generate-last-changes-list
+name: generate-last-changes-report
 
 trigger:
   batch: true
@@ -14,10 +14,10 @@ pool:
 
 stages:
   - stage: BuildLastChanges
-    displayName: Generate Last Changes Lists
+    displayName: Generate Last Changes Report
     jobs:
       - job:
-        displayName: Generate Last Changes List
+        displayName: Generate Last Changes Report
         steps:
           - checkout: self
             persistCredentials: "true"
@@ -32,11 +32,11 @@ stages:
 
           - script: |
               git config --global --add safe.directory $(Build.SourcesDirectory)
-              chmod +x ./docs/_assets/generate-last-changes-list.sh
+              chmod +x ./docs/_assets/generate-last-changes-report.sh
             displayName: Configure Git and grant execute permissions
 
-          - script: ./docs/_assets/generate-last-changes-list.sh
-            displayName: Run script to generate last changes list
+          - script: ./docs/_assets/generate-last-changes-report.sh
+            displayName: Run script to generate last changes report
 
           - script: ls -R $(Build.SourcesDirectory)
             displayName: List all files and directories
@@ -45,7 +45,7 @@ stages:
             displayName: Find generated file
 
           - task: PublishBuildArtifacts@1
-            displayName: Publish changes list
+            displayName: Publish changes report
             inputs:
               PathtoPublish: $(Build.SourcesDirectory)/docs/_assets/last_changes/file_changes_all.txt
-              ArtifactName: last-changes-list
+              ArtifactName: last-changes-report
