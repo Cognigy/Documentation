@@ -25,7 +25,7 @@ TARGET_DIRS=(
 )
 
 # Step 4: Output file
-OUTPUT_FILE="$BASE_DIR/last_changes/file_changes_all.txt"
+OUTPUT_FILE="$BASE_DIR/docs/_assets/last_changes/file_changes_all.txt"
 echo -e "File Name\tDate of Last Change\tUser" > "$OUTPUT_FILE"
 
 # Step 5: Loop through the target directories
@@ -55,4 +55,4 @@ done
 # Step 7: Display results
 echo "Changes for .md files across all directories saved to $OUTPUT_FILE."
 echo -e "\nSummary:"
-cat "$OUTPUT_FILE"
+cat "$OUTPUT_FILE" 
