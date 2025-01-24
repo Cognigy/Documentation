@@ -6,6 +6,7 @@ hidden: false
 # Prerequisites
 
 ### Kubernetes Cluster
+
 Cognigy.AI installation requires a fully functional Kubernetes cluster.
 We suggest that you use a managed Kubernetes cluster provided by common public cloud operators
 (Amazon EKS, Microsoft AKS, Google GKE).
@@ -14,17 +15,16 @@ Cognigy.AI is fully compatible with the following managed Kubernetes services:
 - AWS EKS
 - Azure AKS
 
-!!! warning "On-premises Kubernetes deployments"
-    Running Cognigy.AI on top of on-premises Kubernetes clusters (like OpenShift) will require significant additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning on-premises Kubernetes clusters to make them compatible with Cognigy products.
+!!! warning
+    - Running Cognigy.AI on top of on-premises Kubernetes clusters (like OpenShift) will require significant additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning on-premises Kubernetes clusters to make them compatible with Cognigy products.
 
-!!! warning "Kubernetes versions"
-    Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
+    - Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
 
 ### Hardware Requirements
 For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specifications for AWS EKS (or equivalents on other cloud providers):
 
 - At least 6 x `c5.2xlarge` (AWS) or 6 x `Standard_F8s_v2` (Azure) worker nodes or equivalent VMs with 8 CPU/16 GB RAM and `x86_64` CPU architecture on other cloud providers.
-- A dedicated and isolated VPC (Virtual Private Cloud on AWS) or VNET (Virtual Network on Azure) with at least /18 private IP address space for a production Kubernetes cluster. Note that by leveraging an overlay CNI plugin like `kubenet` on Azure, you can drastically reduce the private IP address space required for the installation. However, the Kubernetes cluster must support up to 1000 pods for a production setup.
+- A dedicated and isolated Virtual Private Cloud on AWS (VPC) or Virtual Network on Azure (VNET) with at least /18 private IP address space for a production Kubernetes cluster. Note that by leveraging an overlay Container Network Interface (CNI) plugin like `kubenet` on Azure, you can drastically reduce the private IP address space required for the installation. However, the Kubernetes cluster must support up to 1000 pods for a production setup.
 - Kubernetes worker nodes must be distributed across 3 Availability Zones (AZ) for a high-availability setup.
 - 100 GB root SSD storage per worker node.
 - 3 x 250 GB block SSD storage for a MongoDB database (3-replica MongoDB setup).
