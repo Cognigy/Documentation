@@ -1,4 +1,12 @@
-# Support
+---
+title: "Cognigy Support"
+slug: "cognigy-support"
+description: "Use the Help Center and other resources from Cognigy. If they do not help, contact Cognigy Support for assistance with troubleshooting."
+hide:
+  - feedback
+---
+
+# Cognigy Support
 
 Use the Help Center and other resources from Cognigy. If they do not help, contact Cognigy Support for assistance with troubleshooting.
 

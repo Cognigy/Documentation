@@ -1,3 +1,11 @@
+---
+title: "Cognigy.AI"
+slug: "cognigy-ai"
+description: "Cognigy.AI is a platform designed for large-scale enterprises to create, deploy, and manage chat and voice agents. The platform leverages advanced NLU technology and LLMs to develop conversational interfaces that can accurately understand and interpret user queries."
+hide:
+  - feedback
+---
+
 # Cognigy.AI
 
 _Cognigy.AI_ is a platform designed for large-scale enterprises to create, deploy, and manage chat and voice agents.

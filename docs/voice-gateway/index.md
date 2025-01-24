@@ -1,3 +1,11 @@
+---
+title: "Cognigy Voice Gateway"
+slug: "cognigy-voice-gateway"
+description: "Cognigy Voice Gateway is an AI-based solution to deploy voice AI Agents for automated phone conversations. It is integrated with the Cognigy.AI platform to connect voice AI Agents to your contact center. Voice Gateway is an add-on product to Cognigy.AI and cannot be used independently."
+hide:
+  - feedback
+---
+
 # Cognigy Voice Gateway
 
 _Cognigy Voice Gateway_ is an AI-based solution to deploy voice AI Agents for automated phone conversations. It is integrated with the Cognigy.AI platform to connect voice AI Agents to your contact center. Voice Gateway is an add-on product to Cognigy.AI and cannot be used independently.
