@@ -95,7 +95,7 @@ The Cognigy Documentation linter contains the following components:
 1. In Azure Devops, go to the **Documentation** project.
 2. Select the PR that you want to check. Make sure that your PR is updated, contains the latest changes from the main branch, and points to the main branch.
 3. To trigger the Vale linter, follow these steps:
-    3.1 Click View 3 checks. 
+    3.1 Click **View 3 checks**. 
     3.2 In the **Checks** window, under the Optional click **Re-queue next** or **Queue** next to the **vale-linter** check. 
     3.3 If the build is successful, you will see a comment from Mr. Vale.
 
