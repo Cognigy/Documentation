@@ -26,6 +26,8 @@ The Cognigy Documentation linter contains the following components:
 
 ## How to Run the Linter
 
+### Run the Linter Locally
+
 1. [Install Vale](https://vale.sh/docs/vale-cli/installation/) by following the instructions for your operating system. 
 2. To verify that Vale is installed, run the following command in your terminal:
    ```bash
@@ -87,6 +89,15 @@ The Cognigy Documentation linter contains the following components:
     where `docs\ai\test\logs.md` is the file where linter found issues.
 6. Open the files where the linter found issues and make the necessary changes based on the feedback.
 7. After fixing the issues, rerun the linter to ensure that they have been resolved.
+
+### Run the Linter on Azure Devops
+
+1. In Azure Devops, go to the **Documentation** project.
+2. Select the PR that you want to check. Make sure that your PR is updated, contains the latest changes from the main branch, and points to the main branch.
+3. To trigger the Vale linter, follow these steps:
+    3.1 Click View 3 checks. 
+    3.2 In the **Checks** window, under the Optional click **Re-queue next** or **Queue** next to the **vale-linter** check. 
+    3.3 If the build is successful, you will see a comment from Mr. Vale.
 
 ## More Information
 
