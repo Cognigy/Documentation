@@ -18,7 +18,7 @@ Cognigy.AI is fully compatible with the following managed Kubernetes services:
 !!! warning
     - Running Cognigy.AI on top of on-premises Kubernetes clusters (like OpenShift) will require significant additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning on-premises Kubernetes clusters to make them compatible with Cognigy products.
 
-    - Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
+    - Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](version-compatibility-matrix.md).
 
 ### Hardware Requirements
 For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specifications for AWS EKS (or equivalents on other cloud providers):
@@ -47,7 +47,7 @@ Cognigy products are packaged with the [Helm](https://helm.sh/) package manager 
 
 
 !!! warning "Helm versions"
-    For Helm versions compatible with Cognigy.AI refer to [Version Compatibility Matrix](https://docs.cognigy.com/ai/installation/version-compatibility-matrix/).
+    For Helm versions compatible with Cognigy.AI refer to [Version Compatibility Matrix](version-compatibility-matrix.md).
 
 ### Cognigy License
 Cognigy.AI product requires a license key, which you will receive once a license agreement is signed. The key is necessary to install the product.
