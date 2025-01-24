@@ -30,7 +30,7 @@ For a Cognigy.AI installation with English as the default NLU language, we recom
 - 3 x 250 GB block SSD storage for a MongoDB database (3-replica MongoDB setup).
 - 3 x 15 GB block SSD storage for Redis-persistent deployment.
 - 3 x 50 GB block SSD storage for a Knowledge AI database (if Knowledge AI feature is required).
-- At least 2 x 10 GB of shared file system storage (EFS, AFS, or other NFS-compatible equivalents) for application assets.
+- At least 4 x 10 GB of shared file system storage (EFS, AFS, or other NFS-compatible equivalents) for application assets.
 
 !!! note "Dynamic storage provisioning on AWS and Azure"
     If you use AWS EKS or Azure AKS platform to run your Kubernetes cluster and your cloud environment supports dynamic storage provisioning, the block SSD storage will be created dynamically. However, for other cloud providers and on-premises installations, you will need to provision custom storage classes with equal performance and ensure the corresponding storage disks can be created. You can find references to storage classes on AWS and Azure in [MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart/tree/master/cloud-providers) and [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/699853e79f3573b5923b361bda8fc6796bb8cbcf/values.yaml#L4093).
