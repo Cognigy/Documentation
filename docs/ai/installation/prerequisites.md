@@ -70,7 +70,7 @@ If you plan to set up a Kubernetes environment in a private data center or if th
 - `billing.cognigy.ai:443` — Cognigy's billing server.
 
 Otherwise, the Cognigy.AI setup won't be able to download Docker images and assets during the installation process.
-Note, depending on the implementation of Cognigy.AI flows, additional access to resources located in Internet may be required.
+Note, depending on the implementation of Cognigy.AI flows, additional access to resources located in the Internet may be required.
 
 ### Network Firewalls / Websocket Support
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Cognigy.AI heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.

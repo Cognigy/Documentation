@@ -40,7 +40,7 @@ Before proceeding with your on-prem installation with or without installation su
 
 16. Storage requirements are met by the underlying cloud infrastructure as specified in [prerequisites](prerequisites.md):
     - Custom `StorageClass` is created for MongoDB as specified in ([MongoDB](https://github.com/Cognigy/cognigy-mongodb-helm-chart) installation instructions.
-    - Block SSD storage (disks) can be provisioned dynamically on your cloud environment. If dynamic storage provisioning 
+    - Block SSD storage (disks) can be provisioned dynamically in your cloud environment. If dynamic storage provisioning 
 is not supported, the required StorageClasses and disks must be created statically.
     - (AWS only): EFS shares for `flow-modules` and `functions` are provisioned in advance and are reachable from the EKS cluster.
     - (Azure only): Azure File shares can be provisioned dynamically.
