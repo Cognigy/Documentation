@@ -116,7 +116,7 @@ When the task is completed, download the Package.
 ### Delete a Goal
 
 When you delete a goal,
-all associated analytics data is deleted and the Track Goal Node linked to the goal stops working.
+all associated analytics data is deleted and the Complete Task Node linked to the goal stops working.
 Before deleting the goal, either replace it with another goal in the Flow or remove the linked Node if it's no longer needed.
 
 To delete a goal, follow these steps:
@@ -130,7 +130,7 @@ The goal will be deleted from the list.
 
 ### Delete a Step from a Goal
 
-When you delete a step, all associated analytics data is deleted and the Track Goal Node linked to the goal stops tracking this step. 
+When you delete a step, all associated analytics data is deleted and the Complete Task Node linked to the goal stops tracking this step. 
 Before deleting the step, make sure to replace it with another step in the Node.
 
 To delete a step, do the following:
@@ -149,7 +149,7 @@ In this example, you will create a Flow named `Pre-book a Flight` and add nodes 
 Set up a goal linked to this user journey to track the pre-booking process.
 Place the Track Goal Nodes and select goal and step after each user action where users submit information,
 such as entering passenger information and completing payment.
-In each Track Goal Node, select the goal and step corresponding to the user action.
+In each Complete Task Node, select the goal and step corresponding to the user action.
 Then monitor and analyze each step of the booking process.
 
 ### Configure a Goal
@@ -204,11 +204,11 @@ Then monitor and analyze each step of the booking process.
    ```txt
    I'll just need your full name and contact information to finalize the booking.
    ```  
-3. Add a new **Track Goal Node**. In the Node editor, select **Passenger Details Step** from the **Steps** list. Click **Save Node**. This Node will record how much time is saved when the user submits the data manually.
+3. Add a new **Complete Task Node**. In the Node editor, select **Passenger Details Step** from the **Steps** list. Click **Save Node**. This Node will record how much time is saved when the user submits the data manually.
 
 ### Configure the Confirm Booking Step
 
-1. Below the **Track Goal Node**, add a **Question Node**.
+1. Below the **Complete Task Node**, add a **Question Node**.
 2. Add a **Question Node**.
 3. Open the Node editor and select **Email** from the **Question Type** list.
 4. Select the **Text with Buttons** output type. 
@@ -222,8 +222,8 @@ Then monitor and analyze each step of the booking process.
     2. From the **Select Button Type** list, select **Postback Value**.  
     3. In the **Postback Value** field, enter `pre-booking`.  
     4. Click **Save**.
-6. Below the **Question Node**, add a **Track Goal Node**. In the Node editor, select **Confirm Booking** from the **Steps** list. Click **Save Node**. This Node will record how much money is saved when the user submits the data manually.
-7. Below the **Track Goal Node**, add a **Say Node**. In the Node editor, enter the following text in the **Text** field:
+6. Below the **Question Node**, add a **Complete Task Node**. In the Node editor, select **Confirm Booking** from the **Steps** list. Click **Save Node**. This Node will record how much money is saved when the user submits the data manually.
+7. Below the **Complete Task Node**, add a **Say Node**. In the Node editor, enter the following text in the **Text** field:
    ```txt
    Your email: <Answer>  
 

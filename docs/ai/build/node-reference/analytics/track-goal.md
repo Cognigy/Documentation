@@ -1,7 +1,7 @@
 ---
 title: "Track Goal"
 slug: "track-goal"
-description: "The Track Goal Node lets you monitor the progress of a specific goal within a Flow."
+description: "The Complete Task Node lets you monitor the progress of a specific goal within a Flow."
 hidden: false
 ---
 
@@ -13,13 +13,13 @@ hidden: false
 
 ## Description
 
-The Track Goal Node lets you monitor the progress of a specific goal within a Flow
+The Complete Task Node lets you monitor the progress of a specific goal within a Flow
 and can be used only with [Goals](../../../analyze/goals-and-tasks/goals.md). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
 and then analyze the results in the Insights dashboard or via the OData endpoint.
 
-For example, if your goal is to reduce call handling time, the Track Goal Node will track each interaction step, helping you measure whether your Flow is achieving the desired reductions in response times.
+For example, if your goal is to reduce call handling time, the Complete Task Node will track each interaction step, helping you measure whether your Flow is achieving the desired reductions in response times.
 
 ## Settings
 
