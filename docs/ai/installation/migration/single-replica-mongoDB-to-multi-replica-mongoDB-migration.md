@@ -7,11 +7,11 @@ ignore_macros: true
 
 # MongoDB: Single to Multi Replica  
 
-The migration process from a single replica to a multi-replica setup with MongoDB Helm Chart involves several steps. These steps are described in the following section. In this guide, we assume that the old MongoDB installation is deployed in the `default` namespace, and we will install the new MongoDB ReplicaSet into the `mongodb` namespace. We strongly recommend performing migration inside the existing cluster as it simplifies data migration process. 
+The migration process from a single replica to a multi-replica setup with MongoDB Helm Chart involves several steps. These steps are described in the following section. In this guide, we assume that the old MongoDB installation is deployed in the `default` namespace, and we will install the new MongoDB ReplicaSet into the `mongodb` namespace. We strongly recommend performing migration inside the existing cluster as it simplifies the data migration process. 
 
 ## Setting up Multi-Replica MongoDB Helm Chart
 
-1. Set up a 3 replica MongoDB Helm Release following the [official guide](https://github.com/Cognigy/cognigy-mongodb-helm-chart) here.
+1. Set up a 3-replica MongoDB Helm Release following the [official guide](https://github.com/Cognigy/cognigy-mongodb-helm-chart) here.
 2. You will need to set the root password in the new setup to the same value as in the old one. You can find out the root password for the existing installation by executing the following command on the current Kubernetes cluster:
 ```
 kubectl get secret -n default cognigy-mongo-server -ojsonpath='{.data.mongo-initdb-root-password}' | base64 --decode
@@ -20,18 +20,18 @@ Use this password as `auth.rootPassword` and `metrics.password` in the `values_p
 
 ## Modifying MongoDB Connection String Secrets
 
-To access MongoDB, Cognigy.AI services use Kubernetes secrets which contain a database connection string. The secrets must be adjusted for the new MongoDB setup. To automate this process, a script can be found in [this](https://github.com/Cognigy/cognigy-mongodb-helm-chart) repository. Ensure that all old secrets are stored in `secrets` folder before executing the script:**
+To access MongoDB, Cognigy.AI services use Kubernetes secrets, which contain a database connection string. The secrets must be adjusted for the new MongoDB setup. To automate this process, a script can be found in [this](https://github.com/Cognigy/cognigy-mongodb-helm-chart) repository. Ensure that all old secrets are stored in `secrets` folder before executing the script:**
 ```bash
 git clone https://github.com/Cognigy/cognigy-mongodb-helm-chart.git
 cd scripts
 chmod +x secrets-migration.sh
 ./secrets-migration.sh
 ```
-The script will ask for the current MongoDB connection string, i.e.:
+The script will ask for the current MongoDB connection string, for example:
 ```
 mongo-server:27017
 ```
-and for a replacement containing the new connection string, i.e:
+and for a replacement containing the new connection string, for example:
 ```
 mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017
 ```
@@ -62,8 +62,8 @@ The script will store all relevant old secrets in a folder called `original_secr
 
 3. If you are setting up the Multi-replica MongoDB setup:
    
-    * on a different Kubernetes cluster - skip to step 5. 
-    * on the same Kubernetes cluster where single-replica MongoDB is running - connect to the primary MongoDB pod. For example, if  `mongodb-0` is the primary node:
+    * on a different Kubernetes cluster, skip to step 5. 
+    * on the same Kubernetes cluster where single-replica MongoDB is running, connect to the primary MongoDB pod. For example, if  `mongodb-0` is the primary node:
     ```bash
     kubectl exec -it mongodb-0 -n mongodb -- bash
     ```

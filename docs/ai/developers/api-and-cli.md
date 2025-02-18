@@ -45,7 +45,7 @@ To do a call to the API, do an HTTP request and add either
 Let's assume I have a Cognigy.AI installation running at `https://api-dummy.cognigy.ai` and I created myself an API key which reads `myDummyApiKey123`.
 
 I can now open a new browser tab and go to `https://api-dummy.cognigy.ai/projects?api_key=myDummyApiKey123` to get a list of all the projects that are assigned to me, including meta-information about the resources within that project.
-This call, for example, is used by the frontend when you load the **Projects** page.
+This call, for example, is used by the frontend when you load the **Main** page.
 
 ### Super API-Key
 

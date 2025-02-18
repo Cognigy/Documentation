@@ -11,7 +11,7 @@ tags:
 
 # Automatic Mode
 
-_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
+_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic assignment distributes conversations among online agents, while automatic reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
 
 In automatic mode, conversations can be automatically assigned or reassigned to users with specific Live Agent roles within a specific inbox: `Agent`, `Supervisor`, or `Administrator`.
 
@@ -20,6 +20,10 @@ There are different scenarios for distributing conversations to human agents bas
 - **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
   Unassigned conversations are automatically assigned to agents when the [limit threshold](../../settings/account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
 - **Offline Agents**. When a conversation is created in the Inbox, and there are no agents online with access to it, the system will remain all conversations unassigned.
+
+## Restrictions
+
+- You can't trigger automatic assignment and automatic reassignment manually. For example, if Agent 1 manually removes themselves from a conversation and Agent 2 has available capacity, the system won't reassign the conversation to Agent 2. Instead, reassignment will only occur when a triggering event, such as a logout/login action, takes place.
 
 ## Automatic Assignment
 
@@ -51,7 +55,7 @@ The changes will be applied.
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
-By default, [Automatic Assignment](#automatic-assignment) does not take into account additional parameters,
+By default, [automatic assignment](#automatic-assignment) doesn't take into account additional parameters,
 such as the number of conversations being handled by each agent, agent skills, or conversation priority.
 In this case,
 new conversations may be assigned to any available agent without considering their current workload, skills, or language.
@@ -106,13 +110,13 @@ The changes will be applied.
 
 ## Automatic Assignment and Reassignment for Busy Agents
 
-By default, human agents with `Busy` status cannot be assigned or reassigned automatically.
+By default, human agents with `Busy` status can't be assigned or reassigned automatically.
 
 If an agent is already assigned conversations before they become busy,
 those assigned conversations will remain in the [Conversation Queue](../conversation-queue/overview.md).
-However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
+However, new conversations will not be assigned to that agent until they're no longer in the `Busy` status.
 
-You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
+You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you can't modify the behavior for a specific Inbox.
 
 When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
 

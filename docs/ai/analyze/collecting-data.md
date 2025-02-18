@@ -7,7 +7,7 @@ hidden: false
 # Collecting Data
 
 Cognigy.AI collects data from conversations with chat and voice agents in the MongoDB database. This database is part of Cognigy.AI installations, which can run on SaaS or on-premises environments. 
-The collected data is utilized by Insights to display dashboards and explorers, and by the OData endpoint to create customized dashboards and charts in BI systems, such as Power BI, Tableau, and others.
+The collected data is utilized by Insights to display reports and explorers, and by the OData endpoint to create customized reports and charts in BI systems, such as Power BI, Tableau, and others.
 
 ## Data Collections
 

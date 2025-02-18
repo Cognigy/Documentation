@@ -18,7 +18,7 @@ hidden: false
 
 This Node allows you to selectively overwrite default values, such as Intents, text, understood messages, and more,
 as well as manage the analytics data stored in the [Analytics](../../../analyze/collecting-data.md) database.
-You can view this data on the [Insights dashboards](../../../../insights/overview.md) or retrieve it via the [Cognigy.AI OData Endpoint](../../../analyze/odata.md).
+You can view this data on the [Insights reports](../../../../insights/overview.md) or retrieve it via the [Cognigy.AI OData Endpoint](../../../analyze/odata.md).
 You can also use this Node to add custom values.
 
 Empty fields don't overwrite the initial values.

@@ -12,7 +12,7 @@ hidden: false
 In Insights, _Time zone_ settings play a crucial role in presenting time-based data accurately to users based on their geographical location.
 By selecting the appropriate time zone, you can view data in your local time, which is essential for accurate data analysis and interpretation.
 
-Insights supports different time zones with various time offsets. The complete list of time zones is available in your personal profile in the Cognigy.AI interface. Dashboard data is generated on the fly. However, if you choose a rarely used time zone and have a large amount of processed data, dashboard information may not load promptly and could experience delays.
+Insights supports different time zones with various time offsets. The complete list of time zones is available in your personal profile in the Cognigy.AI interface. Report data is generated on the fly. However, if you choose a rarely used time zone and have a large amount of processed data, report information may not load promptly and could experience delays.
 
 By default, Insights relies on the time zone preferences of your device according to supported time zones.
 
@@ -22,7 +22,7 @@ By default, Insights uses time zone preferences of your device. You can override
 
 To change time zone preferences, follow these steps:
 
-1. In the upper-right corner of the **Projects** page, select **User Menu > My Profile**.
+1. In the upper-right corner of the **Main** page, select **User Menu > My Profile**.
 2. In the **Preferences** section, select time zone from the **Select Insights time zone** list.
 
 New time zone will be applied to all existing data.

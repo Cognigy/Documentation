@@ -7,7 +7,7 @@ hidden: false
 
 # Agentic AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92(Beta)-purple.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.95(Beta)-purple.svg)](../../../release-notes/4.95.md)
 
 {! _includes/ai/beta.md !}
 
@@ -60,11 +60,12 @@ You can hire an agent with a ready-made set of skills for a specific task and ad
 
 The table shows available example AI Agents for hire.
 
-| AI Agent                                                                     | Job              | Job Description                                                                                                               | Job Package                                                                                                                                                               |
-|------------------------------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img src="../../../../_assets/ai/empower/agentic-ai/John.png"  width="50">   | Airline Support  | The AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                          |
-| <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" width="50">    | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                                       |
-| <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png"  width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Main - Dinging Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
+| AI Agent                                                                    | Job              | Job Description                                                                                                               | Job Package                                                                                                                                                               |
+|-----------------------------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="../../../../_assets/ai/empower/agentic-ai/John.png"  width="50">  | Airline Support  | The AI Agent that supports tasks such as flight status updates, rebooking, passenger FAQs, and more.                          | - Flow: Main <br>- Knowledge Stores: ACME Airline Brochure and ACME Airline FAQs                                                                                          |
+| <img src="../../../../_assets/ai/empower/agentic-ai/Anna.png" width="50">   | BDR Assistance   | The AI Agent that assists with business development tasks such as answering questions, scheduling callbacks, and other tasks. | - Flow: Main <br>- Knowledge Stores: ACME Brochure and ACME CX FAQs                                                                                                       |
+| <img src="../../../../_assets/ai/empower/agentic-ai/Sophie.png" width="50"> | Restaurant Guide | The AI Agent that provides information on menu items, opening hours, reservations, and more.                                  | - Flows: Main - Dinging Concierge, Place Order - Order Expert, and Reserve Table - Reservation Expert <br>- Knowledge Stores: ACME Cantina Brochure and ACME Cantina Menu |
+| <img src="../../../../_assets/ai/empower/agentic-ai/Martin.png" width="50"> | Health Insurance | The AI Agent that assists with tasks such as adjusting policies and managing claims.                                          | - Flow: Main - Health Insurance <br>- Knowledge Store: FitDirekt FAQs                                                                                                     |
 
 ### AI Agents — a New Conversational Paradigm
 
@@ -111,7 +112,7 @@ The [Get Transcript Node](../../build/node-reference/service/get-transcript.md) 
 
 ##### Add Transcript Steps
 
-The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actor's to simulate an input or output.
+The [Add Transcript Steps Node](../../build/node-reference/service/add-transcript-steps.md) lets you add a step for one of the conversation actors to simulate an input or output.
 
 ## More Information
 

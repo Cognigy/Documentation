@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.93-blue.svg)](../release-notes/4.93.md)
 
-_Global Filters_ enable you to focus your dashboards and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all dashboards and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
+_Global Filters_ enable you to focus your reports and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all reports and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/global-filters.png" width="100%" />
@@ -70,16 +70,16 @@ To use the **Endpoints** filter, proceed as follows:
 4. _(Optional)_ Activate the **Negate** option and select Endpoints you don't want to include in your analysis. All Endpoints except the selected ones will be included in your data charts.
 5. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field. 
-7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+7. Click **Apply** to activate the filter settings. All reports and explorers will then display the data according to your selection.
 
 ### Interaction Panel and Playbook Data
 
-By default, the sessions created via the Interaction Panel or Playbooks are not included in the dashboards or explorers. To include such data, proceed as follows:
+By default, the sessions created via the Interaction Panel or Playbooks are not included in the reports or explorers. To include such data, proceed as follows:
 
 1. At the top of the Insights interface, go to the filter bar.
 2. Click **Endpoint**.
 3. Activate the **Interaction Panel / Playbook Data** option.
-4. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+4. Click **Apply** to activate the filter settings. All reports and explorers will then display the data according to your selection.
 
 ## Snapshots
 
@@ -94,7 +94,7 @@ To use the **Snapshot** filter, proceed as follows:
 4. *(Optional)* Activate the **None** option to obtain analysis data of all available endpoint data, except for Snapshot data.
 5. *(Optional)* To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 6. *(Optional)* To reset the search results, click **x** in the **Type to search** field.
-7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+7. Click **Apply** to activate the filter settings. All reports and explorers will then display the data according to your selection.
 
 ## Locales
 
@@ -109,7 +109,7 @@ To use the **Locales** filter, proceed as follows:
 4. _(Optional)_ Activate the **Negate** option to select the Locales you don't want to include in your analysis. All Locales except the selected ones will be considered for analysis.
 5. _(Optional)_ To view only selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
-7. Click **Apply** to activate the filter settings. All dashboards and explorers will then display the data according to your selection.
+7. Click **Apply** to activate the filter settings. All reports and explorers will then display the data according to your selection.
 
 ## Goals (Beta)
 
@@ -118,13 +118,13 @@ For more information, refer to the [Goals](../ai/analyze/goals-and-tasks/goals.m
 
 To use the **Goals** filter, follow these steps:
 
-1. In the left-side menu of the Insights interface, select where you want to filter goals: the **Goals Dashboard** or the **Transcript Explorer**.
+1. In the left-side menu of the Insights interface, select where you want to filter goals: the **Goals Report** or the **Transcript Explorer**.
 2. At the top of the page, go to the filter bar and click **More Filters**. Under **Goals**, click to open the list.
 3. Use the **Type to search** field to find a specific goal, or select goals from the list.
 4. _(Optional)_ Activate the **Negate** option to exclude the selected goals from your analysis. All goals except the selected ones will be considered.
 5. _(Optional)_ To view only the selected options, click ![filter](../_assets/icons/filter.svg) in the **Type to search** field.
 6. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
-7. Click **Apply** to activate the filter settings. Based on your selection, the dashboard or explorer will display the corresponding data.
+7. Click **Apply** to activate the filter settings. Based on your selection, the report or explorer will display the corresponding data.
 
 ## Share Insights URL with Filters
 

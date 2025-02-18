@@ -19,7 +19,7 @@ COPY . /app
 RUN mkdocs build
 
 # STAGE 2 - 'build NGINX container serving site'
-FROM nginx:1.27.1-alpine3.20
+FROM nginx:1.27.4-alpine3.21-slim
 
 COPY --from=build /app/site/ /usr/share/nginx/html/
 

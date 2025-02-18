@@ -36,13 +36,13 @@ Our /inject and /notify APIs need a certain payload you will need to send, in or
 You can use the [HTTP Request-Node](../../build/node-reference/service/http-request.md) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 
 
-| Field in Inject & Notify	 | Cognigy Script   |
-|---------------------------|------------------|
-| text                      | ci.text          |
-| data                      | ci.data          |
-| sessionId                 | ci.sessionId     |
-| userId                    | ci.userId        |
-| URLToken                  | ci.URLToken      |
+| Field in Inject & Notify | Cognigy Script |
+|--------------------------|----------------|
+| text                     | ci.text        |
+| data                     | ci.data        |
+| sessionId                | ci.sessionId   |
+| userId                   | ci.userId      |
+| URLToken                 | ci.URLToken    |
 
 ## Notify and Inject in Transformers
 

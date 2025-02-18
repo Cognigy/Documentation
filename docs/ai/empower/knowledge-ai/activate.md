@@ -77,7 +77,7 @@ To set a quota using the management-ui API, follow these steps:
            "quotaMaxKnowledgeChunks": 1000
          }
          ```
-         If the response is successful, the server returns a 200 status code with the `organisation id` and applied quota.
+         If the response is successful, the server returns a 200 status code with the `organisationId` and applied quota.
 
     === "Existing Organization"
          To set the quota for the existing organization, use the API [PATCH /management/v2.0/organisations/{organisationId}](https://api-trial.cognigy.ai/openapi#patch-/management/v2.0/organisations/-organisationId-) request. 

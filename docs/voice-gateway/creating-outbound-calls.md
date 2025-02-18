@@ -14,7 +14,7 @@ _Outbound calls_ are calls initiated by Voice Gateway to an external endpoint, s
 
 Before initiating an outbound call, ensure you configure an [application](webapp/applications.md), and the phone number you intend to call from is added to [Phone Numbers](webapp/phone-numbers.md).
 
-To initiate an outgoing call, use on of the following methods:
+To initiate an outgoing call, use one of the following methods:
 
 - [Transfer Node](../ai/build/node-reference/voice/voice-gateway/transfer.md)
 - REST API request:
@@ -22,9 +22,6 @@ To initiate an outgoing call, use on of the following methods:
     -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
 
 ## Create an Outbound Call via API Request
-
-!!! warning
-    Outbound calls via the API work only if a speech provider is configured without a label.
 
 Send an HTTP POST request to the Voice Gateway API to generate an outbound call.
 When the call is answered, the specified webhook will be invoked to manage the call.
@@ -43,7 +40,7 @@ It also includes call duration, handling unanswered calls, and attaching relevan
 
 === "cURL"
 
-    ``` text
+    ```text
     curl --location --request POST 'https://<base_url>/v1/Accounts/<account_sid>/Calls' \
     --header 'Authorization: Bearer <valid-api-token>' \
     --header 'Accept: application/json' \
@@ -51,9 +48,11 @@ It also includes call duration, handling unanswered calls, and attaching relevan
     --data-raw '{
         "application_sid": "<application_sid>",
         "from": "<caller's phone number>",
+        "callerName": "<display name>",
         "to": {
-            "type": "phone",
-            "number": "<callee's phone number>"
+                "type": "phone",
+                "number": "<callee's phone number>",
+                "trunk": "<carrier name>"
             }
     }'
     ```
@@ -69,36 +68,43 @@ It also includes call duration, handling unanswered calls, and attaching relevan
     {
         "application_sid": "<application_sid>",
         "from": "<caller's phone number>",
+        "callerName": "<display name>",
         "to": {
             "type": "phone",
-            "number": "<callee's phone number>"
+            "number": "<callee's phone number>",
+            "trunk": "<carrier name>"      
         }
     }
     ```
 
 The following parameters can be provided in the request body:
 
-| Parameter       | Description                                                                          | Required |
-|-----------------|--------------------------------------------------------------------------------------|----------|
-| application_sid | The application to invoke when the call is answered.                                 | Yes      |
-| from            | The caller's phone number.                                                           | Yes      |
-| to              | The callee's phone number.                                                           | Yes      |
-| timeLimit       | Maximum length of call in seconds.                                                   | No       |
-| timeout         | Ring `no-answer` timeout, in seconds. Default is 60 seconds.                         | No       |
-| tag             | An object containing key-value pairs of metadata that will be attached to this call. | No       |
+| Parameter                 | Type                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
+|---------------------------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| application_sid           | String                                              | The application to invoke when the call is answered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Yes      |
+| from                      | String                                              | The user portion that identifies the caller within the domain. The user portion follows the format: `<sip:user@host>`, where `user` can be:<br>- A username, for example, `<sip:john@host>`. <br>- A phone number (E.164 format), for example, `<sip:+1234567890@host>`. <br>- A unique identifier, for example, `<sip:device001@host>`.                                                                                                                                                                                                   | Yes      |
+| fromHost                  | String                                              | The domain of the caller, which is a part of the SIP address included in the `From` header of a SIP request. The domain follows the format: `<sip:user@host>`. For example, `<sip:user@cognigy.cloud>`, where `cognigy.cloud` is the domain where the caller's SIP service is hosted.                                                                                                                                                                                                                                                      | No       |
+| callerName                | String                                              | A descriptive caller name that appears as the display name in a SIP request. This name is included in the `From` header, alongside the SIP address, in the following format: `From: "<callerName>" <sip:user@host>`. For example, `"John Doe" <sip:user@cognigy.cloud>`, where `"John Doe"` is the caller name and `<sip:user@cognigy.cloud>` is the SIP address.                                                                                                                                                                          | No       |
+| to                        | [TargetType](references/verbs/dial.md#target-types) | The destination target, either a phone number or a SIP URI.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Yes      |
+| timeout                   | Number                                              | The time the system waits for an answer before considering the call unanswered. The default value is 60 seconds.                                                                                                                                                                                                                                                                                                                                                                                                                           | No       |
+| tag                       | Object                                              | An object containing key-value pairs of metadata to be attached to this call. This metadata can be used for further call analysis, allowing you to track call details, identify patterns, and generate insightful reports.                                                                                                                                                                                                                                                                                                                 | No       |
+| headers                   | Object                                              | An object containing custom SIP headers that can be applied to outbound call attempts. These headers are added alongside the system (default) headers in the SIP request. Custom SIP headers provide more control over the call setup process, such as adjusting authentication, routing, or other specific SIP parameters. For example, an custom header could be `P-Preferred-Identity: <sip:+123456@sip.cognigy.cloud>`, where the caller's preferred identity is the specified phone number or SIP address to present during the call. | No       |
+| speech_synthesis_vendor   | String                                              | The vendor responsible for the speech synthesis service (Text-to-Speech, TTS). For example, `microsoft`.                                                                                                                                                                                                                                                                                                                                                                                                                                   | No       |
+| speech_synthesis_voice    | String                                              | The specific voice to be used for speech synthesis. For example, `de-DE-SeraphinaMultilingualNeural`.                                                                                                                                                                                                                                                                                                                                                                                                                                      | No       |
+| speech_synthesis_language | String                                              | The language in which the speech should be synthesized. For example, `en-US` for American English, `es-ES` for Spanish.                                                                                                                                                                                                                                                                                                                                                                                                                    | No       | 
+| amd                       | Object ([AMD](references/verbs/amd.md))             | The Automatic Machine Detection (AMD) feature, which identifies whether a human or a machine answered a call.                                                                                                                                                                                                                                                                                                                                                                                                                              | No       |
 
 #### Advanced Configuration Request
 
 The advanced configuration provides a range of features to enhance call handling and management. It includes notifications, interaction hooks, header manipulation and transcription capabilities.
 
 In the example below,
-we enable the [Answering Machine Detection](references/events/ANSWERING_MACHINE_DETECTION.md) feature
+we enable the [Answering Machine Detection](references/verbs/amd.md) feature
 using the `amd` parameter
 and use the `actionHook` parameter to send the events to the [Webhook](https://webhook.site/) site.
-To limit the call duration, we set a timeout of 30 seconds using the `timeout` parameter.
-If the call is not answered within the specified time, Voice Gateway stops calling.
-We include tags in the `tags` parameter to send custom information about the user,
-such as a custom object, as well as headers to send custom headers.
+Via `timeout`, we define a maximum ringing time. If the call is not answered within this time, Voice Gateway stops calling (see the [NO_ANSWER](references/events/NO_ANSWER.md) event).
+We include tags in the `tag` parameter to send custom information about the user,
+such as a custom object, as well as `headers` to send custom headers.
 
 === "cURL"
 
@@ -110,14 +116,17 @@ such as a custom object, as well as headers to send custom headers.
     --data-raw '{
         "application_sid": "<application_sid>",
         "from": "<caller's phone number>",
+        "fromHost": "cognigy.cloud",
+        "callerName": "Vacation Agent",
         "to": {
             "type": "phone",
-            "number": "<callee's phone number>"
+            "number": "<callee's phone number>",
+            "trunk": "<carrier name>"
         },
         "amd": {
             "actionHook": "https://webhook.site/<webhook-id>"
         },
-        "timeout": 30000,
+        "timeout": 20,        
         "tag": {
             "env": "app",
             "internalId": "ABDC1234",
@@ -146,14 +155,17 @@ such as a custom object, as well as headers to send custom headers.
     {
       "application_sid": "<application_sid>",
       "from": "<caller's phone number>",
+      "fromHost": "cognigy.cloud",
+      "callerName": "Vacation Agent",
       "to": {
         "type": "phone",
-        "number": "<callee's phone number>"
+        "number": "<callee's phone number>",
+        "trunk": "<carrier name>"
       },
       "amd": {
         "actionHook": "https://webhook.site/<webhook-id>"
       },
-      "timeout": 30000,
+      "timeout": 20,
       "tag": {
         "env": "app",
         "internalId": "ABDC1234",
@@ -171,19 +183,7 @@ such as a custom object, as well as headers to send custom headers.
     }
     ```
 
-In addition to the [basic configuration parameters](#basic-configuration-request), the following parameters can be provided in the request body:
 
-| Parameter   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Required |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| actionHook  | Webhook to invoke when the call ends. The webhook includes properties describing the outcome of the call attempt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | No       |
-| amd         | The activation of [Answering Machine Detection](references/events/ANSWERING_MACHINE_DETECTION.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | No       |
-| confirmHook | A webhook designed for an application to execute on the callee's end after the dialed number has been answered, but before the call is connected. It allows the caller to provide information to the dialed number, giving them the opportunity to decline the call before answering.                                                                                                                                                                                                                                                                                                                                                        | No       |
-| dtmfCapture | An array of strings representing DTMF sequences. When detected, these sequences trigger a mid-call notification to the application via the configured dtmfHook.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | No       |
-| dtmfHook    | A webhook to call when a `dtmfCapture` entry is matched. This is a notification only. No response is expected, and any desired actions must be carried out via the REST updateCall API.                                                                                                                                                                                                                                                                                                                                                                                                                                                      | No       |
-| headers     | An object containing arbitrary SIP headers to apply to the outbound call attempts.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | No       |
-| listen      | A nested `listen` action that streams call audio to a remote server over a WebSocket.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | No       |
-| referHook   | A webhook that gets triggered when an incoming SIP `REFER` is received on a dialed call. If the application accepts and processes the `REFER`, it should return an HTTP status code of `200` with no body. This will cause Voice Gateway to send a SIP `202 Accepted`.<br>However, if the HTTP response is not successful, Voice Gateway will send a SIP response to the `REFER` with the same status code. Note that Voice Gateway sends the `202 Accepted` code without any further action. Then, it is the third-party application's responsibility to initiate a new call and establish the bridge between the two parties via REST API. | No       |
-| transcribe  | A nested `transcribe` action that transcribes a call.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | No       |
 
 ### Response
 

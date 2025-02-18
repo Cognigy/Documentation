@@ -13,7 +13,7 @@ hidden: false
 
 ## Description
 
-The Get Transcript Node lets receive a real-time conversation transcript and store the result in the Input or Context object.
+The Get Transcript Node lets you receive a real-time conversation transcript and store the result in the Input or Context object.
 
 To provide the transcript to the AI Agent, go to the [AI Agent Node](../ai/ai-agent.md).
 In the **Job Description** or **Instructions and Context** field,

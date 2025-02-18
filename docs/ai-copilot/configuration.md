@@ -27,7 +27,7 @@ If you want to create a new AI Copilot Config template instead of using the defa
 
 #### Create an API Key
 
-1. On the **Projects** page of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile** in the upper-right corner. 
+1. On the **Main** page of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile** in the upper-right corner. 
 2. In the **API Keys** section, click **+**. 
 3. Add an API key name and click **Confirm**. The API key will appear in the list. 
 4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site. 

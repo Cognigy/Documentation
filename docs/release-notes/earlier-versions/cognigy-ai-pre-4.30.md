@@ -520,7 +520,7 @@ added in the future
 
 #### Users in multiple Organizations
 This release of Cognigy.AI allows users to be part of multiple Organizations. Users
-can specify an organisation-ID as part of their sign-in process which allows them
+can specify an organisationId as part of their sign-in process which allows them
 to pick the Organization for which they want to perform a sign-in
 
 #### Salesforce Service Cloud - Handover Provider

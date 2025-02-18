@@ -15,7 +15,7 @@ To open the User Menu, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. Access the User Menu using one of the following options:
-    - Click the **User Menu** icon ![user-menu](../../../_assets/icons/user-menu.svg) on the **Projects** page in the upper-right corner.
+    - Click the **User Menu** icon ![user-menu](../../../_assets/icons/user-menu.svg) on the **Main** page in the upper-right corner.
     - Select the User Menu in the bottom-left corner of the Project page.
 
 ## User Menu Options

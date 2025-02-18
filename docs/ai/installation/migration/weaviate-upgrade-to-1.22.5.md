@@ -10,7 +10,7 @@ This guide is intended for Cognigy on-premises customers
 who are using the [Knowledge AI features](../../empower/knowledge-ai/overview.md).
 
 !!! warning
-    The Weaviate upgrade requires a downtime of approximately 30 – 60 minutes. However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    The Weaviate upgrade requires downtime of approximately 30 – 60 minutes. However, this downtime applies to Knowledge AI features only; all other features will remain available.
 
 ## Introduction
 

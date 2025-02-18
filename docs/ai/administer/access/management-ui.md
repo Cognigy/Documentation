@@ -77,8 +77,8 @@ You can block user impersonation as follows:
 
 - For SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 - For dedicated SaaS and on-premises installations, use the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag. You can block user impersonation for:
-    - **One organization** — enter the relevant organization ID in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
-    - **More than one organization** — enter the relevant organization IDs separated by commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`.
+    - **One organization** — enter the relevant `organisationId` in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
+    - **More than one organization** — enter the relevant `organisationId` values separated by commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`.
     - **All organizations** — set `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=*`.
 
 ## Organizations
@@ -200,7 +200,7 @@ In the menu, select **Change Expiration Values**.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/administer/access/exp-values.png" width="100%" />
-  <figcaption> Configuring the expiration values for sensitive data in an Organisation</figcaption>
+  <figcaption> Configuring the expiration values for sensitive data in an Organization</figcaption>
 </figure>
 
 All the expiration values define how many minutes it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. 

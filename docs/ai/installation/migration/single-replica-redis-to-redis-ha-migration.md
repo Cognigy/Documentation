@@ -33,27 +33,27 @@ statefulRedisPersistent:
 2. Remove the `statefulRedis` and `statefulRedisPersistent` sections from `values.yaml` and skip the remaining steps in this migration guide.
 ### Cloud Infrastructure Configuration 
 
-1. Redis and Redis persistent in HA mode are provisioned with 3 replicas to increase service availability. Ensure that your Kubernetes cluster has enough free capacity for additional Redis and Redis persistent pods in HA setups. In total, both configurations require an additional provision of 3 CPU cores and 3GB RAM in the cluster.
+1. Redis and Redis persistent in HA mode are provisioned with 3 replicas to increase service availability. Ensure that your Kubernetes cluster has enough free capacity for additional Redis and Redis persistent pods in HA setups. In total, both configurations require an additional provision of 3 CPU cores and 3 GB RAM in the cluster.
 2. Check `reclaimPolicy` for the existing `redis-persistent` StorageClass with the following command:
 ```bash
 kubectl get storageclass redis-persistent -o yaml
 ```
-If `reclaimPolicy: Delete`, you can skip the [Persistent Volume Clean-up](#persistent-volume-clean-up) section of this guide. If `reclaimPolicy: Retain` you will need to clean up the Persistent Volume and the underlying disk manually as described in the [Persistent Volume Clean-up](#persistent-volume-clean-up) section.
+If `reclaimPolicy: Delete`, you can skip the [Persistent Volume Clean-up](#persistent-volume-clean-up) section of this guide. If `reclaimPolicy: Retain` is set, you must manually clean up the Persistent Volume and the underlying disk as described in the [Persistent Volume Clean-up](#persistent-volume-clean-up) section.
 3. Redis HA default settings imply that you run your cluster with 3 Availability Zones (AZ) (Cognigy.AI recommended setup), and
 the Helm Release spawns HA replicas across 3 AZs. If your cluster is provisioned without Availability Zones, override zonal `podAntiAffinity` in `values.yaml`:
-```yaml
-redisHa:
-  replica:
-    affinity:
-      podAntiAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution: []
-
-redisPersistentHa:
-  replica:
-    affinity:
-      podAntiAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution: []
-```
+    ```yaml
+    redisHa:
+      replica:
+        affinity:
+          podAntiAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution: []
+    
+    redisPersistentHa:
+      replica:
+        affinity:
+          podAntiAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution: []
+    ```
 4. If your cloud provider is neither AWS nor Azure, create `redis-persistent-ha` StorageClass manually. Set all
 the parameters for the new `redis-persistent-ha` StorageClass equal to the existing `redis-persistent` StorageClass: 
     * Get existing `redis-persistent` StorageClass and store it in the `redis-persistent-ha.yaml` file:
@@ -74,8 +74,8 @@ the parameters for the new `redis-persistent-ha` StorageClass equal to the exist
 - If you have a custom configuration under the `statefulRedis`and/or `statefulRedisPersistent` sections, you need to copy it under `redisHa`
 and `redisPersistentHa` respectively as follows:
 
-    * If `statefulRedis.auth.password` is defined in cleartext, copy its value under `redisHa.auth.password`.
-    * If `statefulRedisPersistent.auth.password` is defined in cleartext, copy its value under `redisPersistentHa.auth.password`.
+    * If `statefulRedis.auth.password` is defined in `cleartext`, copy its value under `redisHa.auth.password`.
+    * If `statefulRedisPersistent.auth.password` is defined in `cleartext`, copy its value under `redisPersistentHa.auth.password`.
     * If a custom `statefulRedis.auth.existingSecret` is defined, copy its value under `redisHa.auth.existingSecret`. Ensure that the corresponding custom secret exists in the cluster.
     * If a custom `statefulRedisPersistent.auth.existingSecret` is defined copy its value under `redisPersistentHa.auth.existingSecret`. Ensure that the corresponding custom secret exists in the cluster.
     * If custom `resources` for `statefulRedis` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to  `redisHa.replica.resources`. Set the `maxmemory` setting under the `redisHa.replica.configuration` parameter to 85% of  `resources.limits.memory`.  Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/c0474cfe67bbf28fa1aea728118a2ae5b0676498/values.yaml#L4494) for details. 

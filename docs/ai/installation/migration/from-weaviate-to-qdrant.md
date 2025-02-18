@@ -10,7 +10,7 @@ hidden: false
 This guide is intended for Cognigy on-premises customers who are using the [Knowledge AI features](https://docs.cognigy.com/ai/empower/knowledge-ai/overview/).
 
 !!! warning
-    - The migration process requires a downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
+    - The migration process requires downtime of approximately 60–90 minutes, depending on the number of stored Knowledge Chunks and the number of projects configured to use Knowledge AI. However, this downtime applies to Knowledge AI features only; all other features will remain available.
     - The migration process alters the `distance` value. Decision-making in Flow will be ineffective post-migration if distance is used.
 
 ## Introduction
@@ -382,7 +382,7 @@ After completing the Helm upgrade, all Knowledge AI features should be available
 
 If you created a new small Knowledge AI project
 as described in the [(Optional)
-Create a Test Knowledge AI Project](#-optional--create-a-test-knowledge-ai-project) section,
+Create a Test Knowledge AI Project](#optional-create-a-test-knowledge-ai-project) section,
 you can use it to test search, ingestion, and other Knowledge AI data manipulation operations on existing data. 
 Otherwise, you can use any of your existing projects containing Knowledge AI data for testing these operations.
 

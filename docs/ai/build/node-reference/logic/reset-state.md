@@ -1,8 +1,14 @@
 ---
- title: "Reset State" 
- slug: "reset-state" 
- hidden: false 
+title: "Reset State" 
+slug: "reset-state"
+description: "This Node resets the setting of the Set State Node to restore full Intent recognition."
+hidden: false
+tags:
+  - reset state
+  - state
+  - full intent recognition
 ---
+
 # Reset State
 
 <figure>
@@ -11,7 +17,13 @@
 
 ## Description
 
-The Reset State node resets the State when the Node is hit. See [State](../../../test/interaction-panel/state.md) to learn more about States.
+This Node resets the setting of the [Set State](../../../test/interaction-panel/state.md) Node to the [default State](../../../test/interaction-panel/state.md)
+to restore full Intent recognition.
 
-!!! warning "Use with caution!"
-    Resetting the State loses information and is generally not a recommended pattern.
+!!! warning "Reset State May Affect your Flow"
+    Resetting the State clears all stored information for the Set State Node and may interrupt your Flow. Use this action only when required.
+
+## More Information
+
+- [Set State](set-state.md)
+- [States](../../../test/interaction-panel/state.md)

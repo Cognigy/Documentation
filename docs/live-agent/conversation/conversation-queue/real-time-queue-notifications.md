@@ -3,6 +3,13 @@ title: "Real-Time Queue Notifications"
 slug: "real-time-queue-notifications"
 description: "Cognigy Live Agent keeps end users informed about queue updates by providing real-time position and wait time information."
 hidden: false
+search:
+   boost: 2
+tags:
+   - real-time queue notifications
+   - get estimated wait time
+   - wait time
+   - update wait interval
 ---
 
 # Real-Time Queue Notifications for End Users

@@ -27,5 +27,5 @@ To view the reports, select **Reports** in the left-side menu of the Live Agent 
 
 ## More information
 
-- [Insights: Live Agent dashboard](../../insights/dashboards/live-agent.md)
+- [Insights: Live Agent report](../../insights/reports/live-agent.md)
 - [Live Agent Glossary](../glossary.md)

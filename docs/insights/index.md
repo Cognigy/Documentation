@@ -22,17 +22,17 @@ Insights help businesses better understand their users, optimize chat and voice 
     [:octicons-arrow-right-24: Overview](overview.md)<br>
     [:octicons-arrow-right-24: Glossary](glossary.md)
 
--   :bar_chart:{ .lg .middle } __View Dashboard Metrics__
+-   :bar_chart:{ .lg .middle } __View Report Metrics__
 
     ---
 
-    Monitor key metrics by utilizing ready-made charts on dashboards
+    Monitor key metrics by utilizing ready-made charts on reports
 
-    [:octicons-arrow-right-24: Overview](dashboards/overview.md)<br>
-    [:octicons-arrow-right-24: Engagement](dashboards/engagement.md)<br>
-    [:octicons-arrow-right-24: Goals](dashboards/goals.md)<br>
-    [:octicons-arrow-right-24: NLU Performance](dashboards/nlu-performance.md)<br>
-    [:octicons-arrow-right-24: Live Agent (Beta)](dashboards/live-agent.md)<br>
+    [:octicons-arrow-right-24: Overview](reports/overview.md)<br>
+    [:octicons-arrow-right-24: Engagement](reports/engagement.md)<br>
+    [:octicons-arrow-right-24: Goals](reports/goals.md)<br>
+    [:octicons-arrow-right-24: NLU Performance](reports/nlu-performance.md)<br>
+    [:octicons-arrow-right-24: Live Agent (Beta)](reports/live-agent.md)<br>
 
 -   :telescope:{ .lg .middle } __Use Explorers__
 
@@ -48,7 +48,7 @@ Insights help businesses better understand their users, optimize chat and voice 
 
     ---
 
-    Download reports individually for each chat on the dashboards
+    Download reports individually for each chat on the reports
 
     [:octicons-arrow-right-24: Guide](download-reports.md)
 
@@ -56,7 +56,7 @@ Insights help businesses better understand their users, optimize chat and voice 
 
     ---
 
-    Use global filters to effectively sort and filter data both on dashboards and explorers
+    Use global filters to effectively sort and filter data both on reports and explorers
 
     [:octicons-arrow-right-24: Global Filters](global-filters.md)
 
@@ -64,7 +64,7 @@ Insights help businesses better understand their users, optimize chat and voice 
 
     ---
 
-    Learn how data pre-aggregation is used for dashboards, configure Time Zone and TTL (Time To Live) settings for your project
+    Learn how data pre-aggregation is used for reports, configure Time Zone and TTL (Time To Live) settings for your project
 
     [:octicons-arrow-right-24: Pre-Aggregation](data-management/pre-aggregation.md)<br>
     [:octicons-arrow-right-24: Time Zone](data-management/time-zone.md)<br>

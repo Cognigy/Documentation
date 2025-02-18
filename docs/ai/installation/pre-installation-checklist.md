@@ -4,7 +4,7 @@ slug: "pre-installation-checklist"
 hidden: false
 ---
 
-# Pre-installation Checklist
+# Pre-Installation Checklist
 
 Before proceeding with your on-prem installation with or without installation support from Cognigy side, make sure the criteria from the following checklist are met:
 

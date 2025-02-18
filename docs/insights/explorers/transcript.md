@@ -7,7 +7,7 @@ hidden: false
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.94-blue.svg)](../../release-notes/4.94.md)
 
 The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
@@ -22,7 +22,7 @@ To open the Transcript Explorer, use one of the following options:
     2. Within the Project interface, navigate to Insights using one of the following options:
         - In the left-side menu, select **Insights**. 
         - In the upper-right corner, click ![user menu](../../_assets/icons/user-menu.svg) **> Insights**.<br>
-        The Cognigy Insights Overview dashboard will be displayed by default.
+        The Cognigy Insights Overview report will be displayed by default.
     3. In the left-side menu of the Insights interface, select **Transcript Explorer**.
 
 === "Via Insights"
@@ -44,7 +44,7 @@ The list of sessions has the following parameters:
 | Title        | Description                                                                                                                                                                                              |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Session ID   | The unique ID for each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
-| Contact ID   | The unique ID for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.      |
+| User ID      | The unique ID for the end user. To copy the User ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy user ID**.            |
 | Messages     | The total number of messages within the specific session.                                                                                                                                                |
 | Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                |
 | Last Message | The date and time when the last message was received within the session.                                                                                                                                 |
@@ -61,7 +61,7 @@ Sessions can be sorted by their `Session ID`, `Messages`, or `Last Message` para
 To find specific sessions, do the following:
 
 1. In the upper-right corner of the **Transcript Explorer** page, locate the search field.
-2. In the search field, specify text messages (for more precise results, use keywords or phrases), Session ID, or Contact ID.
+2. In the search field, specify text messages (for more precise results, use keywords or phrases), Session ID, or User ID.
 
 The Transcript Explorer immediately updates the list of sessions according to the search results.
 
@@ -81,7 +81,7 @@ For more information, read the [Global Filter](../global-filters.md) documentati
 
 ### Local Filters
 
-Local filters are unique to a specific explorer / dashboard. You can use them to refine your research.
+Local filters are unique to a specific explorer / report. You can use them to refine your research.
 
 To open the **Local Filters** selection,
 click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-black.svg)** in the filter bar at the top of the **Transcript Explorer** page.
@@ -198,18 +198,17 @@ The transcript details include the following sections:
 
 #### Contact Profile Details
 
-| Contact Profile Details | Description                                  |
-|-------------------------|----------------------------------------------|
-| First Name              | User's first name.                           |
-| Last name               | User's last name.                            |
-| Email                   | User's email address.                        |
-| Gender                  | User's gender.                               |
-| Age                     | User's age.                                  |
-| Birthday                | User's birthday.                             |
-| Location                | User's location.                             |
-| Accepted GDPR           | Accepted General Data Protection Regulation  |
-| Tasks Completed         | All tasks that were achieved in the session. |
-
+| Contact Profile Details | Description                                                                                                                                                                            |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| First Name              | User's first name.                                                                                                                                                                     |
+| Last name               | User's last name.                                                                                                                                                                      |
+| Email                   | User's email address.                                                                                                                                                                  |
+| Gender                  | User's gender.                                                                                                                                                                         |
+| Age                     | User's age.                                                                                                                                                                            |
+| Birthday                | User's birthday.                                                                                                                                                                       |
+| Location                | User's location.                                                                                                                                                                       |
+| Accepted GDPR           | Accepted General Data Protection Regulation.                                                                                                                                           |
+| Goals Completed         | All the tasks that were completed by the user during conversations with AI Agents or human agents. The field refers to the [Tasks](../../ai/analyze/goals-and-tasks/tasks.md) feature. |
 
 ## More Information 
 

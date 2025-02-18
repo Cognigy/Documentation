@@ -57,7 +57,12 @@ which are stored in Cognigy's container registry.
 You will receive credentials that are necessary to authenticate and pull these images.
 
 ### Domains / DNS names
-Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If Cognigy.AI needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
+Cognigy.AI exposes several web services
+for which you will need to assign DNS records in a public domain operated by your organization.
+Ensure that you have access to DNS provider of your domain
+(for example, GoDaddy, United-Domains, and more) to configure DNS records.
+If Cognigy.AI needs to be accessible only from your private network,
+ensure that you can create DNS records in your private domain.
 
 ### TLS certificate(s)
 To authenticate a web server and to encrypt web traffic between clients and the web server, you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation processes. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for Cognigy.AI. The reverse-proxy we ship with Cognigy.AI cannot support multiple certificates out of the box, and Cognigy will not provide support for such configurations.

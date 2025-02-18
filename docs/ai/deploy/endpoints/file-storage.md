@@ -25,10 +25,14 @@ After uploading a file to the chat interface, the file will be saved in the stor
 You can use the File Storage section in the following Endpoints:
 
 - [8x8](../endpoint-reference/8x8.md)
-- [Alexa](../endpoint-reference/amazon-alexa.md)
 - [Webchat v2](../../../webchat/v2/overview.md)
 - [Webchat v3](../../../webchat/v3/overview.md)
 - [WhatsApp](../endpoint-reference/whatsapp.md)
+
+## Security Measures
+
+Cognigy.AI performs a virus scan on the file before uploading it to the cloud storage provider. 
+This process ensures the file is checked for potential malware or viruses, helping to prevent harmful content from being stored or shared through the cloud.
 
 ## Create a Connection to a File Storage Provider
 

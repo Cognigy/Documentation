@@ -17,7 +17,7 @@ The Track Goal Node lets you monitor the progress of a specific goal within a Fl
 and can be used only with [Goals](../../../analyze/goals-and-tasks/goals.md). 
 
 By adding this Node, you can track key steps defined in your goals, such as time or money saved,
-and then analyze the results in the Insights dashboard or via the OData endpoint.
+and then analyze the results in the Insights report or via the OData endpoint.
 
 For example, if your goal is to reduce call handling time, the Track Goal Node will track each interaction step, helping you measure whether your Flow is achieving the desired reductions in response times.
 
@@ -40,5 +40,5 @@ The steps within this goal are the following:
 ## More Information
 
 - [Goals](../../../analyze/goals-and-tasks/goals.md)
-- [Dashboard Goals](../../../../insights/dashboards/goals.md)
+- [Goals Report](../../../../insights/reports/goals.md)
 - [Complete Task Node](complete-task.md)

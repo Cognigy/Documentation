@@ -1,8 +1,14 @@
 ---
-title: "Genesys Cloud Open Messaging"
+title: "Overview"
 slug: "genesys-cloud-open-messaging"
 description: "Cognigy includes Genesys Cloud Open Messaging as an additional handover provider, allowing Cognigy.AI users to connect with human agents from Genesys Cloud."
+search:
+  boost: 2
 hidden: false
+tags:
+  - Genesys Cloud Open Messaging
+  - handover provider
+  - Genesys OM
 ---
 
 # Genesys Cloud Open Messaging
@@ -24,7 +30,13 @@ The Genesys Cloud Open Messaging handover is based on [Open Messaging APIs](http
 - You need to have an account in [Genesys Cloud](https://login.mypurecloud.com/).
 - Activate Genesys Cloud Open Messaging on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premises installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organisation1,organisation2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
+    - If you have an on-premises installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organization1,organization2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organization1,organization2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
+
+### Limitations
+
+- By default, Cognigy.AI uses a WebSocket connection through the Notifications API to detect handover completion in Genesys. However,
+  this approach has [limitations](https://developer.genesys.cloud/notificationsalerts/notifications/#usage-limitations)
+  and may not always be reliable. As an alternative, you can configure [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI.
 
 ### Configure Genesys Cloud Open Messaging
 

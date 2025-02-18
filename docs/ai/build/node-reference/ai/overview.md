@@ -1,14 +1,14 @@
 ---
-title: "NLU Nodes" 
-slug: "nlu" 
+title: "AI Nodes" 
+slug: "ai" 
 hidden: false 
 ---
 
-# NLU
+# AI
 
-NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources.
+AI Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources.
 
-You can use the following NLU Nodes:
+You can use the following AI Nodes:
 
 - [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)
 - [AI Agent](ai-agent.md)

@@ -13,7 +13,7 @@ Once you have [set up your Endpoint and Flow for Handover to Live Agent](live-ag
 To create a User, follow these steps:
 
 1. Open the Cognigy.AI interface. If the Agent or Admin you want to add already exists as a User in Cognigy.AI, proceed to [Adding Live Agent Roles to Users](#add-live-agent-roles-to-users).
-2. On the **Projects** page, in the upper-right corner, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center**.
+2. On the **Main** page, in the upper-right corner, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center**.
 3. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
 4. In the **New User** window, fill in the following fields:
     - **Display Name** — enter the name that you want to be displayed for this user. For example, `John Doe`.
@@ -35,7 +35,7 @@ For more information, see [Live Agent Roles](../../roles.md).
 
 To add one of these roles to users, follow these steps:
 
-1. On the **Projects** page of the Cognigy.AI interface, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center** in the upper-right corner.
+1. On the **Main** page of the Cognigy.AI interface, click **User Menu ![user-menu](../../../_assets/icons/user-menu.svg) > Admin Center** in the upper-right corner.
 2. In the Admin Center interface, select **Access Control** from the left-side menu, then click **+ Create new User**.
 3. Select a user you would like to assign roles to.
 4. On the User page, go to the **Global Roles** section. 

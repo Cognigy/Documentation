@@ -17,24 +17,21 @@ _**Annotations**_
 ## C
 
 _**Chart**_
-: A visual tool that displays data in a graphical format, making it easier to understand trends and patterns. Insights dashboards use various chart types such as bars, lines, and rings to present information effectively.
+: A visual tool that displays data in a graphical format, making it easier to understand trends and patterns. Insights reports use various chart types such as bars, lines, and rings to present information effectively.
 
 _**Cognigy Insights**_
-: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI Agents. It provides dynamic tools and key metrics across different dashboards to analyze customer interactions and improve AI Agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
+: A powerful analytics platform for evaluating and enhancing the performance of Cognigy.AI Agents. It provides dynamic tools and key metrics across different reports to analyze customer interactions and improve AI Agent efficiency. For more information, read the [Cognigy Insights](overview.md) documentation.
 
 _**Conversation**_
 : A billable unit of interaction between a user and an AI Agent or a human agent. For more information about billed conversations, read the [Cognigy Billing](../ai/administer/billing.md) documentation.
 
 ## D
 
-_**Dashboard**_
-: A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
-
 _**Data Expiration**_
 : Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](data-management/ttl.md) documentation.
 
 _**Download Report**_
-: Each widget on the Insights dashboards provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
+: Each widget on the Insights reports provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.
 
 ## E
 
@@ -45,7 +42,7 @@ _**Debug Mode**_
 : This mode provides additional information for conversation messages, including the triggered Intent and its score, as well as the filled Slots. You can enable Debug mode by toggling the switch at the top of the Transcript panel. For more information, read the [Debug Mode](explorers/transcript.md#debug-mode) documentation.
 
 _**Engagement**_
-: A dashboard in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Dashboard](dashboards/engagement.md) documentation.
+: A report in Cognigy Insights that displays performance metrics for your agent, focusing on customer interactions in conversations. For more information, read the [Engagement Report](reports/engagement.md) documentation.
 
 _**Escalation**_
 : See [Live Agent Handovers](#l).
@@ -56,23 +53,23 @@ _**Explorer**_
 ## F
 
 _**Filter Bar**_
-: A bar displayed at the top of each Insights dashboard or explorer. The filter bar includes all [global filters](#g) and [local filters](#l), accessible by clicking the **more filters** button.
+: A bar displayed at the top of each Insights report or explorer. The filter bar includes all [global filters](#g) and [local filters](#l), accessible by clicking the **more filters** button.
 
 ## G
 
 _**Global Filter**_
-: A tool that allows users to set consistent filtering criteria, such as time span, endpoints, snapshot, locales, and message rating, across different dashboards and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
+: A tool that allows users to set consistent filtering criteria, such as time span, endpoints, snapshot, locales, and message rating, across different reports and explorers. For more information, read the [Global Filter](global-filters.md) documentation.
 
 ## L
 
 _**Live Agent**_
-: A dashboard in Cognigy Insights that presents Live Agent metrics for a specific AI Agent. For more information, read the [Live Agent](dashboards/live-agent.md) documentation.
+: A report in Cognigy Insights that presents Live Agent metrics for a specific AI Agent. For more information, read the [Live Agent](reports/live-agent.md) documentation.
 
 _**Live Agent Handovers**_
-: An Indicator chart that displays the number of handovers. Handovers occur when an AI Agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboards/live-agent.md#live-agent-handovers) documentation.
+: An Indicator chart that displays the number of handovers. Handovers occur when an AI Agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](reports/live-agent.md#live-agent-handovers) documentation.
 
 _**Local Filter**_
-: The Local Filters are specific to a dashboard or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
+: The Local Filters are specific to a report or an explorer. For more information, see the [Local Filter](explorers/message.md) example.
 
 ## M
 
@@ -83,17 +80,22 @@ _**Message Rating**_
 : A configurable Global Filter setting that allows users to refine their data analysis based on the sentiment of user feedback within a session.
 
 _**Message Research**_
-: A feature of the Transcript Explorer and Message Explorer is to find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. For more information, read the corresponding sections in the [Transcript Explorer](explorers/transcript.md) and the [Message Explorer](explorers/message.md) documentation.
+: A feature of the Transcript Explorer and Message Explorer is to find specific sessions with transcripts by searching for text messages, Session ID, or User ID. For more information, read the corresponding sections in the [Transcript Explorer](explorers/transcript.md) and the [Message Explorer](explorers/message.md) documentation.
 
 ## N
 
 _**NLU Performance**_
-: A dashboard in Cognigy Insights that provides a comprehensive view of your AI Agent's natural language understanding (NLU) capabilities. It enables you to monitor and enhance message comprehension, intent recognition, and execution efficiency. For more information, read the [NLU Performance](dashboards/nlu-performance.md) documentation.
+: A report in Cognigy Insights that provides a comprehensive view of your AI Agent's natural language understanding (NLU) capabilities. It enables you to monitor and enhance message comprehension, intent recognition, and execution efficiency. For more information, read the [NLU Performance](reports/nlu-performance.md) documentation.
 
 ## O
 
 _**Overview**_
-: A dashboard in Cognigy Insights that displays various metrics as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts. The charts display data based on the Filter settings. For more information, read the [Overview](dashboards/overview.md) documentation.
+: A report in Cognigy Insights that displays various metrics as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts. The charts display data based on the Filter settings. For more information, read the [Overview](reports/overview.md) documentation.
+
+## R
+
+_**Report**_
+: A single-page canvas that serves as a visual interface to present key performance indicators, metrics, and trends through a variety of visualizations, including line charts, bar charts, ring charts, and other chart types.
 
 ## S
 
@@ -112,7 +114,7 @@ _**Steps**_
 ## T
 
 _**Tiles**_
-: A UI element designed for displaying Indicator charts. These tiles are positioned at the top of a dashboard. For more information, read the [Overview Dashboard](dashboards/overview.md) documentation.
+: A UI element designed for displaying Indicator charts. These tiles are positioned at the top of a report. For more information, read the [Overview Report](reports/overview.md) documentation.
 
 _**Time span**_
 : A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Time Span](global-filters.md#time-span) documentation.

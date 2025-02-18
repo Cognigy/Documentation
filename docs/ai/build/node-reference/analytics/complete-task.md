@@ -17,7 +17,7 @@ hidden: false
 
 The Complete Task Node provides an easy way
 to track the completion of a specific event once the Node is triggered
-and can be used only with [Tasks](../../../analyze/goals-and-tasks/goals.md).
+and can be used only with [Tasks](../../../analyze/goals-and-tasks/tasks.md).
 
 To start using this Node, add it below the Node that completes the action you want to track.
 Once the user has passed this action and triggered the Complete Task Node,
@@ -25,8 +25,8 @@ the completed task will be stored in the [Contact Profile](../../../analyze/cont
 
 Complete Tasks have a variety of potential use cases and help understand how often certain events are achieved.
 The achieved tasks are recorded in the Contact Profiles of each end user.
-The data is also available in Insights (on dashboards and explorers) and through the OData endpoint.
-The [top tasks](../../../../insights/dashboards/engagement.md#tasks-reached) are listed in the Insights Engagement dashboard
+The data is also available in Insights (on reports and explorers) and through the OData endpoint.
+The [top tasks](../../../../insights/reports/engagement.md#tasks-reached) are listed in the Insights Engagement report
 and allow you to track and analyze their frequency. 
 If you don't intend to analyze Contact Profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then [Analytics Steps](../../../analyze/collecting-data.md#analytics-steps) would be more suitable.
 

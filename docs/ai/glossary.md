@@ -148,7 +148,7 @@ The Input Object is passed to the Flow to determine the next action. You can fin
 For more information, read the [Input](test/interaction-panel/input.md) documentation.
 
 _**Insights**_
-: A Cognigy product used to collect and display analytics data within Cognigy.AI. Insights dashboards and explorers provide a range of key metrics for understanding the usage and performance of your AI Agents.
+: A Cognigy product used to collect and display analytics data within Cognigy.AI. Insights reports and explorers provide a range of key metrics for understanding the usage and performance of your AI Agents.
 For more information, read the [Cognigy Insights](../insights/overview.md) documentation.
 
 _**Intents**_

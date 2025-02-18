@@ -1,0 +1,47 @@
+name: sync
+
+# Do not automatically trigger this pipeline if a normal commit + push
+# occurs. We will trigger this pipeline based on a schedule.
+trigger: none
+
+schedules:
+  - cron: "0 0,12 * * *"
+    displayName: Midnight and Noon sync
+    branches:
+      include:
+        - main
+
+resources:
+  - repo: self
+
+pool:
+  vmImage: ubuntu-20.04
+
+stages:
+  - stage: Sync
+    displayName: Sync Azure DevOps with GitHub
+    jobs:
+      - job:
+        displayName: Sync Azure DevOps with GitHub
+        steps:
+          - checkout: self
+            persistCredentials: "true"
+            clean: "true"
+
+          - script: |
+              git config --global user.email "azure-pipeline@cognigy.com"
+              git config --global user.name "Azure Pipelines Bot"
+
+              git remote add github https://github.com/Cognigy/Documentation.git
+
+              git checkout --track origin/main
+              git fetch github
+              git merge github/main --no-edit
+              git branch
+            displayName: Pull main from GitHub and merge
+
+          - script: |
+              git remote -v
+              git branch
+              git push origin main
+            displayName: Push changes to Azure DevOps

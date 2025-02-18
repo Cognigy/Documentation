@@ -7,6 +7,8 @@ hidden: false
 
 # Contact Profiles
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.95-blue.svg)](../../release-notes/4.95.md)
+
 _Contact Profiles_ contain information about users who interact with your AI Agents. 
 Within Contact Profiles, you can view user data that was collected during the conversation, for example, first name, last name, and navigate through the transcript history of the conversation. 
 These Profiles enable personalized interactions and contact management across different channels, such as Webchat, WhatsApp, Slack, and more.
@@ -25,7 +27,7 @@ Contact Profiles offer the following benefits:
 
 To view Contact Profiles, follow these steps:
 
-1. In the left-side menu of the **Projects** page, select a Project.
+1. In the left-side menu of the **Main** page, select a Project.
 2. In the left-side menu of the Project page, select **Manage > Contact Profiles**.
 
 On the **Contact Profiles** page, you can search for Contact Profiles using the search field in the upper-right corner and sort the results by clicking on the column headers. 
@@ -35,7 +37,7 @@ The **Hide Inactive Profiles** setting is activated by default, allowing you to 
 
 To view a Contact Profile, follow these steps:
 
-1. In the left-side menu of the **Projects** page, select a Project.
+1. In the left-side menu of the **Main** page, select a Project.
 2. In the left-side menu of the Project page, go to **Manage > Contact Profiles**.
 3. Select a Contact Profile from the list. The Contact Profile shows user details.
 
@@ -53,12 +55,12 @@ The Profile Schema has the following predefined fields:
 
 | Field                   | Profile Key    | Description                                                                                                                                                                                                                                                 |
 |-------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Contact IDs             | profileId      | Unique identifiers assigned to each end user.                                                                                                                                                                                                               |
+| User ID                 | profileId      | A unique identifier assigned to each end user.                                                                                                                                                                                                              |
 | First Name              | firstname      | The given name of the contact.                                                                                                                                                                                                                              |
 | Last Name               | lastname       | The surname or family name of the contact.                                                                                                                                                                                                                  |
 | Accepted Privacy Policy | privacy_policy | Indicates whether the contact has agreed to the privacy policy terms and specifies the time when the agreement was made. This field is applicable to Webchat v3 when an end user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
 | Accepted GDPR           | accepted_gdpr  | Indicates whether the contact has consented to the General Data Protection Regulation (GDPR) compliance terms.                                                                                                                                              |
-| Tasks Completed         | goals          | Refers to tasks completed within a Flow.                                                                                                                                                                                                                    |
+| Goals Completed         | goals          | Refers to all the [tasks](goals-and-tasks/tasks.md) that were completed by the user during conversations with AI Agents or human agents.                                                                                                                    |
 | Email                   | email          | The email address associated with the contact.                                                                                                                                                                                                              |
 | Gender                  | gender         | The gender identity of the contact, if provided.                                                                                                                                                                                                            |
 | Age                     | age            | The age of the contact, represented in years.                                                                                                                                                                                                               |

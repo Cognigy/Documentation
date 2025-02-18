@@ -20,7 +20,7 @@ act as a single product — Cognigy.AI — by interacting with each other throug
 
 Each individual microservice runs as a containerized application on top of Kubernetes. Containers are a way of how processes can run in isolation
 from each other and offer the ability to ship modern software products together with their dependencies, for instance, a runtime environment.
-A program written in JavaScript might need a specific version of the NodeJS runtime to function properly — containers allow packaging such
+A program written in JavaScript might need a specific version of the Node.js runtime to function properly — containers allow packaging such
 dependencies together with the actual application into one shippable unit. One of the more popular container runtimes and a set of other container-specific tools is [Docker](https://www.docker.com/).
 
 Managing a high number of moving parts — the microservices mentioned above — is quite a challenge and requires an additional software product

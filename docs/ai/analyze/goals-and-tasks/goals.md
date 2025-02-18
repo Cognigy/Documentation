@@ -82,13 +82,13 @@ You can add multiple **Track Goal** Nodes in the same Flow to track different st
 
 While you may choose to add multiple steps to reflect various stages of your goal completion process, both the initial and completion steps must be defined in your Flow. Without a completion step, your goal will be partially completed or incomplete if only the initial step is triggered.
 
-### Track a Goal in the Insights Dashboard
+### Track a Goal in the Insights Report
 
-Once a goal and its steps are added to your Flows, you can monitor metrics in the Insights dashboard.
+Once a goal and its steps are added to your Flows, you can monitor metrics in the Insights report.
 
 1. Go to the Insights interface by selecting Insights from the left-side menu of the current Project. 
 2. In the Insights interface, select **Goals** from the left-side menu. 
-3. By default, the dashboard shows data for all goals from the last 30 days. Use [filters](../../../insights/global-filters.md) to view metrics by time, as well as for specific goals, Snapshots, Endpoints, or Locales.
+3. By default, the report shows data for all goals from the last 30 days. Use [filters](../../../insights/global-filters.md) to view metrics by time, as well as for specific goals, Snapshots, Endpoints, or Locales.
 
 For example:
 
@@ -96,7 +96,7 @@ For example:
 - **Revenue Earned**. Monitor the income generated through specific interactions, processes, or transactions managed by the AI Agent.
 - **Time Saved**. Track how many hours were saved as tasks were handled automatically by the AI Agent instead of a human agent.
 
-For more information on how the data is calculated, refer to [Goals](../../../insights/dashboards/goals.md) in the Insights documentation.
+For more information on how the data is calculated, refer to [Goals](../../../insights/reports/goals.md) in the Insights documentation.
 
 ## Other Operations
 
@@ -239,9 +239,9 @@ Then monitor and analyze each step of the booking process.
 
 Test your flow via the Interaction Panel.
 Enable the [Debug Mode](../../test/interaction-panel/overview.md#debug-mode) setting to see when Track Goals will be triggered.
-To view recorded metrics, go to [Cognigy Insights](../../../insights/index.md) and select [Goals](../../../insights/dashboards/goals.md) from the left-side menu.
+To view recorded metrics, go to [Cognigy Insights](../../../insights/index.md) and select [Goals](../../../insights/reports/goals.md) from the left-side menu.
 
 ## More Information
 
 - [Track Goal](../../build/node-reference/analytics/track-goal.md)
-- [Insights Goals Dashboard](../../../insights/dashboards/goals.md)
+- [Insights Goals Report](../../../insights/reports/goals.md)

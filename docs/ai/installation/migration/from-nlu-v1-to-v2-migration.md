@@ -53,7 +53,7 @@ Instead, the following services will be introduced:
 - `service-nlp-classifier-train-<language>`
 - `service-nlp-embedding-<language>`
 
-The new services are smaller than the old services and can better reuse components between scoring and training, as well as between different languages. The new architecture also allows for a much more flexible scaling when load increases on an environment.
+The new services are smaller than the old services and can better reuse components between scoring and training, as well as between different languages. The new architecture also allows for a much more flexible scaling when a load increases in an environment.
 
 ## Migration Quality Assurance
 
@@ -173,37 +173,37 @@ serviceNlpClassifierTrainKo:
 
 Similar to the NLP V1 stack, deploy the services for the languages that you need. The table below shows you which services you need for which languages. Note that `service-nlp-orchestrator` is always needed.
 
-| Language                  | Code        |  service-nlp-embedding instance | service-nlp-classifier instance |
-| ------------------------- | ----------- |  ------------------------------ | -- |
-| Universal                 | ge-GE       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Finnish - Finland         | fi-FI       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Swedish - Sweden          | sv-SE       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Danish - Denmark          | da-DK       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Norwegian - Norway        | nn-NO       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Vietnamese - Vietnam      | vi-VN       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Hindi - India             | hi-IN       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Bangla - Bangladesh       | bn-IN	      | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Tamil - India             | ta-IN	      | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| German - Germany          | de-DE	      | service-nlp-embedding-xx       | service-nlp-classifier-score-de && service-nlp-classifier-train-de
-| Japanese - Japan          | ja-JP	      | service-nlp-embedding-xx       | service-nlp-classifier-score-ja & service-nlp-classifier-train-ja |
-| Korean - Korea            | ko-KR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-ko & service-nlp-classifier-train-ko |
-| Arabic - U.A.E.           | ar-AE	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx |
-| Spanish - Spain           | es-ES	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| French - France           | fr-FR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Dutch - Netherlands       | nl-NL	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Italian - Italy           | it-IT	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Polish - Poland           | pl-PL	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Portuguese - Portugal     | pt-PT	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Portuguese - Brazil       | pt-BR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Thai - Thailand           | th-TH	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Russian - Russia          | ru-RU	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Turkish - Turkey          | tr-TR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Chinese - China           | zh-CN	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| English - United States   | en-US	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - India           | en-IN	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - United Kingdom  | en-GB	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - Canada          | en-CA	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - Australia       | en-AU	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
+| Language                 | Code  | service-nlp-embedding instance | service-nlp-classifier instance                                    |
+|--------------------------|-------|--------------------------------|--------------------------------------------------------------------|
+| Universal                | ge-GE | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Finnish - Finland        | fi-FI | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Swedish - Sweden         | sv-SE | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Danish - Denmark         | da-DK | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Norwegian - Norway       | nn-NO | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Vietnamese - Vietnam     | vi-VN | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Hindi - India            | hi-IN | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Bangla - Bangladesh      | bn-IN | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| Tamil - India            | ta-IN | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge  |
+| German - Germany         | de-DE | service-nlp-embedding-xx       | service-nlp-classifier-score-de && service-nlp-classifier-train-de |
+| Japanese - Japan         | ja-JP | service-nlp-embedding-xx       | service-nlp-classifier-score-ja & service-nlp-classifier-train-ja  |
+| Korean - Korea           | ko-KR | service-nlp-embedding-xx       | service-nlp-classifier-score-ko & service-nlp-classifier-train-ko  |
+| Arabic - U.A.E.          | ar-AE | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Spanish - Spain          | es-ES | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| French - France          | fr-FR | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Dutch - Netherlands      | nl-NL | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Italian - Italy          | it-IT | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Polish - Poland          | pl-PL | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Portuguese - Portugal    | pt-PT | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Portuguese - Brazil      | pt-BR | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Thai - Thailand          | th-TH | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Russian - Russia         | ru-RU | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Turkish - Turkey         | tr-TR | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| Chinese - China          | zh-CN | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx  |
+| English - United States  | en-US | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en  |
+| English - India          | en-IN | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en  |
+| English - United Kingdom | en-GB | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en  |
+| English - Canada         | en-CA | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en  |
+| English - Australia      | en-AU | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en  |
 
 #### Scale down Old Train Services
 
@@ -312,15 +312,15 @@ If the standard configuration doesn't align with your preferred way of migrating
 
 To do this, use the following parameters:
 
-| Value | Description                                                                                                                                                          | Examples                                               |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| -o    | The organizations to run for. A comma-separated list of organization IDs                                                                                             | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe"    |
-| -p    | The projects to migrate. A comma-separated list of project IDs                                                                                                       | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe"    |
-| -l    | The locales to run for. A comma-separated list of language codes                                                                                                     | "en-US,de-DE,ar-AE"                                    |
-| -c    | The amount of projects to migrate in parallel                                                                                                                        | "10"                                                   |
-| -cf   | The amount of Flows per project to migrate in parallel                                                                                                               | "10"                                                   |
-| -s    | Whether to migrate models in Snapshots                                                                                                                               | "true"                                                 |
-| -ct   | Count the number of models per locale. This process doesn't involve migration but provides you with a list of how many models exist per locale, offering an overview | "true"                                                 |
+| Value | Description                                                                                                                                                          | Examples                                            |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| -o    | The organizations to run for. A comma-separated list of `organisationID` values                                                                                      | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe" |
+| -p    | The projects to migrate. A comma-separated list of project IDs                                                                                                       | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe" |
+| -l    | The locales to run for. A comma-separated list of language codes                                                                                                     | "en-US,de-DE,ar-AE"                                 |
+| -c    | The amount of projects to migrate in parallel                                                                                                                        | "10"                                                |
+| -cf   | The amount of Flows per project to migrate in parallel                                                                                                               | "10"                                                |
+| -s    | Whether to migrate models in Snapshots                                                                                                                               | "true"                                              |
+| -ct   | Count the number of models per locale. This process doesn't involve migration but provides you with a list of how many models exist per locale, offering an overview | "true"                                              |
 
 ### Increase the Speed of the Migration
 
@@ -331,9 +331,9 @@ To scale up the services, use the following guidelines:
 - If you want to migrate 20 models at once, increase the capacity of the `nlp-classifier-train-<language>` service to handle 20 training jobs simultaneously.
 - If you have 20 classifiers, increase the number of replicas for the `service-nlp-embedding-<language>` service to 8, which corresponds to 40% of the total number of classifiers you possess.
 - If you have 20 classifiers, increase the number of replicas for the `service-nlp-ner` service to 16, which corresponds to 80% of the total number of classifiers you possess.
-- If you have 20 classifiers, increase the number of replicas for the `service-nlp-orchestrator` service to 4,  which corresponds to 20% of the total number of replicas of `service-nlp-classifier`.
+- If you have 20 classifiers, increase the number of replicas for the `service-nlp-orchestrator` service to 4, which corresponds to 20% of the total number of replicas of `service-nlp-classifier`.
 
-After scaling up, you can modify the `-c` and `-cf` parameters to achieve the number of models to train in parallel. If you have many projects, we recommend using a higher value for `-c`. Conversely, if you have a few projects with a lot of Flows, it is advisable to set a a higher value for `-cf`.
+After scaling up, you can modify the `-c` and `-cf` parameters to achieve the number of models to train in parallel. If you have many projects, we recommend using a higher value for `-c`. Conversely, if you have a few projects with a lot of Flows, it is advisable to set a higher value for `-cf`.
 
 Here is an example of training 20 Flows in parallel for the `XX` train group:
 
@@ -494,7 +494,7 @@ If any models were repaired, then you need to **run the migration again**:
 
 ## Check if Migration is Complete
 
-To ensure that the migration has been completed successfully and that NLP V1 is no longer in use, check the **Service NLP** dashboard in Grafana. Here, you can monitor the traffic received by the old NLP V1 stack. We recommend observing this for a couple of days, and if it consistently shows 0 load, you can safely remove the V1 stack.
+To ensure that the migration has been completed successfully and that NLP V1 is no longer in use, check the **Service NLP** dashboard in Grafana. Here, you can monitor the traffic received by the old NLP V1 stack. We recommend observing this for a couple of days, and if it consistently shows 0 loads, you can safely remove the V1 stack.
 
 ![check-completed-migration](../../../_assets/ai/installation/check-completed-migration.png)
 

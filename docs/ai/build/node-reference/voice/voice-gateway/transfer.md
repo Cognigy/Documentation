@@ -3,9 +3,10 @@ title: "Transfer"
 slug: "transfer-vg" 
 hidden: false 
 tags:
-  - Cognigy.AI
-  - Nodes
+  - Voice Gateway
   - Transfer
+  - transfer a call
+  - escalate a call
 ---
 
 # Transfer
@@ -70,7 +71,7 @@ For example, if a call is transferred to a user and AMD detects a machine, you w
 |-----------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | Anchor Media                | Toggle | This parameter is deactivated by default. If activated, it routes all data between SIP endpoints through Voice Gateway. <br> Media anchoring can help you resolve NAT problems, enforce media security policies, and perform media transcoding and monitoring. This process changes the addresses and ports of incoming and outgoing data: <br> - Outgoing data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the public network. <br> - Incoming data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the PBX system or local telephone. | Dial          |
 | Custom Transfer SIP Headers | Toggle | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | All           |
-| Transfer SIP Headers        | JSON   | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | All           |
+| Transfer SIP Headers        | JSON   | An object containing SIP headers that should be sent to the transferee. Each header is a key-value pair: `{ "Header-Name": "Header-Value" }`. The following example shows a JSON object containing two key-value pairs: `{ "X-Caller-ID": "+1234567890", "X-Request-ID": "abc-123" }`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | All           |
 | Referred By                 | String | This parameter is optional.<br><br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.                                                                                                                                                  | Refer         |
 
 ### Troubleshooting
@@ -86,7 +87,7 @@ and enter the following in the JSON field:
 
 ```json
 {
-"P-Asserted-Identity": "<sip:phonenumber@host>"
+  "P-Asserted-Identity": "<sip:phonenumber@host>"
 }
 ```
 

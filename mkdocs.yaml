@@ -16,6 +16,10 @@ nav:
       - Getting Started:
         - ai/overview/getting-started-with-digital-agent.md
         - ai/overview/getting-started-with-voice-agent.md
+      - User Interface:
+        - ai/overview/user-interface/main-page.md
+        - ai/overview/user-interface/project-page.md
+        - ai/overview/user-interface/resource-pages.md
       - ai/glossary.md
 
     - 🛠️ Build:
@@ -53,9 +57,9 @@ nav:
           - ai/build/node-reference/logic/remove-from-context.md
           - ai/build/node-reference/logic/reset-state.md
           - ai/build/node-reference/logic/set-state.md
+          - ai/build/node-reference/logic/sleep.md
           - ai/build/node-reference/logic/stop-and-return.md
           - ai/build/node-reference/logic/switch-locale.md
-          - ai/build/node-reference/logic/sleep.md
           - ai/build/node-reference/logic/think.md
           - ai/build/node-reference/logic/wait-for-input.md
         - Voice:
@@ -331,7 +335,9 @@ nav:
         - ai/escalate/handover-reference/ring-central-engage.md
         - ai/escalate/handover-reference/salesforce.md
         - ai/escalate/handover-reference/genesys-cloud-guest-chat.md
-        - ai/escalate/handover-reference/genesys-cloud-open-messaging.md
+        - Genesys Cloud Open Messaging:
+          - ai/escalate/handover-reference/genesys-cloud-open-messaging.md
+          - ai/escalate/handover-reference/genesys-cloud-open-messaging-handover-end-detection.md
         - ai/escalate/handover-reference/8x8.md
       - Handover Features:
         - ai/escalate/user-inactivity-detection.md
@@ -640,12 +646,12 @@ nav:
     - 👋 Overview:
       - insights/overview.md
       - insights/glossary.md
-    - 📊 Dashboards:
-      - insights/dashboards/overview.md
-      - insights/dashboards/engagement.md
-      - insights/dashboards/nlu-performance.md
-      - insights/dashboards/live-agent.md
-      - insights/dashboards/goals.md
+    - 📊 Reports:
+      - insights/reports/overview.md
+      - insights/reports/engagement.md
+      - insights/reports/nlu-performance.md
+      - insights/reports/live-agent.md
+      - insights/reports/goals.md
     - 🔭 Explorers:
       - insights/explorers/step.md
       - insights/explorers/transcript.md
@@ -672,6 +678,8 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.9x:
+        - release-notes/4.95.md
+        - release-notes/4.94.md
         - release-notes/4.93.md
         - release-notes/4.92.md
         - release-notes/4.91.md
@@ -758,6 +766,10 @@ theme:
 
   font:
     text: Open Sans
+  
+  icon:
+    admonition:
+      info: material/format-align-justify
 
   palette:
     scheme: default
@@ -767,10 +779,13 @@ theme:
     - toc
     - toc.follow
     - search.suggest
+    - search.share
+    - search.highlight
     - navigation.tabs
     - navigation.tabs.sticky
     - content.tabs.link
     - content.code.copy
+    - announce.dismiss
 
     # render navigation bar at the top of the page
     - navigation.tracking

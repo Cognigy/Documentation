@@ -15,7 +15,7 @@ Node Categories:
 - [Voice](#voice-nodes)
 - [Analytics](#analytics-nodes)
 - [Service](#service-nodes)
-- [NLU](#nlu-nodes)
+- [AI](#ai-nodes)
 - [Data](#data-nodes)
 - [AI Copilot](#ai-copilot-nodes)
 - [xApps](#xapp-nodes)
@@ -48,12 +48,15 @@ This Node works similar to the Question Node, except that the Entry Point is opt
 
 This Node outputs simple text.
 
+### [Debug Message](basic/debug-message.md)
+
+This Node sends a debug message to the Interaction Panel. Debug messages can help you track the flow of data and diagnose issues by providing real-time information about what's happening during the Flow execution.
+
 ### [Code Node](basic/code/overview.md)
 
 This Node enables the execution of custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the Node is saved. If the transpilation fails, the code will be saved, and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
 
 ## [Logic Nodes](logic/overview.md)
-
 
 Logic Nodes can be used to execute a certain logic in the Flow. They include classical conditions, as well as specific Flow behavior like waiting for a user input.
 
@@ -63,7 +66,7 @@ This Node is used to store information in the Cognigy [Context](../../test/inter
 
 ### [Execute Flow](logic/execute-flow.md)
 
-This Node can be used to execute another Flow, meaning that it will run that Flow and return to the initial Flow afterwards. This means that the Entry Point will not switch to the new Flow. This operation can be compared to a function call.
+This Node can be used to execute another Flow, meaning that it will run that Flow and return to the initial Flow afterward. This means that the Entry Point will not switch to the new Flow. This operation can be compared to a function call.
 
 ### [Go To](logic/go-to.md)
 
@@ -247,12 +250,15 @@ This Node enables the forwarding of an active call to a Tel or SIP target.
 
 ## [Analytics Nodes](analytics/overview.md)
 
-
 Analytics Nodes let you take advantage of Cognigy AI's comprehensive marketing functionality. Use and update [Contact Profiles](../../analyze/contact-profiles.md) within your Flow for personalized, adaptive Flows that connect with your audience.
 
 ### [Activate Profile](analytics/activate-profile.md)
 
 This Node can be used to activate a [Contact Profile](../../analyze/contact-profiles.md) in case it has been deactivated. The Node is not configurable.
+
+### [Add Memory](analytics/add-memory.md)
+
+This Node stores memories within the Contact Profile. A memory entry can be any text, such as user input and other relevant details.
 
 ### [Blind Mode](analytics/blind-mode.md)
 
@@ -286,7 +292,11 @@ This Node provides the ability to selectively overwrite the Analytics data that 
 
 ### [Request Rating](analytics/request-rating.md)
 
-The Request Rating Node is used to request a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
+This Node requests a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
+
+### [Track Goal](analytics/track-goal.md)
+
+This Node lets you monitor the progress of a specific goal within a Flow and can be used only with Goals.
 
 ### [Set Rating](analytics/set-rating.md)
 
@@ -298,8 +308,11 @@ This Node is commonly used, as it helps update [Contact Profile](../../analyze/c
 
 ## [Service Nodes](service/overview.md)
 
-
 Service Nodes can be used to trigger external services, like databases and email servers. Cognigy.AI ships with a number of built-in services. Additional services can be added through [Extensions](../extensions.md).
+
+### [Add Transcript Steps](service/add-transcript-steps.md)
+
+This Node lets you add a step for one of the conversation actors to simulate an input or output.
 
 ### [Check Agent Availability](service/check-agent-availability.md)
 
@@ -310,7 +323,11 @@ or suggest an alternative response.
 
 ### [Close Handover](service/close-handover.md)
 
-Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the AI Agent.
+This Node closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the AI Agent.
+
+### [Get Transcript](service/get-transcript.md)
+
+This Node lets you receive a real-time conversation transcript and store the result in the Input or Context object.
 
 ### [GPT Conversation](service/gpt-conversation.md)
 
@@ -326,7 +343,7 @@ This Node enables AI Agents to pass on conversations to human agents in contact 
 
 ### [HTTP Request](service/http-request.md)
 
-The HTTP Request Node is a very convenient Node that can execute HTTP requests to other interfaces (APIs). It can be configured with typical REST operations (GET, POST, PATCH, PUT, DELETE) and has configurable JSON or Text payloads.
+This Node is a very convenient Node that can execute HTTP requests to other interfaces (APIs). It can be configured with typical REST operations (GET, POST, PATCH, PUT, DELETE) and has configurable JSON or Text payloads.
 
 ### [LLM Prompt](service/llm-prompt.md)
 
@@ -348,14 +365,23 @@ This Node detects and handles user inactivity, freeing up capacity for the human
 
 This Node is used to execute a [Function](../functions.md).
 
-## [NLU Nodes](ai/overview.md)
+## [AI Nodes](ai/overview.md)
 
-
-NLU Nodes are a collection of Nodes that are related to the platform's [NLU](../../empower/nlu/overview.md). It features a range of different Nodes.
+AI Nodes are a collection of Nodes
+that are related to the Cognigy.AI [NLU](../../empower/nlu/overview.md) and [Agentic AI](../../empower/agentic-ai/overview.md).
+It features a range of different Nodes.
 
 ### [Add Lexicon Keyphrase](ai/add-lexicon-keyphrase.md)
 
 This Node can be used to dynamically create a [Lexicons](../../empower/nlu/slots-and-lexicons/lexicons.md) Keyphrase entry, either based on hardcoded or dynamic data.
+
+### [AI Agent](ai/ai-agent.md)
+
+This Node lets you assign an AI Agent to a job, provide instructions and tool actions for that job, and configure access to the knowledge the AI Agent can use when holding a conversation with a user.
+
+### [AI Agent Handover](ai/ai-agent-handover.md)
+
+This Node is used to transfer the conversation to another AI Agent Node or Flow, which will be triggered and executed as soon as this Node is activated.
 
 ### [Clean Text](ai/clean-text.md)
 
@@ -389,6 +415,10 @@ This Node enables a user to find patterns in text and expose them in the [Input 
 
 This Node can be used to create a Slot based on a regex pattern. When the pattern is detected, a Slot will be published to the [Input](../../test/interaction-panel/input.md) object.
 
+### [Resolve Tool Action](ai/resolve-tool-action.md)
+
+This Node sends an answer as the response to a tool call to the AI Agent after completing a [tool action](ai/ai-agent.md#ai-agent-tool).
+
 ## [Data Nodes](data/overview.md)
 
 Data Nodes are designed to manage, manipulate, process, or store data within a system.
@@ -406,7 +436,6 @@ This Node can be used to send an email message directly from within the Flow. IT
 This Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time.
 
 ## [AI Copilot Nodes](ai-copilot/overview.md)
-
 
 Nodes for creating the AI Copilot workspace.
 
@@ -435,6 +464,10 @@ This Node is designed to provide potential answers to human agents regarding cus
 This Node is designed
 to determine the appropriate next step or action in a conversation or process based on the user's input or the current context.
 
+#### [Copilot: Send Data](ai-copilot/send-data.md)
+
+This Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time.
+
 ### [Copilot: Sentiment Tile](ai-copilot/sentiment-tile.md)
 
 This Node performs sentiment analysis on the most recent input and provides insights into the emotional tone
@@ -449,7 +482,6 @@ This Node updates the existing AI Copilot workspace grid in the AI Copilot Confi
 This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
 
 ## [xApp Nodes](xApp/overview.md)
-
 
 Nodes for creating xApps.
 
@@ -471,12 +503,15 @@ This Node builds an xApp Page by providing custom HTML code.
 
 ## [Other Nodes](other-nodes/overview.md)
 
-
 Nodes that did not fit into any category above.
 
 ### [Knowledge Search](other-nodes/knowledge-search.md)
 
 This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
+
+### [LLM Entity Extract](other-nodes/llm-entity-extract.md)
+
+This Node uses a chosen LLM to extract entities, such as product codes, booking codes, and customer IDs, from a given string.
 
 ### [Log Message](other-nodes/log-message.md)
 

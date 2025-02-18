@@ -77,7 +77,7 @@ configure the following settings:
 - **Button ID** — the ID of the Button you created in the Salesforce installation. This setting will override the default Button ID that you specified in the [Endpoint configuration](#create-an-endpoint). You can use different Button IDs for individual Handover to Agent Nodes.
 - **Pre-chat Entities and Details** — the additional context sent in a custom JSON structure, providing the information before engaging with the human agent. See more information in the [Pre-chat Entities and Details](#pre-chat-details) section.
 
-#### Pre-chat Entities and Details
+#### Pre-Chat Entities and Details
 
 By default, Cognigy.AI does not send a conversation transcript from the chat with the AI Agent to the chat with the human agent. If you activate the [Send Transcript as a first message](#configure-handover-settings) setting, Cognigy.AI sends the conversation transcript to the chat with the human agent as the first message. The conversation transcript includes the entire chat between the user and the AI Agent.
 
@@ -85,7 +85,7 @@ The conversation transcript is displayed when the human agent receives the first
 
 Moreover, Cognigy.AI allows users to send Pre-chat Details and Pre-chat Entities arrays as a custom JSON structure. This feature allows users to include additional context or relevant information before initiating the chat with the human agent. This information can then be used for further processing or personalizing the conversation based on the provided details.
 
-##### Pre-chat Entities
+##### Pre-Chat Entities
 
 Cognigy.AI allows the creation of fields
 and linking User details obtained through Pre-Chat Details to Salesforce Entities like Contact or Case.
@@ -129,7 +129,7 @@ The JSON example shows how to connect the conversation to a Case and utilize Pre
    ]
 ```
 
-##### Pre-chat Details
+##### Pre-Chat Details
 
 Cognigy.AI allows sending conversation information to Salesforce Live Agent using Pre-chat Details.
 

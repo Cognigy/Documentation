@@ -13,7 +13,7 @@ The _Admin Center Dashboard_ allows you to track the number of billable conversa
 
 You can access the **Admin Center Dashboard** page using one of the following options:
 
-- Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page, then select **Dashboard** from the left-side menu.
+- Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Main** page, then select **Dashboard** from the left-side menu.
 - Select **Admin Center** from the User Menu in the bottom-left corner of the Project page, then select **Dashboard** from the left-side menu.
 
 ## Billable Conversations

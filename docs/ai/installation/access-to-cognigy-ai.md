@@ -71,21 +71,21 @@ To log in with SSO, follow these steps:
 In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#organizations). Each organization has a different login URL. For each organization, the login URL follows this pattern:
 
 ```txt
-https://<frontend-url>/login?organizationId=<organization-id>
+https://<frontend-url>/login?organisationId=<organization-id>
 ```
 
 The `organization-id` parameter is a unique identifier with 24 characters that identifies an organization in Cognigy.AI.
 
 !!! warning
-    If you are part of more than one organization, you need to include `organizationId` in the login URL. Otherwise, the login fails.
+    If you are part of more than one organization, you need to include `organisationId` in the login URL. Otherwise, the login fails.
 
 #### Email Notification for Failed Login
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
 
-If your login fails because you didn't include `organizationId` in the login URL, you receive an email with login links for each organization you belong to.
+If your login fails because you didn't include `organisationId` in the login URL, you receive an email with login links for each organization you belong to.
 
-The login links in the email redirect you to the Cognigy.AI login page with the `organizationId` parameter of the respective organization in the URL.
+The login links in the email redirect you to the Cognigy.AI login page with the `organisationId` parameter of the respective organization in the URL.
 
 ## Logout
 
@@ -93,7 +93,7 @@ The login links in the email redirect you to the Cognigy.AI login page with the 
 
 To log out of Cognigy.AI, you have two options:
 
-- In the upper-right corner of the **Projects** page, select **User Menu > Logout**.
+- In the upper-right corner of the **Main** page, select **User Menu > Logout**.
 - In the bottom-left corner of the Project page, click **User Menu > Logout**.
 
 ### Automatic Logout

@@ -12,7 +12,7 @@ This is a migration guide for the Live Agent 4.44 version upgrade. This release 
 
 In the case of Redis, it works out of the box, but for PostgreSQL, you need to migrate the data from the old database to the new one.
 
-## Pre-migration preparations
+## Pre-Migration preparations
 
 ### Change values.yaml
 

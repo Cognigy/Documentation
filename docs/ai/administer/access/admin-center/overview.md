@@ -18,6 +18,6 @@ It includes the following sections:
 
 You can access the **Admin Center** interface using one of the following options:
 
-- Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Projects** page.
+- Click **User Menu ![user-menu](../../../../_assets/icons/user-menu.svg) > Admin Center** on the **Main** page.
 - Select **Admin Center** from the User Menu in the bottom-left corner of the Project page.
 

@@ -1,7 +1,7 @@
 ---
- title: "IP Ranges Shared Environments" 
- slug: "ip-ranges-shared-environments" 
- hidden: false 
+title: "IP Ranges Shared Environments" 
+slug: "ip-ranges-shared-environments" 
+hidden: false 
 ---
 # IP Ranges Shared Environments
 
@@ -14,18 +14,13 @@ Find the current list of IP addresses for the shared environments below.
 
 ## IP addresses for app.cognigy.ai
 
-
-
 Set these IP addresses on a whitelist when using app.cognigy.ai:
 
 - 3.70.39.176
 - 3.69.130.45
 - 3.124.74.126
 
-
 ## IP addresses for trial.cognigy.ai
-
-
 
 Set these IP addresses on a whitelist when using trial.cognigy.ai:
 
@@ -35,8 +30,6 @@ Set these IP addresses on a whitelist when using trial.cognigy.ai:
 
 ## IP addresses for au-02.cognigy.ai
 
-
-
 Set these IP addresses on a whitelist when using au-02.cognigy.ai:
 
 - 13.238.252.9
@@ -45,8 +38,6 @@ Set these IP addresses on a whitelist when using au-02.cognigy.ai:
 
 ## IP addresses for app-us.cognigy.ai
 
-
-
 Set these IP addresses on a whitelist when using app-us.cognigy.ai:
 
 - 3.229.129.99
@@ -54,8 +45,6 @@ Set these IP addresses on a whitelist when using app-us.cognigy.ai:
 - 54.236.86.4
 
 ## IP addresses for app-uk.cognigy.ai
-
-
 
 Set these IP addresses on a whitelist when using app-uk.cognigy.ai:
 

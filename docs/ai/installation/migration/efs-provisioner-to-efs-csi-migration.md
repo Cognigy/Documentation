@@ -6,7 +6,7 @@ ignore_macros: true
 ---
 # Amazon EFC Provisioner to EFC CSI
 
-Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) as the currently used [efs external provisioner](https://github.com/kubernetes-retired/external-storage) is deprecated.
+Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) as the [EFS external provisioner](https://github.com/kubernetes-retired/external-storage) is deprecated.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
     kubectl patch pv <functions-pv-id> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
     ```
 
-2. Enable the EFS CSI provisioner in the values file.
+2. Enable the EFS CSI provisioner in the `values.yaml` file.
 
     ```bash
     flowModules:
@@ -50,9 +50,9 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
             efs_csi:
               enabled: true
     ```
-    For more details check [here](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml)
+    For more details, check [here](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml)
 
-3. Disable the currently running efs provisioner in the values file by deleting the following code block.
+3. Disable the currently running efs provisioner in the `values.yaml` file by deleting the following code block.
 
     ```bash
     efs:

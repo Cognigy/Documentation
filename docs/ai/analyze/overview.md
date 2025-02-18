@@ -10,7 +10,7 @@ When you work on conversational AI projects, it's important to keep track of how
 
 ## Cognigy Insights
 
-[Cognigy Insights](insights.md) is the built-in analytics platform for every Cognigy project. It provides advanced analytics and visualizations for the interactions between chat and voice agents. Its key features include data visualization, metric tracking, performance analysis, and data export. While it is not possible to customize the dashboards, you can access the data through the collecting-data to create charts and dashboards tailored to your needs.
+[Cognigy Insights](insights.md) is the built-in analytics platform for every Cognigy project. It provides advanced analytics and visualizations for the interactions between chat and voice agents. Its key features include data visualization, metric tracking, performance analysis, and data export. While it is not possible to customize the reports, you can access the data through the collecting-data to create charts and reports tailored to your needs.
 
 ## OData
 
