@@ -4,12 +4,12 @@ name: sync
 # occurs. We will trigger this pipeline based on a schedule.
 trigger: none
 
-schedules:
-  - cron: "0 0,12 * * *"
-    displayName: Midnight and Noon sync
-    branches:
-      include:
-        - main
+#schedules:
+#  - cron: "0 0,12 * * *"
+#    displayName: Midnight and Noon sync
+#    branches:
+#      include:
+#        - main
 
 resources:
   - repo: self
