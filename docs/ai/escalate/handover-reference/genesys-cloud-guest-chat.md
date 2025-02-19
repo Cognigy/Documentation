@@ -15,8 +15,8 @@ hidden: false
 ## Description
 
 !!! warning
-    The Genesys Cloud Guest Chat handover is at risk of deprecation in the near future. If you are a new user looking to connect to Genesys, create a new [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover.
-    For existing users, we strongly advise trying out the [new handover](genesys-cloud-open-messaging.md) and transitioning to it.
+    Due to [Genesys ACD Web Chat v2 deprecation](https://help.mypurecloud.com/articles/deprecation-predictive-engagement-support-for-acd-web-chat-version-2/), Cognigy will deprecate the Genesys Cloud Guest Chat handover on June 11, 2025. If you're a new user looking to connect to Genesys, create a new [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover.
+    For existing users, we strongly advise migrating to the [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover before the deprecation date.
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
