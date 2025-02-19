@@ -113,6 +113,7 @@ In this guide, you will configure HTTP webhooks in Genesys Cloud Open Messaging 
 5. Create a new trigger for the `UserEndEvent` event and repeat steps 1–4 with these changes:
     - **Topic Name** — select `v2.detail.events.conversation.{id}.user.end`.
     - **Workflow Target** — select `Workflow conversation.id.user.end`.
+6. For both triggers, toggle the **Inactive** option next to the trigger name to activate them, then save changes.
 
 The integration is complete, ensuring more reliable detection of conversation endings.
 
