@@ -71,7 +71,7 @@ In this guide, you will configure HTTP webhooks in Genesys Cloud Open Messaging 
     ```
 3. In the **Configuration** section, follow these steps:
     1. Select **POST** from the **HTTP Method** list.
-    2. In the **Request URL Template**, enter the Cognigy API URL in the following format: `https://endpoint.<cognigy-instance-domain>/handover/genesysCloudOM`.
+    2. In the **Request URL Template**, enter the Cognigy API URL in the following format: `https://endpoint-<cognigy-instance-domain>/handover/genesysCloudOM`. For example, `https://endpoint-trial.cognigy.ai/handover/genesysCloudOM`.
 4. Go to the **Test** tab, enter a value in the provided fields, for example `123`. Click **Run Test**.
 5. If the test is successful, click **Save & Publish**. Otherwise, review and correct the previous steps.
 
