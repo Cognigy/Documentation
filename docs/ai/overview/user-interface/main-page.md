@@ -11,13 +11,13 @@ In Cognigy.AI's **Main** page, you can manage your Projects.
 The following image provides an overview of the **Main** page:
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/overview/user-interface/main-page.png" width="100%" />
+  <img class="image-center" src="../../../../_assets/ai/overview/user-interface/main-page.png" width="70%" />
 </figure>
 
 ??? info "1. Project List"
     In the **Project List**, you can pin or unpin a Project by hovering over a Project, clicking the ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) button, and selecting **Pin Project** or **Unpin Project**.
 
-    The ![plus](../../../_assets/icons/plus.svg) button opens the [Project Creation Wizard](../build/projects.md).
+    The ![plus](../../../_assets/icons/plus.svg) button opens the [Project Creation Wizard](../../build/projects.md).
 
 ??? info "2. Top Bar"
     |                       Button                       | Description                                                                                                                                              |
