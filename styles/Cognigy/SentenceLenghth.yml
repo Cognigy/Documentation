@@ -1,8 +1,0 @@
-extends: occurrence
-message: "Try to keep your sentence length to 25 words or fewer."
-level: suggestion
-#  We'll flag sentences with more than 25 words.
-scope: sentence
-ignorecase: false
-max: 25
-token: \b(\w+)\b

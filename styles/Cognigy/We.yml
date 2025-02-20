@@ -1,9 +1,0 @@
-extends: existence
-message: "Try to avoid using first-person plural like '%s', except for content within release notes."
-level: warning
-ignorecase: true
-tokens:
-  - we
-  - we'(?:ve|re)
-  - ours?
-  - us
