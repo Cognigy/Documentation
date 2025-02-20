@@ -15,6 +15,5 @@ All clients except the REST API Client connect against Cognigy Endpoints. The RE
 |---------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------|
 | [WebchatWidget](https://github.com/Cognigy/WebchatWidget)                 | TypeScript | A graphical chat widget you can embed into your website to provide visitors access to a Conversational AI via Cognigy.AI. |
 | [SocketClient](https://github.com/Cognigy/SocketClient)                   | TypeScript | A JavaScript/TypeScript client that can be used to connect to Cognigy.AI Socket Endpoints                                 |
-| [REST Client](https://github.com/Cognigy/RestClient)                      | TypeScript | A simple client you can use in your projects to connect to a Cognigy.AI REST endpoint.                                    |
 | [REST API Client](https://www.npmjs.com/package/@cognigy/rest-api-client) | TypeScript | An npm module to connect against the Cognigy API                                                                          |
 | [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI)                     | TypeScript | Cognigy-CLI is a series of tools to interact with your Cognigy.AI AI Agent projects from the command line                 |
