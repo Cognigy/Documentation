@@ -87,7 +87,7 @@ To use Yes/No Intents for a specific Flow, do the following:
 
 1. Open the existing Flow.
 2. In the upper-right corner of the **Flow Editor** page, select **Settings**.
-3. On the **Configuration** tab, in **General Flow Logic** activate checkbox near the **Yes/No Logic** setting.
+3. On the **Configuration** tab, in **General Flow Logic** activate the option near the **Yes/No Logic** setting.
 4. From the **Yes/No Logic** list, select one of the following options:
     - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
     - **Yes/No Intents with extended rules** — evaluates the standard Confirmation Words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.

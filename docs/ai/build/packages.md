@@ -45,9 +45,9 @@ Export one resource as a Package using one of the following options:
      5. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
 
 === "Via the Packages page"
-     1. In the left-side menu of the Project, go to **Settings > Packaging**.
+     1. In the left-side menu of the Project, go to **Manage > Packaging**.
      2. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
-     3. Select a resource from the list by activating the checkbox next to the chosen resource.
+     3. Select a resource from the list by activating the option next to the chosen resource.
      4. Click **Next**.
      5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary.
      6. Click **Export**. 
@@ -59,8 +59,8 @@ Export one resource as a Package using one of the following options:
 
 To export multiple resources as a Package, follow these steps:
 
-1. In the left-side menu of the Project, go to **Settings > Packaging**. 
-2. On the **Packages** page, select resources from the list by activating the checkboxes next to the specific resources or resource types. For example, if you want to export all existing Flows within a Project, select the **Flows** resource type. Alternatively, if you intend to export a larger set of resources, activate the checkbox next to the **Select Resources for Export** option. Then, deactivate the checkbox next to the resources you do not want to export. 
+1. In the left-side menu of the Project, go to **Manage > Packaging**. 
+2. On the **Packages** page, select resources from the list by activating the options next to the specific resources or resource types. For example, if you want to export all existing Flows within a Project, select the **Flows** resource type. Alternatively, if you intend to export a larger set of resources, activate the option next to the **Select Resources for Export** option. Then, deactivate the option next to the resources you do not want to export. 
 3. Click **Next**. 
 4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
 5. Click **Export**. 
@@ -72,8 +72,8 @@ To export multiple resources as a Package, follow these steps:
 
 To export all available resources as a Package within your Project, follow these steps:
 
-1. In the left-side menu of the Project, go to **Settings > Packaging**.
-2. On the **Packages** page, activate the checkbox next to the **Select Resources for Export** option. 
+1. In the left-side menu of the Project, go to **Manage > Packaging**.
+2. On the **Packages** page, activate the option next to the **Select Resources for Export** option. 
 3. Click **Next**. 
 4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
 5. Click **Export**. 
@@ -124,7 +124,7 @@ To resolve conflicts that occur during the importing Package, use the following 
     - **Replace existing resource** — the uploaded resource will overwrite the existing one. This approach is useful when you want to update an existing resource with a newer version.
 3. Click **Apply**. The selected strategy will be applied to all existing resources in the **Resources to be imported** section. 
 4. _(Optional)_ If you want to change the strategy for a specific resource, select this strategy from the list next to the resource.
-5. _(Optional)_ If you want to exclude a resource from the list, deactivate the checkbox next to the resource.
+5. _(Optional)_ If you want to exclude a resource from the list, deactivate the option next to the resource.
 6. Click **Import**. The strategy will be applied only to the resources you have selected for import.
 
 ### Map Locales during Flow Import

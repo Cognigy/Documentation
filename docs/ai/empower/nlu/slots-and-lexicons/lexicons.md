@@ -42,7 +42,7 @@ To edit a Keyphrase, just click the name of the Keyphrase, and an input field wi
 You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click ![expand](../../../../_assets/icons/expand.svg) on the right of the Keyphrase entry, and then type in the desired data in JSON format.
 
 ### Delete Keyphrases
-There are two ways to delete a Keyphrase: One is to expand the Keyphrase by clicking ![expand](../../../../_assets/icons/expand.svg) on the right side of the menu, then clicking **DELETE** in the bottom right corner. Another way is to mark the desired Keyphrases by clicking the checkbox on the left of a Keyphrase, and then scrolling down to the bottom to delete it. You can delete several Keyphrases this way.
+There are two ways to delete a Keyphrase: One is to expand the Keyphrase by clicking ![expand](../../../../_assets/icons/expand.svg) on the right side of the menu, then clicking **DELETE** in the bottom right corner. Another way is to mark the desired Keyphrases by clicking the option on the left of a Keyphrase, and then scrolling down to the bottom to delete it. You can delete several Keyphrases this way.
 
 ### Search Keyphrases
 You can search through your Keyphrases via the search bar in the top right corner. This will return Keyphrase names, Tags and Synonyms in the search results.

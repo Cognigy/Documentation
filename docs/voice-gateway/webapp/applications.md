@@ -81,7 +81,7 @@ To enable recording calls at an application level, follow these steps:
 
 1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Applications**.
 2. Create a new application or use an existing one.
-3. In the **Call recording configuration** section, click the checkbox for **Enable call recording**.
+3. In the **Call recording configuration** section, click the option for **Enable call recording**.
 4. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
 5. Select a bucket vendor:
 
