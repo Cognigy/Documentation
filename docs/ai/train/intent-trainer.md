@@ -1,80 +1,147 @@
 ---
 title: "Intent Trainer" 
 slug: "intent-trainer" 
-hidden: false 
+hidden: false
+tags: 
+  - train intents
+  - intent trainer
+  - NLU
+  - scoring
 ---
+
 # Intent Trainer
 
-One of the characteristics of AI Agents is that they can improve over time. Cognigy.AI provides the ability to tweak Agents based on existing dialogs. This can be done using the **Intent Trainer**.
+One of the key strengths of AI Agents is their ability to improve over time.
+Cognigy.AI offers the *Intent Trainer* feature that allows you to refine AI Agents based on existing dialogs.
+This tool improves the AI Agent's understanding by letting you review and add user inputs to [Intents](../../ai/empower/nlu/intents/ml-intents.md).
 
-The **Intent Trainer** enables you to analyze the collected user inputs (records)
-and add them to [Intents](../../ai/empower/nlu/intents/ml-intents.md)
-to improve your AI Agent's user input comprehension.
-You can decide which user input record improves the Agents intent and then click **Add to Intent**.
-Then use the **Train** button in the top right above the record list
-to overtake the new intent to the **NLU intent list** in your Flow.
-You do not need to execute "Build Model", because the "Train" functionality of the 'Intent Trainer'
-did already the scoring - you will see that by the indicated scoring data and the color icons in the Intent list.  
+## Key Features
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/train/Intent_Trainer_filter.svg" width="100%" />
-  <figcaption>Intent Trainer with filter options</figcaption>
-</figure>
+- **Analysis of Collected User Inputs**. Review and analyze Intent Trainer records to identify areas for improvement.
+- **Adding Inputs to Intents**. Choose which Intent Trainer records will enhance specific Intents and add them to the Intent Sentences list.
+- **Instant Training**. After refining Intent Trainer records, quickly update the NLU model on the Intent Trainer page. This action eliminates the need to rebuild the model on the Flow page.
+- **Automatic Scoring**. The Train capability automatically scores Intents, and you can visually track progress with color-coded icons and scoring data in the list.
 
-## Export and Import Intent Records
+## Limitations
 
-### Import Intent Records
+- By default, the Intent Trainer records Time-to-Live (TTL) is set to 10 days (14400 minutes). If you have on-premises or dedicated SaaS installations, you can change this value using the following variable: `TRAINERRECORD_TTL_IN_MINUTES`. For example, to set the TTL to 30 days, configure the variable as follows: `TRAINERRECORD_TTL_IN_MINUTES="43200"`.
+- The maximum file size for uploading Intent Trainer records is 100 MB.
 
-To import intent records, follow these steps:
+## Working with Intent Trainer
 
-1. Go to **Tweak > Intent Trainer**.
-2. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Import Trainer Records**.
-3. Select a file in the `CTRAIN` format from your computer and click **Open**.
+In **Tweak > Intent Trainer**, you can:
 
-Once the file is uploaded, you will receive a system success message.
+1. [Find Intent Trainer records by using filters](#filter-intent-trainer-records)
+2. [Refine Intent Trainer records: add to Intents, skip, or ignore](#manage-intent-trainer-records) 
+3. [Train the NLU model](#train-the-nlu-model)
+4. [_(Optional)_ Import and Export Intent Trainer records](#import-and-export-intent-trainer-records)
 
-### Export Intent Records
+### Filter Intent Trainer Records
 
-To export intent records, follow these steps:
+Review the collected input records from users and search for them using filters.
 
-1. Go to **Tweak > Intent Trainer**.
-2. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Trainer Records**.
-3. Choose a date range by clicking the date and selecting the desired date in the calendar.
-4. To include reviewed intents to the file, activate **Include reviewed**.
-5. Click **Confirm**.
-6. In the new window, click **Download Trainer Records**.
+??? info "Predefined Filters"
 
-The file will be downloaded in the `CTRAIN` format.
+    The **Filter Preset** allows you to filter records based on predefined categories for more efficient navigation and analysis.
 
-## Filter Records
-
-You can filter records using the following filters:
-
-| **Filter**                                                      | **Option**                                                                                                                                                      | **Description**                                                       |
-|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Snapshot                                                        | No Snapshot <br> (list of available Snapshots)                                                                                                                  | You can select available Snapshots.                                   |
-| Locale                                                          | Any Locale <br> (list of available Locales)                                                                                                                     | You can select a Locale when available.                               |
-| Intent                                                          | Any Locale <br> (list of available Locales)                                                                                                                     | You can select available Intents.                                     |
-| Review Status                                                   | Any Intent <br> (list of available Intents)                                                                                                                     | Lists all Intents depending on filter option.                         |
-| Found Intent                                                    | Not reviewed <br> Reviewed <br> Ignored <br> Skipped                                                                                                            | Lists all Intents found depending on selected filter.                 |
-| [Found a Slot](../empower/nlu/slots-and-lexicons/any-slots.md)  | Not selected <br> Found Intents <br> No Intent Found                                                                                                            | Lists all Slots found depending on selected filter option.            |
-| Intent Score                                                    | Not selected <br> **Poor**(0-0.3) <br> **Fair** (0.3-0.7) <br> **Good**(0.7-1)                                                                                  | The respective scoring areas are indicated by **colored** dots.       |
-| Input Types                                                     | positive Answer <br> Negative Answer <br> Greeting <br> Goodbye Message <br> Statement <br> Command <br> Why Question <br> How Question <br> Yes or No Question | You can select one or more types of user messages as a filter option. |
-| [Slot](../empower/nlu/intents/ml-intents.md#slots-and-lexicons) | None <br> Lexicon Slots <br> System Slots                                                                                                                       | Lists all user messages depending on selected slot type.              |
+    | **Filter Preset Option** | **Description**                                                |
+    |--------------------------|----------------------------------------------------------------|
+    | Not Understood           | View all records that the system didn't understand.           |
+    | Show All                 | View all available records without any filters applied.        |
+    | Found Intents            | View records with Intents identified by the system.            |
+    | Found Lexicon Slots      | View records where Lexicon Slots were detected.                |
+    | Poor Intent Score        | View records with Intents that have a low confidence score.    |
+    | Fair Intent Score        | View records with Intents that have a medium confidence score. |
 
 
-The **Filter Preset** drop-down menu allows you to preset filter options with one mouse click.
+??? info "Custom Filters"
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/train/Filter_Preset.svg" width="100%" />
-  <figcaption>Available filter presets</figcaption>
-</figure>
+    When you select **Custom** in the Filter Preset, you can apply any filter. If you modify a filter while a preset option is selected, the Filter Preset automatically changes to **Custom**.
 
-## Add to Intent
-Adding a record to an Intent requires you to select the Flow and the target Intent, you can also modify it before adding. The input will become an Intent example sentence afterwards.
+    | **Filter**                                                      | **Descriptions**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Snapshot                                                        | Select a specific Snapshot to view Intents and related records. By default, **No Snapshot** is selected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+    | Locale                                                          | Filter records by language or locale when multiple locales are used. By default, **Any Locale** is selected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    | Intent                                                          | Filter by specific Intents to refine the results. By default, **Any Intent** is selected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+    | Review Status                                                   | Filter records by their review status to track progress:<br> <ul><li>**Not Reviewed** — a record was not reviewed.</li><li>**Reviewed** — a record was added to the Intent and reviewed.</li><li>**Ignored** — a record, along with all future inputs containing the same text, is ignored.</li><li>**Skipped** — a record is skipped for now and can be revisited later, with the option to review it again.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    | Found Intent                                                    | Filter records based on whether an Intent was identified or not. By default, **No Intent Found** is selected. You can select one of the following options: <br><ul><li>**Found Intent** — shows records where an Intent was successfully matched.</li><li>**No Intent Found** — shows records where no Intent was identified.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+    | [Found a Slot](../empower/nlu/slots-and-lexicons/any-slots.md)  | View all Slots found based on the selected filter option. By default, **Not Selected** is chosen. You can select one of the following options: <br><ul><li>**Found Intents** — shows records where a Slot was identified.</li><li>**No Intent Found** — shows records where no Slot was identified.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+    | Intent Score                                                    | Filter records by confidence score, shown as color-coded icons. By default, **Not Selected** is chosen. You can select one of the following options: <ul><li>**Poor** (0–0.3) — low confidence score, meaning the Intent was not accurately identified.</li><li>**Fair** (0.3–0.7) — medium confidence score, showing a moderately accurate identification.</li><li>**Good** (0.7–1.0) — high confidence score, indicating a very accurate Intent identification.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+    | Input Types                                                     | Filter records by user input type. You can select one of the following input types: <br> <ul><li>**Positive Answer** — user responded affirmatively. For example, `yes`, `sure`.</li><li>**Negative Answer** — user responded negatively. For example, `no`, `never`.</li><li>**Greeting** — user initiated a greeting. For example, `hi`, `hello`.</li><li>**Goodbye Message** — user expressed farewell. For example, `goodbye`, `see you later`.</li><li>**Statement** — user made a declarative statement. For example, `I like this product`.</li><li>**Command** — user issued a command. For example, `turn on the light`.</li><li>**Why Question** — user asked a `why` question. For example, `Why is it included in the package?`.</li><li>**How Question** — user asked a `how` question. For example, `How does this work?`.</li><li>**Yes or No Question** — user asked a `yes/no` question. For example, `Do you have this item in stock?`.</li></ul> |
+    | [Slot](../empower/nlu/intents/ml-intents.md#slots-and-lexicons) | Filter records by selected Slot type. You can select one of the following options: <br> <ul><li>**None** — no Slots identified.</li><li>**Lexicon Slots** — identified lexicon-based Slots, which are user-defined categories.</li><li>**System Slots** — Slots that are predefined in the system, such as dates or numbers.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-## Skip
-**Skip** moves the user input to the **Skipped** records, however, once a user enters the same input again, it will also show up again in the **Unhandled** records of the Intent Trainer.
+### Manage Intent Trainer Records
 
-## Ignore
-**Ignore** moves the user input to the **Ignored** records and once a user enters the same input again it will also be ignored.
+Based on the analysis, decide which user inputs will improve a particular Intent, add those inputs to the corresponding Intent.
+
+??? info "Add Records to Intent"
+
+    === "GUI"
+        1. In the Intent Trainer, select a record from the list and click **Add to Intent**.
+        2. In the **Edit Record** window, select an Intent to which you want to add a record.  
+        Change the text of the Intent in the **Text** field.  
+        Additionally, you can create a new Keyphrase or Synonym.  
+        Save changes and apply them. The Intent record will be added as a sentence to the selected Intent.
+
+    === "API"
+         You can add a user input record to a specific Intent using the [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "addToIntent"` in the `operations` object.
+
+??? info "Skip Records"
+
+    === "GUI"
+        1. In the Intent Trainer, select a record from the list and click **Skip**.
+        2. Apply changes. This action moves the input to **Skipped** records, but it will reappear in **Not reviewed** if the same input is entered again.
+ 
+    === "API"
+         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "skip"` in the `operations` object.
+
+??? info "Ignore Records"
+
+    === "GUI"
+        1. In the Intent Trainer, select an Intent record from the list and click **Ignore**.  
+        2. Apply changes. This action moves the user input to the **Ignored** records, and if a user enters the same input, it will also be ignored.
+
+    === "API"
+         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "ignore"` in the `operations` object.
+
+### Train the NLU Model
+
+After adding a record to the Intent, click **Train** in the top-right corner of the **Intent Records** page.  
+You don't need to run **Build Model** in the Flow — the Intent Trainer has already scored the Intent, shown in the scoring data and color-coded icons.
+
+### Import and Export Intent Trainer Records
+
+You can import and export records between production and development environments.  
+The Intent Trainer [temporarily stores records](#limitations).
+To ensure data safety, export the records for local storage.
+
+??? info "Import Records"
+
+    === "GUI"
+        1. Go to **Tweak > Intent Trainer**.
+        2. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Import Trainer Records**.
+        3. Select a file in the `CTRAIN` format from your computer and click **Open**.
+    
+        Once the file is uploaded, you will receive a system success message.
+    
+    === "API"
+         You can import Intent Trainer records using the [Cognigy.AI API POST /v2.0/trainer/upload](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/upload) request.
+
+
+??? info "Export Records"
+
+    === "GUI"
+        1. Go to **Tweak > Intent Trainer**.
+        2. In the upper-right corner, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export Trainer Records**.
+        3. Select a date range by clicking the date and selecting the desired date in the calendar.
+        4. To include reviewed records in the file, activate **Include reviewed**.
+        5. Click **Confirm**, then **Download Trainer Records**.
+    
+        The file will be downloaded in the `CTRAIN` format.
+
+    === "API"
+        You can export Intent Trainer records using the Cognigy.AI API. First, create a file via the [POST /v2.0/trainer/package](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/package) request, and then download it via the [POST /v2.0/trainer/downloadlink](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/downloadlink).
+
+## More Information
+
+- [Intents](../empower/nlu/overview.md)
