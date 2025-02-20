@@ -7,7 +7,7 @@
 
 ## 4.29.0
 
-**Released** July 7th, 2022
+**Released** July 7, 2022
 
 ## Bug Fixes
 
@@ -16,7 +16,7 @@
 
 ## 4.28.0
 
-**Released** June 23rd, 2022
+**Released** June 23, 2022
 
 ### Improvements
 
@@ -24,7 +24,7 @@
 
 ## 4.27.0
 
-**Released** June 7th, 2022
+**Released** June 7, 2022
 
 ### Improvements
 
@@ -37,7 +37,7 @@
 
 ## 4.26.0
 
-**Released** May 24th, 2022
+**Released** May 24, 2022
 
 ### Improvements
 
@@ -51,7 +51,7 @@
 
 ## 4.25.0
 
-**Released** May 10th, 2022
+**Released** May 10, 2022
 
 ### Bug Fixes
 
@@ -59,7 +59,7 @@
 
 ## 4.24.0
 
-**Released** May 2nd, 2022
+**Released** May 2, 2022
 
 ### Improvements
 
@@ -75,13 +75,13 @@
 
 ## 4.23.0
 
-**Released** April 12th, 2022
+**Released** April 12, 2022
 
 This release does not contain any fixes or improvements.
 
 ## 4.22.0
 
-**Released** March 28th, 2022
+**Released** March 28, 2022
 
 ### Improvements
 

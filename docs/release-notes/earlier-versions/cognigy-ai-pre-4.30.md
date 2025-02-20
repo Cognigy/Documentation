@@ -1,7 +1,7 @@
 # Cognigy.AI
 
 ## 4.29.0
-**Released** July 7th, 2022
+**Released** July 7, 2022
 
 ### Improvements
 
@@ -29,14 +29,14 @@
 - Fixed a bug where endpoints with Live Agent handover provider that were built before agent assist and autoconfigure showed a dirty state when opened in the endpoint editor
 
 ## 4.28.1
-**Released** June 29th, 2022
+**Released** June 29, 2022
 
 ### Bug Fixes
 
 - Fixed a bug where the handover status conversation "resolved" is not working when handing over to Cognigy Live Agent
 
 ## 4.28.0
-**Released** June 23rd, 2022
+**Released** June 23, 2022
 
 ### Improvements
 
@@ -71,7 +71,7 @@
 - Fixed a bug in flow editor UI where you could not create multiple tokens without refreshing the page
 
 ## 4.27.0
-**Released** June 7th, 2022
+**Released** June 7, 2022
 
 ### Features
 
@@ -105,7 +105,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 - Fixed a bug where Microsoft Teams endpoint (webhook api) cannot handle "empty message response"
 
 ## 4.26.1
-**Released** May 31st, 2022
+**Released** May 31, 2022
 
 ### Bug Fixes
 
@@ -113,7 +113,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 - Fixed a bug where webhook endpoint notify is not working by creating missing generic endpoint instance using channel type "webhook"
 
 ## 4.26.0
-**Released** May 24th, 2022
+**Released** May 24, 2022
 
 ### Features
 
@@ -144,7 +144,7 @@ This release of Cognigy.AI adds the ability to create entirely new Flows from ch
 - Fixed a bug where slots were not properly reparsed when coming from Alexa skill
 
 ## 4.25.0
-**Released** May 10th, 2022
+**Released** May 10, 2022
 
 ### Improvements
 - Improved by adding possibility to update an extension in the agent
@@ -155,13 +155,13 @@ This release of Cognigy.AI adds the ability to create entirely new Flows from ch
 - Fixed a bug where SSO login was not working for multi-org users, who are not explicitly part of Cognigy user list
 
 ## 4.24.1
-**Released** May 5th, 2022
+**Released** May 5, 2022
 
 ### Bug Fixes
 - Fixed a bug where rankedBarChart were freezing dashboards screen
 
 ## 4.24.0
-**Released** May 2nd, 2022
+**Released** May 2, 2022
 
 ### Features
 #### Server side Playbook execution
@@ -198,25 +198,25 @@ This release of Cognigy.AI adds the ability to inspect individual outputs within
 - Fixed a bug where handover triggers only on the second user input
 
 ## 4.23.3
-**Released** April 20th, 2022
+**Released** April 20, 2022
 
 ### Bug Fixes
 - Fixed a bug where the headers from the http request node are overwritten with the default content-type application/json
 
 ## 4.23.2
-**Released** April 14th, 2022
+**Released** April 14, 2022
 
 ### Bug Fixes
 - Fixed a bug where the timeouts of HTTP Requests were no longer configurable on an infrastructure level
 
 ## 4.23.1
-**Released** April 13th, 2022
+**Released** April 13, 2022
 
 ### Bug Fixes
 - Fixed a bug where the URL would be double encoded for HTTP Requests
 
 ## 4.23.0
-**Released** April 12th, 2022
+**Released** April 12, 2022
 
 ### Features
 #### New Agent templates
@@ -235,19 +235,19 @@ This release of Cognigy.AI contains new templates for our Agent creation wizard.
 - Fixed a bug where a Flow Editor UI refresh was needed after new extension have been installed in order to be able to add Flow Nodes of these extensions in Flows
 
 ## 4.22.2
-**Released** March 31st, 2022
+**Released** March 31, 2022
 
 ### Bug Fixes
 - Fixed a bug where data from Microsoft Azure Bot Services endpoint would not get properly forwarded to the Flow
 
 ## 4.22.1
-**Released** March 30th, 2022
+**Released** March 30, 2022
 
 ### Bug Fixes
 - Fixed a bug where inject and notify didn't work for Microsoft Azure Bot Services endpoints
 
 ## 4.22.0
-**Released** March 28th, 2022
+**Released** March 28, 2022
 
 ### Features
 This release of Cognigy.AI gives customers the ability to override the Connections of a Snapshot with those of the Agent via an Endpoint setting
@@ -275,19 +275,19 @@ This release of Cognigy.AI gives customers the ability to override the Connectio
 - Fixed a bug where large Lexicons could not be downloaded properly
 
 ## 4.21.2
-**Released** March 22nd, 2022
+**Released** March 22, 2022
 
 ### Bug Fixes
 - Fixed a bug where the injectContext API would not work as the Context would not get properly deserialized after loading from the database
 
 ## 4.21.1
-**Released** March 22nd, 2022
+**Released** March 22, 2022
 
 ### Bug Fixes
 - Fixed a bug where the new session state management introduced in 4.21.0 would not properly work in certain conditions
 
 ## 4.21.0
-**Released** March 22nd, 2022
+**Released** March 22, 2022
 
 ### Improvements
 - Improved by removing flickering from agent switcher in Cognigy Insights
@@ -308,13 +308,13 @@ This release of Cognigy.AI gives customers the ability to override the Connectio
 - Fixed a bug where the Intent Editor would not display the "build model required" indicator after changing Agent settings
 
 ## 4.20.1
-**Released** March 9th, 2022
+**Released** March 9, 2022
 
 ### Bug Fixes
 - Fixed a bug where the Flow Editor could crash
 
 ## 4.20.0
-**Released** March 9th, 2022
+**Released** March 9, 2022
 
 ### Features
 #### Merging Cognigy Packages
@@ -353,14 +353,14 @@ This release of Cognigy.AI adds an additional "Flow Filter" to the Message Explo
 - Fixed a bug where huge lexicons could not be downloaded
 
 ## 4.19.1
-**Released** February 25th, 2022
+**Released** February 25, 2022
 
 ### Bug Fixes
 - Fixed a bug where the Socket endpoint event-buffer mechanism would not work properly when used in combination with handover functionality
 - Fixed a bug where additional connections to the Redis data-store would not be closed when using the Socket endpoint event-buffering mechanism
 
 ## 4.19.0
-**Released** February 25th, 2022
+**Released** February 25, 2022
 
 ### Features
 #### Last activity tracking
@@ -406,20 +406,20 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug where our UI would break when navigating from Endpoints to Localization
 
 ## 4.18.2
-**Released** February 10th, 2022
+**Released** February 10, 2022
 
 ### Bug Fixes
 - Fixed a bug where the "Wait for Input" Flow Node would keep waiting after an Intent with Default Reply was recognized
 
 ## 4.18.1
-**Released** February 10th, 2022
+**Released** February 10, 2022
 
 ### Bug Fixes
 - Fixed a bug where the default "/" route for the WebchatWidget demo-page would return "HTTP 404" instead of "HTTP 200 Ok"
 
 
 ## 4.18.0
-**Released** February 10th, 2022
+**Released** February 10, 2022
 
 ### Improvements
 - Improved by adding more sophisticated highlighting of search results within the Edit Node sidebar
@@ -456,19 +456,19 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug where Execute-Cognigy-NLU Node would use the wrong Flow
 
 ## 4.17.2
-**Released** January 31st, 2022
+**Released** January 31, 2022
 
 ### Bug Fixes
 - Fixed a bug where the history in Cognigy Live Agent would be incomplete in certain situations
 
 ## 4.17.1
-**Released** January 20th, 2022
+**Released** January 20, 2022
 
 ### Bug Fixes
 - Fixed an issue regarding the Cognigy voice-gateway endpoint when using the "async" mode together with output Transformers
 
 ## 4.17.0
-**Released** January 17th, 2022
+**Released** January 17, 2022
 
 ### Features
 #### New Handover to Agent Node
@@ -504,13 +504,13 @@ This release allows users to set the Intent hierarchy level in Lookup Nodes of t
 - Fixed a bug where "open conversations that took this path" would not show the correct conversations list when the direction is set to "backward"
 
 ## 4.16.1
-**Released** January 6th, 2022
+**Released** January 6, 2022
 
 ### Bug Fixes
 - Fixed a bug in the Input Transformer for our Webhook endpoint where the message would not get processed when the Transformer would return null and already sent a response to the original HTTP call
 
 ## 4.16.0
-**Released** January 6th, 2022
+**Released** January 6, 2022
 
 ### Features
 #### Flow Node Search
@@ -589,26 +589,26 @@ likelihood
 - Fixed an issue related to a missing postback value in the Japanese NLU Restaurant Template
 
 ## 4.15.3
-**Released** December 8th, 2021
+**Released** December 8, 2021
 
 ### Bug Fixes
 - Fixed a bug where the "Set Session Params" Flow Node would not properly work when using our VG Endpoint and the async-mode
 - Fixed a bug where our delete Profile API could time out
 
 ## 4.15.2
-**Released** November 26th, 2021
+**Released** November 26, 2021
 
 ### Bug Fixes
 - Fixed an issue where an internal component used in paginated API calls would be less performant
 
 ## 4.15.1
-**Released** November 18th, 2021
+**Released** November 18, 2021
 
 ### Bug Fixes
 - Fixed a bug where the Intent Editor would experience a slowdown
 
 ## 4.15.0
-**Released** November 18th, 2021
+**Released** November 18, 2021
 
 ### Features
 #### Cognigy Insights: Show data for all Snapshots
@@ -653,14 +653,14 @@ This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy 
 - Fixed a bug regarding timezone offsets in Cognigy Insights filters
 
 ## 4.14.1
-**Released** November 9th, 2021
+**Released** November 9, 2021
 
 ### Bug Fixes
 - Fixed a bug where the "inject" and "notify" RESTful API endpoint would not work
 
 
 ## 4.14.0
-**Released** November 5th, 2021
+**Released** November 5, 2021
 
 ### Features
 #### Timezones for Cognigy Insights
@@ -692,7 +692,7 @@ This release of Cognigy.AI introduces asynchronous output handling for Cognigy V
 
 
 ## 4.13.1
-**Released**: October 28th, 2021
+**Released**: October 28, 2021
 
 ### Improvements
 - Expose additional metrics for one of our microservices and further prepare our application to get monitored with our new monitoring solution we are currently working on
@@ -700,7 +700,7 @@ This release of Cognigy.AI introduces asynchronous output handling for Cognigy V
 
 
 ## 4.13.0
-**Released:** October 28th, 2021
+**Released:** October 28, 2021
 
 ### Features
 #### Avaya CPaaS
@@ -734,7 +734,7 @@ This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 
 
 ## 4.12.0
-**Released:** October 11th, 2021
+**Released:** October 11, 2021
 
 ### Features
 #### Localization for Extensions
@@ -774,7 +774,7 @@ This release of Cognigy.AI adds a non-conversational Endpoint. The feature needs
 
 
 ## 4.11.0
-**Released:** September 20th, 2021
+**Released:** September 20, 2021
 
 ### Features
 #### Custom theme for Cognigy Insights
@@ -803,14 +803,14 @@ Added a JSON field to Webchat Endpoint Editor to configure additional settings n
 
 
 ## 4.10.1
-**Released:** September 15th, 2021
+**Released:** September 15, 2021
 
 This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did not do that. An opt-out is available for customers that do not want to use Cognigy Insights right now. This opt-out will be removed with one of the next releases.
 
 
 ## 4.10.0
 
-**Released:** September 14th, 2021
+**Released:** September 14, 2021
 
 ### Features
 #### Cognigy Insights
@@ -850,13 +850,13 @@ This release of Cognigy.AI contains the ability to configure a marketplace from 
 - Fixed a bug where only one slot is found for keyphrases with multiple slots if service-matcher is being utilized
 
 ## 4.9.1
-**Released:** August 27th, 2021
+**Released:** August 27, 2021
 
 ### Bug Fixes
 - Fixed a bug to resolve system slots correctly in optional questions in an executed flow
 
 ## 4.9.0
-**Released:** August 24th, 2021
+**Released:** August 24, 2021
 
 ### Features
 #### Extension performance
@@ -894,14 +894,14 @@ This release of Cognigy.AI adds new functionality that allows our customers to u
 
 
 ## 4.8.1
-**Released:** August 9th, 2021
+**Released:** August 9, 2021
 
 ### Bug Fixes
 - Fixed a bug where uploading a Package would create a situation where extensions would no longer load properly on the extensions page
 
 
 ## 4.8.0
-**Released:** August 5th, 2021
+**Released:** August 5, 2021
 
 ### Features
 #### Intent Trainer filters
@@ -937,14 +937,14 @@ This release of Cognigy.AI adds the ability for on-premises customers to embed c
 
 
 ## 4.7.1
-**Released:** July 26th, 2021
+**Released:** July 26, 2021
 
 ### Bug Fixes
 - Fixed a bug where the NLU-Connector list would not properly render all items
 
 
 ## 4.7.0
-**Released:** July 22nd, 2021
+**Released:** July 22, 2021
 
 ### Features
 #### Hiding Endpoints
@@ -980,7 +980,7 @@ This release adds automatic dependency recognition when you select the resources
 - Fixed a bug where buttons for the RingCentralEngange channel would use the wrong payload
 
 ## 4.6.0
-**Released:** July 7th, 2021
+**Released:** July 7, 2021
 
 ### Features
 #### Platform performance
@@ -1005,7 +1005,7 @@ Changed caching of core object used while processing user inputs - this leads to
 
 
 ## 4.5.1
-**Released:** July 1st, 2021
+**Released:** July 1, 2021
 
 ### Bug Fixes
 - Fixed a bug where certain messages could crash one of our analytics services which lead to user transcripts no longer being stored
@@ -1016,7 +1016,7 @@ Changed caching of core object used while processing user inputs - this leads to
 
 
 ## 4.5.0
-**Released:** June 29th, 2021
+**Released:** June 29, 2021
 
 ## Features
 #### Cognigy Packages
@@ -1051,7 +1051,7 @@ and pick resolution strategies when importing those packages once again.
 - Fixed a bug where service-nlp-ner could be unstable
 
 ## 4.4.0
-**Released:** June 10th, 2021
+**Released:** June 10, 2021
 
 ### Features
 #### Intent Trainer refresh
@@ -1108,14 +1108,14 @@ We have now added the ability to escalate questions by creating handovers to rea
 - Fixed a bug where the Cognigy "Blind mode" would not mask bot outputs
 
 ## 4.3.1
-**Released:** May 31st, 2021
+**Released:** May 31, 2021
 
 ### Bug Fixes
 - Fixed instability in our service-nlp-ner microservice where the service could crash in a loop
 - Fixed an issue where VG Endpoints would not get a response when using our Think-Node
 
 ## 4.3.0
-**Released:** May 18th, 2021
+**Released:** May 18, 2021
 
 ### Features
 #### Packages
@@ -1157,27 +1157,27 @@ We have added the ability to copy the Agent ID to the context menu on the Index 
 - Fixed a stability issue in our service-nlp-ner microservice
 
 ## 4.2.5
-**Released:** May 7th, 2021
+**Released:** May 7, 2021
 
 ### Bug Fixes
 - Fixed issue regarding project-manager
 
 ## 4.2.4
 
-**Released:** May 7th, 2021
+**Released:** May 7, 2021
 
 ### Bug Fixes
 - Fixed a bug where certain Arabic inputs into an English Flow could crash one of our NLU services
 
 ## 4.2.3
-**Released:** May 5th, 2021
+**Released:** May 5, 2021
 
 ### Bug Fixes
 - Fixed a bug where Flow nodes with children could lead to problems in one of our microservices
 - Fixed a request timeout issue in our Sunshine-Conversations Endpoint
 
 ## 4.2.2
-**Released:** April 29th, 2021
+**Released:** April 29, 2021
 
 ### Bug Fixes
 - Fixed a bug in our Slot-Fillers frontend where the save-button could not be used in certain situations
@@ -1200,14 +1200,14 @@ We have added the ability to copy the Agent ID to the context menu on the Index 
 - Fixed a bug where our user interface would not handle network errors properly
 
 ## 4.2.1
-**Released:** April 20th, 2021
+**Released:** April 20, 2021
 
 ### Bug Fixes
 - Fixed a bug where Intents could not be updated if the new analytics label would contain certain special characters
 - Fixed a bug where Cognigy.AI would find the wrong Intent when our cIntent feature is used in conjunction with executeFlow
 
 ## 4.2.0
-**Released:** April 14th, 2021
+**Released:** April 14, 2021
 
 ### Features
 #### Email Node improvements
@@ -1242,7 +1242,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug where extremely long input messages could break Intent scoring
 
 ## 4.1.6
-**Released:** March 31st, 2021
+**Released:** March 31, 2021
 
 ### Improvements
 - added support for the Userlike-Unified-Messaging API in our Userlike integration
@@ -1264,7 +1264,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - fixed a bug where the main/attached-Flow priority setting was broken
 
 ## 4.1.5
-**Released:** March 22nd, 2021
+**Released:** March 22, 2021
 
 ### Improvements
 - improve Intent-Training performance when States and Intent-Conditions are used
@@ -1286,7 +1286,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - fixed a bug where Intent-Training would not succeed for larger training-sets as an internal mechanism would time out
 
 ## 4.1.4
-**Released:** March 8th, 2021
+**Released:** March 8, 2021
 
 ### Improvements
 - added the ability to disable implicit Slot parsing for System- and Lexicon Slots
@@ -1320,7 +1320,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug where Rules within Intents could not contain special characters
 
 ## 4.1.3
-**Released:** February 18th, 2021
+**Released:** February 18, 2021
 
 ### Improvements
 - improved our question-nodes by adding the ability to define exit-conditions
@@ -1343,7 +1343,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug where the create-agent journey step would only get completed when using the create function, not the creation wizard
 
 ## 4.1.2
-**Released:** February 8th, 2021
+**Released:** February 8, 2021
 
 ### Improvements
 - Added the Avaya CPAAS endpoint
@@ -1372,7 +1372,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug where one of our analytics services (`service-analytics-conversations`) could crash under some circumstances
 
 ## 4.1.1
-**Released:** January 22nd, 2021
+**Released:** January 22, 2021
 
 ### Improvements
 - Improved the performance of the Flow Editor for large Flows
@@ -1416,7 +1416,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug related to data-validation and endpoint-transformers for our REST endpoint
 
 ## 4.1.0
-**Released:** December 23rd, 2020
+**Released:** December 23, 2020
 
 ### Features
 
@@ -1497,7 +1497,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Fixed a bug where the Journey icon was not theme-able
 
 ## 4.0.3
-**Released:** December 1st, 2020
+**Released:** December 1, 2020
 
 ### Improvements
 - Introduce a new List-type for our Say-Node
@@ -1535,7 +1535,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 
 ## 4.0.2
 
-**Released:** November 12th, 2020
+**Released:** November 12, 2020
 
 ### Improvements
 - Improve our management-ui and add the ability to be able to change passwords for users
@@ -1578,7 +1578,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Fix a bug where the multiple functionalities would not properly work in our Interaction Panel (context reset, reset state)
 
 ## 4.0.1
-**Released:** October 22nd, 2020
+**Released:** October 22, 2020
 
 ### Improvements
 - Improve styling of our create-button used within several places of our UI
@@ -1599,7 +1599,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Fix bug for SunshineConversation and RingCentralEngange Endpoints which was related to storing session information
 
 ## 4.0.0
-**Released:** October 2nd, 2020
+**Released:** October 2, 2020
 
 This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Feel free to explore our new documentation and sign up for your free product trial:
 https://signup.cognigy.ai/
