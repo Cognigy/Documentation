@@ -213,4 +213,4 @@ as productive interaction only happens on this system.
 ## More Information
 
 - [Endpoints](endpoints/overview.md)
-- [Flows](../build/flows.md)
+- [Flows](../build/flows/overview.md)

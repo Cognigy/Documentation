@@ -32,7 +32,7 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
     Create Projects, build seamless Flows, add powerful Nodes, and shape chat and voice agents that truly engage your audience
 
     [:octicons-arrow-right-24: Projects](ai/build/projects.md)<br>
-    [:octicons-arrow-right-24: Flows](ai/build/flows.md)<br>
+    [:octicons-arrow-right-24: Flows](ai/build/flows/overview.md)<br>
     [:octicons-arrow-right-24: Nodes](ai/build/nodes/overview.md)<br>
     [:octicons-arrow-right-24: Node Reference](ai/build/node-reference/overview.md)<br>
 

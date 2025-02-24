@@ -151,7 +151,7 @@ For more information, read the [Playbooks](../../ai/test/playbooks.md) documenta
 
 #### Open Message-related Flow
 
-To check your [Flow](../../ai/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
+To check your [Flow](../../ai/build/flows/overview.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
 
 To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, do the following:
 

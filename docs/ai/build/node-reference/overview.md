@@ -38,7 +38,7 @@ This Node can be used to send a message to the user on their current channel.
 
 ### [Question](basic/question.md)
 
-This Node can be used to ask the user a question. When triggered, the Entry Point will shift to this Node so that the conversation can continue when the user answers, and a new [Input](../../test/interaction-panel/input.md) object is generated. By default, the [Entry Point](../flows.md#entry-points) will remain at this Node until a valid answer is found.
+This Node can be used to ask the user a question. When triggered, the Entry Point will shift to this Node so that the conversation can continue when the user answers, and a new [Input](../../test/interaction-panel/input.md) object is generated. By default, the [Entry Point](../flows/overview.md#entry-points) will remain at this Node until a valid answer is found.
 
 ### [Optional Question](basic/optional-question.md)
 

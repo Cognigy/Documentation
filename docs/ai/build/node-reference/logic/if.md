@@ -16,7 +16,7 @@ tags:
 
 ## Description
 
-This Node is used to execute either one or another part of a [Flow](../../../build/flows.md), based on a condition. An If Node has two children: a **Then Node** and an **Else Node**. The condition is evaluated during the execution of the Flow. If the condition evaluates to `true`, the Flow will take the path of the **Then Node**, if it evaluates to `false` the path of the **Else Node** will be executed. 
+This Node is used to execute either one or another part of a [Flow](../../../build/flows/overview.md), based on a condition. An If Node has two children: a **Then Node** and an **Else Node**. The condition is evaluated during the execution of the Flow. If the condition evaluates to `true`, the Flow will take the path of the **Then Node**, if it evaluates to `false` the path of the **Else Node** will be executed. 
 
 ## Creating a Condition
 

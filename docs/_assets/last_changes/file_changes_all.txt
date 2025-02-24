@@ -155,7 +155,7 @@ docs/ai/analyze/goals-and-tasks/overview.md	2024-11-27 Elena Baskakova
 docs/ai/analyze/goals-and-tasks/tasks.md	2024-11-27 Elena Baskakova
 docs/ai/analyze/goals-and-tasks/goals.md	2025-01-20 Elena Baskakova
 docs/ai/analyze/user-and-session-identification.md	2024-12-04 Caio Lopes de Melo Lindoso
-docs/ai/build/flows.md	2025-01-15 Elena Baskakova
+docs/ai/build/flows/overview.md	2025-01-15 Elena Baskakova
 docs/ai/build/extensions.md	2024-12-09 tmccaughey
 docs/ai/build/nodes/node-search.md	2024-05-16 Benjamin Mayr
 docs/ai/build/nodes/overview.md	2024-08-14 martyna korzynek

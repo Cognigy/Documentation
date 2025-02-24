@@ -33,7 +33,7 @@ To analyze your AI Agent's performance, you can use the [built-in Insights repor
 
 ## Data Protection
 
-You can control data available through the OData endpoint at both the [Endpoint](../deploy/endpoints/overview.md) and [Flow](../build/flows.md) levels:
+You can control data available through the OData endpoint at both the [Endpoint](../deploy/endpoints/overview.md) and [Flow](../build/flows/overview.md) levels:
 
 - **Endpoint**. Go to the [Data Protection & Analytics](../deploy/endpoints/data-protection-and-analytics.md) section within the Endpoint, which manages data associated with your connections to channels such as webchat, Slack, and WhatsApp.
     - If you disable the **Collect Analytics** setting, no analytics data will be logged or available in OData.

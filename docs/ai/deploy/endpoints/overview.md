@@ -11,7 +11,7 @@ hidden: false
 Endpoints support text-based conversations as well as conversations on your contact center phone lines.
 
 Endpoints convert channel-specific input and output, including images,
-galleries and voice, to the standardized Cognigy Input object. This approach enables the development of platform-independent [Flow](../../build/flows.md) that require no modification when adding new channels.
+galleries and voice, to the standardized Cognigy Input object. This approach enables the development of platform-independent [Flow](../../build/flows/overview.md) that require no modification when adding new channels.
 
 ## General Endpoint Settings
 
@@ -58,7 +58,7 @@ In this case, if the toggle is enabled, any change in the Connections of the res
 
 ### Flow
 
-Endpoints need an entry [Flow](../../build/flows.md) to start the conversation. You can switch Flows during a conversation.
+Endpoints need an entry [Flow](../../build/flows/overview.md) to start the conversation. You can switch Flows during a conversation.
 
 To switch to a Flow during a conversation, do the following:
 

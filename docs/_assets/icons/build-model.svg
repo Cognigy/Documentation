@@ -1,0 +1,26 @@
+<svg width="150" height="40" viewBox="0 0 154 30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main rounded rectangle background -->
+  <rect x="2" y="2" 
+        width="150" height="30" 
+        rx="8" 
+        fill="#0B3694"/>
+  
+  <!-- Text "Build Model" -->
+  <text x="60" y="22" 
+        font-family="Muli, sans-serif"
+        font-size="14" 
+        fill="white"
+        text-anchor="middle"
+        dominant-baseline="middle">Build Model</text>
+
+  <!-- Vertical separator line -->
+  <line x1="120" y1="2" 
+        x2="120" y2="32" 
+        stroke="white" 
+        stroke-width="1" 
+        opacity="0.3"/>
+
+  <!-- Dropdown triangle -->
+  <path d="M130 15 L135 20 L140 15 Z" 
+        fill="white"/>
+</svg> 

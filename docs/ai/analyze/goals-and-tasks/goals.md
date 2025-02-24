@@ -163,7 +163,7 @@ Then monitor and analyze each step of the booking process.
 
 ### Create a Flow and Configure the Initial Step
 
-1. [Create a Flow](../../build/flows.md#create-a-flow).
+1. [Create a Flow](../../build/flows/overview.md#create-a-flow).
 2. In the Flow editor, add a **Question Node**.
 3. Open the Node editor and select the **Text with Buttons** output type.
 4. In the **Text** field, enter the following text:

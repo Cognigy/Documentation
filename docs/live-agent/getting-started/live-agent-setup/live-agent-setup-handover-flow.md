@@ -10,7 +10,7 @@ Once you've set up your Endpoint for handover to a Live Agent, the next step is 
 
 ## Set up a Flow for Handover
 
-Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/build/flows.md) for handover to Live Agent.
+Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/build/flows/overview.md) for handover to Live Agent.
 
 To create a Live Agent Flow, follow these steps:
 

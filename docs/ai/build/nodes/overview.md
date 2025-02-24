@@ -15,11 +15,11 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
 
 ## Create a Node
 
-Nodes can be created by clicking on the + icon in a [Flow](../flows.md), after which the Node selection menu appears.
+Nodes can be created by clicking on the + icon in a [Flow](../flows/overview.md), after which the Node selection menu appears.
 
 Switch to the [Extensions](../extensions.md) tab to install Nodes from Extensions or click the Extension button in the corner to install new Extensions from the [Extension Marketplace](../extensions.md#extension-marketplace).
 
-A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [Flow](../flows.md).
+A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [Flow](../flows/overview.md).
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/build/nodes/node-copy-paste.jpg" width="100%" />

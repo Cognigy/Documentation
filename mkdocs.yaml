@@ -24,7 +24,9 @@ nav:
 
     - 🛠️ Build:
       - ai/build/projects.md
-      - ai/build/flows.md
+      - Flows:
+        - ai/build/flows/overview.md
+        - ai/build/flows/editor.md
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md

@@ -78,5 +78,5 @@ To run your Flow, follow these steps:
 ## What's Next?
 
 1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [hire one from the Job Market](manage-ai-agents.md#create-an-ai-agent).
-2. [Add the AI Agent to your Flow](../../build/flows.md) and [create a set of tool actions](../../build/node-reference/ai/ai-agent.md#tool) for your AI Agent to operate.
+2. [Add the AI Agent to your Flow](../../build/flows/overview.md) and [create a set of tool actions](../../build/node-reference/ai/ai-agent.md#tool) for your AI Agent to operate.
 3. For a deeper dive into Agentic AI, visit the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/17346581840796-Getting-Started-with-AI-Agents).

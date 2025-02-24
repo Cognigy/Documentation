@@ -202,7 +202,7 @@ the LLM can extract the booking code `AB123` from this input.
 
 ## More Information
 
-- [Flows](../build/flows.md)
+- [Flows](../build/flows/overview.md)
 - [Flow Nodes](../build/node-reference/overview.md)
 - [Intents](nlu/overview.md#intents)
 - [Lexicons](nlu/slots-and-lexicons/lexicons.md)

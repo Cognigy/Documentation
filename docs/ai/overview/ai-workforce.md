@@ -41,7 +41,7 @@ Here are some examples of AI Agents you can build with Cognigy.AI:
 
 Chat-based AI Agents specialize in text-based interactions, primarily used for customer support, answering FAQs, and handling tasks, including booking appointments and providing product information through chat platforms, websites, and messaging apps.
 
-To build a chat AI Agent using Cognigy.AI, you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows.md).
+To build a chat AI Agent using Cognigy.AI, you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows/overview.md).
 Once created, you can add at least [basic Nodes](../build/node-reference/overview.md) such as Say and Question Nodes,
 which form the building blocks of the AI Agent's conversational flow.
 After that, you need to choose an appropriate Endpoint for the channel you want to deploy the AI Agent on.
@@ -52,7 +52,7 @@ For example, select the [Webchat v3 Endpoint](../../webchat/v3/configuration.md)
 Voice AI Agents handle spoken conversations; they use speech-to-text recognition and text-to-speech technology, which makes them ideal for phone-based customer support.
 
 To build a voice AI Agent using Cognigy.AI,
-you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows.md).
+you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows/overview.md).
 However, in addition to the [basic Nodes](../build/node-reference/overview.md),
 you also need
 to add [voice Nodes](../build/node-reference/voice/voice-gateway/overview.md)

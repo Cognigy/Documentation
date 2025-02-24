@@ -112,7 +112,7 @@ For more information, read the [Marketplace Extensions](build/extensions.md) doc
 
 _**Flows**_
 : A visual representation of a potential dialog using a Flow chart. Flows are composed of individual Nodes with different functionalities, ranging from generating output to collecting back-end information. When an input comes in through an Endpoint, the Flow is executed, enabling smooth interactions with users.
-For more information, read the [Flows](build/flows.md) documentation.
+For more information, read the [Flows](build/flows/overview.md) documentation.
 
 _**Flow Editor**_
 : A graphical interface where users can create and organize the dialogue paths and define the interaction logic by using Nodes. Users can drag and drop Nodes representing different actions, conditions, prompts, and responses to design a [Flow](#f).

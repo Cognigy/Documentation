@@ -66,7 +66,7 @@ When you create more than one locale, you can select a preferred language as fol
 1. Click ![expand 2](../../../_assets/icons/expand_2.svg) to open a list of the available locales.
 2. Select the Locale you want to use.
 
-When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows.md#locale-settings) of your Flow.
+When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows/overview.md#locale-settings) of your Flow.
 
 ### Snapshot
 
