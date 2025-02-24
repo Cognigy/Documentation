@@ -1,7 +1,7 @@
 ---
 title: "Packages" 
 slug: "Packages"
-description: "Cognigy.AI Packages are a useful tool for exporting and importing a Project's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive."
+description: "Cognigy.AI Packages are a useful tool for exporting and importing a Project's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a ZIP file."
 hidden: false 
 tags:
   - Cognigy.AI
@@ -13,13 +13,11 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../release-notes/4.68.md)
 
-_Packages_ are a useful tool for exporting and importing a Project's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive.
+_Packages_ are a useful tool for exporting and importing Project resources, such as Flows or Lexicons, to share with other teams. With Packages, you can transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once a Package has been downloaded, you can share it as a ZIP file.
 
-Compared to [Snapshots](../deploy/snapshots.md),
-which export the entire Project, working with Packages provides more flexibility.
-With Packages, you have control over which resources are included or excluded.
+Compared to [Snapshots](../deploy/snapshots.md), working with Packages provides more flexibility. With Packages, you have control over which resources you import and export.
 
-The following Project resources can be included in a Package:
+Packages can include the following Project resources:
 
 - [Flows](../build/flows.md) (including Nodes and Intents)
 - [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md)
@@ -29,129 +27,49 @@ The following Project resources can be included in a Package:
 - [Connections](../build/connections.md)
 - [Knowledge Stores](../empower/knowledge-ai/overview.md#knowledge-store)
 
-## Export Resources as a Package
+## Restrictions
 
-You can export a single resource as a Package, or you can export many resources at once.
+- Importing Packages from a newer version of Cognigy.AI into an older version may cause unexpected errors.
+- Cognigy.AI skips unsupported resources while importing a Package. For example, deprecated Endpoints or LLMs with outdated configuration schemas.
 
-### Export a Resource
+## Working with Packages
 
-Export one resource as a Package using one of the following options:
+=== "GUI"
+     You can export and import Packages in **Manage > Packaging**. You can also export a resource as a Package from the respective resource page by selecting ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**.
 
-=== "Via the Resource page"
-     1. In the left-side menu of the Project, go to the section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
-     2. On the **Resource** page, select a specific resource from the list.
-     3. On the right side of the resource, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**. This action will trigger the **Create Package** task in the Task Manager.
-     4. Check the status of the **Create Package** task by clicking ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
-     5. Once the creation is complete, click the link with the file name in the task. The Package will be automatically downloaded to your computer.
+=== "API"
+     You can view, create, and delete Packages using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Packages) as well as download and upload them.
 
-=== "Via the Packages page"
-     1. In the left-side menu of the Project, go to **Manage > Packaging**.
-     2. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
-     3. Select a resource from the list by activating the option next to the chosen resource.
-     4. Click **Next**.
-     5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary.
-     6. Click **Export**. 
-     7. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page.
-     8. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer.
-     9. Click **Start Over** to return to the page with the selection of resources for export.
+!!! warning "Package Import"
 
-### Export Multiple Resources
+     - During the import, you may need to [resolve conflicts](#resolve-import-conflicts) if the Package contains a duplicate of a Project resource.
+     - Don't import Packages for deploying Knowledge.AI resources in a production Project. AI Agents' knowledge may be temporarily unavailable during the import.
+     - Node IDs remain unchanged during the import to ensure that hardcoded links between Flows and Nodes don't break. If you need to import a Flow multiple times into a Project, delete and re-create the Nodes before importing the Package to prevent Node ID conflicts.
 
-To export multiple resources as a Package, follow these steps:
+### Map Locales Before Importing Flows
 
-1. In the left-side menu of the Project, go to **Manage > Packaging**. 
-2. On the **Packages** page, select resources from the list by activating the options next to the specific resources or resource types. For example, if you want to export all existing Flows within a Project, select the **Flows** resource type. Alternatively, if you intend to export a larger set of resources, activate the option next to the **Select Resources for Export** option. Then, deactivate the option next to the resources you do not want to export. 
-3. Click **Next**. 
-4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
-5. Click **Export**. 
-6. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
-7. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
-8. Click **Start Over** to return to the page with the selection of resources for export.
+Locales aren't imported with the Flow. However, you can include the localized content in the import process by mapping the Locales.
 
-### Export All Available Resources
+??? info "Map Locales"
+     Before importing the Flow, create the necessary Locales in the target Project and then import the Package. You can map the Locales during the import. The localized content from the Package overwrites the Project content if you replace the Flow.
 
-To export all available resources as a Package within your Project, follow these steps:
+     For version 4.67 and later, you can map any Locale from the Package to the target Project's primary Locale.
 
-1. In the left-side menu of the Project, go to **Manage > Packaging**.
-2. On the **Packages** page, activate the option next to the **Select Resources for Export** option. 
-3. Click **Next**. 
-4. On the **Package Configuration** page, in the **Package Name** field, edit the existing name if necessary. 
-5. Click **Export**. 
-6. Wait for the Package creation to complete. Once the process finishes, a **Download Export** link with the Package name will appear on the page. 
-7. Download the Package by clicking the link with the Package name. The Package will be automatically downloaded to your computer. 
-8. Click **Start Over** to return to the page with the selection of resources for export.
+     If you map a non-primary Locale from the Package with incomplete localized content to the Project's primary Locale, Cognigy.AI copies the missing content from the Package's primary Locale.
 
-## Import Resources as a Package
+### Resolve Import Conflicts
 
-Make sure to familiarize yourself with the essential considerations before initiating the Package import process. Once you have completed that, proceed with the import.
+You can resolve conflicts in the **Conflict Management** section that appears during the import.
 
-### Before you Import a Package
+??? info "FAQ"
 
-Before you import a Package, review these essential considerations:
+    **Q1**: What should I do if I encounter errors during Knowledge Store Import?
 
-- Ensure to verify [Package compatibility](#check-package-compatibility) before importing. Similarly to the export process, you can specify the number of resources to import. During the import, you may need to resolve conflicts if a resource from the Package duplicates an existing one. Note that the specifics of importing resources may vary. For example, for a Flow, you need to [map locales](#map-locales-during-flow-import).
-- Do not use Packages for deploying Knowledge.AI resources to a production Project. AI Agents' knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
-- Node IDs will remain unchanged upon import to ensure that hardcoded links between Flows and Nodes are not broken. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
-- If your Package contains any resources that are not supported in new Projects, they will be skipped and not imported. For example, removed Endpoints or LLMs with outdated configuration schemas will not be imported.
+    **A1**: Try to upload the Package again. During the reupload, select only the Knowledge Stores that were not fully imported.
 
-#### Check Package Compatibility
+    **Q2:** How can I avoid browser request timeouts during Knowledge Store Package upload?
 
-Packages that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
-
-However, Packages created in newer versions may not be compatible with older versions, and are not supported.
-
-Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
-
-### Import a Package
-
-To import resources as a Package, follow these steps:
-
-1. In the left-side menu of the Project, go to **Settings > Packaging**.
-2. On the **Packages** page, go to the **Drop a Package here to Import or Browse File** section.
-3. From your folder on your computer, select the Package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the Package from your folder on your computer. 
-4. Wait for the Package to load.
-5. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to [resolve a conflict](#resolve-conflicts) if the Package contains resources that match the names of resources in the Project into which you are importing the new Package. If you are importing a Package with Flows, you will also need to [map the Locales](#map-locales-during-flow-import).
-6. Click **Export**. 
-7. When the Package import is complete, click **Start Over**.
-
-### Resolve Conflicts
-
-To resolve conflicts that occur during the importing Package, use the following conflict strategies:
-
-1. Go to the **Conflict Management** section.
-2. From the **Duplicate handling for all resources**, select one of the following strategies:
-    - **Import as a copy** — the uploaded resource will be imported as a duplicate. The original resource in the Project will remain unaffected, and the imported copy will be added separately. This approach is useful when you want to keep both the original and the imported versions. Note if you import a Knowledge Store, it cannot be imported as a copy. Imported Stores will replace the current version.
-    - **Replace existing resource** — the uploaded resource will overwrite the existing one. This approach is useful when you want to update an existing resource with a newer version.
-3. Click **Apply**. The selected strategy will be applied to all existing resources in the **Resources to be imported** section. 
-4. _(Optional)_ If you want to change the strategy for a specific resource, select this strategy from the list next to the resource.
-5. _(Optional)_ If you want to exclude a resource from the list, deactivate the option next to the resource.
-6. Click **Import**. The strategy will be applied only to the resources you have selected for import.
-
-### Map Locales during Flow Import
-
-Locales as separate resources are not imported along with the Flow.
-However, the localized content, such as Node configurations,
-default replies, and Intent sentences, is included in the import process.
-
-Locales from the Package can be mapped to the Project's Locales into which the import occurs.
-This means that the Locales of the Project into which you import will overwrite the Locales from your Package.
-In this case, we recommend the following strategy: In the Project where the import occurs, manually create Locales in advance, similar to the Locales in the Package, and map them to the Locales from the Package.
-
-The Primary Locales must be mapped. You can choose not to import the remaining Locales.
-
-Starting from version 4.67, you can map any Locale from the Package to the Primary Locale of the Project into which the Package is being imported.
-
-If you link a Non-Primary Locale from the Package to the Primary Locale of the existing Project, and the Non-Primary Locale does not have a complete configuration, the system will copy the missing settings from the Primary Locale of the Package.
-
-## FAQ
-
-**Q1**: What should I do if I encounter errors during Knowledge Store Import?
-
-**A1**: Try to upload the Package again. During the reupload, select only the Knowledge Stores that were not fully imported.
-
-**Q2:** How can I avoid browser request timeouts during Knowledge Store Package upload?
-
-**A2:** To avoid browser request timeouts, keep the Package size low. Separate your resources into smaller Packages.
+    **A2:** To avoid browser request timeouts, keep the Package size low. Separate your resources into smaller Packages.
 
 ## More Information
 
