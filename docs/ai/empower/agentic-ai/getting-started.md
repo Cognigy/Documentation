@@ -7,7 +7,7 @@ hidden: false
 
 # Getting Started with Agentic AI
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.91(Beta)-purple.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.91-blue.svg)](../../../release-notes/4.91.md)
 
 This guide walks you through the process of creating a Project with an AI Agent powered by a large language model (LLM). 
 You'll learn how to create an AI Agent with the persona of a customer support engineer,

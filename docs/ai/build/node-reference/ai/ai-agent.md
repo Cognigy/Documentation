@@ -15,8 +15,6 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
-
 The AI Agent Node lets you assign an AI Agent to a job, provide instructions and tool actions for that job, and configure access to the knowledge the AI Agent can use when holding a conversation with a user.
 
 To configure this Node, follow these steps:

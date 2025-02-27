@@ -13,8 +13,6 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
-
 The Resolve Tool Action Node sends an answer as the response to a tool call to the AI Agent after completing a [tool action](ai-agent.md#ai-agent-tool).
 
 When the AI Agent calls a tool to perform an action, the tool action is executed.

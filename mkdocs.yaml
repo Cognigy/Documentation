@@ -182,7 +182,7 @@ nav:
       - ai/build/functions.md
 
     - ✨ Empower:
-      - Agentic AI (Beta):
+      - Agentic AI:
           - ai/empower/agentic-ai/overview.md
           - ai/empower/agentic-ai/getting-started.md
           - ai/empower/agentic-ai/manage-ai-agents.md

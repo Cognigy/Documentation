@@ -5,11 +5,9 @@ description: "Agentic AI represents a new generation of autonomous, goal-oriente
 hidden: false
 ---
 
-# Agentic AI (Beta)
+# Agentic AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.95(Beta)-purple.svg)](../../../release-notes/4.95.md)
-
-{! _includes/ai/beta.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v4.95-blue.svg)](../../../release-notes/4.95.md)
 
 _Agentic AI_ represents a new generation of autonomous, goal-oriented AI Agents designed to boost operational efficiency, enhance customer satisfaction, and drive superior enterprise outcomes.
 

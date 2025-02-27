@@ -31,7 +31,7 @@ Projects include [Flows](../build/flows.md), [Endpoints](../deploy/endpoints/ove
 
 In the Project Creation wizard, select a Project type based on the AI Agent you want to build:
 
-=== "Agentic AI (Beta)"
+=== "Agentic AI"
     An autonomous AI Agent driven by large language models (LLMs). You can build an [Agentic AI Agent](../empower/agentic-ai/getting-started.md) or hire one from the [Job Market](../empower/agentic-ai/overview.md#job-market).
 
 === "Intent-driven AI"
