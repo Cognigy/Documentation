@@ -21,7 +21,7 @@ You can access the **Admin Center Dashboard** page using one of the following op
 The chart shows a number of [billable conversations](../../billing.md) for the organization.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/administer/access/billable-conversations.png" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/administer/access/billable-conversations.png" width="90%" />
 </figure>
 
 The Billable Conversations metrics include the following:
@@ -39,7 +39,7 @@ Tracking the usage of these units helps manage costs effectively
 and make informed decisions about resource allocation.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/administer/access/knowledge-ai.png" width="100%" />
+  <img class="image-center" src="../../../../../_assets/ai/administer/access/knowledge-ai.png" width="90%" />
 </figure>
 
 {! _includes/ai/administer/access/knowledge-ai-metrics.md !}
