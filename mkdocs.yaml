@@ -232,6 +232,7 @@ nav:
             - ai/empower/llms/providers/google.md
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
+            - ai/empower/llms/providers/cognigy-nexus-llm.md
           - ai/empower/llms/fallback.md
           - ai/empower/llms/llm-session-token-counter.md
           - ai/empower/llms/other-operations.md

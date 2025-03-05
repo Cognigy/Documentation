@@ -17,4 +17,5 @@ To add a standard or custom model, select an LLM provider integrated with Cognig
 - ![google-gemini](../../../../_assets/icons/google-gemini.svg) __[Google Gemini](google.md)__ <br> Add credentials for the predefined model `gemini-1.5-pro` or add another model from the Gemini family as a custom model.
 - ![alephalpha](../../../../_assets/icons/alephalpha.svg) __[Aleph Alpha](aleph-alpha.md)__ <br> Add credentials for the predefined models such as `luluminous` and `luminous-embedding-128` or add another Aleph Alpha model as a custom model.
 - ![amazon-bedrock](../../../../_assets/icons/amazon-bedrock.svg)__[Amazon Bedrock](amazon-bedrock.md)__ <br> Add any Amazon Bedrock model that supports the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html).
+- ![nexus-llm](../../../../_assets/icons/ai_logo.svg) __[Cognigy Nexus LLM](cognigy-nexus-llm.md)__ <br> Cognigy Nexus LLM is a proprietary large language model, provided and hosted by Cognigy, optimized for AI-driven customer service.
 </div>
