@@ -82,6 +82,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | **Code Node**                                                                                                                     |                                 |            |            |
 | Maximum code execution time                                                                                                       | 1 s                             |            |            |
 | Maximum number of characters in the code editor                                                                                   | 200K                            |            |            |
+| Maximum API calls per Code Node                                                                                                   | 100                             |            |            |
 
 [^*]: The rate limit of 1000 requests per 5 minutes from a single IP address applies only to shared SaaS environments.
 [^**]: If you have a dedicated SaaS or on-premises environment, you can change this limit. The `SOCKET_ENDPOINT_DISCONNECT_GRACE_PERIOD` variable lets you set a waiting period (in seconds) before marking a user as disconnected. This delay ensures temporary network issues or brief interruptions don't immediately trigger the `user disconnected` event. 

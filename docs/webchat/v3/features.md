@@ -53,7 +53,7 @@ To configure the conversation starters, refer to the [Home Screen](configuration
 
 ### Previous Conversations
 
-The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the AI Agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
+The Previous Conversations feature offers a straightforward way for users to access their past dialogues with the AI Agent directly from the Webchat home screen. It includes options to customize the Previous Conversations button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/previous-conversations.png" width="100%" />
@@ -183,6 +183,17 @@ If you require navigation options for users without the need for rich structurin
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/text-with-buttons.png" width="100%" />
 </figure>
+
+## Persistent Menu
+
+The Persistent Menu feature guides end users through the conversation by offering quick actions,
+allowing for easy navigation between different conversation stages directly within the Chat screen.
+
+<figure>
+  <img class="image-center" src="../../../_assets/webchat/v3/persistent-menu.png" width="100%" />
+</figure>
+
+To configure the Persistent Menu, refer to the [Webchat Layout](configuration.md#webchat-layout) settings.
 
 ## Controlling the Chat Window
 

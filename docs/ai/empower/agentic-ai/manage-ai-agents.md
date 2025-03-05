@@ -3,11 +3,14 @@ title: "Manage AI Agents"
 slug: "manage-ai-agents"
 description: "Manage the new generation of AI Agents with Cognigy.AI. The AI Agent Management interface lets you create, edit, and delete AI Agents."
 hidden: false
+tags:
+  - agentic ai
+  - manage ai agents
 ---
 
 # Manage AI Agents
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.91-blue.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../../release-notes/4.96.md)
 
 To manage a new generation of AI Agents, Cognigy.AI introduces the _AI Agent Management_ interface,
 where you can create, edit, and delete AI Agents.
@@ -32,9 +35,14 @@ To create an AI Agent, select one of the following options:
         - Set the recommended height to 184px.
         - Save the file as `.png`.
         - Include `_optimized` in the file name.
-    5. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
-        - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
-        - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
+    5. In the **Speaking Style** step, configure the following settings:
+        - **Set up Style** — configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
+            - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
+            - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
+        - **Voice Configuration** — assign a specific voice to your AI Agent if you want to use your AI Agent as a voice-based assistant. To configure this setting, ensure you have installed [Voice Gateway](../../../voice-gateway/index.md) and set up the [Voice Preview](../../test/voice-preview.md) provider. Then, fill in the fields following the same process you used for [Set Session Config Node](../../build/node-reference/voice/voice-gateway/parameter-details.md#synthesizer---text-to-speech):
+            - **TTS Vendor** — select the text-to-speech provider for your AI Agent. This setting determines which service will convert the AI Agent's text responses into speech.
+            - **TTS Language** — select the language that your AI Agent will use for speech output. Ensure this language aligns with the preferred language of the end user.
+            - **TTS Voice** — select the voice from the selected TTS vendor. This setting allows you to customize the tone, gender, and style of your AI Agent's voice.
     6. In the **Knowledge & Instructions** step, configure the following fields:
         - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
         ```txt

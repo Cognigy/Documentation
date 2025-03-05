@@ -52,6 +52,7 @@ For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `
 
 - The maximum number of characters in the code editor is 200K.
 - The maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed in the `input.codeNodeError.message` Input object. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../../extensions.md#extension-marketplace).
+- The maximum number of API calls per Code Node is 100. If this limit is exceeded, you can access the returned error message in the Input object via `input.codeNodeError.message`.
 
 ## Sending Facebook JSON
 

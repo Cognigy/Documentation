@@ -1,3 +1,2 @@
 !!! warning "Deprecation of AudioCodes and Generic Voice Nodes"
-    AudioCodes Nodes and Generic Voice Nodes will be deprecated at the end of February 2025. After this time, you won't be able to create new Nodes, but you can still edit or clone existing ones. 
-    Flows with these Nodes will continue to work after the deprecation date.
+    AudioCodes Nodes and Generic Voice Nodes have been deprecated. Flows with these Nodes continue to work, and you can still edit and clone them as well as export them as a Package. However, you can't create new ones in Cognigy.AI v4.96 or later.

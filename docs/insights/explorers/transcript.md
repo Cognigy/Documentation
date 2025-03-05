@@ -2,12 +2,16 @@
 title: "Transcript Explorer" 
 slug: "transcript-explorer"
 description: "The Insights Transcript Explorer is a powerful analysis tool that helps you improve your agents' performance, provide better customer service, and enhance the overall user experience. It allows you to analyze transcripts of conversations between end-users and agents in detail."
-hidden: false 
+hidden: false
+tags:
+  - insights
+  - session transcripts
+  - transcript explorer
 ---
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.94-blue.svg)](../../release-notes/4.94.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../release-notes/4.96.md)
 
 The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
@@ -43,10 +47,10 @@ The list of sessions has the following parameters:
 
 | Title        | Description                                                                                                                                                                                              |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                |
 | Session ID   | The unique ID for each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
 | User ID      | The unique ID for the end user. To copy the User ID, on the right side of the selected session row, click ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy user ID**.            |
 | Messages     | The total number of messages within the specific session.                                                                                                                                                |
-| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                |
 | Last Message | The date and time when the last message was received within the session.                                                                                                                                 |
 
 ### Sort Sessions

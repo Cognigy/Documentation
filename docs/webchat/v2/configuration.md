@@ -88,7 +88,7 @@ The Persistent Menu ensures quick access to different conversation stages, guide
 | Title (main)           | The title for your Persistent Menu. This title will be displayed to the users.                                                                                                                                            |
 | Menu items             | Click the ADD button to add items to the Persistent Menu. Each menu item consists of a Title and a Payload.                                                                                                               |
 | Title                  | The text that you want users to see in the Persistent Menu. This text should be descriptive and clear, indicating the function or action associated with the menu item.                                                   |
-| Payload                | The payload text that will be sent to your AI Agent flow when the user selects this menu item. This payload can be a simple word or phrase, or it can be a more complex query depending on your AI Agent's functionality. |
+| Payload                | The payload text that will be sent to your AI Agent Flow when the user selects this menu item. This payload can be a simple word or phrase, or it can be a more complex query depending on your AI Agent's functionality. |
 
 #### Webchat Plugins
 
