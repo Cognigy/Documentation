@@ -11,7 +11,7 @@
 
 ## Description
 
-Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons](../../../empower/nlu/slots-and-lexicons/lexicons.md) from within your Flow using [CognigyScript](../../cognigy-script.md).
+Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons](../../../empower/nlu/slots-and-lexicons/lexicons.md) from within your Flow using [CognigyScript](../../cognigyscript.md).
 
 ## Settings
 

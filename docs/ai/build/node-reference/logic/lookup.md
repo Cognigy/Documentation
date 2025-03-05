@@ -135,7 +135,7 @@ By changing the lookup type to **CognigyScript**, the Flow will select a case th
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable</figcaption>
 </figure>
 
-To learn more, read the [CognigyScript](../../cognigy-script.md) page.
+To learn more, read the [CognigyScript](../../cognigyscript.md) page.
 
 ### Call Event Status
 

@@ -184,7 +184,7 @@ For more information, read the [Slot Fillers](slot-fillers.md) article.
 
 #### Additional Validation
 
-A [CognigyScript](../../build/cognigy-script.md) condition which must return `true` in order for the match to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
+A [CognigyScript](../../build/cognigyscript.md) condition which must return `true` in order for the match to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
 
 #### Result Location
 The location of a filled slot result is determined by default by the slot type (e.g., `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.

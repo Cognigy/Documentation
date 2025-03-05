@@ -63,7 +63,7 @@ To localize a Node using machine translation, follow these steps:
 
 The Node will be translated automatically.
 In the Node editor, make sure to review the translated fields,
-paying attention to [Tokens](../tokens.md) and [Cognigy.Script](../cognigy-script.md), which should remain untranslated.
+paying attention to [Tokens](../tokens.md) and [Cognigy.Script](../cognigyscript.md), which should remain untranslated.
 
 ### Machine Translation for Intent Localization
 

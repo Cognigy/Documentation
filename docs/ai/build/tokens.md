@@ -1,76 +1,118 @@
 ---
 title: "Tokens" 
-slug: "tokens" 
+slug: "tokens"
+description: "Cognigy.AI Tokens are visual representations of CognigyScript that let non-technical users access dynamic conversation data without coding. Includes default tokens for user input, context, and profile data."
 hidden: false 
 tags:
   - Cognigy.AI
   - Token
   - Tokens
+  - CognigyScript
 ---
 
 # Tokens
 
-The **Tokens** feature allows **CognigyScript** expressions to be packaged into a visual **Token** to provide non-technical platform creators with access to dynamic conversation data without writing code themselves.
+_Tokens_ are visual representations of [CognigyScript](cognigyscript.md) expressions that you store and reuse in Cognigy.AI. Cognigy.AI has a selection of default Tokens that are associated with user Input, Context, and Profile objects.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/example.png" width="100%" />
-</figure>
+!!! warning "Curly Brackets Not Required for Tokens"
+    Tokens automatically include curly brackets in the script. For this reason, you don't need to wrap the CognigyScript in the **Script** field or the Tokens in text fields with curly brackets.
 
-## Using Tokens
+## Restrictions
 
-The example below shows two responses that access the user's last message. Both sentences produce the same output. The first message uses a default system token, whereas the second sentence uses the coded [CognigyScript](cognigy-script.md) format.
+- Only Node text fields with the ![token](../../_assets/icons/token.svg) icon support Tokens.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/usage.png" width="100%" />
-</figure>
+## Working with Tokens
 
-Tokens can be added to a dialog message from any text field displaying the **AI** symbol.
-Simply click the **AI** symbol to expand the token menu, which displays a searchable list of available tokens.
-The tokens are sorted into categories based on the location of the data,
-which they access i.e. [Input](../test/interaction-panel/input.md),
-[Context](../test/interaction-panel/context.md), [Profile](../test/interaction-panel/profile.md) or Custom.
+In **Manage > Tokens**, you can view, create, and delete Tokens as well as copy their Reference ID.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/selector.png" width="100%" />
-</figure>
+Tokens include the following information:
 
-Cognigy.AI comes with a selection of default tokens that are associated with base input and profile variables.
+- **Name** — the Token name displayed in Nodes and the Token Management Menu.
+- **Script** — the CognigyScript expression used to access the data. You don't need to wrap the CognigyScript expression in `{{"{{ }}"}}`.
+- **Type** — the category of the Token in the search list:
+    - **Input** — access to the data in the [Input](../test/interaction-panel/input.md) object.
+    - **Context** — access to the data in the [Context](../test/interaction-panel/context.md) object.
+    - **Profile** — access to the data in the [Profile](../test/interaction-panel/profile.md) object.
+    - **Custom** — specific CognigyScript expression with access to the data in one or more [Cognigy objects](cognigyscript.md#cognigy-objects). For example, `"Should your order " + context.customerOrderAmount + " be sent to " + profile.address + "?"`.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/token-answer.svg" width="100%" />
-  <figcaption>Token "Answer" used in a Say Node</figcaption>
-</figure>
-
-## Creating Tokens
-
-You can create **Tokens** either from flow node text fields showing the **AI** symbol or from the Token Management Menu (see below). From flow nodes, click the **AI** symbol to expand the token selector menu, then click the **+** icon at the end of the search field. If you are creating a token from the *Token Management menu*, simply click the *"Create New Token"* button at the top of the interface.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/create.png" width="100%" />
-</figure>
-
-Creating a **Token** requires the following information:
-
-  * Name - The name that will be shown on the token to platform users
-  * Script - The [CognigyScript](cognigy-script.md) path used to access the data
-  * Type - The data location (used for sorting the token in the search window)
-
-
-!!! warning "Curly Brackets not required here!"
-    Tokens will automatically apply curly brackets to your script, therefore they must be omitted from the script field when creating tokens and from text fields when using tokens.
-
-!!! note "Create Tokens from JSON"
-    You can create a Token directly from any JSON editor within Cognigy.AI. To do this, right-click the value you want to reference and select **Create Token from JSON Path** from the context menu. The **Script** field will already be pre-filled. You can also mark the value before right-clicking it, to have the Name field pre-filled with the marked text.
-
-## Token Management Menu
-
-The **Token Management Menu** can be found under the **Manage** section of the **Project Resources** menu. A full list of tokens that have been created in a Project is accessible to view.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/page.png" width="100%" />
-</figure>
-
-A token can be deleted by resting the cursor on a token, clicking the menu icon that appears on the right end of the interface and selecting **Delete**.
+You can also create and use Tokens in the Node editor or create Tokens from [JSON editors](#create-and-use-tokens-in-the-node-editor).
 
 !!! note "Script Persistence"
-    Deleting Tokens will not remove the **CognigyScript** from the Nodes that used the Token.
+    Deleting a Token doesn't remove the CognigyScript from the Nodes that used the deleted Token.
+
+### Default Tokens
+
+Cognigy.AI provides a selection of default tokens that you can readily use in your Flows.
+
+??? info "Default Tokens"
+    | Token                        | Type       | Description                                                                                                                                                                                                                                                                           | Target path                                                       |
+    |------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+    | AI Agent Output              | User Input | The response sent by the AI Agent.                                                                                                                                                                                                                                                    | `input.aiAgentOutput`                                             |
+    | Answer                       | User Input | Displays the extracted user input. For example, if the user is asked for a number and the answer was `I like the number 7` the extracted answer is `7`.                                                                                                                               | `input.result`                                                    |
+    | Available Agents             | User Input | Displays the current available agents in your system.                                                                                                                                                                                                                                 | `input.availableAgents`                                           |
+    | Channel                      | User Input | Displays the current used channel. For example, `adminconsole`.                                                                                                                                                                                                                       | `input.channel`                                                   |
+    | Current Flow Name            | User Input | Displays the current used Flow name.                                                                                                                                                                                                                                                  | `input.flowName`                                                  |
+    | Current Time                 | User Input | Displays the current time. For example, `2024-01-08T15:14:59+01:00`                                                                                                                                                                                                                   | `input.currentTime.ISODate`                                       |
+    | Data                         | User Input | Displays the data payload of the message.                                                                                                                                                                                                                                             | `input.data`                                                      |
+    | Execution                    | User Input | Represents the number of processed user inputs for this conversation.<br>The first user message in a conversation has an execution value of 1, the second one has an execution value of 2, then 3 and so on.                                                                          | `input.execution`                                                 |
+    | First Attachment URL         | User Input | Attachments are an array pointing to the URL of the first element.                                                                                                                                                                                                                    | `input.attachments[0].url`                                        |
+    | First Currency Slot          | User Input | Array pointing to `input.slots`.                                                                                                                                                                                                                                                      | `input.slots.MONEY[0].value`                                      |
+    | First Date Slot              | User Input | Array pointing to `input.slots`.                                                                                                                                                                                                                                                      | `input.slots.DATE[0].start.ISODate`                               |
+    | First Email Slot             | User Input | Array pointing to `input.slots`.                                                                                                                                                                                                                                                      | `input.slots.EMAIL[0]`                                            |
+    | First Number Slot            | User Input | Array pointing to `input.slots`.                                                                                                                                                                                                                                                      | `input.slots.NUMBER[0]`                                           |
+    | First Percentage Slot        | User Input | Array pointing to `input.slots`.                                                                                                                                                                                                                                                      | `input.slots.PERCENTAGE[0]`                                       |
+    | Handover Status              | User Input | No data is displayed when handover is not defined. <br> Indicates status:<ul><li>`completed` - the handover was finished by the agent.</li><li>`cancelled` - the user has cancelled the Handover request.</li><li>`error` - an error occurred when requesting the handover.</li></ul> | `input.handover.status`                                           |
+    | Input ID                     | User Input | Displays the input ID of the last answer.                                                                                                                                                                                                                                             | `input.inputId`                                                   |
+    | Intent                       | User Input | Displays a recognized Intent when intents are defined.                                                                                                                                                                                                                                | `input.intent`                                                    |
+    | Intent Score                 | User Input | Displays the score rate between `0` and `1` of a recognized intent.                                                                                                                                                                                                                   | `input.intentScore`                                               |
+    | KSearch:TopK Texts           | User Input | Displays the output of the Knowledge Search Node to the user.                                                                                                                                                                                                                         | `input.knowledgeSearch?.topK?.map(result=>result?.text).join('')` |
+    | Language                     | User Input | Displays the language code for the active NLU language. For example, `en-US`.                                                                                                                                                                                                         | `input.language`                                                  |
+    | Last Question Result         | User Input | Displays the extracted user input as the answer to an AI Agent question. For example, `I want to order a pizza`.                                                                                                                                                                      | `input.result`                                                    |
+    | LLM Prompt Result            | User Input | The response sent from the LLM, for example in the Search Extract Output or LLM Prompt Nodes.                                                                                                                                                                                         | `input.promptResult`                                              |
+    | Microsoft:SSO Request Status | User Input | Used for Teams Single Sign-On (SSO). Indicates status:<ul><li>**pending** - token just requested.</li><li>**declined** - token invalidated.</li><li>**completed** - SSO token received.</li></ul>                                                                                     | `input.data.microsoftSsoPermissionRequest`                        |
+    | Microsoft:SSO Token          | User Input | The Microsoft Graph API SSO token can be used for Graph API calls.                                                                                                                                                                                                                    | `input.data.microsoftSsoToken`                                    |
+    | Mode                         | User Input | Displays the type of the message. For example, `Text only`.                                                                                                                                                                                                                           | `input.mode`                                                      |
+    | Session ID                   | User Input | Displays the unique session ID of your conversation.                                                                                                                                                                                                                                  | `input.sessionId`                                                 |
+    | State                        | User Input | Displays the state. For example, `default`.                                                                                                                                                                                                                                           | `input.state`                                                     |
+    | Text                         | User Input | Displays the text you edited in the text field of a Node.                                                                                                                                                                                                                             | `input.text`                                                      |
+    | Type                         | User Input | Displays the type. For example, `Statement`.                                                                                                                                                                                                                                          | `input.type`                                                      |
+    | Understood                   | User Input | Indicates `true`/`false`.                                                                                                                                                                                                                                                             | `input.understood`                                                |
+    | URL Token                    | User Input | The URL token of the Endpoint. The identifier after the last `/` in the Endpoint URL.                                                                                                                                                                                                 | `input.URLToken`                                                  |
+    | User ID                      | User Input | Displays the user ID.                                                                                                                                                                                                                                                                 | `input.userId`                                                    |
+    | VG: Caller Country           | User Input | Displays the caller's country.                                                                                                                                                                                                                                                        | `input.data.numberMetaData.country`                               |
+    | VG: Caller Country Code      | User Input | Displays the caller's country code.                                                                                                                                                                                                                                                   | `input.data.numberMetaData.countryCallingCode`                    |
+    | VG: Caller Number            | User Input | Displays the caller's number.                                                                                                                                                                                                                                                         | `input.data.numberMetaData.number`                                |
+    | VG: Caller Number Type       | User Input | Displays the caller's number type.                                                                                                                                                                                                                                                    | `input.data.numberMetaData.type`                                  |
+    | VG: Caller URL               | User Input | Displays the caller's URL.                                                                                                                                                                                                                                                            | `input.data.numberMetaData.url`                                   |
+    | xApp PIN Page URL            | User Input | Displays the PIN Page URL.                                                                                                                                                                                                                                                            | `input.apps.baseUrl`                                              |
+    | xApp Session PIN             | User Input | Displays the Session PIN.                                                                                                                                                                                                                                                             | `input.apps.session.pin`                                          |
+    | xApp Session URL             | User Input | Displays the Session URL.                                                                                                                                                                                                                                                             | `input.apps.url[]`                                                |
+    | Short-Term Memory            | Context    | Displays the short-term memory of the conversation, as defined in the [AI Agent Node settings](node-reference/ai/ai-agent.md).                                                                                                                                                        | `context.shortTermMemory`                                         |
+    | Accepted GDPR                | Profile    | Indicates `true`/`false`; means accepted / not accepted.                                                                                                                                                                                                                              | `profile.accepted_gdpr`                                           |
+    | Age                          | Profile    | Displays the customer's age.                                                                                                                                                                                                                                                          | `profile.age`                                                     |
+    | Birthday                     | Profile    | Displays the customer's birthday.                                                                                                                                                                                                                                                     | `profile.birthday`                                                |
+    | Customer Number              | Profile    | Displays the customer number.                                                                                                                                                                                                                                                         | `profile.customerNumber`                                          |
+    | Email                        | Profile    | Displays the customer's email address.                                                                                                                                                                                                                                                | `profile.email`                                                   |
+    | First Name                   | Profile    | Displays the customer's first name.                                                                                                                                                                                                                                                   | `profile.firstname`                                               |
+    | Gender                       | Profile    | Displays the customer's gender.                                                                                                                                                                                                                                                       | `profile.gender`                                                  |
+    | Goals                        | Profile    | Displays the defined goals.                                                                                                                                                                                                                                                           | `profile.goals`                                                   |
+    | Last Name                    | Profile    | Displays the customer's last name.                                                                                                                                                                                                                                                    | `profile.lastname`                                                |
+    | Location                     | Profile    | Displays the customer's location.                                                                                                                                                                                                                                                     | `profile.location`                                                |
+    | Prevent Data Collection      | Profile    | Indicates, if available, `true`/`false`; shows whether data collection is active or not.                                                                                                                                                                                              | `profile.prevent_data_collection`                                 |
+    | Profile Picture              | Profile    | Contains the URL to a profile picture.                                                                                                                                                                                                                                                | `profile.profilepic`                                              |
+
+### Create and Use Tokens in the Node Editor
+
+By clicking ![token](../../_assets/icons/token.svg) in a text field, you open the Token list. You can search for a Token in the search field at the top or scroll through the Token types. To create a Token, click ![plus-transparent](../../_assets/icons/plus-transparent.svg).
+
+### Create Tokens from JSON Editors
+
+To create a Token from a JSON editor, right-click a CognigyScript expression and select **Create Token from JSON Path**. The selected CognigyScript expression is added to the **Script** field. If you highlight any code snippet and create a Token from the JSON path, the highlighted code is added to the **Name** field.
+
+## Example
+
+The default Token named **Text** represents `{{"{{input.text}}"}}`. The following image shows the **Text** Token in a Node and the corresponding CognigyScript expression after it:
+
+<figure>
+  <img class="image-center" src="../../../_assets/ai/build/tokens/token-example.png" width="70%" />
+</figure>

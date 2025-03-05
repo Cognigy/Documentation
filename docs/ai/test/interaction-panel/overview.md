@@ -109,7 +109,7 @@ Alternatively,
 use the ![record-audio](../../../_assets/icons/record-audio.svg) (**microphone**) button
 to activate your device's microphone and record voice input.
 
-Messages can include attached data. You can simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. To activate the **Data Input** field, go to the **Settings** tab and enable the **Show data input** toggle. Any message data sent to Cognigy.AI is accessible via [CognigyScript](../../build/cognigy-script.md) using the expression `{{ " {{input.data}}" }}`.
+Messages can include attached data. You can simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. To activate the **Data Input** field, go to the **Settings** tab and enable the **Show data input** toggle. Any message data sent to Cognigy.AI is accessible via [CognigyScript](../../build/cognigyscript.md) using the expression `{{ " {{input.data}}" }}`.
 
 In **Chat** mode, you can use additional settings:
 
@@ -213,7 +213,7 @@ The **Info** tab menu includes the following sections:
 
 Cognigy.AI objects have a different life span depending on their type.
 For more information,
-refer to [Cognigy Objects Life Span](../../build/cognigy-script.md#life-span-of-cognigy-objects).
+refer to [Cognigy Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects).
 
 ### Input
 
@@ -373,6 +373,6 @@ and the Interaction Panel automatically switches to Flow B as soon as it's opene
 
 ## More Information
 
-- [Cognigy Script and Objects Life Span](../../build/cognigy-script.md#life-span-of-cognigy-objects)
+- [Cognigy Script and Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects)
 - [Testing your AI Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
 - [Voice Gateway Parameter Details](../../build/node-reference/voice/voice-gateway/parameter-details.md)

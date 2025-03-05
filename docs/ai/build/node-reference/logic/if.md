@@ -21,7 +21,7 @@ This Node is used to execute either one or another part of a [Flow](../../../bui
 ## Creating a Condition
 
 !!! note "Direct CognigyScript"
-    In the condition field, direct [CognigyScript](../../cognigy-script.md) should be used. This means that you don't have to use `{{ " {{ }}" }}`. Therefore, `input.slots.city` is all that is required. This will evaluate to `true`, if an Input Keyphrase with the tag `city` was found.
+    In the condition field, direct [CognigyScript](../../cognigyscript.md) should be used. This means that you don't have to use `{{ " {{ }}" }}`. Therefore, `input.slots.city` is all that is required. This will evaluate to `true`, if an Input Keyphrase with the tag `city` was found.
 
 ## Rule Editor
 

@@ -184,7 +184,7 @@ Repeats a question if a user gives an invalid answer. By default, this setting i
 
 ### Reprompt Condition
 
-Optionally, you can add a [CognigyScript](../../cognigy-script.md) condition to determine whether a reprompt message is shown.
+Optionally, you can add a [CognigyScript](../../cognigyscript.md) condition to determine whether a reprompt message is shown.
 
 ### Skip on Intent
 
@@ -280,7 +280,7 @@ When enabled, this setting will skip the Question if the answer is already provi
 
 ### Additional Validation
 
-A [CognigyScript](../../cognigy-script.md) condition which must return `true` in order for the answer to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
+A [CognigyScript](../../cognigyscript.md) condition which must return `true` in order for the answer to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
 
 ### Result Location
 

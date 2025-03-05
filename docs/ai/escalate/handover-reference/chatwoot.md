@@ -63,7 +63,7 @@ To do this, follow these steps:
 
 1. In the Flow editor, add a **Handover to Agent** Node if you did not do it before.
 2. In the Node editor of the **Handover to Agent** Node, go to the **Chatwoot settings** section. 
-3. In the **Chatwoot Inbox Id** field, specify the Inbox ID.  You can use [CognigyScript](../../build/cognigy-script.md) to dynamically decide which Inbox should be used for the handover request.
+3. In the **Chatwoot Inbox Id** field, specify the Inbox ID.  You can use [CognigyScript](../../build/cognigyscript.md) to dynamically decide which Inbox should be used for the handover request.
 
 #### Connect your Endpoint to Chatwoot
 

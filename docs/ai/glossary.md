@@ -75,7 +75,7 @@ For more information, choose a [product line](../index.md) and explore all featu
 
 _**CognigyScript**_
 : A scripting language developed for Cognigy.AI that serves as a superset of JavaScript. CognigyScript allows users to access and manipulate the Input and Context objects within the text and JSON data during the conversation flow with the AI Agent.
-For more information, read the [CognigyScript](build/cognigy-script.md) documentation.
+For more information, read the [CognigyScript](build/cognigyscript.md) documentation.
 
 _**Connections**_
 : A way to securely store and manage credentials for integrating external services or APIs with the platform. They allow AI Agents to access and interact with external systems, such as databases, APIs, or third-party services, while ensuring sensitive information, such as API keys or access tokens, is securely encrypted.
@@ -144,7 +144,7 @@ For more information, read the [Inbox](../live-agent/settings/inboxes.md) docume
 _**Input (Object)**_
 : A short-term JSON data object generated each time a message is sent to Cognigy.AI.
 The Input Object contains general information about the message, such as the time it was received and the channel from which it was sent. It also includes specific results from the NLU intent mapping process, such as the selected Intent, identified Slots, and other useful information.
-The Input Object is passed to the Flow to determine the next action. You can find more information about the input's lifespan on the [CognigyScript](build/cognigy-script.md) page.
+The Input Object is passed to the Flow to determine the next action. You can find more information about the input's lifespan on the [CognigyScript](build/cognigyscript.md) page.
 For more information, read the [Input](test/interaction-panel/input.md) documentation.
 
 _**Insights**_

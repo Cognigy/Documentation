@@ -31,7 +31,7 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 ## Triggering the External long-running process
 
-Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object](../../test/interaction-panel/input.md) and can therefore easily be accessed with [CognigyScript](../../build/cognigy-script.md) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject.md) to get more information about /inject and /notify.
+Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object](../../test/interaction-panel/input.md) and can therefore easily be accessed with [CognigyScript](../../build/cognigyscript.md) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject.md) to get more information about /inject and /notify.
 
 You can use the [HTTP Request-Node](../../build/node-reference/service/http-request.md) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 

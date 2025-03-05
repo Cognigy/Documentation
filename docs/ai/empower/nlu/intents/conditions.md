@@ -5,11 +5,11 @@
 ---
 # Intent Conditions
 
-_Intent Conditions_ allow you to disable and enable Intents dynamically. The Intent Conditions represent a dynamic [State](../../../test/interaction-panel/state.md) defined with [CognigyScript](../../../build/cognigy-script.md) or JavaScript.
+_Intent Conditions_ allow you to disable and enable Intents dynamically. The Intent Conditions represent a dynamic [State](../../../test/interaction-panel/state.md) defined with [CognigyScript](../../../build/cognigyscript.md) or JavaScript.
 
 ## Setting the Intent Condition
 
-You can set an Intent Condition with [CognigyScript](../../../build/cognigy-script.md) that evaluates to `true` or `false`. The AI Agent can detect the Intent only if the Intent Condition evaluates to `true`. If you don't set any Intent Condition, the AI Agent can always detect the Intent. As best practice, wrap the entire condition in an `exists` operator (`!!()`):
+You can set an Intent Condition with [CognigyScript](../../../build/cognigyscript.md) that evaluates to `true` or `false`. The AI Agent can detect the Intent only if the Intent Condition evaluates to `true`. If you don't set any Intent Condition, the AI Agent can always detect the Intent. As best practice, wrap the entire condition in an `exists` operator (`!!()`):
 
 ```js
 !!(input.slots.city[0].keyphrase === "Düsseldorf")

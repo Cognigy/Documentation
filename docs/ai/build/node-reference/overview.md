@@ -75,7 +75,7 @@ This Node can be used to jump between Flows or between Nodes. If the Go To Node 
 ### [If](logic/if.md)
 
 This Node evaluates a statement, and depending on the outcome, the Then or Else child Nodes are triggered.
-Conditions can be created using [CognigyScript](../cognigy-script.md) or using the built-in [Token System](../tokens.md).
+Conditions can be created using [CognigyScript](../cognigyscript.md) or using the built-in [Token System](../tokens.md).
 
 ### [Interval](logic/interval.md)
 

@@ -160,7 +160,7 @@ docs/ai/build/extensions.md	2024-12-09 tmccaughey
 docs/ai/build/nodes/node-search.md	2024-05-16 Benjamin Mayr
 docs/ai/build/nodes/overview.md	2024-08-14 martyna korzynek
 docs/ai/build/nodes/channels.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/cognigy-script.md	2024-10-26 Elena Baskakova
+docs/ai/build/cognigyscript.md	2024-10-26 Elena Baskakova
 docs/ai/build/projects.md	2025-01-15 Elena Baskakova
 docs/ai/build/functions.md	2024-12-10 Tom McCaughey
 docs/ai/build/packages.md	2025-01-15 Elena Baskakova

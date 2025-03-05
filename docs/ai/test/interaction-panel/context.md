@@ -9,13 +9,13 @@ The Context is a JSON object which stores persistent information.
 
 Every contact that connects to Cognigy.AI has their own Context which lives throughout the lifetime of the session. When a contact disconnects from Cognigy.AI, the Context is persisted in the database and retrieved upon reconnection.
 
-The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript](../../build/cognigy-script.md) page.
+The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript](../../build/cognigyscript.md) page.
 
 ## Accessing the Context object
 
 
 
-Flow nodes can dynamically access Context properties via [Tokens](../../build/tokens.md) or [CognigyScript](../../build/cognigy-script.md) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access Context properties via [Tokens](../../build/tokens.md) or [CognigyScript](../../build/cognigyscript.md) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
 
 !!! note "Copy JSON path from the Context Object"
     You can copy the exact JSON path you need to reference a certain value in the Context object by right-clicking it and selecting "Copy JSON Path" from the context menu. 

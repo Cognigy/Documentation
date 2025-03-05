@@ -42,7 +42,7 @@ Before configuration,
 
 #### Text
 
-The **Text** output type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript](../../cognigy-script.md) and [Tokens](../../tokens.md) that can be added by clicking ![token](../../../../_assets/icons/token.svg) at the end of each field.
+The **Text** output type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript](../../cognigyscript.md) and [Tokens](../../tokens.md) that can be added by clicking ![token](../../../../_assets/icons/token.svg) at the end of each field.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/text.png" width="100%" />

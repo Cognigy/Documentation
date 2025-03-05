@@ -75,7 +75,7 @@ Define the payload of your `POST`, `PATCH`, or `PUT` request.
 
 Select one of the following payload formats:
 
-- **JSON** — consists of key-value pairs. When using a JSON payload to access Cognigy.AI objects such as Input, Context, or Profile, refer to [CognigyScript](../../cognigy-script.md#json-arguments) for an example payload.
+- **JSON** — consists of key-value pairs. When using a JSON payload to access Cognigy.AI objects such as Input, Context, or Profile, refer to [CognigyScript](../../cognigyscript.md#json-arguments) for an example payload.
 - **Text** — consists of unstructured text or basic key-value pairs. For example, `username=JohnDoe&password=12345`.
 - **Form-Data** — consists of key-value pairs. It is used for submitting form data, including file uploads. Each key-value pair is sent as a separate part of the request. The key-value pairs must have the text type. Data is not supported.
 
@@ -156,7 +156,7 @@ If you select an authorization type other than **No Auth**, additional fields re
 Define the context key where you want to store the response from the executed HTTP request. 
 This field is required and needs to have a valid value.
 
-After the HTTP request is successfully executed, you can access the response payload by executing the following [CognigyScript](../../cognigy-script.md):
+After the HTTP request is successfully executed, you can access the response payload by executing the following [CognigyScript](../../cognigyscript.md):
 
 ```txt
 {{ " {{ context.<yourContextStore> }}" }}

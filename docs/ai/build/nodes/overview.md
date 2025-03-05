@@ -132,7 +132,7 @@ Providing a valid Flow name and clicking the *Create* button in the dialog will 
 
 ## Dynamic Content in Nodes
 
-Inside most Cognigy Flow Nodes, you can use what we call [CognigyScript](../cognigy-script.md). In most text fields, for example, you can use CognigyScript notation <span>{</span>{ }<span>}</span> to insert dynamic content from the [Input](../../test/interaction-panel/input.md), [Context](../../test/interaction-panel/context.md) and [Profile](../../test/interaction-panel/profile.md) objects.
+Inside most Cognigy Flow Nodes, you can use what we call [CognigyScript](../cognigyscript.md). In most text fields, for example, you can use CognigyScript notation <span>{</span>{ }<span>}</span> to insert dynamic content from the [Input](../../test/interaction-panel/input.md), [Context](../../test/interaction-panel/context.md) and [Profile](../../test/interaction-panel/profile.md) objects.
 
 See below for an example.
 
@@ -142,5 +142,5 @@ See below for an example.
 
 If the user, for example, says "hi there", Cognigy would parse the CognigyScript at runtime and change the text above to "You said HI THERE".
 
-CognigyScript is essentially JavaScript with access to our input, context and profile objects built in, so you can do all the things you can do in JavaScript, like the .toUpperCase() function above. See our [CognigyScript](../cognigy-script.md) page for more information.
+CognigyScript is essentially JavaScript with access to our input, context and profile objects built in, so you can do all the things you can do in JavaScript, like the .toUpperCase() function above. See our [CognigyScript](../cognigyscript.md) page for more information.
 
