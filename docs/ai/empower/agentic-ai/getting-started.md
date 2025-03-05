@@ -33,7 +33,7 @@ To create your first LLM-powered AI Agent, follow these steps:
 
 1. In the **General Settings** step, fill in the following fields:
     - **Name** — enter a name for your AI Agent. This name will be visible to end users when the AI Agent greets them in the chat or when one AI Agent transfers the conversation to another. For example, `Hello, my name is John. How can I help you?`
-    - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example: `John works at ACME and is highly skilled at making customers feel comfortable.`
+    - **Description** — enter a description of the AI Agent that shapes its behavior and enhances its ability to understand the desired communication style. For example, `John works at ACME and is highly skilled at making customers feel comfortable.`
 2. In the **Avatar** section, select an avatar of your choice.
 3. In the **Speaking Style** step, configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
     - **Concise/Comprehensive** — adjust the slider to the left for brief responses.

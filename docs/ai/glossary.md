@@ -46,11 +46,11 @@ However, at Cognigy, we prefer the term "AI Agent" instead of "bot" to refer to 
 
 _**Chunk**_
 : A unit of knowledge that is extracted from a Knowledge Source. Chunks are small, self-contained units of information that the Knowledge AI system searches through and accesses in order to answer user questions.
-For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#chunk) documentation.
+For more information, read the [Knowledge AI](empower/knowledge-ai/knowledge-chunk/knowledge-chunk.md) documentation.
 
 _**Chunk Editor**_
 : A tool that helps you interact with and manage [Chunks](#c). The Editor provides a user-friendly interface that enables you to manipulate the content within each chunk. Users can modify the text, add new information, delete sections, or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
-For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#chunk-editor) documentation.
+For more information, read the [Knowledge AI](empower/knowledge-ai/knowledge-chunk/knowledge-chunk-editor.md) documentation.
 
 _**Channel**_
 : A Cognigy component through which users can interact with the AI Agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the AI Agent through various interfaces. Cognigy Channels include Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
@@ -176,11 +176,11 @@ For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md) 
 
 _**Knowledge Store**_
 : A container that contains and organizes multiple Knowledge Sources and can be searched from the Flow. It provides a centralized and structured environment for managing and categorizing various sources of knowledge. The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
-For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#knowledge-store) documentation.
+For more information, read the [Knowledge AI](empower/knowledge-ai/knowledge-store.md) documentation.
 
 _**Knowledge Source**_
 : Coherent textual information unit that is loaded into the Knowledge AI solution and is part of a searchable Knowledge Store. Various types of Knowledge Sources are supported in Cognigy, for example files in PDF, docx, CTXT format or web pages.
-For more information, read the [Knowledge AI](empower/knowledge-ai/overview.md#knowledge-source) documentation.
+For more information, read the [Knowledge AI](empower/knowledge-ai/knowledge-source/knowledge-source.md) documentation.
 
 ## L
 
@@ -292,7 +292,7 @@ For more information, read the [Get Help & Report Problems](../help/get-help.md)
 ## T
 
 _**Tasks**_
-: Certain activities, like training Intents, importing Snapshots, or creating a new Project, generate so-called [Tasks](build/projects.md#tasks). An asynchronous process that can run in the background and is tied to the Cognigy notification system.
+: Certain activities, like training Intents, importing Snapshots, or creating a new Project, generate so-called [Tasks](build/projects.md#task-panel). An asynchronous process that can run in the background and is tied to the Cognigy notification system.
 
 _**Tenant**_
 : An independent instance within a multi-tenant environment, logically isolated for a group of users or licenses. They share common access with specific privileges to Cognigy SaaS and Cognigy Private Cloud SaaS.

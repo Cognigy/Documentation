@@ -29,7 +29,7 @@ The following image shows an overview of the Flow editor:
 </figure>
 
 ??? info "1. Top Bar"
-    Besides the controls from the [Project Page](../user-interface/project-page.md) top bar, the Flow editor includes the following elements from left to right:
+    Besides the controls from the [Project Page](../../overview/user-interface/project-page.md) top bar, the Flow editor includes the following elements from left to right:
 
     | UI&nbsp;Element | Type | Description                                                                                                                                                                                                                                                                                                                                         |
     |-----------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

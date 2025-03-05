@@ -238,16 +238,26 @@ nav:
       - Knowledge AI:
         - ai/empower/knowledge-ai/overview.md
         - ai/empower/knowledge-ai/activate.md
-        - Text Formats:
-          - ai/empower/knowledge-ai/ctxt.md
-          - ai/empower/knowledge-ai/pdf.md
-          - ai/empower/knowledge-ai/web-page.md
-        - Text Extraction:
-          - ai/empower/knowledge-ai/text-extraction/overview.md
-          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-basic-parser.md
-          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-advanced-parser.md
-          - ai/empower/knowledge-ai/text-extraction/text-extraction-with-azure-ai.md
-        - ai/empower/knowledge-ai/source-tags.md
+        - ai/empower/knowledge-ai/getting-started.md
+        - ai/empower/knowledge-ai/knowledge-store.md
+        - Knowledge Source:
+          - ai/empower/knowledge-ai/knowledge-source/knowledge-source.md
+          - Text Formats:
+            - ai/empower/knowledge-ai/knowledge-source/text-formats/ctxt.md
+            - ai/empower/knowledge-ai/knowledge-source/text-formats/pdf.md
+            - ai/empower/knowledge-ai/knowledge-source/text-formats/web-page.md
+          - Text Extraction:
+            - ai/empower/knowledge-ai/knowledge-source/text-extraction/overview.md
+            - ai/empower/knowledge-ai/knowledge-source/text-extraction/basic-parser.md
+            - ai/empower/knowledge-ai/knowledge-source/text-extraction/advanced-parser.md
+            - ai/empower/knowledge-ai/knowledge-source/text-extraction/azure-ai.md
+          - ai/empower/knowledge-ai/knowledge-source/knowledge-source-tags.md
+        - Knowledge Chunk:
+          - ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk.md
+          - ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk-editor.md
+        - Knowledge Search and Extraction:
+          - ai/empower/knowledge-ai/knowledge-search-and-extraction/search-extract-output.md
+          - ai/empower/knowledge-ai/knowledge-search-and-extraction/ai-copilot-knowledge.md
         - ai/empower/knowledge-ai/distance-value-change-after-migration.md
 
     - 🧪 Test and Debug:
@@ -770,6 +780,10 @@ theme:
   font:
     text: Open Sans
   
+  icon:
+    admonition:
+      info: material/format-align-justify
+
   icon:
     admonition:
       info: material/format-align-justify

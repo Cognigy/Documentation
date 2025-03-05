@@ -1,2 +1,2 @@
 !!! warning
-    Supported formats: `.pdf`, `.pptx`, and `.tiff`.
+    Supported formats: PDF, PPTX, and TIFF files.

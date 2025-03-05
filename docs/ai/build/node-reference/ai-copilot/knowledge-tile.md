@@ -69,7 +69,7 @@ To use the Copilot: Knowledge AI widget, configure the following Flow:
 
 1. Add an **If** Node. 
 2. Open the **If** Node editor. 
-3. In the **Condition** field, specIfy the following condition: `input.data._cognigy._agentAssist.payload.tileId === "tile-id"`, where `tile-id` is a Knowledge tile ID that you created in the AI Copilot configuration via API. 
+3. In the **Condition** field, specify the following condition: `input.data._cognigy._agentAssist.payload.tileId === "tile-id"`, where `tile-id` is a Knowledge tile ID that you created in the AI Copilot configuration via API.
 4. In the **Knowledge Store** field, select the source that you want to use for searching knowledge. 
 5. Below the **Then** child Node, place the **Copilot: Knowledge Tile** Node. 
 6. Below the **Else** child Node, add the other Copilot tile Nodes. This step is necessary to ensure that the content of these Nodes does not get updated during the operation of the **Copilot: Knowledge Tile** Node.

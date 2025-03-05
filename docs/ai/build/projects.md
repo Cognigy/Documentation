@@ -14,7 +14,7 @@ tags:
 
 _Projects_ are collections of Conversational AI resources with which you can create AI Agents. AI Agents are bots designed to tackle one use case and handle multiple user intents. You can deploy AI Agents on a wide range of channels within a Project. Multiple team members can work on a Project at the same time.
 
-Projects include [Flows](../build/flows.md), [Endpoints](../deploy/endpoints/overview.md), [Connections](connections.md), and many other resources you need to build an AI Agent.
+Projects include [Flows](../build/flows/overview.md), [Endpoints](../deploy/endpoints/overview.md), [Connections](connections.md), and many other resources you need to build an AI Agent.
 
 ## Working with Projects
 

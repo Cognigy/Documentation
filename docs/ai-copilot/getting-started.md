@@ -23,7 +23,7 @@ To get started with the service:
 6. In the AI Copilot Flow, add the [Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) to modify and preview your grid from within the Flow. 
 7. Add your desired [AI Copilot Flow Nodes](../ai/build/node-reference/ai-copilot/overview.md). For example, a [Profile Node](../ai/build/node-reference/ai-copilot/identity-tile.md) with your user's most important information, an AI-powered [Sentiment Node](../ai/build/node-reference/ai-copilot/sentiment-tile.md) displaying the user's current attitude, or a [Transcript Node](../ai/build/node-reference/ai-copilot/transcript-tile.md) with the transcribed content of the conversation.
 8. Add the content that will be displayed within the AI Copilot workspace.
-9. Make sure that the Title ID's in the Nodes correspond to the titles in Copilot Grid Configuration in the Set Grid Node.
+9. Make sure that the Tile IDs in the Nodes correspond to the tiles in Copilot Grid Configuration in the Set Grid Node.
 
 Check that you have two Flows: the Main Flow and the AI Copilot Flow.
 
