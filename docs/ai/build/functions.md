@@ -1,147 +1,121 @@
 ---
 title: "Functions"
 slug: "functions"
-description: "Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API."
+description: "Cognigy.AI Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API."
 hidden: false
+tags: 
+    - Functions
+    - JavaScript
+    - API Integration
 ---
 
 # Functions
 
-Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API.
+_Functions_ are JavaScript functions that you can define and execute in Cognigy.AI. You can use Functions to assist with long-running and asynchronous processes, such as interacting with third-party systems through HTTP API.
 
-Functions are independent of Flows but can be triggered from a Flow and can also use the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs to send their results back into a Flow.
-
-When running a Function, you can pass additional parameters, which are then available in the Function Code.
-
-You can start using Functions by navigating to **Build > Functions** in the left-side menu.
-<br>
-
-## Limitations
-
-The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes.
-If you have an on-premises environment, you can change this limit.
-
-## Configuration and Monitoring
-
-The **Function Editor** lets you define a Code snippet in JavaScript or TypeScript language.
+The execution of Functions is independent of Flows, but you can trigger them from a Flow. You can also use the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs in a Function to send results back into a Flow.
 
 You can access the `parameters` and `api` objects from the Function's arguments.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/functions/Function_editor.png" width="100%" />
-</figure>
+## Limitations
 
-## Interacting with Third-Party Systems
+- The maximum run-time of a Function instance is 15 minutes. For on-premises installations, you can change this limit via the `FUNCTION_EXECUTION_MAX_EXECUTION_TIME_IN_MINUTES` environment variable in the `values.yaml` file.
+- You can define a Function only in JavaScript or TypeScript.
 
-You can use HTTP requests to interact with third-party systems.
+## Working with Functions
 
-### GET Request
+=== "GUI"
+    You can view, create, edit, and delete Functions in **Build > Functions**. To define, trigger, and monitor a Function, use the **Code** and **Instances** tabs.
 
-```JavaScript
-const response = await api.httpRequest({
-    method: "get",
-    url: "https://example.com/api/v2",
-    headers: {
-        "Accept": "application/json"
+    Also, you can trigger a Function from the Flow editor by using the [Trigger Function Node](node-reference/service/trigger-function.md).
+
+=== "API"
+    You can view, create, edit, and delete Functions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Functions-v2.0). Using this API, you can also monitor, trigger, and stop a Function instance.
+
+## Examples
+
+??? info "Interact with Third-Party Systems"
+
+    You can use HTTP requests to interact with third-party systems.
+
+    #### GET Request
+
+    ```JavaScript
+    export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+        const response = await api.httpRequest({
+            method: "get",
+            url: "https://example.com/api/v2",
+            headers: {
+                "Accept": "application/json"
+            }
+        });
     }
-});
-```
+    ```
 
-### POST Request
+    #### POST Request
 
-```JavaScript
-export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+    ```JavaScript
+    export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+        const response = await api.httpRequest({
+            method: "post",
+            url: "https://api.github.com/repos/octocat/Hello-World/issues",
+            headers: {
+                "Accept": "application/vnd.github.v3+json",
+                "Authorization": "Bearer <your-github-token>"
+            },
+            data: {
+                "title": "Found a bug",
+                "body": "I'm having a problem with this.",
+                "labels": ["bug"]
+            }
+        });
+    }
+    ```
 
-    /**
-     * The API can be used in your Function code
-     * in order to perform actions with third-party systems as well
-     * as the current system via its RESTful API.
-     * 
-     * This is a POST request to the Cognigy API.
-     * For this demo, we use a function call to dynamically create a Flow.
-     */
-    const response = await api.httpRequest({
-        method: "post",
-        url: "https://api-app.cognigy.ai/new/v2.0/flows?api_key=<your-api-key>",
-        headers: {
-            "Accept": "application/json"
-        },
-        data: {
-            "name": "A new flow",
-            "description": "A brief description",
-            "projectId": "<your-project-id>"
-        }
-    });
-}
-```
-## Interacting with Flows
+??? info "Interact with Flows"
 
-You can use Functions to interact with Flows using the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs.
+    Functions can interact with Flows through the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs.
 
-The following examples assume that you pass `userId` and `sessionId` through the Function's Parameters.
+    The following examples assume that you pass `userId` and `sessionId` through the Function's parameters.
 
-````JavaScript
-const { userId, sessionId } = parameters;
+    #### Injecting Text into a Flow
 
-api.inject({
-    userId,
-    sessionId,
-    text: "This text was injected through a Function"
-});
-````
+    ```JavaScript
+    export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+        const { userId, sessionId } = parameters;
 
-**Performing a "Notify" call**
+        api.inject({
+            userId,
+            sessionId,
+            text: "This text was injected through a Function"
+        });
+    }
+    ```
 
-````JavaScript
-const { userId, sessionId } = parameters;
+    #### Sending a Notification
 
-api.notify({
-    userId,
-    sessionId,
-    text: "This text was injected through a Function"
-});
-````
+    ```JavaScript
+    export default async ({ parameters, api }: IFunctionExecutionArguments) => {
+        const { userId, sessionId } = parameters;
 
-### Monitoring
+        api.notify({
+            userId,
+            sessionId,
+            text: "This text was injected through a Function"
+        });
+    }
+    ```
 
-By switching to the **Instances** tab, you can see an execution history for the currently edited Function. Each execution will list its current execution status, the trigger source, the start time and the finish time.
+Find more Function examples in the Cognigy's [Function](https://github.com/Cognigy/Functions?tab=readme-ov-file) repository.
 
-By hovering an item, you can also see the parameters that were provided for this individual execution.
+## Use Case
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/functions/Function_instances.png" width="100%" />
-</figure>
-
-## Triggering a Function
-
-Cognigy Functions can be triggered in three different ways:
-
-- [Using the UI](#using-the-ui)
-- [Using the REST API](#using-the-rest-api)
-- [Using a Node](#using-a-node)
-
-### Using the UI
-
-On the **Function Editor** page, click the **Run** button in the upper-left corner of the page.
-This action will run the Function without parameters.
-
-To run a Function with parameters, click the **Arrow** button next to the **Run** button.
-This action will open a dialog, where you can define additional parameters as a JSON object.
-
-### Using the REST API
-
-You can trigger a Function by using the REST API.
-For more information, read the [OpenAPI](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger) documentation.
-
-### Using a Node
-
-To trigger a Function from a Flow, use the [Trigger Function](node-reference/service/trigger-function.md) Node.
+Functions can help you handle HTTP requests that exceed the timeout in the [HTTP Request Node](../../ai/build/node-reference/service/http-request.md). The HTTP Request Node allows direct access to API responses from the Flow, which is not possible with Functions. However, Functions allow you to work with slower APIs or long-running processes.
 
 ## More Information
 
 - [Inject & Notify](../deploy/endpoints/inject-and-notify.md)
-- [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)
-- [Trigger Function](node-reference/service/trigger-function.md))
+- [Trigger Function Node](node-reference/service/trigger-function.md)
 
 <!--
 
