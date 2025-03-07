@@ -105,7 +105,7 @@ To enable recording calls at an application level, follow these steps:
 6. Click **Test** to verify your connection. 
 7. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
 8. Click the application to edit. 
-9. Scroll down to the **Call recording configuration** section, activate the **Record all calls** setting.
+9. Scroll down to the **Call recording configuration** section, activate the **Record all calls** setting. This setting is hidden if you've enabled **Record all calls for this account** at the [account level](accounts.md).
 10. Click **Save**.
 
 All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
