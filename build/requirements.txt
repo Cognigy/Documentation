@@ -5,7 +5,7 @@ click==8.1.7
 colorama==0.4.6
 ghp-import==2.1.0
 idna==3.7
-Jinja2==3.1.5
+Jinja2==3.1.6
 Markdown===3.3.7
 MarkupSafe==2.1.3
 mdx-include==1.4.1
@@ -28,10 +28,10 @@ PyYAML==6.0.1
 pyyaml_env_tag==0.1
 regex==2023.10.3
 requests==2.32.2
-setuptools==70.0.0
+setuptools==75.8.2
 six==1.16.0
 typer==0.4.0
 urllib3==2.2.2
 watchdog==3.0.0
 wheel==0.41.2
-zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.21.0
