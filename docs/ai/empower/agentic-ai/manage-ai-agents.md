@@ -21,8 +21,12 @@ You can create an AI Agent from scratch or hire an AI Agent from the Job Market,
 
 To create an AI Agent, select one of the following options:
 
-=== "Create from Scratch"
+- [Create from scratch](#create-from-scratch)
+- [Hire from the Job Market](#hire-from-the-job-market)
 
+### Create from Scratch
+
+=== "GUI"
     1. In the left-side menu of the **Project** page, select **Build > AI Agents**.
     2. Click **Create AI Agent** if you are creating an AI Agent for the first time, or click **+ New AI Agent** on the **AI Agents** page if you have created at least one AI Agent before.
     3. In the **General Settings** step, fill in the following fields:
@@ -69,20 +73,20 @@ To create an AI Agent, select one of the following options:
         - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
         - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
 
-=== "Hire from Job Market"
+=== "API"
+     You can create an Agent from scratch using the [Cognigy.AI API POST beta/aiagents](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents) request.
 
+### Hire from the Job Market
+
+=== "GUI"
     1. In the left-side menu on the **Project** page, select **Build > AI Agents**.
     2. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page displays a list of available AI Agents to hire.
     3. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
     4. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
     5. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
 
-## Edit an AI Agent
-
-To edit an AI Agent, follow these steps:
-
-1. On the **AI Agents** page, select the AI Agent you want to edit by clicking on its card.
-2. Make the desired changes and click **Save**.
+=== "API"
+    You can hire an Agent from the Job Market using the [Cognigy.AI API POST beta/aiagents/hire](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents/hire) request.
 
 ## Combine Custom and Hired AI Agents
 
@@ -100,25 +104,16 @@ To combine custom and hired AI Agents, follow these steps:
 5. In the left-side menu of the **Project** page, select **Build > Flows**.
 6. Select the Flow that belongs to the hired AI Agent. In the Flow, you will see an AI Agent Node with your custom AI Agent persona.
 
-## Copy the AI Agent Reference ID
+## Other Operations
 
-Reference IDs can be helpful if you want to edit AI Agents [via the API](https://api-trial.cognigy.ai/openapi#get-/beta/aiagents).
+=== "GUI"
+     You can view and delete AI Agents, and copy their Reference ID in **Build > AI Agents**.
 
-To copy the Reference ID of an AI Agent, follow these steps:
+=== "API"
+     You can create, edit, and delete AI Agents using [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/beta/aiagents).
 
-1. On the **AI Agents** page, hover your cursor over the card of the AI Agent for which you want to copy the reference ID.
-2. Click the ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) icon and select **Copy Reference ID**. The ID will be copied to the clipboard.
-
-## Delete an AI Agent
-
-Before deleting an AI Agent, make sure the AI Agent isn't used in any Flows.
-Otherwise, Nodes linked to the deleted AI Agent may cause the Flow to fail.
-
-To delete an AI Agent, follow these steps:
-
-1. On the **AI Agents** page, hover your cursor over the card of the AI Agent you want to delete.
-2. Click the ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) icon and select **Delete**.
-3. Click **Confirm**.
+=== "CLI"
+     You can clone and edit AI Agents using [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI).
 
 ## More Information
 
