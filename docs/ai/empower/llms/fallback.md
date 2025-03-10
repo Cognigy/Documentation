@@ -3,6 +3,9 @@ title: "LLM Fallback (Beta)"
 slug: "llm-fallback"
 description: "LLM Fallback is a mechanism designed to maintain continuous service when a main model fails to respond or encounters an error."
 hidden: false
+tags:
+   - llms
+   - llm fallback
 ---
 
 # LLM Fallback (Beta)

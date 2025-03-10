@@ -3,6 +3,10 @@ title: "Anthropic"
 slug: "anthropic"
 description: "To start using an Anthropic LLM with Cognigy.AI features, add the LLM and apply it to the corresponding use case."
 hidden: false
+tags:
+  - llms
+  - Anthropic
+  - Anthropic models
 ---
 
 # Anthropic
@@ -14,28 +18,32 @@ To start using an Anthropic model with Cognigy.AI features, follow these steps:
 
 ## Add a Model
 
-To add a model provided by Anthropic to Cognigy.AI, follow these steps:
+You can add a model using one of the following interfaces:
 
-1. In the left-side menu of the Project, go to **Build > LLM**.
-2. Click **+New LLM**.
-3. In the **New LLM** window, select a model from the **Model Type** list.
-4. Add a unique name and description for your model.
-5. From the **Provider** list, select an LLM's provider:<br>
-    1. From the **Model** list, select a model presented in the list or add a custom model that is not listed. If you select **Custom Model**, configure the following fields:<br>
-        - **Model Type** — select **Chat** for models that support the Messages API, **Completion** for the Completions API, or **Embedding** for the Embeddings API. For more information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation.<br>
-        - **Model Name** — specify a name of the model that you want to use as a custom. To find model names, refer to the [Anthropic](https://docs.anthropic.com/claude/docs/models-overview) documentation.<br>
-    2. Click **Save**.<br>
-    3. Fill in the following fields:<br>
-        - **Connection name** — create a unique name for your connection.<br>
-        - **apiKey** — add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic.<br>
-    4. Click **Create**.<br>
+- [GUI](#add-a-model-via-gui)
+- [API](#add-a-model-via-api)
 
-6. To apply changes, click **Save**.
-7. To check if the connection was set up, click **Test**.
+### Add a Model via GUI
 
-When the model is added, you will see it in the list of models.
+You can add a model provided by Anthropic to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
 
-To apply this model for Cognigy.AI features, go to the settings by clicking **Manage LLM Features**.
+=== "Standard Model"
+
+    | Parameter | Description                                                                                                                      |
+    |-----------|----------------------------------------------------------------------------------------------------------------------------------|
+    | apiKey    | Add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic. |
+
+=== "Custom Model"
+
+    | Parameter  | Description                                                                                                                                                                                                                                                                                                     |
+    |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Model Type | Select **Chat** for models that support the Messages API, **Completion** for the Completions API, or **Embedding** for the Embeddings API. For more information, refer to the [Anthropic Model Comparison (API format)](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) documentation. |
+    | Model Name | Enter the name of the model that you want to use as a custom model. To find model names, refer to the [Anthropic](https://docs.anthropic.com/claude/docs/models-overview) documentation.                                                                                                                              |
+    | apiKey     | Add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic.                                                                                                                                                                                |
+
+Apply changes. Check if the connection was set up by clicking **Test**.
+
+{! _includes/ai/generative-ai/add-model-via-api.md !}
 
 ## Apply the Model
 

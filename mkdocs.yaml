@@ -229,7 +229,8 @@ nav:
             - ai/empower/llms/providers/microsoft-azure-openai.md
             - ai/empower/llms/providers/openai.md
             - ai/empower/llms/providers/anthropic.md
-            - ai/empower/llms/providers/google.md
+            - ai/empower/llms/providers/google-vertex-ai.md
+            - ai/empower/llms/providers/google-gemini.md
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
             - ai/empower/llms/providers/cognigy-nexus-llm.md
