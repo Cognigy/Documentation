@@ -32,7 +32,7 @@ Before using the Agentic AI feature, you need:
     - A primary model to control the AI Agent, selected from the following providers:
         - `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md).
         - `claude-3-opus`, `claude-3-haiku`, `claude-3-5-sonnet`, or `claude-3-7-sonnet` by [Anthropic](../llms/providers/anthropic.md).
-        - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google.md).
+        - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google-gemini.md).
         - `amazon.nova-lite-v1:0`, `amazon.nova-pro-v1:0`, `anthropic.claude-3-5-sonnet-20240620-v1:0` by [Amazon Bedrock](../llms/providers/amazon-bedrock.md). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
      - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
 

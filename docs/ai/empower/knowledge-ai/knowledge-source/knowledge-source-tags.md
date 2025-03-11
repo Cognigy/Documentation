@@ -30,7 +30,7 @@ Source Tags have the following benefits:
 ## Naming Guidelines
 
 - Include only lowercase and alpha-numerical (a-z, 0-9) characters, underscores, and hyphens.
-- You can include [CognigyScript](../../../build/cognigy-script.md) in Source Tag names. In this case, make sure the CognigyScript input is lowercase with the `.toLowerCase()` method, for example, `{{"{{input.text.toLowerCase()}}"}}`. Using CognigyScript as a Source Tag name allows your AI Agent to filter Knowledge Sources dynamically according to the user input.
+- You can include [CognigyScript](../../../build/cognigyscript.md) in Source Tag names. In this case, make sure the CognigyScript input is lowercase with the `.toLowerCase()` method, for example, `{{"{{input.text.toLowerCase()}}"}}`. Using CognigyScript as a Source Tag name allows your AI Agent to filter Knowledge Sources dynamically according to the user input.
 
 ## Working with Source Tags
 

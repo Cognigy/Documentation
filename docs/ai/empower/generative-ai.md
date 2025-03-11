@@ -31,7 +31,7 @@ Before using this feature, you need to create an account in one of the LLM Provi
 - [OpenAI](llms/providers/openai.md). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](llms/providers/microsoft-azure-openai.md). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](llms/providers/anthropic.md). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
-- [Google Vertex AI](llms/providers/google-vetex-ai.md) or [Google Gemini](llms/providers/google-gemini.md). You need to have a paid account or be a member of an organization that provides you access.
+- [Google Vertex AI](llms/providers/google-vertex-ai.md) or [Google Gemini](llms/providers/google-gemini.md). You need to have a paid account or be a member of an organization that provides you access.
 - [Aleph Alpha](llms/providers/aleph-alpha.md). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
 - [Amazon Bedrock](llms/providers/amazon-bedrock.md). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
 
@@ -99,7 +99,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
 ??? info "Generate Adaptive Cards"
 
-    LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
+    LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
 
 ## Run-Time Generative AI Features
 

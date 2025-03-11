@@ -14,7 +14,7 @@ from where the message was sent.
 More specific results from the NLU intent mapping process are also available, such as the **Intent** that was selected,
 the **Slots** that were identified and many other useful pieces of information.
 
-The input object is passed to the Project's [Flow](../../../ai/build/flows/overview.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/build/cognigyscript/overview.md) page.
+The input object is passed to the Project's [Flow](../../../ai/build/flows/overview.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/build/cognigyscript.md) page.
 
 !!! note "Intent Default Replies override flow logic"
     If an intent is configured with a default reply, this will override the AI Agent's flow logic and automatically be delivered as the response.

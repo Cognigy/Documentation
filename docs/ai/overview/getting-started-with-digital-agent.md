@@ -69,7 +69,7 @@ Now you can deploy the agent using the [Webchat v3](../../webchat/getting-starte
 
 ## What's Next?
 
-- Familiarize yourself with the core concepts of building AI Agents, such as [Projects](../build/projects.md), [Flows](../build/flows/overview.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigyscript/overview.md).
+- Familiarize yourself with the core concepts of building AI Agents, such as [Projects](../build/projects.md), [Flows](../build/flows/overview.md), [Nodes](../build/nodes/overview.md), and [Cognigy Script](../build/cognigyscript.md).
 - Enhance your agent's performance with AI features, such as [NLU](../empower/nlu/overview.md), [LLMs](../empower/llms/overview.md) and [Generative AI](../empower/generative-ai.md), as well as [Knowledge AI](../empower/knowledge-ai/overview.md).
 - Explore [test](../test/interaction-panel/overview.md) and [deploy](../deploy/endpoints/overview.md) features.
 - Connect your agent to the [contact center](../escalate/handovers.md).
