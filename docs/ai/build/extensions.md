@@ -10,180 +10,104 @@ tags:
 
 # Extensions
 
-_Extensions_ are a way of extending the Cognigy Flow editor with new custom Nodes. Extensions contain multiple Nodes that appear in the Flow Editor once they have been installed.
+_Extensions_ are Nodes for specific use cases that you can install from the Marketplace or develop yourself to extend your Flows' capabilities. You can use Extensions to:
 
-## Extension Marketplace
+- Integrate with third-party APIs.
+- Execute complex logic.
+- Perform long-running computations.
+- Create convenience Nodes using various NPM modules.
 
-A variety of pre-built Extensions can be installed with a single click from the Cognigy Extension Marketplace if configured.
+## Limitations
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/extensions/Marketplace.png" width="100%" />
-  <figcaption>Extension Marketplace</figcaption>
-</figure>
+- Extensions have a default 20-second timeout. You can change the timeout by doing the following:
+    - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md) to change the timeout.
+    - For on-premises installations, change the environment variable as described in the [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml).
 
-- Selecting an extension from the Marketplace section will reveal more information - similar to when selecting an already installed extension.
-- You can copy the URL and open it in another tab, also when reloading the page.
-- You can search for Extensions using the **Search** field.
-- You can uninstall installed Extensions.
+## Working with Extensions
 
-You may also browse available Marketplace Extensions online at the [Cognigy.AI Marketplace](https://www.cognigy.com/marketplace#/).
+=== "GUI"
+    In **Manage > Extensions**, you can install, update, and uninstall Extensions from the Marketplace or [custom Extensions](#custom-extensions). Also, you can [mark your custom Extensions as trusted](#extension-performance).
 
-## Develop a custom Extension
+    The Extension Marketplace is also available on [Cognigy's website](https://www.cognigy.com/marketplace#/).
 
-Cognigy allows anyone to extend the capabilities of Cognigy.AI by developing their own Extensions. Extensions are JavaScript or TypeScript Modules that can be exposed as Flow Nodes within Cognigy.AI. Extensions could be used for integrating with third-party APIs, for executing complex logic, for performing long-running computations or for creating convenience Nodes using various npm modules.
+=== "CLI"
+    You can pull Extensions using the [Cognigy.AI CLI](https://github.com/Cognigy/cognigy-cli).
 
-- Watch our [Cognigy Sessions Episode](https://support.cognigy.com/hc/en-us/articles/360019893139-Cognigy-Sessions-Extensions) about Extensions for a technical deep dive.
-- If you're keen to get started developing Extensions right away, see our [Get Started](https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started) documentation.
-- All the required resources to build and upload the Extension to Cognigy.AI can be found in the [Readme](https://www.npmjs.com/package/@cognigy/extension-tools) of our @cognigy/extension-tools package.
-- If you want to see examples of Extensions, visit our [GitHub repository](https://github.com/Cognigy/Extensions).
+=== "API"
+    You can view, delete, upload, and update Extensions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Extensions-v2.0). Also, you can [mark your custom Extensions as trusted](#extension-performance).
 
-!!! tip "Extension Development Suite"
-    [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/), created by the Cognigy community, is an extension development suite designed for Cognigy.AI. It offers several tools and features to assist in the development of Cognigy Extensions. Note that Cognigy Hammer is not a product of Cognigy and does not qualify for enterprise support.
+The Extensions Nodes appear in the Flow editor after you have installed them.
 
-### Handle Timeouts in an Extension
+### Custom Extensions
 
-Extensions have a default 20-second timeout. If an extension takes longer than 20 seconds to complete, it will be terminated, and an error message will be returned to the flow. The flow execution will continue, and the error can be accessed using `input.extensionError.message`.
+Cognigy allows anyone to extend the capabilities of Cognigy.AI by developing their own Extensions. Extensions are JavaScript or TypeScript modules that you can use as Flow Nodes. After developing an Extension, you can install it by uploading it in **Manage > Extensions**.
 
-!!! warning "Extension Timeout"
-    Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
+??? info "Develop a Custom Extension"
+    The following materials will provide in-depth information to develop a custom Extension:
 
-## Install a custom Extension
+    - [Readme](https://www.npmjs.com/package/@cognigy/extension-tools) of the `@cognigy/extension-tools` package for requirements.
+    - [Get Started](https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started) documentation for the first steps.
+    - [Cognigy Sessions Episode](https://support.cognigy.com/hc/en-us/articles/360019893139-Cognigy-Sessions-Extensions) about Extensions for a technical deep dive.
+    - [GitHub repository](https://github.com/Cognigy/Extensions) for Extensions examples.
 
-You can install a custom Extension from the Extension Marketplace by using the **Upload Extension** button or by dragging and dropping.
+    !!! tip "Extension Development Suite"
+        [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/), created by the Cognigy community, is an Extension development suite designed for Cognigy.AI. Cognigy Hammer offers several tools and features to assist in the development of Cognigy Extensions. Note that Cognigy Hammer is not a product of Cognigy and doesn't qualify for enterprise support.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/extensions/Installing-Custom-Extensions.png" width="100%" />
-  <figcaption>Installing a custom Extension</figcaption>
-</figure>
+#### Publish an Extension
 
-## Update a custom Extension
-
-You can update a custom Extension by selecting the Extension either in the **Marketplace** section or in the **Installed** section and clicking **Update**. If you select an extension in the **Marketplace** section, then the latest version from the **Extension Marketplace** will replace your installed Extension. If you select the extension in the **Installed** section, you will be asked to upload the updated Extension.
-
-[Trusted Extensions](#make-an-extension-trusted) can only be updated by admins or members with the `extension_trust_admin` project role.
-
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/extensions/update-extension-package.png" width="100%" />
-  <figcaption>Updating a custom Extension</figcaption>
-</figure>
-
-## Publish an Extension
-
-If you want us to approve your developed extension and publish it on the Extension Marketplace, follow the approval procedure explained in the readme of our [GitHub repository](https://github.com/Cognigy/Extensions).
+If you want to publish a custom Extension on the Marketplace, follow the approval procedure in the [Extensions GitHub repository](https://github.com/Cognigy/Extensions).
 
 ## Extension Performance
 
-By default, Cognigy.AI considers extension code to be untrusted and executes it within a secure, isolated environment.
-However, this additional security layer introduces some overhead during startup.
-Consequently, Nodes from extensions typically run slower than Cognigy.AI built-in nodes, such as the [Say](node-reference/basic/say.md) Node.
-
-Cognigy.AI introduces the feature to trust extension code.
-This feature lets users choose whether to execute the code in a secure environment or the standard environment where Nodes run.
-
-!!! warning "Feature availability"
-    This feature is available for dedicated SaaS or on-premises installations.
-
-To enable the feature, the following additional environment variable can be used:
-
-```txt
-FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION=true
-```
-
-Our customers usually achieve this by adding the following to their `config-map_patch.yaml` in the `kubernetes` repository where the deployment manifest files are stored:
-
-```YML
-- op: add
-  path: /data/FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION
-  value: "true"
-```
-
-Enabling the feature will not change anything automatically.
-Once the feature is activated,
-the Cognigy.AI API [PATCH](https://api-trial.cognigy.ai/openapi#patch-/v2.0/extensions/-extensionId-) request can be used to update the `trustedCode`
-property of an Extension.
-
-!!! danger "Security considerations"
-    By default, extensions and their code are executed within a secure environment.
-    It is crucial to never trust extension code without thoroughly reviewing it.
-    Extensions can use external packages from NPM, which may contain malicious code or routines.
-    Once an extension is executed in the native environment, it could potentially steal sensitive information.
-    Consider these risks before modifying the execution environment.
-
-### Make an Extension Trusted
-
 [![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
 
-All trusted Extensions are marked with the special icon ![trust-extensions](../../_assets/icons/trusted-extension.svg).
+By default, Cognigy.AI considers Extensions code to be untrusted and runs it within a secure, isolated environment. This additional security layer introduces some overhead during startup. For this reason, Extensions usually run slower than default Nodes.
 
-You can make your uploaded Extensions trusted.
-It could be a preinstalled Extension or a custom one.
-To allow users to make Extensions trusted and update them,
-an admin must add the `extension_trust_admin` role in the [Project](../administer/access/members.md).
-The project admin has this role by default.
+### Make Extensions Trusted
 
-To mark the Extensions as trusted, follow these steps:
+!!! danger "Security considerations"
+    Never trust custom Extension code without thorough review. Extensions can use external packages from NPM, which may contain malicious code or routines. An Extension can steal sensitive information when executed in the native environment.
 
-1. On the Extensions page, install the existing Extension from Marketplace or add a custom one.
-2. Open the Extension pane by clicking the Extension card.
-3. On the right-side pane, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
-   The Extension will be marked as trusted.
+There are two ways to make Extensions trusted and let them run in the standard environment:
 
-To mark an Extension as untrusted, click ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg), then **Untrust Extension**.
+??? info "Make Extensions Trusted"
+    - Mark an Extension as trusted in **Manage > Extensions**. Trusted Extensions display the ![trust-extensions](../../_assets/icons/trusted-extension.svg) icon. Only admins and users with the `extension_trust_admin` [role](../administer/access/members.md) can mark Extensions as trusted and update them.
+    - For dedicated SaaS or on-premises installations: 
+        1. Set the `FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION` environment variable to `true` by adding the following code to your `config-map_patch.yaml` in the `kubernetes` repository where the deployment manifest files are stored:
+        ```YML
+        - op: add
+          path: /data/FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION
+          value: "true"
+        ```
+        2. Use the Cognigy.AI API [PATCH](https://api-trial.cognigy.ai/openapi#patch-/v2.0/extensions/-extensionId-) request to update the `trustedCode` property of an Extension.
 
-<figure>
-  <img class="image-center" src="../../../_assets/ai/build/extensions/trust-extension.png" width="100%" />
-  <figcaption> Making an Extension Trusted</figcaption>
-</figure>
+## Install Extensions for All Organizations
 
-## Extension organization-wide embeddable
+On-premises customers can install Extensions in all organizations of your installation. To do so, add the `FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH` environment variable to `values.yaml` under the `cognigyEnv` mapping key and enter the path to the Extension.
 
-With Cognigy.AI v4.8, we have introduced the ability for on-premises customers to embed certain extensions organization-wide.
+## Cache Extensions in your Local Directory
 
-To enable the feature, the following additional environment variable can be used to update the GitHub `config.map` file:
+You can cache Extensions in your local directory to improve the Extensions' loading performance.
 
-**Environment variable for organization-wide extensions**
+??? info "Maximum cache storage"
+    By default, when Extensions exceed the maximum cache directory size, the last 10 Extensions are removed from the local directory. On premises and dedicated SaaS customers can change the number of Extensions that are removed when the maximum cache directory size is exceeded using the `EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP` environment variable.
 
-```txt
-FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH
-```
+    On-premises and dedicated SaaS customers can change the maximum directory size by adding the `MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB` environment variable to `values.yaml`. By default, the maximum directory size is 512 MB.
 
-## Cache Extensions in local Directory
-
-Extensions can be cached in the local directory, which improves the loading performance.
-The path to that cache is stored in an extensions map together with a timestamp.
-
-When the max dir size gets exceeded by an extension, the last X extensions (currently 10 – editable via an environment variable) will be removed from both the extension map and the local filesystem.
-
-If required, you can adjust the behavior by adding and configuring environment variables:
-
-```txt
-MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB
-```
-
-The default value of `MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB` is 512 MB.
-
-The cache is within the [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/) of service-execution. So it makes no difference if you are processing on-premises or trial, app, etc.
-
-```txt
-EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
-```
+    The cache is in the `service-execution` [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/).
 
 ## Dynamic Fields
 
-Cognigy.AI provides functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field, for example, through an external API call.
+You can use a dynamic selection field as a field type in Extensions. This feature can be used to dynamically fetch the content of a selection field, for example, through an external API call.
 
 ## Localization for Extensions
 
-Cognigy.AI provides functionality that allows Extension builders to optionally include localized variations for user-facing texts, such as default Node Labels or Node Field Descriptions.
-If configured, users will see the localized version for the UI language they chose.
+Extension builders can include localized UI texts, such as default Node labels or Node field descriptions.
 
-These localization options are optional and can be configured text-by-text on-demand.
-If no localization that matches the user-selected UI language was configured, the user will see a (mandatory) default option.
-
-Developers can follow the [Localization for Extensions' Documentation](https://www.npmjs.com/package/@cognigy/extension-tools#extension-localization) to get started.
+For more details, read the [Localization for Extensions](https://www.npmjs.com/package/@cognigy/extension-tools#extension-localization) documentation.
 
 ## Error Handling for Extensions
 
-If an Extension Node times out or sends too many events, the Flow execution will not stop.
-Instead, an error message will be written to the `input.extensionError` Input object.
-This change does not affect Snapshots created before Cognigy.AI v4.22.
+[![Version badge](https://img.shields.io/badge/Added in-v4.22-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
+
+If an Extension times out or sends too many events, the Flow execution doesn't stop. Instead, an error message is written to the `input.extensionError` Input object.
