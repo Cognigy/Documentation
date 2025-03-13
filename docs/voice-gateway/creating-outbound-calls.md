@@ -91,8 +91,9 @@ The following parameters can be provided in the request body:
 | headers                   | Object                                              | An object containing custom SIP headers that can be applied to outbound call attempts. These headers are added alongside the system (default) headers in the SIP request. Custom SIP headers provide more control over the call setup process, such as adjusting authentication, routing, or other specific SIP parameters. For example, an custom header could be `P-Preferred-Identity: <sip:+123456@sip.cognigy.cloud>`, where the caller's preferred identity is the specified phone number or SIP address to present during the call. | No       |
 | speech_synthesis_vendor   | String                                              | The vendor responsible for the speech synthesis service (Text-to-Speech, TTS). For example, `microsoft`.                                                                                                                                                                                                                                                                                                                                                                                                                                   | No       |
 | speech_synthesis_voice    | String                                              | The specific voice to be used for speech synthesis. For example, `de-DE-SeraphinaMultilingualNeural`.                                                                                                                                                                                                                                                                                                                                                                                                                                      | No       |
-| speech_synthesis_language | String                                              | The language in which the speech should be synthesized. For example, `en-US` for American English, `es-ES` for Spanish.                                                                                                                                                                                                                                                                                                                                                                                                                    | No       | 
+| speech_synthesis_language | String                                              | The language in which the speech should be synthesized. For example, `en-US` for American English, `es-ES` for Spanish.                                                                                                                                                                                                                                                                                                                                                                                                                    | No       |
 | amd                       | Object ([AMD](references/verbs/amd.md))             | The Automatic Machine Detection (AMD) feature, which identifies whether a human or a machine answered a call.                                                                                                                                                                                                                                                                                                                                                                                                                              | No       |
+| notifyUrl | String/Object | An additional HTTP or WebSocket hook to receive status updates about the call, used alongside the Call Status Webhook in the application. This parameter can be configured as a simple URL (String) for the default POST request or as an object `{ "url": "", "method": "" }` to specify a different method. The choice between HTTP and WebSocket depends on your specific requirements.  The most common choice is a standard HTTP hook, but a WebSocket URL can be used if desired, as it is supported for internal communication with Cognigy.AI. | No |
 
 #### Advanced Configuration Request
 
@@ -140,7 +141,8 @@ such as a custom object, as well as `headers` to send custom headers.
         },
         "headers": {
             "User-to-User": "UUID: <number>"
-        }
+        },
+        "notifyUrl": "https://webhook.site/<webhook-id>"
     }'
     ```
 
@@ -179,7 +181,8 @@ such as a custom object, as well as `headers` to send custom headers.
       },
       "headers": {
         "User-to-User": "UUID: <number>"
-      }
+      },
+      "notifyUrl": "https://webhook.site/<webhook-id>"
     }
     ```
 
