@@ -118,8 +118,9 @@ To change the appearance of this message and make it more accessible, as well as
 ### Add a Go To Node
 
 1. Below the Say Nodes, add a Go To Node.
-2. In the Go To Node, select the current from the **Select Flow** field and **Lookup** Node from the **Select Node** field.
-3. Click **Save Node**.
+2. In the Go To Node, select the current from the **Select Flow** list and **Lookup** Node from the **Select Node** list.
+3. In the **Advanced** section, select **Go to Node and wait for Input** from the **Execution Mode** list. 
+4. Click **Save Node**.
 
 <figure>
     <img class="image-center" src="../../../../_assets/live-agent/conversation/real-time-queue-notifications.png" width="100%" />
