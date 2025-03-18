@@ -11,7 +11,7 @@ tags:
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../release-notes/4.96.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../release-notes/4.97.md)
 
 The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
@@ -104,7 +104,7 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 
 {! _includes/insights/reset-filters.md !}
 
-## View Session Transcript
+## View Session Transcripts
 
 Session transcripts are logged conversations between end users and agents. 
 The Transcript Explorer enables you to view session transcripts to analyze them, in order to better understand the interactions between the end users and agents.
@@ -153,7 +153,7 @@ To create a Playbook of a transcript, do the following:
 
 For more information, read the [Playbooks](../../ai/test/playbooks.md) documentation.
 
-#### Open Message-related Flow
+#### Open Message-Related Flow
 
 To check your [Flow](../../ai/build/flows/overview.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
 
@@ -213,6 +213,18 @@ The transcript details include the following sections:
 | Location                | User's location.                                                                                                                                                                       |
 | Accepted GDPR           | Accepted General Data Protection Regulation.                                                                                                                                           |
 | Goals Completed         | All the tasks that were completed by the user during conversations with AI Agents or human agents. The field refers to the [Tasks](../../ai/analyze/goals-and-tasks/tasks.md) feature. |
+
+## Delete Sessions
+
+You can delete a session and its transcript
+by selecting the session from the list on the **Transcript Explorer** page
+and clicking ![vertical ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Delete Session Transcript** in the **Session Transcript Details** window.
+The session will be deleted from the Transcript and Message explorers.
+However, the session metadata will remain accessible through the [Cognigy.AI OData endpoint](../../ai/analyze/odata.md), except for the data in the [Conversation](../../ai/analyze/odata.md#conversations) collection.
+Also, the Contact Profile details will still be available in the [Contact Profile](../../ai/analyze/contact-profiles.md).
+
+!!! note 
+    If you've migrated to the new [Insights framework](../data-management/pre-aggregation.md), there might be a delay between deleting the session transcript and the session itself. When you click the **Delete Session Transcript** button, the transcript is deleted first, and the session is deleted from the **Transcript Explorer** page about 10 minutes later.
 
 ## More Information 
 

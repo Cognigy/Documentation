@@ -14,6 +14,7 @@ such as Kubernetes, MongoDB, and Redis.
 
 | Live Agent /<br> Infra component | Kubernetes | PostgreSQL | Redis    | Helm          |
 |----------------------------------|------------|------------|----------|---------------|
+| 4.97                             | 1.22-1.32  | 15.1       | 7.0[^**] | 3.9 or higher |
 | 4.96                             | 1.22-1.32  | 15.1       | 7.0[^**] | 3.9 or higher |
 | 4.95                             | 1.22-1.32  | 15.1       | 7.0[^**] | 3.9 or higher |
 | 4.94                             | 1.22-1.32  | 15.1       | 7.0[^**] | 3.9 or higher |

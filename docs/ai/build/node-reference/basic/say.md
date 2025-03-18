@@ -11,7 +11,7 @@ tags:
 
 # Say
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/message/say.png" width="80%" />
@@ -405,6 +405,12 @@ When using a handover to a contact center, you can choose who receives the messa
 - **User and Agent** — by default, both the end user and the human agent will receive the message.
 - **User only** — the end user will receive the message.
 - **Agent only** — the responsible human agent will receive the message.
+
+### Advanced
+
+| Parameters              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exclude from Transcript | Toggle | Excludes the Node output from the conversation transcript. This parameter is useful when confidentiality is necessary, such as preventing unnecessary data from being sent to the LLM provider. Also, you can use this parameter to send messages that shouldn't be interpreted by the AI Agent, including legal disclaimers, sensitive information, or other specific instructions irrelevant to the ongoing dialogue. |
 
 ## More Information
 

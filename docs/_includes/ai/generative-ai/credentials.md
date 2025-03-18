@@ -109,6 +109,17 @@
         5. Fill in the remaining field:<br>
             - **Region** — enter the AWS region where your model is located, for example, `us-east-1` for the US East (N. Virginia) region.<br>
 
+    === "OpenAI-Compatible LLMs"
+        1. From the **Model** list, select **Custom Model** and configure the following fields:<br>
+            - **Model Type** — select the **Chat** type. <br>
+            - **Model Name** — specify the name of the model from your LLM provider. To find model names, refer to the LLM provider's documentation.<br>
+        2. Click **Save**.<br>
+        3. In LLM editor, click **+** next to the **Generative AI Connection** field and fill in the following fields:<br>
+            - **Connection name** — create a unique name for your connection.<br>
+            - **API Key** — enter the API key for your LLM provider.<br>
+        4. Click **Create**.<br>
+        5. Enter the base URL in the **Base URL** field.<br>
+
 6. To apply changes, click **Save**.
 7. To check if the connection was set up, click **Test**.
 

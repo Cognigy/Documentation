@@ -10,7 +10,7 @@ tags:
 
 # Question
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/question.png" width="80%" />
@@ -114,10 +114,10 @@ Alternatively, you can add input examples in the **Use JSON Editor** code field.
 
 #### Advanced
 
-| Parameter   | Type      | Description                                                                                            |
-|-------------|-----------|--------------------------------------------------------------------------------------------------------|
-| Temperature | Indicator | The appropriate sampling temperature for the model. Higher values mean the model will take more risks. |
-| Timeout     | Number    | The maximum amount of milliseconds to wait for a response from the Generative AI Provider.             |
+| Parameter               | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Temperature             | Indicator | The appropriate sampling temperature for the model. Higher values mean the model will take more risks.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Timeout                 | Number    | The maximum amount of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Reprompt Options
 
@@ -263,7 +263,6 @@ Reconfirmation Questions can have a specific re-prompt set, which will be output
 
 ## Advanced
 
-
 The Question Node has two advanced settings that can be used.
 
 ### Store detailed Results
@@ -297,6 +296,10 @@ This setting determines how long a user can have been "away" from the Node after
 
 !!! tip "Slot Fillers"
     Questions can be combined with **Slot Fillers** to create a so-called "Missing Pattern". This mechanism keeps asking the user for the missing information in a very natural way, until all questions have been answered.
+
+### Exclude from Transcript
+
+Excludes the Node output from the conversation transcript. This parameter is useful when confidentiality is necessary, such as preventing unnecessary data from being sent to the LLM provider. Also, you can use this parameter to send messages that shouldn't be interpreted by the AI Agent, including legal disclaimers, sensitive information, or other specific instructions irrelevant to the ongoing dialogue. |
 
 ## Question Information in Input
 

@@ -21,4 +21,5 @@ To add a standard or custom model, select an LLM provider integrated with Cognig
 - ![alephalpha](../../../../_assets/icons/alephalpha.svg) __[Aleph Alpha](aleph-alpha.md)__ <br> Add credentials for the predefined models such as `luluminous` and `luminous-embedding-128` or add another Aleph Alpha model as a custom model.
 - ![amazon-bedrock](../../../../_assets/icons/amazon-bedrock.svg) __[Amazon Bedrock](amazon-bedrock.md)__ <br> Add credentials for the predefined models or add any Amazon Bedrock model that supports the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html).
 - ![nexus-llm](../../../../_assets/icons/ai_logo.svg) __[Cognigy Nexus LLM](cognigy-nexus-llm.md)__ <br> Cognigy Nexus LLM is a proprietary large language model, provided and hosted by Cognigy, optimized for AI-driven customer service.
+- ![openai-compatible](../../../../_assets/icons/openai-compatible.svg) __[OpenAI-Compatible LLMs](openai-compatible.md)__ <br>Add credentials for models from any providers that adhere to OpenAI's API standards, including HuggingFace, DeepSeek, xAI, Fireworks AI and others.
 </div>

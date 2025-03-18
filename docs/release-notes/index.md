@@ -14,7 +14,8 @@ You'll find the corresponding release notes after opening one of the versions be
     We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
 
 - **4.9x**:
-    - [4.96 (latest)](4.96.md)
+    - [4.97 (latest)](4.97.md)
+    - [4.96](4.96.md)
     - [4.95](4.95.md)
     - [4.94](4.94.md) 
     - [4.93](4.93.md) 

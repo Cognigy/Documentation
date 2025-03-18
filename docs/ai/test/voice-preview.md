@@ -7,6 +7,8 @@ hidden: true
 
 # Voice Preview
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../release-notes/4.97.md)
+
 The _Voice Preview_ feature lets
 users quickly test their voice output without going through the entire flow with a mock call.
 It supports cloud speech-to-text and text-to-speech services from providers such as Google, Microsoft, and Amazon AWS.
@@ -19,7 +21,7 @@ However, note that the SSML syntax must be supported by the chosen Voice Preview
 
 ## Restrictions
 
-- Only Google, Microsoft, and Amazon AWS speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
+- Only Google, Microsoft, Amazon AWS, and Deepgram speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
 
 ## Access STT and TTS Providers
     

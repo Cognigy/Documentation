@@ -1,37 +1,33 @@
 ---
- title: "Cognigy Live Agent" 
- slug: "liveagent-handover" 
- hidden: false 
+title: "Cognigy Live Agent" 
+slug: "liveagent-handover"
+description: "The Live Agent handover connector bridges Cognigy.AI with the native contact center Cognigy Live Agent,enabling end users to connect with human agents working within the Cognigy Live Agent contact center."
+hidden: false
+tags:
+  - contact centers
+  - cognigy live agent
+  - handover providers
 ---
+
 # Live Agent
 
-Live Agent is Cognigy handover provider, allowing human agents to take over escalated conversations from AI Agents.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
 
-Tight integration with Cognigy.AI that goes far beyond the integration we have with other handover services:
+The Live Agent handover connector bridges Cognigy.AI with the native contact center [Cognigy Live Agent](../../../live-agent/index.md),
+enabling end users to connect with human agents working within the Cognigy Live Agent contact center.
 
-- Experience an easy, seamless setup of a Live Agent Inbox for a Cognigy.AI Project
-    
-- Configuration of the handover with just a few clicks
+## Key Benefits
 
-- AI Copilot: Support of human agents by AI Agents
-    
-- Enhance the capabilities of the AI Agent, based on outputs of human agents
+- **Deep Cognigy.AI Integration**. Offers superior compatibility with Cognigy.AI compared to other handover services, creating a cohesive ecosystem for collaboration between AI Agents and human agents.
+- **Rapid Deployment**. Allows you to configure a Live Agent Inbox within a Cognigy.AI Project quickly, reducing setup time and technical overhead.
+- **AI-Powered Support for Human Agents**. Features an AI Agent that helps human agents in real time, improving response quality and reducing agent workload.
+- **User-Friendly Administration**. Offers an intuitive interface for creating and managing accounts, as well as adding and overseeing human agents with minimal complexity.
 
-Projects and Inboxes within Live Agent are easily setup, and Agents can be added and managed with ease.
+## Get Started with Cognigy Live Agent
 
-<figure>
-  <img class="image-center" src="../../../../_assets/live-agent/la-diagram-mapping.PNG" width="100%" />
-  <figcaption>Live Agent Project and Inbox Mapping</figcaption>
-</figure>
+To get started with Cognigy Live Agent, go to the [Getting Started](https://docs.cognigy.com/live-agent/getting-started/overview/) guide.
 
-## Ready to Set up Live Agent?
+## More Information
 
-Are you ready to set up Live Agent? Start here:
-
-- [Live Agent Setup](../../../live-agent/getting-started/overview.md)
-
-## Already Setup Live Agent?
-
-For more on Live Agent, visit our documentation here: 
-
-- [Live Agent Overview](../../../live-agent/overview.md)
+- [All Handover Providers](overview.md)
+- [Handovers](../handovers.md)

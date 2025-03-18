@@ -234,6 +234,7 @@ nav:
             - ai/empower/llms/providers/aleph-alpha.md
             - ai/empower/llms/providers/amazon-bedrock.md
             - ai/empower/llms/providers/cognigy-nexus-llm.md
+            - ai/empower/llms/providers/openai-compatible.md
           - ai/empower/llms/fallback.md
           - ai/empower/llms/llm-session-token-counter.md
           - ai/empower/llms/other-operations.md
@@ -343,7 +344,8 @@ nav:
 
     - ☎️ Escalate:
       - ai/escalate/handovers.md
-      - Handover Reference:
+      - ai/escalate/migration.md
+      - Handover Provider Reference:
         - ai/escalate/handover-reference/overview.md
         - ai/escalate/handover-reference/live-agent.md
         - ai/escalate/handover-reference/chatwoot.md
@@ -697,6 +699,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.9x:
+        - release-notes/4.97.md
         - release-notes/4.96.md
         - release-notes/4.95.md
         - release-notes/4.94.md
@@ -786,10 +789,6 @@ theme:
 
   font:
     text: Open Sans
-  
-  icon:
-    admonition:
-      info: material/format-align-justify
 
   icon:
     admonition:

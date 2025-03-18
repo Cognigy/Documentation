@@ -3,16 +3,22 @@ title: "Check Agent Availability"
 slug: "check-agent-availability"
 description: "The Check Agent Availability Node verifies the availability of agents with specific skills. With this Node, you can manage your Flow, for example, send notifications to the user that the agent is unavailable at the moment or suggest an alternative response."
 hidden: false
+tags:
+  - handovers
+  - check agent availability
+  - contact centers
+  - handover providers
 ---
 
 # Check Agent Availability
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/check-agent-availability.png" width="80%" />
 </figure>
 
 ## Description
-
 
 This Node checks the availability of agents with specific skills. 
 With this Node, you can manage your Flow,
@@ -26,6 +32,12 @@ The Check Agent Availability Node supports the following handover providers:
 - [Chatwoot](#chatwoot)
 
 ## Settings
+
+### General Settings
+
+| Parameter         | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Handover Provider | Selector | Select the handover provider from the list. The **Legacy** option is selected by default, meaning the node configuration points to the settings in **Deploy > Endpoints > Handover** Settings. To select a provider from the list, you need to either migrate your settings to the [Handover Providers](../../../escalate/migration.md) interface or create this handover provider from scratch. |
 
 ### Live Agent 
 

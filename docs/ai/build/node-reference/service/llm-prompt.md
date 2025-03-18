@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.86-blue.svg)](../../../../release-notes/4.86.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt.png" width="80%" />
@@ -153,10 +153,10 @@ Examples:
 
 When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
 
-| Parameter                  | Type   | Description                                                                                                                                                                     |
-|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Log Token Count            | Toggle | Log the number of consumed LLM tokens for the request and completion. Cognigy uses the GPT-3 tokenizer algorithm, so actual token usage may differ depending on the model used. |
-| Log Request and Completion | Toggle | Log both the request sent to the LLM provider and the subsequent completion.                                                                                                    |
+| Parameter                  | Type   | Description                                                                                                                                                                                                                                                                                         |
+|----------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
+| Log Request and Completion | Toggle | Send a debug message containing the request sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                  |
 
 ### Custom Options
 

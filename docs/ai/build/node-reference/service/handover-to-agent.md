@@ -2,11 +2,16 @@
 title: "Handover to Agent" 
 slug: "handover-to-agent" 
 hidden: false 
+tags:
+   - handovers
+   - handover providers
+   - handover to agent node
+   - contact centers
 ---
 
 # Handover to Agent
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.87-blue.svg)](../../../../release-notes/4.87.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/handover-to-agent.png" width="100%" />
@@ -14,22 +19,20 @@ hidden: false
 
 ## Description
 
-The Handover to Agent Node is a tool
-that enables AI Agents to pass on conversations to human agents in contact centers.
-This tool is useful when your AI Agent is unable to handle the complexity of the inquiry
+The Handover to Agent Node enables AI Agents to pass on conversations to human agents in contact centers.
+This Node is useful when your AI Agent is unable to handle the complexity of the inquiry
 or when a human touch is necessary to address sensitive issues or provide personalized assistance.
-Besides adding this Node to the Flow, select a [handover provider](../../../escalate/handover-reference/overview.md) within your Endpoint and set up the connection to your contact center.
+Besides adding this Node to the Flow,
+create a [handover provider](../../../escalate/handover-reference/overview.md) and an [Endpoint](../../../deploy/endpoint-reference/overview.md)
+and set up the connection to your contact center.
 
 ### Handover Process
 
 A handover process contains the following steps:
 
 1. **Identifying Edge Cases**. When a user request is too specific for the AI Agent, it can suggest forwarding the user to a human agent without changing channels.
-
 2. **Integration with Agent Handover**. Once the **Handover to Agent** Node is triggered, it sends a handover request to the contact center configured in the [Endpoint Handover Settings](../../../deploy/endpoints/handover-settings.md), allowing a human agent to take over the conversation.
-
 3. **Flow Pausing and Resumption**. When a handover is initiated, the Flow pauses until the end user cancels the request or an agent finishes the conversation. Upon completion, the Flow resumes execution below the Handover to Agent Node.
-
 4. **Handover Status**. The handover status can be:
     - **completed** — the agent finished the Handover.
     - **cancelled** — the user canceled the request.
@@ -59,7 +62,7 @@ A handover process contains the following steps:
     }
     ```
 
-In case a channel does not support handover, the error reason is marked as `unsupported`. However, if there is an issue when contacting the handover provider, the error reason is marked as `error`.
+In case a channel doesn't support handover, the error reason is marked as `unsupported`. However, if there is an issue when contacting the handover provider, the error reason is marked as `error`.
 
 Use the **Handover Status** [Token](../../tokens.md) to access handover status in Flow.
 
@@ -82,10 +85,11 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
 
 ### General Settings
 
-| Parameter                        | Type          | Description                                                                                                                    |
-|----------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Handover Accepted Message        | CognigyScript | The message to be outputted when the Handover is requested.                                                                    |
-| Repeat Handover Accepted Message | Toggle        | Enable to repeatedly output the Handover Accepted Message if the user sends a message while waiting in the queue for an agent. |
+| Parameter                        | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+|----------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Handover Provider                | Selector      | Select the handover provider from the list. The **Legacy** option is selected by default, meaning the node configuration points to the settings in **Deploy > Endpoints > Handover Settings**. To select a provider from the list, you need to either migrate your settings to the [Handover Providers](../../../escalate/migration.md) interface or create this handover provider from scratch. |
+| Handover Accepted Message        | CognigyScript | The message to be outputted when the Handover is requested.                                                                                                                                                                                                                                                                                                                                      |
+| Repeat Handover Accepted Message | Toggle        | Enable to repeatedly output the Handover Accepted Message if the user sends a message while waiting in the queue for an agent.                                                                                                                                                                                                                                                                   |
 
 ### Cancel Handover Options
 

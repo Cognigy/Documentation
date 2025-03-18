@@ -11,7 +11,7 @@ tags:
 
 # Packages
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../release-notes/4.68.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../release-notes/4.97.md)
 
 _Packages_ are a useful tool for exporting and importing Project resources, such as Flows or Lexicons, to share with other teams. With Packages, you can transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once a Package has been downloaded, you can share it as a ZIP file.
 
@@ -31,6 +31,7 @@ Packages can include the following Project resources:
 
 - Importing Packages from a newer version of Cognigy.AI into an older version may cause unexpected errors.
 - Cognigy.AI skips unsupported resources while importing a Package. For example, deprecated Endpoints or LLMs with outdated configuration schemas.
+- If you export a Package from a Project with [Extensions](extensions.md), you must install the respective Extensions in the target Project as well before importing the Package.
 
 ## Working with Packages
 

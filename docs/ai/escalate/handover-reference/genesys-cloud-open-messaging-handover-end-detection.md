@@ -34,23 +34,22 @@ In this guide, you will configure HTTP webhooks in Genesys Cloud Open Messaging 
 
 - [Configured Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md). 
 
-## Install the Web Services Data Actions Extension
+## Configuration Steps
 
-1. In the Genesys Cloud interface, go to **Admin > Integrations**.
-2. Click **+ Integrations**, find **Web Services Data Actions**, then click **Install**. 
-3. Enter a name for your connection: `Web Services Data Actions Integration`.
-4. Toggle the **Inactive** option next to the connection name to activate the connection, then save changes.
+??? info "1. Install the Web Services Data Actions Extension"
+    1. In the Genesys Cloud interface, go to **Admin > Integrations**.
+    2. Click **+ Integrations**, find **Web Services Data Actions**, then click **Install**. 
+    3. Enter a name for your connection: `Web Services Data Actions Integration`.
+    4. Toggle the **Inactive** option next to the connection name to activate the connection, then save changes.
 
-## Create an Action
+??? info "2. Create an Action"
+    1. Go to **Admin > Integrations > Actions**.
+    2. Click **+ Add Action** and select the integration you created.
+    3. Enter a name for your connection: `Send Event to Cognigy`.
 
-1. Go to **Admin > Integrations > Actions**.
-2. Click **+ Add Action** and select the integration you created.
-3. Enter a name for your connection: `Send Event to Cognigy`.
-
-### Configure the Action
-
-1. On the **Setup** tab, go to the **Contracts** section.
-2. In **Input Contract > JSON**, paste the following JSON:
+??? info "3. Configure the Action"
+    1. On the **Setup** tab, go to the **Contracts** section.
+    2. In **Input Contract > JSON**, paste the following JSON:
     ```json
     {
       "title": "properties",
@@ -69,51 +68,48 @@ In this guide, you will configure HTTP webhooks in Genesys Cloud Open Messaging 
       "additionalProperties": true
     }
     ```
-3. In the **Configuration** section, follow these steps:
-    1. Select **POST** from the **HTTP Method** list.
-    2. In the **Request URL Template**, enter the Cognigy API URL in the following format: `https://endpoint-<cognigy-instance-domain>/handover/genesysCloudOM`. For example, `https://endpoint-trial.cognigy.ai/handover/genesysCloudOM`.
-4. Go to the **Test** tab, enter a value in the provided fields, for example `123`. Click **Run Test**.
-5. If the test is successful, click **Save & Publish**. Otherwise, review and correct the previous steps.
+    4. In the **Configuration** section, follow these steps:
+       1. Select **POST** from the **HTTP Method** list.
+       2. In the **Request URL Template**, enter the Cognigy API URL in the following format: `https://endpoint-<cognigy-instance-domain>/handover/genesysCloudOM`. For example, `https://endpoint-trial.cognigy.ai/handover/genesysCloudOM`.
+    5. Go to the **Test** tab, enter a value in the provided fields, for example `123`. Click **Run Test**.
+    6. If the test is successful, click **Save & Publish**. Otherwise, review and correct the previous steps.
 
-## Create Workflows
+??? info "4. Create Workflows"
+    1. Go to **Admin > Architect** and select **Workflow** from the **Flows** list.
+    2. Create a new flow for the `AfterCallWorkEvent` event and name it `Workflow conversation.id.acw`. 
+    3. In the left-side menu, select **Resources > Data** and create the following String-type variables:
+        - `addressTo`
+        - `disconnectType`
+    4. Go to the **Initial State**, then select **Toolbox > Data**. Drag **Call Data Action** to the desired location in the flow editor.
+    5. Name your action and select **Web Services Data Action** from the **Category** list.
+    6. From the **Data Action** list, select the action you created previously.
+    7. Fill in the following fields:
+        - `userId` — select **Expression** and enter `Flow.addressTo`.
+        - `topic` — select **Literal** and enter `v2.detail.events.conversation.id.acw`.
+        - `disconnectType` — select **Expression** and enter `Flow.disconnectType`.
+        Save and publish your flow.
+    8. Create a new flow for the `UserEndEvent` event and repeat steps 1–7 with these changes:
+        1. Name the workflow as `Workflow conversation.id.user.end`.
+        2. For the `topic` field, select **Literal** and enter `v2.detail.events.conversation.id.user.end`.
 
-1. Go to **Admin > Architect** and select **Workflow** from the **Flows** list.
-2. Create a new flow for the `AfterCallWorkEvent` event and name it `Workflow conversation.id.acw`. 
-3. In the left-side menu, select **Resources > Data** and create the following String-type variables:
-    - `addressTo`
-    - `disconnectType`
-4. Go to the **Initial State**, then select **Toolbox > Data**. Drag **Call Data Action** to the desired location in the flow editor.
-5. Name your action and select **Web Services Data Action** from the **Category** list.
-6. From the **Data Action** list, select the action you created previously.
-7. Fill in the following fields:
-    - `userId` — select **Expression** and enter `Flow.addressTo`.
-    - `topic` — select **Literal** and enter `v2.detail.events.conversation.id.acw`.
-    - `disconnectType` — select **Expression** and enter `Flow.disconnectType`.
-
-   Save and publish your flow.
-8. Create a new flow for the `UserEndEvent` event and repeat steps 1–7 with these changes:
-    1. Name the workflow as `Workflow conversation.id.user.end`.
-    2. For the `topic` field, select **Literal** and enter `v2.detail.events.conversation.id.user.end`.
-
-## Create Triggers
-
-1. Go to **Admin > Architect > Triggers**.
-2. Create a trigger for the `AfterCallWorkEvent` event and name it `Trigger conversation.id.acw`.
-3. Configure the following fields:
-    - **Topic Name** — select `v2.detail.events.conversation.{id}.acw`.
-    - **Workflow Target** — select `Workflow conversation.id.acw`.
-4. Click **+ Add Condition** and define the criteria:
-   ```txt
-   | JSON Path   | Operator    | Value     |
-   |-------------|-------------|-----------|
-   | mediaType   | Equals (==) | "MESSAGE" |
-   | messageType | Equals (==) | "OPEN"    |
-   ```
-   Save changes.
-5. Create a new trigger for the `UserEndEvent` event and repeat steps 1–4 with these changes:
-    - **Topic Name** — select `v2.detail.events.conversation.{id}.user.end`.
-    - **Workflow Target** — select `Workflow conversation.id.user.end`.
-6. For both triggers, toggle the **Inactive** option next to the trigger name to activate them, then save changes.
+??? info "5. Create Triggers"
+    1. Go to **Admin > Architect > Triggers**.
+    2. Create a trigger for the `AfterCallWorkEvent` event and name it `Trigger conversation.id.acw`.
+    3. Configure the following fields:
+        - **Topic Name** — select `v2.detail.events.conversation.{id}.acw`.
+        - **Workflow Target** — select `Workflow conversation.id.acw`.
+    4. Click **+ Add Condition** and define the criteria:
+    ```txt
+    | JSON Path   | Operator    | Value     |
+    |-------------|-------------|-----------|
+    | mediaType   | Equals (==) | "MESSAGE" |
+    | messageType | Equals (==) | "OPEN"    |
+    ```
+    Save changes.
+    5.  Create a new trigger for the `UserEndEvent` event and repeat steps 1–4 with these changes:
+        - **Topic Name** — select `v2.detail.events.conversation.{id}.user.end`.
+        - **Workflow Target** — select `Workflow conversation.id.user.end`.
+    6. For both triggers, toggle the **Inactive** option next to the trigger name to activate them, then save changes.
 
 The integration is complete, ensuring more reliable detection of conversation endings.
 

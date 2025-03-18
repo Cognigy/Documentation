@@ -13,8 +13,6 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
-
 The AI Agent Handover Node is used to transfer the conversation to another AI Agent Node or Flow, which will be triggered and executed as soon as this Node is activated.
 
 ## Settings

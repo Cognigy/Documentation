@@ -1,31 +1,28 @@
 ---
 title: "Overview" 
 slug: "overview" 
-hidden: false 
+description: "Cognigy.AI Handover Providers connect AI Agents to contact centers, enabling seamless handoffs from automated conversations to human agents."
+hidden: false
+tags:
+  - handover providers
+  - handovers
+  - contact centers
 ---
 
 # Overview
 
-*Handover Providers* are connectors between Cognigy.AI and Contact Centers. Conversations are passed between Cognigy.AI and a Handover Service using the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node.
+_Handover Providers_ connect AI Agents to contact centers, enabling seamless handoffs from automated conversations to human agents.
 
-## Cognigy Handover Provider
+Select the connector for the contact center your human agents use.
 
-The [Cognigy Live Agent](live-agent.md) Endpoint is specific to the Cognigy.AI platform.
+<div class="grid cards" style="text-align: center;" markdown>
 
-## Third-party Handover Providers
+- ![cognigy](../../../_assets/icons/handovers/live-agent.svg) __[Cognigy Live Agent](live-agent.md)__ <br> Integration with the Cognigy-native contact center for handover of chat conversations.
+- ![8x8](../../../_assets/icons/handovers/8x8.svg) __[8x8](8x8.md)__ <br> Integration with the 8x8 platform.
+- ![chatwoot](../../../_assets/icons/handovers/chatwoot.svg) __[Chatwoot](chatwoot.md)__ <br> Integration with the Chatwoot platform.
+- ![genesys-cloud-guest-chat](../../../_assets/icons/handovers/genesys.svg) __[Genesys Cloud Guest Chat](genesys-cloud-guest-chat.md)__ <br> Integration with Genesys Cloud for guest chat functionality.
+- ![genesys-cloud-open-messaging](../../../_assets/icons/handovers/genesys.svg) __[Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md)__ <br> Integration with Genesys Cloud Open Messaging.
+- ![ringcentral-engage](../../../_assets/icons/handovers/ringcentral-engage.svg) __[RingCentral Engage](ring-central-engage.md)__ <br> Integration with RingCentral Engage.
+- ![salesforce](../../../_assets/icons/handovers/salesforce.svg) __[Salesforce](salesforce.md)__ <br> Integration with Salesforce.
 
-The following Handover Providers allow integrations with third-party products:
-
-- [8x8](8x8.md)
-- [Chatwoot](chatwoot.md)
-- [Genesys Cloud Guest Chat](genesys-cloud-guest-chat.md)
-- [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md)
-- [RingCentral Engage](ring-central-engage.md)
-- [Salesforce](salesforce.md) 
-
-## More Information
-
-- [User Inactivity Detection and Handling](../user-inactivity-detection.md)
-- [Set Handover Inactivity](../../build/node-reference/service/set-handover-inactivity.md)
-- [Close Handover](../../build/node-reference/service/close-handover.md)
-- [Handover to Agent](../../build/node-reference/service/handover-to-agent.md)
+</div>
