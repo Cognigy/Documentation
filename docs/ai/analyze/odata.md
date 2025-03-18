@@ -45,7 +45,7 @@ You can control data available through the OData endpoint at both the [Endpoint]
 | Cognigy.AI version | Cognigy.AI OData Endpoint version | Status         |
 |--------------------|-----------------------------------|----------------|
 | 4.65 and later     | 2.4                               | Supported      |
-| 4.48 and later     | 2.3                               | Supported      |
+| 4.48 - 4.96        | 2.3                               | Out of Support |
 | 4.31-4.47          | 2.0–2.3                           | Out of support |
 | 4.30 and earlier   | 2.0–2.2                           | Out of support |
 
@@ -66,16 +66,16 @@ OData Endpoint URL format:
 `https://<odata-domain>/<api-version>/<collection>?apikey=<your-api-key>`, where
 
 - `odata domain` — the base domain of the OData service. It is the root URL where your OData service is hosted.
-- `api-version` — the version of the API you are interacting with. Currently, Cognigy.AI supports v2.3.
+- `api-version` — the version of the API you are interacting with. Currently, Cognigy.AI supports v2.4.
 - `collection` — a specific collection within the OData service you want to access. A collection is similar to a database table or a set of entities.
 - `your-api-key` — an API key that provides authentication and authorization for accessing the API. You need to get this key from your [profile](../../ai/administer/user-menu/my-profile.md#create-api-keys).
 
 OData Endpoint URL example:
 
-`https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=123abc`, where
+`https://odata-trial.cognigy.ai/v2.4/Analytics?apikey=123abc`, where
 
 - `odata-trial.cognigy.ai` — the Cognigy.AI OData base domain.
-- `v2.3` — the API version of the Cognigy.AI OData endpoint.
+- `v2.4` — the API version of the Cognigy.AI OData endpoint.
 - `Analytics` — the Analytics data collection you're trying to access within Cognigy.AI.
 - `123abc` — your unique API key.
 
@@ -104,7 +104,7 @@ Select the OData endpoint version [compatible with your Cognigy.AI version](#sup
 
 === "OData 2.4"
 
-    | Request Description                                                                                                                                                                                          | OData 2.3 Request                                                                                                                                                  |
+    | Request Description                                                                                                                                                                                          | OData 2.4 Request                                                                                                                                                  |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Returns total count of Analytics records (not supported in Microsoft Excel or Power BI).                                                                                                                     | `https://odata-trial.cognigy.ai/v2.4/Analytics/$count?apikey=<your-api-key>`                                                                                       |
     | Returns all Analytics records for the given API Key.                                                                                                                                                         | `https://odata-trial.cognigy.ai/v2.4/Analytics?apikey=<your-api-key>`                                                                                              |
@@ -114,7 +114,7 @@ Select the OData endpoint version [compatible with your Cognigy.AI version](#sup
     | Returns Project IDs and Session IDs for a specific Cognigy.AI project. The request filters the data based on the `projectId` field and selects only the `projectId` and `sessionId` for each matching entry. | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=projectId eq '<project-id>'&$select=projectId,sessionId&apikey=<your-api-key>`                             |
     | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021.                                                                                                                | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=timestamp gt '2021-01-01T00:00:00.000Z' and timestamp lt '2021-07-01T00:00:00.000Z'&apikey=<your-api-key>` |
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     | Request Description                                                                                                                                                                                          | OData 2.3 Request                                                                                                                                                  |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ The set of collections varies depending on which version you are using:
     The URL for accessing the v2.4 OData endpoint is as follows:
     `https://<odata-domain>/v2.4/<collection>?apikey=<your-api-key>`
 
-=== "Version 2.3"
+=== "Version 2.3 (available in v4.96 and earlier)"
 
     The previous version of the OData endpoint is `2.3`. In this version, the following OData collections are available:
 
@@ -185,8 +185,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Analytics?apikey=<your-api-key>`
 
-=== "OData 2.3"
-
+=== "OData 2.3 (available in v4.96 and earlier)"
     `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=<your-api-key>`
 
 **Fields**
@@ -263,7 +262,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Conversations?apikey=<your-api-key>`
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=<your-api-key>`
 
@@ -319,7 +318,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Steps?apikey=<your-api-key>`
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=<your-api-key>`
 
@@ -357,7 +356,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/ExecutedSteps?apikey=<your-api-key>`
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=<your-api-key>`
 
@@ -405,7 +404,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Sessions?apikey=<your-api-key>`
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=<your-api-key>`
 
@@ -450,7 +449,7 @@ Each handover (escalation) is logged as a single record.
 
     `https://odata-trial.cognigy.ai/v2.4/LiveAgentEscalations?apikey=<your-api-key>`
 
-=== "OData 2.3"
+=== "OData 2.3 (available in v4.96 and earlier)"
 
     `https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=<your-api-key>`
 
