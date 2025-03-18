@@ -135,7 +135,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
 
     Once your client is authorized, you can start configuring Genesys Handover Provider on the Cognigy side.
 
-## Configuration on the Handover Provider Side
+## Configuration on the Cognigy.AI Side
 
 ??? info "1. Create a Handover Connector (Beta)"
     !!! note
