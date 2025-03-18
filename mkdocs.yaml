@@ -369,6 +369,10 @@ nav:
           - ai/administer/access/admin-center/dashboard.md
           - ai/administer/access/admin-center/access-control.md
           - ai/administer/access/admin-center/audit-events.md
+          - Global Resources:
+            - ai/administer/access/admin-center/global-resources/overview.md
+            - ai/administer/access/admin-center/global-resources/global-llms.md
+            - ai/administer/access/admin-center/global-resources/global-connections.md
         - Project and Members:
           - ai/administer/access/project-settings.md
           - ai/administer/access/members.md
