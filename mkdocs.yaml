@@ -13,7 +13,8 @@ nav:
       - ai/overview/about-cognigy-ai.md
       - ai/overview/ai-workforce.md
       - ai/overview/key-features.md
-      - Getting Started:
+      - AI Agent Quickstart:
+        - ai/overview/getting-started-with-ai-agents.md
         - ai/overview/getting-started-with-digital-agent.md
         - ai/overview/getting-started-with-voice-agent.md
       - User Interface:
