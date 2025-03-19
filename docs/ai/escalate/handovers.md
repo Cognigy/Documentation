@@ -32,4 +32,4 @@ Cognigy.AI offers a range of tools to manage this escalation effectively:
     - [Set Handover Inactivity](../build/node-reference/service/set-handover-inactivity.md) — defines timeouts for inactive handovers.
 - Features:
     - [User Inactivity Detection](user-inactivity-detection.md) — triggers actions based on user silence.
-    - [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) — provides live updates on queue status (applicable only to Cognigy Live Agent)
+    - [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) — provides live updates on queue status (applicable only to Cognigy Live Agent).

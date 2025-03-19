@@ -29,32 +29,33 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Configuration on the Handover Provider Side
 
-1. [Log in](https://login.salesforce.com/) to Salesforce.
-2. If no chat deployment is available in Salesforce, using the following guides: 
-    - [Create a Basic Chat Implementation](https://help.salesforce.com/s/articleView?id=sf.live_agent_set_up_basic_implementation.htm)
-    - [Create Chat Deployments](https://help.salesforce.com/s/articleView?id=sf.live_agent_create_deployments.htm).
-3. On the Salesforce home page, navigate to **Feature Settings > Service > Chat > Chat Settings**. On the **Chat Settings** page, go to the **API Information > Chat API Endpoint**. Copy the Chat API Endpoint value without the `/chat/rest` part, for example `https://x.xxx-xx-xxx.salesforceliveagent.com`. Save it for future use.
-4. Navigate to **Feature Settings > Service > Embedded Service > Embedded Service Deployments**. In the raw with the deployment you want to use, click ![vertical ellipsis](../../../_assets/icons/vertical-ellipsis.svg), then select **View**.
-5. In the **Embedded Service Code Snippets** section, click **Get Code**. Copy and save the values from the following parameters without the single quotes `''`:
-    - `deploymentId`
-    - `buttonId`
-    - `organizationId`
-      <br>
+??? info "Configure Salesforce Service Cloud"
+    1. [Log in](https://login.salesforce.com/) to Salesforce.
+    2. If no chat deployment is available in Salesforce, using the following guides: 
+        - [Create a Basic Chat Implementation](https://help.salesforce.com/s/articleView?id=sf.live_agent_set_up_basic_implementation.htm)
+        - [Create Chat Deployments](https://help.salesforce.com/s/articleView?id=sf.live_agent_create_deployments.htm).
+    3. On the Salesforce home page, navigate to **Feature Settings > Service > Chat > Chat Settings**. On the **Chat Settings** page, go to the **API Information > Chat API Endpoint**. Copy the Chat API Endpoint value without the `/chat/rest` part, for example `https://x.xxx-xx-xxx.salesforceliveagent.com`. Save it for future use.
+    4. Navigate to **Feature Settings > Service > Embedded Service > Embedded Service Deployments**. In the raw with the deployment you want to use, click ![vertical ellipsis](../../../_assets/icons/vertical-ellipsis.svg), then select **View**.
+    5. In the **Embedded Service Code Snippets** section, click **Get Code**. Copy and save the values from the following parameters without the single quotes `''`:
+        - `deploymentId`
+        - `buttonId`
+        - `organizationId`
+         <br>
 
-          ```javascript
-          embedded_svc.init(
-              'https://...'
-              'https://...',
-              gslbBaseURL
-              '<your-organization-id>', // copy the Organization ID
-              '...',
-              {
-                  baseLiveAgentContentURL: '...',
-                  deploymentId: '<your-deployment-id>', // copy the Deployment ID
-                  buttonId: '<your-button-id>', // copy the Button ID
-              }
-          );
-          ```
+         ```js
+         embedded_svc.init(
+             'https://...', 
+             'https://...', 
+             gslbBaseURL, 
+             '<your-organization-id>', // Copy the Organization ID
+             '...', 
+             {
+                 baseLiveAgentContentURL: '...',
+                 deploymentId: '<your-deployment-id>', // Copy the Deployment ID
+                 buttonId: '<your-button-id>', // Copy the Button ID
+             }
+         );
+         ```
 
 ## Configuration on the Cognigy.AI Side
 
