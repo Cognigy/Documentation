@@ -175,9 +175,9 @@ nav:
         - ai/build/cognigyscript.md
         - ai/build/tokens.md
       - Translation and Localization:
+        - ai/build/translation-and-localization/localization.md
         - ai/build/translation-and-localization/auto-translation.md
         - ai/build/translation-and-localization/real-time-translation.md
-        - ai/build/translation-and-localization/localization.md
       - ai/build/connections.md
       - ai/build/extensions.md
       - ai/build/packages.md

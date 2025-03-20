@@ -6,76 +6,44 @@ hidden: false
 
 # Real-Time Translation
 
-_Real-time translation_ instantly converts languages during live conversations, eliminating the need for pre-translation, as usually required in typical [localization](localization.md) scenarios.
+_Real-Time Translation_ instantly translates languages during conversations, eliminating the need for pre-translation, as in typical [localization](localization.md) scenarios.
 
-With the Real-time translation feature, there's no need to have agents who speak all the required languages for your business. You can focus on just two or three core languages, but at the same time, by utilizing Cognigy's real-time translation capabilities, you can provide service to customers in up to a hundred languages.
+With real-time translation, you don't need human agents for every language nor to pre-localize your Flow. You can focus on a few key languages while still serving customers in many others.
 
-You can configure the Real-time translation feature within the [Real Time Translation](../../deploy/endpoints/real-time-translation-settings.md) settings in the Endpoint.
-Real-time translation can be configured for any Endpoint type, including voice Endpoints, such as the Voice Gateway.
+## Key Features
 
-Use this feature for translating a conversation between the following actors:
+- [Multilingual AI](#users-and-ai-agents). Your [voice](../../overview/getting-started-with-voice-agent.md) and [chat](../../overview/getting-started-with-digital-agent.md) AI Agents can switch languages in real time, even if you only have configured your Flow in English. With this approach, you can reach a greater audience in their native language with low effort.
+- [Real-time translation between users and human agents](#users-and-human-agents). Users and human agents with different can write in different languages in their after a [handover](../../escalate/handovers.md), but they'll receive messages translated into their own language in real time.
 
-- [users and AI Agents](#users-and-ai-agents)
-- [users and human agents](#users-and-human-agents)
+## Prerequisites
 
-## Users and AI Agents
+- You have configured a [machine translation provider](#configure-a-machine-translation-provider).
 
-Translation between a user and an AI Agent in real-time works for text-based and voice conversations.
+## Compatibility with Machine Translation Providers
 
-### Webchat Endpoint Example
+{! _includes/ai/build/translation-and-localization/compatibility-with-machine-translation-providers.md !}
 
-Conditions:
+## Configure a Machine Translation Provider
 
-- Webchat conversation with the **pre-selected** user language.
-- User's language is Russian.
+{! _includes/ai/build/translation-and-localization/configure-a-machine-translation-provider.md !}
 
-Result:
+## How to Use Real-Time Translation
 
-AI Agent's content is translated into Russian in real time.
-Everything in the conversation is translated, including components such as the date picker (day, month, week).
+You can configure the real-time translation feature in the [Real Time Translation](../../deploy/endpoints/real-time-translation-settings.md) settings in the Endpoint editor. All Endpoints, including voice Endpoints, such as Voice Gateway, support real-time translation.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/preselected_user_language_1.png" width="70%" />
-  <figcaption>Webchat Real-time translation and pre-selected language for user inputs</figcaption>
-</figure>
+### Users and AI Agents
 
-## Users and Human Agents
+Real-time translation between a user and an AI Agent works for text-based and voice conversations.
 
-Conversations with real-time translation between the user and a human agent are recorded for compliance purposes.
+### Users and Human Agents
 
-In your Flow, a **Handover to Agent** Node must be added.
+Real-time translation between a user and a human agent works for text-based conversations after a user triggers a [Handover to Agent Node](../node-reference/service/handover-to-agent.md) in the [Flow](../flows/overview.md). Conversations with real-time translation between the user and the human agent are recorded for compliance purposes.
 
-### Chatwoot Handover Example
-
-Conditions:
-
-- User's language is German. 
-- Human Agent's language is English.
-
-Result:
-
-The Webchat conversation between a user and the AI Agent begins.
-At any point in the conversation, if the user expresses a desire to speak to a human agent,
-such as saying `I would like to talk to a human agent`,
-Cognigy AI Agent recognizes this intent, stops the Flow execution,
-and transfers the conversation to a Live Agent who can then take over and continue the interaction.
+After the human agent takes over the conversation, the user can keep writing in their original language while the human agent receives real-time translation of the user's input. The human agent can respond in their language, and the user receives real-time translation of the human agent's response. The following image shows real-time translation example, where the user is writing in German and the human agent is responding in English.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/Webchat_1.png" width="70%" />
-  <figcaption>Webchat conversation with a users handover request</figcaption>
+  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/real-time-translation.png" width="70%" />
 </figure>
-
-The chat flow process between the user and the human agent, which involves real-time translation, proceeds as follows:
-
-- The human agent sees real-time translated user inputs in English and responds in English.
-- The user receives real-time translated responses from the human agent in German within their Webchat application and replies in German.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/build/translation-and-localization/real-time_translation_Webchat-Live_Agent_4.png" width="100%" />
-  <figcaption>A human agent (English) conversation with a user (German) in real-time translation</figcaption>
-</figure>
-
-By clicking **Resolve**, the human agent can close the conversation, and the user is returned to the AI Agent conversation as before.
 
 ## More Information
 
