@@ -18,6 +18,10 @@ Account, Date, Direction, and Status can filter these calls. Note that you can o
   <figcaption>Recent Calls</figcaption>
 </figure>
 
+## Limitations
+
+- The Time-To-Live (TTL) for PCAP files is 14 days.
+
 ## Call Details
 
 To view detailed information about the call, click the **Details** tab.
