@@ -11,6 +11,8 @@ tags:
 
 # Migrate from Endpoint Settings to Handover Provider Settings
 
+The **Handover Providers** section in the [Endpoint settings](../../ai/deploy/endpoints/handover-settings.md) has been deprecated in 4.97, with removal planned for September 2025. 
+
 Starting from Cognigy.AI v4.97, you can migrate your handover provider settings to a new interface that offers more flexibility and better organization for managing integrations with contact centers.
 
 The migration process is seamless and doesn't involve any downtime.

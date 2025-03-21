@@ -9,11 +9,13 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/facebook-messenger.png" width="100%" />
 </figure>
 
+{! _includes/release-notes/handover-providers-deprecation.md !}
+
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Facebook (Meta) Messenger** channel by using our Messenger Endpoint integration. 
 
 ## Generic Endpoint Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)

@@ -9,6 +9,8 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/slack.png" width="100%" />
 </figure>
 
+{! _includes/release-notes/handover-providers-deprecation.md !}
+
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Slack Bot** by using our Slack Endpoint. 
 
 ## Generic Endpoint Settings

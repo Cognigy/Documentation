@@ -9,6 +9,8 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line.png" width="100%" />
 </figure>
 
+{! _includes/release-notes/handover-providers-deprecation.md !}
+
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
 
 ## Generic Endpoint Settings

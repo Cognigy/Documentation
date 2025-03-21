@@ -10,6 +10,8 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/whatsApp-endpoint.png" width="100%" />
 </figure>
 
+{! _includes/release-notes/handover-providers-deprecation.md !}
+
 The WhatsApp Endpoint connects AI Agents to the [WhatsApp Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/) via the [Facebook
 (Meta) App Dashboard](https://developers.facebook.com/docs/development/create-an-app/app-dashboard/). This way, the AI Agent will be able to send messages in WhatsApp Messenger and engage in conversations with your end users.
 

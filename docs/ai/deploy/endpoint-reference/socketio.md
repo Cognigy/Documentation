@@ -9,6 +9,8 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/socket-io.svg" width="100%" />
 </figure>
 
+{! _includes/release-notes/handover-providers-deprecation.md !}
+
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **socket.io** client by using our Socket Endpoint integration.
 
 ## Generic Endpoint Settings
