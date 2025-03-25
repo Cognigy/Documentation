@@ -33,3 +33,11 @@ Cognigy.AI offers a range of tools to manage this escalation effectively:
 - Features:
     - [User Inactivity Detection](user-inactivity-detection.md) — triggers actions based on user silence.
     - [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) — provides live updates on queue status (applicable only to Cognigy Live Agent).
+
+## Working with Handover Providers
+
+=== "GUI"
+    You can create, edit, and delete handover providers in **Deploy > Handover Providers**.
+
+=== "API"
+     You can view, edit, and delete handover providers using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#post-/v2.0/handover/provider).
