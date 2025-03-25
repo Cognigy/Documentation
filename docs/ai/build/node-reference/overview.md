@@ -6,7 +6,7 @@ hidden: false
 
 # Node Reference
 
-_Nodes_ are fundamental building blocks that are used to construct Flows and define the logic of AI Agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
+_Nodes_ are fundamental building blocks for Flows and define the logic of AI Agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can configure and connect Nodes to design complex conversational experiences.
 
 Node Categories:
 
@@ -23,14 +23,12 @@ Node Categories:
 
 If you want to create a custom Node, go to the [Extensions](../extensions.md) section.
 
-Note that Nodes in the Cognigy.AI interface can belong to multiple categories for easy navigation.
-For example, the Code Node is in Basic and Data categories,
-the MongoDB Nodes are in Service and Data, and the Look up Node is in Logic and Basic.
-In the Node reference below, each Node is assigned to a single category to avoid duplicates in descriptions.
+!!! note
+    Nodes can belong to multiple categories for easier search and navigation. In the following sections, each Node is assigned to a single category to avoid duplicated descriptions.
 
 ## [Basic Nodes](basic/overview.md)
 
-Basic Nodes are commonly used in basic conversational Flows. Included are typical Nodes like the [Say Node](basic/say.md), the [Question Node](basic/question.md).
+Basic Nodes are commonly used in basic conversational Flows, for example, the [Say Node](basic/say.md) and the [Question Node](basic/question.md).
 
 ### [Say](basic/say.md)
 
