@@ -306,6 +306,8 @@ These features ensure users are informed about data handling practices and conse
 
 {! _includes/webchat/privacy-notice-acceptance.md !}
 
+Accepting the privacy notice in the chat doesn't count as a user input in terms of [billable conversations](../../ai/administer/billing.md#billable-conversation).
+
 | Parameter                 | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Privacy Notice            | This parameter prompts users to agree to a custom Privacy Notice before initiating a conversation with the AI Agent. It ensures that users are fully informed about how their data will be used during the chat. Acceptance of the privacy policy is required to enter the chat, ensuring compliance and user trust. If the user declines the privacy policy, the chat will not start, and no charges will apply. |
