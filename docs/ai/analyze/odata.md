@@ -42,12 +42,12 @@ You can control data available through the OData endpoint at both the [Endpoint]
 
 ## Supported Versions
 
-| Cognigy.AI version | Cognigy.AI OData Endpoint version | Status         |
-|--------------------|-----------------------------------|----------------|
-| 4.65 and later     | 2.4                               | Supported      |
-| 4.48-4.97          | 2.3                               | Supported      |
-| 4.31-4.47          | 2.0–2.3                           | Out of support |
-| 4.30 and earlier   | 2.0–2.2                           | Out of support |
+| Cognigy.AI version | Cognigy.AI OData Endpoint version | Status                                      |
+|--------------------|-----------------------------------|---------------------------------------------|
+| 4.65 and later     | 2.4                               | Supported                                   |
+| 4.48 and later     | 2.3                               | Supported; deprecation date is September, 2025 |
+| 4.31-4.47          | 2.0–2.3                           | Out of support                              |
+| 4.30 and earlier   | 2.0–2.2                           | Out of support                              |
 
 ## OData Endpoint Access
 
@@ -114,7 +114,7 @@ Select the OData endpoint version [compatible with your Cognigy.AI version](#sup
     | Returns Project IDs and Session IDs for a specific Cognigy.AI project. The request filters the data based on the `projectId` field and selects only the `projectId` and `sessionId` for each matching entry. | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=projectId eq '<project-id>'&$select=projectId,sessionId&apikey=<your-api-key>`                             |
     | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021.                                                                                                                | `https://odata-trial.cognigy.ai/v2.4/Analytics/?$filter=timestamp gt '2021-01-01T00:00:00.000Z' and timestamp lt '2021-07-01T00:00:00.000Z'&apikey=<your-api-key>` |
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     | Request Description                                                                                                                                                                                          | OData 2.3 Request                                                                                                                                                  |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ The set of collections varies depending on which version you are using:
     The URL for accessing the v2.4 OData endpoint is as follows:
     `https://<odata-domain>/v2.4/<collection>?apikey=<your-api-key>`
 
-=== "Version 2.3 (available in v4.97 and earlier)"
+=== "Version 2.3"
 
     The previous version of the OData endpoint is `2.3`. In this version, the following OData collections are available:
 
@@ -185,7 +185,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Analytics?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
     `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=<your-api-key>`
 
 **Fields**
@@ -216,7 +216,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | intent             | The found Intent. This field can be empty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | String   | orderFood                                                        |
 | intentFlow         | The Parent ID of the Flow in which the Intent was found. This field can be empty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | String   | 5e33b160e6236da3aa54221461a53f04                                 |
 | intentScore        | The numerical score of the input against a recognized Intent. This field can be empty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Number   | 0.836322430892043                                                |
-| completedGoalsList | A list of completed goals in this session.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | String   | orderedFood                                                      |
+| completedGoalsList | A list of completed goals in this session.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | String   | orderedFood                                                      |
 | foundSlots         | Found Slot tags.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | String   | DATE                                                             |
 | foundSlotDetails   | Found Slot tags with details.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | String   | DATE[2018-2-25T12:32:32.000]                                     |
 | understood         | An input is considered `understood` if any of the following conditions are met:<br>- An Intent or Slot is identified.<br>- The input is marked as understood through the Nodes: Code, Overwrite Analytics, Search Extract Output, or AI Agent.<br>- The sentence type is `pAnswer`, `nAnswer`, or `Greeting` (if **Confirmation Word logic** is activated).<br><br>An input is considered `not understood` if any of the following conditions are met:<br>- There is an active handover without triggering an AI Copilot Whisper Flow.<br>- The message is explicitly marked as `Don't count` or `Null`. | Boolean  | true                                                             |
@@ -262,7 +262,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Conversations?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=<your-api-key>`
 
@@ -318,7 +318,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Steps?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=<your-api-key>`
 
@@ -356,7 +356,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/ExecutedSteps?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=<your-api-key>`
 
@@ -404,7 +404,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
     `https://odata-trial.cognigy.ai/v2.4/Sessions?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=<your-api-key>`
 
@@ -449,7 +449,7 @@ Each handover (escalation) is logged as a single record.
 
     `https://odata-trial.cognigy.ai/v2.4/LiveAgentEscalations?apikey=<your-api-key>`
 
-=== "OData 2.3 (available in v4.97 and earlier)"
+=== "OData 2.3"
 
     `https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=<your-api-key>`
 
