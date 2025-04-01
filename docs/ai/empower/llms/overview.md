@@ -27,7 +27,7 @@ To integrate an LLM into your conversational design process within Cognigy.AI, f
 1. [Determine a use case that aligns with your business objectives](#use-cases). 
 2. [Select a standard or custom model](#model-types) from a preferred LLM provider. Ensure that you have all the necessary API credentials to access the specific LLM you intend to use. 
 3. Make sure to familiarize yourself with [Cognigy.AI's retry mechanism](#retry-mechanism) in case the model does not respond.
-4. _(Beta)_ Implement a [fallback strategy](#llm-fallback--beta-) to enhance the reliability of the model's connection.
+4. _(Beta)_ Implement a [fallback strategy](#llm-fallback-beta) to enhance the reliability of the model's connection.
 
 ## Use Cases
 

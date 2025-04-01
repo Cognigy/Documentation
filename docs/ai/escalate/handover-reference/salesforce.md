@@ -14,10 +14,13 @@ tags:
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
-  <figcaption>Salesforce Service Cloud </figcaption>
+  <figcaption>Salesforce Service Cloud</figcaption>
 </figure>
 
 ## Description
+
+!!! warning
+    Salesforce announced the removal date for [LiveAgent, Salesforce Chat, Embedded Chat, and Service Chat](https://help.salesforce.com/s/articleView?id=001790618&type=1). The removal date is February 14, 2026. This handover provider connector will remain active until the removal date. Before this date, migrate to a [new connector](salesforce-miaw.md) for the Salesforce provider that supports [Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5).
 
 The Salesforce handover connector bridges Cognigy.AI and [Salesforce Service Cloud](https://salesforce.com/),
 enabling end users to connect with human agents working in a contact center that uses Salesforce Service Cloud.
@@ -64,11 +67,10 @@ enabling end users to connect with human agents working in a contact center that
     !!! note 
         This feature is in Beta. We encourage you to try it out and provide us with feedback.
 
-    1. Go to **Build > Handover Providers**.
-    2. Click **+ New handover Provider** and select the Salesforce as the handover provider.
-    3. In the **New Handover Provider** window, select **Salesforce** from the list and name the connector.
-    4. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Events case of a Handover Status Lookup Node. Agent Replies and Conversation Closed events are not forwarded.
-    5. Fill in the following fields:
+    1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
+    2. In the **New Handover Provider** window, select **Salesforce** from the list and name the connector.
+    3. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Lookup Node. Select the **Handover Status** type in the Lookup Node. In the Case Node, select **Events** from the **Handover Status** list. Agent Replies and Conversation Closed events are not forwarded.
+    4. Fill in the following fields:
 
     | **Field**           | **Description**                                                                        |
     |---------------------|----------------------------------------------------------------------------------------|

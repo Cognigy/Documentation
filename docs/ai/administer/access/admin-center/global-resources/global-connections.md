@@ -11,7 +11,7 @@ tags:
 
 # Global Connections
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../../release-notes/4.97.md)
 
 _Global Connections_ are [Connections](../../../../build/connections.md) established when you create [global LLMs](../../../../empower/llms/overview.md).
 

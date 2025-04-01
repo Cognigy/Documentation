@@ -11,7 +11,7 @@ tags:
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../release-notes/4.97.md)
 
 The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
@@ -94,9 +94,9 @@ click **more filters ![insight-filter-black](../../_assets/icons/insight-filter-
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
 | Source              | Select one or more message sources: <br> - **AI Agent Messages** — messages sent by AI Agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                          |
-| Goals Completed     | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Tasks](../../ai/build/node-reference/overview.md#complete-task).                                                                                                                                                     |
-| Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
+| Tasks               | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Tasks](../../ai/build/node-reference/overview.md#complete-task).                                                                                                                                                     |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
+| Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
 | Message count: To   | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                                   |
 
@@ -212,7 +212,7 @@ The transcript details include the following sections:
 | Birthday                | User's birthday.                                                                                                                                                                       |
 | Location                | User's location.                                                                                                                                                                       |
 | Accepted GDPR           | Accepted General Data Protection Regulation.                                                                                                                                           |
-| Goals Completed         | All the tasks that were completed by the user during conversations with AI Agents or human agents. The field refers to the [Tasks](../../ai/analyze/goals-and-tasks/tasks.md) feature. |
+| Tasks Completed         | All the tasks that were completed by the user during conversations with AI Agents or human agents. The field refers to the [Tasks](../../ai/analyze/goals-and-tasks/tasks.md) feature. |
 
 ## Delete Sessions
 

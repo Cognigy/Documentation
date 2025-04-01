@@ -25,7 +25,7 @@ enabling end users to connect with human agents working in a contact center that
 ## Prerequisites
 
 - Access to [RingCentral Engage](https://login.ringcentral.com/)
-- Created Endpoint [compatible with RingCentral Engage](../../deploy/endpoints/handover-settings.md#channel-support).
+- Created Endpoint [compatible with RingCentral Engage](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 - Configuration steps must be performed by a user with the "Admin" role in RingCentral Engage.
 - A community must already exist within the RingCentral Engage platform.
 

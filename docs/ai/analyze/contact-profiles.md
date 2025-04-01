@@ -7,7 +7,7 @@ hidden: false
 
 # Contact Profiles
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.95-blue.svg)](../../release-notes/4.95.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../release-notes/4.95.md)
 
 _Contact Profiles_ contain information about users who interact with your AI Agents. 
 Within Contact Profiles, you can view user data that was collected during the conversation, for example, first name, last name, and navigate through the transcript history of the conversation. 
@@ -60,7 +60,7 @@ The Profile Schema has the following predefined fields:
 | Last Name               | lastname       | The surname or family name of the contact.                                                                                                                                                                                                                  |
 | Accepted Privacy Policy | privacy_policy | Indicates whether the contact has agreed to the privacy policy terms and specifies the time when the agreement was made. This field is applicable to Webchat v3 when an end user accepts the [Privacy Notice](../../webchat/v3/features.md#privacy-notice). |
 | Accepted GDPR           | accepted_gdpr  | Indicates whether the contact has consented to the General Data Protection Regulation (GDPR) compliance terms.                                                                                                                                              |
-| Goals Completed         | goals          | Refers to all the [tasks](goals-and-tasks/tasks.md) that were completed by the user during conversations with AI Agents or human agents.                                                                                                                    |
+| Tasks Completed         | tasks          | Refers to all the [tasks](goals-and-tasks/tasks.md) that were completed by the user during conversations with AI Agents or human agents.                                                                                                                    |
 | Email                   | email          | The email address associated with the contact.                                                                                                                                                                                                              |
 | Gender                  | gender         | The gender identity of the contact, if provided.                                                                                                                                                                                                            |
 | Age                     | age            | The age of the contact, represented in years.                                                                                                                                                                                                               |

@@ -88,7 +88,27 @@ Writes a message to the project logs.
 
 void
 
-### actions.think || api.think
+### (Deprecated) actions.think || api.think
+
+!!! warning
+    Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
+
+Is used to re-execute the Flow within one invocation.
+
+The Flow will stop and then restart executing at the Start Node.
+
+**Parameters**
+
+| Parameter | Type   | Description                             |
+|-----------|--------|-----------------------------------------|
+| text      | string | A simulated message text from the user. |
+| data      | any    | Simulated message data from the user.   |
+
+**Returns**
+
+void
+
+### actions.thinkV2 || api.thinkV2
 
 Is used to re-execute the Flow within one invocation.
 

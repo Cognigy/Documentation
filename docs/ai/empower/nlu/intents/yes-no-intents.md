@@ -1,15 +1,12 @@
 ---
-title: "Yes/No Intents (Beta)"
+title: "Yes/No Intents"
 slug: "yes-no-intents"
 hidden: false
 ---
 
-# Yes/No Intents (Beta)
+# Yes/No Intents
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47(Beta)-purple.svg)](../../../../release-notes/4.47.md)
-
-!!! note
-    The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../../../release-notes/4.98.md)
 
 The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 
