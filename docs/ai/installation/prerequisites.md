@@ -18,7 +18,8 @@ Cognigy.AI is fully compatible with the following managed Kubernetes services:
 !!! warning
     - **On-premises distributions** — running Cognigy.AI on top of on-premises Kubernetes clusters (like OpenShift) will require significant additional configuration effort from your side. Therefore, we recommend using public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning on-premises Kubernetes clusters to make them compatible with Cognigy products.
     - **On-premises installations** — Kubernetes versions compatible with Cognigy.AI are specified in [Version Compatibility Matrix](version-compatibility-matrix.md).
-
+    - **Updating Cognigy on-premises installations** - when upgrading Cognigy products, don't skip minor versions. Always upgrade one minor version at a time, carefully reviewing the [Release Notes](../../release-notes/index.md) before proceeding. Pay special attention to the Infrastructure section for any additional instructions.
+    
 ### Hardware Requirements
 For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specifications for AWS EKS (or equivalents on other cloud providers):
 
