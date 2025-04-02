@@ -8,369 +8,368 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../../release-notes/4.84.md)
 
-Within a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
+In a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 
 !!! note "Available in Extensions"
-    The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.
+    The following functions are available in Extensions as well. You can use the `api` object and, for example, execute `api.say()`.
 
-## Misc
+## General
 
-### actions.output / actions.say || api.output / api.say
+??? info "actions.output / actions.say || api.output / api.say"
 
-Executes a basic output to the contact, similar to the functionality of the [Say](../say.md) Node. 
+    Executes a basic output to the contact, similar to the functionality of the [Say](../../basic/say.md) Node. 
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                  |
-|-----------|--------|----------------------------------------------|
-| text      | string | The output text that is sent to the contact. |
-| data      | any    | The output data that is sent to the contact  |
+    | Parameter | Type   | Description                                  |
+    |-----------|--------|----------------------------------------------|
+    | text      | string | The output text that is sent to the contact. |
+    | data      | any    | The output data that is sent to the contact  |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.completeGoal || api.completeGoal
+??? info "actions.completeGoal || api.completeGoal"
 
-Completes the goal in **Insights.**
+    Completes the goal in **Insights.**
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                          |
-|-----------|--------|----------------------------------------------------------------------|
-| key       | string | The name of the goal that will be completed in Insights.             |
+    | Parameter | Type   | Description                                                          |
+    |-----------|--------|----------------------------------------------------------------------|
+    | key       | string | The name of the goal that will be completed in Insights.             |
 
-**Returns**
+    **Returns**
 
-Promise<void>
+    Promise<void>
 
-### actions.setTimezoneOffset || api.setTimezoneOffset
+??? info "actions.setTimezoneOffset || api.setTimezoneOffset"
 
-Sets the time zone offset from UTC.
+    Sets the time zone offset from UTC.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type     | Description               |
-|-----------|----------|---------------------------|
-| offset    | *number* | The time offset in hours. |
+    | Parameter | Type     | Description               |
+    |-----------|----------|---------------------------|
+    | offset    | *number* | The time offset in hours. |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError
+??? info "actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError"
 
-Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
+    Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                        |
-|-----------|--------|--------------------------------------------------------------------|
-| message   | string | The debug message text.                                            |
-| header    | string | The Header text for the debug message. This parameter is optional. |
+    | Parameter | Type   | Description                                                        |
+    |-----------|--------|--------------------------------------------------------------------|
+    | message   | string | The debug message text.                                            |
+    | header    | string | The Header text for the debug message. This parameter is optional. |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.log || api.log
+??? info "actions.log || api.log"
 
-Writes a message to the project logs.
+    Writes a message to the Project logs.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                    |
-|-----------|--------|------------------------------------------------|
-| level     | string | The log level, for example, `debug` or `info`. |
-| text      | string | The message for the logs.                      |
+    | Parameter | Type   | Description                                    |
+    |-----------|--------|------------------------------------------------|
+    | level     | string | The log level, for example, `debug` or `info`. |
+    | text      | string | The message for the logs.                      |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### (Deprecated) actions.think || api.think
+??? info "(Deprecated) actions.think || api.think"
 
-!!! warning
-    Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
+    !!! warning
+        Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
 
-Is used to re-execute the Flow within one invocation.
+    Is used to re-execute the Flow within one invocation.
 
-The Flow will stop and then restart executing at the Start Node.
+    The Flow will stop and then restart executing at the Start Node.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                             |
-|-----------|--------|-----------------------------------------|
-| text      | string | A simulated message text from the user. |
-| data      | any    | Simulated message data from the user.   |
+    | Parameter | Type   | Description                             |
+    |-----------|--------|-----------------------------------------|
+    | text      | string | A simulated message text from the user. |
+    | data      | any    | Simulated message data from the user.   |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.thinkV2 || api.thinkV2
+??? info "actions.thinkV2 || api.thinkV2"
 
-Is used to re-execute the Flow within one invocation.
+    Is used to re-execute the Flow within one invocation.
 
-The Flow will stop and then restart executing at the Start Node.
+    The Flow will stop and then restart executing at the Start Node.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                             |
-|-----------|--------|-----------------------------------------|
-| text      | string | A simulated message text from the user. |
-| data      | any    | Simulated message data from the user.   |
+    | Parameter | Type   | Description                             |
+    |-----------|--------|-----------------------------------------|
+    | text      | string | A simulated message text from the user. |
+    | data      | any    | Simulated message data from the user.   |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
 ## Context
 
-### actions.addToContext || api.addToContext
+??? info "actions.addToContext || api.addToContext"
 
-Is used to simplify storing information into the conversation's Context.
+    Is used to simplify storing information into the conversation's Context.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                                                                                                  |
-|-----------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| key       | string | Where to store the data in the Context.                                                                                                      |
-| value     | string | The value to store in the Context.                                                                                                           |
-| mode      | string | In `simple` mode, will replace existing values, in `array` mode, it will store information in an array and push new results into that array. |
+    | Parameter | Type   | Description                                                                                                                                  |
+    |-----------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|
+    | key       | string | Where to store the data in the Context.                                                                                                      |
+    | value     | string | The value to store in the Context.                                                                                                           |
+    | mode      | string | In `simple` mode, will replace existing values, in `array` mode, it will store information in an array and push new results into that array. |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.getContext || api.getContext
+??? info "actions.getContext || api.getContext"
 
-Gets the data from the context by the key.
+    Gets the data from the context by the key.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                  |
-|-----------|--------|----------------------------------------------|
-| key       | string | Where to retrieve the data from the context. |
+    | Parameter | Type   | Description                                  |
+    |-----------|--------|----------------------------------------------|
+    | key       | string | Where to retrieve the data from the context. |
 
-**Returns**
+    **Returns**
 
-any : The requested context data
+    any : The requested context data
 
-### actions.getConversationTranscript || api.getConversationTranscript
+??? info "actions.getConversationTranscript || api.getConversationTranscript"
 
-Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the AI Agent.
+    Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the AI Agent.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                                                                                                     |
-|-----------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript. |
-| options   | object | Options to be passed to the function. The example is presented below.                                                                           |
+    | Parameter | Type   | Description                                                                                                                                     |
+    |-----------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+    | mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript. |
+    | options   | object | Options to be passed to the function. The example is presented below.                                                                           |
 
-Example Options:
+    Example Options:
 
-```json
-{
-    "turnLimit": 3 // the number of turns to return
-}
-```
+    ```json
+    {
+        "turnLimit": 3 // the number of turns to return
+    }
+    ```
 
-**Returns**
+    **Returns**
 
-Either the JSON array of conversation entries or the string representation. 
+    Either the JSON array of conversation entries or the string representation. 
 
-Example JSON:
+    Example JSON:
 
-```json
-[
-    { "source":"user", "text":"hello" },
-    { "source":"bot", "text":"You said: hello" },
-    { "source":"user", "text":"you are an ai agent" },
-    { "source":"bot", "text":"You said: you are an ai agent" },
-    { "source":"user", "text":"show transcript" }
-]
-```
+    ```json
+    [
+        { "source":"user", "text":"hello" },
+        { "source":"bot", "text":"You said: hello" },
+        { "source":"user", "text":"you are an ai agent" },
+        { "source":"bot", "text":"You said: you are an ai agent" },
+        { "source":"user", "text":"show transcript" }
+    ]
+    ```
 
-Example string:
+    Example string:
 
-```text
-- USER: hello
-- BOT: You said: hello
-- USER: you are an ai agent
-- BOT: You said: you are an ai agent
-- USER: show transcript
-```
+    ```text
+    - USER: hello
+    - BOT: You said: hello
+    - USER: you are an ai agent
+    - BOT: You said: you are an ai agent
+    - USER: show transcript
+    ```
 
-### actions.resetContext || api.resetContext
+??? info "actions.resetContext || api.resetContext"
 
-Resets the context.
+    Resets the context.
 
-**Parameters**
+    **Parameters**
 
-none
+    none
 
-**Returns**
+    **Returns**
 
-Promise
+    Promise
 
-### actions.removeFromContext || api.removeFromContext
+??? info "actions.removeFromContext || api.removeFromContext"
 
-Removes information from the conversation's Context.
+    Removes information from the conversation's Context.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                                                                       |
-|-----------|--------|-------------------------------------------------------------------------------------------------------------------|
-| key       | string | The key in the Context to remove information from                                                                 |
-| value     | string | The value to remove (in array mode)                                                                               |
-| mode      | string | In simple mode will remove the property completely, in array mode it will remove matching values from that array. |
+    | Parameter | Type   | Description                                                                                                       |
+    |-----------|--------|-------------------------------------------------------------------------------------------------------------------|
+    | key       | string | The key in the Context to remove information from                                                                 |
+    | value     | string | The value to remove (in array mode)                                                                               |
+    | mode      | string | In simple mode will remove the property completely, in array mode it will remove matching values from that array. |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.deleteContext || api.deleteContext
+??? info "actions.deleteContext || api.deleteContext"
 
-Deletes the key and its values from the conversation's Context.
+    Deletes the key and its values from the conversation's Context.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                       |
-|-----------|--------|---------------------------------------------------|
-| key       | string | The key in the Context to remove information from |
+    | Parameter | Type   | Description                                       |
+    |-----------|--------|---------------------------------------------------|
+    | key       | string | The key in the Context to remove information from |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
 ## State
 
+??? info "actions.setState || api.setState"
 
-### actions .setState || api.setState
+    Is used to set the current State of this Conversation.
 
-Is used to set the current State of this Conversation.
+    **Parameters**
 
-**Parameters**
+    | Parameter | Type   | Description                         |
+    |-----------|--------|-------------------------------------|
+    | state     | string | The State that should be activated. |
 
-| Parameter | Type   | Description                         |
-|-----------|--------|-------------------------------------|
-| state     | string | The State that should be activated. |
+    **Returns**
 
-**Returns**
+    void
 
-void
+??? info "actions.getState || api.getState"
 
-### actions .getState || api.getState
+    Returns the current state.
 
-Returns the current state.
+    **Parameters**
 
-**Parameters**
+    none
 
-none
+    **Returns**
 
-**Returns**
+    string: The current state.
 
-string: The current state.
+??? info "actions.resetState || api.resetState"
 
-### actions .resetState || api.resetState
+    Resets the state of the flow to the *default* state
 
-Resets the state of the flow to the *default* state
+    **Parameters**
 
-**Parameters**
+    none
 
-none
+    **Returns**
 
-**Returns**
-
-Promise<string>
+    Promise<string>
 
 ## Lexicon
 
-### actions .setKeyphrase || api.setKeyphrase
+??? info "actions.setKeyphrase || api.setKeyphrase"
 
-**Parameters**
+    **Parameters**
 
-| Parameter             | Type       | Description                                  |
-|-----------------------|------------|----------------------------------------------|
-| keyphrase             | string     | The Keyphrase you want to set                |
-| tags                  | *string[]* | Tags you want to attach to the Keyphrase     |
-| synonyms *(optional)* | *string[]* | Synonyms you want to attach to the Keyphrase |
+    | Parameter             | Type       | Description                                  |
+    |-----------------------|------------|----------------------------------------------|
+    | keyphrase             | string     | The Keyphrase you want to set                |
+    | tags                  | *string[]* | Tags you want to attach to the Keyphrase     |
+    | synonyms *(optional)* | *string[]* | Synonyms you want to attach to the Keyphrase |
 
-**Returns**
+    **Returns**
 
-void
+    void
 
-### actions.addLexiconKeyphrase || api.addLexiconKeyphrase
+??? info "actions.addLexiconKeyphrase || api.addLexiconKeyphrase"
 
-Adds a new keyphrase to a lexicon.
+    Adds a new keyphrase to a lexicon.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                  |
-|-----------|--------|----------------------------------------------|
-| lexiconId | string | The ID of the Lexicon you want to update     |
-| keyphrase | string | The Keyphrase you want to add to the Lexicon |
-| tags      | any    | Tags you want to attach to the Keyphrase.    |
-| synonyms  | any    | Synonyms you want to attach to the Keyphrase |
+    | Parameter | Type   | Description                                  |
+    |-----------|--------|----------------------------------------------|
+    | lexiconId | string | The ID of the Lexicon you want to update     |
+    | keyphrase | string | The Keyphrase you want to add to the Lexicon |
+    | tags      | any    | Tags you want to attach to the Keyphrase.    |
+    | synonyms  | any    | Synonyms you want to attach to the Keyphrase |
 
-**Returns**
+    **Returns**
 
-Promise<string>
+    Promise<string>
 
 ## Profile
 
-### actions.activateProfile || api.activateProfile
+??? info "actions.activateProfile || api.activateProfile"
 
-Is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
+    Is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
 
-**Parameters**
+    **Parameters**
 
-None
+    None
 
-**Returns**
+    **Returns**
 
-Promise<any> 
+    Promise<any>
 
-### actions.updateProfile || api.updateProfile
+??? info "actions.updateProfile || api.updateProfile"
 
-Is used to update the users' Contact Profile.
+    Is used to update the users' Contact Profile.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                          |
-|-----------|--------|------------------------------------------------------|
-| key       | string | Which field in the user's Contact Profile to update. |
-| value     | string | The value you want to set.                           |
+    | Parameter | Type   | Description                                          |
+    |-----------|--------|------------------------------------------------------|
+    | key       | string | Which field in the user's Contact Profile to update. |
+    | value     | string | The value you want to set.                           |
 
-**Returns**
+    **Returns**
 
-Promise<any>
+    Promise<any>
 
-### actions.mergeProfile || api.mergeProfile
+??? info "actions.mergeProfile || api.mergeProfile"
 
-Is used to merge the profile of the contact who hits the node with another contact profile. 
+    Is used to merge the profile of the contact who hits the Node with another contact profile. 
 
-This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
+    This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
 
-**Parameters**
+    **Parameters**
 
-| Parameter | Type   | Description                                                                        |
-|-----------|--------|------------------------------------------------------------------------------------|
-| contactId | string | The id of the contact you want to merge with the current contact who hit the Node. |
+    | Parameter | Type   | Description                                                                        |
+    |-----------|--------|------------------------------------------------------------------------------------|
+    | contactId | string | The id of the contact you want to merge with the current contact who hit the Node. |
 
-**Returns**
+    **Returns**
 
-Promise<any> 
+    Promise<any>
 
-### actions.deactivateProfile || api.deactivateProfile
+??? info "actions.deactivateProfile || api.deactivateProfile"
 
-Is used to deactivate a specific contact profile in case a contact requests it.
+    Is used to deactivate a specific contact profile in case a contact requests it.
 
-**Parameters**
+    **Parameters**
 
-None
+    None
 
-**Returns**
+    **Returns**
 
-Promise<any>
+    Promise<any>

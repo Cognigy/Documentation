@@ -26,7 +26,7 @@ Remember to label all UI elements in your Webchat to explain their purpose clear
 Provide users with descriptive labels for each interactive element, including links, text on buttons, and forms.
 Make sure the visible and non-visible text is meaningful to help users navigate the screen using headings or links.
 
-Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md#output-type--default-ai-channel-) that contain images.
+Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md) that contain images.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/image-alt-text.png" width="100%" />

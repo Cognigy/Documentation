@@ -8,8 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/call-recording.png" width="80%" />
-  <figcaption>Voice Gateway Call Recording</figcaption>
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/call-recording.png" width="50%" />
 </figure>
 
 ## Description
@@ -20,7 +19,7 @@ The Call Recording Node uses a Voice Gateway API to act as a [SIPREC](https://da
 
 Note that this Node controls a specific Flow. If you want to enable call recording for all Flows and record entire calls, configure the [Call Recording](../../../../../voice-gateway/webapp/accounts.md#call-recording-configuration) setting on the Voice Gateway Self-Service Portals.
 
-## Settings
+## Parameters
 
 | Parameter             | Type          | Description                                                                                                                                                                                                                                                                                                                                | Activity type        |
 |-----------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|

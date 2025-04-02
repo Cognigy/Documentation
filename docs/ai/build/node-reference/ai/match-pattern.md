@@ -6,41 +6,41 @@
 # Match Pattern
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/match-pattern.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/match-pattern.png" width="40%" />
 </figure>
 
 ## Description
 
-The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../../test/interaction-panel/input.md).
+The Match Pattern Node enables a user to find patterns in text and expose them in the [Input object](../../../test/interaction-panel/input.md).
 
-You can define patterns that will be searched for in the input text or the alternate text that was provided. If a pattern is found, a matchedPatterns group will be created in the [Input Object](../../../test/interaction-panel/input.md).
+You can define patterns to search for in the input text or in the alternate text that was provided. If a pattern is found, a `matchedPatterns` group is created in the Input object.
 
 ## Patterns
 
-Patterns can be any text and can contain references to slots by using the `@` symbol. 
+Patterns can be any text and can contain references to Slots by using the `@` symbol. 
 
 Example: `@color @product`
 
-A text like `I need a green shirt` would find the compound slot group and assign `color = green` and `product = shirt`.
+In `I need a green shirt`, two Slots are found and assigned to `color = green` and `product = shirt`.
 
 ### Tags
 
-Slots can be tagged in a pattern to be easier identifiable later.
+You can tag Slots in a pattern to make it easier to identify them later.
 
 Example: `from @city>origin to @city>destination`.
 
-A text like `I want to go from Düsseldorf to Tokyo` would find a matched pattern group with origin and destination set.
+In `I want to go from Düsseldorf to Tokyo`, the `city` Slot is found in a matched pattern group with origin and destination tags.
 
 ## Parameters
 
-| Parameter               | Type        | Description                                                                          |
-|-------------------------|-------------|--------------------------------------------------------------------------------------|
-| Patterns                | TextArray   | The patterns to be applied to the text.                                              |
-| Pattern Group Name      | CognigyText | The name of the pattern matching group.                                              |
-| Create New Slots        | Boolean     | Indicates whether new slots should be created from tags or not.                      |
-| Tag Existing Slots      | Boolean     | Indicates whether existing slots should be tagged or not.                            |
-| Detailed Compound Slots | Boolean     | Indicates whether detailed results for the matched patterns should be stored or not. |
-| Alternate Input         | CognigyText | The input text to be used instead of the current input text.                         |
+| Parameter               | Type        | Description                                                                   |
+|-------------------------|-------------|-------------------------------------------------------------------------------|
+| Patterns                | TextArray   | The patterns to be applied to the text.                                       |
+| Pattern Group Name      | CognigyText | The name of the pattern matching group.                                       |
+| Create New Slots        | Boolean     | Indicate whether new Slots are created from tags or not.                      |
+| Tag Existing Slots      | Boolean     | Indicate whether existing Slots are tagged or not.                            |
+| Detailed Compound Slots | Boolean     | Indicate whether detailed results for the matched patterns are stored or not. |
+| Alternate Input         | CognigyText | The input text to use instead of the current input text.                      |
 
 ## Example
 

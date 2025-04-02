@@ -8,26 +8,28 @@ hidden: false
 # AI Agent Handover
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent-handover.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent-handover.png" width="40%" />
 </figure>
 
 ## Description
 
-The AI Agent Handover Node is used to transfer the conversation to another AI Agent Node or Flow, which will be triggered and executed as soon as this Node is activated.
+{! _includes/ai/beta.md !}
 
-## Settings
+The AI Agent Handover Node transfers the conversation to another AI Agent Node or Flow and executes it.
 
-| Parameter   | Type     | Description                                                                                                                                                                                                                                                                            |
-|-------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select Flow | Selector | Select the target Flow that is switched to whenever the Flow execution triggers the AI Agent Handover Node.                                                                                                                                                                            |
-| Select Node | Selector | Select the target Node that is switched to whenever the Flow execution triggers the AI Agent Handover Node. A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md#set-entrypoint) setting. | 
+## Parameters
+
+| Parameter   | Type     | Description                                                                                                                                                                             |
+|-------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Select Flow | Selector | Select the target Flow to trigger.                                                                                                                                                      |
+| Select Node | Selector | Select a Node to trigger. You must set the Node as an Entrypoint before you can select it. To set the Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md) setting. |
 
 ### Advanced
 
-| Parameter     | Type   | Description                                                                                     |
-|---------------|--------|-------------------------------------------------------------------------------------------------|
-| Parse Intents | Toggle | Enable the system to check for Intents in the correct sub Flow, rather than in the parent Flow. |
-| Parse Slots   | Toggle | Enable the system to check for Slots in the correct sub Flow, rather than in the parent Flow.   |
+| Parameter     | Type   | Description                                                                                       |
+|---------------|--------|---------------------------------------------------------------------------------------------------|
+| Parse Intents | Toggle | Enable the system to check for Intents in the correct child Flow, rather than in the parent Flow. |
+| Parse Slots   | Toggle | Enable the system to check for Slots in the correct child Flow, rather than in the parent Flow.   |
 
 ## More Information
 

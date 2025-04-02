@@ -20,6 +20,6 @@ hidden: false
 
 ## More Information
 
-- [Voice Gateway Mute Speech Input Node](../voice-gateway/mute-speech-input.md)
+- [Voice Gateway Mute Speech Input Node](../voice-gateway//mute-speech-input.md)
 - [xApps](../../../../../xApps/overview.md)
 - [xApp Nodes](../../xApp/overview.md)

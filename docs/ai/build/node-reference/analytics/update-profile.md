@@ -7,16 +7,16 @@ hidden: false
 # Update Profile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/update-profile.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/update-profile.png" width="50%" />
 </figure>
 
 ## Description
 
-This Node is used to update users' Contact Profiles.
+This Node updates users' Contact Profiles.
 The available Profile Schema fields correspond to all defined fields in the Project's [Profile Schema](../../../analyze/contact-profiles.md#profile-schema). 
-If an invalid field is used, no action will be taken.
+If an invalid field is used, no action is taken.
 
-## Settings
+## Parameters
 
 | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                  |
 |----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

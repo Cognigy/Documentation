@@ -7,7 +7,7 @@ hidden: true
 # Copilot: SecureForms Tile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/secure-forms.png" width="80%"/>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/secure-forms.png" width="50%"/>
 </figure>
 
 ## Description
@@ -21,7 +21,7 @@ Any credit card information will be securely stored within the [Cognigy PCI Vaul
 
 The Node must be integrated into the AI Copilot Flow, requiring only the Tile ID for configuration.
 
-## Settings
+## Parameters
 
 | Parameter | Type          | Description                                              |
 |-----------|---------------|----------------------------------------------------------|

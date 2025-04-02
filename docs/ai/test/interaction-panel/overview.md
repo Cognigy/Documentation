@@ -66,7 +66,7 @@ When you create more than one locale, you can select a preferred language as fol
 1. Click ![expand 2](../../../_assets/icons/expand_2.svg) to open a list of the available locales.
 2. Select the Locale you want to use.
 
-When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows/overview.md#locale-settings) of your Flow.
+When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows/overview.md) of your Flow.
 
 ### Snapshot
 
@@ -302,7 +302,7 @@ Within this mode, the Interaction Panel displays more information about the Flow
 - Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
 - Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
-Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md#actionslogdebugmessage--actionslogdebugerror--apilogdebugmessage--apilogdebugerror) in the Code Node.
+Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md) in the Code Node.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />

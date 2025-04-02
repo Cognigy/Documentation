@@ -6,18 +6,18 @@
 # Trigger Function
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/trigger-function.png" width="80%" />
-  <figcaption>Conversation flow structure for an IF Node</figcaption>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/trigger-function.png" width="50%" />
 </figure>
 
 ## Description
 
-This Node is used to execute a [Function](../../functions.md).
+This Node executes a [Function](../../functions.md).
 
-If the Function was successfully scheduled, it will execute the "On Scheduled" branch, otherwise it will execute the "On Scheduling Failed" branch.
+If the Function was successfully scheduled, it will execute the **On Scheduled** branch, otherwise it will execute the **On Scheduling Failed** branch.
 
-## Configuration
+## Parameters
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/trigger-function-configuration.png" width="80%" />
-</figure>
+| Parameter           | Type | Description                            |
+|---------------------|------|----------------------------------------|
+| Function            | List | Select the Function to be executed.    |
+| Function Parameters | JSON | Enter the parameters for the Function. |

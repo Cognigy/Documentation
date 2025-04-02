@@ -9,7 +9,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../../release-notes/4.51.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/init-xApp-session.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/init-xApp-session.png" width="50%" />
 </figure>
 
 ## Description
@@ -41,29 +41,34 @@ The **xApp PIN Page URL** token provides a URL, which is also accessible via `in
 
 With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
 
-## Settings
+## Parameters
 
-### Style Customization
+??? info "Style Customization"
 
-Customize the following parameters for the default screen:
+    | Parameter          | Type          | Description                                                                                                                                                                                                      |
+    |--------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Background Color   | CognigyScript | A color that is displayed in the background of all Shell Page Screens. You can use CSS background-color values such as `hex`, `hsl+a`, and `rgb+a`.                                                              |
+    | Text Color         | CognigyScript | A color that is used for textual content on all Shell Page Screens. You can use CSS color values such as `hex`, `hsl+a`, and `rgb+a`. Make sure that the text color has high contrast with the background color. |
+    | Logo               | List          | You can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.                                                                      |
+    | Custom Favicon URL | CognigyScript | An image URL for the custom favicon.                                                                                                                                                                             |
+    | Page Title         | CognigyScript | A text shown as a tab or window title. The title is displayed on all Shell Page Screens.                                                                                                                         |
 
-- Background Color — a color that is displayed in the background of all Shell Page Screens. You can use CSS background-color values such as `hex`, `hsl+a`, and `rgb+a`.
-- Text Color — a color that is used for textual content on all Shell Page Screens. You can use CSS color values such as `hex`, `hsl+a`, and `rgb+a`. Make sure that the text color has high contrast with the background color.
-- Logo — you can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.
-- Custom Favicon URL — an image URL for the custom favicon.
-- Page Title — a text shown as a tab or window title. The title is displayed on all Shell Page Screens.
+??? info "xApp Screens"
 
-### xApp Screens
+    | Parameter           | Type          | Description                                                                                |
+    |---------------------|---------------|--------------------------------------------------------------------------------------------|
+    | 'Loading' Text      | CognigyScript | Specify messages displayed to the user when the xApp Page is loading                       |
+    | 'Launch Error' Text | CognigyScript | Specify messages displayed to the user when the xApp Page fails for some reason            |
+    | 'xApp Error' Text   | CognigyScript | Specify messages displayed to the user when the xApp Page encounters an error or is halted |
+    
 
-Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, or is halted.
+??? info "Intermediate Screen"
 
-### Intermediate Screen
+    Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
-Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+??? info "Connection Screen"
 
-### Connection Screen
-
-Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+    Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
 ## More Information
 

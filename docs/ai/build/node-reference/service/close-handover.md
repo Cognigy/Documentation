@@ -6,15 +6,14 @@ hidden: false
 # Close Handover
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/close-handover.png" width="80%" />
-  <figcaption>Close Handover</figcaption>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/close-handover.png" width="50%" />
 </figure>
 
 ## Description
 
-Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the AI Agent.
+This Node closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user is only returned to the AI Agent.
 
-If the Close Handover Node is not active and the human agent resolves a conversation in the Handover Provider later, the Node will be ignored and not trigger a Flow.
+If the Close Handover Node isn't active and the human agent resolves a conversation in the Handover Provider later, the Node is ignored and doesn't trigger a Flow.
 
 You can use this Node after the [Set Handover Inactivity](set-handover-inactivity.md) Node.
 

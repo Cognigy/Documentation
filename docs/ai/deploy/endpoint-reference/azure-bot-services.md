@@ -65,7 +65,7 @@ This value is the **SSO Connection Name** when using this endpoint with an SSO i
 
 As of release v4.9, the display changes for clicked postback buttons in a Microsoft Teams chat. 
 
-When clicking the postback button in a [quick reply](../../build/node-reference/basic/say.md#text-with-quick-replies), [gallery](../../build/node-reference/basic/say.md#gallery), [list](../../build/node-reference/basic/say.md#list), or [button](../../build/node-reference/basic/say.md#text-with-buttons) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
+When clicking the postback button in a [quick reply](../../build/node-reference/basic/say.md), [gallery](../../build/node-reference/basic/say.md), [list](../../build/node-reference/basic/say.md), or [button](../../build/node-reference/basic/say.md) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/teams-chat.svg" width="100%" />

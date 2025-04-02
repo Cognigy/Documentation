@@ -69,8 +69,8 @@ The following audio codecs are supported:
 - Receiving re-INVITE with no Session Description Protocol (SDP).
 - [Answering machine detection](references/verbs/amd.md).
 - Configurable music on hold.
-- Configurable [Atmosphere Sounds](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#atmosphere-sounds) playing in the background of the conversation.
-- Configurable [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md#silence-overlay) playing background sounds when there's a long pause in a call.
+- Configurable [Atmosphere Sounds](../ai/build/node-reference/voice/voice-gateway/parameter-details.md) playing in the background of the conversation.
+- Configurable [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md) playing background sounds when there's a long pause in a call.
 
 ### Call Management
 
@@ -90,7 +90,7 @@ The following audio codecs are supported:
 
 ### Call Quality Monitoring and Optimization
 
-- Observability features include [tracing call events with open telemetry](webapp/recent-calls.md#call-tracing).
+- Observability features include [tracing call events with open telemetry](webapp/recent-calls.md).
 - Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTS and STT) on each call.
 - [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
 

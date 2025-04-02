@@ -136,6 +136,6 @@ add a [Go To Node](../../../ai/build/node-reference/logic/go-to.md) that leads t
 ## More Information
 
 - [Overview](overview.md)
-- [Lookup](../../../ai/build/node-reference/logic/lookup.md#handover-status)
+- [Lookup](../../../ai/build/node-reference/logic/lookup.md)
 - [User Inactivity Detection and Handling](../../../ai/escalate/user-inactivity-detection.md)
 - [Agent Handover](../../../ai/build/node-reference/service/handover-to-agent.md)

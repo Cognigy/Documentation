@@ -73,7 +73,7 @@ and listen to your voice agent's outputs to ensure they are working seamlessly.
 
 To enable call recording, use the [Account](accounts.md#call-recording-configuration) or [Application](applications.md#call-recording-configuration) settings.
 
-When call recording is enabled, you can use the embedded media player to listen to recordings of calls. Note that the recording will consist of only the caller track and the agent track. The dub track for [Atmosphere Sounds](../../ai/build/node-reference/voice/voice-gateway/parameter-details.md#atmosphere-sounds) will not be included in the recording.
+When call recording is enabled, you can use the embedded media player to listen to recordings of calls. Note that the recording will consist of only the caller track and the agent track. The dub track for [Atmosphere Sounds](../../ai/build/node-reference/voice/voice-gateway/parameter-details.md) will not be included in the recording.
 
 With the included media player controls, scan the audio and download the recording locally.
 

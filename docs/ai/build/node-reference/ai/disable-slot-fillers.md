@@ -6,9 +6,9 @@ hidden: false
 # Disable Slot Fillers
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/disable-slot-fillers.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/disable-slot-fillers.png" width="40%" />
 </figure>
 
 ## Description
 
-The Disable Slot Fillers Node lets you disable any active Slot Fillers. For more information on Slot Fillers, refer to [NLU (Natural Language Understanding)](../../../empower/nlu/overview.md).
+The Disable Slot Fillers Node disables any active Slot Fillers. For more information on Slot Fillers, refer to [Natural Language Understanding (NLU)](../../../empower/nlu/overview.md).

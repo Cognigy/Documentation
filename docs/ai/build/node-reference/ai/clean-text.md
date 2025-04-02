@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../../release-notes/4.51.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/clean-text.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/clean-text.png" width="40%" />
 </figure>
 
 ## Description

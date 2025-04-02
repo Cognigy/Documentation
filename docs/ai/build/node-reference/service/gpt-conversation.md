@@ -6,16 +6,16 @@ hidden: false
 
 # GPT Conversation (Research preview)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../../release-notes/4.48.md)
-
-!!! warning "Deprecation"
-    The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later. Use the [LLM Prompt Node](llm-prompt.md) to generate messages with LLM services.
+[![Version badge](https://img.shields.io/badge/Added in-v4.48.0-blue.svg)](../../../../release-notes/4.48.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation.png" width="80%" />
 </figure>
 
 ## Description
+
+!!! warning "Deprecation"
+    The GPT Conversation Node has been deprecated and can no longer be created in Cognigy.AI v4.85 and later. Use the [LLM Prompt Node](llm-prompt.md) to generate messages with LLM services.
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
@@ -28,7 +28,7 @@ The GPT Conversation Node can support the entire conversation using Large Langua
 
 Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai).
 
-## Settings
+## Parameters
 
 ### Mode
 

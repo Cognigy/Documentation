@@ -26,6 +26,6 @@ Cognigy.AI provides an [OData Analytics Endpoint](odata.md) that enables adminis
 
 ## Dashbot
 
-Any Cognigy.AI endpoint can be natively connected to the third-party analytics vendor [Dashbot](../deploy/endpoints/data-protection-and-analytics.md#available-external-analytics-services-).
+Any Cognigy.AI endpoint can be natively connected to the third-party analytics vendor [Dashbot](../deploy/endpoints/data-protection-and-analytics.md).
 
 

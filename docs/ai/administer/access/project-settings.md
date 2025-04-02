@@ -22,15 +22,15 @@ Within your agent, from the left toolbar click **Manage** --> **Settings** to ac
 
 ### Yes/No logic
 
-Add a specific [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../empower/nlu/intents/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../build/node-reference/overview.md#question).
+Add a specific [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../empower/nlu/intents/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../build/node-reference/overview.md).
 
 ### Additional confirmation words
 
-Add your own customized responses to confirm an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md#question).
+Add your own customized responses to confirm an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md).
 
 ### Additional negative confirmation words 
 
-Add your own customized responses to negate an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md#question).
+Add your own customized responses to negate an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md).
 
 ### Continue **main** Flow after attached Flow
 

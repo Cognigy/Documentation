@@ -6,9 +6,9 @@
 # Wait for Input
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/wait-for-input.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/wait-for-input.png" width="50%" />
 </figure>
 
 ## Description
 
-The Wait for Input nodes stops Flow execution and waits for the next user input.
+The Wait for Input Nodes stops Flow execution and waits for the next user input.

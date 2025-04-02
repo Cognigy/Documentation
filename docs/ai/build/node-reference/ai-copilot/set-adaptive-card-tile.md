@@ -9,16 +9,16 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-adaptive-card-tile.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-adaptive-card-tile.png" width="50%" />
 </figure>
 
 ## Description
 
 This Node allows you to create and display adaptive cards in your AI Copilot Workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
 
-The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form. Alternatively, you can use [Generative AI](#create-an-adaptive-card-with-generative-ai) to create a new adaptive card or improve an existing one.
+The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form. Alternatively, you can use Generative AI to create a new adaptive card or improve an existing one.
 
-## Settings 
+## Parameters 
 
 | Parameter            | Type          | Description                                                                                    |
 |----------------------|---------------|------------------------------------------------------------------------------------------------|
@@ -27,17 +27,17 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 | Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.                                      |
 | JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.                                         |
 
-### Create an Adaptive Card with Generative AI
+??? info "Create an Adaptive Card with Generative AI"
 
-Before creating an Adaptive Card with Generative AI, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
+    Before creating an Adaptive Card with Generative AI, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
 
-To use this feature, follow these steps:
+    To use this feature, follow these steps:
 
 {! _includes/ai/nodes/adaptive-card-genai.md !}
 
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/adaptive-card-generative-ai.png" width="100%" />
-</figure>
+    <figure>
+      <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/adaptive-card-generative-ai.png" width="100%" />
+    </figure>
 
 ## More Information
 

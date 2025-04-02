@@ -7,7 +7,7 @@ hidden: false
 # Set Rating
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/set-rating.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/set-rating.png" width="50%" />
 </figure>
 
 ## Description
@@ -20,20 +20,24 @@ add a Set Rating Node
 to prefill a rating prompt with a default value based on the user's previous interactions with the AI Agent. Then,
 include the Request Rating Node to enable the user to confirm or change the rating value.
 
-Note that the Set Rating Note doesn't display a rating widget to the end user, in contrast with the Request Rating Node.
+In contrast to the [Request Rating Node](request-rating.md), the Set Rating Node doesn't display a rating widget to the end user.
 
-{! _includes/ai/nodes/insights-for-rating.md !}
-
-## Settings
+## Parameters
 
 | Parameter      | Description                                                                                 |
 |----------------|---------------------------------------------------------------------------------------------|
 | Rating Score   | The rating for the conversation is `-1` for a negative rating or `1` for a positive rating. |
 | Rating Comment | Additional information about the rating.                                                    |
 
+## Track Ratings in Insights
+
+{! _includes/ai/nodes/insights-for-rating.md !}
+
+## Use Cases
+
 {! _includes/ai/nodes/rating.md !}
 
 ## More information
 
 - [Request Rating](request-rating.md)
-- [Cognigy Insights](../../../../insights/overview.md) 
+- [Insights](../../../../insights/overview.md) 

@@ -19,7 +19,7 @@ The grid gives you the possibility to configure the number of columns, rows, as 
 You can edit the grid in the following ways:
 
 - Use the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
-- Create a custom grid in the [AI Copilot API](#optional-create-a-custom-default-grid-from-the-api).
+- Create a custom grid in the [AI Copilot API](#create-a-custom-grid-using-the-api-post-request).
 
 ### (Optional) Create a Custom Grid via the API
 

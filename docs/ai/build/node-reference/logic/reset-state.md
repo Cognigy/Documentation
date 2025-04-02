@@ -12,7 +12,7 @@ tags:
 # Reset State
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/reset-state.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/reset-state.png" width="50%" />
 </figure>
 
 ## Description

@@ -10,14 +10,13 @@ tags:
 # Hang Up
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/hang-up.png" width="80%" />
-  <figcaption>Voice Gateway Hang Up Node</figcaption>
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/hang-up.png" width="50%" />
 </figure>
 
 ## Description
 
-The Hang Up Node will instruct Voice Gateway to end the call.
+The Hang Up Node instructs Voice Gateway to end the call.
 
-| Parameter          | Type | Description                                      |
-|--------------------|------|--------------------------------------------------|
-| Reason for hang up | Text | The reason for hanging up, will be shown in logs |
+| Parameter          | Type | Description                                       |
+|--------------------|------|---------------------------------------------------|
+| Reason for hang up | Text | The reason for hanging up, which is shown in logs |

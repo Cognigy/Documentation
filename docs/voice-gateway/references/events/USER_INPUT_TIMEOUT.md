@@ -39,4 +39,4 @@ Payload:
 
 ## More Information
 
-- [User Input Timeout](../../../ai/build/node-reference/voice/voice-gateway/parameter-details.md#user-input-timeout)
+- [User Input Timeout](../../../ai/build/node-reference/voice/voice-gateway/parameter-details.md)

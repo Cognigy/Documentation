@@ -29,7 +29,7 @@ To display the output of the Knowledge Search Node to the user, follow these ste
 3. In the **Text** field, click ![token](../../../../_assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
 4. Click **Save Node**.
 
-## Settings
+## Parameters
 
 ### Knowledge Store
 
@@ -37,12 +37,12 @@ Select a store from the list to allow the Node to retrieve the data.
 
 ### Search Settings
 
-| Parameter                     | Type          | Description                                                                                                                                                                    |
-|-------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Top K                         | Number        | Specify how many of the top K knowledge search results should be returned.                                                                                         |
-| Where to store the result     | Select        | The storage for the search results. Select a storage:<br> - Input — the content will be stored in the Input object.<br> - Context — the content will be stored in the Context. |
-| Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                        |
-| Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                    |
+| Parameter                     | Type          | Description                                                                                                                                                                                  |
+|-------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Top K                         | Number        | Specify how many of the top K knowledge search results should be returned.                                                                                                                   |
+| Where to store the result     | Select        | The storage for the search results. Select a storage: <ul><li>Input — the content will be stored in the Input object.</li><li>Context — the content will be stored in the Context.</li></ul> |
+| Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                                      |
+| Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                                  |
 
 ## More Information
 

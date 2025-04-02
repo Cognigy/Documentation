@@ -7,7 +7,7 @@
 # xApp: Get Session PIN
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/get-xApp-session-PIN.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/get-xApp-session-PIN.png" width="50%" />
 </figure>
 
 ## Description

@@ -7,17 +7,17 @@ hidden: false
 # Deactivate Profile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/deactivate-profile.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/deactivate-profile.png" width="50%" />
 </figure>
 
 ## Description
 
-This Node is used to deactivate a [specific Contact Profile](../../../analyze/contact-profiles.md#view-a-contact-profile) if the end user requests it.
-After deactivation of the Contact Profile, the existing data will be kept, but no new data will be collected.
+This Node deactivates a [specific Contact Profile](../../../analyze/contact-profiles.md#view-a-contact-profile) if the end user requests it.
+After deactivation of the Contact Profile, the existing data is kept, but no new data is collected.
 
 If you want to delete all stored profile data, activate the **Delete Data** parameter in the Node settings.
 
-## Settings
+## Parameters
 
 | Parameter   | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

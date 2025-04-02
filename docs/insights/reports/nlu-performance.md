@@ -44,7 +44,7 @@ Formula:
  
 Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
-You can find a calculation example with data visualization in the [Average Execution Time](#average-execution-time-1) line chart. 
+You can find a calculation example with data visualization in the [Average Execution Time](#average-execution-time) line chart. 
 
 ### Avg Intent Score
 

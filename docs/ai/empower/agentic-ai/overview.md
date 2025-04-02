@@ -81,7 +81,7 @@ For example, you could include instructions for executing an API call, processin
 ##### Tool Actions
 
 _Tool Actions_ represent specific tasks that an AI Agent can perform. 
-A [tool action](../../build/node-reference/ai/ai-agent.md#tool) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
+A [tool action](../../build/node-reference/ai/ai-agent.md) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
 
 ##### Tool Calls
 

@@ -32,4 +32,4 @@ You can [collect event data](../../../ai/analyze/collecting-data.md) for further
 
 The Output Transformer is executed after processing the flow. For example, if you receive the `CALL_COMPLETED` event, write some metrics in the transformer via HTTP request.
 
-You can also utilize a **Lookup** Node with the [Call Event Status](../../../ai/build/node-reference/logic/lookup.md#call-event-status) type for reusing these events, streamlining call handling and improving efficiency.
+You can also utilize a **Lookup** Node with the [Call Event Status](../../../ai/build/node-reference/logic/lookup.md) type for reusing these events, streamlining call handling and improving efficiency.

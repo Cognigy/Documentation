@@ -12,7 +12,7 @@ tags:
 # Set State
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/set-state.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/set-state.png" width="50%" />
 </figure>
 
 ## Description
@@ -27,13 +27,13 @@ In **NLU > States**, you can manage Intents within a specific State using:
 
 To restore full Intent recognition to the default State, use the [Reset State](reset-state.md) Node.
 
-## Settings
+## Parameters
 
-| Parameter  | Type          | Description                                                                                                                                                                                          |
-|------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| State      | Select        | Select a State that you created in **NLU > States** in your Flow. The `default` State is used by default.                                                                                            |
-| Text       | CognigyScript | The provided text serves as a message to emulate user input. This custom data will be available in the `input.text` object.                                                                          |
-| Data       | JSON          | The provided data serves as a message to emulate user input. This custom data will be available in the `input.data` object and can include any additional information that is relevant to the Flow. |
+| Parameter | Type          | Description                                                                                                                                                                                         |
+|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| State     | Select        | Select a State that you created in **NLU > States** in your Flow. The `default` State is used by default.                                                                                           |
+| Text      | CognigyScript | The provided text serves as a message to emulate user input. This custom data will be available in the `input.text` object.                                                                         |
+| Data      | JSON          | The provided data serves as a message to emulate user input. This custom data will be available in the `input.data` object and can include any additional information that is relevant to the Flow. |
 
 ## Example
 

@@ -12,7 +12,7 @@ _Notifications_ are messages or alerts that are generated to inform human agents
 ## Restrictions
 
 - Modern browsers block automatic audio playback for security reasons. As a result, audio notifications in Live Agent only trigger after a human agent interacts with the interface, for example, by clicking a tab, pressing a key, or moving the mouse.
-- If a human agent has multiple inboxes and is not in the inbox specified in the [Handover to Agent](../ai/build/node-reference/service/handover-to-agent.md#live-agent-settings) Node, audio notifications for that inbox may be delayed. Alternatively, the human agent can check [unread notifications](#view-unread-notifications).
+- If a human agent has multiple inboxes and is not in the inbox specified in the [Handover to Agent](../ai/build/node-reference/service/handover-to-agent.md) Node, audio notifications for that inbox may be delayed. Alternatively, the human agent can check [unread notifications](#view-unread-notifications).
 
 ## Notification types
 

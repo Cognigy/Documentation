@@ -8,19 +8,19 @@ hidden: false
 # Log Message
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/log-message.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/log-message.png" width="50%" />
 </figure>
 
 ## Description
 
 This Node writes a message into the [Project Logs](../../../test/logs.md).
 
-## Settings
+## Parameters
 
-| Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                  |
-|-----------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message   | CognigyScript | The message to log. The message should be a string that provides the content of the log entry. For example: `User login attempt successful`.                                                                                                                                                                                                 |
-| Log Level | Select        | The log level to use. The level determines the severity and visibility of the log message. Select one of the following options:<br/>- **Debug** — logs detailed information for debugging purposes.<br/>- **Info** — logs general information about system operations.<br/>- **Error** — logs critical errors that need immediate attention. |
+| Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                                 |
+|-----------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message   | CognigyScript | The message to log. The message should be a string that provides the content of the log entry. For example: `User login attempt successful`.                                                                                                                                                                                                                |
+| Log Level | Select        | The log level to use. The level determines the severity and visibility of the log message. Select one of the following options:<ul><li>**Debug** — logs detailed information for debugging purposes.</li><li>**Info** — logs general information about system operations.</li><li>**Error** — logs critical errors that need immediate attention.</li></ul> |
 
 ## Alternatives
 

@@ -19,15 +19,15 @@ The Play URL Node lets you stream a sound file into the call.
 
 This Node is useful for playing advertisements, pre-recorded jingles, or other sound files for callers. It supports MP3 and WAV encoded files.
 
-## Settings
+## Parameters
 
 | Parameter               | Type          | Description                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Media URL               | CognigyScript | Accepts URL links to MP3 and WAV tracks. The URL should point to the storage location where you want to host it and doesn't need to include the `.mp3` or `.wav` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`. Make sure the file is publicly accessible. |
-| Set Activity Parameters | Toggle        | Enables parameters which will be valid for this activity only. The available parameters are: <br> - [Recognizer (STT)](../voice-gateway/parameter-details.md#recognizer---speech-to-text) <br> - [Barge In](../voice-gateway/parameter-details.md#barge-in) <br> - [DTMF](../voice-gateway/parameter-details.md#dtmf)               |
+| Set Activity Parameters | Toggle        | Enables parameters which will be valid for this activity only. The available parameters are: <br> - [Recognizer (STT)](../voice-gateway/parameter-details.md) <br> - [Barge In](../voice-gateway/parameter-details.md) <br> - [DTMF](../voice-gateway/parameter-details.md)               |
 
 ## More Information
 
-- [AudioCodes Play URL Node](../audiocodes/play-url.md)
-- [Voice Gateway Play Node](../voice-gateway/play.md)
+- [AudioCodes Play URL Node](../audiocodes//play-url.md)
+- [Voice Gateway Play Node](../voice-gateway//play.md)
 - [Parameter Details](../voice-gateway/parameter-details.md)

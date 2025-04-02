@@ -1,5 +1,5 @@
 ---
-title: "Code"
+title: "Overview"
 slug: "code"
 hidden: false
 ---
@@ -8,28 +8,26 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/code/code.png" width="80%" />
+  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/code/code.png" width="50%" />
 </figure>
 
 ## Description
 
-
 Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow.
 The Code Node editor has full IntelliSense and exposes all Cognigy objects and actions.
-For better performance, the TypeScript code will be transpiled when the Node is saved.
+For better performance, the TypeScript code is transpiled when the Node is saved.
 If the transpilation fails,
-the code will be saved and an error icon will appear in the top right corner of the Code Node,
+the code is saved and an error icon appears in the top right corner of the Code Node,
 indicating that there is a potential issue with the code.
 
-The execution of the Code Node will be synchronous, the Flow will continue after the Code Node has finished executing.
+The execution of the Code Node is synchronous, the Flow continues after the Code Node has finished executing.
 
-Just as within other Nodes, `input`, `context` and `profile` can be accessed (and modified) within Code Nodes.
-If the script crashes or takes longer than one second to execute, it will be stopped and throw an error.
-In case of an uncaught error, a Flow execution will be stopped.
+Just as in other Nodes, `input`, `context`, and `profile` can be accessed and modified from Code Nodes.
+If the script crashes, it is stopped and throws an error. In case of an uncaught error, a Flow execution is stopped.
 
 The `actions` object provides access to most internal Cognigy functions within the Code Node. For more information, refer to [Actions](actions.md).
 
-The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](modules.md#text-cleaner).
+The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](modules.md).
 
 The `lastConversationEntries` array contains the user inputs and agent outputs for the past 10 turns of the conversation in the following format:
 
@@ -51,39 +49,8 @@ For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `
 ## Limitations
 
 - The maximum number of characters in the code editor is 200K.
-- The maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed in the `input.codeNodeError.message` Input object. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../../extensions.md#extension-marketplace).
+- The maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed in the `input.codeNodeError.message` Input object. The maximum execution time isn't configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../../extensions.md#extension-marketplace).
 - The maximum number of API calls per Code Node is 100. If this limit is exceeded, you can access the returned error message in the Input object via `input.codeNodeError.message`.
-
-## Sending Facebook JSON
-
-You can send Facebook JSON directly from within Code Nodes using the [output](actions.md#actionsoutput--actionssay--apioutput--apisay) action.
-
-You can do this by manually creating the JSON:
-
-```javaScript
-// build the facebook reply
-const obj = {
-    "_cognigy": {
-        "_facebook": {      
-            "message": {
-                "text": "Hello World",
-                "quick_replies": [
-                    {
-                        "content_type": "text",
-                        "condition": "",
-                        "title": "Hi",
-                        "image_url": "",
-                        "payload": "Hi"
-                    }
-                ]
-            }
-        }
-    }
-}
-
-// output the reply
-actions.output("test", obj);
-```
 
 ## Auto-Complete in the Code Node Editor
 
@@ -100,10 +67,6 @@ For example:
 - `entryPoint`
 - `flowName`
 - `conditionalEntryPointWasExecuted`
-
-<figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/code-node-editor.png" width="100%" />
-</figure>
 
 Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the `context` object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.
 
@@ -131,6 +94,44 @@ Result on the Logs page:
    
 ## Code Node Error Handling
 
-If a Code Node times out or sends too many events, the Flow execution will not stop.
-Instead, an error message will be written to the `input.codeNodeError` Input object.
-This change does not affect Snapshots created before Cognigy.AI v4.22.
+If a Code Node times out or sends too many events, the Flow execution doesn't stop.
+Instead, an error message is written to the `input.codeNodeError` Input object.
+
+## Example
+
+### Sending Facebook JSON
+
+You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) action.
+
+??? info "JSON Sample"
+    ```javaScript
+    // build the facebook reply
+    const obj = {
+        "_cognigy": {
+            "_facebook": {      
+                "message": {
+                    "text": "Hello World",
+                    "quick_replies": [
+                        {
+                            "content_type": "text",
+                            "condition": "",
+                            "title": "Hi",
+                            "image_url": "",
+                            "payload": "Hi"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    // output the reply
+    actions.output("test", obj);
+    ```
+
+## More Information
+
+- [Actions](actions.md)
+- [Input object](../../../../test/interaction-panel/input.md)
+- [Context object](../../../../test/interaction-panel/context.md)
+- [Profile object](../../../../test/interaction-panel/profile.md)

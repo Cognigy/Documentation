@@ -8,7 +8,7 @@ hidden: false
 # Add Memory
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/add-memory.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/add-memory.png" width="50%" />
 </figure>
 
 ## Description
@@ -30,7 +30,7 @@ Each time the Add Memory Node is triggered, it adds a new memory object to the a
 
 By referencing stored memories, the AI Agent can generate responses based on past interactions, offering a more personalized and context-aware experience for the end user.
 
-## Settings
+## Parameters
 
 | Parameter  | Type          | Description                                                                    |
 |------------|---------------|--------------------------------------------------------------------------------|
@@ -38,6 +38,6 @@ By referencing stored memories, the AI Agent can generate responses based on pas
 
 ## More Information
 
-- [Agent AI](../ai/ai-agent.md)
+- [Agent AI](../ai//ai-agent.md)
 - [Agentic AI](../../../empower/agentic-ai/overview.md)
 - [Contact Profile](../../../analyze/contact-profiles.md)

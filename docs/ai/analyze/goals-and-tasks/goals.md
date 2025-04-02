@@ -109,7 +109,7 @@ To package a goal, follow these steps:
 1. In the Project from which you want to export a goal, go to **Build > Goals**. 
 2. Hover over the existing goal and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg). 
 3. Select **Export as package**. 
-4. Once the Package has created, a new [task](../../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the Package has created, a new [task](../../build/projects.md), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, download the Package.
 
@@ -163,7 +163,7 @@ Then monitor and analyze each step of the booking process.
 
 ### Create a Flow and Configure the Initial Step
 
-1. [Create a Flow](../../build/flows/overview.md#create-a-flow).
+1. [Create a Flow](../../build/flows/overview.md#working-with-flows).
 2. In the Flow editor, add a **Question Node**.
 3. Open the Node editor and select the **Text with Buttons** output type.
 4. In the **Text** field, enter the following text:

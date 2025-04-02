@@ -8,18 +8,17 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../../release-notes/4.49.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/email-notification.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/email-notification.png" width="50%" />
 </figure>
 
 ## Description
-
 
 The Email Notification Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time. 
 
 ## Restrictions
 
-*  Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification.
-*  Email attachments are restricted (for example, files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
+-  Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification.
+-  Email attachments are restricted (for example, files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
 
 ## Authentication
 
@@ -50,7 +49,7 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp for the current accessToken, for example, 1681382246000>"
     EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
     ```
-    Cognigy caches connections by default, and for OAuth2 connections, Cognigy also caches the refresh and access tokens. To update the refresh token or access token, create a [snapshot](../../../deploy/snapshots.md).
+    Cognigy.AI caches connections by default, and for OAuth2 connections, Cognigy.AI also caches the refresh and access tokens. To update the refresh token or access token, create a [Snapshot](../../../deploy/snapshots.md).
 
 === "Basic Auth"
     object:
@@ -73,50 +72,29 @@ If you have on-premises installation, you need to add the following parameters t
     ```
 
 
-## Settings
+## Parameters
 
-### Recipient TO Email Addresses
+| Parameter                    | Description                                                           |
+|------------------------------|-----------------------------------------------------------------------|
+| Recipient TO Email Addresses | Comma-separated list of email addresses to send the email to.         |
+| Email Subject                | The subject of the email.                                             |
+| Email Content                | The content of the email. The field supports basic rich text editing. |
 
-Comma-separated list of email addresses to send the email to.
+??? info "Store location of SMTP Request result"
+    | Option             | Description                                                                                |
+    |--------------------|--------------------------------------------------------------------------------------------|
+    | Don't store result | Default option. The result isn't stored.                                                   |
+    | Input              | The result is stored at a specified location in the **Input Key to store Result** field.   |
+    | Context            | The result is stored at a specified location in the **Context Key to store Result** field. |
 
-### Email Subject
+    #### Stop on Error
 
-The subject of the email.
+    If switched on, the Flow execution will halt in case the mail-sending fails.
 
-### Email Content
-
-The content of the email.
-The field supports basic rich text editing.
-
-### Store location of SMTP Request result
-
-Can be set to **Don't store result** (default), **Input**, or **Context**.
-If set to **Input** or **Context**, you can define a location for the result within **Input** or **Context**.
-The result of the sent mail response will then be put at that location.
-
-#### Stop on Error
-
-If switched on, the flow execution will halt in case the mail-sending fails.
-
-#### CC Email Addresses
-
-The CC recipients of your email.
-
-#### BCC Email Addresses
-
-The BCC recipients of your email.
-
-#### Execute Request asynchronous
-
-If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned-off, flow execution will **wait until the email is sent**.
-
-## Email Template
-
-The email will be sent with templating around it, looking roughly like this:
-
-<figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/test-email.png" width="100%" />
-</figure>
-
-The recipient will get the email notification
-
+??? info "Advanced"
+    | Parameter                    | Description                                                                                                                                                          |
+    |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | CC Email Addresses           | The CC recipients of your email.                                                                                                                                     |
+    | BCC Email Addresses          | The BCC recipients of your email.                                                                                                                                    |
+    | Email Priority               | The priority of the email.                                                                                                                                           |
+    | Execute Request asynchronous | If switched on, the Flow execution continues directly after the Send Email Node has been triggered. If turned-off, the Flow execution waits until the email is sent. |

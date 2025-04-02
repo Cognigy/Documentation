@@ -8,8 +8,24 @@ hidden: false
 
 Data Nodes are designed to manage, manipulate, process, or store data within a system.
 
-You can use the following Data Nodes:
+<div class="grid cards" style="text-align: center;" markdown>
 
-- [Datepicker](datepicker.md)
-- [Send SMTP Email](../data/send-smtp-email.md)
-- [Email Notification](../data/email-notification.md)
+-   :material-calendar:{ .lg .middle } __[Datepicker](datepicker.md)__
+
+    ---
+
+    The Datepicker Node renders a date selection widget in certain channels.
+
+-   :material-email-fast:{ .lg .middle } __[Send SMTP Email](send-smtp-email.md)__
+
+    ---
+
+    The Send SMTP Email Node sends an email directly from the Flow.
+
+-   :material-email-multiple:{ .lg .middle } __[Email Notification](email-notification.md)__
+
+    ---
+
+    The Email Notification Node sends quick and easy emails during sessions or for in-house communications.
+
+</div>

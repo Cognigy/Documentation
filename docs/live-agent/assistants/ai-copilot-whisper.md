@@ -14,7 +14,7 @@ tags:
  
 ### Supported Output Types
 
-AI Copilot Whisper supports all output types that can be selected in the [Say](../../ai/build/node-reference/overview.md#say), [Question](../../ai/build/node-reference/overview.md#question), or [Optional Question](../../ai/build/node-reference/overview.md#optional-question) Nodes.
+AI Copilot Whisper supports all output types that can be selected in the [Say](../../ai/build/node-reference/overview.md), [Question](../../ai/build/node-reference/overview.md), or [Optional Question](../../ai/build/node-reference/overview.md) Nodes.
 
 ## Set up an Endpoint
 

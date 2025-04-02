@@ -14,7 +14,7 @@ To capture this event, follow these steps:
 
 1. In your voice Flow, add a [Question](../../../ai/build/node-reference/basic/question.md),
    [Optional Question](../../../ai/build/node-reference/basic/optional-question.md),
-   or [Wait For Input](../../../ai/build/node-reference/logic/wait-for-input.md) Node before the [Lookup](../../../ai/build/node-reference/logic/lookup.md#call-event-status) Node
+   or [Wait For Input](../../../ai/build/node-reference/logic/wait-for-input.md) Node before the [Lookup](../../../ai/build/node-reference/logic/lookup.md) Node
    where the `CALL_IN_PROGRESS` event is selected.
 2. In the [Voice Gateway](../../../ai/deploy/endpoint-reference/voice-gateway.md) Endpoint, activate the **Enable Call Event: Call in Progress** setting.
 3. Navigate to the **Call Events** section and enable the **Call in Progress** option.

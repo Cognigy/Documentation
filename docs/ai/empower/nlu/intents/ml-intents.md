@@ -27,7 +27,7 @@ To build your model, go to the Intents tab in your Flow Editor and click the blu
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/intent-menu.png" width="100%" />
 </figure>
 
-A new [Task](../../../build/projects.md#tasks) will begin, and the spinning task icon indicates model building is in progress. While new models are built, the latest version of your flow will fall back to the most recently trained model.
+A new [Task](../../../build/projects.md) will begin, and the spinning task icon indicates model building is in progress. While new models are built, the latest version of your flow will fall back to the most recently trained model.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/empower/nlu/c33ef5a-trainedSuccess.PNG" width="100%" />

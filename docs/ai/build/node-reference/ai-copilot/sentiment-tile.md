@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/sentiment-tile.png" width="80%"/>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/sentiment-tile.png" width="50%"/>
 </figure>
 
 ## Description
@@ -24,7 +24,7 @@ the system can promptly alert the human agent to take appropriate action.
 
 Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../../empower/llms/model-support-by-feature.md).
 
-## Settings
+## Parameters
 
 | Parameter                | Type          | Description                                                                                                                                    |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,11 +33,10 @@ Before using this Node, set the Generative AI provider in the [Settings](../../.
 
 ## Use Case
 
-Differing from the [Copilot: Transcript Tile](transcript-tile.md) Node, this Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
+The Copilot: Sentiment Tile Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This Node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/sentiment-tile-example.png" width="80%"/>
-  <figcaption>Sentiment Tile Widget in AI Copilot</figcaption>
 </figure>
 
 ## More Information

@@ -53,7 +53,7 @@ For example:
 
 ## Change Data Expiration
 
-For on-premises Cognigy.AI installations, you can adjust data expiration durations via the [management-ui](../../ai/administer/access/management-ui.md#expiration-values--ttl--for-sensitive-data). For SaaS installations, contact [technical support](../../help/get-help.md#help-center). 
+For on-premises Cognigy.AI installations, you can adjust data expiration durations via the [management-ui](../../ai/administer/access/management-ui.md). For SaaS installations, contact [technical support](../../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
 

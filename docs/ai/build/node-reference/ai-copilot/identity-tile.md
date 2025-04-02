@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/identity-tile.png" width="80%"/>
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/identity-tile.png" width="50%"/>
 </figure>
 
 ## Description
@@ -17,7 +17,7 @@ hidden: false
 
 This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
 
-## Settings
+## Parameters
 
 | Parameter     | Type          | Description                                                                                                                                       |
 |---------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +36,6 @@ This allows human agents to have contextually relevant discussions without the n
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/identity-assist-example.png" width="80%"/>
-  <figcaption>The Identity Tile Widget in AI Copilot</figcaption>
 </figure>
 
 ## More Information

@@ -14,15 +14,14 @@ tags:
     The Send Text Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later. Use the [Say Node](say.md) default setting for simple text outputs.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/message/send-text.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/basic/send-text.png" width="50%" />
 </figure>
 
 ## Description
 
-
 Use the Send Text Node if you want to output simple text. 
 
-## Settings
+## Parameters
 
 | Parameter    | Type          | Description                  |
 |--------------|---------------|------------------------------|

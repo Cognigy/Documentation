@@ -140,11 +140,13 @@ ol ol>li::marker {
 .md-typeset .info>.admonition-title,
 .md-typeset .info>summary {
     background-color: rgb(250, 250, 250);
+    border-radius: 0.25rem;
 }
 
 .md-typeset .info>.admonition-title::before,
 .md-typeset .info>summary::before {
     background-color: rgb(150, 150, 150);
+    border-radius: 0.25rem;
 }
 
 .md-typeset .info>.admonition-title::after,
@@ -156,6 +158,11 @@ ol ol>li::marker {
     box-shadow: none !important;
 }
 
+/* Style for collapsed state */
+.md-typeset details.info:not([open]) summary {
+    border-radius: 0.25rem;
+}
+
 /* grid cards*/
 .md-content .grid.cards {
     margin: 1rem 0 !important;
@@ -164,7 +171,7 @@ ol ol>li::marker {
 
 .md-content .grid.cards>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0.5rem 0.45rem;
     /* First value (1rem) for row gap, second value (0.5rem) for column gap */
     padding: 0;

@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../../release-notes/4.75.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.png" width="50%" />
 </figure>
 
 ## Description
@@ -22,22 +22,19 @@ To view submitted data, use the Interaction panel. You can access submitted data
 
 {! _includes/ai/xApp/custom-node.md !}
 
-### AdaptiveCard Definition
+## Parameters
 
-The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
+??? info "AdaptiveCard Definition"
 
-### Style Overrides
+    The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
 
-To override the background and interaction element colors, use CSS color codes.
+??? info "Style Overrides"
 
-### Waiting Behavior
+    To override the background and interaction element colors, use CSS color codes.
 
-To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
-You can store the input result in the Context and use the data in the other Nodes.
-
+{! _includes/ai/xApp/waiting-behavior.md !}
 
 {! _includes/ai/xApp/overlay.md !}
-
 
 ## More Information
 
