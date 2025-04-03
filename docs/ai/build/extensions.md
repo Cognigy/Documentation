@@ -57,11 +57,21 @@ Cognigy allows anyone to extend the capabilities of Cognigy.AI by developing the
 
 If you want to publish a custom Extension on the Marketplace, follow the approval procedure in the [Extensions GitHub repository](https://github.com/Cognigy/Extensions).
 
-## Extension Performance
+## Extension Performance and Security
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
 
-By default, Cognigy.AI considers Extensions code to be untrusted and runs it within a secure, isolated environment. This additional security layer introduces some overhead during startup. For this reason, Extensions usually run slower than default Nodes.
+By default, Cognigy.AI considers Extension code untrusted and runs it in a secure, isolated environment. This additional security layer introduces some overhead during startup. For this reason, Flow Nodes from Extensions usually run slower than default Nodes in Flows.
+
+Cognigy.AI ensures the code of Extensions run in a secure context by:
+
+1. Executing the code of Extensions in a separate microservice. This approach ensures that, in a worst-case scenario, a breakout affects only the dedicated microservice, but not the rest of the system.
+
+2. Using a dedicated child process that the system spawns for each execution of the custom code within the separate microservice. This approach ensures that the code of the Extension can access only a defined set of environment variables and allows Cognigy.AI to terminate this code if it runs for too long.
+
+3. Creating a separate JavaScript virtual machine within the child process in which the custom code is executed. This approach restricts usability of certain APIs from the underlying Node.js execution context, limiting what the code can do when running on the Cognigy.AI infrastructure.
+
+API calls made by the custom code of Extensions perform will be proxied back to the rest of the system through synchronous events via the Cognigy.AI internal event bus.
 
 ### Make Extensions Trusted
 
