@@ -81,7 +81,7 @@ For inline CognigyScript in a JSON object, use `{{"{{ }}"}}`.
 ??? info "Example"
     ```json
     {
-        "customer_orders": "{{context.orders}}"
+        "customer_orders": "{{"{{context.orders}}"}}"
     }
     ```
 

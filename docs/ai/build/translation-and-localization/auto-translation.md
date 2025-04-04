@@ -41,7 +41,7 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 ### Machine Translation for Flow Localization
 
-You can automatically translate [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/ml-intents.md) in the [Flow editor](../flows/flow-editor.md). To do so, select a Locale in the top bar, go to the Node editor or the **NLU** tab, and click **Add Localization**.
+You can automatically translate [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/ml-intents.md) in the [Flow editor](../flows/editor.md). To do so, select a Locale in the top bar, go to the Node editor or the **NLU** tab, and click **Add Localization**.
 
 {! _includes/ai/localization/switch-a-locale.md !}
 
