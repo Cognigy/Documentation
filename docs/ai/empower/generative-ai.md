@@ -41,7 +41,9 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
 ??? info "Generate Lexicons"
 
-    Note that the generation of Lexicons for primary NLU languages besides German and English is not fully supported.
+    !!! note
+        - The generation of Lexicons for primary NLU languages besides German and English is not fully supported.
+        - The model may not always generate the exact number of Lexicon entries requested, as its output can vary based on interpretation and model behavior.
 
     To use Generative AI technology for creating a new Lexicon, do the following:
 
@@ -78,7 +80,9 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
 ??? info "Generate Intent Sentences"
 
-    Note that the generation of Intent sentences for primary NLU languages besides German and English is not fully supported.
+    !!! note
+        - The generation of Intent example sentences for primary NLU languages besides German and English is not fully supported.
+        - The model may not always generate the exact number of sentences requested, as its output can vary based on interpretation and model behavior.
 
     To use Generative AI technology for creating Intent example sentences, do the following:
 
