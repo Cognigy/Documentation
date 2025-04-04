@@ -18,10 +18,11 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
 
     ---
 
-    Start with our beginner's articles if you're new to Cognigy.AI or considering purchasing Cognigy products
+    Jumpstart your introduction to Cognigy.AI or gain an overview of Cognigy products
 
     [:octicons-arrow-right-24: Overview](ai/overview/about-cognigy-ai.md)<br>
     [:octicons-arrow-right-24: Key Features](ai/overview/key-features.md)<br>
+    [:octicons-arrow-right-24: Getting Started with Agentic AI Agent](ai/overview/getting-started-with-ai-agents.md)<br>
     [:octicons-arrow-right-24: Getting Started with Chat AI Agent](ai/overview/getting-started-with-digital-agent.md)<br>
     [:octicons-arrow-right-24: Getting Started with Voice AI Agent](ai/overview/getting-started-with-voice-agent.md)<br>
 
