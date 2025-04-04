@@ -45,7 +45,7 @@ _Cognigy Webchat_ is an effective communication tool that assists businesses in 
 
     ---
 
-    Use build-in Demo Webchat to test your Agents
+    Use built-in Demo Webchat to test your AI Agents
 
     [:octicons-arrow-right-24: Guide](demo.md)
 
