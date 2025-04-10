@@ -14,7 +14,6 @@ _Extensions_ are Nodes for specific use cases that you can install from the Mark
 
 - Integrate with third-party APIs.
 - Execute complex logic.
-- Perform long-running computations.
 - Create convenience Nodes using various NPM modules.
 
 ## Limitations
