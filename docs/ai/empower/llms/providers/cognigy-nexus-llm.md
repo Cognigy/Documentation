@@ -2,7 +2,8 @@
 title: "Cognigy Nexus LLM"
 slug: "cognigy-nexus-llm"
 description: "The Cognigy Nexus LLM is a proprietary large language model, provided and hosted by Cognigy, optimized for AI-driven customer service."
-hidden: false
+search:
+  exclude: true
 ---
 
 # Cognigy Nexus LLM

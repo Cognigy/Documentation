@@ -55,12 +55,6 @@ To add a standard or custom model, select an LLM provider integrated with Cognig
 
     Add credentials for the predefined models or add any Amazon Bedrock model that supports the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html).
   
--   ![nexus-llm](../../../../_assets/icons/ai_logo.svg) __[Cognigy Nexus LLM](cognigy-nexus-llm.md)__ 
-
-    ---
-
-    Cognigy Nexus LLM is a proprietary large language model, provided and hosted by Cognigy, optimized for AI-driven customer service.
-  
 -   ![openai-compatible](../../../../_assets/icons/openai-compatible.svg) __[OpenAI-Compatible LLMs](openai-compatible.md)__ 
 
     ---
