@@ -60,7 +60,7 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 
 ### AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
+Within Genesys integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
 
 By default, two versions of the application are provided:
 

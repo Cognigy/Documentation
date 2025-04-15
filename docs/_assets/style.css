@@ -3,6 +3,14 @@
     margin: auto;
 }
 
+.image-center#specific-image {
+    margin: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #A4A4A4;
+    border-width: 1px;
+}
+
 .md-grid {
     max-width: 76rem;
 }

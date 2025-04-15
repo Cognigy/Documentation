@@ -10,17 +10,18 @@ Cognigy release notes provide information on the features, improvements, and bug
 You'll find the corresponding release notes after opening one of the versions below.
 
 !!! warning "Updating Cognigy Products"
-    - **Updating Cognigy on-premises installations** - when upgrading Cognigy products, don't skip minor versions. Always upgrade one minor version at a time, carefully reviewing the release notes before proceeding, as skipping versions can lead to compatibility issues, missed database migrations,
+    - **Updating Cognigy on-premises installations**. When upgrading Cognigy products, don't skip minor versions. Always upgrade one minor version at a time, carefully reviewing the release notes before proceeding, as skipping versions can lead to compatibility issues, missed database migrations,
      and configuration problems. Pay special attention to the Infrastructure section for any additional instructions.
 
-    - **Test environment recommendation** - to ensure a smooth upgrade process, set up a separate test environment for Cognigy products. Use this environment to validate the upgrade and test your Flows before applying the same changes to production. This approach helps prevent unexpected issues and ensures a seamless transition to the new product version.
+    - **Test environment recommendation**. To ensure a smooth upgrade process, set up a separate test environment for Cognigy products. Use this environment to validate the upgrade and test your Flows before applying the same changes to production. This approach helps prevent unexpected issues and ensures a seamless transition to the new product version.
 
 !!! note "Security Updates for Cognigy Products"
     In every release, we fix security vulnerabilities to ensure our products remain reliable and secure. 
     We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
 
 - **4.9x**:
-    - [4.98 (latest)](4.98.md)
+    - [4.99 (latest)](4.99.md)
+    - [4.98](4.98.md)
     - [4.97](4.97.md)
     - [4.96](4.96.md)
     - [4.95](4.95.md)

@@ -6,14 +6,13 @@ hidden: false
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
 
 {! _includes/ai/terms-of-use.md !}
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with various [LLM Providers](#prerequisites)
-to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](llms/overview.md) to:
+Cognigy.AI integrates with various [Large Language Models (LLM) Providers](#prerequisites) to enable Generative AI functionality. This functionality is broadly classified as using [LLMs](llms/overview.md) to:
 
 - [Support the AI Agent builder](#design-time-generative-ai-features) (Design-Time)
 - [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
@@ -26,7 +25,7 @@ To know more about the benefits of integrating Conversational AI with Generative
 
 ## Prerequisites
 
-Before using this feature, you need to create an account in one of the LLM Providers:
+Before using Generative AI, you need to have access to an LLM of the following providers:
 
 - [OpenAI](llms/providers/openai.md). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](llms/providers/microsoft-azure-openai.md). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
@@ -34,10 +33,24 @@ Before using this feature, you need to create an account in one of the LLM Provi
 - [Google Vertex AI](llms/providers/google-vertex-ai.md) or [Google Gemini](llms/providers/google-gemini.md). You need to have a paid account or be a member of an organization that provides you access.
 - [Aleph Alpha](llms/providers/aleph-alpha.md). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
 - [Amazon Bedrock](llms/providers/amazon-bedrock.md). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
+- [Mistral](llms/providers/mistral.md). You need to have a [Mistral AI account](https://docs.mistral.ai/getting-started/quickstart/#account-setup) and activate payments for the LLM usage.
+- Cognigy's built-in LLM. A free-of-charge LLM for [design-time](#design-time-generative-ai-features) features and available only to customers with SaaS installations.
 
 ## Design-Time Generative AI Features
 
-During the design phase of creating AI Agents, LLMs can be used to generate a variety of AI Agent resources:
+{! _includes/ai/generative-ai/deprecation-of-individual-design-time-features.md !}
+
+### Configure LLMs for Design-Time Features
+
+1. In **Manage > Settings**, activate **Enable Generative AI Features** in the **Generative AI Settings** section.
+2. From the **Design-Time Generative LLM Features** list, select:
+
+    - **Platform-Provided LLM** to use the built-in LLM for the design-time features.
+    - a third-party LLM you want to use.
+
+### Generate Cognigy.AI Resources
+
+During the design phase of creating AI Agents, LLMs can be used to generate a variety of Cognigy.AI resources:
 
 ??? info "Generate Lexicons"
 
@@ -68,9 +81,10 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
     1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**, then **+ New Flow**.
     2. In the **New Flow** window, go to the **Flow Generation** section and select one of the options:
-       - **None** — the Generative AI will not be applied to this Flow. This setting is activated by default.
-       - **Name and Description** — the Generative AI will use the Name and Description fields for generating Flow.
-       - **Name and Transcript** — the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
+       
+        - **None** — the Generative AI will not be applied to this Flow. This setting is activated by default.
+        - **Name and Description** — the Generative AI will use the Name and Description fields for generating Flow.
+        - **Name and Transcript** — the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
 
     In the existing Flow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
 
@@ -107,11 +121,18 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
 ## Run-Time Generative AI Features
 
-In Cognigy.AI, the Run-Time Generative AI features enrich AI Agents with dynamic interactions using LLMs.
+In Cognigy.AI, the run-time Generative AI features enrich AI Agents with dynamic interactions using LLMs.
 These features include running prompts, orchestrating conversations, rephrasing outputs,
 dynamic question reprompts, and generative knowledge retrieval.
 
-You can configure the following Run-Time Generative AI features:
+### Configure LLMs for Run-Time Features
+
+1. In **Manage > Settings**, activate **Enable Generative AI Features** in the **Generative AI Settings** section.
+2. Go to the [run-time feature](llms/model-support-by-feature.md) you want to configure and select the LLM you want to use.
+
+### Use Run-Time Features
+
+In the [Flow editor](../build/flows/editor.md), you can use the following run-time Generative AI features:
 
 ??? info "LLM Prompt Node"
 
@@ -134,9 +155,11 @@ You can configure the following Run-Time Generative AI features:
     2. Add one of the Nodes: Say, Question, or Optional Question.
     3. Go to the **AI-enhanced output** section.
     4. In the **Rephrase Output** setting, select one of the options:
-       - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
-       - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
-       - **Based on previous user inputs** — set the last `x` user Inputs considered.
+       
+        - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
+        - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
+        - **Based on previous user inputs** — set the last `x` user Inputs considered.
+
     5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
     6. Click **Save Node**.
 

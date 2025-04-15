@@ -13,7 +13,7 @@ tags:
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
@@ -146,11 +146,11 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
     3. Scroll down to **Handover Settings** and select **Genesys Cloud Open Messaging** from the list.
     4. Fill in the following fields:
         - **Host** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting `apps.` or `login.` part. For more on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
-        - **Deployment Name** — specify the Open Messaging platform name that you created [on the Genesys side](#create-a-platform).
-        - **Queue** — enter the Queue ID that you copied when you created a queue [on the Genesys side](#create-a-queue).
-        - **Webhook Secret** — specify the Outbound Notification Webhook Signature Secret Token that you created [on the Genesys side](#create-a-platform).
-        - **Client ID** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
-        - **Client Secret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials).
+        - **Deployment Name** — specify the Open Messaging platform name that you created [on the Genesys side](#configuration-on-the-handover-provider-side).
+        - **Queue ID** — enter the Queue ID that you copied when you created a queue [on the Genesys side](#configuration-on-the-handover-provider-side).
+        - **Webhook Secret** — specify the Outbound Notification Webhook Signature Secret Token that you created [on the Genesys side](#configuration-on-the-handover-provider-side).
+        - **Client ID** — enter the Client ID that you generated [on the Genesys side](#configuration-on-the-handover-provider-side.
+        - **Client Secret** — enter the Client Secret that you generated [on the Genesys side](#configuration-on-the-handover-provider-side).
     5. Activate the **Send Profile information** setting if you want to send user information, such as the first and last name, to the human agent. Save changes.
 
 ??? info "2. Configure Handover Settings"

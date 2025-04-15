@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.98-blue.svg)](../../../release-notes/4.98.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.99-blue.svg)](../../../release-notes/4.99.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -126,6 +126,17 @@ enabling end users to connect with human agents working in a contact center that
 
 Test your Flow to ensure it works as expected. You can use Demo Webchat to send messages to the Salesforce contact center.  
 On the Salesforce side, go to the Service Console. In the Service Console, open [Messaging Sessions](https://help.salesforce.com/s/articleView?id=service.livemessage_create_console_app.htm&type=5), and make sure that your human agent is online.
+
+## Additional Configuration
+
+### AI Copilot Workspace
+
+Within the Salesforce MIAW integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant to your human agents.
+
+Salesforce MIAW supports the AI Copilot workspace only as a standalone application:
+
+??? info "Standalone"
+    AI Copilot will be available via the following link: {! _includes/ai-copilot/url-pattern.md !}
 
 ## More Information
 

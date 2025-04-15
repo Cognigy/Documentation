@@ -158,7 +158,7 @@ You add a notification sound to the push notifications you configured. To config
 1. Go to **Settings > Account Settings**.
 2. From the **Sound** list in the **Notification Sound** section, select one of the following options:
     - **Default** — a short sound is triggered when you send or receive a message.
-    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when a push notification is triggered. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly.
+    - **Custom** — the **Sound URL** field appears. Enter the URL for the sound file you want to set as audio notification. For example, `https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg`. The notification sound is triggered when a push notification is triggered. Use a notification sound between 3 and 5 seconds, as longer notification sounds may overlap if you send or receive consecutive messages rapidly. When using a custom sound URL, make sure that the server hosting the sound file has the appropriate cross-origin resource sharing (CORS) headers configured.
 
 For more information, read the [Notifications](../notifications.md) documentation.
 

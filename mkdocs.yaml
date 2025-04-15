@@ -700,6 +700,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 4.9x:
+        - release-notes/4.99.md
         - release-notes/4.98.md
         - release-notes/4.97.md
         - release-notes/4.96.md

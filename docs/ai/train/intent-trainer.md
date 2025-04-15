@@ -11,6 +11,8 @@ tags:
 
 # Intent Trainer
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
+
 One of the key strengths of AI Agents is their ability to improve over time.
 Cognigy.AI offers the *Intent Trainer* feature that allows you to refine AI Agents based on existing dialogs.
 This tool improves the AI Agent's understanding by letting you review and add user inputs to [Intents](../../ai/empower/nlu/intents/ml-intents.md).
@@ -25,7 +27,7 @@ This tool improves the AI Agent's understanding by letting you review and add us
 ## Limitations
 
 - By default, the Intent Trainer records Time-to-Live (TTL) is set to 10 days (14400 minutes). If you have on-premises or dedicated SaaS installations, you can change this value using the following variable: `TRAINERRECORD_TTL_IN_MINUTES`. For example, to set the TTL to 30 days, configure the variable as follows: `TRAINERRECORD_TTL_IN_MINUTES="43200"`.
-- The maximum file size for uploading Intent Trainer records is 100 MB.
+- The maximum file size for uploading Intent Trainer records is 150 MB.
 
 ## Working with Intent Trainer
 
@@ -74,7 +76,7 @@ Review the collected input records from users and search for them using filters.
 
 Based on the analysis, decide which user inputs will improve a particular Intent, add those inputs to the corresponding Intent.
 
-??? info "Add Records to Intent"
+??? info "Add Records to Intents"
 
     === "GUI"
         1. In the Intent Trainer, select a record from the list and click **Add to Intent**.

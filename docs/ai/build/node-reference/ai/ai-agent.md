@@ -7,14 +7,17 @@ tags:
   - ai agent node
   - agentic ai
   - ai agents
+  - ai agent tool
+  - mcp tool
+  - mcp server
 ---
 
 # AI Agent
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../../../release-notes/4.98.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../../release-notes/4.99.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent.png" width="80%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent.png" width="60%" />
 </figure>
 
 ## Description
@@ -89,7 +92,7 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
 ??? info "Image Handling"
     | Parameter            | Type     | Description                                                                                                                                                                                                                                                                                                                                |
     |----------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Process Images       | Toggle   | Enable the AI Agent to read and understand images attachments. Make sure that your LLM provider supports image processing; refer to your provider's documentation. In addition make sure that attachments are supported by and activated in your Endpoint (e.g., Webchat)                                                                  |
+    | Process Images       | Toggle   | Enable the AI Agent to read and understand images attachments. Make sure that your LLM provider supports image processing; refer to your provider's documentation. In addition, make sure that attachments are supported by and activated in your Endpoint, for example, Webchat.                                                          |
     | Images in Transcript | Selector | Configure how images older than the last turn are handled to reduce token usage: <ul><li>**Minify** — reduces the size of these images to 512x512px.</li><li>**Drop** — excludes the images.</li><li>**Keep** — sends the max size (this option consumes more tokens).</li></ul> Limitations and token consumption depend on the LLM used. |
 
 ??? info "Advanced"
@@ -120,11 +123,11 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
 
 ## AI Agent Tool Settings
 
-Tool Actions are child Nodes to AI Agent Nodes. They define actions that can be taken by the AI Agent. If an AI Agent wants to execute the tool, the branch below the child Node is executed.
+Tool actions are child Nodes of AI Agent Nodes. They define actions that can be taken by the AI Agent. If an AI Agent wants to execute the tool, the branch below the child Node is executed.
 
-At the end of a Tool Action branch, it is advisable to use a [Resolve Tool Action](resolve-tool-action.md) Node to return to the AI Agent.
+At the end of a tool action branch, it is advisable to use a [Resolve Tool Action](resolve-tool-action.md) Node to return to the AI Agent.
 
-Clicking on the Tool Node lets you define a tool, set its parameters, and allows debugging by enabling detailed messages about the tool's execution.
+Clicking the Tool Node lets you define a tool, set its parameters, and allows debugging by enabling detailed messages about the tool's execution.
 
 ??? info "Tool"
     | Parameter   | Type          | Description                                                                                                                                          |
@@ -152,9 +155,63 @@ Clicking on the Tool Node lets you define a tool, set its parameters, and allows
 ??? info "Advanced"
     | Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                                                       |
     |-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Condition | CognigyScript | The tool will only be enabled if the condition is evaluated as true. If false, the tool is not part of the AI Agent's Tools within this execution. For example, when using the unlock_account tool, you can specify a condition like `context.accountStatus === "locked"`. This checks the value in the context, and if it is missing or different, the tool will not be enabled. |
+    | Condition | CognigyScript | The tool will be enabled only if the condition is evaluated as true. If false, the tool isn't part of the AI Agent's Tools within this execution. For example, when using the `unlock_account tool, you can specify a condition like `context.accountStatus === "locked"`. This checks the value in the context, and if it is missing or different, the tool will not be enabled. |
 
-## Example
+## AI Agent MCP Tool Settings
+
+MCP Tool Nodes are child Nodes of AI Agent Nodes. The MCP Tool Nodes connect to a remote [MCP server](https://modelcontextprotocol.io/introduction) to load tools that the AI Agent can execute. If an AI Agent wants to execute one of the loaded tools, the branch below the MCP Tool Node is triggered.
+
+Clicking the MCP Tool Node lets you define the connection, filter loaded tools, and allows debugging by enabling detailed messages about the tool's execution.
+
+??? info "MCP Tool"
+    | Parameter          | Type          | Description                                                                                                                                                                            |
+    |--------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Name               | CognigyScript | Provide a name for the MCP connection. This name helps you identify the source of the loaded tool.                                                                                     |
+    | MCP Server SSE URL | CognigyScript | Provide the URL to an SSE (Server-Sent Events) endpoint from a remote [MCP server](https://modelcontextprotocol.io/introduction). Ensure that you connect only to trusted MCP servers. |
+    | Timeout            | Slider        | Set the timeout time for the MCP connection in seconds.                                                                                                                                |
+
+??? info "Debug Settings"
+    | Parameter             | Type   | Description                                                                                                                                                                            |
+    |-----------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Debug loaded Tools    | Toggle | Enable this parameter to display a debug message with all tools loaded from the MCP server. The debug message also includes tools that have been filtered out in the Advanced section. |
+    | Debug with Parameters | Toggle | Enable this parameter to include the Tool Parameters in the debug message.                                                                                                             |
+    | Debug calling Tool    | Toggle | Enable the output of a debug message when the tool is called to provide detailed information about the tool call.                                                                      |
+
+??? info "Advanced"
+    | Parameter   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                               |
+    |-------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Cache Tools | Toggle        | Disable caching of loaded tools while developing. Ensure that caching is enabled in production for performance reasons. The caching time is 10 minutes.                                                                                                                                                                                                                                                                   |
+    | Condition   | CognigyScript | The tool will be enabled only if the condition is evaluated as true. If false, the tool isn't part of the AI Agent's Tools within this execution. For example, when using the `unlock_account tool, you can specify a condition like `context.accountStatus === "locked"`. This checks the value in the context, and if it is missing or different, the tool will not be enabled.                                         |
+    | Tool Filter | Select        | Control tool filtering by selecting one of the following options:<br>- **None** — no tool filtering is applied, and all tools are available for execution. This option is selected by default. <br> - **Whitelist** — only tools on the list are allowed for execution, while all other tools are excluded. <br> - **Blacklist** — tools on the list are excluded from execution, while all other tools remain available. |
+    | Blacklist   | CognigyScript | The parameter appears if you select **Blacklist** in **Tool Filter**. Specify the tools that should be blocked from execution. Specify only one tool per field.                                                                                                                                                                                                                                                           |
+    | Whitelist   | CognigyScript | This parameter appears if you select **Whitelist** in **Tool Filter**. Specify the tools you want to allow for execution. Specify only one tool per field.                                                                                                                                                                                                                                                                |
+
+## Call MCP Tool Settings
+
+In the Flow editor, when you add an MCP Tool Node, a Call MCP Tool Node is automatically created below it. These two Nodes work together to define and execute the chosen tool. The Call MCP Tool Node sets the actual execution point of the chosen tool. This way, you can verify or modify teh tool call arguments in the `input.aiAgent.toolArgs` object, or add a Say Node before the tool call. When the Call MCP Tool Node is executed, the tool call is sent to the remote MCP server, where the Tool is executed remotely with any arguments set by the AI Agent.
+
+To return the tool result to the AI Agent, the **Resolve Immediately** setting can be enabled to send the full result returned from the remote MCP server to the AI Agent.
+
+As an alternative, use a [Resolve Tool Action](resolve-tool-action.md) Node to return a specific result to the AI Agent.
+
+??? info "Call MCP Tool"
+    | Parameter           | Type   | Description                                                                                           |
+    |---------------------|--------|-------------------------------------------------------------------------------------------------------|
+    | Resolve Immediately | Toggle | Enable this parameter to immediately resolve the tool action with the full result as the tool answer. |
+
+??? info "Storage Options"
+    | Parameter   | Type          | Description                                                                                                                                          |
+    |-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | How to handle the result    | Select        | Determine how to handle the MCP tool call result:<ul><li>**Store in Input** — stores the result in the Input object.</li><li>**Store in Context** — stores the result in the Context object.</li></ul> |
+    | Input Key to store Result   | CognigyScript | The parameter appears when **Store in Input** is selected. The result is stored in the `input.aiAgent.toolResult` object by default. You can specify another value, but the **MCP Tool Result** Token won't work if the value is changed. |
+    | Context Key to store Result | CognigyScript | The parameter appears when **Store in Context** is selected. The result is stored in the `context.aiAgent.toolResult` object by default. |
+
+??? info "Debug Settings"
+    | Parameter                 | Type   | Description                                                                                                       |
+    |---------------------------|--------|-------------------------------------------------------------------------------------------------------------------|
+    | Debug Tool Result | Toggle | Enable the output of a debug message with the tool call result after a successful call. |
+
+## Examples
 
 ### AI Agent Tool
 
@@ -185,6 +242,32 @@ where:
         - `description` — a brief explanation of what the property represents.
 - `required` — lists `email` as a required parameter, ensuring that this value is always provided when the tool is called.
 - `additionalProperties` — ensures that the input contains only the `email` tool parameter, and no others are allowed.
+
+### AI Agent MCP Tool and Call MCP Tool
+
+#### Use Zapier's Remote MCP server
+
+You can create a custom MCP server with personalized tools by using one of the [provided SDKs](https://github.com/modelcontextprotocol). For a quicker setup, you can use a third-party provider. For example, [Zapier](https://zapier.com/) allows you to [configure your MCP server](https://actions.zapier.com/settings/mcp/), which can be connected to multiple application APIs.
+
+To use Zapier as a remote MCP server, follow these steps:
+
+1. Log in to your Zapier account, go to the [MCP settings](https://actions.zapier.com/settings/mcp/) page, and configure your MCP server. 
+2. Copy the SSE URL and paste it into the **MCP Server SSE URL** field of your MCP Tool Node.
+3. In the Zapier MCP settings, create an action to connect to various APIs. For example, you can create a Zapier action to automatically generate a Google Doc.
+
+Once the setup is complete, the configured MCP Actions will be loaded when the AI Agent is executed.
+
+You will see the following debug message in the Interaction Panel, indicating the result of the tool call after a successful execution:
+
+```txt
+AI Agent: MCP Tool
+Fetched tools from MCP Tool "zapier"
+
+- google_docs_create_document_from_: Create a new document from text. Also supports limited HTML.
+  Parameters:
+  - title (string): Document Name
+  - file (string): Document Content
+```
 
 ## More Information
 

@@ -7,7 +7,7 @@ hidden: false
 
 # Agentic AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.95-blue.svg)](../../../release-notes/4.95.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
 
 _Agentic AI_ represents a new generation of autonomous, goal-oriented AI Agents designed to boost operational efficiency, enhance customer satisfaction, and drive superior enterprise outcomes.
 
@@ -32,8 +32,9 @@ Before using the Agentic AI feature, you need:
     - A primary model to control the AI Agent, selected from the following providers:
         - `gpt-4o` or `gpt-4o-mini` powered by [OpenAI](../llms/providers/openai.md) or [Azure OpenAI](../llms/providers/microsoft-azure-openai.md).
         - `claude-3-opus`, `claude-3-haiku`, `claude-3-5-sonnet`, or `claude-3-7-sonnet` by [Anthropic](../llms/providers/anthropic.md).
-        - `gemini-1.5-flash` or `gemini-1.5-pro` by [Google Gemini](../llms/providers/google-gemini.md).
+        - `gemini-2.0-flash` or `gemini-2.0-flash-lite` by [Google Gemini](../llms/providers/google-gemini.md).
         - `amazon.nova-lite-v1:0`, `amazon.nova-pro-v1:0`, `anthropic.claude-3-5-sonnet-20240620-v1:0` by [Amazon Bedrock](../llms/providers/amazon-bedrock.md). Note that the model will only work if your AWS administrator gives you [access to this model](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
+        - `mistral-large-2411`, `mistral-small-2503`, `pixtral-large-2503`, or `pixtral-12b-2409` by [Mistral AI](../llms/providers/mistral.md).
      - If you want to enable the [Knowledge AI](../knowledge-ai/overview.md) feature for your AI Agent, make sure to add an embedding model along with the primary model. Cognigy.AI recommends using the `text-embedding-ada-002` model to enhance Agentic AI capabilities.
 
 ## Concepts
@@ -81,11 +82,13 @@ For example, you could include instructions for executing an API call, processin
 ##### Tool Actions
 
 _Tool Actions_ represent specific tasks that an AI Agent can perform. 
-A [tool action](../../build/node-reference/ai/ai-agent.md) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a Tool Action is called.
+A [tool action](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a tool action is called.
+
+Along with tool actions, you can use [Model Context Protocol](../../build/node-reference/ai/ai-agent.md#ai-agent-mcp-tool-settings) (MCP), which boosts tool actions by providing a standardized connection between AI Agents and external services. It allows smooth integration with remote systems like APIs and databases, enabling the AI Agent to perform more complex tasks in a secure and efficient way.
 
 ##### Tool Calls
 
-_Tool Calls_ occur when the AI Agent decides to use a Tool Action and executed the branch underneath the Tool Action node.
+_Tool Calls_ occur when the AI Agent decides to use a tool action and executes the branch underneath the Tool Action Node.
 
 #### Resolve Tool Action Node
 

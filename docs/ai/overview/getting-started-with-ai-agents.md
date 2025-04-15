@@ -41,10 +41,10 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 3. Set up speaking style (tone, verbosity, formality) and voice.
 4. _(Optional)_ Assign knowledge and add instructions.
 5. Ensure security settings are configured properly.
-6. Assign a job and click **Create & Chat** to test.
+6. Assign a job and click **Create** to test.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/ai-agent-creation.gif" width="70%" />
+  <img class="image-center" id="specific-image" src="../../../_assets/ai/overview/ai-agent-creation.gif" width="60%" />
   <figcaption>AI Agent Creation Wizard</figcaption>    
 </figure>
 

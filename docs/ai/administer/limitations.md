@@ -1,7 +1,14 @@
 ---
 title: "Quotas and Limits" 
-slug: "limitations" 
-hidden: false 
+slug: "limitations"
+description: "Familiarize yourself with the default quotas and limits for Cognigy.AI installations."
+hidden: false
+tags:
+  - limitations
+  - limits
+  - quotas
+  - data retention
+  - ttl
 ---
 
 # Quotas and Limits
@@ -43,7 +50,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum total number of Intents in Flows including Attached Flow Intents                                                          | 2,500                           | **10,000** |            |
 | Maximum time an Intent-Training task is allowed to run                                                                            | 10 m                            |            |            |
 | **Intent Trainer**                                                                                                                |                                 |            |            |
-| Maximum file size for uploading Intent Trainer records                                                                            | 100 MB                          |            |            |
+| Maximum file size for uploading Intent Trainer records                                                                            | 150 MB                          |            |            |
 | **Cognigy Functions**                                                                                                             |                                 |            |            |
 | Maximum number of outbound HTTP requests in a single Cognigy Function instance                                                    | 5                               |            |            |
 | Maximum HTTP response size in Cognigy Functions                                                                                   | 1 MB                            |            |            |
