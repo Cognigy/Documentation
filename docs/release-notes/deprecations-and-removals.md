@@ -7,9 +7,6 @@ hidden: false
 
 # Deprecations and Removals
 
-!!! warning "Announcement: New Versioning Concept"
-    Introduced a new versioning concept for Cognigy products. For more information, see the release notes for version [4.99](4.99.md).  
-
 Starting with release [4.84](4.84.md), upcoming removals and deprecations are listed on this page.
 
 This page provides a list of removals and deprecations for native Cognigy features,
