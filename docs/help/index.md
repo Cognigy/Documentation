@@ -31,11 +31,11 @@ Use the Help Center and other resources from Cognigy. If they do not help, conta
 -   :shield:{ .lg .middle } __Trust and Compliance__
 
     ---
-
+    
     Discover Cognigy's approach to security, along with its ethical practices and compliance processes
 
     [:octicons-arrow-right-24: Cognigy Trust Center](https://trust.cognigy.com/)<br>
-    [:octicons-arrow-right-24: Anonymous AI Compliance Form](https://forms.office.com/e/bhbvkNsasd)
+    [:octicons-arrow-right-24: Compliance Reporting](https://www.digital-dsb.eu/home_en/)
 
 -   :information_source:{ .lg .middle } __Other Resources__
 
