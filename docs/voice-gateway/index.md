@@ -37,7 +37,7 @@ _Cognigy Voice Gateway_ is an AI-based solution to deploy voice AI Agents for au
 
     ---
 
-    Utilize the Voice Gateway Self-Service Portal to configure call routing
+    Use the Voice Gateway Self-Service Portal to configure call routing
     and connect this configuration to your voice agent
 
     [:octicons-arrow-right-24: Guide](webapp/overview.md)<br>

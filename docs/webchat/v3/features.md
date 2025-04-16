@@ -138,7 +138,7 @@ Customizable Adaptive Cards are a valuable feature in the chat interface, especi
 
 ### Gallery
 
-To present structured content interactively, utilize the Gallery. It allows you to showcase one or more items with an image, a title, a subtitle, and optional buttons containing links or pre-configured messages.
+To present structured content interactively, use the Gallery. It allows you to showcase one or more items with an image, a title, a subtitle, and optional buttons containing links or pre-configured messages.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/gallery.png" width="100%" />
@@ -178,7 +178,7 @@ The Video feature enables you to send of video files. Users will see a web playe
 
 ### Text with Buttons
 
-If you require navigation options for users without the need for rich structuring, as the Gallery, you can utilize the Text with Buttons.
+If you require navigation options for users without the need for rich structuring, as the Gallery, you can use the Text with Buttons.
 
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/text-with-buttons.png" width="100%" />

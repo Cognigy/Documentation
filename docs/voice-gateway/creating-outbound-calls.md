@@ -217,7 +217,7 @@ Sequence of interactions:
 3. The voice agent initiates a transfer to the call center via Voice Gateway.
 4. The call center receives the transferred call.
 
-To implement this use case, utilize a [Transfer Node](../ai/build/node-reference/voice/voice-gateway/transfer.md) in your voice Flow.
+To implement this use case, use a [Transfer Node](../ai/build/node-reference/voice/voice-gateway/transfer.md) in your voice Flow.
 
 ### Make a Follow-up Call
 
@@ -231,7 +231,7 @@ Sequence of interactions:
 2. The voice agent triggers an outbound call to the user via a third-party service and Voice Gateway.
 3. The user receives the outbound call initiated by the voice agent.
 
-To implement this use case, utilize an [HTTP Request Node](../ai/build/node-reference/service/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-an-outbound-call-via-api-request).
+To implement this use case, use an [HTTP Request Node](../ai/build/node-reference/service/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-an-outbound-call-via-api-request).
 
 ## More Information
 

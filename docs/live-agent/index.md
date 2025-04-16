@@ -60,7 +60,7 @@ _Cognigy Live Agent_ is a contact center solution that is designed to work exclu
 
     ---
 
-    Utilize to enhance and optimize human agent performance, maximizing productivity and efficiency
+    Use to enhance and optimize human agent performance, maximizing productivity and efficiency
 
     [:octicons-arrow-right-24: Reports](reports/overview.md)<br>
     [:octicons-arrow-right-24: OData Integration](tools/odata-endpoint.md)<br>

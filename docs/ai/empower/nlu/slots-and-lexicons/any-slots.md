@@ -7,7 +7,7 @@ hidden: false
 # Any Slots
 
 !!! danger "End of Support"
-    The Any Slots feature has been removed in version 4.84. Instead, utilize the [LLM Entity Extraction](../../../build/node-reference/other-nodes/llm-entity-extract.md) Node to identify Slots in the user input via LLMs.
+    The Any Slots feature has been removed in version 4.84. Instead, use the [LLM Entity Extraction](../../../build/node-reference/other-nodes/llm-entity-extract.md) Node to identify Slots in the user input via LLMs.
 
 *Any Slots* are catch-all placeholder Slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder Slot exactly, it will populate a [Cognigy Slot](slots.md) with the matched content. The result is the same as if the matched user input has been added to an attached Lexicon as a keyphrase.
 

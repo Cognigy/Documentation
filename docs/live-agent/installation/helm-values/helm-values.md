@@ -54,7 +54,7 @@ Next, you can find a definition for each of these values, to understand how to m
 
 ## Specific Configurations
 
-For specific values and logic, here you can utilize these dedicated sections:
+For specific values and logic, here you can use these dedicated sections:
 
 - [Database](database.md)
 - [Redis](redis.md)

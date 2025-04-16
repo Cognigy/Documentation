@@ -22,7 +22,7 @@ follow these steps to familiarize yourself with its features and start testing A
 1. [Open the Interaction Panel](#open-the-interaction-panel) and [configure the Project-related settings](#project-related-settings).
 2. [Select the mode](#test) in which you want to test the AI Agent.
 3. [Examine the data stored in the AI Agent's memory](#info) and how it's reused.
-4. Utilize the [Debug mode](#debug-mode) for more detailed testing.
+4. Use the [Debug mode](#debug-mode) for more detailed testing.
 5. Run [Playbooks](#playbooks) to catch potential errors.
 
 ## Open the Interaction Panel

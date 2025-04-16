@@ -70,7 +70,7 @@ where:
 - `vector_dimension` is the dimension of the embedding vectors used in your environment, which depends on the embedding model used for the Knowledge Search use case. Since the `text-embedding-ada-002` is the only embedding model supported for Knowledge AI at this time, `vector_dimension` is always `1536`.
 - `0.000004` megabytes (4 bytes) is the size of each 32-bit single-precision floating point element in the embedding vector.
 - `1.5` is a factor that accounts for the space needed to store data in addition to the vectors, for example, indexes.
-- `number_of_projects` is to utilize Knowledge AI. Each project using Knowledge AI creates a collection in Qdrant, requiring 10 Megabytes of memory space, even if the collection is empty.
+- `number_of_projects` is to use Knowledge AI. Each project using Knowledge AI creates a collection in Qdrant, requiring 10 Megabytes of memory space, even if the collection is empty.
 
 #### Example
 

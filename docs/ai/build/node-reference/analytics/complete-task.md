@@ -61,7 +61,7 @@ The difference between a Complete Task and an Analytics Step lies in their purpo
 
 ??? info "Information Retrieval"
 
-    When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can utilize the Complete Task Node to mark the "Information Retrieval" task as completed.
+    When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can use the Complete Task Node to mark the "Information Retrieval" task as completed.
 
     This task allows you to track successful information retrieval interactions through the chat or voice call.
 

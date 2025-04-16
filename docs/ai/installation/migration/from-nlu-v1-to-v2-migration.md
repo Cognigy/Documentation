@@ -57,7 +57,7 @@ The new services are smaller than the old services and can better reuse componen
 
 ## Migration Quality Assurance
 
-The Cognigy team began deploying the new NLP services with the release **4.54.0** of Cognigy.AI. As a result, we already have significant experience running these services in production and migrating existing AI Agents to utilize the new services.
+The Cognigy team began deploying the new NLP services with the release **4.54.0** of Cognigy.AI. As a result, we already have significant experience running these services in production and migrating existing AI Agents to use the new services.
 
 Furthermore, we **successfully migrated all Cognigy-hosted customer environments without downtime or impacting the users**.
 
@@ -224,7 +224,7 @@ The orchestrator and embedding services do not require additional memory for tra
 
 #### Scale the NLP V2 Stack
 
-As more projects begin to utilize the NLP V2 stack, the need for scaling may arise. The simplest approach is to monitor the **NLP Orchestrator** dashboard in Grafana, where you can assess the overall system latency and determine whether scaling is required for components such as embeddings or the classifier.
+As more projects begin to use the NLP V2 stack, the need for scaling may arise. The simplest approach is to monitor the **NLP Orchestrator** dashboard in Grafana, where you can assess the overall system latency and determine whether scaling is required for components such as embeddings or the classifier.
 
 ![grafana-metrics.png](../../../_assets/ai/installation/grafana-metrics.png)
 

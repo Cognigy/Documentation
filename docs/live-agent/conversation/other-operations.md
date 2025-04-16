@@ -74,4 +74,4 @@ To change the size of the conversation chat area, select one of the following op
 - To expand the chat area, click ![expand](../../_assets/icons/expand.svg) in the upper-left corner of the chat screen.
 - To collapse the chat area, click ![collapse](../../_assets/icons/collapse.svg) in the upper-left corner of the chat screen.
 
-This feature can be particularly useful if you want to utilize the [AI Copilot](../assistants/ai-copilot.md) workspace within your conversation.
+This feature can be particularly useful if you want to use the [AI Copilot](../assistants/ai-copilot.md) workspace within your conversation.

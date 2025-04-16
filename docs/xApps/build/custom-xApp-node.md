@@ -53,7 +53,7 @@ export const xappDialogNode = createNodeDescriptor({
 });
 ```
 
-Utilize the [setAppState API](../api.md) with an `app template URL` set to `generic-html` and `app template data` that contain the HTML code generated.
+Use the [setAppState API](../api.md) with an `app template URL` set to `generic-html` and `app template data` that contain the HTML code generated.
 
 Once implemented, the generated HTML will appear within the app screen, similar to the **xApp: Show HTML** Node. This approach allows you to edit a specific part of the page through node fields, rather than modifying the entire page content. This streamlined process is focused on the necessary changes for the dialog.
 

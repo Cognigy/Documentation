@@ -1,7 +1,7 @@
 ---
 title: "Salesforce Service Cloud" 
 slug: "salesforce-handover" 
-description: "Cognigy has seamlessly integrated with Salesforce, adding it as an additional handover provider. This integration enables users to effortlessly connect with human agents who utilize Salesforce Service Cloud as their contact center."
+description: "Cognigy has seamlessly integrated with Salesforce, adding it as an additional handover provider. This integration enables users to effortlessly connect with human agents who use Salesforce Service Cloud as their contact center."
 hidden: false
 tags:
    - contact centers

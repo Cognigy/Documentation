@@ -1424,7 +1424,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 Cognigy Live Agent (lite) is here! The Cognigy Live Agent replaces the old Cognigy Livechat in Cognigy.AI version 4. Live Agent comes as a more de-coupled product and will be extended in the future.
 
 #### Quick NLU training
-We have introduced a quicker way for you to train your Intents. If users do not utilize states and conditions in their Intents, they can now use the new quick training method in order to train their Intents way faster. Users can still decide whether they want to go with the slower training approach which will take states and conditions into consideration.
+We have introduced a quicker way for you to train your Intents. If users do not use states and conditions in their Intents, they can now use the new quick training method in order to train their Intents way faster. Users can still decide whether they want to go with the slower training approach which will take states and conditions into consideration.
 
 #### Indian languages
 These release of Cognigy.AI introduces support for the following new languages:
