@@ -35,19 +35,20 @@ In the table below, you can view the data included in TTL.
 
 ## Activate Data Expiration
 
-Cognigy keeps data indefinitely by default. This behaviour can be changed by setting an expiration date in the management-ui.
+By default, Cognigy.AI keeps Analytics, Steps, and Insights Session data to a maximum of 1 year. You can set a shorter data expiration period the [Management UI](../../ai/administer/access/management-ui.md). To do so, follow these steps:
 
-To activate the Data Expiration feature, set limits via the [management-ui](../../ai/administer/access/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premises Cognigy.AI installation. Otherwise, contact [technical support](../../help/get-help.md#help-center) and specify the desired limits in your request.
+- For on-premises installations and dedicated SaaS installations, [set limits](../../ai/administer/access/management-ui.md#expiration-values-ttl-for-sensitive-data) in the [Management UI](../../ai/administer/access/management-ui.md).
+- For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md#help-center) and specify the limits in your request.
 
-If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
+If you have already set limits in the Management UI, the Data Expiration indicator automatically appears in Insights.
 
-The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Any Datasets obtained before setting the expiration value will remain unaffected from this change.
+The Data Expiration feature applies only to new data obtained by Cognigy.AI after activating Data Expiration in the Management UI. Any datasets obtained before setting the expiration value remains unaffected from this change.
 
 For example:
 
-> You set a 1-minute expiration value at 13:00 for Sessions in the management-ui service.
+> You set a 1-minute expiration value at 13:00 for Sessions in the Management UI.
 > 
-> All Sessions created after 13:00 will automatically expire after 1 minute due to the 1-minute expiration date set in management-ui.
+> All Sessions created after 13:00 will automatically expire after 1 minute due to the 1-minute expiration date set in the Management UI.
 > 
 > Sessions created before 13:00 will remain unchanged.
 
@@ -59,8 +60,8 @@ When you adjust the data expiration value, it will only apply to new data obtain
 
 ### Customize Data Expiration for Multiple Organizations
 
-If you manage multiple organizations, you can customize the Data Expiration settings for each organization independently through the management-ui.
+If you manage multiple organizations, you can customize the Data Expiration settings for each organization independently through the Management UI.
 The default Data Expiration is set in the environment variable in the `values.yaml` file.
 
 !!! note 
-    Specifying the Data Expiration for a specific organization in the management ui overrides the environment setting for that organization. This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
+    Specifying the Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
