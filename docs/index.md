@@ -18,7 +18,7 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
 
     ---
 
-    Jumpstart your introduction to Cognigy.AI or gain an overview of Cognigy products
+    Jump-start your introduction to Cognigy.AI or gain an overview of Cognigy products
 
     [:octicons-arrow-right-24: Overview](ai/overview/about-cognigy-ai.md)<br>
     [:octicons-arrow-right-24: Key Features](ai/overview/key-features.md)<br>
