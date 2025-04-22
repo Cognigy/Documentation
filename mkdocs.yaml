@@ -442,6 +442,7 @@ nav:
       - voice-gateway/webapp/outbound-call-routing.md
     - 📞 Outbound Calls:
       - voice-gateway/creating-outbound-calls.md
+      - voice-gateway/call-statuses.md
     - 📚 References:
       - Voice Gateway Verbs:
         - voice-gateway/references/verbs/overview.md
