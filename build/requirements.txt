@@ -35,3 +35,4 @@ urllib3==2.2.2
 watchdog==3.0.0
 wheel==0.41.2
 zipp>=3.20.2
+mkdocs-video==1.5.0

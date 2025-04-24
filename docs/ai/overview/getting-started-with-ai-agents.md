@@ -43,10 +43,11 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 5. Ensure security settings are configured properly.
 6. Assign a job and click **Create** to test.
 
-<figure>
-  <img class="image-center" id="specific-image" src="../../../_assets/ai/overview/ai-agent-creation.gif" width="60%" />
-  <figcaption>AI Agent Creation Wizard</figcaption>    
-</figure>
+<div style="text-align:center">
+   <video width="650" height="400" controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/create-ai-agent.mp4">
+   </video>
+</div>
 
 ## Assign a Job to your AI Agent
 
@@ -108,6 +109,8 @@ Configure memory settings to personalize interactions and retain user details.
 
 - Stores session-specific data.
 - Erased after a conversation ends.
+
+To configure short-term memory, follow these steps:
 
 1. Configure the AI Agent Node settings in the **Memory Handling** section.
 2. Set **Long-Term Memory Injection** to **Inject full Contact Profile**.

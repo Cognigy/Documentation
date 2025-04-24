@@ -865,6 +865,11 @@ plugins:
   - search
   - glightbox
   - macros
+  - mkdocs-video:
+      is_video: true
+      video_autoplay: true
+      video_loop: true
+      video_controls: true
   - tags:
       tags_file: tags.md
   - exclude:
