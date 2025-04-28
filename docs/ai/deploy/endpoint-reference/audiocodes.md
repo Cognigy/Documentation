@@ -10,6 +10,9 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
 </figure>
 
+!!! warning "Removal of the AudioCodes Endpoint"
+    The AudioCodes Endpoint was deprecated in April 2025 and will be removed in October 2025. Migrate to the [Voice Gateway Endpoint](voice-gateway.md) before the removal date.
+    
 Within our **Cognigy.AI** platform,
 you are able to connect your AI Agent to your Contact Center or other phone numbers using the AudioCodes Endpoint,
 allowing customers to speak to your AI Agent instead of just writing with it.
