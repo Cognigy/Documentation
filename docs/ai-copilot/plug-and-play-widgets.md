@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../release-notes/4.60.md)
 
-You can use the Plug-and-Play Widgets to customize your AI Copilot Workspace.
+You can use the Plug-and-Play Widgets to customize your AI Copilot workspace.
 
 These widgets are seamlessly integrated with other AI Copilot Widgets and require minimal manual configuration.
 

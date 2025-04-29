@@ -84,7 +84,7 @@ To configure credentials, follow these steps:
 
 #### Configure Settings for Agent AI Copilot
 
-To configure the AI Copilot Workspace settings, follow these steps:
+To configure the AI Copilot workspace settings, follow these steps:
 
 1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
 2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [AI Copilot documentation](../../../ai-copilot/overview.md).

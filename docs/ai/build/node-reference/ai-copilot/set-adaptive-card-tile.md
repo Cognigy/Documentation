@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-This Node allows you to create and display adaptive cards in your AI Copilot Workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
+This Node allows you to create and display adaptive cards in your AI Copilot workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
 
 The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form. Alternatively, you can use Generative AI to create a new adaptive card or improve an existing one.
 

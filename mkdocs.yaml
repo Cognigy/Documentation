@@ -356,7 +356,9 @@ nav:
         - ai/escalate/handover-reference/genesys-cloud-guest-chat.md
         - Genesys Cloud Open Messaging:
           - ai/escalate/handover-reference/genesys-cloud-open-messaging.md
-          - ai/escalate/handover-reference/genesys-cloud-open-messaging-handover-end-detection.md
+          - Handover End Detection:
+            - ai/escalate/handover-reference/genesys-cloud-open-messaging-handover-end-detection.md
+            - ai/escalate/handover-reference/genesys-cloud-open-messaging-with-amazon-eventbridge.md
         - ai/escalate/handover-reference/8x8.md
       - Handover Features:
         - ai/escalate/user-inactivity-detection.md
@@ -701,6 +703,8 @@ nav:
     - release-notes/index.md
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
+      - 4.10x:
+        - release-notes/4.100.md
       - 4.9x:
         - release-notes/4.99.md
         - release-notes/4.98.md

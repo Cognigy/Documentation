@@ -9,7 +9,7 @@ tags:
 
 # Hang Up
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../../../release-notes/4.99.md)
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/hang-up.png" width="80%" />

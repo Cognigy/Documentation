@@ -16,25 +16,25 @@ The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding
 
     ---
 
-    This Node allows you to create and display adaptive cards in your AI Copilot Workspace.
+    This Node allows you to create and display adaptive cards in your AI Copilot workspace.
 
 -   :octicons-code-24:{ .lg .middle } __[Copilot: HTML Tile](set-html-tile.md)__
 
     ---
 
-    This Node allows you to display customized HTML content in the AI Copilot Workspace.
+    This Node allows you to display customized HTML content in the AI Copilot workspace.
 
 -   :material-shape-square-plus:{ .lg .middle } __[Copilot: IFrame Tile](set-iframe-tile.md)__
 
     ---
 
-    This Node allows you to embed external websites directly into the AI Copilot Workspace.
+    This Node allows you to embed external websites directly into the AI Copilot workspace.
 
 -   :material-account-card:{ .lg .middle } __[Copilot: Identity Tile](identity-tile.md)__
 
     ---
 
-    This Node displays and processes customer-specific information directly within the widget of your AI Copilot Workspace.
+    This Node displays and processes customer-specific information directly within the widget of your AI Copilot workspace.
 
 -   :material-book-open:{ .lg .middle } __[Copilot: Knowledge Tile](knowledge-tile.md)__
 
@@ -64,13 +64,13 @@ The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding
 
     ---
 
-    This Node updates the AI Copilot Workspace grid via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and provides a preview of the grid.
+    This Node updates the AI Copilot workspace grid via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and provides a preview of the grid.
 
 -   :material-text-box:{ .lg .middle } __[Copilot: Transcript Tile](transcript-tile.md)__
 
     ---
 
-    This Node captures the most recent customer response and displays it on a designated widget in the AI Copilot Workspace.
+    This Node captures the most recent customer response and displays it on a designated widget in the AI Copilot workspace.
 
 </div>
 

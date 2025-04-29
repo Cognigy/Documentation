@@ -15,7 +15,7 @@ hidden: false
 ## Description
 
 
-This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
+This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot workspace, enhancing the context and usability of the identity-related data.
 
 ## Parameters
 

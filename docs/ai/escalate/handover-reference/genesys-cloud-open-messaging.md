@@ -13,7 +13,7 @@ tags:
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../release-notes/4.100.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
@@ -36,7 +36,9 @@ The Genesys Cloud Open Messaging handover connector is based on [Open Messaging 
 
 - By default, Cognigy.AI uses a WebSocket connection through the Notifications API to detect handover completion in Genesys. However,
   this approach has [limitations](https://developer.genesys.cloud/notificationsalerts/notifications/#usage-limitations)
-  and may not always be reliable. As an alternative, you can configure [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI.
+  and may not always be reliable. As an alternative, you can configure one of the following services:
+     - [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI. Applicable to Cognigy.AI 4.99 and earlier versions.
+     - [Amazon EventBridge](genesys-cloud-open-messaging-with-amazon-eventbridge.md) using the Amazon EventBridge Genesys connector to send requests to Cognigy.AI. Applicable to Cognigy.AI 4.100 and later versions.
 
 ## Configuration on the Handover Provider Side
 
@@ -210,7 +212,7 @@ To test connection, click **Open Demo Web Chat** in your Endpoint.
 
 ### AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
+Within the Genesys integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
 
 By default, two versions of the application are provided:
 

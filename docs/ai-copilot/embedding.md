@@ -10,7 +10,7 @@ AI Copilot is supported by all handover providers.
 
 For example, to embed the workspace into Genesys, create a script in Genesys and add an iFrame to it. For other handover providers, additional configuration may be required.
 
-To display the AI Copilot Workspace, add a value in the respective field:
+To display the AI Copilot workspace, add a value in the respective field:
 
 - [For Chat Use Cases](chat.md) — add the **AI Copilot Embedding URL** value, which can be found in the Endpoint under in the **Copilot** section.
 - [For Voice Use Cases](voice/voice-overview.md) — add the **UUIValue** value, which will be generated and forwarded via SIP headers during the transfer to the human agent.

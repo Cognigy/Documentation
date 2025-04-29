@@ -18,7 +18,7 @@ _Cognigy AI Copilot_ offers a variety of advanced features that empower agents t
 
 ## AI Copilot: Standalone or Embedded
 
-You can use the AI Copilot Workspace in two different ways:
+You can use the AI Copilot workspace in two different ways:
 
 - **Standalone application**. When a conversation is handed over to a human agent, they receive a link in the conversation chat that allows them to access the workspace. This workspace opens in a new browser tab.
 - **Embedded application**. When a conversation is handed over to a human agent, the workspace is displayed alongside the conversation chat within an iFrame in the existing interface.

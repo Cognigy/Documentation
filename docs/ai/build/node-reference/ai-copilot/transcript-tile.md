@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
+This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot workspace.
 
 Additionally, the Copilot: Transcript Tile offers the option to enable Sentiment Analysis,
 which allows for assessing the user's speech tone.

@@ -1,7 +1,7 @@
 ---
 title: "Copilot: IFrame Tile"
 slug: "set-iframe-tile"
-description: "The Copilot: IFrame Tile Node lets you embed external websites directly into the AI Copilot Workspace. "
+description: "The Copilot: IFrame Tile Node lets you embed external websites directly into the AI Copilot workspace. "
 hidden: false
 ---
 
@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-This Node embeds external websites directly into the AI Copilot Workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the AI Copilot workspace without redirecting human agents to an external site.
+This Node embeds external websites directly into the AI Copilot workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the AI Copilot workspace without redirecting human agents to an external site.
 
 ## Parameters
 

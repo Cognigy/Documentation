@@ -27,7 +27,7 @@ In this Transfer Node, you need to enable the transcription of audio streams. Yo
 ## Transcription Webhook
 
 The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Copilot](../../ai/deploy/endpoint-reference/voice-copilot.md) Endpoint
-that the AI Copilot Workspace Flow utilizes for sending transcriptions.
+that the AI Copilot workspace Flow utilizes for sending transcriptions.
 
 ## Custom SIP Headers
 

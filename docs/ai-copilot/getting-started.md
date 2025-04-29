@@ -54,9 +54,9 @@ In another tab, open your contact center desktop, for example Live Agent, and wo
 
 If you are using the `standalone` version of AI Copilot together with a provider that doesn't offer native AI Copilot support, for example RingCentral Engage or Salesforce, you will receive a link to your AI Copilot Workspace in the chat.
 
-After the handover, the conversation history with the AI Agent and the current intent are forwarded to the human agent, together with a specific link to access the AI Copilot Workspace.
+After the handover, the conversation history with the AI Agent and the current intent are forwarded to the human agent, together with a specific link to access the AI Copilot workspace.
 
-In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your contact center desktop.
+In case you are using the `embedded` version, the AI Copilot workspace will be shown within an iFrame in your contact center desktop.
 
 Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 

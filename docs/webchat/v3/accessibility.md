@@ -5,6 +5,8 @@ description: "Cognigy encourages conversation designers to build solutions with 
 hidden: false
 ---
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../release-notes/4.100.md)
+
 # Webchat v3: Accessibility
 
 Webchat v3 is designed to adhere to accessibility standards, specifically [WCAG 2.2 Level AA (Web Content Accessibility Guidelines)](https://www.w3.org/TR/WCAG22/). These guidelines offer detailed recommendations for making web content more accessible to people with various disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological impairments.
@@ -24,13 +26,17 @@ These measures are intended to make it easier for everyone to use your Webchat.
 
 Remember to label all UI elements in your Webchat to explain their purpose clearly.
 Provide users with descriptive labels for each interactive element, including links, text on buttons, and forms.
-Make sure the visible and non-visible text is meaningful to help users navigate the screen using headings or links.
+Make sure the visible and [non-visible text](#aria-labels) is meaningful to help users navigate Webchat effectively.
 
 Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md) that contain images.
 
 <figure>
-  <img class="image-center" src="../../../_assets/webchat/v3/image-alt-text.png" width="100%" />
+  <img class="image-center" alt="A screenshot with an example of an alt text" src="../../../_assets/webchat/v3/image-alt-text.png" width="100%" />
 </figure>
+
+### Aria Labels
+
+Webchat v3 has aria labels to give access to screen readers or other assistive technologies to non-visible text. By default, the aria label texts are in English, but you can translate them to other languages or change them to other texts in the [embedding configuration](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#aria-labels).
 
 ### Adaptive Cards
 

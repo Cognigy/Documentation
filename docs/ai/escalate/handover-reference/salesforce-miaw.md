@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -57,13 +57,13 @@ enabling end users to connect with human agents working in a contact center that
     4. In the **Queue Members** section, add the human agents you want to include in the queue. Save Changes.
 
 ??? info "3. Create a Flow"
-    1. In the **Quick Find** box, enter **Flows**, and select **Flows**.
+    1. In the **Quick Find** box, enter **Flows**, then select **Flows**.
     2. To create a new flow, click **New** and select **Omni-Channel Flow**.
     3. On the **Manager** tab, create a **New Resource**.
         1. From the **Resource Type** list, select **Variable**.
         2. In the **API Name** field, enter `recordId`. 
-        4. From the **Data Type** list, select **Text**.
-        3. Activate **Available for Input**, then click **Done**.
+        3. From the **Data Type** list, select **Text**.
+        4. Activate **Available for Input**, then click **Done**.
     4. In the Flow editor, click **+** to add an element. Select **Route Work** from the list.
     5. In the **Label** field, specify **Custom Action**. The value in the **API Name** field will be generated automatically.
     6. In the **Set Input Values** section, configure the following fields:
@@ -133,10 +133,70 @@ On the Salesforce side, go to the Service Console. In the Service Console, open 
 
 Within the Salesforce MIAW integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant to your human agents.
 
-Salesforce MIAW supports the AI Copilot workspace only as a standalone application:
+By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+
+??? info "Embedded"
+    To use the embedded version of the AI Copilot workspace, you need to update the settings on the Salesforce side and configure the AI Copilot UI components.
+    ??? info "1. Update Messaging Settings"
+        1. In the [Salesforce](https://login.salesforce.com/) interface, go to **Setup > Messaging Settings** and select the messaging channel that you created previously.
+        2. In the messaging channel, go to **Custom Parameters** and click **New**.
+        3. In the **New Custom Parameter** window, configure the following parameters:
+            - **Parameter Name** — enter **Copilot URL**.
+            - **Parameter API Name** — the parameter API name will be generated automatically as soon as you enter the parameter name. Change the parameter API name if needed.
+            - **Channel Variable Name** — the channel variable name will be generated automatically as soon as you enter the parameter name. Change the channel variable name if needed.
+            - **Data Type** — select **String**.
+            - **Maximum Length** — enter `255`. Save changes.
+        4. In the **Parameter Mappings** section, click **New**.
+        5. In the **New Parameter Mapping** window, configure the following parameters:
+            - **Parameter** — select **Copilot URL** that was added under **Custom Parameters**.
+            - **Flow Variable Name** — enter `copilotUrl`. <br> Save changes.
+
+    ??? info "2. Update Embedded Service Deployments"
+        1. In the **Quick Find** box, enter **Embedded Service Deployments** and follow the **Feature Settings > Service > Messaging** path.
+        2. Select the deployment that you created previously, then select **Pre-Chat**.
+        3. Enable the **Activate the pre-chat feature** setting. 
+        4. Go to the **Visible Pre-Chat Fields** section, click **Add > Custom**.
+        5. In the **New Custom** window, fill in the following fields:
+            - **Field Type** — select **text**.
+            - **Channel Variable Name** — select `Copilot_URL` that you added in **Messaging Settings** previously. <br> Save changes. 
+        6. Click **Save**. On the **Embedded Service Deployment Settings** page, click **Publish**.
+
+    ??? info "3. Update the Flow"
+        1. In the **Quick Find** box, enter **Flows**, then select **Flows**.
+        2. Go to the Flow that you created previously.
+        3. On the **Manager** tab, create a **New Resource**.
+            1. From the **Resource Type** list, select **Variable**.
+            2. In the **API Name** field, enter `copilotUrl`.
+            3. From the **Data Type** list, select **Text**.
+            4. Activate **Available for Input**, then click **Done**.
+        4. In the Flow editor, above the **Route Work** action, click **+** to add an element. Select **Update Records** from the list.
+        5. In the **How to Find Records to Update and Set Their Values** section, select **Specify conditions to identify records**.
+        6. In the **Update Records of This Object Type** section, select **Messaging Session** from the **Object** list.
+        7. In the **Filter Messaging Session Records** section, configure the following fields: 
+            - **Condition Requirement to Update Records** — select **All Conditions Are Met (AND)**. 
+            - **Field** — enter `Id`.
+            - **Operator** — select **Equals**.
+            - **Value** — enter `recordId`.
+        8. In the **Set Field Values for the Messaging Session Records** section, configure the following fields:
+            - **Field** — enter `Copilot__c`.
+            - **Value** — enter `copilotUrl`.
+        9. Click **Save a New Version**, then **Activate**.
+
+    ??? info "4. Configure UI Components"
+        To configure the AI Copilot UI components, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub. Once the components are configured, you can test the embedded AI Copilot workspace using [Demo Webchat](../../../webchat/demo.md).
+
+        If you used an embedded AI Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the AI Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
+
+## Troubleshooting
+
+| Possible Error                                                                                  | How to Resolve                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded AI Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                                |
+| You are trying to pull data from a Live Chat transcript while you are on a Messaging session.   | This error occurs when you migrate from the [deprecated Salesforce integration](salesforce.md) to Salesforce MIAW without updating the AI Copilot UI components. To update the components, refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub. |
+| Login to Omni-Channel failed.                                                                   | This error occurs when a resource limit is exceeded. In the Salesforce Console, delete old messaging sessions, chat transcripts, and chat sessions. This action frees up space.                                                                                                                                                                          |
 
 ## More Information
 

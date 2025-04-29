@@ -1,7 +1,7 @@
 ---
 title: "Version Compatibility Matrix"
 slug: "agent-assist-version-compatibility-matrix"
-description: "Version compatibility matrix for Cognigy AI Copilot Workspace and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
+description: "Version compatibility matrix for Cognigy AI Copilot workspace and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
 hidden: false
 ---
 
@@ -9,7 +9,7 @@ hidden: false
 
 {! _includes/ai-copilot/installation-note.md !}
 
-This matrix outlines the compatibility of Cognigy AI Copilot Workspace versions with Cognigy infrastructure components,
+This matrix outlines the compatibility of Cognigy AI Copilot workspace versions with Cognigy infrastructure components,
 such as Kubernetes, MongoDB, and Redis.
 
 {! _includes/installation/on-prem-compatibility-matrix-note.md !}

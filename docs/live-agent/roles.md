@@ -163,7 +163,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Actions                       | Agent | Supervisor | Administrator |
 |-------------------------------|-------|------------|---------------|
 | **AI Copilot**                |       |            |               |
-| Activate AI Copilot Workspace | +     | +          | +             |
+| Activate AI Copilot workspace | +     | +          | +             |
 | **AI Copilot Bot**            |       |            |               |
 | Edit AI Copilot Bot Settings  | +     | +          | +             |
 | Reset Session                 | +     | +          | +             |

@@ -1,5 +1,5 @@
 ---
-title: "Handover End Detection"
+title: "HTTP Webhooks"
 slug: "genesys-cloud-open-messaging-handover-end-detection"
 description: "By default, Cognigy.AI uses a WebSocket connection through the Notifications API to detect handover completion. Alternatively, you can use HTTP webhooks with Triggers and Web Services Data Actions to send requests to Cognigy.AI."
 search:
@@ -11,9 +11,13 @@ tags:
   - Genesys OM
   - Genesys event detection
   - handover end detection
+  - http webhooks
 ---
 
-# Genesys Cloud Open Messaging: Handover End Detection
+# Genesys Cloud Open Messaging: Handover End Detection with HTTP webhooks
+
+!!! warning
+    The handover end detection with HTTP webhooks is applicable to Cognigy.AI 4.99 and earlier versions. If you use Cognigy.AI 4.100 or later versions, migrate to [Amazon EventBridge](genesys-cloud-open-messaging-with-amazon-eventbridge.md). Remove the previous [configuration steps](#configuration-steps) after migration to Amazon EventBridge.
 
 By default, to detect the end of a handover with Genesys Cloud Open Messaging, Cognigy.AI establishes a WebSocket connection that subscribes to a channel created through the [Notifications API](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis). 
 However,
@@ -32,7 +36,8 @@ In this guide, you will configure HTTP webhooks in Genesys Cloud Open Messaging 
 
 ## Prerequisites
 
-- [Configured Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md). 
+- [Configured Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md).
+- Applicable to Cognigy.AI 4.99 and earlier versions. If you use Cognigy.AI 4.100 or later versions, migrate to [Amazon EventBridge](genesys-cloud-open-messaging-with-amazon-eventbridge.md).
 
 ## Configuration Steps
 

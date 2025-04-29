@@ -1,7 +1,7 @@
 ---
 title: "Copilot: HTML Tile"
 slug: "set-html-tile"
-description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the AI Copilot Workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
+description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the AI Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
 hidden: false
 ---
 
@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-This Node displays HTML content in the AI Copilot Workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts. The Set HTML Tile Node is useful for displaying complex information.
+This Node displays HTML content in the AI Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts. The Set HTML Tile Node is useful for displaying complex information.
 
 Technically, the HTML content will be injected into an [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) on the workspace side, so any general restrictions on iFrames also apply to this case.
 
