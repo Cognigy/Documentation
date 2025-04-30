@@ -37,6 +37,7 @@ The configuration depends on the Cognigy installation you have:
 - [Configured Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md). 
 - Applicable to Cognigy.AI 4.100 and later versions. 
 - If you want to migrate from [Handover End Detection with HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) to Amazon EventBridge, make sure you remove the [configuration steps](genesys-cloud-open-messaging-handover-end-detection.md#configuration-steps) after migration to Amazon EventBridge.
+- For on-premises installations, activate the `FEATURE_USE_GENESYS_OM_HTTP_END_HANDOVER_REQUEST="true"` feature flag.
 
 ## Cognigy SaaS
 
