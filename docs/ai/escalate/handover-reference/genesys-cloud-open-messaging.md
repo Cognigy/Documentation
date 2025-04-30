@@ -31,14 +31,11 @@ The Genesys Cloud Open Messaging handover connector is based on [Open Messaging 
 - Activate Genesys Cloud Open Messaging on the Cognigy.AI side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
     - If you have an on-premises installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organization1,organization2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organization1,organization2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.
-
-### Limitations
-
-- By default, Cognigy.AI uses a WebSocket connection through the Notifications API to detect handover completion in Genesys. However,
-  this approach has [limitations](https://developer.genesys.cloud/notificationsalerts/notifications/#usage-limitations)
-  and may not always be reliable. As an alternative, you can configure one of the following services:
-     - [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI. Applicable to Cognigy.AI 4.99 and earlier versions.
-     - [Amazon EventBridge](genesys-cloud-open-messaging-with-amazon-eventbridge.md) using the Amazon EventBridge Genesys connector to send requests to Cognigy.AI. Applicable to Cognigy.AI 4.100 and later versions.
+- To detect handover completion in Genesys:
+    - Starting from Cognigy 4.100, migrate to [Amazon EventBridge](genesys-cloud-open-messaging-with-amazon-eventbridge.md) using the Amazon EventBridge Genesys connector to send requests to Cognigy.AI.
+    - For Cognigy 4.99 and earlier versions, you have two options:
+        - By default, Cognigy 4.99 and earlier use a WebSocket connection via the Notifications API to detect handover completion in Genesys. However, this approach has [limitations](https://developer.genesys.cloud/notificationsalerts/notifications/#usage-limitations) and may not always be reliable.
+        - As an alternative, you can configure [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI.
 
 ## Configuration on the Handover Provider Side
 
