@@ -28,7 +28,7 @@ PyYAML==6.0.1
 pyyaml_env_tag==0.1
 regex==2023.10.3
 requests==2.32.2
-setuptools==75.3.2
+setuptools==78.1.1
 six==1.16.0
 typer==0.4.0
 urllib3==2.2.2
