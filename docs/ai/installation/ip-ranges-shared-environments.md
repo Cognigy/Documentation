@@ -36,6 +36,14 @@ Set these IP addresses on a whitelist when using au-02.cognigy.ai:
 - 13.55.38.237
 - 3.105.214.205
 
+## IP addresses for trial-us.cognigy.ai
+
+Set these IP addresses on a whitelist when using trial-us.cognigy.ai:
+
+- 50.17.209.2
+- 54.158.99.91
+- 34.225.133.252
+
 ## IP addresses for app-us.cognigy.ai
 
 Set these IP addresses on a whitelist when using app-us.cognigy.ai:
