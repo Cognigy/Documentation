@@ -5,6 +5,11 @@
 #
 FROM python:3.14-rc-alpine3.21
 
+# Update package index and install required dependencies
+RUN apk update && apk add --no-cache libxml2-dev libxslt-dev gcc musl-dev sqlite-libs
+# Install SQLite 3.48.0-r2 to fix CVE-2025-29087
+RUN apk update && apk add sqlite-libs=3.48.0-r2
+
 WORKDIR /app
 
 COPY ./build/requirements.txt /app
