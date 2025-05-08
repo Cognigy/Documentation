@@ -60,3 +60,33 @@ Paste initial credentials (email and password) and your license-key (including b
 
 !!! warning "Limited Windows support"
     If you open and save the file with the license key on a Windows machine, it may become corrupted with hidden windows characters. Use a Linux machine to copy the license or a Windows text editor, which can handle linux files properly, e.g. [Notepad++](https://notepad-plus-plus.org/)
+
+!!! warning "Manage Secrets with Argo CD"
+    If you're using [Argo CD](https://argo-cd.readthedocs.io/en/stable/) to manage the deployment of Cognigy.AI, note that Argo CD doesn't support the [lookup function](https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#using-the-lookup-function) from Helm. Read more details about this issue on [GitHub](https://github.com/argoproj/argo-cd/issues/5202). Cognigy.AI relies heavily on the lookup function to generate secrets dynamically. Since Argo CD doesn't support the lookup function, Cognigy.AI will change the value of the secret with every update. 
+
+    To avoid this, you can use the option of `existingSecret`. All secret templates are structured so that when `existingSecret` is defined, the lookup function won't be used, preventing the previously mentioned issue. The example shows how to use `existingSecret`: 
+
+    ```yaml
+    dbConnectionString:
+      enabled: true
+      services:
+        serviceAi:
+          enabled: true
+          serviceName: service-ai
+          auth:
+            existingSecret: "<secret-name>"
+    ```
+    We suggest to follow the below sequence: 
+
+    1. Let the Helm chart create all the secrets during the first-time installation of Cognigy.AI.
+    2. Take a backup of the secrets by following [Backups](backups.md).
+    3. Backport the name of all relavent secrets to the `values.yaml` file as `existingSecret`. 
+    
+    New secrets are frequently added to Cognigy.AI, so you need to review the newly created secrets after each update and backport them as `existingSecret`. You can identify new secrets by checking `creationTimestamp`. To list secrets with their `creationTimestamp`, run the following command:
+
+    ```bash
+    kubectl get secrets -n <namespace> -o custom-columns="NAME:.metadata.name,CREATED:.metadata.creationTimestamp"
+    ```
+
+
+     
