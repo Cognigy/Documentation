@@ -19,6 +19,10 @@ To provide the transcript to the AI Agent, go to the [AI Agent Node](../ai/ai-ag
 In the **Job Description** or **Instructions and Context** field,
 specify the path to the Input or Context object where the transcript is stored.
 
+## Restrictions
+
+- The Get Transcript Node stores only plain text in the transcript. Structured data, such as [text with buttons and Quick Replies](../basic/say.md#default-cognigyai-channel), aren't included in the transcript. 
+
 ## Parameters
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                                                                          |
