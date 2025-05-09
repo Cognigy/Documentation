@@ -41,8 +41,8 @@ To configure the connection for a cloud-based speech service:
     3. Select a region from the **Region** list.
 === "Deepgram"
     1. Enter an API key in the **API key** field. For more information on API keys in Deepgram, read the [Deepgram](https://developers.deepgram.com/docs/create-additional-api-keys) documentation.
-=== "Elevenlabs"
-    1. Enter an API key in the **API key** field. For more information on Elevenlabs API keys, read the [Elevenlabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
+=== "ElevenLabs"
+    1. Enter an API key in the **API key** field. For more information on ElevenLabs API keys, read the [ElevenLabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
     2. Select your language model from the **Model** list. 
     3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
 === "Google Speech Services"

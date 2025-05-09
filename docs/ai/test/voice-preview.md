@@ -21,7 +21,7 @@ However, note that the SSML syntax must be supported by the chosen Voice Preview
 
 ## Restrictions
 
-- Only Google, Microsoft, Amazon AWS, and Deepgram speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as Evenlabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
+- Only Google, Microsoft, Amazon AWS, and Deepgram speech providers support the Voice Preview feature. When testing a voice Flow through the Interaction Panel, you should check the STT and TTS settings of the voice Nodes to ensure that one of these providers is specified. If any other provider, such as ElevenLabs, is specified in the Nodes, the Interaction Panel won't support the voice conversation.
 - The voice preview feature doesn't support SSML for Deepgram.
 
 ## Access STT and TTS Providers

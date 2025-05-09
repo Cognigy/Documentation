@@ -76,7 +76,7 @@ This page allows you to find relevant content by searching through the page tags
     - Microsoft Azure Speech Services
     - Deepgram
     - Amazon Polly
-    - Elevenlabs
+    - ElevenLabs
     - Nuance
     - Soniox
     - Google Speech Services
