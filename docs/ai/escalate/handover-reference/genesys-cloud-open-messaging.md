@@ -84,7 +84,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
     7. To configure a flow, click **Edit**, then go to **Toolbox**.
     8. Drag the **Send Response** action and drop it onto the messaging flow editor.
     9. In the **Message Body** of the **Send Response** action, specify `Connected`. 
-    10. The steps 11–13 are optional. Follow them if you want to add a [new embedded version of AI Copilot](#embedded) within your handover.
+    10. The steps 11–13 are optional. Follow them if you want to add a new embedded version of AI Copilot within your handover.
     11. *(Optional)* Below the **Send Response** action, add [Get Participant Data](https://help.mypurecloud.com/articles/get-participant-data-action/) action.
     12. *(Optional)* In the **Get Participant Data** editor, add the following variables:
         - `queueId`
@@ -247,7 +247,7 @@ By default, two versions of the application are provided:
         2. Click or hover over the **Flows** menu and select **Inbound Message**.
         3. From the flow list, select a flow that you created before.
         4. To configure a flow, click **Edit**.
-        5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+        5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the Create an Inbound Message Flow section. 
         6. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
         7. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
         8. In the **Inputs** action, add `userId` in the **userId** field. 

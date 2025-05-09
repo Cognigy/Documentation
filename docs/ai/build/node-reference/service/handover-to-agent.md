@@ -132,9 +132,9 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
     | API Version         | The API version value is `52`.                                                                                                                                                                                                                                                                                                                                |
     | Organization ID     | The ID of your organization in Salesforce.                                                                                                                                                                                                                                                                                                                    |
     | Deployment ID       | The ID of your deployment in Salesforce.                                                                                                                                                                                                                                                                                                                      |
-    | Button ID           | The ID of your button for the related deployment in Salesforce. For more information, see [Salesforce Handover](../../../escalate/handover-reference/salesforce.md#create-an-endpoint).                                                                                                                                                                       |
+    | Button ID           | The ID of your button for the related deployment in Salesforce. For more information, see [Salesforce Handover](../../../escalate/handover-reference/salesforce.md).                                                                                                                                                                       |
 
-    For more information, read the [Salesforce Handover](../../../escalate/handover-reference/salesforce.md#create-an-endpoint) documentation.
+    For more information, read the [Salesforce Handover](../../../escalate/handover-reference/salesforce.md) documentation.
 
 ??? info "Genesys Settings"
 
@@ -167,7 +167,7 @@ refer to the [Handover Providers Overview](../../../escalate/handover-reference/
     | 8x8 Queue Id        | Specify the header value required for authenticating API calls to the 8x8 system. <br> You can find this ID in the 8x8 admin console. Navigate to **Channels > Chat API**. In the channel list, find the channel that you created. Copy the **Queue ID** from the channel row. |
     | 8x8 JSON properties | Extend 8x8 properties with custom JSON.                                                                                                                                                                                                                                        |
 
-    For more information, read the [8x8 Handover Setup](../../../escalate/handover-reference/8x8.md#configure-8x8) documentation.  
+    For more information, read the [8x8 Handover Setup](../../../escalate/handover-reference/8x8.md) documentation.  
 
 ??? info "Ring Central Engage Settings"
 

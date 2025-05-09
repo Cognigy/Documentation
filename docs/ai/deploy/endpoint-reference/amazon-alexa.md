@@ -12,10 +12,10 @@ hidden: false
 The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
 
 !!! warning
-    The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page](../../empower/nlu/external/nlu-connectors.md) for more details.
+    The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md) page for more details.
     When using Amazon Alexa with Cognigy, all NLU is done by Amazon. It is not possible to use the Cognigy NLU.
 
-    Amazon only passes the Intent name to the flow, not the actual user input! Therefore, any nodes that use conditions based on user input (e.g. if-nodes and rule intents are capable of doing so) will not work as intended.
+    Amazon passes only the Intent name to the Flow, not the actual user input! Therefore, any Nodes that use conditions based on user input (e.g. If Nodes and Intent rules are capable of doing so) will not work as intended.
 
 ## Generic Endpoint Settings
 

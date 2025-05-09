@@ -154,7 +154,7 @@ For more information, read the [Cognigy Insights](../insights/overview.md) docum
 _**Intents**_
 : Predefined patterns or categories that the Cognigy.AI platform uses to understand user input during conversational interactions. In natural language processing (NLP) and Conversational AI, intents represent the intentions or goals behind what a user says or types.
 For example, if a user says `Book a flight to New York for next Friday`, the intent might be to `Book a flight`. Cognigy.AI analyzes the user input to identify the intent and then takes appropriate actions based on that understanding.
-For more information, read the [Intents](empower/nlu/intents/ml-intents.md) documentation.
+For more information, read the [Intents](empower/nlu/intents/overview.md) documentation.
 
 _**Intent Trainer**_
 : Feature that allows analyzing the collected user inputs (records) and adding them to Intents to improve user input comprehension.
@@ -168,7 +168,7 @@ For more information, read the [Interaction Panel](test/interaction-panel/overvi
 
 _**Keyphrase**_
 : Individual Lexicon entries. Keyphrases possess Slots (also known as Tags) and Synonyms, and they can be utilized by the NLU (Natural Language Understanding) system.
-For more information, read the [Keyphrases](empower/nlu/slots-and-lexicons/lexicons.md) documentation.
+For more information, read the [Keyphrases](empower/nlu/slots/user-defined/lexicon.md) documentation.
 
 _**Knowledge AI**_
 : Knowledge AI provides generative question answering on the basis of an individually definable knowledge base through the combination of Conversational AI, Large Language Models, and vector search technology.
@@ -194,7 +194,7 @@ _**Lexicons**_
 : A collection of domain-specific Keyphrases that can be attached to a Flow.
 A Lexicon enables the AI Agent to comprehend specific words such as car brands, product groups, or postal codes.
 Once a Keyphrase is detected, it is published to the Input Object for further use, a process known as Slot Mapping.
-For more information, read the [Lexicons](empower/nlu/slots-and-lexicons/lexicons.md) documentation. For more information about Slot Mapping, read the [Slot Mapping](empower/nlu/slots-and-lexicons/slots.md) documentation.
+For more information, read the [Lexicons](empower/nlu/slots/user-defined/lexicon.md) documentation. For more information about Slot Mapping, read the [Slot Mapping](empower/nlu/slots/system-defined.md) documentation.
 
 _**Live Agent**_
 : A Cognigy product that allows human agents to seamlessly join and assist in conversations handled by the virtual assistants powered by Cognigy.AI. It enables a smooth transition from automated interactions to human-assisted ones, providing a more personalized and efficient customer support experience.
@@ -225,13 +225,13 @@ For more information, read the [Cognigy NLU](empower/nlu/overview.md) documentat
 _**NLU Connectors**_
 : Cognigy.AI features built-in support for several third-party NLU engines.
 NLU Connectors can be utilized to connect with third-party NLU engines, such as Google Dialogflow and IBM Watson Assistant.
-For more information, read the [NLU Connectors](empower/nlu/external/nlu-connectors.md) documentation.
+For more information, read the [NLU Connectors](empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md) documentation.
 
 _**NLU Model**_
 : A machine learning model that is used for Natural Language Understanding (NLU) tasks in Cognigy.AI.
 The NLU model is a crucial component of Cognigy's conversational AI platform,
 enabling AI Agents to understand and interpret natural language input from users.
-For more information, read the [Building the NLU Model](empower/nlu/intents/ml-intents.md) documentation.
+For more information, read the [Building the NLU Model](empower/nlu/intents/overview.md) documentation.
 
 _**Node Editor**_
 : A graphical interface where users can modify the settings of individual Nodes to define their behavior within the Flow.
@@ -275,7 +275,7 @@ _**Session**_
 
 _**Slot**_
 : A specific data type or custom Keyphrase detected by the Cognigy NLU and placed into the Input Object under the property input.slots. There are two types of Slots: System-defined Slots and user-defined Slots (Lexicons / Keyphrases) which can both be accessed easily through CognigyScript.
-For more information, read the [Slots](./empower/nlu/slots-and-lexicons/slots.md) documentation.
+For more information, read the [Slots](empower/nlu/slots/system-defined.md) documentation.
 
 _**Snapshot**_
 : A snapshot is an immutable form of an AI Agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of an AI Agent for deployment, to create backups, or to revert to an earlier state if needed.
@@ -338,4 +338,4 @@ For more information, read the [xApps](../xApps/overview.md) documentation.
 
 _**Yes / No Intents**_
 : This feature enables machine learning to determine yes and no confirmations, similar to regular intent matching. It allows a small set of example sentences to train a model capable of understanding various yes and no confirmation phrases, thereby introducing a more fluent natural language experience.
-For more information, read the [Yes/No Intents](./empower/nlu/intents/yes-no-intents.md) documentation.
+For more information, read the [Yes/No Intents](empower/nlu/intents/yes-no-intents.md) documentation.

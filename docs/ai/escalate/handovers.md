@@ -20,14 +20,14 @@ With multiple Handover to Agent Nodes in your Flow, you can route conversations 
 To enable the handover process, in addition to the Handover to Agent Node, you'll need:
 
 - [Compatible contact center and its connector](handover-reference/overview.md)
-- [Endpoint that supports handovers](../deploy/endpoints/handover-settings.md#channel-support)
+- [Endpoint that supports handovers](../deploy/endpoints/handover-settings.md)
 
 Cognigy.AI offers a range of tools to manage this escalation effectively:
 
 - Nodes:
     - [Handover to Agent](../build/node-reference/service/handover-to-agent.md) — initiates the transfer to a human agent.
     - [Check Agent Availability](../build/node-reference/service/check-agent-availability.md) — verifies if human agents are free to take over.
-    - [Lookup](../build/node-reference/logic/lookup.md#handover-status) — monitors handover status, for example, completed, canceled, error, queue.
+    - [Lookup](../build/node-reference/logic/lookup.md) — monitors handover status, for example, completed, canceled, error, queue.
     - [Close Handover](../build/node-reference/service/close-handover.md) — ends the handover process when appropriate.
     - [Set Handover Inactivity](../build/node-reference/service/set-handover-inactivity.md) — defines timeouts for inactive handovers.
 - Features:

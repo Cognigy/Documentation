@@ -11,7 +11,7 @@
 
 ## Description
 
-Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags, see [Lexicons & Slots](../../../empower/nlu/slots-and-lexicons/lexicons.md).
+Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags, see [Lexicons & Slots](../../../empower/nlu/slots/user-defined/lexicon.md).
 
 ## Parameters
 

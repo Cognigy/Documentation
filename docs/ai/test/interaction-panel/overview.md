@@ -213,7 +213,7 @@ The **Info** tab menu includes the following sections:
 
 Cognigy.AI objects have a different life span depending on their type.
 For more information,
-refer to [Cognigy Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects).
+refer to [Cognigy Objects Life Span](../../build/cognigyscript.md).
 
 ### Input
 
@@ -272,7 +272,7 @@ The Interaction Panel can be configured with a number of settings across differe
 The **Chat Input** setting lets you enable third-party NLU engines for use in the Interaction Panel. 
 To install a new NLU engine in Cognigy.AI, go to **Build > NLU Connectors** and click **+ New NLU Connector**.
 
-For more information on how to manage NLU connectors, refer to [NLU Connectors](../../empower/nlu/external/nlu-connectors.md).
+For more information on how to manage NLU connectors, refer to [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md).
 
 #### Chat Output
 
@@ -294,12 +294,12 @@ The **Debug Mode** setting is enabled by default.
 
 Within this mode, the Interaction Panel displays more information about the Flow execution, including:
 
-- Triggered [Intents](../../empower/nlu/intents/ml-intents.md) and their [scores](../../empower/nlu/intents/intent-analyzer.md).
+- Triggered [Intents](../../empower/nlu/intents/overview.md) and their [scores](../../empower/nlu/intents/intent-analyzer.md).
 - Triggered [Yes/No Intents](../../empower/nlu/intents/yes-no-intents.md) and their [scores](../../empower/nlu/intents/intent-analyzer.md).
-- Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
-- Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
+- Matched [Slots](../../empower/nlu/slots/system-defined.md)
+- Found [Lexicon Keyphrases](../../empower/nlu/slots/user-defined/lexicon.md)
 - [State](./state.md) changes
-- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments.md).
 - Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
 Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md) in the Code Node.
@@ -373,6 +373,6 @@ and the Interaction Panel automatically switches to Flow B as soon as it's opene
 
 ## More Information
 
-- [Cognigy Script and Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects)
+- [Cognigy Script and Objects Life Span](../../build/cognigyscript.md)
 - [Testing your AI Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
 - [Voice Gateway Parameter Details](../../build/node-reference/voice/voice-gateway/parameter-details.md)

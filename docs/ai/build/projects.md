@@ -18,8 +18,10 @@ Projects include [Flows](../build/flows/overview.md), [Endpoints](../deploy/endp
 
 ## Working with Projects
 
-=== "GUI"
-    To create a Project with the [Project Creation wizard](#project-creation-wizard), click the **+** button in the upper-left corner of the [Main page](../overview/user-interface/main-page.md). On the **Main** page, you can also edit or delete a Project as well as copy a Project's Reference ID.
+- [Flows](../build/flows/overview.md)
+- [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
+- [Endpoints](../deploy/endpoints/overview.md).
+- 
 
 === "API"
     You can view, create, and manage Projects using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#get-/v2.0/projects).
@@ -35,7 +37,7 @@ In the Project Creation wizard, select a Project type based on the AI Agent you 
     An autonomous AI Agent driven by large language models (LLMs). You can build an [Agentic AI Agent](../empower/agentic-ai/getting-started.md) or hire one from the [Job Market](../empower/agentic-ai/overview.md#job-market).
 
 === "Intent-driven AI"
-    An AI Agent that uses [Intents](../empower/nlu/intents/ml-intents.md) to understand user input. You can build an [AI Agent](../../ai/overview/getting-started-with-digital-agent.md) and integrate it with [Knowledge AI](../empower/knowledge-ai/overview.md), a RAG-based solution that provides context-aware responses.
+    An AI Agent that uses [Intents](../empower/nlu/intents/overview.md) to understand user input. You can build an [AI Agent](../../ai/overview/getting-started-with-digital-agent.md) and integrate it with [Knowledge AI](../empower/knowledge-ai/overview.md), a RAG-based solution that provides context-aware responses.
 
 After creating a Project, you can customize your AI Agent to be Intent-driven or Agentic according to your needs.
 

@@ -77,7 +77,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum number of HTTP requests an Options Resolver can send                                                                      | 5                               |            |            |
 | Maximum HTTP response size in an Options Resolver                                                                                 | 1 MB                            |            |            |
 | Maximum time an Options Resolver can run                                                                                          | 5 s (max HTTP calls * 1 s)      |            |            |
-| Maximum message size for [Untrusted Extensions](../build/extensions.md#make-an-extension-trusted)                                 | 300 KB                          |            |            |
+| Maximum message size for [Untrusted Extensions](../build/extensions.md)                                                           | 300 KB                          |            |            |
 | **Execution and Operations**                                                                                                      |                                 |            |            |
 | Maximum number of times a Flow can execute the same Path for a single user message before “Infinite Loop protection” is triggered | 4                               |            |            |
 | Maximum number of undo/redo operations to be stored per user in the Flow Editor                                                   | 5                               |            |            |

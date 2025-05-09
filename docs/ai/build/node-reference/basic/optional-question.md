@@ -29,8 +29,8 @@ An Optional Question Node requests specific information from the user. The Node 
     |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Text        | Any text input.                                                                                                                                                                                                                         |
     | Yes / No    | A positive or negative response.                                                                                                                                                                                                        |
-    | Intent      | One of the trained [Intents](../../../empower/nlu/intents/ml-intents.md) must be identified from the user's response.                                                                                                                   |
-    | Slot        | A [System Slot](../../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots) or [Lexicon Slot](../../../empower/nlu/slots-and-lexicons/lexicons.md) must be detected within the user's response. The slot is defined by name. |
+    | Intent      | One of the trained [Intents](../../../empower/nlu/intents/overview.md) must be identified from the user's response.                                                                                                                   |
+    | Slot        | A [System Slot](../../../empower/nlu/slots/system-defined.md) or [Lexicon Slot](../../../empower/nlu/slots/user-defined/lexicon.md) must be detected within the user's response. The slot is defined by name. |
     | Date        | Any date (system-defined).                                                                                                                                                                                                              |
     | Number      | Any number (system-defined).                                                                                                                                                                                                            |
     | Temperature | Any temperature (system-defined).                                                                                                                                                                                                       |
@@ -44,7 +44,7 @@ An Optional Question Node requests specific information from the user. The Node 
     | Data        | Any data (input.data) input.                                                                                                                                                                                                            |
 
     !!! note "Supported Data Formats for System-Defined Slots"
-        All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../../empower/nlu/slots-and-lexicons/slots.md) page.
+        All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../../empower/nlu/slots/system-defined.md) page.
 
 ??? info "Channels and Output types"
 

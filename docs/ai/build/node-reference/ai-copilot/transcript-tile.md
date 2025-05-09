@@ -20,7 +20,7 @@ Additionally, the Copilot: Transcript Tile offers the option to enable Sentiment
 which allows for assessing the user's speech tone.
 This sentiment analysis can provide insights into whether the user's response is positive, negative, or neutral.
 Before using this option,
-set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai)
+set the Generative AI provider in the [Settings](../../../empower/generative-ai.md)
 and select the appropriate model in the [supported model list](../../../empower/llms/model-support-by-feature.md).
 
 ## Parameters

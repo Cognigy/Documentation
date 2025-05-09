@@ -55,14 +55,14 @@ Once you've added an LLM to Cognigy.AI, you can perform the following operations
     1. Go to **Build > LLM**.
     2. Hover over the existing model and click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg).
     3. Select **Create a package**.
-    4. Once the package has created, a new [task](../../build/projects.md#tasks), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
+    4. Once the package has created, a new [task](../../build/projects.md), titled **Create package**, will be run. To view the task, click ![task-menu](../../../_assets/icons/task-menu.svg) in the upper-right corner.
 
     When the task is completed, you can download the Package in the Task Panel.
     To ensure the model works correctly in a different Project, export its [connection](../../build/connections.md) as a Package.
 
 ??? info "Delete a Model"
 
-    Note that a [default model](#set-a-model-as-default) cannot be deleted. Before deletion, you need to remove the default tag.
+    Note that a default model cannot be deleted. Before deletion, you need to remove the default tag.
 
     === "GUI"
         To delete a model, follow these steps:

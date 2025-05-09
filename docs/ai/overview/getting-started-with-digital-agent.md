@@ -65,7 +65,7 @@ To test your AI Agent, follow these steps:
   <img class="image-center" src="../../../_assets/ai/overview/getting-started-chat.png" width="100%" />
 </figure>
 
-Now you can deploy the agent using the [Webchat v3](../../webchat/getting-started.md#create-an-endpoint) Endpoint, and see how conversations look on the production environment through Demo Webchat.
+Now you can deploy the agent using the [Webchat v3](../../webchat/getting-started.md) Endpoint, and see how conversations look on the production environment through Demo Webchat.
 
 ## What's Next?
 

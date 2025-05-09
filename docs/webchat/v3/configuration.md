@@ -29,7 +29,7 @@ The following general settings are available within this Endpoint:
 - [Endpoints Overview](../../ai/deploy/endpoints/overview.md)
 - [Data Protection & Analytics](../../ai/deploy/endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../../ai/deploy/endpoints/transformers/transformers.md)
-- [NLU Connectors](../../ai/empower/nlu/external/nlu-connectors.md)
+- [NLU Connectors](../../ai/empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
 - [Session Management](../../ai/deploy/endpoints/session-management.md)
 - [Handover Settings](../../ai/deploy/endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)

@@ -106,7 +106,7 @@ This setting allows you to quickly enable or disable the Endpoint.
 
 This setting allows you to select a different **NLU engine** for the selected Endpoint.
 
-The [NLU Connectors](../../empower/nlu/external/nlu-connectors.md) that are configured to the agent are available to select from this drop-down menu. Alternatively, the [No NLU](../../empower/nlu/external/no-nlu.md) option can be selected to completely disable the intent and slot mapping for an endpoint.
+The [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md) that are configured to the agent are available to select from this drop-down menu. Alternatively, the [No NLU](../../empower/nlu/external/nlu-connector-reference/no-nlu.md) option can be selected to completely disable the intent and slot mapping for an endpoint.
 
 ### Data Protection & Analytics
 

@@ -19,7 +19,7 @@ In most cases, you wrap CognigyScript expressions in double curly braces and quo
 You can use CognigyScript to:
 
 - Add dynamic and executable content to chat and voice conversations.
-- Retrieve information from [Cognigy.AI objects](#cognigy-objects) and reuse it in chat and voice conversations.
+- Retrieve information from [Cognigy.AI objects](#cognigyai-objects) and reuse it in chat and voice conversations.
 - Run scripts to manipulate data dynamically.
 - Use CognigyScript in JSON arguments to make requests to an external system via the HTTP Request Node.
 

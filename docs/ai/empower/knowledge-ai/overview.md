@@ -14,7 +14,7 @@ tags: ['Knowledge AI', 'RAG', 'Information Retrieval', 'Document Processing', 'K
 
 Knowledge AI is a knowledge search and management solution that uses Retrieval-Augmented Generation (RAG) to improve AI Agents' performance and assist human agents. Knowledge AI applies RAG to provide AI Agents with access to a large amount of structured information from different files in a knowledge base, such as articles, manuals, FAQs, and more. By accessing the knowledge base, AI Agents can retrieve and understand specific information, and provide more accurate, context-aware, and helpful responses to user queries.
 
-With Knowledge AI, you have more options beyond relying on [Intents](../nlu/intents/ml-intents.md) and [Default Replies](../nlu/overview.md#default-replies) to identify user questions and provide relevant content based on predefined questions and answers. Creating question-and-answer pairs can be time-consuming and require labor-intensive maintenance.
+With Knowledge AI, you have more options beyond relying on [Intents](../nlu/intents/overview.md) and [Default Replies](../nlu/intents/default-reply.md) to identify user questions and provide relevant content based on predefined questions and answers. Creating question-and-answer pairs can be time-consuming and require labor-intensive maintenance.
 
 Knowledge AI lets you upload knowledge in various formats, such as [PDF](knowledge-source/text-formats/pdf.md), [Cognigy Text](knowledge-source/text-formats/ctxt.md) (CTXT) and [web pages](knowledge-source/text-formats/web-page.md), as [Knowledge Sources](knowledge-source/knowledge-source.md). This technology extracts meaningful information from these documents and makes it accessible to conversation designers through the [Search Extract Output Node](knowledge-search-and-extraction/search-extract-output.md). With this Node, you can build knowledge-based AI Agents quickly, overcoming the limitations of traditional intent-based systems and simplifying the creation of sophisticated conversational experiences.
 
@@ -44,7 +44,7 @@ To use the full potential of Knowledge AI, you need:
 
 - A generative model that supports [LLM Prompt Nodes or Answer Extraction](../../empower/llms/model-support-by-feature.md) to use Knowledge Search results to generate context-aware response to user questions.
 
-Once a model is set up within a [Project](../../build/projects.md), all other [Knowledge Stores](#knowledge-store) will use the same model. If you want to switch to a different model, you must either delete all existing Knowledge Stores in the current Project or create a new Project.
+Once a model is set up within a [Project](../../build/projects.md), all other [Knowledge Stores](knowledge-store.md) will use the same model. If you want to switch to a different model, you must either delete all existing Knowledge Stores in the current Project or create a new Project.
 
 ## Knowledge Management
 

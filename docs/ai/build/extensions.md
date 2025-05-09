@@ -26,7 +26,7 @@ _Extensions_ are [Nodes](nodes/overview.md) for specific use cases that you can 
 ## Working with Extensions
 
 === "GUI"
-    In **Manage > Extensions**, you can install, update, and uninstall Extensions from the Marketplace or [custom Extensions](#custom-extensions). Also, you can [mark your custom Extensions as trusted](#extension-performance).
+    In **Manage > Extensions**, you can install, update, and uninstall Extensions from the Marketplace or [custom Extensions](#custom-extensions). Also, you can [mark your custom Extensions as trusted](#make-extensions-trusted).
 
     The Extension Marketplace is also available on [Cognigy's website](https://www.cognigy.com/marketplace#/).
 
@@ -34,7 +34,7 @@ _Extensions_ are [Nodes](nodes/overview.md) for specific use cases that you can 
     You can pull Extensions using the [Cognigy.AI CLI](https://github.com/Cognigy/cognigy-cli).
 
 === "API"
-    You can view, delete, upload, and update Extensions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Extensions-v2.0). Also, you can [mark your custom Extensions as trusted](#extension-performance).
+    You can view, delete, upload, and update Extensions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Extensions-v2.0). Also, you can [mark your custom Extensions as trusted](#make-extensions-trusted).
 
 After you have installed an Extension, you can add it as a Node in the [Flow editor](flows/editor.md).
 

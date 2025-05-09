@@ -110,7 +110,7 @@ enabling end users to connect with human agents working in a contact center that
     1. Create a Flow in Cognigy.AI with a Handover to Agent Node.
     2. Link the Endpoint to this Flow.
     3. When triggered, this Node escalates the conversation to RingCentral Engage, assigning it the `Agent` category and sending the Cognigy User Profile to RingCentral Engage.
-    See [Send User Profile](#optional-additional-configuration).
+    See [Send User Profile](#additional-configuration).
 
 After configuring the Handover Settings, test the setup: send a message to the Endpoint and make sure that a conversation appears in RingCentral Engage.
 
@@ -131,7 +131,7 @@ After configuring the Handover Settings, test the setup: send a message to the E
 ??? info "Get Queue Updates"
     The **Get Queue Update** setting enables the injection of queue updates into the conversation flow as events. This capability allows you to react to queue updates within your conversation.
 
-    In addition to enabling the **Get Queue Update** option, you need to configure the Lookup Node so that the handover type is selected as **Queue**. For more details, refer to the [Handover Status](../../build/node-reference/logic/lookup.md#handover-status) section.
+    In addition to enabling the **Get Queue Update** option, you need to configure the Lookup Node so that the handover type is selected as **Queue**. For more details, refer to the [Handover Status](../../build/node-reference/logic/lookup.md) section.
 
     The queue updates from RingCentral Engage are visible in the `input.data.handover` object. 
     The object contains the following properties:

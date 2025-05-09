@@ -34,5 +34,5 @@ If the Advanced Parser or Azure AI Document Intelligence fails, Knowledge AI fal
 
 ## More Information
 
-- [Knowledge Source](../knowledge-source.md#knowledge-source)
+- [Knowledge Source](../knowledge-source.md)
 - [PDF](../../knowledge-source/text-formats/pdf.md)

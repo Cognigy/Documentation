@@ -3,23 +3,29 @@ title: "Intent Recognition with External Embedding Model"
 description: "In Cognigy.AI, the Intent Recognition with External Embedding Model feature allows using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models."
 slug: "external-intent-recognition"
 hidden: false
+tags:
+  - intent recognition
+  - external NLU
+  - external embedding model
 ---
 
 # Intent Recognition with External Embedding Model
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.74-blue.svg)](../../../../release-notes/4.74.md)
 
-An embedding is a sequence of numbers that represents the meaning of sentences and is used by the NLU for tasks such as intent classification.
+An embedding is a sequence of numbers that represents the meaning of sentences and is used by the NLU for tasks such as Intent classification.
 
 The _Intent Recognition with External Embedding Model_ feature allows
-using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models:
-
-- It is designed for complex projects with a large number of intents and example sentences.
-- It enables you to set up the intent model faster because you spend less time selecting and refining example sentences.
-- There is a cost associated with using third-party models. It involves making external requests to a third-party service, which may incur expenses and latency.
+using the `text-embedding-3-large` hosted by OpenAI and Azure OpenAI, replacing the default Cognigy embedding models.
 
 !!! note
     The Azure OpenAI and OpenAI models are multilingual, and the NLU will work even if the Cognigy Flow is set in a different language than the user input. We recommend creating individual Flows for each localization.
+
+## Key Benefits
+
+- The feature is designed for complex projects with a large number of Intents and example sentences.
+- It enables you to set up the Intent model faster because you spend less time selecting and refining example sentences.
+- There is a cost associated with using third-party models. It involves making external requests, which may incur expenses and latency.
 
 ## Prerequisites
 
@@ -38,37 +44,11 @@ To set up a third-party NLU model, follow these steps:
 ## Train Flows
 
 Changing the NLU embedding model requires all Flows in the Project to be retrained. 
-Otherwise, intent recognition will fail because the new embeddings won't match the old ones used for training.
+Otherwise, Intent recognition will fail because the new embeddings won't match the old ones used for training.
 
-During Flow training, only enabled intents are considered. Intents marked as disabled will be skipped.
+During Flow training, only enabled Intents are considered. Intents marked as disabled will be skipped.
 
-Select the number of Flows that need training:
-
-- [Train a Flow](#train-a-flow)
-- [Train multiple Flows](#train-multiple-flows)
-
-### Train a Flow
-
-If you have only one Flow in your Project, follow these steps:
-
-1. In the left-side menu of the Project, go to **Build > Flows**.
-2. On the **Flows** page, select the Flow that you want to train.
-3. In the upper-right corner, select **NLU**.
-4. On the **Intents** tab, click **Build Model**.
-
-Once the model building process is complete, the intent recognition capability of the Flow will be improved, allowing for more accurate understanding of user inputs.
-
-### Train Multiple Flows
-
-If you have more one Flow in your Project, follow these steps:
-
-1. In the left-side menu of the Project, go to **Build > Flows**.
-2. On the **Flows** page, check if the **Train all Flows** button exists. If the **Train all Flows** button is not enabled for your environment, specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-3. Click **Train all Flows**. 
-
-Once the model building process is complete, the intent recognition capability of the Flow will be improved, allowing for more accurate understanding of user inputs.
-
-Note that during the training process, the order of Flows is not predefined. Flows are retrieved from the database sequentially, following their default storage order.
+You can train a single Flow or multiple Flows by navigating to **Build > Flows**.
 
 ## More Information
 

@@ -1,68 +1,108 @@
 ---
- title: "Intent Conditions" 
- slug: "conditions" 
- hidden: false 
+title: "Intent Conditions" 
+slug: "intent-conditions" 
+description: "Cognigy.AI Intent Conditions allow you to dynamically enable or disable a specific Intent based on real-time data"
+hidden: false
+tags:
+  - Cognigy NLU
+  - intents
+  - intent conditions
+  - conditions
 ---
+
 # Intent Conditions
 
-_Intent Conditions_ allow you to disable and enable Intents dynamically. The Intent Conditions represent a dynamic [State](../../../test/interaction-panel/state.md) defined with [CognigyScript](../../../build/cognigyscript.md) or JavaScript.
+*Intent Conditions* allow you to dynamically enable or disable a specific Intent based on real-time data. You can define them using [CognigyScript](../../../build/cognigyscript.md) and extend them with JavaScript.
 
-## Setting the Intent Condition
+By default, AI Agents evaluate all available Intents. However, in some cases, certain Intents should only be considered under specific conditions. For example:
 
-You can set an Intent Condition with [CognigyScript](../../../build/cognigyscript.md) that evaluates to `true` or `false`. The AI Agent can detect the Intent only if the Intent Condition evaluates to `true`. If you don't set any Intent Condition, the AI Agent can always detect the Intent. As best practice, wrap the entire condition in an `exists` operator (`!!()`):
+- The `Cancel Credit Card` Intent should be recognized if the user has a credit card.
+- The `Schedule Appointment` Intent should be recognized during business hours.
 
-```js
-!!(input.slots.city[0].keyphrase === "Düsseldorf")
-```
+With Intent conditions, you can control when an Intent is active, improving the accuracy and relevance of AI Agent responses.
 
-or
+## Key Benefits
 
-```js
-!!( !context.topics.includes("Cognigy"))
-```
+- **Granular control**. Compared to States, which are designed for managing a set of Intents, Intent conditions offer more fine-grained control over individual Intents. They allow you to enable or disable specific Intents based on multiple factors, providing greater flexibility in handling dynamic scenarios.
+- **Improved AI Agent Precision**. Prevents the AI from triggering irrelevant Intents, reducing false positives and improving the user experience.
 
-The CognigyScript Condition is evaluated at runtime, before the Intent model is scored. 
+## How to Use
 
-Cognigy.AI uses the `input`, `profile`, or `context` values to enable or disable Intents based on the information contained in the Input, Context, or Profile objects.
+To set a condition for a specific Intent, navigate to **NLU > Intents** in the Flow editor.
+Open the Intent, then go to **Advanced > Condition** to configure the condition.
 
-### Multiple Intent Conditions
+If no condition is set, the Intent is always available.
 
-For multiple Intent Conditions, set the Intent Conditions with JavaScript using the `&&` (`AND`) or `||` (`OR`) operators:
+### Syntax
 
-```js
-input.slots.city[0].keyphrase === "Düsseldorf" && context.topics.includes("Cognigy")
-```
+You can define Intent conditions using CognigyScript:
 
-or
+??? info "Single Condition"
 
-```js
-input.slots.city[0].keyphrase === "Düsseldorf" || context.topics.includes("Cognigy")
-```
+    A single Intent condition is an expression that evaluates to `true` or `false`. The AI Agent will detect the Intent only if the condition is `true`.
+    
+    The `!!` operator ensures the value is evaluated as a boolean.
+    
+    **Examples:**
+    
+    Check if the Keyphrase of the first item in the `city` Slot is equal to `Düsseldorf`:
+    
+    ```js
+    !!(input.slots.city[0].keyphrase === "Düsseldorf")
+    ```
+    
+    Check if the `topics` array in the Context object doesn't include the term `Cognigy`:
+    
+    ```js
+    !!(!context.topics.includes("Cognigy"))
+    ```  
 
-### Examples
+??? info "Multiple Conditions"
 
-#### Example 1
+    To apply multiple Intent conditions, combine them using logical operators:
 
-A bank's AI Agent caters to Intents related to credit cards. If the customer doesn't have a credit card, for example, you don't want the AI Agent to detect a `CancelCreditCard` Intent.
+    - **AND (`&&`)** – requires all conditions to be true.
+    - **OR (`||`)** – requires at least one condition to be true.
+    
+    **Examples:**
+    
+    Enable Intent if the user asks about Düsseldorf and the topic is Cognigy:
+    
+    ```js
+    input.slots.city[0].keyphrase === "Düsseldorf" && context.topics.includes("Cognigy")
+    ```
+    
+    Enable Intent if the user asks about Düsseldorf or Cognigy:
+    
+    ```js
+    input.slots.city[0].keyphrase === "Düsseldorf" || context.topics.includes("Cognigy")
+    ```
 
-We enable and disable the Intent based on the Profile object or the Contact Profile. Assume the profile includes the `has_credit_card` variable that stores information on whether the customer has a credit card or not. Then, you can use the following Intent Condition:
+## Use Cases
 
-```js
-!!(profile.has_credit_card)
-```
+??? info "Restricting an Intent Based on User Profile"
+    A bank AI Agent should allow users to cancel their credit cards **only if they have one**.
+    
+    **Condition:**
+    
+    ```js
+    !!(profile.has_credit_card)
+    ```
+    
+    **Result:** the Intent is only active for users with a credit card.
 
-As a result, the AI Agent only detects the `CancelCreditCard` Intent for customers who have a credit card.
+??? info "Checking Multiple Profile Attributes"
+    The AI Agent should allow credit card cancellation only if the user owns a card that is activated.
+    
+    **Condition:**
+    
+    ```js
+    profile.has_credit_card === true && profile.credit_card_activated === true
+    ```  
+    
+    **Result:** the Intent is enabled only for customers with an active credit card.
 
-#### Example 2
+## More Information
 
-Now, assume the Profile object or the Contact Profile also includes the `credit_card_activated` variable to store information if the credit card has been activated. If we want the AI Agent to not only evaluate if the customer has a credit card but also if they have activated it, you can use the following multiple Intent Conditions:
-
-```js
-profile.has_credit_card === true && profile.credit_card_activated === true
-```
-
-As a result, the AI Agent only detects the `CancelCreditCard` Intent for customers who have a credit card and have activated it.
-
-## States versus Conditions
-
-Note that [States](../../../test/interaction-panel/state.md) use a predefined list of Intents that are enabled or disabled based on the `input.state` variable, which can also be set dynamically. This approach makes it easier to disable a large number of Intents at once.
+- [States](../../../test/interaction-panel/state.md)
+- [Intent Rules](rules.md)

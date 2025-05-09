@@ -36,7 +36,7 @@ This collection contains one record per user input, one record per AI Agent outp
 
 ### Steps
 
-This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question](../build/node-reference/basic/question.md) Nodes and [Intents](../empower/nlu/intents/ml-intents.md) are automatically created with an attached analytics step, but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
+This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question](../build/node-reference/basic/question.md) Nodes and [Intents](../empower/nlu/intents/overview.md) are automatically created with an attached analytics step, but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
 
 ### Executed Steps
 

@@ -20,7 +20,7 @@ Cognigy.AI integrates with various [Large Language Models (LLM) Providers](#prer
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
 <div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="500" height="313" style="border: 1px solid #ccc; border-radius: 12px;" src="https://www.youtube.com/embed/g_ntrz52BLM" title="Cognigy Sessions: Cognigy.AI Slot Fillers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Prerequisites
@@ -64,7 +64,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
     2. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result. To ensure that the generated content meets the desired expectations, fill in both fields. Relying solely on the title without using the description field will not produce the intended results.
     3. Go to the **Lexicon Entry Generation** setting, and activate **Generate Lexicon Entries**.
     4. Select **Lexicon language** from the list and set the number of entries (lexicon units).
-    5. *(Optional)* Add the default [Slot](nlu/slots-and-lexicons/slots.md).
+    5. *(Optional)* Add the default [Slot](nlu/slots/overview.md).
     6. *(Optional)* Activate **Generate Synonyms**. Synonyms help AI Agents understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
 
     When the Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
@@ -117,7 +117,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
 ??? info "Generate Adaptive Cards"
 
-    LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
+    LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../build/node-reference/basic/say.md) or [Copilot: Adaptive Card Tile](../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
 
 ## Run-Time Generative AI Features
 
@@ -134,7 +134,7 @@ dynamic question reprompts, and generative knowledge retrieval.
 
 In the [Flow editor](../build/flows/editor.md), you can use the following run-time Generative AI features:
 
-??? info "LLM Prompt Node"
+??? info "LLM Prompt Node" 
 
     The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you to run a prompt against an LLM and either output the message or store it in the Input or Context objects.
 
@@ -143,7 +143,7 @@ In the [Flow editor](../build/flows/editor.md), you can use the following run-ti
     !!! warning
         This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
         The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later.
-        Use the [LLM Prompt Node](#llm-prompt-node) to generate messages with LLM services.
+        Use the [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) to generate messages with LLM services.
     
     The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
 
@@ -171,7 +171,7 @@ In the [Flow editor](../build/flows/editor.md), you can use the following run-ti
 
 ??? info "LLM-powered Question Reprompts"
 
-    The [Question Node](../build/node-reference/basic/question.md#reprompt-methods) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
+    The [Question Node](../build/node-reference/basic/question.md) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
 
 ??? info "Search Extract Output Node"
 
@@ -200,7 +200,7 @@ In the [Flow editor](../build/flows/editor.md), you can use the following run-ti
 
 - [Flows](../build/flows/overview.md)
 - [Flow Nodes](../build/node-reference/overview.md)
-- [Intents](nlu/overview.md#intents)
-- [Lexicons](nlu/slots-and-lexicons/lexicons.md)
+- [Intents](nlu/intents/overview.md)
+- [Lexicons](nlu/slots/user-defined/lexicon.md)
 - [LLMs](llms/overview.md)
 - [Cognigy.AI Settings](../administer/access/project-settings.md)

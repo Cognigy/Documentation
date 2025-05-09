@@ -17,7 +17,7 @@ A _Knowledge Store_ provides a centralized and structured environment for managi
 ## Restrictions
 
 - For versions 4.77 and earlier, you can create up to ten Knowledge Stores per Project.
-- All Knowledge Stores within a Project use the same embedding model. After you [configure the embedding model of your first Knowledge Store](overview.md), all other Knowledge Stores will use the same embedding model. If you want to switch to a different embedding model, delete all existing Knowledge Stores in the current Project and create new ones, or [create a new Project](../../build/projects.md#create-a-project).
+- All Knowledge Stores within a Project use the same embedding model. After you [configure the embedding model of your first Knowledge Store](overview.md), all other Knowledge Stores will use the same embedding model. If you want to switch to a different embedding model, delete all existing Knowledge Stores in the current Project and create new ones, or [create a new Project](../../build/projects.md).
 
 ## Working with Knowledge Stores
 

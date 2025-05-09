@@ -1,25 +1,31 @@
 ---
 title: "Text Cleaner" 
-slug: "text-cleaner" 
-hidden: true 
+slug: "text-cleaner"
+description: "Cognigy.AI helps you clean up user input (text or voice) with built-in functions. For example, if a user says `alpha tango hotel double seven three nine minus L for London and C for Canada`, it can automatically be converted to ath 7739 - lc`."
+hidden: true
+tags:
+  - text cleaner
+  - text cleaning functions
 ---
 
 # Text Cleaner
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
 
-Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
+Cognigy.AI helps you clean up user input (text or voice) with built-in functions. For example, if a user says `alpha tango hotel double seven three nine minus L for London and C for Canada`, it can automatically be converted to `ath 7739 - lc`.
 
-An example would be when a user spells out a part number as `alpha tango hotel double seven three nine minus L for London and C for Canada`, resulting in `ath 7739 - lc`.
-
-These functions support the English (`en`) and German (`de`) locales.
-
-The functions are available in the following entities:
+These Text Cleaner functions support the English (`en`) and German (`de`) locales and are available in:
 
 - [Clean Text Node](../../build/node-reference/ai/clean-text.md)
 - [Question Nodes](../../build/node-reference/basic/question.md)
 - [Code Node](../../build/node-reference/basic/code/modules.md)
 - [Transformers](../../deploy/endpoints/transformers/transformers.md#text-cleaner-class)
+
+To learn more about the benefits of using Text Cleaner functions and how they work, watch this video:
+
+<div style="text-align:center;">
+  <iframe width="500" height="313" style="border: 1px solid #ccc; border-radius: 12px;" src="https://www.youtube.com/embed/37m4Yrs161E?si=b7MRNOEtBsOuksO3" title="Cognigy Sessions: Cognigy.AI Slot Fillers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Functions
 

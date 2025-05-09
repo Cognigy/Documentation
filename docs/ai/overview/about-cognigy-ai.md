@@ -10,7 +10,7 @@ hidden:  false
 _The Cognigy.AI platform_ is an AI customer experience orchestration platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/cognigy-orchestration.png" width="100%" />
+  <img class="image-center" src="../../../_assets/ai/overview/cognigy-orchestration.png" width="80%" />
   <figcaption>The orchestration engine</figcaption>    
 </figure>
 

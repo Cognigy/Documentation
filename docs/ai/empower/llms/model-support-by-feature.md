@@ -255,7 +255,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
   </tr>
 </table>
 
-<sup id="footnote1">1</sup> For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](../knowledge-ai/overview.md#which-model-to-choose)
+<sup id="footnote1">1</sup> For Knowledge AI, we recommend using `text-embedding-ada-002`. However, if you want to use `text-embedding-3-small` and `text-embedding-3-large`, make sure that you familiarize yourself with the restrictions of these models in [Which Model to Choose?](../knowledge-ai/overview.md).
 
 <sup id="footnote2">2</sup> This feature is currently in Beta, hidden behind the `FEATURE_ENABLE_ALEPH_ALPHA_EMBEDDING_LLM_WHITELIST` feature flag, and may contain issues. Only one type of embedding LLM should be used per Project. If you choose to use `luminous-embedding-128`, you must create a new Project. Once you have chosen an embedding model for a Project, you cannot switch to a different embedding model; you must use a different Project. Failing to do so will result in errors while this feature is in Beta.
 

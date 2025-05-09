@@ -16,7 +16,7 @@ AI Nodes extend the toolset provided by the Basic Nodes to a more in-depth level
 
     ---
 
-    The Add Lexicon Keyphrase Node dynamically creates a [Lexicons](../../../empower/nlu/slots-and-lexicons/lexicons.md) Keyphrase entry, either based on hardcoded or dynamic data.
+    The Add Lexicon Keyphrase Node dynamically creates a [Lexicons](../../../empower/nlu/slots/user-defined/lexicon.md) Keyphrase entry, either based on hardcoded or dynamic data.
 
 -   :material-robot:{ .lg .middle } __[AI Agent](ai-agent.md)__
 

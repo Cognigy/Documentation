@@ -49,7 +49,7 @@ You can find a calculation example with data visualization in the [Average Execu
 ### Avg Intent Score
 
 Displays the average Intent score for the selected time span. Higher Intent scores indicate better AI Agent performance in matching user queries.
-For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/ml-intents.md).        
+For more information, see [Machine Learning Intents](../../ai/empower/nlu/intents/overview.md).        
 
 To find the average intent score, Insights sums up all the intent scores and divides the sum by the total number of records.
 

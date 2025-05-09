@@ -98,7 +98,7 @@ By default, two versions of the application are provided:
         2. Click or hover over the **Flows** menu and select **Inbound Message**.
         3. From the flow list, select a flow that you created before.
         4. To configure a flow, click **Edit**.
-        5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+        5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the Create an Inbound Message Flow section. 
         6. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
         7. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
         8. In the **Inputs** action, add `userId` in the **userId** field. 

@@ -21,7 +21,7 @@ information about the files from which knowledge was derived and hints for furth
 The human agent uses the search bar to access a knowledge base and find information to respond to customer queries.
 Responses are generated based on a Large Language Model (LLM) via Knowledge AI.
 
-Before using the Copilot: Knowledge Tile Node, configure the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai) and select the appropriate model from the [supported model list](../../../empower/llms/model-support-by-feature.md).
+Before using the Copilot: Knowledge Tile Node, configure the Generative AI provider in the [Settings](../../../empower/generative-ai.md) and select the appropriate model from the [supported model list](../../../empower/llms/model-support-by-feature.md).
 This Node supports models with the LLM Prompt Node and the Search Extract Output Node features.
 
 To set up the Copilot: Knowledge Tile Node, you need two Nodes for the Flow configuration: one to initiate the knowledge search process and the second one to execute it.

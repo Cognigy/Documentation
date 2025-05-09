@@ -79,7 +79,7 @@ The default timeout for the HTTP Request Node is 15 seconds in a shared SaaS env
 
     Select one of the following payload formats:
 
-    - **JSON** — consists of key-value pairs. When using a JSON payload to access Cognigy.AI objects such as Input, Context, or Profile, refer to [CognigyScript](../../cognigyscript.md#json-arguments) for an example payload.
+    - **JSON** — consists of key-value pairs. When using a JSON payload to access Cognigy.AI objects such as Input, Context, or Profile, refer to [CognigyScript](../../cognigyscript.md) for an example payload.
     - **Text** — consists of unstructured text or basic key-value pairs. For example, `username=JohnDoe&password=12345`.
     - **Form-Data** — consists of key-value pairs. It's used for submitting form data, including file uploads. Each key-value pair is sent as a separate part of the request. The key-value pairs must have the text type. Data isn't supported.
 

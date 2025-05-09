@@ -18,7 +18,7 @@ _Global Large Language Models_ (LLMs) are [LLMs](../../../../empower/llms/overvi
 ## Restrictions
 
 - Global LLMs don't support [LLM fallback](../../../../empower/llms/fallback.md).
-- Global LLMs can't be set as a [default model](../../../../empower/llms/other-operations.md#set-a-model-as-default).
+- Global LLMs can't be set as a [default model](../../../../empower/llms/other-operations.md).
 - Global LLMs can't be cloned.
 
 ## Working with Global LLMs

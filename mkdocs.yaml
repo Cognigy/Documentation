@@ -191,37 +191,52 @@ nav:
       - Natural Language Understanding:
         - ai/empower/nlu/overview.md
         - Intents:
-          - ai/empower/nlu/intents/ml-intents.md
+          - ai/empower/nlu/intents/overview.md
+          - ai/empower/nlu/intents/example-sentences.md
           - ai/empower/nlu/intents/annotations.md
-          - ai/empower/nlu/intents/conditions.md
+          - ai/empower/nlu/intents/default-reply.md
+          - ai/empower/nlu/intents/thresholds.md
+          - Rules and Conditions:
+            - ai/empower/nlu/intents/rules.md
+            - ai/empower/nlu/intents/conditions.md
           - ai/empower/nlu/intents/intent-analyzer.md
-          - ai/empower/nlu/intents/intent-hierarchy.md
-          - ai/empower/nlu/intents/intent-mapping-priority.md
-          - ai/empower/nlu/intents/intent-upload-download.md
-          - ai/empower/nlu/intents/reject-intents.md
-          - ai/empower/nlu/intents/rule-intents.md
+          - Intent Hierarchy:
+              - ai/empower/nlu/intents/intent-hierarchy/overview.md
+              - ai/empower/nlu/intents/intent-hierarchy/inherit-child-example-sentences.md
+              - ai/empower/nlu/intents/intent-hierarchy/intent-mapping-priority.md
+          - ai/empower/nlu/intents/reject-intent.md
           - ai/empower/nlu/intents/trigger-intent.md
+        - Affirm and Deny Responses:
+          - ai/empower/nlu/intents/confirmation-words.md
           - ai/empower/nlu/intents/yes-no-intents.md
-        - Slots and Lexicons:
-          - ai/empower/nlu/slots-and-lexicons/lexicons.md
-          - ai/empower/nlu/slots-and-lexicons/slots.md
-          - ai/empower/nlu/slots-and-lexicons/any-slots.md
+        - Slots:
+          - ai/empower/nlu/slots/overview.md
+          - ai/empower/nlu/slots/system-defined.md
+          - User-Defined:
+            - ai/empower/nlu/slots/user-defined/overview.md
+            - ai/empower/nlu/slots/user-defined/lexicon.md
+            - ai/empower/nlu/slots/user-defined/regex.md
         - ai/empower/nlu/slot-fillers.md
         - ai/empower/nlu/text-cleaner.md
         - External NLU:
           - ai/empower/nlu/external/overview.md
-          - ai/empower/nlu/external/no-nlu.md
-          - ai/empower/nlu/external/nlu-connectors.md
+          - NLU Connectors:
+            - ai/empower/nlu/external/nlu-connectors/overview.md
+            - ai/empower/nlu/external/nlu-connectors/nlu-transformers.md
+          - NLU Connector Reference:
+            - ai/empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md
+            - ai/empower/nlu/external/nlu-connector-reference/alexa.md
+            - ai/empower/nlu/external/nlu-connector-reference/lex.md
+            - ai/empower/nlu/external/nlu-connector-reference/code.md
+            - ai/empower/nlu/external/nlu-connector-reference/cognigy-nlu.md
+            - ai/empower/nlu/external/nlu-connector-reference/dialog-flow.md
+            - ai/empower/nlu/external/nlu-connector-reference/luis.md
+            - ai/empower/nlu/external/nlu-connector-reference/no-nlu.md
+            - ai/empower/nlu/external/nlu-connector-reference/watson-assistant.md
           - ai/empower/nlu/external/external-nlu-intent-recognition.md
           - ai/empower/nlu/external/intent-reranking.md
-          - ai/empower/nlu/external/nlu-transformers.md
-        - NLU Attachments:
-          - ai/empower/nlu/attachments/attached-flows.md
-          - ai/empower/nlu/attachments/attached-lexicons.md
-          - ai/empower/nlu/attachments/attachments.md
-        - Other:
-          - ai/empower/nlu/language-support.md
-          - ai/empower/nlu/nlu-warnings.md
+        - ai/empower/nlu/attachments.md
+        - ai/empower/nlu/language-support.md
       - Large Language Models:
           - ai/empower/llms/overview.md
           - ai/empower/llms/model-support-by-feature.md
@@ -874,8 +889,7 @@ plugins:
       video_autoplay: true
       video_loop: true
       video_controls: true
-  - tags:
-      tags_file: tags.md
+  - tags
   - exclude:
       glob:
         - _includes/*

@@ -27,7 +27,7 @@ Cognigy.AI offers a robust localization feature for easy customization and conte
 
 ### Localize a Flow
 
-You can localize [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/ml-intents.md) in the [Flow editor](../flows/editor.md) after selecting a Locale in the top bar.
+You can localize [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/overview.md) in the [Flow editor](../flows/editor.md) after selecting a Locale in the top bar.
 
 {! _includes/ai/localization/switch-a-locale.md !}
 

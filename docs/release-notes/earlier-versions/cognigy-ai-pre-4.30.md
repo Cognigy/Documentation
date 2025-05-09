@@ -54,7 +54,7 @@
 
 - Fixed a bug where the incorrect text and data would be set after using executeCognigyNLU with mode Overwrite Input
 - Fixed a bug where the Question node of type RegExp would fail on a data-only input
-- Fixed a bug where the Execute Cognigy NLU node would not recognize rule intents which were testing properties that were added to the input object during the Flow execution!9498, ticket: #26191)
+- Fixed a bug where the Execute Cognigy NLU node would not recognize intent rules which were testing properties that were added to the input object during the Flow execution!9498, ticket: #26191)
 - Fixed a bug where delete button is displayed when hovering over disabled example sentences
 - Fixed a bug where the Form Data payload would not work in HTTP Request nodes
 - Fixed a bug where Allow Insecure SSL would not work in HTTP Request nodes
@@ -1230,7 +1230,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed that the default category tags would show up in search in the create Node menu
 - Changed the user ID for the Dialogflow Endpoint when using the chat in the Dialogflow console
 - Fixed that empty default replies would still be triggered
-- Fixed that "activeQuestion" was not available in the input object for rule intents
+- Fixed that "activeQuestion" was not available in the input object for intent rules
 - Fixed a bug where a basic user without any Agents assigned would see a blank page
 - Fixed that Attached Flows would not be triggered when using Execute Flow
 - Fixed a bug related to Arabic inputs

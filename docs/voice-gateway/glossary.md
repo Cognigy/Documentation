@@ -37,7 +37,7 @@ _**Carriers**_
 : Telecommunications service providers are responsible for operating the networks that transmit voice traffic. Within the Voice Gateway Self-Service Portal, you can use different providers such as Voxbone, Twilio, and Simwood. These providers are also known as [SIP Trunk providers](#s). For more information, read the [Carriers](webapp/carriers.md) documentation.
 
 _**Cognigy VG**_
-: See [Voice Gateway](#V).
+: See [Voice Gateway](#v).
 
 ## O
 
@@ -55,7 +55,7 @@ _**Recent Calls**_
 : A feature that enables you to analyze the calls in your Voice Gateway account, providing valuable insights into the duration of various actions during the call, such as speech recognition and connections. For more information, read the [Recent Calls](webapp/recent-calls.md) documentation.
 
 _**Roles**_
-: See [Scopes](#S).
+: See [Scopes](#s).
 
 ## S
 
@@ -66,7 +66,7 @@ _**Service Provider (scope)**_
 :  A user role (scope) within the Voice Gateway Self-Service Portal. This scope is only available for on-premises Cognigy Voice Gateway installations. It includes all operations in the Account scope and provides the ability to edit user profiles, carriers, and speech services belonging to users with either the Account scope or the Service Provider scope. For more information, read the [Users](webapp/users.md#service-provider) documentation.
 
 _**Settings**_
-: Options to configure your Voice Gateway Account. See [Accounts](#A).
+: Options to configure your Voice Gateway Account. See [Accounts](#a).
 
 _**Silence Overlay**_
 : A parameter within the Session Config Node, which allows playing an MP3 track wherever an extended silence occurs. This can happen while the AI Agent is waiting for the customer's response or looking for specific results in the database. Silence Overlay can be used to simulate common call center ambient noise, such as typing the customer's information into the system and clicking the mouse. With the Silence Overlay track, the customer is notified that the agent is working. For more information, read the [Silence Overlay](../ai/build/node-reference/voice/voice-gateway/parameter-details.md) documentation.

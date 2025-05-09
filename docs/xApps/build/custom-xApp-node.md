@@ -9,7 +9,7 @@ hidden: true
 If you need more control and flexibility than what the **xApp: Show Adaptive Card** or **xApp: Show HTML**
 offer, you can create your own customized Node.
 
-To create a custom xApp extension, you will need to build an [Extension](../../ai/build/extensions.md#develop-a-custom-extension) from scratch using a [template](https://github.com/Cognigy/Extensions/tree/master/docs/example) provided in the Cognigy repository on GitHub. Below is the code snippet that you can use within the Extension.
+To create a custom xApp extension, you will need to build an [Extension](../../ai/build/extensions.md) from scratch using a [template](https://github.com/Cognigy/Extensions/tree/master/docs/example) provided in the Cognigy repository on GitHub. Below is the code snippet that you can use within the Extension.
 This code snippet helps to create a custom Node that displays text content and allows you to cancel or continue the dialog.
 
 ```js

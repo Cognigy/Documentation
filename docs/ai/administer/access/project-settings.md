@@ -22,15 +22,15 @@ Within your agent, from the left toolbar click **Manage** --> **Settings** to ac
 
 ### Yes/No logic
 
-Add a specific [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../empower/nlu/intents/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../build/node-reference/overview.md).
+Add a specific [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../empower/nlu/intents/overview.md) or the **Yes/No** type of [Question Nodes](../../build/node-reference/basic/overview.md).
 
 ### Additional confirmation words
 
-Add your own customized responses to confirm an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md).
+Add your own customized responses to confirm an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/overview.md).
 
 ### Additional negative confirmation words 
 
-Add your own customized responses to negate an [Intent](../../empower/nlu/intents/ml-intents.md) and [Question Nodes](../../build/node-reference/overview.md).
+Add your own customized responses to negate an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/overview.md).
 
 ### Continue **main** Flow after attached Flow
 
@@ -70,7 +70,7 @@ To ensure that the Flows work correctly, you need to train them again.
 To do this, navigate to the left-side menu of the Agent and select **Build > Flows**.
 On the **Flows** page, click **Train all Flows**.
 If the **Train all Flows** button is not enabled for your environment,
-specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS: "true"` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 
 !!! warning "English Locale Limitations"
     The Enable Case-Sensitive Intent Mapping feature is not implemented for English locales such as `US`, `Indian`, `UK`, `Canadian`, and `Australian`. However, you can use this feature with the `Universal` locale, which also supports general English.
@@ -80,14 +80,6 @@ specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` 
 - Jointly Map Main and Attached Flow: treats Main and Attached Flow Intents as if they were a single intent collection and finds the best matching intent and executes the corresponding Flow.
 - Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow, the Attached Flow is mapped.
 - Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow, the Main Flow is mapped.
-
-### Implicit Slot Parsing
-Determines whether slots in NLU example sentences should be parsed implicitly or only slot annotations should be used for training. Configurable from 4.1.4 onwards. Prior to 4.1.4 the behavior was as in "Full" mode, existing agents will retain this default.
-
-- Disabled: Only use slot annotations: This will only consider user-annotated slots, Lexicon, or Any Slots, in example sentences.
-- Full: Parse both System and Lexicon slots implicitly
-- System Slots - No Lexicon Slots: Parse only System slots like numbers, dates, email implicitly. Only consider annotations for Lexicon Slots.
-- Lexicon Slots - No System Slots: Parse only Lexicon slots like from attached Lexicons implicitly. Only consider annotations for System Slots.
 
 ## Thresholds
 

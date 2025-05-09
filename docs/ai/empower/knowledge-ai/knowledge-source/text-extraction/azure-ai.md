@@ -23,7 +23,7 @@ When you upload a file as a [Knowledge Source](../knowledge-source.md), Knowledg
 - **Improved quality of responses**. Breaking down the text into [Knowledge Chunks](../../knowledge-chunk/knowledge-chunk.md) allows AI Agents to understand the context and provide more accurate responses.
 - **Recognition of a wide range of text elements**. Azure AI Document Intelligence recognizes plain text and more complex text elements, such as tables, titles, and footers as well as images, by using [Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition).
 - **Effective use of Markdown**. Azure AI Document Intelligence converts the text into Markdown format. AI Agents can process Markdown and recognize text elements, for example, tables and images, and distinguish them from plain text. This approach gives AI Agents more context and helps them better understand how information is organized in the text.
-- **Improved ability to reference the source**. Adding page numbers of the source file to Knowledge Sources as [Chunk metadata](#chunk-metadata) helps track an information source in large documents.
+- **Improved ability to reference the source**. Adding page numbers of the source file to Knowledge Sources as [Chunk metadata](../../knowledge-chunk/knowledge-chunk.md#chunk-metadata) helps track an information source in large documents.
 
 ## Prerequisite
 

@@ -17,7 +17,7 @@ hidden: false
 
 The LLM Prompt Node lets you use prompts with different LLM models to generate text or structured content.
 
-Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai).
+Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md).
 
 The Node supports the following modes:
 

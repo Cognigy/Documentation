@@ -26,7 +26,7 @@ The Node configuration includes defining a persona, knowledge, and task for the 
 allowing it to generate AI-based responses to user inputs and trigger actions.
 The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
 
-Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai).
+Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md).
 
 ## Parameters
 

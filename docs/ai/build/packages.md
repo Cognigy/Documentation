@@ -20,12 +20,12 @@ Compared to [Snapshots](../deploy/snapshots.md), working with Packages provides 
 Packages can include the following Project resources:
 
 - [Flows](../build/flows/overview.md) (including Nodes and Intents)
-- [Lexicons](../empower/nlu/slots-and-lexicons/lexicons.md)
-- [NLU Connectors](../empower/nlu/external/nlu-connectors.md)
+- [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
+- [NLU Connectors](../empower/nlu/external/nlu-connectors/overview.md)
 - [Endpoints](../deploy/endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
 - [Connections](../build/connections.md)
-- [Knowledge Stores](../empower/knowledge-ai/overview.md#knowledge-store)
+- [Knowledge Stores](../empower/knowledge-ai/knowledge-store.md)
 
 ## Restrictions
 

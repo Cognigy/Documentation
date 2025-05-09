@@ -89,7 +89,7 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     The Webchat channel defines how AI Agents provide answers through [Webchat v2](../../../webchat/v2/overview.md).
 
     ???+ note
-        The Webchat channel has similar configuration options to the [Messenger channel](#messenger). Activate the **Use Facebook Messenger channel** toggle to use the same configuration options in both channels.
+        The Webchat channel has similar configuration options to the Messenger channel. Activate the **Use Facebook Messenger channel** toggle to use the same configuration options in both channels.
 
     | Output Type   | Parameters                                                                                                                                                     |
     |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

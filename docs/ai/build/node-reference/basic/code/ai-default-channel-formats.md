@@ -7,7 +7,7 @@
 
 You can send JSON-formatted output directly against your [Endpoints](../../../../deploy/endpoints/overview.md) for it to be output to the respective channels.
 
-The [AI Default Channel](../say.md#default-ai-channel-output-type) is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels.
+The [AI Default Channel](../say.md#default-cognigyai-channel) is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels.
 
 Using the [Code](overview.md) Node, you can also send JSON-formatted output to the Endpoints for the AI Default Channel, and it will handle the conversion into the appropriate content. The required payload formats are described below. 
 

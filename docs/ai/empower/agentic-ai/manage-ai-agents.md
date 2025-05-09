@@ -47,7 +47,7 @@ To create an AI Agent, select one of the following options:
             - **Set up Style** — configure how the AI Agent's choice of wording is influenced by the selected speaking style, which can affect the tone and clarity of its responses:
                 - **Concise/Comprehensive** — adjust the slider to the left for brief responses and to the right for detailed responses.
                 - **Formal/Informal** — adjust the slider to the left for more casual and conversational responses, and to the right for professional and structured responses.
-            - **Voice Configuration** — assign a specific voice to your AI Agent if you want to use your AI Agent as a voice-based assistant. To configure this setting, ensure you have installed [Voice Gateway](../../../voice-gateway/index.md) and set up the [Voice Preview](../../test/voice-preview.md) provider. Then, fill in the fields following the same process you used for [Set Session Config Node](../../build/node-reference/voice/voice-gateway/parameter-details.md#synthesizer---text-to-speech):
+            - **Voice Configuration** — assign a specific voice to your AI Agent if you want to use your AI Agent as a voice-based assistant. To configure this setting, ensure you have installed [Voice Gateway](../../../voice-gateway/index.md) and set up the [Voice Preview](../../test/voice-preview.md) provider. Then, fill in the fields following the same process you used for [Set Session Config Node](../../build/node-reference/voice/voice-gateway/parameter-details.md):
                 - **TTS Vendor** — select the text-to-speech provider for your AI Agent. This setting determines which service will convert the AI Agent's text responses into speech.
                 - **TTS Language** — select the language that your AI Agent will use for speech output. Ensure this language aligns with the preferred language of the end user.
                 - **TTS Voice** — select the voice from the selected TTS vendor. This setting allows you to customize the tone, gender, and style of your AI Agent's voice.
@@ -64,7 +64,7 @@ To create an AI Agent, select one of the following options:
                  - Share troubleshooting links for technical issues.
                  - Apologize if errors occur, then correct promptly.
                 ```
-            - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md#which-model-to-choose) to use Knowledge AI.
+            - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/knowledge-store.md) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md) to use Knowledge AI.
     ??? info "4. Data Privacy & Security"
         1. In the **Data Privacy & Security** step, configure the following fields:
             - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):

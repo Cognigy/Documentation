@@ -37,10 +37,10 @@ Explore key use cases that illustrate how LLMs can be utilized in Cognigy.AI, an
 
     In the Cognigy interface, LLMs help automate repetitive tasks that previously required manual effort from conversation designers:
 
-    - **Generate Flows**. LLMs can generate Flows based on the provided title and description, helping save time during conversation design iterations. To generate Flows, refer to the [Generate Flows](../generative-ai.md#generate-flows) section.
-    - **Generate Lexicons**. With LLMs, you can build a list of Keyphrases for the language of your choice based on the title and description of the provided Lexicon. To generate Lexicons, refer to the [Generate Lexicons](../generative-ai.md#generate-lexicons) section.
-    - **Generate Intent sentences**. With LLMs, you can build a list of Intent sentences based on the title and description of the provided Intent. To generate Intents, refer to the [Generate Intent Sentences](../generative-ai.md#generate-intent-sentences) section.
-    - **Generate adaptive cards**. LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../../build/node-reference/basic/say.md#adaptive-card) or [Copilot: Adaptive Card Tile](../../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
+    - **Generate Flows**. LLMs can generate Flows based on the provided title and description, helping save time during conversation design iterations. To generate Flows, refer to the [Generate Flows](../generative-ai.md) section.
+    - **Generate Lexicons**. With LLMs, you can build a list of Keyphrases for the language of your choice based on the title and description of the provided Lexicon. To generate Lexicons, refer to the [Generate Lexicons](../generative-ai.md) section.
+    - **Generate Intent sentences**. With LLMs, you can build a list of Intent sentences based on the title and description of the provided Intent. To generate Intents, refer to the [Generate Intent Sentences](../generative-ai.md) section.
+    - **Generate adaptive cards**. LLMs can create Adaptive Cards based on the prompt you provide in the description field for the **Adaptive Card** output type in the [Say](../../build/node-reference/basic/say.md) or [Copilot: Adaptive Card Tile](../../build/node-reference/ai-copilot/set-adaptive-card-tile.md) Nodes.
 
 ??? info "Improve AI Agent's Output"
 
@@ -48,7 +48,7 @@ Explore key use cases that illustrate how LLMs can be utilized in Cognigy.AI, an
     In Cognigy.AI, LLMs can enhance the performance of AI Agents in various ways:
 
     - **Generate Enhanced Output**. By using LLMs, AI Agents can produce responses that are more comprehensive, nuanced, and in line with customer needs. This enhancement is important in handling queries that require a level of empathy or complex information processing. To generate enhanced output, add [LLM Prompt Nodes](../../build/node-reference/service/llm-prompt.md) within your Flow.
-    - **Rephrase AI Agent's Output**. LLMs are good at rephrasing texts while maintaining the original meaning. This capability allows for smoother communication if the original output of an AI Agent lacks clarity or tone alignment. To use this capability, enable AI-enhanced rephrasing in [Say](../../build/node-reference/basic/say.md#ai-enhanced-output), [Question](../../build/node-reference/basic/question.md), or [Optional Question](../../build/node-reference/basic/optional-question.md) Nodes by selecting the **Rephrase Output** option in the **AI-enhanced output** section. Also, you can generate dynamic reprompts for incorrect answers via [Question Nodes](../../build/node-reference/basic/question.md#reprompt-methods).
+    - **Rephrase AI Agent's Output**. LLMs are good at rephrasing texts while maintaining the original meaning. This capability allows for smoother communication if the original output of an AI Agent lacks clarity or tone alignment. To use this capability, enable AI-enhanced rephrasing in [Say](../../build/node-reference/basic/say.md#ai-enhanced-output), [Question](../../build/node-reference/basic/question.md), or [Optional Question](../../build/node-reference/basic/optional-question.md) Nodes by selecting the **Rephrase Output** option in the **AI-enhanced output** section. Also, you can generate dynamic reprompts for incorrect answers via [Question Nodes](../../build/node-reference/basic/question.md).
     - **Train Intents and Find the Right Intent**. To enhance AI Agents' understanding of user inputs in various languages, use an [external embedding LLM](../nlu/external/external-nlu-intent-recognition.md). Also, optimize intent classification accuracy by using [LLM-based intent reranking](../nlu/external/intent-reranking.md), which prioritizes and selects the most relevant intent.
 
 ??? info "Use Retrieval Augmented Generation (RAG) with Knowledge AI"
@@ -57,7 +57,7 @@ Explore key use cases that illustrate how LLMs can be utilized in Cognigy.AI, an
     
     The [Cognigy Knowledge AI](../knowledge-ai/overview.md) feature is built on the RAG framework, allowing it to retrieve information from various knowledge bases, including PDFs, Word documents, PowerPoint presentations, web pages, and images. Knowledge AI assists both AI and human agents in providing better responses:
     
-    - **Use Knowledge AI for AI Agents**. Using LLMs integrated into your Project, AI Agents can access relevant knowledge sources, including articles from subject-matter experts, frequently asked questions, and diagrams. To create a first Knowledge Store, go to the [Knowledge AI](../knowledge-ai/overview.md#create-a-knowledge-store) documentation. Then, retrieve data from the Knowledge Store and improve the AI Agent's output by using the [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md) Node.
+    - **Use Knowledge AI for AI Agents**. Using LLMs integrated into your Project, AI Agents can access relevant knowledge sources, including articles from subject-matter experts, frequently asked questions, and diagrams. To create a first Knowledge Store, go to the [Knowledge AI](../knowledge-ai/overview.md) documentation. Then, retrieve data from the Knowledge Store and improve the AI Agent's output by using the [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md) Node.
     - **Use Knowledge AI for human agents**. By retrieving data from different knowledge bases, LLMs reduce the burden on human agents, making information access quicker and more efficient. To let human agents use the knowledge base for solving tasks, add a widget to the AI Copilot workspace using a [Copilot: Knowledge Tile](../../build/node-reference/ai-copilot/knowledge-tile.md) Node. The widget serves as a search tool, enabling human agents to enter questions and retrieve information from the knowledge base.
 
 ??? info "Extract Specific Entities from User Inputs"
@@ -128,7 +128,7 @@ The following Nodes and features are affected by the retry mechanism:
 - [GPT Conversation](../../build/node-reference/service/gpt-conversation.md)
 - [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md)
 - Question Node Slot Mapping (in case of using [external NLU embedding](../nlu/external/external-nlu-intent-recognition.md))
-- [Question Node LLM Reprompting](../../build/node-reference/basic/question.md#llm-prompt)
+- [Question Node LLM Reprompting](../../build/node-reference/basic/question.md#parameters)
 - [Sentiment Analysis](../../build/node-reference/ai-copilot/sentiment-tile.md)
 
 ??? info "Retry Mechanism for On-Premises"
