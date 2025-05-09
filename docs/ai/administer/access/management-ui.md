@@ -203,7 +203,7 @@ In the menu, select **Change Expiration Values**.
   <figcaption> Configuring the expiration values for sensitive data in an Organization</figcaption>
 </figure>
 
-All the expiration values define how many minutes it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. 
+All the expiration values define how many minutes it takes from when the data was created until it expires. 
 
 Configure the expiration of the following data:
 
