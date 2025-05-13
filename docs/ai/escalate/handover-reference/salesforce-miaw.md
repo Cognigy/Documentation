@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.10-blue.svg)](../../../release-notes/2025.10.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -121,8 +121,9 @@ enabling end users to connect with human agents working in a contact center that
 ??? info "2. Add a Handover to Agent Node"
     In the **Salesforce Settings** section of the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:
 
-    - **Send Transcript as a first message** — the setting allows Salesforce to receive the conversation transcript as a first message. This setting is turned off by default.
+    - **Send Transcript as first message** — the setting allows Salesforce to receive the conversation transcript as the first message. If the transcript exceeds 3000 characters, it is split into multiple messages. This setting is turned off by default.
     - **Conversation Routing Attributes** — the setting supports key-value pairs which allow you to specify information that can be used in the Omni-Channel flow in Salesforce.
+    - **Identity Token for Authenticated Users** — the setting allows you to specify an access token generated via the [Salesforce API](https://developer.salesforce.com/docs/service/messaging-api/references/miaw-api-reference?meta=generateAccessTokenForAuthenticatedUser). This token enables users who have already authenticated within your system to interact securely with Salesforce MIAW. Before using this token, [set up user verification](https://help.salesforce.com/s/articleView?id=sf.user_verification_setup.htm) on the SalesForce side. By default, the setting is turned off, meaning that unauthenticated users can interact with Salesforce MIAW. 
 
 Test your Flow to ensure it works as expected. You can use Demo Webchat to send messages to the Salesforce contact center.  
 On the Salesforce side, go to the Service Console. In the Service Console, open [Messaging Sessions](https://help.salesforce.com/s/articleView?id=service.livemessage_create_console_app.htm&type=5), and make sure that your human agent is online.
@@ -194,7 +195,7 @@ By default, two versions of the application are provided:
 
 | Possible Error                                                                                  | How to Resolve                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded AI Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                                |
+| Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded AI Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                             |
 | You are trying to pull data from a Live Chat transcript while you are on a Messaging session.   | This error occurs when you migrate from the [deprecated Salesforce integration](salesforce.md) to Salesforce MIAW without updating the AI Copilot UI components. To update the components, refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub. |
 | Login to Omni-Channel failed.                                                                   | This error occurs when a resource limit is exceeded. In the Salesforce Console, delete old messaging sessions, chat transcripts, and chat sessions. This action frees up space.                                                                                                                                                                          |
 

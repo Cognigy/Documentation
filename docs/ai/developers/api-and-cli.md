@@ -1,6 +1,12 @@
 # API and CLI
 
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.10-blue.svg)](../../release-notes/2025.10.md)
+
 _Cognigy.AI API and CLI_ are toolsets for developers to interact with Cognigy.AI. The API allows programmatic interaction and integration with existing systems. The CLI provides direct command-line access to manage AI Agents. Using both tools streamlines workflows, enhances productivity, and manages Cognigy.AI Projects efficiently.
+
+## Limitations
+
+- For Cognigy.AI v4.100 and earlier, you can download [Snapshots](../deploy/snapshots.md) up to 100 MB using the Cognigy.AI CLI. In later versions, there's no maximum download size for Snapshots via the CLI.
 
 ## Cognigy.AI API
 

@@ -10,7 +10,7 @@ tags:
 ---
 # Salesforce Service Cloud
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -84,12 +84,12 @@ enabling end users to connect with human agents working in a contact center that
 ??? info "2. Add a Handover to Agent Node"
     In the **Salesforce Settings** section of the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:
 
-    - **Send Transcript as a first message** — the setting allows Salesforce to receive conversation transcript as a first message. It is turned off by default.
+    - **Send Transcript as first message** — the setting allows Salesforce to receive the conversation transcript as the first message. This setting is turned off by default.
     - **Button ID** — the ID of the Button you created in the Salesforce installation. This setting will override the default Button ID that you specified in the Endpoint configuration. You can use different Button IDs for individual Handover to Agent Nodes.
     - **Pre-chat Entities and Details** — the additional context sent in a custom JSON structure, providing the information before engaging with the human agent.
 
 ??? info "2.1 Configure Pre-Chat Entities and Details"
-    By default, Cognigy.AI doesn't send a conversation transcript from the chat with the AI Agent to the chat with the human agent. If you activate the [Send Transcript as a first message]() setting, Cognigy.AI sends the conversation transcript to the chat with the human agent as the first message. The conversation transcript includes the entire chat between the user and the AI Agent.
+    By default, Cognigy.AI doesn't send a conversation transcript from the chat with the AI Agent to the chat with the human agent. If you activate the Send Transcript as a first message setting, Cognigy.AI sends the conversation transcript to the chat with the human agent as the first message. The conversation transcript includes the entire chat between the user and the AI Agent.
    
     The conversation transcript is displayed when the human agent receives the first message from the user and can be found in the Salesforce Service Console, under the **Transcripts** tab, in the **Transcript > Details > Transcript > Body** section.
    

@@ -6,6 +6,8 @@ hidden: false
 
 # Add another Inbox for your Project
 
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.10-blue.svg)](../../../release-notes/2025.10.md)
+
 You can create extra Inboxes in Live Agent and configure them for handover within your Flows.
 
 ## Add an Additional Inbox
@@ -21,7 +23,7 @@ To add another Inbox in Live Agent, follow these steps:
     </figure>
 
 3. On the Inbox setup page, fill in the following fields:
-    - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`.
+    - **Inbox Name** — create a unique Inbox name. For example, `Cognigy Handover`.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
 
         <figure>

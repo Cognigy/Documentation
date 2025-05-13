@@ -19,8 +19,10 @@ You'll find the corresponding release notes after opening one of the versions be
     In every release, we fix security vulnerabilities to ensure our products remain reliable and secure. 
     We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
 
+- **2025.x**:
+    - [2025.10 (latest)](2025.10.md)
 - **4.10x**:
-    - [4.100 (latest)](4.100.md)
+    - [4.100](4.100.md)
 - **4.9x**:
     - [4.99](4.99.md)
     - [4.98](4.98.md)

@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Key Features
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.82.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.10-blue.svg)](../../release-notes/2025.10.md)
 
 The Webchat 3 key features offer comprehensive customization options, including branding elements, accessibility features, and tailored starting behaviors, ensuring a personalized and efficient user experience. Additionally, it introduces enhancements such as Quick Replies, Conversation Ratings, and Privacy Notices to elevate engagement and user feedback mechanisms, while features such as adaptive cards and media attachments enrich interactions by presenting structured content and media files seamlessly within the chat interface.
 
@@ -199,9 +199,20 @@ To configure the Persistent Menu, refer to the [Webchat Layout](configuration.md
 
 The Chat screen provides buttons for minimizing or closing the chat window:
 
-- **Minimize** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again.
-- **Close** — this button ends a conversation and closes the window. The conversation will appear on the [Previous Conversations](#previous-conversations) screen.
+- **Minimize** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again. The `webchat/minimize` event is triggered when users click the **Minimize** button.
+- **Close** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again. The `webchat/close` event is triggered when users click the **Close** button.
+    If you want the **Close** button to end the conversation and close the window, extend the [embedding file](embedding.md) with the following code:
 
+    ??? info "webchat.endSession"
+        ```js
+        webchat.registerAnalyticsService(event => {
+          if (event.type === "webchat/close") {
+            webchat.endSession();
+          }
+        });
+        ```
+        For more information, read [Analytics API](https://github.com/Cognigy/Webchat/blob/main/docs/analytics-api.md) on GitHub.
+  
 <figure>
   <img class="image-center" src="../../../_assets/webchat/v3/minimize-and-close-window.png" width="100%" />
 </figure>

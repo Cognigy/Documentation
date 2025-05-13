@@ -718,6 +718,8 @@ nav:
     - release-notes/index.md
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
+      - 2025.x:
+        - release-notes/2025.10.md
       - 4.10x:
         - release-notes/4.100.md
       - 4.9x:
