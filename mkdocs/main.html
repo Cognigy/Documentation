@@ -12,3 +12,38 @@ by sharing your thoughts in a
     <strong>quick survey</strong>
 </a>
 {% endblock %}
+
+{% block extrahead %}
+<style>
+    /* Change header background color */
+    .md-header {
+      background-color: white !important;
+      color: #000000;
+    }
+
+    .md-tabs {
+      background-color: white !important;
+      border-bottom: 1px solid #e0e0e0; /* Adjust color as needed */
+    }
+
+    .md-tabs__list {
+      color: #626262 !important;
+      background-color: white !important;
+    }
+
+    /* Change navigation link colors */
+
+    .md-tabs__link, .md-header__button {
+      color: #0f0202e8 !important;
+      font-size: .65rem !important;
+    }
+
+    /* Adjust hover effect */
+    .md-tabs__link:hover, .md-header__button:hover {
+      color: hsla(var(--md-hue),0%,0%,0.98) !important;
+    }
+
+</style>
+{{ super() }}
+
+{% endblock %}

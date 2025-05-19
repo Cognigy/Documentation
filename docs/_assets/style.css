@@ -26,12 +26,25 @@
 
 @media screen and (min-width: 60em) {
     .md-search__input {
-        color: inherit;
         font-size: .65rem;
     }
-}
 
-@media screen and (min-width: 60em) {
+    .md-search__form {
+        background-color: #EDEDED;
+    }
+
+    .md-search__form:hover {
+            background-color: #adadad;
+    }
+
+    .md-search__input + .md-search__icon {
+        color: #1A1A1A;
+    }
+
+    .md-search__input::placeholder {
+            color: #505050;
+    }
+
     .md-search__suggest {
         font-size: .65rem;
     }
@@ -46,7 +59,11 @@
     font-size: 0.6rem;
 }
 
-.md-tabs__link {
+.md-tabs {
+    color: #ffffff;
+}
+
+.md-tabs__link {‚
     font-size: .65rem;
     margin-top: .7rem;
 }
@@ -92,7 +109,8 @@
 }
 
 .md-footer {
-    background: linear-gradient(to right, #33BED2, #A166FF, #025AFB);
+    background: linear-gradient(to left, #33BED2, #A166FF, #025AFB);
+    position: relative;
     /* Adjust colors*/
 }
 
@@ -102,6 +120,14 @@
 
 .md-social__link svg {
     max-height: .7rem;
+    margin-left: -6rem;
+}
+
+@media (max-width: 480px) {
+    .md-social__link {
+        max-height: .6em;
+        margin-right: 15px;
+    }
 }
 
 .md-tags {
@@ -211,4 +237,9 @@ ol ol>li::marker {
 
 .md-content .grid.cards>ul>li>p:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav--primary .md-nav__title[for=__drawer] {
+        background: #ffffff;
 }
