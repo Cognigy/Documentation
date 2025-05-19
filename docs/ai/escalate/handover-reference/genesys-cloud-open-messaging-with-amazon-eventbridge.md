@@ -103,7 +103,14 @@ The configuration depends on the Cognigy installation you have:
     4. At the **Define rule detail** step, enter a rule name and its description. Make sure the correct event bus and event pattern are preselected.
     5. At the **Build event pattern** step, in the **Event source** section, select **Other**, then enter the following JSON in the **Event pattern** field:
         ```json
-        {"source": [{"prefix": ""}]}
+        {
+        "detail": {
+            "eventBody": {
+            "mediaType": ["MESSAGE"],
+            "messageType": ["OPEN"]
+            }
+          }
+        }
         ```
     6. At the **Select target(s)** step, proceed as follows:<br>
         6.1 Select **EventBridge API destination** in the **Target types** section.<br>
