@@ -35,9 +35,10 @@ The configuration depends on the Cognigy installation you have:
 ## Prerequisites
 
 - [Configured Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md). 
-- Applicable to Cognigy.AI 4.100 and later versions. 
+- You use Cognigy.AI 4.100 and later versions. 
 - If you want to migrate from [Handover End Detection with HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) to Amazon EventBridge, make sure you remove the [configuration steps](genesys-cloud-open-messaging-handover-end-detection.md#configuration-steps) after migration to Amazon EventBridge.
 - For on-premises installations, activate the `FEATURE_USE_GENESYS_OM_HTTP_END_HANDOVER_REQUEST="true"` feature flag.
+- Set the timeout to prevent queue transfers from triggering the end of Genesys Cloud Open Messaging handovers with the `GENESYS_OM_HANDOVER_ACW_AFTER_TRANSFER_TIMEOUT_IN_MS` environment variable. The default value is 10 seconds. This timeout is useful when multiple after-call work events are sent through the event bridge and cause handovers to end during queue transfers.
 
 ## Cognigy SaaS
 
