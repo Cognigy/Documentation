@@ -20,7 +20,7 @@ The result depends on various factors, including the total number of Intents, ex
 Sometimes the correct Intent is returned in the top-5 but not with the highest priority.
 Adding an LLM request after the Cognigy NLU mapping process can improve accuracy.
 
-Starting from version 4.76, Cognigy automatically includes descriptions of Intents to the results generated during the mapping process.
+Cognigy.AI automatically includes descriptions of Intents to the results generated during the mapping process.
 These descriptions become a part of the Input object and are stored in the `input.nlu.intentMapperResults.scores[x].description` object for each mapped Intent, where `x` represents the priority of the Intent.
 The stored descriptions are sent to an external LLM via a prompt, which can be made via the LLM Prompt Node.
 The external LLM analyzes the data and generates a result based on the retrieved descriptions. This result is recorded in the `intent.promptResult` object by default.

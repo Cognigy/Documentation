@@ -61,14 +61,14 @@ Check if confirmation words work as expected via the [Interaction Panel](../../.
 2. In the Flow editor, Add a Question Node and select the **Yes/No** input type.
 3. Run the Flow by typing a test response including a word from your confirmation list, for example,`yes` or `nope`.
 4. On the **Info** tab, select **Input** to view the Input object in JSON format. In the `input.type` object, you will see the answer depending on the user input.
-
-   Positive Confirmation:
+    
+    Positive Confirmation:
 
     ```json
     "type": "pAnswer",
     ```
 
-   Negative Confirmation:
+    Negative Confirmation:
 
     ```json
     "type": "nAnswer",
