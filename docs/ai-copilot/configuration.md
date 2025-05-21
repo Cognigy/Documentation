@@ -10,6 +10,11 @@ The AI Copilot configuration refers to the size and position of widgets in your 
 
 AI Copilot comes with a default, pre-configured grid, which you can modify by using the Copilot: Set Grid Node. Alternatively, the AI Copilot configuration can be created, modified, and deleted using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) and can serve as a template if selected from the Copilot Config within the Endpoint settings.
 
+## AI Copilot Flow and Nodes
+
+AI Copilot should have its own Flow, separate from the main Flow where the Handover to Agent Node is used. 
+Only [AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md) must be added to the AI Copilot Flow. Basic Nodes, such as Say, Code, or Question Nodes, aren't supported and won't be rendered in the AI Copilot workspace.
+
 ## AI Copilot Grid
 
 The AI Copilot workspace is based on a fully customizable grid layout, where widgets can be added to display different information. 
