@@ -44,7 +44,7 @@ The configuration depends on the Cognigy installation you have:
 
 ??? info "1. Contact Cognigy Technical Support"
     1. Contact [Cognigy technical support](../../../help/get-help.md).
-    2. Provide the `organisationId` for the Cognigy.AI organization where you want to enable the Amazon EventBridge integration. Cognigy technical support will provide you with the credentials needed to activate the Amazon EventBridge Source. If you need to create two integrations (one for each organization), provide both `organisationId` values in the same ticket.
+    2. Provide the `organisationId` for the Cognigy.AI organization where you want to enable the Amazon EventBridge integration. Cognigy technical support will provide you with the AWS Account ID and AWS Account Region Code needed to activate the Amazon EventBridge Source. If you need to create two integrations (one for each organization), provide both `organisationId` values in the same ticket.
 
 ??? info "2. Configure Amazon EventBridge in Genesys"
     1. In the Genesys interface, navigate to **Admin > Integrations**, select **Amazon EventBridge Source**, and click **Install**.
@@ -60,7 +60,7 @@ The configuration depends on the Cognigy installation you have:
 
 ??? info "3. Confirm the Integration Setup"
     1. Reply to the same support ticket to inform Cognigy technical support that the setup is complete.
-    2. Cognigy technical support will verify the integration and contact you to confirm whether it was successful.
+    2. Cognigy technical support will verify the integration and contact you to confirm whether it was successful. This process takes up to 5 business days.
 
 ## Cognigy On-Premises
 
