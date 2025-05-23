@@ -27,7 +27,7 @@ hidden: false
 
 _Channels_ allow you to use your Flow with multiple Endpoints, ensuring that output messages are correctly reproduced in both chat and voice conversations.
 
-You can use multiple channels simultaneously and customize the AI Agent's messages for different voice and chant platforms. For example, if you deploy an AI Agent on Webchat v3, WhatsApp, and Voice Gateway, you can have 1 Flow with 3 corresponding channels and their corresponding Endpoints. This setup ensures that AI Agents deliver messages in the format supported by each channel.
+You can use multiple channels simultaneously and customize the AI Agent's messages for different voice and chat platforms. For example, if you deploy an AI Agent on Webchat v3, WhatsApp, and Voice Gateway, you can have 1 Flow with 3 corresponding channels and their corresponding Endpoints. This setup ensures that AI Agents deliver messages in the format supported by each channel.
 
 You can configure channels in the [Say](../node-reference/basic/say.md), [Question](../node-reference/basic/question.md), and [Optional Question](../node-reference/basic/optional-question.md) Nodes. Voice channels support Speech Synthesis Markup Language (SSML), and text-based channels can generate different content type outputs, such as:
 

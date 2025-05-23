@@ -9,7 +9,7 @@ hidden: false
 
 {! _includes/webchat/deprecation-webchat-v2.md !}
 
-Cognigy Webchat v2 is compatible with the browsers listed in the tabel.
+Cognigy Webchat v2 is compatible with the browsers listed in the table.
 
 | Browser         | Version            |
 |-----------------|--------------------|
