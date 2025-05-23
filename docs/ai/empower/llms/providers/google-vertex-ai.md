@@ -13,17 +13,17 @@ tags:
 
 To start using a Google Vertex AI or Gemini model with Cognigy.AI features, follow these steps:
 
-1. [Add a Model](#add-a-model)
+1. [Add a Model](#add-models)
 2. [Apply the Model](#apply-the-model)
 
-## Add a Model
+## Add Models
 
 You can add a model using one of the following interfaces:
 
-- [GUI](#add-a-model-via-gui)
-- [API](#add-a-model-via-api)
+- [GUI](#add-models-via-gui)
+- [API](#add-models-via-the-api)
 
-### Add a Model via GUI
+### Add Models via GUI
 
 To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
 

@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-description: "In this guide, you'll create a Project with an LLM-powered AI Agent from scratch and learn how to enable the AI Agent to manage interactions with the end user. Then, you’ll test your flow using the Interaction Panel."
+description: "In this guide, you'll create a Project with an LLM-powered AI Agent from scratch and learn how to enable the AI Agent to manage interactions with the end user. Then, you'll test your flow using the Interaction Panel."
 hidden: false
 ---
 
@@ -77,6 +77,6 @@ To run your Flow, follow these steps:
 
 ## What's Next?
 
-1. Try [creating an AI Agent tailored to your business needs](manage-ai-agents.md#create-an-ai-agent) or [hire one from the Job Market](manage-ai-agents.md#create-an-ai-agent).
+1. Try [creating AI Agents tailored to your business needs](manage-ai-agents.md#create-ai-agents) or [hire one from the Job Market](manage-ai-agents.md#create-ai-agents).
 2. [Add the AI Agent to your Flow](../../build/flows/overview.md) and [create a set of tool actions](../../build/node-reference/ai/ai-agent.md) for your AI Agent to operate.
 3. For a deeper dive into Agentic AI, visit the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/17346581840796-Getting-Started-with-AI-Agents).

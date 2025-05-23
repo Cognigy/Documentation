@@ -137,7 +137,7 @@ Cognigy provides three assistants for giving human agents support in their servi
 - [AI Copilot Whisper](../assistants/ai-copilot-whisper.md)
 - [AI Copilot Workspace](../assistants/ai-copilot.md)
 
-## View a Conversation
+## View Conversations
 
 To open a conversation in Live Agent, follow these steps:
 

@@ -46,7 +46,7 @@ Head over to [Labels](settings/labels.md) for more information.
 
 ### How to request a file from a conversation?
 
-Head over to [Attachments](settings/attachments.md#request-an-attachment-with-the-plugin) for more information.
+Head over to [Attachments](settings/attachments.md#request-attachments-with-the-plugin) for more information.
 
 ### How to add Agents to an Inbox?
 
@@ -58,7 +58,7 @@ To add an Agent to an Inbox, follow these steps:
 2. Locate the Inbox that you want to edit and click the **Settings** icon.
 3. On the **Collaborators** tab, select the Agent name from the **Agents** list.
 4. Apply changes by clicking **Update**.
-Head over to [Inboxes](settings/inboxes.md#add-agents-to-an-inbox) for more information.
+Head over to [Inboxes](settings/inboxes.md#add-agents-to-inboxes) for more information.
 
 ### How to create a team and add members to it?
 Navigate to **Settings > Teams** and click the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.

@@ -92,7 +92,7 @@ Analytics data is generated through the whole life cycle of an input message bei
 
 In Cognigy.AI, Analytics Steps are implemented to monitor the paths users take during interactions with the AI Agent.
 
-### Create a Step
+### Create Steps
 
 You can create an analytics step in the following components:
 

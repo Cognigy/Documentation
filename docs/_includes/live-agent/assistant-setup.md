@@ -1,4 +1,4 @@
-## Set up a Flow
+## Set up Flows
 
 To provide additional real-time information to your agents, this assistant uses a Flow.
 

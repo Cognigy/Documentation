@@ -11,7 +11,7 @@ hidden: false
 
 In Live Agent, you can mute or unmute, send transcripts via email, clear chat history, and enable agent masking. These actions make managing conversations more efficient, organized, and user-friendly.
 
-## Mute a Conversation
+## Mute Conversations
 
 To mute a conversation, do the following:
 
@@ -22,7 +22,7 @@ To mute a conversation, do the following:
 
 No audio messages can then be sent or received in this chat.
 
-## Unmute a Conversation
+## Unmute Conversations
 
 To unmute a conversation, do the following:
 
@@ -33,7 +33,7 @@ To unmute a conversation, do the following:
 
 Audio messages can then be sent or received again in this chat. 
 
-## Send a Conversation Transcript by Email
+## Send Conversation Transcripts by Email
 
 To send a copy of the current conversation by email, do the following:
 
@@ -58,7 +58,7 @@ To send a copy of the current conversation by email, do the following:
 
 The current selected conversation history will be deleted.
 
-## Enable Agent Masking in a Conversation
+## Enable Agent Masking in Conversations
 
 When the end user should not see the name and image of the human agent in the chat, the **Agent masking** option can be enabled in the Account Settings by your administrator. 
 

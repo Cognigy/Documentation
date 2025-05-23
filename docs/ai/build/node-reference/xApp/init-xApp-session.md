@@ -18,10 +18,10 @@ This Node initializes a new xApp session.
 
 After the execution of this Node, the xApp can be accessed in two different ways:
 
-- [Without entering a PIN Code](#without-entering-a-pin-code)
-- [By entering a PIN Code](#by-entering-a-pin-code)
+- [Without entering PIN Codes](#without-pin)
+- [By entering PIN Codes](#with-pin)
 
-### Without entering a PIN Code 
+### Without PIN
 
 To require only a URL to access an xApp session, a Session URL can be shared. This URL is available via the [xApp Session URL](../../../../xApps/tokens.md#xapp-session-url) token.
 
@@ -29,7 +29,7 @@ The **xApp Session URL** token provides a URL, which is also accessible via `inp
 
 With the provided link, a user can access the xApp page without requiring a PIN.
 
-### By entering a PIN Code 
+### With PIN
 
 To allow users to access the xApp session via a PIN, share both a PIN and a PIN Page URL with the users. 
 

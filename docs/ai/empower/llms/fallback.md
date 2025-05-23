@@ -35,7 +35,7 @@ This model failure can occur if the credentials are outdated or incorrectly modi
 - Using a fallback model overrides the [default retry mechanism](overview.md#retry-mechanism).
 - You can add only one fallback to a main model.
 
-## Create a Fallback Model
+## Create Fallback Models
 
 Creating a fallback model works the same way as creating a main model.
 If your Project has only one model, you can add another by choosing one [from the same LLM provider or another provider](providers/all-providers.md) with similar capabilities.
@@ -43,7 +43,7 @@ If your Project has only one model, you can add another by choosing one [from th
 Some providers, such as [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions) and [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html), allow you to use the same model across different regions.  
 For example, if you are using Azure OpenAI `gpt-4o` in the West US region as your main model, you can also use`gpt-4o` as a fallback model in the Sweden Central region.
 
-## Add a Fallback Model
+## Add Fallback Models
 
 To add a fallback model, follow these steps:
 
@@ -51,7 +51,7 @@ To add a fallback model, follow these steps:
 2. Select the model to which you want to add a fallback.
 3. Go to the **Fallback** section and activate the **Enable Fallback** setting.
 4. Configure the following fields:
-    - **Select a Fallback Model** — select a model from the list. If no model is available, [create a new one](#create-a-fallback-model).
+    - **Select a Fallback Model** — select a model from the list. If no model is available, [create a new one](#create-fallback-models).
     - **Number of failed requests** — specify the number of failed requests to the main model before the fallback model is triggered. You can specify up to 5 attempts. The default value is `1`.
     - **Duration in minutes of active fallback** — define how long the system should use the fallback model instead of the main model. After the specified time, the fallback will deactivate, and the main model will resume. The duration can be up to 30 minutes. The default value is `30`.
     - **Email Notifications** — add up to 5 email addresses to receive notifications when the fallback model is triggered. Enter each email in a separate input field using the format `example@domain.com`.

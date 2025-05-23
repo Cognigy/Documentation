@@ -17,13 +17,13 @@ With real-time translation, you don't need human agents for every language nor t
 
 ## Prerequisites
 
-- You have configured a [machine translation provider](#configure-a-machine-translation-provider).
+- You have configured a [machine translation provider](#configure-machine-translation-providers).
 
 ## Compatibility with Machine Translation Providers
 
 {! _includes/ai/build/translation-and-localization/compatibility-with-machine-translation-providers.md !}
 
-## Configure a Machine Translation Provider
+## Configure Machine Translation Providers
 
 {! _includes/ai/build/translation-and-localization/configure-a-machine-translation-provider.md !}
 

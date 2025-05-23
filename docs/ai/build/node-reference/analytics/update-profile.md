@@ -20,7 +20,7 @@ If an invalid field is used, no action is taken.
 
 | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                  |
 |----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Profile Schema Field | Selector      | Identify the field in the user's Contact Profile that needs to be updated. The predefined Profile Schema fields are described in [Contact Profiles](../../../analyze/contact-profiles.md); you can also create a [custom field](../../../analyze/contact-profiles.md#create-a-custom-field). |
+| Profile Schema Field | Selector      | Identify the field in the user's Contact Profile that needs to be updated. The predefined Profile Schema fields are described in [Contact Profiles](../../../analyze/contact-profiles.md); you can also create a [custom field](../../../analyze/contact-profiles.md#create-custom-fields). |
 | Value                | CognigyScript | The value of the field.                                                                                                                                                                                                                                                                      |
 
 ## More Information

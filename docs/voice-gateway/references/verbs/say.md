@@ -11,7 +11,7 @@ The `say` verb is used to send synthesized speech to the remote party. The text 
 ## Speech vendors
 
 - [Check supported speech vendors](../tts-and-stt-vendors.md)
-- [Add a custom speech API](../../webapp/speech-services.md#add-a-custom-speech-vendor)
+- [Add a custom speech API](../../webapp/speech-services.md#add-custom-speech-vendors)
 
 ```json
 {

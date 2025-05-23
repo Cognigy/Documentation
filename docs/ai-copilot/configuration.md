@@ -24,13 +24,13 @@ The grid gives you the possibility to configure the number of columns, rows, as 
 You can edit the grid in the following ways:
 
 - Use the [Copilot: Set Grid Node](../ai/build/node-reference/ai-copilot/set-grid.md) (this option is recommended).
-- Create a custom grid in the [AI Copilot API](#create-a-custom-grid-using-the-api-post-request).
+- Create a custom grid in the [AI Copilot API](#create-custom-grids-using-the-api-post-request).
 
-### (Optional) Create a Custom Grid via the API
+### (Optional) Create Custom Grids via the API
 
 If you want to create a new AI Copilot Config template instead of using the default one, you can do so in the API.
 
-#### Create an API Key
+#### Create API Keys
 
 1. On the **Main** page of the Cognigy.AI interface, click **User Menu ![user-menu](../_assets/icons/user-menu.svg) > My Profile** in the upper-right corner. 
 2. In the **API Keys** section, click **+**. 
@@ -48,7 +48,7 @@ If you want to create a new AI Copilot Config template instead of using the defa
 
 When the request is created, you will see the response code `201`.
 
-#### Create a Custom Grid using the API Post Request
+#### Create Custom Grids using the API Post Request
 
 To create your custom AI Copilot Config Grid with the API, follow these steps:
 

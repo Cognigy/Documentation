@@ -34,7 +34,7 @@ You can use the File Storage section in the following Endpoints:
 Cognigy.AI performs a virus scan on the file before uploading it to the cloud storage provider. 
 This process ensures the file is checked for potential malware or viruses, helping to prevent harmful content from being stored or shared through the cloud.
 
-## Create a Connection to a File Storage Provider
+## Create Connections to File Storage Providers
 
 To enable file uploads, connect to one of the following file storage providers:
 

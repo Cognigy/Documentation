@@ -41,7 +41,7 @@ Available preset time spans include:
 
 If you have changed a time span, click **Apply** to confirm and activate this filter.
 
-### Select a Custom Time Period
+### Select a Custom Time Span
 
 You can select specific hours within the chosen time span to narrow down your results to a more precise time period.
 To define a custom time span, proceed as follows:

@@ -166,7 +166,7 @@ To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, 
 
 The corresponding Flow in Cognigy.AI will be displayed.
 
-#### Navigate to Message Explorer via a Transcript Message
+#### Navigate to Message Explorer via Transcript Messages
 
 You can access the [Message Explorer](message.md) by selecting a message within the **Session Transcript** window.
 The Message Explorer shows you the previous and subsequent messages for the selected message.

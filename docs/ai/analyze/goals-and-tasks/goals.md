@@ -41,9 +41,9 @@ Decide whether you want to track money, time, or both:
 - **Revenue Earned**. Monitor the additional revenue you earn by automating the process with the AI Agent. To set the currency, go to **Manage > Settings > Currency Settings** and select a currency type from the **Set Standard Currency** list. You can select only one type of currency per Project.
 - **Time Saved**. Measure the amount of time a person would have spent on the task. This metric shows the human time saved each time the goal is achieved.
 
-### Create a Goal
+### Create Goals
 
-To create a goal, follow these steps:
+To create goals, follow these steps:
 
 1. In the left-side menu of the Project, go to **Build > Goals** and click **+ New Goal**.
 2. On the **Goal** page, configure the parameters of a goal:
@@ -66,9 +66,9 @@ To create a goal, follow these steps:
 
 Once the steps are added, proceed to the Flow section to integrate your goal with a Flow.
 
-### Add a Goal to a Flow
+### Add Goals to Flows
 
-To add a goal to a Flow, follow these steps:
+To add goals to a Flow, follow these steps:
 
 1. In the left-side menu of the Project, go to **Build > Flows**.
 2. On the **Flows** page, either use an existing Flow or click **+ New Flow** to create a new one. 
@@ -82,7 +82,7 @@ You can add multiple **Track Goal** Nodes in the same Flow to track different st
 
 While you may choose to add multiple steps to reflect various stages of your goal completion process, both the initial and completion steps must be defined in your Flow. Without a completion step, your goal will be partially completed or incomplete if only the initial step is triggered.
 
-### Track a Goal in the Insights Report
+### Track Goals in the Insights Report
 
 Once a goal and its steps are added to your Flows, you can monitor metrics in the Insights report.
 
@@ -100,7 +100,7 @@ For more information on how the data is calculated, refer to [Goals](../../../in
 
 ## Other Operations
 
-### Export a Goal as a Package
+### Export Goals as Package
 
 To reuse a goal in other Projects, you can package the goal.
 
@@ -113,7 +113,7 @@ To package a goal, follow these steps:
 
 When the task is completed, download the Package.
 
-### Delete a Goal
+### Delete Goals
 
 When you delete a goal,
 all associated analytics data is deleted and the Track Goal Node linked to the goal stops working.
@@ -128,7 +128,7 @@ To delete a goal, follow these steps:
 
 The goal will be deleted from the list.
 
-### Delete a Step from a Goal
+### Delete Steps from Goals
 
 When you delete a step, all associated analytics data is deleted and the Track Goal Node linked to the goal stops tracking this step. 
 Before deleting the step, make sure to replace it with another step in the Node.
@@ -152,16 +152,16 @@ such as entering passenger information and completing payment.
 In each Track Goal Node, select the goal and step corresponding to the user action.
 Then monitor and analyze each step of the booking process.
 
-### Configure a Goal
+### Configure Goals
 
-1. [Create a Goal](#create-a-goal) with the name `Pre-book a Flight`.
+1. [Create a Goal](#create-goals) with the name `Pre-book a Flight`.
 2. Set up these steps in this Goal:
     - **Initial Step** — navigate to the **Initial Step** section and enter `Select booking options` in the **Name** field.
     - **Further Steps** — use the **+ New Step** option to add two further steps with the following names:
         - **Passenger Details** — at this step, set the time savings metric to `3 minutes` in the **Time Saved** field.
         - **Confirm Booking** — at this step, set the cost savings metric to `$15` in the **Cost Savings** field, then activate the **Mark this step as a completion step** option.
 
-### Create a Flow and Configure the Initial Step
+### Create Flows and Configure the Initial Step
 
 1. [Create a Flow](../../build/flows/overview.md#working-with-flows).
 2. In the Flow editor, add a **Question Node**.

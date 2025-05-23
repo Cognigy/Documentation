@@ -76,7 +76,7 @@ If the status of a Run is **Failed**, it means that there is one or more failing
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-run-details.png" width="70%" />
 </figure>
 
-### Schedule a Run from the Playbooks List
+### Schedule Runs from the Playbooks List
 
 You can schedule a Run directly from the Playbooks list.
 To do this, click the secondary button of the Playbook that you want to run.

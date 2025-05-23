@@ -12,7 +12,7 @@ hidden: false
 
 ## Description
 
-This Node deactivates a [specific Contact Profile](../../../analyze/contact-profiles.md#view-a-contact-profile) if the end user requests it.
+This Node deactivates a [specific Contact Profile](../../../analyze/contact-profiles.md#view-contact-profiles) if the end user requests it.
 After deactivation of the Contact Profile, the existing data is kept, but no new data is collected.
 
 If you want to delete all stored profile data, activate the **Delete Data** parameter in the Node settings.

@@ -78,7 +78,7 @@ To locate the ID, follow these steps:
 
 When you have found the Account ID, you can enter it in the **Handover Settings** of your Endpoint in Cognigy.AI.
 
-## Find an API Key
+## Find API Keys
 
 1. Click the **Profile Settings** icon of your Account in the bottom-left corner of the Live Agent dashboard, then select **Profile Settings** in the selection menu.
 2. Find the **Access Token** section, showing your API Key. 

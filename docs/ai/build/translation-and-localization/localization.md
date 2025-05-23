@@ -25,7 +25,7 @@ Cognigy.AI offers a robust localization feature for easy customization and conte
 === "API"
     You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
 
-### Localize a Flow
+### Localize Flows
 
 You can localize [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/overview.md) in the [Flow editor](../flows/editor.md) after selecting a Locale in the top bar.
 

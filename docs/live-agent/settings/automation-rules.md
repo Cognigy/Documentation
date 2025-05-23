@@ -61,7 +61,7 @@ Actions are tasks or processes that are executed when the conditions are met.
 | Send Message          | Sends a message to the conversation.             |
 | Change Priority       | Adjusts the conversation's priority.             |
 
-## Create an Automation Rule
+## Create Automation Rules
 
 To create an automation rule, follow these steps:
 
@@ -103,16 +103,16 @@ When AI Copilot is active, and a new conversation is created with the Open statu
     <img class="image-center" src="../../../_assets/live-agent/add-automation-rule.png" width="80%" />
 </figure>
 
-## Edit an Automation Rule
+## Edit Automation Rules
 
 To edit an automation rule, click the **Edit** icon next to the desired automation rule in the list.
 
-## Clone an Automation Rule
+## Clone Automation Rules
 
 To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
 A replica of the automation rule with the same conditions and actions will be created.
 
-## Delete an Automation Rule
+## Delete Automation Rules
 
 To delete an automation rule, click **Delete** next to the desired Automation in the list. Note that this action is permanent and cannot be undone.
 

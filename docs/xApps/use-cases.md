@@ -48,7 +48,7 @@ Users can securely verify their identity and gain access to specific services or
     <figcaption>Authentication via Credentials</figcaption>
 </figure>
 
-### Select a flight seat
+### Select Flight Seats
 
 With xApps, you can offer users an interface to choose their preferred seat for their flight.
 
@@ -72,7 +72,7 @@ This use case can be useful in various scenarios, such as providing location-bas
     <figcaption>Share device location</figcaption>
 </figure>
 
-### Take a picture via a mobile camera
+### Take Pictures via Mobile Camera
 
 With xApps, you can provide users an interface to capture images of metering devices using their mobile camera.
 
@@ -83,7 +83,7 @@ This use case can be useful for utility companies or service providers to remote
     <figcaption>Take a picture via a mobile camera</figcaption>
 </figure>
 
-### Add a boarding pass to a wallet
+### Add Boarding Passes to Wallet
 
 With xApps, you can allow users to add their boarding pass to a digital wallet.
 
@@ -94,7 +94,7 @@ This use case enables users to easily access their boarding information, simplif
     <figcaption>Add a boarding pass</figcaption>
 </figure>
 
-### Create a signature
+### Create Signatures
 
 With xApps, you can provide a digital signature functionality.
 

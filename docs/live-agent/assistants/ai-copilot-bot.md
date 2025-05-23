@@ -37,7 +37,7 @@ To use AI Copilot Bots in a Live Agent conversation, you need to create two Flow
 - The **AI Copilot Bot** Flow for interaction between an AI Copilot Bot and a human agent.
 - The **Endpoint** for the **AI Copilot Bot** Flow.
 
-## Create an AI Copilot Bot
+## Create AI Copilot Bots
 
 You can create multiple AI Copilot Bots within an Inbox.
 
@@ -53,9 +53,9 @@ To create an AI Copilot Bot, do the following:
 
 The created AI Copilot Bot will be available for all assigned human agents within the Inbox.
 
-## Use AI Copilot Bots in a Conversation
+## Use AI Copilot Bots in Conversations
 
-Note that you can use multiple AI Copilot Bots within a conversation. Each bot creates a separate session that needs to be [manually closed](#complete-an-ai-copilot-bot-session) after ending the conversation.
+Note that you can use multiple AI Copilot Bots within a conversation. Each bot creates a separate session that needs to be [manually closed](#complete-ai-copilot-bot-sessions) after ending the conversation.
 
 To use AI Copilot Bots in a conversation, do the following:
 
@@ -69,7 +69,7 @@ To use AI Copilot Bots in a conversation, do the following:
 
 This way, the AI Copilot Bot becomes a dependable assistant for human agents, enabling them to delegate tasks to the bot and then share the outcomes with the customer.
 
-## Complete an AI Copilot Bot Session
+## Complete AI Copilot Bot Sessions
 
 To complete a session with AI Copilot Bot, do the following:
 
@@ -81,7 +81,7 @@ To complete a session with AI Copilot Bot, do the following:
 
 The session will stop, the interaction with the bot will finish, and the AI Copilot Bot communication history will be cleared.
 
-## Send a Transcript to Assigned Agents 
+## Send Transcripts to Assigned Agents 
 
 In case you want to send a conversation transcript to a specific email address or to the assigned human agents, do the following:
 

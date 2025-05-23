@@ -50,7 +50,7 @@ To view detailed information about the call, click the **Details** tab.
 | trace_id             | A unique identifier for the call. Can be used to track any type of call or session as it passes through different parts of the network. |
 | trunk                | A [carrier](carriers.md) name.                                                                                                          |
 
-### Download a PCAP File
+### Download PCAP Files
 
 Additionally, Voice Gateway provides PCAP files, which can be downloaded in the detailed information overview.
 

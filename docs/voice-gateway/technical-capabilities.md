@@ -79,7 +79,7 @@ The following audio codecs are supported:
 
 ### STT and TTS providers
 
-- Many cloud-based and on-premises [speech providers](../voice-gateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
+- Many cloud-based and on-premises [speech providers](../voice-gateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-custom-speech-vendors) tailored to your needs.
 - [Fallback speech configuration](../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor) if the primary vendor fails.
 
 ### Call Recording and Storage

@@ -78,7 +78,7 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 
     The following examples assume that you pass `userId` and `sessionId` through the Function's parameters.
 
-    #### Injecting Text into a Flow
+    #### Injecting Text into Flows
 
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {
@@ -92,7 +92,7 @@ You can access the `parameters` and `api` objects from the Function's arguments.
     }
     ```
 
-    #### Sending a Notification
+    #### Sending Notifications
 
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {

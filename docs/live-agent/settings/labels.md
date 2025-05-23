@@ -14,7 +14,7 @@ They can be used to create custom workflows, to make conversations easier to ide
 
 Only Administrators and Supervisors can create, edit, and delete labels.
 
-### Create a Label
+### Create Labels
 
 To create a label within Live Agent, do the following:
 
@@ -33,12 +33,12 @@ To create a label within Live Agent, do the following:
     - **Show Label on Sidebar** — the option determines whether a label will be displayed on the sidebar. By using the label on the sidebar, you can filter conversations.
 6. Click **Create**.
 
-The label will be created, appear under the **Labels** section on the sidebar, and will be available to [add to Conversations](#add-a-label-to-a-conversation).
+The label will be created, appear under the **Labels** section on the sidebar, and will be available to [add to Conversations](#add-labels-to-conversations).
 
 !!! tip
     It is good practice to assign meaningful names to labels and use selected colors to visually identify the categories or topics to which a conversation belongs.
 
-### Edit a Label
+### Edit Labels
 
 To edit a label within Live Agent, do the following:
 
@@ -51,7 +51,7 @@ To edit a label within Live Agent, do the following:
 
 The label fields and settings will be updated.
 
-### Delete a Label
+### Delete Labels
 
 To delete a label within Live Agent, do the following:
 
@@ -63,6 +63,6 @@ To delete a label within Live Agent, do the following:
 
 The label will be deleted and no longer under the **Labels** section on the sidebar, and will no longer be available to add to Conversations. Also, the label will be removed from the conversations where it was added earlier.
 
-### Add a Label to a Conversation
+### Add Labels to Conversations
 
 To start using Labels in Conversations, go to [Assign Labels](./../conversation/assign-conversations.md#assign-labels).

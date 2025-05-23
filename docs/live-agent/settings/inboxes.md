@@ -14,7 +14,7 @@ You can have an unlimited number of Inboxes in your Live Agent account, and you 
 
 Within the Inbox setting, you can edit the Inbox, add and remove agents, configure message visibility for them, set up conversation routing, and add assistant bots.
 
-## Create an Inbox
+## Create Inboxes
 
 To create an Inbox in Live Agent, do the following:
 
@@ -31,7 +31,7 @@ A new Live Agent Inbox has been created. You can configure the Inbox settings by
 
 The changes will be applied.
 
-## Edit an Inbox
+## Edit Inboxes
 
 If you want to change how one of your Inboxes works or reuse an Inbox from a deleted Project, you need to edit the Inbox.
 
@@ -62,7 +62,7 @@ To copy an Inbox ID, follow these steps:
 4. On the **Configuration** tab, go to the **Inbox ID** section.
 5. Click **Copy**.
 
-## Delete an Inbox
+## Delete Inboxes
 
 Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
 
@@ -75,7 +75,7 @@ To delete an Inbox within Live Agent, do the following:
 
 The selected Inbox will be deleted.
 
-## Control Conversation Routing within an Inbox
+## Control Conversation Routing within Inboxes
 
 To configure the conversation assignments within Live Agent, do the following:
 
@@ -87,7 +87,7 @@ To configure the conversation assignments within Live Agent, do the following:
 
 The changes will be applied successfully.
 
-## Add Agents to an Inbox
+## Add Agents to Inboxes
 
 To add agents to an Inbox, do the following:
 
@@ -111,7 +111,7 @@ To change this behavior for agents with the `Agent` role, do the following:
 The changes will be applied. Note that this setting will not affect agents with the `Administrator` or `Supervisor` roles.
 They will still be able to see all messages within the Inbox.
 
-## Remove Agents from an Inbox
+## Remove Agents from Inboxes
 
 To remove the Inbox appearance, do the following:
 
@@ -121,7 +121,7 @@ To remove the Inbox appearance, do the following:
 4. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
 5. Click **Update**.
 
-## Add an AI Copilot Bot 
+## Add AI Copilot Bots
 
 Within an Inbox, you can add one or multiple AI Copilot Bots that will assist your human agents.
 To create such a bot, you need to have a separate Flow and Endpoint on the Cognigy.AI side.

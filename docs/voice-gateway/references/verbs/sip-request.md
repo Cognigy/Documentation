@@ -33,7 +33,7 @@ The full set of configuration parameters:
 | body       | The body of the SIP request.                                                  | No       |
 | actionHook | A webhook to receive an HTTP POST when the SIP request has completed.         | No       |
 
-### Send a Nested Object
+### Send Nested Objects
 
 To send a nested object, use a string JSON notation of an object. For example:
 

@@ -11,7 +11,7 @@ _Canned responses_ are pre-saved reply templates allowing human agents to respon
 
 Canned Response templates provide support for HTML formatting.
 
-## Create a Canned Response
+## Create Canned Responses
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../release-notes/4.55.md)
 
@@ -53,6 +53,6 @@ To import canned responses, follow these steps:
 
 The canned responses will appear in the list on the Canned Responses page. 
 
-## Use a Canned Response
+## Use Canned Responses
 
 To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/send-reply.md#advanced-quick-reply).

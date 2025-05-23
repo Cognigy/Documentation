@@ -53,9 +53,9 @@ The following resources are not included in the Snapshot:
 
 The `.csnap` (Cognigy Snapshot) file is a special type that can only be used within the Cognigy.AI Snapshots. You cannot open or upload it outside of Cognigy.AI. Snapshots encrypt their data, including potentially sensitive information in the form of [Cognigy Connections](../build/connections.md).
 
-## Create a new Snapshot
+## Create new Snapshots
 
-To create a new Snapshot of the current state of your AI Agent, do the following:
+To create new Snapshots of the current state of your AI Agent, do the following:
 
 1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
 2. Click **New Snapshot**.
@@ -65,7 +65,7 @@ Your Snapshot will appear in the list.
 
 We highly encourage you to create Snapshots and **point productive Endpoints** only to Flows that are contained within Snapshots.
 
-## Download a Snapshot
+## Download Snapshots
 
 You can download Snapshots you have created previously. This is useful if you want to archive your Snapshots offline or if you have multiple Cognigy.AI systems, and you want to transfer a Snapshot to your other Cognigy.AI system.
 
@@ -78,7 +78,7 @@ To download a Snapshot, follow these steps:
 
 The web browser will start to download your prepared Snapshot package as a `.csnap` file.
 
-## Upload a Snapshot
+## Upload Snapshots
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
@@ -95,7 +95,7 @@ To upload a Snapshot, follow these steps:
 
 After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
-## Procedure for Restoring a Project from a Snapshot
+## Procedure for Restoring Projects from Snapshots
 
 If you are using Snapshots as a way of archiving your AI Agent, you might want to restore your AI Agent to the point where the Snapshot was taken initially.
 
@@ -104,7 +104,7 @@ If you are using Snapshots as a way of archiving your AI Agent, you might want t
 - **Restoring a Snapshot overwrites all existing Agent resources**. Make sure that you are fully aware of the implications when restoring an AI Agent from a Snapshot. All resources within the AI Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your AI Agent, conversations will break as those Flows will be removed.
 - **Restoring a Snapshot from another Agent may require manual changes to the Endpoints**. Restoring a Snapshot from another Agent will automatically update the Endpoints assigned with primary locale but would need a manual update for Endpoints with secondary locale. Those Endpoints will be indicated with a red dot beside the Endpoint name, like in the images below.
 
-### Restore a Project from the Snapshot
+### Restore Projects from Snapshots
 
 Before initiating the restoration process, review the associated risks in the [Before Getting Started](#before-getting-started) section.
 
@@ -118,7 +118,7 @@ To restore a Project from a Snapshot, do the following:
 A new task will be created as deleting all current resources from the AI Agent and restoring the resources from the Snapshot can take some time.
 A success notification will be displayed once your AI Agent has been successfully restored from the Snapshot.
 
-## Delete a Snapshot
+## Delete Snapshots
 
 Once you reach the maximum number of Snapshots in your AI Agent, you have to start deleting older Snapshots.
 
@@ -148,7 +148,7 @@ Importing and restoring a Snapshot from a newer version into an older version of
 The following three scenarios show the recommended methods for deploying AI Agents into production.
 Consider an AI Agent in Cognigy.AI as analogous to a project in other software.
 
-### Use a Single AI Agent
+### Use Single AI Agents
 
 The Snapshot concept allows you to make your AI Agents available through Endpoints while you are already working on the next version of your AI Agent. This scenario is the simplest of all, but also quite elegant.
 

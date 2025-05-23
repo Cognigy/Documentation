@@ -116,7 +116,7 @@ If an agent is already assigned conversations before they become busy,
 those assigned conversations will remain in the [Conversation Queue](../conversation-queue/overview.md).
 However, new conversations will not be assigned to that agent until they're no longer in the `Busy` status.
 
-You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you can't modify the behavior for a specific Inbox.
+You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-busy-agents) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you can't modify the behavior for a specific Inbox.
 
 When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
 

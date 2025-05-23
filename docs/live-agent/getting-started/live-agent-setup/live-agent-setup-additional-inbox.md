@@ -4,7 +4,7 @@ slug: "live-agent-setup-additional-inbox"
 hidden: false 
 ---
 
-# Add another Inbox for your Project
+# Add Another Inbox for your Project
 
 [![Version badge](https://img.shields.io/badge/Updated in-v2025.10-blue.svg)](../../../release-notes/2025.10.md)
 

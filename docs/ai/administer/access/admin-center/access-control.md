@@ -42,7 +42,7 @@ The following global roles are available:
 | `basicSupportUser`    | This role is assigned to users who require:<br>- Administrative privileges to set up projects and manage platform-related topics (for example, extension_trust_admin).<br>- Full access for error analysis and debugging AI Agents (for example, viewing logs, managing Playbooks, accessing Conversation History, and Contact Profiles).<br>- Read-only access to Endpoints, Connections, Flows, Nodes, Intents, NLU Connectors, Project Settings, Snapshots, States, Tasks, and Tokens.<br>- No access to technical connections (OData and API).<br>- No user management roles; users with this role cannot assign Agents (projects) or global roles to other users.<br>- No access to Knowledge AI. |
 | `projectAssigner`     | This role is intended for users who need to assign Projects to themselves and others. The following restrictions apply to this role:<br>- Unable to assign global roles to other users or add new users to the Project.<br>- No access to Knowledge AI, Contact Profiles, Conversation History, Live Agent, and Voice Gateway.<br>- Read-only access to Endpoints, Connections, Flows, Nodes, Intents, NLU Connectors, Project Settings, Snapshots, States, Tasks, Analytics, and Tokens.                                                                                                                                                                                                              |
 
-## Create a New User
+## Create New Users
 
 To register a new user in Cognigy for your organization, you must have an `admin` or `userManager` global role.
 
@@ -58,7 +58,7 @@ To create a new user, follow these steps:
 
 When you create a new user, this user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
 
-## Assign Global Roles to a User
+## Assign Global Roles to Users
 
 To assign global roles to a user, follow these steps:
 
@@ -82,7 +82,7 @@ To assign global roles to a user, follow these steps:
 
 Once a role has been assigned to a user, the role label will be displayed in the **Global Roles** section.
 
-## Assign Projects to a User
+## Assign Projects to Users
 
 To assign a Project to a user, follow these steps:
 

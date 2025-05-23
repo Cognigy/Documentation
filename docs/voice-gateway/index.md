@@ -82,7 +82,7 @@ _Cognigy Voice Gateway_ is an AI-based solution to deploy voice AI Agents for au
 
     [:octicons-arrow-right-24: SIP Trunk Providers](references/sip-trunk-providers.md)<br>
     [:octicons-arrow-right-24: Speech Providers](references/tts-and-stt-vendors.md)<br>
-    [:octicons-arrow-right-24: Create a Custom Speech Provider](webapp/speech-services.md#add-a-custom-speech-vendor)
+    [:octicons-arrow-right-24: Create a Custom Speech Provider](webapp/speech-services.md#add-custom-speech-vendors)
 
 -   :gear:{ .lg .middle } __Administer__
 

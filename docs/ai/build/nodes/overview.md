@@ -26,7 +26,7 @@ Some Node types, for example, [If Nodes](../node-reference/logic/if.md) and [Loo
 === "API"
     You can view, create, edit, and delete Nodes using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Charts-v2.0). You can also search and move Nodes and add Locales to them. For Nodes that support Generative AI output, you can generate this kind of output through the API as well.
 
-### Set a Node as an Entrypoint
+### Set Nodes as Entrypoints
 
 If your AI Agent has, for example, a [Go To Node](../node-reference/logic/go-to.md) or an [Execute Flow Node](../node-reference/logic/execute-flow.md) to switch between Flows, you can set a Node as an _Entrypoint_. An Entrypoint is the Node at which the Flow starts. The **Start** Node is the default Entrypoint. To set a Node as an Entrypoint:
 

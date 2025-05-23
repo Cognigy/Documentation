@@ -108,7 +108,7 @@ Only the agent himself can see the clear name himself.
 No one in your organization and of course,
 no customer can connect the arbitrary masked name with a real human agent's name.
 
-### Auto-Assign Conversations to a Busy Agent
+### Auto-Assign Conversations to Busy Agents
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
 

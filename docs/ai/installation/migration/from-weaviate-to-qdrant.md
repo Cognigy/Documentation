@@ -87,7 +87,7 @@ Similarly, for 1 million Chunks with `text-embedding-ada-002` vectors in one pro
 memory_size = (1000000 * 1536 * 0.000004 * 1.5) + (1 * 10) = 9226 MB = 9.226 GB
 ```
 
-### (Optional) Create a Test Knowledge AI Project
+### (Optional) Create a Test Project for Knowledge AI
 
 !!! warning
     This step isn't required if you're already running a test migration.
@@ -382,7 +382,7 @@ After completing the Helm upgrade, all Knowledge AI features should be available
 
 If you created a new small Knowledge AI project
 as described in the [(Optional)
-Create a Test Knowledge AI Project](#optional-create-a-test-knowledge-ai-project) section,
+Create a Test Knowledge AI Project](#optional-create-a-test-project-for-knowledge-ai) section,
 you can use it to test search, ingestion, and other Knowledge AI data manipulation operations on existing data. 
 Otherwise, you can use any of your existing projects containing Knowledge AI data for testing these operations.
 

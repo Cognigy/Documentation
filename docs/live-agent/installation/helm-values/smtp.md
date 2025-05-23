@@ -25,7 +25,7 @@ SMTP needs to be configured for functionalities such as Agent notifications for 
 | `configmap.SMTP_USERNAME`             | SMTP Username                                                 | `""`          |
 | `configmap.MAILER_SENDER_EMAIL`       | The email from which all outgoing emails are sent.            | `""`          |
 
-### Creating A Secret For The SMTP Password
+### Create Secrets for SMTP Passwords
 
 Before installing Live Agent with Helm, create a secret on the Kubernetes cluster namespace where Live Agent is installed. Take note of the SMTP secret name and key, and set the following values:
 

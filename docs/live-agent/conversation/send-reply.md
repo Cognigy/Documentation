@@ -15,8 +15,8 @@ tags:
 
 Within a conversation, as a human agent, you can send a reply to the following actors:
 
-- [end user](#send-a-reply-to-a-user)
-- [another human agent](#send-a-reply-to-another-human-agent) 
+- [end users](#send-replies-to-users)
+- [other human agents](#send-replies-to-other-human-agents)
 
 You can also [track typing activity](#track-human-agent-typing-events) via a WebSocket connection to determine when the human agent starts typing.
 
@@ -25,7 +25,7 @@ You can also [track typing activity](#track-human-agent-typing-events) via a Web
   <figcaption>The Reply Section</figcaption>
 </figure>
 
-## Send a Reply to a User
+## Send Replies to Users
 
 To respond to a user in a conversation, type your message in the **Reply** section and click **Send**. 
 
@@ -48,7 +48,7 @@ Human agents can access a range of reply options through the following buttons:
 | ![record-audio](../../_assets/icons/record-audio.svg) | The **Record audio** button allows a human agent to send voice messages to the end user.               |
 | ![insert-link](../../_assets/icons/insert-link.svg)   | The **Insert link** button allows a human agent to send hyperlinked text to the end user.              |
 
-#### Request a File Upload
+#### Request File Uploads
 
 By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../webchat/v2/configuration.md#persistent-menu).
 
@@ -84,7 +84,7 @@ The successful upload is displayed in Live Agent.
 
 For a simple quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
-#### Send a Response with Variables
+#### Send Responses with Variables
 
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
@@ -149,15 +149,15 @@ The selected canned response will be inserted into your reply, allowing you to e
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
-#### Send a Canned Response with Variables
+#### Send Canned Responses with Variables
 
-You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
+You can create text including [variables](#send-responses-with-variables) for [canned responses](../settings/canned-responses.md).
 
 A canned response with variables is called the same way as a [simple canned response](#advanced-quick-reply), by using the symbol `/`.
 When you select the canned response, variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
-## Send a Reply to Another Human Agent
+## Send Replies to Other Human Agents
 
 As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
 
@@ -179,7 +179,7 @@ You can find all conversations where other agents mentioned you. To do so, use t
 
 If you don't send your reply right away but have already composed it, the message will be saved for 24 hours. This means that when you switch to another conversation and return to the previous one, you'll find the initial draft of your private note.
 
-### Delete a Private Note
+### Delete Private Notes
 
 To delete a private note you have already sent, follow these steps:
 

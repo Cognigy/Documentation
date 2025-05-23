@@ -16,7 +16,7 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 ## Prerequisites
 
-- Add a [machine translation provider](#configure-a-machine-translation-provider).
+- Add a [machine translation provider](#configure-machine-translation-providers).
 - Add a [Locale](#how-to-use-automatic-translation).
 
 ## Restrictions
@@ -27,7 +27,7 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 {! _includes/ai/build/translation-and-localization/compatibility-with-machine-translation-providers.md !}
 
-## Configure a Machine Translation Provider
+## Configure Machine Translation Providers
 
 {! _includes/ai/build/translation-and-localization/configure-a-machine-translation-provider.md !}
 

@@ -14,7 +14,7 @@ A human agent can be part of multiple teams.
 
 Human agents can assign conversations manually to a team when they are working collaboratively.
 
-## Create a Team
+## Create Teams
 
 To create a team within Live Agent, do the following:
 
@@ -30,7 +30,7 @@ To create a team within Live Agent, do the following:
 
 The new team will be added and displayed on the **Teams** page.
 
-## Edit a Team
+## Edit Teams
 
 To edit a team within Live Agent, do the following:
 
@@ -41,7 +41,7 @@ To edit a team within Live Agent, do the following:
 
 The team fields and settings will be updated.
 
-## Delete a Team
+## Delete Teams
 
 To delete a team within Live Agent, do the following:
 
@@ -52,7 +52,7 @@ To delete a team within Live Agent, do the following:
 
 Deleting the team will remove the team assignment from the conversations assigned to this team.
 
-## Assign a Team to a Conversation
+## Assign Teams to Conversations
 
 To manually assign a team to a conversation within Live Agent, follow these steps:
 

@@ -18,7 +18,7 @@ To learn more about metrics, refer to [Report Metrics](overview.md#report-metric
   <figcaption>Teams report</figcaption>
 </figure>
 
-## View a Report
+## View Reports
 
 To view a report, do the following:
 
@@ -27,7 +27,7 @@ To view a report, do the following:
 
 The chart will be updated with the corresponding data related to the selected filter.
 
-## Download a Report
+## Download Reports
 
 {! _includes/live-agent/download-report.md !}
 

@@ -15,7 +15,7 @@ These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, 
 
 Attachments can provide additional information or media, for example, an invoice or a photo related to the issue a customer is facing.
 
-## Upload an Attachment as an Agent
+## Upload Attachments as Agents
 
 To upload a file in a conversation within Live Agent, follow these steps:
 
@@ -29,11 +29,11 @@ To upload a file in a conversation within Live Agent, follow these steps:
 
 The file will be sent to the user and will appear in the chat. The user can download this attachment.
 
-## Upload an Attachment as an End User
+## Upload Attachments as End Users
 
 End users can send attachments to human agents by using the **Add attachments** icon in the chat if you set up a [Storage File](../../ai/deploy/endpoints/file-storage.md) provider in the Endpoint Settings.
 
-## Request an Attachment with the Plugin
+## Request Attachments with the Plugin
 
 If you are using a [Webchat](../../webchat/overview.md) Endpoint with Live Agent, in addition to the standard Attach file feature, human agents can request an attachment from a user. To enable this functionality, you need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files.
 
@@ -59,7 +59,7 @@ To view all reviewed and sent attachments, follow these steps:
 
 You will see the list of all attachments that were sent by end users and human agents.
 
-## Download an Attachment
+## Download Attachments
 
 To download an attachment within Live Agent, you can do this either in a conversation or on the **Attachments** page.
 
@@ -82,7 +82,7 @@ To download an attachment within Live Agent, you can do this either in a convers
 
 The file will be opened in a new tab of your browser. Click your file to save it to your local device.
 
-## Delete an Attachment
+## Delete Attachments
 
 To delete an attachment within Live Agent, follow these steps:
 

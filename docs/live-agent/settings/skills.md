@@ -13,7 +13,7 @@ _Skills_ are specific abilities that human agents possess, such as language prof
 
 Only users with the Administrator and Supervisor roles can configure and assign skills.
 
-## Create a Skill
+## Create Skills
 
 To create a skill, follow these steps:
 
@@ -29,7 +29,7 @@ To create a skill, follow these steps:
 The skill will appear in the list on the **Skills** page.
 Afterward, you can edit or delete the added skill.
 
-## Assign a Skill 
+## Assign Skills
 
 To assign a skill to a human agent, follow these steps:
 

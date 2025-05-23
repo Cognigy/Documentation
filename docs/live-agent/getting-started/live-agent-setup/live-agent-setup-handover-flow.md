@@ -8,7 +8,7 @@ hidden: false
 
 Once you've set up your Endpoint for handover to a Live Agent, the next step is configuring your Flow for this purpose within Cognigy.AI.
 
-## Set up a Flow for Handover
+## Set up Flows for Handover
 
 Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/build/flows/overview.md) for handover to Live Agent.
 

@@ -93,7 +93,7 @@ Additionally, you can filter the data in the table according to the agent's stat
   <figcaption>Conversations by Agents chart</figcaption>
 </figure>
 
-## View a Report
+## View Reports
 
 To view a report, do the following:
 

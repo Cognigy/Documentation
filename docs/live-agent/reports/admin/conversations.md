@@ -24,7 +24,7 @@ You can filter data by date. You can select the time period for measurement from
 
 For example, if **last 7 days** is selected, which is the default, the calculation period extends backward from now for seven days.
 
-## View a Report
+## View Reports
 
 To view a report, do the following:
 
@@ -33,7 +33,7 @@ To view a report, do the following:
 
 The chart will be updated with the corresponding data related to the selected filter.
 
-## Download a Report
+## Download Reports
 
 {! _includes/live-agent/download-report.md !}
 

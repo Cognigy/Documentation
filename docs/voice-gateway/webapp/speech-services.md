@@ -84,7 +84,7 @@ Once you created a speech service, add this service to the [Application](./appli
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
 
-## Add a Custom Speech Vendor
+## Add Custom Speech Vendors
 
 If the desired vendor is not included in the list of preinstalled vendors,
 or if you want to modify the configuration of an existing one, you can add a custom vendor.

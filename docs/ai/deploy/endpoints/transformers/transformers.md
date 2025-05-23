@@ -70,7 +70,7 @@ The list below gives an overview of all the Transformer functions that are avail
 | [handleInject](inject-transformer.md)                         | This Transformer function is executed when the Endpoint Inject API is used. The return value of the function will be sent to the Flow.                                                                       |
 
 
-## Creating a Transformer
+## Creating Transformers
 
 To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab in the Endpoint. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
 
@@ -216,7 +216,7 @@ The Socket Transformer is implemented for all Endpoints that use sockets to comm
 - Webchat
 - Socket 
 
-## Creating a Custom Endpoint
+## Creating Custom Endpoints
 To create an integration with a custom channel, the first step is to figure out which type of Endpoint this custom channel is. When it is known whether the custom integration uses a REST based API, a Webhook API or is socket based, then the corresponding Endpoint can be created in Cognigy.AI. 
 
 There is an example of a custom-built integration in the Example repository (see below).

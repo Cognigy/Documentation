@@ -8,7 +8,7 @@ hidden: false
 
 To create a voice agent,
 you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/build/node-reference/voice/voice-gateway/overview.md).
-These Nodes provide the basic verbs required for your voice agent. If you require additional verbs that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-verbs-in-a-code-node). 
+These Nodes provide the basic verbs required for your voice agent. If you require additional verbs that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-verbs-in-code-nodes). 
 For incoming calls, you can use Voice Nodes and a Code Node. However, for outgoing calls, you must specify all parameters in the call request body, as described in the [Advanced Configuration Request](../../creating-outbound-calls.md#advanced-configuration-request) section.
 
 ## List of Verbs
@@ -31,7 +31,7 @@ The table presents the list of supported verbs.
 | [SIP:refer](sip-refer.md)                   | This verb transfers a call and disconnect.                                                                                                                                                                   | [Transfer](../../../ai/build/node-reference/voice/voice-gateway/transfer.md) (**Refer** settings)                                            |
 | [Transcribe](transcribe.md)                 | This verb generates real-time transcriptions of speech.                                                                                                                                                      | [Set Session Config](../../../ai/build/node-reference/voice/voice-gateway/set-session-config.md)  (**Recognizer - Speech-To-Text** settings) |
 
-## Custom Verbs in a Code Node
+## Custom Verbs in Code Nodes
 
 The example shows how a [Code Node](../../../ai/build/node-reference/basic/code/overview.md) can send a customized [`dial`](dial.md) verb with an Answering Machine Detection
 (`amd`) action hook.

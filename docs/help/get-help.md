@@ -34,7 +34,7 @@ Every article in the Help Widget comes from the Cognigy Help Center, which can b
 
 Alternatively, you can always reach the [Cognigy Help Center](https://support.cognigy.com/hc/en-us).
 
-## Submit a Support Ticket
+## Submit Support Tickets
 
 In case you've found a bug or need technical assistance, you can file a support ticket. You can do this in three ways:
 
@@ -52,7 +52,7 @@ The following sections describe recommended attachments and information you coul
 
 For an issue which you can't really associate with a specific resource (flow, endpoint etc.) add at least a screenshot of the console (**F12**) as an attachment to the ticket.
 
-## Problems with a Flow
+## Problems with Flows
 
 The ticket for a problem with a flow should have the Flow and all its dependencies attached.
 

@@ -33,7 +33,7 @@ To view Contact Profiles, follow these steps:
 On the **Contact Profiles** page, you can search for Contact Profiles using the search field in the upper-right corner and sort the results by clicking on the column headers. 
 The **Hide Inactive Profiles** setting is activated by default, allowing you to browse only active Profiles.
 
-## View a Contact Profile
+## View Contact Profiles
 
 To view a Contact Profile, follow these steps:
 
@@ -72,7 +72,7 @@ The Profile Schema has the following predefined fields:
 
 If you want to extend the Profile Schema, you can create custom fields to make Profiles more personalized.
 
-#### Create a Custom Field
+#### Create Custom Fields
 
 To create a custom field, follow these steps:
 
@@ -92,7 +92,7 @@ A new field appears in both the Profile Schema and the individual Contact Profil
 
 To add an extra field, click **Add** in the upper-right corner of the **Profile Schema** window.
 
-#### Delete a Custom Field
+#### Delete Custom Fields
 
 To delete a custom field, follow these steps:
 
@@ -104,7 +104,7 @@ To delete a custom field, follow these steps:
 
 Once a custom field is deleted, any data related to this field will be removed from all Contact Profiles.
 
-## Manage a Contact Profile via Nodes
+## Manage Contact Profiles via Nodes
 
 You can manage Contact Profiles using the following Nodes:
 
@@ -117,7 +117,7 @@ You can manage Contact Profiles using the following Nodes:
 By using these Nodes, you can create personalized experiences for each user.
 For example, deactivate a Profile if a user requests to stop data collection or update a Profile with new information.
 
-## Turn off Collecting Data for a Contact Profile
+## Turn off Collecting Data for Contact Profiles
 
 User data is stored in all Contact Profiles by default. You can turn off this for specific Profiles.
 
@@ -132,7 +132,7 @@ To turn off data collection for a Contact Profile, follow these steps:
 
 The changes will be applied according to the selected action.
 
-## Export a Contact Profile as JSON
+## Export Contact Profiles as JSON
 
 You can export individual Contact Profiles as a JSON file.
 
@@ -144,7 +144,7 @@ To export a Contact Profile, follow these steps:
 
 The Contact Profile will be exported as a JSON file.
 
-## Delete a Contact Profile
+## Delete Contact Profiles
 
 To delete a Contact Profile, follow these steps:
 

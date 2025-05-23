@@ -27,7 +27,7 @@ To get started with the service:
 
 Check that you have two Flows: the Main Flow and the AI Copilot Flow.
 
-## Create an Endpoint
+## Create a Endpoint
 
 To create your Endpoint, follow these steps:
 

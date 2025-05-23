@@ -11,7 +11,7 @@ hidden: false
 
 {! _includes/live-agent/assistant-setup.md !}
 
-## Set up an Endpoint
+## Set up Endpoints
 
 To configure your Endpoint:
 

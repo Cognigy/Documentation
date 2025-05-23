@@ -12,7 +12,7 @@ tags:
 
 Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server, or with an NFS server (preferred way) and CDNs from any cloud provider such as AWS S3, Microsoft Azure and Google Cloud, etc. See below for the additional values required.
 
-## Using a NFS Server
+## Using an NFS Server
 
 ### AWS
 
@@ -150,7 +150,7 @@ Set force_path_style to true if using minio.
 |--------------------------------------|------|--------|
 | `configmap.STORAGE_FORCE_PATH_STYLE` | bool | `true` |
 
-## Using a single PVC (Not recommended)
+## Using a PVC (Not recommended)
 
 A local Persistent Volume Claim (PVC) is available for storage. However, it is not recommended for scaling up deployments as there is only one PVC per deployment. 
 

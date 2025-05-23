@@ -11,7 +11,7 @@ hidden: false
 
 This migration guide is for the Live Agent 4.53 version upgrade. This release upgrades the Redis chart to use Redis Sentinel for high availability.
 
-## Perform a Standard Upgrade
+## Perform Standard Upgrades
 
 The first step is to perform a standard upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
 

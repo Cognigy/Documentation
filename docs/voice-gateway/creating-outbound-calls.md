@@ -19,9 +19,9 @@ To initiate an outgoing call, use one of the following methods:
 - [Transfer Node](../ai/build/node-reference/voice/voice-gateway/transfer.md)
 - REST API request:
     -  [HTTP Request Node](../ai/build/node-reference/service/http-request.md)
-    -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
+    -  [API Request via Postman or CLI](#create-outbound-calls-via-api-request)
 
-## Create an Outbound Call via API Request
+## Create Outbound Calls via API Request
 
 Send an HTTP POST request to the Voice Gateway API to generate an outbound call.
 When the call is answered, the specified webhook will be invoked to manage the call.
@@ -203,10 +203,10 @@ The server responds with HTTP `201` and provides the session identifier (`sid`) 
 
 Use cases for creating outbound calls may vary. As examples, consider the following use cases:
 
-- [Transfer a call](#transfer-a-call)
-- [Make a follow-up call](#make-a-follow-up-call)
+- [Transfer a call](#transfer-calls)
+- [Make a follow-up call](#make-follow-up-calls)
 
-### Transfer a Call
+### Transfer Calls
 
 The voice agent orchestrates a transfer (outbound call) to the call center.
 
@@ -219,7 +219,7 @@ Sequence of interactions:
 
 To implement this use case, use a [Transfer Node](../ai/build/node-reference/voice/voice-gateway/transfer.md) in your voice Flow.
 
-### Make a Follow-up Call
+### Make Follow-up Calls
 
 The voice agent triggers an outbound call to the user for follow-up purposes,
 for example, to provide additional troubleshooting steps,
@@ -231,7 +231,7 @@ Sequence of interactions:
 2. The voice agent triggers an outbound call to the user via a third-party service and Voice Gateway.
 3. The user receives the outbound call initiated by the voice agent.
 
-To implement this use case, use an [HTTP Request Node](../ai/build/node-reference/service/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-an-outbound-call-via-api-request).
+To implement this use case, use an [HTTP Request Node](../ai/build/node-reference/service/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-outbound-calls-via-api-request).
 
 ## More Information
 

@@ -18,7 +18,7 @@ These CSV reports contain crucial information, including intent scores, transcri
 The CSV format ensures compatibility with various tools, making analysis seamless.
 You can easily import this data into Microsoft Excel or databases like Microsoft Access.
 
-## Download a Report via Insights UI
+## Download Reports via Insights UI
 
 To download a report, follow these steps:
 

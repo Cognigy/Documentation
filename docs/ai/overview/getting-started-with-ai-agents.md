@@ -11,7 +11,7 @@ hidden: false
   <img class="image-left" src="../../../_assets/ai/overview/build-your-ai-agent-workforce.png" width="50%" />   
 </figure>
 
-## What is an Agentic AI Agent?  
+## What are Agentic AI Agents? 
 
 An [Agentic AI Agent](../../ai/empower/agentic-ai/overview.md) is advanced conversational intelligence powered by a Large Language Model
 (LLM),

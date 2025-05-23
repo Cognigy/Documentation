@@ -15,7 +15,7 @@ tags:
 To manage a new generation of AI Agents, Cognigy.AI introduces the _AI Agent Management_ interface,
 where you can create, edit, and delete AI Agents.
 
-## Create an AI Agent
+## Create AI Agents
 
 You can create an AI Agent from scratch or hire an AI Agent from the Job Market, designed for your industry, such as airlines, food services, or sales, and customize it to fit your business needs.
 

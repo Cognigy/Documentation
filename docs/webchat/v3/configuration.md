@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
 
-To prepare the AI Agent for your website, you need to deploy it by [creating a Webchat v3 Endpoint](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
+To prepare the AI Agent for your website, you need to deploy it by [creating Webchat v3 Endpoints](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
 
 ## Create a Webchat v3 Endpoint
 

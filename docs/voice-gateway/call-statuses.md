@@ -14,7 +14,7 @@ tags:
 In Cognigy.AI, you can monitor [call events in your Flow](references/events/overview.md) to track the progress of both inbound and outbound calls. 
 While you can monitor call events directly through your Flow, for more flexibility, you can also track some statuses of outbound calls through webhook responses.
 
-To receive webhook responses for outbound calls, you need to add the [`notifyUrl`](creating-outbound-calls.md#create-an-outbound-call-via-api-request) parameter with the appropriate webhook URL to the outbound call request. 
+To receive webhook responses for outbound calls, you need to add the [`notifyUrl`](creating-outbound-calls.md#create-outbound-calls-via-api-request) parameter with the appropriate webhook URL to the outbound call request. 
 This capability allows you to track the occurrence of events, compare them, and identify potential issues.
 
 ### Outbound Call Status Descriptions

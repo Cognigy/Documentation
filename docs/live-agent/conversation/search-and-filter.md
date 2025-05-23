@@ -57,7 +57,7 @@ You can filter conversations using the filters mentioned in the table below. Mul
 | Priority                | Filters based on the priority level assigned to an conversation.                              |
 | Cognigy Channel Type    | Filters based on the type of channel or communication platform within Cognigy.AI.             |
 
-### Save a Filter
+### Save Filters
 
 After applying a filter, you can save it for future use.
 
