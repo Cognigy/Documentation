@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.11-blue.svg)](../../release-notes/2025.10.md)
 
 To prepare the AI Agent for your website, you need to deploy it by [creating Webchat v3 Endpoints](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
 
@@ -362,11 +362,11 @@ These settings are specified using JSON format. Ensure the JSON is correctly for
 
 Use the Webchat Custom settings to:
 
-- Overwrite UI values.
-- Translate Webchat UI texts in the Endpoint settings.
+- Overwrite UI text and values configured in the Endpoint settings
+- Change and translate UI text and [aria labels](accessibility.md#aria-labels). You can use dynamic strings, such as `{name}` or `{time}`, as described in the [embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md) documentation.
 - Add values from embedding files not present in the GUI.
-- Specify parameters for your custom Webchat version in the Endpoint settings.
-- Use features from a newer Cognigy.AI version when using an older one.
+- Specify parameters for your custom Webchat version.
+- Use features from a later Cognigy.AI version while using an earlier one.
 
 ??? info "JSON Example: Change Webchat Colors"
 
@@ -388,6 +388,11 @@ Use the Webchat Custom settings to:
                 "no_network": "Kein Netzwerk vorhanden",
                 "reconnecting": "Verbindung wird wiederhergestellt...",
                 "reconnect": "Verbindung wiederherstellen",
+                "ariaLabels": {
+                    "messageHeader": {
+                        "bot": "{name} sagt:"
+                    }
+                }
             }
         }
     ```

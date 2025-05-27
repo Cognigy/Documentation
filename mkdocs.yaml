@@ -687,7 +687,9 @@ nav:
     - 👋 Overview:
       - insights/overview.md
       - insights/glossary.md
-    - 📊 Reports:
+    - 🌍Dashboards:
+      - insights/dashboards/business.md
+    - 📊Reports:
       - insights/reports/overview.md
       - insights/reports/engagement.md
       - insights/reports/nlu-performance.md
@@ -719,6 +721,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.11.md
         - release-notes/2025.10.md
       - 4.10x:
         - release-notes/4.100.md

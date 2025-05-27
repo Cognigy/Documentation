@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.10-blue.svg)](../../../release-notes/2025.10.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.11-blue.svg)](../../../release-notes/2025.11.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -30,6 +30,10 @@ enabling end users to connect with human agents working in a contact center that
 - Access to [Salesforce](https://login.salesforce.com/).
 - Created Endpoint [compatible with Salesforce](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 - Give [Salesforce users access](https://help.salesforce.com/s/articleView?id=service.miaw_non_agent_permissions_1.htm&type=5).
+
+## Restrictions
+
+- The Salesforce MIAW handover connector supports attachments only when they're sent by end users through [Webchat v2](../../../webchat/v2/overview.md) or [Webchat v3](../../../webchat/v3/overview.md). Attachments sent by human agents from the Salesforce MIAW platform aren't supported.
 
 ## Configuration on the Handover Provider Side
 

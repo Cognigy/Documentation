@@ -58,9 +58,7 @@ After the handover, the conversation history with the AI Agent and the current i
 
 In case you are using the `embedded` version, the AI Copilot workspace will be shown within an iFrame in your contact center desktop.
 
-Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
-
-The widgets will populate with content once the customer starts the conversation.
+The widgets will populate with content once the handover to the contact center occurs.
 
 ## More Information
 

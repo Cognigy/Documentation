@@ -218,7 +218,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
     <td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td>
   </tr>
   <tr>
-    <td>amazon.titan-embed-text-v2:0<sup>3</sup></td>
+    <td>amazon.titan-embed-text-v2:0<sup><a href="#footnote3">3</a></sup></td>
     <td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"</td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
 
 <sup id="footnote2">2</sup> This feature is currently in Beta, hidden behind the `FEATURE_ENABLE_ALEPH_ALPHA_EMBEDDING_LLM_WHITELIST` feature flag, and may contain issues. Only one type of embedding LLM should be used per Project. If you choose to use `luminous-embedding-128`, you must create a new Project. Once you have chosen an embedding model for a Project, you cannot switch to a different embedding model; you must use a different Project. Failing to do so will result in errors while this feature is in Beta.
 
-<sup id="footnote3">3</sup> The option to select this model is hidden behind the `FEATURE_ENABLE_AWS_BEDROCK_EMBEDDING_LLM_WHITELIST` feature flag.
+<sup id="footnote3">3</sup> For Cognigy.AI 2025.10 and earlier versions, the option to select this model is hidden behind the `FEATURE_ENABLE_AWS_BEDROCK_EMBEDDING_LLM_WHITELIST` feature flag.
 
 <sup id="footnote4">4</sup> Note that some models from the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/models-features.html) might not support the AI Agent Node feature.
 

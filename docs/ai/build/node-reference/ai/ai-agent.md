@@ -14,7 +14,7 @@ tags:
 
 # AI Agent
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.11-blue.svg)](../../../../release-notes/2025.11.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent.png" width="60%" />
@@ -117,9 +117,11 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
 ??? info "Debug Settings"
     | Parameter             | Type   | Description                                                                                                                                                                                                                                                                                         |
     |-----------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Log Job Execution     | Toggle | Send a debug message with the current AI Agent Job configuration. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is active by default.                                                                                                                      |
-    | Log Knowledge Results | Toggle | Send a debug message containing the result from a knowledge search. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                                                  |
-    | Show Token Count      | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
+    | Log Job Execution     | Toggle | Send a debug message with the current AI Agent Job configuration. The message appears in the Interaction Panel when debug mode is enabled. The parameter is active by default.                                                                                                                      |
+    | Log Knowledge Results | Toggle | Send a debug message containing the result from a knowledge search. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                                  |
+    | Show Token Count      | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when debug mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
+    | Log System Prompt     | Toggle | Send a debug message containing the system prompt. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                                                   |
+    | Log Tool Definitions  | Toggle | Send a debug message containing information about the configured AI Agent tools. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                     |
 
 ## AI Agent Tool Settings
 
