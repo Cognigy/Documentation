@@ -39,6 +39,7 @@ The configuration depends on the Cognigy installation you have:
 - If you want to migrate from [Handover End Detection with HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) to Amazon EventBridge, make sure you remove the [configuration steps](genesys-cloud-open-messaging-handover-end-detection.md#configuration-steps) after migration to Amazon EventBridge.
 - For on-premises installations, activate the `FEATURE_USE_GENESYS_OM_HTTP_END_HANDOVER_REQUEST="true"` feature flag.
 - Set the timeout to prevent queue transfers from triggering the end of Genesys Cloud Open Messaging handovers with the `GENESYS_OM_HANDOVER_ACW_AFTER_TRANSFER_TIMEOUT_IN_MS` environment variable. The default value is 10 seconds. This timeout is useful when multiple after-call work events are sent through the event bridge and cause handovers to end during queue transfers.
+- If you have multiple organizations for one Genesys Cloud Open Messaging account, activate the `SKIP_GENESYS_EVENTBRIDGE_ORGANIZATION_ID_CHECK` feature flag to prevent the validation of the Cognigy.AI organization ID during a handover.
 
 ## Cognigy SaaS
 
