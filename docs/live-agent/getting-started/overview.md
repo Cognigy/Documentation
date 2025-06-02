@@ -1,9 +1,11 @@
 ---
 title: "Getting Started with Live Agent" 
-slug: "live-agent-getting-started" 
+slug: "live-agent-getting-started"
+description: "To integrate Live Agent with Cognigy.AI, set up Live Agent for your organization, configure your Project inbox, Endpoint, and Flow, add agents and admins."
 hidden: false 
 tags:
-  - Live Agent
+  - live agent
+  - getting started
 ---
 
 # Getting Started with Live Agent
