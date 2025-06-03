@@ -687,8 +687,6 @@ nav:
     - 👋 Overview:
       - insights/overview.md
       - insights/glossary.md
-    - 🌍Dashboards:
-      - insights/dashboards/business.md
     - 📊Reports:
       - insights/reports/overview.md
       - insights/reports/engagement.md

@@ -22,14 +22,6 @@ Insights help businesses better understand their users, optimize chat and voice 
     [:octicons-arrow-right-24: Overview](overview.md)<br>
     [:octicons-arrow-right-24: Glossary](glossary.md)
 
--   :globe_with_meridians:{ .lg .middle } __View Dashboards__
-
-    ---
-
-    Explore interactive dashboards to unlock deeper insights and drive smarter decisions
-
-    [:octicons-arrow-right-24: Business](dashboards/business.md)
-
 -   :bar_chart:{ .lg .middle } __View Report Metrics__
 
     ---
