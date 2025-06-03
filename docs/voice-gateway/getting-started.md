@@ -1,7 +1,11 @@
 ---
 title: "Getting Started" 
-slug: "vg-getting-started" 
-hidden: false 
+slug: "vg-getting-started"
+description: "To set up Voice Gateway, create a Voice Gateway Flow and Endpoint, route contact centers or phone numbers to it, and configure Voice Gateway for your organization." 
+hidden: false
+tags: 
+  - voice gateway
+  - getting started 
 ---
 
 # Getting Started with Voice Gateway
