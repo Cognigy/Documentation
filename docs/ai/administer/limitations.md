@@ -109,7 +109,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | **Logs**                                                                                 |               |
 | Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |
 | **Sessions**                                                                             |               |
-| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |
+| Maximum time until relevant Flow-execution session information will be removed[^*****]   | 7 days        |
 | **Data**                                                                                 |               |
 | Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |
 | Maximum time until Conversation transcripts will be removed                              | 30 days       |
@@ -121,3 +121,5 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum time until an xApp Session will be expired                                       | 30 days       |
 | **PCAP File in the Voice Gateway Self-Service Portal**                                   |               |
 | Maximum time until a PCAP File will be removed                                           | 14 days       |
+
+[^*****]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md#expiration-values-ttl-for-sensitive-data) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.

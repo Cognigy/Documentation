@@ -22,3 +22,7 @@ The following Endpoints support session expiration:
 
 !!! warning "Disable Session Expiration"
     You can disable session expiration by setting it to 0. This will prevent a user from having multiple sessions in the **Contact Profile**, which reduces the **Analytics** effectiveness.
+
+## Limitations
+
+- By default, the limit is 30 minutes. For dedicated SaaS and on-premises installations, this value can be overridden if a lower value is set in the [Management UI](../../administer/access/management-ui.md#expiration-values-ttl-for-sensitive-data) or via the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable.
