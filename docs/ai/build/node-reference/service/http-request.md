@@ -2,7 +2,12 @@
 title: "HTTP Request" 
 slug: "http-request"
 description: "The HTTP Request Node lets you make an HTTP request within a Flow. When triggered, the HTTP Request Node performs the request to the specified URL during Flow execution."
-hidden: false 
+hidden: false
+tags:
+  - http
+  - http request
+  - http request node
+  - timeout
 ---
 
 # HTTP Request
@@ -24,7 +29,10 @@ If you use an external API, make sure the server has a public certificate to [av
 
 ## Limitations
 
-The default timeout for the HTTP Request Node is 15 seconds in a shared SaaS environment. For on-premises installations, you can change the timeout via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
+The default timeout is 15 seconds in a shared SaaS installation and 8 seconds in dedicated SaaS or on-premises installations. You can change this limit only for the following installation types:
+
+- Dedicated SaaS. You can request an increase up to a maximum of 15 seconds by contacting Cognigy technical support.
+- On-premises. You can configure the timeout using the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. Setting this value higher than 15 seconds may cause delays and affect AI Agents' performance. Use longer timeouts at your own risk.
 
 ## Parameters
 

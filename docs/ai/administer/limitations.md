@@ -41,7 +41,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum [Profile](../test/interaction-panel/profile.md) size                                                                      | 65 kB[^***]                     |            | **1.5 MB** |
 | Maximum HTTP payload size for HTTP-Request Flow Node                                                                              | 65 kB                           |            |            |
 | Maximum HTTP response size for HTTP-Request Flow Node                                                                             | 524 kB                          | **2.6 MB** | **1.5 MB** |
-| HTTP-Request Flow Node timeout                                                                                                    | 8 s                             |            | **15 s**   |
+| HTTP-Request Flow Node timeout[^****]                                                                                             | 8 s                             |            | **15 s**   |
 | Maximum JSON encoded payload size for requests to our RESTful API                                                                 | 60 kB                           |            |            |
 | Minimum HTTP text body (used in CSV)                                                                                              | 100 kB                          |            |            |
 | Maximum text encoded (raw) payload size for request to our RESTful API (for example, used to upload CSV files)                    | 2 MB                            |            |            |
@@ -95,6 +95,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 [^*]: The rate limit of 1000 requests per 5 minutes from a single IP address applies only to shared SaaS environments.
 [^**]: If you have a dedicated SaaS or on-premises environment, you can change this limit. The `SOCKET_ENDPOINT_DISCONNECT_GRACE_PERIOD` variable lets you set a waiting period (in seconds) before marking a user as disconnected. This delay ensures temporary network issues or brief interruptions don't immediately trigger the `user disconnected` event. 
 [^***]: The limit for the Input, Context, and Profile objects is shared and can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Be aware that increasing the object size could lead to performance issues.
+[^****]: You can change this limit if you have an on-premises installation. For more information, refer to the [HTTP Request Node](../build/node-reference/service/http-request.md) article.
 
 ## Retention of Records
 
