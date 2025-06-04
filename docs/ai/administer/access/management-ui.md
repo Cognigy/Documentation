@@ -31,6 +31,16 @@ The following figure shows a screenshot of what this product looks like.
   <figcaption> The Cognigy.AI Management UI</figcaption>
 </figure>
 
+## Log in to the Management UI
+
+To log in to the Management UI instance, you need the following information:
+
+| **Field**                   | **Description**                                                                                                         |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Cognigy.AI Backend Base URL | The base URL must follow this format: https://api-<your installation domain>. For example: https://api-trial.cognigy.ai.|
+| Service User                | The username provided by your Management UI administrator.                                                              |
+| Service Password            | The password for the service user account, provided by your Management UI administrator.                                |
+
 ## Usage
 
 The usage of the Management UI is quite self-explanatory. We have global navigation on the left side, which allows you to switch between:
