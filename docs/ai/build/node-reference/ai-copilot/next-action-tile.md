@@ -22,7 +22,7 @@ This Node helps guide a conversation flow and ensures that the system responds e
 ??? info "General Settings"
     | Parameter       | Type          | Description                                                                                                                                                                                                                  |
     |-----------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Tile ID         | CognigyScript | The ID created in the AI Copilot configuration.                                                                                                                                                                              |
+    | Tile ID         | CognigyScript | The ID created in the Agent Copilot configuration.                                                                                                                                                                              |
     | Type            | Select        | Choose from the following types: <ul><li>**Text** — the text you want to display in the next action widget.</li><li>**Knowledge Assist** — the text from the Knowledge Store to display in the next action widget.</li></ul> |
     | Text            | CognigyScript | Enter the text you want to display in the next action widget.                                                                                                                                                                |
     | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                                         |
@@ -56,7 +56,7 @@ For instance, if a user asks about the latest release version, the AI Agent can 
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/next-action-tile-example.png" width="80%"/>
-  <figcaption>The Next Action Tile Widget in AI Copilot</figcaption>
+  <figcaption>The Next Action Tile Widget in Agent Copilot</figcaption>
 </figure>
 
 ## More Information
@@ -64,5 +64,5 @@ For instance, if a user asks about the latest release version, the AI Agent can 
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Sentiment Tile Node](sentiment-tile.md)
 - [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

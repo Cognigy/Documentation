@@ -58,28 +58,28 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 
 {! _includes/ai/providers/genesys/filter-transcript-messages.md !}
 
-### AI Copilot Workspace
+### Agent Copilot Workspace
 
-Within Genesys integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
+Within Genesys integration, you can use the [Agent Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
 
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    Agent Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
 
 ??? info "Embedded"
-    By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
+    By default, you can use the embedded version of the Agent Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
 
     ??? info "1. Create a Script"
         To create a script, follow these steps:
     
         1. In Cognigy.AI, go to Endpoint **Settings > Copilot**.
-        2. Copy the Copilot Embedding URL by clicking on it.
+        2. Copy the Agent Copilot Embedding URL by clicking on it.
         3. In Genesys Cloud, open the **Admin** tab.
         4. Under **Contact Center**, click **Scripts**, then **Create**. Type a name for the script.
         5. Select the **Blank Script** template and click **+ Create**.
         6. On the script page, go to the **Add Components** tab.
-        7. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
+        7. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Agent Copilot Embedding URL that you copied before.
         8. In the **Layout** section, change the size of width and height by clicking the **Stretch** button.
         9. In the upper-right corner, go to the **Variables** tab.
         10. On the **Variables** tab, go to the **Basic Types** section and click **String**.

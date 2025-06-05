@@ -17,6 +17,16 @@ _**Abandoned (conversations)**_
 _**Account**_
 :  A separate Live Agent instance that represents the entire organization or company. In this context, all the resources, data, and users related to the organization are managed centrally at the org level. In other alternative Live Agent systems, this entity may also be referred to as Tenant.
 
+_**Agent Copilot Bot**_
+:  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
+For more information, read the [Agent Copilot Bot](assistants/ai-copilot-bot.md) documentation.
+
+_**Agent Copilot Whisper**_
+:  A virtual assistant that helps human agents improve their performance. It displays AI-powered suggested replies and next-action suggestions directly in the chat box. When a user sends a message, a suggested reply will appear in a centered frame inside the chat. A human agent can ignore it or click the reply arrow icon to send. For more information, read the [Agent Copilot Whisper](./assistants/ai-copilot-whisper.md) documentation.
+
+_**Agent Copilot Workspace**_
+:  A virtual assistant that helps human agents improve their performance. It consists of an embedded or standalone collection of interactive widgets arranged in a customizable grid. The widgets actively support the human agent by displaying various information, including user data, user sentiment, suggesting next action, providing chat transcription, and more. For more information, read the [Agent Copilot](../ai-copilot/index.md) documentation.
+
 _**Account Settings**_
 :  You can change the general settings for an account, such as name and language. You will find access via the dashboard sidebar of Live Agent. For more information, read the [Account Settings](settings/account-settings.md) documentation.
 
@@ -29,15 +39,6 @@ _**Agent Queue**_
 _**Agent Status**_
 :  Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
-_**AI Copilot Bot**_
-:  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
-For more information, read the [AI Copilot Bot](assistants/ai-copilot-bot.md) documentation.
-
-_**AI Copilot Whisper**_
-:  A virtual assistant that helps human agents improve their performance. It displays AI-powered suggested replies and next-action suggestions directly in the chat box. When a user sends a message, a suggested reply will appear in a centered frame inside the chat. A human agent can ignore it or click the reply arrow icon to send. For more information, read the [AI Copilot Whisper](./assistants/ai-copilot-whisper.md) documentation.
-
-_**AI Copilot Workspace**_
-:  A virtual assistant that helps human agents improve their performance. It consists of an embedded or standalone collection of interactive widgets arranged in a customizable grid. The widgets actively support the human agent by displaying various information, including user data, user sentiment, suggesting next action, providing chat transcription, and more. For more information, read the [AI Copilot](../ai-copilot/index.md) documentation.
 
 _**API Access Token**_
 :  A data structure that contains authentication and authorization information to use an application. It can be used if you are building an API-based integration and its actions are limited by the user role. For more information, read the [Profile Settings](profile-settings.md) documentation.
@@ -115,7 +116,7 @@ _**Inbox ID**_
 ## L
 
 _**LA Copilot**_
-: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered agents when conversing with the customer. Using this functionality, during an active handover, fully configurable AI Agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
+: LA Agent Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered agents when conversing with the customer. Using this functionality, during an active handover, fully configurable AI Agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Agent Copilot](assistants/overview.md) documentation.
 
 _**Labels**_
 : Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation.

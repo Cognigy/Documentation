@@ -6,7 +6,7 @@ hidden: false
 
 # Integration with Contact Centers
 
-The AI Copilot workspace is designed to work with any contact center. However, additional contact-center-specific configuration may be required. 
+The Agent Copilot workspace is designed to work with any contact center. However, additional contact-center-specific configuration may be required. 
 
 ## Native Supported Contact Centers
 
@@ -17,10 +17,10 @@ Cognigy provides native integration with the following contact centers:
 
 ## More Information
 
-- [AI Copilot Workspace](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
-- [AI Copilot for Chat](chat.md)
+- [Agent Copilot Workspace](overview.md)
+- [Getting started with Agent Copilot](getting-started.md)
+- [Agent Copilot Configuration](configuration.md)
+- [Agent Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)
+- [Agent Copilot Embedding](embedding.md)
+- [Agent Copilot for Voice](voice/voice-overview.md)
+- [Agent Copilot for Chat](chat.md)

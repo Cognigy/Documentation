@@ -1,7 +1,7 @@
 ---
 title: "Copilot: HTML Tile"
 slug: "set-html-tile"
-description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the AI Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
+description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the Agent Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
 hidden: false
 ---
 
@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-This Node displays HTML content in the AI Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts. The Set HTML Tile Node is useful for displaying complex information.
+This Node displays HTML content in the Agent Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts. The Set HTML Tile Node is useful for displaying complex information.
 
 Technically, the HTML content will be injected into an [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) on the workspace side, so any general restrictions on iFrames also apply to this case.
 
@@ -23,7 +23,7 @@ Technically, the HTML content will be injected into an [iFrame](https://develope
 
 | Parameter    | Type          | Description                                              |
 |--------------|---------------|----------------------------------------------------------|
-| Tile ID      | CognigyScript | The ID that you created in the AI Copilot configuration. |
+| Tile ID      | CognigyScript | The ID that you created in the Agent Copilot configuration. |
 | HTML Content | HTML          | The HTML content to render inside the Widget.            |
 | JSON Data    | JSON          | The data to send to the IFrame as a postMessage event.   |
 
@@ -108,7 +108,7 @@ You can send data back to the Flow by using the Postback feature.
 ??? info "Postback"
 {! _includes/ai/nodes/postback.md !}
 
-    In the AI Copilot Flow, below the Copilot: HTML Tile Node, add a [Copilot: Send Data](send-data.md).
+    In the Agent Copilot Flow, below the Copilot: HTML Tile Node, add a [Copilot: Send Data](send-data.md).
     In the **JSON** field of the Copilot: Send Data Node,
     specify the parameters you want to pass as metadata to the Copilot: HTML Tile Node to update the content.
 
@@ -118,5 +118,5 @@ You can send data back to the Flow by using the Postback feature.
 - [Copilot: IFrame Tile](set-iframe-tile.md)
 - [Copilot: Send Data](send-data.md)
 - [Copilot: Set Grid](set-grid.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

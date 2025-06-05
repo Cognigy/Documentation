@@ -15,13 +15,13 @@ hidden: false
 ## Description
 
 
-This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot workspace, enhancing the context and usability of the identity-related data.
+This Node is designed to display and process customer-specific information directly within the widget of your Agent Copilot workspace, enhancing the context and usability of the identity-related data.
 
 ## Parameters
 
 | Parameter     | Type          | Description                                                                                                                                       |
 |---------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID       | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                          |
+| Tile ID       | CognigyScript | The ID that you created in the Agent Copilot configuration.                                                                                          |
 | Widget Layout | Select        | The layout of how the widget should be placed in the Workspace (horizontal/vertical).                                                             |
 | Image Shape   | Select        | The shape or format of the image (round or square).                                                                                               |
 | Image URL     | URL           | The URL where the image is hosted or located.                                                                                                     |
@@ -43,5 +43,5 @@ This allows human agents to have contextually relevant discussions without the n
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Sentiment Tile Node](sentiment-tile.md)
 - [Copilot: Next Action Tile Node](next-action-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Copilot Nodes](overview.md)
+- [Copilot](../../../../ai-copilot/overview.md)

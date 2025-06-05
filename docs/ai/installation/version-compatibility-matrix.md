@@ -5,9 +5,9 @@ description: "Version compatibility matrix for Cognigy.AI and Infrastructure Com
 hidden: false
 ---
 
-# Cognigy.AI, Insights, and AI Copilot: Version Compatibility Matrix
+# Cognigy.AI, Insights, and Copilot: Version Compatibility Matrix
 
-This matrix outlines the compatibility of Cognigy.AI, Insights, and AI Copilot product versions with Cognigy infrastructure components,
+This matrix outlines the compatibility of Cognigy.AI, Insights, and Agent Copilot product versions with Cognigy infrastructure components,
 such as Kubernetes, MongoDB, and Redis.
 
 {! _includes/installation/on-prem-compatibility-matrix-note.md !}
@@ -85,5 +85,5 @@ such as Kubernetes, MongoDB, and Redis.
 Version Compatibility Matrix:
 
 - [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
-- [AI Copilot (4.64 and earlier versions)](../../ai-copilot/installation/version-compatibility-matrix.md)
+- [Agent Copilot (4.64 and earlier versions)](../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Voice Gateway](../../voice-gateway/installation/version-compatibility-matrix.md)

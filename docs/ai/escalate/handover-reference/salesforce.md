@@ -21,7 +21,7 @@ tags:
 
 !!! warning
     Salesforce announced the removal date for [LiveAgent, Salesforce Chat, Embedded Chat, and Service Chat](https://help.salesforce.com/s/articleView?id=001790618&type=1). The removal date is February 14, 2026. This handover provider connector will remain active until the removal date. Before this date, migrate to a [new connector](salesforce-miaw.md) for the Salesforce provider that supports [Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5).
-    If you configured the embedded AI Copilot workspace, make sure that you update its [configuration](salesforce-miaw.md#additional-configuration) during the migration.
+    If you configured the embedded Agent Copilot workspace, make sure that you update its [configuration](salesforce-miaw.md#additional-configuration) during the migration.
 
 The Salesforce handover connector bridges Cognigy.AI and [Salesforce Service Cloud](https://salesforce.com/),
 enabling end users to connect with human agents working in a contact center that uses Salesforce Service Cloud.
@@ -200,8 +200,8 @@ To check the handover, go to the installation that your server administrator has
 
 ## Additional Configuration
 
-??? info "AI Copilot Workspace"
-    To integrate Copilot directly into Salesforce Service Cloud, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub.
+??? info "Agent Copilot Workspace"
+    To integrate Agent Copilot directly into Salesforce Service Cloud, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub.
 
 ## More Information
 

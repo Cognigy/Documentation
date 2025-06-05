@@ -8,9 +8,9 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../release-notes/4.60.md)
 
-You can use the Plug-and-Play Widgets to customize your AI Copilot workspace.
+You can use the Plug-and-Play Widgets to customize your Agent Copilot workspace.
 
-These widgets are seamlessly integrated with other AI Copilot Widgets and require minimal manual configuration.
+These widgets are seamlessly integrated with other Agent Copilot Widgets and require minimal manual configuration.
 
 You can build these widgets by using the following Nodes:
 
@@ -22,10 +22,10 @@ You can build these widgets by using the following Nodes:
 
 <figure>
   <img class="image-center" src="../../../_assets/ai-copilot/plug-and-play-widgets.png" width="80%"/>
-  <figcaption> Plug-and-Play Widgets in AI Copilot</figcaption>
+  <figcaption> Plug-and-Play Widgets in Agent Copilot</figcaption>
 </figure>
 
 ## More Information
 
-- [AI Copilot](overview.md)
-- [AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)
+- [Agent Copilot](overview.md)
+- [Agent Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)

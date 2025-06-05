@@ -1,7 +1,7 @@
 ---
 title: "Copilot: IFrame Tile"
 slug: "set-iframe-tile"
-description: "The Copilot: IFrame Tile Node lets you embed external websites directly into the AI Copilot workspace. "
+description: "The Copilot: IFrame Tile Node lets you embed external websites directly into the Agent Copilot workspace. "
 hidden: false
 ---
 
@@ -15,19 +15,19 @@ hidden: false
 
 ## Description
 
-This Node embeds external websites directly into the AI Copilot workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the AI Copilot workspace without redirecting human agents to an external site.
+This Node embeds external websites directly into the Agent Copilot workspace. To do that, specify a URL for the external content you want to display. You can present web pages, forms, or applications within the Agent Copilot workspace without redirecting human agents to an external site.
 
 ## Parameters
 
 | Parameter  | Type          | Description                                              |
 |------------|---------------|----------------------------------------------------------|
-| Tile ID    | CognigyScript | The ID that you created in the AI Copilot configuration. |
+| Tile ID    | CognigyScript | The ID that you created in the Agent Copilot configuration. |
 | IFrame URL | URL           | The URL to render inside the Widget.                     |
 | JSON Data  | JSON          | The data to send to the IFrame as a postMessage event.   |
 
 ## Passing JSON Data into the IFrame
 
-When you use a Copilot: IFrame Tile Node, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. To receive and process the passed JSON in your widget, add an event listener to the Copilot HTML Tile Node and handle the data accordingly.
+When you use a Copilot: IFrame Tile Node, JSON data is passed into the IFrame code using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. To receive and process the passed JSON in your widget, add an event listener to the Agent Copilot HTML Tile Node and handle the data accordingly.
 
 ```js
 window.addEventListener("message", function (event) {
@@ -72,7 +72,7 @@ You can send data back to the Flow by using the Postback feature.
 ??? info "Postback"
 {! _includes/ai/nodes/postback.md !}
 
-    In the AI Copilot Flow, below the Copilot: IFrame Tile Node, add a [Copilot: Send Data](send-data.md).
+    In the Agent Copilot Flow, below the Copilot: IFrame Tile Node, add a [Copilot: Send Data](send-data.md).
     In the **JSON** field of the Copilot: Send Data Node,
     specify the parameters you want to pass as metadata to the Copilot: IFrame Tile Node to update the content.
 
@@ -82,5 +82,5 @@ You can send data back to the Flow by using the Postback feature.
 - [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
 - [Copilot: Send Data](send-data.md)
 - [Copilot: Set Grid](set-grid.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Copilot Nodes](overview.md)
+- [Copilot](../../../../ai-copilot/overview.md)

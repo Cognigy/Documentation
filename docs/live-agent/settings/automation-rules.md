@@ -89,7 +89,7 @@ To deactivate the rule, move the toggle switch to the left position.
 
 You can use multiple conditions with the `AND` or `OR` operator as in the example below.
 
-When AI Copilot is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
+When Agent Copilot is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
 
 - Name: Sales
 - Description: This automation assigns new **Open** status conversations to the Sales team.

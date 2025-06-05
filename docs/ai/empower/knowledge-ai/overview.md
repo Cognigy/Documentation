@@ -78,7 +78,7 @@ Working with Knowledge AI involves two phases, similar to the Intents workflow. 
 With Knowledge AI, both human agents and AI Agents can retrieve information from various Knowledge Sources and provide better responses to your customers:
 
 - **Knowledge AI for AI Agents** — use the [Search Extract Output Node](../../build/node-reference/other-nodes/search-extract-output.md) so that AI Agents can retrieve product-specific knowledge from Knowledge Sources, for example, manuals and web pages. This way, AI Agent's output more accurate information to customers.
-- **Use Knowledge AI for human agents** — by retrieving data from different Knowledge Sources, LLMs reduce the burden on human agents, making information access quicker and more efficient. To let human agents use the Knowledge Sources for solving tasks, add a widget to the AI Copilot workspace using a [Copilot: Knowledge Tile Node](../../build/node-reference/ai-copilot/knowledge-tile.md). The widget serves as a search tool, enabling human agents to enter questions and retrieve information from the knowledge base.
+- **Use Knowledge AI for human agents** — by retrieving data from different Knowledge Sources, LLMs reduce the burden on human agents, making information access quicker and more efficient. To let human agents use the Knowledge Sources for solving tasks, add a widget to the Agent Copilot workspace using a [Copilot: Knowledge Tile Node](../../build/node-reference/ai-copilot/knowledge-tile.md). The widget serves as a search tool, enabling human agents to enter questions and retrieve information from the knowledge base.
 
 ??? note "FAQ"
 

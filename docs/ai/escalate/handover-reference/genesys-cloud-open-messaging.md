@@ -84,7 +84,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
     7. To configure a flow, click **Edit**, then go to **Toolbox**.
     8. Drag the **Send Response** action and drop it onto the messaging flow editor.
     9. In the **Message Body** of the **Send Response** action, specify `Connected`. 
-    10. The steps 11–13 are optional. Follow them if you want to add a new embedded version of AI Copilot within your handover.
+    10. The steps 11–13 are optional. Follow them if you want to add a new embedded version of Agent Copilot within your handover.
     11. *(Optional)* Below the **Send Response** action, add [Get Participant Data](https://help.mypurecloud.com/articles/get-participant-data-action/) action.
     12. *(Optional)* In the **Get Participant Data** editor, add the following variables:
         - `queueId`
@@ -207,28 +207,28 @@ To test connection, click **Open Demo Web Chat** in your Endpoint.
 
 {! _includes/ai/providers/genesys/filter-transcript-messages.md !}
 
-### AI Copilot Workspace
+### Agent Copilot Workspace
 
-Within the Genesys integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
+Within the Genesys integration, you can use the [Agent Copilot workspace](../../../ai-copilot/overview.md) as an assistant for your human agents.
 
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    Agent Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
 
 ??? info "Embedded"
-    By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
+    By default, you can use the embedded version of the Agent Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
 
     ??? info "1. Create a Script"
         To create a script, follow these steps:
     
         1. In Cognigy.AI, go to Endpoint **Settings > Copilot**.
-        2. Copy the Copilot Embedding URL by clicking on it.
+        2. Copy the Agent Copilot Embedding URL by clicking on it.
         3. In Genesys Cloud, open the **Admin** tab.
         4. Under **Contact Center**, click **Scripts**, then **Create**. Type a name for the script.
         5. Select the **Blank Script** template and click **+ Create**.
         6. On the script page, go to the **Add Components** tab.
-        7. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Copilot Embedding URL that you copied before.
+        7. Under the **Components** section, select **Web Page**. In the **Web Page Source** field, enter the Agent Copilot Embedding URL that you copied before.
         8. In the **Layout** section, change the size of width and height by clicking the **Stretch** button.
         9. In the upper-right corner, go to the **Variables** tab.
         10. On the **Variables** tab, go to the **Basic Types** section and click **String**.

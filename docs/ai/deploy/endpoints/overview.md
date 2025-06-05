@@ -125,7 +125,7 @@ You can use the following additional settings for the Endpoint configuration:
 - [Session Management](session-management.md)
 - [Real-Time Translation Settings](real-time-translation-settings.md)  
 - [Handover Settings](handover-settings.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Agent Copilot](../../../ai-copilot/overview.md)
 - [File Storage](file-storage.md)
 
 ## More Information

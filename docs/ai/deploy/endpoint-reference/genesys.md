@@ -21,7 +21,7 @@ The Genesys Endpoint connects AI Agents to the [Genesys Cloud CX platform](https
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
     - If you have an on-premises installation, specify the following feature flags: 
         - `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organization1,organization2"`. To enable the Genesys Endpoint for all organizations in your installation, use `*` instead of a list of organizations.
-        - `FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST="organization1,organization2"`. Add this feature flag to use Genesys [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) with AI Copilot. To enable this feature for all organizations within the Genesys Endpoint in your installation, use `*` instead of a list of organizations.
+        - `FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST="organization1,organization2"`. Add this feature flag to use Genesys [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) with Agent Copilot. To enable this feature for all organizations within the Genesys Endpoint in your installation, use `*` instead of a list of organizations.
 
 ## Generic Endpoint Settings
 
@@ -60,9 +60,9 @@ To set up the Genesys Endpoint, follow these steps:
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.
 7. Click **Save**.
 
-### (Optional) Activate AI Copilot
+### (Optional) Activate Agent Copilot
 
-If you want to use [AI Copilot](../../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
+If you want to use [Agent Copilot](../../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
 create credentials on the Genesys side and configure the **Copilot** settings in the Endpoint.
 
 #### Create Credentials
@@ -82,12 +82,12 @@ To configure credentials, follow these steps:
 11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously.
 12. Click **Authorize Client**.
 
-#### Configure Settings for Agent AI Copilot
+#### Configure Settings for Agent Agent Copilot
 
-To configure the AI Copilot workspace settings, follow these steps:
+To configure the Agent Copilot workspace settings, follow these steps:
 
 1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
-2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [AI Copilot documentation](../../../ai-copilot/overview.md).
+2. Configure Agent Copilot by creating an [Agent Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Copilot documentation](../../../ai-copilot/overview.md).
 3. Set up Genesys Cloud Credentials:
     - **Connection Name** — create a unique name for your connection.
     - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).

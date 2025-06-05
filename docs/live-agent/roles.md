@@ -61,9 +61,9 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Edit an Inbox                                     | -     | -          | +             |
 | Delete an Inbox                                   | -     | -          | +             |
 | Move Conversations from one Inbox to another [^4] | +     | +          | +             |
-| Create AI Copilot Bot                             | -     | -          | +             |
-| Edit AI Copilot Bot                               | -     | -          | +             |
-| Delete AI Copilot Bot                             | -     | -          | +             |
+| Create Agent Copilot Bot                             | -     | -          | +             |
+| Edit Agent Copilot Bot                               | -     | -          | +             |
+| Delete Agent Copilot Bot                             | -     | -          | +             |
 | Add Agents to the Inbox                           | -     | -          | +             |
 | Remove Agents from the Inbox                      | -     | -          | +             |
 | Configure Conversation Assignment Settings        | -     | -          | +             |
@@ -162,10 +162,10 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 | Actions                       | Agent | Supervisor | Administrator |
 |-------------------------------|-------|------------|---------------|
-| **AI Copilot**                |       |            |               |
-| Activate AI Copilot workspace | +     | +          | +             |
-| **AI Copilot Bot**            |       |            |               |
-| Edit AI Copilot Bot Settings  | +     | +          | +             |
+| **Agent Copilot**                |       |            |               |
+| Activate Agent Copilot workspace | +     | +          | +             |
+| **Agent Copilot Bot**            |       |            |               |
+| Edit Agent Copilot Bot Settings  | +     | +          | +             |
 | Reset Session                 | +     | +          | +             |
 
 ### Account and Profile Settings

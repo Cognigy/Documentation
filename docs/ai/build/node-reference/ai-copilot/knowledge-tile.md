@@ -15,7 +15,7 @@ hidden: false
 ## Description
 
 This Node to provides potential answers to human agents regarding customer questions.
-The Node creates an [AI Copilot widget](../../../../ai-copilot/plug-and-play-widgets.md) that consists of a search bar and a response form.
+The Node creates an [Agent Copilot widget](../../../../ai-copilot/plug-and-play-widgets.md) that consists of a search bar and a response form.
 Additionally, it provides meta-source links,
 information about the files from which knowledge was derived and hints for further questions.
 The human agent uses the search bar to access a knowledge base and find information to respond to customer queries.
@@ -34,7 +34,7 @@ For more information, refer to the [Configuration](#configuration) section.
 ??? info "General Settings"
     | Parameter       | Type          | Description                                                          |
     |-----------------|---------------|----------------------------------------------------------------------|
-    | Tile ID         | CognigyScript | The ID that you created in the AI Copilot configuration.             |
+    | Tile ID         | CognigyScript | The ID that you created in the Agent Copilot configuration.             |
     | Knowledge Store | Select        | Select a store from the list to allow the Node to retrieve the data. |
 
 ??? info "Enable Copy to Clipboard Button"
@@ -66,7 +66,7 @@ For more information, refer to the [Configuration](#configuration) section.
 
     1. Add an **If** Node. 
     2. Open the **If** Node editor. 
-    3. In the **Condition** field, specify the following condition: `input.data._cognigy._agentAssist.payload.tileId === "tile-id"`, where `tile-id` is a Knowledge tile ID that you created in the AI Copilot configuration via API. 
+    3. In the **Condition** field, specify the following condition: `input.data._cognigy._agentAssist.payload.tileId === "tile-id"`, where `tile-id` is a Knowledge tile ID that you created in the Agent Copilot configuration via API. 
     4. In the **Knowledge Store** field, select the source that you want to use for searching knowledge. 
     5. Below the **Then** child Node, place the **Copilot: Knowledge Tile** Node. 
     6. Below the **Else** child Node, add the other Copilot tile Nodes. This step is necessary to ensure that the content of these Nodes does not get updated during the operation of the **Copilot: Knowledge Tile** Node.
@@ -91,5 +91,5 @@ For more information, refer to the [Configuration](#configuration) section.
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Sentiment Tile Node](sentiment-tile.md)
 - [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

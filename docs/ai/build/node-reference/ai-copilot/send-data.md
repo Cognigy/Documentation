@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Send Data"
 slug: "send-data"
-description: "The Copilot: Send Data Node lets you update the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time."
+description: "The Copilot: Send Data Node lets you update the content within Agent Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time."
 hidden: false
 ---
 
@@ -15,7 +15,7 @@ hidden: false
 
 ## Description
 
-This Node updates the content within AI Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time.
+This Node updates the content within Agent Copilot widgets (IFrame or HTML) without reloading the entire widget, making it easier to modify and refresh dynamic content in real time.
 
 ## Parameters
 
@@ -98,5 +98,5 @@ This example shows how to dynamically update metadata in the Copilot: HTML Tile 
 
 - [Copilot: HTML Tile](set-html-tile.md)
 - [Copilot: IFrame Tile](set-iframe-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

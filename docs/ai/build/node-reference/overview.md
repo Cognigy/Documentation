@@ -55,11 +55,11 @@ This Node reference provides details about the [Nodes'](../nodes/overview.md) pa
 
     Data Nodes are designed to manage, manipulate, process, or store data.
 
--   :material-account-tie:{ .lg .middle } __[AI Copilot](ai-copilot/overview.md)__
+-   :material-account-tie:{ .lg .middle } __[Agent Copilot](ai-copilot/overview.md)__
 
     ---
 
-    Nodes for creating the AI Copilot workspace.
+    Nodes for creating the Agent Copilot workspace.
 
 -   :material-application:{ .lg .middle } __[xApps](xApp/overview.md)__
 

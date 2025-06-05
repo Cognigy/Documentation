@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-This Node allows you to create and display adaptive cards in your AI Copilot workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
+This Node allows you to create and display adaptive cards in your Agent Copilot workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
 
 The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form. Alternatively, you can use Generative AI to create a new adaptive card or improve an existing one.
 
@@ -22,7 +22,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 | Parameter            | Type          | Description                                                                                    |
 |----------------------|---------------|------------------------------------------------------------------------------------------------|
-| Tile ID              | CognigyScript | The ID that you created in the AI Copilot configuration.                                       |
+| Tile ID              | CognigyScript | The ID that you created in the Agent Copilot configuration.                                       |
 | Generate Node Output | Text          | A prompt or instruction for generating the Adaptive Card. To apply the prompt, click Generate. |
 | Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.                                      |
 | JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.                                         |
@@ -41,8 +41,8 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 ## More Information
 
-- [Copilot: HTML file](set-html-tile.md)
+- [Copilot: HTML Tile](set-html-tile.md)
 - [Copilot: IFrame tile](set-iframe-tile.md)
 - [Copilot: Set Grid](set-grid.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

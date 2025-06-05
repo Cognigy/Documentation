@@ -33,7 +33,7 @@ The following general settings are available within this Endpoint:
 - [Session Management](../../ai/deploy/endpoints/session-management.md)
 - [Handover Settings](../../ai/deploy/endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)
-- [AI Copilot](../../ai-copilot/overview.md)
+- [Agent Copilot](../../ai-copilot/overview.md)
 - [File Storage](../../ai/deploy/endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"

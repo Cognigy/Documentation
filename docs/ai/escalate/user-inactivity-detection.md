@@ -31,7 +31,7 @@ handover closures, or custom actions to optimize human agent efficiency.
 
 ## Restrictions
 
-- This feature triggers Flows via inactivity timeouts only when the handover status is `queue` or `active`. User inputs won't trigger Flows after a handover begins, except for [AI Copilot](../../ai-copilot/index.md) Flows.
+- This feature triggers Flows via inactivity timeouts only when the handover status is `queue` or `active`. User inputs won't trigger Flows after a handover begins, except for [Agent Copilot](../../ai-copilot/index.md) Flows.
 
 ## How to Use
 

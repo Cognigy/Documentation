@@ -73,7 +73,7 @@ Top-3 Key Results for:
     "knowledgeSearch": {
       "topK": [
         {
-          "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with AI Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the AI Copilot workspace.",
+          "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with Agent Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the Agent Copilot workspace.",
           "distance": 0.85143244,
           "sourceMetaData": {
             "sourceName": "cognigy-voice-copilot-endpoint.ctxt",
@@ -132,7 +132,7 @@ Top-3 Key Results for:
       "knowledgeSearch": {
         "topK": [
           {
-            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with AI Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the AI Copilot workspace.",
+            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with Agent Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the Agent Copilot workspace.",
             "distance": 0.85143244,
             "sourceMetaData": {
               "sourceName": "cognigy-voice-copilot-endpoint.ctxt",
@@ -180,7 +180,7 @@ Top-3 Key Results for:
       "knowledgeSearch": {
         "topK": [
           {
-            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with AI Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the AI Copilot workspace.",
+            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with Agent Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the Agent Copilot workspace.",
             "distance": 0.85143244,
             "sourceMetaData": {
               "sourceName": "cognigy-voice-copilot-endpoint.ctxt",
@@ -271,7 +271,7 @@ Top-3 Key Results for:
             }
           },
           {
-            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with AI Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the AI Copilot workspace.",
+            "text": "Cognigy Voice Copilot Endpoint Cognigy Voice Copilot Endpoint is a native Endpoint designed for voice-based applications within Cognigy.AI. The Endpoint manages audio stream transcriptions and integrates seamlessly with Agent Copilot Flows. This Endpoint splits the audio into user and agent inputs, ensuring accurate updates to the Agent Copilot workspace.",
             "distance": 0.8550185,
             "sourceMetaData": {
               "sourceName": "cognigy-voice-copilot-endpoint.ctxt",

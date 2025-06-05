@@ -90,30 +90,30 @@ By assisting human agents, AI Agents improve efficiency, speed up resolution tim
 
 Cognigy.AI offers a comprehensive suite of human assistants, each tailored to meet specific needs in your contact center solution:
 
-- [AI Copilot](#ai-copilot)
-- [AI Copilot Whisper](#ai-copilot-whisper)
-- [AI Copilot Bot](#ai-copilot-bot)
+- [Agent Copilot](#agent-copilot)
+- [Agent Copilot Whisper](#agent-copilot-whisper)
+- [Agent Copilot Bot](#agent-copilot-bot)
 
-#### AI Copilot
+#### Agent Copilot
 
-[Cognigy AI Copilot](../../ai-copilot/index.md) is an intelligent assistant that helps human agents work more effectively. 
+[Cognigy Agent Copilot](../../ai-copilot/index.md) is an intelligent assistant that helps human agents work more effectively. 
 It provides real-time suggestions, handles routine tasks, and manages extra workload during busy times.
 With an easy-to-use interface and customizable widgets,
 such as tools for quick knowledge searches or sentiment analysis, it offers human agents fast access to key information.
-By boosting the productivity of each human agent, AI Copilot helps address labor shortages and combines AI and human strengths to deliver better customer service.
+By boosting the productivity of each human agent, Agent Copilot helps address labor shortages and combines AI and human strengths to deliver better customer service.
 
-#### AI Copilot Whisper
+#### Agent Copilot Whisper
 
-[Cognigy AI Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) is a real-time AI assistant that provides direct, in-conversation support to human agents. It listens to the ongoing conversation and offers suggestions, recommendations, and relevant information directly within the chat interface, empowering agents to provide faster and more accurate responses.
+[Cognigy Agent Copilot Whisper](../../live-agent/assistants/ai-copilot-whisper.md) is a real-time AI assistant that provides direct, in-conversation support to human agents. It listens to the ongoing conversation and offers suggestions, recommendations, and relevant information directly within the chat interface, empowering agents to provide faster and more accurate responses.
 
-AI Copilot Whisper is available only in the Cognigy Live Agent interface.
+Agent Copilot Whisper is available only in the Cognigy Live Agent interface.
 
-#### AI Copilot Bot
+#### Agent Copilot Bot
 
-[Cognigy AI Copilot Bot](../../live-agent/assistants/ai-copilot-bot.md) is a dedicated chat-based assistant designed to support human agents.
+[Cognigy Agent Copilot Bot](../../live-agent/assistants/ai-copilot-bot.md) is a dedicated chat-based assistant designed to support human agents.
 It provides a personalized workflow, enabling AI Agents to access additional information and resources as needed.
 
-AI Copilot Bot ia available only in the Cognigy Live Agent interface.
+Agent Copilot Bot ia available only in the Cognigy Live Agent interface.
 
 ## More Information
 

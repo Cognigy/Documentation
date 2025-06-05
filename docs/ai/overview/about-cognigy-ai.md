@@ -50,9 +50,9 @@ This product is free of charge.
 Offers advanced analytics and reporting within Cognigy.AI, enabling data-driven decision-making to optimize conversational AI strategies and improve customer engagement.
 This product is provided together with Cognigy.AI.
 
-### AI Copilot
+### Agent Copilot
 
-The AI Copilot feature acts as an assistant to both customers and service agents, offering suggestions, automating routine tasks, and facilitating smoother interactions. This not only enhances the user experience but also supports agents in delivering high-quality service.
+The Agent Copilot feature acts as an assistant to both customers and service agents, offering suggestions, automating routine tasks, and facilitating smoother interactions. This not only enhances the user experience but also supports agents in delivering high-quality service.
 This product is provided together with Cognigy.AI.
 
 ## Cognigy Installations

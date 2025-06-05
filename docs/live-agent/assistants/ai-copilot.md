@@ -1,9 +1,9 @@
 ---
-title: "AI Copilot"
+title: "Agent Copilot"
 slug: "ai-copilot"
 hidden: false
 ---
-# AI Copilot in Live Agent
+# Agent Copilot in Live Agent
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
@@ -25,9 +25,9 @@ To configure your Endpoint:
 
 The Endpoint setup is completed.
 
-## Test AI Copilot Workspace
+## Test Agent Copilot Workspace
 
-To test AI Copilot, follow these steps:
+To test Agent Copilot, follow these steps:
 
 1. Start a Webchat session.
 2. Complete the handover process to Live Agent.
@@ -46,7 +46,7 @@ This Workspace is accessible from the right side of the conversation chat.
  <img class="image-center" src="../../../../_assets/live-agent/la-agent-assist-workspace.png" width="90%" />
 </figure>
 
-If the testing is successful, the AI Copilot setup is complete.
+If the testing is successful, the Agent Copilot setup is complete.
 
 ## Troubleshooting
 
@@ -57,5 +57,5 @@ If the conversation remains unassigned, the Transcript Tile will not operate pro
 
 ## More Information 
 
-- [AI Copilot Overview](../../ai-copilot/overview.md)
-- [Getting started with AI Copilot](../../ai-copilot/getting-started.md)
+- [Agent Copilot Overview](../../ai-copilot/overview.md)
+- [Getting started with Agent Copilot](../../ai-copilot/getting-started.md)

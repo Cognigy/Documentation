@@ -18,7 +18,7 @@ This Node performs sentiment analysis on the most recent input and provides insi
 (positive, negative, or neutral) of the last user inputs.
 It continuously evaluates the sentiment of customer interactions,
 such as chat conversations or phone calls, in real time.
-This real-time analysis offers immediate feedback to agents regarding the emotional tone of the customer within the AI Copilot workspace.
+This real-time analysis offers immediate feedback to agents regarding the emotional tone of the customer within the Agent Copilot workspace.
 For instance, if the sentiment becomes negative during a conversation,
 the system can promptly alert the human agent to take appropriate action.
 
@@ -28,7 +28,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../.
 
 | Parameter                | Type          | Description                                                                                                                                    |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID                  | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                       |
+| Tile ID                  | CognigyScript | The ID that you created in the Agent Copilot configuration.                                                                                       |
 | Sentiment Analysis Input | Select        | The number of user inputs that should be analyzed by a model. You can choose whether you want to analyze the last input or the last 10 inputs. |
 
 ## Use Case
@@ -44,5 +44,5 @@ The Copilot: Sentiment Tile Node allows you to analyze a larger part of the conv
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Next Action Tile](next-action-tile.md)
 - [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

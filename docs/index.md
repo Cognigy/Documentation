@@ -89,7 +89,7 @@ Cognigy.AI provides a seamless and intuitive user experience that can be deploye
     [:octicons-arrow-right-24: Handover Concept](ai/escalate/handovers.md)<br>
     [:octicons-arrow-right-24: Handover Reference](ai/escalate/handover-reference/overview.md)<br>
     [:octicons-arrow-right-24: Cognigy Live Agent](live-agent/index.md)<br>
-    [:octicons-arrow-right-24: Cognigy AI Copilot](ai/escalate/ai-copilot.md)
+    [:octicons-arrow-right-24: Cognigy Agent Copilot](ai/escalate/ai-copilot.md)
 
 -   :gear:{ .lg .middle } __Administer__
 

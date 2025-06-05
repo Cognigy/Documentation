@@ -23,7 +23,7 @@ or indicate that it is not applicable (N/A) to a particular component.
 | Demo Webchat                      | +    | +                       | +       | +                 | +    | +     | +     | +     | -        | 1.5                                          |
 | Interaction Panel                 | +    | +                       | +       | +                 | +    | +     | +     | +     | -        | 1.2                                          |
 | Live Agent                        | +    | +                       | +       | +                 | +    | +     | +     | +     | -        | 1.5                                          |
-| Live Agent (LA) AI Copilot        | +    | +                       | +       | +                 | +    | +     | +     | +     | -        | 1.5                                          |
+| Live Agent (LA) Agent Copilot        | +    | +                       | +       | +                 | +    | +     | +     | +     | -        | 1.5                                          |
 | Webchat Adaptive Card plugin      | N/A  | N/A                     | N/A     | N/A               | N/A  | N/A   | N/A   | N/A   | -        | 1.2                                          |
 | xApp: Show Adaptive Card Node     | N/A  | N/A                     | N/A     | N/A               | N/A  | N/A   | N/A   | N/A   | -        | 1.6                                          |
 | **Endpoints**                     |      |                         |         |                   |      |       |       |       | -        |                                              |

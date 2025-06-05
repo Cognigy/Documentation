@@ -4,17 +4,17 @@ slug: "ai-copilot-new-dns-names-migration"
 hidden: false
 ---
 
-# Migration Guide: DNS Name Change for AI Copilot Services
+# Migration Guide: DNS Name Change for Agent Copilot Services
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.68-blue.svg)](../../../release-notes/4.68.md)
 
 As part of our ongoing efforts to rebrand and improve our product offerings, the **Agent Assist** services were renamed to **AI Copilot**. This guide provides step-by-step instructions for customers to update the DNS names for the `agent-assist-backend` and `agent-assist-frontend` services.
 
 !!! warning "DNS Name Change Required"
-    The rebranding from **Agent Assist** to **AI Copilot** requires a DNS name change for both the backend and frontend services. This change must be completed before executing the `helm upgrade` command for the next release. The objective is to transfer the existing DNS names to the `legacyHost` field and introduce new DNS names in the `host` field in the `values.yaml` file.
+    The rebranding from **Agent Assist** to **Agent Copilot** requires a DNS name change for both the backend and frontend services. This change must be completed before executing the `helm upgrade` command for the next release. The objective is to transfer the existing DNS names to the `legacyHost` field and introduce new DNS names in the `host` field in the `values.yaml` file.
 
 !!! note "Minimal Service Interruption"
-    This DNS name change is meant to minimize service interruptions. AI Copilot sessions will remain active for 7 days, giving you enough time to apply the change and transition smoothly to the new DNS names.
+    This DNS name change is meant to minimize service interruptions. Agent Copilot sessions will remain active for 7 days, giving you enough time to apply the change and transition smoothly to the new DNS names.
 
 ## Prerequisites
 
@@ -69,6 +69,6 @@ After the upgrade, monitor the services to ensure they are accessible via both t
 
 ### Transition to New DNS Names
 
-Once you have confirmed that the new DNS names are fully operational and all AI Copilot sessions have migrated (usually after 7 days), finalize the transition by removing the legacy DNS names from your DNS provider's settings.
+Once you have confirmed that the new DNS names are fully operational and all Agent Copilot sessions have migrated (usually after 7 days), finalize the transition by removing the legacy DNS names from your DNS provider's settings.
 
-The migration is now complete. By following these steps, you have successfully transitioned your services to the new DNS names as part of the rebranding to AI Copilot, with minimal impact on your operations.
+The migration is now complete. By following these steps, you have successfully transitioned your services to the new DNS names as part of the rebranding to Agent Copilot, with minimal impact on your operations.

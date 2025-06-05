@@ -14,9 +14,9 @@ Cognigy.AI terms listed in alphabetical order. All terms in the glossary are giv
 _**AI Agents**_
 : Cognigy.AI bots that automatically handle calls and chats from customers and employees. AI Agents use natural language processing (NLP) to understand customer intents and search inquiries.
 
-_**AI Copilot**_
-: One of Cognigy's products that offers a variety of features that empower human agents to provide faster and more accurate customer support. The AI Copilot workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's desktop, it enhances the overall efficiency of your contact center.
-For more information, read the [AI Copilot](../ai-copilot/overview.md) documentation.
+_**Agent Copilot**_
+: One of Cognigy's products that offers a variety of features that empower human agents to provide faster and more accurate customer support. The Agent Copilot workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's desktop, it enhances the overall efficiency of your contact center.
+For more information, read the [Agent Copilot](../ai-copilot/overview.md) documentation.
 
 _**Agent Handover**_
 : A Cognigy feature that allows AI Agents to transfer conversations to human agents when necessary, combining automation with human support for improved customer service. Agent Handover can be integrated in a Flow by using the Handover to Agent Node, with settings that allow connecting to various contact centers, such as Cognigy Live Agent, Genesys, 8x8, Salesforce, and many others.

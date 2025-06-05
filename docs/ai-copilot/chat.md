@@ -1,10 +1,10 @@
 ---
-title: "AI Copilot for Chat"
+title: "Agent Copilot for Chat"
 slug: "chat"
 hidden: false
 ---
 
-# AI Copilot for Chat 
+# Agent Copilot for Chat 
 
 ## Cognigy in Front
 
@@ -22,10 +22,10 @@ This approach lets you connect to the right session and send widget updates.
 
 ## More Information
 
-- [AI Copilot](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
+- [Agent Copilot](overview.md)
+- [Getting started with Agent Copilot](getting-started.md)
+- [Agent Copilot Configuration](configuration.md)
+- [Agent Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md)
+- [Agent Copilot Embedding](embedding.md)
+- [Agent Copilot for Voice](voice/voice-overview.md)
 - [Integration with Contact Centers](contact-center-integration.md)

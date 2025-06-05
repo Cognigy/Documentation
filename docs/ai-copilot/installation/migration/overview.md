@@ -8,4 +8,4 @@ ignore_macros: true
 # Upgrade and Migration Guides
 
 - [Agent Assist to Cognigy.AI Helm Chart](agent-assist-to-cognigy-ai-helm-chart-migration.md)
-- [DNS Name Change for AI Copilot Services](ai-copilot-new-dns-names-migration.md)
+- [DNS Name Change for Agent Copilot Services](ai-copilot-new-dns-names-migration.md)

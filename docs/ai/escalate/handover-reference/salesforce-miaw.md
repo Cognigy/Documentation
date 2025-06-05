@@ -134,17 +134,17 @@ On the Salesforce side, go to the Service Console. In the Service Console, open 
 
 ## Additional Configuration
 
-### AI Copilot Workspace
+### Agent Copilot Workspace
 
-Within the Salesforce MIAW integration, you can use the [AI Copilot workspace](../../../ai-copilot/overview.md) as an assistant to your human agents.
+Within the Salesforce MIAW integration, you can use the [Agent Copilot workspace](../../../ai-copilot/overview.md) as an assistant to your human agents.
 
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    Agent Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
 
 ??? info "Embedded"
-    To use the embedded version of the AI Copilot workspace, you need to update the settings on the Salesforce side and configure the AI Copilot UI components.
+    To use the embedded version of the Agent Copilot workspace, you need to update the settings on the Salesforce side and configure the Agent Copilot UI components.
     ??? info "1. Update Messaging Settings"
         1. In the [Salesforce](https://login.salesforce.com/) interface, go to **Setup > Messaging Settings** and select the messaging channel that you created previously.
         2. In the messaging channel, go to **Custom Parameters** and click **New**.
@@ -191,16 +191,16 @@ By default, two versions of the application are provided:
         9. Click **Save a New Version**, then **Activate**.
 
     ??? info "4. Configure UI Components"
-        To configure the AI Copilot UI components, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub. Once the components are configured, you can test the embedded AI Copilot workspace using [Demo Webchat](../../../webchat/demo.md).
+        To configure the Agent Copilot UI components, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub. Once the components are configured, you can test the embedded Agent Copilot workspace using [Demo Webchat](../../../webchat/demo.md).
 
-        If you used an embedded AI Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the AI Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
+        If you used an embedded Agent Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the Agent Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
 
 ## Troubleshooting
 
 | Possible Error                                                                                  | How to Resolve                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded AI Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                             |
-| You are trying to pull data from a Live Chat transcript while you are on a Messaging session.   | This error occurs when you migrate from the [deprecated Salesforce integration](salesforce.md) to Salesforce MIAW without updating the AI Copilot UI components. To update the components, refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub. |
+| Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded Agent Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                             |
+| You are trying to pull data from a Live Chat transcript while you are on a Messaging session.   | This error occurs when you migrate from the [deprecated Salesforce integration](salesforce.md) to Salesforce MIAW without updating the Agent Copilot UI components. To update the components, refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub. |
 | Login to Omni-Channel failed.                                                                   | This error occurs when a resource limit is exceeded. In the Salesforce Console, delete old messaging sessions, chat transcripts, and chat sessions. This action frees up space.                                                                                                                                                                          |
 
 ## More Information

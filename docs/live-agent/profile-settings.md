@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.83.1-blue.svg)](../release-notes/4.83.md)
 
-_Profile Settings_ are a set of customizable options and configurations available to individual users within the Live Agent system. These settings include the customization of profile appearance, notification preferences, activation of AI Copilot, configuration of hotkeys for sending messages, and access to API functionality.
+_Profile Settings_ are a set of customizable options and configurations available to individual users within the Live Agent system. These settings include the customization of profile appearance, notification preferences, activation of Agent Copilot, configuration of hotkeys for sending messages, and access to API functionality.
 
 To open the **Profile Settings** in Live Agent, do the following:
 
@@ -19,7 +19,7 @@ There are the following settings available within the user profile:
 
 - [User Profile Appearance](#user-profile-appearance)
 - [Notifications](#notifications)
-- [AI Copilot](#ai-copilot)
+- [Agent Copilot](#agent-copilot)
 - [Hotkey to send messages](#hotkey-to-send-messages)
 
 Additionally, you can copy the [API Token](#api-access-token) to access the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi).
@@ -46,17 +46,17 @@ If the administrator has not yet changed the push and email notification setting
 
 To configure notifications, refer to [Notifications](notifications.md#configure-notifications-at-the-user-profile-level).
 
-## AI Copilot
+## Agent Copilot
 
-Cognigy AI Copilot offers a variety of advanced features that empower human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
+Cognigy Agent Copilot offers a variety of advanced features that empower human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
 
-In the **Profile Settings**, a user can activate AI Copilot if [it has been installed previously](../ai-copilot/getting-started.md).
+In the **Profile Settings**, a user can activate Agent Copilot if [it has been installed previously](../ai-copilot/getting-started.md).
 
-If an administrator has already preset the **AI Copilot Workspace** setting in the **Account Settings**,
+If an administrator has already preset the **Copilot Workspace** setting in the **Account Settings**,
 this setting will take precedence over the user profile settings.
-In this case, a user is not able to change the **AI Copilot Workspace** settings.
+In this case, a user is not able to change the **Copilot Workspace** settings.
 
-For more information, read the [AI Copilot](assistants/ai-copilot.md) and [AI Copilot Whisper](assistants/ai-copilot-whisper.md) documentation.
+For more information, read the [Agent Copilot](assistants/ai-copilot.md) and [Agent Copilot Whisper](assistants/ai-copilot-whisper.md) documentation.
 
 ## Hotkey to send messages
 
@@ -76,4 +76,4 @@ The displayed Access Token serves as the authentication and authorization key fo
 
 - [Account Settings](settings/account-settings.md)
 - [User Roles](roles.md)
-- [AI Copilot](../ai-copilot/overview.md)
+- [Agent Copilot](../ai-copilot/overview.md)

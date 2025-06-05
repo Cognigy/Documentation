@@ -19,7 +19,7 @@ The LLM Session Token Counter retrieves the token usage information via LLM prov
 
 ## Prerequisite
 
-- You have added a Node that uses an LLM to your Flow, for example, an [AI Agent Node](../../build/node-reference/ai/ai-agent.md), [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md), [Search Extract Output Node](../../build/node-reference/other-nodes/knowledge-search.md), or [AI Copilot Nodes](../../build/node-reference/ai-copilot/overview.md).
+- You have added a Node that uses an LLM to your Flow, for example, an [AI Agent Node](../../build/node-reference/ai/ai-agent.md), [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md), [Search Extract Output Node](../../build/node-reference/other-nodes/knowledge-search.md), or [Agent Copilot Nodes](../../build/node-reference/ai-copilot/overview.md).
 
 ## Limitations
 

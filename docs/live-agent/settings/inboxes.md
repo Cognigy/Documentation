@@ -121,14 +121,14 @@ To remove the Inbox appearance, do the following:
 4. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
 5. Click **Update**.
 
-## Add AI Copilot Bots
+## Add Agent Copilot Bots
 
-Within an Inbox, you can add one or multiple AI Copilot Bots that will assist your human agents.
+Within an Inbox, you can add one or multiple Agent Copilot Bots that will assist your human agents.
 To create such a bot, you need to have a separate Flow and Endpoint on the Cognigy.AI side.
-For more details, refer to [AI Copilot Bot](../assistants/ai-copilot-bot.md). 
+For more details, refer to [Agent Copilot Bot](../assistants/ai-copilot-bot.md). 
 
 ## More Information
 
 - [Agents](agents.md)
-- [AI Copilot Bot](../assistants/ai-copilot-bot.md)
+- [Agent Copilot Bot](../assistants/ai-copilot-bot.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

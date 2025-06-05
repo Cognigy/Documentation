@@ -7,7 +7,7 @@
     The Postback feature can be configured in the following ways:
 
     - [Using SDK.postback](#using-sdkpostback)
-    - [Using the Copilot: Send Data](#using-the-copilot-send-data)
+    - [Using the Copilot: Send Data](#using-the-copilot-send-data) 
 
     ### Using SDK.postback
 
@@ -24,7 +24,7 @@
             <button type="button" onclick="SDK.postback({ "key": "value" });">Yes</button>
             ```
 
-    2. Click the button in the widget in the AI Copilot workspace. Triggering this action will send an injected message formatted as follows:
+    2. Click the button in the widget in the Agent Copilot workspace. Triggering this action will send an injected message formatted as follows:
         ```json
         {
         "data": {
@@ -38,7 +38,7 @@
         }
         ```
 
-    To allow human agents to view this object, add `{{ input.data._cognigy._agentAssist }}` to the **Text** field in the Say Node of your Copilot Flow. 
+    To allow human agents to view this object, add `{{ input.data._cognigy._agentAssist }}` to the **Text** field in the Say Node of your Agent Copilot Flow. 
     This Node should be placed below the Node with the `SDK.postback` function. 
     The output will be available in the chat message and visible only to human agents.
 

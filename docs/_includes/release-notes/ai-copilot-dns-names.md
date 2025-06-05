@@ -1,2 +1,2 @@
 !!! warning "DNS Name Change Required"
-    With the 4.71 release, DNS names for AI Copilot will change. If you have an on-premises installation, refer to the [migration guide](https://docs.cognigy.com/ai-copilot/installation/migration/ai-copilot-new-dns-names-migration/).
+    With the 4.71 release, DNS names for Agent Copilot will change. If you have an on-premises installation, refer to the [migration guide](https://docs.cognigy.com/ai-copilot/installation/migration/ai-copilot-new-dns-names-migration/).

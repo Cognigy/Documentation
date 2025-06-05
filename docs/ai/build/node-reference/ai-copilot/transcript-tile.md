@@ -14,7 +14,7 @@ hidden: false
 
 ## Description
 
-This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot workspace.
+This Node captures the most recent customer response and displays it on a designated Widget within the Agent Copilot workspace.
 
 Additionally, the Copilot: Transcript Tile offers the option to enable Sentiment Analysis,
 which allows for assessing the user's speech tone.
@@ -27,7 +27,7 @@ and select the appropriate model in the [supported model list](../../../empower/
 
 | Parameter        | Type          | Description                                                                                                                                                                                                                   |
 |------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID          | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                                                                                                      |
+| Tile ID          | CognigyScript | The ID that you created in the Agent Copilot configuration.                                                                                                                                                                      |
 | Enable sentiment | Toggle        | This option allows you to decide if sentiment analysis should be applied to the customer's voice input. Enabling this option means that Cognigy.AI assesses the emotional tone (positive, negative, or neutral) of the input. |
 
 ## Use Case
@@ -47,5 +47,5 @@ thereby facilitating more effective and efficient communication and decision-mak
 - [Copilot: Next Action Tile](next-action-tile.md)
 - [Copilot: Sentiment Tile](sentiment-tile.md)
 - [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../../ai-copilot/overview.md)
+- [Agent Copilot Nodes](overview.md)
+- [Agent Copilot](../../../../ai-copilot/overview.md)

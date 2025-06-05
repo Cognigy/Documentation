@@ -25,7 +25,7 @@ This improvement helps AI Agents to handle more complex tasks and provide better
 
 ### Power up human agents
 
-Enable AI Copilot to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
+Enable Agent Copilot to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
 
 ## Standalone
 

@@ -14,7 +14,7 @@ Only users having the `Administrator` role have access to the **Account Settings
 There are the following settings available within the account:
 
 - [General Settings](#general-settings)
-- [AI Copilot](#ai-copilot)
+- [Agent Copilot](#agent-copilot)
 - [Notifications](#notifications)
 
 Additionally, you can copy an [Account ID](#account-id) and check a [current version](#version) of your Live Agent installation.
@@ -118,11 +118,11 @@ When this setting is activated, the system can automatically assign incoming con
 even if the agent is busy and engaged in another conversation.
 By default, only online agents are considered.
 
-## AI Copilot
+## Agent Copilot
 
-Cognigy AI Copilot offers the most comprehensive functions compared to the other assistants, enabling human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
+Cognigy Agent Copilot offers the most comprehensive functions compared to the other assistants, enabling human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
  
-In the **Account Settings**, administrators can activate AI Copilot if [it has been installed previously](../../ai-copilot/getting-started.md).
+In the **Account Settings**, administrators can activate Agent Copilot if [it has been installed previously](../../ai-copilot/getting-started.md).
 
 If an administrator has already preset the **AI Copilot Workspace** setting in the **Account Settings**,
 this setting will take precedence over the user profile settings.
@@ -190,5 +190,5 @@ The indicated version is the current version of the Cognigy Live Agent interface
 
 - [User Roles](../roles.md)
 - [Profile Settings](../profile-settings.md)
-- [AI Copilot](../assistants/ai-copilot.md)
+- [Agent Copilot](../assistants/ai-copilot.md)
 - [Notifications](../notifications.md)

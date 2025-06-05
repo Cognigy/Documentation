@@ -101,8 +101,8 @@ This page allows you to find relevant content by searching through the page tags
     - Transcribe
     - Event
     - Events
-- Agent Copilot:
-    - AI Copilot
+- Copilot:
+    - Agent Copilot
     - Grid
     - Widget
 - Live Agent:
