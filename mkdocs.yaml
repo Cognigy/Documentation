@@ -339,6 +339,7 @@ nav:
         - ai/deploy/endpoint-reference/webhook.md
         - ai/deploy/endpoint-reference/whatsapp.md
         - ai/deploy/endpoint-reference/workplace-by-fb.md
+        - ai/deploy/endpoint-reference/zoom.md
       - ai/deploy/snapshots.md
 
     - 🤖 Train:
