@@ -38,7 +38,7 @@ Next, choose whether you want to mask or exclude sensitive data:
     
     1. In the **Blind Mode On** Node editor, activate the **Mask Analytics** option.
     2. Go to the Transcript Explorer to explore the conversation transcript:
-        - For inputs – the message right before the **Blind Mode On** Node will be masked (replaced with `****`). The message right after the **Blind Mode Off** Node will remain unmasked.
+        - For inputs – the message right before the **Blind Mode On** Node will be masked (replaced with `****`). The message right before the **Blind Mode Off** Node will remain unmasked.
         - For outputs – the messages between the **Blind Mode On** and **Blind Mode Off** Nodes are masked.
 
 ??? info "Mask Data in Logs"
