@@ -12,10 +12,7 @@ tags:
 
 # Collaborative Editing
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.12.0-purple.svg)](../../../release-notes/2025.12.md)
-
-!!! note
-    This feature is available only in the [Cognigy.AI trial environment](https://trial.cognigy.ai/).
+[![Version badge](https://img.shields.io/badge/Added in-v2025.12.0-blue.svg)](../../../release-notes/2025.12.md)
 
 The _Collaborative Editing_ feature allows multiple users to edit a Flow simultaneously. With Collaborative Editing, you can see the avatars of other users editing the Flow and Nodes. Their changes appear in the Flow and Node editors in real time.
 

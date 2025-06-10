@@ -5,9 +5,9 @@ description: "Cognigy encourages conversation designers to build solutions with 
 hidden: false
 ---
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../release-notes/4.100.md)
-
 # Webchat v3: Accessibility
+
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.12-blue.svg)](../../release-notes/2025.12.md)
 
 Webchat v3 is designed to adhere to accessibility standards, specifically [WCAG 2.2 Level AA (Web Content Accessibility Guidelines)](https://www.w3.org/TR/WCAG22/). These guidelines offer detailed recommendations for making web content more accessible to people with various disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological impairments.
 
@@ -47,6 +47,7 @@ that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/
 and that the text has a hierarchical structure.
 The following parameters need to be added to the JSON of the adaptive card:
 
+- Add the `speak` parameter to ensure that screen readers announce a short summary adaptive card when it's received or focused on. Without this parameter, screen readers announce each element, which can be hard to follow.
 - Each field contains the `label` parameter with meaningful text to title the field.
 - Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an adaptive card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
 
@@ -59,6 +60,7 @@ The following parameters need to be added to the JSON of the adaptive card:
       ```json
       {
         "type": "AdaptiveCard",
+        "speak": "Form for purchasing the product",
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "version": "1.6",
         "body": [
