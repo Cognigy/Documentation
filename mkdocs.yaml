@@ -28,6 +28,7 @@ nav:
       - Flows:
         - ai/build/flows/overview.md
         - ai/build/flows/editor.md
+        - ai/build/flows/collab-editing.md
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md
@@ -689,6 +690,8 @@ nav:
     - 👋 Overview:
       - insights/overview.md
       - insights/glossary.md
+    - 🌍Dashboards:
+      - insights/dashboards/business.md
     - 📊Reports:
       - insights/reports/overview.md
       - insights/reports/engagement.md

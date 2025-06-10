@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="14" cy="14" r="14" fill="#4B4BFF"/>
+  
+  <!-- Text "U3" -->
+  <text
+    x="14"
+    y="16"
+    font-family="Muli, sans-serif"
+    font-size="14px"
+    font-weight="400"
+    font-feature-settings="normal"
+    font-kerning="auto"
+    font-optical-sizing="auto"
+    font-palette="normal"
+    font-size-adjust="none"
+    font-stretch="100%"
+    font-style="normal"
+    font-synthesis-small-caps="auto"
+    font-synthesis-style="auto"
+    font-synthesis-weight="auto"
+    font-variant-alternates="normal"
+    font-variant-caps="normal"
+    font-variant-east-asian="normal"
+    font-variant-emoji="normal"
+    font-variant-ligatures="normal"
+    font-variant-numeric="normal"
+    font-variant-position="normal"
+    font-variation-settings="normal"
+    fill="white"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >U3</text>
+</svg> 
