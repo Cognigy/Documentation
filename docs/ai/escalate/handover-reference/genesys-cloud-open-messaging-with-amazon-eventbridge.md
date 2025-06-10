@@ -17,15 +17,19 @@ tags:
 
 # Genesys Cloud Open Messaging: Handover End Detection with Amazon EventBridge
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.12-blue.svg)](../../../release-notes/index.md)
 
 The Amazon EventBridge integration offers a more reliable and stable solution for event handling compared to WebSocket. 
 Unlike WebSocket, which can sometimes result in lost events due to connection instability, EventBridge ensures smooth and consistent event delivery, improving the reliability of the handover process between Cognigy.AI and Genesys Cloud Open Messaging.
 
 In this guide, you will configure Amazon EventBridge connection for the following Genesys analytics events:
 
-- [AfterCallWorkEvent](https://developer.genesys.cloud/analyticsdatamanagement/analytics/detail/analytics-detail-events#aftercallworkevent). The event is triggered when a user finishes after-call work by applying a wrap-up.
-- [UserEndEvent](https://developer.genesys.cloud/analyticsdatamanagement/analytics/detail/analytics-detail-events#userendevent). The event is triggered when a user or human agent session ends, indicating that the interaction has been completed. Cognigy.AI uses this event to detect when a session ends, which helps avoid prematurely wrapping up the chat in the middle of a transfer or after receiving an `AfterCallWorkEvent` event.
+=== "Cognigy.AI 2025.12 and later"
+    - [CustomerEndEvent](https://developer.genesys.cloud/analyticsdatamanagement/analytics/detail/analytics-detail-events#customerendevent). The event is triggered when the customer session ends, for example, when customers leave the chat. This event allows Cognigy.AI to detect when the customer finishes their interaction in Genesys Cloud Open Messaging. This approach ensures that Cognigy.AI doesn't restart the conversation too early, especially if the human agent is still completing after-call tasks.
+
+=== "Cognigy.AI 2025.11 and earlier"
+    - [AfterCallWorkEvent](https://developer.genesys.cloud/analyticsdatamanagement/analytics/detail/analytics-detail-events#aftercallworkevent). The event is triggered when a user finishes after-call work by applying a wrap-up.
+    - [UserEndEvent](https://developer.genesys.cloud/analyticsdatamanagement/analytics/detail/analytics-detail-events#userendevent). The event is triggered when a user or human agent session ends, indicating that the interaction has been completed. Cognigy.AI uses this event to detect when a session ends, which helps avoid prematurely wrapping up the chat in the middle of a transfer or after receiving an `AfterCallWorkEvent` event.
 
 The configuration depends on the Cognigy installation you have:
 
@@ -50,13 +54,19 @@ The configuration depends on the Cognigy installation you have:
 ??? info "2. Configure Amazon EventBridge in Genesys"
     1. In the Genesys interface, navigate to **Admin > Integrations**, select **Amazon EventBridge Source**, and click **Install**.
     2. On the **Configuration** tab, enter the following information:
+
         - **AWS Account ID** – enter the 12-digit AWS Account ID provided by Cognigy technical support.
         - **AWS Account Region** – enter the AWS region provided by Cognigy technical support.
         - **Event Source Suffix** – enter the `organisationId` of your Cognigy.AI organization.
         - **Topic Filtering** – add the following filters:
+
+        === "Cognigy.AI 2025.12 and later"
+            - `v2.detail.events.conversation.{id}.customer.end`
+
+        === "Cognigy.AI 2025.11 and earlier"
             - `v2.detail.events.conversation.{id}.user.end`
-            - `v2.detail.events.conversation.{id}.acw`<br>
-        Save changes and make sure that your integration is active.
+            - `v2.detail.events.conversation.{id}.acw`
+
     3. Click **Save**, go to the **Details** tab, and activate the integration.
 
 ??? info "3. Confirm the Integration Setup"
@@ -72,9 +82,15 @@ The configuration depends on the Cognigy installation you have:
         - **AWS Account Region** – enter the [AWS region](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas.html) where the event source will be made available for the event bus. This parameter defines the geographical location of the AWS resources that will handle the event traffic.
         - **Event Source Suffix** – enter the `organisationId` of your Cognigy.AI organization.
         - **Topic Filtering** – add the following filters:
+
+        === "Cognigy.AI 2025.12 and later"
+            - `v2.detail.events.conversation.{id}.customer.end`
+
+        === "Cognigy.AI 2025.11 and earlier"
             - `v2.detail.events.conversation.{id}.user.end`
             - `v2.detail.events.conversation.{id}.acw`
-    3. Save changes and make sure that your integration is active.
+
+    3. Click **Save**, go to the **Details** tab, and activate the integration.
 
 ??? info "2. Set up an EventBridge Flow"
     1. Go to [Amazon EventBridge](https://console.aws.amazon.com/events).
