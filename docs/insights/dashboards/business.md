@@ -22,7 +22,7 @@ It includes location-based activity, active sessions by AI or human agents, and 
 The summary of key metrics is represented in the following charts:
 
 - [Interactive Map](#interactive-map)
-- [Tables](#ta+)
+- [Tables](#tables)
 - [Bar Charts](#bar-charts)
 - [Indicators](#indicators)
 
@@ -36,7 +36,7 @@ All charts display data based on the filter settings you've selected. The charts
 
 ## Prerequisites
 
-Before using this dashboard, add the following feature flags to the `values.yaml` file:
+If you have an on-premises installation, add the following feature flags to the `values.yaml` file:
 
 - `FEATURE_INSIGHTS_USE_BUSINESS_DASHBOARD: "true"`
 - `FEATURE_INSIGHTS_BUSINESS_DASHBOARD_DIRECT_POSTGRESQL: "true"`. Add this feature flag if you've migrated to the new Insights framework.
