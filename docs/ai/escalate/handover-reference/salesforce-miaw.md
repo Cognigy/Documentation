@@ -126,7 +126,14 @@ enabling end users to connect with human agents working in a contact center that
     In the **Salesforce Settings** section of the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:
 
     - **Send Transcript as first message** — the setting allows Salesforce to receive the conversation transcript as the first message. If the transcript exceeds 3000 characters, it is split into multiple messages. This setting is turned off by default.
-    - **Conversation Routing Attributes** — the setting supports key-value pairs which allow you to specify information that can be used in the Omni-Channel flow in Salesforce.
+    - **Conversation Routing Attributes** — the setting supports key-value pairs, where the keys are variables you manually specify in the Omni-Channel flow in Salesforce. To specify variables, follow the [Map Pre-Chat Values in Omni-Channel Flow](https://help.salesforce.com/s/articleView?id=service.miaw_map_messaging_2.htm) guide in the Salesforce documentation. Then, enter the key-value pairs in JSON format. For example:
+       ```json
+       {
+         "customerName": "John Doe",
+         "issueType": "Billing"
+       }
+       ```
+       where `customerName` and `issueType` are variables you specified on the Salesforce side, and `John Doe` and `Billing` are the values you want to pass to the flow in Salesforce.
     - **Identity Token for Authenticated Users** — the setting allows you to specify an access token generated via the [Salesforce API](https://developer.salesforce.com/docs/service/messaging-api/references/miaw-api-reference?meta=generateAccessTokenForAuthenticatedUser). This token enables users who have already authenticated within your system to interact securely with Salesforce MIAW. Before using this token, [set up user verification](https://help.salesforce.com/s/articleView?id=sf.user_verification_setup.htm) on the SalesForce side. By default, the setting is turned off, meaning that unauthenticated users can interact with Salesforce MIAW. 
 
 Test your Flow to ensure it works as expected. You can use Demo Webchat to send messages to the Salesforce contact center.  
