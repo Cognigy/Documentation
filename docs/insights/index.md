@@ -76,6 +76,6 @@ Insights help businesses better understand their users, optimize chat and voice 
 
     [:octicons-arrow-right-24: Pre-Aggregation](data-management/pre-aggregation.md)<br>
     [:octicons-arrow-right-24: Time Zone](data-management/time-zone.md)<br>
-    [:octicons-arrow-right-24: Data Expiration](data-management/ttl.md)
+    [:octicons-arrow-right-24: Data Expiration](data-management/data-expiration.md)
 
 </div>

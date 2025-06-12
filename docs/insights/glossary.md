@@ -28,7 +28,7 @@ _**Conversation**_
 ## D
 
 _**Data Expiration**_
-: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](data-management/ttl.md) documentation.
+: Data Expiration (TTL, time-to-live) displays the time span until the expiration of the Insights data. For more information, read the [Data Expiration](data-management/data-expiration.md) documentation.
 
 _**Download Report**_
 : Each widget on the Insights reports provides a **Download Report as .csv file** option in a dropdown menu. The downloaded report file contains the complete widget dataset (depending on the filter settings) for storage or further analysis of your data. For more information, read the [Download Report](download-reports.md) documentation.

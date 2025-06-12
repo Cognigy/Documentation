@@ -87,4 +87,4 @@ Conversation data in Cognigy.AI expires according to the following data expirati
 ## More Information
 
 - [Quotas and Limits](../administer/limitations.md)
-- [Data Expiration in Insights](../../insights/data-management/ttl.md)
+- [Data Expiration in Insights](../../insights/data-management/data-expiration.md)

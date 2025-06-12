@@ -101,4 +101,4 @@ The left-side menu also allows you to switch back to Cognigy.AI by clicking **Co
 
 - [Global Filters](global-filters.md)
 - [Pre-Aggregation](data-management/pre-aggregation.md)
-- [Data Expiration](data-management/ttl.md)
+- [Data Expiration](data-management/data-expiration.md)

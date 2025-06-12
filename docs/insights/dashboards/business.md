@@ -132,4 +132,4 @@ Displays the total revenue earned for completed and partially completed goals in
 
 ## More Information
 
-- [Time Zone with Pre-aggregation](time-zone-with-pre-aggregation.md)
+- [Time Zone with Pre-aggregation](../data-management/time-zone-with-pre-aggregation.md)

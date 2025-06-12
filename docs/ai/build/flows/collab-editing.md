@@ -65,6 +65,6 @@ The Node editor shows the following:
 
 ## More Information
 
-- [Flows](../flows/overview.md)
-- [Flow Editor](../flows/flow-editor.md)
+- [Flows](overview.md)
+- [Flow Editor](editor.md)
 - [Nodes](../nodes/overview.md)

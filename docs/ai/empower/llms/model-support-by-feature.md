@@ -35,6 +35,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
       <th>Flow Generation</th>
       <th>Adaptive Card Generation</th>
       <th>Lexicon Generation</th>
+      <th>AI Agent Node</th>
       <th>AI Enhanced Outputs</th>
       <th>GPT Conversation Node</th>
       <th>LLM Prompt Node</th>
@@ -42,7 +43,6 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
       <th>Knowledge Search</th>
       <th>Sentiment Analysis</th>
       <th>NLU Embedding Model</th>
-      <th>AI Agent Node</th>
     </tr>
   </thead>
   <tr>

@@ -226,7 +226,7 @@ Configure the expiration of the following data:
 | Insights Session Data Expiration | Determines how long (in minutes) Insights Session record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Steps Data Expiration            | Determines how long (in minutes) a [Step](../../analyze/collecting-data.md#steps) record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-For more information about data expiration in Insights, read [Data Expiration](../../../insights/data-management/ttl.md) in the Insights documentation.
+For more information about data expiration in Insights, read [Data Expiration](../../../insights/data-management/data-expiration.md) in the Insights documentation.
 
 You can set a maximum expiration time for all sensitive data across the server. This configuration is detailed in the infrastructure documentation, which is provided during installation.
 
