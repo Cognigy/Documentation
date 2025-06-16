@@ -14,7 +14,7 @@ The collected data is utilized by Insights to display reports and explorers, and
 Analytics data is created from conversations with AI Agents in Cognigy.AI and is available from five distinct collections:
 
  1. Inputs
- 2. Chat History
+ 2. Conversations
  3. Steps
  4. Executed Steps
  5. Sessions
@@ -30,9 +30,9 @@ as it can be adjusted by the flow logic
 using the [Overwrite Analytics](../build/node-reference/analytics/overwrite-analytics.md) or [Code](../build/node-reference/basic/code/overview.md) Nodes.
 This process is explained below.
 
-### Chat History
+### Conversations
 
-This collection contains one record per user input, one record per AI Agent output and one record per human agent input. Chat History records are written immediately whenever the message from the respective source arrives. This record is commonly used for generating conversation transcripts.
+This collection contains one record per user input, one record per AI Agent output and one record per human agent input. Conversation records are written immediately whenever the message from the respective source arrives. This record is commonly used for generating conversation transcripts.
 
 ### Steps
 
