@@ -1,7 +1,13 @@
 ---
 title: "Actions" 
 slug: "actions" 
-hidden: false 
+hidden: false
+tags:
+  - actions
+  - api
+  - code node
+  - cognigy.ai actions
+  - cognigy api functions
 ---
 
 # Actions
