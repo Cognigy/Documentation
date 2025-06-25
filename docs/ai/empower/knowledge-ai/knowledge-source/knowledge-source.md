@@ -70,7 +70,7 @@ You can add any Source metadata to a Knowledge Source and give AI Agents access 
     You can view, create, edit, and delete Knowledge Sources in **Build > Knowledge**. Also, you can copy Knowledge Sources' Reference ID, disable and export Knowledge Sources, and [download them as CTXT file](#download-knowledge-sources-as-ctxt).
 
 === "API"
-    You can view, create, edit, and delete Knowledge Sources using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeSources). You can also use the API to upload files as Knowledge Source.
+    You can view, create, edit, and delete Knowledge Sources using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--KnowledgeSources). You can also use the API to upload files as Knowledge Source.
 
 === "CLI"
     You can ingest documents to create Knowledge Sources and view the resulting number of tokens using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md)

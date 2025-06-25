@@ -29,6 +29,9 @@ You can add a model provided by Anthropic to Cognigy.AI in **Build > LLM**. To a
 
 === "Standard Model"
 
+    !!! note
+        The `*-latest` suffix indicates that the model you select points to the latest version of the model. For more information, read the [Anthropic's models](https://docs.anthropic.com/en/docs/about-claude/models/overview) documentation.
+
     | Parameter | Description                                                                                                                      |
     |-----------|----------------------------------------------------------------------------------------------------------------------------------|
     | apiKey    | Add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic. |

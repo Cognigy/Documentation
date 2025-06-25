@@ -1,94 +1,102 @@
 ---
-title: "LLM Prompt"
+title: "LLM Prompt (legacy)"
 slug: "llm-prompt"
-description: "The Cognigy LLM Prompt Node allows using Generative AI for creating relevant content. This Node combines the capabilities of the AI Agent Node and the legacy LLM Prompt Node by adding support for Tools, including MCP tools."
+description: "The Cognigy LLM Prompt Node (legacy) allows using Generative AI for creating relevant content."
 hidden: false
-tags:
-  - new llm prompt node
-  - llm prompt node
 ---
 
-# LLM Prompt
+# LLM Prompt (legacy)
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.13-blue.svg)](../../../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt.png" width="50%" />
+  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt-legacy.png" width="60%" />
 </figure>
 
 ## Description
 
+!!! warning
+    This Node is in legacy mode, which means it is deprecated. Use a [new version](llm-prompt.md) of this Node to get more flexibility when building AI Agents.
+
 The LLM Prompt Node lets you use prompts with different LLM models to generate text or structured content.
-This Node combines the capabilities of the [AI Agent Node](../ai/ai-agent.md) and the [legacy LLM Prompt Node](llm-prompt-legacy.md) by adding support for tools, including MCP tools. 
-The Node also offers more customization while avoiding built-in personalization of your AI Agent. 
-You can personalize the prompt directly if needed. Use this Node together with the [Load AI Agent Node](../ai/load-ai-agent.md), store your AI Agent configuration in the Input or Context object, and reuse it in the LLM Prompt Node.
 
 Before using this Node, set the LLM provider in the [Settings](../../../empower/generative-ai.md).
 
+The Node supports the following modes:
+
+- **Chat**. This mode is activated by default and is preferable for dynamic conversations and interactions with the model.
+  It takes into account the context of messages from the user and the agent,
+  depending on the chosen number of transcript turns (messages) in the **Transcript Turns** setting.
+- **Prompt**. This mode is preferable for single-turn tasks or generating text based on a single prompt.
+
+If your LLM provider doesn't support Chat mode, Cognigy.AI automatically converts the Chat request to a Prompt request.
+
 ## Parameters
 
-??? info "Large Language Model"
-    The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project.
-    
-    You can select a different model from the list or override the selected model using the Custom Model Options parameter.
+### Large Language Model
 
-??? info "System Prompt"
-    The system prompt is the message sent to the LLM to guide its responses. The parameter supports CognigyScript, allowing dynamic content and logic within the prompt. This prompt can work either as the input for completion tasks or as the system message in chat-based interactions, setting context and behavior for the AI Agent.
-    
-    Additionally, you can inject the recent conversation into the **System Prompt** field by using these tags:
-    
-    - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent AI Agent and 10 user outputs, for example:
-       ```text
-       Bot: agentOutput1
-       User: userOutput1
-       Bot: agentOutput2
-       User: userOutput2
-       ```
-    - `@cognigyRecentUserInputs` — the tag is replaced with a string that can contain up to 10 recent user outputs, for example:
+The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project.
 
-       ```text
-       User: userOutput1
-       User: userOutput2
-       ```
+You can select a different model from the list or override the selected model using the Custom Model Options parameter.
 
-    If you want to access only the last user input, specify the `Text` token in the **System Prompt** field.
+### Instruction
 
-    
-    When adding a tag, ensure that you leave a line break before and after the tag, for example:
-    
+This is either the prompt for completions or the system message for chat.
+
+Additionally, you can inject the recent conversation into the **Instruction (System Message/Prompt)** field by using these tags:
+
+- `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent AI Agent and 10 user outputs, for example:
+   ```text
+   Bot: agentOutput1
+   User: userOutput1
+   Bot: agentOutput2
+   User: userOutput2
+   ```
+- `@cognigyRecentUserInputs` — the tag is replaced with a string that can contain up to 10 recent user outputs, for example:
+
     ```text
-    A user had a conversation with a chatbot. The conversation history so far is:
-    @cognigyRecentConversation
-    
-    Describe the user sentiment in one very short line.
+    User: userOutput1
+    User: userOutput2
     ```
-    
-    Both tags can include an optional turn limit parameter, which is appended to the tag.
-    
-    Examples:
-    
-    ```typescript
-    @cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
-    @cognigyRecentUserInputs:2 // returns the last 2 user inputs.
-    ```
+
+  If you want to access only the last user input, specify the `Text` token in the **Instruction (System Message/Prompt)** field.
+
+
+When adding a tag, ensure that you leave a line break before and after the tag, for example:
+
+```text
+A user had a conversation with a chatbot. The conversation history so far is:
+@cognigyRecentConversation
+
+Describe the user sentiment in one very short line.
+```
+
+Both tags can include an optional turn limit parameter, which is appended to the tag. 
+
+Examples:
+
+```typescript
+@cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
+@cognigyRecentUserInputs:2 // returns the last 2 user inputs.
+```
+
+### Chat Mode
+
+Activate the toggle to enable Chat mode.
 
 ??? info "Advanced"
 
-    | Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-    |------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Maximal Tokens         | Slider | The maximum number of tokens to generate in the completion.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-    | Use Single Prompt Mode | Toggle | Send a single prompt to the model without any conversation context. This parameter is disabled by default. It doesn't support multi-turn conversations or chat and is useful for simple, one-off completions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-    | Transcript Turns       | Slider | The number of conversation turns to include in the LLM chat completion request. By default, the value is `50`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-    | Response Format        | Select | Choose the format for the model's output result. You can select one of the following options:<ul><li>**None** — no response format is specified, or do not request with an LLM provider that does not accept any response format or does not support it or could use provider's default in-built response format. This option is selected by default.</li><li>**Text** — the model returns messages in text format.</li><li>**JSON Object** — the model returns messages in JSON format. To use this option, instruct the model to generate JSON via a system or user message in the **Instruction (System Message/Prompt)** field. For example, `Take the user message and return it as JSON in the following format {"message": "THE_MESSAGE"}`. Note that this parameter may not be supported by all LLMs. For more information, refer to the LLM provider's API documentation.</li></ul> |
-    | Timeout                | Number | The maximum number of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-    | Sampling Method        | Select | Methods:<ul><li>**Temperature** — determines the level of randomness in the generated text. A higher temperature allows for more diverse and creative outputs, while a lower temperature leads to more predictable and consistent outputs with the training data.</li><li>**Top Percentage** — specifies the percentage of the most probable outputs for generation, resulting in more consistent output.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-    | Temperature            | Slider | Define the sampling temperature, which ranges between 0 and 1. Higher values, such as 0.8, make the output more random, while lower values, such as 0.2, make it more focused and deterministic.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-    | Top Percentage         | Slider | Control the Top-p (nucleus) sampling, ranging from 0 to 1. Higher values allow more diverse word choices, while lower values make the output more focused. For example, 0.9 means the model selects from the smallest set of words with a combined probability of 90%.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 
-    | Presence Penalty       | Slider | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-    | Frequency Penalty      | Slider | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-    | Use Stops              | Toggle | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-    | Stops                  | Text   | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-    | Seed                   | Number | Use this parameter for consistent output when referring to the same LLM Prompt Node multiple times. Specify any integer number, for example, `123`. The number in the Seed field and the prompt in the **Instruction (System Message/Prompt)** field should remain unchanged during subsequent references to the Node.<br>Note that in OpenAI, this parameter is in [Beta](https://platform.openai.com/docs/api-reference/chat/create#chat-create-seed) and is supported only by [certain models](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter).                                                                                                                                                                                                                                                                                                        |
+    | Parameter         | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+    |-------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Sampling Method   | Select    | Methods:<ul><li>**Temperature** — determines the level of randomness in the generated text. A higher temperature allows for more diverse and creative outputs, while a lower temperature leads to more predictable and consistent outputs with the training data.</li><li>**Top Percentage** — specifies the percentage of the most probable outputs for generation, resulting in more consistent output.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    | Maximal Tokens    | Indicator | The maximum number of tokens to generate in the completion.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+    | Presence Penalty  | Indicator | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+    | Frequency Penalty | Indicator | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+    | Use Stops         | Toggle    | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Stops             | Text      | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+    | Timeout           | Number    | The maximum number of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+    | Response Format   | Select    | Choose the format for the model's output result. You can select one of the following options:<ul><li>**None** — no response format is specified, or do not request with an LLM provider that does not accept any response format or does not support it or could use provider's default in-built response format. This option is selected by default.</li><li>**Text** — the model returns messages in text format.</li><li>**JSON Object** — the model returns messages in JSON format. To use this option, instruct the model to generate JSON via a system or user message in the **Instruction (System Message/Prompt)** field. For example, `Take the user message and return it as JSON in the following format {"message": "THE_MESSAGE"}`. Note that this parameter may not be supported by all LLMs. For more information, refer to the LLM provider's API documentation.</li></ul> |
+    | Seed              | Number    | Use this parameter for consistent output when referring to the same LLM Prompt Node multiple times. Specify any integer number, for example, `123`. The number in the Seed field and the prompt in the **Instruction (System Message/Prompt)** field should remain unchanged during subsequent references to the Node.<br>Note that in OpenAI, this parameter is in [Beta](https://platform.openai.com/docs/api-reference/chat/create#chat-create-seed) and is supported only by [certain models](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter).                                                                                                                                                                                                                                                                                                        |
 
 ??? info "Storage & Streaming Options"
 
@@ -102,7 +110,8 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
     | Output result immediately     | Toggle        | The parameter appears when you select either **Store in Input** or **Store in Context**. This parameter allows you to output results immediately without using the Say Node and LLM Prompt token.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
     | Store Detailed Results        | Toggle        | The parameter appears when you select either **Store in Input** or **Store in Context**, or when you enable **Store Copy in Input**. This parameter allows you to save detailed results of the LLM's generated output. By default, the result is stored in the `promptResult` object. You can specify another value in the **Context Key for the Result** field to save it in the Context object, or in the **Input Key for the Result** to save it in the Input object. The object contains keys such as `result`, `finishReason`, and `usage`. It may also include `detailedResult` if completion models are used, as well as `firstChunk` and `lastChunk` in some streaming results, depending on the LLM provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
     | Store Copy in Input           | Toggle        | The parameter appears when **Stream to Output** is selected. In addition to streaming the result to the output, store a copy in the Input object by specifying a value in the **Input Key to store Result** field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-
+    | Input Key to store Result     | CognigyScript | The parameter appears when **Store Copy in Input** is selected. The result is stored in the `promptResult` Input object by default. You can specify another key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+    
     **Streaming Results**
 
     In Stream mode, LLM generates tokens and returns them one by one to Cognigy.AI to ensure low-latency responses.
@@ -122,20 +131,6 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
     | `\b.\..\.`                            | Two-letter abbreviations.                  | i.e., e.g. |
 
     [^*]: Note that not all LLM models support streaming.
-
-??? info "Tool Settings"
-    The process of setting up a tool is the same as for the AI Agent Node. See the example in the [AI Agent Tool Settings](../ai/ai-agent.md#ai-agent-tool-settings) section.
-
-    | Parameter       | Type     | Description                                                                                                                                                                                                                                                                                                                         |
-    |-----------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Tool Choice     | Selector | If supported by your LLM Model, this will determine how tools should be selected by the AI Agent:<ul><li>**Auto** — tools (or none) are automatically selected by the AI Agent when needed.</li><li>**Required** — your AI Agent will always use one of its Tools.</li><li>**None** — your AI Agent won't use a tool.</li></ul>     |
-    | Use Strict mode | Toggle   | When the parameter is enabled, strict mode (if supported by the LLM provider) ensures that the arguments passed to a tool call precisely match the expected parameters. Enabling this feature can help prevent errors. However, it may cause a slight delay in the response, especially during the first call after making changes. |
-
-??? info "Image Handling"
-    | Parameter            | Type     | Description                                                                                                                                                                                                                                                                                                                                |
-    |----------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Process Images       | Toggle   | Enable the AI Agent to read and understand images attachments. Make sure that your LLM provider supports image processing; refer to your provider's documentation. In addition, make sure that attachments are supported by and activated in your Endpoint, for example, Webchat.                                                          |
-    | Images in Transcript | Selector | Configure how images older than the last turn are handled to reduce token usage: <ul><li>**Minify** — reduces the size of these images to 512x512px.</li><li>**Drop** — excludes the images.</li><li>**Keep** — sends the max size (this option consumes more tokens).</li></ul> Limitations and token consumption depend on the LLM used. |
 
 ??? info "Error Handling"
 
@@ -183,6 +178,7 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
     - [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
     - [OpenAI Models](https://platform.openai.com/docs/models)
 
+
 ??? info "Debugging Settings"
 
     When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
@@ -191,7 +187,6 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
     |----------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
     | Log Request and Completion | Toggle | Send a debug message containing the request sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                  |
-    | Log Tool Definitions       | Toggle | Send a debug message containing information about the configured AI Agent tools. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                     |
 
 ## More Information
 

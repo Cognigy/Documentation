@@ -7,7 +7,7 @@ hidden: false
 
 # Agentic AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../../release-notes/2025.13.md)
 
 _Agentic AI_ represents a new generation of autonomous, goal-oriented AI Agents designed to boost operational efficiency, enhance customer satisfaction, and drive superior enterprise outcomes.
 
@@ -102,6 +102,15 @@ This approach helps the AI Agent process and make decisions based on the results
 #### AI Agent Handover Node
 
 The [AI Agent Handover Node](../../build/node-reference/ai/ai-agent-handover.md) enables smooth AI Agent-to-AI Agent handovers, allowing multiple AI Agents to collaborate and take over tasks to efficiently resolve complex customer inquiries.
+
+#### LLM Prompt Node
+
+The [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md) is an alternative to the AI Agent Node. The updated version of LLM Prompt Node adds support for tools, image generation, and conversation transcripts. Use it with the Load AI Agent Node to fully replicate AI Agent Node behavior.
+
+#### Load AI Agent Node
+
+The [Load AI Agent Node](../../build/node-reference/ai/load-ai-agent.md) lets you load AI Agent data, such as instructions, name, and knowledge, into the Context or Input object.
+This Node allows you to reuse the AI Agent's setup in other Nodes without duplicating configuration steps.
 
 #### Transcript Nodes
 

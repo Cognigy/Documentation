@@ -10,7 +10,7 @@ tags:
 
 # Manage AI Agents
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../../release-notes/4.98.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../../release-notes/2025.13.md)
 
 To manage a new generation of AI Agents, Cognigy.AI introduces the _AI Agent Management_ interface,
 where you can create, edit, and delete AI Agents.
@@ -54,8 +54,8 @@ To create an AI Agent, select one of the following options:
                 - **TTS Label** — select the alternative name of the TTS vendor, as specified in the [Voice Gateway Self-Service Portal](../../../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have multiple speech services from the same vendor, use the label to specify which service to use.
                 - **Disable TTS Audio Caching** — by default, this setting is deactivated. With caching enabled, previously requested TTS audio is stored in the AI Agent cache, and repeated requests for the same audio text will use the cached result instead of sending another request. With caching disabled, the AI Agent stores the TTS audio but doesn't use it; each request is sent directly to the speech provider. Note that disabling caching can increase TTS costs. For detailed information, contact your speech provider. 
 
-    ??? info "3. Knowledge & Instructions"
-        1. In the **Knowledge & Instructions** step, configure the following fields:
+    ??? info "3. Instructions"
+        1. In the **Instructions** step, configure the following setting:
             - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
                 ```txt
                  - Greet users warmly and professionally.
@@ -64,8 +64,14 @@ To create an AI Agent, select one of the following options:
                  - Share troubleshooting links for technical issues.
                  - Apologize if errors occur, then correct promptly.
                 ```
-            - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/knowledge-store.md) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md) to use Knowledge AI.
-    ??? info "4. Data Privacy & Security"
+
+    ??? info "4. Knowledge Store"
+        1. In the **Knowledge Store** step, configure the following settings:
+            - **Knowledge Store Type** — select or upload a knowledge source that the AI Agent will use to access information from the documents you provide. By accessing and understanding these knowledge bases, the AI Agent can deliver more accurate, context-aware, and helpful responses to user queries. You need to configure an [embedding model](../knowledge-ai/overview.md) to use Knowledge AI. Select one of the following options:
+                - **Choose existing Knowledge Store** — select the [Knowledge Store](../knowledge-ai/knowledge-store.md) that the AI Agent will use to access information from the documents you provide.
+                - **Upload Knowledge Source** — upload documents with supported formats, such as PDF, text, DOCX, PPTX, or CTXT file formats. The CTXT file format has restrictions. For more information, refer to the [CTXT](../knowledge-ai/knowledge-source/text-formats/ctxt.md) article.
+                - **Upload URL Knowledge Source** — enter the URL of the web page to be used as a Knowledge Source. This type of Knowledge Source has restrictions. For more information, refer to the [Web Page](../knowledge-ai/knowledge-source/text-formats/web-page.md) article.
+    ??? info "5. Data Privacy & Security"
         1. In the **Data Privacy & Security** step, configure the following fields:
             - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
                 - **None** — no data will be used from the Contact Profile. This option is selected by default.
@@ -77,7 +83,7 @@ To create an AI Agent, select one of the following options:
                 - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
                 - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
                 - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
-    ??? info "5. Job Selection"
+    ??? info "6. Job Selection"
         1. In the **Job Selection** step, select one of the following options:
             - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
             - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.

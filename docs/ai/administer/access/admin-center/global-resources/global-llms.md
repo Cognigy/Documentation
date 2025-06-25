@@ -33,4 +33,4 @@ _Global Large Language Models_ (LLMs) are [LLMs](../../../../empower/llms/overvi
 
 === "API"
 
-    You can view, create, delete, and edit global LLMs using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--LargeLanguageModels-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.
+    You can view, create, delete, and edit global LLMs using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--LargeLanguageModels-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.

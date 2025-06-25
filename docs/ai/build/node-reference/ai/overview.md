@@ -66,6 +66,12 @@ AI Nodes extend the toolset provided by the Basic Nodes to a more in-depth level
 
     The Fuzzy Search Node enables a Flow to search fuzzy string patterns in list of source data and returns the best possible matches.
 
+-   :material-robot-excited-outline:{ .lg .middle } __[Load AI Agent](load-ai-agent.md)__
+
+    ---
+
+    The Load AI Agent Node lets you load the AI Agent's configuration and persona data into the Input or Context object.
+
 -   :material-format-letter-matches:{ .lg .middle } __[Match Pattern](match-pattern.md)__
 
     ---

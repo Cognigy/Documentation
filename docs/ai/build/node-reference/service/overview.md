@@ -55,7 +55,13 @@ Service Nodes are used to:
 
     The HTTP Request Node executes HTTP requests to other interfaces (APIs).
 
--   :material-brain:{ .lg .middle } __[LLM Prompt](llm-prompt.md)__
+-   :material-new-box:{ .lg .middle } __[LLM Prompt](llm-prompt-legacy.md)__
+
+    ---
+
+    This Node combines the capabilities of the [AI Agent Node](../ai/ai-agent.md) and the [legacy LLM Prompt Node](llm-prompt-legacy.md) by adding support for tools, image recognition, and conversation transcripts.
+
+-   :material-brain:{ .lg .middle } __[LLM Prompt (legacy)](llm-prompt-legacy.md)__
 
     ---
 

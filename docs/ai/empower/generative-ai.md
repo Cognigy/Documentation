@@ -38,8 +38,6 @@ Before using Generative AI, you need to have access to an LLM of the following p
 
 ## Design-Time Generative AI Features
 
-{! _includes/ai/generative-ai/deprecation-of-individual-design-time-features.md !}
-
 ### Configure LLMs for Design-Time Features
 
 1. In **Manage > Settings**, activate **Enable Generative AI Features** in the **Generative AI Settings** section.
@@ -55,7 +53,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 ??? info "Generate Lexicons"
 
     !!! note
-        - The generation of Lexicons for primary NLU languages besides German and English is not fully supported.
+        - The generation of Lexicons for primary NLU languages besides German and English isn't fully supported.
         - The model may not always generate the exact number of Lexicon entries requested, as its output can vary based on interpretation and model behavior.
 
     To use Generative AI technology for creating a new Lexicon, do the following:

@@ -24,7 +24,7 @@ Projects include [Flows](../build/flows/overview.md), [Endpoints](../deploy/endp
 - 
 
 === "API"
-    You can view, create, and manage Projects using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#get-/v2.0/projects).
+    You can view, create, and manage Projects using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/v2.0/projects).
 
 === "CLI"
     You can access Project resources, for example, AI Agents, Flows, and Endpoints, using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI?tab=readme-ov-file#cognigy-command-line-interface-cli).

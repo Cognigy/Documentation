@@ -8,11 +8,17 @@ tags: ['Knowledge Chunks', 'Chunk Metadata', 'Data Processing', 'Information Uni
 
 # Knowledge Chunk
 
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../../../release-notes/2025.13.md)
+
 A _Knowledge Chunk_ is a knowledge unit extracted from a [Knowledge Source](../knowledge-source/knowledge-source.md). Knowledge Chunks are smaller, self-contained pieces of information that Knowledge AI can process and send to AI Agents.
 
 A Knowledge Chunk can be a single paragraph, a sentence, or even a smaller unit of text from a Knowledge Source. By dividing the content into Knowledge Chunks, Knowledge AI gains better granularity to process information. This way, Knowledge AI analyzes and responds to user queries more efficiently and accurately. Use the [Chunk editor](knowledge-chunk-editor.md) to edit and manage Knowledge Chunks.
 
 Knowledge Chunks include [Knowledge Chunk text](#knowledge-chunk-text) and [Chunk metadata](#chunk-metadata).
+
+## Restrictions
+
+- The Knowledge Chunk text field can't be empty or contain only whitespace. The same rule applies to the `text` parameter in the [Cognigy.AI KnowledgeChunks API](https://api-trial.cognigy.ai/openapi#tag--KnowledgeChunks).
 
 ## Limitations
 
@@ -59,7 +65,7 @@ For example, for the `url: https://docs.cognigy.com/ai/build/node-reference/othe
     You can view, create, edit, and delete Knowledge Chunks using the [Chunk editor](knowledge-chunk-editor.md).
 
 === "API"
-    You can view, create, edit, and delete Knowledge Chunks using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeChunks).
+    You can view, create, edit, and delete Knowledge Chunks using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--KnowledgeChunks).
 
 ## More information
 

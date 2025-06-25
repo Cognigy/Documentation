@@ -35,13 +35,13 @@ To set quotas in [Management UI](https://management-ui-v4.cognigy.ai/), select a
 
 ### Set Quotas via API
 
-To set quotas via the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi), follow these steps:
+To set quotas via the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi), follow these steps:
 
 1. Under **AUTHENTICATION > HTTP Basic**, enter your Management UI credentials, then click **SET**.
 2. Send the following HTTP request for a new or an existing organization:
 
     === "New Organization"
-         Use the [POST /management/v2.0/organisations](https://api-dev.cognigy.ai/openapi#post-/management/v2.0/organisations) request.
+         Use the [POST /management/v2.0/organisations](https://api-trial.cognigy.ai/openapi#post-/management/v2.0/organisations) request.
          Send the request with a JSON body. In the JSON body, specify a unique name for the new organization and the maximum number of Knowledge Chunks in the `quotaMaxKnowledgeChunks` parameter.
 
          ```bash

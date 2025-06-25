@@ -23,4 +23,4 @@ _Global Connections_ are [Connections](../../../../build/connections.md) establi
 
 === "API"
 
-    You can view, edit, and delete global Connections using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Connections-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.
+    You can view, edit, and delete global Connections using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Connections-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.

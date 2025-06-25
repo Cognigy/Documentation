@@ -23,7 +23,7 @@ Cognigy.AI offers a robust localization feature for easy customization and conte
     You can add, edit, and delete Locales in **Manage > Localization**. Also, you can copy their Reference ID.
 
 === "API"
-    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
+    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Locales-v2.0).
 
 ### Localize Flows
 

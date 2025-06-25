@@ -29,6 +29,9 @@ You can add a model provided by Mistral AI to Cognigy.AI in **Build > LLM**. To 
 
 === "Standard Model"
 
+    !!! note
+        The `*-latest` suffix indicates that the model you select points to the latest version of the model. For more information, read the [Mistral AI's models](https://docs.mistral.ai/getting-started/models/models_overview/) documentation.
+
     | Parameter  | Description                                                                                                                                                                   |
     |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | API Key    | Add the API Key that you [generated](https://docs.mistral.ai/getting-started/quickstart/) under **API > API Keys** in your [Mistral AI](https://console.mistral.ai/) account. |

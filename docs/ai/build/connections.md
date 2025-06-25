@@ -16,7 +16,7 @@ In contrast to other resources in Cognigy.AI, you can't create a Connection from
     You can view, edit, and delete Connections in **Build > Connections**. Also, you can copy their Reference ID or export Connections as a [Package](packages.md).
 
 === "API"
-    You can view, edit, and delete Connections using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#get-/v2.0/connections).
+    You can view, edit, and delete Connections using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/v2.0/connections).
 
 !!! warning
     If you delete a Connection, features relying on this Connection stop working. When you delete a Connection, the Flow that uses the deleted Connection in a Node isn't updated automatically. Executing the Flow that uses the deleted Connection hangs on that Node and can cause error messages.

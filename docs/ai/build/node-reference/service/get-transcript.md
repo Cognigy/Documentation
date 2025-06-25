@@ -34,8 +34,8 @@ specify the path to the Input or Context object where the transcript is stored.
 | Parameter      | Type          | Description                                                                                                                                                          |
 |----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Store Location | Selector      | Determine how to save the result:<ul><li>**Input** — stores the result in the Input object.</li><li>**Context** — stores the result in the Context object.</li></ul> |
-| Input Key      | CognigyScript | The parameter appears when **Input** is selected. The result is stored in the `transcript` Input object by default. You can specify another value.                   |
-| Context Key    | CognigyScript | The parameter appears when **Context** is selected. The result is stored in the `transcript` Context object by default. You can specify another value.               |
+| Input Key      | CognigyScript | The parameter appears when **Input** is selected. The result is stored in the `transcript` Input object by default. You can specify another key.                    |
+| Context Key    | CognigyScript | The parameter appears when **Context** is selected. The result is stored in the `transcript` Context object by default. You can specify another key.                |
 
 ## More Information
 

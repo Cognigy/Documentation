@@ -124,6 +124,7 @@ nav:
               - ai/build/node-reference/service/handover-to-agent.md
               - ai/build/node-reference/service/http-request.md
               - ai/build/node-reference/service/llm-prompt.md
+              - ai/build/node-reference/service/llm-prompt-legacy.md
               - ai/build/node-reference/service/mongo-db.md
               - ai/build/node-reference/service/ms-sql.md
               - ai/build/node-reference/service/set-handover-inactivity.md
@@ -139,6 +140,7 @@ nav:
               - ai/build/node-reference/ai/enable-slot-fillers.md
               - ai/build/node-reference/ai/execute-cognigy-nlu.md
               - ai/build/node-reference/ai/fuzzy-search.md
+              - ai/build/node-reference/ai/load-ai-agent.md
               - ai/build/node-reference/ai/match-pattern.md
               - ai/build/node-reference/ai/regex-slot-filler.md
               - ai/build/node-reference/ai/resolve-tool-action.md
@@ -724,6 +726,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.13.md
         - release-notes/2025.12.md
         - release-notes/2025.11.md
         - release-notes/2025.10.md

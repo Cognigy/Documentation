@@ -5,8 +5,9 @@ hidden: false
 tags: ['Chunk Editor', 'Knowledge Chunks', 'Chunk Metadata']
 ---
 
-
 # Chunk Editor
+
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../../../release-notes/2025.13.md)
 
 The _Chunk editor_ is an interface for managing [Knowledge Chunks](knowledge-chunk.md) and editing their content.
 
@@ -16,7 +17,7 @@ To access the Chunk editor, select a Knowledge Store in **Build > Knowledge**, t
 
 ## Explore the Knowledge Editor
 
-The Chunk editor includes the Knowledge Chunks in the Knowledge Source as numbered text fields. Clicking the Knowledge Chunks expands the Knowledge Chunk and displays two areas where you can edit [Knowledge Chunk texts](knowledge-chunk.md#knowledge-chunk-text) and [Chunk metadata](knowledge-chunk.md#chunk-metadata).
+The Chunk editor includes the Knowledge Chunks in the Knowledge Source as numbered text fields. Clicking the Knowledge Chunks opens the Knowledge Chunk in a new window and displays two areas where you can edit [Knowledge Chunk texts](knowledge-chunk.md#knowledge-chunk-text) and [Chunk metadata](knowledge-chunk.md#chunk-metadata).
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/empower/knowledge-ai/knowledge-chunk/chunk-editor.png" width="80%" />
@@ -26,7 +27,7 @@ The Chunk editor includes the Knowledge Chunks in the Knowledge Source as number
     | Button                                                                | Description                                                                                       |
     |-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
     | ![download](../../../../_assets/voice-gateway/dowload.svg)            | You can download the Knowledge Source as a [CTXT file](../knowledge-source/text-formats/ctxt.md). |
-    | ![vertical-ellipsis](../../../../_assets/icons/vertical-ellipsis.svg) | Menu with options to delete and disable the Knowledge Chunk.                                      |
+    | ![vertical-ellipsis](../../../../_assets/icons/vertical-ellipsis.svg) | Menu with options to edit, delete, or disable the Knowledge Chunk.                                |
     | ![collapse-arrow](../../../../_assets/icons/collapse-arrow.svg)       | Collapses Knowledge Chunk field.                                                                  |
     | ![plus-sign](../../../../_assets/icons/plus-sign.svg)                 | Adds a Knowledge Chunk.                                                                           |
 

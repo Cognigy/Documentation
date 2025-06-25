@@ -57,8 +57,8 @@ To output the result, below the LLM Entity Extract Node, add a [Say Node](../bas
     | Parameter                   | Type          | Description                                                                                                                                                                                     |
     |-----------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | How to handle the result    | Select        | Determine how to handle the prompt result:<ul><li>**Store in Input** — stores the result in the Input object.</li><li>**Store in Context** — stores the result in the Context object.</li></ul> |
-    | Input Key to store Result   | CognigyScript | The parameter appears when **Store in Input** is selected. The result is stored in the `extractedEntity` Input object by default. You can specify another value.                                |
-    | Context Key to store Result | CognigyScript | The parameter appears  when **Store in Context** is selected. The result is stored in the `extractedEntity` Context object by default. You can specify another value.                           |
+    | Input Key to store Result   | CognigyScript | The parameter appears when **Store in Input** is selected. The result is stored in the `extractedEntity` Input object by default. You can specify another key.                                  |
+    | Context Key to store Result | CognigyScript | The parameter appears when **Store in Context** is selected. The result is stored in the `extractedEntity` Context object by default. You can specify another key.                              |
 
 ??? info "Debugging Options"
 

@@ -64,7 +64,7 @@ The Agent Copilot Nodes allow users to customize the Agent Copilot workspace by 
 
     ---
 
-    This Node updates the Agent Copilot workspace grid via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and provides a preview of the grid.
+    This Node updates the Agent Copilot workspace grid via an [API POST request](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and provides a preview of the grid.
 
 -   :material-text-box:{ .lg .middle } __[Copilot: Transcript Tile](transcript-tile.md)__
 

@@ -35,7 +35,7 @@ You can also connect different [Flows](../../empower/nlu/attachments.md) and swi
     To test Flows, click ![interaction-panel-icon](../../../_assets/icons/interaction-panel.svg) and use the [Interaction Panel](../../test/interaction-panel/overview.md).
 
 === "API"
-    You can view, create, and edit Flows using the [Cognigy API](https://api-dev.cognigy.ai/openapi#tag--Charts-v2.0).
+    You can view, create, and edit Flows using the [Cognigy API](https://api-trial.cognigy.ai/openapi#tag--Charts-v2.0).
 
 === "CLI"
     You can manage Flows using the [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI).

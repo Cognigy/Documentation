@@ -25,7 +25,7 @@ A _Knowledge Store_ provides a centralized and structured environment for managi
     You can view, create, edit, and delete Knowledge Stores in **Build > Knowledge**. Also, you can copy Knowledge Stores' Reference ID and export Knowledge Stores as Packages.
 
 === "API"
-    You can view, create, edit, and delete Knowledge Stores using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeStores).
+    You can view, create, edit, and delete Knowledge Stores using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--KnowledgeStores).
 
 === "CLI"
     You can create Knowledge Stores using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md).

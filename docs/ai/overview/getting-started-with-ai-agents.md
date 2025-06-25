@@ -41,11 +41,11 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 3. Set up speaking style (tone, verbosity, formality) and voice.
 4. _(Optional)_ Assign knowledge and add instructions.
 5. Ensure security settings are configured properly.
-6. Assign a job and click **Create** to test.
+6. Assign a job and click **Create**.
 
 <div style="text-align:center">
    <video width="650" height="400" controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
-      <source src="https://docscognigyassets.blob.core.windows.net/assets/create-ai-agent.mp4">
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/create-ai-agent.mov">
    </video>
 </div>
 

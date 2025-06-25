@@ -86,7 +86,7 @@ Based on the analysis, decide which user inputs will improve a particular Intent
         Save changes and apply them. The Intent record will be added as a sentence to the selected Intent.
 
     === "API"
-         You can add a user input record to a specific Intent using the [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "addToIntent"` in the `operations` object.
+         You can add a user input record to a specific Intent using the [Cognigy.AI API POST /v2.0/trainer/batch](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "addToIntent"` in the `operations` object.
 
 ??? info "Skip Records"
 
@@ -95,7 +95,7 @@ Based on the analysis, decide which user inputs will improve a particular Intent
         2. Apply changes. This action moves the input to **Skipped** records, but it will reappear in **Not reviewed** if the same input is entered again.
  
     === "API"
-         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "skip"` in the `operations` object.
+         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "skip"` in the `operations` object.
 
 ??? info "Ignore Records"
 
@@ -104,7 +104,7 @@ Based on the analysis, decide which user inputs will improve a particular Intent
         2. Apply changes. This action moves the user input to the **Ignored** records, and if a user enters the same input, it will also be ignored.
 
     === "API"
-         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-dev.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "ignore"` in the `operations` object.
+         You can skip Intent Trainer records using he [Cognigy.AI API POST /v2.0/trainer/batch](https://api-trial.cognigy.ai/openapi#post-/v2.0/trainer/batch) request, specify `"action": "ignore"` in the `operations` object.
 
 ### Train the NLU Model
 
