@@ -18,7 +18,7 @@ To configure an SSO in your IDP, you will need the URL that is used during the S
 https://<api-url>/auth/saml/login/<organization-id>
 ``` 
 
-For example, the api-url for the app environment is `api-app.cognigy.ai`. The `organization-id` is the `id` of your organization within Cognigy.AI. You can get your `organisationId` on the [My Profile](../test/interaction-panel/profile.md) page by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy Organization ID**.
+For example, the api-url for the app environment is `api-app.cognigy.ai`. The `organization-id` is the `id` of your organization within Cognigy.AI. You can get your `organisationId` on the [My Profile](../build/ai-agent-memory/profile.md) page by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Copy Organization ID**.
 
 You will need the SSO URL when configuring your IDP using one of the setup guides provided.
 

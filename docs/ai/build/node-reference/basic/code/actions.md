@@ -66,7 +66,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 ??? info "actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError"
 
-    Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/overview.md#debug-mode).
+    Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/chat.md#debug-mode).
 
     **Parameters**
 

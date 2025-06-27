@@ -132,6 +132,6 @@ You can send Facebook JSON directly from within Code Nodes using the [output](ac
 ## More Information
 
 - [Actions](actions.md)
-- [Input object](../../../../test/interaction-panel/input.md)
-- [Context object](../../../../test/interaction-panel/context.md)
-- [Profile object](../../../../test/interaction-panel/profile.md)
+- [Input object](../../../ai-agent-memory/input.md)
+- [Context object](../../../ai-agent-memory/context.md)
+- [Profile object](../../../ai-agent-memory/profile.md)

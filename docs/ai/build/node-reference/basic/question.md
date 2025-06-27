@@ -18,7 +18,7 @@ tags:
 
 ## Description
 
-A Question Node is used to ask a question that requests specific information from the user. When the Node is triggered, the [Entrypoint](../../flows/editor.md) shifts to this Node so that the conversation continues only after the user answers. Also, a new [Input](../../../test/interaction-panel/input.md) object is generated.
+A Question Node is used to ask a question that requests specific information from the user. When the Node is triggered, the [Entrypoint](../../flows/editor.md) shifts to this Node so that the conversation continues only after the user answers. Also, a new [Input](../../ai-agent-memory/input.md) object is generated.
 
 When a user input is received, it's scored based on natural language understanding (NLU). If an attached Flow has an Intent that scores higher than Intents in the current Flow, the [attached Flow](../../../empower/nlu/attachments.md) is executed. The Intent scoring occurs before validation of the Question Node is completed.
 
@@ -178,9 +178,9 @@ After the AI Agent asks a question and the user answers, the answer is validated
 
     Question results are always stored in `input.result`.
 
-    If **Store Result in Context** is enabled, the Question Result is also stored in the [Context](../../../test/interaction-panel/context.md) object. 
+    If **Store Result in Context** is enabled, the Question Result is also stored in the [Context](../../ai-agent-memory/context.md) object. 
 
-    If **Store Result to Contact Profile** is enabled, the Question Result is also stored in the [Profile](../../../test/interaction-panel/profile.md) object.
+    If **Store Result to Contact Profile** is enabled, the Question Result is also stored in the [Profile](../../ai-agent-memory/profile.md) object.
 
 ??? info "Escalation - Intents"
 

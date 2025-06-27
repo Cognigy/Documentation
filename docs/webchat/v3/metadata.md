@@ -11,7 +11,7 @@ hidden: false
 
 _Collecting metadata_ from the user's browser during the conversation via Webchat v3 allows you
 to gather additional information that is not available by default. It includes details such as the browser language, geolocation, device type, and operating system.
-This data is stored in the [Input](../../ai/test/interaction-panel/input.md) object, enabling you to create more tailored and effective interactions with the user.
+This data is stored in the [Input](../../ai/build/ai-agent-memory/input.md) object, enabling you to create more tailored and effective interactions with the user.
 After the session, the data is available through the [Insights Transcript Explorer](../../insights/explorers/transcript.md) and [Cognigy.AI OData endpoint](../../ai/analyze/odata.md).
 Remember that the metadata includes personal data, such as location, so make sure your privacy notices inform users about data collection and obtain their consent.
 
@@ -78,7 +78,7 @@ The `data._webchat3Metadata` Input object has the following keys:
 
 ## How to Test
 
-You can test the metadata object only in [Live Follow](../../ai/test/interaction-panel/overview.md#live-follow) mode.
+You can test the metadata object only in [Live Follow](../../ai/test/interaction-panel/live-follow.md) mode.
 
 To test receiving metadata, follow these steps:
 
@@ -116,4 +116,4 @@ such as picking up the product in Vienna or arranging delivery to Salzburg.
 
 - [Endpoint Configuration](configuration.md)
 - [Interaction Panel](../../ai/test/interaction-panel/overview.md)
-- [Input Object](../../ai/test/interaction-panel/input.md)
+- [Input Object](../../ai/build/ai-agent-memory/input.md)

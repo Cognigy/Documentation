@@ -63,7 +63,7 @@
     color: #ffffff;
 }
 
-.md-tabs__link {‚
+.md-tabs__link {
     font-size: .65rem;
     margin-top: .7rem;
 }
@@ -242,4 +242,5 @@ ol ol>li::marker {
 @media screen and (max-width: 76.2344em) {
     .md-nav--primary .md-nav__title[for=__drawer] {
         background: #ffffff;
+    }
 }

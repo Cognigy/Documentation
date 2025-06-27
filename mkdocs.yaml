@@ -29,6 +29,11 @@ nav:
         - ai/build/flows/overview.md
         - ai/build/flows/editor.md
         - ai/build/flows/collab-editing.md
+      - AI Agent Memory:
+        - ai/build/ai-agent-memory/overview.md
+        - ai/build/ai-agent-memory/input.md
+        - ai/build/ai-agent-memory/context.md
+        - ai/build/ai-agent-memory/profile.md
       - Nodes:
           - ai/build/nodes/overview.md
           - ai/build/nodes/node-search.md
@@ -286,10 +291,10 @@ nav:
     - 🧪 Test and Debug:
       - Interaction Panel:
         - ai/test/interaction-panel/overview.md
-        - ai/test/interaction-panel/context.md
-        - ai/test/interaction-panel/input.md
-        - ai/test/interaction-panel/profile.md
         - ai/test/interaction-panel/state.md
+        - ai/test/interaction-panel/chat.md
+        - ai/test/interaction-panel/voice-call.md
+        - ai/test/interaction-panel/live-follow.md
       - ai/test/demo-webchat.md
       - ai/test/logs.md
       - ai/test/playbooks.md

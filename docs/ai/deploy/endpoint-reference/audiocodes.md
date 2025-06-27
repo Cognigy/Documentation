@@ -32,7 +32,7 @@ Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes 
 
 ## Number Metadata
 
-AudioCodes identifies information about the caller and adds it to the Cognigy [Input](../../test/interaction-panel/input.md) Object as `input.data.numberMetaData`.
+AudioCodes identifies information about the caller and adds it to the Cognigy [Input](../../build/ai-agent-memory/input.md) Object as `input.data.numberMetaData`.
 
 | Parameter          | Type    | Description                                                              | Example            |
 |--------------------|---------|--------------------------------------------------------------------------|--------------------|

@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 slug: "slots"
-descriptions: "Cognigy.AI Slots are predefined data types or custom phrases detected by the Cognigy NLU and placed into the [Input Object](../../../test/interaction-panel/input.md) under the `input.slots` object. They allow AI Agents to extract structured information from user input and use it dynamically in conversations."
+descriptions: "Cognigy.AI Slots are predefined data types or custom phrases detected by the Cognigy NLU and placed into the Input Object under the `input.slots` object. They allow AI Agents to extract structured information from user input and use it dynamically in conversations."
 hidden: false
 tags:
   - cognigy nlu
@@ -12,7 +12,7 @@ tags:
 # Slots
 
 _Slots_ are predefined data types or custom phrases detected by the Cognigy NLU
-and stored in the [Input](../../../test/interaction-panel/input.md) object.
+and stored in the [Input](../../../build/ai-agent-memory/input.md) object.
 They allow AI Agents to extract structured information from user input and use it dynamically in conversations.
 
 There are two types of Slots:

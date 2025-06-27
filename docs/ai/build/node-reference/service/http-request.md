@@ -198,7 +198,7 @@ Note that Cognigy.AI expects a URL to the targeted resource in its unencoded for
     **Debug Mode Logging**
 
     Select what information
-    to log to [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) when using the Interaction Panel:
+    to log to [Debug Mode](../../../test/interaction-panel/chat.md#debug-mode) when using the Interaction Panel:
 
     - **Do not log Request & Response** — don't log any request or response data to the Interaction Panel. This option is activated by default.
     - **Request** — log only the request data sent to the server.

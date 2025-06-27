@@ -60,7 +60,7 @@ The color coding is explained in the table.
 You can test NLU scores using the following interfaces:
 
 === "GUI"
-     In the Interaction Panel, activate the [debug mode](../../../test/interaction-panel/overview.md#debug-mode) feature and explore the detailed results in the `input.nlu.intentMapperResults.scores` object.
+     In the Interaction Panel, activate the [debug mode](../../../test/interaction-panel/chat.md#debug-mode) feature and explore the detailed results in the `input.nlu.intentMapperResults.scores` object.
 
 === "API"
      For more complex testing, you can use the API [POST /v2.0/projects/{projectId}/nlu/scores](https://api-trial.cognigy.ai/openapi#post-/v2.0/projects/-projectId-/nlu/scores) request to test NLU scores without the load from Flow execution. 

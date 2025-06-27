@@ -12,7 +12,7 @@ tags:
 # Slot Fillers
 
 _Slot Fillers_ let you monitor every user input for specific [Slot](slots/overview.md) matches
-and store them in the [Context](../../test/interaction-panel/context.md) object.
+and store them in the [Context](../../build/ai-agent-memory/context.md) object.
 This way, if an answer is already provided, the AI Agent skips the corresponding question in the Question Node.
 For example, if a user says
 `I'm flying from San Francisco on United` and the AI Agent asks

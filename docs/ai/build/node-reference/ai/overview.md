@@ -40,7 +40,7 @@ AI Nodes extend the toolset provided by the Basic Nodes to a more in-depth level
 
     ---
 
-    The Copy Slots to Context Node copies Slots that were detected and written to the [Input](../../../test/interaction-panel/input.md) or [Context](../../../test/interaction-panel/context.md) object.
+    The Copy Slots to Context Node copies Slots that were detected and written to the [Input](../../ai-agent-memory/input.md) or [Context](../../ai-agent-memory/context.md) object.
 
 -   :material-cancel:{ .lg .middle } __[Disable Slot Fillers](disable-slot-fillers.md)__
 
@@ -76,13 +76,13 @@ AI Nodes extend the toolset provided by the Basic Nodes to a more in-depth level
 
     ---
 
-    The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../../test/interaction-panel/input.md).
+    The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../ai-agent-memory/input.md).
 
 -   :material-regex:{ .lg .middle } __[Regex Slot Filler](regex-slot-filler.md)__
 
     ---
 
-    The Regex Slot Filler Node creates a Slot based on a regex pattern. When the pattern is detected, a Slot is written to the [Input](../../../test/interaction-panel/input.md) object.
+    The Regex Slot Filler Node creates a Slot based on a regex pattern. When the pattern is detected, a Slot is written to the [Input](../../ai-agent-memory/input.md) object.
 
 -   :material-check-decagram:{ .lg .middle } __[Resolve Tool Action](resolve-tool-action.md)__
 

@@ -32,10 +32,10 @@ Tokens include the following information:
 - **Name** — the Token name displayed in Nodes and the Token Management Menu.
 - **Script** — the CognigyScript expression used to access the data. You don't need to wrap the CognigyScript expression in `{{"{{ }}"}}`.
 - **Type** — the category of the Token in the search list:
-    - **Input** — access to the data in the [Input](../test/interaction-panel/input.md) object.
-    - **Context** — access to the data in the [Context](../test/interaction-panel/context.md) object.
-    - **Profile** — access to the data in the [Profile](../test/interaction-panel/profile.md) object.
-    - **Custom** — specific CognigyScript expression with access to the data in one or more [Cognigy objects](cognigyscript.md#cognigyai-objects). For example, `"Should your order " + context.customerOrderAmount + " be sent to " + profile.address + "?"`.
+    - **Input** — access to the data in the [Input](ai-agent-memory/input.md) object.
+    - **Context** — access to the data in the [Context](ai-agent-memory/context.md) object.
+    - **Profile** — access to the data in the [Profile](ai-agent-memory/profile.md) object.
+    - **Custom** — specific CognigyScript expression with access to the data in one or more [Cognigy objects](ai-agent-memory/overview.md#lifespan-of-cognigyai-objects). For example, `"Should your order " + context.customerOrderAmount + " be sent to " + profile.address + "?"`.
 
 You can also create and use Tokens in the Node editor or create Tokens from [JSON editors](#create-and-use-tokens-in-the-node-editor).
 

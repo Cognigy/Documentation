@@ -47,7 +47,7 @@ To view more details about each session, select a session from the list. You wil
 ## Profile Schema
 
 The Profile Schema organizes information in Contact Profiles. It includes predefined and custom fields. 
-The Profile Schema has a standard format that is used in the [Profile](../test/interaction-panel/profile.md) object, which makes it easier to store and retrieve data for creating more personalized conversations.
+The Profile Schema has a standard format that is used in the [Profile](../build/ai-agent-memory/profile.md) object, which makes it easier to store and retrieve data for creating more personalized conversations.
 
 ### Predefined Fields
 
@@ -157,5 +157,5 @@ The Contact Profile will be deleted and its data cannot be recovered.
 ## More Information
 
 - [Analytics](overview.md)
-- [Profile Object](../test/interaction-panel/profile.md)
+- [Profile Object](../build/ai-agent-memory/profile.md)
 - [Transcript Explorer](../../insights/explorers/transcript.md)

@@ -238,7 +238,7 @@ Then monitor and analyze each step of the booking process.
 ### Test your Flow
 
 Test your flow via the Interaction Panel.
-Enable the [Debug Mode](../../test/interaction-panel/overview.md#debug-mode) setting to see when Track Goals will be triggered.
+Enable the [Debug Mode](../../test/interaction-panel/chat.md#debug-mode) setting to see when Track Goals will be triggered.
 To view recorded metrics, go to [Cognigy Insights](../../../insights/index.md) and select [Goals](../../../insights/reports/goals.md) from the left-side menu.
 
 ## More Information

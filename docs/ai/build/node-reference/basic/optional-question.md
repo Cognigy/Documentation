@@ -64,7 +64,7 @@ An Optional Question Node requests specific information from the user. The Node 
 
 ??? info "Result Storage"
 
-    If **Store Result in Context** is enabled, the Question Result is also stored in the [Context](../../../test/interaction-panel/context.md) object. 
+    If **Store Result in Context** is enabled, the Question Result is also stored in the [Context](../../ai-agent-memory/context.md) object. 
 
 ??? info "Question Information in Input"
 

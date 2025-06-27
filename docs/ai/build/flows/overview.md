@@ -12,7 +12,7 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
 
-A _Flow_ is a conversational structure consisting of [Nodes](../nodes/overview.md) that defines how AI Agents interact with users. With Flows, you can customize the behavior of AI Agents and design tailored and dynamic conversational experiences. AI Agents can access the [Input](../../test/interaction-panel/input.md), [Context](../../test/interaction-panel/context.md), and [Profile](../../test/interaction-panel/profile.md) objects from the Flow to provide context-aware responses.
+A _Flow_ is a conversational structure consisting of [Nodes](../nodes/overview.md) that defines how AI Agents interact with users. With Flows, you can customize the behavior of AI Agents and design tailored and dynamic conversational experiences. AI Agents can access the [Input](../../build/ai-agent-memory/input.md), [Context](../../build/ai-agent-memory/context.md), and [Profile](../../build/ai-agent-memory/profile.md) objects from the Flow to provide context-aware responses.
 
 Flows include:
 

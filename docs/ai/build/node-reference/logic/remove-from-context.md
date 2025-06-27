@@ -11,7 +11,7 @@ hidden: false
 
 ## Description
 
-This Node removes information from the [Context](../../../test/interaction-panel/context.md) object.
+This Node removes information from the [Context](../../ai-agent-memory/context.md) object.
 
 ## Parameters
 

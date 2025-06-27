@@ -14,7 +14,7 @@ Logic Nodes allow you to customize your Flow's behavior. You can use them to con
 
     ---
 
-    Use the Add To Context Node to store information in the [Context](../../../test/interaction-panel/context.md) object and use this information throughout the session.
+    Use the Add To Context Node to store information in the [Context](../../ai-agent-memory/context.md) object and use this information throughout the session.
 
 -   :material-play:{ .lg .middle } __[Execute Flow](execute-flow.md)__
 
@@ -56,7 +56,7 @@ Logic Nodes allow you to customize your Flow's behavior. You can use them to con
 
     ---
 
-    The Remove From Context Node removes information from the [Context](../../../test/interaction-panel/context.md) object.
+    The Remove From Context Node removes information from the [Context](../../ai-agent-memory/context.md) object.
 
 -   :material-state-machine:{ .lg .middle } __[Set State](set-state.md)__
 

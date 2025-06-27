@@ -11,7 +11,7 @@
 
 ## Description
 
-This Node stores information in the [Context](../../../test/interaction-panel/context.md) object, so that it can be used throughout the session on subsequent user inputs. 
+This Node stores information in the [Context](../../ai-agent-memory/context.md) object, so that it can be used throughout the session on subsequent user inputs. 
 
 ## Parameters
 

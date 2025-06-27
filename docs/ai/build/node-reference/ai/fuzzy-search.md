@@ -15,7 +15,7 @@ The Fuzzy Search Node enables a Flow to search through a list (string array) of 
 
 The assigned score for each match varies between 0 and 1, 1 being the best match and 0 being the worst match.
 
-The result is stored in either the [Context](../../../test/interaction-panel/context.md) (`context.STORE`) or [Input](../../../test/interaction-panel/input.md) object (`input.STORE`) using the store name given in the Node settings.
+The result is stored in either the [Context](../../ai-agent-memory/context.md) (`context.STORE`) or [Input](../../ai-agent-memory/input.md) object (`input.STORE`) using the store name given in the Node settings.
 
 If an error occurs, it is stored in either the Cognigy context (`context.STORE.error`) or input object (`input.STORE.error`). 
 

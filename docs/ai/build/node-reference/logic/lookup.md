@@ -50,13 +50,13 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
     By changing the lookup type to **Type**, the Flow selects a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
     !!! note "What is Type?"
-        The Type is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
+        The Type is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../ai-agent-memory/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
 
 ??? info "Mode"
     By changing the lookup type to Mode, the Flow selects a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
     !!! note "What is Mode?"
-        The Mode provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+        The Mode provides information on what was contained in the last user message. The type is an [Input](../../ai-agent-memory/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ??? info "Handover Status"
     By changing the lookup type to **Handover Status**,

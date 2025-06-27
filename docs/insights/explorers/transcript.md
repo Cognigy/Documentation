@@ -123,7 +123,7 @@ You can use the scroll bar to navigate through the messages in the **Session Tra
 
 #### Debug Mode
 
-Insights' Debug mode is not fully equal to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/overview.md#debug-mode) documentation. Debug messages from Nodes (including Code Nodes and Debug Message Nodes) are only for immediate testing and can only be seen in the Interaction Panel.
+Insights' Debug mode is not fully equal to the Debug mode in the [Interaction Panel](../../ai/test/interaction-panel/chat.md#debug-mode) documentation. Debug messages from Nodes (including Code Nodes and Debug Message Nodes) are only for immediate testing and can only be seen in the Interaction Panel.
 
 The Debug mode offers additional context for conversation messages, including:
 

@@ -18,7 +18,7 @@ hidden: false
 The Add Memory Node stores memories within the [Contact Profile](../../../analyze/contact-profiles.md).
 A memory entry can be any text, such as user input and other relevant details.
 
-Recorded memories are also accessible within the [Profile](../../../test/interaction-panel/profile.md) object in the Interaction Panel.
+Recorded memories are also accessible within the [Profile](../../../build/ai-agent-memory/profile.md) object in the Interaction Panel.
 The array of memories consists of multiple memory objects.
 Each memory object contains:
 

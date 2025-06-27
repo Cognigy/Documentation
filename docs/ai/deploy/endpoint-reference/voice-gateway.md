@@ -46,12 +46,12 @@ Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gatewa
 
 ### SIP Headers
 
-The SIP headers, including any custom headers, are available within the [Input](../../test/interaction-panel/input.md) object. 
+The SIP headers, including any custom headers, are available within the [Input](../../build/ai-agent-memory/input.md) object. 
 You can find them in `input.data` or `input.data.sip.headers`.
 
 ### Call Metadata
 
-Voice Gateway identifies information about the caller and adds it to the [Input](../../test/interaction-panel/input.md) object as `input.data.numberMetaData`.
+Voice Gateway identifies information about the caller and adds it to the [Input](../../build/ai-agent-memory/input.md) object as `input.data.numberMetaData`.
 
 | Parameter          | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Example            |
 |--------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|

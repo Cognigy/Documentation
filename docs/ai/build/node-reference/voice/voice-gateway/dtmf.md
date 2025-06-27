@@ -73,7 +73,7 @@ To build a Flow with the DTMF Node for the previous example, follow these steps:
           <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/dtmf-example.png" width="80%" />
         </figure>
 
-    Test your Flow via the Interaction Panel. Use the [Voice Call](../../../../test/interaction-panel/overview.md#voice-call) setting.
+    Test your Flow via the Interaction Panel. Use the [Voice Call](../../../../test/interaction-panel/voice-call.md) setting.
 
 ## More Information
 

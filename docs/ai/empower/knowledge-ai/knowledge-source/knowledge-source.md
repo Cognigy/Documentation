@@ -40,7 +40,7 @@ Depending on the format of the file you use, you need to configure a specific [p
 
 _Source metadata_ contains information about the Knowledge Source and is formatted as JSON key-value pairs. The keys refer to the information the Source metadata holds and the value is the information, for example, `publication: Elsevier`.
 
-You can store Source metadata in the [Input object](../../../test/interaction-panel/input.md) or [Context object](../../../test/interaction-panel/context.md) and give your AI Agents access to the Source metadata through:
+You can store Source metadata in the [Input object](../../../build/ai-agent-memory/input.md) or [Context object](../../../build/ai-agent-memory/context.md) and give your AI Agents access to the Source metadata through:
 
 - `input.knowledgeSearch.topK[0].sourceMetadata` in the Input object
 - `context.knowledgeSearch.topK[0].sourceMetadata` in the Context object
@@ -90,4 +90,4 @@ You can download Knowledge Sources as a CTXT file, including Knowledge Sources c
 - [Knowledge Chunk](../knowledge-chunk/knowledge-chunk.md)
 - [Knowledge Source Tags](knowledge-source-tags.md)
 - [Chunk editor](../knowledge-chunk/knowledge-chunk-editor.md)
-- [Input](../../../test/interaction-panel/input.md)
+- [Input](../../../build/ai-agent-memory/input.md)

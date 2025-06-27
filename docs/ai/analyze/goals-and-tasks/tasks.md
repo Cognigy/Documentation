@@ -21,7 +21,7 @@ For more information, read the [Complete Task Node](../../../ai/build/node-refer
 
 ## `profile.goals`: your Compatibility Alias to `profile.tasks`
 
-In the [Profile](../../test/interaction-panel/profile.md) object, `profile.goals` has been renamed to `profile.tasks`.
+In the [Profile](../../build/ai-agent-memory/profile.md) object, `profile.goals` has been renamed to `profile.tasks`.
 To ensure your existing code still works in Flows, `profile.goals` now functions as a compatibility alias that points to `profile.tasks`. This means you can still use `profile.goals`, it's value will be stored in the `profile.tasks` object. Accessing `profile.goals` will provide the value from `profile.tasks` in places like:
 
 - CognigyScript expressions `{{"{{profile.goals}}"}}` or `{{"{{cp.goals}}"}}`.

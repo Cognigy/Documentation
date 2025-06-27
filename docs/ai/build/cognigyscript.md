@@ -12,41 +12,16 @@ tags:
 
 # CognigyScript
 
-_CognigyScript_ is a superset of JavaScript that provides access to the [Input](../test/interaction-panel/input.md), [Context](../test/interaction-panel/context.md), and [Profile](../test/interaction-panel/profile.md) objects. With CognigyScript expressions, you can retrieve values from JSON properties, and use these values in AI Agent conversations.
+_CognigyScript_ is a superset of JavaScript that provides access to the [Input](../build/ai-agent-memory/input.md), [Context](../build/ai-agent-memory/context.md), and [Profile](../build/ai-agent-memory/profile.md) objects. With CognigyScript expressions, you can retrieve values from JSON properties, and use these values in AI Agent conversations.
 
 In most cases, you wrap CognigyScript expressions in double curly braces and quotation marks `{{"{{ }}"}}`, for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy.AI to identify and execute the CognigyScript code embedded in the Flow. However, CognigyScript evaluates conditions as standard JavaScript. You don't need to wrap the CognigyScript expression in `{{"{{ }}"}}`. For example, `context.orders === 3` evaluates to true if the `orders` variable in the Context is equal to `3`.
 
 You can use CognigyScript to:
 
 - Add dynamic and executable content to chat and voice conversations.
-- Retrieve information from [Cognigy.AI objects](#cognigyai-objects) and reuse it in chat and voice conversations.
+- Retrieve information from [Cognigy.AI objects](ai-agent-memory/overview.md#lifespan-of-cognigyai-objects) and reuse it in chat and voice conversations.
 - Run scripts to manipulate data dynamically.
 - Use CognigyScript in JSON arguments to make requests to an external system via the HTTP Request Node.
-
-### Cognigy.AI Objects
-
-The following table shows how to access values from the Input, Context, and Profile objects in CognigyScript:
-
-|                  | Input                  | Context                           | Profile                       |
-|------------------|------------------------|-----------------------------------|-------------------------------|
-| Variable         | `input`                | `context`                         | `profile`                     |
-| Shortcut         | `ci`                   | `cc`                              | `cp`                          |
-| Example          | `{{"{{input.text}}"}}` | `{{"{{context.selectedHotel}}"}}` | `{{"{{profile.firstname}}"}}` |
-| Shortcut Example | `{{"{{ci.text}}"}}`    | `{{"{{cc.selectedHotel}}"}}`      | `{{"{{cp.firstname}}"}}`      |
-
-#### Life Span of Cognigy.AI Objects
-
-The life span of Cognigy.AI objects varies depending on their type:
-
-- **Input** — each new user input and Flow execution recreates the object
-- **Context** — kept throughout the entire conversation
-- **Profile** — stored persistently to preserve information, such as user names, throughout conversations
-
-The following image shows a comparison of the life spans of Cognigy.AI objects:
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/build/life-span.png" width="70%" />
-</figure> 
 
 ## Working with CognigyScript
 
@@ -143,6 +118,6 @@ In a Code Node, you don't need to wrap the CognigyScript expression in `{{"{{ }}
 
 ## More Information
 
-- [Input](../test/interaction-panel/input.md)
-- [Context](../test/interaction-panel/context.md)
-- [Profile](../test/interaction-panel/profile.md)
+- [Input](../build/ai-agent-memory/input.md)
+- [Context](../build/ai-agent-memory/context.md)
+- [Profile](../build/ai-agent-memory/profile.md)

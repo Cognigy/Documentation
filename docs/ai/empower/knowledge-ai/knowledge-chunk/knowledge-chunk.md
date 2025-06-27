@@ -38,10 +38,10 @@ Chunk metadata contains information related to the Knowledge Chunk. Chunk metada
 
 You can add metadata as JSON key-value pairs to Knowledge Chunks in the Chunk editor or directly to a [CTXT file](../knowledge-source/text-formats/ctxt.md). Knowledge Chunks support only numbers, strings, and boolean as Chunk metadata.
 
-You can store Chunk metadata in the [Input object](../../../test/interaction-panel/input.md) or [Context object](../../../test/interaction-panel/context.md) and give your AI Agents access to Chunk metadata through:
+You can store Chunk metadata in the [Input object](../../../build/ai-agent-memory/input.md) or [Context object](../../../build/ai-agent-memory/context.md) and give your AI Agents access to Chunk metadata through:
 
-- `input.knowledgeSearch.topK[0].chunkMetaData.{key}` in the [Input object](../../../test/interaction-panel/input.md)
-- `context.knowledgeSearch.topK[0].chunkMetaData.{key}` in the [Context object](../../../test/interaction-panel/context.md)
+- `input.knowledgeSearch.topK[0].chunkMetaData.{key}` in the [Input object](../../../build/ai-agent-memory/input.md)
+- `context.knowledgeSearch.topK[0].chunkMetaData.{key}` in the [Context object](../../../build/ai-agent-memory/context.md)
 
 Where `{key}` is your Chunk metadata key.
 
@@ -72,4 +72,4 @@ For example, for the `url: https://docs.cognigy.com/ai/build/node-reference/othe
 - [Knowledge Source](../knowledge-source/knowledge-source.md)
 - [Chunk editor](knowledge-chunk-editor.md)
 - [CTXT file](../knowledge-source/text-formats/ctxt.md)
-- [Input](../../../test/interaction-panel/input.md)
+- [Input](../../../build/ai-agent-memory/input.md)

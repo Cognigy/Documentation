@@ -3,11 +3,11 @@ docs/ai/test/logs.md	2024-07-24 Elena Baskakova
 docs/ai/test/demo-webchat.md	2024-05-16 Benjamin Mayr
 docs/ai/test/voice-preview.md	2024-10-30 Elena Baskakova
 docs/ai/test/playbooks.md	2024-11-29 Caio Lopes de Melo Lindoso
-docs/ai/test/interaction-panel/input.md	2025-01-09 Elena Baskakova
+docs/ai/build/ai-agent-memory/input.md	2025-01-09 Elena Baskakova
 docs/ai/test/interaction-panel/overview.md	2025-01-15 Elena Baskakova
-docs/ai/test/interaction-panel/context.md	2024-07-02 Elena Baskakova
+docs/ai/build/ai-agent-memory/context.md	2024-07-02 Elena Baskakova
 docs/ai/test/interaction-panel/state.md	2024-05-16 Benjamin Mayr
-docs/ai/test/interaction-panel/profile.md	2024-05-16 Benjamin Mayr
+docs/ai/build/ai-agent-memory/profile.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/file-storage.md	2024-12-19 Elena Baskakova
 docs/ai/deploy/endpoints/content-conversion.md	2024-09-20 Elena Baskakova
 docs/ai/deploy/endpoints/overview.md	2024-08-06 Elena Baskakova

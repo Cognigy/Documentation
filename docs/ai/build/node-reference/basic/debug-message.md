@@ -19,7 +19,7 @@ This Node sends a debug message to the Interaction Panel.
 Debug messages help
 you track the flow of data and diagnose issues
 by providing real-time information about what's happening during the Flow execution.
-To view the debug message, enable [debug mode](../../../test/interaction-panel/overview.md#debug-mode). 
+To view the debug message, enable [debug mode](../../../test/interaction-panel/chat.md#debug-mode). 
 
 ## Parameters
 

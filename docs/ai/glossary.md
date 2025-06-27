@@ -88,7 +88,7 @@ For more information, read the [Contact Profiles](analyze/contact-profiles.md) d
 _**Context**_
 : A JSON object that stores persistent information.
 Every contact that connects to Cognigy.AI has its own Context, which lives throughout the session's lifetime. When a contact disconnects from Cognigy.AI, the Context is persisted in the database and retrieved upon reconnection.
-For more information, read the [Context](test/interaction-panel/context.md) documentation.
+For more information, read the [Context](build/ai-agent-memory/context.md) documentation.
 
 _**Conversation**_
 : A billable unit of interaction between a user and an AI Agent or human agent.
@@ -145,7 +145,7 @@ _**Input (Object)**_
 : A short-term JSON data object generated each time a message is sent to Cognigy.AI.
 The Input Object contains general information about the message, such as the time it was received and the channel from which it was sent. It also includes specific results from the NLU intent mapping process, such as the selected Intent, identified Slots, and other useful information.
 The Input Object is passed to the Flow to determine the next action. You can find more information about the input's lifespan on the [CognigyScript](build/cognigyscript.md) page.
-For more information, read the [Input](test/interaction-panel/input.md) documentation.
+For more information, read the [Input](build/ai-agent-memory/input.md) documentation.
 
 _**Insights**_
 : A Cognigy product used to collect and display analytics data within Cognigy.AI. Insights reports and explorers provide a range of key metrics for understanding the usage and performance of your AI Agents.
@@ -263,7 +263,7 @@ For more information, read the [Playbooks](test/playbooks.md) documentation.
 
 _**Profile**_
 : A JSON object that stores persistent information about the end user and which can be accessed from the Flow. Each contact connecting to Cognigy.AI has their own Contact Profile stored in the platform. When a contact disconnects, their Profile Data remains in the database and is retrieved upon reconnection using the same user ID. This allows for multichannel conversations by accessing the stored user profile when the user connects from a different channel.
-For more information, read the [Profile](test/interaction-panel/profile.md) documentation.
+For more information, read the [Profile](build/ai-agent-memory/profile.md) documentation.
 
 _**Project**_
 : A workspace where you can create, test, and deploy AI Agents. Projects contain collections of Conversational AI resources, including Flows, Lexicons, Endpoints, and more. It is possible to work on a given Project with multiple team members.

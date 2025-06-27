@@ -11,7 +11,7 @@
 
 ## Description
 
-The Match Pattern Node enables a user to find patterns in text and expose them in the [Input object](../../../test/interaction-panel/input.md).
+The Match Pattern Node enables a user to find patterns in text and expose them in the [Input object](../../ai-agent-memory/input.md).
 
 You can define patterns to search for in the input text or in the alternate text that was provided. If a pattern is found, a `matchedPatterns` group is created in the Input object.
 
