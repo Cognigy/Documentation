@@ -18,14 +18,17 @@ tags:
 
 ## Description
 
-The LLM Prompt Node lets you use prompts with different LLM models to generate text or structured content.
-This Node combines the capabilities of the [AI Agent Node](../ai/ai-agent.md) and the [legacy LLM Prompt Node](llm-prompt-legacy.md) by adding support for tools, including MCP tools. 
-The Node also offers more customization while avoiding built-in personalization of your AI Agent. 
-You can personalize the prompt directly if needed. Use this Node together with the [Load AI Agent Node](../ai/load-ai-agent.md), store your AI Agent configuration in the Input or Context object, and reuse it in the LLM Prompt Node.
+The LLM Prompt Node lets you configure the system prompt for your LLM calls, generating both text and structured content. With this Node, you can also:
+
+- Include tools in your LLM calls.
+- Enable image handling.
+- Set advanced LLM request options.
+
+Additionally, you can refer to your AI Agent configuration using the [Load AI Agent Node](../ai/load-ai-agent.md).
 
 Before using this Node, set the LLM provider in the [Settings](../../../empower/generative-ai.md).
 
-## Parameters
+## LLM Prompt Settings
 
 ??? info "Large Language Model"
     The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project.
@@ -192,6 +195,12 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
     | Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
     | Log Request and Completion | Toggle | Send a debug message containing the request sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                  |
     | Log Tool Definitions       | Toggle | Send a debug message containing information about the configured AI Agent tools. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                     |
+
+{! _includes/ai/build/node-reference/tools.md !}
+
+## Examples
+
+{! _includes/ai/build/node-reference/tool-examples.md !}
 
 ## More Information
 
