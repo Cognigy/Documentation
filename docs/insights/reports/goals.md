@@ -10,9 +10,9 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.94(Beta)-purple.svg)](../../release-notes/4.94.md)
 
 !!! note
-    The Goals Report is in Beta and is available if you have migrated to the new [Insights framework](../data-management/pre-aggregation.md).
-    Before migration, you can also explore the Goals Report in the Cognigy trial environment.
-    We encourage you to try this feature out and provide us with feedback.
+    Goals is a new feature, and we are making it accessible to our customers through a phased rollout. Once it becomes available for your environment, your Cognigy business representative will notify you via email.
+
+    You can also explore the Goals Report in the [Cognigy trial environment](https://trial.cognigy.ai/). We encourage you to try this feature out and provide us with feedback.
 
 The _Goals Report_ highlights goal tracking, completion status, time, revenue, and cost metrics, and the business impact of AI Agents in the following charts:
 

@@ -8,8 +8,9 @@ hidden: false
 # Goals
 
 !!! note
-    We encourage you to explore the new version of Goals as soon as you migrate to the new [Insights framework](../../../insights/data-management/pre-aggregation.md).
-    Before migration, you can also explore Goals in the Cognigy trial environment.
+    Goals is a new feature, and we are making it accessible to our customers through a phased rollout. Once it becomes available for your environment, your Cognigy business representative will notify you via email.
+
+    You can also explore the Goals Report in the [Cognigy trial environment](https://trial.cognigy.ai/). We encourage you to try this feature out and provide us with feedback.
 
 _Goals_ are structured objectives within AI Agent interactions that require specific steps to be completed. They not only track user actions but also tie those actions to measurable business metrics, ensuring alignment with organizational objectives.
 
@@ -22,10 +23,6 @@ With Goals, you can evaluate and enhance the business impact of your AI Agent:
 - **Monitor different goals and their steps**. Track different goals and their corresponding steps to get a comprehensive view of the user journey within conversations.
 - **Measure business value**. Goals are linked to business metrics, allowing you to assess the value of AI Agents in achieving key business objectives. Tracking metrics such as time and money for each completed goal and step provides a detailed view of the AI Agent's performance.
 - **Gain valuable insights**. Measure how effectively your AI Agent conversations achieve business objectives and optimize AI Agents to improve performance and user satisfaction.
-
-## Prerequisites
-
-- To activate this feature, use the `FEATURE_USE_GOALS_V2` feature flag.
 
 ## Limitations
 
