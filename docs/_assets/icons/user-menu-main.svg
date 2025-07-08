@@ -1,0 +1,23 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        aria-hidden="true"
+>
+    <!-- Circle background -->
+    <circle cx="16" cy="16" r="16" fill="#ccc" />
+
+    <!-- Initials -->
+    <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-size="12"
+            font-family="Arial, sans-serif"
+            fill="#000"
+    >
+        JD
+    </text>
+</svg>
