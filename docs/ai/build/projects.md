@@ -18,10 +18,8 @@ Projects include [Flows](../build/flows/overview.md), [Endpoints](../deploy/endp
 
 ## Working with Projects
 
-- [Flows](../build/flows/overview.md)
-- [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
-- [Endpoints](../deploy/endpoints/overview.md).
-- 
+=== "GUI"
+    To create a Project with the [Project Creation wizard](#project-creation-wizard), click the **+** button in the upper-left corner of the [Main page](../overview/user-interface/main-page.md). On the **Main** page, you can also edit or delete a Project as well as copy a Project's Reference ID.
 
 === "API"
     You can view, create, and manage Projects using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/v2.0/projects).
