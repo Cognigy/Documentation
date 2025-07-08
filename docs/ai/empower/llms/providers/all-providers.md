@@ -13,6 +13,12 @@ To add a standard or custom model, select a large language model (LLM) provider 
 
 <div class="grid cards" style="text-align: center;" markdown>
 
+-   ![platform-provided-llm](../../../../_assets/icons/ai-logo.svg) __[Platform-Provided LLM[^*]](cognigy-platform-provided.md)__
+
+    ---
+
+    Cognigy.AI provides a GPT-based LLM for setting up and testing [design-time features](../../generative-ai.md#design-time-generative-ai-features).
+
 -   ![azure](../../../../_assets/icons/azure.svg) __[Azure OpenAI](microsoft-azure-openai.md)__ 
 
     ---
@@ -73,11 +79,6 @@ To add a standard or custom model, select a large language model (LLM) provider 
 
     Cognigy Nexus LLM is a proprietary LLM, provided and hosted by Cognigy, optimized for AI-driven customer service.
 
--   ![platform-provided-llm](../../../../_assets/icons/ai-logo.svg) __[Platform-Provided LLM[^*]](../model-support-by-feature.md)__ 
-
-    ---
-
-    Cognigy.AI provides a GPT-based LLM for setting up and testing [design-time features](../../generative-ai.md#design-time-generative-ai-features).
 </div>
 
 [^*]: The Platform-Provided LLM is available only to customers with SaaS installations.

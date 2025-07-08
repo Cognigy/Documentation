@@ -250,6 +250,7 @@ nav:
           - ai/empower/llms/model-support-by-feature.md
           - Providers:
             - ai/empower/llms/providers/all-providers.md
+            - ai/empower/llms/providers/cognigy-platform-provided.md
             - ai/empower/llms/providers/microsoft-azure-openai.md
             - ai/empower/llms/providers/openai.md
             - ai/empower/llms/providers/openai-compatible.md
@@ -731,6 +732,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.14.md
         - release-notes/2025.13.md
         - release-notes/2025.12.md
         - release-notes/2025.11.md

@@ -8,7 +8,7 @@ hidden: false
 
 In Live Agents, human agents can have three distinct user roles:
 
-- [Agent](#agents)
+- [Agent](#agent)
 - [Supervisor](#supervisor)
 - [Administrator](#administrator)
 
@@ -61,9 +61,9 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Edit an Inbox                                     | -     | -          | +             |
 | Delete an Inbox                                   | -     | -          | +             |
 | Move Conversations from one Inbox to another [^4] | +     | +          | +             |
-| Create Agent Copilot Bot                             | -     | -          | +             |
-| Edit Agent Copilot Bot                               | -     | -          | +             |
-| Delete Agent Copilot Bot                             | -     | -          | +             |
+| Create Agent Copilot Bot                          | -     | -          | +             |
+| Edit Agent Copilot Bot                            | -     | -          | +             |
+| Delete Agent Copilot Bot                          | -     | -          | +             |
 | Add Agents to the Inbox                           | -     | -          | +             |
 | Remove Agents from the Inbox                      | -     | -          | +             |
 | Configure Conversation Assignment Settings        | -     | -          | +             |

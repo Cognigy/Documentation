@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-[![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../release-notes/2025.13.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.14-blue.svg)](../../release-notes/2025.14.md)
 
 To prepare the AI Agent for your website, you need to deploy it by [creating Webchat v3 Endpoints](#create-a-webchat-v3-endpoint) and customize the agent to fit your needs using the [Webchat v3 Endpoint settings](#configure-specific-settings).
 
@@ -41,9 +41,40 @@ The following general settings are available within this Endpoint:
 
 ## Configure Specific Settings
 
-Customize your webchat to meet your specific needs.
+Customize Webchat to meet your specific needs.
 You can adjust colors and add features such as file uploads to enhance the effectiveness of your AI Agent.
 Any updates you make will be instantly and seamlessly reflected when you load or reload your website with Webchat linked to the Endpoint.
+
+### Style Presets
+
+The Style Presets settings offer predefined dimensions and text display behavior for the Webchat widget. The style presets allow you to quickly customize your Webchat widget without the need to manually adjust the [CSS customization settings](embedding.md#customize-the-webchat-settings), the [Advanced Layout settings](#advanced-layout-settings) or the [Webchat Layout](#webchat-layout) settings.
+
+You can select the following style presets:
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+  <div style="flex: 1; text-align: center;">
+    <video min-width: 305px; max-width: 320px; controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/classic-preset.webm">
+    </video>
+    <p><strong>Classic:</strong> The classic, smaller Webchat widget with bordered AI Agent messages.</p>
+  </div>
+
+  <div style="flex: 1;  text-align: center;">
+    <video min-width: 305px; max-width: 320px; controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/modern-preset.webm">
+    </video>
+    <p><strong>Modern:</strong> A larger, wider Webchat widget with borderless AI Agent messages.</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <video min-width: 305px; max-width: 320px; controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/slick-preset.webm">
+    </video>
+    <p><strong>Slick:</strong> A larger but narrower Webchat widget with bordered AI Agent messages with grey background.</p>
+  </div>
+
+</div>
 
 ### Webchat Layout
 
@@ -332,7 +363,7 @@ The Advanced settings offer customization features like adding watermarks and ac
 
 #### Watermark
 
-The Watermark settings
+The Watermark settings allow
 users to personalize their chat interface with a watermark that suits their branding or platform,
 enhancing recognition and customization options.
 

@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v3: Accessibility
 
-[![Version badge](https://img.shields.io/badge/Updated in-v2025.12-blue.svg)](../../release-notes/2025.12.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.14-blue.svg)](../../release-notes/2025.14.md)
 
 Webchat v3 is designed to adhere to accessibility standards, specifically [WCAG 2.2 Level AA (Web Content Accessibility Guidelines)](https://www.w3.org/TR/WCAG22/). These guidelines offer detailed recommendations for making web content more accessible to people with various disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological impairments.
 
@@ -266,6 +266,12 @@ The file that includes captions should have the following `.vtt` format:
 In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions**.
 
 ## Increase Text Visibility
+
+### Text Resizing
+
+Webchat supports relative font sizes to ensure that users can adjust the font size to their needs using their browser settings. If you want to customize the font size in your Webchat widget, make sure you use relative font size units, for example, `em` or `rem` instead of `px`.
+
+### Guarantee Color Contrast
 
 By default, Webchat v3 adheres to color contrast guidelines, ensuring a clear difference in brightness between a text and its background. This means that if a dark color is used as the primary background in Webchat, the text will automatically be light, and vice versa.
 

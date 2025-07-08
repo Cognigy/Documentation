@@ -10,7 +10,7 @@ tags:
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.13-blue.svg)](../../../../release-notes/4.97.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.14-blue.svg)](../../../../release-notes/2025.14.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/llm-prompt.png" width="50%" />
@@ -190,11 +190,12 @@ Before using this Node, set the LLM provider in the [Settings](../../../empower/
 
     When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
 
-    | Parameter                  | Type   | Description                                                                                                                                                                                                                                                                                         |
-    |----------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
-    | Log Request and Completion | Toggle | Send a debug message containing the request sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                  |
-    | Log Tool Definitions       | Toggle | Send a debug message containing information about the configured AI Agent tools. The message appears in the Interaction Panel when debug mode is enabled. The parameter is inactive by default.                                                                                                     |
+    | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                               |
+    |--------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Show Token Count               | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when [debug mode](../../../test/interaction-panel/chat.md#debug-mode) is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
+    | Log System Prompt & Completion | Toggle | Send a debug message containing the system prompt sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when [debug mode](../../../test/interaction-panel/chat.md#debug-mode) is enabled. The parameter is inactive by default.                                                                                  |
+    | Log LLM Latency                | Toggle | Send a debug message containing key latency metrics for the request to the model, including the time taken for the first output and the total time to complete the request. The message appears in the Interaction Panel when [debug mode](../../../test/interaction-panel/chat.md#debug-mode) is enabled. The parameter is inactive by default.          |
+    | Log Tool Definitions           | Toggle | Send a debug message containing information about the configured AI Agent tools. The message appears in the Interaction Panel when [debug mode](../../../test/interaction-panel/chat.md#debug-mode) is enabled. The parameter is inactive by default.                                                                                                     |
 
 {! _includes/ai/build/node-reference/tools.md !}
 

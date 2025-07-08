@@ -19,8 +19,8 @@
         - **Account Key** — enter the key that you copied and saved previously.
     13. Click **Create**, then **Save**.
 
-=== "Amazon S3 Bucket"
-    1. Make sure that you have access to [Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) and that at least one bucket has been created, or [create a new one](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). Note that the bucket must be publicly available; otherwise, users cannot upload files via the chat interface.
+=== "Amazon S3 Bucket and Amazon S3-Compatible Cloud"
+    1. Make sure that you have access to [Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) or to an Amazon S3-compatible cloud, for example, [Open Telekom Cloud](https://docs.otc.t-systems.com/), [DigitalOcean Spaces](https://docs.digitalocean.com/products/spaces/), [Backblaze B2](https://www.backblaze.com/docs). You need to have at least one bucket or to [create a new one](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). The bucket must be publicly accessible; otherwise, users can't upload files via the chat interface. For an Amazon S3-compatible cloud storage, you need similar information as described in the following steps.
     2. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/).
     3. On the **Amazon S3** page, go to the **General purpose buckets** tab.
     4. From the **Name** column, copy the name of the target bucket from the **Name** column. This bucket will store user-uploaded files. Save the bucket name for later use.
@@ -33,13 +33,15 @@
     11. Depending on the Endpoint you select, proceed as follows:
         - **Webchat v3** — go to **Webchat Behavior > Attachment Upload** on the **Endpoint Settings** page. Activate the **Allow Attachment Upload** setting.
         - **Other Endpoints** — go to the **File Storage** section on the **Endpoint Settings** page.
-    12. From the **File Storage Provider** list, select **AWS**. 
-    13. Next to **Google Cloud Connection**, click **+**.
+    12. From the **File Storage Provider** list, select **AWS**.
+    13. Next to **AWS Connection**, click **+**.
     14. In the **New Connection** window, fill in the following fields:
+        - **Connection Name** — enter a name for the connection.
         - **Access Key ID** — enter the access key ID that you copied and saved previously.
         - **Secret Access Key** — enter the secret key that you copied and saved previously.
         - **Region** — enter the AWS region that you copied and saved previously.
         - **Bucket Name** — enter the name of the bucket that you copied and saved previously.
+        - **Custom URL** — enter the custom URL of your S3-compatible storage. This parameter applies only for Amazon S3-compatible cloud storages.
     15. Click **Create**, then **Save**.
 
 === "Google Cloud Storage Bucket"

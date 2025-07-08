@@ -41,6 +41,14 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
     </tr>
   </thead>
   <tr>
+    <td><img src="../../../../_assets/icons/ai-logo.svg" alt="cognigy-ai-logo"> <strong><a href="../../generative-ai#design-time-generative-ai-features">Cognigy.AI</a></strong></td>
+    <td style="text-align: center;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td>Platform-Provided LLM</td>
+    <td style="text-align: center;"><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
+  </tr>
+  <tr>
     <td><img src="../../../../_assets/icons/azure.svg" alt="azure"> <strong><a href="providers/microsoft-azure-openai.md">Microsoft Azure OpenAI</a></strong></td>
     <td style="text-align: center;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
   </tr>
@@ -267,14 +275,6 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
   <tr>
     <td><code>pixtral-12b-2409</code></td>
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
-  </tr>
-  <tr>
-    <td><img src="../../../../_assets/icons/ai-logo.svg" alt="cognigy-ai-logo"> <strong><a href="../../generative-ai#design-time-generative-ai-features">Cognigy.AI</a></strong></td>
-    <td style="text-align: center;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td>Platform-Provided LLM</td>
-    <td style="text-align: center;"><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
 </table>
 

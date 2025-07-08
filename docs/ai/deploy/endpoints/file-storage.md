@@ -7,7 +7,7 @@ hidden: false
 
 # File Storage
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../../release-notes/4.91.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.14-blue.svg)](../../../release-notes/2025.14.md)
 
 By default, users cannot attach files to chat messages.
 To enable file uploads via drag and drop or the Attach file button,

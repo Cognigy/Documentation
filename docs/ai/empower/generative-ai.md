@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.14-blue.svg)](../../release-notes/2025.14.md)
 
 {! _includes/ai/terms-of-use.md !}
 
@@ -27,6 +27,7 @@ To know more about the benefits of integrating Conversational AI with Generative
 
 Before using Generative AI, you need to have access to an LLM of the following providers:
 
+- [Cognigy Platform-Provided LLM](llms/providers/cognigy-platform-provided.md). A no-cost LLM for [design-time](#design-time-generative-ai-features) features and available only to customers with SaaS installations.
 - [OpenAI](llms/providers/openai.md). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](llms/providers/microsoft-azure-openai.md). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure administrator to provide API Key, resource name, and deployment model name.
 - [Anthropic Claude](llms/providers/anthropic.md). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
@@ -34,7 +35,6 @@ Before using Generative AI, you need to have access to an LLM of the following p
 - [Aleph Alpha](llms/providers/aleph-alpha.md). You need to have an [Aleph Alpha account](https://docs.aleph-alpha.com/).
 - [Amazon Bedrock](llms/providers/amazon-bedrock.md). You need to have an [AWS account](https://aws.amazon.com/resources/create-account/) and access to the [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) service.
 - [Mistral](llms/providers/mistral.md). You need to have a [Mistral AI account](https://docs.mistral.ai/getting-started/quickstart/#account-setup) and activate payments for the LLM usage.
-- Cognigy's built-in LLM. A free-of-charge LLM for [design-time](#design-time-generative-ai-features) features and available only to customers with SaaS installations.
 
 ## Design-Time Generative AI Features
 
@@ -43,7 +43,7 @@ Before using Generative AI, you need to have access to an LLM of the following p
 1. In **Manage > Settings**, activate **Enable Generative AI Features** in the **Generative AI Settings** section.
 2. From the **Design-Time Generative LLM Features** list, select:
 
-    - **Platform-Provided LLM** to use the built-in LLM for the design-time features.
+    - **Platform-Provided LLM** to use the built-in LLM for the design-time features. This model is selected by default for new Projects created from version 2025.14 onwards.
     - a third-party LLM you want to use.
 
 ### Generate Cognigy.AI Resources
