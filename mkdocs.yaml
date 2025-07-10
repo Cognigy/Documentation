@@ -358,6 +358,7 @@ nav:
       - ai/analyze/overview.md
       - Collecting Data:
         - ai/analyze/collecting-data.md
+        - ai/analyze/analytics-steps.md
         - ai/analyze/user-and-session-identification.md
         - ai/analyze/data-expiration.md
       - ai/analyze/insights.md

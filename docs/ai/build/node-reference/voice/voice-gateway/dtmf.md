@@ -33,7 +33,7 @@ For example, after a caller enters digits, the system plays back the correspondi
 | Parameter       | Type   | Description                                                                                                                                                          |
 |-----------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Digits Sequence | Text   | Specifies the sequence of digits to be played to the caller. The sequence of digits can be a telephone extension code or the number for the customer service center. |
-| Pause time      | Slider | Specifies the pause length in milliseconds (ms), between each individual DTMF digit tone. The default value is 500 ms.                                               |
+| Pause time      | Slider | Specifies the pause length in milliseconds (ms), between each DTMF digit tone. The default value is 500 ms.                                                          |
 
 ## Example
 

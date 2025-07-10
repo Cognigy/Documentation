@@ -4,7 +4,7 @@ slug: "live-agent-odata-endpoint"
 hidden: false
 ---
 
-# Live Agent: OData Analytics Endpoint
+# Live Agent OData Analytics Endpoint
 
 [![Version badge](https://img.shields.io/badge/Updated in-v2025.13-blue.svg)](../../release-notes/2025.13.md)
 

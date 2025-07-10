@@ -8,7 +8,7 @@ hidden: false
 
 Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the process of customizing Flows and Intents for various Locales. These capabilities are helpful for users who need multilingual support for voice and text AI Agents without the need for manual translations.
 
-## Key features
+## Key Features
 
 - **Freedom of Language Choice**. You have the flexibility to choose your preferred translation language.
 - **Supervised or Automatic Translation**. You can trigger the translation manually or automatically, depending on your needs.

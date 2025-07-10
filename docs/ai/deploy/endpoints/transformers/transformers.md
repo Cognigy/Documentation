@@ -90,7 +90,7 @@ The Transformer code editor has a default value for new Endpoints, which explain
   <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/transformer.png" width="100%" />
 </figure>
 
-In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each individual Transformer function. Transformer functions can thereby also be temporarily disabled without having to delete the code.
+In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each Transformer function. Transformer functions can thereby also be temporarily disabled without having to delete the code.
 
 ## Error handling in Transformers
 
