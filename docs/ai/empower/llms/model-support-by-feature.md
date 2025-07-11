@@ -3,6 +3,8 @@ title: "Model Support by Feature"
 slug: "model-support-by-feature"
 description: "The Model Support by Feature table outlines the LLM providers supported by Cognigy.AI and shows the standard models along with their compatibility with Cognigy.AI features."
 hidden: false
+hide:
+  - toc
 tags:
   - llms
   - model support
