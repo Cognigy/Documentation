@@ -298,7 +298,9 @@ nav:
         - ai/test/interaction-panel/live-follow.md
       - ai/test/demo-webchat.md
       - ai/test/logs.md
-      - ai/test/playbooks.md
+      - Playbooks:
+        - ai/test/playbooks.md
+        - ai/test/assertions.md
       - ai/test/voice-preview.md
 
     - 🚀 Deploy:

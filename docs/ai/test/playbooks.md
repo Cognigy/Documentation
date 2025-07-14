@@ -1,5 +1,5 @@
 ---
-title: "Playbooks"
+title: "Overview"
 slug: "playbooks"
 hidden: false
 description: "Cognigy.AI Playbooks are conversation scripts that you can run automatically to test your Flows."
@@ -19,7 +19,7 @@ _Playbooks_ are conversation scripts that you can run automatically to test your
 Playbooks include:
 
 - **Steps** — simulate a user input and can include an input text and input data.
-- **Assertions** — check the AI Agent's responses and different aspects of the Flow for each Step against a defined value. You can also invert the Assertion check, which means the Assertion checks if the defined value is missing.
+- [Assertions](assertions.md) — check the AI Agent's responses and different aspects of the Flow for each Step against a defined value. You can also invert the Assertion check, which means the Assertion checks if the defined value is missing.
 
 ??? info "Assertion Types"
     | Type                   | Description                                                | API Value       |
@@ -31,12 +31,11 @@ Playbooks include:
     | Slots assertion        | Checks if specific Slots have been recognized.             | `assertSlots`   |
     | Intent assertion       | Checks if specific Intents have been recognized.           | `assertIntent`  |
 
-
 ## Limitations
 
 - You can run up to 10 Playbooks simultaneously. You can change this limit for:
-    - On-premises — specify the `MAX_CONCURRENT_PLAYBOOK_EXECUTIONS` variable in the `values.yaml` file. 
-    - Dedicated SaaS — contact [Cognigy technical support](../../help/get-help.md).
+  - On-premises — specify the `MAX_CONCURRENT_PLAYBOOK_EXECUTIONS` variable in the `values.yaml` file. 
+  - Dedicated SaaS — contact [Cognigy technical support](../../help/get-help.md).
 - A Playbook can contain up to 50 Steps.
 
 ### Working with Playbooks
@@ -88,3 +87,8 @@ The following video provides examples of how to create and run a Playbook using 
 <div style="text-align:center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/juB7Wy4Anvc?si=7lMt55YSMdqdaP2i&amp;start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## More Information
+
+- [Assertions](assertions.md)
+- [Best Practices: Testing your Virtual Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#7-regression-test-nlu-models-0-6)
