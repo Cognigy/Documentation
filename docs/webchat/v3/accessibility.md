@@ -269,7 +269,10 @@ In Webchat, activate captions in the video widget by clicking ![vertical-ellipsi
 
 ### Text Resizing
 
-Webchat supports relative font sizes to ensure that users can adjust the font size to their needs using their browser settings. If you want to customize the font size in your Webchat widget, make sure you use relative font size units, for example, `em` or `rem` instead of `px`.
+Webchat supports relative font sizes to ensure that users can adjust the font size to their needs using their browser settings. If you want to customize the font size in your Webchat widget, you need to make sure that both the Webchat CSS customization and the HTML code of your website work properly with relative font sizes. To do this, you must:
+
+- Use relative font size units, for example, `em` or `rem` instead of `px` in the [Webchat CSS customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md) options.
+- Avoid absolute pixel values in the HTML tag embedding the Webchat widget or set `font-size` to `100%`. These approaches allow font sizes to adapt to user preferences. For more details, refer to the [Webchat v3.25.0 release notes](https://github.com/Cognigy/Webchat/releases/tag/v3.25.0).
 
 ### Guarantee Color Contrast
 
