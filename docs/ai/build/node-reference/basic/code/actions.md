@@ -1,6 +1,6 @@
 ---
-title: "Actions" 
-slug: "actions" 
+title: "API Functions" 
+slug: "api-functions" 
 hidden: false
 tags:
   - actions
@@ -10,18 +10,18 @@ tags:
   - cognigy api functions
 ---
 
-# Actions
+# API Functions 
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../../release-notes/4.84.md)
 
-In a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
+In a [Code Node](overview.md), you can use the functions of the `api` classes. These functions are also available in Extensions. You can use the api object to, for example, execute `api.say()`.
 
-!!! note "Available in Extensions"
-    The following functions are available in Extensions as well. You can use the `api` object and, for example, execute `api.say()`.
+!!! note
+    Previously, you could use both `actions` and `api`. Now, only `api` is supported. Use `api` functions for all implementations.
 
 ## General
 
-??? info "actions.output / actions.say || api.output / api.say"
+??? info "api.output / api.say"
 
     Executes a basic output to the contact, similar to the functionality of the [Say](../../basic/say.md) Node. 
 
@@ -36,9 +36,9 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.completeGoal || api.completeGoal"
+??? info "api.completeGoal"
 
-    Completes the goal in **Insights.**
+    Completes the goal in Insights.
 
     **Parameters**
 
@@ -50,7 +50,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     Promise<void>
 
-??? info "actions.setTimezoneOffset || api.setTimezoneOffset"
+??? info "api.setTimezoneOffset"
 
     Sets the time zone offset from UTC.
 
@@ -64,22 +64,22 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.logDebugMessage / actions.logDebugError || api.logDebugMessage / api.logDebugError"
+??? info "api.logDebugMessage / api.logDebugError"
 
-    Sends a debug info or error message. Only visible in the Interaction Panel's [Debug Mode](../../../../test/interaction-panel/chat.md#debug-mode).
+    Sends a debug info or error message. Only visible in [debug mode](../../../../test/interaction-panel/chat.md#debug-mode).
 
     **Parameters**
 
     | Parameter | Type   | Description                                                        |
     |-----------|--------|--------------------------------------------------------------------|
     | message   | string | The debug message text.                                            |
-    | header    | string | The Header text for the debug message. This parameter is optional. |
+    | header    | string | The header text for the debug message. This parameter is optional. |
 
     **Returns**
 
     void
 
-??? info "actions.log || api.log"
+??? info "api.log"
 
     Writes a message to the Project logs.
 
@@ -94,10 +94,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "(Deprecated) actions.think || api.think"
-
-    !!! warning
-        Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
+??? info "api.thinkV2"
 
     Is used to re-execute the Flow within one invocation.
 
@@ -114,7 +111,10 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.thinkV2 || api.thinkV2"
+??? info "(Deprecated) api.think"
+
+    !!! warning
+        In Cognigy.AI v4.98, `api.think` is deprecated. The removal is planned for Cognigy.AI 2025.19. Use `api.thinkV2` instead.
 
     Is used to re-execute the Flow within one invocation.
 
@@ -133,7 +133,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 ## Context
 
-??? info "actions.addToContext || api.addToContext"
+??? info "api.addToContext"
 
     Is used to simplify storing information into the conversation's Context.
 
@@ -149,21 +149,21 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.getContext || api.getContext"
+??? info "api.getContext"
 
-    Gets the data from the context by the key.
+    Gets the data from the Context by the key.
 
     **Parameters**
 
     | Parameter | Type   | Description                                  |
     |-----------|--------|----------------------------------------------|
-    | key       | string | Where to retrieve the data from the context. |
+    | key       | string | Where to retrieve the data from the Context. |
 
     **Returns**
 
-    any : The requested context data
+    any : The requested Context data
 
-??? info "actions.getConversationTranscript || api.getConversationTranscript"
+??? info "api.getConversationTranscript"
 
     Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the AI Agent.
 
@@ -208,9 +208,9 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
     - USER: show transcript
     ```
 
-??? info "actions.resetContext || api.resetContext"
+??? info "api.resetContext"
 
-    Resets the context.
+    Resets the Context.
 
     **Parameters**
 
@@ -220,23 +220,23 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     Promise
 
-??? info "actions.removeFromContext || api.removeFromContext"
+??? info "api.removeFromContext"
 
     Removes information from the conversation's Context.
 
     **Parameters**
 
-    | Parameter | Type   | Description                                                                                                       |
-    |-----------|--------|-------------------------------------------------------------------------------------------------------------------|
-    | key       | string | The key in the Context to remove information from                                                                 |
-    | value     | string | The value to remove (in array mode)                                                                               |
-    | mode      | string | In simple mode will remove the property completely, in array mode it will remove matching values from that array. |
+    | Parameter | Type   | Description                                                                                                            |
+    |-----------|--------|------------------------------------------------------------------------------------------------------------------------|
+    | key       | string | The key in the Context to remove information from                                                                      |
+    | value     | string | The value to remove (in array mode)                                                                                    |
+    | mode      | string | In simple mode, it will remove the property completely. In array mode, it will remove matching values from that array. |
 
     **Returns**
 
     void
 
-??? info "actions.deleteContext || api.deleteContext"
+??? info "api.deleteContext"
 
     Deletes the key and its values from the conversation's Context.
 
@@ -252,7 +252,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 ## State
 
-??? info "actions.setState || api.setState"
+??? info "api.setState"
 
     Is used to set the current State of this Conversation.
 
@@ -266,7 +266,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.getState || api.getState"
+??? info "api.getState"
 
     Returns the current state.
 
@@ -278,9 +278,9 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     string: The current state.
 
-??? info "actions.resetState || api.resetState"
+??? info "api.resetState"
 
-    Resets the state of the flow to the *default* state
+    Resets the state of the Flow to the *default* state
 
     **Parameters**
 
@@ -292,7 +292,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 ## Lexicon
 
-??? info "actions.setKeyphrase || api.setKeyphrase"
+??? info "api.setKeyphrase"
 
     **Parameters**
 
@@ -306,7 +306,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     void
 
-??? info "actions.addLexiconKeyphrase || api.addLexiconKeyphrase"
+??? info "api.addLexiconKeyphrase"
 
     Adds a new keyphrase to a lexicon.
 
@@ -325,7 +325,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 ## Profile
 
-??? info "actions.activateProfile || api.activateProfile"
+??? info "api.activateProfile"
 
     Is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
 
@@ -337,7 +337,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     Promise<any>
 
-??? info "actions.updateProfile || api.updateProfile"
+??? info "api.updateProfile"
 
     Is used to update the users' Contact Profile.
 
@@ -352,7 +352,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     Promise<any>
 
-??? info "actions.mergeProfile || api.mergeProfile"
+??? info "api.mergeProfile"
 
     Is used to merge the profile of the contact who hits the Node with another contact profile. 
 
@@ -368,9 +368,9 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     Promise<any>
 
-??? info "actions.deactivateProfile || api.deactivateProfile"
+??? info "api.deactivateProfile"
 
-    Is used to deactivate a specific contact profile in case a contact requests it.
+    Is used to deactivate a specific contact profile if a contact requests it.
 
     **Parameters**
 
