@@ -28,7 +28,7 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 - Access to [Genesys Cloud](https://login.mypurecloud.com/).
 - Created Endpoint [compatible with Genesys Cloud Guest Chat](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 
-## Configuration on the Handover Provider Side
+## Configuration on the Cognigy.AI Side
 
 ??? info "1. Create a Handover Connector (Beta)"
 

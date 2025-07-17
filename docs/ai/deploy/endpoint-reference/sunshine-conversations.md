@@ -1,8 +1,13 @@
 ---
 title: "Sunshine Conversations" 
-slug: "sunshine-conversations" 
-hidden: false 
+slug: "sunshine-conversations"
+description: "The Sunshine Conversations Endpoint enables you to connect your Cognigy AI Agent to the Zendesk messaging platform."
+hidden: false
+tags:
+  - sunshine conversations
+  - sunshine conversations endpoint
 ---
+
 # Sunshine Conversations
 
 <figure>
@@ -11,48 +16,69 @@ hidden: false
 
 {! _includes/release-notes/handover-providers-deprecation.md !}
 
-Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
-
-!!! note "Where is the Smooch Endpoint?"
-    This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
+The Sunshine Conversations Endpoint enables you to connect your AI Agent to the [Zendesk's Sunshine Conversations messaging platform](https://app.smooch.io/).
 
 ## Generic Endpoint Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Learn about the generic Endpoint settings on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md) 
+- [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/overview.md) 
-- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
-- [Session Management](../endpoints/session-management.md)
-- [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
+- [Session Management](../endpoints/session-management.md)
+- [Transformer Functions](../endpoints/transformers/overview.md)
+- [Handover Settings](../endpoints/handover-settings.md)
+- [Inject and Notify](../endpoints/inject-and-notify.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+## Specific Endpoint Settings
 
-# Specific Endpoint Settings
+??? info "Sunshine Conversations Setup"
+    | Parameter   | Description                                                                                                                                                                                                                       |
+    |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | API Version | The Sunshine Conversations API version Cognigy.AI uses to communicate with your app. Cognigy.AI supports version 1.1 and version 2. The version must match the one used to create the webhook in your Sunshine Conversations app. |
+    | Key ID      | The API key ID from your Sunshine Conversations app. The format is `app_XXXXXXXXXXXXXXXXXXXXXXXX`. The key ID is paired with the secret you provide.                                                                              |
+    | Secret      | The API secret generated for your Sunshine Conversations app. This secret must match the key ID you entered earlier.                                                                                                              |
+    | URI         | The base URL for your Sunshine Conversations app. For example, `https://app.smooch.io`. Don't include a trailing slash (`/`).                                                                                                     |
 
-The values of the following fields are used to communicate with your Sunshine Conversations app. All values can be retrieved from the Sunshine Conversations platform.
+## How to Set Up
 
-### API Version
+??? info "1. Create a Sunshine Conversations Endpoint"
+    1. In the left-side menu of your Project, click **Deploy > Endpoints**.
+    2. On the **Endpoints** page, click **+ New Endpoint**.
+    3. In the **New Endpoint** section, do the following:
+        1. Select the **Sunshine Conversations** Endpoint type.
+        2. Specify a unique name.
+        3. Select a Flow from the list.
+    4. In the **Configuration Information** section, copy the URL from the **Endpoint URL** field.
 
-Cognigy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The selection in this field must match the API version used to create the webhook integration in the Sunshine conversations app.
+??? info "2. Create a Sunshine Conversations App"
+    1. Go to the [Sunshine Conversations Dashboard](https://app.smooch.io/) and log in with your Zendesk account.
+    2. If you don’t have a workspace yet, create one first. Otherwise, select your existing workspace. 
+    3. Click **Create App**. Enter the name and description for your app. Click **Create**.
+    4. Go to the **Channels** or **Integrations** tab. Add the messaging channels you want, for example, WhatsApp, Facebook Messenger, Slack. Follow the Sunshine Conversations instructions for each integration.
+    5. Open the **Settings** tab of your app. Go to **API Keys** and click **+ Create new secret key**.
+    6. Copy the **Key ID** and **Secret** for later use in the Cognigy.AI Endpoint. Save Changes.
 
-### Key ID
+??? info "3. Complete the Endpoint Configuration"
+    1. In the Cognigy.AI interface, open the Sunshine Conversations Endpoint you created.
+    2. In the **Sunshine Conversations Setup** section, fill in the required fields:
+        - **API Version** - select either v1.1 or v2, matching your Sunshine Conversations app.
+        - **Key ID** - paste the key ID you copied from Sunshine Conversations.
+        - **Secret** - paste the secret you copied.
+        - **URI** - use your app's base URI, for example, `https://app.smooch.io` (omit the trailing `/`).
+    3. Save changes.
 
-The API Key ID from your Sunshine Conversations app. This value is typically in the format `app_XXXXXXXXXXXXXXXXXXXXXXXX` and must be the API Key ID associated with the secret entered the following field.
-
-### Secret
-
-Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API key secret from Sunshine Conversations. The value of this field must be the SECRET associated with the API Key ID entered the previous field.
-
-### URI
-
-The URI where we send messages to your Sunshine Conversations app. For example, `https://app.smooch.io` (ensure the "/" is omitted from the end of the URI)
-
-!!! note "Help Center"
-    More detailed information on how to set up a **Sunshine Conversations** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
+??? info "4. Add a Webhook in Sunshine Conversations"
+    1. In your Sunshine Conversations app, go to **Settings > Integrations > Webhooks**.
+    2. Click **Add Webhook**.
+    3. Paste the Cognigy.AI Endpoint URL you copied earlier into the **URL** field.
+    4. For **Triggers**, select at least the following options:
+        - `AppUser messages`
+        - `Postbacks`
+    5. Ensure the **API Version** matches your Cognigy.AI Endpoint version (v1.1 or v2). Save the webhook.
+ 
 ## More Information
 
-- [HelpCenter: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
-- [HelpCenter: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)
+- [Cognigy Help Center: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
+- [Cognigy Help Center: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)

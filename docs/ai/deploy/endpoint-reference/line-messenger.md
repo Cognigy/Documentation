@@ -1,9 +1,14 @@
 ---
-title: "LINE Messenger" 
-slug: "line-messenger" 
-hidden: false 
+title: "LINE" 
+slug: "line"
+description: "Connect your AI Agent to the LINE platform using the LINE Endpoint."
+hidden: false
+tags:
+  - line messenger
+  - line messenger endpoint
 ---
-# LINE Messenger
+
+# LINE
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line.png" width="100%" />
@@ -11,45 +16,64 @@ hidden: false
 
 {! _includes/release-notes/handover-providers-deprecation.md !}
 
-Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
+The LINE Endpoint enables you to connect your AI Agent to the [LINE platform](https://www.line.me/).
+
+## Prerequisites
+
+- Access to [LINE Developer Console](https://developers.line.biz/console/).
+
+## Restrictions
+
+- The LINE Messaging API requires you to follow rules that might block some messages. Check your Node settings with the [Line Messaging API requirements](https://support.cognigy.com/hc/en-us/articles/5721825020444) to ensure all messages are delivered.
 
 ## Generic Endpoint Settings
 
-Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+Learn about the generic Endpoint settings on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md) 
-- [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/overview.md) 
-- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
+- [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
 - [Session Management](../endpoints/session-management.md)
-- [Handover Settings](../endpoints/handover-settings.md)
+- [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
-
-{! _includes/ai/providers/inject-and-notify.md !}
+- [Transformer Functions](../endpoints/transformers/overview.md)
+- [Handover Settings](../endpoints/handover-settings.md)
+- [Inject and Notify](../endpoints/inject-and-notify.md)
 
 ## Specific Endpoint Settings
 
-The **Line Setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Line Channel**.
+??? info "LINE Setup"
+    | **Parameter**        | **Description**                                                                                                                   |
+    |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+    | Channel Access Token | The token obtained from your Line Developer account for each deployed channel. It is linked to the Channel Secret.                |
+    | Channel Secret       | The secret associated with the Channel Access Token and also obtained from your Line Developer account for each deployed channel. |
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line-setup.png" width="100%" />
-</figure>
+## How to Set Up
 
-### Channel Access Token
+??? info "1. Create a LINE Messaging API Channel"
+    1. Log in to the [LINE Developers Console](https://developers.line.biz/console/).
+    2. Create a new provider (if needed).
+    3. Create a new **Messaging API** channel under that provider.
+    4. Copy the values from the **Channel Secret** and **Channel Access Token** fields for later use.
 
-This value is the Line **Channel Access Token**, which is obtained from the Line Developer account for each channel that is deployed. This token should be associated with the secret provided below.
+??? info "2. Create a LINE Endpoint"
+    1. In the left-side menu of your Project, click **Deploy > Endpoints**.
+    2. On the **Endpoints** page, click **+ New Endpoint**.
+    3. In the **New Endpoint** section, do the following:   
+        1. Select the **Line** Endpoint type.
+        2. Specify a unique name.
+        3. Select a Flow from the list. Save changes.
+    4. Go to the **Configuration Information** section and copy the URL from the **Endpoint URL** field.
 
-### Channel Secret
+??? info "3. Configure the Webhook in LINE"
+    1. Go back to the LINE Developers Console.
+    2. Open your Messaging API channel settings.
+    3. Find the **Webhook URL** field and paste the Cognigy.AI Endpoint URL you copied.
+    4. Enable the webhook by toggling the **Use webhook** switch. Test the webhook.
 
-This value is the Line **Channel Secret**, which is associated with a channel access token. This value is obtained from the Line Developer account for each channel that is deployed.
-
-!!! note "Help Center"
-    More detailed information on how to set up a **Line Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
-
-!!! warning "Configuration of Line messages"
-    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+??? info "4. Complete the Endpoint Configuration"
+    1. In the Cognigy.AI interface, open the LINE Endpoint configuration.
+    2. Fill in the **Channel Secret** and **Channel Access Token** fields. Save changes.
 
 ## More Information 
 
-- [Line Messenger: Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)
-- [Line Messenger: Message types and payload examples](https://support.cognigy.com/hc/en-us/articles/5721825020444)
+- [Cognigy Help Center: LINE Messenger Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)

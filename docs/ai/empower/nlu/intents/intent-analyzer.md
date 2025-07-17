@@ -26,7 +26,7 @@ The _Intent Analyzer_ provides immediate feedback on the quality of example sent
 - Strong overall Intent model scores don't guarantee perfect individual Intents; red or yellow Intents may still need work.
 - An Intent requires at least five example sentences. If trained with fewer, a negative feedback indicator will appear after the build, signaling that while the Intent still functions, its performance will be significantly reduced. 
 
-## How to Set up
+## How to Set Up
 
 1. In the Flow editor, go to **NLU > Intents**.
 2. Add a variety of example sentences into each Intent. 

@@ -343,6 +343,7 @@ nav:
         - ai/deploy/endpoint-reference/slack.md
         - ai/deploy/endpoint-reference/sunshine-conversations.md
         - ai/deploy/endpoint-reference/twilio.md
+        - ai/deploy/endpoint-reference/twilio-sms.md
         - ai/deploy/endpoint-reference/userlike.md
         - ai/deploy/endpoint-reference/voice-copilot.md
         - ai/deploy/endpoint-reference/voice-gateway.md

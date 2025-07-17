@@ -35,13 +35,12 @@ Learn about the generic Endpoint settings on the following pages:
 
 ## Specific Endpoint Settings
 
-### Zoom Contact Center Settings
+??? info "Zoom Contact Center Settings"
+   | **Parameter** | **Description**                                                                                                                                                                                                                  |
+   |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Verify Token  | A secret token defined in the Zoom Contact Center integration to ensure secure communication between Zoom and Cognigy.AI. You can obtain this token from your Zoom admin or support representative during the integration setup. |
 
-| **Parameter** | **Description**                                                                                                                                                                                                                  |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verify Token  | A secret token defined in the Zoom Contact Center integration to ensure secure communication between Zoom and Cognigy.AI. You can obtain this token from your Zoom admin or support representative during the integration setup. |
-
-## How to Set up
+## How to Set Up
 
 ### Setup on the Zoom Contact Center Side
 
@@ -49,15 +48,16 @@ Contact your Zoom representative or support to provide you with the Verify Token
 
 ### Setup on the Cognigy.AI Side
 
-1. In the left-side menu of your Project, click **Deploy > Endpoints**.
-2. On the **Endpoints** page, click **+ New Endpoint**.
-3. In the **New Endpoint** section, do the following:
-    1. Select the **Zoom Contact Center** Endpoint type.
-    2. Specify a unique name.
-    3. Select a relevant Flow from the list and save changes.
-4. In the Endpoint settings, go to the **Zoom Contact Center Settings** section.
-5. In the **Verify Token** field, enter the token that Zoom support provided your previously.
-6. Save changes, then verify the integration with your Zoom representative or support to finalize the setup.
+??? info "Create a Zoom Contact Center Endpoint"
+    1. In the left-side menu of your Project, click **Deploy > Endpoints**.
+    2. On the **Endpoints** page, click **+ New Endpoint**.
+    3. In the **New Endpoint** section, do the following:
+       1. Select the **Zoom Contact Center** Endpoint type.
+       2. Specify a unique name.
+       3. Select a relevant Flow from the list and save changes.
+    4. In the Endpoint settings, go to the **Zoom Contact Center Settings** section.
+    5. In the **Verify Token** field, enter the token that Zoom support provided your previously.
+    6. Save changes, then verify the integration with your Zoom representative or support to finalize the setup.
 
 ## More Information
 

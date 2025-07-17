@@ -32,7 +32,7 @@ Once you have the correct Intent, you can continue the Flow based on this Intent
 - Add an [external LLM](../../llms/model-support-by-feature.md) that supports the LLM Prompt Node & LLM-powered Answer Extraction features.
 - Create a Flow and Intents in it.
 
-## How to Set up
+## How to Set Up
 
 To rerank Intents via an external LLM, follow these steps:
 

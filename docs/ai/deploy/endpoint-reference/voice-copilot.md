@@ -38,7 +38,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ## Configure Voice Copilot Endpoint
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
+1. In the left-side menu of your Project, click **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
 3. In the **New Endpoint** section, do the following: <br>
     1. Select the **Voice Copilot** Endpoint type. <br>
@@ -52,7 +52,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 If Cognigy.AI in Front, you need to configure the Transfer Node:
 
-1. In the left-side menu of your Agent, click **Build > Flows**. 
+1. In the left-side menu of your Project, click **Build > Flows**. 
 2. Select a voice Flow from the list.
 3. Go to the Voice Gateway Transfer Node.
 4. In the Transfer Node, select the **Dial** transfer type.<br>
