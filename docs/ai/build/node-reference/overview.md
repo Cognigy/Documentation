@@ -88,4 +88,4 @@ All Node types include the **Settings** section, which contains the following pa
 |----------------|--------------------------------------------------------------------------------------------------------------------------|
 | Label          | The name of the Node that is displayed in the Flow editor. This is useful to distinguish between Nodes of the same type. |
 | Comment        | A comment that is displayed in the Flow editor. This is useful to add additional information about the Node.             |
-| Analytics Step | An [analytic step](../../analyze/collecting-data.md#analytics-steps) to track which paths users take in the Flow.        |
+| Analytics Step | An [analytic step](../../analyze/analytics-steps.md) to track which paths users take in the Flow.        |

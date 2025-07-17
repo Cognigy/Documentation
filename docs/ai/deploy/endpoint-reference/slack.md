@@ -19,8 +19,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md) 
-- [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
+- [Transformer Functions](../endpoints/transformers/overview.md) 
+- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
 - [Session Management](../endpoints/session-management.md)
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)

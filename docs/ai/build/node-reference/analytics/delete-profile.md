@@ -13,7 +13,7 @@ hidden: false
 
 ## Description
 
-This Node is used to delete a [specific Contact Profile](../../../analyze/contact-profiles.md#view-contact-profiles) if the end user requests it.
+This Node is used to delete a [specific Contact Profile](../../../analyze/contact-profiles.md#working-with-contact-profiles) if the end user requests it.
 
 !!! danger
     Executing this Node will delete the user's entire Profile, including all analytics data and all transcripts. The user's data will no longer be available.

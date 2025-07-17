@@ -312,10 +312,10 @@ nav:
         - ai/deploy/endpoints/real-time-translation-settings.md
         - ai/deploy/endpoints/file-storage.md
         - ai/deploy/endpoints/content-conversion.md
-        - ai/deploy/endpoints/testing-mode.md
+        - ai/deploy/endpoints/test-mode.md
         - ai/deploy/endpoints/inject-and-notify.md
         - Transformers:
-          - ai/deploy/endpoints/transformers/transformers.md
+          - ai/deploy/endpoints/transformers/overview.md
           - ai/deploy/endpoints/transformers/input-transformer.md
           - ai/deploy/endpoints/transformers/output-transformer.md
           - ai/deploy/endpoints/transformers/execution-finished-transformer.md

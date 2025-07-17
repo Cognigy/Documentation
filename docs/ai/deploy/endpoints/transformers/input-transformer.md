@@ -1,116 +1,122 @@
 ---
- title: "Input Transformer" 
- slug: "input-transformer" 
- hidden: false 
+title: "Input Transformer" 
+slug: "input-transformer" 
+hidden: false
+description: "The Input Transformer converts the user input after it's sent to an Endpoint. This allows you to manipulate the user input data before it is sent to the Flow, for example, to communicate with external systems, to implement integrations with a custom channel, and much more."
+tags:
+  - input transformer
+  - user input
+  - data transformation
+  - endpoint integration
+  - custom channels
+  - external integrations
 ---
 # Input Transformer
 
-The `Input Transformer` is triggered on every message from the user before the Flow is executed. This makes it possible to manipulate the text before it has been sent to the Flow, communicate with external systems, implement integrations with a new channel, and much more.
+The _Input Transformer_ converts the user input after it's sent to an Endpoint. This allows you to manipulate the user input data before it is sent to the Flow, for example, to communicate with external systems, to implement integrations with a custom channel, and much more.
 
-The `Input Transformer` is configured by implementing the ``handleInput`` function in the Transformer in the Endpoint.
+You can configure the input transformer in the `handleInput` function in the [Endpoint settings or via CLI](overview.md#working-with-transformers).
 
- <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/handle-input-transformer.png" width="100%" />
-</figure>
+## Restrictions
+
+{! _includes/ai/deploy/endpoint/transformers/return-value-rule-set.md !}
 
 ## Transformer Function Arguments
 
-The `handleInput` function gets a configuration object as an argument. This object always contains the key `endpoint`, which contains the Endpoint configuration. The rest of the keys in the object depends on the [base type](transformers.md#different-base-transformer-types) of the Transformer. 
-An overview of the keys in the object can be seen in the table.
+Depending on the Endpoint type in which you want to use the transformer, the function arguments vary:
 
-| Argument | Description                                                                                                                                    | Webhook Transformers | REST Transformers | Socket Transformers |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------|---------------------|
-| endpoint | The configuration object for the Endpoint. Contains the URLToken etc.                                                                          | X                    | X                 | X                   |
-| request  | The Express request object with a JSON parsed body.                                                                                            | X                    | X                 |                     |
-| response | The Express response object.                                                                                                                   | X                    | X                 |                     |
-| payload  | The payload object contains the userId, sessionId, text and data that was sent through the Socket. It also contains the channel of the client. |                      |                   | X                   |
+=== "Webhook- and REST-based Endpoints"
+    | Argument | Description                                                                  |
+    |----------|------------------------------------------------------------------------------|
+    | endpoint | The configuration object for the [Endpoint](#endpoint-configuration-object). |
+    | request  | The Express request object with a JSON-parsed body.                          |
+    | response | The Express response object.                                                 |
 
-## Return Values of the Transformer
+=== "Socket-based Endpoints"
+    | Argument | Description                                                                                                                                              |
+    |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | endpoint | The configuration object for the [Endpoint](#endpoint-configuration-object).                                                                             |
+    | payload  | The payload object contains the userId, sessionId, text, and data that was sent through the socket. The payload also contains the channel of the client. |
 
-## Regular Transformer Usage
-The `Input Transformer` can return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different compared to a request from Facebook (Meta) Messenger. It is, therefore, necessary to read the documentation from the specific channel to know how the request body is formatted. 
+{! _includes/ai/deploy/endpoint/transformers/endpoint-object.md !}
 
-Example:
+## Return Values
 
-```javascript
-return {
- userId: request.body.user,
- sessionId: request.body.conversation,
- text: request.body.messageText,
- data: { "test": 1 }
-};
-```
+The input transformer returns the user ID, session ID, text, and data, which are subsequently sent to the Flow. These values are extracted from the Endpoint payload. The payload format is specific to the Endpoint type you use, for example, Alexa or Facebook (Meta) Messenger. Read the documentation of the [specific Endpoint](../../endpoint-reference/overview.md) to know how to format the payload.
 
-## Partial Transformer Results
-If `undefined` is returned for userId, sessionId, text or data, the already extracted value from the Endpoint is used.
+??? info "Example of Transformer Return Values"
 
-The following example overwrites `text` and `data`, but keeps the userId and sessionId as they are:
+    ```javascript
+    return {
+        userId: payload.userId,
+        sessionId: payload.sessionId,
+        text: payload.text,
+        data: { "test": 1 }
+    };
+    ```
 
-```javascript
-return {
- userId: undefined,
- sessionId: undefined,
- text: request.body.messageText,
- data: { "test": 1 }
-};
-```
+### Undefined Return Values
 
-## Stopping Execution
-If the `Input Transformer` returns a falsy value altogether, then the message from the user is never sent to the Flow.
+If the transformer returns `undefined` for `userId`, `sessionId`, `text`, or `data`, this means that the transformer uses the value from the Endpoint.
 
-Example:
+??? info "Example of Undefined Return Values"
 
-```javascript
-return null;
-```
+    The following example overwrites `text` and `data`, but uses the `userId` and `sessionId` from the Endpoint:
+
+    ```javascript
+        return {
+            userId: undefined,
+            sessionId: undefined,
+            text: payload.text,
+            data: { "test": 1 }
+        };
+    ```
+
+### Endpoints Event Messages
+
+The Webchat and the Socket.IO Endpoints output event messages that indicate user activity, such as whether the user is connected (`user-connected`) or disconnected  (`user-disconnected`). These event messages neither trigger Flows nor are counted. The event messages inform [handover providers](../../../escalate/handovers.md) about user activity, allowing human agents to determine if the user is still engaged in the conversation. You can access the event messages with the `data._cognigy.event` property in the return value of the input transformer.
+
+??? info "Example of Return Values with Event Messages"
+
+    ```javascript
+    return {
+        "userId": payload.userId,
+        "sessionId": payload.sessionId,
+        "text": payload.text,
+        "data": {
+            "_cognigy": {
+                  "event": {
+                    "type": "user-connected"
+                }
+            }
+        }
+    }
+    ```
+
+If you want to access event messages in the input transformer, don't modify them. The event messages are only recognized if their data payload follows a specific format. The following code snippet shows how to use event messages in the input transformer:
+
+??? info "Example of Input Transformer with Event Messages"
+
+    ```javascript
+    {
+
+    handleInput: async ({ payload, endpoint }) => {
+      if (!!payload.data?._cognigy?.event) {
+    // pass on "event messages" without modification
+          return payload;
+        }
+
+        // rest of your input transformer code
+      }
+    }
+    ```
 
 ### Transformers and Conversation Counts
-Conversations in Cognigy.AI are only counted if the Input Transformer returns a non-falsy result.
 
+Conversations in Cognigy.AI are counted if the input transformer returns any result but falsy.
 
-!!! warning "Return Value Validation"
-    The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
-     Every value can return undefined. If something else is returned, these rules apply:
+## More Information
 
-    - userId is a string with max length of 256 characters.
-    - sessionId is a string with max length of 256 characters.
-    - text is a string with a max length of 10000 characters.
-    - data is an object
-
-### Transformers and Event Messages
-
-The Webchat and the Socket.IO Endpoints produce event messages that indicate user activity, such as whether the user is connected (`user-connected`) or disconnected  (`user-disconnected`). These event messages will not trigger Flows and will not be counted, but you may encounter them by using the Input Transformers:
-
-```json
-{
- "userId": "<current-user-id>",
- "sessionId": "<current-session-id>",
- "text": "",
- "data": {
-  "_cognigy": {
-"event": {
- "type": "user-connected"
-}
-  }
- }
-}
-```
-
-The event messages inform Handover Providers about user activity, allowing human agents to determine if the user is still engaged in the conversation. 
-
-
-When you come across these event messages in the Input Transformers, we advise you to pass them on without any changes. The event messages can only be recognized as such if their data payload follows a specific format. To achieve this result, you can use the following code snippet in your Input Transformer:
-
-```javascript
-{
-
- handleInput: async ({ payload, endpoint }) => {
-  if (!!payload.data?._cognigy?.event) {
-// pass on "event messages" without modification
-			return payload;
-		}
-
-		// rest of your input transformer code
-	}
-}
-```
+- [Endpoints](../overview.md)
+- [Transformers](overview.md)
+- [Transformers GitHub repository](https://github.com/Cognigy/TransformersSamples)

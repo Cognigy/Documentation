@@ -22,7 +22,7 @@ Both goals and tasks offer the following benefits:
 - **Enhanced Performance Monitoring**. By tracking how often certain goals or tasks are achieved, you can evaluate the success rate of different interactions or processes.
 - **Advanced Reporting and Analytics**. Achieved goals and tasks are available in various reports in Insights and OData. You can analyze this data to track trends and improve your conversational strategies.
 - **Better Decision Making**. With detailed data on goal and task achievements, you can make informed decisions about optimizing Flows and improving the AI Agent's performance.
-- **Focused Analysis**. If you need a detailed analysis of specific interactions, you can combine goals and tasks with [Analytics steps](../collecting-data.md#analytics-steps) to get a comprehensive view of user interactions.
+- **Focused Analysis**. If you need a detailed analysis of specific interactions, you can combine goals and tasks with [Analytics steps](../analytics-steps.md) to get a comprehensive view of user interactions.
 
 ## Life Cycle of Goals and Tasks
 
@@ -53,6 +53,6 @@ The table shows the differences between the following analytics tools: Analytics
 
 ## More Information
 
-- [Analytics steps](../collecting-data.md#analytics-steps)
+- [Analytics steps](../analytics-steps.md)
 - [OData](../odata.md)
 - [Insights](../../../insights/overview.md)

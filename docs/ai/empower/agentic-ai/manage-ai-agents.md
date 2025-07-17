@@ -75,9 +75,9 @@ To create an AI Agent, select one of the following options:
         1. In the **Data Privacy & Security** step, configure the following fields:
             - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
                 - **None** — no data will be used from the Contact Profile. This option is selected by default.
-                - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
+                - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#profile-schema) format and press ++enter++ to apply it.
                 - **Complete Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
-                - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
+                - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#profile-schema) field from the Contact Profile.
             - **Safety Instructions** — adjust the AI Agent's safety settings to guide content generation, interactions, and responses, ensuring compliance with ethical, legal, and operational standards. Although these settings reduce risks, occasional unexpected outputs may still occur. The selected safety instructions are included in the prompt to enhance safety, which may increase token usage. Select the safety instructions you want to apply:
                 - **Avoid harmful content** — prevent generating content that could be harmful, offensive, or abusive to end users.
                 - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.

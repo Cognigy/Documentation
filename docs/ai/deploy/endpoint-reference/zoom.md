@@ -31,7 +31,7 @@ Learn about the generic Endpoint settings on the following pages:
 - [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md)
+- [Transformer Functions](../endpoints/transformers/overview.md)
 
 ## Specific Endpoint Settings
 

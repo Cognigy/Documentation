@@ -3,30 +3,44 @@ title: "Data Protection and Analytics"
 slug: "data-protection-and-analytics" 
 description: "The Data Protection & Analytics section in Cognigy Endpoints provides control over analytics and system logging. It allows you to customize the handling of contact data creation and storage, analytics data collection, and sensitive data masking to ensure comprehensive data protection."
 hidden: false 
+tags:
+  - data protection
+  - analytics
+  - privacy
+  - security
+  - data masking
+  - logging
+  - data sanitization
+  - sensitive data
 ---
 
 # Data Protection & Analytics
 
-The **Data Protection & Analytics** section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
-## Contact Profiles
+The _Data Protection & Analytics_ section includes Endpoint settings for analytics and system logging. Here you can toggle whether you want to create and store data about contacts, and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you're masking sensitive data.
 
-This setting enables the collection of individual contact profiles to store persisted user data across sessions.
+| Setting                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contact Profiles                                     | Collects individual [Contact Profiles](../../analyze/contact-profiles.md) data to store user data across sessions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Collect Analytics                                    | Collects Analytics data for the Endpoint. The [Voice Gateway Endpoint](../endpoint-reference/voice-gateway.md) has [additional settings for collecting analyitics data](#store-extensive-data-payloads-in-analytics).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Mask IP Address                                      | Masks the IP address from the user in the [Input object](../../build/ai-agent-memory/input.md), [Insights](../../../insights/overview.md), and [Analytics](../../analyze/overview.md). When this setting is activated, IP adresses are replaced by asterisks and aren't available through the [OData Analytics Endpoint](../../analyze/odata.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Mask Sensitive Analytics                             | Masks sensitive information in the [Input object](../../build/ai-agent-memory/input.md), [Insights](../../../insights/overview.md), and [Analytics](../../analyze/overview.md). Specifically, the `inputText`, `inputData`, and `userLanguageText` properties, and the user IP address are replaced with asterisks and aren't available through [Cognigy OData Analytics Endpoint](../../analyze/odata.md). If you activate this setting, you can't use the [Intent Trainer](../../train/intent-trainer.md) because Cognigy.AI doesn't store the user's input text.<br><br>Additionally, you can use the Code Node to [ignore specific analytics](#ignore-specific-analytics-data).                                                                                                                                                  |
+| Mask Sensitive Logging                               | Masks potential sensitive information in system logs on the [Logs](../../test/logs.md) page. If you activate this setting, Cognigy.AI replaces the following log entries with asterisks:<ul><li>`userId`</li><li>`text`</li><li>`data`</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Collect Conversations                                | Stores the conversation history in Contact Profiles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Enable Input Sanitization                            | Activates server-side input sanitization. If you activate this setting, Cognigy.AI removes potentially harmful HTML content from user inputs before processing them in other parts of the system.<br><br>If you use [Input Transformers](transformers/input-transformer.md), the sanitization takes place after their execution. This process involves validating and cleaning the data on the server to make sure the data is safe and complies with the expected format.<br><br>For [Webchat](../../../webchat/index.md), client-side input [sanitization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md#endpoint-settings) (`disableHtmlContentSanitization: false`) works by default. In this case, activating server-side input sanitization provides an additional layer of security for your server. |
+| Hide References to External Resources in Transcripts | This setting removes tags that reference third-party APIs, such as `<a>` for links and `<img>` for images, from user inputs in conversation transcripts to protect users from risks associated with third-party content. In the Transcript Explorer and Message Explorer in Insights, conversation transcripts keep references to the content instead of rendering the actual links or images. For example, `<img src="url-to-an-image">` or `<a href="url">`.<br><br>For the Interaction Panel, set `DISABLE_SKIP_URI_TAGS_IP_CONVERSATIONS: "true"` in `values.yaml` to hide references to external resources.                                                                                                                                                                                                                     |
+| Dashbot                                              | Allows you to integrate Cognigy.AI with [Dashbot](https://www.dashbot.io) using a Dashbot API key. Refer to the [Help Center Dashbot article](https://support.cognigy.com/hc/en-us/articles/360016311379) for a detailed description of how to set up the Dashbot integration.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
-## Collect Analytics
+## Endpoint-Specific Settings
 
-Enable the collection of Analytics data for this endpoint.
+### Voice Gateway Endpoint
 
-### Store Extensive Data Payloads in Analytics
+#### Store Extensive Data Payloads in Analytics
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+If you activate **Store Extensive Data Payloads in Analytics** in the [Voice Gateway](../endpoint-reference/voice-gateway.md) Endpoint, all the information from [Voice Gateway event](../../../voice-gateway/references/events/overview.md) payloads is stored in the Analytics database. You can access this information via [OData](../../analyze/odata.md) or the [Transcript Explorer](../../../insights/explorers/transcript.md) in Insights. You can activate this setting after you toggle on **Collect Analytics**. By default, the setting is disabled.
 
-This setting applies only to the [Voice Gateway](../endpoint-reference/voice-gateway.md) Endpoint
-and can be activated if the [Collect Analytics](#collect-analytics) toggle is turned on.
-
-When the setting is enabled, all information from the [Voice Gateway event](../../../voice-gateway/references/events/overview.md) payloads will be stored in the Analytics database and available via OData or the Transcript Explorer in Insights.
-
-By default, the setting is disabled, and the following fields are not stored:
+This setting allows you to store the following information:
 
 - `trace_id`
 - `account_sid`
@@ -41,87 +55,17 @@ By default, the setting is disabled, and the following fields are not stored:
 - `api_base_url`
 - `originating_sip_trunk_name`
 
-## Mask IP Address
+## Ignore Specific Analytics Data
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../../release-notes/4.53.md)
-
-Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both the analytics data and the input object.
-The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../../analyze/odata.md) and [Insights](../../../insights/overview.md).
-
-## Mask Sensitive Analytics
-
-Masks sensitive information in analytics. Specifically, it replaces `inputText`, `inputData`, `userLanguageText`, and the `IP` of user inputs with asterisks in the analytics data. If this feature is used within an Endpoint, the [Intent Trainer](../../train/intent-trainer.md) can't be used, as Cognigy will not store the original text of the user. The individual records will also not be available through [Cognigy OData Analytics Endpoint](../../analyze/odata.md).
-
-### Ignore specific fields
-
-In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node](../../build/node-reference/basic/code/overview.md) using the `analyticsdata` variable:
+You can deactivate the logging of specific analytics data fields with a [Code Node](../../build/node-reference/basic/code/analytics-data.md) using the `analyticsdata` object. For example:
 
 ```js
-analyticsdata.text = "overwritten text";
-delete analyticsdata.data.token;
+  analyticsdata.text = "overwritten text";
+  delete analyticsdata.data.token;
 ```
 
-In this example, the token will be deleted from the analytics data before it's written to the database.
+In this example, the Code Node deletes `token` from the analytics data before it's written to the database.
 
-## Mask Sensitive Logging
+## More Information
 
-Masks potential sensitive information in system logs produced by the underlying infrastructure. This will also include the logs page within our UI. Here is an example of a log which gets produced when a new message arrives in our system:
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/log.png" width="100%" />
-</figure>
-
-The text could contain the name of the user, their location, or a credit card number. Once masking is enabled, all fields that could contain user information will be hidden and replaced, as shown in the following figure:
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/hidden-log.png" width="100%" />
-</figure>
-
-We will replace the following properties:
-- userId
-- text
-- data
-
-## Collect Conversations
-
-Defines whether we should store conversation histories in contact profiles for end-users.
-
-## Enable Input Sanitization
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../../release-notes/4.81.md)
-
-Activates server-side input sanitization.
-If this setting is enabled,
-any user inputs will be sanitized
-to remove potentially harmful HTML content before processing it in other parts of the Cognigy.AI system.
-
-If [Input Transformers](transformers/input-transformer.md) are used, the sanitization will take place after the execution of those Input Transformers.
-This process involves validating and cleaning the data on the server to make sure the data is safe and complies with the expected format.
-
-Note that for [Cognigy Webchat](../../../webchat/index.md),
-client-side input sanitization
-([`disableHtmlContentSanitization: false`](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md#endpoint-settings))
-works by default. 
-In this case, enabling server-side input sanitization will provide an additional layer of security for your server.
-
-## Hide References to External Resources in Transcripts
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.92-blue.svg)](../../../release-notes/4.92.md)
-
-If this parameter is enabled, tags that reference third-party APIs, such as `<a>` for links and `<img>` for images, will be removed from user inputs in conversation transcripts to enhance security and protect Cognigy.AI users from potential risks associated with third-party content.
-
-In the Transcript Explorer and Message Explorer in Insights,
-conversation transcripts will contain references instead of rendering the actual images or links.
-For example,  `<img src="url-to-an-image">` or `<a href="url">`.
-
-For the Interaction Panel, use the `DISABLE_SKIP_URI_TAGS_IP_CONVERSATIONS: "true"` feature flag to hide references to external resources.
-
-## External Analytics Services
-
-You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.
-
-### Available External Analytics Services
-
-##### Dashbot
-Cognigy.AI provides an extensive, channel-specific integration with [Dashbot](https://www.dashbot.io).
-Go to our [HelpCenter Dashbot Page](https://support.cognigy.com/hc/en-us/articles/360016311379) for a detailed description of how to set up your Dashbot integration.
+- [Endpoints](overview.md)

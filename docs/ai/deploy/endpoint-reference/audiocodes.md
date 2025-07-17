@@ -10,9 +10,8 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
 </figure>
 
-!!! warning "Removal of the AudioCodes Endpoint"
-    The AudioCodes Endpoint was deprecated in April 2025 and will be removed in October 2025. Migrate to the [Voice Gateway Endpoint](voice-gateway.md) before the removal date.
-    
+{! _includes/ai/ac-endpoint-deprecation.md !}
+
 Within our **Cognigy.AI** platform,
 you are able to connect your AI Agent to your Contact Center or other phone numbers using the AudioCodes Endpoint,
 allowing customers to speak to your AI Agent instead of just writing with it.
@@ -66,8 +65,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md) 
-- [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
+- [Transformer Functions](../endpoints/transformers/overview.md) 
+- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
 - [Session Management](../endpoints/session-management.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
 

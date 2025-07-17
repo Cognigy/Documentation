@@ -23,7 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md)
+- [Transformer Functions](../endpoints/transformers/overview.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)  
 
 ## Specific Endpoint Settings

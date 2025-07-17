@@ -1,7 +1,10 @@
 ---
 title: "Handover Settings" 
 slug: "handover-settings" 
-hidden: false 
+hidden: false
+tags: 
+  - handover providers
+  - handover settings
 ---
 
 # Handover Settings
@@ -39,3 +42,7 @@ Cognigy.AI offers support for the following handover providers:
 - [Genesys Cloud Guest Chat](../../escalate/handover-reference/genesys-cloud-guest-chat.md)
 - [Genesys Cloud Open Messaging](../../escalate/handover-reference/genesys-cloud-open-messaging.md)
 - [8x8](../../escalate/handover-reference/8x8.md)
+
+## More Information
+
+- [Handover Providers](../../escalate/handover-reference/overview.md)

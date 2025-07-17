@@ -17,8 +17,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md) 
-- [NLU Connectors](../../empower/nlu/external/nlu-connector-reference/all-nlu-connectors.md)
+- [Transformer Functions](../endpoints/transformers/overview.md) 
+- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
 
 ## Setting up Avaya CPaaS
 

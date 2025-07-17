@@ -28,7 +28,7 @@ The completed tasks are recorded in the Contact Profiles of each end user.
 The data is also available in Insights (on reports and explorers) and through the OData endpoint.
 The [top tasks](../../../../insights/reports/engagement.md#tasks-reached) are listed in the Insights Engagement report
 and allow you to track and analyze their frequency. 
-If you don't intend to analyze Contact Profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then [Analytics Steps](../../../analyze/collecting-data.md#analytics-steps) are more suitable.
+If you don't intend to analyze Contact Profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../../insights/explorers/step.md), then [Analytics Steps](../../../analyze/analytics-steps.md) are more suitable.
 
 The difference between a Complete Task and an Analytics Step lies in their purpose and usage within a system. Complete Tasks determine whether a user has completed a specific objective or task. In contrast, Analytics Steps collect data about individual events or actions for analytical purposes. Complete Tasks are associated with a user's profile, whereas Analytics Steps focus on tracking and storing data information.
 

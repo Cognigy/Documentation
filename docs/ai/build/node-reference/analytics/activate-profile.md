@@ -12,7 +12,7 @@ hidden: false
 
 ## Description
 
-This Node is used to reactivate a [specific Contact Profile](../../../analyze/contact-profiles.md#view-contact-profiles) that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
+This Node is used to reactivate a [specific Contact Profile](../../../analyze/contact-profiles.md#working-with-contact-profiles) that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
 
 ## Use Case
 

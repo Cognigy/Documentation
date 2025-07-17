@@ -11,6 +11,8 @@ tags:
 hidden: false
 ---
 
+# Analytics Steps
+
 In Cognigy.AI, _Analytics Steps_ are progress markers that help you monitor the Flow paths users take during interactions with AI Agents. These steps are recorded in the Analytics database and can be analyzed in [Insights](insights.md) or retrieved through the [OData Endpoint](odata.md).
 
 There are two types of Analytics Steps:

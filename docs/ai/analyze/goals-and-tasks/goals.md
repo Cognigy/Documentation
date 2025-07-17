@@ -164,7 +164,7 @@ In this example, you will configure goals and steps in a Flow, such as entering 
 
 ??? info "5. Test your Flow"
 
-    Test your Flow via the [Interaction Panel](../../test/interaction-panel/overview.md). Activate [debug mode](../../test/interaction-panel/overview.md#debug-mode) to see when Track Goals are triggered. To view recorded metrics, go to [Insights](../../../insights/index.md) and select [Goals](../../../insights/reports/goals.md) from the left-side menu.
+    Test your Flow via the [Interaction Panel](../../test/interaction-panel/overview.md). Activate [debug mode](../../test/interaction-panel/chat.md#debug-mode) to see when Track Goals are triggered. To view recorded metrics, go to [Insights](../../../insights/index.md) and select [Goals](../../../insights/reports/goals.md) from the left-side menu.
 
 ## More Information
 

@@ -19,7 +19,7 @@ These Text Cleaner functions support the English (`en`) and German (`de`) locale
 - [Clean Text Node](../../build/node-reference/ai/clean-text.md)
 - [Question Nodes](../../build/node-reference/basic/question.md)
 - [Code Node](../../build/node-reference/basic/code/modules.md)
-- [Transformers](../../deploy/endpoints/transformers/transformers.md#text-cleaner-class)
+- [Transformers](../../deploy/endpoints/transformers/overview.md#text-cleaner-class)
 
 To learn more about the benefits of using Text Cleaner functions and how they work, watch this video:
 

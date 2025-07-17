@@ -1,0 +1,2 @@
+!!! warning "Removal of the AudioCodes Endpoint"
+    The AudioCodes Endpoint was deprecated in April 2025 and will be removed in October 2025. Migrate to the [Voice Gateway Endpoint](https://docs.cognigy.com/ai/deploy/endpoint-reference/voice-gateway/) before the removal date.

@@ -1,5 +1,5 @@
 ---
-title: "Collecting Data"
+title: "Overview"
 slug: "collecting-data"
 description: "Cognigy.AI collects data from conversations with chat and voice AI Agents in PostgreSQL and MongoDB databases. The collected data is used in Insights to display reports and explorers, and by the OData Endpoint to create customized reports and charts in business intelligence systems, such as Power BI, Tableau, and others."
 hidden: false
@@ -10,6 +10,8 @@ tags:
   - odata
   - data collections
 ---
+
+# Collecting Data
 
 Cognigy.AI collects data from conversations with chat and voice AI Agents in PostgreSQL and MongoDB databases. The collected data is used in Insights to display reports and explorers, and by the OData Endpoint to create customized reports and charts in business intelligence systems, such as Power BI, Tableau, and others.
 

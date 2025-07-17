@@ -34,7 +34,7 @@ For version 4.64 and earlier, enable this Endpoint on the Cognigy.AI side:
 Find out about the generic endpoint settings available with this endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md)
+- [Transformer Functions](../endpoints/transformers/overview.md)
 
 ## Configure Voice Copilot Endpoint
 

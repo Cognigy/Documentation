@@ -26,7 +26,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md) 
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md) 
+- [Transformer Functions](../endpoints/transformers/overview.md) 
 - [Session Management](../endpoints/session-management.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)  
 - [Handover Settings](../endpoints/handover-settings.md)

@@ -14,11 +14,11 @@ docs/ai/deploy/endpoints/overview.md	2024-08-06 Elena Baskakova
 docs/ai/deploy/endpoints/handover-settings.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/inject-and-notify.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/real-time-translation-settings.md	2025-01-15 Elena Baskakova
-docs/ai/deploy/endpoints/testing-mode.md	2024-07-24 Elena Baskakova
+docs/ai/deploy/endpoints/test-mode.md	2024-07-24 Elena Baskakova
 docs/ai/deploy/endpoints/transformers/output-transformer.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/transformers/inject-transformer.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/transformers/notify-transformer.md	2024-05-16 Benjamin Mayr
-docs/ai/deploy/endpoints/transformers/transformers.md	2024-05-16 Benjamin Mayr
+docs/ai/deploy/endpoints/transformers/overview.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/transformers/execution-finished-transformer.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/transformers/input-transformer.md	2024-05-16 Benjamin Mayr
 docs/ai/deploy/endpoints/data-protection-and-analytics.md	2024-12-18 Elena Baskakova
@@ -69,7 +69,7 @@ docs/ai/empower/nlu/slot-fillers.md	2024-05-16 Benjamin Mayr
 docs/ai/empower/nlu/nlu-warnings.md	2024-08-30 Elena Baskakova
 docs/ai/empower/nlu/external/overview.md	2024-07-25 Elena Baskakova
 docs/ai/empower/nlu/external/intent-reranking.md	2025-01-15 Elena Baskakova
-docs/ai/empower/nlu/external/nlu-connectors.md	2024-07-25 Elena Baskakova
+docs/ai/empower/nlu/external/nlu-connectors/overview.md	2024-07-25 Elena Baskakova
 docs/ai/empower/nlu/external/external-nlu-intent-recognition.md	2025-01-15 Elena Baskakova
 docs/ai/empower/nlu/external/nlu-transformers.md	2024-05-16 Benjamin Mayr
 docs/ai/empower/nlu/external/no-nlu.md	2024-07-02 Elena Baskakova

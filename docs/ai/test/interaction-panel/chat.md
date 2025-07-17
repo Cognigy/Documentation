@@ -37,7 +37,7 @@ Debug mode displays more information about the Flow execution than just user and
 
 Some Nodes have settings that let you further configure their debug mode output. You can turn off node-specific outputs selectively in the [Interaction Panel settings](overview.md#configure-the-interaction-panel).
 
-You can explicitly trigger debug messages either using the [Debug Message Node](../../build/node-reference/basic/debug-message.md) or [debug actions](../../build/node-reference/basic/code/actions.md#actions) in the Code Node.
+You can explicitly trigger debug messages either using the [Debug Message Node](../../build/node-reference/basic/debug-message.md) or [debug actions](../../build/node-reference/basic/code/actions.md) in the Code Node.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="60%" />

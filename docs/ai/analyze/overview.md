@@ -13,6 +13,8 @@ tags:
 
 ---
 
+# Analyze
+
 When working on conversational AI projects, keeping track of how your AI and human agents are performing is essential. Cognigy.AI offers a variety of tools that can help you analyze and evaluate your agents' effectiveness. You can use these tools to monitor important metrics, such as:
 
 - Average speed of answer

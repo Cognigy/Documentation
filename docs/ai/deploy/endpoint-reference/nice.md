@@ -27,7 +27,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 - [Endpoints Overview](../endpoints/overview.md)
 - [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
-- [Transformer Functions](../endpoints/transformers/transformers.md)
+- [Transformer Functions](../endpoints/transformers/overview.md)
 
 ## Specific Endpoint Settings
 

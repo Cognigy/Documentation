@@ -1,77 +1,125 @@
 ---
- title: "Output Transformer" 
- slug: "output-transformer" 
- hidden: false 
+title: "Output Transformer"
+slug: "output-transformer"
+description: "The Output Transformer converts the Flow output before it's sent to the Endpoint. This allows you to manipulate the Flow output before it's sent to the Endpoint."
+hidden: false
+tags:
+  - output transformer
+  - flow output
+  - data transformation
 ---
+
 # Output Transformer
 
-The `Output Transformer` is triggered on every output from the Flow. However, the behavior of the Transformer function differs greatly depending on which [base type](transformers.md#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
+The _Output Transformer_ converts the Flow output. This transformer allows you to manipulate the Flow output before it's sent to the Endpoint.
 
-The `Output Transformer` is configured by implementing the `handleOutput` function in the Transformer in the Endpoint.
+You can configure the output transformer in the `handleOutput` function in the [Endpoint settings or via CLI](overview.md#working-with-transformers).
 
- <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/output-transformer.png" width="100%" />
-  <figcaption>Output Transformer Example</figcaption>
-</figure>
+The output transformer works differently for the following [Endpoint types](overview.md#endpoint-types):
 
-## Differences between Transformer Types
+=== "REST-based Endpoints"
 
-## REST Transformers
-For REST-based Transformers, it is impossible to send multiple outputs to the user, but it is still possible to have multiple Say Node executions in a Flow per input from the user. All outputs are therefore stored in a 'buffer' and will be merged into one output when execution has finished. This means the return value of the handleOutput function will *not* be sent to the user, but will instead be stored in the buffer and processed in the `handleExecutionFinished` Transformer. It is therefore possible to influence the final output to the user by manipulating every individual output in the handleOutput function and returning them.
+    When using output transformers in REST Endpoints, you can't send multiple Flow outputs to the user. However, you can still have multiple Say Nodes in a Flow that are triggered by each user input.
+    
+    In this case, the `handleOutput` function stores the Say Node outputs in the `outputs` array. You can process the stored outputs with the [execution finished transformer](execution-finished-transformer.md), which concatenates them into one output when the Flow execution has finished. This approach allows you to manipulate each Flow output in the `handleOutput` function and then concatenate them into one output with the execution finished transformer.
 
-## Webhook and Socket Transformers
-For Webhook and Socket-based Transformers, the output from the Flow is sent to the user as soon as it is output. This means that the return value of the handleOutput function will be sent directly to the user without any further changes. This has the implication that it is the responsibility of the Transformer editor to make sure that the format of the return value of the handleOutput function is in the correct format corresponding to the format used by the channel. It is therefore necessary to read the documentation for the channel in question to determine the format needed to send a message to the user.
+    ```mermaid
+    graph LR
+    A[Flow output 1] --> B[Output Transformer]
+    C[Flow output 2] --> B[Output Transformer]
+    D[Flow output 3] --> B[Output Transformer]
+    B --> E[outputs Array]
+    E --> F[Execution Finished Transformer]
+    F -- concatenated messages --> G[Endpoint]
+    G --> H[User]
+    ```
 
-The handleOutput function will in this case get one further argument, called `processedOutput`. This variable contains the output that would be sent *as-is* to the channel, meaning that it is in the correct format corresponding to the specific channel. An example can be seen [here](#return-values-of-the-transformer)
+=== "Webhook- and Socket-based Endpoints"
+
+    When using output transformers in Webhook and Socket Endpoints, each Flow output is sent to the user. The return value of the `handleOutput` function is sent directly to the user and must comply with the [channel](../../../build/nodes/channels.md) format.
+
+    In this case, the `handleOutput` function takes an additional argument: `processedOutput`. This argument contains the output that would be sent as the correct format corresponding to the specific channel.
+
+    ```mermaid
+    graph LR
+    A[Flow output 1] --> B[Output Transformer]
+    C[Flow output 2] --> B[Output Transformer]
+    D[Flow output 3] --> B[Output Transformer]
+    B -- message 1 --> E[Endpoint]
+    B -- message 2 --> E[Endpoint]
+    B -- message 3 --> E[Endpoint]
+    E -- message 1 --> F[User]
+    E -- message 2 --> F[User]
+    E -- message 3 --> F[User]
+    ```
 
 ## Transformer Function Arguments
 
-The `handleOutput` function gets a configuration object as an argument. An overview of the keys in the object can be seen below
+Depending on the Endpoint type you are using, the function arguments vary:
 
-| Argument        | 	Description                                                                                                                                                  | 	Webhook Transformers | 	REST Transformers | 	Socket Transformers |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|--------------------|----------------------|
-| endpoint        | 	The configuration object for the Endpoint. Contains the URLToken etc.                                                                                        | 	X	                   | X                  | 	X                   |
-| output          | The raw output from the Flow.                                                                                                                                 | 	X                    | 	X	                | X                    |
-| processedOutput | 	The output that was processed into the format that the specific channel expects. This is what is sent to the user if the Output Transformer is not executed. | 	X	                   || 	X                 |
-| userId          | 	The unique ID of the user.                                                                                                                                   | 	X                    | 	X	                | X                    |
-| sessionId       | 	The unique ID of the conversation.                                                                                                                           | 	X                    | 	X                 | 	X                   |
+=== "REST-based Endpoints"
+    | Argument  | Description                                                                  |
+    |-----------|------------------------------------------------------------------------------|
+    | endpoint  | The configuration object for the [Endpoint](#endpoint-configuration-object). |
+    | output    | The raw output from the Flow.                                                |
+    | userId    | The unique ID of the user.                                                   |
+    | sessionId | The unique ID of the session.                                                |
 
-## Return Values of the Transformer
+=== "Webhook- and Socket-based Endpoints"
+    | Argument        | Description                                                                                                                                                           |
+    |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | endpoint        | The configuration object for the [Endpoint](#endpoint-configuration-object).                                                                                          |
+    | output          | The raw output from the Flow.                                                                                                                                         |
+    | processedOutput | The processed output from the Flow to comply with the Endpoint format. This is the data that the Endpoint sends to the user if the output transformer isn't executed. |
+    | userId          | The unique ID of the user.                                                                                                                                            |
+    | sessionId       | The unique ID of the session.                                                                                                                                         |
 
-The return value of the `Output Transformer` depends on the type of Transformer. There is no validation of the return value of the Output Transformer.
+{! _includes/ai/deploy/endpoint/transformers/endpoint-object.md !}
 
-## REST Transformers
-The `Output Transformer` has to return an output, which will be stored in an `outputs` array, which is available in the `handleExecutionFinished` Transformer function. The outputs would normally have the format as seen below, but it is also possible to store a different output format into the outputs array.
+## Return Values
 
-**Rest Return format**
-```JavaScript
-handleOutput: async ({ }) => {
-  const modifiedOutput = {
-    text: "someText",
-    data: {}
-  };
- 
-  return modifiedOutput;
-}
-```
+The output transformer return value depends on the Endpoint type in which you use the transformer. There is no validation of the output transformer return value. If the output transformer returns a falsy value, the output is discarded and not stored in the `outputs` array.
 
-If the `Output Transformer` returns a falsy value, then specific output will not be stored in the `outputs` array, and will essentially be discarded.
+=== "REST-based Endpoints"
 
-## Webhook and Socket Transformers
-The `Output Transformer` has to return an output, which can be sent directly to the specific channel without making any further modifications. This means that if the Transformer is active in a `Sunshine Conversations` Endpoint, then the format has to be according to the message format described in the Sunshine Conversations documentation.
+    The `handleOutput` function returns a value and stores it in the `outputs` array. You can access this array with the `handleExecutionFinished` function. You can set the format of the `outputs` array items in the `handleOutput` function. By default, the `outputs` array entries have `text` and `data` properties. You can change the output format as follows:
 
-Here is an example of the correct return format for a Sunshine Conversations Endpoint:
+    ??? info "Modify the Return Value Format"
 
-**Webhook / Socket Return format**
-```JavaScript
-handleOutput: async ({ }) => {
-   const requestPayload = {
-	   role: "appMaker",
-     type: "text",
-		 text: "some text"
-   };
-  
-  return requestPayload;
-}
-```
-If the `Output Transformer` returns falsy, then the output will not be sent to the user, and will thereby be discarded.
+        ```JavaScript
+        handleOutput: async ({ processedOutput, output, endpoint, userId, sessionId }) => {
+          const modifiedOutput = {
+            text: "text",
+            data: {}
+            // ...
+          };
+    
+          return modifiedOutput;
+        }
+        ```
+
+=== "Webhook- and Socket-based Endpoints"
+
+    The output transformer must return a value that can be sent directly to the specific channel. For example, if you're using the output transformer in a Sunshine Conversations Endpoint, the return value format must meet the [Sunshine Conversations message format](https://developer.zendesk.com/documentation/conversations/messaging-platform/programmable-conversations/sending-messages/).
+
+    ??? info "Format Example for Sunshine Conversations Endpoints"
+
+        ```javascript
+        handleOutput: async ({ processedOutput, output, endpoint, userId, sessionId }) => {
+            const requestPayload = {
+                author: {
+                    type: "business"
+                },
+                content: {
+                    type: "text",
+                    text: "Hello world"
+                }
+            };
+            
+            return requestPayload;
+        }
+        ```
+
+## More Information
+
+- [Execution Finished Transformer](execution-finished-transformer.md)

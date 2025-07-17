@@ -1,65 +1,52 @@
 ---
- title: "Execution Finished Transformer" 
- slug: "execution-finished-transformer" 
- hidden: false 
+title: "Execution Finished Transformer" 
+slug: "execution-finished-transformer" 
+hidden: false
+description: "The Execution Finished Transformer converts Flow output after a Flow execution has finished. The return value of the execution finished transformer is sent to the Endpoint."
+tags:
+  - execution finished transformer
+  - rest-based endpoints
+  - output transformation
 ---
+
 # Execution Finished Transformer
 
-The `Execution Finished Transformer` is triggered when the Flow execution has finished. However, the behavior of the Transformer function differs greatly depending on which [base type](transformers.md#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
+The _Execution Finished Transformer_ converts the Flow output after a Flow execution has finished. The return value of the execution finished transformer is sent to the Endpoint. This transformer applies only to REST-based Endpoints using the output transformer.
 
-The `Execution Finished Transformer` is configured by implementing the `handleExecutionFinished` function in the Transformer in the Endpoint.
-
- <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/alexa-transformer.png" width="100%" />
-  <figcaption>Execution Finished Transformer Example</figcaption>
-</figure>
-
-## Differences between Transformer Types
-
-## REST Transformers
-
-For REST-based Transformers, the output to the user will be sent in this Transformer function.
-
-The handleExecutionFinished function will in this case get a further argument, called `processedOutput`. This variable contains the output that would be sent *as-is* to the channel, meaning that it is in the correct format corresponding to the specific channel. An example can be seen [here](#return-values-of-the-transformer). It also gets access to the list of outputs that were processed in the Output Transformer.
-
-## Webhook and Socket Transformers
-The `Execution Finished Transformer` does not have an important function for Webhook and Socket based endpoints. More information [here](#return-values-of-the-transformer).
+You can configure the execution finished transformer in the `handleExecutionFinished` function in the [Endpoint settings or via CLI](overview.md#working-with-transformers).
 
 ## Transformer Function Arguments
 
-The `handleExecutionFinished` function gets a configuration object as an argument. An overview of the keys in the object can be seen below
+The following table shows an overview of the function arguments:
 
-| Argument        | Description                                                                                                                                                                                  | Webhook Transformers | REST Transformers | Socket Transformers |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------|---------------------|
-| endpoint        | The configuration object for the Endpoint. Contains the URLToken etc.                                                                                                                        | X                    | X                 | X                   |
-| outputs         | A list of all the outputs from the Flow. This outputs in the list could be influenced in the Output Transformer for REST Endpoints                                                           |                      | X                 |                     |
-| processedOutput | The output that was processed into the format that the specific channel expects. This is what would normally be sent to the channel if the Execution Finished Transformer would be disabled. |                      | X                 |                     |
-| userId          | The unique ID of the user.                                                                                                                                                                   | X                    | X                 | X                   |
-| sessionId       | The unique ID of the conversation.                                                                                                                                                           | X                    | X                 | X                   |
+| Argument        | Description                                                                            |
+|-----------------|----------------------------------------------------------------------------------------|
+| endpoint        | The configuration object for the [Endpoint](#endpoint-configuration-object).           |
+| outputs         | The `outputs` array from the output transformer. This array contains the Flow outputs. |
+| processedOutput | The Flow output processed into the format that the Endpoint expects.                   |
+| userId          | The unique ID of the user.                                                             |
+| sessionId       | The unique ID of the session.                                                          |
 
-## Return Values of the Transformer
+{! _includes/ai/deploy/endpoint/transformers/endpoint-object.md !}
 
-The return value of the `Execution Finished Transformer` depends on the base type of Transformer. There is no validation of the return value of the Execution Finished Transformer.
+## Return Values
 
-## REST Transformers
+The return value of the execution finished transformer depends on the Endpoint type you are using. There is no validation of the execution finished transformer return value. If the execution finished transformer returns a falsy value, the output isn't sent to the Endpoint.
 
-The `Execution Finished Transformer` has to return an output, which can be sent directly to the specific channel without making any further modifications. This means that if the Transformer is active in a `Alexa` Endpoint, then the format has to be according to the message format described in the documentation for Alexa.
+The execution finished transformer takes the `outputs` array from the output transformer and sends it to the Endpoint. For example, if you're using the execution finished transformer in an Alexa Endpoint, the return value format must meet the [Alexa message format](https://developer.amazon.com/en-US/docs/alexa/custom-skills/request-and-response-json-reference.html).
 
-Here is an example of the correct return format for an Alexa Endpoint:
+Here is an example of the correct return format for an [Alexa Endpoint](../../endpoint-reference/amazon-alexa.md):
 
-**Webhook / Socket Return Format**
-```JavaScript
+```javascript
 handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, endpoint, response }) => {
-    /**
-     * Combine all of the Flow outputs into one message
-     */
-    const text = outputs.reduce((mergedOutput, output) => `${mergedOutput}. ${output.text}`, "").trim();
+
+    const text = outputs.reduce((processedOutput, output) => `${processedOutput}. ${output.text}`, "").trim();
 
     const responseToAlexa = {
         version: "1.0",
         response: {
             outputSpeech: {
-                type: 'SSML',
+                type: "SSML",
                 ssml: `<speak>${text}</speak>`
             },
             shouldEndSession: false
@@ -69,9 +56,3 @@ handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, e
     return responseToAlexa;
 }
 ```
-
-If the `Execution Finished Transformer` returns falsy, then the output will not be sent to the user, and will thereby be discarded.
-
-## Webhook and Socket Transformers
-
-The `Execution Finished Transformer` does not have any special functionality and therefore does not have any return value. At this point, all outputs have been sent to the user, and it is possible to use the Transformer to e.g. send logging information to an external system.
