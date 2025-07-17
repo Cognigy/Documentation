@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.11-blue.svg)](../../../release-notes/2025.11.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.14-blue.svg)](../../../release-notes/2025.14.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -202,13 +202,17 @@ By default, two versions of the application are provided:
 
         If you used an embedded Agent Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the Agent Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
 
+### Prevent Auto Conversation Close
+
+To help keep conversations going smoothly, you can control whether a Salesforce MIAW chat closes when a human agent is removed from the conversation. To do this, set the `DISABLE_ABORT_HANDOVER_ON_SALESFORCE_MIAW_PARTICIPANT_CHANGE` variable in the `values.yaml` file. By default, this variable is set to `false`. Setting it to `true` keeps the conversation open and continues polling for new events even if the human agent is no longer part of the chat.
+
 ## Troubleshooting
 
-| Possible Error                                                                                  | How to Resolve                                                                                                                                                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Possible Error                                                                                  | How to Resolve                                                                                                                                                                                                                                                                                                                                              |
+|-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Could not find field `Copilot__c`. Make sure to add this field to your Salesforce installation. | An embedded Agent Copilot doesn't work. Make sure that you've updated the settings in Salesforce. Check your flow and make sure that `Copilot__c` is included in the **Update Records** action.                                                                                                                                                             |
 | You are trying to pull data from a Live Chat transcript while you are on a Messaging session.   | This error occurs when you migrate from the [deprecated Salesforce integration](salesforce.md) to Salesforce MIAW without updating the Agent Copilot UI components. To update the components, refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub. |
-| Login to Omni-Channel failed.                                                                   | This error occurs when a resource limit is exceeded. In the Salesforce Console, delete old messaging sessions, chat transcripts, and chat sessions. This action frees up space.                                                                                                                                                                          |
+| Login to Omni-Channel failed.                                                                   | This error occurs when a resource limit is exceeded. In the Salesforce Console, delete old messaging sessions, chat transcripts, and chat sessions. This action frees up space.                                                                                                                                                                             |
 
 ## More Information
 
