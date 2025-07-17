@@ -30,7 +30,7 @@ Depending on the [type of the Endpoint](#endpoint-types) in which you use the tr
 To learn more about Endpoint transformers, watch this webinar:
 
 <div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/watch?v=DfMr8RspF9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/DfMr8RspF9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Restrictions
