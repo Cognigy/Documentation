@@ -16,6 +16,12 @@ tags:
 
 The _Collaborative Editing_ feature allows multiple users to edit a Flow simultaneously. With Collaborative Editing, you can see the avatars of other users editing the Flow and Nodes. Their changes appear in the Flow and Node editors in real time.
 
+<div style="text-align:center">
+   <video width="650" height="400" controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/collab-editing.mov">
+   </video>
+</div>
+
 ## Key Benefits
 
 - **Visual Indication of User Presence**. You can see what users are working on in the Flow editor.
