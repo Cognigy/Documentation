@@ -39,6 +39,7 @@ The following protocols are supported:
 | SIP UPDATE                                                     | The SIP UPDATE method to refresh SIP session.                                                                                                                                                                   |
 | STUN                                                           | Session Traversal Utilities for NAT (STUN), as specified in [RFC 5389](https://datatracker.ietf.org/doc/html/rfc5389).                                                                                          |
 | Diversion Indication in SIP                                    | The Diversion header, as specified in [RFC 5806](https://datatracker.ietf.org/doc/html/rfc5806).                                                                                                                |
+| SIP REFER                                                      | Sending the SIP REFER method to transfer calls, as specified in [RFC 3515](https://datatracker.ietf.org/doc/html/rfc3515). Receiving SIP REFER is not supported.                                                                                             |
 
 ## Supported Codecs
 
