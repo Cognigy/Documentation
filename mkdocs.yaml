@@ -125,7 +125,6 @@ nav:
               - ai/build/node-reference/service/check-agent-availability.md
               - ai/build/node-reference/service/close-handover.md
               - ai/build/node-reference/service/get-transcript.md
-              - ai/build/node-reference/service/gpt-conversation.md
               - ai/build/node-reference/service/handover-to-agent.md
               - ai/build/node-reference/service/http-request.md
               - ai/build/node-reference/service/llm-prompt.md
@@ -736,6 +735,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.15.md
         - release-notes/2025.14.md
         - release-notes/2025.13.md
         - release-notes/2025.12.md

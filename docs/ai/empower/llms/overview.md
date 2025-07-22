@@ -125,7 +125,6 @@ The following Nodes and features are affected by the retry mechanism:
 
 - [LLM Prompt](../../build/node-reference/service/llm-prompt.md)
 - [LLM Entity Extract](../../build/node-reference/other-nodes/llm-entity-extract.md)
-- [GPT Conversation](../../build/node-reference/service/gpt-conversation.md)
 - [Search Extract Output](../../build/node-reference/other-nodes/search-extract-output.md)
 - Question Node Slot Mapping (in case of using [external NLU embedding](../nlu/external/external-nlu-intent-recognition.md))
 - [Question Node LLM Reprompting](../../build/node-reference/basic/question.md#parameters)

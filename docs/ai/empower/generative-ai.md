@@ -136,15 +136,6 @@ In the [Flow editor](../build/flows/editor.md), you can use the following run-ti
 
     The [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) enables you to run a prompt against an LLM and either output the message or store it in the Input or Context objects.
 
-??? info "GPT Conversation Node"
-
-    !!! warning
-        This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
-        The GPT Conversation Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later.
-        Use the [LLM Prompt Node](../build/node-reference/service/llm-prompt.md) to generate messages with LLM services.
-    
-    The [GPT Conversation Node](../build/node-reference/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determining the next best action and outputting relevant messages to the customer.
-
 ??? info "Rephrasing AI Agent Outputs"
 
     To use AI-enhanced bot output rephrasing in [Say](../build/node-reference/basic/say.md), [Question](../build/node-reference/basic/question.md), and [Optional Question](../build/node-reference/basic/optional-question.md) Nodes, do the following:

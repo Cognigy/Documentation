@@ -41,7 +41,7 @@ To add a standard or custom model, select a large language model (LLM) provider 
 
     ---
 
-    Add credentials for the predefined models such as `claude-3-opus`, `claude-3-sonnet`, `claude-3-opus`, or add a custom model based on an Anthropic model.
+    Add credentials for the predefined models such, as `claude-opus-4-0`, `claude-sonnet-4-0`, `claude-3-haiku`, or add a custom model based on an Anthropic model.
   
 -   ![google-vertex](../../../../_assets/icons/google-vertex.svg) __[Google Vertex](google-vertex-ai.md)__ 
 

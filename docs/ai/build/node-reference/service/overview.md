@@ -37,12 +37,6 @@ Service Nodes are used to:
 
     The Get Transcript Node lets you receive a real-time conversation transcript and store the result in the [Input](../../ai-agent-memory/input.md) or [Context](../../ai-agent-memory/context.md) object.
 
--   :material-robot:{ .lg .middle } __[GPT Conversation](gpt-conversation.md)__
-
-    ---
-
-    The GPT Conversation Node processes and comprehends natural language input from users to generate contextually appropriate responses.
-
 -   :material-account-switch:{ .lg .middle } __[Handover to Agent](handover-to-agent.md)__
 
     ---

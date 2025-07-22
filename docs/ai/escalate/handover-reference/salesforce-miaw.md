@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.14-blue.svg)](../../../release-notes/2025.14.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.15-blue.svg)](../../../release-notes/2025.15.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />

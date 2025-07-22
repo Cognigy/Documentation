@@ -19,7 +19,6 @@ Benefits of Webchat v3:
 - **RTL Support**. Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left), enhancing usability for languages such as Arabic, Hebrew, Urdu, and more.
 
 [^*]: If you integrate Webchat v3 with a contact center, note that only [Cognigy Live Agent](../../live-agent/index.md) and [Genesys Cloud Open Messaging](../../ai/escalate/handover-reference/genesys-cloud-open-messaging.md) support the Webchat v3 typing indicator.
-For Genesys Cloud Open Messaging, the typing indicator supports a single use case: when a human agent writes a message to an end user. This way, the end user can see when the agent is typing.
 
 If you're using Webchat v2 and looking to transition to Webchat v3, refer to the [migration guide](../migration.md).
 

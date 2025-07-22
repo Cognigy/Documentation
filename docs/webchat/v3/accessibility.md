@@ -278,10 +278,9 @@ Webchat supports relative font sizes to ensure that users can adjust the font si
 
 By default, Webchat v3 adheres to color contrast guidelines, ensuring a clear difference in brightness between a text and its background. This means that if a dark color is used as the primary background in Webchat, the text will automatically be light, and vice versa.
 
-However, you need to manually check the color contrast, especially if you add additional customizations to the home screen, such as a colorful background image. In such cases, ensure that the text in the foreground remains visible.
-You can control the color scheme within the **Color** section in the [Endpoint Settings](configuration.md#colors) or via the [CSS customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md) options.
+However, if you [customize the Webchat widget's home screen](configuration.md#home-screen), for example, with a colorful background image, ensure that the text and icons in the foreground remain visible. Use the **Color** section in the [Endpoint Settings](configuration.md#colors) or the [CSS customization](https://github.com/Cognigy/Webchat/blob/main/docs/css-customization.md) options to ensure color contrast.
 
-For each set of text, we recommend maintaining sufficient color contrast as follows:
+To ensure color contrast for text, follow these guidelines:
 
 - The minimum contrast ratio for normal text is 4.5:1. Avoid using text smaller than 12px.
 - For larger text, the contrast ratio should be at least 3:1.

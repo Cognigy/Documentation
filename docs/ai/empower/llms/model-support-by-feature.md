@@ -14,7 +14,7 @@ tags:
 
 # Model Support by Feature
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.15-blue.svg)](../../../release-notes/2025.15.md)
 
 The table provides an overview of the LLM providers supported by Cognigy.AI, detailing the standard models and their compatibility with Cognigy.AI features.
 You can also add a custom model that is not presented in the table.
@@ -157,6 +157,14 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
   <tr>
     <td><img src="../../../../_assets/icons/anthropic.svg" alt="anthropic"> <strong><a href="providers/anthropic.md">Anthropic</a></strong></td>
     <td style="text-align: center;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <tr>
+    <td><code>claude-opus-4-0</code></td>
+    <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><code>claude-sonnet-4-0</code></td>
+    <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
   <tr>
     <td><code>claude-3-7-sonnet-latest</code><sup><a href="#footnote3">3</a></sup></td>
@@ -175,11 +183,11 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
   <tr>
-    <td><code>claude-3-opus</code></td>
+    <td><code>claude-3-opus</code> (<a href="https://docs.anthropic.com/en/docs/about-claude/model-deprecations">Legacy</a>)</td>
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
   <tr>
-    <td><code>claude-v1-100k</code> (<a href="https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models">Legacy</a>)</td>
+    <td><code>claude-v1-100k</code> (<a href="https://docs.anthropic.com/en/docs/about-claude/model-deprecations">Legacy</a>)</td>
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
     <tr>
@@ -187,7 +195,7 @@ refer to the [All LLM Providers](providers/all-providers.md) page.
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
   <tr>
-    <td><code>claude-instant-v1</code> (<a href="https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models">Legacy</a>)</td>
+    <td><code>claude-instant-v1</code> (<a href="https://docs.anthropic.com/en/docs/about-claude/model-deprecations">Legacy</a>)</td>
     <td style="text-align: center;"><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/check-circle.svg" alt="positive mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td><td><img src="../../../../_assets/icons/x-mark.svg" alt="negative mark"></td>
   </tr>
   <tr>
