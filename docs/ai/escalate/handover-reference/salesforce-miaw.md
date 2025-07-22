@@ -202,6 +202,10 @@ By default, two versions of the application are provided:
 
         If you used an embedded Agent Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the Agent Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
 
+#### Automated Messaging Components
+
+The Salesforce MIAW integration supports automated messaging components for sending auto-responses during messaging sessions, such as welcome messages, inactivity reminders, and survey links. To learn how to use these components, refer to the Salesforce documentation on [Salesforce documentation on Automated Messaging Components](https://help.salesforce.com/s/articleView?id=service.messaging_components_auto_response.htm&type=5).
+
 ### Prevent Auto Conversation Close
 
 To help keep conversations going smoothly, you can control whether a Salesforce MIAW chat closes when a human agent is removed from the conversation. To do this, set the `DISABLE_ABORT_HANDOVER_ON_SALESFORCE_MIAW_PARTICIPANT_CHANGE` variable in the `values.yaml` file. By default, this variable is set to `false`. Setting it to `true` keeps the conversation open and continues polling for new events even if the human agent is no longer part of the chat.
