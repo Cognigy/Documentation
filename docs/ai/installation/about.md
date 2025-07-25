@@ -1,12 +1,22 @@
+---
+title: "About"
+description: "Cognigy offers Cognigy.AI and other Cognigy products as Cognigy SaaS. Cognigy SaaS includes Shared SaaS and Dedicated SaaS."
+tags:
+    - installation
+    - cognigy saas
+    - shared saas
+    - dedicated saas
+---
+
 # Overview
 
-Cognigy offers three types of installation:
+Cognigy offers Cognigy.AI and other Cognigy products as _Cognigy SaaS_. Cognigy SaaS includes:
 
-- **SaaS**:
-    - Dedicated: In a dedicated SaaS installation, a separate instance of Cognigy's platform is provisioned for each organization. This means that the resources and environment are reserved for one organization, providing maximum isolation and customization options. Dedicated SaaS installations offer enhanced security and performance tailored to the specific needs of the organization.
-    - Shared: In a shared SaaS installation, multiple organizations share the same instance of Cognigy's platform. This shared environment allows organizations to benefit from cost efficiencies and streamlined management. However, it results in fewer customization options, as most limits and quotas are set up via a shared Management UI, along with feature flags, leading to a slightly less tailored experience compared to dedicated installations.
-- **On-Premises**: With an on-premises installation, organizations manage and deploy the platform within their own infrastructure, such as on their own servers or cloud environment. This option provides the highest level of control and customization. Organizations have full ownership over the deployment and can customize it to fit their specific security, compliance, and integration requirements. On-premises installations are recommended for organizations that need to prioritize data sovereignty, regulatory compliance, or have specific infrastructure requirements that necessitate self-hosting.
+- Shared SaaS — multiple organizations share the same instance of Cognigy.AI. This shared environment allows organizations to benefit from cost efficiencies and streamlined management.
+- Dedicated SaaS — a separate instance of Cognigy.AI is provided for each organization. This means that the resources and environment are reserved for the respective organization.
 
+!!! warning "On-Premises Installation Availability"
+    On-premises installations are no longer offered to new customers. However, current on-premises installations will keep operating as usual and will continue to receive updates.
 
 ## More Information
 

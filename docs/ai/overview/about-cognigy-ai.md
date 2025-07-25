@@ -55,11 +55,6 @@ This product is provided together with Cognigy.AI.
 The Agent Copilot feature acts as an assistant to both customers and service agents, offering suggestions, automating routine tasks, and facilitating smoother interactions. This not only enhances the user experience but also supports agents in delivering high-quality service.
 This product is provided together with Cognigy.AI.
 
-## Cognigy Installations
+## Cognigy.AI Installations
 
-Cognigy offers shared SaaS, dedicated SaaS, and on-premises installations for all products:
-
-- Shared SaaS — multiple customers share one cloud-hosted instance.
-- Dedicated SaaS — each customer gets their own cloud-hosted instance.
-- On-Premises Installation — customers host Cognigy products on their own infrastructure.
-
+Cognigy.AI installations are offered as Cognigy SaaS: Cognigy.AI operates on and maintains cloud-hosted instances for customers.

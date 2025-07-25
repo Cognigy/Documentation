@@ -73,6 +73,9 @@ _**Cognigy Products**_
 : Licensed applications and services such as Cognigy.AI, Cognigy Voice Gateway, Cognigy Live Agent, Cognigy Insights, or any other Cognigy Product: which are listed when completing a Cognigy order form.
 For more information, choose a [product line](../index.md) and explore all features and platform capabilities.
 
+_**Cognigy SaaS**_
+: Cognigy.AI's delivery model, which operates on and maintains cloud-hosted instances for customers. Cognigy SaaS includes dedicated and shared SaaS installations.
+
 _**CognigyScript**_
 : A scripting language developed for Cognigy.AI that serves as a superset of JavaScript. CognigyScript allows users to access and manipulate the Input and Context objects within the text and JSON data during the conversation flow with the AI Agent.
 For more information, read the [CognigyScript](build/cognigyscript.md) documentation.
