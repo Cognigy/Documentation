@@ -153,7 +153,7 @@ nav:
               - ai/build/node-reference/data/datepicker.md
               - ai/build/node-reference/data/send-smtp-email.md
               - ai/build/node-reference/data/email-notification.md
-            - AI Copilot:
+            - Agent Copilot:
               - ai/build/node-reference/ai-copilot/overview.md
               - ai/build/node-reference/ai-copilot/set-adaptive-card-tile.md
               - ai/build/node-reference/ai-copilot/set-html-tile.md
@@ -571,7 +571,7 @@ nav:
       - xApps/supported-browsers-and-channels.md
 
 
-  - AI Copilot:
+  - Agent Copilot:
     - ai-copilot/index.md
     - 👋 Overview:
       - ai-copilot/overview.md
@@ -583,10 +583,10 @@ nav:
       - ai-copilot/plug-and-play-widgets.md
       - ai-copilot/embedding.md
 
-    - 💬 Chat AI Copilot:
+    - 💬 Chat Agent Copilot:
       - ai-copilot/chat.md
 
-    - 🗣️ Voice AI Copilot:
+    - 🗣️ Voice Agent Copilot:
       - ai-copilot/voice/voice-overview.md
       - ai-copilot/voice/transfer-node.md
 
