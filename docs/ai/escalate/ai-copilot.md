@@ -1,10 +1,11 @@
 ---
 title: "Agent Copilot"
-slug: "ai copilot"
+slug: "agent copilot"
 description: "Cognigy Agent Copilot offers a variety of advanced features that empower agents to provide faster and more accurate customer support."
 hidden: false
 tags:
   - ai copilot
+  - agent copilot
   - contact centers
 ---
 

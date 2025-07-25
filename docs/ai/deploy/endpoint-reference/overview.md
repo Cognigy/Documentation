@@ -34,7 +34,7 @@ The following Endpoints are specific to the Cognigy.AI platform:
 
     ---
 
-    Used for integration between call centers and AI Copilot for voice use cases.
+    Used for integration between call centers and Agent Copilot for voice use cases.
 
 </div>
 

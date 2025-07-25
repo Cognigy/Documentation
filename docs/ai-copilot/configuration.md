@@ -12,8 +12,8 @@ Agent Copilot comes with a default, pre-configured grid, which you can modify by
 
 ## Agent Copilot Flow and Nodes
 
-AI Copilot should have its own Flow, separate from the main Flow where the Handover to Agent Node is used. 
-Only [AI Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md) must be added to the AI Copilot Flow. Basic Nodes, such as Say, Code, or Question Nodes, aren't supported and won't be rendered in the AI Copilot workspace.
+Agent Copilot should have its own Flow, separate from the main Flow where the Handover to Agent Node is used. 
+Only [Agent Copilot Nodes](../ai/build/node-reference/ai-copilot/overview.md) must be added to the Agent Copilot Flow. Basic Nodes, such as Say, Code, or Question Nodes, aren't supported and won't be rendered in the Agent Copilot workspace.
 
 ## Agent Copilot Grid
 

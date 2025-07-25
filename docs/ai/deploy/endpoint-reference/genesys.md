@@ -163,9 +163,9 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 To check the AI Agent's performance, access the installation that your server administrator has deployed.
 
 
-### (Optional) Activate AI Copilot
+### (Optional) Activate Agent Copilot
 
-If you want to use [AI Copilot](../../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
+If you want to use [Agent Copilot](../../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
 create credentials on the Genesys side and configure the **Copilot** settings in the Endpoint.
 
 ??? info "1. Create Credentials"
@@ -179,11 +179,11 @@ create credentials on the Genesys side and configure the **Copilot** settings in
     6. From the left-side menu, select **Authorized Applications**. In the upper-right corner, click **+ Authorize a Client**. 
     7. In the **Authorize Client** window, enter the Client ID that you copied and saved previously. Click **Authorize Client**.
 
-??? info "2. Configure Settings for Agent AI Copilot"
-    To configure the AI Copilot workspace settings, follow these steps:
+??? info "2. Configure Settings for Agent Copilot"
+    To configure the Agent Copilot workspace settings, follow these steps:
 
     1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
-    2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [AI Copilot documentation](../../../ai-copilot/overview.md).
+    2. Configure Agent Copilot by creating an [Agent Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Copilot documentation](../../../ai-copilot/overview.md).
     3. Set up Genesys Cloud Credentials:
         - **Connection Name** — create a unique name for your connection.
         - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
