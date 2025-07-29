@@ -19,13 +19,17 @@ Compared to [Snapshots](../deploy/snapshots.md), working with Packages provides 
 
 Packages can include the following Project resources:
 
+- [AI Agents](../empower/agentic-ai/manage-ai-agents.md)
+- [Connections](../build/connections.md)
+- [Endpoints](../deploy/endpoints/overview.md)
 - [Flows](../build/flows/overview.md) (including Nodes and Intents)
+- [Goals](../analyze/goals-and-tasks/goals.md)
+- [Handover Providers](../escalate/handovers.md)
+- [Knowledge Stores](../empower/knowledge-ai/knowledge-store.md)
+- [Large Language Models](../empower/llms/overview.md)
 - [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
 - [NLU Connectors](../empower/nlu/external/nlu-connectors/overview.md)
-- [Endpoints](../deploy/endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
-- [Connections](../build/connections.md)
-- [Knowledge Stores](../empower/knowledge-ai/knowledge-store.md)
 
 ## Restrictions
 
