@@ -36,6 +36,7 @@ To analyze your AI Agent's performance, you can use the [built-in Insights repor
 - The Cognigy.AI OData endpoint supports only the [OData protocol version 4](https://www.odata.org/documentation/).
 - The Cognigy.AI OData endpoint only supports `GET` requests and doesn't support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 - The data retrieved through the Cognigy.AI OData endpoint isn't updated in real time and may not reflect the current state.
+- The `$skip` query at high values, such as `10000`, may impact performance and cause API timeouts. In these cases, use [keyset pagination](#keyset-pagination), for example, with the `timestamp` or `_id` field.
 
 ## Supported Versions
 
@@ -638,6 +639,16 @@ The table outlines popular integration tools, including data visualization tools
 | Client Libraries in .NET, Java, JavaScript, C++ and other platforms | Client libraries are available in multiple programming languages and platforms, providing developers with OData protocol implementations. For a full list of available libraries, refer to the [OData](https://www.odata.org/libraries/) documentation.                                                       |
 
 If you want to use another tool not listed in the table, verify its compatibility with the OData endpoint on the [OData website](https://www.odata.org/) and in the tool's documentation before integrating. For example, the data visualization tool Tableau can't be used for integration because it [doesn't support the OData protocol version 4](https://help.tableau.com/current/pro/desktop/en-us/examples_odata.htm) on which the OData endpoint is based.
+
+## Keyset Pagination
+
+Keyset pagination is a more efficient way to retrieve data from large datasets where you need to set `$skip` to high values, such as `10000`. To use keyset pagination, follow these steps:
+
+??? info "Keyset Pagination"
+
+    1. Retrieve the first page with the `$top` and `$orderby` query options, for example, `https://odata-trial.cognigy.ai/v2.4/Conversations?apikey=<your-api-key>&$top=10000&$orderby=timestamp asc`.
+    2. Use the last `timestamp` value from the previous page in the next page request, for example, `https://odata-trial.cognigy.ai/v2.4/Conversations?apikey=<your-api-key>&$filter=timestamp gt <LAST_TIMESTAMP_FROM_PREVIOUS_PAGE>&$top=10000&$orderby=timestamp asc`.
+    3. Repeat step 2 until you have retrieved all the records.
 
 ## More Information
 
