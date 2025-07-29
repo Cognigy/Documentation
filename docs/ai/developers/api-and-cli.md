@@ -36,9 +36,9 @@ The table outlines the base URLs for different environments.
 
 An API key is used to authenticate to the Cognigy.AI API as a user in the system without exposing the user's credentials.
 
-To generate an API key, read [Create API Keys](../administer/user-menu/my-profile.md#create-api-keys).
+To generate an API key, read [Create API Keys](../administer/user-menu/my-profile.md).
 
-To delete an API key, read [Revoke API Keys](../administer/user-menu/my-profile.md#revoke-api-keys).
+To delete an API key, read [Revoke API Keys](../administer/user-menu/my-profile.md).
 
 ### How do I use the API?
 
