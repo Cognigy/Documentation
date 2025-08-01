@@ -37,6 +37,10 @@ The Genesys Cloud Open Messaging handover connector is based on [Open Messaging 
         - By default, Cognigy 4.99 and earlier use a WebSocket connection via the Notifications API to detect handover completion in Genesys. However, this approach has [limitations](https://developer.genesys.cloud/notificationsalerts/notifications/#usage-limitations) and may not always be reliable.
         - As an alternative, you can configure [HTTP webhooks](genesys-cloud-open-messaging-handover-end-detection.md) using Triggers and Web Services Data Actions to send requests to Cognigy.AI.
 
+## Restrictions
+
+- Genesys Open Messaging doesn't support terminating a chat session from the Cognigy.AI side. If the end user leaves the chat while waiting in the queue before a human agent joins, Genesys doesn't automatically cancel the routing. This behavior leads to human agents getting assigned to chats where the end user is no longer present.
+
 ## Configuration on the Handover Provider Side
 
 Before starting the integration with Cognigy, build the Genesys Cloud Open Messaging configuration on the Genesys side.
