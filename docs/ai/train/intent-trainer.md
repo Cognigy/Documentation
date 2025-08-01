@@ -13,6 +13,8 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
 
+{! _includes/ai/understood-messages.md !}
+
 One of the key strengths of AI Agents is their ability to improve over time.
 Cognigy.AI offers the *Intent Trainer* feature that allows you to refine AI Agents based on existing dialogs.
 This tool improves the AI Agent's understanding by letting you review and add user inputs to [Intents](../empower/nlu/intents/overview.md).
