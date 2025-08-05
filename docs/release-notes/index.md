@@ -20,7 +20,8 @@ You'll find the corresponding release notes after opening one of the versions be
     We strongly advise on-premises customers to update with each release without skipping versions to guarantee the highest level of protection and stability for the installation.
 
 - **2025.x**:
-    - [2025.15 (latest)](2025.15.md)
+    - [2025.16 (latest)](2025.16.md)
+    - [2025.15](2025.15.md)
     - [2025.14](2025.14.md)
     - [2025.13](2025.13.md)
     - [2025.12](2025.12.md)

@@ -735,6 +735,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.16.md
         - release-notes/2025.15.md
         - release-notes/2025.14.md
         - release-notes/2025.13.md

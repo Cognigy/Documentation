@@ -14,7 +14,7 @@ tags:
 
 # AI Agent
 
-[![Version badge](https://img.shields.io/badge/Updated in-v2025.14-blue.svg)](../../../../release-notes/2025.14.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.16-blue.svg)](../../../../release-notes/2025.16.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent.png" width="60%" />
@@ -129,6 +129,10 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
 ## Examples
 
 {! _includes/ai/build/node-reference/tool-examples.md !}
+
+## Get AI Agent Jobs and Tools via API
+
+You can retrieve all job configurations and associated tools for a specific AI Agent via the Cognigy.AI API [GET /v2.0/aiagents/{aiAgentId}/jobs](https://api-trial.cognigy.ai/openapi#get-/v2.0/aiagents/-aiAgentId-/jobs) request. The response includes each job's configuration details and a list of available tools.
 
 ## More Information
 

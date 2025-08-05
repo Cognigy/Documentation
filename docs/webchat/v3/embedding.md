@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat 3: Embedding
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.83-blue.svg)](../../release-notes/4.82.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.16-blue.svg)](../../release-notes/2025.16.md)
 
 Embedding Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 
@@ -68,6 +68,7 @@ You can customize the [Webchat settings](https://github.com/Cognigy/Webchat/blob
     - `mode` — informing the user about maintenance mode. Choose to either `hide` the Webchat widget, `disable` it or `inform` the user about maintenance mode.
     - `text` — a text displayed to users during maintenance mode. For example: `The agent is currently in maintenance mode, please try again later`.
     - `title` — a title displayed to the user during maintenance mode if the mode is set to `inform`. For example, `Maintenance Hours`. Leave empty for no header.
+- `customAllowedHtmlTags` — set a custom array of HTML tags that are allowed in Webchat widget messages. By default, Webchat allows a wide range of [HTML tags](https://github.com/Cognigy/Webchat/blob/94b14a7deed1f8ffb758d0cfc55b1ddd181faf15/src/webchat/helper/sanitize.ts#L4). The array you set in this parameter overrides the default setting. If you need to restrict the allowed HTML tags for security reasons, use this parameter to include only the allowed HTML tags.
 
 Example:
 
@@ -92,6 +93,7 @@ Example:
         text: "The agent is currently in maintenance mode, try again later",
         title: "Maintenance hours",
       },
+      customAllowedHtmlTags: ["a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdi", "bdo", "big", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer", "form", "frame", "frameset", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta", "meter", "nav", "noframes", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "small", "source", "span", "strike", "strong", "style", "sub", "summary", "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"],
     },
   }
   );

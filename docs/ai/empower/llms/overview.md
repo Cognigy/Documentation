@@ -7,20 +7,20 @@ tags:
   - llms
   - Large Language Models 
   - out-of-box models
-  - standard custom models
+  - standard models
   - custom models
 ---
 
 # Large Language Models (LLMs)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.16-blue.svg)](../../../release-notes/2025.16.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are specific types of AI models that are designed for generating humanlike text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases.
 
 With LLMs, Cognigy AI Agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also help in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
 
 In the Cognigy.AI interface, you can connect to an LLM provider of your choice via API.
-Cognigy.AI supports LLM integration with top providers such as OpenAI, Azure, Anthropic, Amazon Bedrock, Google, and Aleph Alpha.
+Cognigy.AI supports LLM integration with top providers such as OpenAI, Azure, Anthropic, Amazon Bedrock, Google, and Mistral AI.
 
 To integrate an LLM into your conversational design process within Cognigy.AI, follow these steps:
 
@@ -107,6 +107,15 @@ To use a standard model, select an LLM provider and model name from the list of 
 By choosing a standard model, you can ensure that this model is fully compatible with Cognigy.AI features.
 
 After selecting a model, you must enter the API credentials from the [LLM provider](providers/all-providers.md) that offers this model to get access to its functionality.
+
+#### Deprecations and Removals
+
+Standard models that have become outdated and are soon to be removed by the LLM provider are marked with special icons in the Cognigy.AI interface. These icons help you stay informed about changes to the model availability and ensure your AI Agents continue to run smoothly.
+
+| **Icon**                                                  | **Meaning**                                                                                                                                                                                                                                                                                                                                                                                         | **Recommended Next Step**                                                                                       |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| ![deprecated](../../../_assets/icons/llms/deprecated.svg) | The LLM provider has stopped developing the model and plans to remove it in the future. Deprecation statuses may vary by provider, for example, Anthropic and OpenAI have `legacy` and `deprecated` statuses, while Microsoft Azure uses only `deprecated`. Cognigy.AI marks a model as `deprecated` after the LLM provider announces plans to o stop providing support and updates. | Select an alternative model by consulting the LLM provider's documentation and switching your AI Agent to it.   |
+| ![removed](../../../_assets/icons/llms/removed.svg)       | The model is no longer available and can't be used. If your AI Agents use this model, they might stop working.                                                                                                                                                                                                                                                                | Immediately switch to an available model with similar capabilities to prevent AI Agent interruptions or errors. |
 
 ### Custom Models
 

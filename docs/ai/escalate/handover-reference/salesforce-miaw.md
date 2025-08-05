@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.15-blue.svg)](../../../release-notes/2025.15.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.16-blue.svg)](../../../release-notes/2025.15.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -33,7 +33,11 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Restrictions
 
-- The Salesforce MIAW handover connector supports attachments only when they're sent by end users through [Webchat v2](../../../webchat/v2/overview.md) or [Webchat v3](../../../webchat/v3/overview.md). Attachments sent by human agents from the Salesforce MIAW platform aren't supported.
+- The Salesforce MIAW handover provider supports attachments only when used with [Webchat](../../../webchat/overview.md).
+
+## Limitations
+
+- Salesforce MIAW has file size limitations for attachments. For more information, refer to the Salesforce documentation on [File Size and Sharing Limits](https://help.salesforce.com/s/articleView?id=experience.collab_files_size_limits.htm&type=5).
 
 ## Configuration on the Handover Provider Side
 
@@ -153,7 +157,7 @@ By default, two versions of the application are provided:
 ??? info "Embedded"
     To use the embedded version of the Agent Copilot workspace, you need to update the settings on the Salesforce side and configure the Agent Copilot UI components.
     ??? info "1. Update Messaging Settings"
-        1. In the [Salesforce](https://login.salesforce.com/) interface, go to **Setup > Messaging Settings** and select the messaging channel that you created previously.
+        1. In the [Salesforce](https://login.salesforce.com/) interface, go to **Setup > Messaging** and select the messaging channel that you created previously.
         2. In the messaging channel, go to **Custom Parameters** and click **New**.
         3. In the **New Custom Parameter** window, configure the following parameters:
             - **Parameter Name** — enter **Copilot URL**.
@@ -209,6 +213,25 @@ The Salesforce MIAW integration supports automated messaging components for send
 ### Prevent Auto Conversation Close
 
 To help keep conversations going smoothly, you can control whether a Salesforce MIAW chat closes when a human agent is removed from the conversation. To do this, set the `DISABLE_ABORT_HANDOVER_ON_SALESFORCE_MIAW_PARTICIPANT_CHANGE` variable in the `values.yaml` file. By default, this variable is set to `false`. Setting it to `true` keeps the conversation open and continues polling for new events even if the human agent is no longer part of the chat.
+
+### Access Token Expiration
+
+When a handover starts, Salesforce MIAW provides an access token with a configurable expiration time to Cognigy.AI in the backend. To make sure that the session is synchronized, Cognigy.AI polls Salesforce MIAW approximately every 2 minutes to check for new messages or actions, and verifies if the access token is still valid. Additionally, Cognigy.AI has a configurable grace period, counted from the end of the access token expiration time to control the session termination. The default grace period is 30 minutes. When the grace period is reached, Cognigy.AI terminates the session on both Cognigy.AI and Salesforce MIAW sides. This approach prevents unnecessary API calls to Salesforce MIAW sessions with expired access tokens.
+
+??? info "Set the Access Token Expiration Time"
+    1. On the **Salesforce home** page, click **Setup** in the upper-right corner, then select **Setup** from the menu.
+    2. In the **Quick Find** box, enter **Messaging Settings** and follow the **Feature Settings > Service > Messaging Settings** path.
+    3. On the **Messaging Settings** page, click the **Show one more action** and select **Edit** arrow next to the channel you want to configure.
+    4. On the **Messaging for In-App and Web** page, configure as follows:
+        - Without user verification — enter the expiration time in **Authorization Token Expiration Time for Unverified Users**. The default value is 360 minutes. Save changes.
+        - With user verification — select **Add User Verification** and enter the expiration time in **Authorization Token Expiration Time for Verified Users**. The default value is 60 minutes. Save changes.
+
+??? info "Set the Grace Period"
+    - For on-premises installations, set the grace period in seconds using the `SALESFORCE_MIAW_ACCESS_TOKEN_GRACE_PERIOD` variable in the `values.yaml` file.
+    - For dedicated SaaS and shared SaaS installations, contact [Cognigy Support](../../../help/get-help.md).
+
+??? info "Example"
+    If you have an access token expiration time of 6 hours (360 minutes) and a grace period of 30 minutes, Cognigy.AI terminates the session on both platforms 5 hours and 30 minutes after the handover started.
 
 ## Troubleshooting
 

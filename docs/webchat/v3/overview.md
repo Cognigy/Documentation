@@ -18,7 +18,7 @@ Benefits of Webchat v3:
 - **Adherence to Accessibility Guidelines**. Webchat v3 is fully aligned with WCAG 2.2 Level AA guidelines, guaranteeing enhanced readability, seamless navigation, and interactive functionality within the interface.
 - **RTL Support**. Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left), enhancing usability for languages such as Arabic, Hebrew, Urdu, and more.
 
-[^*]: If you integrate Webchat v3 with a contact center, note that only [Cognigy Live Agent](../../live-agent/index.md) and [Genesys Cloud Open Messaging](../../ai/escalate/handover-reference/genesys-cloud-open-messaging.md) support the Webchat v3 typing indicator.
+[^*]: If you integrate Webchat v3 with a contact center, note that only [Cognigy Live Agent](../../live-agent/index.md), [Genesys Cloud Open Messaging](../../ai/escalate/handover-reference/genesys-cloud-open-messaging.md), and [Salesforce MIAW](../../ai/escalate/handover-reference/salesforce-miaw.md) support the Webchat v3 typing indicator.
 
 If you're using Webchat v2 and looking to transition to Webchat v3, refer to the [migration guide](../migration.md).
 
