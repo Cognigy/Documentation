@@ -56,7 +56,7 @@ To log in to Cognigy.AI, follow these steps:
 2. Enter your email in the **E-Mail** field.
 3. Click **Send link**.
 
-You will receive an email with instructions to reset your password. You need to choose a password according to the [password policy](../administer/access/management-ui.md#password-policy) your admin set up. 
+You will receive an email with instructions to reset your password. You need to choose a password according to the [password policy](../administer/access/management-ui.md) your admin set up. 
 
 ### Log in with Single Sign-on
 
@@ -68,7 +68,7 @@ To log in with SSO, follow these steps:
 
 ### Multiple Organizations
 
-In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#organizations). Each organization has a different login URL. For each organization, the login URL follows this pattern:
+In Cognigy.AI, you can be part of more than one [organization](../administer/access/management-ui.md#manage-organizations). Each organization has a different login URL. For each organization, the login URL follows this pattern:
 
 ```txt
 https://<frontend-url>/login?organisationId=<organization-id>

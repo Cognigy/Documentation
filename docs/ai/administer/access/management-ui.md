@@ -1,235 +1,233 @@
 ---
 title: "Management UI"
 slug: "management-ui"
+description: "The Management UI is a web-based interface for managing system-wide and organization-specific settings in Cognigy.AI."
 hidden: false
+tags:
+  - management ui
+  - multi-tenancy
+  - organizations
+  - user management
+  - system message
+  - quotas
+  - password policy
+  - data privacy settings
+  - expiration values
 ---
 
 # Management UI
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
 
-The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
+The *Management UI* is a web-based interface for managing system-wide and organization-specific settings in Cognigy.AI.
 
-You can set up Management UI yourself if you have an on-premises Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../../../help/get-help.md).
+Use the Management UI to configure users, organizations, quotas, password policies, data privacy settings, expiration values for sensitive data, and system messages.
 
-Many users don't know that Cognigy.AI is able to handle a multi-tenant scenario. These individual tenants are called **organizations** within Cognigy.AI.
+The Management UI is especially useful for:
 
-An organization has completely separated:
+- System administrators, particularly in on-premises or dedicated SaaS installations.
+- Advanced users who need to manage multiple organizations or adjust global settings.
 
-- projects
-- users
-- api- access and -keys
-- contact profile schemas
-- quotas & limits
+## Key Features
 
-With the use of organizations, you can use your own Cognigy.AI installation, e.g. for multiple customers and separate their data in a safe manner. Although a new organization can be created by using a special sort of **internal API**, we created an additional tool called the **Cognigy Management UI**. This is an additional product you can deploy in your cluster. It then lets you connect to your installation to inspect e.g. all organizations within your system.
+- **User and Organization Management**. Create, modify, remove users, and add them to specific organizations, which serve as isolated environments within Cognigy.AI.
+- **Resource Control through Quotas**. Set specific quotas for organizations to manage resource usage, including the number of user seats, Projects, and messages to prevent overuse and ensure equitable resource allocation.
+- **Security and Privacy Settings**. Change password policies and manage data privacy settings, ensuring compliance with security standards and protecting sensitive information through features like data masking and retention policies.
+- **Multitenancy and Impersonation Features**. Cognigy.AI supports multitenancy, enabling the management of multiple organizations under one installation, along with the ability to impersonate users for troubleshooting and assistance.
 
-The following figure shows a screenshot of what this product looks like.
+## Before you Begin
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui.png" width="100%" />
-  <figcaption> The Cognigy.AI Management UI</figcaption>
-</figure>
+??? info "1. Check Availability"
+    The Management UI is available for the following Cognigy.AI installations:
+    
+    - **Cognigy SaaS**:
+        - **Shared SaaS** – the Management UI is controlled by Cognigy technical support. Contact them if you want to change any values.
+        - **Dedicated SaaS** – the Management UI is available and can be used by the customer.
+    - **On-Premises** – the Management UI is available and can be used by the customer. For more information on how to install the Management UI, refer to the [Cognigy GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) repo.
 
-## Log in to the Management UI
+??? info "2. Log in to the Management UI"
+    To log in to the Management UI instance, you need the following information:
+    
+    | **Field**                   | **Description**                                                                                                              |
+    |-----------------------------|------------------------------------------------------------------------------------------------------------------------------|
+    | Cognigy.AI Backend Base URL | The base URL must follow this format: `https://api-<your installation domain>`. For example: `https://api-trial.cognigy.ai`. |
+    | Service User                | The username provided by your Management UI administrator.                                                                   |
+    | Service Password            | The password for the service user account, provided by your Management UI administrator.                                     |
 
-To log in to the Management UI instance, you need the following information:
+## Manage Organizations
 
-| **Field**                   | **Description**                                                                                                         |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Cognigy.AI Backend Base URL | The base URL must follow this format: https://api-<your installation domain>. For example: https://api-trial.cognigy.ai.|
-| Service User                | The username provided by your Management UI administrator.                                                              |
-| Service Password            | The password for the service user account, provided by your Management UI administrator.                                |
+Organizations define the environment for users, Projects, and data in Cognigy.AI. Use the Management UI to create and configure organizations, adjust quotas and policies, and manage data privacy and expiration settings. Each organization has its own limits, users, and settings, allowing for secure and flexible multi-tenant environments.
 
-## Usage
+Each installation includes at least one organization, which is created automatically. This initial organization is named `defaultOrg-xxx`.
 
-The usage of the Management UI is quite self-explanatory. We have global navigation on the left side, which allows you to switch between:
-- Users
-- Organizations
-- System Message
+??? info "Create an Organization"
+    1. In the Management UI, select **Organisations** from the left-side menu, then click ![vertical-ellipsis](../../../_assets/icons/management-ui/plus.svg) in the bottom-right corner.
+    2. In the **Create new Organisation** window, enter a name for the organization in the **Name** field and click **Create**. The organization will be created with the default settings an appers in the list of organizations.
 
-We will now have a look at the individual view and what can be done in there.
+??? info "View Organizations"
+    After creating an organization, you can see the organization in the list of organizations.
 
-## Users
+    | **Field**                | **Description**                                                                                   |
+    |--------------------------|---------------------------------------------------------------------------------------------------|
+    | **General**              |                                                                                                   |
+    | Name                     | The name and version of the organization.                                                         |
+    | Enabled                  | Whether the organization is enabled.                                                              |
+    | Max Users                | The maximum number of users allowed.                                                              |
+    | Max Projects             | The maximum number of Projects allowed.                                                           |
+    | Max Channels per Project | The maximum number of channels allowed per Project.                                               |
+    | Max Messages per Day     | The maximum number of messages allowed per day.                                                   |
+    | Billing Timezone         | The time zone used for billing.                                                                    |
+    | **Data Privacy Settings**|                                                                                                   |
+    | Apply to all projects    | Whether the data privacy settings are applied across all Projects.                               |
+    | Contact Profiles         | Whether Contact Profiles are created for persisted user data.                                    |
+    | Collect Analytics        | Whether analytics data is collected for all Endpoints.                                           |
+    | Mask Sensitive Analytics | Whether sensitive analytics data is masked.                                                      |
+    | Mask Sensitive Logging   | Whether sensitive logging data is masked.                                                        |
+    | Collect Conversations    | Whether the conversation history is collected.                                                   |
+    | Ignore List              | A list of Projects that use Endpoint-specific privacy settings instead of organization-level settings. |
+    | **Conversation Counter** |                                                                                                   |
+    | Conversation Counter     | The total number of conversations for a specific month and year.                                 |
 
-Here you can add new users to the system. A user needs to get assigned to an **organization**, so you might need to create a new organization first. To create a new user, click the huge pink button on the right-bottom corner of the view. You will then see a dialog where you enter the:
+??? info "Change Organization Quotas"
+    To change organization quotas, select **Organisations** from the left-side menu. From the organization list, select the organization you want to change. On the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) and select **Change Organisation Quotas**.
+     
+    !!! note
+         Setting a quota to 0 disables it, meaning there is no limit.
 
-- name
-- email
-- select the organization
+    | **Quota Name**           | **Description**                                                                                                                                                                                                                                                                                |
+    |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Max users                | The maximum number of users that can be created within the organization.                                                                                                                                                                                                                       |
+    | Max projects             | The maximum number of Projects that can be created within the organization.                                                                                                                                                                                                                    |
+    | Max channels per project | The maximum number of different Endpoint allowed in a Project. For example, if this is set to 1, you can create an unlimited number of Amazon Alexa Endpoints, but you will receive an error when trying to add a WhatsApp Endpoint. The restriction applies to Endpoint types, not instances. |
+    | Max messages per day     | The maximum number of messages that can be processed per day. This quota isn't currently enforced but may be subject to change in the future.                                                                                                                                                  |
+    | Max knowledge chunks     | The maximum number of Knowledge Chunks that can be created within the organization.                                                                                                                                                                                                               |
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-2.png" width="100%" />
-  <figcaption>Creating a new user is simple</figcaption>
-</figure>
+??? info "Change Password Policy"
+    The password policy defines the rules that users must follow when creating or updating their passwords. It helps ensure that passwords are strong and secure.
+    To change the password policy for an organization, select **Organisations** from the left-side menu. From the organization list,  select the organization you want to change. On the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) and select **Change Password Policy**.
 
-You can add a user (identified by an email address) to multiple organizations.
-Details about how the user can log in to their organization can be found on the [Login for Users in multiple organization](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
+    | **Rule**                               | **Description**                                                                                                                                                     |
+    |----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Minimum Length                         | The minimum number of characters required in the password.                                                                                                          |
+    | Maximum Length                         | The maximum number of characters allowed in the password.                                                                                                           |
+    | Minimum Lowercase Characters           | The minimum number of lowercase letters required in the password.                                                                                                   |
+    | Minimum Uppercase Characters           | The minimum number of uppercase letters required in the password.                                                                                                   |
+    | Minimum Special Characters             | The minimum number of special characters, for example, `!`, `@`, `#`, required in the password.                                                                     |
+    | Maximum Identical Characters           | The maximum number of identical characters allowed in the password.                                                                                                 |
+    | Failed Login Attempts Before Disabling | Number of failed login attempts allowed before the account is disabled. Set to `0` to disable this feature. Disabled users can be re-enabled via the Management UI. |
 
-If you click a user, the user details page opens. On the user details page, you can do the following:
+    Clicking **Save & Enforce** logs out all users in the organization. Upon re-login, they are required to change their password to comply with the new policy.
 
-- See general information
-- See the users current [roles](admin-center/access-control.md)
-- See certain status information
-- Impersonate the user by clicking **Impersonate** in the upper-right corner. By impersonating a user, you are forwarded you to the Cogngiy.AI interface and logged in as if you were the selected user
-- Disable or delete the user, or update the user's password by clicking ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) and selecting the respective option.
+??? info "Change Expiration Values"
+    The expiration values define how long certain sensitive data is retained in the system before it is deleted. To change the expiration values for an organization, select **Organisations** from the left-side menu. From the organization list, select the organization you want to change. On the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) and select **Change Expiration Values**.
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-3.png" width="100%" />
-  <figcaption> Details of a user</figcaption>
-</figure>
+    | **Setting**                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Contact Profiles Expiration      | The duration in minutes that a Contact Profile record is retained in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    | Session Expiration               | The duration in minutes that a session remains active in the Analytics database after the last message is sent. Each new message resets this timer. Alternatively, session expiration can be configured using the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable or per [Endpoint](../../deploy/endpoints/session-management.md). If both a global value (configured via the Management UI or environment variable) and an Endpoint-specific value are defined, the shorter duration takes precedence. |
+    | Conversation Expiration          | The duration in minutes that a [Conversation](../../analyze/collecting-data.md) record is retained in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                   |
+    | Analytics Expiration             | The duration in minutes that an [Analytics](../../analyze/collecting-data.md) record is retained in the Analytics database. This expiration also applies to data for [Goals](../../analyze/goals-and-tasks/overview.md).                                                                                                                                                                                                                                                                                        |
+    | Insights Session Data Expiration | The duration in minutes that an Insights Session record is retained in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+    | Steps Data Expiration            | The duration in minutes that a [Step](../../analyze/collecting-data.md#steps) record is retained in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                     |
 
-### Block User Impersonation
+    For more information about data expiration:
+ 
+    - In Cognigy.AI, refer to [Data Expiration](../../analyze/data-expiration.md) in the Cognigy.AI documentation.
+    
+    - In Insights, refer to [Data Expiration](../../../insights/data-management/data-expiration.md) in the Insights documentation.
 
-When impersonating a user, you can log in to the system as the selected user without knowing their actual account password. Make sure to log out after you have finished your work.
+??? info "Change Billing Time Zone"
+    The billing time zone defines the time zone used for billing purposes. To change the billing time zone for an organization, select **Organisations** from the left-side menu, select the organization you want to change. On the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) and select **Change Billing Timezone**.
 
-You can block user impersonation as follows:
+    Select a time zone from the list and click **Save**. The selected time zone will be used for billing purposes.
 
-- For SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-- For dedicated SaaS and on-premises installations, use the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag. You can block user impersonation for:
-    - **One organization** — enter the relevant `organisationId` in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
-    - **More than one organization** — enter the relevant `organisationId` values separated by commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`.
-    - **All organizations** — set `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=*`.
+??? info "Data Privacy Settings"
+    The data privacy settings define how user data is handled within the organization. To change the data privacy settings for an organization, select **Organisations** from the left-side menu. From the list, select the organization you want to change. On the **Organisation Details** page, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) and select **Change Data Privacy Settings**.
 
-## Organizations
+    | **Setting**                  | **Description**                                                                                                       |
+    |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+    | Enable Data Privacy Settings | The data privacy settings applied to all Projects within the organization.                                            |
+    | Contact Profiles             | The creation of individual Contact Profiles to store persisted user data across sessions.                             |
+    | Collect Analytics            | The collection of analytics data from all Endpoints.                                                                  |
+    | Mask Sensitive Analytics     | The masking of all sensitive analytics data collected from Endpoints.                                                 |
+    | Mask Sensitive Logging       | The masking of all sensitive logging information generated by Endpoints.                                              |
+    | Collect Conversations        | The collection of conversation history from all Endpoints.                                                            |
+    | Ignore List                  | The list of Projects that override organization-wide settings with their own Endpoint-specific data privacy settings. |
 
-This view presents all organizations that exist within the system. Each installation has at least one organization that will be created automatically. This initial organization is called **defaultOrg-xxx**. Have a look at the following figure.
+## Manage Users
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-4.png" width="100%" />
-  <figcaption> All organizations within the system</figcaption>
-</figure>
+Create and manage users within your Cognigy.AI installation.
+You can add users to organizations, view user details, impersonate users for troubleshooting, and enforce security settings like password policies or impersonation restrictions.
 
-You can also create a new organization or disable an already existing one.
+??? info "Create a User"
+    1. In the Management UI, ensure that you have created an organization where you want to add a user.
+    2. You can open a **Create new User** window by using one of the following options:
+        - Select **Users** from the left-side menu, then click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) in the bottom-right corner.
+        - Select **Organisations** from the left-side menu, select the organization where you want to add a user, then click **Create User** in the upper-right corner.
+    3. In the **Create new User** window, fill in the following fields:
+        - **Name** – enter the name of the user.
+        - **Email** – enter the email address of the user. This is used for login and notifications.
+        - **Organisation** – select the organization to which the user will be added. If you have opened the **Create new User** window from the **Organisations** page, the organization will be preselected.
+        - **Password** – enter a password for the user. You can generate a random password by clicking ![change password](../../../_assets/icons/management-ui/change-password.svg).
+    3. Click **Create**. The user will be created with the `admin` role by default, which grants them full access to the organization. You can change the user's role later on the [Access Control](admin-center/access-control.md) page for the organization where the user was added.
+
+    You can add a user with the same email to multiple organizations. For details on how users access each organization, refer to the [Login for Users in Multiple Organizations](../../installation/access-to-cognigy-ai.md#multiple-organizations) page.
+
+??? info "View User Details"
+    After creating a user, you can view them in the user list. Select an organization to view its details.
+
+    - **Name** – the name of the user.
+    - **Email** – the email address of the user.
+    - **Organisation** – the organization to which the user is added.
+
+    | **Field**                 | **Description**                                                     | **Example**                                         |
+    | ------------------------- | ------------------------------------------------------------------- | --------------------------------------------------- |
+    | **General Info**          |                                                                     |                                                     |
+    | Name                      | The user's display name.                                            | John Doe                                            |
+    | Email                     | The user's login email address.                                     | [john-doe@cognigy.com](mailto:john-doe@cognigy.com) |
+    | Organisation              | The organisation the user belongs to.                               | ACME                                                |
+    | Roles                     | Roles assigned to the user that define their permissions.           | `admin`                                             |
+    | **Meta Info**             |                                                                     |                                                     |
+    | Created At                | The date the account was created (day-month-year format).           | 10/01/2025                                          |
+    | Created By                | The user or system account that created this user.                  | system admin                                        |
+    | Last Changed At           | The date the user record was last updated (day-month-year format).  | 10/01/2025                                          |
+    | Last Changed By           | The user or system account that last modified the user details.     | system admin                                        |
+    | **Status**                |                                                                     |                                                     |
+    | Accepted Terms of Service | Whether the user has accepted the Terms of Service.                 | Yes                                                 |
+    | User Enabled              | Whether the user account is currently active.                       | Yes                                                 |
+    | Organisation Enabled      | Whether the user’s organisation is currently enabled in the system. | Yes                                                 |
+
+??? info "Impersonate a User"
+    When impersonating a user, you can log in to the system as the selected user without knowing their actual account password.
+    To impersonate the user, select a user from the list click **Impersonate** in the upper-right corner of the **User Details** page.
+    Make sure to log out after you have finished your work.
+
+??? info "Block User Impersonation"
+    To prevent unauthorized access and protect user privacy, blocking impersonation improves security and helps avoid misuse of accounts.
+
+    You can block user impersonation as follows:
+
+    - For SaaS installations, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
+    - For dedicated SaaS and on-premises installations, use the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag. You can block user impersonation for:
+        - **One organization** — enter the `organisationId` in the `BLOCK_IMPERSONATE_USER_ORG_WHITELIST` feature flag.
+        - **More than one organization** — enter the `organisationId` values separated by commas, for example, `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe`.
+        - **All organizations** — set `BLOCK_IMPERSONATE_USER_ORG_WHITELIST=*`.
+
+??? info "Other Operations"
+    You can also disable or delete a user by selecting them from the user list, clicking ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg), and selecting the respective option on the **User Details** page.
 
 ## System Message
 
-If you have your own Cognigy.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click the pink button to create a new system message.
+Use the System Message feature in the Management UI to notify users across all organizations about important events, such as scheduled maintenance or platform updates.
+This feature is especially useful for notifying users in dedicated SaaS or on-premises installations about planned downtimes or system-wide changes.
 
-Only one system message can exist at a time. Such a message has an actual message text and a **valid until** date. The message will be displayed on all UI clients as long as the message is valid. It will automatically varnish when it is expired.
+??? info "Create a System Message"
+    To create a system message:
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-5.png" width="100%" />
-  <figcaption>Creating a new system message</figcaption>
-</figure>
+    1. In the Management UI, select **System Message** in the left-side menu, then click ![vertical-ellipsis](../../../_assets/icons/management-ui/plus.svg) in the bottom-right corner.
+    2. Specify the expiration date and time in the **Until when** field.
+    3. Enter your message in the **Message** field. This message will be displayed to all users in the organization.
+    4. _(Optional)_ Activate **Show on Login Screen** to display the message before users log in.
 
-The system message will get displayed for all users - regardless of their organization.
-
-## Quotas & Limits
-
-With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organization level. Larger customers with multiple organizations can use these quotas to limit what is possible within certain organizations. To configure limits, first select an organization, open its details and click the triple-dot button on the right-top corner.
-
-In the menu, select **Change Organisation Quotas**.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-6.png" width="100%" />
-  <figcaption>Configuring quotas & limits for an organization</figcaption>
-</figure>
-
-You can currently configure the following quotas & limits:
-
-| Attributes               | Description                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Max users                | This is the maximum number of users that can be created within the organization.                                                                                                                                                                                                                                                                              |
-| Max projects             | The maximum number of projects that can be created within this organization.                                                                                                                                                                                                                                                                                  |
-| Max channels per project | The maximum number of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite number of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted |
-| Max messages per day     | This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.                                                                                                                                                                                                                       |
-| Max knowledge chunk      | The maximum number of maximum number of Knowledge Chunks can be used within the organization.                                                                                                                                                                                                                                                                 |
-
-Setting a quota to 0 disables the quota.
-
-## Password Policy
-
-It is also possible to configure the password policies of an organization in the Management UI. To configure the password policy, first select an organization and click the triple-dot button on the right-top corner.
-
-In the menu, select **Change Password Policy**.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/password-policy.png" width="100%" />
-  <figcaption>Configuring a Password Policy for an organization</figcaption>
-</figure>
-
-It is currently possible to configure the following attributes of the password policy:
-
-| Attributes                                             | Description                                                                                                                                                                                                         |
-|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Minimum Length                                         | The minimum number of characters the password needs to consist of.                                                                                                                                                  |
-| Maximum Length                                         | The maximum number of characters the password can consist of.                                                                                                                                                       |
-| Minimum Amount of Lowercase                            | The minimum number of characters in the password which have to be lowercase.                                                                                                                                        |
-| Minimum Amount of Uppercase                            | The minimum number of characters in the password which have to be uppercase.                                                                                                                                        |
-| Minimum Amount of Special Characters                   | The minimum number of special characters in the password.                                                                                                                                                           |
-| Maximum Amount of Identical Characters                 | The maximum number of characters which can be identical in the password.                                                                                                                                            |
-| Amount of failed logins resulting in account disabling | Specifies how many times a user can attempt to log in before their account is disabled. Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI. |
-
-Clicking the **Save & Enforce** button results in all users of the organization to get logged out. Upon re-logging, they will be required to change their password.
-
-## Data Privacy Settings
-
-It is possible to set the data privacy settings of an organization in the Management UI. To configure the data privacy settings, first select and organization and then click the triple-dot button on the right-top corner.
-
-In the menu, select **Change Data Privacy Settings**
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/docs-mngmt-org-data-privacy.png" width="100%" />
-  <figcaption>Configuring Data Privacy Settings for an organization</figcaption>
-</figure>
-
-- Enable data privacy settings
-
-Apply data privacy settings to all projects of this organization
-
-- Contact Profiles
-
-Create individual contact profiles to store persisted user data across sessions
-
-- Collect Analytics
-
-Collecting analytics data for all endpoints
-
-- Mask Sensitive Analytics
-
-Mask all sensitive analytics data for all endpoints
-
-- Mask Sensitive Logging
-
-Mask all sensitive logging for all endpoints
-
-- Collect Conversations
-
-Collecting conversation history for all endpoints
-
-- Ignore List
-
-The projects will ignore the organization data privacy settings and use the ones defined in the endpoint
-
-## Expiration Values (TTL) for Sensitive Data
-
-It is possible to configure when certain sensitive data expires and is deleted from the system. In order to change this, first select an organization and click the triple-dot button on the right-top corner.
-
-In the menu, select **Change Expiration Values**.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/exp-values.png" width="100%" />
-  <figcaption> Configuring the expiration values for sensitive data in an Organization</figcaption>
-</figure>
-
-All the expiration values define how many minutes it takes from when the data was created until it expires. 
-
-Configure the expiration of the following data:
-
-| Expiration value                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Contact Profiles Expiration      | Determines how long (in minutes) a Contact Profile record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Session Expiration               | Defines how long (in minutes) a session remains active in the Analytics database after the last message is sent. Each new message within a session resets this timer. Alternatively, you can configure session expiration using the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable or per [specific Endpoint](../../deploy/endpoints/session-management.md). If both a global value (set in the Management UI or via the environment variable) and an Endpoint-specific value are defined, the shorter duration takes precedence. |
-| Conversation Expiration          | Determines how long (in minutes) a [Conversation](../../analyze/collecting-data.md) record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Analytics Expiration             | Determines how long (in minutes) an [Analytics](../../analyze/collecting-data.md) record persists in the Analytics database. Also this expiration date applies to data for [Goals](../../analyze/goals-and-tasks/overview.md).                                                                                                                                                                                                                                                                                                             |
-| Insights Session Data Expiration | Determines how long (in minutes) Insights Session record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Steps Data Expiration            | Determines how long (in minutes) a [Step](../../analyze/collecting-data.md#steps) record persists in the Analytics database.                                                                                                                                                                                                                                                                                                                                                                                                               |
-
-For more information about data expiration in Insights, read [Data Expiration](../../../insights/data-management/data-expiration.md) in the Insights documentation.
-
-You can set a maximum expiration time for all sensitive data across the server. This configuration is detailed in the infrastructure documentation, which is provided during installation.
-
-## Installation
-
-Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+    !!! note
+        Only one system message can be active at a time.

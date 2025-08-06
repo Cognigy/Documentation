@@ -119,7 +119,7 @@ If you have an on-premises Cognigy.AI installation, you can set TTL values syste
 | **PCAP File in the Voice Gateway Self-Service Portal**                            |           |
 | Maximum time until a PCAP File is removed                                         | 14 days   |
 
-[^*****]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md#expiration-values-ttl-for-sensitive-data) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.
+[^*****]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.
 
 ## Submit a Support Request
 
@@ -138,3 +138,5 @@ If you want to request a change for Cognigy dedicated SaaS, use this template:
     Best regards, 
     Your Name 
     ```
+
+[^*****]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.

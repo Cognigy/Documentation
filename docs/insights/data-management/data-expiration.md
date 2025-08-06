@@ -33,7 +33,7 @@ For example, if the data expiration is set to 30 days and a user sends a message
 
 By default, Cognigy.AI keeps analytics data to a maximum of 1 year. You can reduce this data expiration period as follows:
 
-- For on-premises installations and dedicated SaaS installations, [set data expiration values](../../ai/administer/access/management-ui.md#expiration-values-ttl-for-sensitive-data) in the [Management UI](../../ai/administer/access/management-ui.md).
+- For on-premises installations and dedicated SaaS installations, [set data expiration values](../../ai/administer/access/management-ui.md) in the [Management UI](../../ai/administer/access/management-ui.md).
 - For shared SaaS installations, contact [Cognigy technical support](../../help/get-help.md#help-center) and specify the limits in your request.
 
 The data expiration feature applies only to new data obtained by Cognigy.AI after activating data expiration in the Management UI. Any datasets obtained before setting the expiration value remain unaffected from this change.
