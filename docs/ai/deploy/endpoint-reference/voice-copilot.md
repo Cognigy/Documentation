@@ -47,10 +47,14 @@ flowchart TD
 
 ## Generic Endpoint Settings
 
-Learn about the generic Endpoint settings on the following pages:
+Learn about the generic Endpoint settings available for this Endpoint on the following pages:
 
 - [Endpoints Overview](../endpoints/overview.md)
+- [Data Protection & Analytics](../endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../endpoints/transformers/overview.md)
+- [NLU Connectors](../../empower/nlu/external/nlu-connectors/overview.md)
+- [Session Management](../endpoints/session-management.md)
+- [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
 ## Set up a Voice Copilot Endpoint
 
