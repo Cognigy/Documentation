@@ -5,11 +5,13 @@ description: "To start using a Google Vertex AI LLMs with Cognigy.AI features, a
 hidden: false
 tags:
   - llms
-  - Google Vertex AI
-  - Google Vertex AI models
+  - google vertex ai
+  - google vertex ai models
 ---
 
 # Google Vertex AI
+
+[![Version badge](https://img.shields.io/badge/Added in-v2025.16-blue.svg)](../../../../release-notes/2025.16.md)
 
 To start using a Google Vertex AI or Gemini model with Cognigy.AI features, follow these steps:
 
@@ -27,7 +29,7 @@ You can add a model using one of the following interfaces:
 
 To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
 
-=== "Standard Model"
+=== "Standard Model (Cognigy.AI 2025.15 and earlier versions)"
 
     | Parameter    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
