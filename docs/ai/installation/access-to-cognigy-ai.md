@@ -94,7 +94,7 @@ The login links in the email redirect you to the Cognigy.AI login page with the 
 To log out of Cognigy.AI, you have two options:
 
 - In the upper-right corner of the **Main** page, select **User Menu > Logout**.
-- In the bottom-left corner of the Project page, click **User Menu > Logout**.
+- In the bottom-left corner of the **Project** page, click **User Menu > Logout**.
 
 ### Automatic Logout
 

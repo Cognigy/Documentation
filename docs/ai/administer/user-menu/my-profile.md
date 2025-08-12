@@ -22,7 +22,7 @@ The **My Profile** page includes:
 
 ## Working with My Profile
 
-Access the **My Profile** page by clicking your user icon in the upper-right corner of the Main page or the bottom-left corner of the Project page.
+Access the **My Profile** page by clicking your user icon in the upper-right corner of the Main page or the bottom-left corner of the **Project** page.
 
 On the **My Profile** page, you can update preferences, view login history, manage API keys, and more. Click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) in the upper-right corner to access the extended menu, where you can select the following actions:
 

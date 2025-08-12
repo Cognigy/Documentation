@@ -4,9 +4,9 @@ slug: "global-connections"
 description: "Global Connections are Cognigy.AI Connections at organization level."
 hidden: false
 tags:
-    - Global resources
-    - Global Connections
-    - Admin Center
+    - global resources
+    - global Connections
+    - admin center
 ---
 
 # Global Connections

@@ -4,16 +4,16 @@ slug: "global-llms"
 description: "Global Large Language Models are a Cognigy.AI resource that you can assign to and share across different Projects in your organization."
 hidden: false
 tags:
-    - Global resources
-    - Global LLMs
-    - Admin Center
+    - global resources
+    - global llms
+    - admin center
 ---
 
 # Global Large Language Models
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../../release-notes/4.97.md)
 
-_Global Large Language Models_ (LLMs) are [LLMs](../../../../empower/llms/overview.md) at [organization level](overview.md) that you can assign to and share across different Projects in your organization.
+_Global Large Language Models_ (Global LLMs) are [LLMs](../../../../empower/llms/overview.md) at [organization level](overview.md) that you can assign to and share across different Projects in your organization.
 
 ## Restrictions
 

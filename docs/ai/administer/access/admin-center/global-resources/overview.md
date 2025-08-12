@@ -4,8 +4,8 @@ slug: "global-resources"
 description: "Cognigy.AI Global resources are a Cognigy.AI resources that you can assign to and share across different Projects in your organization."
 hidden: false
 tags:
-    - Global resources
-    - Admin Center
+    - global resources
+    - admin center
 ---
 
 # Global Resources
