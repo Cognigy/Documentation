@@ -22,14 +22,15 @@ tags:
 
 ## Description
 
-The Salesforce MIAW handover connector bridges Cognigy.AI and [Salesforce Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5),
+The Salesforce MIAW handover connector bridges Cognigy.AI and [Salesforce Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5) (Salesforce MIAW),
 enabling end users to connect with human agents working in a contact center that uses Salesforce.
 
 ## Prerequisites
 
-- Access to [Salesforce](https://login.salesforce.com/).
-- Created Endpoint [compatible with Salesforce](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
-- Give [Salesforce users access](https://help.salesforce.com/s/articleView?id=service.miaw_non_agent_permissions_1.htm&type=5).
+- Access to the [Salesforce](https://login.salesforce.com/) platform.
+- Access to [Salesforce MIAW](https://help.salesforce.com/s/articleView?id=service.miaw_prepare_users.htm&type=5).
+- Create an Endpoint [compatible with Salesforce](../../deploy/endpoints/handover-settings.md).
+- A [Digital Engagement](https://www.salesforce.com/eu/service/digital-customer-engagement-platform/pricing/) license is required to enable Salesforce Messaging and integrate it with Cognigy.AI. Refer to the [Salesforce documentation](https://help.salesforce.com/s/articleView?id=service.messaging_editions.htm&type=5) and contact your Salesforce representative for more information.
 
 ## Restrictions
 

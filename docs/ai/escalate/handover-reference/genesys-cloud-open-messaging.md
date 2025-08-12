@@ -27,7 +27,7 @@ The Genesys Cloud Open Messaging handover connector is based on [Open Messaging 
 ## Prerequisites
 
 - Access to [Genesys Cloud](https://login.mypurecloud.com/).
-- Created Endpoint [compatible with Genesys Cloud Open Messaging](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
+- Create an Endpoint [compatible with Genesys Cloud Open Messaging](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 - Activate Genesys Cloud Open Messaging on the Cognigy.AI side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
     - If you have an on-premises installation, specify the following feature flags: `FEATURE_ENABLE_GENESYS_CLOUD_OM="true"`, `FEATURE_ENABLE_GENESYS_CLOUD_OM_WHITELIST="organization1,organization2"`, `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organization1,organization2"`. To enable the Genesys Cloud Open Messaging handover provider for all organizations in your installation, use `*` instead of a list of organizations.

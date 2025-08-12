@@ -29,7 +29,7 @@ Cognigy.AI supports Chatwoot API v1.19.0, custom agent bot names and description
 ## Prerequisites
 
 - Access to [Chatwoot](https://www.chatwoot.com/). You can also run Chatwoot on an [on-premises environment](https://www.chatwoot.com/docs/self-hosted).
-- Created Endpoint [compatible with Chatwoot](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
+- Create an Endpoint [compatible with Chatwoot](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 - You need two IDs that are listed in the Chatwoot address line:
     - **Account ID** — a unique identifier assigned to you as the user.
     - **Inbox ID** — not unique and is created again for each channel.<br>

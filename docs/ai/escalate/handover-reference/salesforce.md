@@ -29,7 +29,7 @@ enabling end users to connect with human agents working in a contact center that
 ## Prerequisites
 
 - Access to [Salesforce Service Cloud](https://login.salesforce.com/).
-- Created Endpoint [compatible with Salesforce](../../deploy/endpoints/handover-settings.md).
+- Create an Endpoint [compatible with Salesforce](../../deploy/endpoints/handover-settings.md).
 
 ## Configuration on the Handover Provider Side
 
