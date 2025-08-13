@@ -1,75 +1,88 @@
+---
+title: "Members"
+slug: "members"
+description: "The Members interface is the section within a Cognigy.AI Project where project admins can assign and manage Project-specific roles."
+hidden: false
+tags:
+  - members
+  - project roles
+  - locale restrictions
+  - access control
+---
+
 # Members
 
-The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Project. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](admin-center/access-control.md) panel.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.75.0-blue.svg)](../../../release-notes/4.75.md)
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/members.png" width="100%" />
-</figure>
+The _Members_ interface in a Cognigy.AI Project allows Project admins to assign and manage Project-specific roles. This interface allows fine-grained control over who can create, edit, view, or update different parts of a Project, complementing the [global roles](admin-center/access-control.md) set in the Access Control.
 
 ## Project Roles
 
-In addition to global roles, Cognigy.AI offers Project-specific roles, which can be assigned to compliment the global access rights that have been granted for a given user.
+Project roles let you control what users can do within a specific Project. To manage permissions across the whole organization, use [global roles](admin-center/access-control.md).
 
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/members2.png" width="100%" />
-</figure>
+!!! note
+    Project roles assigned to users determine what actions a user can perform in the UI and through API endpoints, ensuring consistent access control across both interfaces.
 
-!!! note "Project Member Administration"
-    A user profile requires the "Project Admin" role to be able to make changes to any user access for that Project. This will automatically be assigned to any user who creates a new Project.
+Each permission works as follows:
 
-The available project roles are presented in the table below.
+- **Create** – create a new resource.
+- **Read** – view or retrieve the resource and its details.
+- **Update** – view and change an existing resource's data or settings.
+- **Delete** – permanently remove the resource.
 
-| Project Role           | Permissions                                                                                                                                                                                                                                                                                             |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analytics              | Adds the following permissions: <br> - full permissions on analytics                                                                                                                                                                                                                                    |
-| Basic                  | Adds the following permissions: <br> - read permission for all Project assets except: User Details, contact profiles, Node Comments, Logs, and Member Details                                                                                                                                           |
-| Connection Admin       | Adds the following permissions: <br> - full permissions for Connections                                                                                                                                                                                                                                 |
-| Contact Profile Admin  | Adds the following permissions: <br> - full permissions for Contact Profiles <br> - full permissions for Conversation History                                                                                                                                                                           |
-| Contact Profile Editor | Adds the following permissions: <br> - read/update permissions for Contact Profiles                                                                                                                                                                                                                     |
-| Contact Profile Viewer | Adds the following permissions: <br> - read permissions for Contact Profiles                                                                                                                                                                                                                            |
-| Conversation History   | Adds the following permissions: <br> - full permissions for Conversation History                                                                                                                                                                                                                        |
-| Data Privacy Admin     | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - full permissions for data privacy settings (Collect Analytics, Store Contact Profiles, Collect Conversations, Mask Analytics, Mask Logging)                                             |
-| Data Privacy Editor    | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - read/update permissions for data privacy settings                                                                                                                                       |
-| Data Privacy Viewer    | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - read permissions for data privacy settings                                                                                                                                              |
-| Developer              | Adds the following permissions: <br> - full permissions for Extensions <br> - full permissions for Flow Node Comments <br> - full permissions for Flow Node Description <br> - full permissions for Locales <br> - full permissions for Logs <br> - full permissions for Live Follow feature            |
-| Endpoint Admin         | Adds the following permissions: <br> - full permissions for Endpoints                                                                                                                                                                                                                                   |
-| Extension Admin        | Adds the following permissions: <br> - full permissions for Extensions                                                                                                                                                                                                                                  |
-| Extension Editor       | Adds the following permissions: <br> - read/update permissions for Extensions                                                                                                                                                                                                                           |
-| Trust an Extension     | Adds the following permissions: <br> - make Extensions trusted or untrusted                                                                                                                                                                                                                             |
-| Flow Editor            | Adds the following permissions: <br> - read/update permissions for Intents <br> - full permissions for Node comments <br> - full permissions for Node descriptions <br> - full permissions for Nodes <br> - full permissions for Copy/Paste etc <br> - full permissions for changing the order of Nodes |
-| Flow Node Comments     | Adds the following permissions: <br> - full permissions for Node comments                                                                                                                                                                                                                               |
-| Flow Node Descriptions | Adds the following permissions: <br> - full permissions for Node descriptions                                                                                                                                                                                                                           |
-| Follow User            | Adds the following permissions: <br> - full permissions for the Live Follow feature                                                                                                                                                                                                                     |
-| Intents                | Adds the following permissions: <br> - full permissions for intents                                                                                                                                                                                                                                     |
-| Knowledge Admin        | ![Version badge](https://img.shields.io/badge/Added in-v4.75.0-blue.svg) Adds the following permissions: full permissions for the [Knowledge AI](../../empower/knowledge-ai/overview.md) resources                                                                                                      |
-| Lexicon Admin          | Adds the following permissions: <br> - full permissions for Lexicons                                                                                                                                                                                                                                    |
-| Lexicon Editor         | Adds the following permissions: <br> - read/update permissions for Lexicons                                                                                                                                                                                                                             |
-| Locales Admin          | Adds the following permissions: <br> - full permissions for Locales                                                                                                                                                                                                                                     |
-| Logs                   | Adds the following permissions: <br> - full permissions for Logs                                                                                                                                                                                                                                        |
-| Member Manager         | Adds the following permissions: <br> - full permissions for Member Details <br> - read permissions for the [Access Control](admin-center/access-control.md) page in the Admin Center                                                                                                                    |
-| NLU Connector Admin    | Adds the following permissions: <br> - full permissions for NLU Connectors                                                                                                                                                                                                                              |
-| Packages Admin         | Adds the following permissions: <br> - full permissions for Playbooks                                                                                                                                                                                                                                   |
-| Playbook Admin         | Adds the following permissions: <br> - full permissions for Packages                                                                                                                                                                                                                                    |
-| Playbook Editor        | Adds the following permissions: <br> - Read/Update permissions for Playbooks                                                                                                                                                                                                                            |
-| Project Admin          | Adds the following permissions: <br> - full access to all project resources (create, read, update, delete) <br> - read permissions for the [Access Control](admin-center/access-control.md) page in the Admin Center                                                                                    |
-| Snapshot Admin         | Adds the following permissions: <br> - full permissions for Snapshots (Note: Permission to restore a Snapshot remains with the Project Admin and above)                                                                                                                                                 |
-| Token Admin            | Adds the following permissions: <br> - full permissions for Tokens                                                                                                                                                                                                                                      |
-| Token Editor           | Adds the following permissions: <br> - Read/Update permissions for Tokens                                                                                                                                                                                                                               |
+Having full permissions means a user can create, read, update, and delete the resource.
 
-!!! note "API Access"
-    The same rights that control access to elements of the user interface also control access to the respective aspects of the API.
+| Role                         | Description                                                                                                                                  |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| `agentAssistConfigAdmin`     | Full permissions for the configuration of Agent Copilot workspace.                                                                                               |
+| `agentAssistConfigViewer`    | Access to read the configuration of the Agent Copilot workspace.                                                                                                     |
+| `analytics`                  | Full permissions for Analytics.                                                                                                              |
+| `basic`                      | Access to read all Project resources except User Details, Contact Profiles, Node Comments, Logs, and Member Details.                         |
+| `connection_admin`           | Full permissions for Connections.                                                                                                            |
+| `contact_profile_admin`      | Full permissions for Contact Profiles and Conversation History.                                                                              |
+| `contact_profile_editor`     | Access to update Contact Profiles.                                                                                                           |
+| `contact_profile_viewer`     | Access to read Contact Profiles.                                                                                                             |
+| `conversationHistory`        | Full permissions for Conversation History.                                                                                                   |
+| `data_privacy_admin`         | Full permissions for data privacy settings (Collect Analytics, Store Contact Profiles, Collect Conversations, Mask Analytics, Mask Logging). |
+| `data_privacy_editor`        | Access to update data privacy settings.                                                                                                      |
+| `data_privacy_viewer`        | Access to read data privacy settings.                                                                                                        |
+| `developer`                  | Full permissions for Extensions, Node Comments, Node Descriptions, Locales, Logs, and the Live Follow feature.                               |
+| `endpoint_admin`             | Full permissions for Endpoints.                                                                                                              |
+| `extension_admin`            | Full permissions for Extensions.                                                                                                             |
+| `extension_editor`           | Access to update Extensions.                                                                                                                 |
+| `extension_trust_admin`      | Access to mark Extensions as trusted or untrusted.                                                                                           |
+| `flowEditor`                 | Full permissions for the Flow editor and access to update Intents.                                                                           |
+| `flowNodeComments`           | Full permissions for Node Comments.                                                                                                          |
+| `flowNodeDescription`        | Full permissions for Node Descriptions.                                                                                                      |
+| `followUser`                 | Full permissions for the Live Follow feature.                                                                                                |
+| `function_admin`             | Full permissions for Functions.                                                                                                              |
+| `function_editor`            | Access to update Functions.                                                                                                                  |
+| `handoverProviderAdmin`      | Full permissions for handover providers.                                                                                                     |
+| `intents`                    | Full permissions for Intents.                                                                                                                |
+| `knowledgeAdmin`             | Full permissions for Knowledge AI resources.                                                                                                 |
+| `large_language_model_admin` | Full permissions for Large Language Models.                                                                                                  |
+| `lexicon_admin`              | Full permissions for Lexicons.                                                                                                               |
+| `lexicon_editor`             | Access to update Lexicons.                                                                                                                   |
+| `localesAdmin`               | Full permissions for Locales.                                                                                                                |
+| `logs`                       | Full permissions for Logs.                                                                                                                   |
+| `memberManager`              | Full permissions for Member Details and read access to the Access Control page in the Admin Center.                                          |
+| `nlu_connector_admin`        | Full permissions for NLU connectors.                                                                                                         |
+| `packages_admin`             | Full permissions for Packages.                                                                                                               |
+| `playbook_admin`             | Full permissions for Playbooks.                                                                                                              |
+| `playbook_editor`            | Access to update Playbooks.                                                                                                                  |
+| `projectAdmin`               | Full permissions for Project resources and read access to the Access Control page in the Admin Center.                                       |
+| `snapshot_admin`             | Full permissions for Snapshots. Permission to restore a Snapshot remains with the `projectAdmin` role.                                       |
+| `tokenAdmin`                 | Full permissions for Tokens.                                                                                                                 |
+| `tokenEditor`                | Access to update Tokens.                                                                                                                     |
 
-## Notifications
+## Add a Member
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.50-blue.svg)](../../../release-notes/4.50.md)
+1. In the left-side menu of the Project, go to **Manage > Members**, then click **+ Add new Member** in the upper-left corner.
+2. In the **New Member** pane, select the user you want to add to the Project. Click **Add**.
+3. In the **Project Roles** section, click **+** to select one or more roles to assign. You can assign multiple roles to a user.
+4. *(Optional)* In the **Local restrictions** section, assign a user to specific locales by selecting the **User is restricted to the following locales** option and the locales.
 
-When you create a new member in your project, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
+## More Information
 
-## Locale Restrictions
+- [Access Control](admin-center/access-control.md)
 
-The locale restrictions feature allows a user's access to be granted to a single locale. By enabling the "User is restricted to the following locales" option, the user can be assigned any of the locales that exist within the Project.
-
-<figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/localeRestrictions.png" width="100%" />
-</figure>
-The user's access rights will only be available for the assigned locales.
