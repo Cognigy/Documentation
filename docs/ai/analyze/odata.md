@@ -67,7 +67,7 @@ You can access the OData endpoint through a different domain than Cognigy.AI:
 
 ### Authentication
 
-To connect to the OData endpoint, you need to have the `odata` [global role](../../ai/administer/access/admin-center/access-control.md#global-roles) and an [API Key](../../ai/administer/user-menu/my-profile.md).
+To connect to the OData endpoint, you need to have the `odata` [global role](../../ai/administer/access/admin-center/access-control.md#before-you-begin) and an [API Key](../../ai/administer/user-menu/my-profile.md).
 
 The OData endpoint URL format is as follows:
 
