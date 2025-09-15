@@ -40,12 +40,12 @@ To analyze your AI Agent's performance, you can use the [built-in Insights repor
 
 ## Supported Versions
 
-| Cognigy.AI version | Cognigy.AI OData endpoint version | Status                                    |
-|--------------------|-----------------------------------|-------------------------------------------|
-| 4.65 and later     | 2.4                               | Supported                                 |
-| 4.48 and later     | 2.3                               | Supported; deprecation in September, 2025 |
-| 4.31-4.47          | 2.0–2.3                           | Not supported                             |
-| 4.30 and earlier   | 2.0–2.2                           | Not supported                             |
+| Cognigy.AI version | Cognigy.AI OData endpoint version | Status                                  |
+|--------------------|-----------------------------------|-----------------------------------------|
+| 4.65 and later     | 2.4                               | Supported                               |
+| 4.48 and later     | 2.3                               | Supported; deprecation in December, 2025|
+| 4.31-4.47          | 2.0–2.3                           | Not supported                           |
+| 4.30 and earlier   | 2.0–2.2                           | Not supported                           |
 
 ## Data Protection
 
