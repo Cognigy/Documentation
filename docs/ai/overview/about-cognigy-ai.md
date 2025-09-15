@@ -1,11 +1,11 @@
 ---
-title: "About Cognigy.AI Platform"
+title: "About Cognigy.AI"
 slug: "cognigy-ai-platform"
 description: "Cognigy.AI is an AI customer experience orchestration platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction."
 hidden:  false
 ---
 
-# About Cognigy.AI Platform
+# About the Cognigy.AI Platform
 
 _The Cognigy.AI platform_ is an AI customer experience orchestration platform that integrates with any contact center or CRM system. It enhances existing infrastructure with advanced conversational AI capabilities, streamlining customer interaction. Cognigy.AI empowers organizations to deliver personalized, seamless, and efficient customer experiences on all channels, managing customer journeys intelligently for maximum engagement and satisfaction.
 

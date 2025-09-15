@@ -19,7 +19,7 @@ The _Advanced Parser_ is Knowledge AI's default content parser. When you upload 
 
 - **Improved quality of responses**. Breaking down the text into [Knowledge Chunks](../../knowledge-chunk/knowledge-chunk.md) allows AI Agents to understand the context and provide more accurate responses.
 - **Recognition of a wide range of text elements**. The Advanced Parser recognizes plain text and more complex text elements, such as tables, titles, and footers as well as images, by using [Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition).
-- **Effective use of Markdown**.  The Advanced Parser converts the text into Markdown format and in Knowledge Chunks. AI Agents can process Markdown and recognize text elements, for example, tables and images, and distinguish them from plain text. This approach gives AI Agents more context and helps them better understand how information is organized in the text.
+- **Effective use of Markdown**. The Advanced Parser converts the text into Markdown format and in Knowledge Chunks. AI Agents can process Markdown and recognize text elements, for example, tables and images, and distinguish them from plain text. This approach gives AI Agents more context and helps them better understand how information is organized in the text.
 - **Improved ability to reference the source**. Adding page numbers of the source file to Knowledge Sources as [Chunk metadata](../../knowledge-chunk/knowledge-chunk.md#chunk-metadata) helps track an information source in large documents.
 
 ## Prerequisites

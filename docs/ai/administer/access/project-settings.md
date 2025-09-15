@@ -1,116 +1,109 @@
 ---
- title: "Project Settings" 
- slug: "settings" 
- hidden: false 
+title: "Project Settings"
+slug: "settings"
+hidden: false
+description: "Project Settings are a set of configuration options that let you customize how your AI Agents operate."
+tags:
+  - project settings
+  - nlu
+  - knowledge ai
+  - generative AI
+  - live agent inbox
 ---
-# Settings
 
-Cognigy.AI provides creators with customization settings that allow the agent processes to be adjusted to achieve optimal performance.
+# Project Settings
 
-The **Agent Settings** are used to configure:
+_Project Settings_ are a set of configuration options that let you customize how your AI Agents operate. These settings apply to all resources within the Project. However, some settings can be overridden at the Flow level.
 
-- The **Flow Logic** of all Flows within this agent
-- The **Timezone** of the agent
-- The **Intent Mapper** of Flows NLU
-- The **Thresholds** for NLU recognition
-- The **Analytics** of the agent
+In Project settings, you can:
 
-Within your agent, from the left toolbar click **Manage** --> **Settings** to access the agent settings menu.
+- Define default values for your Project, such as currency, time zone, and thresholds.
+- Control analytics and data collection.
+- Configure NLU behavior, including Intent recognition, Slot extraction, and confirmation logic.
+- Connect your AI Agent to external services such as translation providers and speech providers.
+- Select models for Knowledge AI and Generative AI features.
+- Configure the Live Agent inbox.
 
-## General Flow Logic || Flow Settings
+To adjust Project settings, select a Project on the [Main page](../../overview/user-interface/main-page.md), then go to **Manage > Settings**.
 
+## List of Settings
 
-### Yes/No logic
+??? info "Currency Settings"
 
-Add a specific [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../empower/nlu/intents/overview.md) or the **Yes/No** type of [Question Nodes](../../build/node-reference/basic/overview.md).
+    | Setting               | Description                                                                                                                                                        |
+    |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Set Standard Currency | Defines the default currency for the [Goals](../../analyze/goals-and-tasks/goals.md) feature when setting up the **Revenue Earnings** or **Cost Savings** metrics. |
 
-### Additional confirmation words
+??? info "NLU Settings"
 
-Add your own customized responses to confirm an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/overview.md).
+    | Setting                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **Embedding Model**                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Embedding Model Provider             | Allows you to select **Cognigy** to use the Cognigy.AI NLU model, or to connect a third-party embedding model provider for intent recognition. The default value is `Cognigy`. If you want to connect to a third-party embedding model provider, refer to [Intent Recognition with External Embedding Model](../../empower/nlu/external/external-nlu-intent-recognition.md).                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+    | Yes/No logic                         | Adds [Yes/No logic](../../empower/nlu/intents/yes-no-intents.md) in your Flows to confirm and reject an [Intent](../../empower/nlu/intents/overview.md), or the **Yes/No** type in [Question Nodes](../../build/node-reference/basic/question.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                        |
+    | Positive confirmation words          | Adds customized responses to confirm an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/question.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+    | Negative confirmation words          | Adds customized responses to reject an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/question.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+    | **Timezone**                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Select Timezone                      | Sets the time zone in which AI Agents operate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+    | **Intent Mapper**                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Enable Case-Sensitive Intent Mapping | Allows the Intent Mapper to consider case sensitivity for all Flows. Disable the setting to ignore casing. After changing this setting, retrain all Flows via **Build > Flows > Train all Flows**. If the **Train all Flows** button is unavailable, add `FEATURE_TRAIN_ALL_PROJECT_FLOWS: "true"` to the `values.yaml` or contact Cognigy technical support. Note that case-sensitive mapping isn't supported for English locales (US, Indian, UK, Canadian, Australian), use the universal Locale instead.                                                                                                                                                                                         |
+    | **Thresholds**                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Intent Threshold                     | Sets the confidence threshold and reconfirmation threshold:<ul><li>**Confidence Threshold** – the score from which an Intent is considered confirmed if a confirmation sentence is set. The default value is `0.4`.</li><li>**Reconfirmation Threshold** – the lower confidence bound at which an Intent is reconfirmed. The default value is `0.2`.</li></ul> For example, if a user input scores `0.3`, the AI Agent asks for reconfirmation; if the user input scores `0.5`, it will be confirmed automatically. For more information, refer to [Thresholds](../../empower/nlu/intents/thresholds.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level. |
+    | **System Slots**                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Enable Age Slots                     | Enables the recognition of age-related terms. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+    | Enable Date Slots                    | Enables the recognition of date-related terms. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    | Enable Distance Slots                | Enables the recognition of distance-related terms. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Enable Duration Slots                | Enables the recognition of duration-related terms. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Enable Email Slots                   | Enables the recognition of email addresses. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+    | Enable Money Slots                   | Enables the recognition of monetary values. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+    | Enable Number Slots                  | Enables the recognition of numerical values. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+    | Enable Percentage Slots              | Enables the recognition of percentage values. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+    | Enable Temperature Slots             | Enables the recognition of temperature values. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    | Enable URL Slots                     | Enables the recognition of URLs. For more information, refer to [System-Defined Slots](../../empower/nlu/slots/system-defined.md). The setting can be overridden at the [Flow](../../build/flows/overview.md#settings) level.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+    | **Analytics**                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+    | Collect                              | Enables collecting analytics from conversations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+    | Allow Data Only                      | Enables collecting analytics for messages containing only JSON data, without text input.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-### Additional negative confirmation words 
+??? info "Knowledge AI Settings"
 
-Add your own customized responses to negate an [Intent](../../empower/nlu/intents/overview.md) and [Question Nodes](../../build/node-reference/basic/overview.md).
+    | Setting                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+    |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Knowledge Search                             | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) for knowledge retrieval. This model is used to find the most relevant knowledge that match the user's request. For more information, refer to [Which Models to Choose?](../../empower/knowledge-ai/overview.md#which-models-to-choose).                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    | Answer Extraction                            | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) for answer generation. After relevant knowledge is retrieved, this model extracts or generates the most precise answer from the content. For more information, refer to [Which Models to Choose?](../../empower/knowledge-ai/overview.md#which-models-to-choose).                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+    | **Document Processing**                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+    | Content Parser                               | Allows you to choose how documents are parsed and prepared for Knowledge AI. Select one of the following options:<ul><li>**Default** – advanced parser provided by Cognigy. For more information, refer to [Advanced Parser](../../empower/knowledge-ai/knowledge-source/text-extraction/advanced-parser.md).</li><li>**Basic** – lightweight parser for simple documents. For more information, refer to [Basic Parser](../../empower/knowledge-ai/knowledge-source/text-extraction/basic-parser.md).</li><li>**Azure AI Document Intelligence** – advanced parser that uses Microsoft Azure AI for structured document processing. For more information, refer to [Azure AI Document Intelligence](../../empower/knowledge-ai/knowledge-source/text-extraction/azure-ai.md).</li></ul> |
+    | Connection to Azure AI Document Intelligence | Allows you to configure a connection to Azure AI Document Intelligence if you selected **Azure AI Document Intelligence** as the content parser. Required for integrating with Azure services.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-### Continue **main** Flow after attached Flow
+??? info "Translation Settings"
 
-You can disable this setting and stop your main flow after an attached flow has been executed.
+    | Setting                | Description                                                                                                                                                                                                                                           |
+    |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Translation Provider   | Allows you to select a translation provider: Microsoft Translator, Google Cloud Translation, or DeepL Translate Pro. For more information, refer to [Real-Time Translation Settings](../../../ai/deploy/endpoints/real-time-translation-settings.md). |
+    | Translation Connection | Allows you to configure a connection for the selected translation provider. For more information, refer to [Real-Time Translation Settings](../../../ai/deploy/endpoints/real-time-translation-settings.md).                                          |
 
-### Continue Flow after default reply
+??? info "Voice Preview Settings"
 
-Enable this setting to continue executing the flow logic after a default reply has been delivered.
+    | Setting           | Description                                                                                                                                                                                                                     |
+    |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Speech Provider   | Allows you to select a speech provider: Microsoft Azure Speech Services, Google Speech Service, Amazon Polly, or Deepgram Speech Services. For more information, refer to [Voice Preview Feature](../../test/voice-preview.md). |
+    | Speech Connection | Allows you to configure the connection for the chosen provider. For more information, refer to [Voice Preview](../../test/voice-preview.md).                                                                                    |
 
-### Continue Flow after negative confirmation
+??? info "Generative AI Settings"
 
-Enable this setting to continue the flow logic after an intent confirmation sentence has been responded too negatively.
+    | Setting                       | Description                                                                                                                                                                                                                                                                                                                                                 |
+    |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Enable Generative AI Features | Allows AI Agents to use Generative AI features. The setting is enabled by default.                                                                                                                                                                                                                                                                          |
+    | AI Agent Node                 | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) for [AI Agent Node](../../build/node-reference/ai/ai-agent.md) interactions.                                                                                                                                                                                               |
+    | LLM Prompt Node               | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) for [LLM Prompt Node](../../build/node-reference/service/llm-prompt.md) responses.                                                                                                                                                                                         |
+    | AI-Enhanced Outputs           | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) that [rephrases AI Agent outputs](../../empower/generative-ai.md#use-run-time-features).                                                                                                                                                                                   |
+    | Design-Time LLM Features      | Allows you to select the [model](../../empower/llms/model-support-by-feature.md) used for [design-time features](../../empower/generative-ai.md#design-time-generative-ai-features), such as Flow, Lexicon, Intent sentence generation. By default, the [Cognigy platform-provided LLM](../../empower/llms/providers/cognigy-platform-provided.md) is used. |
 
-### Pass Default Reply into Flow
+??? info "Live Agent Settings"
+    
+    | Setting                            | Description                                                            |
+    |------------------------------------|------------------------------------------------------------------------|
+    | Overwrite Cognigy Live Agent Inbox | Allows you to enable to override the default Cognigy Live Agent inbox. |
 
-If the setting is on, the AI Agent doesn't answer with the default reply but writes it in the input object. Afterward, this information can be used in order to do something with it in the flow logic. 
+## More Information
 
-### Include Default Reply in NLU Training
-
-If the setting in on, NLU training will also include default replies configured for each Intent as example sentence to match the intent. This setting can be also configured individually on intent level.
-
-## Timezone
-
-
-Set the timezone that your AI Agent will operate in.
-
-## Intent Mapper
-
-
-### Enable Case-Sensitive Intent Mapping
-
-When this setting is turned on, Intent Mapper considers case sensitivity.
-Turn off the setting to ignore casing in the Intent mapping process.
-
-Whenever you change this setting for the Agent, it will affect all the Flows within it.
-To ensure that the Flows work correctly, you need to train them again.
-To do this, navigate to the left-side menu of the Agent and select **Build > Flows**.
-On the **Flows** page, click **Train all Flows**.
-If the **Train all Flows** button is not enabled for your environment,
-specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS: "true"` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-
-!!! warning "English Locale Limitations"
-    The Enable Case-Sensitive Intent Mapping feature is not implemented for English locales such as `US`, `Indian`, `UK`, `Canadian`, and `Australian`. However, you can use this feature with the `Universal` locale, which also supports general English.
-
-### Attached Flow Intent Mapping Priority
-
-- Jointly Map Main and Attached Flow: treats Main and Attached Flow Intents as if they were a single intent collection and finds the best matching intent and executes the corresponding Flow.
-- Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow, the Attached Flow is mapped.
-- Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow, the Main Flow is mapped.
-
-## Thresholds
-
-### Forget question threshold
-
-The Number of contact responses after which a user's answer to a question is no longer registered.
-
-### Confidence threshold
-
-Score from which on an Intent is considered confirmed if a confirmation sentence is set. Value between 0 and 1.
-
-### Reconfirmation threshold
-
-Score from which on an Intent is considered confirmed or marked for reconfirmation if a reconfirmation sentence is set. Value between 0 and 1.
-
-!!! danger "Adjust the Reconfirmation Threshold"
-    The confidence threshold has **no effect unless the intent uses confirmation sentences**.
-    The Reconfirmation Threshold is your lower confidence bound — you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
-
-## Analytics
-
-
-### Collect
-
-If disabled, analytics data will not be collected and stored for the agent.
-
-### Allow data only
-
-If disabled, analytics data will not be collected for messages with only a JSON data payload and no text input.
-
-## Generative.AI
-
-To set up the connection between Cognigy.AI and the Generative AI Provider, read the [Generative AI](../../empower/generative-ai.md#prerequisites) article.
-
+- [Admin Center](admin-center/overview.md)

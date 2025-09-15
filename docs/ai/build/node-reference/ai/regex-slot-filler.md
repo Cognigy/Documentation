@@ -15,8 +15,8 @@ Use this Node to fill Slots using regular expressions. To learn more about Slots
 
 ## Parameters
 
-| Parameter | Type                                                | Description                                                                                                                          |
-|-----------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Parameter | Type                                                | Description                                                                                                                                          |
+|-----------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Regex     | Regular expression                                  | The regular expression applied to input utterance. The regular expression must start with `/` and end with `/g`. For example, `/^1\d{​​​​7}​​​​$/g`. |
-| Flags     | Regular expression flag characters in single string | Regular expression flags you want to set.                                                                                            |
-| Tag       | CognigyScript                                       | The Tag or Slot you want to fill.                                                                                                    |
+| Flags     | Regular expression flag characters in single string | Regular expression flags you want to set.                                                                                                            |
+| Tag       | CognigyScript                                       | The Tag or Slot you want to fill.                                                                                                                    |

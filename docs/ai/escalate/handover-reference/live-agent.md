@@ -1,7 +1,7 @@
 ---
 title: "Cognigy Live Agent" 
 slug: "liveagent-handover"
-description: "The Live Agent handover connector bridges Cognigy.AI with the native contact center Cognigy Live Agent,enabling end users to connect with human agents working within the Cognigy Live Agent contact center."
+description: "The Live Agent handover provider bridges Cognigy.AI with the native contact center Cognigy Live Agent,enabling end users to connect with human agents working within the Cognigy Live Agent contact center."
 hidden: false
 tags:
   - contact centers
@@ -13,7 +13,7 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
 
-The Live Agent handover connector bridges Cognigy.AI with the native contact center [Cognigy Live Agent](../../../live-agent/index.md),
+The Live Agent handover provider bridges Cognigy.AI with the native contact center [Cognigy Live Agent](../../../live-agent/index.md),
 enabling end users to connect with human agents working within the Cognigy Live Agent contact center.
 
 ## Key Benefits

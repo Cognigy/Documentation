@@ -379,3 +379,7 @@ In a [Code Node](overview.md), you can use the functions of the `api` classes. T
     **Returns**
 
     Promise<any>
+
+## More Information
+
+- [Node Execution API: All Functions](../../../../developers/function-reference/all-functions.md)

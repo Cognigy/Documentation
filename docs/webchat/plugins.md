@@ -44,7 +44,7 @@ To test a plugin from the plugin collection, follow these steps:
 
 ## Set Up Plugins in Your Code
 
-You can set up plugins in your code in the embedding code of your [Webchat v3](v3/embedding.md) or [Webchat v2](v2/embedding.md). To add the plugins in your code, proceed as follows:
+You can set up plugins in your code in the embedding code of your [Webchat v3](v3/embedding/hosted-script.md) or [Webchat v2](v2/embedding.md). To add the plugins in your code, proceed as follows:
 
 === "Plugin from Collection"
     1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master) and select the plugin you want to use.

@@ -19,10 +19,10 @@ tags:
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="80%" />
 </figure>
 
-The Genesys Cloud Open Messaging handover connector bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
+The Genesys Cloud Open Messaging handover provider bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
 enabling end users to connect with human agents working in a contact center that uses Genesys.
 
-The Genesys Cloud Open Messaging handover connector is based on [Open Messaging APIs](https://developer.genesys.cloud/commdigital/digital/openmessaging/openmessaging-apis). [Open messaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
+The Genesys Cloud Open Messaging handover provider is based on [Open Messaging APIs](https://developer.genesys.cloud/commdigital/digital/openmessaging/openmessaging-apis). [Open messaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) facilitates integrations between Genesys Cloud and a third-party messaging service through a webhook.
 
 ## Prerequisites
 
@@ -140,9 +140,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+??? info "1. Create a Handover Provider"
 
     1. Go to **Deploy > Handover Providers**.
     2. Click **+ New Hanvover Provider** and select **Genesys Open Messaging** from the list.

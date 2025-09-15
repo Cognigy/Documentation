@@ -1,7 +1,7 @@
 ---
 title: "RingCentral Engage" 
 slug: "ring-central-engage-handover"
-description: "The RingCentral Engage handover connector bridges Cognigy.AI and RingCentral Engage, enabling end users to connect with human agents working within the RingCentral Engage contact center."
+description: "The RingCentral Engage handover provider bridges Cognigy.AI and RingCentral Engage, enabling end users to connect with human agents working within the RingCentral Engage contact center."
 hidden: false
 tags:
   - contact centers
@@ -19,7 +19,7 @@ tags:
 
 ## Description
 
-The RingCentral Engage handover connector bridges Cognigy.AI and [RingCentral Engage](https://engage.ringcentral.com/),
+The RingCentral Engage handover provider bridges Cognigy.AI and [RingCentral Engage](https://engage.ringcentral.com/),
 enabling end users to connect with human agents working in a contact center that uses RingCentral Engage.
 
 ## Prerequisites
@@ -86,9 +86,7 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+??? info "1. Create a Handover Provider"
 
     1. Go to **Build > Handover Providers**.
     2. Click **+ New handover Provider** and select the RingCentral Engage as the handover provider.

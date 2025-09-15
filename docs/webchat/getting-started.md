@@ -132,4 +132,4 @@ To test your AI Agent via Demo Webchat, follow these steps:
 
 - [Explore the key features of Webchat v3](v3/features.md)
 - [Discover the Endpoint settings to tailor Webchat v3 according to your preferences](v3/configuration.md)
-- [Learn how to deploy the application on your website](v3/embedding.md)
+- [Learn how to deploy the application on your website](v3/embedding/hosted-script.md)

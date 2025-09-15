@@ -24,3 +24,7 @@ Developing custom Nodes requires:
 ## Getting Started
 
 To start implementing a custom Node, refer to the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/360016534459-Getting-Started-with-Extensions#h_01HTMF96TZ828THMJJXV8EQ445).
+
+## More Information
+
+- [Node Execution API: All Functions](function-reference/all-functions.md)

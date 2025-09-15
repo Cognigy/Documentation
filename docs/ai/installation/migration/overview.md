@@ -15,3 +15,4 @@ ignore_macros: true
 - [Redis: Single Replica to Redis HA Migration](single-replica-redis-to-redis-ha-migration.md)
 - [Weaviate Upgrade to v1.22.5](weaviate-upgrade-to-1.22.5.md)
 - [Weaviate to Qdrant](from-weaviate-to-qdrant.md)
+- [NFS Migration](nfs-migration.md)

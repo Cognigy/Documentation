@@ -56,7 +56,7 @@ Webchat is designed to handle varying volumes of users and messages, ensuring re
 
 ### Easy Embedding
 
-Webchat offers easy deployment options and integrates smoothly with existing websites or platforms, minimizing implementation time and effort.
+Webchat offers flexible deployment options and integrates smoothly with existing websites or platforms, minimizing implementation time and effort. You can embed it directly using a `<script>` tag for a quick setup, or install it as an npm package for integration into modern build pipelines and CI/CD workflows.
 
 ### Support
 

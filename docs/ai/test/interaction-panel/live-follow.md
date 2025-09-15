@@ -24,6 +24,7 @@ With _Live Follow_ mode, you can monitor conversations between AI Agents and use
 ## Restrictions
 
 - Live Follow mode doesn't display human agent messages.
+- Live Follow mode doesn't support monitoring conversations in [Snapshot](../../deploy/snapshots.md) deployments.
 
 ## How to Use Live Follow Mode
 

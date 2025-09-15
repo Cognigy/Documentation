@@ -18,10 +18,10 @@ hidden: false
     Due to [Genesys ACD Web Chat v2 deprecation](https://help.mypurecloud.com/articles/deprecation-predictive-engagement-support-for-acd-web-chat-version-2/), Cognigy will deprecate the Genesys Cloud Guest Chat handover on June 11, 2025. If you're a new user looking to connect to Genesys, create a new [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover.
     For existing users, we strongly advise migrating to the [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md) handover before the deprecation date.
 
-The Genesys Cloud Guest Chat handover connector bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
+The Genesys Cloud Guest Chat handover provider bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
 enabling end users to connect with human agents working in a contact center that uses Genesys Cloud Guest Chat.
 
-The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat APIs](https://developer.genesys.cloud/commdigital/digital/webchat/guestchat). These APIs contain functionality to create a new chat conversation, retrieve previous chat history, send messages, set the typing indicator, and leave the chat. Receiving messages, membership changes, and other real-time events are available via a WebSocket connection.
+The Genesys Cloud Guest Chat handover provider is based on [Genesys Guest Chat APIs](https://developer.genesys.cloud/commdigital/digital/webchat/guestchat). These APIs contain functionality to create a new chat conversation, retrieve previous chat history, send messages, set the typing indicator, and leave the chat. Receiving messages, membership changes, and other real-time events are available via a WebSocket connection.
 
 ## Prerequisites
 
@@ -30,10 +30,7 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
-
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+??? info "1. Create a Handover Provider"
 
     1. Go to **Deploy > Handover Providers**.
     2. Click **+ New Hanvover Provider** and select **Genesys Guest Chat** from the list.

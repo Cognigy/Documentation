@@ -419,7 +419,59 @@ nav:
       - ai/developers/api-and-cli.md
       - ai/developers/client-libraries.md
       - ai/developers/extension-framework.md
-
+      - Node Execution API Function Reference:
+        - ai/developers/function-reference/all-functions.md
+        - CognigyScript:
+          - ai/developers/function-reference/cognigyscript/overview.md
+          - ai/developers/function-reference/cognigyscript/parseCognigyScriptCondition.md
+          - ai/developers/function-reference/cognigyscript/parseCognigyScriptText.md
+        - Contact Profiles:
+          - ai/developers/function-reference/contact-profiles/overview.md
+          - ai/developers/function-reference/contact-profiles/activateProfile.md
+          - ai/developers/function-reference/contact-profiles/deactivateProfile.md
+          - ai/developers/function-reference/contact-profiles/mergeProfile.md
+          - ai/developers/function-reference/contact-profiles/updateProfile.md
+        - Context Object:
+          - ai/developers/function-reference/context-object/overview.md
+          - ai/developers/function-reference/context-object/addToContext.md
+          - ai/developers/function-reference/context-object/deleteContext.md
+          - ai/developers/function-reference/context-object/getContext.md
+          - ai/developers/function-reference/context-object/removeFromContext.md
+          - ai/developers/function-reference/context-object/resetContext.md
+        - Execution Control:
+          - ai/developers/function-reference/execution-control/overview.md
+          - ai/developers/function-reference/execution-control/addConditionalEntrypoint.md
+          - ai/developers/function-reference/execution-control/executeFlow.md
+          - ai/developers/function-reference/execution-control/resetExecutionAmount.md
+          - ai/developers/function-reference/execution-control/resetNextNodes.md
+          - ai/developers/function-reference/execution-control/setExecutionAmount.md
+          - ai/developers/function-reference/execution-control/setNextNode.md
+          - ai/developers/function-reference/execution-control/stopExecution.md
+          - ai/developers/function-reference/execution-control/think.md
+          - ai/developers/function-reference/execution-control/thinkV2.md
+        - Input and Output:
+          - ai/developers/function-reference/input-and-output/overview.md
+          - ai/developers/function-reference/input-and-output/addToInput.md
+          - ai/developers/function-reference/input-and-output/output.md
+          - ai/developers/function-reference/input-and-output/say.md
+        - Logging and Monitoring:
+          - ai/developers/function-reference/logging/overview.md
+          - ai/developers/function-reference/logging/log.md
+          - ai/developers/function-reference/logging/getLLMTokenUsageForSession.md
+          - ai/developers/function-reference/logging/setSensitiveLoggingSettings.md
+        - States:
+          - ai/developers/function-reference/states/overview.md
+          - ai/developers/function-reference/states/getState.md
+          - ai/developers/function-reference/states/resetState.md
+          - ai/developers/function-reference/states/setState.md
+        - xApps:
+            - ai/developers/function-reference/xApps/overview.md
+            - ai/developers/function-reference/xApps/setAppState.md
+        - Other:
+          - ai/developers/function-reference/other/overview.md
+          - ai/developers/function-reference/other/completeGoal.md
+          - ai/developers/function-reference/other/evaluateRule.md
+          - ai/developers/function-reference/other/setRegexSlot.md
     - 🖥️ Install, Configure, and Migrate:
       - ai/installation/access-to-cognigy-ai.md
       - ai/installation/about.md
@@ -443,6 +495,7 @@ nav:
           - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
           - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
           - ai/installation/migration/from-weaviate-to-qdrant.md
+          - ai/installation/migration/nfs-migration.md
       - SaaS:
         - ai/installation/saas-service-health.md
         - ai/installation/ip-ranges-shared-environments.md
@@ -531,7 +584,9 @@ nav:
         - webchat/v3/configuration.md
         - webchat/v3/metadata.md
       - webchat/v3/accessibility.md
-      - webchat/v3/embedding.md
+      - Embedding:
+        - webchat/v3/embedding/hosted-script.md
+        - webchat/v3/embedding/npm.md
 
     - 💬 Webchat v2 (Deprecated):
       - webchat/v2/overview.md
@@ -735,6 +790,8 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.18.md
+        - release-notes/2025.17.md
         - release-notes/2025.16.md
         - release-notes/2025.15.md
         - release-notes/2025.14.md

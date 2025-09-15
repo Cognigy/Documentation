@@ -13,8 +13,6 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
-
 The AI Agent Handover Node transfers the conversation to another AI Agent Node or Flow and executes it.
 
 ## Parameters

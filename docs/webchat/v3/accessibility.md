@@ -313,4 +313,4 @@ you created via the [Extension](../../ai/build/extensions.md) framework is devel
 - [Webchat v3: Overview](overview.md)
 - [Webchat v3: Features](features.md)
 - [Webchat v3: Configuration](configuration.md)
-- [Webchat v3: Embedding](embedding.md)
+- [Webchat v3: Embedding](embedding/hosted-script.md)

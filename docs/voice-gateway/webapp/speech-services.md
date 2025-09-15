@@ -1,13 +1,13 @@
 ---
-title: "Speech Services" 
-slug: "vg-webapp-speech-services" 
+title: "Speech Services"
+slug: "vg-webapp-speech-services"
 description: "Speech Services allow adding multiple Speech Vendors to the Voice Gateway portal"
 hidden: false
 ---
 
 # Speech Services
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.17-blue.svg)](../../release-notes/2025.17.md)
 
 **Speech services** integrate Speech-to-Text (STT) or Text-to-Speech (TTS) vendors in the Voice Gateway Self-Service Portal. To ensure the AI Agent gets a voice, a speech service must be selected within the [Application](./applications.md). By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway Self-Service Portal, or install multiple configurations of one speech vendor, to quickly switch between different setups.
 
@@ -41,14 +41,22 @@ To configure the connection for a cloud-based speech service:
     3. Select a region from the **Region** list.
 === "Deepgram"
     1. Enter an API key in the **API key** field. For more information on API keys in Deepgram, read the [Deepgram](https://developers.deepgram.com/docs/create-additional-api-keys) documentation.
+    2. Select **Use hosted Deepgram service** and configure the following:
+        - **Region** — select the region to host the data processed by Deepgram:
+            - **United States** — points to the endpoint for Deepgram services located in the U.S.
+            - **EU** — points to the endpoint for Deepgram services located in the EU. To use the EU endpoint, contact your Deepgram account representative.
 === "ElevenLabs"
-    1. Enter an API key in the **API key** field. For more information on ElevenLabs API keys, read the [ElevenLabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
-    2. Select your language model from the **Model** list. 
-    3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
+    1. Select your language model from the **Model** list.
+    2. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
+    3. Select **Use hosted ElevenLabs service** and configure the following:
+        - **Region** — select the region to host the data processed by ElevenLabs:
+            - **Global** — points to the endpoint for ElevenLabs services located in the U.S.
+            - **EU**[^*] — points to the endpoint for ElevenLabs services located in the EU. Selecting data residency is an ElevenLabs Enterprise feature. For more information, read the ElevenLabs documentation on [Data Residency](https://elevenlabs.io/docs/product-guides/administration/data-residency). The EU environment doesn't support legacy voices. Legacy voices include a legacy tag in the voice selection in Cognigy.AI. If you select the EU region, ensure you don't select legacy voices.
+        - **API key** — enter an API key. For more information on ElevenLabs API keys, read the [ElevenLabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
 === "Google Speech Services"
     1. Upload your Service Key to the **Service key** field. For more information on creating Service Keys in Google Cloud, read the [Google Cloud](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
 === "Microsoft Azure Speech Services"
-    1. Select **Use hosted Azure service**. 
+    1. Select **Use hosted Azure service**.
     2. Select a region from the **Region** list.
     3. Enter an API key in the **API key** field. For more information on linking API keys, read the [Microsoft Speech Services Billing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-howto#billing-arguments) documentation.
     4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
@@ -62,6 +70,8 @@ To configure the connection for a cloud-based speech service:
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
 
+[^*]: The EU environment is isolated, and custom voices aren't available in it by default. To use custom voices in the EU environment, you need to share them from non-isolated environments. For more information on sharing resources from non-isolated environments, read the [respective instructions](https://elevenlabs.io/docs/product-guides/administration/data-residency#how-do-i-share-a-pvc-from-a-non-isolated-environment-to-an-isolated-environment) in the ElevenLabs documentation.
+
 ## On-Premises Speech Services
 
 {! _includes/voice-gateway/speech-services-howto.md !}
@@ -74,7 +84,7 @@ Once you created a speech service, add this service to the [Application](./appli
 === "Nuance"
     1. Select **Use on-prem TTS** and enter the IP port in the **TTS URI** field.
     2. Select **Use on-prem STT** to enter the IP port in the **STT URI** field.
-  
+
 === "Microsoft Azure Speech Services"
     1. Select **Use Azure Docker container (on-prem)**.
     2. Enter the container URL for TTS in the **Container URL for TTS** field.
@@ -103,9 +113,9 @@ To add a custom speech vendor, follow these steps:
 4. In the **Name** field, specify a unique name for your provider. You need to reuse this name in the Node configuration.
 5. From the **Account** list, select a specific account or leave the **All accounts** value if you want that custom speech provider will be available for all available accounts.
 6. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use.
-7. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed. 
+7. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed.
 8. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL of the server where your custom vendor is deployed.
-9. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection. 
+9. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection.
 10. Click **Save**.
 
 To start using your speech provider,

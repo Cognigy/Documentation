@@ -51,7 +51,7 @@ If you already have a Live Agent account and admin rights, you can also:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
 
-_Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Project. A Task is an asynchronous process that runs in the background and for which you get notifications. The Task Panel provides an overview of ongoing and completed Tasks. To open the Task Panel, click the ![task-menu](../../_assets/icons/task-menu.svg) button in the upper-right corner of the **Project** page. 
+_Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Project. A Task is an asynchronous process that runs in the background and for which you get notifications. The Task Panel provides an overview of ongoing and completed Tasks. To open the Task Panel, click the ![task-menu](../../_assets/icons/task-menu.svg) button in the upper-right corner of the **Project** page.
 
 ??? info "View Tasks"
     Note that only the most recent 100 tasks are visible on the Task Panel. To view tasks beyond the latest 100, use the [Get Tasks](https://api-trial.cognigy.ai/openapi#get-/v2.0/tasks) API request as follows:

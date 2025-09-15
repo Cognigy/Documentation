@@ -201,7 +201,7 @@ The Chat screen provides buttons for minimizing or closing the chat window:
 
 - **Minimize** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again. The `webchat/minimize` event is triggered when users click the **Minimize** button.
 - **Close** — this button collapses the window without ending a conversation. Users can return to the chat by expanding the window again. The `webchat/close` event is triggered when users click the **Close** button.
-    If you want the **Close** button to end the conversation and close the window, extend the [embedding file](embedding.md) with the following code:
+    If you want the **Close** button to end the conversation and close the window, extend the [embedding file](embedding/hosted-script.md) with the following code:
 
     ??? info "webchat.endSession"
         ```js
@@ -268,10 +268,10 @@ All elements of the Webchat widget are aligned for RTL, including the positionin
 </figure>
 
 To use RTL, add the attribute `dir="rtl"` to the `<html>` tag, which is placed at the beginning of the HTML-page.
-For more information, read [RTL Configuration](embedding.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/Webchat/blob/main/README.md#development).
+For more information, read [RTL Configuration](embedding/hosted-script.md#rtl-configuration). To test this feature, [build Webchat v3 locally](https://github.com/Cognigy/Webchat/blob/main/README.md#development).
 
 ## More Information
 
 - [Webchat v3: Overview](overview.md)
 - [Webchat v3: Configuration](configuration.md)
-- [Webchat v3: Embedding](embedding.md)
+- [Webchat v3: Embedding](embedding/hosted-script.md)

@@ -1,7 +1,7 @@
 ---
 title: "Chatwoot" 
 slug: "chatwoot-handover" 
-description: "The Chatwoot handover connector bridges Cognigy.AI and Chatwoot, enabling end users to connect with human agents working within the Chatwoot contact center."
+description: "The Chatwoot handover provider bridges Cognigy.AI and Chatwoot, enabling end users to connect with human agents working within the Chatwoot contact center."
 hidden: false
 tags:
   - contact centers
@@ -19,7 +19,7 @@ tags:
 
 ## Description
 
-The Chatwoot handover connector bridges Cognigy.AI and [Chatwoot](https://www.chatwoot.com/),
+The Chatwoot handover provider bridges Cognigy.AI and [Chatwoot](https://www.chatwoot.com/),
 enabling end users to connect with human agents working in a contact center that uses Chatwoot.
 
 Chatwoot integration allows users to receive text messages, files, videos (MP4), images (JPG, PNG), and GIFs.
@@ -62,12 +62,9 @@ Cognigy.AI supports Chatwoot API v1.19.0, custom agent bot names and description
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
-
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+??? info "1. Create a Handover Provider"
   
-     To link your Cognigy.AI Endpoint to Chatwoot:
+    To link your Cognigy.AI Endpoint to Chatwoot:
 
     1. Go to **Deploy > Handover Providers**. 
     2. Click **+ New Handover Provider** and select **Chatwoot** as the handover provider. 

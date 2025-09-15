@@ -20,12 +20,12 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 ## Parameters 
 
-| Parameter            | Type          | Description                                                                                    |
-|----------------------|---------------|------------------------------------------------------------------------------------------------|
-| Tile ID              | CognigyScript | The ID that you created in the Agent Copilot configuration.                                       |
-| Generate Node Output | Text          | A prompt or instruction for generating the Adaptive Card. To apply the prompt, click Generate. |
-| Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.                                      |
-| JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.                                         |
+| Parameter            | Type          | Description                                                                                        |
+|----------------------|---------------|----------------------------------------------------------------------------------------------------|
+| Tile ID              | CognigyScript | The ID that you created in the Agent Copilot configuration.                                        |
+| Generate Node Output | Text          | A prompt or instruction for generating the adaptive card. To apply the prompt, click **Generate**. |
+| Adaptive Card JSON   | JSON          | The JSON payload to render inside the tile. Supported schema version: `1.5` or earlier.            |
+
 
 ??? info "Create an Adaptive Card with Generative AI"
 

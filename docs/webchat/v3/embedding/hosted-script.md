@@ -1,37 +1,43 @@
 ---
-title: "Embedding"
-slug: "embedding"
-description: "Embedding Cognigy Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website."
+title: "Embedding via Hosted Script (HTML)"
+slug: "embedding-via-hosted-script"
+description: "Embedding Webchat v3 with a hosted script lets you integrate a Webchat widget interface into your website. By connecting it to your Cognigy.AI Endpoint and configuring its appearance and behavior, you can offer users seamless interaction and support without complex setup."
 hidden: false
+tags:
+   - webchat v3 embedding
+   - webchat v3 hosted script
+   - webchat v3 html embedding
 ---
 
-# Webchat 3: Embedding
+# Webchat 3: Embedding via Hosted Script (HTML)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v2025.16-blue.svg)](../../release-notes/2025.16.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.16-blue.svg)](../../../release-notes/2025.16.md)
 
-Embedding Webchat v3 into your website allows you to provide a conversational interface powered by AI Agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
+Embedding Webchat v3 with a hosted script lets you integrate a Webchat widget interface into your website. By connecting the widget to your Cognigy.AI Endpoint and configuring the widget’s appearance and behavior, you can offer users seamless interaction and support without a complex setup.
+
+The script can be hosted remotely, for example, on GitHub, or on your own server.
 
 ## Prerequisites
 
 - Ability to modify the HTML content of your website.
-- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
-      - Note that some settings are [specific to embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#embedding-configuration), as they aren't available in the Webchat v3 Endpoint settings. 
-- Create a [Webchat v3 Endpoint](configuration.md).
+- Access to a Cognigy.AI instance with the [Webchat v3 Endpoint](../configuration.md).
+- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md). Keep in mind that:
+    - Specifying parameters in the embedding code overwrites parameters configured in the Endpoint settings.
+    - Some settings are [specific to embedding parameters](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#embedding-configuration) and aren't available in the Endpoint settings.
 
-## Add the Embedding HTML
+## Embedding
 
 Copy the HTML code from the Webchat v3 Endpoint associated with your AI Agent, which you want to deploy on your website:
 
-1. In the left-side menu Cognigy.AI interface, select a Project.
-2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
-3. On the **Endpoints** page, select a Webchat v3 Endpoint that you recently created.
-4. On the **Endpoint Settings** page, go to the Embedding HTML section.
-5. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
-6. The HTML code contains the following entities:
+1. In the left-side menu of the Project, go to **Deploy > Endpoints**.
+2. On the **Endpoints** page, select a Webchat v3 Endpoint that you recently created.
+3. In the Endpoint settings, go to the **Embedding HTML** section.
+4. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
+5. The HTML code contains the following entities:
     - The Webchat JavaScript bundle — hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v3. You can also deploy another Webchat v3 version by replacing `https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js` with `https://github.com/Cognigy/Webchat/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v3 version you want to use. For example, to use Webchat v3.2.0, enter `https://github.com/Cognigy/Webchat/releases/download/v3.2.0/webchat.js`. If you enter a specific version, ensure it is the same or later than the version where the Webchat v3 features you use were introduced. Learn more about Webchat v3 versions on the [Webchat v3 release page](https://github.com/Cognigy/Webchat/releases).
-    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
-      This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
-   
+    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with the required argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
+    This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
+
     ```html
     <script src="https://github.com/Cognigy/Webchat/releases/latest/download/webchat.js"></script>
     <script>
@@ -43,21 +49,19 @@ Copy the HTML code from the Webchat v3 Endpoint associated with your AI Agent, w
 
 ## Include Custom Plugins and Stylesheets
 
-If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md) for the webchat, include them by adding the appropriate `<script>` and `<link>` tags respectively. Replace the placeholders with the paths to your custom files.
+If you have custom [plugins](../../plugins.md) or [stylesheets](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md) for the webchat, include them by adding the appropriate `<script>` and `<link>` tags respectively. Replace the placeholders with the paths to your custom files.
 
 ```html
 <script src="./path/to/myPlugin.js"></script>
 <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
 ```
 
-Note that plugins suitable for Webchat v2 may not be compatible with Webchat v3.
-
 ## Customize the Webchat Settings
 
 You can customize the [Webchat settings](https://github.com/Cognigy/Webchat/blob/main/docs/embedding.md#client-side-configuration) according to your requirements:
 
 - `colors` — customize a Webchat v3 color. In the example:
-  `primaryColor` — change the primary color.
+    - `primaryColor` — change the primary color.
 - `behavior` — customize the Webchat v3 behavior by adjusting Webchat v3 Endpoint settings. In the example:
     - `enableTypingIndicator` — activate a typing indicator to show when the AI Agent is replying.
     - `messageDelay` — set the time interval, in milliseconds, between AI Agent's messages.
@@ -93,18 +97,32 @@ Example:
         text: "The agent is currently in maintenance mode, try again later",
         title: "Maintenance hours",
       },
-      customAllowedHtmlTags: ["a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdi", "bdo", "big", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer", "form", "frame", "frameset", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta", "meter", "nav", "noframes", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "small", "source", "span", "strike", "strong", "style", "sub", "summary", "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"],
-    },
-  }
-  );
+      widgetSettings: {
+        customAllowedHtmlTags: [
+          "a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio",
+          "b", "base", "basefont", "bdi", "bdo", "big", "blockquote", "body", "br", "button",
+          "canvas", "caption", "center", "cite", "code", "col", "colgroup", "data", "datalist",
+          "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed",
+          "fieldset", "figcaption", "figure", "font", "footer", "form", "frame", "frameset",
+          "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hr", "html", "i", "img",
+          "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta",
+          "meter", "nav", "noframes", "object", "ol", "optgroup", "option", "output", "p",
+          "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section",
+          "select", "small", "source", "span", "strike", "strong", "style", "sub", "summary",
+          "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead",
+          "time", "title", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"
+        ]
+      },
+    }
+  });
 </script>
 ```
 
 ### RTL Configuration
 
-By default, the Webchat widget uses the LTR (left-to-right) layout. 
-To override this setting for languages that use [RTL (right-to-left)](features.md#rtl-language-support),
-add the attribute `dir="rtl"` to the `<html>` tag on the web page where the widget is placed. 
+By default, the Webchat widget uses the LTR (left-to-right) layout.
+To override this setting for languages that use [RTL (right-to-left)](../features.md#rtl-language-support),
+add the attribute `dir="rtl"` to the `<html>` tag on the web page where the widget is placed.
 For example, for a web page in Arabic, use `<html lang="ar" dir="rtl">`.
 
 ## Test your Webchat
@@ -148,7 +166,7 @@ After implementing the code, open your web page in a browser to test the functio
     ```
 
 === "RTL (Right-to-Left) Layout"
-      
+
     ```html
     <html lang="ar" dir="rtl">
     <body>

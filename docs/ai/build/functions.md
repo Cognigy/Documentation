@@ -13,7 +13,7 @@ tags:
 
 _Functions_ are JavaScript functions that you can define and execute in Cognigy.AI. You can use Functions to assist with long-running and asynchronous processes, such as interacting with third-party systems through HTTP API.
 
-The execution of Functions is independent of Flows, but you can trigger them from a Flow. You can also use the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs in a Function to send results back into a Flow.
+The execution of Functions is independent of Flows, but you can trigger them from a Flow. You can also use the [inject and notify](../deploy/endpoints/inject-and-notify.md) APIs in a Function to send results back into a Flow.
 
 You can access the `parameters` and `api` objects from the Function's arguments.
 

@@ -17,6 +17,7 @@ Benefits of Webchat v3:
 - **Modern Design Out of the Box**. With Webchat v3, you no longer need to spend time extensively configuring styles; most settings are within the Endpoint configuration, allowing you to adjust styles in a user-friendly interface.
 - **Adherence to Accessibility Guidelines**. Webchat v3 is fully aligned with WCAG 2.2 Level AA guidelines, guaranteeing enhanced readability, seamless navigation, and interactive functionality within the interface.
 - **RTL Support**. Alongside the traditional LTR (left-to-right) layout, Webchat v3 supports RTL (right-to-left), enhancing usability for languages such as Arabic, Hebrew, Urdu, and more.
+- **npm Package Support**. Alongside the hosted script integration, Webchat v3 supports the npm package, offering easier integration with modern frameworks, maintainable code, automatic updates, and compatibility with build systems and CI/CD pipelines.
 
 [^*]: If you integrate Webchat v3 with a contact center, note that only [Cognigy Live Agent](../../live-agent/index.md), [Genesys Cloud Open Messaging](../../ai/escalate/handover-reference/genesys-cloud-open-messaging.md), and [Salesforce MIAW](../../ai/escalate/handover-reference/salesforce-miaw.md) support the Webchat v3 typing indicator.
 
@@ -37,4 +38,4 @@ configuration, and how to integrate it into your project:
 2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v3.
 3. [Configuration](configuration.md). Create a Webchat v3 Endpoint and customize various settings within it.
 4. Test your Webchat v3 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v3 locally using [developer tools](https://github.com/Cognigy/Webchat/blob/main/README.md#building-your-webchat).
-5. [Embedding](embedding.md). Launch the Webchat v3 version on your website.
+5. [Embedding](embedding/hosted-script.md). Launch the Webchat v3 version on your website.

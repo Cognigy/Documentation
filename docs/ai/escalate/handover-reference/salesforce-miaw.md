@@ -1,7 +1,7 @@
 ---
 title: "Salesforce MIAW" 
 slug: "Salesforce-MIAW" 
-description: "The Salesforce MIAW handover connector bridges Cognigy.AI and Salesforce Messaging for In-App and Web."
+description: "The Salesforce MIAW handover provider bridges Cognigy.AI and Salesforce Messaging for In-App and Web."
 hidden: false
 tags:
    - contact centers
@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.16-blue.svg)](../../../release-notes/2025.15.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.17-blue.svg)](../../../release-notes/2025.17.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -22,7 +22,7 @@ tags:
 
 ## Description
 
-The Salesforce MIAW handover connector bridges Cognigy.AI and [Salesforce Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5) (Salesforce MIAW),
+The Salesforce MIAW handover provider bridges Cognigy.AI and [Salesforce Messaging for In-App and Web](https://help.salesforce.com/s/articleView?id=service.miaw_intro_landing.htm&type=5) (Salesforce MIAW),
 enabling end users to connect with human agents working in a contact center that uses Salesforce.
 
 ## Prerequisites
@@ -110,10 +110,7 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
-
-    !!! note 
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+??? info "1. Create a Handover Provider"
 
     1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
     2. In the **New Handover Provider** window, select **Salesforce MIAW** from the list and name the connector.
@@ -139,7 +136,9 @@ enabling end users to connect with human agents working in a contact center that
        }
        ```
        where `customerName` and `issueType` are variables you specified on the Salesforce side, and `John Doe` and `Billing` are the values you want to pass to the flow in Salesforce.
-    - **Identity Token for Authenticated Users** — the setting allows you to specify an access token generated via the [Salesforce API](https://developer.salesforce.com/docs/service/messaging-api/references/miaw-api-reference?meta=generateAccessTokenForAuthenticatedUser). This token enables users who have already authenticated within your system to interact securely with Salesforce MIAW. Before using this token, [set up user verification](https://help.salesforce.com/s/articleView?id=sf.user_verification_setup.htm) on the SalesForce side. By default, the setting is turned off, meaning that unauthenticated users can interact with Salesforce MIAW. 
+    - **Identity Token for Authenticated Users** — the setting allows you to specify an access token generated via the [Salesforce API](https://developer.salesforce.com/docs/service/messaging-api/references/miaw-api-reference?meta=generateAccessTokenForAuthenticatedUser). This token enables users who have already authenticated within your system to interact securely with Salesforce MIAW. Before using this token, [set up user verification](https://help.salesforce.com/s/articleView?id=sf.user_verification_setup.htm) on the SalesForce side. By default, the setting is turned off, meaning that unauthenticated users can interact with Salesforce MIAW.
+    - **Enable User Connects Message** - the setting allows you to notify human agents when an end user reconnects to the chat. The parameter is enabled by default. When the parameter is enabled, the message `User joined the conversation` appears in the chat as soon as the end user opens a new URL on the same tab as the chat and then returns to the chat tab by clicking the **←** (back arrow) at the top bar in the browser.
+    - **Enable User Disconnects Message** - the setting allows you to notify human agents when an end user disconnects from the chat. The parameter is enabled by default. When the parameter is enabled, the message `User left the conversation` is sent as soon as the user closes the tab with the chat or switches to a new URL address within the current tab.
 
 Test your Flow to ensure it works as expected. You can use Demo Webchat to send messages to the Salesforce contact center.  
 On the Salesforce side, go to the Service Console. In the Service Console, open [Messaging Sessions](https://help.salesforce.com/s/articleView?id=service.livemessage_create_console_app.htm&type=5), and make sure that your human agent is online.
@@ -211,9 +210,13 @@ By default, two versions of the application are provided:
 
 The Salesforce MIAW integration supports automated messaging components for sending auto-responses during messaging sessions, such as welcome messages, inactivity reminders, and survey links. To learn how to use these components, refer to the Salesforce documentation on [Salesforce documentation on Automated Messaging Components](https://help.salesforce.com/s/articleView?id=service.messaging_components_auto_response.htm&type=5).
 
-### Prevent Auto Conversation Close
+### Prevent Conversations from Automatically Closing
 
-To help keep conversations going smoothly, you can control whether a Salesforce MIAW chat closes when a human agent is removed from the conversation. To do this, set the `DISABLE_ABORT_HANDOVER_ON_SALESFORCE_MIAW_PARTICIPANT_CHANGE` variable in the `values.yaml` file. By default, this variable is set to `false`. Setting it to `true` keeps the conversation open and continues polling for new events even if the human agent is no longer part of the chat.
+Cognigy.AI prevents Salesforce MIAW chats from closing automatically when human agents leave the conversation and continues polling for new events.
+
+#### Cognigy.AI 2025.16 and earlier
+
+Salesforce MIAW chat closes automatically when a human agent leaves the conversation. You can control this behavior by setting the `DISABLE_ABORT_HANDOVER_ON_SALESFORCE_MIAW_PARTICIPANT_CHANGE` variable in the `values.yaml` file. By default, this variable is set to `false`. Setting it to `true` keeps the conversation open after human agents leave and continues polling for new events.
 
 ### Access Token Expiration
 
@@ -233,6 +236,13 @@ When a handover starts, Salesforce MIAW provides an access token with a configur
 
 ??? info "Example"
     If you have an access token expiration time of 6 hours (360 minutes) and a grace period of 30 minutes, Cognigy.AI terminates the session on both platforms 5 hours and 30 minutes after the handover started.
+
+### Mark Conversations as Inactive
+
+Human agents managing multiple active conversations can quickly reach capacity. Without a way to pause unresolved sessions, new incoming conversations may be delayed, affecting response times.
+Your human agents can temporarily pause unresolved conversations by marking them as inactive. This approach frees up capacity for new sessions while still allowing customers to reconnect later.
+
+To mark a conversation as inactive, open it in Salesforce MIAW, click the dropdown next to **End Chat**, and select **Customer Inactive**. For more details, refer to [Ending or Inactivating Messaging Sessions Automatically](https://help.salesforce.com/s/articleView?id=service.messaging_auto_end.htm&type=5) and [Inactivate a Messaging Session](https://help.salesforce.com/s/articleView?id=service.livemessage_agent_inactivate_session.htm&type=5) in the Salesforce documentation.
 
 ## Troubleshooting
 

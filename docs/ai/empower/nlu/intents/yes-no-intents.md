@@ -227,7 +227,7 @@ Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`.
 
     **Q2**: Are Yes/No Intents independent of standard intent scoring?
    
-    **A2**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../../build/node-reference/basic/question.md) and for [confirming Intents](overview.md), similar to [confirmation words](../../../administer/access/project-settings.md#additional-confirmation-words).
+    **A2**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../../build/node-reference/basic/question.md) and for [confirming Intents](overview.md), similar to [confirmation words](../../../administer/access/project-settings.md).
    
     **Q3**: How are Yes/No Intents evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
    

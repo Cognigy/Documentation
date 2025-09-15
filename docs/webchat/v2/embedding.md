@@ -28,7 +28,7 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
 5. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 6. The HTML code contains the following entities:
     - The Webchat JavaScript bundle — hosted externally on GitHub, ensures that your web page loads the latest version of Webchat v2. You can also deploy another Webchat v2 version by replacing `https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js` with `https://github.com/Cognigy/WebchatWidget/releases/download/<webchat-version>/webchat.js`, where `<webchat-version>` is the Webchat v2 version you want to use. For example, to use Webchat v2.59.0, enter `https://github.com/Cognigy/WebchatWidget/releases/download/v2.59.0/webchat.js`. If you enter a specific version, ensure it is the same or later than the version where the Webchat v2 features you use were introduced. Learn more about Webchat v2 versions on the [Webchat v2 release page](https://github.com/Cognigy/WebchatWidget/releases).
-    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
+    - The `initWebchat()` function — initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with the required argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the web page.
 
     ```html
@@ -39,7 +39,6 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your AI Agent, w
         );
     </script>
     ```
-
 
 ## Include Custom Plugins and Stylesheets
 
