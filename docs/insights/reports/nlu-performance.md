@@ -6,9 +6,7 @@ hidden: false
 
 # NLU Performance
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.94-blue.svg)](../../release-notes/4.94.md)
-
-{! _includes/ai/understood-messages.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.19-blue.svg)](../../release-notes/2025.19.md)
 
 The _NLU Performance Report_ provides valuable insights into the performance of your AI Agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
@@ -30,11 +28,6 @@ These charts display all data based on the [global filter](../global-filters.md)
 ## Indicators
 
 The Indicator charts presents real-time data that refreshes every 30 seconds.
-
-### Understood Messages
-
-Displays the percentage of messages understood during conversations.
-You can find a calculation example with data visualization in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
 
@@ -96,42 +89,6 @@ Source table:
 Result: In the provided source table, there is one record with an intent score of `1`, so the max intent score is `1`.
 
 ## Bar charts
-
-### Understood / Misunderstood Messages
-
-{! _includes/insights/understood-messages.md !}
-
-Source table:
-
-```txt
-| Date       | understood   | misunderstood   | Percentages     |
-| -----------| ------------ | --------------- | --------------- |
-| 2023-09-13 | 20           | 33              | 38/62           |
-| 2023-09-14 | -            | -               |   -             |
-| 2023-09-15 | 29           | 18              | 62/38           |
-| 2023-09-16 | 0            | 0               | -               |
-| 2023-09-17 | 0            | 0               | -               |
-| 2023-09-18 | 0            | 0               | -               |
-| 2023-09-19 | 0            | 0               | -               |
-| ------------------------------------------------------------- |
-| TOTAL      | 49           | 51              |                 |
-```
-
-Calculation for the selected timeframe:
-
-1. Misunderstood %  = `(51 / 100) * 100 = 51%`
-2. Understood % = `(49 / 100) * 100 = 49%`
-
-Calculation example for the date `2023-09-15`: 
-
-1. Misunderstood %  = `(18 / 47) * 100 = 38%`
-2. Understood % = `(29 / 47) * 100 = 62%`
-
-Result:
-
-<figure>
-  <img class="image-center" src="../../../_assets/insights/reports/nlu/NLU_understood_messages.png" width="80%" />
-</figure>
 
 ### Top Intents
 

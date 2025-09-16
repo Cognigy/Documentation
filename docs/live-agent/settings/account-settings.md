@@ -7,6 +7,8 @@ hidden: false
 
 # Account Settings
 
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.19-blue.svg)](../../release-notes/2025.19.md)
+
 _Account Settings_ control the administration and optimization of Live Agent functionality within an organization.
 
 Only users having the `Administrator` role have access to the **Account Settings**. 
@@ -63,12 +65,29 @@ When the agent performs an action, it will be set back to online state automatic
 !!! note
     This setting does not work if the Live Agent interface is closed. In this case, the user is set to offline automatically when the browser window is closed.
 
+### TTL for Conversations
+
+The **TTL for Conversations** option lets you automatically delete the conversations in the account after a set period.
+
+To set a TTL for conversations, follow these steps:
+
+1. Click **Enable TTL for conversations**.
+2. Enter the TTL in the **Number of days after conversation is deleted** field.
+
+By default, the **Delete only Resolved and Abandoned conversations** option is activated. Deselect this option to delete all conversations.
+
+To deactivate the TTL for conversations, click **Disable TTL for conversations**.
+
 ### TTL for Attachments
 
-The **TTL for Attachment** option automatically deletes the attachments in messages of all conversations in the account after a specific time.
+The **TTL for Attachment** option lets you automatically delete the attachments in messages of all conversations in the account after a set period.
 
-- Click **Disable TTL for attachments**, in case you do not want to use this option.
-- Click **Enable TTL for attachments** and enter the number of days in a separate field. Afterward, the attachments will be deleted.  
+To set a TTL for attachments, follow these steps:
+
+1. Click **Enable TTL for attachments**.
+2. Enter the TTL in the **Number of days after attachment is deleted** field.
+
+To deactivate the TTL for attachments, click **Disable TTL for attachments**.
 
 ### Auto Resolve Conversations
 

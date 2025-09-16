@@ -45,23 +45,21 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 
 <div style="text-align:center">
    <video width="650" height="400" controls="" alt="type:video" style="border: 1px solid #ccc; border-radius: 12px;" autoplay>
-      <source src="https://docscognigyassets.blob.core.windows.net/assets/create-ai-agent.mov">
+      <source src="https://docscognigyassets.blob.core.windows.net/assets/create-new-ai-agent.mov">
    </video>
 </div>
 
 ## Assign a Job to your AI Agent
 
-Specify the role and tasks your AI Agent will perform within a Flow.
+Specify the role and tasks your AI Agent will perform.
 
-1. Go to **Build > Flows** and open the Flow assigned to the AI Agent.
-2. Ensure an AI Agent Node is present and assign the AI Agent Persona to the Node.
-3. Define job details:
-    - **Job Title** — for example, `Logistics Support Specialist`.
-    - **Description** and **Instructions**.
-4. Experiment and refine settings in the Interaction Panel.
+1. On the **Jobs** tab, define job details:
+    - **Job Title** — for example, `Delivery Manager`.
+    - **Description**, **Instructions and Context**.
+2. Experiment and refine settings in the Interaction Panel.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/ai-agent-job-configuration.png" width="70%" />
+  <img class="image-center" style="border: 1px solid #ccc; border-radius: 12px;" src="../../../_assets/ai/overview/ai-agent-job-configuration.webp" width="70%" />
   <figcaption>AI Agent Job Configuration</figcaption>    
 </figure>
 
@@ -75,24 +73,23 @@ Generative models may lack company-specific knowledge. To improve accuracy, use 
 4. Assign knowledge to the AI Agent in its configuration.
 5. Customize knowledge settings per AI Agent Node.
 
-## Improve AI Agent Skills with Tool Actions
+## Improve AI Agent Skills with Tools
 
 Enable your AI Agent to perform specific tasks and integrate with external systems.
 
-**Example Tool Actions**
+**Example of Tools**
 
 - track parcel — retrieve tracking details.
 - escalate to a human agent — route requests to a human agent.
 
 ### Create a Tool Action
 
-1. Click **Add Tool Action** next to your AI Agent Node.
-2. Set Tool ID, for example, `track_parcel`, and description.
+1. In the **Tools** section, click **Add Tool > Regular Tool**.
+2. Set Tool ID, for example, `track_parcel`, and its description.
 3. Enable parameters, for example,  add `tracking_code` as a string.
-4. Use **Resolve Tool Action to** finalize the AI Agent's response.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/ai-agent-tool-action.png" width="70%" />
+  <img class="image-center" style="border: 1px solid #ccc; border-radius: 12px;" src="../../../_assets/ai/overview/ai-agent-tool-action.webp" width="70%" />
   <figcaption>AI Agent Tool Action</figcaption>    
 </figure>
 
@@ -110,14 +107,10 @@ Configure memory settings to personalize interactions and retain user details.
 - Stores session-specific data.
 - Erased after a conversation ends.
 
-To configure short-term memory, follow these steps:
-
-1. Configure the AI Agent Node settings in the **Memory Handling** section.
-2. Set **Long-Term Memory Injection** to **Inject full Contact Profile**.
-3. _(Optional)_ Add an Update Profile Node to simulate stored user data.
+To configure short-term memory, in the **Memory Handling** section, set **Long-Term Memory Injection** to **Inject full Contact Profile**.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/ai-agent-memory.png" width="70%" />
+  <img class="image-center" style="border: 1px solid #ccc; border-radius: 12px;" src="../../../_assets/ai/overview/ai-agent-memory.webp" width="70%" />
   <figcaption>AI Agent Memory Configuration</figcaption>    
 </figure>
 
@@ -125,9 +118,20 @@ To configure short-term memory, follow these steps:
 
 AI Agents can process images if a vision-capable LLM is used.
 
-1. Activate **Process Images** in the AI Agent Node.
+1. In the **Image Handling** section, activate **Process Images**. 
 2. Enable **Attachment Upload** in the Webchat v3 Endpoint settings.
 3. Use a storage provider, for example, AWS or Azure.
+
+## Explore the AI Agent's Flow
+
+The Flow represents the logic and behavior of your AI Agent.  
+To inspect it in detail, click **Advanced Editor** in the upper-right corner.  
+The Flow Editor opens, displaying all the created Nodes that define how the AI Agent responds and interacts.
+
+<figure>
+  <img class="image-center" style="border: 1px solid #ccc; border-radius: 12px;" src="../../../_assets/ai/overview/flow-editor.webp" width="70%" />
+  <figcaption>Flow Editor</figcaption>    
+</figure>
 
 ## Deploy your AI Agent
 
@@ -137,8 +141,10 @@ Deploy an AI Agent via Webchat:
 
 1. Go to **Deploy > Endpoints**.
 2. Add a new Endpoint and link it to the Flow.
-3. Use **Open Demo Webchat** to test the AI Agent.
+3. Click **Open Demo Webchat** to test the AI Agent.
 
 ## What's Next?
 
-Explore advanced features, test different configurations, and refine responses based on real-world interactions.
+1. Try [creating AI Agents tailored to your business needs](../empower/agentic-ai/manage-ai-agents.md#create-from-scratch) or [hire one from the Job Market](../empower/agentic-ai/manage-ai-agents.md#hire-from-the-job-market).
+2. [Add the AI Agent to your Flow](../build/flows/overview.md) and [create a set of tools](../build/node-reference/ai/ai-agent.md) for your AI Agent to operate.
+3. For a deeper dive into Agentic AI, visit the [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/17346581840796-Getting-Started-with-AI-Agents).

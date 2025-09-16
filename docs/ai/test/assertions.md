@@ -13,14 +13,26 @@ tags:
 
 # Assertions
 
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.19-blue.svg)](../../release-notes/2025.19.md)
+
 _Assertions_ are validation checks that verify the AI Agent's responses and different aspects of the Flow for each Step during a Playbook run.
 
 ## How to Use Assertions
 
-Assertions include an input field where you can provide the text or data you want to validate during the Playbook run. All assertions are case sensitive. The text, Intent names, Slot names, and data fields that you enter in the input field must match exactly what you want to validate. Specific assertion types include an option to validate only a portion of the provided text or data:
+Assertions include an input field where you can provide the text or data you want to validate during the Playbook run. Assertions are case-sensitive. The text, Intent names, Slot names, and data fields that you enter in the input field must match exactly what you want to validate. Specific assertion types include an option to validate only a portion of the provided text or data:
 
 - **Use fuzzy search** — for text assertions.
 - **Use partial comparison** — for data and context assertions.
+
+The fuzzy search functionality handles case-insensitive matches, differences in spaces, tab stops, and newlines, and escaped characters.
+
+??? info "Fuzzy Search Examples"
+    | Pattern    | Feature                   | Matches                                 |
+    |------------|---------------------------|-----------------------------------------|
+    | `My order` | **Case Insensitivity**    | `my order`, `MY ORDER`                  |
+    |            | **Differences in spaces** | <pre><code>My   order</code></pre>      |
+    |            | **Newlines**              | <pre><code>My<br><br>order</code></pre> |
+    |            | **Escaped Characters**    | `My\norder`, `My\torder`                |
 
 You can also invert the assertion check with the **Invert assertion** option. This option switches the assertion check to validate the absence of the defined value. Inverted assertions must also match the exact text or data provided in the assertion. You can activate both **Invert assertion** and **Use fuzzy search** to validate the absence of a portion of the provided text or data, for example, only the `"status": "active"` JSON property or the word `"error"` in the AI Agent's response.
 
@@ -31,7 +43,7 @@ You can also invert the assertion check with the **Invert assertion** option. Th
 Validates text in the AI Agent's response against the expected text or pattern provided in the input field.
 
 | Parameter        | Type        | Description                                                                                    |
-|------------------|-------------|------------------------------------------------------------------------------------------------|
+| ---------------- | ----------- | ---------------------------------------------------------------------------------------------- |
 | Invert assertion | Option      | Sets the assertion to validate the absence of the text or pattern provided in the input field. |
 | Use fuzzy search | Option      | Allows partial matches in the AI Agent's response.                                             |
 | Text             | Input field | Sets the exact text or pattern to validate.                                                    |
@@ -82,7 +94,7 @@ Validates text in the AI Agent's response against the expected text or pattern p
 Validates the AI Agent message's data fields and JSON structures against the data provided in the input field. If the AI Agent's response doesn't include any data fields, the Assertion checks data fields in the user input.
 
 | Parameter              | Type        | Description                                                                                                     |
-|------------------------|-------------|-----------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
 | Invert assertion       | Option      | Sets the assertion to validate the absence of the JSON structure provided in the input field or the user input. |
 | Use partial comparison | Option      | Allows matches of a subset of the data structure to validate.                                                   |
 | Data                   | Input field | Sets the data structure to validate in JSON format.                                                             |
@@ -216,7 +228,7 @@ Validates the AI Agent message's data fields and JSON structures against the dat
 Validates that the [Intent](../empower/nlu/intents/overview.md) provided in the input field has been recognized in the user input.
 
 | Parameter        | Type        | Description                                                                           |
-|------------------|-------------|---------------------------------------------------------------------------------------|
+| ---------------- | ----------- | ------------------------------------------------------------------------------------- |
 | Invert assertion | Option      | Sets the assertion to validate the absence of the Intent provided in the input field. |
 | Intent           | Input field | Sets the Intent name to validate.                                                     |
 
@@ -249,7 +261,7 @@ Validates that the [Intent](../empower/nlu/intents/overview.md) provided in the 
 Validates that the [Slot](../empower/nlu/slots/overview.md) provided in the input field has been recognized in the user input.
 
 | Parameter        | Type        | Description                                                                         |
-|------------------|-------------|-------------------------------------------------------------------------------------|
+| ---------------- | ----------- | ----------------------------------------------------------------------------------- |
 | Invert assertion | Option      | Sets the assertion to validate the absence of the Slot provided in the input field. |
 | Slot             | Input field | Sets the Slot name to validate.                                                     |
 
@@ -282,7 +294,7 @@ Validates that the [Slot](../empower/nlu/slots/overview.md) provided in the inpu
 Validates the data in the [Context object](../build/ai-agent-memory/context.md) against the data provided in the input field.
 
 | Parameter              | Type        | Description                                                                                |
-|------------------------|-------------|--------------------------------------------------------------------------------------------|
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------ |
 | Invert assertion       | Option      | Sets the assertion to validate the absence of the context data provided in the input field |
 | Use partial comparison | Option      | Allows matches of a subset of the context data to validate.                                |
 | Context data           | Input field | Sets the context data to validate in JSON format.                                          |
@@ -400,7 +412,7 @@ Validates the data in the [Context object](../build/ai-agent-memory/context.md) 
     </tr>
     </tbody>
     </table>
-    
+
     Validates any JSON structure that doesn't contain the JSON object provided in the input field, for example:
 
     ```json
@@ -416,7 +428,7 @@ Validates the data in the [Context object](../build/ai-agent-memory/context.md) 
 Validates the conversation state.
 
 | Parameter        | Type        | Description                                                                          |
-|------------------|-------------|--------------------------------------------------------------------------------------|
+| ---------------- | ----------- | ------------------------------------------------------------------------------------ |
 | Invert assertion | Option      | Sets the assertion to validate the absence of the State provided in the input field. |
 | State            | Input field | Sets the State name to validate.                                                     |
 

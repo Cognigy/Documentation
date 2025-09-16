@@ -6,9 +6,7 @@ hidden: false
 
 # Overview
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.94-blue.svg)](../../release-notes/4.94.md)
-
-{! _includes/ai/understood-messages.md !}
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.19-blue.svg)](../../release-notes/2025.19.md)
 
 The _Overview Report_ gives you a quick summary of how customers are interacting with your AI Agent.
 
@@ -35,10 +33,6 @@ Indicates the total number of currently active user sessions in the last 15 minu
 ### Total Sessions
 
 Indicates the total number of sessions.
-
-### Understood Messages
-
-Indicates the percentage of understood messages occurred during conversations.
 
 ### Positive Ratings
 
@@ -175,29 +169,6 @@ Result:
 
 <figure>
   <img class="image-center" src="../../../_assets/insights/reports/top_slots.png" width="80%" />
-</figure>
-
-### Understood / Misunderstood Messages
-
-{! _includes/insights/understood-messages.md !}
-
-Source table:
-
-```txt
-| Date       | understood   | misunderstood   | Percentages     |
-| -----------| ------------ | --------------- | --------------- |
-| 2023-08-27 | 0            | 0               | 0               |
-| 2023-08-28 | 1            | 0               | 100/0           |
-| 2023-08-29 | 12           | 10              | 55/45           |
-| 2023-08-30 | 31           | 18              | 63/37           |
-| 2023-08-31 | 7            | 1               | 87.5/12.5       |
-| 2023-09-01 | 2            | 0               | 100/0           |
-| 2023-09-02 | 0            |     -           |  -              |
-```
-Result: 
-
-<figure>
-  <img class="image-center" src="../../../_assets/insights/reports/understood_messages.png" width="100%" />
 </figure>
 
 ### Number of Inputs

@@ -57,7 +57,6 @@ Review the collected input records from users and search for them using filters.
     | Poor Intent Score        | View records with Intents that have a low confidence score.    |
     | Fair Intent Score        | View records with Intents that have a medium confidence score. |
 
-
 ??? info "Custom Filters"
 
     When you select **Custom** in the Filter Preset, you can apply any filter. If you modify a filter while a preset option is selected, the Filter Preset automatically changes to **Custom**.

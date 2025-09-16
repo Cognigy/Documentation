@@ -56,7 +56,7 @@ Designing these AI Agents allows you to handle a wide range of tasks, such as pr
 
 #### Job Market
 
-You can hire an agent with a ready-made set of skills for a specific task and adapt it to your needs.
+You can hire an AI Agent with a ready-made set of skills for a specific task and adapt it to your needs.
 
 The table shows available example AI Agents for hire.
 
@@ -80,25 +80,25 @@ The [AI Agent Node](../../build/node-reference/ai/ai-agent.md) refers to the use
 Within the AI Agent Node, you must give clear instructions that guide the AI Agents in performing specific tasks. 
 For example, you could include instructions for executing an API call, processing data for analysis, performing a sentiment analysis, triggering automated emails, or classifying user queries.
 
-##### Tool Actions
+##### Tools
 
-_Tool Actions_ represent specific tasks that an AI Agent can perform. 
-A [tool action](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a tool action is called.
+_Tools_ represent specific tasks that an AI Agent can perform. 
+A [tool](../../build/node-reference/ai/ai-agent.md#ai-agent-tool-settings) allows the AI Agent to perform a variety of tasks, for example, interact with external services such as an API or to execute several rules-based actions. The full power of Cognigy.AI can be used to configure what happens when a tool is called.
 
-Along with tool actions, you can use [Model Context Protocol](../../build/node-reference/ai/ai-agent.md#ai-agent-mcp-tool-settings) (MCP), which boosts tool actions by providing a standardized connection between AI Agents and external services. It allows smooth integration with remote systems like APIs and databases, enabling the AI Agent to perform more complex tasks in a secure and efficient way.
+Along with tools, you can use [Model Context Protocol](../../build/node-reference/ai/ai-agent.md#ai-agent-settings) (MCP), which boosts tools by providing a standardized connection between AI Agents and external services. It allows smooth integration with remote systems like APIs and databases, enabling the AI Agent to perform more complex tasks in a secure and efficient way.
 
 ##### Tool Calls
 
-_Tool Calls_ occur when the AI Agent decides to use a tool action and executes the branch underneath the Tool Action Node.
+_Tool Calls_ occur when the AI Agent decides to use a tool and executes the branch underneath the Tool Action Node.
 
 #### Resolve Tool Action Node
 
-The [Resolve Tool Action Node](../../build/node-reference/ai/resolve-tool-action.md) sends an answer as the response to a tool call to the AI Agent after completing a [tool action](#tool-actions).
+The [Resolve Tool Action Node](../../build/node-reference/ai/resolve-tool-action.md) sends an answer as the response to a tool call to the AI Agent after completing a [tool's action](#tools).
 
 When the AI Agent calls a tool to perform an action, the tool action is executed.
 Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent,
 indicating the result of that action.
-This approach helps the AI Agent process and make decisions based on the results of the tool actions it initiated.
+This approach helps the AI Agent process and make decisions based on the results of the tools it initiated.
 
 #### AI Agent Handover Node
 
@@ -127,7 +127,7 @@ The [Add Transcript Steps Node](../../build/node-reference/service/add-transcrip
 
 ## More Information
 
-- [Getting Started](getting-started.md)
+- [Getting Started](../../overview/getting-started-with-ai-agents.md)
 - [Manage AI Agents](manage-ai-agents.md)
 - [LLMs](../llms/overview.md)
 - [Knowledge AI](../knowledge-ai/overview.md)

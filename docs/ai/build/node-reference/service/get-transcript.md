@@ -18,16 +18,12 @@ tags:
 
 ## Description
 
-The Get Transcript Node lets you store conversation transcripts in the Input or Context object.
+The Get Transcript Node lets you store conversation transcripts in the Input or Context object. For more information on the keys included in the `transcript` object, refer to [Input Object](../../ai-agent-memory/input.md#nested-objects).
 
 You can use the Get Transcript Node to provide conversation scripts to AI Agents and improve their performance or for further processing of the conversation with the user. For example, use the Get Transcript Node to:
 
 - Provide targeted context to the AI Agent and prevent LLM hallucinations when a user wants to check the status of multiple orders.
 - Send a summary of the interaction between the user and the AI Agent to your CRM system.
-
-## Restrictions
-
-- The Get Transcript Node stores only plain text in the conversation transcript. Structured data, such as [Text with Buttons and Text with Quick Replies](../basic/say.md#default-cognigyai-channel), isn't included in the transcript. You can access the full transcript in the [Transcript Explorer](../../../../insights/explorers/transcript.md) or with the [OData endpoint](../../../analyze/odata.md).
 
 ## Parameters
 

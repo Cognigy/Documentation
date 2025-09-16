@@ -23,12 +23,12 @@ tags:
 
 ## Description
 
-The AI Agent Node assigns a job to an AI Agent, provides instructions and tool actions for that job, and access to the knowledge the AI Agent can use when holding a conversation with a user.
+The AI Agent Node assigns a job to an AI Agent, provides instructions and tools for that job, and access to the knowledge the AI Agent can use when holding a conversation with a user.
 
 To configure this Node, follow these steps:
 
 1. [Define an AI Agent job](#ai-agent-settings).
-2. [Define the tool actions to perform this task](#ai-agent-tool-settings).
+2. [Define the tools to perform this task](#ai-agent-tool-settings).
 
 ## AI Agent Settings
 

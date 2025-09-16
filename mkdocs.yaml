@@ -193,7 +193,6 @@ nav:
     - ✨ Empower:
       - Agentic AI:
           - ai/empower/agentic-ai/overview.md
-          - ai/empower/agentic-ai/getting-started.md
           - ai/empower/agentic-ai/manage-ai-agents.md
       - Natural Language Understanding:
         - ai/empower/nlu/overview.md
@@ -442,6 +441,7 @@ nav:
           - ai/developers/function-reference/execution-control/overview.md
           - ai/developers/function-reference/execution-control/addConditionalEntrypoint.md
           - ai/developers/function-reference/execution-control/executeFlow.md
+          - ai/developers/function-reference/execution-control/getExecutionAmount.md
           - ai/developers/function-reference/execution-control/resetExecutionAmount.md
           - ai/developers/function-reference/execution-control/resetNextNodes.md
           - ai/developers/function-reference/execution-control/setExecutionAmount.md
@@ -790,6 +790,7 @@ nav:
     - release-notes/deprecations-and-removals.md
     - 📦 Product Versions:
       - 2025.x:
+        - release-notes/2025.19.md
         - release-notes/2025.18.md
         - release-notes/2025.17.md
         - release-notes/2025.16.md

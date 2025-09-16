@@ -13,18 +13,18 @@ hidden: false
 
 ## Description
 
-The Resolve Tool Action Node sends an answer as the response to a tool call to the AI Agent after completing a [tool action](ai-agent.md#ai-agent-tool).
+The Resolve Tool Action Node sends an answer as the response to a tool call to the AI Agent after completing a [tool](ai-agent.md).
 
-When the AI Agent calls a tool to perform an action, the tool action is executed. Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent, indicating the result of that action. This approach helps the AI Agent process and make decisions based on the results of the tool actions.
+When the AI Agent calls a tool to perform an action, the tool is executed. Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent, indicating the result of that action. This approach helps the AI Agent process and make decisions based on the results of the tools' actions.
 
 !!! note
-    Sending the result is optional. If the tool action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
+    Sending the result is optional. If the tool's action isn't resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
 
 ## Parameters
 
-| Parameter   | Type          | Description                                                                                                                                           |
-|-------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Answer Text | CognigyScript | Specify the text that is sent to the AI Agent in response to the tool call to inform about the success, failure, or other details of the tool action. |
+| Parameter   | Type          | Description                                                                                                                                      |
+|-------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Answer Text | CognigyScript | Specify the text that is sent to the AI Agent in response to the tool call to inform about the success, failure, or other details of the tool.   |
 
 ### Debug Settings
 

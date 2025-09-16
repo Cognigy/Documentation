@@ -3,9 +3,10 @@ title: "Engagement"
 slug: "engagement" 
 hidden: false 
 ---
-# Engagement Report
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.94-blue.svg)](../../release-notes/4.94.md)
+# Engagement
+
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.19-blue.svg)](../../release-notes/2025.19.md)
 
 The _Engagement Report_ highlights customer interactions in conversations and visualizes the engagement performance of your AI Agent in the following charts:
 
@@ -155,37 +156,7 @@ Result:
 
 ## Bar charts
 
-### Top Tasks
-
-Displays the number of completed tasks.
-
-By clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg),
-you can select **Go to Step Explorer**,
-which leads you to the Step Explorer in Insights.
-
-Source table:
-
-```txt 
-| Sessions    | Tasks                  |
-| ----------- | ---------------------- |
-| session-123 | Goal A, Goal B, Goal D |
-| session-456 | Goal B, Goal C, Goal E |
-| session-789 | Goal A, Goal B, Goal E |
-| session-abc | Goal A                 |
-| session-def | Goal, Goal A           |
-| session-ghi | Goal, Goal A           |
-```
-
-Result:
-
-<figure>
-  <img class="image-center" src="../../../_assets/insights/reports/goals.png" width="80%" />
-</figure>
-
 ### Containment Rate
-
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../release-notes/4.48.md)
 
 Indicates the percentage of sessions without any handover during the timeline.
 

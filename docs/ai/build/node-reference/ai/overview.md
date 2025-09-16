@@ -22,7 +22,7 @@ AI Nodes extend the toolset provided by the Basic Nodes to a more in-depth level
 
     ---
 
-    The AI Agent Node lets you assign a job to a AI Agents, provide them instructions, tool actions, and access to knowledge.
+    The AI Agent Node lets you assign a job to a AI Agents, provide them instructions, tools, and access to knowledge.
 
 -   :material-account-switch:{ .lg .middle } __[AI Agent Handover](ai-agent-handover.md)__
 
