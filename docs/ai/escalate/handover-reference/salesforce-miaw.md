@@ -13,7 +13,7 @@ tags:
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.17-blue.svg)](../../../release-notes/2025.17.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.19-blue.svg)](../../../release-notes/2025.19.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/salesforce.svg" width="100%" />
@@ -137,8 +137,9 @@ enabling end users to connect with human agents working in a contact center that
        ```
        where `customerName` and `issueType` are variables you specified on the Salesforce side, and `John Doe` and `Billing` are the values you want to pass to the flow in Salesforce.
     - **Identity Token for Authenticated Users** — the setting allows you to specify an access token generated via the [Salesforce API](https://developer.salesforce.com/docs/service/messaging-api/references/miaw-api-reference?meta=generateAccessTokenForAuthenticatedUser). This token enables users who have already authenticated within your system to interact securely with Salesforce MIAW. Before using this token, [set up user verification](https://help.salesforce.com/s/articleView?id=sf.user_verification_setup.htm) on the SalesForce side. By default, the setting is turned off, meaning that unauthenticated users can interact with Salesforce MIAW.
-    - **Enable User Connects Message** - the setting allows you to notify human agents when an end user reconnects to the chat. The parameter is enabled by default. When the parameter is enabled, the message `User joined the conversation` appears in the chat as soon as the end user opens a new URL on the same tab as the chat and then returns to the chat tab by clicking the **←** (back arrow) at the top bar in the browser.
-    - **Enable User Disconnects Message** - the setting allows you to notify human agents when an end user disconnects from the chat. The parameter is enabled by default. When the parameter is enabled, the message `User left the conversation` is sent as soon as the user closes the tab with the chat or switches to a new URL address within the current tab.
+    - **Enable User Connects Message** — the setting allows you to notify human agents when an end user reconnects to the chat. The parameter is enabled by default. When the parameter is enabled, the message `User joined the conversation` appears in the chat as soon as the end user opens a new URL on the same tab as the chat and then returns to the chat tab by clicking the **←** (back arrow) at the top bar in the browser.
+    - **Enable User Disconnects Message** — the setting allows you to notify human agents when an end user disconnects from the chat. The parameter is enabled by default. When the parameter is enabled, the message `User left the conversation` is sent as soon as the user closes the tab with the chat or switches to a new URL address within the current tab.
+    - **End Handover on Participant Change** — allow the handover to end automatically when a human agent is removed from a Salesforce MIAW conversation. Instead of waiting for the conversation close event, which [Salesforce may not always send](https://help.salesforce.com/s/articleView?id=000397177&type=1), this setting relies on the participant change event to trigger the end of the handover.
 
 Test your Flow to ensure it works as expected. You can use Demo Webchat to send messages to the Salesforce contact center.  
 On the Salesforce side, go to the Service Console. In the Service Console, open [Messaging Sessions](https://help.salesforce.com/s/articleView?id=service.livemessage_create_console_app.htm&type=5), and make sure that your human agent is online.
