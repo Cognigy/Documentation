@@ -16,9 +16,9 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../release-notes/4.87.md)
 
-The _Real-Time Queue Notifications_ feature keeps end users informed about queue updates by providing real-time position and wait time information. 
-This feature helps reduce anxiety and creates transparency, making your customers feel valued and respected. By analyzing the data collected from the queue, you can identify patterns and trends for further analysis.
-For example, you might identify peak times when the queue is longest or determine the typical wait time for a response from a human agent.
+The _Real-Time Queue Notifications_ feature keeps end users informed about queue updates by providing real-time information on their position and estimated wait time. This feature helps reduce anxiety and creates transparency, making customers feel valued and respected.
+
+By analyzing the data collected from the queue, you can identify patterns and trends for further analysis. For example, you might identify peak times when the queue is longest or determine the typical wait time for a response from a human agent.
 
 With Live Agent, you can inform customers about queue updates by configuring several Nodes to use the Real-Time Queue Notifications feature:
 
