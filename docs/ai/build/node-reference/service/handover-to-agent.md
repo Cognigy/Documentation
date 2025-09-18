@@ -11,7 +11,7 @@ tags:
 
 # Handover to Agent
 
-[![Version badge](https://img.shields.io/badge/Added in-v2025.19-blue.svg)](../../../release-notes/2025.19.md)
+[![Version badge](https://img.shields.io/badge/Added in-v2025.19-blue.svg)](../../../../release-notes/2025.19.md)
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/handover-to-agent.png" width="50%" />

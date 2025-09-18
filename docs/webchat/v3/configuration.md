@@ -35,9 +35,7 @@ The following general settings are available within this Endpoint:
 - [Real-Time Translation Settings](../../ai/deploy/endpoints/real-time-translation-settings.md)
 - [Agent Copilot](../../ai-copilot/overview.md)
 - [File Storage](../../ai/deploy/endpoints/file-storage.md)
-
-!!! tip "Supports Inject & Notify"
-    You can use the [Inject & Notify](../../ai/deploy/endpoints/inject-and-notify.md) feature with this Endpoint.
+- [Inject and Notify](../../ai/deploy/endpoints/inject-and-notify.md)
 
 ## Configure Specific Settings
 
@@ -75,6 +73,53 @@ You can select the following style presets:
   </div>
 
 </div>
+
+Selecting a style preset automatically applies predefined values for the following settings: Webchat Layout, including Colors, and Webchat Behavior.
+If you adjust any of these settings afterward, the preset is deselected and your custom changes take effect instead.
+
+The full list of settings applied by each preset:
+
+??? info "Classic"
+
+    | Setting                                   | Parameter                       | Value         |
+    |-------------------------------------------|---------------------------------|---------------|
+    | [Webchat Layout](#webchat-layout)         | Disable Bot Output Border       | Off           |
+    |                                           | Bot Output max-width percentage | 73%           |
+    |                                           | Chat Window width (px)          | 460           |
+    |                                           | Enable Input Collation          | Off           |
+    | [Webchat Layout: Colors](#webchat-layout) | AI Agent Message                | #ffffff       |
+    | [Webchat Behavior](#webchat-behavior)     | Scrolling Behavior              | Always Scroll |
+    |                                           | Collate Streamed Outputs        | Off           |
+    |                                           | Progressive Message Rendering   | Off           |
+    |                                           | Render Markdown                 | On            |
+
+??? info "Modern"
+
+    | Setting                                   | Parameter                       | Value                             |
+    |-------------------------------------------|---------------------------------|-----------------------------------|
+    | [Webchat Layout](#webchat-layout)         | Disable Bot Output Border       | On                                |
+    |                                           | Bot Output max-width percentage | 100%                              |
+    |                                           | Chat Window width (px)          | 900                               |
+    |                                           | Enable Input Collation          | On                                |
+    | [Webchat Layout: Colors](#webchat-layout) | AI Agent Message                | #ffffff                           |
+    | [Webchat Behavior](#webchat-behavior)     | Scrolling Behavior              | Scroll until last Input is at Top |
+    |                                           | Collate Streamed Outputs        | On                                |
+    |                                           | Progressive Message Rendering   | On                                |
+    |                                           | Render Markdown                 | On                                |
+
+??? info "Slick"
+
+    | Setting                                   | Parameter                       | Value                             |
+    |-------------------------------------------|---------------------------------|-----------------------------------|
+    | [Webchat Layout](#webchat-layout)         | Disable Bot Output Border       | Off                               |
+    |                                           | Bot Output max-width percentage | 100%                              |
+    |                                           | Chat Window width (px)          | 600                               |
+    |                                           | Enable Input Collation          | On                                |
+    | [Webchat Layout: Colors](#webchat-layout) | AI Agent Message                | #cccccc                           |
+    | [Webchat Behavior](#webchat-behavior)     | Scrolling Behavior              | Scroll until last Input is at Top |
+    |                                           | Collate Streamed Outputs        | On                                |
+    |                                           | Progressive Message Rendering   | Off                               |
+    |                                           | Render Markdown                 | On                                |
 
 ### Webchat Layout
 
@@ -144,14 +189,14 @@ The Webchat Behavior settings enhance communication by enabling typing indicator
 
 | Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scrolling Behavior                 | Controls how scrolling behaves when the chat is scrolled to the bottom and a new message arrives. You can select one of the following options:<br>- **Always Scroll** – keeps the chat at the bottom. This option is selected by default. <br>- **Scroll until Last Input is at Top** – scrolls down until the last user input reaches the top border of the chat screen.                                                                                                                                                                                                                                                                                                                  |
+| Scrolling Behavior                 | Controls how scrolling behaves when the chat is scrolled to the bottom and a new message arrives. You can select one of the following options:<br>- **Always Scroll** – keeps the chat at the bottom. This option is selected by default. <br>- **Scroll until last Input is at Top** – scrolls down until the last user input reaches the top border of the chat screen.                                                                                                                                                                                                                                                                                                                  |
 | Collate Streamed Outputs           | Allows multiple streamed text messages to appear in the same chat bubble as they are received, rather than showing each one separately. The configuration applies to streamed outputs from the [AI Agent Node](../../ai/build/node-reference/ai/ai-agent.md) or [LLM Prompt Node](../../ai/build/node-reference/service/llm-prompt.md). To achieve the best results with this feature, activate the **Progressive Message Rendering** and **Render Markdown** parameters as well.                                                                                                                                                                                                          |
 | Progressive Message Rendering      | Enables the AI Agent to display text gradually, allowing content to appear progressively, without delay for the full message.<br><br> When using this parameter, enable both  **Collate Streamed Outputs**  and **Render Markdown** for optimal results.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Render Markdown                    | Enables Markdown rendering for AI Agent text outputs. It supports basic formatting options, including italics, bold text, links, and headers, along with advanced features such as tables, footnotes, and nested lists. Formulas are not supported.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Collect Metadata                   | Lets you collect additional data from your end users' browsers, such as language, location, device, and browser type. By using this data, you can personalize the AI Agent's behavior. For example, you can offer the user the option to switch the conversation language based on their browser language, or provide offers that are relevant to the user's current location. For more information, read [Collect Metadata](metadata.md).                                                                                                                                                                                                                                                 |
 | Enable Typing Indicators           | Shows when the AI Agent is typing a response, helping users understand when to expect replies. When the parameter is turned on, a typing symbol appears, signaling that the AI Agent is processing your request and will respond soon. <br><br>If you integrate Webchat v3 with a contact center, only [Cognigy Live Agent](../../live-agent/index.md), [Genesys Cloud Open Messaging](../../ai/escalate/handover-reference/genesys-cloud-open-messaging.md), and [Salesforce MIAW](../../ai/escalate/handover-reference/salesforce-miaw.md) support the typing indicator.                                                                                                                 |
-| Display AI Agent Notice            | Lets you display a text notice in the chat about interacting with the AI Agent. This notice appears at the top of the chat as soon as the end user enters. By default, this parameter is enabled. <br><br> Alternatively, you can control the appearance of the text notice via the `enableAIAgentNotice` option in the [embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding/hosted-script.md#behavior) configuration.                                                                                                                                                                                                                                                                |
-| AI Agent Notice Text               | This parameter appears if **Display AI Agent Notice** is activated. This parameter lets you change the notice text. By default, it is set to `You're now chatting with an AI Agent.` <br><br> Alternatively, you can change the notice text via the `AIAgentNoticeText` option in the [embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding/hosted-script.md#behavior) configuration.                                                                                                                                                                                                                                                                                                  |
+| Display AI Agent Notice            | Lets you display a text notice in the chat about interacting with the AI Agent. This notice appears at the top of the chat as soon as the end user enters. By default, this parameter is enabled. <br><br> Alternatively, you can control the appearance of the text notice via the `enableAIAgentNotice` option in the [embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding/hosted-script.md#behavior) configuration.                                                                                                                                                                                                                                                  |
+| AI Agent Notice Text               | This parameter appears if **Display AI Agent Notice** is activated. This parameter lets you change the notice text. By default, it is set to `You're now chatting with an AI Agent.` <br><br> Alternatively, you can change the notice text via the `AIAgentNoticeText` option in the [embedding](https://github.com/Cognigy/Webchat/blob/main/docs/embedding/hosted-script.md#behavior) configuration.                                                                                                                                                                                                                                                                                    |
 | Input Placeholder Text             | Enables you to customize the placeholder text in the Reply field, indicating where users can type their messages to interact with the AI Agent. By default, it is set to `Type something…`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Enable speech-to-text              | Adds a microphone button to the Webchat interface. Users can convert speech into written text, providing a hands-free and easy way to communicate with the AI Agent. This feature is particularly beneficial for users who prefer speaking or may have difficulty typing their responses.<br><br> Note that this parameter is not supported by the Mozilla Firefox browser.                                                                                                                                                                                                                                                                                                                |
 | Enable text-to-speech              | Adds a Text-To-Speech (TTS) feature that converts text messages into spoken voice output. This feature is especially beneficial for users who prefer or require auditory feedback. As an alternative to this parameter, for more customization and a personalized user experience, go to the [Text-To-Speech](#text-to-speech) section in the Chat Options section.<br><br>By default, the parameter is inactive. If you turn it on and also adjust [Text-To-Speech](#text-to-speech) in the Chat Options, the Chat Options settings will override this parameter. Note that the text-to-speech feature uses the Browser API, so the available voices depend on the OS and browser vendor. |
