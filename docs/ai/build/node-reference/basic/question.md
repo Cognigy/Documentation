@@ -264,7 +264,40 @@ After the AI Agent asks a question and the user answers, the answer is validated
 
 ### Exclude from Transcript
 
-Excludes the Node output from the conversation transcript. This parameter is useful when confidentiality is necessary, such as preventing unnecessary data from being sent to the LLM provider. Also, you can use this parameter to send messages that shouldn't be interpreted by the AI Agent, including legal disclaimers, sensitive information, or other specific instructions irrelevant to the ongoing dialogue. |
+Excludes the Node output from the conversation transcript. The output remains visible to the end user but isn't stored in the [`transcript`](../../ai-agent-memory/input.md#nested-objects) object or shared with the LLM provider.
+
+You can use this parameter to:
+
+- Hide sensitive or irrelevant data, such as legal disclaimers, so the model doesn't see or repeat them.
+- Prevent the model from copying patterns (called in-context learning) you didn't want it to learn.
+
+??? info "Example"
+
+    By default, the model model repeats the question style it learned from the AI Agent’s earlier question, even though the end user asked for an answer, not a question.
+ 
+    ```txt
+    AI Agent: What is your favorite color? (included in the conversation transcript)
+    End User: Blue.
+
+    Later:
+
+    End User: Tell me your favorite food.
+    AI Agent: What is your favorite food?
+    ```
+
+    By excluding the AI Agent's earlier question from the transcript, the same conversation looks like this:
+
+    ```txt
+    AI Agent: What is your favorite color? (included in the conversation transcript)
+    End User: Blue.
+
+    Later:
+
+    End User: Tell me your favorite food.
+    AI Agent: I enjoy pizza.
+    ```
+
+    Use this parameter to maintain confidentiality, for example, prevent sensitive data from reaching the LLM, or to display messages such as legal disclaimers or system notes that shouldn't affect the AI Agent's behavior.
 
 ## Question Information in Input
 
