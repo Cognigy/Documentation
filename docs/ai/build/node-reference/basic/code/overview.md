@@ -101,10 +101,10 @@ Instead, an error message is written to the `input.codeNodeError` Input object.
 
 ### Sending Facebook JSON
 
-You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) api fucntion.
+You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) api function.
 
 ??? info "JSON Sample"
-    ```javaScript
+    ```js
     // build the facebook reply
     const obj = {
         "_cognigy": {
@@ -123,7 +123,7 @@ You can send Facebook JSON directly from within Code Nodes using the [output](ac
                 }
             }
         }
-    }
+    };
 
     // output the reply
     api.output("test", obj);
