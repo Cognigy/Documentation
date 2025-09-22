@@ -244,3 +244,8 @@ ol ol>li::marker {
         background: #ffffff;
     }
 }
+
+.md-logo img {
+    max-height: 24px !important;  /* Keeps header height consistent */
+    max-width: 150px !important;  /* Optional: limits width */
+}

@@ -906,7 +906,7 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-  logo: ./_assets/Cognigy-black.svg
+  logo: ./_assets/NiCE-Cognigy-black.svg
   favicon: ./_assets/favicon.webp
 
   font:
