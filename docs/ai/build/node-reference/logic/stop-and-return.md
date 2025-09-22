@@ -11,4 +11,4 @@
 
 ## Description
 
-A Stop and Return Node immediately stops the execution of the Flow and returns to the Start Node.
+A Stop and Return Node immediately stops the Flow execution, returns it to the Start Node in the same Flow, and waits for input.
