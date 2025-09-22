@@ -174,7 +174,7 @@ In the JSON object, all system-defined Slot names are capitalized for easy ident
 
 ## DATE Slots
 
-DATE Slot detection depends on the time zone you set in the [Project](../../../administer/access/project-settings.md) or through [Actions](../../../build/node-reference/basic/code/actions.md).
+DATE Slot detection depends on the time zone you set in the [Project](../../../administer/access/project-settings.md) or through [API functions](../../../build/node-reference/basic/code/actions.md).
 
 ??? info "Supported Input Patterns and Formats"
 

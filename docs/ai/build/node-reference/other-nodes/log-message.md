@@ -24,6 +24,6 @@ This Node writes a message into the [Project Logs](../../../test/logs.md).
 
 ## Alternatives
 
-To log messages, you can also use the [Actions/API](../basic/code/actions.md) object in a [Code](../basic/code/overview.md) Node.
+To log messages, you can also use the [API](../basic/code/actions.md) object in a [Code](../basic/code/overview.md) Node.
 
 If you want to send a debug message to the Interaction Panel, use the [Debug Message](../basic/debug-message.md) Node for more precise testing.

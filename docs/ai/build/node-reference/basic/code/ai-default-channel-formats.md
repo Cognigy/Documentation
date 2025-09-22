@@ -18,7 +18,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output("Your text", null);
+        api.output("Your text", null);
         ```
 
     === "Say Node"
@@ -36,7 +36,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "quickReplies",
           "_cognigy": {
             "_default": {
@@ -92,7 +92,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "gallery",
           "_cognigy": {
             "_default": {
@@ -167,7 +167,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "buttons",
           "_cognigy": {
             "_default": {
@@ -231,7 +231,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "list",
           "_cognigy": {
             "_default": {
@@ -329,7 +329,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "audio",
           "_cognigy": {
             "_default": {
@@ -357,7 +357,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "image",
           "_cognigy": {
             "_default": {
@@ -385,7 +385,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```js
-        actions.output(null, {
+        api.output(null, {
           "type": "video",
           "_cognigy": {
             "_default": {
@@ -413,7 +413,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "JSON Format"
         ```javaScript
-        actions.output(null, {
+        api.output(null, {
           "type": "adaptiveCard",
           "_cognigy": {
             "_default": {

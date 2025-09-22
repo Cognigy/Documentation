@@ -92,7 +92,7 @@ In a Code Node, you don't need to wrap the CognigyScript expression in `{{"{{ }}
     switch (ordercount) {
         case 0:
             input.ordertext = "You ordered no items";
-            actions.output('Hello', {'action': 1}); // outputs the text 'hello' with data {'action': 1}
+            api.output('Hello', {'action': 1}); // outputs the text 'hello' with data {'action': 1}
             break;
         case 1:
             input.ordertext = "You ordered one item";

@@ -14,7 +14,7 @@ hidden: false
 ## Description
 
 Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow.
-The Code Node editor has full IntelliSense and exposes all Cognigy objects and actions.
+The Code Node editor has full IntelliSense and exposes all Cognigy objects and api functions.
 For better performance, the TypeScript code is transpiled when the Node is saved.
 If the transpilation fails,
 the code is saved and an error icon appears in the top right corner of the Code Node,
@@ -25,7 +25,7 @@ The execution of the Code Node is synchronous, the Flow continues after the Code
 Just as in other Nodes, `input`, `context`, and `profile` can be accessed and modified from Code Nodes.
 If the script crashes, it is stopped and throws an error. In case of an uncaught error, a Flow execution is stopped.
 
-The `actions` object provides access to most internal Cognigy functions within the Code Node. For more information, refer to [Actions](actions.md).
+The `api` object provides access to most internal Cognigy.AI functions within the Code Node. For more information, refer to [API Functions](actions.md).
 
 The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](modules.md).
 
@@ -84,7 +84,7 @@ Input code in a Code Node:
 
 ```javaScript
 const testKeyAPILOG = "Test for api.log"
-actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
+api.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
 api.log("debug", testKeyAPILOG);
 ``` 
 
@@ -101,7 +101,7 @@ Instead, an error message is written to the `input.codeNodeError` Input object.
 
 ### Sending Facebook JSON
 
-You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) action.
+You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) api fucntion.
 
 ??? info "JSON Sample"
     ```javaScript
@@ -126,12 +126,12 @@ You can send Facebook JSON directly from within Code Nodes using the [output](ac
     }
 
     // output the reply
-    actions.output("test", obj);
+    api.output("test", obj);
     ```
 
 ## More Information
 
-- [Actions](actions.md)
+- [API Functions](actions.md)
 - [Input object](../../../ai-agent-memory/input.md)
 - [Context object](../../../ai-agent-memory/context.md)
 - [Profile object](../../../ai-agent-memory/profile.md)

@@ -140,7 +140,7 @@ If you prefer using a Code Node to send a message, you can pass the structured `
 Example:
 
 ```JavaScript
-actions. output('' , {
+api.output('' , {
  _plugin: {
    type: "inline-image",
    url: "https://placekitten.com/256/256"
@@ -170,7 +170,7 @@ const sendInlineImage = async (input, args) => {
     }
 
     // send a message that triggers the 'inline-image' plugin with a url
-    input.actions.output('', {
+    input.api.output('', {
         _plugin: {
             type: "inline-image",
             url: "https://placekitten.com/256/256"

@@ -5,11 +5,12 @@
 ---
 # Channel Output
 
-With a Code Node, you can output a text message along with a data object by using the following `actions` functions:
+With a Code Node, you can output a text message along with a data object by using the following `api` functions:
+
 ```javaScript
-actions.output("<YOUR_TEXT>", {"key": "value" });
+api.output("<YOUR_TEXT>", {"key": "value" });
 // OR
-actions.say("<YOUR_TEXT>", {"key": "value" });
+api.say("<YOUR_TEXT>", {"key": "value" });
 ``` 
 
 The `data` parameter should take the JSON payload that defines the custom channel message:
@@ -20,7 +21,7 @@ const jsonPayload = {
  }
 }
 
-actions.say("<YOUR_TEXT", jsonPayload);
+api.say("<YOUR_TEXT", jsonPayload);
 ``` 
 
 See the next sections for the required format.
@@ -93,7 +94,7 @@ See the next sections for the required format.
            .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'http://petersfantastichats.com/img/green.png');
 
     // output the reply
-    actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
+    api.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
     ```
 
 ??? info "Webchat"

@@ -23,7 +23,7 @@ In a Code Node, you can use a selection of predefined NPM modules. On this page,
     the following example gets the current UTC time and date and outputs it back to the contact.
     ```javaScript
     const utc = moment.utc();
-    actions.output(utc);
+    api.output(utc);
     ```
 
     For more information, see the [Moment.js Documentation](https://momentjs.com/docs/).
@@ -48,7 +48,7 @@ In a Code Node, you can use a selection of predefined NPM modules. On this page,
     ```javaScript
     const favouriteFoods = ["pizza", "spaghetti", "burger"];
     const last = _.last(favouriteFoods);
-    actions.output(last);
+    api.output(last);
     ``` 
     In this example we're extracting the last element of the `favouriteFoods` array and sending it as an output message.
 
