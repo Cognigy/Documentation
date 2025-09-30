@@ -1,8 +1,15 @@
 ---
- title: "Fuzzy Search" 
- slug: "fuzzy-search" 
- hidden: false 
+title: "Fuzzy Search" 
+slug: "fuzzy-search"
+description: "The Fuzzy Search Node enables a Flow to search fuzzy string patterns in a list of source data and returns the best possible matches."
+hidden: false
+tags: 
+  - fuzzy search
+  - string matching
+  - data retrieval
+  - similarity scoring
 ---
+
 # Fuzzy Search
 
 <figure>
@@ -11,20 +18,20 @@
 
 ## Description
 
-The Fuzzy Search Node enables a Flow to search through a list (string array) of source data by providing a search pattern. This Node returns the best possible matches, based on a set of parameters.
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.20-blue.svg)](../../../../release-notes/2025.20.md)
 
-The assigned score for each match varies between 0 and 1, 1 being the best match and 0 being the worst match.
+The Fuzzy Search Node searches through a list of strings of source data using a search pattern during the Flow execution. This Node returns the best possible matches based on a set of parameters.
 
-The result is stored in either the [Context](../../ai-agent-memory/context.md) (`context.STORE`) or [Input](../../ai-agent-memory/input.md) object (`input.STORE`) using the store name given in the Node settings.
+The Node assigns each match a score between 0 and 1, where 1 indicates the best match and 0 the worst based on the search pattern.
 
-If an error occurs, it is stored in either the Cognigy context (`context.STORE.error`) or input object (`input.STORE.error`). 
+The matches can be stored in either the [Context](../../ai-agent-memory/context.md) or [Input](../../ai-agent-memory/input.md) object.
 
 ## Parameters
 
-| Parameter      | Type   | Description                                         |
-|----------------|--------|-----------------------------------------------------|
-| Search Pattern | String | The pattern to search for.                          |
-| Source Data    | JSON   | An array of strings or an object to search through. |
+| Parameter      | Type   | Description                                                                                                                                                                                                                              |
+|----------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Search Pattern | String | The string to search for in the source data. The Fuzzy Search Node compares this pattern against each element in the array and returns the best matches. Example: `Aple`, `Jon`.                                                         |
+| Source Data    | JSON   | A CognigyScript reference to the array that should be searched. The reference can point to the Context, Input, or Profile object. The type must be set to `array`. Example: `{ "$cs": { "script": "context.names", "type": "array" } }`. |
 
 ??? info "Basic Options"
     | Parameter          | Type    | Description                                                                                                                                                  |
@@ -51,3 +58,68 @@ If an error occurs, it is stored in either the Cognigy context (`context.STORE.e
     |---------------------------|--------|----------------------------------------------------------------------|
     | Where to store the result | List   | Specify whether the result is stored in the Input or Context object. |
     | Input Key to store Result | String | The key to store the result in.                                      |
+
+## Example
+
+In this example, the Fuzzy Search Node searches for the pattern `Jon` in an array of names stored in the Context object at `context.names`. The Node is configured to store the results in the Input object at `input.search`. 
+The Node returns each name in the array along with a score indicating how closely it matches the search pattern.
+
+??? info "View Example"
+    1. Add data to the Context object.
+
+        ```json
+        {
+          "names": ["John", "Jonathan", "Johnny", "Alice", "Bob"]
+        }
+        ```
+
+    2. Specify the search pattern in the Fuzzy Search Node.
+
+        ```txt
+        Jon
+        ```
+
+    3. Specify the path for the source data in the Fuzzy Search Node.
+
+        ```json
+        {
+          "$cs":{
+            "script":"context.names",
+            "type":"array"
+          }
+        }
+        ```
+
+    4. Check the search results in the Input object.
+
+        ```json
+        {
+          "search": [
+            {
+              "item": "Jonathan",
+              "refIndex": 1,
+              "score": 0.999
+            },
+            {
+              "item": "John",
+              "refIndex": 0,
+              "score": 0.6666666666666667
+            },
+            {
+              "item": "Johnny",
+              "refIndex": 2,
+              "score": 0.6666666666666667
+            },
+            {
+              "item": "Bob",
+              "refIndex": 4,
+              "score": 0.33333333333333337
+            }
+          ]
+        }
+        ```
+
+## Troubleshooting
+
+??? info "Error: this.docs.forEach is not a function"
+    This error occurs when the source data provided to the Fuzzy Search Node isn't an array. The Node expects an array of strings to iterate over and calculate similarity scores.

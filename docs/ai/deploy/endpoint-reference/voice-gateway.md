@@ -1,9 +1,9 @@
 ---
-title: "Cognigy Voice Gateway" 
+title: "Cognigy Voice Gateway"
 slug: "voice-gateway"
 description: "The Cognigy Voice Gateway Endpoint enables you to connect your AI Agent to your contact center or other phone numbers using Cognigy Voice Gateway"
 hidden: false
-tags: 
+tags:
   - endpoint
   - voice gateway endpoint
   - voice gateway channel
@@ -12,7 +12,7 @@ tags:
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../../release-notes/4.96.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v2025.20-blue.svg)](../../../release-notes/2025.20.md)
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/voice-gateway.png" width="100%" />
@@ -40,7 +40,8 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 ## Specific Endpoint Settings
 
 ??? info "Generic Settings"
-    These settings will be valid for every session of this Endpoint. 
+
+    These settings will be valid for every session of this Endpoint.
 
     | Parameter                           | Type   | Description                                                                                                                                                                                                                                                                                      |
     |-------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -55,18 +56,20 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
          As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google; the final output speed is directly added to the settings.
 
 ??? info "AudioCodes Compatibility Mode"
+
     Allows using both AudioCodes Nodes and Voice Gateway Nodes simultaneously in a Flow.
     When this mode is enabled, the system treats Flows with AudioCodes Nodes as if they were Flows with Voice Gateway Nodes.
     This mode helps ensure that voice AI agents operate smoothly without interruptions during the transition from AudioCodes to Cognigy Voice Gateway.
-    
+
     To activate the **AudioCodes Compatibility Mode** section, add the `FEATURE_VG_AC_COMPATIBILITY_MODE` feature flag to the Cognigy.AI `values.yaml` file.
-    
+
     For more information, read [Migration from AudioCodes to Voice Gateway](../../../voice-gateway/migrate-from-ac-to-vg.md).
 
 ??? info "Call Events"
+
     Allows activating call events for a Flow.
     Select a call event from the [Voice Gateway Events](../../../voice-gateway/references/events/overview.md) list.
-    This event that will trigger the action.
+    This event will trigger the action.
 
     If you have configured the same call event in both the Endpoint and the [Lookup](../../build/node-reference/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
 
@@ -89,6 +92,8 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
         - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
         - If you use an on-premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_ENDPOINT_CALL_FAILOVER` in `values.yaml`.
 
+    {! _includes/voice-gateway/media-path-note.md !}
+
     | Parameter                          | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Transfer Type |
     |------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
     | Flow execution failover enabled    | Toggle        | If enabled, the configuration below will be used to perform a transfer in case of a runtime error. If the **Speech provider failover** toggle is also enabled, the configuration below applies to cases of runtime errors or failed speech provider authentication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | -             |
@@ -103,7 +108,7 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
     | Duration Limit                     | Number        | This parameter is active only when **Enable Duration Limit for Transfer** is selected. Set the maximum duration in seconds. Transferred calls end automatically after this time, even if the caller is on the line. The default value is `600`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Dial          |
     | Enable Copilot                     | Toggle        | Creates the UUIValue which will be sent to the Contact Center through SIP Headers. Will collect information from the Transcription Webhook field as well as from the VG Endpoint Copilot Config field to create the UUIValue. This setting requires a configured [Voice Copilot](voice-copilot.md) Endpoint.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Dial          |
     | Failover Transcribe Enabled        | Toggle        | If enabled, transcriptions will be attempted in case of a failed call transfer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Dial          |
-    | Anchor Media                       | Toggle        | This parameter is deactivated by default. If activated, it routes the data of the newly started call through Voice Gateway. <br> Media anchoring can help you resolve NAT problems, enforce media security policies, and perform media transcoding and monitoring. This process changes the addresses and ports of incoming and outgoing data: <br> - Outgoing data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the public network. <br> - Incoming data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the PBX system or local telephone.                                                                                                                                                                                      | Dial          |
+    | Media Path                         | Dropdown       | Controls the routing of RTP traffic through a media platform, such as FreeSwitch, for monitoring, transcoding, and security purposes. This parameter can help you resolve NAT problems, enforce media security policies, and perform media transcoding and monitoring. This process changes the addresses and ports of incoming and outgoing data:<ul><li>Outgoing data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the public network.</li><li>Incoming data — the source IP address and port become the IP address and port of Voice Gateway. The destination IP address and port become the IP address and port of the PBX system or local telephone. You can select the following options:</li></ul><ul><li>Full Media — routes all RTP traffic through a media platform.</li><li>Partial Media — routes through a media platform only when necessary. For example, when credit card information is shared during the call.</li><li>No Media — to route directly from the caller's SBC to the far SBC or SIP trunk.</li></ul>The default value is Partial Media.                                                                                                                                                                                      | Dial          |
     | STT Vendor                         | Dropdown      | Select the desired STT Vendor. For custom use all lowercase letters like microsoft, google, aws, nuance, or deepgram.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Dial          |
     | STT Language                       | Dropdown      | Select the desired STT Language. For custom languages, use the following format: de-DE, fr-FR, en-US.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Dial          |
     | Disable STT Punctuation            | Toggle        | This parameter is active only when Google or Deepgram is selected in the STT Vendor setting.<br><br> Prevents the STT response from the AI Agent to include punctuation marks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Dial          |
@@ -120,12 +125,12 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 
 ??? info "Handover Settings"
     You can use any [handover provider](../../escalate/handover-reference/overview.md) within the Voice Gateway integration.
-    The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
-    
+    The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance.
+
     In contrast to chatting, communication between actors during a voice call occurs using speech recognition technologies (text-to-speech and speech-to-text).
-    Using speech-to-text technology, the voice agent sends the conversation script from the end user to the human agent. 
-    Once the script is received, the human agent can respond using text. 
-    After that, the voice agent converts the human agent's message to speech using text-to-speech technology. 
+    Using speech-to-text technology, the voice agent sends the conversation script from the end user to the human agent.
+    Once the script is received, the human agent can respond using text.
+    After that, the voice agent converts the human agent's message to speech using text-to-speech technology.
     Finally, the converted message is sent to the end user.
 
     ??? info "Configuration"
@@ -133,7 +138,7 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 
         ??? info "Example"
             In this example, an end user seeks billing assistance and interacts with agents in a customer service system via text-to-speech and speech-to-text technologies.
-    
+
             **End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hello, I need assistance with my billing inquiry`.<br>
             **Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>
             **Voice Agent:** Determines the need for human assistance. Initiates handover to the human agent via handover provider.<br>
@@ -146,16 +151,16 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
     ??? info "Multilingual Support"
         Within the Handover Settings, you can use translation into other languages.
         Use the translation feature in the Handover Settings to overcome language barriers between end users and support staff. This feature is particularly useful in situations where there are no support staff proficient in the end user's language, and urgent issue resolution is necessary.
-        
-        For example, if a user communicates in German, the voice agent responds accordingly. 
+
+        For example, if a user communicates in German, the voice agent responds accordingly.
         However, after transferring the call to the contact center, the dialogue is translated into English.
         The human agent responds in English, and the response is translated into German for the end user via text-to-speech technology.
         This method ensures seamless communication despite language differences.
-        
-        Note that depending on the language and provider selected, 
-        translations may experience delays while they reach the contact center. 
-        If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side. 
-        Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly. 
+
+        Note that depending on the language and provider selected,
+        translations may experience delays while they reach the contact center.
+        If the speech-to-text fails to recognize speech for any reason, the message won't appear on the contact center's side.
+        Plan for such scenarios within your Flow and configure the voice agent's behavior accordingly.
         This approach will ensure that the end user is aware that their message may not be delivered.
         You can achieve this by adjusting timeout settings and error handling policies.
 
@@ -164,15 +169,15 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 
             1. In your voice Flow, navigate to the [Set Session Config](../../build/node-reference/voice/voice-gateway/parameter-details.md) Node.
             2. In the Node editor, go to the **Recognizer STT** section and activate the **Recognize Language** toggle.
-            3. From the **Alternative Language** list, select the additional languages, for example, `German` and `Italian`. 
-            4. Below the Set Session Config Node, add a [Lookup](../../build/node-reference/logic/lookup.md) Node. 
-            5. In the parent Lookup Node, select **CognigyScript** from the **Type** list and specify `input.data.payload.speech.language_code` in the **Operator** field. 
-            6. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`. 
-            7. Below each case Node, add the second [Set Session Config](../../build/node-reference/voice/voice-gateway/parameter-details.md) Nodes. 
-            8. Configure the TTS and STT settings for each of the Set Session Config Nodes. This means that one Node should have German language selected, while the other should have Italian. These Nodes will manage the voice agent's communication in the end user's language. 
-            9. Below each Set Session Config Node, add the [Set Translation](../../build/node-reference/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language. 
-            10. In the Set Translation Node, activate the **Translation Enabled** toggle. 
-            11. In the **User Input Language** field, specify the language of the user input, for example, `de`, `it`. 
+            3. From the **Alternative Language** list, select the additional languages, for example, `German` and `Italian`.
+            4. Below the Set Session Config Node, add a [Lookup](../../build/node-reference/logic/lookup.md) Node.
+            5. In the parent Lookup Node, select **CognigyScript** from the **Type** list and specify `input.data.payload.speech.language_code` in the **Operator** field.
+            6. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`.
+            7. Below each case Node, add the second [Set Session Config](../../build/node-reference/voice/voice-gateway/parameter-details.md) Nodes.
+            8. Configure the TTS and STT settings for each of the Set Session Config Nodes. This means that one Node should have German language selected, while the other should have Italian. These Nodes will manage the voice agent's communication in the end user's language.
+            9. Below each Set Session Config Node, add the [Set Translation](../../build/node-reference/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language.
+            10. In the Set Translation Node, activate the **Translation Enabled** toggle.
+            11. In the **User Input Language** field, specify the language of the user input, for example, `de`, `it`.
             12. In the **Flow Language** field, specify the language to translate to, for example, `en`.
             13. At the end of the Flow, place the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node.
 
@@ -182,7 +187,7 @@ Learn about the generic Endpoint settings available for this Endpoint on the fol
 
         ??? info "Example"
             In this example, an end user seeks billing assistance and interacts with actors in a customer service system via text-to-speech and speech-to-text technologies. The end user and human agent speak different languages, but this doesn't hinder their understanding, as the voice agent translates their speech into the required language for each party.
-            
+
             **End User:** Calls the customer service line. Speaks to the voice agent. Example: `Hallo, ich brauche Hilfe bei meiner Rechnungsanfrage`.<br>
             **Voice Agent:** Determines the language and answers using the same language. Example: `Danke für die Informationen. Ich werde Sie an einen menschlichen Agenten weiterleiten, der Ihnen weiterhelfen kann`.<br>
             **Voice Agent:** Transcribes user's speech into text using speech-to-text technology. Example: `Hello, I need assistance with my billing inquiry`.<br>

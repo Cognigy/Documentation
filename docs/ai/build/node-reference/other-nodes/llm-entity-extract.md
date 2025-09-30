@@ -26,13 +26,13 @@ To output the result, below the LLM Entity Extract Node, add a [Say Node](../bas
 
 ## Parameters
 
-| Parameter            | Type          | Description                                                                                                                                                                                                                              |
-|----------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Large Language Model | List          | Select a model or use the default one.                                                                                                                                                                                                   |
-| Entity Name          | CognigyScript | The name of the entity to extract. For example, `customerID`.                                                                                                                                                                            |
-| Entity Description   | CognigyScript | A sentence which describes the entity. For example, `An alphanumeric string of 6 characters, e.g. ABC123 or 32G5FD`.                                                                                                                     |
-| Example Input        | Text          | Examples of text inputs. For example, `My ID is AB54EE, is that ok?`, `That would be ah bee see double 4 three`, `I guess it's 49 A B 8 K`. Alternatively, you can clicke **Show JSON Editor** and add input examples in the code field. |
-| Extracted Entity     | CognigyScript | Examples of extracted entities. For example, `AB54EE`, `ABC443`, `49AB8K`.                                                                                                                                                               |
+| Parameter            | Type          | Description                                                                                                                                                                                                                             |
+|----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Large Language Model | List          | Select a model or use the default one.                                                                                                                                                                                                  |
+| Entity Name          | CognigyScript | The name of the entity to extract. For example, `customerID`.                                                                                                                                                                           |
+| Entity Description   | CognigyScript | A sentence which describes the entity. For example, `An alphanumeric string of 6 characters, e.g. ABC123 or 32G5FD`.                                                                                                                    |
+| Example Input        | Text          | Examples of text inputs. For example, `My ID is AB54EE, is that ok?`, `That would be ah bee see double 4 three`, `I guess it's 49 A B 8 K`. Alternatively, you can click **Show JSON Editor** and add input examples in the code field. |
+| Extracted Entity     | CognigyScript | Examples of extracted entities. For example, `AB54EE`, `ABC443`, `49AB8K`.                                                                                                                                                              |
 
 ### JSON Input Examples
 
