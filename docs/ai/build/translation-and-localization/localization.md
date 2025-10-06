@@ -17,6 +17,10 @@ Cognigy.AI offers a robust localization feature for easy customization and conte
 
 - You can't change the primary Locale after you've selected it.
 
+## Limitations
+
+- The maximum number of Locales per Project is 10.
+
 ## How to Use
 
 === "GUI"
