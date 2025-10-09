@@ -748,6 +748,7 @@ nav:
         - live-agent/installation/migration/redis-sentinel.md
 
     - 🗂️ Miscellaneous:
+      - live-agent/api.md
       - live-agent/FAQs.md
 
 
