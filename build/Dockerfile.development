@@ -3,7 +3,7 @@
 # a dev-server. For instructions on how to build it, please check
 # the README.md file in the root of this repository.
 #
-FROM python:3.14-rc-alpine3.20
+FROM python:3.14.0-alpine3.22
 
 # Update package index and install required dependencies
 RUN apk update && apk add --no-cache libxml2-dev libxslt-dev gcc musl-dev sqlite-libs
