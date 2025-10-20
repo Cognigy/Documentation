@@ -45,6 +45,7 @@ If you have an on-premises Cognigy.AI installation, you can set TTL values syste
 | Minimum HTTP text body (used in CSV)                                                                                            | 100 kB                           |        |        |
 | Maximum text-encoded (raw) payload size for requests to Cognigy.AI REST API (for example, used to upload CSV files)             | 2 MB                             |        |        |
 | **NLU**                                                                                                                         |                                  |        |        |
+| Maximum number of invitations to Projects per user per day[^*****]                                                              | 10                               |        |        |
 | Maximum number of example sentences per Intent in Flows                                                                         | 200                              |        |        |
 | Maximum total number of example sentences in Flows, including sentences in attached Flows                                       | 10,000                           | 15,000 |        |
 | Maximum total number of Intents in Flows, including Intents in attached Flows                                                   | 2,500                            | 10,000 |        |
@@ -95,6 +96,7 @@ If you have an on-premises Cognigy.AI installation, you can set TTL values syste
 [^**]: If you have a dedicated SaaS or on-premises installation, you can change this limit. The `SOCKET_ENDPOINT_DISCONNECT_GRACE_PERIOD` variable lets you set a waiting period (in seconds) before marking a user as disconnected. This delay ensures temporary network issues or brief interruptions don't immediately trigger the `user disconnected` event. 
 [^***]: The limit for the Input, Context, and Profile objects is shared and can be configured for dedicated SaaS and on-premises installations using the `MAX_MEMORY_OBJECT_SIZE` variable. Increasing the object size could lead to performance issues.
 [^****]: You can change this limit if you have an on-premises installation. For more information, refer to the [HTTP Request Node](../build/node-reference/service/http-request.md) article.
+[^*****]:  If you have a dedicated SaaS or on-premises installation, you can change this limit by setting the `MAX_ADD_PROJECT_MEMBER_REQUESTS_PER_EMAIL_PER_DAY` environment variable.
 
 ## Retention of Records
 
@@ -106,7 +108,7 @@ If you have an on-premises Cognigy.AI installation, you can set TTL values syste
 | **Logs**                                                                          |           |
 | Maximum time until a log entry on the Logs page is removed                        | 1 day     |
 | **Sessions**                                                                      |           |
-| Maximum time until information about a Flow execution session is removed[^*****]  | 7 days    |
+| Maximum time until information about a Flow execution session is removed[^******] | 7 days    |
 | **Data**                                                                          |           |
 | Maximum time until a Contact Profile that hasn't been read or modified is removed | 30 days   |
 | Maximum time until conversation transcripts are deleted                           | 30 days   |
@@ -119,7 +121,7 @@ If you have an on-premises Cognigy.AI installation, you can set TTL values syste
 | **PCAP File in the Voice Gateway Self-Service Portal**                            |           |
 | Maximum time until a PCAP File is removed                                         | 14 days   |
 
-[^*****]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.
+[^******]: If you have a dedicated SaaS or on-premises installation, you can change this limit in the [Management UI](access/management-ui.md) or by setting the `MAX_SESSION_STATE_TTL_IN_MINUTES` environment variable. For some Endpoints, you can also configure the limit in the [Session Management](../deploy/endpoints/session-management.md) section. The session TTL is determined by the lowest value among these three settings.
 
 ## Submit a Support Request
 

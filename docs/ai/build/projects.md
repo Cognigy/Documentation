@@ -16,6 +16,10 @@ _Projects_ are collections of Conversational AI resources with which you can cre
 
 Projects include [Flows](../build/flows/overview.md), [Endpoints](../deploy/endpoints/overview.md), [Connections](connections.md), and many other resources you need to build an AI Agent.
 
+## Limitations
+
+- The maximum number of invitations to Projects per user per day. For example, if the limit is set to 5, each user can send invitations to at most 5 different Projects in a single day. Any additional invitation attempts will be blocked until the next day. If you have a dedicated SaaS or on-premises installation, you can change this limit by setting the `MAX_ADD_PROJECT_MEMBER_REQUESTS_PER_EMAIL_PER_DAY` environment variable.
+
 ## Working with Projects
 
 === "GUI"
